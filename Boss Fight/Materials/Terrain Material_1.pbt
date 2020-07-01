@@ -45,7 +45,7 @@ Assets {
       Overrides {
         Name: "cmp:Material3"
         AssetReference {
-          Id: 16905009501393850930
+          Id: 2105065740495197721
         }
       }
       Overrides {
@@ -113,12 +113,12 @@ Assets {
       }
     }
     Assets {
-      Id: 16905009501393850930
-      Name: "Sand 01"
+      Id: 2105065740495197721
+      Name: "Grass and Soil"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_sand_001_uv"
+        AssetId: "mi_grass_003_uv"
       }
     }
     Assets {
