@@ -18,11 +18,13 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 13320423023754048646
+  ChildIds: 2174034194062817497
   ChildIds: 4140861872582283020
   ChildIds: 429612536842654522
   ChildIds: 16574156597668785503
   ChildIds: 1953466353690513216
   ChildIds: 12051155483603186310
+  ChildIds: 12730556692797716989
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -32,6 +34,50 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 12730556692797716989
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 26035.2754
+      Y: -18008.4785
+      Z: 5508.73926
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
   }
 }
 Objects {
@@ -166,6 +212,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Environment"
+  }
+}
+Objects {
+  Id: 2174034194062817497
+  Name: "PostProcess"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PostProcess"
   }
 }
 Objects {
@@ -433,12 +505,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -8192.95117
-      Y: -4551.98438
-      Z: 115
+      X: -7972.89307
+      Y: -8184.95703
+      Z: -745.072449
     }
     Rotation {
-      Yaw: 23.980938
+      Yaw: 14.2080603
     }
     Scale {
       X: 1

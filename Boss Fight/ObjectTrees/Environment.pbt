@@ -19,6 +19,35 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4586248533900355589
+      value {
+        Overrides {
+          Name: "bp:Star Color Cycle"
+          Float: 0
+        }
+        Overrides {
+          Name: "bp:Star Color Intensity"
+          Float: 2
+        }
+        Overrides {
+          Name: "bp:Star Brightness "
+          Float: 0.5
+        }
+        Overrides {
+          Name: "bp:Star Visibility"
+          Float: 100
+        }
+        Overrides {
+          Name: "bp:Twinkle"
+          Bool: false
+        }
+        Overrides {
+          Name: "bp:Real Stars"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 5637922765994959926
       value {
         Overrides {
@@ -44,6 +73,36 @@ Objects {
             B: 0.39
             A: 0.183000013
           }
+        }
+        Overrides {
+          Name: "bp:Clouds"
+          Bool: true
+        }
+        Overrides {
+          Name: "bp:Cloud Lighting Brightness"
+          Float: 0.887347221
+        }
+        Overrides {
+          Name: "bp:Cloud Opacity"
+          Float: 0.271650881
+        }
+        Overrides {
+          Name: "bp:Cloud Shape"
+          Enum {
+            Value: "mc:ecloudshapes:0"
+          }
+        }
+        Overrides {
+          Name: "bp:Brightness"
+          Float: 0.0687202513
+        }
+        Overrides {
+          Name: "bp:Haze Falloff"
+          Float: 15
+        }
+        Overrides {
+          Name: "bp:Horizon Falloff"
+          Float: 3
         }
       }
     }
@@ -86,6 +145,15 @@ Objects {
             A: 1
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "bp:Intensity"
+          Float: 1.6
+        }
       }
     }
     ParameterOverrideMap {
@@ -94,6 +162,39 @@ Objects {
         Overrides {
           Name: "bp:Size"
           Float: 20
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -23.5037842
+            Yaw: 160.58313
+            Roll: -1.93051147
+          }
+        }
+        Overrides {
+          Name: "bp:Sun Disc Color"
+          Color {
+            R: 0.690000057
+            G: 3.29017666e-07
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Light Color"
+          Color {
+            R: 0.85
+            G: 0.262986481
+            B: 0.225781262
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Intensity"
+          Float: 0.5
+        }
+        Overrides {
+          Name: "bp:Cast Shadows"
+          Bool: true
         }
       }
     }
@@ -109,7 +210,7 @@ Objects {
     Location {
       X: 3750.1709
       Y: 620.06842
-      Z: -959.7948
+      Z: -1015.73865
     }
     Rotation {
     }

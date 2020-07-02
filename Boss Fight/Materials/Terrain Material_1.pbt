@@ -57,7 +57,7 @@ Assets {
       Overrides {
         Name: "cmp:Material4"
         AssetReference {
-          Id: 17705004492977016154
+          Id: 10923474690862482182
         }
       }
       Overrides {
@@ -131,12 +131,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17705004492977016154
-      Name: "Rocky Ground 01"
+      Id: 10923474690862482182
+      Name: "Sand 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "rocky_001"
+        AssetId: "mi_sand_001_uv"
       }
     }
     Assets {
