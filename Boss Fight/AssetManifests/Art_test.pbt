@@ -26,12 +26,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17674554081522737569
+  Name: "Whitebox Wall 01 - Foundation"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tx_gen_whitebox_foundation_001"
+  }
+}
+Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
+  Id: 15767187264673962515
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
@@ -68,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_door_002"
+  }
+}
+Assets {
+  Id: 10454730311019169779
+  Name: "Whitebox Wall 01 Window Slot 2x"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_winSlot2x"
   }
 }
 Assets {
@@ -161,12 +188,39 @@ Assets {
   }
 }
 Assets {
+  Id: 6357769797578075108
+  Name: "Bricks Large Foundation 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_large_foundation_001"
+  }
+}
+Assets {
+  Id: 6143956280833607398
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
   Id: 5357777918645578075
   Name: "Bricks Stone Floor Large 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_large_001"
+  }
+}
+Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {

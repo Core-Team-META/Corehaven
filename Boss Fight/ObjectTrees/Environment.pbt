@@ -53,16 +53,15 @@ Objects {
         Overrides {
           Name: "bp:Haze Color"
           Color {
-            R: 0.1875
-            B: 0.0335264504
             A: 1
           }
         }
         Overrides {
           Name: "bp:Horizon Color"
           Color {
-            R: 0.0357616544
-            B: 0.269999981
+            R: 0.119791642
+            G: 0.522545397
+            B: 0.919999957
             A: 0.383000016
           }
         }
@@ -94,15 +93,61 @@ Objects {
         }
         Overrides {
           Name: "bp:Brightness"
-          Float: 0.0687202513
+          Float: 1.15897512
         }
         Overrides {
           Name: "bp:Haze Falloff"
-          Float: 15
+          Float: 4.79758644
         }
         Overrides {
           Name: "bp:Horizon Falloff"
-          Float: 3
+          Float: 4.19974852
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8768135237325925539
+      value {
+        Overrides {
+          Name: "bp:Fog Density"
+          Float: 0.535999179
+        }
+        Overrides {
+          Name: "bp:Falloff"
+          Float: 0.151362374
+        }
+        Overrides {
+          Name: "bp:Start"
+          Float: 0
+        }
+        Overrides {
+          Name: "bp:Opacity"
+          Float: 0.239584565
+        }
+        Overrides {
+          Name: "bp:Volumetric Fog"
+          Bool: false
+        }
+        Overrides {
+          Name: "bp:color"
+          Color {
+            R: 0.0600000024
+            G: 0.701192
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "bp:Layered Fog Density"
+          Float: 0.728397071
+        }
+        Overrides {
+          Name: "bp:Layered Fog Falloff"
+          Float: 2.3081429
+        }
+        Overrides {
+          Name: "bp:Layered Fog Offset Height"
+          Float: 5.20092773
         }
       }
     }
@@ -152,7 +197,7 @@ Objects {
         }
         Overrides {
           Name: "bp:Intensity"
-          Float: 1.6
+          Float: 2
         }
       }
     }
@@ -215,9 +260,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1308.37988
-      Y: 1089.18921
-      Z: 93.6898575
+      X: 6472.1
+      Y: 4393.6
+      Z: 237.1
     }
   }
   ParentId: 4140861872582283020

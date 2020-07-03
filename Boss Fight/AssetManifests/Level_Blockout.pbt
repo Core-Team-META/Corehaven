@@ -1,4 +1,13 @@
 Assets {
+  Id: 18033297229984528543
+  Name: "Wood Planks Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_dark_001_uv"
+  }
+}
+Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -44,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14324126384198850775
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
-  }
-}
-Assets {
   Id: 14160871459430022034
   Name: "Pipe - 8-Sided Thick"
   PlatformAssetType: 1
@@ -62,21 +62,21 @@ Assets {
   }
 }
 Assets {
+  Id: 14082963738224240508
+  Name: "Bricks Layered Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_layered_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 12086178605684256045
-  Name: "Wood Planks Beveled Painted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_bevel_planks_white_001_uv"
   }
 }
 Assets {
