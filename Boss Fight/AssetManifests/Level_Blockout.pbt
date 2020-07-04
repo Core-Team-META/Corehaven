@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2115913270908487285
+  Name: "Roof Square Shingles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
   Id: 1931491163154793697
   Name: "Fantasy Castle Stairs 01"
   PlatformAssetType: 1

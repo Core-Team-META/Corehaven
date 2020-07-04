@@ -26,6 +26,7 @@ Objects {
   ChildIds: 12051155483603186310
   ChildIds: 12730556692797716989
   ChildIds: 492636135236824593
+  ChildIds: 5915454576290148702
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,8 +39,37 @@ Objects {
   }
 }
 Objects {
+  Id: 5915454576290148702
+  Name: "HUB_area"
+  Transform {
+    Location {
+      X: -145848.875
+      Y: -59234.2266
+      Z: -1182.40234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "HUB_area"
+  }
+}
+Objects {
   Id: 492636135236824593
-  Name: "Terrain"
+  Name: "BG_Terrain"
   Transform {
     Location {
       Z: -4400

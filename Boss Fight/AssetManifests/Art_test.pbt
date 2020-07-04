@@ -44,12 +44,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17314902742472478485
+  Name: "Glass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
   Id: 15767187264673962515
   Name: "Cylinder"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 15057977201205375036
+  Name: "Simple Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_simple_150cm_001"
   }
 }
 Assets {
@@ -62,12 +80,39 @@ Assets {
   }
 }
 Assets {
+  Id: 14104138596920373202
+  Name: "Whitebox Roof 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_roof_001"
+  }
+}
+Assets {
   Id: 14082963738224240508
   Name: "Bricks Layered Stone Floor 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_layered_001"
+  }
+}
+Assets {
+  Id: 12817510901257393900
+  Name: "Fabric Burlap Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_001_uv"
+  }
+}
+Assets {
+  Id: 12728337217389179065
+  Name: "Craftsman Wall 02 Corner"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_wall_002_corner"
   }
 }
 Assets {
@@ -89,12 +134,21 @@ Assets {
   }
 }
 Assets {
-  Id: 10454730311019169779
-  Name: "Whitebox Wall 01 Window Slot 2x"
+  Id: 11667075996946480541
+  Name: "Wooden Bucket"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_wall_001_winSlot2x"
+    AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 10420162958602010003
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
   }
 }
 Assets {
@@ -116,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9513197188566682619
+  Name: "Craftsman Stairs 01 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+  }
+}
+Assets {
   Id: 9165089572203835446
   Name: "Stone Block BIg"
   PlatformAssetType: 1
@@ -131,6 +194,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_octagon_001"
+  }
+}
+Assets {
+  Id: 8345110034584009830
+  Name: "Whitebox Wall 01 Doorway 01 Frame"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_whitebox_wall_001_doorframe"
+  }
+}
+Assets {
+  Id: 8277973835846626301
+  Name: "Wooden Barrel"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_barrel_001"
   }
 }
 Assets {
@@ -161,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7438525365025507851
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
   Id: 7036641726562825986
   Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
@@ -185,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_chamfer"
+  }
+}
+Assets {
+  Id: 6661752720774316706
+  Name: "Whitebox Wall 01 Half - Window Slot 1x"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_winHalfSlot1x"
   }
 }
 Assets {
@@ -224,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4924933784517209393
+  Name: "Whitebox Floor 01 8m x 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_floor_001_8x8"
+  }
+}
+Assets {
   Id: 4670984589696572448
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -251,6 +359,33 @@ Assets {
   }
 }
 Assets {
+  Id: 4243192772171122184
+  Name: "Whitebox Wall 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_wall_001_half"
+  }
+}
+Assets {
+  Id: 3256082723569577151
+  Name: "Additive Soft Edge"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_additive_edgefade"
+  }
+}
+Assets {
+  Id: 3149811683816933532
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
   Id: 2885800070905631850
   Name: "Tree Oak 01"
   PlatformAssetType: 1
@@ -275,6 +410,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_001"
+  }
+}
+Assets {
+  Id: 2664847478369185144
+  Name: "Wood Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
+  Id: 2115913270908487285
+  Name: "Roof Square Shingles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_001_uv"
   }
 }
 Assets {
