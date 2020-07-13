@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17587880652047825598
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 17583731156094274833
   Name: "Bricks Stone Block 01"
   PlatformAssetType: 2
@@ -53,24 +44,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14160871459430022034
-  Name: "Pipe - 8-Sided Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_eightsided_003"
-  }
-}
-Assets {
-  Id: 14082963738224240508
-  Name: "Bricks Layered Stone Floor 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_layered_001"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -98,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
   Id: 6748009613930740616
   Name: "Stone Block Long"
   PlatformAssetType: 1
@@ -113,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_wedge_002"
+  }
+}
+Assets {
+  Id: 5115512466233223299
+  Name: "Trim Crenellated 4m 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_crenellated_6m_003"
   }
 }
 Assets {
@@ -167,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_01"
+  }
+}
+Assets {
+  Id: 1381354497149909715
+  Name: "Stone Basic"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "stone_001"
   }
 }
 Assets {

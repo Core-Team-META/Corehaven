@@ -53,12 +53,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15796455287629306059
+  Name: "Tree Birch Bare 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_004"
+  }
+}
+Assets {
   Id: 15767187264673962515
   Name: "Cylinder"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 15657705742618530606
+  Name: "Stone Arch 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-arch_6m_002"
   }
 }
 Assets {
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-edge_6m_001"
+  }
+}
+Assets {
+  Id: 14267747156564835807
+  Name: "Fantasy Castle Wall Foundation 01 - Curved"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
   }
 }
 Assets {
@@ -149,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 10227468588619969592
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -305,6 +341,33 @@ Assets {
   }
 }
 Assets {
+  Id: 5979208797743596287
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 5905882379073804513
+  Name: "Curb 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_4m_001"
+  }
+}
+Assets {
+  Id: 5589834000494461069
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
+  }
+}
+Assets {
   Id: 5357777918645578075
   Name: "Bricks Stone Floor Large 01"
   PlatformAssetType: 2
@@ -347,15 +410,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x4m_002"
-  }
-}
-Assets {
-  Id: 4247430867898109902
-  Name: "Stucco Tintable"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_stucco_tint_001_uv"
   }
 }
 Assets {
@@ -419,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
+  Id: 2237761231368008031
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
   }
 }
 Assets {

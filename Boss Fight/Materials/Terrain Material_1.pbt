@@ -51,7 +51,7 @@ Assets {
       Overrides {
         Name: "cmp:Material3_Sides"
         AssetReference {
-          Id: 8104857108586852033
+          Id: 8673189580857260805
         }
       }
       Overrides {
@@ -126,12 +126,12 @@ Assets {
       }
     }
     Assets {
-      Id: 8104857108586852033
-      Name: "Cliff 03"
+      Id: 8673189580857260805
+      Name: "Dirt 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "cliff_003"
+        AssetId: "dirt_001"
       }
     }
     Assets {
