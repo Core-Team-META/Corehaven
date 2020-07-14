@@ -1,6 +1,88 @@
 Name: "PostProcess"
 RootId: 2174034194062817497
 Objects {
+  Id: 10133917093268894404
+  Name: "Environment Fog Default VFX"
+  Transform {
+    Location {
+      X: -706.855103
+      Y: -4824.10742
+      Z: -281.147766
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2174034194062817497
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.251464844
+        G: 0.349898338
+        B: 0.536458313
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Falloff"
+      Float: 0.151362374
+    }
+    Overrides {
+      Name: "bp:Opacity"
+      Float: 0.239584565
+    }
+    Overrides {
+      Name: "bp:Fog Density"
+      Float: 0.535999179
+    }
+    Overrides {
+      Name: "bp:Start"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Volumetric Fog"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.0600000024
+        G: 0.701192
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Layered Fog Density"
+      Float: 0.728397071
+    }
+    Overrides {
+      Name: "bp:Layered Fog Falloff"
+      Float: 2.3081429
+    }
+    Overrides {
+      Name: "bp:Layered Fog Offset Height"
+      Float: 5.20092773
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2224571462023946700
+    }
+  }
+}
+Objects {
   Id: 13335552549966709169
   Name: "Bloom Post Process"
   Transform {

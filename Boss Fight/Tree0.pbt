@@ -24,16 +24,15 @@ Objects {
   ChildIds: 16574156597668785503
   ChildIds: 1953466353690513216
   ChildIds: 12051155483603186310
-  ChildIds: 12730556692797716989
   ChildIds: 492636135236824593
   ChildIds: 5915454576290148702
-  ChildIds: 16211812140452006765
   ChildIds: 18294053737664836817
   ChildIds: 16583802265489665685
-  ChildIds: 339117683849209173
   ChildIds: 14069745097558312058
-  ChildIds: 2382482183021277162
-  ChildIds: 11186571603701415534
+  ChildIds: 547695491312330221
+  ChildIds: 10113161212022057360
+  ChildIds: 9126986421729930125
+  ChildIds: 3703642319366911257
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -46,13 +45,42 @@ Objects {
   }
 }
 Objects {
-  Id: 11186571603701415534
+  Id: 3703642319366911257
+  Name: "Ruins"
+  Transform {
+    Location {
+      X: 26271.2578
+      Y: -21760.7344
+      Z: 5456.36719
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Ruins"
+  }
+}
+Objects {
+  Id: 9126986421729930125
   Name: "Skeleton Mob"
   Transform {
     Location {
-      X: -1545.04993
-      Y: -1340.60571
-      Z: 90.6245117
+      X: -149942.922
+      Y: -60034.4453
+      Z: -876.779297
     }
     Rotation {
     }
@@ -90,13 +118,50 @@ Objects {
   }
 }
 Objects {
-  Id: 2382482183021277162
-  Name: "Skeleton Mob"
+  Id: 10113161212022057360
+  Name: "Teleportation Network"
   Transform {
     Location {
-      X: 6280.15625
-      Y: -1792.20923
-      Z: 1330.14172
+      X: -149400
+      Y: -58720
+      Z: -750
+    }
+    Rotation {
+      Yaw: 179.999985
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Teleportation Network"
+  }
+  InstanceHistory {
+    SelfId: 10113161212022057360
+    SubobjectId: 18311936112814349594
+    InstanceId: 17232800268387105365
+    TemplateId: 3339516676083177758
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 547695491312330221
+  Name: "Hub_AdjustmentVolumes"
+  Transform {
+    Location {
+      Z: 160.266708
     }
     Rotation {
     }
@@ -113,24 +178,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Hub_AdjustmentVolumes"
   }
 }
 Objects {
@@ -160,50 +210,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Marketplace"
-  }
-}
-Objects {
-  Id: 339117683849209173
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 11400
-      Y: -3870
-      Z: 1325
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
   }
 }
 Objects {
@@ -280,50 +286,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16211812140452006765
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 2426.56812
-      Y: 7888.72607
-      Z: 104.572021
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 5915454576290148702
   Name: "HUB_area"
   Transform {
@@ -376,55 +338,11 @@ Objects {
   }
   Terrain {
     Material {
-      Id: 841534158063459245
+      Id: 14268256038143050909
     }
     VoxelSize: 1000
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 12730556692797716989
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 25384.1602
-      Y: -21829.9023
-      Z: 5508.73926
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
   }
 }
 Objects {
@@ -608,7 +526,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -947,12 +864,12 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -7972.89307
-      Y: -8184.95703
-      Z: -745.072449
+      X: -150043.109
+      Y: -58764.1133
+      Z: -820.642334
     }
     Rotation {
-      Yaw: 14.2080603
+      Yaw: 14.2083521
     }
     Scale {
       X: 1

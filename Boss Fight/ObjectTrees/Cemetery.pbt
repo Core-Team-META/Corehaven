@@ -5,9 +5,9 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 690.803955
-      Y: 207.928711
-      Z: 338.430725
+      X: 1256.60278
+      Y: 1798.54639
+      Z: 321.140564
     }
     Rotation {
     }
@@ -52,14 +52,14 @@ Objects {
   Name: "Pipe - Thick"
   Transform {
     Location {
-      X: 702.891113
-      Y: 207.611816
-      Z: 375.467285
+      X: 1268.69
+      Y: 1798.22949
+      Z: 358.177124
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -89.9999313
-      Roll: -89.9999313
+      Yaw: -89.999939
+      Roll: -89.999939
     }
     Scale {
       X: 1.13589168
@@ -427,9 +427,9 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 691.80249
-      Y: 209.85498
-      Z: 26.5516205
+      X: 1257.60132
+      Y: 1800.47266
+      Z: 9.26145935
     }
     Rotation {
     }
@@ -917,8 +917,8 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 1141.8103
-      Y: 959.427734
+      X: 1285.65796
+      Y: 1161.16504
       Z: 103.494522
     }
     Rotation {
@@ -964,9 +964,9 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 690.803955
-      Y: 207.928711
-      Z: 374.970459
+      X: 1256.60278
+      Y: 1798.54639
+      Z: 357.680298
     }
     Rotation {
       Roll: 89.9999466

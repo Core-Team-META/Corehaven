@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17583731156094274833
-  Name: "Bricks Stone Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bricks_stone_block_001"
-  }
-}
-Assets {
   Id: 15767187264673962515
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -80,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7695830393755413980
+  Name: "Cube - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_003"
+  }
+}
+Assets {
   Id: 6748009613930740616
   Name: "Stone Block Long"
   PlatformAssetType: 1
@@ -89,21 +89,21 @@ Assets {
   }
 }
 Assets {
+  Id: 5825970533655284856
+  Name: "Bricks Concrete Cinder Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_concrete_001"
+  }
+}
+Assets {
   Id: 5423960417896689372
   Name: "Wedge - Corner-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_wedge_002"
-  }
-}
-Assets {
-  Id: 5115512466233223299
-  Name: "Trim Crenellated 4m 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_trim_crenellated_6m_003"
   }
 }
 Assets {
