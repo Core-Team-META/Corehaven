@@ -13454,7 +13454,6 @@ Objects {
   ChildIds: 18366556267574292816
   ChildIds: 7161162101028955468
   ChildIds: 15498431773680869931
-  ChildIds: 12644392842708350360
   ChildIds: 69972562848860612
   ChildIds: 4868087205974601177
   ChildIds: 15137537489614608360
@@ -13626,61 +13625,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12644392842708350360
-  Name: "Water_plane"
-  Transform {
-    Location {
-      X: 11163.4287
-      Y: 7824.09521
-      Z: 31.3110352
-    }
-    Rotation {
-    }
-    Scale {
-      X: 14580.4502
-      Y: 9897.97461
-      Z: 144.666229
-    }
-  }
-  ParentId: 3099635138201723740
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11701420284830861422
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.21061258
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.246971875
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17983886762090769352
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 15498431773680869931
   Name: "Rock Hexagonal"
   Transform {
@@ -13746,11 +13690,11 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.21061258
+      Float: 0.125
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.246971875
+      Float: 0.131977469
     }
   }
   Collidable_v2 {
@@ -17776,7 +17720,6 @@ Objects {
   ChildIds: 14456958638110473181
   ChildIds: 13154139389594918813
   ChildIds: 7151352911383058011
-  ChildIds: 6362718127204311548
   ChildIds: 3184723103818963240
   ChildIds: 16280250906965296817
   ChildIds: 17145060321373245825
@@ -17797,6 +17740,10 @@ Objects {
   ChildIds: 12016227088136024789
   ChildIds: 16141029458902951855
   ChildIds: 11209047880026074273
+  ChildIds: 3220070507684594257
+  ChildIds: 9875402572886008742
+  ChildIds: 5759948957291025279
+  ChildIds: 2314757458511618049
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17805,6 +17752,221 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2314757458511618049
+  Name: "Roofing"
+  Transform {
+    Location {
+      X: 9346.23242
+      Y: 8912.39063
+      Z: 3436.6665
+    }
+    Rotation {
+      Pitch: 33.9072304
+      Yaw: -90.680481
+      Roll: 0.231226951
+    }
+    Scale {
+      X: 8.2
+      Y: 16.7
+      Z: 0.200000018
+    }
+  }
+  ParentId: 346662975855661829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15656073421664490809
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5759948957291025279
+  Name: "Roofing"
+  Transform {
+    Location {
+      X: 11994.0693
+      Y: 3098.52441
+      Z: 5089.75195
+    }
+    Rotation {
+      Pitch: 41.6906204
+      Yaw: -0.756591797
+      Roll: 0.107769005
+    }
+    Scale {
+      X: 8.82659149
+      Y: 10.6235991
+      Z: 0.146469668
+    }
+  }
+  ParentId: 346662975855661829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15656073421664490809
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9875402572886008742
+  Name: "Roofing"
+  Transform {
+    Location {
+      X: 12647.5391
+      Y: 3098.52441
+      Z: 5089.75195
+    }
+    Rotation {
+      Pitch: 41.6906242
+      Yaw: 179.243408
+      Roll: 0.1077694
+    }
+    Scale {
+      X: 8.82659149
+      Y: 10.6235991
+      Z: 0.146469668
+    }
+  }
+  ParentId: 346662975855661829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15656073421664490809
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3220070507684594257
+  Name: "Roofing"
+  Transform {
+    Location {
+      X: 2861.36475
+      Y: -5406.54248
+      Z: 1452.5238
+    }
+    Rotation {
+      Pitch: 45.2586441
+      Yaw: -179.999939
+    }
+    Scale {
+      X: 9.29999924
+      Y: 11.652173
+      Z: 0.199997962
+    }
+  }
+  ParentId: 346662975855661829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15656073421664490809
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -17920,14 +18082,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 14522.4902
-      Y: 8536.98633
-      Z: 3885.59741
+      X: 14459.4707
+      Y: 8545.77734
+      Z: 4167.29248
     }
     Rotation {
-      Pitch: 41.6901245
+      Pitch: 41.6901131
       Yaw: -7.456604
-      Roll: 0.107741788
+      Roll: 0.107742049
     }
     Scale {
       X: 8.82659531
@@ -17974,14 +18136,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 15171.5156
-      Y: 8460.75391
-      Z: 3885.59741
+      X: 15108.4961
+      Y: 8469.54492
+      Z: 4167.29248
     }
     Rotation {
-      Pitch: 41.6901093
+      Pitch: 41.6900864
       Yaw: 172.542816
-      Roll: 0.107810363
+      Roll: 0.107810326
     }
     Scale {
       X: 8.82659531
@@ -18136,9 +18298,9 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 12895.9756
-      Y: 4704.03613
-      Z: 4425.32129
+      X: 12666.8574
+      Y: 4488.55713
+      Z: 4312.78857
     }
     Rotation {
       Pitch: 41.6906242
@@ -18190,14 +18352,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 12242.5059
-      Y: 4704.03613
-      Z: 4425.32129
+      X: 12013.3877
+      Y: 4488.55713
+      Z: 4312.78857
     }
     Rotation {
       Pitch: 41.6906204
       Yaw: -0.756591797
-      Roll: 0.107769005
+      Roll: 0.107768975
     }
     Scale {
       X: 8.82659435
@@ -18875,59 +19037,6 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6362718127204311548
-  Name: "Roofing"
-  Transform {
-    Location {
-      X: 2861.36475
-      Y: -5452.74902
-      Z: 1677.67798
-    }
-    Rotation {
-      Pitch: 45.2586441
-      Yaw: -179.999939
-    }
-    Scale {
-      X: 9.30000305
-      Y: 12.375412
-      Z: 0.199997872
-    }
-  }
-  ParentId: 346662975855661829
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 15656073421664490809
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
     }
   }
   Collidable_v2 {
@@ -23206,14 +23315,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 18072.8223
-      Y: 1951.24
+      X: 19110.5332
+      Y: 2436.10449
       Z: 6512.59814
     }
     Rotation {
-      Pitch: 44.6695023
-      Yaw: 116.222099
-      Roll: 2.4010269e-06
+      Pitch: 44.6695
+      Yaw: 116.222084
+      Roll: 2.40102668e-06
     }
     Scale {
       X: 17.3254662
@@ -23260,14 +23369,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 17543.7852
-      Y: 3027.02808
+      X: 18581.4961
+      Y: 3511.89258
       Z: 6516.24561
     }
     Rotation {
-      Pitch: 45.2582474
+      Pitch: 45.2582397
       Yaw: -63.7772827
-      Roll: 9.70318069e-06
+      Roll: 9.70317888e-06
     }
     Scale {
       X: 17.1411572
@@ -23570,8 +23679,8 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 6101.62109
-      Y: 936.349854
+      X: 4993.54053
+      Y: 1855.84106
       Z: 2276.44629
     }
     Rotation {
@@ -23628,8 +23737,8 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 6101.62109
-      Y: 558.217041
+      X: 4993.54053
+      Y: 1477.70825
       Z: 2631.93945
     }
     Rotation {
@@ -23681,14 +23790,14 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 6101.62158
-      Y: -482.321899
+      X: 4993.54102
+      Y: 437.169189
       Z: 2324.07666
     }
     Rotation {
       Pitch: 35.5006828
-      Yaw: 89.9998856
-      Roll: 1.67795515e-05
+      Yaw: 89.9998779
+      Roll: 1.46821076e-05
     }
     Scale {
       X: 3.55059481
@@ -23739,8 +23848,8 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 6110.87695
-      Y: -153.784912
+      X: 5002.79639
+      Y: 765.706299
       Z: 2628.2915
     }
     Rotation {
@@ -26219,19 +26328,19 @@ Objects {
   Name: "Roofing"
   Transform {
     Location {
-      X: 3239.49756
-      Y: -3983.75537
-      Z: 1097.03088
+      X: 3220.8623
+      Y: -4493.80176
+      Z: 1110.00928
     }
     Rotation {
       Pitch: 34.8558922
       Yaw: -179.999954
-      Roll: 1.6114036e-05
+      Roll: 1.61140069e-05
     }
     Scale {
-      X: 3.21033955
-      Y: 18.1751041
-      Z: 0.240035117
+      X: 2.12458777
+      Y: 28.4913692
+      Z: 0.240034208
     }
   }
   ParentId: 346662975855661829
@@ -27792,12 +27901,12 @@ Objects {
     Location {
       X: 1551.92639
       Y: 1318.52136
-      Z: 1443.12061
+      Z: 1669.453
     }
     Rotation {
-      Pitch: 34.8560257
+      Pitch: 34.8560143
       Yaw: -90
-      Roll: 4.16175089e-06
+      Roll: 6.24262657e-06
     }
     Scale {
       X: 3.21033716
@@ -27846,10 +27955,10 @@ Objects {
     Location {
       X: 1551.92651
       Y: 939.760376
-      Z: 1789.81567
+      Z: 2016.14783
     }
     Rotation {
-      Pitch: 44.9273071
+      Pitch: 44.9273033
       Yaw: -89.9998779
     }
     Scale {
@@ -27899,12 +28008,12 @@ Objects {
     Location {
       X: 1561.18274
       Y: 382.047485
-      Z: 1763.70886
+      Z: 1990.04089
     }
     Rotation {
-      Pitch: 43.1967659
-      Yaw: 89.9999161
-      Roll: 2.57652064e-05
+      Pitch: 43.1967583
+      Yaw: 89.9999
+      Roll: 2.81074917e-05
     }
     Scale {
       X: 8.48073483
@@ -27953,7 +28062,7 @@ Objects {
     Location {
       X: 1551.92688
       Y: 51.7780762
-      Z: 1459.55579
+      Z: 1685.88831
     }
     Rotation {
       Pitch: 39.3448486
@@ -37336,7 +37445,6 @@ Objects {
   }
   ParentId: 1953466353690513216
   ChildIds: 9355989484704014649
-  ChildIds: 3837454883710898581
   ChildIds: 3648177466877560985
   ChildIds: 6287954872805989733
   ChildIds: 16625571825258018970
@@ -37947,7 +38055,7 @@ Objects {
     Location {
       X: -2811.46094
       Y: 11465.8594
-      Z: 2787.80737
+      Z: 2730.47192
     }
     Rotation {
     }
@@ -38035,46 +38143,6 @@ Objects {
       X: 1
       Y: 1
       Z: 1
-    }
-  }
-  ParentId: 16040506653368366313
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 2885800070905631850
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3837454883710898581
-  Name: "Tree Oak 01"
-  Transform {
-    Location {
-      X: -597.226563
-      Y: 8470.97461
-      Z: 3811.18286
-    }
-    Rotation {
-      Yaw: -29.0923462
-    }
-    Scale {
-      X: 0.829570174
-      Y: 0.829570174
-      Z: 0.829570174
     }
   }
   ParentId: 16040506653368366313

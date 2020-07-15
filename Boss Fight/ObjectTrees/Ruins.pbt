@@ -1,6 +1,132 @@
 Name: "Ruins"
 RootId: 3703642319366911257
 Objects {
+  Id: 12351798226789026596
+  Name: "Rock 02"
+  Transform {
+    Location {
+      X: 1600.13672
+      Y: 24015.9
+      Z: -637.822754
+    }
+    Rotation {
+      Pitch: -83.824707
+      Yaw: 164.352844
+      Roll: -160.861588
+    }
+    Scale {
+      X: 2.17499447
+      Y: 1.70070684
+      Z: 1.85413098
+    }
+  }
+  ParentId: 3703642319366911257
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7438525365025507851
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7215217546020523797
+  Name: "Rock 02"
+  Transform {
+    Location {
+      X: 2290.5918
+      Y: 8467.99414
+      Z: 137.625977
+    }
+    Rotation {
+      Pitch: -82.2281189
+      Yaw: 139.992645
+      Roll: -136.327621
+    }
+    Scale {
+      X: 3.29827738
+      Y: 2.5790422
+      Z: 2.81170273
+    }
+  }
+  ParentId: 3703642319366911257
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7438525365025507851
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17087158928840890595
+  Name: "Rock 02"
+  Transform {
+    Location {
+      X: 5416.39844
+      Y: 8518.01
+      Z: 137.625977
+    }
+    Rotation {
+      Pitch: -82.228241
+      Yaw: 139.992645
+      Roll: -136.327713
+    }
+    Scale {
+      X: 3.29827738
+      Y: 2.5790422
+      Z: 2.81170273
+    }
+  }
+  ParentId: 3703642319366911257
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7438525365025507851
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 12730556692797716989
   Name: "Skeleton Mob"
   Transform {

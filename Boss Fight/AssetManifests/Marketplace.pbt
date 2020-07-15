@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13304908840312358092
+  Name: "Fantasy Castle Pillar 01 Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_top"
+  }
+}
+Assets {
   Id: 12817510901257393900
   Name: "Fabric Burlap Old 01"
   PlatformAssetType: 2
