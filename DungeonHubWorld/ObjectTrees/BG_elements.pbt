@@ -52,7 +52,7 @@ Objects {
   Name: "Cylinder - Polished"
   Transform {
     Location {
-      X: 3482.07031
+      X: 15339.4297
       Y: 7739.84375
       Z: -409.004517
     }
@@ -1865,14 +1865,14 @@ Objects {
   Name: "Windmill"
   Transform {
     Location {
-      X: 2703.55664
+      X: 14560.9141
       Y: 7460.12402
       Z: 3657.77686
     }
     Rotation {
       Pitch: 57.8287773
-      Yaw: -58.1131439
-      Roll: -89.9992523
+      Yaw: -58.1131592
+      Roll: -89.9992676
     }
     Scale {
       X: 3

@@ -9,7 +9,7 @@ Assets {
       Overrides {
         Name: "cmp:Sides"
         AssetReference {
-          Id: 17051402987560892711
+          Id: 7814966837604519694
         }
       }
     }
@@ -23,12 +23,12 @@ Assets {
       }
     }
     Assets {
-      Id: 17051402987560892711
-      Name: "Bricks Layered Stone Floor 01"
+      Id: 7814966837604519694
+      Name: "Bricks Rough Stone Floor 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_stone_floor_layered_001"
+        AssetId: "mi_brick_stone_floor_rough_001"
       }
     }
   }
