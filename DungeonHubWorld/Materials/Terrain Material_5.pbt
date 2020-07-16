@@ -1,17 +1,11 @@
 Assets {
-  Id: 18379240741784855858
-  Name: "Terrain Material_3"
+  Id: 5848421780888181213
+  Name: "Terrain Material_5"
   PlatformAssetType: 13
   SerializationVersion: 61
   CustomMaterialAsset {
     BaseMaterialId: 814871376188081889
     ParameterOverrides {
-      Overrides {
-        Name: "cmp:Material1"
-        AssetReference {
-          Id: 14969419538970005505
-        }
-      }
       Overrides {
         Name: "cmp:Material1_Sides"
         AssetReference {
@@ -20,11 +14,13 @@ Assets {
       }
       Overrides {
         Name: "material1side_scale"
-        Float: 0.3
+        Float: 0.5
       }
       Overrides {
-        Name: "material1_scale"
-        Float: 1
+        Name: "cmp:Material1"
+        AssetReference {
+          Id: 15817064190490386340
+        }
       }
     }
     Assets {
@@ -37,21 +33,21 @@ Assets {
       }
     }
     Assets {
-      Id: 14969419538970005505
-      Name: "Grass Basic"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "mi_grass_001_uv"
-      }
-    }
-    Assets {
       Id: 15494749898036415293
       Name: "Cliff 03"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "cliff_003"
+      }
+    }
+    Assets {
+      Id: 15817064190490386340
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
       }
     }
   }

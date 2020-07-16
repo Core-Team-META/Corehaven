@@ -37,11 +37,11 @@ Objects {
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   Transform {
     Location {
-      X: -642.777344
-      Y: 2715.83423
+      X: -649.334595
+      Y: 2724.90967
     }
     Rotation {
-      Yaw: 13.361681
+      Yaw: 13.3617191
     }
     Scale {
       X: 7
@@ -75,7 +75,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -142,7 +142,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -209,7 +209,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -276,7 +276,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Building_WallInner:smart"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -643,7 +643,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:utile"
-      Float: 9.54229546
+      Float: 21.2401829
     }
     Overrides {
       Name: "ma:Building_WallOuter:vtile"
@@ -711,7 +711,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:utile"
-      Float: 9.54229546
+      Float: 21.2401829
     }
     Overrides {
       Name: "ma:Building_WallOuter:vtile"
@@ -779,7 +779,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:utile"
-      Float: 9.54229546
+      Float: 21.2401829
     }
     Overrides {
       Name: "ma:Building_WallOuter:vtile"
@@ -847,7 +847,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "ma:Building_WallOuter:utile"
-      Float: 9.54229546
+      Float: 21.2401829
     }
     Overrides {
       Name: "ma:Building_WallOuter:vtile"
@@ -898,8 +898,8 @@ Objects {
   Name: "MarketStall01"
   Transform {
     Location {
-      X: -13893.5137
-      Y: -157.211426
+      X: -11518.9121
+      Y: -5540.19482
       Z: -283.896484
     }
     Rotation {
@@ -2593,12 +2593,12 @@ Objects {
   Name: "MarketStall01"
   Transform {
     Location {
-      X: -14393.2383
-      Y: -558.741211
+      X: -12018.6367
+      Y: -5941.7251
       Z: -283.896484
     }
     Rotation {
-      Yaw: 138.015427
+      Yaw: 138.015396
     }
     Scale {
       X: 1
@@ -7485,8 +7485,6 @@ Objects {
   ChildIds: 8933391518569072941
   ChildIds: 3855035194897818047
   ChildIds: 16361436174472611737
-  ChildIds: 18382109602517369352
-  ChildIds: 9373190667177572989
   ChildIds: 4058873110874889983
   ChildIds: 1113509347984200771
   ChildIds: 12211245373508644760
@@ -7508,15 +7506,16 @@ Objects {
   ChildIds: 2789943362416876552
   ChildIds: 8766691970835380011
   ChildIds: 13700846725867972057
-  ChildIds: 1467723111681567154
-  ChildIds: 7240586229144767245
-  ChildIds: 9811754136914842003
-  ChildIds: 18347984142323284189
-  ChildIds: 5464558498981122218
-  ChildIds: 8613215686378007655
-  ChildIds: 7225686989869103141
-  ChildIds: 17465162155438184695
-  ChildIds: 4175054006996457346
+  ChildIds: 6654422388851171842
+  ChildIds: 18408823305771076206
+  ChildIds: 7871014520640373006
+  ChildIds: 13391250386146177080
+  ChildIds: 3154191119593750781
+  ChildIds: 16592670537776108517
+  ChildIds: 16211103476095539242
+  ChildIds: 4968862435101462974
+  ChildIds: 8112192016200770753
+  ChildIds: 3772853890497766508
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7528,22 +7527,21 @@ Objects {
   }
 }
 Objects {
-  Id: 4175054006996457346
-  Name: "Wall End Fancy 6m"
+  Id: 3772853890497766508
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -5704.17773
-      Y: 8604.59473
-      Z: 169.189453
+      X: -3010.1626
+      Y: 4011.83618
+      Z: 155.15918
     }
     Rotation {
-      Yaw: 90.0000153
-      Roll: -6.10351563e-05
+      Pitch: 34.4329948
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7555,7 +7553,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7569,22 +7567,21 @@ Objects {
   }
 }
 Objects {
-  Id: 17465162155438184695
-  Name: "Wall End Fancy 6m"
+  Id: 8112192016200770753
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -6891.02637
-      Y: 8604.59473
-      Z: 169.189453
+      X: -2701.24414
+      Y: 4011.83618
+      Z: 395.854
     }
     Rotation {
-      Yaw: -90
-      Roll: -6.10351563e-05
+      Pitch: -1.07147217
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7596,7 +7593,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7610,21 +7607,21 @@ Objects {
   }
 }
 Objects {
-  Id: 7225686989869103141
-  Name: "Arch Fancy 3m"
+  Id: 4968862435101462974
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -5623.19238
-      Y: 8557.84277
-      Z: 1031.58447
+      X: -2457.25269
+      Y: 4011.6958
+      Z: 377.810547
     }
     Rotation {
-      Yaw: 89.999939
+      Pitch: 32.5639915
     }
     Scale {
-      X: 2.23637581
-      Y: 2.23637581
-      Z: 2.23637581
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7636,7 +7633,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4397331359527074146
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7650,22 +7647,21 @@ Objects {
   }
 }
 Objects {
-  Id: 8613215686378007655
-  Name: "Wall End Fancy 6m"
+  Id: 16211103476095539242
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -5704.17773
-      Y: 645.787354
-      Z: 169.189453
+      X: -3010.1626
+      Y: 5237.60791
+      Z: 155.15918
     }
     Rotation {
-      Yaw: 90.0000153
-      Roll: -6.10351563e-05
+      Pitch: 34.432991
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7677,7 +7673,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7691,22 +7687,21 @@ Objects {
   }
 }
 Objects {
-  Id: 5464558498981122218
-  Name: "Wall End Fancy 6m"
+  Id: 16592670537776108517
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -6891.02637
-      Y: 645.787354
-      Z: 169.189453
+      X: -2701.24414
+      Y: 5237.60791
+      Z: 395.854
     }
     Rotation {
-      Yaw: -90
-      Roll: -6.10351563e-05
+      Pitch: -1.07147217
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7718,7 +7713,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7732,21 +7727,21 @@ Objects {
   }
 }
 Objects {
-  Id: 18347984142323284189
-  Name: "Arch Fancy 3m"
+  Id: 3154191119593750781
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: -5623.19238
-      Y: 599.0354
-      Z: 1031.58447
+      X: -2457.25269
+      Y: 5237.46777
+      Z: 377.810547
     }
     Rotation {
-      Yaw: 89.999939
+      Pitch: 32.5639915
     }
     Scale {
-      X: 2.23637581
-      Y: 2.23637581
-      Z: 2.23637581
+      X: 1.13386548
+      Y: 1.13386548
+      Z: 1.13386548
     }
   }
   ParentId: 2644700347859502063
@@ -7758,7 +7753,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4397331359527074146
+      Id: 4286823887220239396
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7772,22 +7767,21 @@ Objects {
   }
 }
 Objects {
-  Id: 9811754136914842003
-  Name: "Wall End Fancy 6m"
+  Id: 13391250386146177080
+  Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -15519.2344
-      Y: 5226.51563
-      Z: 317.688965
+      X: -8286.93066
+      Y: 8775.84
+      Z: 599.682129
     }
     Rotation {
-      Yaw: -179.999954
-      Roll: -6.10351563e-05
+      Yaw: -156.337585
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.21241951
+      Y: 0.999998808
+      Z: 1
     }
   }
   ParentId: 2644700347859502063
@@ -7799,7 +7793,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 15014793420090633705
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7813,21 +7807,21 @@ Objects {
   }
 }
 Objects {
-  Id: 7240586229144767245
-  Name: "Wall End Fancy 6m"
+  Id: 7871014520640373006
+  Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -15519.2344
-      Y: 4039.66699
-      Z: 317.688965
+      X: -8203.21387
+      Y: 8584.79688
+      Z: 447.961914
     }
     Rotation {
-      Roll: -6.10351563e-05
+      Yaw: -156.33725
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1.89999986
+      X: 1.21241951
+      Y: 0.999998808
+      Z: 1
     }
   }
   ParentId: 2644700347859502063
@@ -7839,7 +7833,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8910384199488099897
+      Id: 15014793420090633705
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7853,21 +7847,21 @@ Objects {
   }
 }
 Objects {
-  Id: 1467723111681567154
-  Name: "Arch Fancy 3m"
+  Id: 18408823305771076206
+  Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -15472.4834
-      Y: 5307.50098
-      Z: 1180.08398
+      X: -8033.63867
+      Y: 8197.79883
+      Z: 150.723633
     }
     Rotation {
-      Yaw: 179.999954
+      Yaw: -156.33725
     }
     Scale {
-      X: 2.23637581
-      Y: 2.23637581
-      Z: 2.23637581
+      X: 1.21241951
+      Y: 0.999998808
+      Z: 1
     }
   }
   ParentId: 2644700347859502063
@@ -7879,7 +7873,47 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 4397331359527074146
+      Id: 15014793420090633705
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6654422388851171842
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: -8117.48926
+      Y: 8389.1543
+      Z: 296.852539
+    }
+    Rotation {
+      Yaw: -156.337387
+    }
+    Scale {
+      X: 1.21241951
+      Y: 0.999998808
+      Z: 1
+    }
+  }
+  ParentId: 2644700347859502063
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15014793420090633705
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -8735,90 +8769,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9373190667177572989
-  Name: "Rock Block 02"
-  Transform {
-    Location {
-      X: -3078.87207
-      Y: 3904.73682
-      Z: 591.818848
-    }
-    Rotation {
-      Pitch: 0.263911664
-      Yaw: -179.999954
-      Roll: 90.0000763
-    }
-    Scale {
-      X: 0.650064886
-      Y: 0.999999344
-      Z: 1.33612823
-    }
-  }
-  ParentId: 2644700347859502063
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17112282066558978098
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18382109602517369352
-  Name: "Rock Block 02"
-  Transform {
-    Location {
-      X: -3073.51563
-      Y: 5314.83057
-      Z: 591.579102
-    }
-    Rotation {
-      Pitch: -0.263824463
-      Yaw: 1.22861171
-      Roll: 89.9940491
-    }
-    Scale {
-      X: 0.74546653
-      Y: 1
-      Z: 1.336128
-    }
-  }
-  ParentId: 2644700347859502063
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17112282066558978098
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 16361436174472611737
   Name: "Wall End Fancy 6m"
   Transform {
@@ -9065,15 +9015,15 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3889.20874
-      Y: 4426.39941
-      Z: 150
+      X: -2840.4917
+      Y: 4428.74756
+      Z: 314.098633
     }
     Rotation {
       Yaw: 90.0000076
     }
     Scale {
-      X: 1
+      X: 1.03128231
       Y: 1
       Z: 1
     }
@@ -9222,16 +9172,16 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3889.20874
-      Y: 4026.40039
-      Z: 150
+      X: -2857.78076
+      Y: 4030.10913
+      Z: 314.098633
     }
     Rotation {
-      Yaw: 90.0000076
+      Yaw: 87.9134
     }
     Scale {
-      X: 1
-      Y: 1
+      X: 1.02257383
+      Y: 0.999999166
       Z: 1
     }
   }
@@ -9262,12 +9212,12 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3889.20874
-      Y: 4826.39941
-      Z: 150
+      X: -2840.4917
+      Y: 4828.74756
+      Z: 314.098633
     }
     Rotation {
-      Yaw: 90.0000076
+      Yaw: 95.9084854
     }
     Scale {
       X: 1
@@ -9302,9 +9252,9 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3300.35229
+      X: -2394.55615
       Y: 4006.9541
-      Z: 484.366699
+      Z: 481.748047
     }
     Rotation {
       Yaw: 90.0000076
@@ -9342,15 +9292,15 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3510.35229
-      Y: 4429.55273
-      Z: 332.354492
+      X: -2982.89941
+      Y: 4413.33252
+      Z: 203.524902
     }
     Rotation {
       Yaw: 90.0000076
     }
     Scale {
-      X: 1
+      X: 1.09960878
       Y: 1
       Z: 1
     }
@@ -9382,9 +9332,9 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3300.35229
+      X: -2394.55615
       Y: 4806.95215
-      Z: 484.366699
+      Z: 481.748047
     }
     Rotation {
       Yaw: 90.0000076
@@ -9422,9 +9372,9 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3300.35229
+      X: -2394.55615
       Y: 4406.95215
-      Z: 484.366699
+      Z: 481.748047
     }
     Rotation {
       Yaw: 90.0000076
@@ -9462,14 +9412,14 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3510.35229
-      Y: 4029.57422
-      Z: 330.23584
+      X: -2997.74316
+      Y: 4030.2041
+      Z: 201.40625
     }
     Rotation {
       Pitch: 0.284292936
-      Yaw: 90.0000076
-      Roll: 3.06828667e-07
+      Yaw: 87.7140732
+      Roll: 2.13446043e-07
     }
     Scale {
       X: 1
@@ -9504,14 +9454,14 @@ Objects {
   Name: "Fantasy Castle Stairs 01 - 150cm"
   Transform {
     Location {
-      X: -3510.35229
-      Y: 4829.47754
-      Z: 327.90332
+      X: -2977.88745
+      Y: 4808.61328
+      Z: 199.351074
     }
     Rotation {
       Pitch: -0.670257568
-      Yaw: 89.9996796
-      Roll: 7.12416113e-06
+      Yaw: 96.6973877
+      Roll: 6.93738502e-06
     }
     Scale {
       X: 1
@@ -9546,9 +9496,9 @@ Objects {
   Name: "Rock Block 02"
   Transform {
     Location {
-      X: -3562.573
-      Y: 5081.56836
-      Z: 294.887207
+      X: -2513.85596
+      Y: 5083.9165
+      Z: 458.98584
     }
     Rotation {
       Pitch: -0.735870361
@@ -9588,9 +9538,9 @@ Objects {
   Name: "Rock Block 02"
   Transform {
     Location {
-      X: -3562.573
-      Y: 4625.0166
-      Z: 294.887207
+      X: -2513.85596
+      Y: 4627.36475
+      Z: 458.98584
     }
     Rotation {
       Pitch: -0.735870361
@@ -9630,9 +9580,9 @@ Objects {
   Name: "Rock Block 02"
   Transform {
     Location {
-      X: -3562.573
-      Y: 4161.40625
-      Z: 294.887207
+      X: -2514.50635
+      Y: 4209.96924
+      Z: 459.55957
     }
     Rotation {
       Pitch: 0.710332811
@@ -9640,9 +9590,9 @@ Objects {
       Roll: -86.5133057
     }
     Scale {
-      X: 1.40955114
-      Y: 0.385697603
-      Z: 1.66802275
+      X: 1.23585677
+      Y: 0.385692835
+      Z: 1.66801929
     }
   }
   ParentId: 2644700347859502063
