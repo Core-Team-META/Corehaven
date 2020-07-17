@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17609149353171719671
+  Name: "Cube - bottom aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 17111774109906810283
   Name: "Stone Block Small"
   PlatformAssetType: 1
@@ -53,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15997088979790417956
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
+  }
+}
+Assets {
   Id: 14200381599681868577
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
@@ -71,12 +89,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13539907544900533754
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 12012662114098619711
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {
@@ -113,6 +149,33 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Sky"
+  }
+}
+Assets {
+  Id: 7695830393755413980
+  Name: "Cube - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_003"
+  }
+}
+Assets {
+  Id: 6359753060552812266
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {

@@ -8,12 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17111774109906810283
-  Name: "Stone Block Small"
+  Id: 17952268790008141582
+  Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_block_02"
+    AssetId: "sm_ts_fan_cas_wall_half_001"
   }
 }
 Assets {
@@ -23,24 +23,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_beam"
-  }
-}
-Assets {
-  Id: 16822568136084734308
-  Name: "Wall End Fancy 2m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wall_end_fancy_2m_001"
-  }
-}
-Assets {
-  Id: 16288087362121174713
-  Name: "Stone Block Standard"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fantasy_block_01"
   }
 }
 Assets {
@@ -62,21 +44,30 @@ Assets {
   }
 }
 Assets {
-  Id: 14200381599681868577
-  Name: "Bricks Large Foundation 01"
-  PlatformAssetType: 2
+  Id: 15014793420090633705
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_large_foundation_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
   }
 }
 Assets {
-  Id: 13576367259465906358
-  Name: "Stone Basic"
-  PlatformAssetType: 2
+  Id: 13689626934332135285
+  Name: "Fantasy Castle Wall 02 Half"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "stone_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002"
+  }
+}
+Assets {
+  Id: 12642041031887387612
+  Name: "Fantasy Castle Wall 01 - Doorway 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_door_01"
   }
 }
 Assets {
@@ -116,30 +107,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11292394934840136893
+  Name: "Castle Part - Grate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_grate_001_ref"
+  }
+}
+Assets {
+  Id: 10107062091948111687
+  Name: "Fantasy Castle Wall 01 - Cellar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_grate_01"
+  }
+}
+Assets {
   Id: 9229199904602472614
   Name: "Craftsman Roof 01 Cap"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_cap"
-  }
-}
-Assets {
-  Id: 9219643093315686982
-  Name: "Curb 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_curb_4m_001"
-  }
-}
-Assets {
-  Id: 8831951843390245255
-  Name: "Door Large"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_door_3x6_001"
   }
 }
 Assets {
@@ -170,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7513385921730942068
+  Name: "Fantasy Castle Wall 02 Half - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_win_01"
+  }
+}
+Assets {
   Id: 7362232965091765999
   Name: "Bricks Mortar Thick 01"
   PlatformAssetType: 2
@@ -197,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6041984776381722081
+  Name: "Bricks Chunky Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
   Id: 5357777918645578075
   Name: "Bricks Stone Floor Large 01"
   PlatformAssetType: 2
@@ -215,15 +224,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4397331359527074146
-  Name: "Arch Fancy 3m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_arch_fancy_3m_001"
-  }
-}
-Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -233,12 +233,21 @@ Assets {
   }
 }
 Assets {
-  Id: 3804561942186383868
-  Name: "Craftsman Stairs 01 150cm"
+  Id: 3839491489764586199
+  Name: "Trim Top 8m 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+    AssetId: "sm_trim_top_6m_002"
+  }
+}
+Assets {
+  Id: 3419461828015617287
+  Name: "Door, Rounded Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_door_rounded_2m_001"
   }
 }
 Assets {
@@ -260,11 +269,11 @@ Assets {
   }
 }
 Assets {
-  Id: 897429753597555270
-  Name: "Fantasy Castle Bannister 01 - Post"
-  PlatformAssetType: 1
+  Id: 688190043350435462
+  Name: "Bricks Cobblestone Floor 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_bannister_001_post"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }

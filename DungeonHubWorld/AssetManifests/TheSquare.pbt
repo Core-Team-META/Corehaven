@@ -1,4 +1,31 @@
 Assets {
+  Id: 18195697283062358788
+  Name: "Cylinder - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_003"
+  }
+}
+Assets {
+  Id: 18097083884483661581
+  Name: "Crescent - 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crescent_002"
+  }
+}
+Assets {
+  Id: 17983886762090769352
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -44,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16532662947784276478
+  Name: "Generic Water"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_parameter_driven_water_manual"
+  }
+}
+Assets {
   Id: 16414328049407947312
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -68,6 +104,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_01"
+  }
+}
+Assets {
+  Id: 15997088979790417956
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
+  }
+}
+Assets {
+  Id: 15767187264673962515
+  Name: "Cylinder"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_002"
   }
 }
 Assets {
@@ -98,12 +152,48 @@ Assets {
   }
 }
 Assets {
+  Id: 15057977201205375036
+  Name: "Simple Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_simple_150cm_001"
+  }
+}
+Assets {
   Id: 15036333363326735768
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_wall_001_lg"
+  }
+}
+Assets {
+  Id: 15014793420090633705
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
+  }
+}
+Assets {
+  Id: 14574512655253538456
+  Name: "Rocks River Bed 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "puddle_river_bed_001"
+  }
+}
+Assets {
+  Id: 14267747156564835807
+  Name: "Fantasy Castle Wall Foundation 01 - Curved"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
   }
 }
 Assets {
@@ -131,6 +221,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 13539907544900533754
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 12817510901257393900
+  Name: "Fabric Burlap Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_001_uv"
   }
 }
 Assets {
@@ -170,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12012662114098619711
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 11846185947051140147
   Name: "Wedge - Convex Polished"
   PlatformAssetType: 1
@@ -194,6 +311,42 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_door_002"
+  }
+}
+Assets {
+  Id: 11667075996946480541
+  Name: "Wooden Bucket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 10567573856586224296
+  Name: "Bricks Cobblestone Floor Arches 001"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_arch_001"
+  }
+}
+Assets {
+  Id: 10420162958602010003
+  Name: "Small Crate Lid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_lid_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 10082944276110482816
+  Name: "Fantasy Castle Bannister 01 - Curve Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_curve_lg"
   }
 }
 Assets {
@@ -233,6 +386,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9225772212614530763
+  Name: "Moss 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_moss_001_uv"
+  }
+}
+Assets {
   Id: 9219643093315686982
   Name: "Curb 4m"
   PlatformAssetType: 1
@@ -251,12 +413,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8329339828071933523
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
+  }
+}
+Assets {
   Id: 8318010931141529991
   Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_door_02"
+  }
+}
+Assets {
+  Id: 8277973835846626301
+  Name: "Wooden Barrel"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_barrel_001"
   }
 }
 Assets {
@@ -314,6 +494,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6359753060552812266
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 5694803048924647549
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
+  }
+}
+Assets {
   Id: 5357777918645578075
   Name: "Bricks Stone Floor Large 01"
   PlatformAssetType: 2
@@ -329,6 +527,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_part_window_002_ref"
+  }
+}
+Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {
@@ -359,6 +566,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3149811683816933532
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 2928765710089061915
+  Name: "Bricks Concrete Cinder Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_concrete_001"
+  }
+}
+Assets {
   Id: 2664847478369185144
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -377,6 +602,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2536231208558228393
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_lg"
+  }
+}
+Assets {
   Id: 1367565729547875542
   Name: "Fantasy Castle Wall 01"
   PlatformAssetType: 1
@@ -392,6 +626,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_post"
+  }
+}
+Assets {
+  Id: 316859462149096151
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
   }
 }
 Assets {
