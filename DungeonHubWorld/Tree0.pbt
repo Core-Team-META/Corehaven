@@ -16,21 +16,17 @@ Objects {
   }
   ChildIds: 7367735074338159388
   ChildIds: 16813558807825262224
+  ChildIds: 9701248628263036341
+  ChildIds: 3661421621534174169
+  ChildIds: 14430764027136311552
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
   ChildIds: 2280467993507248051
   ChildIds: 5426928527881030860
   ChildIds: 1079375006114686061
-  ChildIds: 9701248628263036341
-  ChildIds: 3661421621534174169
-  ChildIds: 14430764027136311552
   ChildIds: 3277514622402591831
   ChildIds: 7918736215028804308
   ChildIds: 14769292999516845280
-  ChildIds: 8007093309541814995
-  ChildIds: 16673589307416659824
-  ChildIds: 6164083416633454403
-  ChildIds: 15356565196056818023
   ChildIds: 12997398446616836915
   ChildIds: 16630527343062782561
   ChildIds: 16115813215413360208
@@ -133,8 +129,8 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
-      X: -7424.20264
-      Y: 5161.13672
+      X: -7794.29492
+      Y: 4471.08936
       Z: -6285.88086
     }
     Rotation {
@@ -285,758 +281,6 @@ Objects {
     StaticMesh {
       Physics {
       }
-    }
-  }
-}
-Objects {
-  Id: 15356565196056818023
-  Name: "Single_tree"
-  Transform {
-    Location {
-      X: -6092.41113
-      Y: 1468.5791
-      Z: -6257.82715
-    }
-    Rotation {
-      Yaw: 100.696289
-    }
-    Scale {
-      X: 1.28735268
-      Y: 1.28735268
-      Z: 1.28735268
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 2063783459915946335
-  ChildIds: 18017625091041725303
-  ChildIds: 11951468705165498875
-  ChildIds: 5057137150608909201
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 5057137150608909201
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: 51.8457031
-      Y: 5.1940918
-      Z: 642.530273
-    }
-    Rotation {
-      Pitch: 31.7437401
-      Yaw: -116.797951
-      Roll: 49.2535
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 15356565196056818023
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11951468705165498875
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -56.4394531
-      Y: -21.6608887
-      Z: 601.699219
-    }
-    Rotation {
-      Pitch: 36.7588539
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 15356565196056818023
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18017625091041725303
-  Name: "Bush 01"
-  Transform {
-    Location {
-      X: 38.7988281
-      Y: 33.9863281
-      Z: 729.943848
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.27477765
-      Y: 2.27477765
-      Z: 2.27477765
-    }
-  }
-  ParentId: 15356565196056818023
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12012662114098619711
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2063783459915946335
-  Name: "Tree Birch Bare 01"
-  Transform {
-    Location {
-      X: -34.2050781
-      Y: -17.5192871
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15356565196056818023
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Trunk:id"
-      AssetReference {
-        Id: 5318852982404395572
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15997088979790417956
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6164083416633454403
-  Name: "Single_tree"
-  Transform {
-    Location {
-      X: -3828.53687
-      Y: -1097.65186
-      Z: -6795.4165
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 11066863122010828149
-  ChildIds: 426507580682531412
-  ChildIds: 6860481175860367419
-  ChildIds: 17004917469099811512
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 17004917469099811512
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: 51.8457031
-      Y: 5.1940918
-      Z: 642.530273
-    }
-    Rotation {
-      Pitch: 31.7437401
-      Yaw: -116.797951
-      Roll: 49.2535
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 6164083416633454403
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6860481175860367419
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -56.4394531
-      Y: -21.6608887
-      Z: 601.699219
-    }
-    Rotation {
-      Pitch: 36.7588539
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 6164083416633454403
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 426507580682531412
-  Name: "Bush 01"
-  Transform {
-    Location {
-      X: 38.7988281
-      Y: 33.9863281
-      Z: 729.943848
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.27477765
-      Y: 2.27477765
-      Z: 2.27477765
-    }
-  }
-  ParentId: 6164083416633454403
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12012662114098619711
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11066863122010828149
-  Name: "Tree Birch Bare 01"
-  Transform {
-    Location {
-      X: -34.2050781
-      Y: -17.5192871
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6164083416633454403
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Trunk:id"
-      AssetReference {
-        Id: 5318852982404395572
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15997088979790417956
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16673589307416659824
-  Name: "Single_tree"
-  Transform {
-    Location {
-      X: -3619.16235
-      Y: 2402.41235
-      Z: -6761.91162
-    }
-    Rotation {
-      Yaw: 51.1115265
-    }
-    Scale {
-      X: 1.10316288
-      Y: 1.10316288
-      Z: 1.10316288
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 2873305384127931530
-  ChildIds: 16356347121151546493
-  ChildIds: 16839024935913982711
-  ChildIds: 8125582058430740340
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 8125582058430740340
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: 51.8457031
-      Y: 5.1940918
-      Z: 642.530273
-    }
-    Rotation {
-      Pitch: 31.7437401
-      Yaw: -116.797951
-      Roll: 49.2535
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 16673589307416659824
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16839024935913982711
-  Name: "Bush 02"
-  Transform {
-    Location {
-      X: -56.4394531
-      Y: -21.6608887
-      Z: 601.699219
-    }
-    Rotation {
-      Pitch: 36.7588539
-    }
-    Scale {
-      X: 1.24273062
-      Y: 1.24273062
-      Z: 1.24273062
-    }
-  }
-  ParentId: 16673589307416659824
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6359753060552812266
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16356347121151546493
-  Name: "Bush 01"
-  Transform {
-    Location {
-      X: 38.7988281
-      Y: 33.9863281
-      Z: 729.943848
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.27477765
-      Y: 2.27477765
-      Z: 2.27477765
-    }
-  }
-  ParentId: 16673589307416659824
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12012662114098619711
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2873305384127931530
-  Name: "Tree Birch Bare 01"
-  Transform {
-    Location {
-      X: -34.2050781
-      Y: -17.5192871
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16673589307416659824
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Nature_Trunk:id"
-      AssetReference {
-        Id: 5318852982404395572
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15997088979790417956
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8007093309541814995
-  Name: "Ship"
-  Transform {
-    Location {
-      X: 9655.97461
-      Y: 913.211914
-      Z: -7517.49219
-    }
-    Rotation {
-      Yaw: 90.524826
-    }
-    Scale {
-      X: 29.2817459
-      Y: 5.53277349
-      Z: -19.1606026
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 3981754323530289823
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3981754323530289823
-  Name: "World Text"
-  Transform {
-    Location {
-      X: -1.7052784
-      Y: 79.7713623
-      Z: -8.74151611
-    }
-    Rotation {
-      Yaw: 88.5474854
-    }
-    Scale {
-      X: 0.348339915
-      Y: 1.8435601
-      Z: -0.532342374
-    }
-  }
-  ParentId: 8007093309541814995
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Text {
-    Text: "THIS IS A SHIP"
-    Color {
-      A: 1
-    }
-    HorizontalSize: 1
-    VerticalSize: 1
-    HorizontalAlignment {
-      Value: "mc:ecoretexthorizontalalign:center"
-    }
-    VerticalAlignment {
-      Value: "mc:ecoretextverticalalign:center"
     }
   }
 }
@@ -2036,126 +1280,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14430764027136311552
-  Name: "Terrain_BG"
-  Transform {
-    Location {
-      Z: -14362.7197
-    }
-    Rotation {
-      Yaw: 126.050507
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Terrain {
-    Material {
-      Id: 18379240741784855858
-    }
-    VoxelSize: 700
-    OctreeDepth: 5
-    GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 3661421621534174169
-  Name: "Terrain"
-  Transform {
-    Location {
-      X: -7.34863281
-      Y: 10.1711426
-      Z: -8293.61133
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceon"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Terrain {
-    Material {
-      Id: 5848421780888181213
-    }
-    VoxelSize: 100
-    OctreeDepth: 5
-    GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 9701248628263036341
-  Name: "Water"
-  Transform {
-    Location {
-      X: 29904.4375
-      Y: 959.244873
-      Z: -8213.24
-    }
-    Rotation {
-    }
-    Scale {
-      X: 619.439514
-      Y: 764.898438
-      Z: 120
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 16532662947784276478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.271178037
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.344751447
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17983886762090769352
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 1079375006114686061
   Name: "PortalArea"
   Transform {
@@ -2281,9 +1405,7 @@ Objects {
     Location {
     }
     Rotation {
-      Pitch: -45.8452454
-      Yaw: 33.9371338
-      Roll: 8.92731857
+      Pitch: -56.8618164
     }
     Scale {
       X: 1
@@ -2747,6 +1869,126 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
+    }
+  }
+}
+Objects {
+  Id: 14430764027136311552
+  Name: "Terrain_BG"
+  Transform {
+    Location {
+      Z: -14362.7197
+    }
+    Rotation {
+      Yaw: 126.050507
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Terrain {
+    Material {
+      Id: 18379240741784855858
+    }
+    VoxelSize: 700
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+  }
+}
+Objects {
+  Id: 3661421621534174169
+  Name: "Terrain"
+  Transform {
+    Location {
+      X: -7.34863281
+      Y: 10.1711426
+      Z: -8293.61133
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceon"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Terrain {
+    Material {
+      Id: 5848421780888181213
+    }
+    VoxelSize: 100
+    OctreeDepth: 5
+    GeneratorID: "DEPRECATED"
+  }
+}
+Objects {
+  Id: 9701248628263036341
+  Name: "Water"
+  Transform {
+    Location {
+      X: 29904.4375
+      Y: 959.244873
+      Z: -8313.26855
+    }
+    Rotation {
+    }
+    Scale {
+      X: 619.439514
+      Y: 764.898438
+      Z: 120
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 16532662947784276478
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.271178037
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.344751447
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }

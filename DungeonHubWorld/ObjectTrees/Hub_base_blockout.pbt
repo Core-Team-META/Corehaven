@@ -1,6 +1,68 @@
 Name: "Hub_base_blockout"
 RootId: 2280467993507248051
 Objects {
+  Id: 12486339766300890093
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: -6139.75781
+      Y: 2590.13159
+      Z: 493.47998
+    }
+    Rotation {
+      Yaw: 66.3560181
+    }
+    Scale {
+      X: 1.20200896
+      Y: 8.08162117
+      Z: 5.64644289
+    }
+  }
+  ParentId: 2280467993507248051
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.806423843
+        B: 0.63
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 11445317980028345371
   Name: "Default Floor"
   Transform {
@@ -387,16 +449,16 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -6427.00879
-      Y: 2023.90552
+      X: -6368.66309
+      Y: 2089.42651
       Z: 493.47998
     }
     Rotation {
-      Yaw: 67.8749237
+      Yaw: 67.8749771
     }
     Scale {
-      X: 2.96725345
-      Y: 8.08162
+      X: 1.20200896
+      Y: 8.08162117
       Z: 5.64644289
     }
   }
@@ -769,13 +831,13 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -818.256287
-      Y: -2458.60547
-      Z: 452.628906
+      X: -805.757
+      Y: -2485.21436
+      Z: 444.230469
     }
     Rotation {
       Pitch: 0.704363227
-      Yaw: 33.7886772
+      Yaw: 33.7886963
       Roll: -15.9435425
     }
     Scale {
@@ -833,13 +895,13 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -396.48288
-      Y: -2145.94189
-      Z: 452.628906
+      X: -383.983612
+      Y: -2172.55078
+      Z: 444.230469
     }
     Rotation {
       Pitch: 0.704363227
-      Yaw: 39.2311821
+      Yaw: 39.231163
       Roll: -15.9436646
     }
     Scale {
@@ -897,14 +959,14 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -1238.15991
-      Y: -2676.87158
-      Z: 452.628906
+      X: -1225.66296
+      Y: -2703.48047
+      Z: 444.230469
     }
     Rotation {
       Pitch: 0.704363227
-      Yaw: 24.9600945
-      Roll: -15.9445801
+      Yaw: 24.9600716
+      Roll: -15.9446106
     }
     Scale {
       X: 6.86231709
@@ -1089,14 +1151,14 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -6139.94043
-      Y: -381.087891
-      Z: 449.79248
+      X: -6139.99707
+      Y: -381.215759
+      Z: 454.586914
     }
     Rotation {
       Pitch: -1.36306763
-      Yaw: -78.5892
-      Roll: -4.01348877
+      Yaw: -78.5888672
+      Roll: -0.966766357
     }
     Scale {
       X: 4.3980813
@@ -1283,68 +1345,6 @@ Objects {
     }
     Rotation {
       Yaw: 65.8968124
-    }
-    Scale {
-      X: 8.85832
-      Y: 14.3168993
-      Z: 5.64643669
-    }
-  }
-  ParentId: 2280467993507248051
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17016052731400103309
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.806423843
-        B: 0.63
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2143508859116399746
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: -6297.77637
-      Y: 3065.45361
-      Z: 499.998535
-    }
-    Rotation {
-      Yaw: 65.896759
     }
     Scale {
       X: 8.85832
@@ -1591,13 +1591,13 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -5357.72314
-      Y: 3023.72778
-      Z: 452.628906
+      X: -5383.32129
+      Y: 2997.12
+      Z: 453.083
     }
     Rotation {
       Pitch: 0.704363227
-      Yaw: -133.892334
+      Yaw: -133.892319
       Roll: -15.9402466
     }
     Scale {
@@ -1655,14 +1655,14 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -5690.54834
-      Y: 2620.30859
-      Z: 452.919434
+      X: -5673.03369
+      Y: 2626.56201
+      Z: 456.052734
     }
     Rotation {
-      Pitch: 0.704363227
-      Yaw: -125.495667
-      Roll: -15.9398804
+      Pitch: 0.0804801136
+      Yaw: -121.622879
+      Roll: -13.0477295
     }
     Scale {
       X: 5.61502075
@@ -1719,14 +1719,14 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -6342.26123
-      Y: 1989.26697
+      X: -6316.06
+      Y: 1975.72522
       Z: 366.19043
     }
     Rotation {
       Pitch: -1.14068604
-      Yaw: -111.703796
-      Roll: -15.9141846
+      Yaw: -111.703735
+      Roll: -15.9142151
     }
     Scale {
       X: 2.96725345
@@ -1853,8 +1853,8 @@ Objects {
     }
     Rotation {
       Pitch: 4.24506474
-      Yaw: -92.66
-      Roll: -15.39151
+      Yaw: -98.7893677
+      Roll: -15.3918457
     }
     Scale {
       X: 6.70944214
