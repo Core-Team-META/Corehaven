@@ -48,7 +48,7 @@ Objects {
     Location {
       X: -771.508606
       Y: 2437.32104
-      Z: 821.522
+      Z: 815.036133
     }
     Rotation {
       Yaw: -41.7583618
@@ -87,10 +87,7 @@ Objects {
       Id: 17983886762090769352
     }
     Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
-    EnableCameraCollision: true
     StaticMesh {
       Physics {
       }
@@ -5420,6 +5417,7 @@ Objects {
   ChildIds: 14519175718964372460
   ChildIds: 4240323727121270377
   ChildIds: 7634097667861669799
+  ChildIds: 2123533687714510491
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5428,6 +5426,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2123533687714510491
+  Name: "Pipe - Thick"
+  Transform {
+    Location {
+      X: -4.16758347
+      Y: -44.7877464
+      Z: -2032.849
+    }
+    Rotation {
+      Yaw: 2.39056535e-05
+    }
+    Scale {
+      X: 33.3783684
+      Y: 33.3783684
+      Z: 17.3438377
+    }
+  }
+  ParentId: 8280763167727592134
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7534413844238277162
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12377676071953128633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

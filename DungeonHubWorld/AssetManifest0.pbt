@@ -1,19 +1,19 @@
 Assets {
+  Id: 18039765282018436536
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 17983886762090769352
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_001"
-  }
-}
-Assets {
-  Id: 17609149353171719671
-  Name: "Cube - bottom aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_001"
   }
 }
 Assets {
@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15456405850729702642
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 14200381599681868577
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
@@ -80,12 +89,48 @@ Assets {
   }
 }
 Assets {
+  Id: 13093690490455121336
+  Name: "Stone Block Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_03"
+  }
+}
+Assets {
+  Id: 12901371766173778172
+  Name: "Leafy Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_groundcover_002"
+  }
+}
+Assets {
+  Id: 12888184272203015398
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 12012662114098619711
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {
@@ -98,12 +143,48 @@ Assets {
   }
 }
 Assets {
+  Id: 11054502242900949297
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 10426990339394748810
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 10161356557666659885
+  Name: "Bush Leafy Low 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_002"
+  }
+}
+Assets {
   Id: 9219643093315686982
   Name: "Curb 4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curb_4m_001"
+  }
+}
+Assets {
+  Id: 9037050440305590279
+  Name: "Clover Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_clover_patch_002"
   }
 }
 Assets {
@@ -125,6 +206,33 @@ Assets {
   }
 }
 Assets {
+  Id: 6787207207887554883
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
+  Id: 6528381076757568107
+  Name: "Bush Leafy Tall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_001"
+  }
+}
+Assets {
+  Id: 6359753060552812266
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
   Id: 4397331359527074146
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -134,11 +242,38 @@ Assets {
   }
 }
 Assets {
-  Id: 897429753597555270
-  Name: "Fantasy Castle Bannister 01 - Post"
+  Id: 2370747781706679886
+  Name: "Fern 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_bannister_001_post"
+    AssetId: "sm_fern_generic_003"
+  }
+}
+Assets {
+  Id: 815586546911461100
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
+  Id: 371541499920383896
+  Name: "Environment Fog Default VFX"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_env_fog_default"
+  }
+}
+Assets {
+  Id: 276992632015541839
+  Name: "Grass Short"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_002"
   }
 }

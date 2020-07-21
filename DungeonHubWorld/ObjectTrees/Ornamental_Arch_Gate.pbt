@@ -683,8 +683,8 @@ Objects {
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
-      X: 1119.1886
-      Y: -2401.82031
+      X: 1122.35864
+      Y: -2405.96924
       Z: 313.406738
     }
     Rotation {
@@ -725,13 +725,13 @@ Objects {
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
-      X: 1119.1886
-      Y: -2401.82031
+      X: 1122.35864
+      Y: -2405.96924
       Z: 313.406738
     }
     Rotation {
       Pitch: -0.00527954102
-      Yaw: -57.8087769
+      Yaw: -57.8087463
       Roll: -179.981766
     }
     Scale {

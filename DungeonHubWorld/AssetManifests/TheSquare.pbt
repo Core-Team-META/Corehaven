@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18033297229984528543
+  Name: "Wood Planks Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_dark_001_uv"
+  }
+}
+Assets {
   Id: 17983886762090769352
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
@@ -44,6 +53,33 @@ Assets {
   }
 }
 Assets {
+  Id: 17883309447763556868
+  Name: "Stone Arch 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-arch_6m_002"
+  }
+}
+Assets {
+  Id: 17748832137412765820
+  Name: "Flower Bellflower 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_002_ref"
+  }
+}
+Assets {
+  Id: 17609149353171719671
+  Name: "Cube - bottom aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -53,12 +89,48 @@ Assets {
   }
 }
 Assets {
+  Id: 17393434355915427469
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 17237692812658431496
+  Name: "Fantasy Staff Head 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_001"
+  }
+}
+Assets {
+  Id: 17225177059752511957
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
   Id: 17111774109906810283
   Name: "Stone Block Small"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_02"
+  }
+}
+Assets {
+  Id: 16983260950034190065
+  Name: "Flower Wild Lily 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_002_ref"
   }
 }
 Assets {
@@ -152,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15818682822090430829
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
   Id: 15767187264673962515
   Name: "Cylinder"
   PlatformAssetType: 1
@@ -170,15 +251,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15562248729090688494
-  Name: "Bark Oak 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_oak_001_uv"
-  }
-}
-Assets {
   Id: 15363960962711120915
   Name: "Craftsman Floor 01 8m x 8m"
   PlatformAssetType: 1
@@ -194,6 +266,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
+  Id: 15262797928169916701
+  Name: "Text 03: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_004"
+  }
+}
+Assets {
+  Id: 15170515694484672370
+  Name: "Text 04: ?"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F7_Text_065"
   }
 }
 Assets {
@@ -233,12 +323,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14509956427293716804
+  Name: "Square Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_002"
+  }
+}
+Assets {
   Id: 14267747156564835807
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
+  }
+}
+Assets {
+  Id: 14231809728886464860
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
   }
 }
 Assets {
@@ -269,6 +377,42 @@ Assets {
   }
 }
 Assets {
+  Id: 13868889675930197036
+  Name: "Fantasy Castle Floor 02 - Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m_corner_001"
+  }
+}
+Assets {
+  Id: 13859041387438031393
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_002"
+  }
+}
+Assets {
+  Id: 13846976516959842924
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_001"
+  }
+}
+Assets {
+  Id: 13840443032411406179
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
@@ -284,6 +428,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 13359462895590667323
+  Name: "Text 03: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_018"
+  }
+}
+Assets {
+  Id: 13093690490455121336
+  Name: "Stone Block Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_03"
   }
 }
 Assets {
@@ -314,6 +476,24 @@ Assets {
   }
 }
 Assets {
+  Id: 12531876463208577149
+  Name: "Ring 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_002"
+  }
+}
+Assets {
+  Id: 12510064410993333055
+  Name: "Fantasy Pommel 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_004"
+  }
+}
+Assets {
   Id: 12457707986059827643
   Name: "Stone Railing Curved 6m"
   PlatformAssetType: 1
@@ -329,6 +509,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_004"
+  }
+}
+Assets {
+  Id: 12222736553310822477
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
   }
 }
 Assets {
@@ -386,12 +575,48 @@ Assets {
   }
 }
 Assets {
+  Id: 11637168513180515762
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "dirt_001"
+  }
+}
+Assets {
+  Id: 11292394934840136893
+  Name: "Castle Part - Grate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_grate_001_ref"
+  }
+}
+Assets {
+  Id: 11001967573859652020
+  Name: "Cone - Truncated Hollow Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_004"
+  }
+}
+Assets {
   Id: 10567573856586224296
   Name: "Bricks Cobblestone Floor Arches 001"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_cobblestone_floor_arch_001"
+  }
+}
+Assets {
+  Id: 10537092024320484192
+  Name: "Fantasy Shield 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_001"
   }
 }
 Assets {
@@ -404,6 +629,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10223008057381932438
+  Name: "Fantasy Castle Floor 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_001_4m"
+  }
+}
+Assets {
   Id: 10130379721391062371
   Name: "Bricks Rough Stone Floor 02"
   PlatformAssetType: 2
@@ -413,12 +647,30 @@ Assets {
   }
 }
 Assets {
+  Id: 10123498949289312814
+  Name: "Craftsman Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_peak"
+  }
+}
+Assets {
   Id: 10082944276110482816
   Name: "Fantasy Castle Bannister 01 - Curve Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_curve_lg"
+  }
+}
+Assets {
+  Id: 10050434966124937854
+  Name: "Stone Wall End 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-edge_6m_001"
   }
 }
 Assets {
@@ -440,12 +692,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9650630088804471075
+  Name: "Ring - Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_005"
+  }
+}
+Assets {
   Id: 9599526479376918549
   Name: "Rock 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 9372549160589526323
+  Name: "Flower Wild Lily 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
   }
 }
 Assets {
@@ -476,12 +746,30 @@ Assets {
   }
 }
 Assets {
+  Id: 8916846240532825810
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 8831951843390245255
   Name: "Door Large"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
+  }
+}
+Assets {
+  Id: 8508961624005586682
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
   }
 }
 Assets {
@@ -503,6 +791,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8221347909026897831
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
   Id: 8197503148267063602
   Name: "Fantasy Castle Wall 02"
   PlatformAssetType: 1
@@ -521,12 +818,39 @@ Assets {
   }
 }
 Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
+  Id: 7695830393755413980
+  Name: "Cube - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_003"
+  }
+}
+Assets {
   Id: 7676573587134565567
   Name: "Trim Large Brick 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_brick_6m_001"
+  }
+}
+Assets {
+  Id: 7602223482704169180
+  Name: "Large Round Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_round_6m"
   }
 }
 Assets {
@@ -539,12 +863,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7339363401412923253
+  Name: "Scifi Panel 1x4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_panel_1x4m_001"
+  }
+}
+Assets {
   Id: 7036641726562825986
   Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_ogive_6m_001"
+  }
+}
+Assets {
+  Id: 6933527543296526665
+  Name: "Text 03: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_013"
   }
 }
 Assets {
@@ -557,12 +899,57 @@ Assets {
   }
 }
 Assets {
+  Id: 6643656927040904919
+  Name: "Ring - Beveled Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
   Id: 6359753060552812266
   Name: "Bush 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 5649559338683583195
+  Name: "Fantasy Shield Strap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_strap_001"
+  }
+}
+Assets {
+  Id: 5605120965849612947
+  Name: "Fantasy Sword Blade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_001"
+  }
+}
+Assets {
+  Id: 5512335830567327151
+  Name: "Arch Fancy Peaked 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_2m_001"
+  }
+}
+Assets {
+  Id: 5480047238419307272
+  Name: "Flower Bellflower 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
   }
 }
 Assets {
@@ -602,6 +989,33 @@ Assets {
   }
 }
 Assets {
+  Id: 4998701643265443986
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 4954797629470596637
+  Name: "Cylinder - Rounded Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_003"
+  }
+}
+Assets {
+  Id: 4565526659431827540
+  Name: "Large Wood Board 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
   Id: 4397331359527074146
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
@@ -617,6 +1031,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 3982193030776093519
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 3533190463953898497
+  Name: "Fantasy Chest Treasure Pile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
   }
 }
 Assets {
@@ -644,6 +1076,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 3090596827184957478
+  Name: "Rope"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 2934774279078928789
+  Name: "Cylinder - Chamfered"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_chamfer"
   }
 }
 Assets {
@@ -683,12 +1133,48 @@ Assets {
   }
 }
 Assets {
+  Id: 2451360824092825724
+  Name: "Fantasy Castle Floor 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_002_4m"
+  }
+}
+Assets {
+  Id: 2352186918021370913
+  Name: "Wood Planks White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_white_001_uv"
+  }
+}
+Assets {
   Id: 2219860990307282618
   Name: "Fantasy Castle Wall 03 - Window 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_003_win_01"
+  }
+}
+Assets {
+  Id: 2128473108730646794
+  Name: "Text 03: W"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_022"
+  }
+}
+Assets {
+  Id: 1383772742094820961
+  Name: "Fantasy Pommel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_001"
   }
 }
 Assets {
@@ -701,12 +1187,57 @@ Assets {
   }
 }
 Assets {
+  Id: 1185012677918863304
+  Name: "Ring - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_001"
+  }
+}
+Assets {
+  Id: 1130606603861938125
+  Name: "Cylinder - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
+  Id: 1100837394993556177
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
+  Id: 990344647068844639
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
   Id: 897429753597555270
   Name: "Fantasy Castle Bannister 01 - Post"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_post"
+  }
+}
+Assets {
+  Id: 820217430221713418
+  Name: "Fantasy Axe Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_axe_001"
   }
 }
 Assets {

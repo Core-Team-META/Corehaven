@@ -40,6 +40,20 @@ Assets {
           Id: 688190043350435462
         }
       }
+      Overrides {
+        Name: "material1_scale"
+        Float: 2
+      }
+      Overrides {
+        Name: "cmp:Material2"
+        AssetReference {
+          Id: 7581191273318931608
+        }
+      }
+      Overrides {
+        Name: "material2_scale"
+        Float: 1
+      }
     }
     Assets {
       Id: 814871376188081889
@@ -93,6 +107,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_brick_cobblestone_floor_001"
+      }
+    }
+    Assets {
+      Id: 7581191273318931608
+      Name: "Forest Floor 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "forest-floor_001"
       }
     }
   }
