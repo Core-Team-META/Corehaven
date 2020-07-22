@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18033297229984528543
-  Name: "Wood Planks Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_planks_dark_001_uv"
-  }
-}
-Assets {
   Id: 17952268790008141582
   Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
@@ -32,6 +23,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-arch_6m_002"
+  }
+}
+Assets {
+  Id: 17429523740942577057
+  Name: "Pipe - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_001"
+  }
+}
+Assets {
+  Id: 17393434355915427469
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
   }
 }
 Assets {
@@ -80,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15281629729725634170
+  Name: "Glass 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_refrac_001"
+  }
+}
+Assets {
   Id: 15036333363326735768
   Name: "Fantasy Castle Stairs Spiral Wall 01 - Large"
   PlatformAssetType: 1
@@ -107,6 +125,24 @@ Assets {
   }
 }
 Assets {
+  Id: 14509956427293716804
+  Name: "Square Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_bottom_002"
+  }
+}
+Assets {
+  Id: 14231809728886464860
+  Name: "Wood Raw White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
   Id: 14200381599681868577
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
@@ -122,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_half_002"
+  }
+}
+Assets {
+  Id: 12928413110273274189
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm_corner"
   }
 }
 Assets {
@@ -278,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7602223482704169180
+  Name: "Large Round Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_round_6m"
+  }
+}
+Assets {
   Id: 7513385921730942068
   Name: "Fantasy Castle Wall 02 Half - Window 01"
   PlatformAssetType: 1
@@ -341,12 +395,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5318852982404395572
-  Name: "Bark Redwood 01"
-  PlatformAssetType: 2
+  Id: 4565526659431827540
+  Name: "Large Wood Board 8m"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bark_redwood_001_uv"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_board_6m"
   }
 }
 Assets {
@@ -413,11 +467,47 @@ Assets {
   }
 }
 Assets {
+  Id: 2352186918021370913
+  Name: "Wood Planks White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_white_001_uv"
+  }
+}
+Assets {
   Id: 1367565729547875542
   Name: "Fantasy Castle Wall 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
+  }
+}
+Assets {
+  Id: 1090881595790768395
+  Name: "Wood Planks"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
+  Id: 957550643538039269
+  Name: "Stone Arch (doorway) 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_doorway_001"
+  }
+}
+Assets {
+  Id: 780506516886625447
+  Name: "Small False Window"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_false_window_001"
   }
 }

@@ -19,40 +19,25 @@ Objects {
   }
   ParentId: 5945286862299382231
   ChildIds: 15915565881408944169
-  ChildIds: 6324682984251945775
   ChildIds: 13576368934963734572
   ChildIds: 7114053160175440390
-  ChildIds: 16412139491363285123
   ChildIds: 13087117950114632136
   ChildIds: 1080617356555056164
-  ChildIds: 171094351456963889
-  ChildIds: 9944227147633346366
   ChildIds: 18394859518498938362
-  ChildIds: 10441782901259852952
-  ChildIds: 8242002337103191618
-  ChildIds: 18402597526170396823
-  ChildIds: 14774718915293402708
   ChildIds: 3115867584446689769
   ChildIds: 6828321721466722491
-  ChildIds: 4192012647037032462
   ChildIds: 2203407831055410613
   ChildIds: 3263046408872095849
-  ChildIds: 8522993559793849171
   ChildIds: 15629802408795541212
-  ChildIds: 6571952215562199085
   ChildIds: 8476732421889937683
-  ChildIds: 10179283526844941616
-  ChildIds: 16578547860651223056
-  ChildIds: 8395865675815968249
-  ChildIds: 12159422450266775516
   ChildIds: 14952906309704994111
   ChildIds: 5032651360225843445
   ChildIds: 1987797541773473640
-  ChildIds: 5177452703740607312
-  ChildIds: 15906257910332522152
-  ChildIds: 17928737518669257118
   ChildIds: 18217874698091148271
   ChildIds: 9691929359040608233
+  ChildIds: 5630196374596919398
+  ChildIds: 7308283659404608434
+  ChildIds: 11579385033846202701
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -61,6 +46,128 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 11579385033846202701
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: 218.861557
+      Y: -2.67000866
+      Z: 519.043152
+    }
+    Rotation {
+      Yaw: -89.8898315
+      Roll: 179.999634
+    }
+    Scale {
+      X: 0.431912214
+      Y: 0.22384356
+      Z: 0.198218331
+    }
+  }
+  ParentId: 15604716605038245520
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7036641726562825986
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7308283659404608434
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: -101.147179
+      Y: -6.44268656
+      Z: 519.042908
+    }
+    Rotation {
+      Yaw: -94.1210632
+      Roll: 179.999954
+    }
+    Scale {
+      X: 0.431911379
+      Y: 0.223843858
+      Z: 0.205210358
+    }
+  }
+  ParentId: 15604716605038245520
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7036641726562825986
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5630196374596919398
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: 54.3083878
+      Y: -0.944273233
+      Z: 432.067047
+    }
+    Rotation {
+      Yaw: 89.8863
+    }
+    Scale {
+      X: 0.207629323
+      Y: 0.207629323
+      Z: 0.207629323
+    }
+  }
+  ParentId: 15604716605038245520
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7036641726562825986
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -144,141 +251,21 @@ Objects {
   }
 }
 Objects {
-  Id: 17928737518669257118
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: 216.237976
-      Y: -11.8480368
-      Z: 249.051926
-    }
-    Rotation {
-      Yaw: 89.8866959
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15906257910332522152
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: 75.2051163
-      Y: -0.985580802
-      Z: 332.80127
-    }
-    Rotation {
-      Yaw: 89.8863
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.279332906
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5177452703740607312
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: -95.6273117
-      Y: -10.8583984
-      Z: 249.051926
-    }
-    Rotation {
-      Yaw: 86.1482849
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 1987797541773473640
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
-      X: 217.491135
-      Y: -7.14883661
-      Z: 434.217865
+      X: 214.830536
+      Y: -7.14364
+      Z: 448.766327
     }
     Rotation {
       Yaw: 89.8866959
     }
     Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
+      X: 0.208247125
+      Y: 0.208247125
+      Z: 0.208247125
     }
   }
   ParentId: 15604716605038245520
@@ -348,17 +335,17 @@ Objects {
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
-      X: -101.147346
-      Y: -6.44255447
+      X: -108.904114
+      Y: -5.92036152
       Z: 434.217865
     }
     Rotation {
       Yaw: 86.1482849
     }
     Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
+      X: 0.200123072
+      Y: 0.200123072
+      Z: 0.200123072
     }
   }
   ParentId: 15604716605038245520
@@ -371,170 +358,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12159422450266775516
-  Name: "Trim Bottom 8m"
-  Transform {
-    Location {
-      X: 65.5709
-      Y: 3.16849065
-      Z: -11.1657419
-    }
-    Rotation {
-      Yaw: -0.0661315918
-      Roll: 1.4556771e-05
-    }
-    Scale {
-      X: 0.194176719
-      Y: 0.558291614
-      Z: 0.558287
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4052692736260374431
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8395865675815968249
-  Name: "Trim Bottom 8m"
-  Transform {
-    Location {
-      X: -80.8452225
-      Y: 3.3375535
-      Z: -11.1657419
-    }
-    Rotation {
-      Yaw: 179.933792
-      Roll: 3.25216395e-12
-    }
-    Scale {
-      X: 0.194174498
-      Y: 0.673780262
-      Z: 0.558287
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4052692736260374431
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16578547860651223056
-  Name: "Trim Bottom 8m"
-  Transform {
-    Location {
-      X: 220.910599
-      Y: 2.98900509
-      Z: -11.1658516
-    }
-    Rotation {
-      Yaw: 179.933792
-      Roll: 3.25216416e-12
-    }
-    Scale {
-      X: 0.194174498
-      Y: 0.673780203
-      Z: 0.558287
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4052692736260374431
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10179283526844941616
-  Name: "Trim Bottom 8m"
-  Transform {
-    Location {
-      X: -236.199265
-      Y: 3.51679873
-      Z: -11.1658516
-    }
-    Rotation {
-      Yaw: -0.0661315918
-      Roll: 1.45567792e-05
-    }
-    Scale {
-      X: 0.194176704
-      Y: 0.558291554
-      Z: 0.558287
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4052692736260374431
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -564,46 +387,6 @@ Objects {
       X: 0.906071126
       Y: 0.279322535
       Z: 0.192028135
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6571952215562199085
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: -101.147377
-      Y: -6.44251823
-      Z: 292.14389
-    }
-    Rotation {
-      Yaw: 86.1483
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
     }
   }
   ParentId: 15604716605038245520
@@ -670,46 +453,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8522993559793849171
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: 81.9441681
-      Y: -11.8385868
-      Z: 83.0978165
-    }
-    Rotation {
-      Yaw: -90.1132202
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.278113842
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 3263046408872095849
   Name: "Wall End Fancy 6m"
   Transform {
@@ -760,46 +503,6 @@ Objects {
     }
     Rotation {
       Yaw: 89.8866959
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4192012647037032462
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: 83.1973
-      Y: -7.13954687
-      Z: 300.342377
-    }
-    Rotation {
-      Yaw: -90.1132507
     }
     Scale {
       X: 0.223846257
@@ -910,166 +613,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14774718915293402708
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: -92.3768845
-      Y: -0.972640753
-      Z: 79.0494156
-    }
-    Rotation {
-      Yaw: -90.1136169
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.152086824
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18402597526170396823
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: 75.2736893
-      Y: -1.30575931
-      Z: 79.0494156
-    }
-    Rotation {
-      Yaw: 89.8863
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.152086824
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8242002337103191618
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: 75.2736206
-      Y: -1.30521417
-      Z: 165.982178
-    }
-    Rotation {
-      Yaw: 89.8863
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.279332906
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10441782901259852952
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: -92.3769531
-      Y: -0.972640753
-      Z: 165.982178
-    }
-    Rotation {
-      Yaw: -90.1136475
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.279332906
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 18394859518498938362
   Name: "Arch Fancy Peaked 6m"
   Transform {
@@ -1085,86 +628,6 @@ Objects {
       X: 0.906071246
       Y: 0.279322565
       Z: 0.279332906
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9944227147633346366
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: 217.490814
-      Y: -7.14853
-      Z: 292.14389
-    }
-    Rotation {
-      Yaw: 89.8866882
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7036641726562825986
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 171094351456963889
-  Name: "Arch Fancy Peaked 6m"
-  Transform {
-    Location {
-      X: 75.2051163
-      Y: -0.985580802
-      Z: 370.494354
-    }
-    Rotation {
-      Yaw: 89.8863
-    }
-    Scale {
-      X: 0.279332906
-      Y: 0.279332906
-      Z: 0.331325024
     }
   }
   ParentId: 15604716605038245520
@@ -1271,46 +734,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16412139491363285123
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: -95.5892944
-      Y: -11.1179981
-      Z: 83.0978165
-    }
-    Rotation {
-      Yaw: 86.1483
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.286238909
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 7114053160175440390
   Name: "Wall End Fancy 6m"
   Transform {
@@ -1361,46 +784,6 @@ Objects {
     }
     Rotation {
       Yaw: -93.8516541
-    }
-    Scale {
-      X: 0.223846257
-      Y: 0.223846257
-      Z: 0.223846257
-    }
-  }
-  ParentId: 15604716605038245520
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6324682984251945775
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: -101.109512
-      Y: -6.70147657
-      Z: 300.307465
-    }
-    Rotation {
-      Yaw: 86.1483
     }
     Scale {
       X: 0.223846257

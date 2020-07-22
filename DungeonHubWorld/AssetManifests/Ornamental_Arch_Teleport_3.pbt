@@ -8,12 +8,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14844672563279110931
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
+  }
+}
+Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {

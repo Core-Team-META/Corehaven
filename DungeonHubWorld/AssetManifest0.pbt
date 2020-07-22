@@ -1,4 +1,13 @@
 Assets {
+  Id: 18297183251480267958
+  Name: "Simple Exposure Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_simple_exposure"
+  }
+}
+Assets {
   Id: 18039765282018436536
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -44,12 +53,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16532662947784276478
-  Name: "Generic Water"
-  PlatformAssetType: 2
+  Id: 16414328049407947312
+  Name: "Tree Redwood Big"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_001"
   }
 }
 Assets {
@@ -62,12 +71,57 @@ Assets {
   }
 }
 Assets {
+  Id: 16014473030013161564
+  Name: "Stone Block Small Broken"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_broken_02"
+  }
+}
+Assets {
+  Id: 15814039200137670462
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
+  }
+}
+Assets {
+  Id: 15643444583939770376
+  Name: "Advanced Bloom Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_bloom_advanced"
+  }
+}
+Assets {
+  Id: 15494749898036415293
+  Name: "Cliff 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_003"
+  }
+}
+Assets {
   Id: 15456405850729702642
   Name: "Rock Pile 002"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
+  Id: 15347255297044793627
+  Name: "Stone Block Big Broken"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_broken_04"
   }
 }
 Assets {
@@ -134,6 +188,24 @@ Assets {
   }
 }
 Assets {
+  Id: 11877895785402026262
+  Name: "Ambient Occlusion Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_ao"
+  }
+}
+Assets {
+  Id: 11608996133378055453
+  Name: "Ivy 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_004"
+  }
+}
+Assets {
   Id: 11515840070784317904
   Name: "Skylight"
   PlatformAssetType: 6
@@ -170,6 +242,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9599526479376918549
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
   Id: 9219643093315686982
   Name: "Curb 4m"
   PlatformAssetType: 1
@@ -194,6 +275,33 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
+  }
+}
+Assets {
+  Id: 8707323847070137600
+  Name: "Advanced Color Grading Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_advanced_color_grading"
+  }
+}
+Assets {
+  Id: 7941416381566439566
+  Name: "Fern 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_004"
+  }
+}
+Assets {
+  Id: 7934212786246519785
+  Name: "Fern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_001"
   }
 }
 Assets {
@@ -233,12 +341,30 @@ Assets {
   }
 }
 Assets {
+  Id: 4494352698912259526
+  Name: "Ivy 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_001"
+  }
+}
+Assets {
   Id: 4397331359527074146
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_3m_001"
+  }
+}
+Assets {
+  Id: 3392097319348977668
+  Name: "Stone Block Standard Broken"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_broken_01"
   }
 }
 Assets {

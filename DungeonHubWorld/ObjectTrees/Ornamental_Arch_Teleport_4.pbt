@@ -1,40 +1,31 @@
 Name: "Ornamental_Arch_Teleport_4"
-RootId: 13359471620328528386
+RootId: 12000337101272915128
 Objects {
-  Id: 1110316448986537844
-  Name: "Lens - Half"
+  Id: 16702511558976345002
+  Name: "wall"
   Transform {
     Location {
-      X: -88.4657745
-      Y: 117.025139
-      Z: 462.977814
+      X: 73.0947723
+      Y: 115.756569
+      Z: 491.872742
     }
     Rotation {
-      Pitch: 90
-      Yaw: -14.0362635
-      Roll: -103.964508
+      Pitch: -4.09811328e-05
+      Yaw: 87.8820114
+      Roll: 171.466721
     }
     Scale {
-      X: 0.503879
-      Y: 0.348131776
-      Z: 0.242140457
+      X: 0.14921926
+      Y: 1.36855435
+      Z: 0.811678
     }
   }
-  ParentId: 13359471620328528386
+  ParentId: 12000337101272915128
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14429515704994911608
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.00999999
-        G: 0.763973415
-        B: 1
-        A: 1
+        Id: 14844672563279110931
       }
     }
   }
@@ -46,7 +37,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 316859462149096151
+      Id: 12095835209017042614
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -60,26 +51,476 @@ Objects {
   }
 }
 Objects {
-  Id: 13602431173881860685
+  Id: 12315771364007055461
+  Name: "wall"
+  Transform {
+    Location {
+      X: 72.2581711
+      Y: 115.787537
+      Z: 266.971924
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 87.8811111
+      Roll: -179.999969
+    }
+    Scale {
+      X: 0.149219394
+      Y: 1.3685534
+      Z: 4.26016474
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14997020519601765166
+  Name: "wall"
+  Transform {
+    Location {
+      X: 92.0630341
+      Y: 115.055382
+      Z: 527.585938
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 87.8816528
+      Roll: 139.540237
+    }
+    Scale {
+      X: 0.14921926
+      Y: 1.36855435
+      Z: 0.811678
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4439213038524725471
+  Name: "wall"
+  Transform {
+    Location {
+      X: -253.551697
+      Y: 116.020119
+      Z: 493.526031
+    }
+    Rotation {
+      Pitch: 5.46415104e-05
+      Yaw: 89.2074051
+      Roll: 91.1292496
+    }
+    Scale {
+      X: 0.149222821
+      Y: 0.842173
+      Z: 1.27972233
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7934109921020236600
+  Name: "wall"
+  Transform {
+    Location {
+      X: -266.571686
+      Y: 116.202225
+      Z: 527.784607
+    }
+    Rotation {
+      Pitch: 1.36603776e-05
+      Yaw: 89.2071457
+      Roll: 130.737579
+    }
+    Scale {
+      X: 0.149222821
+      Y: 0.842173
+      Z: 1.27972233
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 371972617433397249
+  Name: "wall"
+  Transform {
+    Location {
+      X: -251.648773
+      Y: 116.000694
+      Z: 266.971863
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: 89.2060852
+      Roll: -179.999969
+    }
+    Scale {
+      X: 0.149219394
+      Y: 1.3685534
+      Z: 4.26016474
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4425223751467894949
+  Name: "upper_wall"
+  Transform {
+    Location {
+      X: 194.071594
+      Y: 130.027969
+      Z: 849.961548
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 89.3249512
+      Roll: -179.999969
+    }
+    Scale {
+      X: 0.149215683
+      Y: 1.19848812
+      Z: 5.43368292
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15020121065715007218
+  Name: "upper_wall"
+  Transform {
+    Location {
+      X: -377.102722
+      Y: 136.753555
+      Z: 849.961548
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 89.3249741
+      Roll: -179.999969
+    }
+    Scale {
+      X: 0.149215683
+      Y: 1.19848812
+      Z: 5.43368292
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2479255902028962759
+  Name: "upper_wall"
+  Transform {
+    Location {
+      X: 95.3502808
+      Y: 131.189499
+      Z: 992.777
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 89.325737
+      Roll: 45.041687
+    }
+    Scale {
+      X: 0.149216965
+      Y: 2.30095434
+      Z: 3.29061937
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1061561699131465710
+  Name: "upper_wall"
+  Transform {
+    Location {
+      X: -269.564789
+      Y: 135.486084
+      Z: 995.569824
+    }
+    Rotation {
+      Pitch: -4.09811328e-05
+      Yaw: 89.3254242
+      Roll: 132.733063
+    }
+    Scale {
+      X: 0.149216905
+      Y: 2.30095434
+      Z: 3.29061866
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14844672563279110931
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1518448749991567302
   Name: "Lens - Half"
   Transform {
     Location {
-      X: -90.1630249
-      Y: 113.98925
-      Z: 149.761322
+      X: -90.1361313
+      Y: 105.056549
+      Z: 149.761597
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 90.1757889
-      Roll: 2.46943655e-05
+      Yaw: 90.1758347
+      Roll: 2.46943455e-05
     }
     Scale {
-      X: 0.28886193
-      Y: 1.68237174
-      Z: 1.52403152
+      X: 0.1015587
+      Y: 1.68234885
+      Z: 1.52403188
     }
   }
-  ParentId: 13359471620328528386
+  ParentId: 12000337101272915128
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -119,7 +560,66 @@ Objects {
   }
 }
 Objects {
-  Id: 9570199558331482243
+  Id: 6527004298972946930
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      X: -88.4657745
+      Y: 117.025139
+      Z: 462.977814
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -14.0362635
+      Roll: -103.964508
+    }
+    Scale {
+      X: 0.503879
+      Y: 0.348131776
+      Z: 0.242140457
+    }
+  }
+  ParentId: 12000337101272915128
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14429515704994911608
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.00999999
+        G: 0.763973415
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 316859462149096151
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11702864562089290012
   Name: "Ornament01"
   Transform {
     Location {
@@ -136,13 +636,13 @@ Objects {
       Z: 0.41462943
     }
   }
-  ParentId: 13359471620328528386
-  ChildIds: 9897043877838015723
-  ChildIds: 8234867967771670507
-  ChildIds: 1237280340986818844
-  ChildIds: 499698921965699054
-  ChildIds: 16423438110631253410
-  ChildIds: 4208895337778112726
+  ParentId: 12000337101272915128
+  ChildIds: 12804029702790161820
+  ChildIds: 13535632194307962831
+  ChildIds: 15946204832505409689
+  ChildIds: 385099296033807229
+  ChildIds: 7789043768470999396
+  ChildIds: 2784162914432525858
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -154,7 +654,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4208895337778112726
+  Id: 2784162914432525858
   Name: "Text 05: &"
   Transform {
     Location {
@@ -173,7 +673,7 @@ Objects {
       Z: 1.26631153
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -216,7 +716,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16423438110631253410
+  Id: 7789043768470999396
   Name: "Text 05: ?"
   Transform {
     Location {
@@ -235,7 +735,7 @@ Objects {
       Z: 1.64859378
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -278,7 +778,7 @@ Objects {
   }
 }
 Objects {
-  Id: 499698921965699054
+  Id: 385099296033807229
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -297,7 +797,7 @@ Objects {
       Z: 2.12707734
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -340,7 +840,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1237280340986818844
+  Id: 15946204832505409689
   Name: "Text 05: ?"
   Transform {
     Location {
@@ -359,7 +859,7 @@ Objects {
       Z: 1.64859378
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -402,7 +902,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8234867967771670507
+  Id: 13535632194307962831
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -421,7 +921,7 @@ Objects {
       Z: 2.12707734
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -464,7 +964,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9897043877838015723
+  Id: 12804029702790161820
   Name: "Text 05: &"
   Transform {
     Location {
@@ -483,7 +983,7 @@ Objects {
       Z: 1.26631153
     }
   }
-  ParentId: 9570199558331482243
+  ParentId: 11702864562089290012
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -526,7 +1026,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14531844234547276441
+  Id: 2174871183208847502
   Name: "Small_arches"
   Transform {
     Location {
@@ -542,52 +1042,50 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13359471620328528386
-  ChildIds: 13401720378628941075
-  ChildIds: 9750972714439031616
-  ChildIds: 33622391161383589
-  ChildIds: 8942041331005874994
-  ChildIds: 13008059685998941549
-  ChildIds: 14293637328926554554
-  ChildIds: 16223673312835229215
-  ChildIds: 5403804869950171470
-  ChildIds: 1256262494173153218
-  ChildIds: 1774081341207011428
-  ChildIds: 1629410887622734
-  ChildIds: 7742101766947542432
-  ChildIds: 7335001830307105565
-  ChildIds: 5325181966654135458
-  ChildIds: 10783763354699553337
-  ChildIds: 4310386532487294232
-  ChildIds: 10341905480405970276
-  ChildIds: 5744750374481707019
-  ChildIds: 17024805231468427654
-  ChildIds: 8857186899695495462
-  ChildIds: 5534891391383525184
-  ChildIds: 1255866219645097093
-  ChildIds: 17290356301087762919
-  ChildIds: 8355974319119802427
-  ChildIds: 17537536183770038602
-  ChildIds: 8677267945153156427
-  ChildIds: 18315458844192090707
-  ChildIds: 4523029616399910696
-  ChildIds: 1363457419513993860
-  ChildIds: 5294998678636367000
-  ChildIds: 6245210684621673541
-  ChildIds: 2431720031723077901
-  ChildIds: 244260046270716453
-  ChildIds: 8638939723047959579
-  ChildIds: 5673635107729386975
-  ChildIds: 13677993754400572485
-  ChildIds: 16412247681887972572
-  ChildIds: 520569155058016940
-  ChildIds: 16884034850394918739
-  ChildIds: 2718625003194099144
-  ChildIds: 3447957861174995785
-  ChildIds: 17810387834688454788
-  ChildIds: 9626386920963226848
-  ChildIds: 11341154321391431977
-  ChildIds: 17002419275640532671
+  ParentId: 12000337101272915128
+  ChildIds: 4021085071322399692
+  ChildIds: 15892576092525071752
+  ChildIds: 18031307652044972536
+  ChildIds: 11001981499056327237
+  ChildIds: 17352278297006940543
+  ChildIds: 13872306404763043638
+  ChildIds: 6240917094045557262
+  ChildIds: 17804178856068527786
+  ChildIds: 8451815592985637634
+  ChildIds: 16443482725931656236
+  ChildIds: 13964350628688148814
+  ChildIds: 10823587746048676788
+  ChildIds: 8243417073113152437
+  ChildIds: 17622748702132977936
+  ChildIds: 17882724878110874712
+  ChildIds: 10523961160285210623
+  ChildIds: 17011853122669166938
+  ChildIds: 15060671674345810221
+  ChildIds: 8713447733588252877
+  ChildIds: 3833489607309408702
+  ChildIds: 14566293710678335485
+  ChildIds: 12205992676257724186
+  ChildIds: 11756701066899798346
+  ChildIds: 5762732554192294992
+  ChildIds: 14356954598881673301
+  ChildIds: 9717697476366450339
+  ChildIds: 3906418891151562436
+  ChildIds: 13074560405023405145
+  ChildIds: 10012618077165445321
+  ChildIds: 17111125208486611472
+  ChildIds: 1241270542525544586
+  ChildIds: 16479297028102082116
+  ChildIds: 15519700850651137577
+  ChildIds: 8596599103355356693
+  ChildIds: 14594786487583861149
+  ChildIds: 9409721483957011368
+  ChildIds: 7420962975458809465
+  ChildIds: 15431487019362006161
+  ChildIds: 2283094019268899070
+  ChildIds: 5005138730319014648
+  ChildIds: 16169093246892879445
+  ChildIds: 17240174845903117501
+  ChildIds: 2960730777456833840
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -599,13 +1097,13 @@ Objects {
   }
 }
 Objects {
-  Id: 17002419275640532671
+  Id: 2960730777456833840
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
-      X: 90.1366577
-      Y: -1.33446765
-      Z: 437.694611
+      X: 90.0927124
+      Y: -1.3343569
+      Z: 432.02832
     }
     Rotation {
       Pitch: 6.83018879e-05
@@ -618,7 +1116,7 @@ Objects {
       Z: 0.336708784
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -641,18 +1139,18 @@ Objects {
   }
 }
 Objects {
-  Id: 11341154321391431977
+  Id: 17240174845903117501
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
-      X: 81.7522049
-      Y: -1.31744707
-      Z: 429.809082
+      X: 81.7096863
+      Y: -1.3174727
+      Z: 424.142517
     }
     Rotation {
       Pitch: -3.05175781e-05
-      Yaw: 89.886261
-      Roll: 27.6056499
+      Yaw: 89.8862534
+      Roll: 27.6056347
     }
     Scale {
       X: 0.0941257
@@ -660,7 +1158,7 @@ Objects {
       Z: 0.332174957
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -683,18 +1181,18 @@ Objects {
   }
 }
 Objects {
-  Id: 9626386920963226848
+  Id: 16169093246892879445
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
-      X: -106.047325
-      Y: -0.945159197
-      Z: 432.071411
+      X: -106.090439
+      Y: -0.944844
+      Z: 426.405121
     }
     Rotation {
       Pitch: 1.36603776e-05
       Yaw: -90.1135864
-      Roll: 30.3242626
+      Roll: 30.3242683
     }
     Scale {
       X: 0.0941257
@@ -702,7 +1200,7 @@ Objects {
       Z: 0.332174957
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -725,89 +1223,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17810387834688454788
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: 152.67717
-      Y: 3.83074212
-      Z: 558.483643
-    }
-    Rotation {
-      Yaw: -0.112976074
-      Roll: -179.999939
-    }
-    Scale {
-      X: 0.186041698
-      Y: 0.100009352
-      Z: 0.848105669
-    }
-  }
-  ParentId: 14531844234547276441
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3447957861174995785
-  Name: "Wall End Fancy 6m"
-  Transform {
-    Location {
-      X: -169.41864
-      Y: 4.46589613
-      Z: 558.483643
-    }
-    Rotation {
-      Yaw: -0.113006592
-      Roll: -179.999939
-    }
-    Scale {
-      X: 0.186041698
-      Y: 0.100009352
-      Z: 0.848105609
-    }
-  }
-  ParentId: 14531844234547276441
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15310209409301279983
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2718625003194099144
+  Id: 5005138730319014648
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -826,7 +1242,7 @@ Objects {
       Z: 0.290738076
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -849,7 +1265,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16884034850394918739
+  Id: 2283094019268899070
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -868,7 +1284,7 @@ Objects {
       Z: 0.274890929
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -891,7 +1307,7 @@ Objects {
   }
 }
 Objects {
-  Id: 520569155058016940
+  Id: 15431487019362006161
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -909,7 +1325,7 @@ Objects {
       Z: 0.178456992
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -932,7 +1348,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16412247681887972572
+  Id: 7420962975458809465
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -951,7 +1367,7 @@ Objects {
       Z: 0.129532412
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -974,7 +1390,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13677993754400572485
+  Id: 9409721483957011368
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -993,7 +1409,7 @@ Objects {
       Z: 0.129532367
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1016,7 +1432,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5673635107729386975
+  Id: 14594786487583861149
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1033,7 +1449,7 @@ Objects {
       Z: 0.178456992
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1056,7 +1472,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8638939723047959579
+  Id: 8596599103355356693
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1074,7 +1490,7 @@ Objects {
       Z: 0.285612166
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1097,7 +1513,7 @@ Objects {
   }
 }
 Objects {
-  Id: 244260046270716453
+  Id: 15519700850651137577
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1114,7 +1530,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1137,7 +1553,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2431720031723077901
+  Id: 16479297028102082116
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1154,7 +1570,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1177,7 +1593,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6245210684621673541
+  Id: 1241270542525544586
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1194,7 +1610,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1217,7 +1633,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5294998678636367000
+  Id: 17111125208486611472
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1236,7 +1652,7 @@ Objects {
       Z: 0.276277274
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1259,25 +1675,25 @@ Objects {
   }
 }
 Objects {
-  Id: 1363457419513993860
+  Id: 10012618077165445321
   Name: "Trim Bottom 8m"
   Transform {
     Location {
-      X: 65.5709
-      Y: 3.16849065
+      X: 66.6002655
+      Y: 16.150032
       Z: -11.1657419
     }
     Rotation {
-      Yaw: -0.0661315918
-      Roll: 1.4556771e-05
+      Yaw: -4.78271484
+      Roll: 1.45143795e-05
     }
     Scale {
-      X: 0.194176719
-      Y: 0.558291614
+      X: 0.194176763
+      Y: 0.558291674
       Z: 0.558287
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1300,25 +1716,25 @@ Objects {
   }
 }
 Objects {
-  Id: 4523029616399910696
+  Id: 13074560405023405145
   Name: "Trim Bottom 8m"
   Transform {
     Location {
-      X: -80.8452225
-      Y: 3.3375535
+      X: -94.4870224
+      Y: 3.81937814
       Z: -11.1657419
     }
     Rotation {
-      Yaw: 179.933792
-      Roll: 3.25216395e-12
+      Yaw: -179.21524
+      Roll: 3.94927753e-08
     }
     Scale {
-      X: 0.194174498
-      Y: 0.673780262
+      X: 0.229015812
+      Y: 0.673788488
       Z: 0.558287
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1341,25 +1757,26 @@ Objects {
   }
 }
 Objects {
-  Id: 18315458844192090707
+  Id: 3906418891151562436
   Name: "Trim Bottom 8m"
   Transform {
     Location {
-      X: 220.910599
-      Y: 2.98900509
-      Z: -11.1658516
+      X: 241.42
+      Y: 1.52265608
+      Z: -11.1657419
     }
     Rotation {
-      Yaw: 179.933792
-      Roll: 3.25216416e-12
+      Pitch: 6.83018879e-06
+      Yaw: 178.672272
+      Roll: 4.53265869e-07
     }
     Scale {
-      X: 0.194174498
-      Y: 0.673780203
+      X: 0.204057977
+      Y: 0.673772812
       Z: 0.558287
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1382,25 +1799,25 @@ Objects {
   }
 }
 Objects {
-  Id: 8677267945153156427
+  Id: 9717697476366450339
   Name: "Trim Bottom 8m"
   Transform {
     Location {
-      X: -236.199265
-      Y: 3.51679873
-      Z: -11.1658516
+      X: -236.199326
+      Y: 3.51663947
+      Z: -11.1657419
     }
     Rotation {
-      Yaw: -0.0661315918
-      Roll: 1.45567792e-05
+      Yaw: 4.17575788
+      Roll: 1.45168833e-05
     }
     Scale {
-      X: 0.194176704
-      Y: 0.558291554
+      X: 0.194176763
+      Y: 0.558291674
       Z: 0.558287
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1423,7 +1840,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17537536183770038602
+  Id: 14356954598881673301
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1440,7 +1857,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1463,13 +1880,13 @@ Objects {
   }
 }
 Objects {
-  Id: 8355974319119802427
+  Id: 5762732554192294992
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
-      X: 83.1973801
-      Y: -7.13942337
-      Z: 83.0978165
+      X: 83.1974869
+      Y: -7.13938475
+      Z: -6.27091599
     }
     Rotation {
       Yaw: -90.1132202
@@ -1477,10 +1894,10 @@ Objects {
     Scale {
       X: 0.223846257
       Y: 0.223846257
-      Z: 0.223846257
+      Z: 0.373327076
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1503,7 +1920,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17290356301087762919
+  Id: 11756701066899798346
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1520,7 +1937,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1543,7 +1960,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1255866219645097093
+  Id: 12205992676257724186
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1560,7 +1977,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1583,7 +2000,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5534891391383525184
+  Id: 14566293710678335485
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1600,7 +2017,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1623,7 +2040,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8857186899695495462
+  Id: 3833489607309408702
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1640,7 +2057,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1663,7 +2080,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17024805231468427654
+  Id: 8713447733588252877
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1680,7 +2097,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1703,7 +2120,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5744750374481707019
+  Id: 15060671674345810221
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -1720,7 +2137,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1743,7 +2160,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10341905480405970276
+  Id: 17011853122669166938
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1762,7 +2179,7 @@ Objects {
       Z: 0.264934093
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1785,7 +2202,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4310386532487294232
+  Id: 10523961160285210623
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1802,7 +2219,7 @@ Objects {
       Z: 0.152086824
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1825,7 +2242,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10783763354699553337
+  Id: 17882724878110874712
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1842,7 +2259,7 @@ Objects {
       Z: 0.152086824
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1865,7 +2282,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5325181966654135458
+  Id: 17622748702132977936
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1882,7 +2299,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1905,7 +2322,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7335001830307105565
+  Id: 8243417073113152437
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1922,7 +2339,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1945,7 +2362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7742101766947542432
+  Id: 10823587746048676788
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -1962,7 +2379,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1985,7 +2402,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1629410887622734
+  Id: 13964350628688148814
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2002,7 +2419,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2025,7 +2442,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1774081341207011428
+  Id: 16443482725931656236
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -2042,7 +2459,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2065,7 +2482,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1256262494173153218
+  Id: 8451815592985637634
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -2082,7 +2499,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2105,7 +2522,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5403804869950171470
+  Id: 17804178856068527786
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -2122,7 +2539,7 @@ Objects {
       Z: 0.279332906
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2145,7 +2562,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16223673312835229215
+  Id: 6240917094045557262
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2162,7 +2579,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2185,13 +2602,13 @@ Objects {
   }
 }
 Objects {
-  Id: 14293637328926554554
+  Id: 13872306404763043638
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
-      X: -101.109253
-      Y: -6.70217085
-      Z: 83.0978165
+      X: -101.109398
+      Y: -6.70209455
+      Z: 27.158432
     }
     Rotation {
       Yaw: 86.1483
@@ -2199,10 +2616,10 @@ Objects {
     Scale {
       X: 0.223846257
       Y: 0.223846257
-      Z: 0.223846257
+      Z: 0.315400243
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2225,7 +2642,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13008059685998941549
+  Id: 17352278297006940543
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2242,7 +2659,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2265,7 +2682,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8942041331005874994
+  Id: 11001981499056327237
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2282,7 +2699,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2305,7 +2722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 33622391161383589
+  Id: 18031307652044972536
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2322,7 +2739,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2345,7 +2762,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9750972714439031616
+  Id: 15892576092525071752
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2362,7 +2779,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2385,7 +2802,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13401720378628941075
+  Id: 4021085071322399692
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -2402,7 +2819,7 @@ Objects {
       Z: 0.223846257
     }
   }
-  ParentId: 14531844234547276441
+  ParentId: 2174871183208847502
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2425,7 +2842,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12683094000631761460
+  Id: 1467338599704679384
   Name: "Big_arch"
   Transform {
     Location {
@@ -2442,11 +2859,11 @@ Objects {
       Z: 0.836427391
     }
   }
-  ParentId: 13359471620328528386
-  ChildIds: 4740219265151714031
-  ChildIds: 1669259126565589311
-  ChildIds: 7697494080735261771
-  ChildIds: 16486914798086746025
+  ParentId: 12000337101272915128
+  ChildIds: 11238389846876962711
+  ChildIds: 16603174336031792179
+  ChildIds: 15399123872910596140
+  ChildIds: 9608852399693469484
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2458,12 +2875,12 @@ Objects {
   }
 }
 Objects {
-  Id: 16486914798086746025
+  Id: 9608852399693469484
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
-      X: 376.142822
-      Y: -59.2869415
+      X: 376.142944
+      Y: -59.2866364
       Z: 1164.90857
     }
     Rotation {
@@ -2475,7 +2892,7 @@ Objects {
       Z: 1.19612503
     }
   }
-  ParentId: 12683094000631761460
+  ParentId: 1467338599704679384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2498,7 +2915,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7697494080735261771
+  Id: 15399123872910596140
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2515,7 +2932,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12683094000631761460
+  ParentId: 1467338599704679384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2538,7 +2955,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1669259126565589311
+  Id: 16603174336031792179
   Name: "Wall End Fancy 6m"
   Transform {
     Location {
@@ -2554,7 +2971,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12683094000631761460
+  ParentId: 1467338599704679384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2577,7 +2994,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4740219265151714031
+  Id: 11238389846876962711
   Name: "Arch Fancy Peaked 6m"
   Transform {
     Location {
@@ -2593,7 +3010,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12683094000631761460
+  ParentId: 1467338599704679384
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2616,7 +3033,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8610009735178298626
+  Id: 8964263883080241097
   Name: "Ornament01"
   Transform {
     Location {
@@ -2632,17 +3049,17 @@ Objects {
       Z: 0.558287084
     }
   }
-  ParentId: 13359471620328528386
-  ChildIds: 2686927179932275565
-  ChildIds: 10712381223678153313
-  ChildIds: 5580872809832570896
-  ChildIds: 17002403626377535399
-  ChildIds: 6338179111058806811
-  ChildIds: 12200775241363206832
-  ChildIds: 11335352447529519272
-  ChildIds: 4320487940889766359
-  ChildIds: 7860134939212439931
-  ChildIds: 2391236191882537523
+  ParentId: 12000337101272915128
+  ChildIds: 9719039349851056313
+  ChildIds: 13492949850471910009
+  ChildIds: 4551470281011957580
+  ChildIds: 11276515513586929806
+  ChildIds: 14411912321007445553
+  ChildIds: 12164524119548365007
+  ChildIds: 4098456631689152246
+  ChildIds: 11363026535031374931
+  ChildIds: 487542839819200248
+  ChildIds: 8606183684728168019
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2654,7 +3071,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2391236191882537523
+  Id: 8606183684728168019
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -2673,7 +3090,7 @@ Objects {
       Z: 4.03999138
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -2716,7 +3133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7860134939212439931
+  Id: 487542839819200248
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -2735,7 +3152,7 @@ Objects {
       Z: 4.03999138
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -2778,7 +3195,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4320487940889766359
+  Id: 11363026535031374931
   Name: "Text 05: C"
   Transform {
     Location {
@@ -2797,7 +3214,7 @@ Objects {
       Z: 2.29432368
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -2840,7 +3257,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11335352447529519272
+  Id: 4098456631689152246
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -2859,7 +3276,7 @@ Objects {
       Z: 5.89994621
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -2902,13 +3319,13 @@ Objects {
   }
 }
 Objects {
-  Id: 12200775241363206832
+  Id: 12164524119548365007
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
-      X: -2.39878082
-      Y: 21.1403618
-      Z: -400.113281
+      X: -2.39879441
+      Y: 12.2218056
+      Z: -400.10791
     }
     Rotation {
       Pitch: 0.0341919251
@@ -2916,12 +3333,12 @@ Objects {
       Roll: 89.9999313
     }
     Scale {
-      X: 0.694576323
-      Y: 0.566157877
-      Z: 0.519496918
+      X: 0.985828459
+      Y: 0.566160679
+      Z: 0.51949811
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2944,26 +3361,26 @@ Objects {
   }
 }
 Objects {
-  Id: 6338179111058806811
+  Id: 14411912321007445553
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
-      X: -2.39878082
-      Y: 21.1403618
-      Z: -400.113281
+      X: -2.39879441
+      Y: 12.2218056
+      Z: -400.10791
     }
     Rotation {
-      Pitch: 0.0339801908
+      Pitch: 0.0340006799
       Yaw: -90
       Roll: -89.999939
     }
     Scale {
-      X: 0.694576323
-      Y: 0.566157877
-      Z: 0.519496918
+      X: 0.985828459
+      Y: 0.566160679
+      Z: 0.51949811
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2986,7 +3403,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17002403626377535399
+  Id: 11276515513586929806
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
@@ -3005,7 +3422,7 @@ Objects {
       Z: 0.231391
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3028,7 +3445,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5580872809832570896
+  Id: 4551470281011957580
   Name: "Arch Fancy Peaked 2m"
   Transform {
     Location {
@@ -3047,7 +3464,7 @@ Objects {
       Z: 0.231391
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3070,7 +3487,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10712381223678153313
+  Id: 13492949850471910009
   Name: "Text 05: C"
   Transform {
     Location {
@@ -3089,7 +3506,7 @@ Objects {
       Z: 2.24538565
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -3132,7 +3549,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2686927179932275565
+  Id: 9719039349851056313
   Name: "Text 05: 1"
   Transform {
     Location {
@@ -3151,7 +3568,7 @@ Objects {
       Z: 5.89994621
     }
   }
-  ParentId: 8610009735178298626
+  ParentId: 8964263883080241097
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"

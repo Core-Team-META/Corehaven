@@ -1,4 +1,22 @@
 Assets {
+  Id: 18039984299850060191
+  Name: "Fantasy Human Guy"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
+  Id: 17748832137412765820
+  Name: "Flower Bellflower 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_002_ref"
+  }
+}
+Assets {
   Id: 15310209409301279983
   Name: "Wall End Fancy 6m"
   PlatformAssetType: 1
@@ -17,12 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14200381599681868577
-  Name: "Bricks Large Foundation 01"
+  Id: 14844672563279110931
+  Name: "Bricks Worn Stone 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_large_foundation_001"
+    AssetId: "mi_brick_stone_worn_001"
   }
 }
 Assets {
@@ -44,12 +62,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11321069729411225854
+  Name: "Flower Bellflower Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
+  }
+}
+Assets {
   Id: 10289519616131702378
   Name: "Text 05: C"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_002"
+  }
+}
+Assets {
+  Id: 10161356557666659885
+  Name: "Bush Leafy Low 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_002"
+  }
+}
+Assets {
+  Id: 9225772212614530763
+  Name: "Moss 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -107,6 +152,24 @@ Assets {
   }
 }
 Assets {
+  Id: 5480047238419307272
+  Name: "Flower Bellflower 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
+  }
+}
+Assets {
+  Id: 4342756216088781504
+  Name: "Fantasy Sword Blade 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_002"
+  }
+}
+Assets {
   Id: 4052692736260374431
   Name: "Trim Bottom 8m"
   PlatformAssetType: 1
@@ -116,12 +179,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1225669152220903093
-  Name: "Forest Floor 02"
-  PlatformAssetType: 2
+  Id: 3682206342183528038
+  Name: "Fantasy Sword Grip 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "forest-floor_002"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_sword_001"
   }
 }
 Assets {

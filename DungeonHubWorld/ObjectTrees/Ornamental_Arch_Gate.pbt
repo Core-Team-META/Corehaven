@@ -25,6 +25,7 @@ Objects {
   ChildIds: 17889546175653469928
   ChildIds: 9110512783908029040
   ChildIds: 9563961701388494637
+  ChildIds: 12996729575968235245
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -33,6 +34,48 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 12996729575968235245
+  Name: "Arch Fancy Peaked 6m"
+  Transform {
+    Location {
+      X: -296.950256
+      Y: 1165.59277
+      Z: -345.077576
+    }
+    Rotation {
+      Pitch: -26.0805969
+      Yaw: -176.730972
+      Roll: -10.8321533
+    }
+    Scale {
+      X: 0.400930613
+      Y: 0.840178847
+      Z: 0.582425594
+    }
+  }
+  ParentId: 14719457011443768646
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7036641726562825986
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

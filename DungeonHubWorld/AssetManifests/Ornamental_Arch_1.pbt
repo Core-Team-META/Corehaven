@@ -70,12 +70,3 @@ Assets {
     AssetId: "sm_arch_fancy_ogive_2m_001"
   }
 }
-Assets {
-  Id: 4052692736260374431
-  Name: "Trim Bottom 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_trim_bottom_6m_002"
-  }
-}
