@@ -1,4 +1,4 @@
-Name: "Ornamental_Arch_Statue_4"
+Name: "Ornamental_Arch_Statue_Axe"
 RootId: 11331058587159044858
 Objects {
   Id: 18252534770145728912
@@ -2080,7 +2080,7 @@ Objects {
 }
 Objects {
   Id: 4410166299630590283
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -2103,7 +2103,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -2130,7 +2130,7 @@ Objects {
 }
 Objects {
   Id: 15511855781083310561
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -2153,7 +2153,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -2180,7 +2180,7 @@ Objects {
 }
 Objects {
   Id: 515961492666544569
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "wall"
   Transform {
     Location {
       X: -88.8910904
@@ -2230,7 +2230,7 @@ Objects {
 }
 Objects {
   Id: 11736859163110577772
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "wall"
   Transform {
     Location {
       X: -88.1148682
@@ -2364,7 +2364,7 @@ Objects {
 }
 Objects {
   Id: 1471887732283428253
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -2387,7 +2387,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -2414,7 +2414,7 @@ Objects {
 }
 Objects {
   Id: 12360682380068147739
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -2437,7 +2437,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -2650,6 +2650,8 @@ Objects {
   ChildIds: 2672132034183470374
   ChildIds: 395780309061060742
   ChildIds: 6063651229980575020
+  ChildIds: 15964467412295105916
+  ChildIds: 9896909789174113333
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2658,6 +2660,90 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 9896909789174113333
+  Name: "Trim Bottom 8m"
+  Transform {
+    Location {
+      X: -12.2996387
+      Y: 14.7127018
+      Z: -17.7479744
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 179.150711
+      Roll: -3.05175781e-05
+    }
+    Scale {
+      X: 0.610112548
+      Y: 0.593377769
+      Z: 0.59337306
+    }
+  }
+  ParentId: 3540289783839333441
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15240646233324917545
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15964467412295105916
+  Name: "Trim Bottom 8m"
+  Transform {
+    Location {
+      X: -12.397048
+      Y: 8.12844372
+      Z: -17.7479935
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: -90.8491516
+      Roll: 1.10736746e-05
+    }
+    Scale {
+      X: 0.610112548
+      Y: 0.593377769
+      Z: 0.59337306
+    }
+  }
+  ParentId: 3540289783839333441
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15240646233324917545
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

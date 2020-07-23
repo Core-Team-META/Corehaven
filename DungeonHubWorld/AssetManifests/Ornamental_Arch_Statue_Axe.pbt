@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16258934989017568028
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
+  }
+}
+Assets {
   Id: 15310209409301279983
   Name: "Wall End Fancy 6m"
   PlatformAssetType: 1
@@ -158,15 +167,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_ogive_6m_001"
-  }
-}
-Assets {
-  Id: 6999959740572350860
-  Name: "Bricks Stone Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bricks_stone_block_001"
   }
 }
 Assets {

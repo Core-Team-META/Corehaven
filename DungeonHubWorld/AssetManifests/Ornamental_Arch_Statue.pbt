@@ -17,12 +17,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17237692812658431496
-  Name: "Fantasy Staff Head 01"
-  PlatformAssetType: 1
+  Id: 16258934989017568028
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_head_staff_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
   }
 }
 Assets {
@@ -62,30 +62,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13015241044592811011
-  Name: "Fantasy Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_003"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11631901271170615920
-  Name: "Street Post Square 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_st_post_lights_post_sq_001"
   }
 }
 Assets {
@@ -113,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_bush_002"
+  }
+}
+Assets {
+  Id: 9922580225629130299
+  Name: "Fantasy Staff Head 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_002"
   }
 }
 Assets {
@@ -170,12 +161,21 @@ Assets {
   }
 }
 Assets {
-  Id: 6999959740572350860
-  Name: "Bricks Stone Block 01"
-  PlatformAssetType: 2
+  Id: 6722267691116138132
+  Name: "Fantasy Staff Grip 01"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bricks_stone_block_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_staff_001"
+  }
+}
+Assets {
+  Id: 5574279695839094619
+  Name: "Fantasy Staff Guard 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_staff_002"
   }
 }
 Assets {
@@ -203,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
+  Id: 1383772742094820961
+  Name: "Fantasy Pommel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_001"
   }
 }
 Assets {

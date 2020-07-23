@@ -188,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16352007205294489134
+  Name: "Torch Metal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torch_001"
+  }
+}
+Assets {
   Id: 16349565198339375491
   Name: "Tree Birch 02"
   PlatformAssetType: 1
@@ -419,6 +428,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 13540258823282010952
+  Name: "Reinforced Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_reinforced_150cm_001"
   }
 }
 Assets {
@@ -719,6 +737,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9304943156922547180
+  Name: "Fantasy Castle Wall 03 - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003_win_03"
+  }
+}
+Assets {
   Id: 9229199904602472614
   Name: "Craftsman Roof 01 Cap"
   PlatformAssetType: 1
@@ -872,6 +899,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7236107949886366866
+  Name: "Craftsman Dining Chair"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_chair_dining_001"
+  }
+}
+Assets {
   Id: 7036641726562825986
   Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
@@ -908,12 +944,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6621828543054646629
+  Name: "Sign Bracket - Round"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_round_001"
+  }
+}
+Assets {
   Id: 6359753060552812266
   Name: "Bush 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 6062783959108536718
+  Name: "Torch Holder Metal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torch_holder_001"
   }
 }
 Assets {

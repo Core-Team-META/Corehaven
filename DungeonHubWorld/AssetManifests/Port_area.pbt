@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18039765282018436536
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 17952268790008141582
   Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
@@ -89,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15686909077460378362
+  Name: "Fantasy Castle Trim - Parapet 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001"
+  }
+}
+Assets {
   Id: 15281629729725634170
   Name: "Glass 01"
   PlatformAssetType: 2
@@ -152,6 +170,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13983143036804937474
+  Name: "Fantasy Castle Wall 02 - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_002_win_03"
+  }
+}
+Assets {
   Id: 13689626934332135285
   Name: "Fantasy Castle Wall 02 Half"
   PlatformAssetType: 1
@@ -170,12 +197,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12901371766173778172
+  Name: "Leafy Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_groundcover_002"
+  }
+}
+Assets {
   Id: 12642041031887387612
   Name: "Fantasy Castle Wall 01 - Doorway 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_door_01"
+  }
+}
+Assets {
+  Id: 12455776894202311928
+  Name: "Fantasy Castle Wall 02 Half - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_win_03"
   }
 }
 Assets {
@@ -224,12 +269,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11054502242900949297
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
   Id: 10567573856586224296
   Name: "Bricks Cobblestone Floor Arches 001"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_cobblestone_floor_arch_001"
+  }
+}
+Assets {
+  Id: 10123498949289312814
+  Name: "Craftsman Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_peak"
   }
 }
 Assets {
@@ -368,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6359753060552812266
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
   Id: 6041984776381722081
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -428,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_rounded_2m_001"
+  }
+}
+Assets {
+  Id: 3166405575429386541
+  Name: "Trim Crenellated 4m 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_crenellated_6m_001"
   }
 }
 Assets {

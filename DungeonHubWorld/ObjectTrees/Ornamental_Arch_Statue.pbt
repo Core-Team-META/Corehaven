@@ -96,124 +96,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7728845834461829376
-  Name: "Fantasy Staff Head 01"
-  Transform {
-    Location {
-      X: -136.679108
-      Y: 160.169922
-      Z: 478.836578
-    }
-    Rotation {
-      Pitch: -0.000232226419
-      Yaw: -174.727356
-      Roll: 0.000132664311
-    }
-    Scale {
-      X: 1.030882
-      Y: 1.15203905
-      Z: 1.15204024
-    }
-  }
-  ParentId: 9653239507609293381
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17237692812658431496
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6296201432797186299
-  Name: "Street Post Square 01"
-  Transform {
-    Location {
-      X: -136.969971
-      Y: 161.128143
-      Z: 206.008667
-    }
-    Rotation {
-      Pitch: -0.00022539623
-      Yaw: -113.162033
-      Roll: -0.000140611985
-    }
-    Scale {
-      X: 0.296315193
-      Y: 0.296315193
-      Z: 0.796365798
-    }
-  }
-  ParentId: 9653239507609293381
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11631901271170615920
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 16890810338343430229
   Name: "Fantasy Human Guy"
   Transform {
@@ -280,8 +162,387 @@ Objects {
       AnimationStanceShouldLoop: true
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
-        Animation: "2hand_sword_unsheathe"
-        StartPosition: 0.239584565
+        Animation: "2hand_staff_magic_up"
+        StartPosition: 0.316543728
+      }
+    }
+  }
+}
+Objects {
+  Id: 12970006581567413823
+  Name: "Staff"
+  Transform {
+    Location {
+      X: -229.802338
+      Y: 187.548218
+      Z: 408.790588
+    }
+    Rotation {
+      Pitch: -35.2668457
+      Yaw: 39.6718826
+      Roll: -30.7581787
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9653239507609293381
+  ChildIds: 10346963262056111867
+  ChildIds: 6296201432797186299
+  ChildIds: 7728845834461829376
+  ChildIds: 3432782257851626057
+  ChildIds: 336426684010418703
+  ChildIds: 4530410751051114843
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4530410751051114843
+  Name: "Fantasy Sword Grip 01"
+  Transform {
+    Location {
+      X: -0.0985623375
+      Y: 0.17939496
+      Z: 166.10228
+    }
+    Rotation {
+      Pitch: -0.000274658203
+      Yaw: -113.16185
+      Roll: -0.000213623047
+    }
+    Scale {
+      X: 1.01642084
+      Y: 1.01642442
+      Z: 1.1723969
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3682206342183528038
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 336426684010418703
+  Name: "Fantasy Sword Grip 01"
+  Transform {
+    Location {
+      X: -0.0979745463
+      Y: 0.180084988
+      Z: 99.4373245
+    }
+    Rotation {
+      Pitch: -0.000274658203
+      Yaw: -113.161896
+      Roll: -0.000213623047
+    }
+    Scale {
+      X: 1.25466919
+      Y: 1.25466919
+      Z: 1.25466919
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1383772742094820961
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3432782257851626057
+  Name: "Fantasy Sword Grip 01"
+  Transform {
+    Location {
+      X: -0.0978850946
+      Y: 0.179878399
+      Z: 98.7311859
+    }
+    Rotation {
+      Pitch: -0.000244140625
+      Yaw: -113.161926
+      Roll: -0.000183105469
+    }
+    Scale {
+      X: 1.01642215
+      Y: 1.01642215
+      Z: 1.01642215
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3682206342183528038
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7728845834461829376
+  Name: "Fantasy Staff Head 01"
+  Transform {
+    Location {
+      X: -0.150126547
+      Y: -0.120336354
+      Z: 242.036804
+    }
+    Rotation {
+      Pitch: -0.000244140625
+      Yaw: -174.727356
+      Roll: 0.000132664412
+    }
+    Scale {
+      X: 1.44960463
+      Y: 1.61997342
+      Z: 1.61997521
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9922580225629130299
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6296201432797186299
+  Name: "Street Post Square 01"
+  Transform {
+    Location {
+      X: -0.0963687524
+      Y: 0.388733447
+      Z: 97.0283813
+    }
+    Rotation {
+      Pitch: -0.000213623047
+      Yaw: -113.161942
+      Roll: -0.000152587891
+    }
+    Scale {
+      X: 1.00001168
+      Y: 0.999995708
+      Z: 1.81892705
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6722267691116138132
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10346963262056111867
+  Name: "Fantasy Sword Grip 01"
+  Transform {
+    Location {
+      X: -0.0983238146
+      Y: 0.179678217
+      Z: 235.865479
+    }
+    Rotation {
+      Pitch: -0.000213623047
+      Yaw: -113.161926
+      Roll: -0.000152587891
+    }
+    Scale {
+      X: 1.01642215
+      Y: 1.01642215
+      Z: 1.01642215
+    }
+  }
+  ParentId: 12970006581567413823
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5574279695839094619
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
       }
     }
   }
@@ -400,68 +661,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 10161356557666659885
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14302629713431368403
-  Name: "Fantasy Shield 03"
-  Transform {
-    Location {
-      X: -81.4496841
-      Y: 217.172119
-      Z: 341.329865
-    }
-    Rotation {
-      Pitch: 0.000218566041
-      Yaw: -0.357960522
-      Roll: -0.000154760972
-    }
-    Scale {
-      X: 1.1474396
-      Y: 1.1474396
-      Z: 1.1474396
-    }
-  }
-  ParentId: 9653239507609293381
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13015241044592811011
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -895,62 +1094,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 11321069729411225854
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10346963262056111867
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      X: -136.971695
-      Y: 160.919083
-      Z: 449.777832
-    }
-    Rotation {
-      Pitch: -0.00022539623
-      Yaw: -113.162033
-      Roll: -0.000140611985
-    }
-    Scale {
-      X: 1.18142283
-      Y: 1.18142283
-      Z: 1.18142283
-    }
-  }
-  ParentId: 9653239507609293381
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1549,7 +1692,7 @@ Objects {
 }
 Objects {
   Id: 14530532565775808545
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -1572,7 +1715,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -1599,7 +1742,7 @@ Objects {
 }
 Objects {
   Id: 704422992293279016
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -1622,7 +1765,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -1649,7 +1792,7 @@ Objects {
 }
 Objects {
   Id: 3855484325757251610
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "wall"
   Transform {
     Location {
       X: -88.8910904
@@ -1699,7 +1842,7 @@ Objects {
 }
 Objects {
   Id: 4349288890565186664
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "wall"
   Transform {
     Location {
       X: -88.1148682
@@ -1833,7 +1976,7 @@ Objects {
 }
 Objects {
   Id: 6136763600370270366
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -1856,7 +1999,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -1883,7 +2026,7 @@ Objects {
 }
 Objects {
   Id: 1097221182123477503
-  Name: "Ellipsoid - Truncated Wedge"
+  Name: "pedestal"
   Transform {
     Location {
       X: -90.3684769
@@ -1906,7 +2049,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 6999959740572350860
+        Id: 16258934989017568028
       }
     }
   }
@@ -2119,6 +2262,8 @@ Objects {
   ChildIds: 7955012291374526659
   ChildIds: 18264405283795980941
   ChildIds: 14674649151675004857
+  ChildIds: 16535211745886452750
+  ChildIds: 8300504372492940397
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2127,6 +2272,90 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8300504372492940397
+  Name: "Trim Bottom 8m"
+  Transform {
+    Location {
+      X: -12.397459
+      Y: 8.12855339
+      Z: -19.0681171
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -90.8491821
+      Roll: 1.10736955e-05
+    }
+    Scale {
+      X: 0.644535244
+      Y: 0.62685591
+      Z: 0.626851261
+    }
+  }
+  ParentId: 4330518857279954773
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15240646233324917545
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16535211745886452750
+  Name: "Trim Bottom 8m"
+  Transform {
+    Location {
+      X: -12.2998724
+      Y: 14.7129288
+      Z: -19.0680885
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 179.150711
+      Roll: -3.05175781e-05
+    }
+    Scale {
+      X: 0.644535244
+      Y: 0.62685591
+      Z: 0.626851261
+    }
+  }
+  ParentId: 4330518857279954773
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15240646233324917545
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

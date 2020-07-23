@@ -17,12 +17,21 @@ Assets {
   }
 }
 Assets {
-  Id: 17237692812658431496
-  Name: "Fantasy Staff Head 01"
+  Id: 16930051067443970507
+  Name: "Fantasy Sword Blade 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_head_staff_001"
+    AssetId: "sm_weap_fan_blade_sword_003"
+  }
+}
+Assets {
+  Id: 16258934989017568028
+  Name: "Concrete Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_concrete_001"
   }
 }
 Assets {
@@ -62,30 +71,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13015241044592811011
-  Name: "Fantasy Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_003"
-  }
-}
-Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11631901271170615920
-  Name: "Street Post Square 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_st_post_lights_post_sq_001"
   }
 }
 Assets {
@@ -170,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6999959740572350860
-  Name: "Bricks Stone Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bricks_stone_block_001"
-  }
-}
-Assets {
   Id: 5480047238419307272
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1
@@ -203,6 +185,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
+  Id: 1920010878601219178
+  Name: "Fantasy Sword Guard 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_sword_001"
   }
 }
 Assets {
