@@ -17667,7 +17667,7 @@ Objects {
 }
 Objects {
   Id: 1230268266111830745
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -2262.23047
@@ -17718,7 +17718,7 @@ Objects {
 }
 Objects {
   Id: 2246233627761006128
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -2237.59961
@@ -17769,7 +17769,7 @@ Objects {
 }
 Objects {
   Id: 15707396386915094978
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -1253.08643
@@ -17820,7 +17820,7 @@ Objects {
 }
 Objects {
   Id: 9777514234973032895
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -1778.48315
@@ -25839,7 +25839,7 @@ Objects {
 }
 Objects {
   Id: 16897860023665172734
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2806.08643
@@ -25890,7 +25890,7 @@ Objects {
 }
 Objects {
   Id: 16100743241368776585
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2256.68506
@@ -25941,7 +25941,7 @@ Objects {
 }
 Objects {
   Id: 11377885903508498081
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2266.29541
@@ -25991,7 +25991,7 @@ Objects {
 }
 Objects {
   Id: 11430689351835385199
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2798.67456
@@ -26041,7 +26041,7 @@ Objects {
 }
 Objects {
   Id: 11565678053550741514
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2522.03
@@ -26091,7 +26091,7 @@ Objects {
 }
 Objects {
   Id: 14712912452173808557
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2094.69897
@@ -26142,7 +26142,7 @@ Objects {
 }
 Objects {
   Id: 13988005333190552541
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 2087.24121
@@ -26193,7 +26193,7 @@ Objects {
 }
 Objects {
   Id: 15352564719433432518
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 1130.57422
@@ -26244,7 +26244,7 @@ Objects {
 }
 Objects {
   Id: 11961532985163975709
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 1679.479
@@ -28938,7 +28938,7 @@ Objects {
 }
 Objects {
   Id: 3140051782971803614
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 324.107483
@@ -28988,7 +28988,7 @@ Objects {
 }
 Objects {
   Id: 6986547970131699370
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: 864.332581
@@ -29036,7 +29036,7 @@ Objects {
 }
 Objects {
   Id: 6386661557828751999
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -307.426514
@@ -29084,7 +29084,7 @@ Objects {
 }
 Objects {
   Id: 1049670274140471054
-  Name: "Cube - bottom aligned"
+  Name: "wall"
   Transform {
     Location {
       X: -885.220825

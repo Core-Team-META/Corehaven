@@ -89,12 +89,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17406869057951057684
+  Name: "Ceramic Terracotta Pots Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_terracotta_pots_002_uv"
+  }
+}
+Assets {
   Id: 17393434355915427469
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 17387236536393204179
+  Name: "Cone"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_001"
   }
 }
 Assets {
@@ -260,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15494749898036415293
+  Name: "Cliff 03"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_003"
+  }
+}
+Assets {
   Id: 15363960962711120915
   Name: "Craftsman Floor 01 8m x 8m"
   PlatformAssetType: 1
@@ -320,6 +347,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001_150cm"
+  }
+}
+Assets {
+  Id: 14781885955149681198
+  Name: "Wallpaper Moroccan 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gen_wallpaper_002"
   }
 }
 Assets {
@@ -473,15 +509,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_birch_001"
-  }
-}
-Assets {
-  Id: 12817510901257393900
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
   }
 }
 Assets {
@@ -773,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8983708969469221779
+  Name: "Fantasy Castle Wall 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003"
+  }
+}
+Assets {
   Id: 8916846240532825810
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
@@ -788,6 +824,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
+  }
+}
+Assets {
+  Id: 8757350750859272398
+  Name: "Fantasy Castle Stairs 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -845,12 +890,39 @@ Assets {
   }
 }
 Assets {
+  Id: 7934212786246519785
+  Name: "Fern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_001"
+  }
+}
+Assets {
+  Id: 7909321749664205074
+  Name: "Craftsman Part - Stair Rail"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_stair_001_rail"
+  }
+}
+Assets {
   Id: 7814966837604519694
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
+  Id: 7715152830417178651
+  Name: "Fabric Burlap New 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_002_uv"
   }
 }
 Assets {
@@ -878,6 +950,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_round_6m"
+  }
+}
+Assets {
+  Id: 7518875170720013981
+  Name: "Square Column Segment"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_square_segment_001"
+  }
+}
+Assets {
+  Id: 7438756951221684118
+  Name: "Fantasy Castle Wall 02 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_door_01"
   }
 }
 Assets {
@@ -914,6 +1004,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_ogive_6m_001"
+  }
+}
+Assets {
+  Id: 6973040567947712890
+  Name: "Hill 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_003"
   }
 }
 Assets {
@@ -959,6 +1058,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
+  }
+}
+Assets {
+  Id: 6358471158957620124
+  Name: "Craftsman Stairs 01 Railing Post"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_post"
   }
 }
 Assets {
@@ -1085,6 +1193,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 4193024863549911546
+  Name: "Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_bottom_002"
   }
 }
 Assets {
@@ -1223,6 +1340,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1596888492663164670
+  Name: "Fantasy Castle Wall Foundation 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_found_001"
+  }
+}
+Assets {
   Id: 1383772742094820961
   Name: "Fantasy Pommel 01"
   PlatformAssetType: 1
@@ -1310,5 +1436,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
+  Id: 46061843978868412
+  Name: "Ring"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_004"
   }
 }
