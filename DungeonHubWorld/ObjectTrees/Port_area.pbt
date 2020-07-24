@@ -97,7 +97,7 @@ Objects {
   ChildIds: 7023728268478744681
   ChildIds: 3939428287045765037
   ChildIds: 16745999005007094701
-  ChildIds: 12695863159683961421
+  ChildIds: 9192468364924277460
   ChildIds: 16988017994541040275
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -898,8 +898,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12695863159683961421
-  Name: "Windmill_center_cog"
+  Id: 9192468364924277460
+  Name: "ClientContext"
   Transform {
     Location {
       X: 64.0725937
@@ -907,8 +907,85 @@ Objects {
       Z: 4009.1665
     }
     Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1602248074432958886
+  ChildIds: 12695863159683961421
+  ChildIds: 15524922933459700983
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 15524922933459700983
+  Name: "Object Rotator Continuous"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9192468364924277460
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5456438743692384211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Object Rotator Continuous"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.00385507895
+            Y: -0.000630202238
+            Z: -0.001953125
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:Object"
+          ObjectReference {
+            SelfId: 12695863159683961421
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14320703438642554861
+    }
+  }
+}
+Objects {
+  Id: 12695863159683961421
+  Name: "Windmill_center_cog"
+  Transform {
+    Location {
+      X: 0.00385507895
+      Y: -0.000630202238
+      Z: -0.001953125
+    }
+    Rotation {
       Yaw: -179.706863
-      Roll: 89.9998779
+      Roll: 89.9998703
     }
     Scale {
       X: 3.36600542
@@ -916,7 +993,7 @@ Objects {
       Z: 3.36600542
     }
   }
-  ParentId: 1602248074432958886
+  ParentId: 9192468364924277460
   ChildIds: 18192882457928956394
   ChildIds: 12158616486165142635
   ChildIds: 15041106284772158539
@@ -11877,7 +11954,7 @@ Objects {
   ChildIds: 5868809265800559776
   ChildIds: 688132430652114406
   ChildIds: 11653267898340113273
-  ChildIds: 3169021848257059052
+  ChildIds: 2984355768819812697
   ChildIds: 4464883539070736460
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12678,8 +12755,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3169021848257059052
-  Name: "Windmill_center_cog"
+  Id: 2984355768819812697
+  Name: "ClientContext"
   Transform {
     Location {
       X: 64.0725937
@@ -12687,8 +12764,82 @@ Objects {
       Z: 4009.1665
     }
     Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7475971892126677041
+  ChildIds: 3169021848257059052
+  ChildIds: 6261341030020360145
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6261341030020360145
+  Name: "Object Rotator Continuous"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2984355768819812697
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5456438743692384211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Object Rotator Continuous"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:Object"
+          ObjectReference {
+            SelfId: 3169021848257059052
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14320703438642554861
+    }
+  }
+}
+Objects {
+  Id: 3169021848257059052
+  Name: "Windmill_center_cog"
+  Transform {
+    Location {
+      Z: 0.00048828125
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
       Yaw: -179.706863
-      Roll: 89.9998779
+      Roll: 89.9998627
     }
     Scale {
       X: 3.36600542
@@ -12696,7 +12847,7 @@ Objects {
       Z: 3.36600542
     }
   }
-  ParentId: 7475971892126677041
+  ParentId: 2984355768819812697
   ChildIds: 4632285704159156840
   ChildIds: 10761840093316654359
   ChildIds: 3519402994293381235
@@ -23657,7 +23808,7 @@ Objects {
   ChildIds: 16718163133512993629
   ChildIds: 5939623914143550410
   ChildIds: 16511107146007615173
-  ChildIds: 9935925971154855262
+  ChildIds: 16174710101780919505
   ChildIds: 14913989371013207756
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24458,8 +24609,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9935925971154855262
-  Name: "Windmill_center_cog"
+  Id: 16174710101780919505
+  Name: "ClientContext"
   Transform {
     Location {
       X: 64.0725937
@@ -24467,8 +24618,85 @@ Objects {
       Z: 4009.1665
     }
     Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2771068851721567946
+  ChildIds: 9935925971154855262
+  ChildIds: 16219195890829760552
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16219195890829760552
+  Name: "Object Rotator Continuous"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16174710101780919505
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5456438743692384211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Object Rotator Continuous"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.000480614108
+            Y: 8.61895387e-05
+            Z: -0.00048828125
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:Object"
+          ObjectReference {
+            SelfId: 9935925971154855262
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14320703438642554861
+    }
+  }
+}
+Objects {
+  Id: 9935925971154855262
+  Name: "Windmill_center_cog"
+  Transform {
+    Location {
+      X: -0.000480614108
+      Y: 8.61895387e-05
+      Z: -0.00048828125
+    }
+    Rotation {
       Yaw: -179.706863
-      Roll: 89.9998779
+      Roll: 89.9998627
     }
     Scale {
       X: 3.36600542
@@ -24476,7 +24704,7 @@ Objects {
       Z: 3.36600542
     }
   }
-  ParentId: 2771068851721567946
+  ParentId: 16174710101780919505
   ChildIds: 14875699216001960245
   ChildIds: 14156517096199001484
   ChildIds: 626098089366188225
@@ -37925,7 +38153,7 @@ Objects {
   ChildIds: 7307123441131893742
   ChildIds: 1332002888397600513
   ChildIds: 10536044560026719185
-  ChildIds: 12581715599292230858
+  ChildIds: 12821577875317624777
   ChildIds: 15146864337306576189
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -38726,8 +38954,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12581715599292230858
-  Name: "Windmill_center_cog"
+  Id: 12821577875317624777
+  Name: "ClientContext"
   Transform {
     Location {
       X: 64.0725937
@@ -38735,8 +38963,74 @@ Objects {
       Z: 4009.1665
     }
     Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1093228142703017802
+  ChildIds: 12581715599292230858
+  ChildIds: 8709157742023406376
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 8709157742023406376
+  Name: "Object Rotator Continuous"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12821577875317624777
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5456438743692384211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Object Rotator Continuous"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:Object"
+          ObjectReference {
+            SelfId: 12581715599292230858
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14320703438642554861
+    }
+  }
+}
+Objects {
+  Id: 12581715599292230858
+  Name: "Windmill_center_cog"
+  Transform {
+    Location {
+    }
+    Rotation {
       Yaw: -179.706863
-      Roll: 89.9998779
+      Roll: 89.9998627
     }
     Scale {
       X: 3.36600542
@@ -38744,7 +39038,7 @@ Objects {
       Z: 3.36600542
     }
   }
-  ParentId: 1093228142703017802
+  ParentId: 12821577875317624777
   ChildIds: 17391139064024326945
   ChildIds: 12808564770243309647
   ChildIds: 8456917296971129021

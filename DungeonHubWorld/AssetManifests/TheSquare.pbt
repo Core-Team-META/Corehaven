@@ -1124,6 +1124,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4793433194361754592
+  Name: "Short Banner Fleur-de-lis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_banner_003"
+  }
+}
+Assets {
   Id: 4565526659431827540
   Name: "Large Wood Board 8m"
   PlatformAssetType: 1

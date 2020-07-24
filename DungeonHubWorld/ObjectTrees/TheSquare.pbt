@@ -3794,6 +3794,7 @@ Objects {
   ChildIds: 14381979254318634720
   ChildIds: 18165036787188359675
   ChildIds: 4868814738951665386
+  ChildIds: 5475762824019321740
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3802,6 +3803,72 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 5475762824019321740
+  Name: "Short Banner Fleur-de-lis"
+  Transform {
+    Location {
+      X: -3.73305
+      Y: 63.9199677
+      Z: 10.4350605
+    }
+    Rotation {
+      Pitch: -3.24032593
+      Yaw: -89.9998779
+      Roll: 2.13785199e-07
+    }
+    Scale {
+      X: 0.398902655
+      Y: 0.311066359
+      Z: 0.311066359
+    }
+  }
+  ParentId: 12068821236172458592
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Prop_Pole:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+    Overrides {
+      Name: "ma:Prop_Cloth:id"
+      AssetReference {
+        Id: 5436279215994949707
+      }
+    }
+    Overrides {
+      Name: "ma:Prop_Cloth:color"
+      Color {
+        R: 0.914976597
+        G: 0.244791687
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4793433194361754592
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
