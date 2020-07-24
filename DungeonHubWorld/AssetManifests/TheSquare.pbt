@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16532662947784276478
-  Name: "Generic Water"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
-  }
-}
-Assets {
   Id: 16414328049407947312
   Name: "Tree Redwood Big"
   PlatformAssetType: 1
@@ -800,15 +791,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8983708969469221779
-  Name: "Fantasy Castle Wall 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_003"
-  }
-}
-Assets {
   Id: 8916846240532825810
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
@@ -824,15 +806,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
-  }
-}
-Assets {
-  Id: 8757350750859272398
-  Name: "Fantasy Castle Stairs 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -917,15 +890,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7715152830417178651
-  Name: "Fabric Burlap New 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_002_uv"
-  }
-}
-Assets {
   Id: 7695830393755413980
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -950,15 +914,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_round_6m"
-  }
-}
-Assets {
-  Id: 7518875170720013981
-  Name: "Square Column Segment"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_square_segment_001"
   }
 }
 Assets {
@@ -1337,15 +1292,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_022"
-  }
-}
-Assets {
-  Id: 1596888492663164670
-  Name: "Fantasy Castle Wall Foundation 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001"
   }
 }
 Assets {
