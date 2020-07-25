@@ -386,6 +386,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3054822984243159922
+  Name: "Falling Leaves Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_leaves_volume_vfx"
+  }
+}
+Assets {
   Id: 2370747781706679886
   Name: "Fern 03"
   PlatformAssetType: 1

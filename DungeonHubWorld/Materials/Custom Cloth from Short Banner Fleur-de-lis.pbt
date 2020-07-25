@@ -7,24 +7,35 @@ Assets {
     BaseMaterialId: 2240549700964722044
     ParameterOverrides {
       Overrides {
-        Name: "color_secondary"
-        Color {
-          R: 0.51
-          B: 0.374900401
-          A: 1
-        }
-      }
-      Overrides {
         Name: "emissive_boost_color-2"
         Float: 0
       }
       Overrides {
         Name: "wind_speed"
-        Float: 0.5
+        Float: 0.4
       }
       Overrides {
         Name: "wind_intensity"
         Float: 10
+      }
+      Overrides {
+        Name: "color"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_secondary"
+        Color {
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "color_tertiary"
+        Color {
+          R: 0.429999948
+          A: 1
+        }
       }
     }
     Assets {

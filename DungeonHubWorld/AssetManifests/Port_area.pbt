@@ -80,12 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 17387236536393204179
-  Name: "Cone"
-  PlatformAssetType: 1
+  Id: 16994855181348126557
+  Name: "Gold Treasure 02"
+  PlatformAssetType: 2
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_001"
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_treasure_002"
   }
 }
 Assets {
@@ -131,15 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
-  }
-}
-Assets {
-  Id: 15818682822090430829
-  Name: "Pipe - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_003"
   }
 }
 Assets {
@@ -212,15 +203,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_001_150cm"
-  }
-}
-Assets {
-  Id: 14781885955149681198
-  Name: "Wallpaper Moroccan 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_gen_wallpaper_002"
   }
 }
 Assets {
@@ -548,6 +530,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8730571758809731968
+  Name: "Hill 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_001"
+  }
+}
+Assets {
+  Id: 8452502681248844190
+  Name: "Fantasy Chest Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_002_ref"
+  }
+}
+Assets {
   Id: 8363666404921040082
   Name: "Prism - 8-Sided Half"
   PlatformAssetType: 1
@@ -719,6 +719,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6013290205953027442
+  Name: "Fantasy Chest Lid 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_lid_002_ref"
+  }
+}
+Assets {
   Id: 5637733567374295665
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -815,6 +824,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_trim_top_6m_002"
+  }
+}
+Assets {
+  Id: 3533190463953898497
+  Name: "Fantasy Chest Treasure Pile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
   }
 }
 Assets {
@@ -941,6 +959,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
+  }
+}
+Assets {
+  Id: 1192643346706953598
+  Name: "Decal Gold Coins 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_gold_coins_001"
   }
 }
 Assets {

@@ -37,7 +37,7 @@ Assets {
       Overrides {
         Name: "cmp:Material3"
         AssetReference {
-          Id: 688190043350435462
+          Id: 10130379721391062371
         }
       }
       Overrides {
@@ -53,6 +53,21 @@ Assets {
       Overrides {
         Name: "material2_scale"
         Float: 1
+      }
+      Overrides {
+        Name: "cmp:Material3_Sides"
+        AssetReference {
+          Id: 10130379721391062371
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material3"
+        Color {
+          R: 0.666666687
+          G: 0.506142259
+          B: 0.336805582
+          A: 1
+        }
       }
     }
     Assets {
@@ -101,12 +116,12 @@ Assets {
       }
     }
     Assets {
-      Id: 688190043350435462
-      Name: "Bricks Cobblestone Floor 01"
+      Id: 10130379721391062371
+      Name: "Bricks Rough Stone Floor 02"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_cobblestone_floor_001"
+        AssetId: "mi_brick_stone_floor_rough_002"
       }
     }
     Assets {
@@ -116,6 +131,15 @@ Assets {
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "forest-floor_001"
+      }
+    }
+    Assets {
+      Id: 10130379721391062371
+      Name: "Bricks Rough Stone Floor 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_brick_stone_floor_rough_002"
       }
     }
   }

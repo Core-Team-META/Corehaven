@@ -14028,6 +14028,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     AnimatedMesh {
       AnimationStance: "unarmed_idle_relaxed"
