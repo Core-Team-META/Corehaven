@@ -989,6 +989,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7906970403073025695
+  Name: "Text 03: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_002"
+  }
+}
+Assets {
   Id: 7814966837604519694
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2

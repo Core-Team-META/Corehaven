@@ -642,12 +642,12 @@ Objects {
   Name: "Shield 02_sign"
   Transform {
     Location {
-      X: -12.7672901
-      Y: -14.8540745
+      X: -12.9746227
+      Y: -14.7948589
       Z: 224.617188
     }
     Rotation {
-      Yaw: -106.016708
+      Yaw: -106.016724
     }
     Scale {
       X: 0.933064222
@@ -667,6 +667,20 @@ Objects {
       Name: "ma:Shared_Detail2:id"
       AssetReference {
         Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
       }
     }
   }
@@ -1829,17 +1843,17 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -22.7251301
-      Y: -70.9651108
-      Z: 46.4787292
+      X: -22.4127903
+      Y: -68.1613617
+      Z: 46.9305573
     }
     Rotation {
-      Yaw: -106.162506
+      Yaw: -104.108749
     }
     Scale {
-      X: 0.320785493
-      Y: 0.320785493
-      Z: 0.320785493
+      X: 0.267218024
+      Y: 0.267218024
+      Z: 0.267218024
     }
   }
   ParentId: 14975212368365440942
@@ -1876,18 +1890,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
-      }
-    }
-    Overrides {
       Name: "ma:Font.Faces:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 14231809728886464860
       }
     }
   }
@@ -1917,9 +1922,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -18.7673874
-      Y: -57.3060837
-      Z: 46.3161
+      X: -16.7397423
+      Y: -54.9995346
+      Z: 46.7679291
     }
     Rotation {
       Yaw: -106.162506
@@ -1964,18 +1969,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Sides:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2005,9 +2007,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -13.1696548
-      Y: -37.9900208
-      Z: 46.3838
+      X: -11.1420059
+      Y: -35.6834717
+      Z: 46.8356285
     }
     Rotation {
       Yaw: -106.162415
@@ -2052,18 +2054,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2093,9 +2092,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -9.09145451
-      Y: -23.9149895
-      Z: 46.620018
+      X: -7.06380415
+      Y: -21.6084366
+      Z: 47.071846
     }
     Rotation {
       Yaw: -106.162415
@@ -2140,18 +2139,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2181,9 +2177,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -4.29934263
-      Y: -7.38393354
-      Z: 46.9018593
+      X: -2.27169228
+      Y: -5.07738209
+      Z: 47.3536873
     }
     Rotation {
       Yaw: -106.162415
@@ -2228,18 +2224,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2269,9 +2262,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: -0.865069091
-      Y: 4.46532917
-      Z: 46.8400459
+      X: 1.16258
+      Y: 6.77188158
+      Z: 47.2918739
     }
     Rotation {
       Yaw: -106.162415
@@ -2316,18 +2309,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2357,9 +2347,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: 3.77484226
-      Y: 20.4757805
-      Z: 47.1167336
+      X: 5.80249405
+      Y: 22.7823334
+      Z: 47.5685616
     }
     Rotation {
       Yaw: -106.162415
@@ -2404,18 +2394,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2445,9 +2432,9 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: 9.80524254
-      Y: 41.2880936
-      Z: 46.9084816
+      X: 11.8328915
+      Y: 43.5946426
+      Z: 47.3603096
     }
     Rotation {
       Yaw: -106.162354
@@ -2492,18 +2479,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Bevel:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
       }
     }
   }
@@ -2533,17 +2517,17 @@ Objects {
   Name: "letters"
   Transform {
     Location {
-      X: 15.3134861
-      Y: 67.6496201
-      Z: 39.9713669
+      X: 15.4524174
+      Y: 66.34198
+      Z: 26.0014782
     }
     Rotation {
       Yaw: -106.162231
     }
     Scale {
-      X: 0.495937884
-      Y: 0.495937884
-      Z: 0.495937884
+      X: 0.723820925
+      Y: 0.342238277
+      Z: 0.685818374
     }
   }
   ParentId: 14975212368365440942
@@ -2580,18 +2564,21 @@ Objects {
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.46875
-        G: 0.46875
-        B: 0.46875
-        A: 1
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 14231809728886464860
       }
     }
     Overrides {
-      Name: "ma:Font.Faces:id"
+      Name: "ma:Font.Sides:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 2664847478369185144
       }
     }
   }
@@ -2603,7 +2590,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 244522473715943722
+      Id: 7906970403073025695
     }
     Teams {
       IsTeamCollisionEnabled: true
