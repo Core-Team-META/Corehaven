@@ -1,6 +1,660 @@
 Name: "Tavern_Interior"
 RootId: 8666821601116918477
 Objects {
+  Id: 13238902961358090817
+  Name: "Fantasy Candle Lit - Chandelier 01 (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3703753476620589350
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Chandelier 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -426.303711
+            Y: -629.917236
+            Z: 876.255371
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -16.6793652
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 547654522164231554
+    }
+  }
+}
+Objects {
+  Id: 10662267810911060891
+  Name: "Fantasy Candle Lit - Holder 04 (Prop)"
+  Transform {
+    Location {
+      X: -7228.96631
+      Y: 3674.91675
+      Z: -6156.28857
+    }
+    Rotation {
+      Yaw: 57.3934669
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17939965582225466197
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Holder 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -881.236328
+            Y: -390.514648
+            Z: 491.843262
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 57.3933716
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15772131835111520842
+    }
+  }
+}
+Objects {
+  Id: 18008705604635417333
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -7611.05273
+      Y: 3469.10229
+      Z: -5993.63
+    }
+    Rotation {
+      Yaw: -112.418594
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1247.32227
+            Y: -895.999512
+            Z: 605.333
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.418488
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 10588126102177655396
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -7356.60791
+      Y: 4085.86206
+      Z: -5993.63
+    }
+    Rotation {
+      Yaw: -112.41864
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -896.088379
+            Y: -44.6262207
+            Z: 609.680664
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.418571
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 6470614683640247096
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -6032.5332
+      Y: 3639.44
+      Z: -5993.63
+    }
+    Rotation {
+      Yaw: 67.5813065
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -641.643555
+            Y: 572.133545
+            Z: 609.680664
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -112.418594
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 17034941855320141681
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -6366.3252
+      Y: 2945.99463
+      Z: -5993.63
+    }
+    Rotation {
+      Yaw: 67.5812683
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 677.030762
+            Y: 112.620605
+            Z: 609.680664
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 67.5813217
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 11773611823959878618
+  Name: "Fantasy Candle Lit - Holder 04 (Prop)"
+  Transform {
+    Location {
+      X: -6208.46582
+      Y: 3988.35278
+      Z: -6156.28857
+    }
+    Rotation {
+      Yaw: 57.3934212
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17939965582225466197
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Holder 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -296.341309
+            Y: 777.270508
+            Z: 491.843262
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 57.3933716
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15772131835111520842
+    }
+  }
+}
+Objects {
+  Id: 15819654187315259625
+  Name: "Fantasy Candle Lit - Holder 04 (Prop)"
+  Transform {
+    Location {
+      X: -6428.5166
+      Y: 3354.07373
+      Z: -6156.28857
+    }
+    Rotation {
+      Yaw: 57.3934479
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17939965582225466197
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Holder 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 506.498535
+            Y: 474.624268
+            Z: 491.843262
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 57.3933868
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15772131835111520842
+    }
+  }
+}
+Objects {
+  Id: 4931161608436433303
+  Name: "Fantasy Candle Lit - Holder 04 (Prop)"
+  Transform {
+    Location {
+      X: -7228.96631
+      Y: 3674.91675
+      Z: -6156.28857
+    }
+    Rotation {
+      Yaw: 57.3934669
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 17939965582225466197
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Holder 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 286.447754
+            Y: -159.654785
+            Z: 491.843262
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 57.3934059
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15772131835111520842
+    }
+  }
+}
+Objects {
+  Id: 4824441652851249428
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -6646.52197
+      Y: 2266.81616
+      Z: -5993.63
+    }
+    Rotation {
+      Yaw: 67.5812607
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 348.63916
+            Y: -567.733887
+            Z: 609.680664
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 67.5812759
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 13678415657300828248
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 68.4423828
+            Y: -1246.91235
+            Z: 613.451172
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 67.5812836
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 300
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
   Id: 773912757743080536
   Name: "Reinforced Crate 150cm"
   Transform {
