@@ -422,15 +422,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14423772792748955178
-  Name: "Shield 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_002"
-  }
-}
-Assets {
   Id: 14328459164057885108
   Name: "Text 01: D"
   PlatformAssetType: 1
@@ -536,6 +527,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 13514720493218528253
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
   }
 }
 Assets {
@@ -707,6 +707,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_part_grate_001_ref"
+  }
+}
+Assets {
+  Id: 11285278799348334020
+  Name: "Sphere - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_002"
   }
 }
 Assets {
@@ -914,15 +923,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_022"
-  }
-}
-Assets {
-  Id: 8508961624005586682
-  Name: "Pipe"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_001"
   }
 }
 Assets {
@@ -1178,6 +1178,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5687388192173703223
+  Name: "Decal Leaves 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_leaves_001"
+  }
+}
+Assets {
   Id: 5649559338683583195
   Name: "Fantasy Shield Strap 01"
   PlatformAssetType: 1
@@ -1376,6 +1385,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3153145125218872818
+  Name: "Smoke Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_volume_vfx"
+  }
+}
+Assets {
   Id: 3149811683816933532
   Name: "Small Open Crate"
   PlatformAssetType: 1
@@ -1481,6 +1499,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chain_001"
+  }
+}
+Assets {
+  Id: 1801288084318586961
+  Name: "Fantasy Shield 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_002"
   }
 }
 Assets {

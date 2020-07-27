@@ -260,15 +260,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3153145125218872818
-  Name: "Smoke Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_smoke_volume_vfx"
-  }
-}
-Assets {
   Id: 3149811683816933532
   Name: "Small Open Crate"
   PlatformAssetType: 1

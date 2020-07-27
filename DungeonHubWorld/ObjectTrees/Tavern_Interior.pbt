@@ -639,6 +639,16 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 12697071862094856154
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 4991514673705742534
     }
@@ -1021,92 +1031,6 @@ Objects {
     StaticMesh {
       Physics {
       }
-    }
-  }
-}
-Objects {
-  Id: 9632743528985375065
-  Name: "Smoke Volume VFX"
-  Transform {
-    Location {
-      X: 7817.12842
-      Y: -922.791748
-      Z: 1464.58398
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8666821601116918477
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evfxvolumetype:2"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3153145125218872818
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
-  Id: 12546593452547812795
-  Name: "Smoke Volume VFX"
-  Transform {
-    Location {
-      X: 282.000488
-      Y: 1005.46826
-      Z: 2115.65283
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8666821601116918477
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evfxvolumetype:2"
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3153145125218872818
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
     }
   }
 }
@@ -1868,6 +1792,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -2560,6 +2485,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3252,6 +3178,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -3891,6 +3818,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4166,16 +4094,16 @@ Objects {
   Name: "Carpet Tile 02"
   Transform {
     Location {
-      X: -572.567383
-      Y: -1048.7019
+      X: -614.613281
+      Y: -996.296387
       Z: 462.880859
     }
     Rotation {
-      Yaw: 66.7749786
+      Yaw: 66.7750397
     }
     Scale {
-      X: 0.210444763
-      Y: 0.599858
+      X: 0.11067339
+      Y: 0.536676407
       Z: 0.210445553
     }
   }
@@ -4405,8 +4333,8 @@ Objects {
   Name: "Wooden Bucket"
   Transform {
     Location {
-      X: -120.555664
-      Y: -1444.03149
+      X: -103.511719
+      Y: -1417.14233
       Z: 461.324219
     }
     Rotation {
@@ -4444,8 +4372,8 @@ Objects {
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: -118.20459
-      Y: -1445.20264
+      X: -101.160645
+      Y: -1418.31348
       Z: 355.456543
     }
     Rotation {
@@ -4683,18 +4611,18 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: -345.467285
-      Y: -1049.7522
-      Z: 871.974121
+      X: -328.621582
+      Y: -1056.84888
+      Z: 835.991211
     }
     Rotation {
       Pitch: -90
-      Roll: 67.1555862
+      Roll: 67.1557312
     }
     Scale {
-      X: 1.30878019
-      Y: 10.3358898
-      Z: 0.150449231
+      X: 1.81897449
+      Y: 10.3358936
+      Z: 0.150449201
     }
   }
   ParentId: 8666821601116918477
@@ -4732,6 +4660,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableDistanceFieldLighting: true
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -4744,14 +4673,14 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: -345.467285
-      Y: -1049.7522
+      X: -332.875488
+      Y: -1055.05688
       Z: 369.818359
     }
     Rotation {
       Pitch: -90
-      Yaw: 14.0362635
-      Roll: 53.1192
+      Yaw: 180
+      Roll: -112.844498
     }
     Scale {
       X: 1.70925248
@@ -4807,15 +4736,15 @@ Objects {
   Transform {
     Location {
       X: -395.452148
-      Y: -1173.54297
-      Z: 455.168457
+      Y: -1123.38916
+      Z: 453.646484
     }
     Rotation {
-      Yaw: 66.8784485
+      Yaw: 66.8785095
     }
     Scale {
-      X: 1.10062468
-      Y: 10.3358583
+      X: 0.455792367
+      Y: 9.8949194
       Z: 0.150449231
     }
   }
