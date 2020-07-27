@@ -1,9 +1,9 @@
 Assets {
-  Id: 17983886762090769352
-  Name: "Plane 1m - One Sided"
+  Id: 7616109972271673814
+  Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetId: "sm_plane_1m_002"
   }
 }

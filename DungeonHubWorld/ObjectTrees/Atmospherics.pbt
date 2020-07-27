@@ -1059,7 +1059,7 @@ Objects {
     Overrides {
       Name: "cs:EnvironmentFog"
       ObjectReference {
-        SelfId: 12196723082961294526
+        SelfId: 15138106234040772773
       }
     }
     Overrides {

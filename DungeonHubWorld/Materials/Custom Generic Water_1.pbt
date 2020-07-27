@@ -8,7 +8,7 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "normal foam brightness"
-        Float: 0.135286883
+        Float: 0.0441606976
       }
       Overrides {
         Name: "wind speed"
@@ -17,6 +17,26 @@ Assets {
       Overrides {
         Name: "speed"
         Float: -0.0794807076
+      }
+      Overrides {
+        Name: "edge foam brightness"
+        Float: 0.25
+      }
+      Overrides {
+        Name: "normal distance"
+        Float: 5
+      }
+      Overrides {
+        Name: "normal amount"
+        Float: 1
+      }
+      Overrides {
+        Name: "opacity distance"
+        Float: 100
+      }
+      Overrides {
+        Name: "opacity"
+        Float: 0.9
       }
     }
     Assets {
