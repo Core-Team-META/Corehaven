@@ -33,16 +33,17 @@ Objects {
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
-      X: -1146.0918
-      Y: 4351.90527
+      X: -1622.74902
+      Y: 3888.84424
+      Z: -3860.33
     }
     Rotation {
-      Yaw: 67.2655106
+      Yaw: 67.2656403
     }
     Scale {
-      X: 7.77343702
-      Y: 36.7620583
-      Z: 50
+      X: 7.77344418
+      Y: 60.7988129
+      Z: 100
     }
   }
   ParentId: 12985283296800961326
@@ -80,16 +81,17 @@ Objects {
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
-      X: 598.542
-      Y: 1096.81934
+      X: -634.59082
+      Y: 830.833496
+      Z: -3302.75977
     }
     Rotation {
-      Yaw: 7.83716
+      Yaw: 9.98466206
     }
     Scale {
-      X: 7.77349377
-      Y: 58.7239151
-      Z: 50
+      X: 7.77353
+      Y: 221.185486
+      Z: 100
     }
   }
   ParentId: 12985283296800961326
@@ -127,16 +129,17 @@ Objects {
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
-      X: 547.551758
-      Y: -5448.72461
+      X: 634.141602
+      Y: -4582.61572
+      Z: -3302.75977
     }
     Rotation {
-      Yaw: -5.07272577
+      Yaw: -5.70922852
     }
     Scale {
-      X: 7.77348
-      Y: 80.4581299
-      Z: 50
+      X: 7.77350569
+      Y: 104.703293
+      Z: 100
     }
   }
   ParentId: 12985283296800961326

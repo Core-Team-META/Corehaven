@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2545146301836095758
+  Name: "Cliff 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "cliff_002"
+  }
+}
+Assets {
   Id: 2370747781706679886
   Name: "Fern 03"
   PlatformAssetType: 1
