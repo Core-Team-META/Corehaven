@@ -7,7 +7,7 @@ Assets {
       RootId: 17939965582225466197
       Objects {
         Id: 17939965582225466197
-        Name: "tm_fan_candle_holder_004_lit_01"
+        Name: "Fantasy Candle Lit - Holder 04 (Prop)"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@ Assets {
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 8666821601116918477
         ChildIds: 3829406021337157519
         ChildIds: 2544080569051097759
         Collidable_v2 {
@@ -83,6 +83,7 @@ Assets {
         ParentId: 17939965582225466197
         ChildIds: 7081179764566225958
         ChildIds: 10434389566302746931
+        ChildIds: 5475776503292765808
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -176,6 +177,51 @@ Assets {
             }
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
+          }
+        }
+      }
+      Objects {
+        Id: 5475776503292765808
+        Name: "Lantern_DayNight"
+        Transform {
+          Location {
+            X: -774.484253
+            Y: -1572.70422
+            Z: -432.791016
+          }
+          Rotation {
+            Yaw: 122.606728
+          }
+          Scale {
+            X: 2.10201454
+            Y: 2.10201454
+            Z: 2.10201454
+          }
+        }
+        ParentId: 2544080569051097759
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Light"
+            ObjectReference {
+              SubObjectId: 10434389566302746931
+            }
+          }
+          Overrides {
+            Name: "cs:Flame"
+            ObjectReference {
+              SubObjectId: 7081179764566225958
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 5677040223085038469
           }
         }
       }

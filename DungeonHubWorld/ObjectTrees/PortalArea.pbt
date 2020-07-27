@@ -5855,6 +5855,7 @@ Objects {
     }
   }
   ParentId: 9295880431198237303
+  ChildIds: 11675543554183344566
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -5908,6 +5909,202 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 11675543554183344566
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 13826021509835121175
+  ChildIds: 4713923350885060960
+  ChildIds: 11469636968103878431
+  ChildIds: 5943485336259050170
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5943485336259050170
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 11675543554183344566
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11469636968103878431
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11675543554183344566
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 4713923350885060960
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 5943485336259050170
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 4713923350885060960
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11675543554183344566
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -6354,6 +6551,7 @@ Objects {
     }
   }
   ParentId: 18426691166413449096
+  ChildIds: 17063409000805684755
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6407,6 +6605,203 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 17063409000805684755
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Roll: -3.41509485e-06
+    }
+    Scale {
+      X: 1.7688942
+      Y: 1.7688942
+      Z: 1.7688942
+    }
+  }
+  ParentId: 18051174722775099635
+  ChildIds: 5015744780698087445
+  ChildIds: 4618670560723909157
+  ChildIds: 18429571635355392969
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18429571635355392969
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 17063409000805684755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4618670560723909157
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17063409000805684755
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 5015744780698087445
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 18429571635355392969
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 5015744780698087445
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17063409000805684755
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -6853,6 +7248,7 @@ Objects {
     }
   }
   ParentId: 15214293618089472298
+  ChildIds: 1656342833936232141
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6906,6 +7302,202 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 1656342833936232141
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.7688942
+      Y: 1.7688942
+      Z: 1.7688942
+    }
+  }
+  ParentId: 12046834457318597610
+  ChildIds: 1757632802526993952
+  ChildIds: 12219383467938122155
+  ChildIds: 12605815309834789912
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12605815309834789912
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 1656342833936232141
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12219383467938122155
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1656342833936232141
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 1757632802526993952
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 12605815309834789912
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 1757632802526993952
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1656342833936232141
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -7352,6 +7944,7 @@ Objects {
     }
   }
   ParentId: 12657170504594315816
+  ChildIds: 31178215239137104
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -7405,6 +7998,205 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 31178215239137104
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 6.33637285
+      Yaw: 34.1778831
+      Roll: -20.4128876
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 16054649722831850685
+  ChildIds: 12241450017191653156
+  ChildIds: 3015234710191562221
+  ChildIds: 4993771795198144884
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 4993771795198144884
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 31178215239137104
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3015234710191562221
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 31178215239137104
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 12241450017191653156
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 4993771795198144884
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 12241450017191653156
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 31178215239137104
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -7851,6 +8643,7 @@ Objects {
     }
   }
   ParentId: 9115953171925096657
+  ChildIds: 3803363302158984307
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -7904,6 +8697,205 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 3803363302158984307
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 19.6579113
+      Yaw: 60.886837
+      Roll: -32.8492432
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 3135261487535622939
+  ChildIds: 9363107729690440170
+  ChildIds: 15516595049690738981
+  ChildIds: 13017524036036627318
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 13017524036036627318
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 3803363302158984307
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15516595049690738981
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3803363302158984307
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 9363107729690440170
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 13017524036036627318
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 9363107729690440170
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3803363302158984307
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -8350,6 +9342,7 @@ Objects {
     }
   }
   ParentId: 2453197235688924789
+  ChildIds: 3177021158027257458
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -8403,6 +9396,205 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 3177021158027257458
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 50.6058311
+      Yaw: 112.678398
+      Roll: -34.9502068
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 14745651807962753281
+  ChildIds: 6502741102890199600
+  ChildIds: 4301905351238235454
+  ChildIds: 12218463561169753713
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12218463561169753713
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 3177021158027257458
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4301905351238235454
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3177021158027257458
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 6502741102890199600
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 12218463561169753713
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 6502741102890199600
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3177021158027257458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -8849,6 +10041,7 @@ Objects {
     }
   }
   ParentId: 17166368134477406575
+  ChildIds: 16858621407654602764
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -8902,6 +10095,205 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 16858621407654602764
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 63.4477959
+      Yaw: 170.404648
+      Roll: -5.93992281
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 9024330650907983183
+  ChildIds: 7438759307075988575
+  ChildIds: 7598423001789767159
+  ChildIds: 5123003062299597390
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5123003062299597390
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 16858621407654602764
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7598423001789767159
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16858621407654602764
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 7438759307075988575
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 5123003062299597390
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 7438759307075988575
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16858621407654602764
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
@@ -9348,6 +10740,7 @@ Objects {
     }
   }
   ParentId: 12436316081153892642
+  ChildIds: 3702382374736007694
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -9401,6 +10794,202 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 3702382374736007694
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.76889408
+      Y: 1.76889408
+      Z: 1.76889408
+    }
+  }
+  ParentId: 4480125095064251553
+  ChildIds: 11327250567815171474
+  ChildIds: 15861435831091862160
+  ChildIds: 3168280713391902155
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3168280713391902155
+  Name: "Text 05: C"
+  Transform {
+    Location {
+      X: -3.04888381e-05
+      Y: 0.000110462737
+      Z: 1.89293714e-05
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+      Roll: 1.3660374e-05
+    }
+    Scale {
+      X: 0.583311856
+      Y: 0.583311856
+      Z: 0.583311856
+    }
+  }
+  ParentId: 3702382374736007694
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.500000119
+        G: 2.58609104
+        B: 5
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15861435831091862160
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3702382374736007694
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 11327250567815171474
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 3168280713391902155
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 11327250567815171474
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3702382374736007694
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 29.6790504
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.960662365
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 825.856628
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
   }
 }
