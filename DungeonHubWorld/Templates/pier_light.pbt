@@ -33,16 +33,16 @@ Assets {
         Name: "Candle Flame VFX"
         Transform {
           Location {
-            X: -0.234500572
-            Y: -2.77636673e-06
-            Z: 1.39192689e-05
+            X: -0.234501272
+            Y: -1.72541695e-05
+            Z: 1.39087315e-05
           }
           Rotation {
           }
           Scale {
-            X: 5.56581068
-            Y: 5.56578493
-            Z: 3.09404349
+            X: 5.56582117
+            Y: 5.56579733
+            Z: 4.87467957
           }
         }
         ParentId: 9428891237528791597
@@ -142,7 +142,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 200
+            Float: 0
           }
           Overrides {
             Name: "bp:Color Offset A"
@@ -243,7 +243,7 @@ Assets {
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 50
+            Float: 11.0383205
           }
           Overrides {
             Name: "bp:Color Offset A"
@@ -308,7 +308,7 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 21.331955
+          Intensity: 65.5591354
           Color {
             R: 1
             G: 0.726868153
