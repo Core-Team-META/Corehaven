@@ -26,6 +26,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13406026407024307723
+  Name: "Moon"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_Moon"
+  }
+}
+Assets {
+  Id: 12344193518355455075
+  Name: "Star Dome"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_StarDome"
+  }
+}
+Assets {
   Id: 11877895785402026262
   Name: "Ambient Occlusion Post Process"
   PlatformAssetType: 20
@@ -41,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 10988486045141043269
+  Name: "Sun Halo"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "CORESKY_SunHalo"
   }
 }
 Assets {

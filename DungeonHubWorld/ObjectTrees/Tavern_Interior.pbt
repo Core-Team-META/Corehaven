@@ -480,14 +480,6 @@ Objects {
   Id: 4931161608436433303
   Name: "Fantasy Candle Lit - Holder 04 (Prop)"
   Transform {
-    Location {
-      X: -7228.96631
-      Y: 3674.91675
-      Z: -6156.28857
-    }
-    Rotation {
-      Yaw: 57.3934669
-    }
     Scale {
       X: 1
       Y: 1
@@ -495,6 +487,12 @@ Objects {
     }
   }
   ParentId: 8666821601116918477
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 17939965582225466197
@@ -515,14 +513,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 57.3934059
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

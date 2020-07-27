@@ -197,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12827530473249900764
+  Name: "Opaque Emissive"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
+  }
+}
+Assets {
   Id: 12749473561395866496
   Name: "Kelp Bush 02"
   PlatformAssetType: 1
