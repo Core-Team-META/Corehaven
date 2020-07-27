@@ -719,6 +719,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11104283164569496576
+  Name: "Carpet Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_001"
+  }
+}
+Assets {
   Id: 11038491654121119354
   Name: "Text 01: N"
   PlatformAssetType: 1
@@ -926,6 +935,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8452502681248844190
+  Name: "Fantasy Chest Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_002_ref"
+  }
+}
+Assets {
   Id: 8318010931141529991
   Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
@@ -1013,6 +1031,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_banner_002"
+  }
+}
+Assets {
+  Id: 7715152830417178651
+  Name: "Fabric Burlap New 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_002_uv"
   }
 }
 Assets {
@@ -1115,6 +1142,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6730645643119699680
+  Name: "Shield 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_001"
+  }
+}
+Assets {
   Id: 6643656927040904919
   Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
@@ -1175,6 +1211,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torch_holder_001"
+  }
+}
+Assets {
+  Id: 6013290205953027442
+  Name: "Fantasy Chest Lid 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_chest_lid_002_ref"
   }
 }
 Assets {
@@ -1421,6 +1466,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2704475915930415914
+  Name: "Bench Full"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bench_001"
+  }
+}
+Assets {
   Id: 2684855673920768983
   Name: "Text 01: L"
   PlatformAssetType: 1
@@ -1580,6 +1634,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_001"
+  }
+}
+Assets {
+  Id: 920718023733593417
+  Name: "Table Assembled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_table_001"
   }
 }
 Assets {

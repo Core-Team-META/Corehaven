@@ -8,7 +8,7 @@ Assets {
     ParameterOverrides {
       Overrides {
         Name: "Clarity"
-        Float: 0.763639152
+        Float: 0.364322752
       }
     }
     Assets {
