@@ -8,15 +8,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17999095934034705962
-  Name: "Waterfall Base Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_waterfall_base_volume"
-  }
-}
-Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -68,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_torch_fire"
-  }
-}
-Assets {
-  Id: 13108739057838953055
-  Name: "Waterfall Straight"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "fxsm_waterfall_straight"
   }
 }
 Assets {

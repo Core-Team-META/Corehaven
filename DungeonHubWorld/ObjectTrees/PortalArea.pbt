@@ -8009,9 +8009,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -8706,9 +8706,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -9380,9 +9380,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -1.56933594
-      Y: -0.257812411
-      Z: 16.4680176
+      X: 10.3368635
+      Y: -0.25803113
+      Z: -5.5139327
     }
     Rotation {
     }
@@ -9402,9 +9402,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -10101,9 +10101,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -10800,9 +10800,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -11499,9 +11499,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -12198,9 +12198,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432
@@ -12894,9 +12894,9 @@ Objects {
   Light {
     Intensity: 10
     Color {
-      R: 0.339999974
-      G: 1
-      B: 0.960662365
+      R: 0.0400000215
+      G: 0.809271395
+      B: 1
       A: 1
     }
     VolumetricIntensity: 81.3436432

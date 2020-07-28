@@ -413,6 +413,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14564880050244824864
+  Name: "Wood Planks Beveled Painted 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_bevel_planks_white_001_uv"
+  }
+}
+Assets {
   Id: 14509956427293716804
   Name: "Square Column Base 02"
   PlatformAssetType: 1
@@ -464,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-edge_corner_2m_001"
+  }
+}
+Assets {
+  Id: 13983442170571298872
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
   }
 }
 Assets {

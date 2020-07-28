@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11360165942033958162
+  Name: "Depth of Field Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_DOF"
+  }
+}
+Assets {
   Id: 10988486045141043269
   Name: "Sun Halo"
   PlatformAssetType: 6

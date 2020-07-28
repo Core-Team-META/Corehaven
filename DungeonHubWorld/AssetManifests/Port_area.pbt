@@ -143,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16532662947784276478
-  Name: "Generic Water"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_parameter_driven_water_manual"
-  }
-}
-Assets {
   Id: 16216211350459920357
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -923,6 +914,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_half_002_win_01"
+  }
+}
+Assets {
+  Id: 7412927274057473812
+  Name: "Decal Stains Bottom 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_bottom_001"
   }
 }
 Assets {

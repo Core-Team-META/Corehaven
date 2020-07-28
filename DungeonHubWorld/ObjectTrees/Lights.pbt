@@ -1,6 +1,2541 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 8451059102782739692
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -17349.8984
+      Y: -22092.3711
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: -38.7058563
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 12720207555206010207
+  ChildIds: 14036615016897057153
+  ChildIds: 18118771004188444485
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18118771004188444485
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8451059102782739692
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 14036615016897057153
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 8451059102782739692
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12720207555206010207
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 8451059102782739692
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 18118771004188444485
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 14036615016897057153
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 16897094889702491112
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -23126.7754
+      Y: -25100.4121
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: -1.24081683
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 13262545949158729461
+  ChildIds: 9229796705667187361
+  ChildIds: 6271455800530494977
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6271455800530494977
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16897094889702491112
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 9229796705667187361
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 16897094889702491112
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13262545949158729461
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 16897094889702491112
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 6271455800530494977
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 9229796705667187361
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 2750814469133713487
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -25586.1426
+      Y: -30968.6348
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: 37.2522583
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 15859181912534764488
+  ChildIds: 17244917444527850706
+  ChildIds: 16346659895388910684
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16346659895388910684
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2750814469133713487
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 17244917444527850706
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 2750814469133713487
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15859181912534764488
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 2750814469133713487
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 16346659895388910684
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 17244917444527850706
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 12073950921091012111
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -23877.959
+      Y: -37092.1172
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: 73.069313
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 15724941598647703250
+  ChildIds: 15242121782397797038
+  ChildIds: 18259531249159158658
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18259531249159158658
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12073950921091012111
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 15242121782397797038
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 12073950921091012111
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15724941598647703250
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 12073950921091012111
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 18259531249159158658
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 15242121782397797038
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 12060605365665241362
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -18684.0449
+      Y: -40717.3672
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: 115.309845
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 13136728648078090927
+  ChildIds: 4603443046554035755
+  ChildIds: 6223275278946242504
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6223275278946242504
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12060605365665241362
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 4603443046554035755
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 12060605365665241362
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13136728648078090927
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 12060605365665241362
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 6223275278946242504
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 4603443046554035755
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 18085874458671316420
+  Name: "Portal_area_Amethyst"
+  Transform {
+    Location {
+      X: -12330.3643
+      Y: -40183.418
+      Z: 2676.87354
+    }
+    Rotation {
+      Yaw: 153.184875
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 10081546786573290244
+  ChildIds: 8928841458750114446
+  ChildIds: 5493620541956129803
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5493620541956129803
+  Name: "Amethyst_light"
+  Transform {
+    Location {
+      X: 194.909546
+      Y: -162.490234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18085874458671316420
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 15
+    Color {
+      G: 0.464105785
+      B: 0.960000038
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1644.47229
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 8928841458750114446
+  Name: "Amethyst01_e"
+  Transform {
+    Location {
+      X: -194.909485
+      Y: 162.491211
+      Z: 392.208984
+    }
+    Rotation {
+      Pitch: -0.000204905664
+      Yaw: -129.336716
+      Roll: -2.90400408e-06
+    }
+    Scale {
+      X: 1.30520856
+      Y: 0.346319079
+      Z: 3.55635905
+    }
+  }
+  ParentId: 18085874458671316420
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Font.Faces:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Bevel:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Font.Sides:id"
+      AssetReference {
+        Id: 13576367259465906358
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17539097910193149722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8525403518504042279
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10081546786573290244
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: 177.101807
+      Y: -158.945313
+      Z: -31.7597656
+    }
+    Rotation {
+      Pitch: 31.8349915
+      Yaw: 151.518143
+      Roll: 0.00020400426
+    }
+    Scale {
+      X: 2.10201406
+      Y: 2.10201406
+      Z: 2.10201406
+    }
+  }
+  ParentId: 18085874458671316420
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 5493620541956129803
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 8928841458750114446
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 8808659135353013750
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5335.50781
+      Y: 1409.85596
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75045204
+      Roll: -0.034729
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8994.41504
+            Y: -2543.44312
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 6684284633689431870
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5338.18604
+      Y: 3654.98584
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75045204
+      Roll: -0.034729
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8127.5415
+            Y: -2903.49609
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 15528540288938406926
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5640.90625
+      Y: 3694.74805
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75045156
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11220.0029
+            Y: -9003.42871
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 7890953868869010945
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 7009.07129
+      Y: 4287.11768
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75045085
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12097.6191
+            Y: -8695.53906
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289704
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 15113086340858534746
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 8367.70898
+      Y: 1869.36365
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044942
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -16631.1289
+            Y: -8425.87109
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935349
+            Roll: -0.0347290225
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 8444885802111751181
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 8367.70898
+      Y: -576.953308
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.7504487
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -17002.3281
+            Y: 14.0319977
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 11361370156344537827
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 7093.86768
+      Y: 385.733856
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044727
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -13640.6826
+            Y: 6664.59229
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347290225
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 268802483736772439
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 7125.90234
+      Y: -2764.75073
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044632
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -11500.5078
+            Y: 2296.96143
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 2998406430066090465
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5335.58398
+      Y: -2178.0896
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044537
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7258.31055
+            Y: 10905.8955
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 11579465441436510571
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5654.90918
+      Y: -2158.5061
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044441
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3197.31738
+            Y: 6850.80225
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 2196125264700642311
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5644.34473
+      Y: -171.579605
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75044322
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4092.3457
+            Y: 7236.36865
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 11411580986241876100
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 5337.42236
+      Y: -196.994141
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.7504425
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -6793.9917
+            Y: 1820.19
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347290225
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 4413209428057068185
+  Name: "pier_light"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5924.66895
+            Y: 1467.52014
+            Z: 942.076
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 155.935333
+            Roll: -0.0347289965
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 15994500576364434363
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: -7663.56787
+      Y: -558.360413
+      Z: -5633.68408
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75048542
+      Roll: -0.0347289853
+    }
+    Scale {
+      X: 3.91012931
+      Y: 3.91012931
+      Z: 3.91012931
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2527360909484214569
+      value {
+        Overrides {
+          Name: "Name"
+          String: "r"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.234538198
+            Y: 3.5790039e-05
+            Z: -1.03519988
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90215397
+            Y: 1.90214598
+            Z: 1.05741096
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 570.635376
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "HouseLantern_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14817.5127
+            Y: -27023.5449
+            Z: 5944.49512
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590698
+            Yaw: 155.935364
+            Roll: -0.0347290039
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 11.9109039
+            Y: 11.9109039
+            Z: 11.9109039
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 16146366421378195823
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 3681.60181
+      Y: -1378.35913
+      Z: -7441.46484
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.7504611
+      Roll: -0.0347289704
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2527360909484214569
+      value {
+        Overrides {
+          Name: "Name"
+          String: "r"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.234538198
+            Y: 3.5790039e-05
+            Z: -1.03519988
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90215397
+            Y: 1.90214598
+            Z: 1.05741096
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 5
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 417.230103
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.659999967
+            G: 1
+            B: 0.91218549
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "MarketStall_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -504.789734
+            Y: 858.003174
+            Z: 909.832397
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590698
+            Yaw: 155.935364
+            Roll: -0.0347290039
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
+  Id: 11414483199453843651
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: -4538.40332
+      Y: -2633.7041
+      Z: -5803.47314
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75048542
+      Roll: -0.0347289853
+    }
+    Scale {
+      X: 3.91012955
+      Y: 3.91012955
+      Z: 3.91012955
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2527360909484214569
+      value {
+        Overrides {
+          Name: "Name"
+          String: "r"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.234538198
+            Y: 3.5790039e-05
+            Z: -1.03519988
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90215397
+            Y: 1.90214598
+            Z: 1.05741096
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 570.635376
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "HouseLantern_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 29916.4375
+            Y: -15415.5869
+            Z: 6421.08789
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590698
+            Yaw: 155.935364
+            Roll: -0.0347290039
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 11.9109039
+            Y: 11.9109039
+            Z: 11.9109039
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
   Id: 13370144577486350718
   Name: "pier_light"
   Transform {
@@ -183,18 +2718,18 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1500
         }
         Overrides {
           Name: "Intensity"
-          Float: 20
+          Float: 10
         }
         Overrides {
           Name: "Color"
           Color {
             R: 1
-            G: 0.59602648
-            B: 0.39
+            G: 1
+            B: 1
             A: 1
           }
         }
@@ -271,7 +2806,7 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1500
         }
         Overrides {
           Name: "Intensity"
@@ -281,8 +2816,8 @@ Objects {
           Name: "Color"
           Color {
             R: 1
-            G: 0.59602648
-            B: 0.39
+            G: 1
+            B: 1
             A: 1
           }
         }
@@ -363,14 +2898,14 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1500
         }
         Overrides {
           Name: "Color"
           Color {
             R: 1
-            G: 0.59602648
-            B: 0.39
+            G: 1
+            B: 1
             A: 1
           }
         }
@@ -451,7 +2986,16 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
         }
       }
     }
@@ -530,7 +3074,16 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
         }
       }
     }
@@ -609,7 +3162,16 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
         }
       }
     }
@@ -708,7 +3270,16 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
         }
       }
     }
@@ -806,15 +3377,22 @@ Objects {
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 2000
+          Float: 1500
         }
         Overrides {
           Name: "Color"
           Color {
             R: 1
-            G: 0.376887381
-            B: 0.0299999714
+            G: 1
+            B: 1
             A: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234558105
+            Z: 7.21635056
           }
         }
       }
@@ -886,6 +3464,28 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9428891237528791597
       value {
         Overrides {
@@ -951,6 +3551,28 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 9428891237528791597
       value {
@@ -2964,11 +5586,20 @@ Objects {
       value {
         Overrides {
           Name: "Intensity"
-          Float: 10
+          Float: 5
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 570.635376
+          Float: 417.230103
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.659999967
+            G: 1
+            B: 0.91218549
+            A: 1
+          }
         }
       }
     }

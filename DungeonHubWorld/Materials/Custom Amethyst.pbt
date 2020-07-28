@@ -23,6 +23,14 @@ Assets {
           A: 1
         }
       }
+      Overrides {
+        Name: "emissive top"
+        Float: 0
+      }
+      Overrides {
+        Name: "emissive bottom"
+        Float: 0
+      }
     }
     Assets {
       Id: 18010942990198143229

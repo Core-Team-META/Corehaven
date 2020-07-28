@@ -80,6 +80,7 @@ Objects {
   ChildIds: 7441046265826516375
   ChildIds: 14620959045912450528
   ChildIds: 14442721963295628635
+  ChildIds: 2050379427736762783
   ChildIds: 18129872369301078294
   ChildIds: 15138106234040772773
   ChildIds: 12196723082961294526
@@ -312,6 +313,45 @@ Objects {
   Blueprint {
     BlueprintAsset {
       Id: 15643444583939770376
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 2050379427736762783
+  Name: "Depth of Field Post Process"
+  Transform {
+    Location {
+      X: 561.421143
+      Y: -1084.55908
+      Z: -9892.83691
+    }
+    Rotation {
+      Yaw: -89.9999619
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6902822919988349614
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Depth Blur Radius"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11360165942033958162
     }
     TeamSettings {
     }
@@ -581,7 +621,9 @@ Objects {
     Overrides {
       Name: "bp:Light Color"
       Color {
-        R: 0.61
+        R: 1
+        G: 0.95
+        B: 0.73
         A: 1
       }
     }
@@ -609,7 +651,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3.5
+      Float: 2.5
     }
     Overrides {
       Name: "bp:Sun Disc Color"
@@ -930,9 +972,9 @@ Objects {
     Overrides {
       Name: "bp:Tint Color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.500000119
+        G: 0.480000019
+        B: 0.75
         A: 1
       }
     }
