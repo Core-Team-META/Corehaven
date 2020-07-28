@@ -693,11 +693,12 @@ Objects {
   Name: "Dragon Mob"
   Transform {
     Location {
-      X: 3411.32861
-      Y: -1294.13562
-      Z: -7424.63818
+      X: 3577.73
+      Y: -1268.59436
+      Z: -7472.45361
     }
     Rotation {
+      Yaw: 38.8174744
     }
     Scale {
       X: 1
@@ -783,12 +784,12 @@ Objects {
   Name: "Fantasy Human Guy"
   Transform {
     Location {
-      X: 3340.47144
-      Y: -1187.47839
+      X: 3428.96631
+      Y: -1168.81909
       Z: -7604.79297
     }
     Rotation {
-      Yaw: -13.5905333
+      Yaw: -1.66009521
     }
     Scale {
       X: 1

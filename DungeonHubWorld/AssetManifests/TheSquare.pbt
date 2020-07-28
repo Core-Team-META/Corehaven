@@ -440,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14286548275753926268
+  Name: "Text 01: ]"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_054"
+  }
+}
+Assets {
   Id: 14267747156564835807
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   PlatformAssetType: 1
@@ -953,6 +962,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8525403518504042279
+  Name: "Diamond - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_hq_001"
+  }
+}
+Assets {
   Id: 8452502681248844190
   Name: "Fantasy Chest Base 02"
   PlatformAssetType: 1
@@ -1202,6 +1220,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_004"
+  }
+}
+Assets {
+  Id: 6528381076757568107
+  Name: "Bush Leafy Tall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_001"
   }
 }
 Assets {

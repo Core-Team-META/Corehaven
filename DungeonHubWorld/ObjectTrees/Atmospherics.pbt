@@ -456,18 +456,17 @@ Objects {
     Overrides {
       Name: "bp:Zenith Color"
       Color {
-        R: 0.0243181027
-        G: 0.0633459464
-        B: 0.212230757
+        G: 0.127946913
+        B: 0.690000057
         A: 0.886000037
       }
     }
     Overrides {
       Name: "bp:Horizon Color"
       Color {
-        R: 0.489468127
-        G: 0.480969489
-        B: 0.623960376
+        R: 0.149999976
+        G: 0.814238
+        B: 1
         A: 0.895000041
       }
     }
@@ -892,6 +891,14 @@ Objects {
     Overrides {
       Name: "bp:Star Visibility"
       Float: 1
+    }
+    Overrides {
+      Name: "bp:Space Tint"
+      Color {
+        G: 0.00556291593
+        B: 0.120000005
+        A: 1
+      }
     }
   }
   Collidable_v2 {

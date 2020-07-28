@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15310209409301279983
+  Name: "Wall End Fancy 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wall_end_fancy_6m_001"
+  }
+}
+Assets {
   Id: 15281629729725634170
   Name: "Glass 01"
   PlatformAssetType: 2
@@ -269,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14746939567165662757
+  Name: "Sphere - Half Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_hemisphere_002"
+  }
+}
+Assets {
   Id: 14574512655253538456
   Name: "Rocks River Bed 01"
   PlatformAssetType: 2
@@ -293,6 +311,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_pommel_005"
+  }
+}
+Assets {
+  Id: 14252695843363782250
+  Name: "Spiral"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_helix_001"
   }
 }
 Assets {
@@ -329,6 +356,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_liquid"
+  }
+}
+Assets {
+  Id: 14014504692453732684
+  Name: "Food Corn 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_corn_001_uv"
   }
 }
 Assets {
@@ -464,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_moss_patch_001"
+  }
+}
+Assets {
+  Id: 12567280682905171665
+  Name: "Scifi Panel 1x3m Angled Right"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_panel_1x3m_angledR_001"
   }
 }
 Assets {
@@ -710,6 +755,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9636477455075137888
+  Name: "Food Watermelon 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_watermelon_001_uv1"
+  }
+}
+Assets {
   Id: 9544913535066953067
   Name: "Fantasy Sword Guard 02"
   PlatformAssetType: 1
@@ -815,6 +869,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_door_02"
+  }
+}
+Assets {
+  Id: 8294807043175688377
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
   }
 }
 Assets {
@@ -1016,6 +1079,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6062783959108536718
+  Name: "Torch Holder Metal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torch_holder_001"
+  }
+}
+Assets {
   Id: 6041984776381722081
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -1061,6 +1133,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5512335830567327151
+  Name: "Arch Fancy Peaked 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_2m_001"
+  }
+}
+Assets {
   Id: 5489775416547967874
   Name: "Hemisphere"
   PlatformAssetType: 1
@@ -1085,6 +1166,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 4397331359527074146
+  Name: "Arch Fancy 3m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_3m_001"
   }
 }
 Assets {
@@ -1355,6 +1445,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
+  Id: 1123914084325197890
+  Name: "Diamond"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_001"
   }
 }
 Assets {
