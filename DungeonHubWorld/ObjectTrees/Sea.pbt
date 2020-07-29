@@ -57,13 +57,13 @@ Objects {
   Transform {
     Location {
       X: 46551.1484
-      Y: -7795.07617
+      Y: -10043.3525
     }
     Rotation {
     }
     Scale {
       X: 231.13121
-      Y: 60
+      Y: 20183.709
       Z: 1
     }
   }

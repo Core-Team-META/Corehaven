@@ -47739,6 +47739,39 @@ Objects {
   ParentId: 8280763167727592134
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16009905922229131396
       value {
         Overrides {
@@ -47799,6 +47832,39 @@ Objects {
   ParentId: 8280763167727592134
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16009905922229131396
       value {
         Overrides {
@@ -47856,6 +47922,39 @@ Objects {
   }
   ParentId: 8280763167727592134
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16009905922229131396
       value {
@@ -47915,6 +48014,71 @@ Objects {
   ParentId: 8280763167727592134
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.317064136
+            Y: -1.40423417
+            Z: 368.249237
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.974893332
+            Yaw: -99.3498535
+            Roll: 0.0986961722
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5.4243474
+            Y: 2.47683096
+            Z: 766.943176
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.974893332
+            Yaw: -97.9331055
+            Roll: 0.0986998603
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16009905922229131396
       value {
         Overrides {
@@ -47973,6 +48137,39 @@ Objects {
   ParentId: 8280763167727592134
   TemplateInstance {
     ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 16009905922229131396
       value {
         Overrides {
@@ -48028,6 +48225,39 @@ Objects {
   }
   ParentId: 8280763167727592134
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16009905922229131396
       value {
@@ -48190,6 +48420,39 @@ Objects {
   }
   ParentId: 8280763167727592134
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 4785087807444283428
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9643684101309653880
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14478134279440546075
+      value {
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 7972656101864656978
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 16009905922229131396
       value {

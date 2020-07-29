@@ -412,9 +412,9 @@ Objects {
     Overrides {
       Name: "bp:Haze Color"
       Color {
-        R: 0.590618849
-        G: 0.590618849
-        B: 0.701101899
+        R: 0.59
+        G: 0.59
+        B: 0.7
         A: 1
       }
     }
@@ -424,15 +424,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Ambient Brightness"
-      Float: 3
-    }
-    Overrides {
-      Name: "bp:Cloud Rim Brightness"
-      Float: 50
+      Float: 0
     }
     Overrides {
       Name: "bp:Cloud Opacity"
-      Float: 0.203584433
+      Float: 0
     }
     Overrides {
       Name: "bp:Cloud Ambient Color"
@@ -460,11 +456,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Cloud Lighting Brightness"
-      Float: 10
+      Float: 0.5
     }
     Overrides {
       Name: "bp:Cloud Wisp Opacity"
-      Float: 0.692397118
+      Float: 0.201104984
     }
     Overrides {
       Name: "bp:Cloud Speed"
@@ -486,7 +482,7 @@ Objects {
     }
     Overrides {
       Name: "bp:High Cloud Opacity"
-      Float: 0.17565228
+      Float: 0.0792529732
     }
     Overrides {
       Name: "bp:High Cloud Noise Amount"
@@ -494,7 +490,7 @@ Objects {
     }
     Overrides {
       Name: "bp:High Cloud Noise Scale"
-      Float: 0.2
+      Float: 0
     }
     Overrides {
       Name: "bp:Clouds"
@@ -511,6 +507,27 @@ Objects {
     Overrides {
       Name: "bp:Cloud Wisp Speed"
       Float: 2
+    }
+    Overrides {
+      Name: "bp:Haze Falloff"
+      Float: 4.1
+    }
+    Overrides {
+      Name: "bp:Horizon Falloff"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Cloud Sun Behind Transmission"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:High Cloud Color"
+      Color {
+        R: 0.18
+        G: 0.446092427
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -974,10 +991,6 @@ Objects {
       Float: 10
     }
     Overrides {
-      Name: "bp:Brightness"
-      Float: 20
-    }
-    Overrides {
       Name: "bp:Use Sun Direction for Light Direction"
       Bool: false
     }
@@ -994,14 +1007,34 @@ Objects {
       }
     }
     Overrides {
-      Name: "bp:Dark Side Lights Tint"
+      Name: "bp:Distance"
+      Float: 25
+    }
+    Overrides {
+      Name: "bp:Dark Side Lights Transition Offset"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:color"
       Color {
+        R: 1
+        G: 1
+        B: 1
         A: 1
       }
     }
     Overrides {
-      Name: "bp:Distance"
-      Float: 25
+      Name: "bp:Brightness"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Dark Side Lights Tint"
+      Color {
+        R: 0.5
+        G: 0.999999881
+        B: 1
+        A: 1
+      }
     }
   }
   Collidable_v2 {

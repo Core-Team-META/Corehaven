@@ -413,15 +413,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14564880050244824864
-  Name: "Wood Planks Beveled Painted 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_bevel_planks_white_001_uv"
-  }
-}
-Assets {
   Id: 14509956427293716804
   Name: "Square Column Base 02"
   PlatformAssetType: 1
@@ -1160,6 +1151,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6977568964552625050
+  Name: "Curtains Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_02"
+  }
+}
+Assets {
   Id: 6973040567947712890
   Name: "Hill 03"
   PlatformAssetType: 1
@@ -1430,6 +1430,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3606887753753328447
+  Name: "Craftsman Stairs 01 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+  }
+}
+Assets {
   Id: 3533190463953898497
   Name: "Fantasy Chest Treasure Pile 01"
   PlatformAssetType: 1
@@ -1592,6 +1601,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2115913270908487285
+  Name: "Roof Square Shingles 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
   Id: 1988419718866759799
   Name: "Chain Tile 01"
   PlatformAssetType: 1
@@ -1607,6 +1625,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_shield_002"
+  }
+}
+Assets {
+  Id: 1637968536887231183
+  Name: "Prism - 3-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_001"
   }
 }
 Assets {

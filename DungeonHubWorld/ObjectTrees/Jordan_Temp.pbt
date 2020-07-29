@@ -50,12 +50,12 @@ Objects {
   Name: "Fantasy Human Guy"
   Transform {
     Location {
-      X: -3498.60449
-      Y: -3708.92651
+      X: -3466.40381
+      Y: -3590.16333
       Z: -6719.36963
     }
     Rotation {
-      Yaw: 67.4758911
+      Yaw: 67.4759064
     }
     Scale {
       X: 1
@@ -922,12 +922,12 @@ Objects {
   Name: "Fantasy Human Guy"
   Transform {
     Location {
-      X: -7310.01807
-      Y: 2326.96484
+      X: -7241.74658
+      Y: 2240.46387
       Z: -6187.65234
     }
     Rotation {
-      Yaw: 56.3658066
+      Yaw: 48.4437256
     }
     Scale {
       X: 1
@@ -958,7 +958,7 @@ Objects {
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
         Animation: "unarmed_no"
-        PlaybackRate: 0.816720665
+        PlaybackRate: 0.410917
         ShouldLoop: true
       }
     }
