@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10123498949289312814
+  Name: "Craftsman Roof 01 Peak"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_peak"
+  }
+}
+Assets {
   Id: 9037050440305590279
   Name: "Clover Patch 02"
   PlatformAssetType: 1

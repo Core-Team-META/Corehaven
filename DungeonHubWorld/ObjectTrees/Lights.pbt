@@ -2376,14 +2376,13 @@ Objects {
   Name: "Amethyst01_e"
   Transform {
     Location {
-      X: -194.909485
-      Y: 162.491211
+      X: -194.378052
+      Y: 161.397461
       Z: 392.208984
     }
     Rotation {
-      Pitch: -0.000204905664
-      Yaw: -129.336716
-      Roll: -2.90400408e-06
+      Pitch: -0.000213623047
+      Yaw: -129.336639
     }
     Scale {
       X: 1.30520856
@@ -3464,88 +3463,6 @@ Objects {
             Pitch: -1.58590841
             Yaw: 155.935349
             Roll: -0.0347290225
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 6.4033637
-            Y: 6.4033637
-            Z: 6.4033637
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 13645709276101023996
-    }
-  }
-}
-Objects {
-  Id: 8444885802111751181
-  Name: "pier_light"
-  Transform {
-    Location {
-      X: 8367.70898
-      Y: -576.953308
-      Z: -7432.34229
-    }
-    Rotation {
-      Pitch: -1.58590841
-      Yaw: 2.7504487
-      Roll: -0.0347290039
-    }
-    Scale {
-      X: 2.10210586
-      Y: 2.10210586
-      Z: 2.10210586
-    }
-  }
-  ParentId: 2734733877656755987
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 7886655707835920875
-      value {
-        Overrides {
-          Name: "Intensity"
-          Float: 20
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.69
-            G: 0.901456952
-            B: 1
-            A: 1
-          }
-        }
-        Overrides {
-          Name: "AttenuationRadius"
-          Float: 1000
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9428891237528791597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "pier_light"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -17002.3281
-            Y: 14.0319977
-            Z: 942.076
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -1.58590841
-            Yaw: 155.935333
-            Roll: -0.0347289965
           }
         }
         Overrides {

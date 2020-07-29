@@ -98,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4789651017938350567
-  Name: "Fog Adjustment Volume"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_fog_adjustment"
-  }
-}
-Assets {
   Id: 371541499920383896
   Name: "Environment Fog Default VFX"
   PlatformAssetType: 20

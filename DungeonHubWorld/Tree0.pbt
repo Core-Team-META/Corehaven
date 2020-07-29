@@ -27,6 +27,8 @@ Objects {
   ChildIds: 8666821601116918477
   ChildIds: 5190124483811056971
   ChildIds: 2734733877656755987
+  ChildIds: 8444885802111751181
+  ChildIds: 1044179882637596686
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -36,6 +38,128 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1044179882637596686
+  Name: "Craftsman Roof 01 Peak"
+  Transform {
+    Location {
+      X: -7528.7417
+      Y: 5116.91309
+      Z: -5983.00781
+    }
+    Rotation {
+      Yaw: -26.7929688
+    }
+    Scale {
+      X: 0.33239463
+      Y: 0.274615496
+      Z: 0.443488479
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10123498949289312814
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8444885802111751181
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: 8367.70898
+      Y: -576.953308
+      Z: -7432.34229
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.7504487
+      Roll: -0.0347290039
+    }
+    Scale {
+      X: 2.10210586
+      Y: 2.10210586
+      Z: 2.10210586
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 20
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.69
+            G: 0.901456952
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 1000
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "pier_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8367.70703
+            Y: 1869.36279
+            Z: -7432.34229
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590841
+            Yaw: 2.75046492
+            Roll: -0.0347287767
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.10210586
+            Y: 2.10210586
+            Z: 2.10210586
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
   }
 }
 Objects {

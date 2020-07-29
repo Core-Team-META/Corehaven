@@ -6946,12 +6946,12 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
-      X: -5897.50293
-      Y: 3213.81396
+      X: -5911.8623
+      Y: 3354.66016
       Z: 597.427734
     }
     Rotation {
-      Yaw: -27.140564
+      Yaw: -27.1405029
     }
     Scale {
       X: 1.91594541
@@ -6998,8 +6998,8 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
-      X: -5935.38916
-      Y: 3335.16846
+      X: -5949.74854
+      Y: 3476.01465
       Z: 597.427734
     }
     Rotation {
@@ -7050,12 +7050,12 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
-      X: -5777.07227
-      Y: 3254.01221
+      X: -5791.43164
+      Y: 3394.8584
       Z: 597.427734
     }
     Rotation {
-      Yaw: -117.140579
+      Yaw: -117.140533
     }
     Scale {
       X: 1.91594541
@@ -9297,8 +9297,8 @@ Objects {
   Name: "Cube - bottom aligned"
   Transform {
     Location {
-      X: -5811.44287
-      Y: 3381.69727
+      X: -5825.80225
+      Y: 3522.54346
       Z: 597.427734
     }
     Rotation {
@@ -45811,9 +45811,9 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 7097.51074
-      Y: 8251.64
-      Z: 1257.21582
+      X: 7073.46436
+      Y: 8265.53809
+      Z: 1434.56494
     }
     Rotation {
       Pitch: 2.04905664e-05

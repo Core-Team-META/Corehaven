@@ -593,15 +593,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11746322889879506085
-  Name: "Cylinder - Rounded Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_003"
-  }
-}
-Assets {
   Id: 11667075996946480541
   Name: "Wooden Bucket"
   PlatformAssetType: 1
@@ -644,15 +635,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_hemisphere_002"
-  }
-}
-Assets {
-  Id: 11065367660689031336
-  Name: "Cone - Truncated Hollow"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_001"
   }
 }
 Assets {

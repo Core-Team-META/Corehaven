@@ -84,7 +84,6 @@ Objects {
   ChildIds: 18129872369301078294
   ChildIds: 15138106234040772773
   ChildIds: 12196723082961294526
-  ChildIds: 8468004009958796830
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -100,74 +99,6 @@ Objects {
     SubobjectId: 6991843647869384293
     InstanceId: 11603520914804950047
     TemplateId: 9207633681614037427
-  }
-}
-Objects {
-  Id: 8468004009958796830
-  Name: "Fog Adjustment Volume"
-  Transform {
-    Location {
-      X: 10981.0215
-      Y: -3393.53711
-      Z: -10512.4043
-    }
-    Rotation {
-      Yaw: -97.8714447
-    }
-    Scale {
-      X: 100
-      Y: 100
-      Z: 100
-    }
-  }
-  ParentId: 6902822919988349614
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Volume Type"
-      Enum {
-        Value: "mc:evolumetype:1"
-      }
-    }
-    Overrides {
-      Name: "bp:Fog Object"
-      ObjectReference {
-        SelfId: 15138106234040772773
-      }
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        R: 0.0699999928
-        G: 1
-        B: 0.944569707
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Start"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Fog Density"
-      Float: 1.5
-    }
-    Overrides {
-      Name: "bp:Opacity"
-      Float: 0.111319289
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4789651017938350567
-    }
-    TeamSettings {
-    }
   }
 }
 Objects {
@@ -258,7 +189,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Fog Density"
-      Float: 1.04906023
+      Float: 1.5
+    }
+    Overrides {
+      Name: "bp:Opacity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Start"
+      Float: 0
     }
   }
   Collidable_v2 {
@@ -464,9 +403,9 @@ Objects {
     Overrides {
       Name: "bp:Horizon Color"
       Color {
-        R: 0.149999976
-        G: 0.814238
-        B: 1
+        R: 0.0299999714
+        G: 1
+        B: 0.807284832
         A: 0.895000041
       }
     }

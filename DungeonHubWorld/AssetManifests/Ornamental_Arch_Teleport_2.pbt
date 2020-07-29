@@ -1,4 +1,13 @@
 Assets {
+  Id: 17609149353171719671
+  Name: "Cube - bottom aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
   Id: 15310209409301279983
   Name: "Wall End Fancy 6m"
   PlatformAssetType: 1
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_027"
+  }
+}
+Assets {
+  Id: 7115413583786975077
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
   }
 }
 Assets {

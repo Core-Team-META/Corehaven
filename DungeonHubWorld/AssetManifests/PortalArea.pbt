@@ -1,4 +1,31 @@
 Assets {
+  Id: 18423898048047861963
+  Name: "Fantasy Axe Blade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_axe_001"
+  }
+}
+Assets {
+  Id: 18343150440022566563
+  Name: "Text 03: B"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_001"
+  }
+}
+Assets {
+  Id: 18039984299850060191
+  Name: "Fantasy Human Guy"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 18039765282018436536
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -8,12 +35,30 @@ Assets {
   }
 }
 Assets {
-  Id: 17983886762090769352
-  Name: "Plane 1m - One Sided"
+  Id: 18019734475546620436
+  Name: "Text 03: S"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_001"
+    AssetId: "F5_Text_018"
+  }
+}
+Assets {
+  Id: 17761943472698102620
+  Name: "Text 03: A"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_000"
+  }
+}
+Assets {
+  Id: 17748832137412765820
+  Name: "Flower Bellflower 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_002_ref"
   }
 }
 Assets {
@@ -26,12 +71,48 @@ Assets {
   }
 }
 Assets {
+  Id: 17237692812658431496
+  Name: "Fantasy Staff Head 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_001"
+  }
+}
+Assets {
   Id: 16983260950034190065
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_002_ref"
+  }
+}
+Assets {
+  Id: 16930051067443970507
+  Name: "Fantasy Sword Blade 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_003"
+  }
+}
+Assets {
+  Id: 16910967692750356778
+  Name: "Text 03: H"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_007"
+  }
+}
+Assets {
+  Id: 16822568136084734308
+  Name: "Wall End Fancy 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wall_end_fancy_2m_001"
   }
 }
 Assets {
@@ -50,6 +131,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
+  }
+}
+Assets {
+  Id: 16216211350459920357
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 16093587516843025588
+  Name: "Text 03: U"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_020"
   }
 }
 Assets {
@@ -107,12 +206,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14844672563279110931
-  Name: "Bricks Worn Stone 01"
-  PlatformAssetType: 2
+  Id: 14745750378138267662
+  Name: "Text 03: G"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_worn_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_006"
   }
 }
 Assets {
@@ -131,6 +230,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
+  Id: 14612913594380944439
+  Name: "Bone Human Ulna 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_ulna_01_ref"
   }
 }
 Assets {
@@ -170,6 +278,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13622238687603756174
+  Name: "Text 03: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_011"
+  }
+}
+Assets {
+  Id: 13592437552992805297
+  Name: "Text 03: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_014"
+  }
+}
+Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
@@ -188,12 +314,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13292438288681280449
-  Name: "Column Base 01"
+  Id: 13015241044592811011
+  Name: "Fantasy Shield 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_bottom_001"
+    AssetId: "sm_weap_fan_shield_003"
   }
 }
 Assets {
@@ -233,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12095835209017042614
+  Name: "Cube"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_002"
+  }
+}
+Assets {
   Id: 11807762928275905382
   Name: "Ivy 05"
   PlatformAssetType: 1
@@ -251,12 +386,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11631901271170615920
+  Name: "Street Post Square 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_st_post_lights_post_sq_001"
+  }
+}
+Assets {
   Id: 11608996133378055453
   Name: "Ivy 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_004"
+  }
+}
+Assets {
+  Id: 11536791283922121103
+  Name: "Text 03: E"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_004"
+  }
+}
+Assets {
+  Id: 11321069729411225854
+  Name: "Flower Bellflower Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
   }
 }
 Assets {
@@ -296,12 +458,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9922580225629130299
+  Name: "Fantasy Staff Head 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_002"
+  }
+}
+Assets {
   Id: 9372549160589526323
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_wild_lily_001_ref"
+  }
+}
+Assets {
+  Id: 9323711631076027110
+  Name: "Text 03: &"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_043"
   }
 }
 Assets {
@@ -323,12 +503,48 @@ Assets {
   }
 }
 Assets {
+  Id: 8916846240532825810
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 8730571758809731968
   Name: "Hill 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_hill_001"
+  }
+}
+Assets {
+  Id: 8632271615764174349
+  Name: "Text 03: W"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_022"
+  }
+}
+Assets {
+  Id: 8025751018306244771
+  Name: "Text 03: M"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_012"
+  }
+}
+Assets {
+  Id: 7906970403073025695
+  Name: "Text 03: C"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_002"
   }
 }
 Assets {
@@ -359,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7616109972271673814
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
   Id: 7534413844238277162
   Name: "Bricks Mismatched Stone 01"
   PlatformAssetType: 2
@@ -368,12 +593,21 @@ Assets {
   }
 }
 Assets {
-  Id: 7115413583786975077
-  Name: "Cylinder - Polished"
+  Id: 7362232965091765999
+  Name: "Bricks Mortar Thick 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_bricks_mortar_001_uv"
+  }
+}
+Assets {
+  Id: 7036641726562825986
+  Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
+    AssetId: "sm_arch_fancy_ogive_6m_001"
   }
 }
 Assets {
@@ -404,6 +638,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6722267691116138132
+  Name: "Fantasy Staff Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_staff_001"
+  }
+}
+Assets {
   Id: 5687388192173703223
   Name: "Decal Leaves 01"
   PlatformAssetType: 14
@@ -413,12 +656,93 @@ Assets {
   }
 }
 Assets {
+  Id: 5637733567374295665
+  Name: "Underwater Post Process"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_post_process_water"
+  }
+}
+Assets {
+  Id: 5581636068186176872
+  Name: "Text 03: N"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_013"
+  }
+}
+Assets {
+  Id: 5574279695839094619
+  Name: "Fantasy Staff Guard 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_staff_002"
+  }
+}
+Assets {
+  Id: 5512335830567327151
+  Name: "Arch Fancy Peaked 2m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_fancy_ogive_2m_001"
+  }
+}
+Assets {
+  Id: 5480047238419307272
+  Name: "Flower Bellflower 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_001_ref"
+  }
+}
+Assets {
+  Id: 5252633986049924065
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
+  }
+}
+Assets {
+  Id: 4998701643265443986
+  Name: "Metal Gold 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_001"
+  }
+}
+Assets {
+  Id: 4554675689535610447
+  Name: "Text 03: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_019"
+  }
+}
+Assets {
   Id: 4494352698912259526
   Name: "Ivy 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_001"
+  }
+}
+Assets {
+  Id: 4342756216088781504
+  Name: "Fantasy Sword Blade 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_002"
   }
 }
 Assets {
@@ -449,6 +773,33 @@ Assets {
   }
 }
 Assets {
+  Id: 3891964655502118673
+  Name: "Text 03: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_015"
+  }
+}
+Assets {
+  Id: 3682206342183528038
+  Name: "Fantasy Sword Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
+  Id: 3671099072811775341
+  Name: "Text 03: I"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_008"
+  }
+}
+Assets {
   Id: 2536231208558228393
   Name: "Fantasy Castle Stairs Spiral Trim 01 - Large"
   PlatformAssetType: 1
@@ -458,11 +809,56 @@ Assets {
   }
 }
 Assets {
+  Id: 2129142945559148699
+  Name: "Text 03: V"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_021"
+  }
+}
+Assets {
+  Id: 1920010878601219178
+  Name: "Fantasy Sword Guard 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_sword_001"
+  }
+}
+Assets {
+  Id: 1383772742094820961
+  Name: "Fantasy Pommel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_001"
+  }
+}
+Assets {
   Id: 1001666275847985579
   Name: "Raptor Mob"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_raptor_default_basic_001_ref"
+  }
+}
+Assets {
+  Id: 410364522451838382
+  Name: "Text 03: D"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_003"
+  }
+}
+Assets {
+  Id: 273448105943087596
+  Name: "Fantasy Mace Guard 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_mace_001"
   }
 }
