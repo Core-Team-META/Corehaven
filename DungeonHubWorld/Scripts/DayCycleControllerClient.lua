@@ -18,6 +18,8 @@ local DAY_FOG_FALLOFF = 0.2
 local DAY_FOG_START = 3000.0
 local DAY_FOG_OPACITY = 1.0
 local DAY_SKY_DOME_ZENITH_COLOR = Color.New(0.06, 0.24, 1.0, 0.886)
+local DAY_SKY_DOME_HORIZON_COLOR = Color.New(0.03,1.0,0.807)
+local DAY_SKY_DOME_HAZE_COLOR = Color.New(0.59,0.59,0.7)
 local DAY_SKYLIGHT_INTENSITY = 3.0
 local DAY_SKYLIGHT_TINT_COLOR = Color.New(0.5, 0.48, 0.75)
 local DAY_STAR_DOME_VISIBILITY = 0.0
@@ -26,12 +28,15 @@ local DAY_SUNLIGHT_COLOR = Color.New(1.0, 0.95, 0.73)
 local DAY_SUNLIGHT_DISC_COLOR = Color.New(3.0, 2.88, 2.22)
 local DAY_SUNDISC_SIZE = 20.0
 local DAY_MOON_SIZE = 3.0
+
 -- Dusk
 local DUSK_FOG_DENSITY = 2
 local DUSK_FOG_FALLOFF = 0.2
 local DUSK_FOG_START = 1000.0
 local DUSK_FOG_OPACITY = 1
 local DUSK_SKY_DOME_ZENITH_COLOR = Color.New(0.120, 0.217, 0.495, 0.6)
+local DUSK_SKY_DOME_HORIZON_COLOR = Color.New(0.03,1.0,0.807)
+local DUSK_SKY_DOME_HAZE_COLOR = Color.New(0.59,0.59,0.7)
 local DUSK_SKYLIGHT_INTENSITY = 1.0
 local DUSK_SKYLIGHT_TINT_COLOR = Color.New(0.5, 0.48, 0.75)
 local DUSK_STAR_DOME_VISIBILITY = 0.02
@@ -46,6 +51,8 @@ local NIGHT_FOG_FALLOFF = 0.2
 local NIGHT_FOG_START = 500
 local NIGHT_FOG_OPACITY = 0.5
 local NIGHT_SKY_DOME_ZENITH_COLOR = Color.New(0.0, 0.006, 0.15, 0.886)
+local NIGHT_SKY_DOME_HORIZON_COLOR = Color.New(0.03,1.0,0.807)
+local NIGHT_SKY_DOME_HAZE_COLOR = Color.New(0.59,0.59,0.7)
 local NIGHT_SKYLIGHT_INTENSITY = 1.0
 local NIGHT_SKYLIGHT_TINT_COLOR = Color.New(0.1, 0.31, 0.78)
 local NIGHT_STAR_DOME_VISIBILITY = 1.0
@@ -60,6 +67,8 @@ local DAWN_FOG_FALLOFF = 0.2
 local DAWN_FOG_START = 3000.0
 local DAWN_FOG_OPACITY = 1
 local DAWN_SKY_DOME_ZENITH_COLOR = Color.New(0.120, 0.217, 0.495, 0.6)
+local DAWN_SKY_DOME_HORIZON_COLOR = Color.New(0.03,1.0,0.807)
+local DAWN_SKY_DOME_HAZE_COLOR = Color.New(0.59,0.59,0.7)
 local DAWN_SKYLIGHT_INTENSITY = 2.0
 local DAWN_SKYLIGHT_TINT_COLOR = Color.New(0.5, 0.48, 0.75)
 local DAWN_STAR_DOME_VISIBILITY = 0.02
@@ -123,7 +132,11 @@ function Tick(deltaTime)
 		ENVIRONMENT_FOG:SetSmartProperty("Falloff", CoreMath.Lerp(DAY_FOG_FALLOFF, DUSK_FOG_FALLOFF, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Start", CoreMath.Lerp(DAY_FOG_START, DUSK_FOG_START, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Opacity", CoreMath.Lerp(DAY_FOG_OPACITY, DUSK_FOG_OPACITY, t))
+		
+		SKY_DOME:SetSmartProperty("Haze Color", Color.Lerp(DAY_SKY_DOME_HAZE_COLOR, DUSK_SKY_DOME_HAZE_COLOR, t))
+		SKY_DOME:SetSmartProperty("Horizon Color", Color.Lerp(DAY_SKY_DOME_HORIZON_COLOR, DUSK_SKY_DOME_HORIZON_COLOR, t))
 		SKY_DOME:SetSmartProperty("Zenith Color", Color.Lerp(DAY_SKY_DOME_ZENITH_COLOR, DUSK_SKY_DOME_ZENITH_COLOR, t))
+		
 		SKYLIGHT:SetSmartProperty("Intensity", CoreMath.Lerp(DAY_SKYLIGHT_INTENSITY, DUSK_SKYLIGHT_INTENSITY, t))
 		SKYLIGHT:SetSmartProperty("Tint Color", Color.Lerp(DAY_SKYLIGHT_TINT_COLOR, DUSK_SKYLIGHT_TINT_COLOR, t))
 		STAR_DOME:SetSmartProperty("Star Visibility", CoreMath.Lerp(DAY_STAR_DOME_VISIBILITY, DUSK_STAR_DOME_VISIBILITY, t))
@@ -148,7 +161,11 @@ function Tick(deltaTime)
 		ENVIRONMENT_FOG:SetSmartProperty("Falloff", CoreMath.Lerp(DUSK_FOG_FALLOFF, NIGHT_FOG_FALLOFF, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Start", CoreMath.Lerp(DUSK_FOG_START, NIGHT_FOG_START, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Opacity", CoreMath.Lerp(DUSK_FOG_OPACITY, NIGHT_FOG_OPACITY, t))
+		
+		SKY_DOME:SetSmartProperty("Haze Color", Color.Lerp(DUSK_SKY_DOME_HAZE_COLOR, NIGHT_SKY_DOME_HAZE_COLOR, t))
+		SKY_DOME:SetSmartProperty("Horizon Color", Color.Lerp(DUSK_SKY_DOME_HORIZON_COLOR, NIGHT_SKY_DOME_HORIZON_COLOR, t))
 		SKY_DOME:SetSmartProperty("Zenith Color", Color.Lerp(DUSK_SKY_DOME_ZENITH_COLOR, NIGHT_SKY_DOME_ZENITH_COLOR, t))
+		
 		SKYLIGHT:SetSmartProperty("Intensity", CoreMath.Lerp(DUSK_SKYLIGHT_INTENSITY, NIGHT_SKYLIGHT_INTENSITY, t))
 		SKYLIGHT:SetSmartProperty("Tint Color", Color.Lerp(DUSK_SKYLIGHT_TINT_COLOR, NIGHT_SKYLIGHT_TINT_COLOR, t))
 		STAR_DOME:SetSmartProperty("Star Visibility", CoreMath.Lerp(DUSK_STAR_DOME_VISIBILITY, NIGHT_STAR_DOME_VISIBILITY, t))
@@ -166,7 +183,11 @@ function Tick(deltaTime)
 		ENVIRONMENT_FOG:SetSmartProperty("Falloff", CoreMath.Lerp(NIGHT_FOG_FALLOFF, DAWN_FOG_FALLOFF, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Start", CoreMath.Lerp(NIGHT_FOG_START, DAWN_FOG_START, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Opacity", CoreMath.Lerp(NIGHT_FOG_OPACITY, DAWN_FOG_OPACITY, t))
+		
+		SKY_DOME:SetSmartProperty("Haze Color", Color.Lerp(NIGHT_SKY_DOME_HAZE_COLOR, DAWN_SKY_DOME_HAZE_COLOR, t))
+		SKY_DOME:SetSmartProperty("Horizon Color", Color.Lerp(NIGHT_SKY_DOME_HORIZON_COLOR, DAWN_SKY_DOME_HORIZON_COLOR, t))
 		SKY_DOME:SetSmartProperty("Zenith Color", Color.Lerp(NIGHT_SKY_DOME_ZENITH_COLOR, DAWN_SKY_DOME_ZENITH_COLOR, t))
+		
 		SKYLIGHT:SetSmartProperty("Intensity", CoreMath.Lerp(NIGHT_SKYLIGHT_INTENSITY, DAWN_SKYLIGHT_INTENSITY, t))
 		SKYLIGHT:SetSmartProperty("Tint Color", Color.Lerp(NIGHT_SKYLIGHT_TINT_COLOR, DAWN_SKYLIGHT_TINT_COLOR, t))
 		STAR_DOME:SetSmartProperty("Star Visibility", CoreMath.Lerp(NIGHT_STAR_DOME_VISIBILITY, DAWN_STAR_DOME_VISIBILITY, t))
@@ -184,7 +205,11 @@ function Tick(deltaTime)
 		ENVIRONMENT_FOG:SetSmartProperty("Falloff", CoreMath.Lerp(DAWN_FOG_FALLOFF, DAY_FOG_FALLOFF, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Start", CoreMath.Lerp(DAWN_FOG_START, DAY_FOG_START, t))
 		ENVIRONMENT_FOG:SetSmartProperty("Opacity", CoreMath.Lerp(DAWN_FOG_OPACITY, DAY_FOG_OPACITY, t))
+
+		SKY_DOME:SetSmartProperty("Haze Color", Color.Lerp(DAWN_SKY_DOME_HAZE_COLOR, DAY_SKY_DOME_HAZE_COLOR, t))
+		SKY_DOME:SetSmartProperty("Horizon Color", Color.Lerp(DAWN_SKY_DOME_HORIZON_COLOR, DAY_SKY_DOME_HORIZON_COLOR, t))
 		SKY_DOME:SetSmartProperty("Zenith Color", Color.Lerp(DAWN_SKY_DOME_ZENITH_COLOR, DAY_SKY_DOME_ZENITH_COLOR, t))
+		
 		SKYLIGHT:SetSmartProperty("Intensity", CoreMath.Lerp(DAWN_SKYLIGHT_INTENSITY, DAY_SKYLIGHT_INTENSITY, t))
 		SKYLIGHT:SetSmartProperty("Tint Color", Color.Lerp(DAWN_SKYLIGHT_TINT_COLOR, DAY_SKYLIGHT_TINT_COLOR, t))
 		STAR_DOME:SetSmartProperty("Star Visibility", CoreMath.Lerp(DAWN_STAR_DOME_VISIBILITY, DAY_STAR_DOME_VISIBILITY, t))
