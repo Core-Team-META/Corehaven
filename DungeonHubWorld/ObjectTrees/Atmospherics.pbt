@@ -24,7 +24,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DayLengthMinutes"
-      Float: 1
+      Float: 15
     }
     Overrides {
       Name: "cs:UseRealMoonTiming"
