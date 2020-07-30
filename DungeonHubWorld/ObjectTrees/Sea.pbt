@@ -694,19 +694,19 @@ Objects {
   Name: "Waterfall Straight"
   Transform {
     Location {
-      X: 6133.38477
-      Y: -4198.69531
+      X: 6232.91699
+      Y: -4251.80078
       Z: 199.103516
     }
     Rotation {
       Pitch: -90
       Yaw: 7.12502289
-      Roll: -122.954498
+      Roll: -122.954163
     }
     Scale {
       X: 0.500001192
       Y: 25
-      Z: 2
+      Z: 5
     }
   }
   ParentId: 3850309306352516424
