@@ -1,6 +1,1593 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 3235561142485716901
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 23660.5957
+            Y: 559.028
+            Z: 3665.14478
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 140.838623
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 11418424891652391154
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Location {
+      X: -2967.57227
+      Y: -3091.19116
+      Z: -6561.51074
+    }
+    Rotation {
+      Yaw: 74.2600403
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 550
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 23284.3379
+            Y: -2575.79224
+            Z: 3594.77368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 47.4447708
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 12026484375490488786
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Location {
+      X: -3076.98901
+      Y: -3479.41528
+      Z: -6561.51074
+    }
+    Rotation {
+      Yaw: 74.2599945
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 550
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 22245.0586
+            Y: -3721.99121
+            Z: 3594.77368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 47.4447708
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 16725777999534690323
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Location {
+      X: -2953.79419
+      Y: -3042.30542
+      Z: -6518.72168
+    }
+    Rotation {
+      Yaw: 74.2600784
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 550
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 21601.0039
+            Y: -1019.57324
+            Z: 3594.77368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.555145
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 11910425334004271101
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 550
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 20491.4375
+            Y: -2228.11743
+            Z: 3594.77368
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -132.555099
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 16295044637041298092
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Location {
+      X: -3606.28735
+      Y: 4058.70605
+      Z: -6553.43604
+    }
+    Rotation {
+      Yaw: -74.8820953
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 450
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 3
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10285.6895
+            Y: -21925.0938
+            Z: 3619.37036
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -101.697098
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 1439375762755064817
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 450
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 3
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 12541.6787
+            Y: -22392.1719
+            Z: 3619.37036
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 78.3027344
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
+  Id: 473179302028762068
+  Name: "Fantasy Candle Lit - Group 01(Prop)"
+  Transform {
+    Location {
+      X: 12010.4863
+      Y: -23206.5664
+      Z: 3158.4043
+    }
+    Rotation {
+      Yaw: 33.9122124
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 12221648153810606156
+  ChildIds: 4249235475962378793
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 473179302028762068
+    SubobjectId: 8002813443656422609
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 4249235475962378793
+  Name: "Candle Group 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 473179302028762068
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1166787965693692855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4249235475962378793
+    SubobjectId: 6009762721696380204
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 12221648153810606156
+  Name: "ClientContext"
+  Transform {
+    Location {
+      Z: 28.4396553
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 473179302028762068
+  ChildIds: 35852570656081652
+  ChildIds: 896415625418251091
+  ChildIds: 7941739056305856248
+  ChildIds: 11817181144535305736
+  ChildIds: 5662455045861331138
+  ChildIds: 8195549064510126458
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 12221648153810606156
+    SubobjectId: 13835799411685447497
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 8195549064510126458
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 4.45733309
+      Y: 2.98189783
+      Z: 7.21630859
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 50
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 896415625418251091
+    SubobjectId: 7344829205077251158
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 5662455045861331138
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 2133.56689
+      Y: 5212.53906
+      Z: 6683.53955
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1.5
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 877.445923
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 11817181144535305736
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -7.16505098
+      Y: -10.1318092
+      Z: 14.6346664
+    }
+    Rotation {
+      Yaw: -92.1303101
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11817181144535305736
+    SubobjectId: 14583123815104626957
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 7941739056305856248
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 0.755288124
+      Y: 14.1413403
+      Z: -10.5753632
+    }
+    Rotation {
+      Yaw: 44.8074417
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7941739056305856248
+    SubobjectId: 551726020098888189
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 896415625418251091
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -140.906067
+      Y: 27.1432037
+      Z: 166.07666
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1.5
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 877.445923
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 896415625418251091
+    SubobjectId: 7344829205077251158
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 35852570656081652
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 15.2963638
+      Z: 1.80997849
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 12221648153810606156
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 35852570656081652
+    SubobjectId: 7629653869565102577
+    InstanceId: 6098242255101798012
+    TemplateId: 13263907152484650188
+  }
+}
+Objects {
+  Id: 4981464200046193260
+  Name: "TeleportLight"
+  Transform {
+    Location {
+      X: -20761.875
+      Y: -22659.668
+      Z: 685.06311
+    }
+    Rotation {
+      Yaw: 35.4554825
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 6321174180504198737
+  ChildIds: 14055866748850901769
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14055866748850901769
+  Name: "Area Light"
+  Transform {
+    Location {
+      X: 4.82777405
+      Y: 61.6090965
+    }
+    Rotation {
+      Yaw: -99.1997375
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4981464200046193260
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        AreaLight {
+          BarnDoorAngle: 50
+          BarnDoorLength: 20
+          SourceWidth: 235.94281
+          SourceHeight: 460.406586
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 6321174180504198737
+  Name: "Teleport_light"
+  Transform {
+    Location {
+      X: -21.7079105
+      Y: -61.6079025
+      Z: 56.4355469
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4981464200046193260
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 11960409695315655715
+  Name: "TeleportLight"
+  Transform {
+    Location {
+      X: -25446.5957
+      Y: -27598.6641
+      Z: 685.06311
+    }
+    Rotation {
+      Yaw: 74.5449295
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 7357134615198397387
+  ChildIds: 13529532805809054708
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13529532805809054708
+  Name: "Area Light"
+  Transform {
+    Location {
+      X: 4.82777405
+      Y: 61.6090965
+    }
+    Rotation {
+      Yaw: -99.1997375
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11960409695315655715
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        AreaLight {
+          BarnDoorAngle: 50
+          BarnDoorLength: 20
+          SourceWidth: 235.94281
+          SourceHeight: 460.406586
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 7357134615198397387
+  Name: "Teleport_light"
+  Transform {
+    Location {
+      X: -21.7079105
+      Y: -61.6079025
+      Z: 56.4355469
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11960409695315655715
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 515431515035023220
+  Name: "TeleportLight"
+  Transform {
+    Location {
+      X: -25770.2734
+      Y: -34277.1055
+      Z: 685.06311
+    }
+    Rotation {
+      Yaw: 116.472809
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 3384172119033556824
+  ChildIds: 15441543382833073246
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15441543382833073246
+  Name: "Area Light"
+  Transform {
+    Location {
+      X: 4.82777405
+      Y: 61.6090965
+    }
+    Rotation {
+      Yaw: -99.1997375
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 515431515035023220
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        AreaLight {
+          BarnDoorAngle: 50
+          BarnDoorLength: 20
+          SourceWidth: 235.94281
+          SourceHeight: 460.406586
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 3384172119033556824
+  Name: "Teleport_light"
+  Transform {
+    Location {
+      X: -21.7079105
+      Y: -61.6079025
+      Z: 56.4355469
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 515431515035023220
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 5133048287742494843
+  Name: "TeleportLight"
+  Transform {
+    Location {
+      X: -15383.2344
+      Y: -41438.7461
+      Z: 685.06311
+    }
+    Rotation {
+      Yaw: -166.181519
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 164905052933143916
+  ChildIds: 1152338149819916796
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1152338149819916796
+  Name: "Area Light"
+  Transform {
+    Location {
+      X: 13.2678223
+      Y: 61.6084
+    }
+    Rotation {
+      Yaw: -99.1997452
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5133048287742494843
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        AreaLight {
+          BarnDoorAngle: 50
+          BarnDoorLength: 20
+          SourceWidth: 235.94281
+          SourceHeight: 460.406586
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 164905052933143916
+  Name: "Teleport_light"
+  Transform {
+    Location {
+      X: -13.2678223
+      Y: -61.6084
+      Z: 56.4355469
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5133048287742494843
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 10832697668525936182
+  Name: "TeleportLight"
+  Transform {
+    Location {
+      X: -21877.3066
+      Y: -39778.3711
+      Z: 685.06311
+    }
+    Rotation {
+      Yaw: 153.184875
+    }
+    Scale {
+      X: 3.04616618
+      Y: 3.04616618
+      Z: 3.04616618
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 2015617270827531736
+  ChildIds: 14153471601552370009
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14153471601552370009
+  Name: "Area Light"
+  Transform {
+    Location {
+      X: 13.2678223
+      Y: 61.6084
+    }
+    Rotation {
+      Yaw: -99.1997452
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10832697668525936182
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 50
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        AreaLight {
+          BarnDoorAngle: 50
+          BarnDoorLength: 20
+          SourceWidth: 235.94281
+          SourceHeight: 460.406586
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 2015617270827531736
+  Name: "Teleport_light"
+  Transform {
+    Location {
+      X: -13.2678223
+      Y: -61.6084
+      Z: 56.4355469
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10832697668525936182
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3
+    Color {
+      R: 0.139999986
+      G: 0.812052548
+      B: 1
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 8833835710995548905
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -3465.02
+      Y: -4312.16943
+      Z: -6538.40918
+    }
+    Rotation {
+      Yaw: -12.3462715
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24719.8828
+            Y: -385.863586
+            Z: 3955.28467
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 140.838547
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616618
+            Y: 3.04616618
+            Z: 3.04616618
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 500
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
   Id: 8444885802111751181
   Name: "pier_light"
   Transform {

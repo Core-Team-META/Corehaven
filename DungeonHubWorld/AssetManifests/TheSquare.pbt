@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17630812284545276091
+  Name: "Shield 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_002"
+  }
+}
+Assets {
   Id: 17609149353171719671
   Name: "Cube - bottom aligned"
   PlatformAssetType: 1
@@ -1436,6 +1445,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_3m_001"
+  }
+}
+Assets {
+  Id: 4341266160864248082
+  Name: "Shield 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_005"
   }
 }
 Assets {

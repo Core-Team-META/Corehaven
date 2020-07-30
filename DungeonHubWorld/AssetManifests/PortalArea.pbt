@@ -863,6 +863,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1258687187152954659
+  Name: "Decal Ivy Big"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_ivy_001"
+  }
+}
+Assets {
   Id: 1001666275847985579
   Name: "Raptor Mob"
   PlatformAssetType: 17

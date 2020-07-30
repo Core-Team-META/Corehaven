@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17630812284545276091
+  Name: "Shield 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_002"
+  }
+}
+Assets {
   Id: 17111774109906810283
   Name: "Stone Block Small"
   PlatformAssetType: 1
@@ -113,6 +122,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
+  Id: 11977828804352634423
+  Name: "Rock Block 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_006"
   }
 }
 Assets {
