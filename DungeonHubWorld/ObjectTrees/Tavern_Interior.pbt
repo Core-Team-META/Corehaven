@@ -61,6 +61,15 @@ Objects {
   ParentId: 8666821601116918477
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10434389566302746931
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 378.878815
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17939965582225466197
       value {
         Overrides {
@@ -1940,16 +1949,16 @@ Objects {
   }
 }
 Objects {
-  Id: 3660588254033626682
+  Id: 12561605472844867274
   Name: "Fantasy Candle Lit - Holder 04 (Prop)"
   Transform {
     Location {
-      X: -7634.11133
-      Y: 3041.81079
-      Z: -6156.28857
+      X: -817.055176
+      Y: -1074.12988
+      Z: 463.280762
     }
     Rotation {
-      Yaw: 57.3933258
+      Yaw: 57.3931465
     }
     Scale {
       X: 1
@@ -1958,41 +1967,303 @@ Objects {
     }
   }
   ParentId: 8666821601116918477
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 17939965582225466197
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Fantasy Candle Lit - Holder 04 (Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -817.055176
-            Y: -1074.12988
-            Z: 463.280762
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 57.3931465
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
+  ChildIds: 7169887042103806480
+  ChildIds: 8496645386898681600
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 12561605472844867274
+    SubobjectId: 17939965582225466197
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 8496645386898681600
+  Name: "ClientContext"
+  Transform {
+    Location {
+      Y: 1.0071106
+      Z: 77.3450928
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12561605472844867274
+  ChildIds: 3810363320027476409
+  ChildIds: 14297275413025094828
+  ChildIds: 2114892534063768559
+  ChildIds: 2447224275114683184
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 8496645386898681600
+    SubobjectId: 2544080569051097759
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
+  }
+}
+Objects {
+  Id: 2447224275114683184
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -158.562775
+      Y: -269.231079
+      Z: 15.0625
+    }
+    Rotation {
+      Yaw: -3.05175781e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8496645386898681600
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 532.284058
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
         }
       }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
     }
-    TemplateAsset {
-      Id: 15772131835111520842
+  }
+}
+Objects {
+  Id: 2114892534063768559
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: -774.484253
+      Y: -1572.70422
+      Z: -432.791016
     }
+    Rotation {
+      Yaw: 122.606728
+    }
+    Scale {
+      X: 2.10201454
+      Y: 2.10201454
+      Z: 2.10201454
+    }
+  }
+  ParentId: 8496645386898681600
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 14297275413025094828
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 3810363320027476409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+  InstanceHistory {
+    SelfId: 2114892534063768559
+    SubobjectId: 5475776503292765808
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
+  }
+}
+Objects {
+  Id: 14297275413025094828
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 0.234558105
+      Z: 7.21635056
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8496645386898681600
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 455.581451
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 14297275413025094828
+    SubobjectId: 10434389566302746931
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
+  }
+}
+Objects {
+  Id: 3810363320027476409
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -0.234558105
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 8496645386898681600
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3810363320027476409
+    SubobjectId: 7081179764566225958
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
+  }
+}
+Objects {
+  Id: 7169887042103806480
+  Name: "Candle Holder 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12561605472844867274
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1101423294145844009
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7169887042103806480
+    SubobjectId: 3829406021337157519
+    InstanceId: 3660588254033626682
+    TemplateId: 15772131835111520842
   }
 }
 Objects {
@@ -5579,7 +5850,7 @@ Objects {
       Z: 363.419922
     }
     Rotation {
-      Yaw: 122.252975
+      Yaw: -167.973099
     }
     Scale {
       X: 0.46068278
@@ -13191,9 +13462,17 @@ Objects {
   }
 }
 Objects {
-  Id: 13238902961358090817
+  Id: 17364704133754163519
   Name: "Fantasy Candle Lit - Chandelier 01 (Prop)"
   Transform {
+    Location {
+      X: -449.263184
+      Y: -682.999756
+      Z: 876.255371
+    }
+    Rotation {
+      Yaw: -16.6793518
+    }
     Scale {
       X: 1
       Y: 1
@@ -13201,41 +13480,1047 @@ Objects {
     }
   }
   ParentId: 8666821601116918477
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3703753476620589350
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Fantasy Candle Lit - Chandelier 01 (Prop)"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -449.263184
-            Y: -682.999756
-            Z: 876.255371
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -16.6793518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
+  ChildIds: 17003981607178388693
+  ChildIds: 1599009593334890067
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 17364704133754163519
+    SubobjectId: 3703753476620589350
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 1599009593334890067
+  Name: "Chandelier"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17364704133754163519
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2160476303725884379
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
       }
     }
-    TemplateAsset {
-      Id: 547654522164231554
+  }
+  InstanceHistory {
+    SelfId: 1599009593334890067
+    SubobjectId: 15397068809903863370
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 17003981607178388693
+  Name: "ClientContext"
+  Transform {
+    Location {
     }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17364704133754163519
+  ChildIds: 1301221087083929909
+  ChildIds: 2122346456555651102
+  ChildIds: 11144075635840287345
+  ChildIds: 5167123843220552583
+  ChildIds: 6482374449349899125
+  ChildIds: 4062367404814398040
+  ChildIds: 2229813288623736765
+  ChildIds: 17316000682498241451
+  ChildIds: 2314632975064080394
+  ChildIds: 4472650503168999387
+  ChildIds: 8934423167386531032
+  ChildIds: 10293126498095343849
+  ChildIds: 3681790895734156708
+  ChildIds: 10623896194606113377
+  ChildIds: 105168753977391535
+  ChildIds: 12380990244455638262
+  ChildIds: 3101051734700784941
+  ChildIds: 870650344754172328
+  ChildIds: 15383473369816766767
+  ChildIds: 10933534290570849463
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 17003981607178388693
+    SubobjectId: 2911565545245428940
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 10933534290570849463
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 59.3817291
+      Y: 0.182502747
+      Z: 147.376282
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10933534290570849463
+    SubobjectId: 6063540287651521710
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 15383473369816766767
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 29.3211365
+      Y: 51.5790558
+      Z: 147.376282
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15383473369816766767
+    SubobjectId: 1648495343515865398
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 870650344754172328
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -30.1804123
+      Y: 50.7388306
+      Z: 147.376282
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 870650344754172328
+    SubobjectId: 14954371482088561073
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 3101051734700784941
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -59.9867554
+      Y: -1.32825375
+      Z: 147.376282
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3101051734700784941
+    SubobjectId: 16759183248345068852
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 12380990244455638262
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -29.855629
+      Y: -51.7139702
+      Z: 147.376282
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 12380990244455638262
+    SubobjectId: 7516419018419399919
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 105168753977391535
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 29.8552437
+      Y: -51.2849
+      Z: 147.376282
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 105168753977391535
+    SubobjectId: 14044493223849685430
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 10623896194606113377
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 59.1146393
+      Y: -100.379463
+      Z: 44.8202057
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10623896194606113377
+    SubobjectId: 5832754208665053816
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 3681790895734156708
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 100.928123
+      Y: -57.2988319
+      Z: 44.8202057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 3681790895734156708
+    SubobjectId: 17331517202376582589
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 10293126498095343849
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 116.041061
+      Y: 0.181018829
+      Z: 44.8201981
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 10293126498095343849
+    SubobjectId: 5567920571411865840
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 8934423167386531032
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 99.9032516
+      Y: 58.6658249
+      Z: 44.8201981
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 8934423167386531032
+    SubobjectId: 13285830870442327233
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 4472650503168999387
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -58.7515869
+      Y: 99.6896744
+      Z: 44.8201981
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4472650503168999387
+    SubobjectId: 18271026373636536258
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 2314632975064080394
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -101.493683
+      Y: 57.7423782
+      Z: 44.8201981
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2314632975064080394
+    SubobjectId: 16393815319894009875
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 17316000682498241451
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -116.824722
+      Y: -1.0209837
+      Z: 44.8202057
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 17316000682498241451
+    SubobjectId: 3734461152613153714
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 2229813288623736765
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -101.132095
+      Y: -58.4291496
+      Z: 44.8202057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2229813288623736765
+    SubobjectId: 15955216771311931300
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 4062367404814398040
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 57.9599533
+      Y: 100.620819
+      Z: 44.8202057
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 4062367404814398040
+    SubobjectId: 18157915426475768385
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 6482374449349899125
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -57.5812378
+      Y: -100.657387
+      Z: 44.8202057
+    }
+    Rotation {
+      Yaw: -29.7661743
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 6482374449349899125
+    SubobjectId: 11127189025090943852
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 5167123843220552583
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: 0.0842704773
+      Y: -116.093803
+      Z: 44.8202057
+    }
+    Rotation {
+      Yaw: 44.9999924
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 5167123843220552583
+    SubobjectId: 9523140155287188382
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 11144075635840287345
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -1.16920471
+      Y: 116.071732
+      Z: 44.8202057
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11144075635840287345
+    SubobjectId: 6429460207941880424
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 2122346456555651102
+  Name: "Point Light"
+  Transform {
+    Location {
+      Z: 62.0505676
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17003981607178388693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 10
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 1145.90515
+        PointLight {
+          SourceRadius: 136.057541
+          SoftSourceRadius: 350
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 2122346456555651102
+    SubobjectId: 16062550528381749255
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
+  }
+}
+Objects {
+  Id: 1301221087083929909
+  Name: "Fire and Flame Burning Loop Set 01 SFX"
+  Transform {
+    Location {
+      Z: 57.207756
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17003981607178388693
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:esfx_fireloops_01:9"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3697271826593255962
+    }
+    TeamSettings {
+    }
+    AudioBP {
+      AutoPlay: true
+      Repeat: true
+      Volume: 0.5
+      Falloff: 700
+      Radius: 200
+      EnableOcclusion: true
+      IsSpatializationEnabled: true
+      IsAttenuationEnabled: true
+    }
+  }
+  InstanceHistory {
+    SelfId: 1301221087083929909
+    SubobjectId: 15101537045817370924
+    InstanceId: 13238902961358090817
+    TemplateId: 547654522164231554
   }
 }
 Objects {
@@ -13259,6 +14544,15 @@ Objects {
   ParentId: 8666821601116918477
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10434389566302746931
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 400
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17939965582225466197
       value {
         Overrides {
@@ -13268,15 +14562,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -894.370605
-            Y: -367.774902
+            X: -750.550781
+            Y: -411.102051
             Z: 491.843262
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 57.3933258
+            Yaw: 57.3933029
           }
         }
         Overrides {
@@ -13575,6 +14869,15 @@ Objects {
   ParentId: 8666821601116918477
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10434389566302746931
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 400
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17939965582225466197
       value {
         Overrides {
@@ -13631,6 +14934,15 @@ Objects {
   ParentId: 8666821601116918477
   TemplateInstance {
     ParameterOverrideMap {
+      key: 10434389566302746931
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 400
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 17939965582225466197
       value {
         Overrides {
@@ -13684,6 +14996,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 10434389566302746931
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 400
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 17939965582225466197
       value {

@@ -1,6 +1,6 @@
 Assets {
   Id: 9892672878406537269
-  Name: "Custom Generic Water"
+  Name: "PortalArea_Water"
   PlatformAssetType: 13
   SerializationVersion: 61
   CustomMaterialAsset {
@@ -29,18 +29,18 @@ Assets {
       Overrides {
         Name: "shallow color"
         Color {
-          R: 0.279999971
-          G: 0.914172053
-          B: 1
+          R: 0.290000021
+          G: 1
+          B: 0.858940482
           A: 1
         }
       }
       Overrides {
         Name: "deep color"
         Color {
-          R: 0.028905442
-          G: 0.106633812
-          B: 0.119791664
+          R: 0.0350677893
+          G: 0.119791664
+          B: 0.106626138
           A: 1
         }
       }
@@ -88,6 +88,14 @@ Assets {
       Overrides {
         Name: "material_scale"
         Float: 1.52418947
+      }
+      Overrides {
+        Name: "emissive"
+        Float: 0
+      }
+      Overrides {
+        Name: "reflection brightness"
+        Float: 1
       }
     }
     Assets {

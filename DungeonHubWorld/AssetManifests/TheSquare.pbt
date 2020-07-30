@@ -719,6 +719,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11390981272720591546
+  Name: "Craftsman Porch Fence Railing 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_porch_001_rail"
+  }
+}
+Assets {
   Id: 11292394934840136893
   Name: "Castle Part - Grate 01"
   PlatformAssetType: 1
@@ -761,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_004"
+  }
+}
+Assets {
+  Id: 10656536100449577297
+  Name: "Pyramid - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_threesided_hq_001"
   }
 }
 Assets {
@@ -1097,6 +1115,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7534413844238277162
+  Name: "Bricks Mismatched Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_mismatch_001"
+  }
+}
+Assets {
   Id: 7438756951221684118
   Name: "Fantasy Castle Wall 02 - Doorway 01 Half"
   PlatformAssetType: 1
@@ -1304,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5514555441345228667
+  Name: "Chest Big Closed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_003"
+  }
+}
+Assets {
   Id: 5512335830567327151
   Name: "Arch Fancy Peaked 2m"
   PlatformAssetType: 1
@@ -1499,6 +1535,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 3094595809475267403
+  Name: "Carpet Tile 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_002"
   }
 }
 Assets {

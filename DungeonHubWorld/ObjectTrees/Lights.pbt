@@ -6371,9 +6371,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 131.303299
-      Y: 6.08231831
-      Z: 22.2320538
+      X: 134.833893
+      Y: -6.44565344
+      Z: 33.5023384
     }
     Rotation {
     }
