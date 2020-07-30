@@ -1,6 +1,131 @@
 Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 7552577100380242884
+  Name: "Liquid Decal"
+  Transform {
+    Location {
+      X: 7651.97754
+      Y: -667.826111
+      Z: -8050.80566
+    }
+    Rotation {
+      Pitch: 0.0327849053
+      Yaw: -0.071472168
+      Roll: 2.27982199e-11
+    }
+    Scale {
+      X: 23.934433
+      Y: 38.1694641
+      Z: 2.85585761
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:eliquiddecaltype:1"
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.614
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14077936288700442839
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1758860451337872372
+  Name: "Snow Volume VFX"
+  Transform {
+    Location {
+      X: 3627.2522
+      Y: 10881.4707
+      Z: -10292.9111
+    }
+    Rotation {
+    }
+    Scale {
+      X: 34.0360184
+      Y: 34.0360184
+      Z: 50
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:2"
+      }
+    }
+    Overrides {
+      Name: "bp:density"
+      Float: 7.10610151
+    }
+    Overrides {
+      Name: "bp:Curl Speed"
+      Vector {
+        X: 0.1
+        Y: 0.1
+        Z: 0.2
+      }
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.205827728
+        G: 0.419999957
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.73567462
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4143829090213968791
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
   Id: 1596750819935365494
   Name: "Fantasy Human Guy"
   Transform {
@@ -856,6 +981,7 @@ Objects {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true
     }
+    DisableReceiveDecals: true
     EnableCameraCollision: true
     AnimatedMesh {
       AnimationStance: "unarmed_idle_relaxed"

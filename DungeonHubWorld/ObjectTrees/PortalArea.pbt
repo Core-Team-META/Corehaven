@@ -48421,39 +48421,6 @@ Objects {
   ParentId: 8280763167727592134
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4785087807444283428
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 7972656101864656978
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 9643684101309653880
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 7972656101864656978
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14478134279440546075
-      value {
-        Overrides {
-          Name: "ma:Shared_BaseMaterial:id"
-          AssetReference {
-            Id: 7972656101864656978
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 16009905922229131396
       value {
         Overrides {
@@ -48466,6 +48433,11 @@ Objects {
             X: -1100.42615
             Y: 155.064072
             Z: 74.7802811
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
           }
         }
       }

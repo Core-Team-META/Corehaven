@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14077936288700442839
+  Name: "Liquid Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_liquid"
+  }
+}
+Assets {
   Id: 13983442170571298872
   Name: "Torch Fire VFX"
   PlatformAssetType: 8
@@ -86,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 4143829090213968791
+  Name: "Snow Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_snow_volume"
   }
 }
 Assets {
