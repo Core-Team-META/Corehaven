@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14357830052951337667
-  Name: "Dragon Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_dragonling_chubby_basic_001_ref"
-  }
-}
-Assets {
   Id: 7814966837604519694
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2
