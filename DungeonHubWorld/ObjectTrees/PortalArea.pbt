@@ -1,6 +1,198 @@
 Name: "PortalArea"
 RootId: 1079375006114686061
 Objects {
+  Id: 8910584186850633800
+  Name: "PortalArea_underwater_stairs"
+  Transform {
+    Location {
+      X: -665.34314
+      Y: 2285.646
+      Z: 426.448242
+    }
+    Rotation {
+      Yaw: -41.7583618
+    }
+    Scale {
+      X: 1.98925209
+      Y: 1.98925209
+      Z: 1.98925209
+    }
+  }
+  ParentId: 1079375006114686061
+  ChildIds: 5598478599402923497
+  ChildIds: 1738202359346360760
+  ChildIds: 9201542664250144223
+  ChildIds: 3776089945241509415
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3776089945241509415
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 03"
+  Transform {
+    Location {
+      X: 1.7162497
+      Y: 599.128845
+      Z: 67.0340652
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 0.610557497
+    }
+  }
+  ParentId: 8910584186850633800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16539886623827272591
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9201542664250144223
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 03"
+  Transform {
+    Location {
+      X: -600.059631
+      Y: 2.37874508
+      Z: 67.0340652
+    }
+    Rotation {
+      Yaw: -90.000061
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 0.610557497
+    }
+  }
+  ParentId: 8910584186850633800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16539886623827272591
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1738202359346360760
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 03"
+  Transform {
+    Location {
+      X: -1.71600425
+      Y: -599.130798
+      Z: 67.0340652
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 0.610557497
+    }
+  }
+  ParentId: 8910584186850633800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16539886623827272591
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5598478599402923497
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 03"
+  Transform {
+    Location {
+      X: 600.059631
+      Y: -2.38070893
+      Z: 67.0340652
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 0.610557497
+    }
+  }
+  ParentId: 8910584186850633800
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16539886623827272591
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 1758860451337872372
   Name: "Snow Volume VFX"
   Transform {
@@ -29124,6 +29316,8 @@ Objects {
   ChildIds: 13091337252876026055
   ChildIds: 12767855481742819329
   ChildIds: 12298742776673687388
+  ChildIds: 2062412391133627767
+  ChildIds: 17407345728957393653
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29132,6 +29326,118 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17407345728957393653
+  Name: "Arch Fancy Peaked 2m"
+  Transform {
+    Location {
+      X: 155.195175
+      Y: 7.21554518
+      Z: 78.1440811
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: -90
+      Roll: -89.9801636
+    }
+    Scale {
+      X: 0.254254073
+      Y: 0.321060508
+      Z: 1.49563
+    }
+  }
+  ParentId: 16576508243943255873
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4998701643265443986
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15711559520150914947
+    SubobjectId: 13699277088414112445
+    InstanceId: 17623321183146948557
+    TemplateId: 7257955747910042705
+  }
+}
+Objects {
+  Id: 2062412391133627767
+  Name: "Arch Fancy Peaked 2m"
+  Transform {
+    Location {
+      X: 155.195129
+      Y: 7.39253902
+      Z: -46.5597572
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 19.4755154
+      Roll: 160.544327
+    }
+    Scale {
+      X: 0.254254073
+      Y: 0.321060508
+      Z: 1.49563
+    }
+  }
+  ParentId: 16576508243943255873
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4998701643265443986
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2345116876977804261
+    SubobjectId: 4944020632554409691
+    InstanceId: 17623321183146948557
+    TemplateId: 7257955747910042705
   }
 }
 Objects {
@@ -42643,6 +42949,7 @@ Objects {
   ChildIds: 14312719051175905646
   ChildIds: 17841711253728928053
   ChildIds: 8790266603648571091
+  ChildIds: 7869956234977555961
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -42651,6 +42958,78 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 7869956234977555961
+  Name: "Cube - bottom aligned"
+  Transform {
+    Location {
+      X: -781.404297
+      Y: 4549.08
+      Z: -539.320313
+    }
+    Rotation {
+      Pitch: -1.59701538
+      Yaw: -76.2782593
+      Roll: -98.0579834
+    }
+    Scale {
+      X: 1.97745788
+      Y: 1.12206817
+      Z: 1.41592801
+    }
+  }
+  ParentId: 2984133863160514111
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8315298341030148102
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.125
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -57576,7 +57955,6 @@ Objects {
   ChildIds: 13061237355050818864
   ChildIds: 4562257996160940353
   ChildIds: 12023206101179160190
-  ChildIds: 12556703945453837013
   ChildIds: 15492589436160758952
   ChildIds: 8165992350381000427
   ChildIds: 9004001850362655792
@@ -57589,6 +57967,9 @@ Objects {
   ChildIds: 3842936509725588236
   ChildIds: 4151222599335438497
   ChildIds: 14470838972379263353
+  ChildIds: 13723877352556460976
+  ChildIds: 8687213203517774222
+  ChildIds: 9726051410003807533
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -57597,6 +57978,561 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 9726051410003807533
+  Name: "Pool_EdgeRing"
+  Transform {
+    Location {
+      X: 0.000470240135
+      Y: -42.4571037
+      Z: -344.103088
+    }
+    Rotation {
+      Yaw: -179.999802
+      Roll: -179.999893
+    }
+    Scale {
+      X: 0.889705718
+      Y: 0.889705718
+      Z: 0.889705718
+    }
+  }
+  ParentId: 8280763167727592134
+  ChildIds: 12003641129702157230
+  ChildIds: 7265763619580395161
+  ChildIds: 7334025839268357161
+  ChildIds: 2610604566054914287
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2610604566054914287
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: -1.7878598
+      Y: -1082.80933
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 9726051410003807533
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7334025839268357161
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: 1081.94678
+      Y: -2.11149311
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 9726051410003807533
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7265763619580395161
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: 2.10920191
+      Y: 1082.3877
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 9726051410003807533
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12003641129702157230
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: -1082.26819
+      Y: 2.53308105
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 9726051410003807533
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8687213203517774222
+  Name: "Pool_EdgeRing"
+  Transform {
+    Location {
+      X: 0.000470240135
+      Y: -42.4571037
+      Z: -321.123199
+    }
+    Rotation {
+      Yaw: -179.999802
+      Roll: -179.999893
+    }
+    Scale {
+      X: 0.682280898
+      Y: 0.682280898
+      Z: 0.682280898
+    }
+  }
+  ParentId: 8280763167727592134
+  ChildIds: 10222546384861774242
+  ChildIds: 14892448361071392933
+  ChildIds: 13034724916606557620
+  ChildIds: 782132289701156202
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 782132289701156202
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: -1.7878598
+      Y: -1082.80933
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 8687213203517774222
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13034724916606557620
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: 1081.94678
+      Y: -2.11149311
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 8687213203517774222
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14892448361071392933
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: 2.10920191
+      Y: 1082.3877
+    }
+    Rotation {
+      Yaw: -89.9999924
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 8687213203517774222
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10222546384861774242
+  Name: "Stone Railing Curved 6m"
+  Transform {
+    Location {
+      X: -1082.26819
+      Y: 2.53308105
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.89131474
+      Y: 1.89131474
+      Z: 1.89131474
+    }
+  }
+  ParentId: 8687213203517774222
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 8
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12457707986059827643
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13723877352556460976
+  Name: "Pipe - Thick"
+  Transform {
+    Location {
+      X: -8.38576508
+      Y: -35.9180527
+      Z: -336.268188
+    }
+    Rotation {
+      Yaw: 3.75660238e-05
+    }
+    Scale {
+      X: 23.991024
+      Y: 23.991024
+      Z: 1.04571021
+    }
+  }
+  ParentId: 8280763167727592134
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7534413844238277162
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.364583343
+        B: 0.364583343
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12377676071953128633
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -58849,255 +59785,6 @@ Objects {
     }
   }
   ParentId: 15492589436160758952
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 8
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12457707986059827643
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12556703945453837013
-  Name: "Pool_EdgeRing"
-  Transform {
-    Location {
-      X: 0.000470240135
-      Y: -42.4571037
-      Z: -687.231873
-    }
-    Rotation {
-      Yaw: -179.999878
-      Roll: -179.999893
-    }
-    Scale {
-      X: 0.935824
-      Y: 0.935824
-      Z: 0.935824
-    }
-  }
-  ParentId: 8280763167727592134
-  ChildIds: 15572967514369308943
-  ChildIds: 8828430513017196900
-  ChildIds: 17083576671282316926
-  ChildIds: 6418822834681603640
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 6418822834681603640
-  Name: "Stone Railing Curved 6m"
-  Transform {
-    Location {
-      X: -1.7878598
-      Y: -1082.80933
-    }
-    Rotation {
-      Yaw: 89.9999542
-    }
-    Scale {
-      X: 1.89131474
-      Y: 1.89131474
-      Z: 1.89131474
-    }
-  }
-  ParentId: 12556703945453837013
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 8
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12457707986059827643
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17083576671282316926
-  Name: "Stone Railing Curved 6m"
-  Transform {
-    Location {
-      X: 1081.94678
-      Y: -2.11149311
-    }
-    Rotation {
-      Yaw: 179.999954
-    }
-    Scale {
-      X: 1.89131474
-      Y: 1.89131474
-      Z: 1.89131474
-    }
-  }
-  ParentId: 12556703945453837013
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 8
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12457707986059827643
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8828430513017196900
-  Name: "Stone Railing Curved 6m"
-  Transform {
-    Location {
-      X: 2.10920191
-      Y: 1082.3877
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
-    Scale {
-      X: 1.89131474
-      Y: 1.89131474
-      Z: 1.89131474
-    }
-  }
-  ParentId: 12556703945453837013
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 8
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12457707986059827643
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15572967514369308943
-  Name: "Stone Railing Curved 6m"
-  Transform {
-    Location {
-      X: -1082.26819
-      Y: 2.53308105
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.89131474
-      Y: 1.89131474
-      Z: 1.89131474
-    }
-  }
-  ParentId: 12556703945453837013
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"

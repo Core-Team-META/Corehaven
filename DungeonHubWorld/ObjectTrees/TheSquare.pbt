@@ -1,6 +1,312 @@
 Name: "TheSquare"
 RootId: 3277514622402591831
 Objects {
+  Id: 1372215395724072262
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3869.26318
+      Y: -1235.88696
+      Z: -850.013184
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: -32.0054
+      Roll: -156.590393
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.854786158
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 759816224802617467
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3720.31445
+      Y: -819.429199
+      Z: -850.013184
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 173.758072
+      Roll: -170.387451
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.854786158
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 953254446690854167
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3741.68652
+      Y: -1009.84973
+      Z: -736.961914
+    }
+    Rotation {
+      Yaw: -90
+      Roll: 89.9998093
+    }
+    Scale {
+      X: 5.00000048
+      Y: 2.70000052
+      Z: 1.42937696
+    }
+  }
+  ParentId: 3277514622402591831
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6041984776381722081
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.806423843
+        B: 0.63
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10226290770336765892
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12878928163270944551
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3692.60596
+      Y: -1208.65186
+      Z: -773.807129
+    }
+    Rotation {
+      Yaw: -107.548859
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.576000094
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10464002792961108032
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3694.55078
+      Y: -814.202209
+      Z: -810.147
+    }
+    Rotation {
+      Yaw: 6.5986557
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.712321758
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3780436192411019542
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3690.16797
+      Y: -1207.88013
+      Z: -879.536621
+    }
+    Rotation {
+      Yaw: -107.548706
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.576000094
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 362275141620506838
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: 3694.55078
+      Y: -814.202271
+      Z: -924.165527
+    }
+    Rotation {
+      Yaw: 6.5986557
+    }
+    Scale {
+      X: 0.648000062
+      Y: 0.72
+      Z: 0.712321758
+    }
+  }
+  ParentId: 3277514622402591831
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14162522025896861699
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 12300280655556965545
   Name: "Sign"
   Transform {
@@ -38442,7 +38748,7 @@ Objects {
     Scale {
       X: 1.68359971
       Y: 1.66474068
-      Z: 1.1862843
+      Z: 1.09359419
     }
   }
   ParentId: 3277514622402591831
@@ -53414,7 +53720,7 @@ Objects {
     Location {
       X: 3859.95947
       Y: -1209.84973
-      Z: -846.691406
+      Z: -867.620605
     }
     Rotation {
       Yaw: -98.8585815
@@ -53454,7 +53760,7 @@ Objects {
     Location {
       X: 3859.95947
       Y: -809.849731
-      Z: -846.691406
+      Z: -867.620605
     }
     Rotation {
       Yaw: -3.05175781e-05
@@ -53494,7 +53800,7 @@ Objects {
     Location {
       X: 3859.95947
       Y: -812.370544
-      Z: -845.572754
+      Z: -866.501953
     }
     Rotation {
       Pitch: 1.36603776e-05
@@ -59325,7 +59631,7 @@ Objects {
     Location {
       X: 3859.95947
       Y: -810.448181
-      Z: -740.26709
+      Z: -761.196289
     }
     Rotation {
       Pitch: 1.36603776e-05
@@ -92169,8 +92475,6 @@ Objects {
   ChildIds: 6059660527679623051
   ChildIds: 15538852144079889412
   ChildIds: 5488754960288777983
-  ChildIds: 9728470485376588094
-  ChildIds: 8035432424485749660
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -92179,108 +92483,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 8035432424485749660
-  Name: "Curb 4m"
-  Transform {
-    Location {
-      X: 2225.28418
-      Y: -4107.35938
-      Z: -699.603
-    }
-    Rotation {
-      Pitch: 89.259
-      Yaw: -32.2392578
-      Roll: -117.559464
-    }
-    Scale {
-      X: 1.37021935
-      Y: 1.65668881
-      Z: 1.65667796
-    }
-  }
-  ParentId: 12801066323975090133
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9219643093315686982
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9728470485376588094
-  Name: "Curb 4m"
-  Transform {
-    Location {
-      X: 3856.24219
-      Y: -4225.02539
-      Z: -699.603
-    }
-    Rotation {
-      Pitch: 89.2994614
-      Yaw: -32.2537842
-      Roll: -117.591644
-    }
-    Scale {
-      X: 1.37021935
-      Y: 1.65668881
-      Z: 1.65667796
-    }
-  }
-  ParentId: 12801066323975090133
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13576367259465906358
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9219643093315686982
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
@@ -92737,14 +92939,14 @@ Objects {
   Name: "Curb 4m"
   Transform {
     Location {
-      X: 3887.65967
-      Y: -3872.00439
+      X: 3704.59888
+      Y: -3857.23584
       Z: -457.141113
     }
     Rotation {
-      Pitch: 89.3403091
-      Yaw: -32.267
-      Roll: -117.622375
+      Pitch: 89.337944
+      Yaw: -32.2660522
+      Roll: -117.619507
     }
     Scale {
       X: 2.14064169
