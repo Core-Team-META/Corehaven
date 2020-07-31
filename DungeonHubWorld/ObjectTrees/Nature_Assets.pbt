@@ -1,6 +1,49 @@
 Name: "Nature_Assets"
 RootId: 4445322596964842448
 Objects {
+  Id: 9540433883031261929
+  Name: "Rock Block 01"
+  Transform {
+    Location {
+      X: 3305.23
+      Y: 7319.56641
+      Z: -89.1621094
+    }
+    Rotation {
+      Pitch: -0.402648926
+      Yaw: -91.1125488
+      Roll: 102.898804
+    }
+    Scale {
+      X: 1.09360206
+      Y: 0.867669642
+      Z: 1.70044971
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11977828804352634423
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 1096780691673401651
   Name: "Rock 01"
   Transform {

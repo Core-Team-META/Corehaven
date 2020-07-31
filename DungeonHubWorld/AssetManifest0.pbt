@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14574512655253538456
+  Name: "Rocks River Bed 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "puddle_river_bed_001"
+  }
+}
+Assets {
   Id: 14031147348977058477
   Name: "Bricks Wall Flat 01"
   PlatformAssetType: 2
@@ -71,12 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12028629720035765158
-  Name: "Pipe"
+  Id: 12095835209017042614
+  Name: "Cube"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_001"
+    AssetId: "sm_cube_002"
   }
 }
 Assets {
@@ -86,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_flower_daisy_001"
+  }
+}
+Assets {
+  Id: 10991476379360222592
+  Name: "Whitebox Stairs 01 Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_gen_whitebox_stairs_001"
   }
 }
 Assets {
@@ -113,24 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_clover_patch_002"
-  }
-}
-Assets {
-  Id: 8916846240532825810
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
-  Id: 6608637607352009288
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
   }
 }
 Assets {

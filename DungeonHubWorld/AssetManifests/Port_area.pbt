@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16539886623827272591
+  Name: "Fantasy Castle Stairs 01 - 150cm Corner 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm_corner03"
+  }
+}
+Assets {
   Id: 16216211350459920357
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -563,6 +572,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 12028629720035765158
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
   }
 }
 Assets {
@@ -1040,6 +1058,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
+  Id: 6608637607352009288
+  Name: "Manticore Logo"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_logo_manticore_01"
   }
 }
 Assets {

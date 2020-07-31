@@ -1322,6 +1322,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6041984776381722081
+  Name: "Bricks Chunky Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
   Id: 6013290205953027442
   Name: "Fantasy Chest Lid 02"
   PlatformAssetType: 1
