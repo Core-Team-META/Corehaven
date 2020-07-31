@@ -890,6 +890,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8130631578432126867
+  Name: "Skeleton Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_skelington_001_ref"
+  }
+}
+Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
   Id: 7809640231404909079
   Name: "Short Banner Manticore"
   PlatformAssetType: 1
@@ -1184,6 +1202,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_bottom_002"
+  }
+}
+Assets {
+  Id: 4160568261920609531
+  Name: "Fantasy Throne 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_throne_001_ref"
   }
 }
 Assets {

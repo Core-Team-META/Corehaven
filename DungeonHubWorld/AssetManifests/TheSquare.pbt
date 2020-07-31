@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17451336740485325589
+  Name: "Text 02: L"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "Text_011"
+  }
+}
+Assets {
   Id: 17406869057951057684
   Name: "Ceramic Terracotta Pots Old 01"
   PlatformAssetType: 2
@@ -311,6 +320,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_bracket"
+  }
+}
+Assets {
+  Id: 15630625767023124336
+  Name: "Text 01: S"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_018"
   }
 }
 Assets {
@@ -527,6 +545,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
+  Id: 13592437552992805297
+  Name: "Text 03: O"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_014"
   }
 }
 Assets {
@@ -1394,6 +1421,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5252633986049924065
+  Name: "Text 03: R"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_017"
+  }
+}
+Assets {
   Id: 5070702300223246221
   Name: "Fantasy Castle Wall 02 - Doorway 01"
   PlatformAssetType: 1
@@ -1436,6 +1472,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 4554675689535610447
+  Name: "Text 03: T"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_019"
   }
 }
 Assets {
@@ -1490,6 +1535,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+  }
+}
+Assets {
+  Id: 3575013281856575933
+  Name: "Ring - Quarter Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_003"
   }
 }
 Assets {
@@ -1682,12 +1736,30 @@ Assets {
   }
 }
 Assets {
+  Id: 1977700429672582070
+  Name: "Text 01: \'"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_057"
+  }
+}
+Assets {
   Id: 1801288084318586961
   Name: "Fantasy Shield 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_shield_002"
+  }
+}
+Assets {
+  Id: 1656869165372446794
+  Name: "Text 03: Y"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_024"
   }
 }
 Assets {
@@ -1751,6 +1823,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_rounded_002"
+  }
+}
+Assets {
+  Id: 1104198953447072835
+  Name: "Object Domestic Doors & Creaks Set 01 SFX"
+  PlatformAssetType: 10
+  PrimaryAsset {
+    AssetType: "AudioBlueprintAssetRef"
+    AssetId: "sfxabp_object_domestic_door_ref"
   }
 }
 Assets {

@@ -1,6 +1,707 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 2202440008853313008
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+      X: 8639.47168
+      Y: -25703.5527
+      Z: 3929.97827
+    }
+    Rotation {
+      Yaw: -26.8149891
+    }
+    Scale {
+      X: 6.40308571
+      Y: 6.40308571
+      Z: 6.40308571
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 14554519785026429913
+  ChildIds: 12105297416450461986
+  ChildIds: 6734445187637943524
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6734445187637943524
+  Name: "Torch Fire VFX"
+  Transform {
+    Location {
+      Z: 7.95321465
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.609474063
+      Y: 0.609474063
+      Z: 0.609474063
+    }
+  }
+  ParentId: 2202440008853313008
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 13983442170571298872
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 12105297416450461986
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2202440008853313008
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 14554519785026429913
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 6734445187637943524
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 14554519785026429913
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1.56933594
+      Y: -0.257812411
+      Z: 16.4680176
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2202440008853313008
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 3.59915161
+    Color {
+      R: 1
+      G: 0.69655627
+      B: 0.209999979
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1655.02063
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 1131656596683668412
+  Name: "DayNight_Torchfire"
+  Transform {
+    Location {
+      X: 25331.3711
+      Y: -4768.40869
+      Z: 7759.65332
+    }
+    Rotation {
+      Yaw: -26.8149891
+    }
+    Scale {
+      X: 6.40308571
+      Y: 6.40308571
+      Z: 6.40308571
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 8740607821521445603
+  ChildIds: 12095129352266851359
+  ChildIds: 17531790208653469751
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 17531790208653469751
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -6.26399946
+      Y: -7.15248966
+      Z: 9.9246769
+    }
+    Rotation {
+      Yaw: -34.4396667
+      Roll: -90
+    }
+    Scale {
+      X: 0.668134511
+      Y: 0.668134511
+      Z: 0.0311397258
+    }
+  }
+  ParentId: 1131656596683668412
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 12827530473249900764
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.78808
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17587880652047825598
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12095129352266851359
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1131656596683668412
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 8740607821521445603
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 17531790208653469751
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 8740607821521445603
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -6.17014551
+      Y: -3.04498672
+      Z: 6.45260811
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1131656596683668412
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 100
+    Color {
+      R: 0.88
+      G: 0.419602633
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 150.527466
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 5460854584704652771
+  Name: "DayNight_Window"
+  Transform {
+    Location {
+      X: 10013.1563
+      Y: -24616.748
+      Z: 5472.76758
+    }
+    Rotation {
+      Yaw: -56.3300171
+    }
+    Scale {
+      X: 14.1547508
+      Y: 14.1547508
+      Z: 14.1547508
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 12766271919403104387
+  ChildIds: 9172054184127433314
+  ChildIds: 6012002519025529537
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6012002519025529537
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: 8.04509
+      Y: 3.29696059
+      Z: -12.9122705
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: -44.9263916
+      Roll: -90.0000305
+    }
+    Scale {
+      X: 0.64115721
+      Y: 1.03628993
+      Z: 0.0311396755
+    }
+  }
+  ParentId: 5460854584704652771
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11120014160960541034
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.78808
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9172054184127433314
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5460854584704652771
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 12766271919403104387
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 6012002519025529537
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 12766271919403104387
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 1.08220959
+      Y: -4.18216085
+      Z: -7.63482141
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5460854584704652771
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 100
+    Color {
+      R: 0.88
+      G: 0.419602633
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 150.527466
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 13555245205933396756
+  Name: "DayNight_Window"
+  Transform {
+    Location {
+      X: 9674.05566
+      Y: -27346.8203
+      Z: 6676.00342
+    }
+    Rotation {
+      Yaw: -56.3300781
+    }
+    Scale {
+      X: 14.1547508
+      Y: 14.1547508
+      Z: 14.1547508
+    }
+  }
+  ParentId: 2734733877656755987
+  ChildIds: 11856621342777646922
+  ChildIds: 6679357647660759412
+  ChildIds: 12898288370511310717
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12898288370511310717
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: 4.91120911
+      Y: 6.32859373
+      Z: 4.54157162
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: -44.9263916
+      Roll: -90.0000305
+    }
+    Scale {
+      X: 0.64115721
+      Y: 1.03628993
+      Z: 0.0311396755
+    }
+  }
+  ParentId: 13555245205933396756
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11120014160960541034
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 3
+        G: 1.78808
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6679357647660759412
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 1.02452832e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13555245205933396756
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 11856621342777646922
+      }
+    }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 12898288370511310717
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
+    }
+  }
+}
+Objects {
+  Id: 11856621342777646922
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 1.08220959
+      Y: -4.18216085
+      Z: -7.63482141
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13555245205933396756
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 100
+    Color {
+      R: 0.88
+      G: 0.419602633
+      A: 1
+    }
+    VolumetricIntensity: 81.3436432
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 150.527466
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 3235561142485716901
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
@@ -84,6 +785,14 @@ Objects {
           Name: "AttenuationRadius"
           Float: 550
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234710693
+            Y: 52.6322289
+            Z: 7.21630859
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -149,6 +858,14 @@ Objects {
           Name: "AttenuationRadius"
           Float: 550
         }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234771729
+            Y: 39.4347305
+            Z: 7.21630859
+          }
+        }
       }
     }
     ParameterOverrideMap {
@@ -208,11 +925,32 @@ Objects {
   ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
+      key: 536702862551055072
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 40.2679
+            Y: 13.7185364
+            Z: 3.99986649
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 9287064100231657554
       value {
         Overrides {
           Name: "AttenuationRadius"
           Float: 550
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234745026
+            Y: 68.1093063
+            Z: 7.21630859
+          }
         }
       }
     }
@@ -270,6 +1008,14 @@ Objects {
         Overrides {
           Name: "AttenuationRadius"
           Float: 550
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234703064
+            Y: 51.253849
+            Z: 7.21630859
+          }
         }
       }
     }
@@ -334,11 +1080,19 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 450
+          Float: 340.527496
         }
         Overrides {
           Name: "Intensity"
           Float: 3
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14.1624069
+            Y: 51.5539436
+            Z: 7.21630859
+          }
         }
       }
     }
@@ -395,11 +1149,19 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 450
+          Float: 340.527
         }
         Overrides {
           Name: "Intensity"
           Float: 3
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234371185
+            Y: 79.1930618
+            Z: 7.21630859
+          }
         }
       }
     }
@@ -5976,11 +6738,20 @@ Objects {
       value {
         Overrides {
           Name: "Intensity"
-          Float: 10
+          Float: 5
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 570.635376
+          Float: 839.094604
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 0.836512744
+            B: 0.6875
+            A: 1
+          }
         }
       }
     }
@@ -8975,7 +9746,7 @@ Objects {
       value {
         Overrides {
           Name: "Intensity"
-          Float: 10
+          Float: 5
         }
         Overrides {
           Name: "AttenuationRadius"
@@ -8993,9 +9764,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -858.453674
-            Y: -6306.7876
-            Z: 1931.58472
+            X: -965.691956
+            Y: -6526.04346
+            Z: 1931.49841
           }
         }
         Overrides {

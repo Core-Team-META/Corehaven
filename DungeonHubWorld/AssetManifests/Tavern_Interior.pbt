@@ -467,6 +467,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6474768715633236406
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
   Id: 6448135304331344928
   Name: "Chain Ceiling Anchor"
   PlatformAssetType: 1
@@ -716,6 +725,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_003"
+  }
+}
+Assets {
+  Id: 192072594494658587
+  Name: "Bricks Layered Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_layered_001"
   }
 }
 Assets {

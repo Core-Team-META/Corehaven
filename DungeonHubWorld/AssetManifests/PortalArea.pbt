@@ -665,6 +665,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6041984776381722081
+  Name: "Bricks Chunky Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
   Id: 5687388192173703223
   Name: "Decal Leaves 01"
   PlatformAssetType: 14
@@ -770,6 +779,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_blade_sword_002"
+  }
+}
+Assets {
+  Id: 4143829090213968791
+  Name: "Snow Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_snow_volume"
   }
 }
 Assets {

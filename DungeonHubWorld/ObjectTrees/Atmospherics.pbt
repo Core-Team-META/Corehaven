@@ -124,18 +124,18 @@ Objects {
     Overrides {
       Name: "bp:Color Contrast"
       Color {
-        R: 1
-        G: 0.90311259
-        B: 0.89
+        R: 1.2
+        G: 1.08373511
+        B: 1.06800008
         A: 1
       }
     }
     Overrides {
       Name: "bp:Color Saturation"
       Color {
-        R: 1
-        G: 0.815894
-        B: 0.8
+        R: 1.25
+        G: 1.01986754
+        B: 1
         A: 1
       }
     }
