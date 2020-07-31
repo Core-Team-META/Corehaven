@@ -1,6 +1,638 @@
 Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 5330640021942244816
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: 106038.453
+      Y: -3991.51025
+      Z: 14588.1348
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  ChildIds: 16004813309461843732
+  ChildIds: 11413251984147651386
+  ChildIds: 5963375386239908389
+  ChildIds: 4835808761176787279
+  ChildIds: 839664608512856168
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 839664608512856168
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+      X: -65427.1953
+      Y: 2499.39111
+      Z: -20176.2285
+    }
+    Rotation {
+      Yaw: -3.93139601
+    }
+    Scale {
+      X: 500
+      Y: 600.007
+      Z: -5.19162703
+    }
+  }
+  ParentId: 5330640021942244816
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+        X: -20
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Fog Displacement Scale"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:density"
+      Float: 3.68236065
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.478000015
+        G: 0.478000015
+        B: 0.478000015
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17209268355161202786
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 4835808761176787279
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: 1351.78125
+      Y: -104.207031
+      Z: 11.8652344
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 21.3433571
+      Roll: 89.9998779
+    }
+    Scale {
+      X: 17.2454128
+      Y: 17.2454128
+      Z: 17.2454128
+    }
+  }
+  ParentId: 5330640021942244816
+  ChildIds: 5242792266577106493
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 10.8446398
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 6.41243649
+    }
+    Overrides {
+      Name: "bp:Auto Rotate"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Rotate Texture"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.937152386
+        B: 0.269999981
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.419999957
+        G: 0.225298
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.994966924
+        B: 0.24000001
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Orient To Camera"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Rotation Rate"
+      Float: 20.26474
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.8
+    }
+    Overrides {
+      Name: "bp:Camera Distance Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Depth Fade Distance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Camera Fade Distance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Camera Fade Offset"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 5242792266577106493
+  Name: "FlareSinWaveClient"
+  Transform {
+    Location {
+      X: -84.8647232
+      Y: 0.688157141
+      Z: 47.0479965
+    }
+    Rotation {
+      Pitch: -21.3433838
+      Yaw: -5.8665e-05
+      Roll: -89.9998703
+    }
+    Scale {
+      X: 0.0579864271
+      Y: 0.0579864271
+      Z: 0.0579864271
+    }
+  }
+  ParentId: 4835808761176787279
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Spotlight"
+      ObjectReference {
+        SelfId: 16004813309461843732
+      }
+    }
+    Overrides {
+      Name: "cs:Width"
+      Float: 10
+    }
+    Overrides {
+      Name: "cs:Height"
+      Float: 6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17713799131916597705
+    }
+  }
+}
+Objects {
+  Id: 5963375386239908389
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: 1351.78125
+      Y: -104.207031
+      Z: 11.8652344
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 21.3433743
+      Roll: 89.9998779
+    }
+    Scale {
+      X: 17.2454128
+      Y: 17.2454128
+      Z: 17.2454128
+    }
+  }
+  ParentId: 5330640021942244816
+  ChildIds: 12109085379731636923
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 20
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 4.75036049
+    }
+    Overrides {
+      Name: "bp:Auto Rotate"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Rotate Texture"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 1
+        G: 0.937152386
+        B: 0.269999981
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.419999957
+        G: 0.225298
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.994966924
+        B: 0.24000001
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Rotation"
+      Float: 180
+    }
+    Overrides {
+      Name: "bp:Orient To Camera"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Rotation Rate"
+      Float: 20.26474
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.4
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 0.8
+    }
+    Overrides {
+      Name: "bp:Camera Distance Offset"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Depth Fade Distance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Camera Fade Distance"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Camera Fade Offset"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 12109085379731636923
+  Name: "FlareSinWaveClient"
+  Transform {
+    Location {
+      X: -84.8647232
+      Y: 0.688157141
+      Z: 47.0479965
+    }
+    Rotation {
+      Pitch: -21.3433838
+      Yaw: -5.8665e-05
+      Roll: -89.9998703
+    }
+    Scale {
+      X: 0.0579864271
+      Y: 0.0579864271
+      Z: 0.0579864271
+    }
+  }
+  ParentId: 5963375386239908389
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Spotlight"
+      ObjectReference {
+        SelfId: 16004813309461843732
+      }
+    }
+    Overrides {
+      Name: "cs:Width"
+      Float: 22
+    }
+    Overrides {
+      Name: "cs:Height"
+      Float: 4
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17713799131916597705
+    }
+  }
+}
+Objects {
+  Id: 11413251984147651386
+  Name: "Object Rotator Continuous"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5330640021942244816
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5456438743692384211
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Object Rotator Continuous"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:Object"
+          ObjectReference {
+            SelfId: 16004813309461843732
+          }
+        }
+        Overrides {
+          Name: "cs:RotateVelocity"
+          Rotator {
+            Yaw: -20
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14320703438642554861
+    }
+  }
+}
+Objects {
+  Id: 16004813309461843732
+  Name: "Spotlight"
+  Transform {
+    Location {
+      X: 306.664063
+      Y: -118.848145
+      Z: 31.8525391
+    }
+    Rotation {
+      Yaw: 21.3434086
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5330640021942244816
+  ChildIds: 9727415712247459930
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 5000
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 60000
+        SpotLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 4.05887365
+          UseFallOffExponent: true
+          InnerConeAngle: 6.98552608
+          OuterConeAngle: 14.0113115
+          Profile {
+            Value: "mc:espotlightprofile:brightspot"
+          }
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 20000
+    }
+  }
+}
+Objects {
+  Id: 9727415712247459930
+  Name: "Flare Ray VFX"
+  Transform {
+    Location {
+      X: 412.315338
+      Y: -0.0271224976
+    }
+    Rotation {
+    }
+    Scale {
+      X: 170.295059
+      Y: 170.295059
+      Z: 170.295059
+    }
+  }
+  ParentId: 16004813309461843732
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Ray Height"
+      Float: 36.1017609
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.970860898
+        G: 1
+        B: 0.6
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.26
+        G: 0.149801314
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Brightness"
+      Float: 0.0424337238
+    }
+    Overrides {
+      Name: "bp:Ray Width"
+      Float: 23.3846722
+    }
+    Overrides {
+      Name: "bp:Ray Density"
+      Float: 4.65786409
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.975496709
+        B: 0.9
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 18093781818767511247
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
   Id: 3667288997620907861
   Name: "Bell"
   Transform {
