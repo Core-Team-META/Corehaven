@@ -782,6 +782,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4488444258523261897
+  Name: "Flare Billboard"
+  PlatformAssetType: 6
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_flare_object"
+  }
+}
+Assets {
   Id: 4342756216088781504
   Name: "Fantasy Sword Blade 02"
   PlatformAssetType: 1

@@ -17,6 +17,24 @@ Assets {
   }
 }
 Assets {
+  Id: 17999095934034705962
+  Name: "Waterfall Base Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_base_volume"
+  }
+}
+Assets {
+  Id: 17630812284545276091
+  Name: "Shield 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_002"
+  }
+}
+Assets {
   Id: 17209268355161202786
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
@@ -53,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14809279494125531752
+  Name: "Rain Splash Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_rainsplash_volume"
+  }
+}
+Assets {
   Id: 14357830052951337667
   Name: "Dragon Mob"
   PlatformAssetType: 17
@@ -62,12 +89,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
   Id: 7724989921381923917
   Name: "Ambience Nature Wind and Trees Set 01 SFX"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_windytrees_ref"
+  }
+}
+Assets {
+  Id: 6296821285927916039
+  Name: "Bubble Stream VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_bubble_stream"
   }
 }
 Assets {
@@ -104,5 +149,23 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_ClassicalMusic_ref"
+  }
+}
+Assets {
+  Id: 1001666275847985579
+  Name: "Raptor Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_raptor_default_basic_001_ref"
+  }
+}
+Assets {
+  Id: 599353575558841982
+  Name: "Water Jet VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_water_jet"
   }
 }

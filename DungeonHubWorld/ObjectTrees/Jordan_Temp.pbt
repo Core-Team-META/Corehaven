@@ -1,6 +1,736 @@
 Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 4710877865910643087
+  Name: "Bubble Stream VFX"
+  Transform {
+    Location {
+      X: 2040.40576
+      Y: 10663.3438
+      Z: -9932.49805
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 5.46582794
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6296821285927916039
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 7699486727324857513
+  Name: "Bubble Stream VFX"
+  Transform {
+    Location {
+      X: 2983.7771
+      Y: 9568.95508
+      Z: -9932.49805
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 5.46582794
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6296821285927916039
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 12832549702338462660
+  Name: "Bubble Stream VFX"
+  Transform {
+    Location {
+      X: 4921.30127
+      Y: 11349.3389
+      Z: -9932.49805
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 5.46582794
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6296821285927916039
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 12800952255508971402
+  Name: "Bubble Stream VFX"
+  Transform {
+    Location {
+      X: 3930.91211
+      Y: 12361.6445
+      Z: -9932.49805
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 5.46582794
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6296821285927916039
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 18315777036302577493
+  Name: "Group"
+  Transform {
+    Location {
+      X: 1500.72913
+      Y: 44.0789185
+      Z: -7382.0376
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  ChildIds: 10307894087144691146
+  ChildIds: 9868271090114350100
+  ChildIds: 4845650253854655865
+  ChildIds: 17051161902062556605
+  ChildIds: 43229473484253925
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 43229473484253925
+  Name: "Waterfall Base Volume VFX"
+  Transform {
+    Location {
+      X: 250.950317
+      Y: -51.503418
+      Z: -42.3208
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.3216989
+      Y: 2.58638263
+      Z: 1.20383322
+    }
+  }
+  ParentId: 18315777036302577493
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:3"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17999095934034705962
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 17051161902062556605
+  Name: "Rain Splash Volume VFX"
+  Transform {
+    Location {
+      X: 275.623413
+      Y: -38.0174561
+      Z: -19.0844727
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.81451619
+      Y: 2.19641232
+      Z: 1
+    }
+  }
+  ParentId: 18315777036302577493
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:density"
+      Float: 0.321208596
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14809279494125531752
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 4845650253854655865
+  Name: "Water Jet VFX"
+  Transform {
+    Location {
+      X: 80.543335
+      Y: -60.4356689
+      Z: 276.609375
+    }
+    Rotation {
+      Pitch: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18315777036302577493
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 3.75095487
+    }
+    Overrides {
+      Name: "bp:Velocity Min"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Velocity Max"
+      Float: 3.68783355
+    }
+    Overrides {
+      Name: "bp:Angle Min"
+      Float: 7.76351643
+    }
+    Overrides {
+      Name: "bp:Angle Max"
+      Float: 71.3697281
+    }
+    Overrides {
+      Name: "bp:density"
+      Float: 3.29903054
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 2.34840178
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 599353575558841982
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 9868271090114350100
+  Name: "Shield 01"
+  Transform {
+    Location {
+      X: -0.729126
+      Y: -59.9972534
+      Z: 257.037598
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 18315777036302577493
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17630812284545276091
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10307894087144691146
+  Name: "Raptor Mob"
+  Transform {
+    Location {
+      X: -475.729126
+      Y: -31.28125
+      Z: 182.593262
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.56339812
+      Y: 2.56339812
+      Z: 2.56339812
+    }
+  }
+  ParentId: 18315777036302577493
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1001666275847985579
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_spit"
+        StartPosition: 0.278709203
+      }
+    }
+  }
+}
+Objects {
+  Id: 17126527785778863297
+  Name: "Group"
+  Transform {
+    Location {
+      X: 1500.72913
+      Y: 1009.56934
+      Z: -7382.0376
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  ChildIds: 6132043712661535095
+  ChildIds: 17116811171128985501
+  ChildIds: 7037262065830235492
+  ChildIds: 15422291161732738992
+  ChildIds: 626218350060362911
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 626218350060362911
+  Name: "Waterfall Base Volume VFX"
+  Transform {
+    Location {
+      X: 250.950317
+      Y: -51.503418
+      Z: -42.3208
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.3216989
+      Y: 2.58638263
+      Z: 1.20383322
+    }
+  }
+  ParentId: 17126527785778863297
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:3"
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17999095934034705962
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 15422291161732738992
+  Name: "Rain Splash Volume VFX"
+  Transform {
+    Location {
+      X: 275.623413
+      Y: -38.0174561
+      Z: -19.0844727
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.81451619
+      Y: 2.19641232
+      Z: 1
+    }
+  }
+  ParentId: 17126527785778863297
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:density"
+      Float: 0.321208596
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14809279494125531752
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 7037262065830235492
+  Name: "Water Jet VFX"
+  Transform {
+    Location {
+      X: 80.543335
+      Y: -60.4356689
+      Z: 276.609375
+    }
+    Rotation {
+      Pitch: -90
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17126527785778863297
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 3.75095487
+    }
+    Overrides {
+      Name: "bp:Velocity Min"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Velocity Max"
+      Float: 3.68783355
+    }
+    Overrides {
+      Name: "bp:Angle Min"
+      Float: 7.76351643
+    }
+    Overrides {
+      Name: "bp:Angle Max"
+      Float: 71.3697281
+    }
+    Overrides {
+      Name: "bp:density"
+      Float: 3.29903054
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 2.34840178
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 599353575558841982
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 17116811171128985501
+  Name: "Shield 01"
+  Transform {
+    Location {
+      X: -0.729126
+      Y: -59.9972534
+      Z: 257.037598
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 17126527785778863297
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17630812284545276091
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6132043712661535095
+  Name: "Raptor Mob"
+  Transform {
+    Location {
+      X: -475.729126
+      Y: -31.28125
+      Z: 182.593262
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.56339812
+      Y: 2.56339812
+      Z: 2.56339812
+    }
+  }
+  ParentId: 17126527785778863297
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1001666275847985579
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_spit"
+        StartPosition: 0.278709203
+      }
+    }
+  }
+}
+Objects {
   Id: 5330640021942244816
   Name: "ClientContext"
   Transform {

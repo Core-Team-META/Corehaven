@@ -1,6 +1,152 @@
 Name: "Tavern_Interior"
 RootId: 8666821601116918477
 Objects {
+  Id: 14847548634594183572
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -7710.85303
+      Y: -1614.19971
+      Z: -5853.66699
+    }
+    Rotation {
+      Yaw: -71.2228241
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -335.115723
+            Y: -4920.53369
+            Z: 794.464844
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 108.777153
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 800.743347
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234771729
+            Y: 37.6361237
+            Z: 7.21630859
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
+  Id: 1650089176163502786
+  Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
+  Transform {
+    Location {
+      X: -7601.45801
+      Y: 3465.14404
+      Z: -6038.45117
+    }
+    Rotation {
+      Yaw: -112.418533
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8666821601116918477
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4079025086750496989
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 01 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -995.888672
+            Y: -5127.92822
+            Z: 794.464844
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -71.2228394
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7660077243464683738
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 800.743347
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234771729
+            Y: 37.6361237
+            Z: 7.21630859
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4991514673705742534
+    }
+  }
+}
+Objects {
   Id: 9219609745374268513
   Name: "Fire Volume VFX"
   Transform {

@@ -29,6 +29,7 @@ Objects {
   ChildIds: 2734733877656755987
   ChildIds: 9866378772659897466
   ChildIds: 12480038339378461173
+  ChildIds: 17856410282122848366
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +39,46 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17856410282122848366
+  Name: "Table Assembled"
+  Transform {
+    Location {
+      X: -7230.90479
+      Y: -1606.11426
+      Z: -6207.48633
+    }
+    Rotation {
+      Yaw: 16.2318821
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 920718023733593417
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

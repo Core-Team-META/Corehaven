@@ -202,12 +202,12 @@ Objects {
       Z: -1422.90137
     }
     Rotation {
-      Yaw: -41.7583504
+      Yaw: -41.7583618
     }
     Scale {
       X: 34.0360184
       Y: 34.0360184
-      Z: 50
+      Z: 40.6056328
     }
   }
   ParentId: 1079375006114686061
@@ -501,6 +501,7 @@ Objects {
     }
   }
   ParentId: 5904133192465053477
+  ChildIds: 4381920332950417190
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -554,6 +555,51 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 4381920332950417190
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: 5.40777655e-05
+      Y: -0.000188666294
+      Z: -3.35760087e-05
+    }
+    Rotation {
+      Pitch: 63.6690598
+      Yaw: 179.386292
+      Roll: -0.38063845
+    }
+    Scale {
+      X: 0.815574408
+      Y: 0.815574408
+      Z: 0.815574408
+    }
+  }
+  ParentId: 845160761114074739
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 5.62092304
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
     }
   }
 }
@@ -1197,6 +1243,7 @@ Objects {
     }
   }
   ParentId: 4105379773426898419
+  ChildIds: 18196088014791634860
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -1250,6 +1297,48 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 18196088014791634860
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 44.0230293
+      Yaw: -99.551178
+      Roll: 37.753685
+    }
+    Scale {
+      X: 0.815574408
+      Y: 0.815574408
+      Z: 0.815574408
+    }
+  }
+  ParentId: 358326814113992825
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 5.62092304
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
     }
   }
 }
@@ -1893,6 +1982,7 @@ Objects {
     }
   }
   ParentId: 5811273538891992394
+  ChildIds: 9672005632286510878
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -1946,6 +2036,48 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 9672005632286510878
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Pitch: 11.6134453
+      Yaw: 46.3783226
+      Roll: -26.7087135
+    }
+    Scale {
+      X: 0.815574408
+      Y: 0.815574408
+      Z: 0.815574408
+    }
+  }
+  ParentId: 13091028313121325207
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 5.62092304
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
     }
   }
 }
@@ -2589,6 +2721,7 @@ Objects {
     }
   }
   ParentId: 4938788982887213116
+  ChildIds: 16215460138000335537
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -2642,6 +2775,47 @@ Objects {
     StaticMesh {
       Physics {
       }
+    }
+  }
+}
+Objects {
+  Id: 16215460138000335537
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 6.83019061e-06
+      Roll: -1.70754765e-06
+    }
+    Scale {
+      X: 0.815574348
+      Y: 0.815574348
+      Z: 0.815574348
+    }
+  }
+  ParentId: 6386356721070905668
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 5.62092304
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
     }
   }
 }
@@ -3993,8 +4167,8 @@ Objects {
   }
 }
 Objects {
-  Id: 10974984216237463099
-  Name: "Underwater Post Process"
+  Id: 13973527399790933197
+  Name: "ServerContext"
   Transform {
     Location {
       X: -680.472351
@@ -4002,7 +4176,33 @@ Objects {
       Z: 816.514648
     }
     Rotation {
-      Yaw: -41.7583618
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1079375006114686061
+  ChildIds: 10974984216237463099
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 10974984216237463099
+  Name: "Underwater Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -41.7583733
     }
     Scale {
       X: 35.1533127
@@ -4010,7 +4210,120 @@ Objects {
       Z: 31.6210709
     }
   }
+  ParentId: 13973527399790933197
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Fog Density"
+      Float: 0.006
+    }
+    Overrides {
+      Name: "bp:Layered Fog Density"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Depth Desaturation"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Scene Tint"
+      Color {
+        G: 0.635165453
+        B: 0.690000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Distortion Amount"
+      Float: 0.517648697
+    }
+    Overrides {
+      Name: "bp:Blend Radius"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fog Color"
+      Color {
+        R: 0.170000017
+        G: 0.868079126
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Water"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Caustics"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Control Fog"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Control Audio"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5637733567374295665
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 10106136374888589637
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: -680.472351
+      Y: 2289.09912
+      Z: 816.514648
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
   ParentId: 1079375006114686061
+  ChildIds: 8089900280301705908
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 8089900280301705908
+  Name: "Underwater Post Process"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -41.7584
+    }
+    Scale {
+      X: 35.1533127
+      Y: 35.1482964
+      Z: 31.6210709
+    }
+  }
+  ParentId: 10106136374888589637
   UnregisteredParameters {
     Overrides {
       Name: "bp:Fog Density"
