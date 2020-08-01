@@ -29,6 +29,8 @@ Objects {
   ChildIds: 2734733877656755987
   ChildIds: 9866378772659897466
   ChildIds: 12480038339378461173
+  ChildIds: 17055759087860176025
+  ChildIds: 7186949721096082954
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -38,6 +40,112 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 7186949721096082954
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: -2875
+      Y: 6427.34668
+      Z: -5779.12354
+    }
+    Rotation {
+      Pitch: -3.05175781e-05
+      Yaw: -98.2551
+      Roll: 89.9999
+    }
+    Scale {
+      X: 1.22269702
+      Y: 1.22269702
+      Z: 0.815131366
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9040752329684853759
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17055759087860176025
+  Name: "Plane 1m - One Sided"
+  Transform {
+    Location {
+      X: -2875
+      Y: 6450
+      Z: -5919.41455
+    }
+    Rotation {
+      Pitch: -3.05175781e-05
+      Yaw: -98.2551
+      Roll: 89.9999
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 2
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9040752329684853759
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -1865,6 +1973,67 @@ Objects {
       Height {
         Min: -102400
         Max: 2000
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 240134210636594123
+      }
+      DistanceBetweenInstances: 2000
+      SpawnDistance: 51200
+      CullDistance {
+        Min: 50000
+        Max: 70000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 10
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1.2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Branch"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      Materials {
+        key: "Nature_Leaves"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      Materials {
+        key: "Nature_Trunk"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: 2500
+        Max: 102400
       }
     }
   }

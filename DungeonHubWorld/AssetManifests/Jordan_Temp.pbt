@@ -17,12 +17,39 @@ Assets {
   }
 }
 Assets {
+  Id: 17609149353171719671
+  Name: "Cube - bottom aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 17248571443048080908
+  Name: "Cabinet - Upper"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_001"
+  }
+}
+Assets {
   Id: 17209268355161202786
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 16964117855639857004
+  Name: "Decal Spray Manticore 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_spray_manticore_001"
   }
 }
 Assets {
@@ -71,12 +98,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12817510901257393900
+  Name: "Fabric Burlap Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_001_uv"
+  }
+}
+Assets {
   Id: 12769184580493581193
   Name: "Fantasy Castle Accessory Roof 01 "
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_acc_roof_001"
+  }
+}
+Assets {
+  Id: 12723359920741967442
+  Name: "Human Gal"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_001_ref"
   }
 }
 Assets {
@@ -89,12 +134,75 @@ Assets {
   }
 }
 Assets {
+  Id: 10877699174478672311
+  Name: "Text 01: !"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_037"
+  }
+}
+Assets {
+  Id: 9199751096616988864
+  Name: "Candle Flame VFX"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "fxsm_candleflame"
+  }
+}
+Assets {
   Id: 7724989921381923917
   Name: "Ambience Nature Wind and Trees Set 01 SFX"
   PlatformAssetType: 10
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_windytrees_ref"
+  }
+}
+Assets {
+  Id: 7715152830417178651
+  Name: "Fabric Burlap New 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_002_uv"
+  }
+}
+Assets {
+  Id: 7668059435165025856
+  Name: "Parchment 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_parchment_001_uv"
+  }
+}
+Assets {
+  Id: 7616109972271673814
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
+  Id: 6491903416860593592
+  Name: "Steam Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_steam_volume_vfx"
+  }
+}
+Assets {
+  Id: 6448135304331344928
+  Name: "Chain Ceiling Anchor"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_top_001"
   }
 }
 Assets {
@@ -107,12 +215,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6151916990070556227
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
   Id: 4488444258523261897
   Name: "Flare Billboard"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_flare_object"
+  }
+}
+Assets {
+  Id: 4355251962396440486
+  Name: "Cone"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_001"
   }
 }
 Assets {
@@ -131,6 +257,33 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_magic_dark_breath_bell_spell_cast_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 2160476303725884379
+  Name: "Chandelier"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chandelier_001"
+  }
+}
+Assets {
+  Id: 1988419718866759799
+  Name: "Chain Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_001"
+  }
+}
+Assets {
+  Id: 1833349017309235771
+  Name: "Book Shelf 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_books_shelf_001_uv"
   }
 }
 Assets {

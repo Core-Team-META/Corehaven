@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17983886762090769352
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 16216211350459920357
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -134,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9040752329684853759
+  Name: "Jungle Vine (end)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_liana-vine_end_001_uv"
+  }
+}
+Assets {
   Id: 9037050440305590279
   Name: "Clover Patch 02"
   PlatformAssetType: 1
@@ -158,5 +176,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
+  }
+}
+Assets {
+  Id: 240134210636594123
+  Name: "Tree Oak 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_001"
   }
 }

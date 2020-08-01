@@ -12,7 +12,7 @@ Assets {
       }
       Overrides {
         Name: "wind_speed"
-        Float: 0.4
+        Float: 0.333
       }
       Overrides {
         Name: "wind_intensity"
@@ -21,19 +21,25 @@ Assets {
       Overrides {
         Name: "color"
         Color {
+          R: 0.940000057
           A: 1
         }
       }
       Overrides {
         Name: "color_secondary"
         Color {
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
       Overrides {
         Name: "color_tertiary"
         Color {
-          R: 0.429999948
+          R: 0.410000026
+          G: 0.777284682
+          B: 1
           A: 1
         }
       }

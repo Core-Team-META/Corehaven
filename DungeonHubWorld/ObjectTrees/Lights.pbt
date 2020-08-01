@@ -7148,28 +7148,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 7886655707835920875
-      value {
-        Overrides {
-          Name: "Intensity"
-          Float: 40
-        }
-        Overrides {
-          Name: "AttenuationRadius"
-          Float: 1500
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 1
-            G: 1
-            B: 1
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 9428891237528791597
       value {
         Overrides {
@@ -7190,14 +7168,6 @@ Objects {
             Pitch: -1.58590698
             Yaw: 155.935364
             Roll: -0.0347290039
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 6.4033637
-            Y: 6.4033637
-            Z: 6.4033637
           }
         }
       }

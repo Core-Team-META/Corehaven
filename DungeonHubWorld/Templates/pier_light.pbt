@@ -7,12 +7,12 @@ Assets {
       RootId: 9428891237528791597
       Objects {
         Id: 9428891237528791597
-        Name: "pier_light"
+        Name: "Square_Pole_Light"
         Transform {
           Scale {
-            X: 2.10210586
-            Y: 2.10210586
-            Z: 2.10210586
+            X: 6.4033637
+            Y: 6.4033637
+            Z: 6.4033637
           }
         }
         ParentId: 16634658052813774427
@@ -308,11 +308,11 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 65.5591354
+          Intensity: 40
           Color {
             R: 1
-            G: 0.726868153
-            B: 0.477918148
+            G: 1
+            B: 1
             A: 1
           }
           VolumetricIntensity: 5
@@ -322,15 +322,15 @@ Assets {
             UseTemperature: true
             Temperature: 2000
             LocalLight {
-              AttenuationRadius: 1530.5481
+              AttenuationRadius: 1500
               PointLight {
                 SourceRadius: 9.23469257
                 SoftSourceRadius: 100
                 FallOffExponent: 8
               }
             }
-            MaxDrawDistance: 9941.38184
-            MaxDistanceFadeRange: 2000
+            MaxDrawDistance: 100000
+            MaxDistanceFadeRange: 1000
           }
         }
       }

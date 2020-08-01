@@ -19700,8 +19700,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.873169
       Z: 7.50004292
     }
     Rotation {
@@ -19710,9 +19710,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 5822311783497260132
@@ -19827,8 +19827,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.084961
       Z: -0.855585754
     }
     Rotation {
@@ -19837,9 +19837,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 5822311783497260132
@@ -19954,8 +19954,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08481836
       Z: 4.56502485
     }
     Rotation {
@@ -19964,9 +19964,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 5822311783497260132
@@ -20291,8 +20291,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.873169
       Z: 7.50004292
     }
     Rotation {
@@ -20301,9 +20301,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 14314090481621007753
@@ -20418,8 +20418,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.084961
       Z: -0.855585754
     }
     Rotation {
@@ -20428,9 +20428,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 14314090481621007753
@@ -20545,8 +20545,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08481836
       Z: 4.56502485
     }
     Rotation {
@@ -20555,9 +20555,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 14314090481621007753
@@ -20882,8 +20882,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.873169
       Z: 7.50004292
     }
     Rotation {
@@ -20892,9 +20892,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 4862048971808652623
@@ -21009,8 +21009,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.084961
       Z: -0.855585754
     }
     Rotation {
@@ -21019,9 +21019,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 4862048971808652623
@@ -21136,8 +21136,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08473456
       Z: 4.56502485
     }
     Rotation {
@@ -21146,9 +21146,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 4862048971808652623
@@ -21473,8 +21473,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.873169
       Z: 7.50004292
     }
     Rotation {
@@ -21483,9 +21483,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 6742405402716984487
@@ -21600,8 +21600,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.084961
       Z: -0.855585754
     }
     Rotation {
@@ -21610,9 +21610,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 6742405402716984487
@@ -21727,8 +21727,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08481836
       Z: 4.56502485
     }
     Rotation {
@@ -21737,9 +21737,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 6742405402716984487
@@ -22064,8 +22064,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.87323
       Z: 7.50004292
     }
     Rotation {
@@ -22074,9 +22074,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 3175812070494923102
@@ -22191,8 +22191,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.085022
       Z: -0.855585754
     }
     Rotation {
@@ -22201,9 +22201,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 3175812070494923102
@@ -22318,8 +22318,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08473456
       Z: 4.56502485
     }
     Rotation {
@@ -22328,9 +22328,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 3175812070494923102
@@ -55365,8 +55365,8 @@ Objects {
   Transform {
     Location {
       X: -6.79777336
-      Y: -282.085205
-      Z: -0.855585754
+      Y: -282.085175
+      Z: -0.855510116
     }
     Rotation {
       Pitch: -0.500885
@@ -55374,9 +55374,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339272201
+      Y: 0.339108825
+      Z: 0.339108825
     }
   }
   ParentId: 16494426382943612347
@@ -55391,13 +55391,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -55491,9 +55484,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
-      Z: 4.56502485
+      X: -6.79809046
+      Y: -1.08473837
+      Z: 4.56509209
     }
     Rotation {
       Pitch: -3.24032593
@@ -55501,9 +55494,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339272201
+      Y: 0.339108974
+      Z: 0.339108974
     }
   }
   ParentId: 16494426382943612347
@@ -55518,13 +55511,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -56018,9 +56004,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
-      Z: -0.855585754
+      X: -6.79776
+      Y: -282.085083
+      Z: -0.855957031
     }
     Rotation {
       Pitch: -0.500885
@@ -56028,9 +56014,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 6831526589611039326
@@ -56045,13 +56031,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -56145,9 +56124,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
-      Z: 4.56502485
+      X: -6.79811096
+      Y: -1.0847168
+      Z: 4.56494141
     }
     Rotation {
       Pitch: -3.24032593
@@ -56155,9 +56134,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: -0.340115964
+      Y: 0.339952201
+      Z: 0.339952201
     }
   }
   ParentId: 6831526589611039326
@@ -56172,13 +56151,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -56673,9 +56645,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
-      Z: 7.50004292
+      X: -6.79559326
+      Y: -595.873901
+      Z: 7.49951172
     }
     Rotation {
       Pitch: 2.53744936
@@ -56683,9 +56655,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 2079233185750770264
@@ -56700,13 +56672,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -56800,9 +56765,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
+      X: -6.79779053
       Y: -282.085205
-      Z: -0.855585754
+      Z: -0.855957031
     }
     Rotation {
       Pitch: -0.500885
@@ -56810,9 +56775,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 2079233185750770264
@@ -56827,13 +56792,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -56927,8 +56885,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79807711
+      Y: -1.08467507
       Z: 4.56502485
     }
     Rotation {
@@ -56937,9 +56895,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: -0.340115964
+      Y: 0.339952201
+      Z: 0.339952201
     }
   }
   ParentId: 2079233185750770264
@@ -56954,13 +56912,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -57515,9 +57466,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
-      Z: 7.50004292
+      X: -6.79541
+      Y: -595.873779
+      Z: 7.5
     }
     Rotation {
       Pitch: 2.53744936
@@ -57525,9 +57476,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 2546514216201109121
@@ -57542,13 +57493,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -57642,9 +57586,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
-      Z: -0.855585754
+      X: -6.79760742
+      Y: -282.085083
+      Z: -0.85546875
     }
     Rotation {
       Pitch: -0.500885
@@ -57652,9 +57596,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 2546514216201109121
@@ -57669,13 +57613,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -57769,8 +57706,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79814291
+      Y: -1.08471704
       Z: 4.56502485
     }
     Rotation {
@@ -57779,9 +57716,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: -0.340115964
+      Y: 0.339952201
+      Z: 0.339952201
     }
   }
   ParentId: 2546514216201109121
@@ -57796,13 +57733,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -58290,8 +58220,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79564381
+      Y: -595.87323
       Z: 7.50004292
     }
     Rotation {
@@ -58300,9 +58230,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339682937
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 999333585159989377
@@ -58417,8 +58347,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
+      X: -6.79772139
+      Y: -282.085022
       Z: -0.855585754
     }
     Rotation {
@@ -58427,9 +58357,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339683
+      Y: 0.339519292
+      Z: 0.339519292
     }
   }
   ParentId: 999333585159989377
@@ -58544,8 +58474,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79801369
+      Y: -1.08474505
       Z: 4.56502485
     }
     Rotation {
@@ -58554,9 +58484,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339683
+      Y: 0.339519352
+      Z: 0.339519352
     }
   }
   ParentId: 999333585159989377
@@ -59008,7 +58938,7 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
+      X: -6.79560709
       Y: -595.87384
       Z: 7.50004292
     }
@@ -59018,9 +58948,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.34135139
+      Y: 0.34118697
+      Z: 0.34118697
     }
   }
   ParentId: 9416354593421900243
@@ -59035,13 +58965,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -59135,7 +59058,7 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
+      X: -6.79774094
       Y: -282.085205
       Z: -0.855585754
     }
@@ -59145,9 +59068,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.34135139
+      Y: 0.34118697
+      Z: 0.34118697
     }
   }
   ParentId: 9416354593421900243
@@ -59162,13 +59085,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -59262,8 +59178,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.7981
+      Y: -1.08473229
       Z: 4.56502485
     }
     Rotation {
@@ -59272,9 +59188,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: -0.34135139
+      Y: 0.34118706
+      Z: 0.34118706
     }
   }
   ParentId: 9416354593421900243
@@ -59289,13 +59205,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -59850,8 +59759,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
+      X: -6.79546738
+      Y: -595.873718
       Z: 7.50004292
     }
     Rotation {
@@ -59860,9 +59769,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339272171
+      Y: 0.339108825
+      Z: 0.339108825
     }
   }
   ParentId: 2053515021212609101
@@ -59877,13 +59786,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -59977,7 +59879,7 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
+      X: -6.79779434
       Y: -282.085205
       Z: -0.855585754
     }
@@ -59987,9 +59889,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: 0.339272201
+      Y: 0.339108825
+      Z: 0.339108825
     }
   }
   ParentId: 2053515021212609101
@@ -60004,13 +59906,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -60104,8 +59999,8 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
+      X: -6.79817963
+      Y: -1.08468688
       Z: 4.56502485
     }
     Rotation {
@@ -60114,9 +60009,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: 0.339272201
+      Y: 0.339108974
+      Z: 0.339108974
     }
   }
   ParentId: 2053515021212609101
@@ -60131,13 +60026,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -61349,9 +61237,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79558277
-      Y: -595.87384
-      Z: 7.50004292
+      X: -6.7956543
+      Y: -595.873901
+      Z: 7.5
     }
     Rotation {
       Pitch: 2.53744936
@@ -61359,9 +61247,9 @@ Objects {
       Roll: 3.63209915e-06
     }
     Scale {
-      X: 0.259999961
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 12068821236172458592
@@ -61376,13 +61264,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -61476,9 +61357,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79777336
-      Y: -282.085205
-      Z: -0.855585754
+      X: -6.79785156
+      Y: -282.085266
+      Z: -0.85546875
     }
     Rotation {
       Pitch: -0.500885
@@ -61486,9 +61367,9 @@ Objects {
       Roll: 4.40243821e-06
     }
     Scale {
-      X: 0.26
-      Y: 0.259874761
-      Z: 0.259874761
+      X: -0.340115964
+      Y: 0.339952141
+      Z: 0.339952141
     }
   }
   ParentId: 12068821236172458592
@@ -61503,13 +61384,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -61603,9 +61477,9 @@ Objects {
   Name: "Short Banner Fleur-de-lis"
   Transform {
     Location {
-      X: -6.79810333
-      Y: -1.08474517
-      Z: 4.56502485
+      X: -6.79834
+      Y: -1.08483887
+      Z: 4.56494141
     }
     Rotation {
       Pitch: -3.24032593
@@ -61613,9 +61487,9 @@ Objects {
       Roll: 2.13785199e-07
     }
     Scale {
-      X: 0.26
-      Y: 0.259874821
-      Z: 0.259874821
+      X: -0.340115964
+      Y: 0.339952201
+      Z: 0.339952201
     }
   }
   ParentId: 12068821236172458592
@@ -61630,13 +61504,6 @@ Objects {
       Name: "ma:Prop_Cloth:id"
       AssetReference {
         Id: 5436279215994949707
-      }
-    }
-    Overrides {
-      Name: "ma:Prop_Cloth:color"
-      Color {
-        R: 0.940000057
-        A: 1
       }
     }
   }
@@ -83681,14 +83548,6 @@ Objects {
     Overrides {
       Name: "ma:Nature_Trunk:vtile"
       Float: 1.24026501
-    }
-    Overrides {
-      Name: "ma:Nature_Leaves:color"
-      Color {
-        R: 0.388727903
-        G: 0.598958313
-        A: 1
-      }
     }
   }
   Collidable_v2 {
@@ -134011,9 +133870,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 12.0296631
-      Y: 200.551758
-      Z: 1010.19238
+      X: 12.0297318
+      Y: 200.551743
+      Z: 1015.14307
     }
     Rotation {
       Yaw: 89.9999542
