@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13235260225615248053
+  Name: "Transparent Bubble Glass"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_transparent_bubble_glass"
+  }
+}
+Assets {
   Id: 12901371766173778172
   Name: "Leafy Patch 02"
   PlatformAssetType: 1

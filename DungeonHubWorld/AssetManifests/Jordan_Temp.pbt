@@ -17,24 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17999095934034705962
-  Name: "Waterfall Base Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_waterfall_base_volume"
-  }
-}
-Assets {
-  Id: 17630812284545276091
-  Name: "Shield 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_002"
-  }
-}
-Assets {
   Id: 17209268355161202786
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
@@ -50,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_FantasyMusic_ref"
+  }
+}
+Assets {
+  Id: 16216211350459920357
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -71,21 +62,21 @@ Assets {
   }
 }
 Assets {
-  Id: 14809279494125531752
-  Name: "Rain Splash Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_rainsplash_volume"
-  }
-}
-Assets {
-  Id: 7814966837604519694
-  Name: "Bricks Rough Stone Floor 01"
+  Id: 12827530473249900764
+  Name: "Opaque Emissive"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_rough_001"
+    AssetId: "fxma_opaque_emissive"
+  }
+}
+Assets {
+  Id: 12769184580493581193
+  Name: "Fantasy Castle Accessory Roof 01 "
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_acc_roof_001"
   }
 }
 Assets {
@@ -140,23 +131,5 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "abp_ClassicalMusic_ref"
-  }
-}
-Assets {
-  Id: 1001666275847985579
-  Name: "Raptor Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_raptor_default_basic_001_ref"
-  }
-}
-Assets {
-  Id: 599353575558841982
-  Name: "Water Jet VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_water_jet"
   }
 }

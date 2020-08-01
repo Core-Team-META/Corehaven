@@ -46,12 +46,12 @@ Objects {
   Name: "Table Assembled"
   Transform {
     Location {
-      X: -7230.90479
-      Y: -1606.11426
+      X: -7250
+      Y: -1600
       Z: -6207.48633
     }
     Rotation {
-      Yaw: 16.2318821
+      Yaw: 16.2319107
     }
     Scale {
       X: 1
@@ -856,15 +856,15 @@ Objects {
     Overrides {
       Name: "ma:Building_WallOuter:id"
       AssetReference {
-        Id: 16216211350459920357
+        Id: 13235260225615248053
       }
     }
     Overrides {
       Name: "ma:Building_WallOuter:color"
       Color {
         R: 1
-        G: 0.310198665
-        B: 0.0699999928
+        G: 0.956887424
+        B: 0.79
         A: 1
       }
     }
