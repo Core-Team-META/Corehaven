@@ -683,6 +683,7 @@ Objects {
   ChildIds: 15415779005931233842
   ChildIds: 11529426550849635647
   ChildIds: 13549001067774520540
+  ChildIds: 4986957105312211231
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -691,6 +692,64 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 4986957105312211231
+  Name: "Lens - Half"
+  Transform {
+    Location {
+      X: 1130.62634
+      Y: -2418.33545
+      Z: 314.980469
+    }
+    Rotation {
+      Yaw: 42.7307816
+      Roll: -90.000061
+    }
+    Scale {
+      X: 0.340596676
+      Y: 0.58736521
+      Z: 0.550720334
+    }
+  }
+  ParentId: 10096023940965961840
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14429515704994911608
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.00999999
+        G: 0.763973415
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 316859462149096151
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

@@ -1,6 +1,232 @@
 Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 1882591909612953695
+  Name: "Decal Ivy Big"
+  Transform {
+    Location {
+      X: -8949.74219
+      Y: 3322.68091
+      Z: -5069.38379
+    }
+    Rotation {
+      Pitch: -0.120354757
+      Yaw: -131.004745
+      Roll: 94.6259308
+    }
+    Scale {
+      X: 2.04254198
+      Y: 2.04254198
+      Z: 2.04254198
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 1258687187152954659
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 2892647842264313710
+  Name: "Decal Vines End 01"
+  Transform {
+    Location {
+      X: -9005.39746
+      Y: 2887.09521
+      Z: -5468.56787
+    }
+    Rotation {
+      Pitch: 0.621615469
+      Yaw: -99.4048233
+      Roll: 74.1137466
+    }
+    Scale {
+      X: 2.20855045
+      Y: 2.20855045
+      Z: 2.20855045
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12083781108531124132
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1962060127648512904
+  Name: "Decal Vines End 01"
+  Transform {
+    Location {
+      X: -8194.07324
+      Y: 4412.6665
+      Z: -5450.41797
+    }
+    Rotation {
+      Pitch: 0.621615469
+      Yaw: -99.4048233
+      Roll: 74.1138611
+    }
+    Scale {
+      X: 2.20855045
+      Y: 2.20855045
+      Z: 2.20855045
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12083781108531124132
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1834055378715209400
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: -1878.1582
+      Y: 3889.7561
+      Z: -5581.95947
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.469203085
+      Y: 0.469203085
+      Z: 0.469203085
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 5
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.0500000119
+        G: 0.924503148
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        G: 0.644370794
+        B: 0.700000048
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color c"
+      Color {
+        G: 0.10596025
+        B: 0.25
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 2.79752064
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 9.90678
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 4.36180115
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
+    }
+  }
+}
+Objects {
+  Id: 17856410282122848366
+  Name: "Table Assembled"
+  Transform {
+    Location {
+      X: -7250
+      Y: -1600
+      Z: -6207.48633
+    }
+    Rotation {
+      Yaw: 16.2319279
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 920718023733593417
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 4710877865910643087
   Name: "Bubble Stream VFX"
   Transform {

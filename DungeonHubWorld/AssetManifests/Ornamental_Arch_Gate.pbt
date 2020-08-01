@@ -70,3 +70,12 @@ Assets {
     AssetId: "sm_arch_fancy_ogive_2m_001"
   }
 }
+Assets {
+  Id: 316859462149096151
+  Name: "Lens - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
+  }
+}
