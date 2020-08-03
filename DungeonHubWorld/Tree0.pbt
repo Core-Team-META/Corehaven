@@ -31,6 +31,7 @@ Objects {
   ChildIds: 12480038339378461173
   ChildIds: 17055759087860176025
   ChildIds: 7186949721096082954
+  ChildIds: 305055846383683164
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -40,6 +41,35 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 305055846383683164
+  Name: "TrainingField"
+  Transform {
+    Location {
+      X: 1792.13025
+      Y: -10509.4746
+      Z: -7039.31494
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "TrainingField"
   }
 }
 Objects {
@@ -1829,7 +1859,7 @@ Objects {
       }
       Height {
         Min: -6144
-        Max: 2048
+        Max: 3048
       }
     }
     Foliage {
@@ -1878,7 +1908,7 @@ Objects {
       }
       Height {
         Min: -102400
-        Max: 2000
+        Max: 3000
       }
     }
     Foliage {
@@ -1972,7 +2002,7 @@ Objects {
       }
       Height {
         Min: -102400
-        Max: 2000
+        Max: 3000
       }
     }
     Foliage {

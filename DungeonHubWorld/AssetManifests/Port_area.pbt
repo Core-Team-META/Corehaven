@@ -908,6 +908,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8176344630127042637
+  Name: "Fantasy Castle Wall 02 - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_002_win_02"
+  }
+}
+Assets {
   Id: 8130631578432126867
   Name: "Skeleton Mob"
   PlatformAssetType: 17
