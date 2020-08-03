@@ -1614,6 +1614,61 @@ Objects {
   }
 }
 Objects {
+  Id: 12205223877247337700
+  Name: "Nameplates"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15979967455835987047
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Nameplates"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:ShowHealthbars"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:MaxDistanceOnEnemies"
+          Float: 5000
+        }
+        Overrides {
+          Name: "cs:FriendlyNameColor"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "cs:ShowOnSelf"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12215079912821993416
+    }
+  }
+}
+Objects {
   Id: 11958888796215214168
   Name: "Kill Feed"
   Transform {
