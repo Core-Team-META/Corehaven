@@ -215,6 +215,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15363960962711120915
+  Name: "Craftsman Floor 01 8m x 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_floor_001_8x8"
+  }
+}
+Assets {
   Id: 15311550138640852139
   Name: "Cone - Truncated Hollow Concave"
   PlatformAssetType: 1
@@ -743,6 +752,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_lid_003_ref"
+  }
+}
+Assets {
+  Id: 9662723091772095612
+  Name: "Fantasy Castle Door 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_door_001"
   }
 }
 Assets {

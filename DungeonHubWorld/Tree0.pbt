@@ -257,19 +257,19 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: -1790.99939
-      Y: -231.659927
-      Z: 53.2832031
+      X: -1919.58545
+      Y: -177.63414
+      Z: 16.9765625
     }
     Rotation {
       Pitch: 90
-      Yaw: -16.6992493
-      Roll: -32.1323242
+      Yaw: 17.3540363
+      Roll: 12.84305
     }
     Scale {
       X: 0.351187825
-      Y: 41.5036621
-      Z: 35.6928825
+      Y: 41.5034027
+      Z: 43.741291
     }
   }
   ParentId: 17656590886344883600
@@ -279,6 +279,18 @@ Objects {
       AssetReference {
         Id: 14574512655253538456
       }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 3.65297389
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.23981929
     }
   }
   Collidable_v2 {
@@ -811,8 +823,8 @@ Objects {
   Name: "Whitebox Stairs 01 Straight"
   Transform {
     Location {
-      X: 521.608765
-      Y: 1300.66797
+      X: 598.83728
+      Y: 1272.98438
       Z: 550.633301
     }
     Rotation {

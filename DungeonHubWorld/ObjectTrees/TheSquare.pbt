@@ -1,6 +1,63 @@
 Name: "TheSquare"
 RootId: 3277514622402591831
 Objects {
+  Id: 11843433091572099431
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: -1274.8175
+      Y: -14444.3691
+      Z: 1105.06836
+    }
+    Rotation {
+      Yaw: -174.706802
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3277514622402591831
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 17583760092714655163
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.217383057
+        G: 0.328125
+        B: 0.0341223106
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 240134210636594123
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 6273929129241268473
   Name: "Tree Oak 01"
   Transform {
@@ -114801,7 +114858,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 8197503148267063602
+      Id: 13983143036804937474
     }
     Teams {
       IsTeamCollisionEnabled: true
