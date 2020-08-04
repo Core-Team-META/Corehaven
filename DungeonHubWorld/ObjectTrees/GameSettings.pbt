@@ -1,6 +1,71 @@
 Name: "GameSettings"
 RootId: 12721835720583858691
 Objects {
+  Id: 201138097852338842
+  Name: "NPC Dialogue Trigger"
+  Transform {
+    Location {
+      X: -8770
+      Y: 1205
+      Z: -6315
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialogue Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4025.23169
+            Y: -1737.73755
+            Z: -21.5986328
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 15.0000696
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Jane"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
   Id: 1608562017609693656
   Name: "NPC Dialogue Trigger"
   Transform {
@@ -28,14 +93,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -5435.23145
-            Y: 1022.26239
-            Z: -161.598633
+            X: -70.2316895
+            Y: 4197.26221
+            Z: -636.598633
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
+            Yaw: 15.0000782
           }
         }
       }
