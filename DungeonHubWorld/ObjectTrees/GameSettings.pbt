@@ -134,7 +134,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:PrintTextDelay"
-      Float: 0.08
+      Float: 0.02
     }
     Overrides {
       Name: "cs:PlayerPromptDelay"
@@ -2700,6 +2700,7 @@ Objects {
       }
       AppearanceChannelingTime: 2
       MountChannelingTime: 2
+      FlipOnMultiJump: true
     }
   }
 }

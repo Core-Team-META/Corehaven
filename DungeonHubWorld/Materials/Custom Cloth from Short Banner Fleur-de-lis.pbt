@@ -2,7 +2,7 @@ Assets {
   Id: 5436279215994949707
   Name: "Custom Cloth from Short Banner Fleur-de-lis"
   PlatformAssetType: 13
-  SerializationVersion: 61
+  SerializationVersion: 62
   CustomMaterialAsset {
     BaseMaterialId: 2240549700964722044
     ParameterOverrides {

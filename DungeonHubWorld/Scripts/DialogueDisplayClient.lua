@@ -56,9 +56,12 @@ local PRINT_SOUND = ROOT:GetCustomProperty("PrintSound"):WaitForObject()
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
+local TEXT_LETTER_COLUMN_SIZE = DIALOGUE_TEXT.fontSize / 2
+local TEXT_LETTER_ROW_SIZE = DIALOGUE_TEXT.fontSize * 2
 
 -- Internal variables
 local currentText = ""
+local currentAnimatedMesh = nil
 local selectingOption = false
 local textPrintTime = nil
 local userPromtTime = nil
@@ -68,7 +71,7 @@ if(PRINT_TEXT_DELAY < 0) then
     PRINT_TEXT_DELAY = 0.1
 end
 
-function ToggleUI(toggle)
+function ToggleUIInteraction(toggle)
     if toggle then
         PANEL.visibility = Visibility.INHERIT
         UI.SetCursorVisible(true)
@@ -97,15 +100,32 @@ function PrintText(text)
     textPrintTime = 0
 end
 
+function ResizePanelBasedOnText(text)
+    local length = string.len(text)
+
+    local width = PANEL.width + DIALOGUE_TEXT.width
+
+    local column = width / TEXT_LETTER_COLUMN_SIZE
+    local row = math.ceil(length / column)
+
+    PANEL.height = row * TEXT_LETTER_ROW_SIZE - DIALOGUE_TEXT.height
+end
+
 function ProcessDialogue(dialogueTable, id)
     if not dialogueTable then return end
     if not dialogueTable[id] then return end
 
-    ToggleUI(true)
+    ToggleUIInteraction(true)
 
     if dialogueTable[id].texts then
-        for _, dialogueText in ipairs(dialogueTable[id].texts) do
-            PrintText(dialogueText)
+        for _, textTable in ipairs(dialogueTable[id].texts) do
+            ResizePanelBasedOnText(textTable.text)
+
+            if Object.IsValid(currentAnimatedMesh) and textTable.animation then
+                currentAnimatedMesh:PlayAnimation(textTable.animation)
+            end
+
+            PrintText(textTable.text)
 
             userPromtTime = time()
             while time() - userPromtTime < PLAYER_PROMPT_DELAY do
@@ -144,7 +164,8 @@ function ProcessDialogue(dialogueTable, id)
         return
     end
 
-    ToggleUI(false)
+    ToggleUIInteraction(false)
+    currentAnimatedMesh = nil
 end
 
 function OnDialogueOptionSelect(dialogueId)
@@ -152,8 +173,13 @@ function OnDialogueOptionSelect(dialogueId)
     ProcessDialogue(API.GetDialoguesLibrary(), dialogueId)
 end
 
-function OnStartDialogue(name, dialogueId)
+function OnStartDialogue(name, dialogueId, sourceId)
     NAME_TEXT.text = name
+
+    if sourceId then
+        currentAnimatedMesh = World.FindObjectById(sourceId)
+    end
+
     ProcessDialogue(API.GetDialoguesLibrary(), dialogueId)
 end
 
@@ -177,5 +203,5 @@ LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect("DialogueOptionSelect", OnDialogueOptionSelect)
 Events.Connect("StartDialogue", OnStartDialogue)
 
-ToggleUI(false)
+ToggleUIInteraction(false)
 

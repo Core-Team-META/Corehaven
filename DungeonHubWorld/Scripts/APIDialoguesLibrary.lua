@@ -12,7 +12,7 @@ function API.RegisterDialogueId(dialogueId)
     end
 end
 
-function API.AddText(dialogueId, text)
+function API.AddText(dialogueId, text, animation)
 
     if not _G.APIDialoguesLibrary or not _G.APIDialoguesLibrary[dialogueId] then
         warn("No registered "..dialogueId.." found.")
@@ -24,7 +24,10 @@ function API.AddText(dialogueId, text)
     end
 
     if text ~= nil then
-        table.insert(_G.APIDialoguesLibrary[dialogueId].texts, text)
+        table.insert(_G.APIDialoguesLibrary[dialogueId].texts, {
+            text = text,
+            animation = animation
+        })
     end
 end
 

@@ -187,5 +187,5 @@ Assets {
       AssetId: "Fantasy_Chest_Epic_01__Prop_"
     }
   }
-  SerializationVersion: 61
+  SerializationVersion: 62
 }
