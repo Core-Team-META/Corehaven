@@ -1,6 +1,74 @@
 Name: "GameSettings"
 RootId: 12721835720583858691
 Objects {
+  Id: 17564830376044451792
+  Name: "NPC Dialogue Trigger"
+  Transform {
+    Location {
+      X: -3405
+      Y: 4380
+      Z: -6790
+    }
+    Rotation {
+      Yaw: 15.0000954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialogue Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5455.23145
+            Y: 1007.26239
+            Z: -196.598633
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -29.9998169
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 4419743400125764879
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
   Id: 201138097852338842
   Name: "NPC Dialogue Trigger"
   Transform {
@@ -138,7 +206,7 @@ Objects {
     }
     Overrides {
       Name: "cs:PlayerPromptDelay"
-      Float: 5
+      Float: 10
     }
     Overrides {
       Name: "cs:PlayPrintSound"
@@ -251,6 +319,7 @@ Objects {
   ChildIds: 13794229899012238650
   ChildIds: 13531877002979986383
   ChildIds: 14491260133224192643
+  ChildIds: 16822034185186488889
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -259,8 +328,8 @@ Objects {
   }
   Control {
     Width: 800
-    Height: 200
-    UIY: -50
+    Height: 120
+    UIY: -60
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -272,6 +341,65 @@ Objects {
       SelfAnchor {
         Anchor {
           Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16822034185186488889
+  Name: "Instruction Text"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10208678809797697934
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -50
+    Height: 30
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Click [LMB] to continue"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.8
+      }
+      Size: 12
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
       TargetAnchor {
@@ -695,9 +823,9 @@ Objects {
   }
   AudioInstance {
     AudioAsset {
-      Id: 2229437677277785979
+      Id: 15431234632665265779
     }
-    Volume: 0.5
+    Volume: 0.2
     Falloff: -1
     Radius: -1
   }
@@ -737,6 +865,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Panel"
+      ObjectReference {
+        SelfId: 10208678809797697934
+      }
+    }
+    Overrides {
       Name: "cs:DialogueText"
       ObjectReference {
         SelfId: 13794229899012238650
@@ -749,9 +883,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Panel"
+      Name: "cs:InstructionText"
       ObjectReference {
-        SelfId: 10208678809797697934
+        SelfId: 16822034185186488889
       }
     }
     Overrides {

@@ -43,6 +43,7 @@ local API = require(script:GetCustomProperty("APIDialoguesLibrary"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local LIBRARY_COLLECTION = script:GetCustomProperty("LibraryCollection"):WaitForObject()
 local DIALOGUE_TEXT = script:GetCustomProperty("DialogueText"):WaitForObject()
+local INSTRUCTION_TEXT = script:GetCustomProperty("InstructionText"):WaitForObject()
 local NAME_TEXT = script:GetCustomProperty("NameText"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local OPTIONS_PANEL = script:GetCustomProperty("OptionsPanel"):WaitForObject()
@@ -118,6 +119,9 @@ function ProcessDialogue(dialogueTable, id)
     ToggleUIInteraction(true)
 
     if dialogueTable[id].texts then
+
+        INSTRUCTION_TEXT.text = "Press [LMB] to continue"
+
         for _, textTable in ipairs(dialogueTable[id].texts) do
             ResizePanelBasedOnText(textTable.text)
 
@@ -138,6 +142,8 @@ function ProcessDialogue(dialogueTable, id)
     if dialogueTable[id].options then
         userPromtTime = time()
         selectingOption = true
+
+        INSTRUCTION_TEXT.text = "Select an option to continue"
 
         for i, optionTable in ipairs(dialogueTable[id].options) do
             local instance = World.SpawnAsset(HELPER, {parent = OPTIONS_PANEL})

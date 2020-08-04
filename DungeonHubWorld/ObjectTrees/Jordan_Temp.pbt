@@ -33,14 +33,6 @@ Objects {
             Yaw: -89.9999924
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
-          }
-        }
       }
     }
     TemplateAsset {
@@ -4898,9 +4890,7 @@ Objects {
       AnimationStanceShouldLoop: true
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
-        Animation: "unarmed_wave"
         PlaybackRate: 0.743069828
-        ShouldLoop: true
       }
     }
   }
