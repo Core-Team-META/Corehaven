@@ -1,13 +1,13 @@
 Assets {
   Id: 5702907119253073669
-  Name: "Helper_DialogueOptionPanel"
+  Name: "Helper_DialogOptionPanel"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 17915977419925898009
       Objects {
         Id: 17915977419925898009
-        Name: "Helper_DialogueOptionPanel"
+        Name: "Helper_DialogOptionPanel"
         Transform {
           Scale {
             X: 1
@@ -51,7 +51,7 @@ Assets {
       }
       Objects {
         Id: 13285001699807447940
-        Name: "DialogueOptionDisplayClient"
+        Name: "DialogOptionDisplayClient"
         Transform {
           Location {
           }

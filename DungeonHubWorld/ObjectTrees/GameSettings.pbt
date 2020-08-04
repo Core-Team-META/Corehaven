@@ -1,187 +1,8 @@
 Name: "GameSettings"
 RootId: 12721835720583858691
 Objects {
-  Id: 17564830376044451792
-  Name: "NPC Dialogue Trigger"
-  Transform {
-    Location {
-      X: -3405
-      Y: 4380
-      Z: -6790
-    }
-    Rotation {
-      Yaw: 15.0000954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8616549876975302597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC Dialogue Trigger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5455.23145
-            Y: 1007.26239
-            Z: -196.598633
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -29.9998169
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "cs:AnimatedMesh"
-          ObjectReference {
-            SelfId: 4419743400125764879
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4839589651670793246
-    }
-  }
-}
-Objects {
-  Id: 201138097852338842
-  Name: "NPC Dialogue Trigger"
-  Transform {
-    Location {
-      X: -8770
-      Y: 1205
-      Z: -6315
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8616549876975302597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC Dialogue Trigger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -4025.23169
-            Y: -1737.73755
-            Z: -21.5986328
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 15.0000696
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.19999993
-            Y: 1.19999993
-            Z: 1.19999993
-          }
-        }
-        Overrides {
-          Name: "cs:Name"
-          String: "Jane"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4839589651670793246
-    }
-  }
-}
-Objects {
-  Id: 1608562017609693656
-  Name: "NPC Dialogue Trigger"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8616549876975302597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC Dialogue Trigger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -70.2316895
-            Y: 4197.26221
-            Z: -636.598633
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 15.0000782
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4839589651670793246
-    }
-  }
-}
-Objects {
   Id: 14034009749862207918
-  Name: "Dialogue Display Manager"
+  Name: "Dialog Display Manager"
   Transform {
     Location {
       X: 3334.76831
@@ -258,7 +79,7 @@ Objects {
 }
 Objects {
   Id: 4098664833010361828
-  Name: "Dialogue UI Container"
+  Name: "Dialog UI Container"
   Transform {
     Location {
     }
@@ -271,6 +92,7 @@ Objects {
     }
   }
   ParentId: 6219771787631533003
+  ChildIds: 4077525831980294684
   ChildIds: 10208678809797697934
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -302,7 +124,7 @@ Objects {
 }
 Objects {
   Id: 10208678809797697934
-  Name: "Dialogue Panel"
+  Name: "Dialog Panel"
   Transform {
     Location {
     }
@@ -626,7 +448,7 @@ Objects {
 }
 Objects {
   Id: 13794229899012238650
-  Name: "Dialogue Text"
+  Name: "Dialog Text"
   Transform {
     Location {
     }
@@ -801,6 +623,53 @@ Objects {
   }
 }
 Objects {
+  Id: 4077525831980294684
+  Name: "TriggerOnSpectatingClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4098664833010361828
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 14633632985083390763
+      }
+    }
+    Overrides {
+      Name: "cs:ReverseTrigger"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:DisableTrigger"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:ReverseTrigger:tooltip"
+      String: "If true, the parent object will be visible when the player is not spetctating."
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1960298238579623323
+    }
+  }
+}
+Objects {
   Id: 5694384400337688770
   Name: "Print Text Sound"
   Transform {
@@ -832,7 +701,7 @@ Objects {
 }
 Objects {
   Id: 450521865060584300
-  Name: "DialogueDisplayClient"
+  Name: "DialogDisplayClient"
   Transform {
     Location {
     }
@@ -847,7 +716,7 @@ Objects {
   ParentId: 6219771787631533003
   UnregisteredParameters {
     Overrides {
-      Name: "cs:APIDialoguesLibrary"
+      Name: "cs:APIDialogsLibrary"
       AssetReference {
         Id: 7145630049984329875
       }
@@ -871,7 +740,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:DialogueText"
+      Name: "cs:DialogText"
       ObjectReference {
         SelfId: 13794229899012238650
       }
@@ -915,7 +784,7 @@ Objects {
 }
 Objects {
   Id: 11157663036081338740
-  Name: "Dialogues Collection"
+  Name: "Dialogs Collection"
   Transform {
     Location {
     }
@@ -945,901 +814,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Dialogues Collection"
-  }
-}
-Objects {
-  Id: 12973562359625239718
-  Name: "Map Location"
-  Transform {
-    Location {
-      X: 6825.88281
-      Y: 10677.6895
-      Z: -946.598633
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  ChildIds: 5170873666449694550
-  ChildIds: 12342335380124212049
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Portal Shrine"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 12342335380124212049
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12973562359625239718
-  ChildIds: 2711064981227673683
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 2711064981227673683
-  Name: "Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 2.04905591e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 0.1
-    }
-  }
-  ParentId: 12342335380124212049
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3982193030776093519
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5170873666449694550
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12973562359625239718
-  ChildIds: 6383662818777207945
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 6383662818777207945
-  Name: "MapLocationNameClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5170873666449694550
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 10457224786555656347
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 12973562359625239718
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4779571415404645947
-    }
-  }
-}
-Objects {
-  Id: 11821588511398067879
-  Name: "Map Location"
-  Transform {
-    Location {
-      X: -3666.68774
-      Y: 3347.96362
-      Z: -946.598633
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  ChildIds: 5261725074668604395
-  ChildIds: 6782478530111092947
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Tavern"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 6782478530111092947
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11821588511398067879
-  ChildIds: 4084085273420641483
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 4084085273420641483
-  Name: "Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 2.04905591e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 0.1
-    }
-  }
-  ParentId: 6782478530111092947
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3982193030776093519
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5261725074668604395
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11821588511398067879
-  ChildIds: 6467682063002133455
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 6467682063002133455
-  Name: "MapLocationNameClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5261725074668604395
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 10457224786555656347
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 11821588511398067879
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4779571415404645947
-    }
-  }
-}
-Objects {
-  Id: 15513122311461343891
-  Name: "Map Location"
-  Transform {
-    Location {
-      X: 23574.4492
-      Y: 342.26239
-      Z: -2451.1709
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  ChildIds: 14370180061168643514
-  ChildIds: 7032313791555193580
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Misty Cove"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7032313791555193580
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15513122311461343891
-  ChildIds: 5778966638170021694
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 5778966638170021694
-  Name: "Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 2.04905591e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 0.1
-    }
-  }
-  ParentId: 7032313791555193580
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3982193030776093519
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14370180061168643514
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15513122311461343891
-  ChildIds: 1538059773161902087
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 1538059773161902087
-  Name: "MapLocationNameClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 14370180061168643514
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 10457224786555656347
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 15513122311461343891
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4779571415404645947
-    }
-  }
-}
-Objects {
-  Id: 6292808538487200396
-  Name: "Map Location"
-  Transform {
-    Location {
-      X: 10347.6533
-      Y: 342.26239
-      Z: -2451.1709
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  ChildIds: 10709619243459614396
-  ChildIds: 10990378963872233799
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Docks"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10990378963872233799
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6292808538487200396
-  ChildIds: 8110359269266235271
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 8110359269266235271
-  Name: "Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 2.04905591e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 0.1
-    }
-  }
-  ParentId: 10990378963872233799
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3982193030776093519
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10709619243459614396
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6292808538487200396
-  ChildIds: 18002106882068416228
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 18002106882068416228
-  Name: "MapLocationNameClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10709619243459614396
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 10457224786555656347
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 6292808538487200396
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4779571415404645947
-    }
-  }
-}
-Objects {
-  Id: 13408136064825533982
-  Name: "Map Location"
-  Transform {
-    Location {
-      X: 1337.52966
-      Y: 342.26239
-      Z: -946.598633
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  ChildIds: 5818967540866211116
-  ChildIds: 7623874599730063643
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Name"
-      String: "Town Centre"
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 7623874599730063643
-  Name: "ServerContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13408136064825533982
-  ChildIds: 7933280988323672371
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-    Type: Server
-  }
-}
-Objects {
-  Id: 7933280988323672371
-  Name: "Sphere"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Yaw: 2.04905591e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 0.1
-    }
-  }
-  ParentId: 7623874599730063643
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3982193030776093519
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableCastShadows: true
-    DisableReceiveDecals: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5818967540866211116
-  Name: "ClientContext"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13408136064825533982
-  ChildIds: 12478309790562392492
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 12478309790562392492
-  Name: "MapLocationNameClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5818967540866211116
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API"
-      AssetReference {
-        Id: 10457224786555656347
-      }
-    }
-    Overrides {
-      Name: "cs:ComponentRoot"
-      ObjectReference {
-        SelfId: 13408136064825533982
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4779571415404645947
-    }
   }
 }
 Objects {

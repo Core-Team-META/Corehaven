@@ -39,10 +39,10 @@ client
 
 
 -- Internal custom properties
-local API = require(script:GetCustomProperty("APIDialoguesLibrary"))
+local API = require(script:GetCustomProperty("APIDialogsLibrary"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local LIBRARY_COLLECTION = script:GetCustomProperty("LibraryCollection"):WaitForObject()
-local DIALOGUE_TEXT = script:GetCustomProperty("DialogueText"):WaitForObject()
+local DIALOG_TEXT = script:GetCustomProperty("DialogText"):WaitForObject()
 local INSTRUCTION_TEXT = script:GetCustomProperty("InstructionText"):WaitForObject()
 local NAME_TEXT = script:GetCustomProperty("NameText"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
@@ -57,8 +57,8 @@ local PRINT_SOUND = ROOT:GetCustomProperty("PrintSound"):WaitForObject()
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-local TEXT_LETTER_COLUMN_SIZE = DIALOGUE_TEXT.fontSize / 2
-local TEXT_LETTER_ROW_SIZE = DIALOGUE_TEXT.fontSize * 2
+local TEXT_LETTER_COLUMN_SIZE = DIALOG_TEXT.fontSize / 2
+local TEXT_LETTER_ROW_SIZE = DIALOG_TEXT.fontSize * 2
 
 -- Internal variables
 local currentText = ""
@@ -93,7 +93,7 @@ function PrintText(text)
         if(PLAY_PRINT_SOUND) then
             PRINT_SOUND:Play()
         end
-        DIALOGUE_TEXT.text = string.sub(text, 1, i)
+        DIALOG_TEXT.text = string.sub(text, 1, i)
         if time() - textPrintTime < PRINT_TEXT_DELAY * string.len(text) then
             Task.Wait(PRINT_TEXT_DELAY)
         end
@@ -104,25 +104,25 @@ end
 function ResizePanelBasedOnText(text)
     local length = string.len(text)
 
-    local width = PANEL.width + DIALOGUE_TEXT.width
+    local width = PANEL.width + DIALOG_TEXT.width
 
     local column = width / TEXT_LETTER_COLUMN_SIZE
     local row = math.ceil(length / column)
 
-    PANEL.height = row * TEXT_LETTER_ROW_SIZE - DIALOGUE_TEXT.height
+    PANEL.height = row * TEXT_LETTER_ROW_SIZE - DIALOG_TEXT.height
 end
 
-function ProcessDialogue(dialogueTable, id)
-    if not dialogueTable then return end
-    if not dialogueTable[id] then return end
+function ProcessDialog(dialogTable, id)
+    if not dialogTable then return end
+    if not dialogTable[id] then return end
 
     ToggleUIInteraction(true)
 
-    if dialogueTable[id].texts then
+    if dialogTable[id].texts then
 
         INSTRUCTION_TEXT.text = "Press [LMB] to continue"
 
-        for _, textTable in ipairs(dialogueTable[id].texts) do
+        for _, textTable in ipairs(dialogTable[id].texts) do
             ResizePanelBasedOnText(textTable.text)
 
             if Object.IsValid(currentAnimatedMesh) and textTable.animation then
@@ -139,16 +139,16 @@ function ProcessDialogue(dialogueTable, id)
         end
     end
 
-    if dialogueTable[id].options then
+    if dialogTable[id].options then
         userPromtTime = time()
         selectingOption = true
 
         INSTRUCTION_TEXT.text = "Select an option to continue"
 
-        for i, optionTable in ipairs(dialogueTable[id].options) do
+        for i, optionTable in ipairs(dialogTable[id].options) do
             local instance = World.SpawnAsset(HELPER, {parent = OPTIONS_PANEL})
             instance.clientUserData.optionName = optionTable.optionName
-            instance.clientUserData.dialogueId = optionTable.dialogueId
+            instance.clientUserData.dialogId = optionTable.dialogId
             if i == 1 then
                 instance.y = 0
             else
@@ -174,19 +174,19 @@ function ProcessDialogue(dialogueTable, id)
     currentAnimatedMesh = nil
 end
 
-function OnDialogueOptionSelect(dialogueId)
+function OnDialogOptionSelect(dialogId)
     userPromtTime = userPromtTime - PLAYER_PROMPT_DELAY
-    ProcessDialogue(API.GetDialoguesLibrary(), dialogueId)
+    ProcessDialog(API.GetDialogLibrary(), dialogId)
 end
 
-function OnStartDialogue(name, dialogueId, sourceId)
+function OnStartDialog(name, dialogId, sourceId)
     NAME_TEXT.text = name
 
     if sourceId then
         currentAnimatedMesh = World.FindObjectById(sourceId)
     end
 
-    ProcessDialogue(API.GetDialoguesLibrary(), dialogueId)
+    ProcessDialog(API.GetDialogLibrary(), dialogId)
 end
 
 function OnBindingPressed(player, binding)
@@ -206,8 +206,8 @@ for property, _ in pairs(LIBRARY_COLLECTION:GetCustomProperties()) do
 end
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-Events.Connect("DialogueOptionSelect", OnDialogueOptionSelect)
-Events.Connect("StartDialogue", OnStartDialogue)
+Events.Connect("DialogOptionSelect", OnDialogOptionSelect)
+Events.Connect("StartDialog", OnStartDialog)
 
 ToggleUIInteraction(false)
 

@@ -1,5 +1,5 @@
 Id: 5584882102336224056
-Name: "DialoguesLibrary_GenericConversation"
+Name: "DialogsLibrary_GenericConversation"
 PlatformAssetType: 3
 TextAsset {
   CustomParameters {
