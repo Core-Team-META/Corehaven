@@ -953,5 +953,5 @@ Assets {
       AssetId: "tm_fan_chandelier_001_lit_01"
     }
   }
-  SerializationVersion: 61
+  SerializationVersion: 62
 }

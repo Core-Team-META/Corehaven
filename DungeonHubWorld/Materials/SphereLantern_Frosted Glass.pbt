@@ -2,7 +2,7 @@ Assets {
   Id: 2110146300819852499
   Name: "SphereLantern_Frosted Glass"
   PlatformAssetType: 13
-  SerializationVersion: 61
+  SerializationVersion: 62
   CustomMaterialAsset {
     BaseMaterialId: 16630259605395466384
     ParameterOverrides {

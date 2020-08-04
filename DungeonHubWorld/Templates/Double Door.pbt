@@ -907,5 +907,5 @@ Assets {
       AssetId: "Double_Door"
     }
   }
-  SerializationVersion: 61
+  SerializationVersion: 62
 }

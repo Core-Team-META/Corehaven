@@ -5,7 +5,7 @@ Objects {
   Name: "Water"
   Transform {
     Location {
-      X: -28438.2617
+      X: -27597.4082
       Y: -25025.9648
       Z: -1.43164063
     }
@@ -42,7 +42,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7616109972271673814
+      Id: 17983886762090769352
     }
     Teams {
     }
