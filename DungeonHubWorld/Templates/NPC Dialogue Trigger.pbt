@@ -26,6 +26,11 @@ Assets {
             Name: "cs:StartDialogueId"
             String: "GenericConversation1"
           }
+          Overrides {
+            Name: "cs:AnimatedMesh"
+            ObjectReference {
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

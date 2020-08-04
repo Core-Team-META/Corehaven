@@ -5,9 +5,9 @@ Objects {
   Name: "Fantasy Music Town Night 1"
   Transform {
     Location {
-      X: -50
-      Y: -100
-      Z: 100
+      X: -2400
+      Y: 600
+      Z: -7745.00098
     }
     Rotation {
     }
@@ -40,7 +40,7 @@ Objects {
       Repeat: true
       Pitch: -100
       Volume: 0.6
-      Falloff: 4000
+      Falloff: 200
       Radius: 3500
       FadeInTime: 2.2
       FadeOutTime: 2

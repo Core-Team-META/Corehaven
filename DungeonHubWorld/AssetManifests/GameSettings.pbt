@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15431234632665265779
+  Name: "UI Pop Single 02 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_pop_single_02_Cue_ref"
+  }
+}
+Assets {
   Id: 14781323992507639982
   Name: "Icon Profile"
   PlatformAssetType: 9
@@ -41,14 +50,5 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
-  }
-}
-Assets {
-  Id: 2229437677277785979
-  Name: "UI Pop Single 05 SFX"
-  PlatformAssetType: 7
-  PrimaryAsset {
-    AssetType: "AudioAssetRef"
-    AssetId: "sfx_ui_pop_single_05_Cue_ref"
   }
 }

@@ -134,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10877699174478672311
-  Name: "Text 01: !"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_037"
-  }
-}
-Assets {
   Id: 9199751096616988864
   Name: "Candle Flame VFX"
   PlatformAssetType: 1

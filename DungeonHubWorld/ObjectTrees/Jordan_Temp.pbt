@@ -1,6 +1,143 @@
 Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 3792592650805588626
+  Name: "Dialog Indicator"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4501383837331595948
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Dialog Indicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7300
+            Y: -2600
+            Z: -7775
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999924
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 422126413374678882
+    }
+  }
+}
+Objects {
+  Id: 15696086110447707726
+  Name: "Dialog Indicator"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4501383837331595948
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Dialog Indicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -7300
+            Y: -1750
+            Z: -5950
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 422126413374678882
+    }
+  }
+}
+Objects {
+  Id: 5105071937271691059
+  Name: "Dialog Indicator"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4501383837331595948
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Dialog Indicator"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8775
+            Y: 1200
+            Z: -6075
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 6.83018879e-06
+            Yaw: -45
+            Roll: 1.24852068e-05
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 422126413374678882
+    }
+  }
+}
+Objects {
   Id: 7668537016974572768
   Name: "Books"
   Transform {
@@ -1595,92 +1732,6 @@ Objects {
   }
 }
 Objects {
-  Id: 357788143779309102
-  Name: "Text 01: ?"
-  Transform {
-    Location {
-      X: -8771.32617
-      Y: 1199.04272
-      Z: -6099.45313
-    }
-    Rotation {
-      Yaw: 130.104233
-    }
-    Scale {
-      X: 1.14627647
-      Y: 1.14627647
-      Z: 1.14627647
-    }
-  }
-  ParentId: 16634658052813774427
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Font.Faces:id"
-      AssetReference {
-        Id: 7242273794185350899
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Bevel:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:id"
-      AssetReference {
-        Id: 12827530473249900764
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Bevel:color"
-      Color {
-        R: 5
-        G: 4.43377399
-        B: 0.500000119
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Faces:color"
-      Color {
-        R: 0.206000015
-        G: 0.182671487
-        B: 0.020600006
-        A: 0.421000034
-      }
-    }
-    Overrides {
-      Name: "ma:Font.Sides:color"
-      Color {
-        R: 1
-        G: 0.886754751
-        B: 0.100000024
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 10877699174478672311
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 15549707753209310186
   Name: "Table Assembled"
   Transform {
@@ -2413,7 +2464,7 @@ Objects {
     }
     Overrides {
       Name: "bp:density"
-      Float: 3.51411653
+      Float: 1.81935704
     }
     Overrides {
       Name: "bp:Life"
@@ -2476,7 +2527,7 @@ Objects {
     }
     Overrides {
       Name: "bp:density"
-      Float: 3.51411653
+      Float: 1.81935704
     }
     Overrides {
       Name: "bp:Life"
@@ -2538,7 +2589,7 @@ Objects {
     }
     Overrides {
       Name: "bp:density"
-      Float: 3.51411653
+      Float: 1.81935704
     }
     Overrides {
       Name: "bp:Life"
@@ -2600,7 +2651,7 @@ Objects {
     }
     Overrides {
       Name: "bp:density"
-      Float: 3.51411653
+      Float: 1.81935704
     }
     Overrides {
       Name: "bp:Life"
@@ -3088,7 +3139,7 @@ Objects {
     }
     Overrides {
       Name: "bp:density"
-      Float: 3.68236065
+      Float: 2.26662683
     }
     Overrides {
       Name: "bp:color"
@@ -4839,9 +4890,7 @@ Objects {
       AnimationStanceShouldLoop: true
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
-        Animation: "unarmed_wave"
         PlaybackRate: 0.743069828
-        ShouldLoop: true
       }
     }
   }
