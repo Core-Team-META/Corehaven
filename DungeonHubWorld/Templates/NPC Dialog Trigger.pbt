@@ -1,35 +1,44 @@
 Assets {
   Id: 4839589651670793246
-  Name: "NPC Dialogue Trigger"
+  Name: "NPC Dialog Trigger"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 8616549876975302597
       Objects {
         Id: 8616549876975302597
-        Name: "NPC Dialogue Trigger"
+        Name: "NPC Dialog Trigger"
         Transform {
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
           }
         }
-        ParentId: 12721835720583858691
+        ParentId: 4781671109827199097
         ChildIds: 10106896360964753913
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
-            String: "Joe"
+            String: "Jane"
           }
           Overrides {
-            Name: "cs:StartDialogueId"
+            Name: "cs:StartDialogId"
             String: "GenericConversation1"
           }
           Overrides {
             Name: "cs:AnimatedMesh"
             ObjectReference {
+              SelfId: 2810867449452373016
             }
+          }
+          Overrides {
+            Name: "cs:DefaultLoopAnimation"
+            String: "unarmed_wave"
+          }
+          Overrides {
+            Name: "cs:PlayDialogAnimations"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -70,7 +79,7 @@ Assets {
       }
       Objects {
         Id: 13515385621353375626
-        Name: "DialogueNPCTriggerClient"
+        Name: "DialogNPCTriggerClient"
         Transform {
           Location {
           }
@@ -94,6 +103,12 @@ Assets {
             Name: "cs:Trigger"
             ObjectReference {
               SubObjectId: 14349045989581707847
+            }
+          }
+          Overrides {
+            Name: "cs:DialogIndicator"
+            AssetReference {
+              Id: 422126413374678882
             }
           }
         }

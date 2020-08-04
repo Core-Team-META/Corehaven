@@ -14,10 +14,12 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 12721835720583858691
-  ChildIds: 15440326544402457957
   ChildIds: 14430764027136311552
   ChildIds: 3661421621534174169
+  ChildIds: 12721835720583858691
+  ChildIds: 15440326544402457957
+  ChildIds: 4958045848858137993
+  ChildIds: 453904204925054689
   ChildIds: 16634658052813774427
   ChildIds: 2936107264752505179
   ChildIds: 1079375006114686061
@@ -5011,6 +5013,116 @@ Objects {
   }
 }
 Objects {
+  Id: 453904204925054689
+  Name: "NPCs and Dialogs"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "NPCs and Dialogs"
+  }
+}
+Objects {
+  Id: 4958045848858137993
+  Name: "Map Locations"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Map Locations"
+  }
+}
+Objects {
+  Id: 15440326544402457957
+  Name: "Atmospherics"
+  Transform {
+    Location {
+      X: 166.703064
+      Y: 1983.6123
+      Z: -7264.35205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Atmospherics"
+  }
+}
+Objects {
+  Id: 12721835720583858691
+  Name: "GameSettings"
+  Transform {
+    Location {
+      X: -3334.76831
+      Y: 182.73761
+      Z: -6153.40137
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "GameSettings"
+  }
+}
+Objects {
   Id: 3661421621534174169
   Name: "Terrain"
   Transform {
@@ -5324,63 +5436,5 @@ Objects {
     VoxelSize: 700
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
-  }
-}
-Objects {
-  Id: 15440326544402457957
-  Name: "Atmospherics"
-  Transform {
-    Location {
-      X: 166.703064
-      Y: 1983.6123
-      Z: -7264.35205
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Atmospherics"
-  }
-}
-Objects {
-  Id: 12721835720583858691
-  Name: "GameSettings"
-  Transform {
-    Location {
-      X: -3334.76831
-      Y: 182.73761
-      Z: -6153.40137
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "GameSettings"
   }
 }

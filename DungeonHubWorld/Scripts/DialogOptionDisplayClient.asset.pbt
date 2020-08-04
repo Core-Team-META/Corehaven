@@ -1,5 +1,5 @@
-Id: 12707032343113048194
-Name: "DialogueDisplayClient"
+Id: 157077703428238351
+Name: "DialogOptionDisplayClient"
 PlatformAssetType: 3
 TextAsset {
 }

@@ -2,8 +2,8 @@ local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local BUTTON = script:GetCustomProperty("Button"):WaitForObject()
 
 function OnClicked(whichButton)
-    if ROOT.clientUserData.dialogueId then
-        Events.Broadcast("DialogueOptionSelect", ROOT.clientUserData.dialogueId)
+    if ROOT.clientUserData.dialogId then
+        Events.Broadcast("DialogOptionSelect", ROOT.clientUserData.dialogId)
     end
 end
 

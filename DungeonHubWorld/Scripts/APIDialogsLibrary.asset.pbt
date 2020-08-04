@@ -1,5 +1,5 @@
 Id: 7145630049984329875
-Name: "APIDialoguesLibrary"
+Name: "APIDialogsLibrary"
 PlatformAssetType: 3
 TextAsset {
 }

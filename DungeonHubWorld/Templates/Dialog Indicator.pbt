@@ -10,9 +10,9 @@ Assets {
         Name: "Dialog Indicator"
         Transform {
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 4781671109827199097
@@ -22,6 +22,7 @@ Assets {
         ChildIds: 6815779685919827932
         ChildIds: 15870584172160466839
         ChildIds: 12789156305885382827
+        ChildIds: 2786076296638349809
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -37,15 +38,16 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            Y: -0.595703125
+            Y: -0.304199219
           }
           Rotation {
-            Roll: -89.999939
+            Yaw: -89.9999619
+            Roll: -89.9999
           }
           Scale {
-            X: 1.5
-            Y: 1.02836263
-            Z: 0.0387264229
+            X: 0.561493397
+            Y: 0.408358812
+            Z: 0.005
           }
         }
         ParentId: 4501383837331595948
@@ -67,7 +69,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -93,17 +95,18 @@ Assets {
         Name: "Wedge - Concave"
         Transform {
           Location {
-            Y: -0.595947266
-            Z: -85.1474609
+            X: -0.000122070313
+            Y: -0.303955078
+            Z: -31.2709961
           }
           Rotation {
-            Yaw: 90.0000076
-            Roll: 44.9994583
+            Yaw: 2.16567605e-05
+            Roll: 44.9994049
           }
           Scale {
-            X: 0.0340344198
-            Y: 0.555327475
-            Z: 0.555327892
+            X: -0.000538965629
+            Y: 0.161551222
+            Z: 0.161551222
           }
         }
         ParentId: 4501383837331595948
@@ -125,7 +128,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -151,17 +154,18 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 28.9931641
-            Y: -0.594970703
-            Z: 0.5859375
+            X: 0.000366210938
+            Y: -15.1027832
+            Z: 0.299316406
           }
           Rotation {
-            Roll: -89.999939
+            Yaw: -89.9999847
+            Roll: -89.9999237
           }
           Scale {
-            X: 0.194522426
-            Y: 0.194522843
-            Z: 0.0443744212
+            X: 0.0728153735
+            Y: 0.0772442669
+            Z: 0.00203603716
           }
         }
         ParentId: 4501383837331595948
@@ -180,7 +184,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -206,18 +210,18 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -1.12792969
-            Y: -0.594970703
-            Z: 0.5859375
+            X: 0.000366210938
+            Y: 0.271972656
+            Z: 0.299316406
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Roll: -89.999939
+            Yaw: -89.9999847
+            Roll: -89.9999237
           }
           Scale {
-            X: 0.194522426
-            Y: 0.194522843
-            Z: 0.0443744212
+            X: 0.0728153735
+            Y: 0.0772442669
+            Z: 0.00203603716
           }
         }
         ParentId: 4501383837331595948
@@ -236,7 +240,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -262,18 +266,18 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: -30.5800781
-            Y: -0.594970703
-            Z: 0.5859375
+            X: 0.000366210938
+            Y: 15.3051758
+            Z: 0.299316406
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Roll: -89.999939
+            Yaw: -89.9999847
+            Roll: -89.9999237
           }
           Scale {
-            X: 0.194522426
-            Y: 0.194522843
-            Z: 0.0443744212
+            X: 0.0728153735
+            Y: 0.0772442669
+            Z: 0.00203603716
           }
         }
         ParentId: 4501383837331595948
@@ -292,7 +296,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -318,15 +322,15 @@ Assets {
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            Y: -0.595703125
+            Y: -0.304199219
           }
           Rotation {
-            Roll: -89.999939
+            Yaw: -89.9999847
+            Roll: -89.9999237
           }
           Scale {
-            X: 1.59045649
-            Y: 1.09037721
-            Z: 0.0410617851
+            X: 0.595353842
+            Y: 0.432984561
           }
         }
         ParentId: 4501383837331595948
@@ -348,7 +352,7 @@ Assets {
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
@@ -366,6 +370,88 @@ Assets {
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 2786076296638349809
+        Name: "Outline Object"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4501383837331595948
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 4501383837331595948
+            }
+          }
+          Overrides {
+            Name: "bp:Show Behind Objects"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 1.3
+          }
+          Overrides {
+            Name: "bp:Solid Behind Objects"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.8
+            }
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 5
+          }
+          Overrides {
+            Name: "bp:Enabled"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16174350699321361925
+          }
+          TeamSettings {
           }
         }
       }
@@ -413,6 +499,15 @@ Assets {
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_pipe_003"
+      }
+    }
+    Assets {
+      Id: 16174350699321361925
+      Name: "Outline Object"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     PrimaryAssetId {
