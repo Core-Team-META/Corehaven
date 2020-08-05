@@ -134,15 +134,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16822568136084734308
-  Name: "Wall End Fancy 2m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wall_end_fancy_2m_001"
-  }
-}
-Assets {
   Id: 16630259605395466384
   Name: "Frosted Glass"
   PlatformAssetType: 2
@@ -1430,6 +1421,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2699944095293297492
+  Name: "Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_001"
+  }
+}
+Assets {
   Id: 2664847478369185144
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -1562,6 +1562,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
+  }
+}
+Assets {
+  Id: 1073783000119295420
+  Name: "Bricks Concrete Cinder Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_concrete_001"
   }
 }
 Assets {

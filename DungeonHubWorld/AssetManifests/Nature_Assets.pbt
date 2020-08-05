@@ -278,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1225669152220903093
+  Name: "Forest Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "forest-floor_002"
+  }
+}
+Assets {
   Id: 815586546911461100
   Name: "Branches Cluster Big"
   PlatformAssetType: 1
