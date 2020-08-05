@@ -152,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11807762928275905382
+  Name: "Ivy 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_005"
+  }
+}
+Assets {
   Id: 11054502242900949297
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
@@ -284,6 +293,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
+  Id: 815586546911461100
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {
