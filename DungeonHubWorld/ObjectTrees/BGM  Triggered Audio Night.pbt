@@ -45,6 +45,7 @@ Objects {
       FadeInTime: 2.2
       FadeOutTime: 2
       StartTime: 20
+      IsAttenuationEnabled: true
     }
   }
 }
