@@ -88,6 +88,7 @@ end
 -- Prints text slowly
 function PrintText(text)
     textPrintTime = time()
+    text = string.gsub(text, "{name}", LOCAL_PLAYER.name)
     currentText = text
     for i = 1, string.len(text) do
         if(PLAY_PRINT_SOUND) then
