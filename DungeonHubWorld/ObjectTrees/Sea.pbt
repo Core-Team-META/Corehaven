@@ -1,58 +1,6 @@
 Name: "Sea"
 RootId: 2936107264752505179
 Objects {
-  Id: 7473168737307070556
-  Name: "Water"
-  Transform {
-    Location {
-      X: -28441.0059
-      Y: -25025.9648
-      Z: -1.43164063
-    }
-    Rotation {
-    }
-    Scale {
-      X: 32.9557571
-      Y: 32.9557571
-      Z: 32.9557571
-    }
-  }
-  ParentId: 2936107264752505179
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2444971324346068659
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.271178037
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.344751447
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17983886762090769352
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 13732272906766634809
   Name: "Water"
   Transform {

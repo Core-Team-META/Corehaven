@@ -377,6 +377,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15117047820700872013
+  Name: "Pyramid - 4-Sided Truncated Hollow Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pyramid_4_sided_truncated_hollow_thick_001"
+  }
+}
+Assets {
   Id: 15057977201205375036
   Name: "Simple Crate 150cm"
   PlatformAssetType: 1
@@ -392,6 +401,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_stairs_spiral_wall_001_lg"
+  }
+}
+Assets {
+  Id: 15034387179733310598
+  Name: "Glass 01 (no distortion)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_glass_001"
   }
 }
 Assets {
@@ -449,6 +467,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14405960884493885038
+  Name: "Fantasy Pommel 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_005"
+  }
+}
+Assets {
   Id: 14328459164057885108
   Name: "Text 01: D"
   PlatformAssetType: 1
@@ -482,6 +509,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_white_001_uv"
+  }
+}
+Assets {
+  Id: 14212412153888790346
+  Name: "Pipe - 4-Sided Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_4_sided_thin_001"
   }
 }
 Assets {
@@ -896,6 +932,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-edge_6m_001"
+  }
+}
+Assets {
+  Id: 10010083964673251729
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
   }
 }
 Assets {

@@ -41,6 +41,7 @@ Objects {
   ChildIds: 15769800550122877426
   ChildIds: 18387122815142034363
   ChildIds: 11618984057324950019
+  ChildIds: 14366172374989291750
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -50,6 +51,41 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14366172374989291750
+  Name: "Decal Leaves 02"
+  Transform {
+    Location {
+      X: -2834.81958
+      Y: -17683.0664
+      Z: -8045.24219
+    }
+    Rotation {
+      Yaw: -134.101822
+    }
+    Scale {
+      X: 2.4421761
+      Y: 2.4421761
+      Z: 2.4421761
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 2440438908352711315
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
   }
 }
 Objects {
@@ -94,8 +130,8 @@ Objects {
   Name: "Decal Leaves 02"
   Transform {
     Location {
-      X: -1918.52271
-      Y: -17537.2207
+      X: -3113.80615
+      Y: -17470.9727
       Z: -8045.24219
     }
     Rotation {
@@ -128,8 +164,8 @@ Objects {
   Name: "Decal Leaves 01"
   Transform {
     Location {
-      X: -2541.10693
-      Y: -17531.1621
+      X: -2056.18408
+      Y: -17568.4551
       Z: -8038.40576
     }
     Rotation {
@@ -164,14 +200,14 @@ Objects {
   Name: "Tree Oak Bare 01"
   Transform {
     Location {
-      X: -4344.42725
-      Y: -18392.0742
-      Z: -5443.83496
+      X: -4149.87646
+      Y: -17955.082
+      Z: -6551.56104
     }
     Rotation {
-      Pitch: 26.5809097
-      Yaw: -137.151718
-      Roll: 15.6403551
+      Pitch: 31.9037304
+      Yaw: -134.241653
+      Roll: 21.586586
     }
     Scale {
       X: 1
@@ -1820,7 +1856,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 1000
         Max: 102400
       }
     }
@@ -1877,7 +1913,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 1000
         Max: 102400
       }
     }
