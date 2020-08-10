@@ -1,6 +1,54 @@
 Name: "TheSquare"
 RootId: 3277514622402591831
 Objects {
+  Id: 6812980066484632420
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  Transform {
+    Location {
+      X: 1934.32874
+      Y: -8397.80664
+      Z: -93.1230469
+    }
+    Rotation {
+      Yaw: 72.3075638
+    }
+    Scale {
+      X: 2.55850863
+      Y: 1.00000298
+      Z: 1
+    }
+  }
+  ParentId: 3277514622402591831
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4247430867898109902
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15014793420090633705
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 4818572081666421504
   Name: "Well"
   Transform {

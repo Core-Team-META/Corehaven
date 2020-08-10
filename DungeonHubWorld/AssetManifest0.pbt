@@ -161,42 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5687388192173703223
-  Name: "Decal Leaves 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_leaves_001"
-  }
-}
-Assets {
-  Id: 3444749964608640982
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
-  }
-}
-Assets {
-  Id: 3054822984243159922
-  Name: "Falling Leaves Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_falling_leaves_volume_vfx"
-  }
-}
-Assets {
-  Id: 2440438908352711315
-  Name: "Decal Leaves 02"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_leaves_002"
-  }
-}
-Assets {
   Id: 276992632015541839
   Name: "Grass Short"
   PlatformAssetType: 1
