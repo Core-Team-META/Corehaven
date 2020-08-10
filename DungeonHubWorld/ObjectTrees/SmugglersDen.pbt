@@ -14970,9 +14970,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 45.5810242
-      Y: -0.148532867
-      Z: 101.161324
+      X: 71.666214
+      Y: 4.59168243
+      Z: 171.834076
     }
     Rotation {
       Pitch: -4.4927063
@@ -14993,7 +14993,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 11.1319284
+    Intensity: 10.4906025
     Color {
       R: 0.61
       G: 0.109072864
@@ -15006,7 +15006,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 1000
+        AttenuationRadius: 2334.79614
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -15045,11 +15045,11 @@ Objects {
     }
     Overrides {
       Name: "bp:Life"
-      Float: 1.72164989
+      Float: 1.98651779
     }
     Overrides {
       Name: "bp:Particle Scale Multiplier"
-      Float: 0.9
+      Float: 1.32904351
     }
   }
   Collidable_v2 {
@@ -57189,11 +57189,11 @@ Objects {
       value {
         Overrides {
           Name: "Intensity"
-          Float: 10
+          Float: 51.5354881
         }
         Overrides {
           Name: "AttenuationRadius"
-          Float: 1644.47229
+          Float: 3293.57886
         }
       }
     }
