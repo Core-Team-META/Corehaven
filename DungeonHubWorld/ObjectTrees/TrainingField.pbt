@@ -1,6 +1,45 @@
 Name: "TrainingField"
 RootId: 305055846383683164
 Objects {
+  Id: 691696038910217813
+  Name: "Stone Arch 3m"
+  Transform {
+    Location {
+      X: -6617.89209
+      Y: 324.428711
+      Z: 414.029785
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.7436167
+      Y: 1.7436167
+      Z: 1.7436167
+    }
+  }
+  ParentId: 305055846383683164
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17883309447763556868
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 17118066110502298202
   Name: "fence"
   Transform {
@@ -1090,6 +1129,7 @@ Objects {
   ChildIds: 133030178427089743
   ChildIds: 14711782259644699151
   ChildIds: 12201181850161559419
+  ChildIds: 14154829287112327597
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1098,6 +1138,68 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 14154829287112327597
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 699.977295
+      Y: -14.6621094
+      Z: -611.928223
+    }
+    Rotation {
+      Yaw: 90.1602707
+    }
+    Scale {
+      X: 46.1074486
+      Y: 1.02581263
+      Z: 28.3823338
+    }
+  }
+  ParentId: 4535307059676194626
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 6041984776381722081
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 0.806423843
+        B: 0.63
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

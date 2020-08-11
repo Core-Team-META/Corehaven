@@ -628,6 +628,8 @@ Objects {
   ChildIds: 3516696048921559060
   ChildIds: 15888162850810304804
   ChildIds: 12135649818042617832
+  ChildIds: 3752638660508929962
+  ChildIds: 4606287032008221937
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -636,6 +638,102 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 4606287032008221937
+  Name: "Port_Invisible_Collision"
+  Transform {
+    Location {
+      X: 2086.60059
+      Y: -19834.6172
+      Z: -7373.37891
+    }
+    Rotation {
+      Yaw: -12.2087402
+    }
+    Scale {
+      X: 7.77350569
+      Y: 104.703293
+      Z: 100
+    }
+  }
+  ParentId: 12985283296800961326
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3752638660508929962
+  Name: "Port_Invisible_Collision"
+  Transform {
+    Location {
+      X: -75.3144531
+      Y: -26058.8145
+      Z: -7373.37891
+    }
+    Rotation {
+      Yaw: -41.6561279
+    }
+    Scale {
+      X: 7.7735076
+      Y: 37.6366653
+      Z: 100
+    }
+  }
+  ParentId: 12985283296800961326
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -691,16 +789,16 @@ Objects {
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
-      X: -634.59082
-      Y: 830.833496
+      X: 2544.93652
+      Y: -9471.19141
       Z: -3302.75977
     }
     Rotation {
-      Yaw: 9.98466206
+      Yaw: 5.93893
     }
     Scale {
-      X: 7.77353
-      Y: 221.185486
+      X: 7.77349615
+      Y: 130.115799
       Z: 100
     }
   }
@@ -739,12 +837,12 @@ Objects {
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
-      X: 634.141602
-      Y: -4582.61572
+      X: 518.158203
+      Y: -235.73877
       Z: -3302.75977
     }
     Rotation {
-      Yaw: -5.70922852
+      Yaw: 24.3854275
     }
     Scale {
       X: 7.77350569

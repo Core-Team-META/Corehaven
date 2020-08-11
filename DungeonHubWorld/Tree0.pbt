@@ -30,12 +30,9 @@ Objects {
   ChildIds: 5190124483811056971
   ChildIds: 2734733877656755987
   ChildIds: 9866378772659897466
-  ChildIds: 17055759087860176025
-  ChildIds: 7186949721096082954
   ChildIds: 14390202350554631985
   ChildIds: 305055846383683164
   ChildIds: 16816246272091159722
-  ChildIds: 691696038910217813
   ChildIds: 3956806071562635699
   UnregisteredParameters {
   }
@@ -72,45 +69,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Anna"
-  }
-}
-Objects {
-  Id: 691696038910217813
-  Name: "Stone Arch 3m"
-  Transform {
-    Location {
-      X: -4825.76172
-      Y: -10185.0459
-      Z: -6625.28516
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.7436167
-      Y: 1.7436167
-      Z: 1.7436167
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17883309447763556868
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
@@ -195,112 +153,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "SmugglersDen"
-  }
-}
-Objects {
-  Id: 7186949721096082954
-  Name: "Plane 1m - One Sided"
-  Transform {
-    Location {
-      X: -2875
-      Y: 6427.34668
-      Z: -5779.12354
-    }
-    Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: -98.2551
-      Roll: 89.9999
-    }
-    Scale {
-      X: 1.22269702
-      Y: 1.22269702
-      Z: 0.815131366
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9040752329684853759
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17983886762090769352
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17055759087860176025
-  Name: "Plane 1m - One Sided"
-  Transform {
-    Location {
-      X: -2875
-      Y: 6450
-      Z: -5919.41455
-    }
-    Rotation {
-      Pitch: -3.05175781e-05
-      Yaw: -98.2551
-      Roll: 89.9999
-    }
-    Scale {
-      X: 3
-      Y: 3
-      Z: 2
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9040752329684853759
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17983886762090769352
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
