@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17983886762090769352
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 17630812284545276091
   Name: "Shield 02"
   PlatformAssetType: 1
@@ -185,6 +194,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 9040752329684853759
+  Name: "Jungle Vine (end)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_liana-vine_end_001_uv"
   }
 }
 Assets {
