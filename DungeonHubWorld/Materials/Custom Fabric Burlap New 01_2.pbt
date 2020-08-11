@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 62
   CustomMaterialAsset {
-    BaseMaterialId: 7715152830417178651
+    BaseMaterialId: 6307371810581530536
     ParameterOverrides {
       Overrides {
         Name: "color"
@@ -33,7 +33,7 @@ Assets {
       }
     }
     Assets {
-      Id: 7715152830417178651
+      Id: 6307371810581530536
       Name: "Fabric Burlap New 01"
       PlatformAssetType: 2
       PrimaryAsset {

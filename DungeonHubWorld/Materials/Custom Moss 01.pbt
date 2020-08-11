@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 62
   CustomMaterialAsset {
-    BaseMaterialId: 9225772212614530763
+    BaseMaterialId: 14908011933205182591
     ParameterOverrides {
       Overrides {
         Name: "gradient_shift"
@@ -44,7 +44,7 @@ Assets {
       }
     }
     Assets {
-      Id: 9225772212614530763
+      Id: 14908011933205182591
       Name: "Moss 01"
       PlatformAssetType: 2
       PrimaryAsset {

@@ -36,6 +36,26 @@ Assets {
         Name: "pattern_metallic"
         Bool: true
       }
+      Overrides {
+        Name: "gradient_color"
+        Color {
+          R: 0.340000033
+          G: 0.027019877
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "gradient_worldspace"
+        Bool: true
+      }
+      Overrides {
+        Name: "gradient_falloff"
+        Float: 0.272401124
+      }
+      Overrides {
+        Name: "gradient_shift"
+        Float: 0.28676635
+      }
     }
     Assets {
       Id: 16891349665421486861

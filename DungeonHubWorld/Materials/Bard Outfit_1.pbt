@@ -34,6 +34,26 @@ Assets {
         Name: "roughness_multiplier"
         Float: 1
       }
+      Overrides {
+        Name: "gradient_color"
+        Color {
+          R: 0.299999952
+          G: 0.0238410607
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "gradient_shift"
+        Float: 0.423236102
+      }
+      Overrides {
+        Name: "gradient_falloff"
+        Float: 0.0712878332
+      }
+      Overrides {
+        Name: "gradient_worldspace"
+        Bool: true
+      }
     }
     Assets {
       Id: 284970304952400506

@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 62
   CustomMaterialAsset {
-    BaseMaterialId: 7013269418065025837
+    BaseMaterialId: 12502895876072321147
     ParameterOverrides {
       Overrides {
         Name: "fresnel_color"
@@ -52,7 +52,7 @@ Assets {
       }
     }
     Assets {
-      Id: 7013269418065025837
+      Id: 12502895876072321147
       Name: "Carpet 02"
       PlatformAssetType: 2
       PrimaryAsset {

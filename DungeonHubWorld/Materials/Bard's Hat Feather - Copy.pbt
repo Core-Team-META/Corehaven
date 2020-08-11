@@ -4,7 +4,7 @@ Assets {
   PlatformAssetType: 13
   SerializationVersion: 62
   CustomMaterialAsset {
-    BaseMaterialId: 16723557784750858962
+    BaseMaterialId: 6079892327784756655
     ParameterOverrides {
       Overrides {
         Name: "color_gradient"
@@ -81,7 +81,7 @@ Assets {
       }
     }
     Assets {
-      Id: 16723557784750858962
+      Id: 6079892327784756655
       Name: "Food Fruit 01"
       PlatformAssetType: 2
       PrimaryAsset {
