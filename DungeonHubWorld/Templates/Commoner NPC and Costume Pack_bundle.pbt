@@ -47,7 +47,7 @@ Assets {
     OwnerAccountId: "aabd84ef7a6448a69c331121b5909cff"
     OwnerName: "Anna"
     Version: "1.0.0"
-    Description: "Contains 4 NPCs and costumes for the D&D even hub"
+    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 62
 }

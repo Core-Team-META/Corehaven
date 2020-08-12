@@ -381,6 +381,7 @@ Assets {
           }
         }
         ParentId: 1571127170775707345
+        ChildIds: 2861173484950486552
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -390,6 +391,320 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 2861173484950486552
+        Name: "Hook"
+        Transform {
+          Location {
+            X: 13.3686399
+            Y: 14.8236494
+            Z: -12.2675266
+          }
+          Rotation {
+            Pitch: 39.0243759
+            Yaw: 122.828224
+            Roll: 154.641678
+          }
+          Scale {
+            X: 0.0796870366
+            Y: 0.0796870366
+            Z: 0.0796870366
+          }
+        }
+        ParentId: 9342645363429475096
+        ChildIds: 9236565363236585691
+        ChildIds: 8610218175461287221
+        ChildIds: 5318928140098423745
+        ChildIds: 14071366959518939231
+        ChildIds: 14435887873205472692
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9236565363236585691
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: 97.2922
+            Y: -49.6774673
+            Z: 4.67401457
+          }
+          Rotation {
+            Pitch: 14.1050634
+            Yaw: 12.3447104
+            Roll: -34.2496872
+          }
+          Scale {
+            X: 0.886779666
+            Y: 1.69832122
+            Z: 5.69488335
+          }
+        }
+        ParentId: 2861173484950486552
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 585756898399003557
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17303459849100639072
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8610218175461287221
+        Name: "Large Round Wood Beam 8m"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.199800074
+            Y: 1.01208723
+            Z: 1.01208913
+          }
+        }
+        ParentId: 2861173484950486552
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.404354572
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1421130721009981852
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5318928140098423745
+        Name: "Cylinder - Bottom-Aligned"
+        Transform {
+          Location {
+            X: 80
+            Z: 1.83874512
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.18376781
+            Y: 0.168826416
+            Z: 0.895467699
+          }
+        }
+        ParentId: 2861173484950486552
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.185510352
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6747614045051753376
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14071366959518939231
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: 80.0020752
+            Y: 66.5483627
+            Z: 91.4217453
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -5.05114746
+            Roll: -5.05114746
+          }
+          Scale {
+            X: 1.90000129
+            Y: 1.48323989
+            Z: 1.89999974
+          }
+        }
+        ParentId: 2861173484950486552
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4.0191555
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5.35557747
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14435887873205472692
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: 80.0006409
+            Y: 65.9805832
+            Z: 91.420578
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 89.9999542
+            Roll: 89.9999542
+          }
+          Scale {
+            X: 1.4000001
+            Y: 1.9000001
+            Z: 1.9000001
+          }
+        }
+        ParentId: 2861173484950486552
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.92110288
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.26355791
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -539,6 +854,7 @@ Assets {
           }
         }
         ParentId: 1571127170775707345
+        ChildIds: 16979679433854060596
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -548,6 +864,330 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 16979679433854060596
+        Name: "Rope"
+        Transform {
+          Location {
+            X: -1.02675867
+            Y: -0.458212703
+            Z: 0.393123657
+          }
+          Rotation {
+            Pitch: -19.8370876
+            Yaw: 80.5465698
+            Roll: 3.71326327
+          }
+          Scale {
+            X: 0.494077116
+            Y: 0.494077116
+            Z: 0.494077116
+          }
+        }
+        ParentId: 8329446783845317221
+        ChildIds: 2444242015010430530
+        ChildIds: 3675096940365734054
+        ChildIds: 8432497039760997976
+        ChildIds: 955040485766807288
+        ChildIds: 10300295561242921013
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 2444242015010430530
+        Name: "Ring"
+        Transform {
+          Location {
+            X: -0.892868698
+            Y: -3.07100296
+            Z: -11.2223
+          }
+          Rotation {
+            Pitch: -80.7756042
+            Yaw: -104.84584
+            Roll: 104.021065
+          }
+          Scale {
+            X: 0.689292192
+            Y: 0.600000858
+            Z: 0.999999225
+          }
+        }
+        ParentId: 16979679433854060596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3675096940365734054
+        Name: "Ring"
+        Transform {
+          Location {
+            X: -7.13435507
+            Y: -1.40482855
+            Z: -24.6594944
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: -3.37228394
+            Roll: 3.37223911
+          }
+          Scale {
+            X: 1
+            Y: 0.6
+            Z: 1
+          }
+        }
+        ParentId: 16979679433854060596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8432497039760997976
+        Name: "Ring"
+        Transform {
+          Location {
+            Z: -21.408226
+          }
+          Rotation {
+            Pitch: -79.1887207
+            Yaw: -56.4616699
+            Roll: 65.2720566
+          }
+          Scale {
+            X: 1
+            Y: 0.6
+            Z: 1
+          }
+        }
+        ParentId: 16979679433854060596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 955040485766807288
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: -14.1493673
+            Y: -52.6922684
+            Z: -51.4543915
+          }
+          Rotation {
+            Pitch: 58.26511
+            Yaw: 73.8360901
+            Roll: -105.226471
+          }
+          Scale {
+            X: 1.15851891
+            Y: 0.723694384
+            Z: 0.834706
+          }
+        }
+        ParentId: 16979679433854060596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6.84963751
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10300295561242921013
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: -7.14826679
+            Y: 2.09247422
+            Z: -35.6647224
+          }
+          Rotation {
+            Pitch: 79.6344833
+            Yaw: 63.6526604
+            Roll: -102.651672
+          }
+          Scale {
+            X: 1.18707037
+            Y: 0.714195609
+            Z: 0.716522396
+          }
+        }
+        ParentId: 16979679433854060596
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6.84963751
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -899,6 +1539,69 @@ Assets {
       }
     }
     Assets {
+      Id: 17303459849100639072
+      Name: "Ring - Thin"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_torus_003"
+      }
+    }
+    Assets {
+      Id: 1421130721009981852
+      Name: "Large Round Wood Beam 8m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_large_beam_round_6m"
+      }
+    }
+    Assets {
+      Id: 6747614045051753376
+      Name: "Cylinder - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_001"
+      }
+    }
+    Assets {
+      Id: 4855960652393685277
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
+      }
+    }
+    Assets {
+      Id: 3345942036635779138
+      Name: "Ring - Quarter"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_quarter_torus_002"
+      }
+    }
+    Assets {
+      Id: 46061843978868412
+      Name: "Ring"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_torus_004"
+      }
+    }
+    Assets {
+      Id: 3090596827184957478
+      Name: "Rope"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
       Id: 3198403501401616712
       Name: "Fantasy Human Guy"
       PlatformAssetType: 17
@@ -913,7 +1616,7 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub"
+    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 62
   DirectlyPublished: true

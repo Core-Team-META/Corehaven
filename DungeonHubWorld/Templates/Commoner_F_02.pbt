@@ -1057,6 +1057,7 @@ Assets {
           }
         }
         ParentId: 3570569226470561654
+        ChildIds: 909863371120289667
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -1066,6 +1067,332 @@ Assets {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
+        }
+      }
+      Objects {
+        Id: 909863371120289667
+        Name: "Rope"
+        Transform {
+          Location {
+            X: -3.38595
+            Y: -1.83277857
+            Z: 4.46464777
+          }
+          Rotation {
+            Pitch: 29.1122036
+            Yaw: 84.9666367
+            Roll: 2.46233749
+          }
+          Scale {
+            X: 0.560675561
+            Y: 0.560675561
+            Z: 0.560675561
+          }
+        }
+        ParentId: 2006667274864003246
+        ChildIds: 12222732609780046054
+        ChildIds: 12444404596317013597
+        ChildIds: 15934662346741320807
+        ChildIds: 706972134789633343
+        ChildIds: 5343553384994991606
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 12222732609780046054
+        Name: "Ring"
+        Transform {
+          Location {
+            X: 5.73983669
+            Y: -3.67263794
+            Z: -14.9451561
+          }
+          Rotation {
+            Pitch: -74.2735901
+            Yaw: -40.6054688
+            Roll: 38.7094193
+          }
+          Scale {
+            X: 0.78311187
+            Y: 0.600001216
+            Z: 1.00000048
+          }
+        }
+        ParentId: 909863371120289667
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12444404596317013597
+        Name: "Ring"
+        Transform {
+          Location {
+            X: -7.44157457
+            Y: -4.91742134
+            Z: -24.6393566
+          }
+          Rotation {
+            Pitch: -90
+            Yaw: 2.24963069
+            Roll: -2.24966431
+          }
+          Scale {
+            X: 1
+            Y: 0.6
+            Z: 1
+          }
+        }
+        ParentId: 909863371120289667
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15934662346741320807
+        Name: "Ring"
+        Transform {
+          Location {
+            X: -4.98371935
+            Y: -3.16937208
+            Z: -20.4635162
+          }
+          Rotation {
+            Pitch: -79.1887512
+            Yaw: -56.4616699
+            Roll: 65.2721786
+          }
+          Scale {
+            X: 1
+            Y: 0.6
+            Z: 1
+          }
+        }
+        ParentId: 909863371120289667
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.85766459
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 46061843978868412
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 706972134789633343
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: -53.9492073
+            Y: -29.5390663
+            Z: -27.7871037
+          }
+          Rotation {
+            Pitch: 22.7022972
+            Yaw: 2.7632072
+            Roll: -92.3280945
+          }
+          Scale {
+            X: 1.15851891
+            Y: 0.723694384
+            Z: 0.834706
+          }
+        }
+        ParentId: 909863371120289667
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6.84963751
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5343553384994991606
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: -57.8677
+            Y: 20.3070698
+            Z: -19.3491745
+          }
+          Rotation {
+            Pitch: 33.3293915
+            Yaw: -5.48678589
+            Roll: -103.500916
+          }
+          Scale {
+            X: 1.18707037
+            Y: 0.714195609
+            Z: 0.716522396
+          }
+        }
+        ParentId: 909863371120289667
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3090596827184957478
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 6.84963751
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -1546,7 +1873,7 @@ Assets {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 841534158063459245
+              Id: 11866220646258149589
             }
           }
           Overrides {
@@ -1567,8 +1894,8 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail3:color"
             Color {
-              R: 0.119792
-              G: 0.039484
+              R: 0.110198624
+              G: 0.159999967
               A: 1
             }
           }
@@ -1646,6 +1973,33 @@ Assets {
       }
     }
     Assets {
+      Id: 46061843978868412
+      Name: "Ring"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_torus_004"
+      }
+    }
+    Assets {
+      Id: 3090596827184957478
+      Name: "Rope"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
+      Id: 3345942036635779138
+      Name: "Ring - Quarter"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_quarter_torus_002"
+      }
+    }
+    Assets {
       Id: 17247896461110156834
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
@@ -1696,7 +2050,7 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub"
+    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 62
   DirectlyPublished: true

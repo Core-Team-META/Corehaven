@@ -1157,6 +1157,7 @@ Assets {
         ChildIds: 17679214256795840602
         ChildIds: 10907747755414306727
         ChildIds: 17482008473165522782
+        ChildIds: 5897993810777211570
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1327,6 +1328,320 @@ Assets {
         CoreMesh {
           MeshAsset {
             Id: 16132958878921067135
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5897993810777211570
+        Name: "Hook"
+        Transform {
+          Location {
+            X: 11.4441795
+            Y: 12.8374157
+            Z: -6.94393349
+          }
+          Rotation {
+            Pitch: 32.8910942
+            Yaw: 105.579895
+            Roll: 146.0466
+          }
+          Scale {
+            X: 0.0820421055
+            Y: 0.0820421055
+            Z: 0.0820421055
+          }
+        }
+        ParentId: 4040002941321792896
+        ChildIds: 7245705690315624133
+        ChildIds: 5678387027422702492
+        ChildIds: 10900193137321641801
+        ChildIds: 16039824098097362440
+        ChildIds: 5434168092604483392
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 7245705690315624133
+        Name: "Pipe"
+        Transform {
+          Location {
+            X: 97.2922
+            Y: -49.6774673
+            Z: 4.67401457
+          }
+          Rotation {
+            Pitch: 14.1050634
+            Yaw: 12.3447104
+            Roll: -34.2496872
+          }
+          Scale {
+            X: 0.886779666
+            Y: 1.69832122
+            Z: 5.69488335
+          }
+        }
+        ParentId: 5897993810777211570
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 585756898399003557
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.125
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 17303459849100639072
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5678387027422702492
+        Name: "Large Round Wood Beam 8m"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.199800074
+            Y: 1.01208723
+            Z: 1.01208913
+          }
+        }
+        ParentId: 5897993810777211570
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.404354572
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1421130721009981852
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10900193137321641801
+        Name: "Cylinder - Bottom-Aligned"
+        Transform {
+          Location {
+            X: 80
+            Z: 1.83874512
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.18376781
+            Y: 0.168826416
+            Z: 0.895467699
+          }
+        }
+        ParentId: 5897993810777211570
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.185510352
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6747614045051753376
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16039824098097362440
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: 80.0020752
+            Y: 66.5483627
+            Z: 91.4217453
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -5.05114746
+            Roll: -5.05114746
+          }
+          Scale {
+            X: 1.90000129
+            Y: 1.48323989
+            Z: 1.89999974
+          }
+        }
+        ParentId: 5897993810777211570
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 4.0191555
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 5.35557747
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5434168092604483392
+        Name: "Ring - Quarter"
+        Transform {
+          Location {
+            X: 80.0006409
+            Y: 65.9805832
+            Z: 91.420578
+          }
+          Rotation {
+            Pitch: 6.83018879e-06
+            Yaw: 89.9999542
+            Roll: 89.9999542
+          }
+          Scale {
+            X: 1.4000001
+            Y: 1.9000001
+            Z: 1.9000001
+          }
+        }
+        ParentId: 5897993810777211570
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4855960652393685277
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.92110288
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 2.26355791
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3345942036635779138
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1644,6 +1959,42 @@ Assets {
       }
     }
     Assets {
+      Id: 1421130721009981852
+      Name: "Large Round Wood Beam 8m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_large_beam_round_6m"
+      }
+    }
+    Assets {
+      Id: 6747614045051753376
+      Name: "Cylinder - Bottom-Aligned"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cylinder_001"
+      }
+    }
+    Assets {
+      Id: 4855960652393685277
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
+      }
+    }
+    Assets {
+      Id: 3345942036635779138
+      Name: "Ring - Quarter"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_quarter_torus_002"
+      }
+    }
+    Assets {
       Id: 8232283764625892297
       Name: "Human Gal"
       PlatformAssetType: 17
@@ -1658,7 +2009,7 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub"
+    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 62
   DirectlyPublished: true
