@@ -22,9 +22,9 @@ Assets {
       Overrides {
         Name: "gradient_color"
         Color {
-          R: 0.678437471
-          G: 0.78
-          B: 0.729650557
+          R: 0.317708343
+          G: 0.272616833
+          B: 0.137342677
           A: 1
         }
       }

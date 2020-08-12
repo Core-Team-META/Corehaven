@@ -1525,9 +1525,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 0.0416666679
-              G: 0.0236891918
-              B: 0.0186631959
+              R: 0.0625
+              G: 0.0207392834
+              B: 0.00562414154
               A: 1
             }
           }
@@ -1584,9 +1584,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 0.0416666679
-              G: 0.0236891918
-              B: 0.0186631959
+              R: 0.0625
+              G: 0.0207392834
+              B: 0.00562414154
               A: 1
             }
           }
@@ -1908,9 +1908,9 @@ Assets {
           Overrides {
             Name: "ma:Shared_Detail2:color"
             Color {
-              R: 0.255208343
-              G: 0.199381515
-              B: 0.199381515
+              R: 0.126195729
+              G: 0.166666672
+              B: 0.0902777761
               A: 1
             }
           }
@@ -2050,7 +2050,7 @@ Assets {
     }
   }
   Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
+    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves\r\nV. 1.2: Updated materials"
   }
   SerializationVersion: 62
   DirectlyPublished: true
