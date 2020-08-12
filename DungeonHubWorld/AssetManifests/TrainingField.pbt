@@ -1,4 +1,13 @@
 Assets {
+  Id: 18200545013625125483
+  Name: "Fantasy Castle Trim - Battlement Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001_corner_01"
+  }
+}
+Assets {
   Id: 18195697283062358788
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -44,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17246754151924769898
+  Name: "Fantasy Castle Floor 03 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_floor_003_4m_ref"
+  }
+}
+Assets {
   Id: 16931855142661323466
   Name: "Craftsman Roof 01 Beam"
   PlatformAssetType: 1
@@ -68,6 +86,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
+  Id: 15818682822090430829
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
   }
 }
 Assets {
@@ -107,12 +134,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13840443032411406179
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 13540258823282010952
+  Name: "Reinforced Crate 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_reinforced_150cm_001"
   }
 }
 Assets {
@@ -143,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11535495265175524988
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
+  }
+}
+Assets {
   Id: 9650630088804471075
   Name: "Ring - Thick"
   PlatformAssetType: 1
@@ -152,12 +206,39 @@ Assets {
   }
 }
 Assets {
+  Id: 9544913535066953067
+  Name: "Fantasy Sword Guard 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_sword_002"
+  }
+}
+Assets {
+  Id: 8617818292148704575
+  Name: "Craftsman Stairs 01 Pillar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001_pillar"
+  }
+}
+Assets {
   Id: 8277973835846626301
   Name: "Wooden Barrel"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_barrel_001"
+  }
+}
+Assets {
+  Id: 8221347909026897831
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
@@ -188,12 +269,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6772053469829818023
+  Name: "Fantasy Castle Trim - Battlement 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001_4m"
+  }
+}
+Assets {
   Id: 6041984776381722081
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
+  Id: 4565574025644870814
+  Name: "Fantasy Castle Trim - Battlement 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001"
   }
 }
 Assets {

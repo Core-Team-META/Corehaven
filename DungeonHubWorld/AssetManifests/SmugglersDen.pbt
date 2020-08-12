@@ -422,6 +422,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3613314652151165874
+  Name: "Decal Sand Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_sand_patch_001"
+  }
+}
+Assets {
   Id: 3578939890139308711
   Name: "Hay 01"
   PlatformAssetType: 2

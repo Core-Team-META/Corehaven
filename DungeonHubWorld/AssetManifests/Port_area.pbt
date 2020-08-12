@@ -755,6 +755,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9954737607555017438
+  Name: "Fantasy Castle Wall 01 - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_win_01"
+  }
+}
+Assets {
   Id: 9927175959700879828
   Name: "Fantasy Chest Lid 03"
   PlatformAssetType: 1
@@ -842,6 +851,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_column_square_top_002"
+  }
+}
+Assets {
+  Id: 8831951843390245255
+  Name: "Door Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_door_3x6_001"
   }
 }
 Assets {
@@ -1223,6 +1241,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5349933488269792749
+  Name: "Castle Part - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_window_002_ref"
+  }
+}
+Assets {
   Id: 4565526659431827540
   Name: "Large Wood Board 8m"
   PlatformAssetType: 1
@@ -1562,15 +1589,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_001_uv"
-  }
-}
-Assets {
-  Id: 1073783000119295420
-  Name: "Bricks Concrete Cinder Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_concrete_001"
   }
 }
 Assets {
