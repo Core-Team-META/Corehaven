@@ -1,6 +1,120 @@
 Name: "GameSettings"
 RootId: 12721835720583858691
 Objects {
+  Id: 7991506402958890266
+  Name: "Damage Feedback"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5020465629018774494
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Damage Feedback"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3334.76831
+            Y: -182.73761
+            Z: 6153.40137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12984678018063706940
+    }
+  }
+}
+Objects {
+  Id: 2060824855169633059
+  Name: "Combat Dependencies"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8014650375856875642
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Combat Dependencies"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3334.76831
+            Y: -182.73761
+            Z: 6153.40137
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7646593255349821538
+    }
+  }
+}
+Objects {
   Id: 14034009749862207918
   Name: "Dialog Display Manager"
   Transform {

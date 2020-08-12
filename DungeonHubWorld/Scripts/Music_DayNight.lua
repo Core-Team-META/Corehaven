@@ -23,7 +23,6 @@ end
 function Noon()
 	if not day then
 		dayMusicSet[currentDayMusic]:FadeIn(1)
-		propBirds:FadeIn(1)
 		day = true
 	end
 end
