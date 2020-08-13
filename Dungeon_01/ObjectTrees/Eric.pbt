@@ -165,8 +165,6 @@ Objects {
   ParentId: 2330302539704572805
   ChildIds: 4887860602298707859
   ChildIds: 5179918516992372140
-  ChildIds: 6279339506729075788
-  ChildIds: 17405529175047565416
   UnregisteredParameters {
     Overrides {
       Name: "cs:Order"
@@ -193,176 +191,6 @@ Objects {
   InstanceHistory {
     SelfId: 6050813108921757589
     SubobjectId: 3943741988877235020
-    InstanceId: 7736934404878119431
-    TemplateId: 15499716775352985803
-  }
-}
-Objects {
-  Id: 17405529175047565416
-  Name: "Avalanche"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8416455015316145613
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RequiredLevel"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:TreeX"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:TreeY"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:EquipmentTemplate"
-      AssetReference {
-        Id: 6871086938569638624
-      }
-    }
-    Overrides {
-      Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
-    }
-    Overrides {
-      Name: "cs:Icon"
-      AssetReference {
-        Id: 15250420552015252669
-      }
-    }
-    Overrides {
-      Name: "cs:IconColor"
-      Color {
-        G: 0.292450339
-        B: 0.960000038
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:RequiresAbove"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:RequiresAboveLeft"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RequiresAboveRight"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 4231532566074095756
-    SubobjectId: 6916225506862490709
-    InstanceId: 7736934404878119431
-    TemplateId: 15499716775352985803
-  }
-}
-Objects {
-  Id: 6279339506729075788
-  Name: "Ice Wall"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8416455015316145613
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RequiredLevel"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:TreeX"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:TreeY"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:EquipmentTemplate"
-      AssetReference {
-        Id: 6871086938569638624
-      }
-    }
-    Overrides {
-      Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
-    }
-    Overrides {
-      Name: "cs:Icon"
-      AssetReference {
-        Id: 5940518029781971244
-      }
-    }
-    Overrides {
-      Name: "cs:IconColor"
-      Color {
-        G: 0.292450339
-        B: 0.960000038
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:RequiresAbove"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RequiresAboveLeft"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:RequiresAboveRight"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 1273111206146820348
-    SubobjectId: 8424209477748413477
     InstanceId: 7736934404878119431
     TemplateId: 15499716775352985803
   }
@@ -555,7 +383,6 @@ Objects {
   ChildIds: 10762947729542377889
   ChildIds: 15232458769188777287
   ChildIds: 17229711923327654253
-  ChildIds: 4631577004626480301
   UnregisteredParameters {
     Overrides {
       Name: "cs:Order"
@@ -582,90 +409,6 @@ Objects {
   InstanceHistory {
     SelfId: 16340714578511042047
     SubobjectId: 9766006668254873894
-    InstanceId: 7736934404878119431
-    TemplateId: 15499716775352985803
-  }
-}
-Objects {
-  Id: 4631577004626480301
-  Name: "Fire Mastery"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16487000706984842982
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:RequiredLevel"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:TreeX"
-      Int: 2
-    }
-    Overrides {
-      Name: "cs:TreeY"
-      Int: 3
-    }
-    Overrides {
-      Name: "cs:EquipmentTemplate"
-      AssetReference {
-        Id: 6871086938569638624
-      }
-    }
-    Overrides {
-      Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
-    }
-    Overrides {
-      Name: "cs:Icon"
-      AssetReference {
-        Id: 8509829824645761235
-      }
-    }
-    Overrides {
-      Name: "cs:IconColor"
-      Color {
-        R: 0.669999957
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "cs:Cost"
-      Int: 1
-    }
-    Overrides {
-      Name: "cs:RequiresAbove"
-      Bool: false
-    }
-    Overrides {
-      Name: "cs:RequiresAboveLeft"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:RequiresAboveRight"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-  InstanceHistory {
-    SelfId: 927230208972111470
-    SubobjectId: 7609989292660892343
     InstanceId: 7736934404878119431
     TemplateId: 15499716775352985803
   }
@@ -3357,7 +3100,7 @@ Objects {
         }
         Overrides {
           Name: "cs:LobbyDuration"
-          Float: 3
+          Float: 10
         }
         Overrides {
           Name: "Position"
@@ -3376,6 +3119,10 @@ Objects {
             Y: 1
             Z: 1
           }
+        }
+        Overrides {
+          Name: "cs:RoundHasDuration"
+          Bool: false
         }
       }
     }
