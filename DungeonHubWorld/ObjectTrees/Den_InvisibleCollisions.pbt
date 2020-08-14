@@ -1,6 +1,62 @@
 Name: "Den_InvisibleCollisions"
 RootId: 17314134882862459131
 Objects {
+  Id: 12849970113074335900
+  Name: "Stairs_Collision"
+  Transform {
+    Location {
+      X: -1662.36353
+      Y: -5207.37256
+      Z: 2650.71
+    }
+    Rotation {
+      Yaw: -23.9167175
+    }
+    Scale {
+      X: 6.2306633
+      Y: 15.1676168
+      Z: 0.580631256
+    }
+  }
+  ParentId: 17314134882862459131
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.45
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.798705459
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 4152502816487778346
   Name: "Stairs_Collision"
   Transform {
@@ -290,12 +346,12 @@ Objects {
   Name: "Stairs_Collision"
   Transform {
     Location {
-      X: -2010.15198
-      Y: -5073.37402
+      X: -2095.71265
+      Y: -5001.99121
       Z: 2650.71
     }
     Rotation {
-      Yaw: -23.04216
+      Yaw: -33.5645142
     }
     Scale {
       X: 13.7273626
@@ -346,14 +402,14 @@ Objects {
   Name: "Stairs_Collision"
   Transform {
     Location {
-      X: -809.417908
-      Y: -5576.41602
+      X: -809.417542
+      Y: -5576.4165
       Z: 2239.01611
     }
     Rotation {
-      Pitch: -0.680812716
-      Yaw: 66.8435364
-      Roll: -33.3596344
+      Pitch: -0.680725098
+      Yaw: 65.9266205
+      Roll: -33.3610535
     }
     Scale {
       X: 13.7273626

@@ -1250,12 +1250,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5158624662203706738
+  Name: "Fantasy Castle Wall 02 Half - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_win_02"
+  }
+}
+Assets {
   Id: 4565526659431827540
   Name: "Large Wood Board 8m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 4455234852201251005
+  Name: "Bricks Cobblestone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
 Assets {
