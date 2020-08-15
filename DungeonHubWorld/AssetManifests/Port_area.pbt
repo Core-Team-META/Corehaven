@@ -899,6 +899,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8468081090108762053
+  Name: "Fantasy Castle Wall 03 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_003_door_01"
+  }
+}
+Assets {
   Id: 8452502681248844190
   Name: "Fantasy Chest Base 02"
   PlatformAssetType: 1
@@ -977,6 +986,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_skelington_001_ref"
+  }
+}
+Assets {
+  Id: 7979345565557230916
+  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
