@@ -224,15 +224,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15363960962711120915
-  Name: "Craftsman Floor 01 8m x 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_floor_001_8x8"
-  }
-}
-Assets {
   Id: 15311550138640852139
   Name: "Cone - Truncated Hollow Concave"
   PlatformAssetType: 1
@@ -602,15 +593,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11873529390485460337
-  Name: "Column Segment 1m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
-  }
-}
-Assets {
   Id: 11846185947051140147
   Name: "Wedge - Convex Polished"
   PlatformAssetType: 1
@@ -764,30 +746,12 @@ Assets {
   }
 }
 Assets {
-  Id: 9954737607555017438
-  Name: "Fantasy Castle Wall 01 - Window 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_001_win_01"
-  }
-}
-Assets {
   Id: 9927175959700879828
   Name: "Fantasy Chest Lid 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_lid_003_ref"
-  }
-}
-Assets {
-  Id: 9662723091772095612
-  Name: "Fantasy Castle Door 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_door_001"
   }
 }
 Assets {
@@ -899,15 +863,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8468081090108762053
-  Name: "Fantasy Castle Wall 03 - Doorway 01 Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_003_door_01"
-  }
-}
-Assets {
   Id: 8452502681248844190
   Name: "Fantasy Chest Base 02"
   PlatformAssetType: 1
@@ -971,30 +926,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8176344630127042637
-  Name: "Fantasy Castle Wall 02 - Window 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_002_win_02"
-  }
-}
-Assets {
   Id: 8130631578432126867
   Name: "Skeleton Mob"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_guy_skelington_001_ref"
-  }
-}
-Assets {
-  Id: 7979345565557230916
-  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
@@ -1265,24 +1202,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_large_001"
-  }
-}
-Assets {
-  Id: 5349933488269792749
-  Name: "Castle Part - Window 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_part_window_002_ref"
-  }
-}
-Assets {
-  Id: 5158624662203706738
-  Name: "Fantasy Castle Wall 02 Half - Window 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_002_win_02"
   }
 }
 Assets {

@@ -278,15 +278,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10991476379360222592
-  Name: "Whitebox Stairs 01 Straight"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_stairs_001"
-  }
-}
-Assets {
   Id: 10420162958602010003
   Name: "Small Crate Lid"
   PlatformAssetType: 1
