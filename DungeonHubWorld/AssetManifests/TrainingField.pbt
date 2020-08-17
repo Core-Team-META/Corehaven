@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18039765282018436536
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -350,6 +359,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14273300287680933633
+  Name: "Branches Cluster Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_small_001"
+  }
+}
+Assets {
   Id: 14267747156564835807
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   PlatformAssetType: 1
@@ -557,6 +575,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12028629720035765158
+  Name: "Pipe"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_001"
+  }
+}
+Assets {
   Id: 12014857838899542834
   Name: "Pipe - Quarter Thin"
   PlatformAssetType: 1
@@ -644,6 +671,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_hemisphere_002"
+  }
+}
+Assets {
+  Id: 11284949225589554451
+  Name: "Fantasy Castle Wall 03 Half - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_003_win_02"
   }
 }
 Assets {
@@ -773,12 +809,30 @@ Assets {
   }
 }
 Assets {
+  Id: 9030747589935010013
+  Name: "Wood Shingles Cedar 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_cedar_shingles_001_uv"
+  }
+}
+Assets {
   Id: 8983708969469221779
   Name: "Fantasy Castle Wall 03"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_003"
+  }
+}
+Assets {
+  Id: 8966777491470590060
+  Name: "Roof Square Shingles 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_roof_square_shingles_002_uv"
   }
 }
 Assets {
@@ -1061,6 +1115,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5687388192173703223
+  Name: "Decal Leaves 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_leaves_001"
+  }
+}
+Assets {
   Id: 5649559338683583195
   Name: "Fantasy Shield Strap 01"
   PlatformAssetType: 1
@@ -1286,6 +1349,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3345942036635779138
+  Name: "Ring - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_002"
+  }
+}
+Assets {
   Id: 3166405575429386541
   Name: "Trim Crenellated 4m 01"
   PlatformAssetType: 1
@@ -1490,6 +1562,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_table_001"
+  }
+}
+Assets {
+  Id: 815586546911461100
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {

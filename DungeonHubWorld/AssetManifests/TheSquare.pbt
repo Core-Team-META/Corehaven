@@ -899,6 +899,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10161356557666659885
+  Name: "Bush Leafy Low 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_002"
+  }
+}
+Assets {
   Id: 10130379721391062371
   Name: "Bricks Rough Stone Floor 02"
   PlatformAssetType: 2
