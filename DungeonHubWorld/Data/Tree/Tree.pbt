@@ -393,7 +393,16 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14031147348977058477
+        Id: 18236398556953739946
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.442708343
+        G: 0.357010603
+        B: 0.278906256
+        A: 1
       }
     }
   }
@@ -532,7 +541,16 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14031147348977058477
+        Id: 18236398556953739946
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.442708343
+        G: 0.357010603
+        B: 0.278906256
+        A: 1
       }
     }
   }
@@ -579,7 +597,16 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14031147348977058477
+        Id: 18236398556953739946
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.442708343
+        G: 0.357010603
+        B: 0.278906256
+        A: 1
       }
     }
   }
@@ -717,14 +744,14 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 6338.97852
+      Z: 6531.27246
     }
     Rotation {
     }
     Scale {
       X: 26.4
       Y: 26.4
-      Z: 14.1
+      Z: 9.8480072
     }
   }
   ParentId: 7287819703474104484
@@ -732,7 +759,16 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14031147348977058477
+        Id: 18236398556953739946
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.442708343
+        G: 0.357010603
+        B: 0.278906256
+        A: 1
       }
     }
   }
@@ -837,7 +873,16 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 14031147348977058477
+        Id: 18236398556953739946
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.442708343
+        G: 0.357010603
+        B: 0.278906256
+        A: 1
       }
     }
   }

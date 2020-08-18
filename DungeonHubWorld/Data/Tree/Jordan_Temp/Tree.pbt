@@ -1,6 +1,396 @@
 ﻿Name: "Jordan_Temp"
 RootId: 16634658052813774427
 Objects {
+  Id: 12514488420315637767
+  Name: "Decal Stains Bottom 01"
+  Transform {
+    Location {
+      X: -3772.48413
+      Y: -17815.3672
+      Z: -7752.81201
+    }
+    Rotation {
+      Pitch: -0.498808682
+      Yaw: -49.6958733
+      Roll: 86.8885803
+    }
+    Scale {
+      X: 1.19532251
+      Y: 1.48421955
+      Z: 1.48422134
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.0232822802
+        G: 0.0416666679
+        B: 0.014973959
+        A: 0.8
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7412927274057473812
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 7283431514875461227
+  Name: "Decal Stains Bottom 01"
+  Transform {
+    Location {
+      X: -3522.25244
+      Y: -17006.6582
+      Z: -7729.27246
+    }
+    Rotation {
+      Pitch: 1.42970192
+      Yaw: -121.933922
+      Roll: 75.6667252
+    }
+    Scale {
+      X: 1.48422432
+      Y: 1.48422432
+      Z: 1.48422432
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.0232822802
+        G: 0.0416666679
+        B: 0.014973959
+        A: 0.8
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 7412927274057473812
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 11342727800441295711
+  Name: "Grass Short"
+  Transform {
+    Location {
+      X: -3512.84961
+      Y: -17046.8125
+      Z: -8041.57764
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.5468359
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 276992632015541839
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11258353485339506210
+  Name: "Grass Short"
+  Transform {
+    Location {
+      X: -3668.96
+      Y: -17262.957
+      Z: -8054.28271
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.60015631
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 276992632015541839
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8725648248493575267
+  Name: "Grass Tall"
+  Transform {
+    Location {
+      X: -3709.0061
+      Y: -17538.2266
+      Z: -8007.22
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 2.79146552
+    }
+  }
+  ParentId: 16634658052813774427
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18039765282018436536
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5325609794424051514
+  Name: "Plane 4m"
+  Transform {
+    Location {
+      X: -3440.4856
+      Y: -17388.7461
+      Z: -8043.10498
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.1037817
+      Y: 3.95800757
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2444971324346068659
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.296875
+        G: 0.296875
+        B: 0.296875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8757068560497122517
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1103724873902358955
+  Name: "Liquid Decal"
+  Transform {
+    Location {
+      X: -3730.74585
+      Y: -17116.3379
+      Z: -7244.14453
+    }
+    Rotation {
+      Pitch: -1.80952191
+      Yaw: -121.906357
+      Roll: 76.5727844
+    }
+    Scale {
+      X: 2.52170944
+      Y: 5.16785383
+      Z: 2.40211701
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 9
+    }
+    Overrides {
+      Name: "bp:Type"
+      Enum {
+        Value: "mc:eliquiddecaltype:1"
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.483
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14077936288700442839
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 18120964277537225614
+  Name: "Waterfall Top Volume VFX"
+  Transform {
+    Location {
+      X: -3971.44653
+      Y: -17142.4238
+      Z: -5418.33691
+    }
+    Rotation {
+      Yaw: -14.2463455
+    }
+    Scale {
+      X: 1.00000143
+      Y: 6.54100513
+      Z: 1
+    }
+  }
+  ParentId: 16634658052813774427
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Waterfall Density"
+      Float: 7.16929865
+    }
+    Overrides {
+      Name: "bp:Enable Roiling Top"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Distortion"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Enable Mist"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 5.39148378
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 1.69291461
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3034586586424274416
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
   Id: 7668537016974572768
   Name: "Books"
   Transform {
