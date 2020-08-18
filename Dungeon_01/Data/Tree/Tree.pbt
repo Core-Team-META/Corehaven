@@ -208,6 +208,55 @@ Objects {
         Max: 102400
       }
     }
+    Foliage {
+      Asset {
+        Id: 45617072321620321
+      }
+      DistanceBetweenInstances: 1000
+      SpawnDistance: 20000
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Flower"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 102400
+      }
+    }
   }
 }
 Objects {

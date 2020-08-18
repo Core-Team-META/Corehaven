@@ -8,11 +8,11 @@
     ParameterOverrides {
       Overrides {
         Name: "speed"
-        Float: 0.0052948
+        Float: 0.129841089
       }
       Overrides {
         Name: "wind speed"
-        Float: 0.0575760081
+        Float: 0.196913421
       }
       Overrides {
         Name: "normal distance"
