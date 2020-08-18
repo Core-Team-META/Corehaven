@@ -1121,6 +1121,7 @@ Objects {
   ChildIds: 12135649818042617832
   ChildIds: 3752638660508929962
   ChildIds: 4606287032008221937
+  ChildIds: 11276706205851045453
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1129,6 +1130,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 11276706205851045453
+  Name: "Port_Invisible_Collision"
+  Transform {
+    Location {
+      X: 2243.7793
+      Y: -4005.39502
+      Z: -3640.55176
+    }
+    Rotation {
+      Yaw: 2.95773339
+    }
+    Scale {
+      X: 83.9252319
+      Y: 176.378113
+      Z: 33.161644
+    }
+  }
+  ParentId: 12985283296800961326
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

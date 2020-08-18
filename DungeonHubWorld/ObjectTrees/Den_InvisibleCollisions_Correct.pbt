@@ -1,63 +1,7 @@
-Name: "Den_InvisibleCollisions_2"
-RootId: 17314134882862459131
+Name: "Den_InvisibleCollisions_Correct"
+RootId: 9211091772664071522
 Objects {
-  Id: 12849970113074335900
-  Name: "Stairs_Collision"
-  Transform {
-    Location {
-      X: -1662.36353
-      Y: -5207.37256
-      Z: 2650.71
-    }
-    Rotation {
-      Yaw: -23.9167175
-    }
-    Scale {
-      X: 6.2306633
-      Y: 15.1676168
-      Z: 0.580631256
-    }
-  }
-  ParentId: 17314134882862459131
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.45
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.798705459
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4152502816487778346
+  Id: 5920660954095464953
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -76,7 +20,7 @@ Objects {
       Z: 0.580622733
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -115,7 +59,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14337110371849052879
+  Id: 2668399629174846923
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -134,7 +78,7 @@ Objects {
       Z: 0.580625415
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -173,7 +117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16935105191835633595
+  Id: 14986261346071021963
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -191,7 +135,7 @@ Objects {
       Z: 0.580623806
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -230,7 +174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13169641085096642042
+  Id: 1437102343533569494
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -247,7 +191,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -286,7 +230,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3844222741492952013
+  Id: 17791643529757513118
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -303,7 +247,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -342,7 +286,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4168576757080682973
+  Id: 3726502839803710467
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -359,7 +303,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -398,7 +342,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9503599871100055740
+  Id: 4801582602849848436
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -417,7 +361,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -456,7 +400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11690082799945251087
+  Id: 6383409687476762403
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -473,7 +417,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -512,7 +456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1262446600379142865
+  Id: 1171224921823210990
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -531,7 +475,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -570,7 +514,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1326387849259189582
+  Id: 9022017657150600554
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -579,8 +523,8 @@ Objects {
       Z: 398.475952
     }
     Rotation {
-      Pitch: -0.737236917
-      Yaw: -0.0200531464
+      Pitch: -0.737243652
+      Yaw: -0.0200500488
       Roll: 16.2592964
     }
     Scale {
@@ -589,120 +533,7 @@ Objects {
       Z: 0.580630243
     }
   }
-  ParentId: 17314134882862459131
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.45
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.798705459
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16087276828740318493
-  Name: "Stairs_Collision"
-  Transform {
-    Location {
-      X: 3125.04736
-      Y: -930.14624
-      Z: 1128.33606
-    }
-    Rotation {
-    }
-    Scale {
-      X: 14.0890112
-      Y: 14.8167257
-      Z: 0.580628335
-    }
-  }
-  ParentId: 17314134882862459131
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.45
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.798705459
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13539907544900533754
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18199508703828433488
-  Name: "Stairs_Collision"
-  Transform {
-    Location {
-      X: 3125.03638
-      Y: 406.543304
-      Z: 714.619324
-    }
-    Rotation {
-      Pitch: -6.83018879e-06
-      Yaw: 0.000517730194
-      Roll: 34.3782768
-    }
-    Scale {
-      X: 14.0890112
-      Y: 14.8167257
-      Z: 0.580628335
-    }
-  }
-  ParentId: 17314134882862459131
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"

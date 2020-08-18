@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16915219633719809622
+  Name: "Stone Window"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_window_001"
+  }
+}
+Assets {
   Id: 16216211350459920357
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -149,6 +158,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
+  Id: 1852880221081690546
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_002"
   }
 }
 Assets {

@@ -438,7 +438,6 @@ Objects {
   ChildIds: 6120281164271113950
   ChildIds: 12237858300643408719
   ChildIds: 1695574364988267338
-  ChildIds: 9308650810733539779
   ChildIds: 10205158756892909649
   ChildIds: 11679018139102447799
   ChildIds: 14134764077152823863
@@ -776,35 +775,6 @@ Objects {
       Physics {
       }
     }
-  }
-}
-Objects {
-  Id: 9308650810733539779
-  Name: "Den_InvisibleCollisions"
-  Transform {
-    Location {
-      X: -2646.46436
-      Y: -74.8118134
-      Z: -715.446106
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3359602877292941737
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Den_InvisibleCollisions"
   }
 }
 Objects {
@@ -1841,14 +1811,15 @@ Objects {
 }
 Objects {
   Id: 9211091772664071522
-  Name: "Den_InvisibleCollisions"
+  Name: "Den_InvisibleCollisions_Correct"
   Transform {
     Location {
-      X: -2646.46436
-      Y: -74.8118134
-      Z: -715.446106
+      X: 1056.47803
+      Y: 3974.64526
+      Z: -738.510437
     }
     Rotation {
+      Yaw: 51.5904121
     }
     Scale {
       X: 1
@@ -1865,7 +1836,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Den_InvisibleCollisions_1"
+    FilePartitionName: "Den_InvisibleCollisions_Correct"
   }
 }
 Objects {
@@ -30188,7 +30159,6 @@ Objects {
   ChildIds: 2580668081419119035
   ChildIds: 7840446384461768206
   ChildIds: 7030836395425323446
-  ChildIds: 17314134882862459131
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -30197,35 +30167,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 17314134882862459131
-  Name: "Den_InvisibleCollisions"
-  Transform {
-    Location {
-      X: -2646.46436
-      Y: -74.8118134
-      Z: -715.446106
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 13218133192981661738
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Den_InvisibleCollisions_2"
   }
 }
 Objects {

@@ -1,6 +1,381 @@
 Name: "Nature_Assets"
 RootId: 4445322596964842448
 Objects {
+  Id: 1957251427704278365
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 11164.7617
+      Y: -27160.1934
+      Z: 1765.66113
+    }
+    Rotation {
+      Pitch: 3.2150178
+      Yaw: -158.204742
+      Roll: 0.421025187
+    }
+    Scale {
+      X: 7.68718481
+      Y: 7.68718481
+      Z: 7.31273317
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15456405850729702642
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1824403550271486474
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 6428.03955
+      Y: -25099.5273
+      Z: 2506.90137
+    }
+    Rotation {
+      Pitch: -8.97283936
+      Yaw: 23.0784168
+      Roll: 4.83617306
+    }
+    Scale {
+      X: 5.45188332
+      Y: 5.45188332
+      Z: 5.18631697
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15456405850729702642
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6412281217391318593
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 8881.69922
+      Y: -26473.8457
+      Z: 2184.4541
+    }
+    Rotation {
+      Pitch: -6.53118896
+      Yaw: 7.30279493
+      Roll: -0.836517334
+    }
+    Scale {
+      X: 5.45188332
+      Y: 5.45188332
+      Z: 5.18631697
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15456405850729702642
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18394704900172371460
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: 12748.3867
+      Y: -28147.8125
+      Z: 1727.51172
+    }
+    Rotation {
+      Pitch: -20.0072632
+      Yaw: 103.518898
+      Roll: 73.7941895
+    }
+    Scale {
+      X: 5.89651251
+      Y: 8.22754
+      Z: 10.6602907
+    }
+  }
+  ParentId: 4445322596964842448
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15494749898036415293
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9599526479376918549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17966940499636556373
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: 14317.1035
+      Y: -21149.5605
+      Z: 1409.74512
+    }
+    Rotation {
+      Pitch: -20.0073853
+      Yaw: -166.528854
+      Roll: 73.7955093
+    }
+    Scale {
+      X: 5.89651251
+      Y: 8.22754
+      Z: 10.6602907
+    }
+  }
+  ParentId: 4445322596964842448
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15494749898036415293
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9599526479376918549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8565666510039767335
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 13599.7949
+      Y: -23043.1055
+      Z: 1780.66797
+    }
+    Rotation {
+      Pitch: 12.428874
+      Yaw: 10.070878
+      Roll: -7.78527832
+    }
+    Scale {
+      X: 5.45188332
+      Y: 5.45188332
+      Z: 5.18631697
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15456405850729702642
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14978772837143096448
+  Name: "Rock Pile 002"
+  Transform {
+    Location {
+      X: 13773.3008
+      Y: -19167.2793
+      Z: 1803.37207
+    }
+    Rotation {
+      Pitch: -12.4830933
+      Yaw: -159.290604
+      Roll: 2.38888884
+    }
+    Scale {
+      X: 7.68718481
+      Y: 7.68718481
+      Z: 7.31273317
+    }
+  }
+  ParentId: 4445322596964842448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15456405850729702642
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15891322810042060947
+  Name: "Rock 01"
+  Transform {
+    Location {
+      X: 14392.5938
+      Y: -17773.1973
+      Z: 1828.74121
+    }
+    Rotation {
+      Pitch: -20.0072632
+      Yaw: 51.7440491
+      Roll: 73.7946472
+    }
+    Scale {
+      X: 5.89651251
+      Y: 8.22754
+      Z: 10.6602907
+    }
+  }
+  ParentId: 4445322596964842448
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15494749898036415293
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9599526479376918549
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5935346613250497970
   Name: "Stone Block Small"
   Transform {
@@ -28197,7 +28572,7 @@ Objects {
       Z: 1458.08789
     }
     Rotation {
-      Pitch: -20.0073776
+      Pitch: -20.0073853
       Yaw: 67.1201
       Roll: 73.7952271
     }
@@ -28307,7 +28682,7 @@ Objects {
       Z: 829.379883
     }
     Rotation {
-      Pitch: -20.0073776
+      Pitch: -20.0073853
       Yaw: -176.599838
       Roll: 73.7959137
     }
