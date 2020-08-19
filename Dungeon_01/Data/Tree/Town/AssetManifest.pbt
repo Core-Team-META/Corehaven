@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17674554081522737569
-  Name: "Whitebox Wall 01 - Foundation"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tx_gen_whitebox_foundation_001"
-  }
-}
-Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -350,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14104138596920373202
-  Name: "Whitebox Roof 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_roof_001"
-  }
-}
-Assets {
   Id: 14082963738224240508
   Name: "Bricks Layered Stone Floor 01"
   PlatformAssetType: 2
@@ -455,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_fabric_burlap_001_uv"
-  }
-}
-Assets {
-  Id: 12728337217389179065
-  Name: "Craftsman Wall 02 Corner"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_wall_002_corner"
   }
 }
 Assets {
@@ -809,15 +782,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8345110034584009830
-  Name: "Whitebox Wall 01 Doorway 01 Frame"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_whitebox_wall_001_doorframe"
-  }
-}
-Assets {
   Id: 8318010931141529991
   Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
@@ -998,15 +962,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6661752720774316706
-  Name: "Whitebox Wall 01 Half - Window Slot 1x"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_wall_001_winHalfSlot1x"
-  }
-}
-Assets {
   Id: 6585207450897081622
   Name: "Sphere"
   PlatformAssetType: 1
@@ -1031,15 +986,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_hemisphere_002"
-  }
-}
-Assets {
-  Id: 6357769797578075108
-  Name: "Bricks Large Foundation 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_large_foundation_001"
   }
 }
 Assets {
@@ -1169,15 +1115,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4924933784517209393
-  Name: "Whitebox Floor 01 8m x 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_floor_001_8x8"
-  }
-}
-Assets {
   Id: 4670984589696572448
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -1241,15 +1178,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4243192772171122184
-  Name: "Whitebox Wall 01 Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_gen_whitebox_wall_001_half"
-  }
-}
-Assets {
   Id: 4193024863549911546
   Name: "Column Base 02"
   PlatformAssetType: 1
@@ -1292,15 +1220,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_003_win_02"
-  }
-}
-Assets {
-  Id: 3256082723569577151
-  Name: "Additive Soft Edge"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_additive_edgefade"
   }
 }
 Assets {
