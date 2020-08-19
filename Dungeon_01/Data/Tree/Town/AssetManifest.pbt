@@ -602,15 +602,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10227468588619969592
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
-  }
-}
-Assets {
   Id: 10184847056121543272
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -1445,15 +1436,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_square_shingles_001_uv"
-  }
-}
-Assets {
-  Id: 1931491163154793697
-  Name: "Fantasy Castle Stairs 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {

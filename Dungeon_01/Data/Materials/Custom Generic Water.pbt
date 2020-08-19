@@ -15,12 +15,20 @@
         Float: 0.196913421
       }
       Overrides {
-        Name: "normal distance"
-        Float: 5
+        Name: "material_scale"
+        Float: 1
+      }
+      Overrides {
+        Name: "flow direction"
+        Vector {
+          X: 1
+          Y: 1
+          Z: 0.2
+        }
       }
       Overrides {
         Name: "normal amount"
-        Float: 0.0858345106
+        Float: 0.214720592
       }
     }
     Assets {
