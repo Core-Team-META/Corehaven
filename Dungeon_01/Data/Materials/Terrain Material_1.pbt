@@ -39,7 +39,7 @@
       Overrides {
         Name: "cmp:Material2_Sides"
         AssetReference {
-          Id: 11784489852643952937
+          Id: 7129977268232526794
         }
       }
       Overrides {
@@ -108,12 +108,12 @@
       }
     }
     Assets {
-      Id: 11784489852643952937
-      Name: "Bricks Cobblestone Floor 01"
+      Id: 7129977268232526794
+      Name: "Bricks Rough Stone Floor 02"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_cobblestone_floor_001"
+        AssetId: "mi_brick_stone_floor_rough_002"
       }
     }
     Assets {

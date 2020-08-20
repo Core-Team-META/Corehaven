@@ -13881,19 +13881,19 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -3846.05908
-      Y: -21254.9102
-      Z: 3873.47852
+      X: -4119.25
+      Y: -20770.0586
+      Z: 4256.15234
     }
     Rotation {
-      Pitch: 15.6388235
-      Yaw: -46.223175
-      Roll: -161.802139
+      Pitch: 5.35585833
+      Yaw: -44.2939148
+      Roll: -151.292282
     }
     Scale {
-      X: 2.01636672
-      Y: 2.01641035
-      Z: 2.5649507
+      X: 2.75
+      Y: 3.50000191
+      Z: 2.5
     }
   }
   ParentId: 4445322596964842448
@@ -14034,13 +14034,13 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -3128.06982
-      Y: -20846.3906
+      X: -3165.36133
+      Y: -20754.3789
       Z: 3057.26416
     }
     Rotation {
       Pitch: 0.93778491
-      Yaw: -118.71727
+      Yaw: -118.717255
       Roll: 179.945374
     }
     Scale {
@@ -19762,57 +19762,6 @@ Objects {
       X: 2.28307319
       Y: 2.28306341
       Z: 3.71419239
-    }
-  }
-  ParentId: 4445322596964842448
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 15494749898036415293
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9599526479376918549
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17441823161569407828
-  Name: "Rock 02"
-  Transform {
-    Location {
-      X: -3770.58179
-      Y: -20584.0313
-      Z: 3461.85986
-    }
-    Rotation {
-      Pitch: 5.78526545
-      Yaw: 64.0474777
-      Roll: -4.56799316
-    }
-    Scale {
-      X: 4.37324
-      Y: 4.37323618
-      Z: 5.11165953
     }
   }
   ParentId: 4445322596964842448
