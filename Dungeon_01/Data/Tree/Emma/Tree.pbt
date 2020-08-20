@@ -4442,3 +4442,58 @@ Objects {
     }
   }
 }
+Objects {
+  Id: 5161179683843583964
+  Name: "Sea"
+  Transform {
+    Location {
+      X: 16891.5957
+      Y: 1906.35156
+      Z: -236.985718
+    }
+    Rotation {
+    }
+    Scale {
+      X: 4493.57666
+      Y: 4493.57666
+      Z: 4493.57666
+    }
+  }
+  ParentId: 11788695356358832208
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11701420284830861422
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.184951365
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.203310728
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13350819167120802023
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}

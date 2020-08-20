@@ -8,11 +8,11 @@
     ParameterOverrides {
       Overrides {
         Name: "speed"
-        Float: 0.129841089
+        Float: -0.0363556147
       }
       Overrides {
         Name: "wind speed"
-        Float: 0.196913421
+        Float: 0.398723781
       }
       Overrides {
         Name: "material_scale"
@@ -28,7 +28,7 @@
       }
       Overrides {
         Name: "normal amount"
-        Float: 0.214720592
+        Float: 0.107879438
       }
     }
     Assets {
