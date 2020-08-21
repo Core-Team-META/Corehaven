@@ -530,6 +530,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11636496397612095126
+  Name: "Fantasy Castle Wall 03 - Doorway 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003_door_01"
+  }
+}
+Assets {
   Id: 11536791283922121103
   Name: "Text 03: E"
   PlatformAssetType: 1
@@ -626,6 +635,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_win_01"
+  }
+}
+Assets {
+  Id: 9807975150386039547
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_lg"
   }
 }
 Assets {

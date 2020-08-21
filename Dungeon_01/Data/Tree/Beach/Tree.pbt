@@ -50,7 +50,6 @@ Objects {
   ChildIds: 5371786563358440848
   ChildIds: 9180802473062447289
   ChildIds: 17470051987413090833
-  ChildIds: 2371299502116109272
   ChildIds: 4710229811679040245
   ChildIds: 17197119290812836408
   ChildIds: 3726133807133790667
@@ -1472,46 +1471,6 @@ Objects {
       X: 1
       Y: 1
       Z: 2.57658958
-    }
-  }
-  ParentId: 4885281447776484896
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7720712756894007893
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2371299502116109272
-  Name: "Rock Hexagonal"
-  Transform {
-    Location {
-      X: -2244.9375
-      Y: -1455.021
-      Z: 189.030029
-    }
-    Rotation {
-      Yaw: -108.814819
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.9529177
     }
   }
   ParentId: 4885281447776484896

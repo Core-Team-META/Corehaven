@@ -1,6 +1,136 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
+  Id: 7338309514381200878
+  Name: "Fantasy Castle Wall Foundation 01"
+  Transform {
+    Location {
+      X: 32290.3633
+      Y: 19936.1113
+      Z: 2046.44507
+    }
+    Rotation {
+      Yaw: -3.0517569e-05
+    }
+    Scale {
+      X: 2.81632066
+      Y: 0.594538867
+      Z: 0.594536126
+    }
+  }
+  ParentId: 11788695356358832208
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:utile"
+      Float: 6.53522778
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:vtile"
+      Float: 0.764889181
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5965834732772792985
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9709045191738989214
+  Name: "Fantasy Castle Wall Foundation 01"
+  Transform {
+    Location {
+      X: 32345
+      Y: 15545
+      Z: 2046.44507
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 5.55392838
+      Y: 0.594540536
+      Z: 0.594536126
+    }
+  }
+  ParentId: 11788695356358832208
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_WallOuter:utile"
+      Float: 6.53522778
+    }
+    Overrides {
+      Name: "ma:Building_WallOuter:vtile"
+      Float: 0.764889181
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5965834732772792985
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6862860880747255112
+  Name: "Small_Cabin"
+  Transform {
+    Location {
+      X: 32290.3633
+      Y: 19936.1113
+      Z: 2046.44507
+    }
+    Rotation {
+      Yaw: -3.05175672e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Small_Cabin"
+  }
+}
+Objects {
   Id: 11492308109361872204
   Name: "Cemetery"
   Transform {
@@ -34,11 +164,12 @@ Objects {
   Name: "Skeleton Mob"
   Transform {
     Location {
-      X: 46755.1406
-      Y: 10342.8145
-      Z: 4266.90918
+      X: 44470.125
+      Y: 8296.92285
+      Z: 4451.81348
     }
     Rotation {
+      Yaw: 114.065369
     }
     Scale {
       X: 1

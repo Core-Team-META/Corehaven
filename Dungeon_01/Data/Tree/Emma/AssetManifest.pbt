@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5965834732772792985
+  Name: "Fantasy Castle Wall Foundation 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_found_001"
+  }
+}
+Assets {
   Id: 4670984589696572448
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
