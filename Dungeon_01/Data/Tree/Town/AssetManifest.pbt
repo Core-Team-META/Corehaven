@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18085397831908312929
-  Name: "Candle Holder 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_holder_table_001"
-  }
-}
-Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -149,15 +140,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
-  }
-}
-Assets {
-  Id: 15878733393497968882
-  Name: "Rock Flat 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {
@@ -359,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14030529823139012134
-  Name: "Candle Holder 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_holder_table_002"
-  }
-}
-Assets {
   Id: 14014504692453732684
   Name: "Food Corn 01"
   PlatformAssetType: 2
@@ -419,15 +392,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_014"
-  }
-}
-Assets {
-  Id: 13574187934262468081
-  Name: "Candle Table Holder 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_001"
   }
 }
 Assets {
@@ -518,15 +482,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11867635473243948185
-  Name: "Candle Group Melted 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candles_melted_001"
   }
 }
 Assets {
@@ -671,15 +626,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_win_01"
-  }
-}
-Assets {
-  Id: 9808000657184114415
-  Name: "Candle Group 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candles_group_001"
   }
 }
 Assets {
@@ -926,30 +872,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7872016775289590621
-  Name: "Candle 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_003"
-  }
-}
-Assets {
   Id: 7814966837604519694
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_floor_rough_001"
-  }
-}
-Assets {
-  Id: 7720712756894007893
-  Name: "Rock Hexagonal"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_008"
   }
 }
 Assets {
@@ -1013,15 +941,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x4m_001"
-  }
-}
-Assets {
-  Id: 7232672974994690852
-  Name: "Column Segment 1m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
   }
 }
 Assets {
@@ -1295,15 +1214,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4193024863549911546
-  Name: "Column Base 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_bottom_002"
-  }
-}
-Assets {
   Id: 3680192657369177324
   Name: "Grass Clumps"
   PlatformAssetType: 2
@@ -1322,6 +1232,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3628562346697706059
+  Name: "Pipe - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_002"
+  }
+}
+Assets {
   Id: 3533190463953898497
   Name: "Fantasy Chest Treasure Pile 01"
   PlatformAssetType: 1
@@ -1337,6 +1256,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chain_top_001"
+  }
+}
+Assets {
+  Id: 3274913409564992894
+  Name: "Fantasy Castle Stairs 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001"
   }
 }
 Assets {
@@ -1475,15 +1403,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1515843785707742769
-  Name: "Candle 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_002"
-  }
-}
-Assets {
   Id: 1457599617716730831
   Name: "Stone Block Standard"
   PlatformAssetType: 1
@@ -1508,15 +1427,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
-  }
-}
-Assets {
-  Id: 1246701136607685403
-  Name: "Rock Flat 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_005"
   }
 }
 Assets {
@@ -1571,15 +1481,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_axe_001"
-  }
-}
-Assets {
-  Id: 787321180843484483
-  Name: "Candle 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_candle_004"
   }
 }
 Assets {

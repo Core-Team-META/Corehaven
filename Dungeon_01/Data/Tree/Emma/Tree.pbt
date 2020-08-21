@@ -1,23 +1,20 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
-  Id: 17252711652016369611
-  Name: "Cube - Bottom-Aligned"
+  Id: 11492308109361872204
+  Name: "Cemetery"
   Transform {
     Location {
-      X: 48369.0273
-      Y: 8642.35449
-      Z: 4655.48633
+      X: 25537.2988
+      Y: 20590.2188
+      Z: -241.575317
     }
     Rotation {
-      Pitch: 6.24121475
-      Yaw: -123.092041
-      Roll: -4.97528076
     }
     Scale {
-      X: 30.1338158
-      Y: 5.96041107
-      Z: 0.454578727
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11788695356358832208
@@ -27,61 +24,9 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  CoreMesh {
-    MeshAsset {
-      Id: 4670984589696572448
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 782865672932018120
-  Name: "Cube - Bottom-Aligned"
-  Transform {
-    Location {
-      X: 48471.2344
-      Y: 10026.0527
-      Z: 4436.49756
-    }
-    Rotation {
-      Pitch: 9.70382
-      Yaw: -24.9264927
-      Roll: 1.94887452e-05
-    }
-    Scale {
-      X: 18.1121502
-      Y: 5.96039724
-      Z: 0.454585
-    }
-  }
-  ParentId: 11788695356358832208
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4670984589696572448
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Cemetery"
   }
 }
 Objects {
@@ -91,7 +36,7 @@ Objects {
     Location {
       X: 46755.1406
       Y: 10342.8145
-      Z: 4455.83691
+      Z: 4266.90918
     }
     Rotation {
     }
