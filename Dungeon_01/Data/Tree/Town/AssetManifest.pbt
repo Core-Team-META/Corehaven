@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15930833156793906970
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
   Id: 15818682822090430829
   Name: "Pipe - Thin"
   PlatformAssetType: 1
@@ -359,6 +368,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13868826617216289519
+  Name: "Craftsman Stairs 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_stairs_001"
+  }
+}
+Assets {
   Id: 13846976516959842924
   Name: "Cylinder - Rounded Bottom-Aligned"
   PlatformAssetType: 1
@@ -509,6 +527,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_arch"
+  }
+}
+Assets {
+  Id: 11784489852643952937
+  Name: "Bricks Cobblestone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_cobblestone_floor_001"
   }
 }
 Assets {
@@ -824,6 +851,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_octagon_001"
+  }
+}
+Assets {
+  Id: 8347075515822503657
+  Name: "Fantasy Castle Pillar 01 Cap"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_cap"
   }
 }
 Assets {
@@ -1295,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3214006606721471794
+  Name: "Curb 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_8m_001"
+  }
+}
+Assets {
   Id: 3153145125218872818
   Name: "Smoke Volume VFX"
   PlatformAssetType: 8
@@ -1337,15 +1382,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_001"
-  }
-}
-Assets {
-  Id: 2723232960546970913
-  Name: "Wood Floor Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_floor_dark_001_uv"
   }
 }
 Assets {

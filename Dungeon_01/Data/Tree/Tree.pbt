@@ -153,7 +153,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 25
+        Max: 45
       }
       Scaling {
         ScaleX {
