@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16089504577365745032
+  Name: "Metal Old Beaten Gold 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_gold_002"
+  }
+}
+Assets {
   Id: 15930833156793906970
   Name: "Invisible"
   PlatformAssetType: 2
@@ -413,21 +422,21 @@ Assets {
   }
 }
 Assets {
+  Id: 13577817942653603668
+  Name: "Rocky Ground 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "rocky_001"
+  }
+}
+Assets {
   Id: 13540258823282010952
   Name: "Reinforced Crate 150cm"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_reinforced_150cm_001"
-  }
-}
-Assets {
-  Id: 13327618201673691156
-  Name: "Wedge - Convex"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_wedge_curved_convex_001"
   }
 }
 Assets {
@@ -590,6 +599,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_porch_001_rail"
+  }
+}
+Assets {
+  Id: 11077546524685497450
+  Name: "Stone Wall Divider 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-edge_middle_6m_001"
   }
 }
 Assets {
@@ -1259,6 +1277,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4286823887220239396
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_4m"
+  }
+}
+Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -1382,6 +1409,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_001"
+  }
+}
+Assets {
+  Id: 2670205319698482526
+  Name: "Cube - Chamfered Large Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_002"
   }
 }
 Assets {
