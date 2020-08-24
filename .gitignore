@@ -1,6 +1,3 @@
-#Exports folder is entirely generated
-Exports/
-#User settings are per user
+.core_backup
 UserSettings/
-#Storage is just for testing
-Storage/
+Temp/
