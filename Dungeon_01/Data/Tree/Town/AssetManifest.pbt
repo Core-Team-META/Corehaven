@@ -143,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16089504577365745032
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
-  }
-}
-Assets {
   Id: 15930833156793906970
   Name: "Invisible"
   PlatformAssetType: 2
@@ -275,15 +266,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_base"
-  }
-}
-Assets {
-  Id: 14451595530263497460
-  Name: "Pipe - Quarter Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter-pipe_002"
   }
 }
 Assets {
@@ -422,30 +404,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13577817942653603668
-  Name: "Rocky Ground 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "rocky_001"
-  }
-}
-Assets {
   Id: 13540258823282010952
   Name: "Reinforced Crate 150cm"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_reinforced_150cm_001"
-  }
-}
-Assets {
-  Id: 13304908840312358092
-  Name: "Fantasy Castle Pillar 01 Top"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_001_top"
   }
 }
 Assets {
@@ -737,15 +701,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9380460844045970728
-  Name: "Human Gal"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_002_ref"
-  }
-}
-Assets {
   Id: 9372549160589526323
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
@@ -824,15 +779,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
-  }
-}
-Assets {
-  Id: 8717709293407420483
-  Name: "Chain Tile 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_001"
   }
 }
 Assets {
@@ -1277,15 +1223,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4286823887220239396
-  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_4m"
-  }
-}
-Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -1328,15 +1265,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
-  }
-}
-Assets {
-  Id: 3277498022036755698
-  Name: "Chain Ceiling Anchor"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chain_top_001"
   }
 }
 Assets {
@@ -1403,24 +1331,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2756471535058463435
-  Name: "Cone - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_001"
-  }
-}
-Assets {
-  Id: 2670205319698482526
-  Name: "Cube - Chamfered Large Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_002"
-  }
-}
-Assets {
   Id: 2664847478369185144
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -1445,15 +1355,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_part_window_001_ref"
-  }
-}
-Assets {
-  Id: 2352281304680334671
-  Name: "Cauldron"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_cauldron_001"
   }
 }
 Assets {
@@ -1547,15 +1448,6 @@ Assets {
   }
 }
 Assets {
-  Id: 919475593149954432
-  Name: "Cone - Truncated Hollow Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_002"
-  }
-}
-Assets {
   Id: 897429753597555270
   Name: "Fantasy Castle Bannister 01 - Post"
   PlatformAssetType: 1
@@ -1580,15 +1472,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_lense_001"
-  }
-}
-Assets {
-  Id: 129119048524682915
-  Name: "Teardrop - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_truncated_teardrop_001"
   }
 }
 Assets {

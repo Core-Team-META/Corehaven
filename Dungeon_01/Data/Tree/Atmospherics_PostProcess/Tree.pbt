@@ -140,7 +140,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3.24023056
+      Float: 3
     }
   }
   Collidable_v2 {
@@ -184,7 +184,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
-      Float: 1
+      Float: 1.5
     }
     Overrides {
       Name: "bp:Light Color"
@@ -641,7 +641,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
-      Float: 0.650033414
+      Float: 0.745465696
     }
     Overrides {
       Name: "bp:Radius"

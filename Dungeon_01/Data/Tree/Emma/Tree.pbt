@@ -1,6 +1,223 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
+  Id: 7818046977082033886
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 51714.5117
+      Y: 8699.54492
+      Z: 5005.01855
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.1923218
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.820000052
+      G: 0.293245047
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1804.98352
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 2000
+    }
+  }
+}
+Objects {
+  Id: 10543067597032673534
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 46931.5
+      Y: 9975.30762
+      Z: 4720.60254
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.1922913
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.820000052
+      G: 0.293245047
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1588.78564
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 2000
+    }
+  }
+}
+Objects {
+  Id: 9369807551488517899
+  Name: "PortLantern_spherical"
+  Transform {
+    Location {
+      X: -4144.96094
+      Y: -3813.89795
+      Z: -244.510925
+    }
+    Rotation {
+      Yaw: 0.699406803
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11497261407930304372
+      value {
+        Overrides {
+          Name: "Name"
+          String: "PortLantern_spherical_single"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 44493.6953
+            Y: 8582.31152
+            Z: 4237.37793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.124794379
+            Yaw: -13.4933777
+            Roll: -2.43722534
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 17979152160187971160
+    }
+  }
+}
+Objects {
+  Id: 2438393161552087027
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 44416.8125
+      Y: 8582.26367
+      Z: 4750.67676
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.1922
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.820000052
+      G: 0.293245047
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 18025634016154390474
   Name: "Skeleton Mob"
   Transform {
