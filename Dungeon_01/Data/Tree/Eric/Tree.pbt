@@ -2151,6 +2151,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
       Name: "cs:StateTrackerGroup"
       ObjectReference {
         SelfId: 14362594028241211338
@@ -2198,13 +2204,19 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
       Name: "cs:StateTrackerGroup"
       ObjectReference {
         SelfId: 14362594028241211338
       }
     }
     Overrides {
-      Name: "cs:PlayerStateTemplate"
+      Name: "cs:CharacterStateTemplate"
       AssetReference {
         Id: 12612395206321543931
       }
@@ -2339,6 +2351,12 @@ Objects {
   }
   ParentId: 13264983765074638159
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
     Overrides {
       Name: "cs:Container"
       ObjectReference {
@@ -2563,6 +2581,556 @@ Objects {
   Script {
     ScriptAsset {
       Id: 4438077864703270684
+    }
+  }
+}
+Objects {
+  Id: 9585485467565999811
+  Name: "NPCSystem"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 287664048456962815
+  ChildIds: 7742307367706268154
+  ChildIds: 4929075629999108888
+  ChildIds: 1993578725776207079
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1993578725776207079
+  Name: "NavMesh"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9585485467565999811
+  ChildIds: 5152249795593354209
+  ChildIds: 1808730156934921913
+  ChildIds: 12845115894241617291
+  ChildIds: 10675051278125738765
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 10675051278125738765
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -7959.59912
+      Y: -7843.40527
+      Z: -935.656738
+    }
+    Rotation {
+      Roll: 24.8264332
+    }
+    Scale {
+      X: 3.1259315
+      Y: 0.719772637
+      Z: 0.00100021868
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12845115894241617291
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -7959.59912
+      Y: -8776.01074
+      Z: -926.13678
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3.1259315
+      Y: 18.385622
+      Z: 0.00100021868
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1808730156934921913
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -5140.66699
+      Y: -3414.65234
+      Z: 1
+    }
+    Rotation {
+      Yaw: 35.4649353
+    }
+    Scale {
+      X: 10.078764
+      Y: 14
+      Z: 0.001
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5152249795593354209
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -7624.3252
+      Y: -7082.88232
+      Z: -941.262939
+    }
+    Rotation {
+      Pitch: 0.0101633212
+      Yaw: -70.1085205
+      Roll: 9.25477224e-08
+    }
+    Scale {
+      X: 12.9592323
+      Y: 31.2067928
+      Z: 0.00100021868
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4929075629999108888
+  Name: "Tasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9585485467565999811
+  ChildIds: 16512903352423238162
+  ChildIds: 6732495304491180040
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6732495304491180040
+  Name: "ServerTasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4929075629999108888
+  ChildIds: 9727637788879001685
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 9727637788879001685
+  Name: "Task_TestMelee_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15850025496335791577
+    }
+  }
+}
+Objects {
+  Id: 16512903352423238162
+  Name: "ClientTasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4929075629999108888
+  ChildIds: 5926390292944600693
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 5926390292944600693
+  Name: "Task_TestMelee_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4692914598627417192
+    }
+  }
+}
+Objects {
+  Id: 7742307367706268154
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9585485467565999811
+  ChildIds: 12432129355848768890
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12432129355848768890
+  Name: "NPCSystemClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7742307367706268154
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13836322152945502939
+    }
+  }
+}
+Objects {
+  Id: 287664048456962815
+  Name: "NPCSystemServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9585485467565999811
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIPathing"
+      AssetReference {
+        Id: 3551787708004768936
+      }
+    }
+    Overrides {
+      Name: "cs:NavMeshFolder"
+      ObjectReference {
+        SelfId: 1993578725776207079
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8213217512106845295
     }
   }
 }
@@ -2856,7 +3424,7 @@ Objects {
   ParentId: 1274882497791269453
   UnregisteredParameters {
     Overrides {
-      Name: "cs:API"
+      Name: "cs:APISpectator"
       AssetReference {
         Id: 14633632985083390763
       }
@@ -2865,6 +3433,12 @@ Objects {
       Name: "cs:APIStatusEffects"
       AssetReference {
         Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
       }
     }
     Overrides {
@@ -3022,6 +3596,275 @@ Objects {
   }
 }
 Objects {
+  Id: 15214246396461168156
+  Name: "Enemies"
+  Transform {
+    Location {
+      X: -8220.58
+      Y: -7020.57422
+      Z: -938.282
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 16645911173930486892
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16645911173930486892
+  Name: "ExampleNPC"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -96.3917313
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 16842028804781086204
+  ChildIds: 17331060043642886562
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:HitPoints"
+      Float: 0
+    }
+    Overrides {
+      Name: "cs:CurrentTask"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:HitPoints:isrep"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:CurrentTask:isrep"
+      Bool: true
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17331060043642886562
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16645911173930486892
+  ChildIds: 6551060032695348771
+  ChildIds: 9290153228024983796
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9290153228024983796
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      Z: 105
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17331060043642886562
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:IdleStance"
+      String: "unarmed_idle_relaxed"
+    }
+    Overrides {
+      Name: "cs:RunStance"
+      String: "unarmed_run_forward"
+    }
+    Overrides {
+      Name: "cs:StareStance"
+      String: "unarmed_idle_ready"
+    }
+    Overrides {
+      Name: "cs:DeathAnimation"
+      String: "unarmed_death"
+    }
+    Overrides {
+      Name: "cs:StunnedStance"
+      String: "unarmed_bind_pose"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 6551060032695348771
+  Name: "ExampleNPCClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17331060043642886562
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:ExampleNPCShared"
+      AssetReference {
+        Id: 6642645609279715106
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 16645911173930486892
+      }
+    }
+    Overrides {
+      Name: "cs:AnimatedMesh"
+      ObjectReference {
+        SelfId: 9290153228024983796
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9132106788277241166
+    }
+  }
+}
+Objects {
+  Id: 16842028804781086204
+  Name: "ExampleNPCServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16645911173930486892
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:ExampleNPCShared"
+      AssetReference {
+        Id: 6642645609279715106
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 16645911173930486892
+      }
+    }
+  }
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1677553598386506932
+    }
+  }
+}
+Objects {
   Id: 1977994650734686530
   Name: "Cast Bar"
   Transform {
@@ -3100,7 +3943,7 @@ Objects {
         }
         Overrides {
           Name: "cs:LobbyDuration"
-          Float: 10
+          Float: 3
         }
         Overrides {
           Name: "Position"
@@ -3547,6 +4390,8 @@ Objects {
   }
   ParentId: 11176579868672163906
   ChildIds: 7367735074338159388
+  ChildIds: 4822027138064384699
+  ChildIds: 6460519318533235292
   ChildIds: 14713340454944924967
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3734,6 +4579,67 @@ Objects {
   }
 }
 Objects {
+  Id: 6460519318533235292
+  Name: "Team Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14414506327562387432
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    TeamSettings {
+      TeamMode_v2 {
+        Value: "mc:eteammode:friendly"
+      }
+    }
+  }
+}
+Objects {
+  Id: 4822027138064384699
+  Name: "Respawn Settings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14414506327562387432
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Settings {
+    IsDefault: true
+    RespawnSettings {
+      RespawnDelay: 1
+      RespawnMode_v2 {
+        Value: "mc:erespawnmode:random"
+      }
+    }
+  }
+}
+Objects {
   Id: 7367735074338159388
   Name: "Game Settings"
   Transform {
@@ -3758,8 +4664,9 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
-        Value: "mc:echatmode:teamandall"
+        Value: "mc:echatmode:allonly"
       }
     }
   }

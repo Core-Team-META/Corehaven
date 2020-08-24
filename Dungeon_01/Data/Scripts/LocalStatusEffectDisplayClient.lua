@@ -11,7 +11,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local displayTemplates = {}
 
 function Tick(deltaTime)
-	local statusEffects = API_SE.GetStatusEffectsOnPlayer(LOCAL_PLAYER)
+	local statusEffects = API_SE.GetStatusEffectsOnCharacter(LOCAL_PLAYER)
 
 	for i = 1, API_SE.MAX_STATUS_EFFECTS do
 		local data = statusEffects[i]

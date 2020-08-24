@@ -1,17 +1,18 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local STATE_TRACKER_GROUP = script:GetCustomProperty("StateTrackerGroup"):WaitForObject()
-local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
+local CHARACTER_STATE_TEMPLATE = script:GetCustomProperty("CharacterStateTemplate")
 
 local playerSettingsInitialized = false
 
 function OnPlayerDied(player)
-	for i, _ in pairs(API_SE.GetStatusEffectsOnPlayer(player)) do
+	for i, _ in pairs(API_SE.GetStatusEffectsOnCharacter(player)) do
 		API_SE.RemoveStatusEffect(player, i)
 	end
 end
 
 function OnPlayerJoined(player)
-	local stateTracker = World.SpawnAsset(PLAYER_STATE_TEMPLATE, {parent = STATE_TRACKER_GROUP})
+	local stateTracker = World.SpawnAsset(CHARACTER_STATE_TEMPLATE, {parent = STATE_TRACKER_GROUP})
 	stateTracker.name = API_SE.GetStateTrackerName(player)
 
 	if not playerSettingsInitialized then
@@ -26,6 +27,21 @@ function OnPlayerLeft(player)
 	API_SE.GetStateTracker(player):Destroy()
 end
 
+function OnNPCDied(npc)
+	for i, _ in pairs(API_SE.GetStatusEffectsOnCharacter(npc)) do
+		API_SE.RemoveStatusEffect(npc, i)
+	end
+end
+
+function OnNPCCreated(npc, data)
+	local stateTracker = World.SpawnAsset(CHARACTER_STATE_TEMPLATE, {parent = STATE_TRACKER_GROUP})
+	stateTracker.name = API_SE.GetStateTrackerName(npc)
+end
+
+function OnNPCDestroyed(npc)
+	API_SE.GetStateTracker(npc):Destroy()
+end
+
 function Tick(deltaTime)
 	API_SE.Tick(deltaTime)
 end
@@ -34,3 +50,10 @@ API_SE.InitializeStatusEffectController(STATE_TRACKER_GROUP)
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.Connect("NPC_Died", OnNPCDied)
+Events.Connect("NPC_Created", OnNPCCreated)
+Events.Connect("NPC_Destroyed", OnNPCDestroyed)
+
+for npc, data in pairs(API_NPC.GetAllNPCData()) do
+	OnNPCCreated(npc, data)
+end

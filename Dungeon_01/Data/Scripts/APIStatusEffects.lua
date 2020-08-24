@@ -1,4 +1,6 @@
-﻿local API = {}
+﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+
+local API = {}
 
 local STATE_TRACKER_GROUP = nil
 
@@ -14,16 +16,16 @@ name - player-facing name
 <duration> - default duration, or missing for unlimited duration
 icon - to show on ui
 color - color in ui (usually the background)
-<effectTemplate> - template to spawn and attach to player for effects
-<startFunction(sourcePlayer, player)> - called when applied
-<tickFunction(sourcePlayer, player)> - called exactly once a second (on average)
-<endFunction(sourcePlayer, player)> - called when expires or removed. Note this may have expired because they died.
-<doesStun> - whether this status effect stuns the player
-<moveSpeedMultiplier> - how much to slow or speed up the player's movement
-<damageDealtMultiplier> - how much more or less damage the player deals
-<damageTakenMultiplier> - how much more or less damage the player takes
-<frictionMultiplier> - how much more or less friction the player has
-<knockbackMultiplier> - how much more or less this player get's knocked around
+<effectTemplate> - template to spawn and attach to character for effects
+<startFunction(sourceCharacter, character)> - called when applied
+<tickFunction(sourceCharacter, character)> - called exactly once a second (on average)
+<endFunction(sourceCharacter, character)> - called when expires or removed. Note this may have expired because they died.
+<doesStun> - whether this status effect stuns the target
+<moveSpeedMultiplier> - how much to slow or speed up the characters's movement
+<damageDealtMultiplier> - how much more or less damage the characters deals
+<damageTakenMultiplier> - how much more or less damage the characters takes
+<frictionMultiplier> - how much more or less friction the player has (no effect on NPCs)
+<knockbackMultiplier> - how much more or less this character get's knocked around
 id - unique id number defined below
 --]]
 
@@ -31,10 +33,10 @@ API.STATUS_EFFECT_DEFINITIONS = {}		-- name -> table
 
 local STATUS_EFFECT_ID_TABLE = {}		-- id -> table
 
-local tickCounts = {}					-- Player -> index -> int
-local damageDealtMultipliers = {}		-- Player -> float
-local damageTakenMultipliers = {}		-- Player -> float
-local knockbackMultipliers = {}			-- Player -> float
+local tickCounts = {}					-- Object -> index -> int
+local damageDealtMultipliers = {}		-- Object -> float
+local damageTakenMultipliers = {}		-- Object -> float
+local knockbackMultipliers = {}			-- Object -> float
 
 function GetStringHash(string)
 	local hash = 0
@@ -57,11 +59,11 @@ function GetStartTimePropertyName(n)
 	return string.format("SE%d_StartTime", n)
 end
 
-function GetSourcePlayerIdPropertyName(n)
-	return string.format("SE%d_SourcePlayerId", n)
+function GetSourceCharacterIdPropertyName(n)
+	return string.format("SE%d_SourceCharacterId", n)
 end
 
-function GetPlayerById(id)
+function GetCharacterById(id)
 	if id ~= "" then
 		for _, player in pairs(Game.GetPlayers()) do
 			if player.id == id then
@@ -69,21 +71,41 @@ function GetPlayerById(id)
 			end
 		end
 	end
+
+	return World.FindObjectById(id)
 end
 
-function UpdatePlayerEffectState(player)
-	local statusEffects = API.GetStatusEffectsOnPlayer(player)
+function IsCharacterDead(character)
+	if character:IsA("Player") then
+		return character.isDead
+	else
+		return API_NPC.IsDead(character)
+	end
+end
+
+function UpdateCharacterEffectState(character)
+	local statusEffects = API.GetStatusEffectsOnCharacter(character)
+	local isPlayer = character:IsA("Player")
 
 	-- Stun
-	player.movementControlMode = DEFAULT_PLAYER_SETTINGS.movementControlMode
-	player.lookControlMode = DEFAULT_PLAYER_SETTINGS.lookControlMode
+	if isPlayer then
+		character.movementControlMode = DEFAULT_PLAYER_SETTINGS.movementControlMode
+		character.lookControlMode = DEFAULT_PLAYER_SETTINGS.lookControlMode
+	else
+		API_NPC.SetStunned(character, false)
+	end
 
 	for _, data in pairs(statusEffects) do
 		local statusEffectData = API.STATUS_EFFECT_DEFINITIONS[data.name]
 
 		if statusEffectData.doesStun then
-			player.movementControlMode = MovementControlMode.NONE
-			player.lookControlMode = LookControlMode.NONE
+			if isPlayer then
+				character.movementControlMode = MovementControlMode.NONE
+				character.lookControlMode = LookControlMode.NONE
+			else
+				API_NPC.SetStunned(character, true)
+			end
+
 			break
 		end
 	end
@@ -129,12 +151,17 @@ function UpdatePlayerEffectState(player)
 		end
 	end
 
-	player.maxWalkSpeed = DEFAULT_PLAYER_SETTINGS.maxWalkSpeed * minMoveSpeedMultiplier * maxMoveSpeedMultiplier
-	damageDealtMultipliers[player] = minDamageDealtMultiplier * maxDamageDealtMultiplier
-	damageTakenMultipliers[player] = minDamageTakenMultiplier * maxDamageTakenMultiplier
-	player.groundFriction = DEFAULT_PLAYER_SETTINGS.groundFriction * minFrictionMultiplier * maxFrictionMultiplier
-	player.brakingFrictionFactor = DEFAULT_PLAYER_SETTINGS.brakingFrictionFactor * minFrictionMultiplier * maxFrictionMultiplier
-	knockbackMultipliers[player] = minKnockbackMultiplier * maxKnockbackMultiplier
+	if isPlayer then
+		character.maxWalkSpeed = DEFAULT_PLAYER_SETTINGS.maxWalkSpeed * minMoveSpeedMultiplier * maxMoveSpeedMultiplier
+		character.groundFriction = DEFAULT_PLAYER_SETTINGS.groundFriction * minFrictionMultiplier * maxFrictionMultiplier
+		character.brakingFrictionFactor = DEFAULT_PLAYER_SETTINGS.brakingFrictionFactor * minFrictionMultiplier * maxFrictionMultiplier
+	else
+		--! NPC move speed
+	end
+
+	damageDealtMultipliers[character] = minDamageDealtMultiplier * maxDamageDealtMultiplier
+	damageTakenMultipliers[character] = minDamageTakenMultiplier * maxDamageTakenMultiplier
+	knockbackMultipliers[character] = minKnockbackMultiplier * maxKnockbackMultiplier
 end
 
 function OnPlayerJoined(player)
@@ -151,14 +178,28 @@ function OnPlayerLeft(player)
 	knockbackMultipliers[player] = nil
 end
 
--- Client and Server
-function API.GetStateTrackerName(player)
-	return player.id
+function OnNPCCreated(npc, data)
+	tickCounts[npc] = {}
+	damageDealtMultipliers[npc] = 1.0
+	damageTakenMultipliers[npc] = 1.0
+	knockbackMultipliers[npc] = 1.0
+end
+
+function OnNPCDestroyed(npc)
+	tickCounts[npc] = nil
+	damageDealtMultipliers[npc] = nil
+	damageTakenMultipliers[npc] = nil
+	knockbackMultipliers[npc] = nil
 end
 
 -- Client and Server
-function API.GetStateTracker(player)
-	return STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(player))
+function API.GetStateTrackerName(character)
+	return character.id
+end
+
+-- Client and Server
+function API.GetStateTracker(character)
+	return STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
 end
 
 -- Client and Server
@@ -214,8 +255,8 @@ function API.DefineStatusEffect(statusEffectData)
 end
 
 -- Client and Server, returns index -> name, startTime, sourcePlayer table, may not have consecutive indices
-function API.GetStatusEffectsOnPlayer(player)
-	local tracker = API.GetStateTracker(player)
+function API.GetStatusEffectsOnCharacter(character)
+	local tracker = API.GetStateTracker(character)
 	local result = {}
 
 	if tracker then
@@ -226,7 +267,7 @@ function API.GetStatusEffectsOnPlayer(player)
 				local data = {}
 				data.name = STATUS_EFFECT_ID_TABLE[id].name
 				data.startTime = tracker:GetCustomProperty(GetStartTimePropertyName(i))
-				data.sourcePlayer = GetPlayerById(tracker:GetCustomProperty(GetSourcePlayerIdPropertyName(i)))
+				data.sourceCharacter = GetCharacterById(tracker:GetCustomProperty(GetSourceCharacterIdPropertyName(i)))
 				result[i] = data
 			end
 		end
@@ -236,31 +277,31 @@ function API.GetStatusEffectsOnPlayer(player)
 end
 
 -- Server
-function API.GetPlayerDamageDealtMultiplier(player)
-	return damageDealtMultipliers[player]
+function API.GetCharacterDamageDealtMultiplier(character)
+	return damageDealtMultipliers[character]
 end
 
 -- Server
-function API.GetPlayerDamageTakenMultiplier(player)
-	return damageTakenMultipliers[player]
+function API.GetCharacterDamageTakenMultiplier(character)
+	return damageTakenMultipliers[character]
 end
 
 -- Server
-function API.GetPlayerKnockbackMultiplier(player)
-	return knockbackMultipliers[player]
+function API.GetCharacterKnockbackMultiplier(character)
+	return knockbackMultipliers[character]
 end
 
 -- Server only
-function API.ApplyStatusEffect(sourcePlayer, targetPlayer, id)
-	if targetPlayer.isDead then
-		warn(string.format("Trying to apply status effect id: %d to player %s who is dead", id, targetPlayer.name))
+function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
+	if IsCharacterDead(targetCharacter) then
+		warn(string.format("Trying to apply status effect id: %d to player %s who is dead", id, targetCharacter.name))
 		return
 	end
 
 	local tracker = nil
 
 	while not tracker do
-		tracker = API.GetStateTracker(targetPlayer)
+		tracker = API.GetStateTracker(targetCharacter)
 		Task.Wait()
 	end
 
@@ -271,95 +312,109 @@ function API.ApplyStatusEffect(sourcePlayer, targetPlayer, id)
 			tracker:SetNetworkedCustomProperty(GetIdPropertyName(i), id)
 			tracker:SetNetworkedCustomProperty(GetStartTimePropertyName(i), time())
 
-			if sourcePlayer then
-				tracker:SetNetworkedCustomProperty(GetSourcePlayerIdPropertyName(i), sourcePlayer.id)
+			if sourceCharacter then
+				tracker:SetNetworkedCustomProperty(GetSourceCharacterIdPropertyName(i), sourceCharacter.id)
 			end
 
-			tickCounts[targetPlayer][i] = 0
+			tickCounts[targetCharacter][i] = 0
 
 			local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
 
 			if statusEffectData.startFunction then
-				statusEffectData.startFunction(sourcePlayer, targetPlayer)
+				statusEffectData.startFunction(sourceCharacter, targetCharacter)
 			end
 
-			UpdatePlayerEffectState(targetPlayer)
+			UpdateCharacterEffectState(targetCharacter)
 			return
 		end
 	end
 
 	-- Knock one off?
-	warn(string.format("Failed to apply status effect id: %d to player %s because they already had max", id, targetPlayer.name))
+	warn(string.format("Failed to apply status effect id: %d to player %s because they already had max", id, targetCharacter.name))
 end
 
 -- Server only
-function API.RemoveStatusEffect(player, index)
+function API.RemoveStatusEffect(character, index)
 	local tracker = nil
 
 	while not tracker do
-		tracker = API.GetStateTracker(player)
+		tracker = API.GetStateTracker(character)
 		Task.Wait()
 	end
 
 	local id = tracker:GetCustomProperty(GetIdPropertyName(index))
 
 	if id ~= 0 then
-		local sourcePlayer = GetPlayerById(tracker:GetCustomProperty(GetSourcePlayerIdPropertyName(index)))
+		local sourceCharacter = GetCharacterById(tracker:GetCustomProperty(GetSourceCharacterIdPropertyName(index)))
 		tracker:SetNetworkedCustomProperty(GetIdPropertyName(index), 0)
 		tracker:SetNetworkedCustomProperty(GetStartTimePropertyName(index), 0.0)
-		tracker:SetNetworkedCustomProperty(GetSourcePlayerIdPropertyName(index), "")
-		tickCounts[player][index] = nil
+		tracker:SetNetworkedCustomProperty(GetSourceCharacterIdPropertyName(index), "")
+		tickCounts[character][index] = nil
 
 		local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
 
 		if statusEffectData.endFunction then
-			statusEffectData.endFunction(sourcePlayer, player)
+			statusEffectData.endFunction(sourceCharacter, character)
 		end
 
-		UpdatePlayerEffectState(player, statusEffectData.type)
+		UpdateCharacterEffectState(character, statusEffectData.type)
 	else
-		error(string.format("Failed to remove status effect index: %d on player %s (they don't have it)", index, player.name))
+		error(string.format("Failed to remove status effect index: %d on player %s (they don't have it)", index, character.name))
 	end
 end
 
--- Server Only
-function API.Tick(deltaTime)
-	for _, player in pairs(Game.GetPlayers()) do
-		local tracker = API.GetStateTracker(player)
+function UpdateCharacter(character)
+	local tracker = API.GetStateTracker(character)
 
-		if tracker then
-			for i = 1, API.MAX_STATUS_EFFECTS do
-				local id = tracker:GetCustomProperty(GetIdPropertyName(i))
+	if tracker then
+		for i = 1, API.MAX_STATUS_EFFECTS do
+			local id = tracker:GetCustomProperty(GetIdPropertyName(i))
 
-				if id ~= 0 then
-					local startTime = tracker:GetCustomProperty(GetStartTimePropertyName(i))
-					local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
+			if id ~= 0 then
+				local startTime = tracker:GetCustomProperty(GetStartTimePropertyName(i))
+				local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
 
-					if statusEffectData.tickFunction then
-						local ticksExpected = math.floor(time() - startTime)
-						local sourcePlayer = GetPlayerById(tracker:GetCustomProperty(GetSourcePlayerIdPropertyName(i)))
-						
-						for j = tickCounts[player][i] + 1, ticksExpected do
-							tickCounts[player][i] = tickCounts[player][i] + 1
-							statusEffectData.tickFunction(sourcePlayer, player)
+				if statusEffectData.tickFunction then
+					local ticksExpected = math.floor(time() - startTime)
+					local sourceCharacter = GetCharacterById(tracker:GetCustomProperty(GetSourceCharacterIdPropertyName(i)))
+					
+					for j = tickCounts[character][i] + 1, ticksExpected do
+						tickCounts[character][i] = tickCounts[character][i] + 1
+						statusEffectData.tickFunction(sourceCharacter, character)
 
-							-- The tick might kill you, which removes all your status effects. The rest of this is no longer valid.
-							if player.isDead then
-								return
-							end
+						-- The tick might kill you, which removes all your status effects. The rest of this is no longer valid.
+						if IsCharacterDead(character) then
+							return
 						end
 					end
+				end
 
-					if statusEffectData.duration and time() > startTime + statusEffectData.duration then
-						API.RemoveStatusEffect(player, i)
-					end
+				if statusEffectData.duration and time() > startTime + statusEffectData.duration then
+					API.RemoveStatusEffect(character, i)
 				end
 			end
 		end
 	end
 end
 
+-- Server Only
+function API.Tick(deltaTime)
+	for _, player in pairs(Game.GetPlayers()) do
+		UpdateCharacter(player)
+	end
+
+	for npc, _ in pairs(API_NPC.GetAllNPCData()) do
+		UpdateCharacter(npc)
+	end
+end
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
+Events.Connect("NPC_Created", OnNPCCreated)
+Events.Connect("NPC_Destroyed", OnNPCDestroyed)
+
+for npc, data in pairs(API_NPC.GetAllNPCData()) do
+	OnNPCCreated(npc, data)
+end
 
 return API

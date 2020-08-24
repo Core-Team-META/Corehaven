@@ -4,8 +4,8 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 local ICON = script:GetCustomProperty("Icon")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-function EffectTick(sourcePlayer, player)
-	API_D.ApplyDamage(sourcePlayer, player, 2.0)
+function EffectTick(sourceCharacter, character)
+	API_D.ApplyDamage(sourceCharacter, character, 2.0)
 end
 
 local data = {}

@@ -3,7 +3,7 @@
 local API = {}
 
 function API.ApplyImpulse(player, impulse)
-    local multiplier = API_SE.GetPlayerKnockbackMultiplier(player)
+    local multiplier = API_SE.GetCharacterKnockbackMultiplier(player)
     player:AddImpulse(multiplier * impulse * 1000.0)
 end
 

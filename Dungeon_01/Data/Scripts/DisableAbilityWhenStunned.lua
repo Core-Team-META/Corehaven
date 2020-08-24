@@ -5,7 +5,7 @@ function Tick(deltaTime)
 	local player = ABILITY.owner
 
 	if player then
-		local statusEffects = API_SE.GetStatusEffectsOnPlayer(ABILITY.owner)
+		local statusEffects = API_SE.GetStatusEffectsOnCharacter(ABILITY.owner)
 
 		ABILITY.isEnabled = true
 

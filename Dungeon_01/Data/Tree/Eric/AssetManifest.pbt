@@ -17,12 +17,39 @@ Assets {
   }
 }
 Assets {
+  Id: 14324126384198850775
+  Name: "Skeleton Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_skelington_001_ref"
+  }
+}
+Assets {
+  Id: 14206563083884513420
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
   Id: 12017046880637070245
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {

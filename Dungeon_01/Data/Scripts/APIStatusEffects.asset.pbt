@@ -3,6 +3,14 @@
   Name: "APIStatusEffects"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:API_NPC"
+        AssetReference {
+          Id: 1793953622129874134
+        }
+      }
+    }
   }
   SerializationVersion: 62
 }

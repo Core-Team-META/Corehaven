@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 12612395206321543931
-  Name: "Helper_StatusEffectPlayerState"
+  Name: "Helper_StatusEffectCharacterState"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -26,7 +26,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE1_SourcePlayerId"
+            Name: "cs:SE1_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -38,7 +38,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE2_SourcePlayerId"
+            Name: "cs:SE2_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -50,7 +50,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE3_SourcePlayerId"
+            Name: "cs:SE3_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -62,7 +62,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE4_SourcePlayerId"
+            Name: "cs:SE4_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -74,7 +74,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE5_SourcePlayerId"
+            Name: "cs:SE5_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -86,7 +86,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE6_SourcePlayerId"
+            Name: "cs:SE6_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -98,7 +98,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE7_SourcePlayerId"
+            Name: "cs:SE7_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -110,7 +110,7 @@
             Float: 0
           }
           Overrides {
-            Name: "cs:SE8_SourcePlayerId"
+            Name: "cs:SE8_SourceCharacterId"
             String: ""
           }
           Overrides {
@@ -146,19 +146,19 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:SE4_SourcePlayerId:isrep"
+            Name: "cs:SE4_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
-            Name: "cs:SE3_SourcePlayerId:isrep"
+            Name: "cs:SE3_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
-            Name: "cs:SE2_SourcePlayerId:isrep"
+            Name: "cs:SE2_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
-            Name: "cs:SE1_SourcePlayerId:isrep"
+            Name: "cs:SE1_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
@@ -170,7 +170,7 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:SE5_SourcePlayerId:isrep"
+            Name: "cs:SE5_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
@@ -182,7 +182,7 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:SE6_SourcePlayerId:isrep"
+            Name: "cs:SE6_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
@@ -194,7 +194,7 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:SE7_SourcePlayerId:isrep"
+            Name: "cs:SE7_SourceCharacterId:isrep"
             Bool: true
           }
           Overrides {
@@ -206,7 +206,7 @@
             Bool: true
           }
           Overrides {
-            Name: "cs:SE8_SourcePlayerId:isrep"
+            Name: "cs:SE8_SourceCharacterId:isrep"
             Bool: true
           }
         }
