@@ -1,6 +1,190 @@
 ﻿Name: "Small_Cabin"
 RootId: 6862860880747255112
 Objects {
+  Id: 2685251336855735699
+  Name: "plate"
+  Transform {
+    Location {
+      X: -523.313965
+      Y: -9921.98828
+      Z: -419.563171
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.34002423
+      Y: 1.34002423
+      Z: 1.34002423
+    }
+  }
+  ParentId: 6862860880747255112
+  ChildIds: 5268350088990212704
+  ChildIds: 15332488655143944831
+  ChildIds: 10292286629840554965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10292286629840554965
+  Name: "Cylinder - Chamfered Small Polished"
+  Transform {
+    Location {
+      Y: -0.000364382402
+      Z: 2.62209582
+    }
+    Rotation {
+      Yaw: -179.999954
+      Roll: -179.999939
+    }
+    Scale {
+      X: 0.0800007656
+      Y: 0.0800007805
+      Z: 0.0601295121
+    }
+  }
+  ParentId: 2685251336855735699
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13145468756450194863
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15332488655143944831
+  Name: "Cylinder - Chamfered Small Polished"
+  Transform {
+    Location {
+      Y: -0.000244140625
+      Z: 2.62207031
+    }
+    Rotation {
+      Yaw: -179.999954
+      Roll: -179.999939
+    }
+    Scale {
+      X: 0.334850967
+      Y: 0.334850967
+      Z: 0.0497886129
+    }
+  }
+  ParentId: 2685251336855735699
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13145468756450194863
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2447235726886938258
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5268350088990212704
+  Name: "Cylinder - Chamfered Small Polished"
+  Transform {
+    Location {
+      Y: -0.000244140625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.263068914
+      Y: 0.263068914
+      Z: 0.0100778956
+    }
+  }
+  ParentId: 2685251336855735699
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13145468756450194863
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18195697283062358788
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 8609610699393915511
   Name: "Wooden Barrel"
   Transform {
