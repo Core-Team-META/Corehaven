@@ -225,7 +225,7 @@ Objects {
   Name: "Torch_Holder"
   Transform {
     Location {
-      X: -3201.58643
+      X: -3201.58642
       Y: -724.306519
       Z: 38.0123291
     }
@@ -447,7 +447,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820313
+      X: -2.65820312
       Y: -2.88830566
       Z: 173.224487
     }
@@ -616,7 +616,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320313
+      X: -2.03320312
       Y: -0.890655518
       Z: 143.656
     }
@@ -1139,7 +1139,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820313
+      X: -2.65820312
       Y: -2.88830566
       Z: 173.224487
     }
@@ -1308,7 +1308,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320313
+      X: -2.03320312
       Y: -0.890655518
       Z: 143.656
     }
@@ -1832,7 +1832,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820313
+      X: -2.65820312
       Y: -2.88830566
       Z: 173.224487
     }
@@ -2001,7 +2001,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320313
+      X: -2.03320312
       Y: -0.890655518
       Z: 143.656
     }
@@ -2524,7 +2524,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820313
+      X: -2.65820312
       Y: -2.88830566
       Z: 173.224487
     }
@@ -2693,7 +2693,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320313
+      X: -2.03320312
       Y: -0.890655518
       Z: 143.656
     }

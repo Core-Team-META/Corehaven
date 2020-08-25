@@ -1,6 +1,386 @@
 ﻿Name: "Eric"
 RootId: 11176579868672163906
 Objects {
+  Id: 18028079504727957496
+  Name: "EffectTemplates"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 8943597166306779168
+  ChildIds: 10852331010583194349
+  ChildIds: 8721110803184295763
+  ChildIds: 18028934837190810360
+  ChildIds: 10832146642891811546
+  ChildIds: 13106001390553878826
+  ChildIds: 13872895077476676265
+  ChildIds: 17642044512116378519
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17642044512116378519
+  Name: "Delayed_Effect_Play_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Effect"
+      AssetReference {
+      }
+    }
+    Overrides {
+      Name: "cs:Delay"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15570283530733044079
+    }
+  }
+}
+Objects {
+  Id: 13872895077476676265
+  Name: "Helper_Effect_Telegraph_Volley"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 18304474188253320742
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_Telegraph_Volley"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10719404219839224023
+    }
+  }
+}
+Objects {
+  Id: 13106001390553878826
+  Name: "Helper_Effect_Task_Soldier_Melee"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1066563426975644260
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_Task_Soldier_Melee"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4135686357839385894
+    }
+  }
+}
+Objects {
+  Id: 10832146642891811546
+  Name: "Helper_Effect_Task_Soldier_Block"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3821649801624416439
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_Task_Soldier_Block"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4867422383464068521
+    }
+  }
+}
+Objects {
+  Id: 18028934837190810360
+  Name: "Helper_Effect_Task_Archer_Volley"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 11113201599507042344
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_Task_Archer_Volley"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4765246375454497163
+    }
+  }
+}
+Objects {
+  Id: 8721110803184295763
+  Name: "Helper_Effect_Task_Archer_Shoot"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1895998656251077153
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_Task_Archer_Shoot"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7077121001255402992
+    }
+  }
+}
+Objects {
+  Id: 10852331010583194349
+  Name: "Helper_Effect_StatusEffect_Block"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 3598542935012041075
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Effect_StatusEffect_Block"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8508600544310168058
+    }
+  }
+}
+Objects {
+  Id: 8943597166306779168
+  Name: "Helper_Archer_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18028079504727957496
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10618264255608054961
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_Archer_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5333833631319763796
+    }
+  }
+}
+Objects {
   Id: 4985076143508798930
   Name: "Test"
   Transform {

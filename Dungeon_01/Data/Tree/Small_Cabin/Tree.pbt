@@ -3993,7 +3993,7 @@ Objects {
   Name: "Stone Wall End Corner 2m 001"
   Transform {
     Location {
-      X: 12762.9229
+      X: 12762.9228
       Y: -12261.8125
       Z: 2315.85986
     }
@@ -4742,7 +4742,7 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 12244.1309
+      X: 12244.1308
       Y: -12656.6934
       Z: 2335.32031
     }
@@ -4838,7 +4838,7 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 12213.5313
+      X: 12213.5312
       Y: -12686.5947
       Z: 2335.32031
     }
@@ -4886,7 +4886,7 @@ Objects {
   Name: "Pot"
   Transform {
     Location {
-      X: 12272.1895
+      X: 12272.1894
       Y: -12712.0049
       Z: 2388.99463
     }
@@ -5332,7 +5332,7 @@ Objects {
   Transform {
     Location {
       X: 12244.6035
-      Y: -12718.3477
+      Y: -12718.3476
       Z: 2335.32031
     }
     Rotation {
@@ -6114,7 +6114,7 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 98.8007813
+      X: 98.8007812
       Y: 100.580566
     }
     Rotation {
@@ -6265,7 +6265,7 @@ Objects {
       Y: -3.62062693
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: 44.3383636
       Roll: 89.9999542
     }
@@ -6593,7 +6593,7 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 98.8007813
+      X: 98.8007812
       Y: 100.580566
     }
     Rotation {
@@ -7620,7 +7620,7 @@ Objects {
   Name: "Cube - Polished"
   Transform {
     Location {
-      X: 12675.5645
+      X: 12675.5644
       Y: -12444.0527
       Z: 2518.49707
     }
@@ -7669,7 +7669,7 @@ Objects {
   Transform {
     Location {
       X: 12781.8242
-      Y: -12433.1143
+      Y: -12433.1142
       Z: 2490.26953
     }
     Rotation {
@@ -7946,7 +7946,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 12611.0313
+      X: 12611.0312
       Y: -12120.5635
       Z: 2297.60107
     }

@@ -934,7 +934,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: 171.877991
     }
     Scale {
@@ -2354,7 +2354,7 @@ Objects {
   Name: "Pier_Plank"
   Transform {
     Location {
-      X: -742.841309
+      X: -742.841308
       Y: -739.980469
       Z: -11.5664492
     }
@@ -3861,7 +3861,7 @@ Objects {
   Transform {
     Location {
       X: -63.9296875
-      Y: 322.226563
+      Y: 322.226562
     }
     Rotation {
       Yaw: 104.208611
@@ -3952,7 +3952,7 @@ Objects {
     Location {
       X: 13.9370117
       Y: -354.266602
-      Z: 6.10351563e-05
+      Z: 6.10351562e-05
     }
     Rotation {
       Yaw: 104.208481
