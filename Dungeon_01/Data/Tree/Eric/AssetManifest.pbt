@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14324126384198850775
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
-  }
-}
-Assets {
   Id: 14206563083884513420
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
@@ -41,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_019"
+  }
+}
+Assets {
+  Id: 10512562362778365331
+  Name: "Shield"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_icon_Shield"
   }
 }
 Assets {

@@ -6,19 +6,20 @@ API.STATE_CHASING = "chasing"
 API.STATE_STARING = "staring"		-- This is chasing without moving
 API.STATE_RESETTING = "resetting"
 API.STATE_DEAD = "dead"
-API.STUNNED = "stunned"
+API.STATE_STUNNED = "stunned"
 
 local tasks = {}		-- string -> table
 local npcs = {}			-- CoreObject -> table
 local systemFunctions = nil
 
--- nil RegisterTaskClient(string, <function>, <function>) [Client]
+-- nil RegisterTaskClient(string, <string>, <function>, <function>) [Client]
 -- Registers a named task for npcs, with optional task start and task end handlers.
 -- They have the following signatures:
--- onTaskStart(AnimatedMesh)
--- onTaskEnd(AnimatedMesh)
-function API.RegisterTaskClient(taskName, onTaskStart, onTaskEnd)
+-- onTaskStart(npc, AnimatedMesh)
+-- onTaskEnd(npc, AnimatedMesh)
+function API.RegisterTaskClient(taskName, effectTemplate, onTaskStart, onTaskEnd)
 	local data = {}
+	data.effectTemplate = effectTemplate
 	data.onTaskStart = onTaskStart
 	data.onTaskEnd = onTaskEnd
 	tasks[taskName] = data
@@ -41,10 +42,10 @@ end
 -- Registers a named task for npcs, with range, cooldown, priority function, and optional task start and task end handlers.
 -- They have the following signatures:
 -- float getPriority(taskHistory)
--- <float> onTaskStart(npc, target, threadTable)
+-- <float> onTaskStart(npc, threatTable)
 -- 	   This should return the duration of this task, and spawn a task if delayed action is needed instead of calling
 --     Task.Wait(), which may cause strange or broken behavior.
--- nil onTaskEnd()
+-- nil onTaskEnd(npc)
 function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskStart, onTaskEnd)
 	if taskName[1] == "!" then
 		error(string.format("Task %s cannot be registered. Task names cannot start with '!'", taskName))
@@ -119,6 +120,26 @@ function API.GetHitPoints(npc)
 	return npc:GetCustomProperty("HitPoints")
 end
 
+function API.SetTarget(npc, target)
+	if target then
+		npc:SetNetworkedCustomProperty("TargetID", target.id)
+	else
+		npc:SetNetworkedCustomProperty("TargetID", "")
+	end
+end
+
+function API.GetTarget(npc)
+	local id = npc:GetCustomProperty("TargetID")
+
+	if id ~= "" then
+		for _, player in pairs(Game.GetPlayers()) do
+			if player.id == id then
+				return player
+			end
+		end
+	end
+end
+
 function API.IsDead(npc)
 	return API.GetHitPoints(npc) == 0.0
 end
@@ -141,6 +162,22 @@ function API.GetNPCsInSphere(center, radius)
 	end
 
 	return result
+end
+
+function API.LookAtTargetWithoutPitch(npc, target)
+	local direction = target - npc:GetWorldPosition()
+	direction.z = 0.0
+	npc:SetWorldRotation(Rotation.New(direction, Vector3.UP))
+end
+
+function API.GetRandomCharacterInThreatTable(threatTable)
+	local temp = {}
+
+	for character, _ in pairs(threatTable) do
+		table.insert(temp, character)
+	end
+
+	return temp[math.random(#temp)]
 end
 
 return API

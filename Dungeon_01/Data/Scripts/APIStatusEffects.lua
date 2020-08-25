@@ -307,7 +307,7 @@ end
 -- Server only
 function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 	if IsCharacterDead(targetCharacter) then
-		warn(string.format("Trying to apply status effect id: %d to player %s who is dead", id, targetCharacter.name))
+		warn(string.format("Trying to apply status effect id: %d to character %s who is dead", id, targetCharacter.name))
 		return
 	end
 
@@ -338,12 +338,12 @@ function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 			end
 
 			UpdateCharacterEffectState(targetCharacter)
-			return
+			return i
 		end
 	end
 
 	-- Knock one off?
-	warn(string.format("Failed to apply status effect id: %d to player %s because they already had max", id, targetCharacter.name))
+	warn(string.format("Failed to apply status effect id: %d to character %s because they already had max", id, targetCharacter.name))
 end
 
 -- Server only
@@ -372,7 +372,7 @@ function API.RemoveStatusEffect(character, index)
 
 		UpdateCharacterEffectState(character, statusEffectData.type)
 	else
-		error(string.format("Failed to remove status effect index: %d on player %s (they don't have it)", index, character.name))
+		-- error(string.format("Failed to remove status effect index: %d on character %s (they don't have it)", index, character.name))
 	end
 end
 

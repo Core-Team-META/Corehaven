@@ -8,14 +8,13 @@ local DESPAWN_TIME = 120.0
 local TASK_HISTORY_LENGTH = 8
 
 --[[
--- Hitpoints are stored as a networked property on the npc
+-- Hitpoints and target are stored as a networked property on the npc
 -- The first task in taskHistory is also stored in the same way
 CoreObject -> table:
 	table taskHistory			-- int -> string
 	table taskCooldownEndTimes	-- string -> float
 	float currentTaskEndTime	-- 0.0 means endless
 	float nextMoveUpdateTime	-- To avoid constant calls to MoveTo, or changing between stare and move a lot
-	Player target
 	Vector3 nextWaypoint		-- Current MoveTo() target
 	table threatTable			-- Object -> float
 	bool shouldBeStunned 		-- Should we be in the stunned task?
@@ -48,7 +47,7 @@ function SetCurrentTask(npc, task)
 		local taskData = tasks[previousTask]
 
 		if taskData and taskData.onTaskEnd then
-			taskData.onTaskEnd()
+			taskData.onTaskEnd(npc)
 		end
 	end
 
@@ -68,16 +67,14 @@ function ResetNPC(npc)
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
 	API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
+	API_NPC.SetTarget(npc, nil)
 	npcState.taskHistory = {}
 	npcState.taskCooldownEndTimes = {}
 	npcState.currentTaskEndTime = 0.0
 	npcState.nextMoveUpdateTime = 0.0
-	npcState.target = nil
 	npcState.threatTable = {}
 	npcState.shouldBeStunned = false
 	npcState.shouldMoveUpdate = false
-
-	SetCurrentTask(npc, API_NPC.STATE_RESETTING)
 end
 
 function UpdateCurrentTask(npc)
@@ -85,7 +82,7 @@ function UpdateCurrentTask(npc)
 	local npcState = npcStates[npc]
 	local tasks = API_NPC.GetAllTaskData()
 	-- Player position is in their middle. NPC position is at their root, so we adjust
-	local distanceToTarget = (npcState.target:GetWorldPosition() - Vector3.UP * 100.0 - npc:GetWorldPosition()).size
+	local distanceToTarget = (API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0 - npc:GetWorldPosition()).size
 
 	local totalPriorty = 0.0
 	local possibleTasks = {}		-- String -> float
@@ -122,7 +119,7 @@ function UpdateCurrentTask(npc)
 				local duration = nil
 
 				if taskData.onTaskStart then
-					duration = taskData.onTaskStart(npc, npcState.target, npcState.threatTable)
+					duration = taskData.onTaskStart(npc, npcState.threatTable)
 				end
 
 				if duration and duration > 0.0 then
@@ -130,17 +127,13 @@ function UpdateCurrentTask(npc)
 				else
 					npcState.currentTaskEndTime = 0.0
 				end
+
+				return
 			else
 				r = r - priority
 			end
 		end
 	end
-end
-
-function LookAtTargetWithoutPitch(npc, target)
-	local direction = target - npc:GetWorldPosition()
-	direction.z = 0.0
-	npc:SetWorldRotation(Rotation.New(direction, Vector3.UP))
 end
 
 function MoveAlongPath(npc, deltaTime, path)
@@ -164,7 +157,7 @@ function MoveAlongPath(npc, deltaTime, path)
 		npcState.nextWaypoint = targetWaypoint
 		local moveDuration = (targetWaypoint - npcPosition).size / speed
 		npc:MoveTo(targetWaypoint, moveDuration)
-		LookAtTargetWithoutPitch(npc, targetWaypoint)
+		API_NPC.LookAtTargetWithoutPitch(npc, targetWaypoint)
 
 		-- We only update every 0.5 seconds, but don't want pauses at waypoints
 		npcState.nextMoveUpdateTime = time() + math.min(0.5, moveDuration)
@@ -179,8 +172,8 @@ function AddPlayerToThreatTable(npc, player)
 	local npcState = npcStates[npc]
 	assert(not npcState.threatTable[player])
 
-	if not npcState.target then
-		npcState.target = player
+	if not API_NPC.GetTarget(npc) then
+		API_NPC.SetTarget(npc, player)
 	end
 
 	npcState.threatTable[player] = 0.0
@@ -234,8 +227,8 @@ function Tick(deltaTime)
 			-- Are we dead?
 			if API_NPC.IsDead(npc) then
 				SetCurrentTask(npc, API_NPC.STATE_DEAD)
+				API_NPC.SetTarget(npc, nil)
 				npcState.currentTaskEndTime = time() + DESPAWN_TIME
-				npcState.target = nil
 				npcState.threatTable = {}
 				npcState.shouldBeStunned = false
 				npcState.shouldMoveUpdate = false
@@ -247,7 +240,7 @@ function Tick(deltaTime)
 				if currentTask == API_NPC.STATE_RESETTING then
 					-- We're home
 					if GetXYDistance(npcPosition, npcData.spawnPosition) < 10.0 then
-						API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
+						ResetNPC(npc)
 						SetCurrentTask(npc, API_NPC.STATE_IDLE)
 						npc:SetWorldRotation(npcData.spawnRotation)
 						npcState.currentTaskEndTime = 0.0
@@ -284,8 +277,8 @@ function Tick(deltaTime)
 
 					for player, _ in pairs(npcState.threatTable) do
 						if not Object.IsValid(player) or player.isDead then
-							if player == npcState.target then
-								npcState.target = nil
+							if player == API_NPC.GetTarget(npc) then
+								API_NPC.SetTarget(npc, nil)
 								removedTarget = true
 							end
 
@@ -295,19 +288,20 @@ function Tick(deltaTime)
 
 					if removedTarget then
 						for player, threat in pairs(npcState.threatTable) do
-							if not npcState.target or npcState.threatTable[npcState.target] < threat then
-								npcState.target = player
+							if not API_NPC.GetTarget(npc) or npcState.threatTable[API_NPC.GetTarget(npc)] < threat then
+								API_NPC.SetTarget(npc, player)
 							end
 						end
 
 						-- Threat table is empty
-						if not npcState.target then
+						if not API_NPC.GetTarget(npc) then
 							assert(IsTableEmpty(npcState.threatTable))
 							ResetNPC(npc)
+							SetCurrentTask(npc, API_NPC.STATE_RESETTING)
 						end
 					end
 
-					if npcState.target then
+					if API_NPC.GetTarget(npc) then
 						-- Should we be stunned?
 						if npcState.shouldBeStunned and currentTask ~= API_NPC.STATE_STUNNED then
 							SetCurrentTask(npc, API_NPC.STATE_STUNNED)
@@ -328,7 +322,7 @@ function Tick(deltaTime)
 				if currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_STARING then
 					if time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate then
 						-- Movement
-						local targetPosition = npcState.target:GetWorldPosition() - Vector3.UP * 100.0
+						local targetPosition = API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0
 						local path =  API_P.GetPath(npcPosition, targetPosition)
 
 						if path and (path[#path] - npcPosition).size > 100.0 then
@@ -343,7 +337,7 @@ function Tick(deltaTime)
 								npcState.nextMoveUpdateTime = time() + 0.5		-- Don't want rapid toggling
 
 								if GetXYDistance(targetPosition, npcPosition) > 10.0 then
-									LookAtTargetWithoutPitch(npc, targetPosition)
+									API_NPC.LookAtTargetWithoutPitch(npc, targetPosition)
 								end
 							end
 						end

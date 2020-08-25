@@ -1,6 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
-function OnTaskStart(animatedMesh)
+function OnTaskStart(npc, animatedMesh)
 	animatedMesh:PlayAnimation("1hand_melee_thrust")
 end
 

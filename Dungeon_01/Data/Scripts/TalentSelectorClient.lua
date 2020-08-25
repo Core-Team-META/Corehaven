@@ -1,5 +1,4 @@
 ﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
-local API_BGS = require(script:GetCustomProperty("APIBasicGameState"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -39,14 +38,6 @@ function HideTalentTrees()
 	talentTreesVisible = false
 end
 
-function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
-	if oldState == API_BGS.GAME_STATE_LOBBY and newState ~= API_BGS.GAME_STATE_LOBBY then
-		HideTalentTrees()
-	elseif oldState ~= API_BGS.GAME_STATE_LOBBY and newState == API_BGS.GAME_STATE_LOBBY then
-		ShowTalentTrees()
-	end
-end
-
 function OnButtonClicked(button, talentData)
 	if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
@@ -72,6 +63,16 @@ end
 function OnButtonUnhovered(button, talentData)
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
+end
+
+function OnBindingPressed(player, binding)
+	if binding == "ability_extra_44" then
+		if talentTreesVisible then
+			HideTalentTrees()
+		else
+			ShowTalentTrees()
+		end
+	end
 end
 
 function BuildTalentTreeUI()
@@ -239,14 +240,5 @@ end
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
 BuildTalentTreeUI()
 
-while not API_BGS.IsGameStateManagerRegistered() do
-	Task.Wait()
-end
-
-if API_BGS.GetGameState() == API_BGS.GAME_STATE_LOBBY then
-	ShowTalentTrees()
-else
-	HideTalentTrees()
-end
-
-Events.Connect("GameStateChanged", OnGameStateChanged)
+LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+HideTalentTrees()
