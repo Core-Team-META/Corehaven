@@ -168,11 +168,9 @@ Objects {
   ChildIds: 5292518791521354384
   ChildIds: 242436696890067462
   ChildIds: 14826002156026240736
-  ChildIds: 4724048688720186477
   ChildIds: 11543732925925568235
   ChildIds: 15068749745165639470
   ChildIds: 2817695464169313968
-  ChildIds: 17127111964243962199
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -181,46 +179,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 17127111964243962199
-  Name: "Fantasy Castle Trim - Parapet 01"
-  Transform {
-    Location {
-      X: -2407.23242
-      Y: 2792.55811
-      Z: 1058.91431
-    }
-    Rotation {
-      Yaw: 97.4142151
-    }
-    Scale {
-      X: 0.39634043
-      Y: 2.00527716
-      Z: 1
-    }
-  }
-  ParentId: 691385885930139767
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15686909077460378362
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
@@ -268,12 +226,12 @@ Objects {
   Name: "Fantasy Castle Trim - Parapet 01"
   Transform {
     Location {
-      X: -1600.34558
-      Y: 3009.24487
+      X: -1618.4021
+      Y: 3173.15698
       Z: 835.313782
     }
     Rotation {
-      Yaw: -170.710541
+      Yaw: -176.016922
     }
     Scale {
       X: 1.10665393
@@ -344,77 +302,16 @@ Objects {
   }
 }
 Objects {
-  Id: 4724048688720186477
-  Name: "Fantasy Castle Bannister 01 - Post"
-  Transform {
-    Location {
-      X: -2489.84644
-      Y: 2918.91284
-      Z: 542.998657
-    }
-    Rotation {
-      Yaw: 5.84433222
-    }
-    Scale {
-      X: 1.14151406
-      Y: 3.45391083
-      Z: 9.99535561
-    }
-  }
-  ParentId: 691385885930139767
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 9345249492029097138
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 14826002156026240736
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -2470.93213
-      Y: 2796.93311
+      X: -2504.76025
+      Y: 3041.33154
       Z: 50.3782349
     }
     Rotation {
-      Yaw: 8.57954788
+      Yaw: 7.55165672
     }
     Scale {
       X: 3.08783937
@@ -449,16 +346,16 @@ Objects {
   Name: "Fantasy Castle Trim - Parapet 01"
   Transform {
     Location {
-      X: -1611.67493
-      Y: 2901.02295
+      X: -1648.76526
+      Y: 3055.57251
       Z: 670.646484
     }
     Rotation {
       Yaw: -70.9418
     }
     Scale {
-      X: 1.13519955
-      Y: 2.0052762
+      X: 1.25344265
+      Y: 2.00527692
       Z: 1
     }
   }
@@ -811,12 +708,12 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -2000.78076
-      Y: 2873.40601
+      X: -2029.69104
+      Y: 3074.93408
       Z: 335.34967
     }
     Rotation {
-      Yaw: 99.4739075
+      Yaw: 94.1673813
     }
     Scale {
       X: 1.14152324
@@ -912,16 +809,16 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -1410.81494
-      Y: 2519.84424
+      X: -1427.64587
+      Y: 2612.55103
       Z: 157.932251
     }
     Rotation {
-      Yaw: 19.4623318
+      Yaw: 19.4624691
     }
     Scale {
-      X: 1.14150691
-      Y: 9.20932484
+      X: 1.14150906
+      Y: 9.51078415
       Z: 9.99535561
     }
   }
@@ -1377,12 +1274,12 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -1558.32043
-      Y: 2949.94604
+      X: -1582.6543
+      Y: 3115.76343
       Z: 50.3782349
     }
     Rotation {
-      Yaw: 11.5636101
+      Yaw: 6.25723553
     }
     Scale {
       X: 3.08784056
@@ -1417,12 +1314,12 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -1266.37048
-      Y: 2108.82495
+      X: -1114.72302
+      Y: 1878.17932
       Z: 55.9779053
     }
     Rotation {
-      Yaw: 24.1999912
+      Yaw: 34.3830299
     }
     Scale {
       X: 3.08784056
@@ -19448,7 +19345,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 288.209473
+      X: 926.2771
       Y: -2906.44482
       Z: -0.000122070313
     }
@@ -19488,7 +19385,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 288.209473
+      X: 926.2771
       Y: -1873.83643
       Z: -0.000122070313
     }
@@ -19608,7 +19505,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 288.209473
+      X: 926.2771
       Y: -1093.4541
       Z: -0.000122070313
     }
@@ -38301,12 +38198,12 @@ Objects {
   Name: "Mausoleum"
   Transform {
     Location {
-      X: -3482.57153
-      Y: 1029.02344
+      X: -3463.50952
+      Y: 1141.31543
       Z: 348.27771
     }
     Rotation {
-      Yaw: 83.5121689
+      Yaw: 81.9501114
     }
     Scale {
       X: 1

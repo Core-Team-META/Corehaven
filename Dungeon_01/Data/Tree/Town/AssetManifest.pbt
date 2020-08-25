@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17112282066558978098
-  Name: "Rock Block 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_007"
-  }
-}
-Assets {
   Id: 16983260950034190065
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
@@ -140,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxma_frosted_glass"
+  }
+}
+Assets {
+  Id: 16507931824687121508
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
   }
 }
 Assets {
@@ -212,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pyramid_4_sided_truncated_hollow_thick_001"
-  }
-}
-Assets {
-  Id: 15057977201205375036
-  Name: "Simple Crate 150cm"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crate_simple_150cm_001"
   }
 }
 Assets {
@@ -332,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14125454669066356878
+  Name: "Craftsman Roof 02 Corner Out"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_002_cornerOut"
+  }
+}
+Assets {
   Id: 14082963738224240508
   Name: "Bricks Layered Stone Floor 01"
   PlatformAssetType: 2
@@ -413,12 +413,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12817510901257393900
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
+  Id: 12918556334648073243
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
   }
 }
 Assets {
@@ -563,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_porch_001_rail"
+  }
+}
+Assets {
+  Id: 11107698037655416298
+  Name: "Decal Stone Cracks Variants 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stone_cracks_001"
   }
 }
 Assets {
@@ -818,15 +827,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8347075515822503657
-  Name: "Fantasy Castle Pillar 01 Cap"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_001_cap"
-  }
-}
-Assets {
   Id: 8318010931141529991
   Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
@@ -878,15 +878,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_002_win_02"
-  }
-}
-Assets {
-  Id: 7979345565557230916
-  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
@@ -989,6 +980,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6802063818315885043
+  Name: "Decal Stains Round 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_round_001"
+  }
+}
+Assets {
   Id: 6748009613930740616
   Name: "Stone Block Long"
   PlatformAssetType: 1
@@ -1013,6 +1013,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_bush_001"
+  }
+}
+Assets {
+  Id: 6507305604196926970
+  Name: "Decal Soil Cracks Big 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_001"
   }
 }
 Assets {
@@ -1070,12 +1079,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5825970533655284856
-  Name: "Bricks Concrete Cinder Block 01"
-  PlatformAssetType: 2
+  Id: 5837539739888575917
+  Name: "Decal Stains Bottom 01"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_concrete_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_bottom_001"
   }
 }
 Assets {
@@ -1229,15 +1238,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
-  }
-}
-Assets {
-  Id: 3680192657369177324
-  Name: "Grass Clumps"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_grass_002_uv"
   }
 }
 Assets {
@@ -1466,12 +1466,12 @@ Assets {
   }
 }
 Assets {
-  Id: 316859462149096151
-  Name: "Lens - Half"
-  PlatformAssetType: 1
+  Id: 720721651154426493
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
   PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_lense_001"
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
   }
 }
 Assets {
