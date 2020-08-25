@@ -10,6 +10,7 @@ API.STUNNED = "stunned"
 
 local tasks = {}		-- string -> table
 local npcs = {}			-- CoreObject -> table
+local systemFunctions = nil
 
 -- nil RegisterTaskClient(string, <function>, <function>) [Client]
 -- Registers a named task for npcs, with optional task start and task end handlers.
@@ -82,6 +83,10 @@ function API.UnregisterNPC(root)
 	Events.Broadcast("NPC_Destroyed", root)
 end
 
+function API.RegisterSystem(functionTable)
+	systemFunctions = functionTable
+end
+
 -- table GetAllTaskData() [Client, Server]
 -- Returns a list of all task data.
 function API.GetAllTaskData()
@@ -98,13 +103,15 @@ function API.SetHitPoints(npc, hitPoints)
 	npc:SetNetworkedCustomProperty("HitPoints", hitPoints)
 end
 
-function API.ApplyDamage(npc, amount)
+function API.ApplyDamage(sourceCharacter, npc, amount)
 	local currentHealth = API.GetHitPoints(npc)
+	systemFunctions.OnDamaged(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.max(0.0, currentHealth - amount))
 end
 
-function API.ApplyHealing(npc, amount)
+function API.ApplyHealing(sourceCharacter, npc, amount)
 	local currentHealth = API.GetHitPoints(npc)
+	systemFunctions.OnHealed(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.min(npcs[npc].maxHitPoints, currentHealth + amount))
 end
 
@@ -117,10 +124,23 @@ function API.IsDead(npc)
 end
 
 function API.SetStunned(npc, isStunned)
-	-- We intentionally don't register/call a function in NPCSystemServer because we haven't used that pattern anywhere
-	-- else here, and also we want to be able to call this multiple times in a row (false then true, for example)
-	-- without causing any task transitions. Therefore we poll this value in the tick function in NPCSystemServer
-	npc.serverUserData.isStunned = isStunned
+	systemFunctions.SetStunnedFlag(npc, isStunned)
+end
+
+function API.SuggestMoveUpdate(npc)
+	systemFunctions.SuggestMoveUpdate(npc)
+end
+
+function API.GetNPCsInSphere(center, radius)
+	local result = {}
+
+	for npc, _ in pairs(npcs) do
+		if (npc:GetWorldPosition() - center).size <= radius and not API.IsDead(npc) then
+			table.insert(result, npc)
+		end
+	end
+
+	return result
 end
 
 return API

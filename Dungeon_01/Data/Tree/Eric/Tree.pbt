@@ -1351,12 +1351,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APICursor"
-      AssetReference {
-        Id: 1992607125784163935
-      }
-    }
-    Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
         SelfId: 2330302539704572805
@@ -2632,6 +2626,8 @@ Objects {
   ChildIds: 1808730156934921913
   ChildIds: 12845115894241617291
   ChildIds: 10675051278125738765
+  ChildIds: 9542881323403532659
+  ChildIds: 10924122489659828699
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2643,21 +2639,141 @@ Objects {
   }
 }
 Objects {
+  Id: 10924122489659828699
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -7466.90381
+      Y: -6243.12305
+      Z: -897.827515
+    }
+    Rotation {
+      Pitch: -8.71261597
+      Yaw: -74.6469116
+      Roll: 0.864494681
+    }
+    Scale {
+      X: 6.13235092
+      Y: 19.6652374
+      Z: 0.00100109796
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9542881323403532659
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -7928.93506
+      Y: -6883.15186
+      Z: -929.300537
+    }
+    Rotation {
+      Pitch: -1.59057617
+      Yaw: -73.7619629
+      Roll: 0.854859591
+    }
+    Scale {
+      X: 6.13235664
+      Y: 31.2068157
+      Z: 0.000999682234
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 10675051278125738765
   Name: "Plane"
   Transform {
     Location {
-      X: -7959.59912
-      Y: -7843.40527
-      Z: -935.656738
+      X: -8851.95117
+      Y: -8149.58887
+      Z: -978.899048
     }
     Rotation {
-      Roll: 24.8264332
+      Pitch: -1.7515564
+      Yaw: 7.59080029
+      Roll: -10.5924683
     }
     Scale {
-      X: 3.1259315
-      Y: 0.719772637
-      Z: 0.00100021868
+      X: 5.91126299
+      Y: 2.05136824
+      Z: 0.000999265
     }
   }
   ParentId: 1993578725776207079
@@ -2704,15 +2820,16 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7959.59912
-      Y: -8776.01074
-      Z: -926.13678
+      X: -8788.62695
+      Y: -8998.69336
+      Z: -991.62738
     }
     Rotation {
+      Yaw: 2.65540242
     }
     Scale {
-      X: 3.1259315
-      Y: 18.385622
+      X: 5.73635244
+      Y: 17.7247753
       Z: 0.00100021868
     }
   }
@@ -2760,16 +2877,18 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -5140.66699
-      Y: -3414.65234
-      Z: 1
+      X: -8296.21191
+      Y: -6339.44922
+      Z: -854.881958
     }
     Rotation {
-      Yaw: 35.4649353
+      Pitch: 1.36603776e-05
+      Yaw: 39.7427292
+      Roll: -16.0463562
     }
     Scale {
-      X: 10.078764
-      Y: 14
+      X: 6.23549461
+      Y: 6.96031
       Z: 0.001
     }
   }
@@ -2817,19 +2936,19 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7624.3252
-      Y: -7082.88232
-      Z: -941.262939
+      X: -7935.92627
+      Y: -7496.93
+      Z: -955.462646
     }
     Rotation {
-      Pitch: 0.0101633212
-      Yaw: -70.1085205
-      Roll: 9.25477224e-08
+      Pitch: -4.01385498
+      Yaw: -73.7986145
+      Roll: 0.856638253
     }
     Scale {
-      X: 12.9592323
-      Y: 31.2067928
-      Z: 0.00100021868
+      X: 6.13236094
+      Y: 27.2992229
+      Z: 0.00100025593
     }
   }
   ParentId: 1993578725776207079
@@ -3113,6 +3232,12 @@ Objects {
       Name: "cs:APIPathing"
       AssetReference {
         Id: 3551787708004768936
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
       }
     }
     Overrides {
@@ -3997,32 +4122,28 @@ Objects {
       Int: 8
     }
     Overrides {
-      Name: "cs:ConfigurationBinding"
-      String: "ability_extra_12"
-    }
-    Overrides {
       Name: "cs:Binding1"
-      String: "ability_primary"
-    }
-    Overrides {
-      Name: "cs:Binding2"
-      String: "ability_secondary"
-    }
-    Overrides {
-      Name: "cs:Binding3"
       String: "ability_extra_1"
     }
     Overrides {
-      Name: "cs:Binding4"
+      Name: "cs:Binding2"
       String: "ability_extra_2"
     }
     Overrides {
-      Name: "cs:Binding5"
+      Name: "cs:Binding3"
       String: "ability_extra_3"
     }
     Overrides {
-      Name: "cs:Binding6"
+      Name: "cs:Binding4"
       String: "ability_extra_4"
+    }
+    Overrides {
+      Name: "cs:Binding5"
+      String: "ability_extra_5"
+    }
+    Overrides {
+      Name: "cs:Binding6"
+      String: "ability_extra_6"
     }
     Overrides {
       Name: "cs:Binding7"
@@ -4031,10 +4152,6 @@ Objects {
     Overrides {
       Name: "cs:Binding8"
       String: "ability_extra_22"
-    }
-    Overrides {
-      Name: "cs:ConfigurationBinding:tooltip"
-      String: "Binding that a player presses to show the mouse cursor and allow rearranging their action bar."
     }
   }
   Collidable_v2 {
@@ -4293,12 +4410,6 @@ Objects {
   ParentId: 4722145824645845487
   UnregisteredParameters {
     Overrides {
-      Name: "cs:APICursor"
-      AssetReference {
-        Id: 1992607125784163935
-      }
-    }
-    Overrides {
       Name: "cs:APIObjectIcon"
       AssetReference {
         Id: 13039838708654056087
@@ -4405,7 +4516,7 @@ Objects {
 }
 Objects {
   Id: 14713340454944924967
-  Name: "Third Person Camera Settings"
+  Name: "RPG Camera Settings"
   Transform {
     Location {
     }
@@ -4419,6 +4530,7 @@ Objects {
   }
   ParentId: 14414506327562387432
   ChildIds: 4226120016796708080
+  ChildIds: 2703761307630055897
   ChildIds: 724324913679364851
   UnregisteredParameters {
   }
@@ -4448,6 +4560,7 @@ Objects {
   }
   ParentId: 14713340454944924967
   ChildIds: 3567959178173361743
+  ChildIds: 9723005480796574583
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4457,6 +4570,33 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 9723005480796574583
+  Name: "RPGCameraSettingsClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 724324913679364851
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4192145253573971254
+    }
   }
 }
 Objects {
@@ -4506,8 +4646,37 @@ Objects {
   }
 }
 Objects {
+  Id: 2703761307630055897
+  Name: "RPGCameraSettingsServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14713340454944924967
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17656934870039885927
+    }
+  }
+}
+Objects {
   Id: 4226120016796708080
-  Name: "Third Person Player Settings"
+  Name: "Default Player Settings"
   Transform {
     Location {
     }
@@ -4547,7 +4716,7 @@ Objects {
         Value: "mc:emovementcontrolmode:lookrelative"
       }
       LookControlMode {
-        Value: "mc:elookcontrolmode:relative"
+        Value: "mc:elookcontrolmode:none"
       }
       FacingMode {
         Value: "mc:efacingmode:faceaimwhenactive"

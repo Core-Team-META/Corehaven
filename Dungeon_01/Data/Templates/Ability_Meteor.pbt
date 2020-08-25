@@ -17,6 +17,8 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 15786161220656074984
+        UnregisteredParameters {
+        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -135,6 +137,12 @@
             Name: "cs:APIKnockback"
             AssetReference {
               Id: 13949068266456080686
+            }
+          }
+          Overrides {
+            Name: "cs:API_NPC"
+            AssetReference {
+              Id: 1793953622129874134
             }
           }
           Overrides {

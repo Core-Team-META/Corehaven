@@ -323,7 +323,7 @@ function Tick(deltaTime)
 			    end
 		    end
 
-		    --[[ Update status effects
+		    -- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
 			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 220.0
@@ -331,7 +331,7 @@ function Tick(deltaTime)
 			local targetDistance = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD .. (nameplatePosition - LOCAL_PLAYER:GetViewWorldPosition())
 
 			if targetDistance > 0.0 and screenPosition then
-				local statusEffects = API_SE.GetStatusEffectsOnPlayer(player)
+				local statusEffects = API_SE.GetStatusEffectsOnCharacter(character)
 				
 				nameplate.panel.visibility = Visibility.INHERIT
 				nameplate.panel.x = screenPosition.x
@@ -377,7 +377,7 @@ function Tick(deltaTime)
 				end
 			else
 				nameplate.panel.visibility = Visibility.FORCE_OFF
-			end]]
+			end
 
 			if SHOW_HEALTHBARS then
 				local hitPoints = nil

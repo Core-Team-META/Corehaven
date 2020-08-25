@@ -1,5 +1,4 @@
-﻿local API_C = require(script:GetCustomProperty("APICursor"))
-local API_OI = require(script:GetCustomProperty("APIObjectIcon"))
+﻿local API_OI = require(script:GetCustomProperty("APIObjectIcon"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
@@ -8,7 +7,6 @@ local SOCKET_TEMPLATE = script:GetCustomProperty("SocketTemplate")
 local BUTTON_TEMPLATE = script:GetCustomProperty("ButtonTemplate")
 
 local NUMBER_OF_SLOTS = ROOT:GetCustomProperty("NumberOfSlots")
-local CONFIGURATION_BINDING = ROOT:GetCustomProperty("ConfigurationBinding")
 local SLOT_BINDINGS = {}
 
 for i = 1, NUMBER_OF_SLOTS do
@@ -183,30 +181,28 @@ function ReleaseDraggingButton()
 end
 
 function OnBindingPressed(player, binding)
-	if UI.IsCursorVisible() then
-		if binding == "ability_primary" then
-			local index = GetSocketIndexAtCursorPosition()
+	-- Moving icons
+	if UI.IsCursorVisible() and binding == "ability_primary" then
+		local index = GetSocketIndexAtCursorPosition()
 
-			if index ~= 0 and buttonData[index].ability then
-				draggingIndex = index
-				local button = buttonData[draggingIndex].button
-				button.parent = CONTAINER
-			end
+		if index ~= 0 and buttonData[index].ability then
+			draggingIndex = index
+			local button = buttonData[draggingIndex].button
+			button.parent = CONTAINER
 		end
-	else
-		if binding == CONFIGURATION_BINDING then
-			API_C.SetCursorVisibility(script, true)
-		else
-			for i, slotBinding in pairs(SLOT_BINDINGS) do
-				if slotBinding == binding then
-					local ability = buttonData[i].ability
+	end
 
-					if ability and CanActivateAbility(ability) then
-						ability:Activate()
-					end
+	-- Using abilities
+	if not player.isDead then
+		for i, slotBinding in pairs(SLOT_BINDINGS) do
+			if slotBinding == binding then
+				local ability = buttonData[i].ability
 
-					return
+				if ability and CanActivateAbility(ability) then
+					ability:Activate()
 				end
+
+				return
 			end
 		end
 	end
@@ -214,11 +210,6 @@ end
 
 function OnBindingReleased(player, binding)
 	if binding == "ability_primary" then
-		ReleaseDraggingButton()
-	end
-
-	if binding == CONFIGURATION_BINDING then
-		API_C.SetCursorVisibility(script, false)
 		ReleaseDraggingButton()
 	end
 end

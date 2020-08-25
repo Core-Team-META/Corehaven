@@ -1,6 +1,5 @@
 ﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 local API_BGS = require(script:GetCustomProperty("APIBasicGameState"))
-local API_C = require(script:GetCustomProperty("APICursor"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -29,13 +28,11 @@ local tooltipTalentData = nil
 local talentTreesVisible = false
 
 function ShowTalentTrees()
-	API_C.SetCursorVisibility(script, true)
 	UI_CONTAINER.visibility = Visibility.INHERIT
 	talentTreesVisible = true
 end
 
 function HideTalentTrees()
-	API_C.SetCursorVisibility(script, false)
 	UI_CONTAINER.visibility = Visibility.FORCE_OFF
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil

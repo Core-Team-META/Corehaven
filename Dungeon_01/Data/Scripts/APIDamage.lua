@@ -1,4 +1,5 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local API = {}
 
@@ -44,7 +45,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
             targetCharacter:ApplyDamage(damage)
         else
-            API_NPC.ApplyDamage(adjustedAmount)
+            API_NPC.ApplyDamage(sourceCharacter, targetCharacter, adjustedAmount)
         end
     end
 end
@@ -56,7 +57,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     if targetCharacter:IsA("Player") then
         targetCharacter.hitPoints = math.min(targetCharacter.maxHitPoints, targetCharacter.hitPoints + amount)
     else
-        API_NPC.ApplyHealing(amount)
+        API_NPC.ApplyHealing(sourceCharacter, targetCharacter, amount)
     end
 end
 

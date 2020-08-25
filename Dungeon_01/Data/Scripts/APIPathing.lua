@@ -271,7 +271,7 @@ function API.GetPath(startPosition, endPosition)
 	local startNode = pointToNode(startPosition)
 	local endNode = pointToNode(endPosition)
 	local endRectangle = endNode.connectedRectangles[1]
-	
+
 	local pathNodeMetatable = {
 		__le = function(a, b) return a.lengthPlusHeuristic <= b.lengthPlusHeuristic end,
 		__lt = function(a, b) return a.lengthPlusHeuristic < b.lengthPlusHeuristic end
@@ -310,9 +310,6 @@ function API.GetPath(startPosition, endPosition)
 				end
 			end
 		end
-	end
-	if iterations > 100 then
-		--print("path found in "..((os.clock() - clock)*1000).." ms "..iterations)
 	end
 	
 	if solutionPath then

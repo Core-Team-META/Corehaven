@@ -37,6 +37,7 @@ local tickCounts = {}					-- Object -> index -> int
 local damageDealtMultipliers = {}		-- Object -> float
 local damageTakenMultipliers = {}		-- Object -> float
 local knockbackMultipliers = {}			-- Object -> float
+local characterSpeedMultipliers = {}	-- Object -> float
 
 function GetStringHash(string)
 	local hash = 0
@@ -155,13 +156,16 @@ function UpdateCharacterEffectState(character)
 		character.maxWalkSpeed = DEFAULT_PLAYER_SETTINGS.maxWalkSpeed * minMoveSpeedMultiplier * maxMoveSpeedMultiplier
 		character.groundFriction = DEFAULT_PLAYER_SETTINGS.groundFriction * minFrictionMultiplier * maxFrictionMultiplier
 		character.brakingFrictionFactor = DEFAULT_PLAYER_SETTINGS.brakingFrictionFactor * minFrictionMultiplier * maxFrictionMultiplier
-	else
-		--! NPC move speed
 	end
 
 	damageDealtMultipliers[character] = minDamageDealtMultiplier * maxDamageDealtMultiplier
 	damageTakenMultipliers[character] = minDamageTakenMultiplier * maxDamageTakenMultiplier
 	knockbackMultipliers[character] = minKnockbackMultiplier * maxKnockbackMultiplier
+	characterSpeedMultipliers[character] = minMoveSpeedMultiplier * maxMoveSpeedMultiplier
+
+	if not character:IsA("Player") then
+		API_NPC.SuggestMoveUpdate(character)
+	end
 end
 
 function OnPlayerJoined(player)
@@ -169,6 +173,7 @@ function OnPlayerJoined(player)
 	damageDealtMultipliers[player] = 1.0
 	damageTakenMultipliers[player] = 1.0
 	knockbackMultipliers[player] = 1.0
+	characterSpeedMultipliers[player] = 1.0
 end
 
 function OnPlayerLeft(player)
@@ -176,6 +181,7 @@ function OnPlayerLeft(player)
 	damageDealtMultipliers[player] = nil
 	damageTakenMultipliers[player] = nil
 	knockbackMultipliers[player] = nil
+	characterSpeedMultipliers[player] = nil
 end
 
 function OnNPCCreated(npc, data)
@@ -183,6 +189,7 @@ function OnNPCCreated(npc, data)
 	damageDealtMultipliers[npc] = 1.0
 	damageTakenMultipliers[npc] = 1.0
 	knockbackMultipliers[npc] = 1.0
+	characterSpeedMultipliers[npc] = 1.0
 end
 
 function OnNPCDestroyed(npc)
@@ -190,6 +197,7 @@ function OnNPCDestroyed(npc)
 	damageDealtMultipliers[npc] = nil
 	damageTakenMultipliers[npc] = nil
 	knockbackMultipliers[npc] = nil
+	characterSpeedMultipliers[npc] = nil
 end
 
 -- Client and Server
@@ -289,6 +297,11 @@ end
 -- Server
 function API.GetCharacterKnockbackMultiplier(character)
 	return knockbackMultipliers[character]
+end
+
+-- Server
+function API.GetCharacterMoveSpeedMultiplier(character)
+	return characterSpeedMultipliers[character]
 end
 
 -- Server only
