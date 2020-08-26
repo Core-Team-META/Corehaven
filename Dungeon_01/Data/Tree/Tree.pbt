@@ -30,6 +30,8 @@ Objects {
   ChildIds: 13783099823021618970
   ChildIds: 11916158794613681993
   ChildIds: 7218498012147464502
+  ChildIds: 9108836310894980204
+  ChildIds: 17434990328860566170
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,6 +41,107 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17434990328860566170
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 20823.9648
+      Y: 3314.59082
+      Z: 3155.25
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 20209.5059
+            Y: 2797.9729
+            Z: 3143.84546
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15405931409970163737
+      value {
+        Overrides {
+          Name: "MaxDistanceFadeRange"
+          Float: 500
+        }
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 9108836310894980204
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 20823.9648
+            Y: 3314.59082
+            Z: 3155.25
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15405931409970163737
+      value {
+        Overrides {
+          Name: "MaxDistanceFadeRange"
+          Float: 500
+        }
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
   }
 }
 Objects {
