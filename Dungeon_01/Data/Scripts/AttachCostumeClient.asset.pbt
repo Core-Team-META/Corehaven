@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9132106788277241166
-  Name: "ExampleNPCClient"
+  Id: 9186426042295094807
+  Name: "AttachCostumeClient"
   PlatformAssetType: 3
   TextAsset {
   }

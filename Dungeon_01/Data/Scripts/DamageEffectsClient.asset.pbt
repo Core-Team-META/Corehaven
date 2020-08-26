@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 1713951178962607114
-  Name: "Enemy_Soldier_Shared"
+  Id: 3530404045527005474
+  Name: "DamageEffectsClient"
   PlatformAssetType: 3
   TextAsset {
   }

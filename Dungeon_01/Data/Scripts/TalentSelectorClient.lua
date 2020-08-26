@@ -9,6 +9,7 @@ local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionTex
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
 local TOOLTIP_STATE_TEXT = script:GetCustomProperty("TooltipStateText"):WaitForObject()
+local TOGGLE_BUTTON = script:GetCustomProperty("ToggleButton"):WaitForObject()
 local TALENT_TREE_PANEL_TEMPLATE = script:GetCustomProperty("TalentTreePanelTemplate")
 local TALENT_BUTTON_TEMPLATE = script:GetCustomProperty("TalentButtonTemplate")
 local TALENT_REQUIREMENT_ARROW_TEMPLATE = script:GetCustomProperty("TalentRequirementArrowTemplate")
@@ -25,6 +26,14 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local tooltipTalentData = nil
 local talentTreesVisible = false
+
+function ToggleTalentTrees()
+	if talentTreesVisible then
+		HideTalentTrees()
+	else
+		ShowTalentTrees()
+	end
+end
 
 function ShowTalentTrees()
 	UI_CONTAINER.visibility = Visibility.INHERIT
@@ -43,6 +52,10 @@ function OnButtonClicked(button, talentData)
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
 		Events.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
 	end
+end
+
+function OnToggleButtonClicked(button)
+	ToggleTalentTrees()
 end
 
 function OnButtonHovered(button, talentData)
@@ -67,11 +80,7 @@ end
 
 function OnBindingPressed(player, binding)
 	if binding == "ability_extra_44" then
-		if talentTreesVisible then
-			HideTalentTrees()
-		else
-			ShowTalentTrees()
-		end
+		ToggleTalentTrees()
 	end
 end
 
@@ -241,4 +250,5 @@ UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
 BuildTalentTreeUI()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+TOGGLE_BUTTON.clickedEvent:Connect(OnToggleButtonClicked)
 HideTalentTrees()

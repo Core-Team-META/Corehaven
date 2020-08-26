@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 13265743257534345943
-  Name: "Enemy_Archer_Server"
+  Id: 6843789698881223256
+  Name: "APIEffects"
   PlatformAssetType: 3
   TextAsset {
   }

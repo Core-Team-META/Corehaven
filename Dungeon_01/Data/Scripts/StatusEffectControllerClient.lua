@@ -1,45 +1,13 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_E = require(script:GetCustomProperty("APIEffects"))
+
 local STATE_TRACKER_GROUP = script:GetCustomProperty("StateTrackerGroup"):WaitForObject()
 
 local EFFECT_FADE_OUT_TIME = 0.6
 local EFFECT_DESTROY_DELAY = 3.0
 
 local effectObjects = {}		-- Player -> index -> int
-
-function FadeOutEffect(effectObject)
-	for _, object in pairs(effectObject:FindDescendantsByType("Audio")) do
-		object:FadeOut(EFFECT_FADE_OUT_TIME)
-	end
-
-	for _, object in pairs(effectObject:FindDescendantsByType("SmartAudio")) do
-		object:FadeOut(EFFECT_FADE_OUT_TIME)
-	end
-
-	local vfxToDestroy = {}
-
-	for _, object in pairs(effectObject:FindDescendantsByType("Vfx")) do
-		object:ScaleTo(Vector3.ZERO, EFFECT_FADE_OUT_TIME)
-		object.parent = World.GetRootObject()
-		table.insert(vfxToDestroy, object)
-	end
-
-	for _, object in pairs(effectObject:FindDescendantsByType("StaticMesh")) do
-		object:Destroy()
-	end
-
-	Task.Wait(EFFECT_DESTROY_DELAY)
-
-	if Object.IsValid(effectObject) then
-		effectObject:Destroy()
-	end
-
-	for _, object in pairs(vfxToDestroy) do
-		if Object.IsValid(object) then
-			object:Destroy()
-		end
-	end
-end
 
 function OnPlayerJoined(player)
 	effectObjects[player] = {}
@@ -48,7 +16,7 @@ end
 function OnPlayerLeft(player)
 	for _, effectObject in pairs(effectObjects[player]) do
 		if Object.IsValid(effectObject) then
-			FadeOutEffect(effectObject)
+			API_E.FadeOutEffect(effectObject)
 		end
 	end
 
@@ -62,7 +30,7 @@ end
 function OnNPCDestroyed(npc)
 	for _, effectObject in pairs(effectObjects[npc]) do
 		if Object.IsValid(effectObject) then
-			FadeOutEffect(effectObject)
+			API_E.FadeOutEffect(effectObject)
 		end
 	end
 
@@ -89,7 +57,7 @@ function UpdateEffectObjects(character, data)
 			end
 		elseif not effects[i] and effectObject then
 			if Object.IsValid(effectObject) then
-				Task.Spawn(function() FadeOutEffect(effectObject) end)
+				API_E.FadeOutEffect(effectObject)
 			end
 
 			effectObjects[character][i] = nil

@@ -5,7 +5,7 @@ local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
 
 local RANGE = 1000.0
 local COOLDOWN = 12.0
-local VOLLEY_RADIUS	= 100.0
+local VOLLEY_RADIUS	= 140.0
 local DAMAGE = 45.0
 
 local currentTask = nil
@@ -35,7 +35,7 @@ function OnTaskStart(npc, threatTable)
 			local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = volleyPosition, scale = telegraphScale})
 			Task.Wait(2.5)
 
-			for _, player in pairs(Game.FindPlayersInSphere(volleyPosition, VOLLEY_RADIUS, {ignoreDead = true})) do
+			for _, player in pairs(Game.FindPlayersInSphere(volleyPosition + Vector3.UP * 100.0, VOLLEY_RADIUS, {ignoreDead = true})) do
 				API_D.ApplyDamage(npc, player, DAMAGE)
 			end
 

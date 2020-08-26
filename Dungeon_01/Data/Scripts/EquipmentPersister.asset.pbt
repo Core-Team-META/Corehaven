@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9504851932110220419
-  Name: "Enemy_Soldier_Client"
+  Id: 17054309779549825621
+  Name: "EquipmentPersister"
   PlatformAssetType: 3
   TextAsset {
   }

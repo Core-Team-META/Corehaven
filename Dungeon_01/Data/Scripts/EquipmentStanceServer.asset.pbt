@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 6256764949758358611
-  Name: "Enemy_Archer_Client"
+  Id: 1427829216143793458
+  Name: "EquipmentStanceServer"
   PlatformAssetType: 3
   TextAsset {
   }
