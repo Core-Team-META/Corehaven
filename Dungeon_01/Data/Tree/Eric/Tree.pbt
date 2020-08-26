@@ -5805,7 +5805,7 @@ Objects {
 }
 Objects {
   Id: 16850574512810482299
-  Name: "DamageEffects"
+  Name: "ReceiveDamageEffects"
   Transform {
     Location {
     }
@@ -5830,7 +5830,7 @@ Objects {
 }
 Objects {
   Id: 6440247630371225714
-  Name: "DamageEffectsClient"
+  Name: "ReceiveDamageEffectsClient"
   Transform {
     Location {
     }
@@ -5843,6 +5843,20 @@ Objects {
     }
   }
   ParentId: 16850574512810482299
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 16019090002437471970
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

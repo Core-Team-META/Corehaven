@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 14014504475200969605
-  Name: "Helper_Effect_GainAggro"
+  Id: 16019090002437471970
+  Name: "Helper_Effect_PlayerReceiveDamage"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1591748785497359610
+      RootId: 8098083118176133113
       Objects {
-        Id: 1591748785497359610
-        Name: "Helper_Effect_GainAggro"
+        Id: 8098083118176133113
+        Name: "Helper_Effect_PlayerReceiveDamage"
         Transform {
           Scale {
             X: 1
@@ -16,15 +16,14 @@
           }
         }
         ParentId: 4781671109827199097
-        Lifespan: 3
+        Lifespan: 4
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
         }
       }
     }

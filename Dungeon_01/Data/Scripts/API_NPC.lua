@@ -48,7 +48,7 @@ function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskSt
 end
 
 function API.RegisterNPCFolder(npcFolder)
-	-- We assume anything with a "HitPoints" custom property is an npc, then error if we can't find the other properties
+	-- We assume anything with a "HitPoints" custom property is an npc
 	function AddNPC(npc)
 		-- Specifically, all NPCs should be client contexts so we don't have to worry about objects replicating at
 		-- different times
