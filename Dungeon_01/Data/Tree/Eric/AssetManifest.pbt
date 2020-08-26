@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10536251484879582863
+  Name: "Frame Beveled 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_022"
+  }
+}
+Assets {
   Id: 10512562362778365331
   Name: "Shield"
   PlatformAssetType: 9
@@ -59,6 +68,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Damage"
+  }
+}
+Assets {
+  Id: 7112862594463965100
+  Name: "Goods"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFI_Icon_038"
+  }
+}
+Assets {
+  Id: 6980104993132211032
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {

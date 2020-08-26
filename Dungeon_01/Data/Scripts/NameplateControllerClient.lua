@@ -97,6 +97,7 @@ end
 function CreateNameplate(character, data)
 	assert(character:IsA("Player") or data)
 	local nameplateRoot = World.SpawnAsset(NAMEPLATE_TEMPLATE)
+	nameplateRoot.visibility = Visibility.FORCE_OFF
 
 	nameplates[character] = {}
 	nameplates[character].templateRoot = nameplateRoot
@@ -142,9 +143,6 @@ function CreateNameplate(character, data)
 	nameplates[character].lastHealthFraction = 1.0
 	nameplates[character].lastHealthTime = 0.0
 	nameplates[character].lastFrameHealthFraction = 1.0
-
-	--! (Temp Workaround)
-	Task.Wait(0.1)
 
 	-- Setup static properties
 	if character:IsA("Player") then

@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9504851932110220419
-  Name: "Enemy_Soldier_Client"
+  Id: 6843789698881223256
+  Name: "APIEffects"
   PlatformAssetType: 3
   TextAsset {
   }

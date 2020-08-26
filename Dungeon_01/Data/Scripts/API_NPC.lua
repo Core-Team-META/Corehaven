@@ -25,19 +25,6 @@ function API.RegisterTaskClient(taskName, effectTemplate, onTaskStart, onTaskEnd
 	tasks[taskName] = data
 end
 
--- nil RegisterNPCClient(CoreObject, string, table, float, <AnimatedMesh>) [Client]
--- Registers an npc and its animated mesh, if it has one.
-function API.RegisterNPCClient(root, name, taskList, maxHitPoints, animatedMesh)
-	local data = {}
-	data.name = name
-	data.taskList = taskList
-	data.maxHitPoints = maxHitPoints
-	data.animatedMesh = animatedMesh
-	npcs[root] = data
-
-	Events.Broadcast("NPC_Created", root, data)
-end
-
 -- nil RegisterTaskServer(string, float, float, function, <function>, <function>) [Server]
 -- Registers a named task for npcs, with range, cooldown, priority function, and optional task start and task end handlers.
 -- They have the following signatures:
@@ -60,19 +47,62 @@ function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskSt
 	tasks[taskName] = data
 end
 
--- nil RegisterNPCServer(CoreObject, table, float, float, float) [Server]
--- Registers an npc. engageRange is the distance from the npc to a target that it will engage.
-function API.RegisterNPCServer(root, taskList, maxHitPoints, speed, engageRange)
-	local data = {}
-	data.taskList = taskList
-	data.maxHitPoints = maxHitPoints
-	data.speed = speed
-	data.engageRange = engageRange
-	data.spawnPosition = root:GetWorldPosition()
-	data.spawnRotation = root:GetWorldRotation()
-	npcs[root] = data
+function API.RegisterNPCFolder(npcFolder)
+	-- We assume anything with a "HitPoints" custom property is an npc, then error if we can't find the other properties
+	function AddNPC(npc)
+		-- Specifically, all NPCs should be client contexts so we don't have to worry about objects replicating at
+		-- different times
+		assert(npc:IsA("NetworkContext"))
 
-	Events.Broadcast("NPC_Created", root, data)
+		local data = {}
+		data.name = npc:GetCustomProperty("Name")
+		data.maxHitPoints = npc:GetCustomProperty("MaxHitPoints")
+		data.speed = npc:GetCustomProperty("MoveSpeed")
+		data.engageRange = npc:GetCustomProperty("EngageRange")
+		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
+		data.spawnPosition = npc:GetWorldPosition()
+		data.spawnRotation = npc:GetWorldRotation()
+		data.taskList = {}
+		
+		for i = 1, 9 do
+			local task = npc:GetCustomProperty(string.format("Task%d", i))
+
+			if task then
+				table.insert(data.taskList, task)
+			else
+				break
+			end
+		end
+
+		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
+		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
+
+		npcs[npc] = data
+
+		Events.Broadcast("NPC_Created", npc, data)
+	end
+
+	function FindNPCs_R(root)
+		for _, child in pairs(root:GetChildren()) do
+			_, isNPC = child:GetCustomProperty("HitPoints")
+
+			if isNPC then
+				AddNPC(child)
+			else
+				FindNPCs_R(child)
+			end
+		end
+	end
+
+	FindNPCs_R(npcFolder)
+
+	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
+		_, isNPC = newChild:GetCustomProperty("HitPoints")
+
+		if isNPC then
+			AddNPC(newChild)
+		end
+	end)
 end
 
 -- nil UnregisterNPC(CoreObject) [Client, Server]

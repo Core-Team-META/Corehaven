@@ -3,6 +3,7 @@ local API_P = require(script:GetCustomProperty("APIPathing"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
+local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 
 local DESPAWN_TIME = 120.0
 local TASK_HISTORY_LENGTH = 8
@@ -361,5 +362,6 @@ functionTable.OnHealed = OnHealed
 functionTable.SetStunnedFlag = SetStunnedFlag
 functionTable.SuggestMoveUpdate = SuggestMoveUpdate
 API_NPC.RegisterSystem(functionTable)
+API_NPC.RegisterNPCFolder(NPC_FOLDER)
 
 API_P.RegisterRectangles(NAV_MESH_FOLDER)

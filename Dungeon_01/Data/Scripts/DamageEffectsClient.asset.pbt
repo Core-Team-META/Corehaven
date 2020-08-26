@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 9132106788277241166
-  Name: "ExampleNPCClient"
+  Id: 3530404045527005474
+  Name: "DamageEffectsClient"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -4,10 +4,10 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3247652754770645723
+      RootId: 191125463511178831
       Objects {
-        Id: 3247652754770645723
-        Name: "Soldier"
+        Id: 191125463511178831
+        Name: "Enemy_Soldier"
         Transform {
           Scale {
             X: 1
@@ -15,9 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 15214246396461168156
-        ChildIds: 16266626031715527706
-        ChildIds: 17262647073337010427
+        ParentId: 2862615558091888578
+        ChildIds: 9491223094250427728
         UnregisteredParameters {
           Overrides {
             Name: "cs:HitPoints"
@@ -30,6 +29,42 @@
           Overrides {
             Name: "cs:TargetID"
             String: ""
+          }
+          Overrides {
+            Name: "cs:Name"
+            String: "Soldier"
+          }
+          Overrides {
+            Name: "cs:MaxHitPoints"
+            Float: 120
+          }
+          Overrides {
+            Name: "cs:MoveSpeed"
+            Float: 800
+          }
+          Overrides {
+            Name: "cs:EngageRange"
+            Float: 1200
+          }
+          Overrides {
+            Name: "cs:Task1"
+            String: "soldier_melee"
+          }
+          Overrides {
+            Name: "cs:Task2"
+            String: "soldier_block"
+          }
+          Overrides {
+            Name: "cs:MovementEffectTemplate"
+            AssetReference {
+              Id: 4902194881991712191
+            }
+          }
+          Overrides {
+            Name: "cs:DeathEffectTemplate"
+            AssetReference {
+              Id: 6070064999687689145
+            }
           }
           Overrides {
             Name: "cs:HitPoints:isrep"
@@ -46,82 +81,6 @@
         }
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 16266626031715527706
-        Name: "Enemy_Soldier_Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3247652754770645723
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:API_NPC"
-            AssetReference {
-              Id: 1793953622129874134
-            }
-          }
-          Overrides {
-            Name: "cs:Shared"
-            AssetReference {
-              Id: 1713951178962607114
-            }
-          }
-          Overrides {
-            Name: "cs:Root"
-            ObjectReference {
-              SubObjectId: 3247652754770645723
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6875201794958932040
-          }
-        }
-      }
-      Objects {
-        Id: 17262647073337010427
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3247652754770645723
-        ChildIds: 2145212556047664777
-        ChildIds: 6158540205177840322
-        WantsNetworking: true
-        Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
@@ -131,60 +90,7 @@
         }
       }
       Objects {
-        Id: 2145212556047664777
-        Name: "Enemy_Soldier_Client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17262647073337010427
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:API_NPC"
-            AssetReference {
-              Id: 1793953622129874134
-            }
-          }
-          Overrides {
-            Name: "cs:Shared"
-            AssetReference {
-              Id: 1713951178962607114
-            }
-          }
-          Overrides {
-            Name: "cs:Root"
-            ObjectReference {
-              SubObjectId: 3247652754770645723
-            }
-          }
-          Overrides {
-            Name: "cs:AnimatedMesh"
-            ObjectReference {
-              SubObjectId: 6158540205177840322
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 9504851932110220419
-          }
-        }
-      }
-      Objects {
-        Id: 6158540205177840322
+        Id: 9491223094250427728
         Name: "Human Guy 1"
         Transform {
           Location {
@@ -198,7 +104,29 @@
             Z: 1
           }
         }
-        ParentId: 17262647073337010427
+        ParentId: 191125463511178831
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:IdleStance"
+            String: "1hand_melee_idle_relaxed"
+          }
+          Overrides {
+            Name: "cs:RunStance"
+            String: "1hand_melee_run_forward"
+          }
+          Overrides {
+            Name: "cs:StareStance"
+            String: "1hand_melee_idle_ready"
+          }
+          Overrides {
+            Name: "cs:DeathAnimation"
+            String: "unarmed_death"
+          }
+          Overrides {
+            Name: "cs:StunnedStance"
+            String: "unarmed_bind_pose"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -215,7 +143,6 @@
           }
           EnableCameraCollision: true
           AnimatedMesh {
-            AnimationStance: "unarmed_idle_relaxed"
             AnimationStancePlaybackRate: 1
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1

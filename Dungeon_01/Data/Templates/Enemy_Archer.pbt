@@ -4,10 +4,10 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 5109109318732049419
+      RootId: 11860081688404186785
       Objects {
-        Id: 5109109318732049419
-        Name: "Archer"
+        Id: 11860081688404186785
+        Name: "Enemy_Archer"
         Transform {
           Scale {
             X: 1
@@ -15,9 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 15214246396461168156
-        ChildIds: 13729050856566355972
-        ChildIds: 15698033239406334993
+        ParentId: 2862615558091888578
+        ChildIds: 337373426812660397
         UnregisteredParameters {
           Overrides {
             Name: "cs:HitPoints"
@@ -30,6 +29,42 @@
           Overrides {
             Name: "cs:TargetID"
             String: ""
+          }
+          Overrides {
+            Name: "cs:Name"
+            String: "Archer"
+          }
+          Overrides {
+            Name: "cs:MaxHitPoints"
+            Float: 75
+          }
+          Overrides {
+            Name: "cs:MoveSpeed"
+            Float: 650
+          }
+          Overrides {
+            Name: "cs:EngageRange"
+            Float: 1400
+          }
+          Overrides {
+            Name: "cs:Task1"
+            String: "archer_shoot"
+          }
+          Overrides {
+            Name: "cs:Task2"
+            String: "archer_volley"
+          }
+          Overrides {
+            Name: "cs:MovementEffectTemplate"
+            AssetReference {
+              Id: 4428929018729094630
+            }
+          }
+          Overrides {
+            Name: "cs:DeathEffectTemplate"
+            AssetReference {
+              Id: 14173195191479454746
+            }
           }
           Overrides {
             Name: "cs:HitPoints:isrep"
@@ -46,82 +81,6 @@
         }
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 13729050856566355972
-        Name: "Enemy_Archer_Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5109109318732049419
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:API_NPC"
-            AssetReference {
-              Id: 1793953622129874134
-            }
-          }
-          Overrides {
-            Name: "cs:Shared"
-            AssetReference {
-              Id: 8554462093003164869
-            }
-          }
-          Overrides {
-            Name: "cs:Root"
-            ObjectReference {
-              SubObjectId: 5109109318732049419
-            }
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 13265743257534345943
-          }
-        }
-      }
-      Objects {
-        Id: 15698033239406334993
-        Name: "ClientContext"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5109109318732049419
-        ChildIds: 14480126777245407706
-        ChildIds: 12768154551185464305
-        WantsNetworking: true
-        Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
@@ -131,60 +90,7 @@
         }
       }
       Objects {
-        Id: 14480126777245407706
-        Name: "Enemy_Archer_Client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15698033239406334993
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:API_NPC"
-            AssetReference {
-              Id: 1793953622129874134
-            }
-          }
-          Overrides {
-            Name: "cs:Shared"
-            AssetReference {
-              Id: 8554462093003164869
-            }
-          }
-          Overrides {
-            Name: "cs:Root"
-            ObjectReference {
-              SubObjectId: 5109109318732049419
-            }
-          }
-          Overrides {
-            Name: "cs:AnimatedMesh"
-            ObjectReference {
-              SubObjectId: 12768154551185464305
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 6256764949758358611
-          }
-        }
-      }
-      Objects {
-        Id: 12768154551185464305
+        Id: 337373426812660397
         Name: "Human Guy 1"
         Transform {
           Location {
@@ -198,7 +104,29 @@
             Z: 1
           }
         }
-        ParentId: 15698033239406334993
+        ParentId: 11860081688404186785
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:IdleStance"
+            String: "1hand_melee_idle_relaxed"
+          }
+          Overrides {
+            Name: "cs:RunStance"
+            String: "1hand_melee_run_forward"
+          }
+          Overrides {
+            Name: "cs:StareStance"
+            String: "1hand_melee_idle_ready"
+          }
+          Overrides {
+            Name: "cs:DeathAnimation"
+            String: "unarmed_death"
+          }
+          Overrides {
+            Name: "cs:StunnedStance"
+            String: "unarmed_bind_pose"
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -215,12 +143,10 @@
           }
           EnableCameraCollision: true
           AnimatedMesh {
-            AnimationStance: "unarmed_idle_relaxed"
             AnimationStancePlaybackRate: 1
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1
             PlayOnStartAnimation {
-              Animation: "2hand_rifle_shoot"
               PlaybackRate: 1
             }
           }
