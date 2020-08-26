@@ -1,4 +1,4 @@
-﻿Name: "BossArea_MarketSquare"
+﻿Name: "MerchantBossArea"
 RootId: 7192807854345907469
 Objects {
   Id: 307162615622806030

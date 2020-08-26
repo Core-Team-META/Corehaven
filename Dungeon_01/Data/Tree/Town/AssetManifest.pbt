@@ -791,6 +791,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8623684838399619731
+  Name: "Decal Soil Cracks Smal Variants 02"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_002"
+  }
+}
+Assets {
   Id: 8617818292148704575
   Name: "Craftsman Stairs 01 Pillar"
   PlatformAssetType: 1
