@@ -1466,16 +1466,20 @@
         ParentId: 11860081688404186785
         UnregisteredParameters {
           Overrides {
+            Name: "cs:AsleepStance"
+            String: "unarmed_idle_relaxed"
+          }
+          Overrides {
             Name: "cs:IdleStance"
-            String: "1hand_melee_idle_relaxed"
+            String: "2hand_rifle_idle_relaxed"
           }
           Overrides {
             Name: "cs:RunStance"
-            String: "1hand_melee_run_forward"
+            String: "2hand_rifle_run_forward"
           }
           Overrides {
             Name: "cs:StareStance"
-            String: "1hand_melee_idle_ready"
+            String: "2hand_rifle_aim_shoulder"
           }
           Overrides {
             Name: "cs:DeathAnimation"

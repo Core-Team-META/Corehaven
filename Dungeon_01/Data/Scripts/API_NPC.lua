@@ -1,6 +1,7 @@
 ﻿local API = {}
 
 -- Predefined Tasks:
+API.STATE_ASLEEP = "asleep"			-- Functionally disabled, cannot be interacted with
 API.STATE_IDLE = "idle"
 API.STATE_CHASING = "chasing"
 API.STATE_STARING = "staring"		-- This is chasing without moving
@@ -80,6 +81,12 @@ function API.RegisterNPCFolder(npcFolder)
 		npcs[npc] = data
 
 		Events.Broadcast("NPC_Created", npc, data)
+
+		npc.destroyEvent:Connect(function(npc)
+			npcs[npc] = nil
+
+			Events.Broadcast("NPC_Destroyed", npc)
+		end)
 	end
 
 	function FindNPCs_R(root)
@@ -97,21 +104,13 @@ function API.RegisterNPCFolder(npcFolder)
 	FindNPCs_R(npcFolder)
 
 	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
+		Task.Wait()		-- Networked custom properties are not available for a frame
 		_, isNPC = newChild:GetCustomProperty("HitPoints")
 
 		if isNPC then
 			AddNPC(newChild)
 		end
 	end)
-end
-
--- nil UnregisterNPC(CoreObject) [Client, Server]
--- Removes an npc from tracking (generally when it is destroyed). Should be called
--- indepedently on client and server.
-function API.UnregisterNPC(root)
-	npcs[root] = nil
-
-	Events.Broadcast("NPC_Destroyed", root)
 end
 
 function API.RegisterSystem(functionTable)
@@ -131,16 +130,19 @@ function API.GetAllNPCData()
 end
 
 function API.SetHitPoints(npc, hitPoints)
+	assert(not systemFunctions.IsAsleep(npc))
 	npc:SetNetworkedCustomProperty("HitPoints", hitPoints)
 end
 
 function API.ApplyDamage(sourceCharacter, npc, amount)
+	assert(not systemFunctions.IsAsleep(npc))
 	local currentHealth = API.GetHitPoints(npc)
 	systemFunctions.OnDamaged(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.max(0.0, currentHealth - amount))
 end
 
 function API.ApplyHealing(sourceCharacter, npc, amount)
+	assert(not systemFunctions.IsAsleep(npc))
 	local currentHealth = API.GetHitPoints(npc)
 	systemFunctions.OnHealed(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.min(npcs[npc].maxHitPoints, currentHealth + amount))
@@ -151,6 +153,7 @@ function API.GetHitPoints(npc)
 end
 
 function API.SetTarget(npc, target)
+	assert(not systemFunctions.IsAsleep(npc))
 	if target then
 		npc:SetNetworkedCustomProperty("TargetID", target.id)
 	else
@@ -175,18 +178,20 @@ function API.IsDead(npc)
 end
 
 function API.SetStunned(npc, isStunned)
+	assert(not systemFunctions.IsAsleep(npc))
 	systemFunctions.SetStunnedFlag(npc, isStunned)
 end
 
 function API.SuggestMoveUpdate(npc)
+	assert(not systemFunctions.IsAsleep(npc))
 	systemFunctions.SuggestMoveUpdate(npc)
 end
 
-function API.GetNPCsInSphere(center, radius)
+function API.GetAwakeNPCsInSphere(center, radius)
 	local result = {}
 
 	for npc, _ in pairs(npcs) do
-		if (npc:GetWorldPosition() - center).size <= radius and not API.IsDead(npc) then
+		if (npc:GetWorldPosition() - center).size <= radius and not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
 			table.insert(result, npc)
 		end
 	end
@@ -195,6 +200,7 @@ function API.GetNPCsInSphere(center, radius)
 end
 
 function API.LookAtTargetWithoutPitch(npc, target)
+	assert(not systemFunctions.IsAsleep(npc))
 	local direction = target - npc:GetWorldPosition()
 	direction.z = 0.0
 	npc:SetWorldRotation(Rotation.New(direction, Vector3.UP))

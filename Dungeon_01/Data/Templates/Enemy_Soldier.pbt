@@ -336,7 +336,7 @@
       }
       Objects {
         Id: 3544158354013874410
-        Name: "right_wrist"
+        Name: "right_prop"
         Transform {
           Location {
           }
@@ -366,14 +366,14 @@
         Name: "Fantasy Weapon - Sword 02 (Prop)"
         Transform {
           Location {
-            X: 3.35773158
-            Y: -0.708718777
-            Z: -12.3256807
+            X: 0.515625
+            Y: -0.723144531
+            Z: -2.487
           }
           Rotation {
-            Pitch: -78.5604248
-            Yaw: 39.2003365
-            Roll: -37.6508179
+            Pitch: 12.6892481
+            Yaw: 7.43424129
+            Roll: -0.0430297852
           }
           Scale {
             X: 1
@@ -1762,8 +1762,12 @@
         ParentId: 191125463511178831
         UnregisteredParameters {
           Overrides {
+            Name: "cs:AsleepStance"
+            String: "1hand_sword_idle_relaxed"
+          }
+          Overrides {
             Name: "cs:IdleStance"
-            String: "1hand_melee_idle_relaxed"
+            String: "1hand_melee_idle_ready"
           }
           Overrides {
             Name: "cs:RunStance"

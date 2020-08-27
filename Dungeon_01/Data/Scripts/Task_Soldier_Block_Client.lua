@@ -2,16 +2,16 @@
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local previousStance = nil
+local previousStances = {}
 
 function OnTaskStart(npc, animatedMesh)
-	previousStance = animatedMesh.animationStance
+	previousStances[npc] = animatedMesh.animationStance
 	animatedMesh.animationStance = "1hand_melee_shield_block"
 end
 
 function OnTaskEnd(npc, animatedMesh)
-	animatedMesh.animationStance = previousStance
-	previousStance = nil
+	animatedMesh.animationStance = previousStances[npc]
+	previousStances[npc] = nil
 end
 
 API_NPC.RegisterTaskClient("soldier_block", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

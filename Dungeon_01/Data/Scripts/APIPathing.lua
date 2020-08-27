@@ -270,6 +270,16 @@ end
 function API.GetPath(startPosition, endPosition)
 	local startNode = pointToNode(startPosition)
 	local endNode = pointToNode(endPosition)
+
+	local startFlyDistance = (startPosition - startNode.position).size
+	local endFlyDistance = (endPosition - endNode.position).size
+	local straightFlyDistance = (endPosition - startPosition).size
+
+	-- If we are already flying, don't run back to the navmesh unless that means less flying
+	if straightFlyDistance < startFlyDistance + endFlyDistance then
+		return {endPosition}
+	end
+
 	local endRectangle = endNode.connectedRectangles[1]
 
 	local pathNodeMetatable = {
@@ -382,9 +392,13 @@ function API.GetPath(startPosition, endPosition)
 		for i = 1, #solutionPath do -- convert nodes to positions
 			solutionPath[i] = solutionPath[i].position
 		end
+
+		-- We fly to the target if needed
+		table.insert(solutionPath, endPosition)
+
 		return solutionPath
 	else
-		return nil
+		return {endPosition}
 	end
 end
 
