@@ -3702,7 +3702,7 @@ Objects {
   Transform {
     Location {
       X: -7441.44434
-      Y: -4464.08642
+      Y: -4464.08643
       Z: -296.436462
     }
     Rotation {
@@ -3758,7 +3758,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7983.78808
+      X: -7983.78809
       Y: -4977.01367
       Z: -360.496063
     }
@@ -5301,7 +5301,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 8623.70312
+            X: 8623.70313
             Y: 7683.03857
             Z: 977.533447
           }

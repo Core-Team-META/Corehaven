@@ -1,6 +1,96 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
+  Id: 9735714711787392963
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 43321.9219
+      Y: 12952.0098
+      Z: 3850.70435
+    }
+    Rotation {
+      Yaw: 116.139862
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 13768214877031753414
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 45095.7578
+      Y: 16192.4316
+      Z: 3850.70435
+    }
+    Rotation {
+      Yaw: -155.566162
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
   Id: 7192807854345907469
   Name: "MerchantBossArea"
   Transform {
@@ -59,61 +149,16 @@ Objects {
   }
 }
 Objects {
-  Id: 17789063122605940897
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 42502.9219
-      Y: 12903.4443
-      Z: 4163.13525
-    }
-    Rotation {
-      Yaw: 114.065033
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11788695356358832208
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 6817118149852492372
   Name: "Skeleton Mob"
   Transform {
     Location {
-      X: 43045.9453
-      Y: 12084.5859
-      Z: 4672.125
+      X: 42974.7148
+      Y: 12421.7656
+      Z: 4692.99072
     }
     Rotation {
-      Yaw: 101.152519
+      Yaw: 101.152565
     }
     Scale {
       X: 1
