@@ -1,6 +1,620 @@
 ﻿Name: "Sacrificial_altar"
 RootId: 16359149036364134668
 Objects {
+  Id: 14573814952432716979
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 8934.00781
+      Y: -2309.30518
+      Z: 730.32428
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1602.74756
+            Y: -2636.64185
+            Z: 22.84198
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 2329057484904339266
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 6926.19727
+      Y: 1741.10107
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14.8022461
+            Y: 2274.55859
+            Z: 22.842041
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 11073830997709840598
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 10245.1563
+      Y: -1219.52539
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2075.1626
+            Y: -1705.51172
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 10347570493856191626
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 10201.4014
+      Y: 1633.1156
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3228.74463
+            Y: 188.093124
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 9686758988271389849
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 10657.8984
+      Y: 898.163086
+      Z: 730.324524
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2506.45947
+            Y: 1866.97937
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 11655066923682042867
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 8526.93359
+      Y: 2137.89502
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -768.744629
+            Y: 1974.96484
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 15780623230475023481
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 10448.5225
+      Y: 787.1427
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 831.991699
+            Y: 2371.75879
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 11116182014837739630
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 10245.1563
+      Y: -1219.52539
+      Z: 730.324402
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2962.95654
+            Y: 1132.02686
+            Z: 22.8422241
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 6132852437532568562
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 9847.4707
+      Y: -1858.30261
+      Z: 730.32428
+    }
+    Rotation {
+      Yaw: -22.5030365
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1239.06592
+            Y: -2075.44141
+            Z: 22.84198
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 7666973380319472775
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 4493.35547
+      Y: -958.170288
+      Z: 730.32428
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2550.21436
+            Y: -985.661621
+            Z: 22.8421021
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -22.5030518
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
+  Id: 12830409069971843390
+  Name: "Torch_Holder_Undead"
+  Transform {
+    Location {
+      X: 4493.35547
+      Y: -958.170288
+      Z: 730.32428
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16359149036364134668
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2996.48926
+            Y: 927.778809
+            Z: 22.2391357
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -17.6199951
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10082212731695126074
+    }
+  }
+}
+Objects {
   Id: 17487532043565973462
   Name: "Fantasy Weapon - Dagger 01 (Prop)"
   Transform {
@@ -221,16 +835,9 @@ Objects {
   }
 }
 Objects {
-  Id: 2495272126268286368
-  Name: "Torch_Holder"
+  Id: 847824165702445938
+  Name: "Torch_Holder_Undead"
   Transform {
-    Location {
-      X: -3201.58642
-      Y: -724.306519
-      Z: 38.0123291
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -238,1369 +845,26 @@ Objects {
     }
   }
   ParentId: 16359149036364134668
-  ChildIds: 9527590999026539622
-  ChildIds: 9825741911207370338
-  ChildIds: 11509043578686606571
-  ChildIds: 13062118146443038898
-  ChildIds: 15459259730798717769
-  ChildIds: 13798448594302132814
-  ChildIds: 8266248465647764621
-  ChildIds: 18058390375032640701
-  ChildIds: 6728581360598727680
-  ChildIds: 10553825106343198742
-  ChildIds: 9655132004366620521
-  ChildIds: 471934658758171392
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 471934658758171392
-  Name: "Point Light"
-  Transform {
-    Location {
-      X: -4.50830078
-      Y: -3.63409424
-      Z: 206.466
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2495272126268286368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Light {
-    Intensity: 24.1679573
-    Color {
-      R: 0.350000024
-      G: 1
-      B: 0.845033169
-      A: 1
-    }
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 353.368134
-        PointLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-          UseFallOffExponent: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2264634198754595121
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Torch_Holder_Undead"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3017.13916
+            Y: -775.360962
+            Z: 22.84198
+          }
         }
       }
-      MaxDrawDistance: 5000
-      MaxDistanceFadeRange: 2000
     }
-  }
-}
-Objects {
-  Id: 9655132004366620521
-  Name: "Torch Fire VFX"
-  Transform {
-    Location {
-      X: -2.31640625
-      Y: -1.13696289
-      Z: 183.818115
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Life"
-      Float: 0.823899269
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        G: 0.480000019
-        B: 0.308344483
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Initial Velocity"
-      Vector {
-        Z: 100
-      }
-    }
-    Overrides {
-      Name: "bp:Wind Speed"
-      Vector {
-        X: 10
-        Z: 400
-      }
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.00981688
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 4.33679581
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4603537691901304316
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
-  Id: 10553825106343198742
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.29345703
-      Y: -2.45016479
-      Z: 184.531799
-    }
-    Rotation {
-      Pitch: -0.0446762666
-      Yaw: 1.17493482e-06
-      Roll: 0.000102092992
-    }
-    Scale {
-      X: 0.338245869
-      Y: 0.338247418
-      Z: 0.0421209037
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13577817942653603668
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6396786685671585062
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6728581360598727680
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.65820312
-      Y: -2.88830566
-      Z: 173.224487
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.228850856
-      Y: 0.228852212
-      Z: 0.206479
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 46061843978868412
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 18058390375032640701
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.39697266
-      Y: -2.88833618
-      Z: 187.227783
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.406638026
-      Y: 0.40664044
-      Z: 0.366886169
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 46061843978868412
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8266248465647764621
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -1.99169922
-      Y: -0.890655518
-      Z: 145.904419
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.161442637
-      Y: 0.161443546
-      Z: 0.145660445
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13798448594302132814
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.03320312
-      Y: -0.890655518
-      Z: 143.656
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.158549398
-      Y: 0.158551514
-      Z: 0.184217036
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15459259730798717769
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.07519531
-      Y: -0.890655518
-      Z: 141.421021
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.145340398
-      Y: 0.145341247
-      Z: 0.131132305
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13062118146443038898
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.47802734
-      Y: -3.03585815
-      Z: 188.416809
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.378611177
-      Y: 0.378613114
-      Z: 0.341599107
-    }
-  }
-  ParentId: 2495272126268286368
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6396786685671585062
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11509043578686606571
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: 71.4868164
-      Y: 8.09671
-    }
-    Rotation {
-      Pitch: 62.6298447
-      Yaw: -172.446075
-      Roll: -97.5242767
-    }
-    Scale {
-      X: 0.276809633
-      Y: 0.155107871
-      Z: 0.15510866
-    }
-  }
-  ParentId: 2495272126268286368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9825741911207370338
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -30.0673828
-      Y: 75.8873
-      Z: 2.15570068
-    }
-    Rotation {
-      Pitch: 60.163662
-      Yaw: -68.8235
-      Roll: -89.9989395
-    }
-    Scale {
-      X: 0.271454662
-      Y: 0.154130757
-      Z: 0.154128641
-    }
-  }
-  ParentId: 2495272126268286368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9527590999026539622
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -23.1694336
-      Y: -68.9125366
-      Z: 1.87768555
-    }
-    Rotation {
-      Pitch: 63.5207405
-      Yaw: 71.6613541
-      Roll: 89.9990616
-    }
-    Scale {
-      X: 0.26745373
-      Y: 0.153623298
-      Z: 0.153626695
-    }
-  }
-  ParentId: 2495272126268286368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17663416573430043295
-  Name: "Torch_Holder"
-  Transform {
-    Location {
-      X: -3160.67578
-      Y: 927.705322
-      Z: 38.0123291
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  ChildIds: 6941020865583618783
-  ChildIds: 12470753179321149873
-  ChildIds: 12033588076801871328
-  ChildIds: 2768122261499432646
-  ChildIds: 4149651376791706187
-  ChildIds: 12194725394043383482
-  ChildIds: 7694254191172929611
-  ChildIds: 6640080462519610726
-  ChildIds: 4904430283184681087
-  ChildIds: 9662712655049416281
-  ChildIds: 15380088065342588448
-  ChildIds: 4340567107201679076
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 4340567107201679076
-  Name: "Point Light"
-  Transform {
-    Location {
-      X: -4.50830078
-      Y: -3.63409424
-      Z: 206.466
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17663416573430043295
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Light {
-    Intensity: 24.1679573
-    Color {
-      R: 0.350000024
-      G: 1
-      B: 0.845033169
-      A: 1
-    }
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 353.368134
-        PointLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-          UseFallOffExponent: true
-        }
-      }
-      MaxDrawDistance: 5000
-      MaxDistanceFadeRange: 2000
-    }
-  }
-}
-Objects {
-  Id: 15380088065342588448
-  Name: "Torch Fire VFX"
-  Transform {
-    Location {
-      X: -2.31640625
-      Y: -1.13696289
-      Z: 183.818115
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Life"
-      Float: 0.823899269
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        G: 0.480000019
-        B: 0.308344483
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Initial Velocity"
-      Vector {
-        Z: 100
-      }
-    }
-    Overrides {
-      Name: "bp:Wind Speed"
-      Vector {
-        X: 10
-        Z: 400
-      }
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.00981688
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 4.33679581
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 4603537691901304316
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
-  Id: 9662712655049416281
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.29345703
-      Y: -2.45016479
-      Z: 184.531799
-    }
-    Rotation {
-      Pitch: -0.0446762666
-      Yaw: 1.17493482e-06
-      Roll: 0.000102092992
-    }
-    Scale {
-      X: 0.338245869
-      Y: 0.338247418
-      Z: 0.0421209037
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 13577817942653603668
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6396786685671585062
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4904430283184681087
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.65820312
-      Y: -2.88830566
-      Z: 173.224487
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.228850856
-      Y: 0.228852212
-      Z: 0.206479
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 46061843978868412
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6640080462519610726
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.39697266
-      Y: -2.88833618
-      Z: 187.227783
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.406638026
-      Y: 0.40664044
-      Z: 0.366886169
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 46061843978868412
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7694254191172929611
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -1.99169922
-      Y: -0.890655518
-      Z: 145.904419
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.161442637
-      Y: 0.161443546
-      Z: 0.145660445
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12194725394043383482
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.03320312
-      Y: -0.890655518
-      Z: 143.656
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.158549398
-      Y: 0.158551514
-      Z: 0.184217036
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4149651376791706187
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.07519531
-      Y: -0.890655518
-      Z: 141.421021
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.145340398
-      Y: 0.145341247
-      Z: 0.131132305
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 3090596827184957478
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 4.43838215
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9650630088804471075
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2768122261499432646
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -2.47802734
-      Y: -3.03585815
-      Z: 188.416809
-    }
-    Rotation {
-      Pitch: 1.06932068
-      Yaw: -179.999954
-      Roll: -179.999954
-    }
-    Scale {
-      X: 0.378611177
-      Y: 0.378613114
-      Z: 0.341599107
-    }
-  }
-  ParentId: 17663416573430043295
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6396786685671585062
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12033588076801871328
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: 71.4868164
-      Y: 8.09671
-    }
-    Rotation {
-      Pitch: 62.6298447
-      Yaw: -172.446075
-      Roll: -97.5242767
-    }
-    Scale {
-      X: 0.276809633
-      Y: 0.155107871
-      Z: 0.15510866
-    }
-  }
-  ParentId: 17663416573430043295
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12470753179321149873
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -30.0673828
-      Y: 75.8873
-      Z: 2.15570068
-    }
-    Rotation {
-      Pitch: 60.163662
-      Yaw: -68.8235
-      Roll: -89.9989395
-    }
-    Scale {
-      X: 0.271454662
-      Y: 0.154130757
-      Z: 0.154128641
-    }
-  }
-  ParentId: 17663416573430043295
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6941020865583618783
-  Name: "Large Round Wood Beam 8m"
-  Transform {
-    Location {
-      X: -23.1694336
-      Y: -68.9125366
-      Z: 1.87768555
-    }
-    Rotation {
-      Pitch: 63.5207405
-      Yaw: 71.6613541
-      Roll: 89.9990616
-    }
-    Scale {
-      X: 0.26745373
-      Y: 0.153623298
-      Z: 0.153626695
-    }
-  }
-  ParentId: 17663416573430043295
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7602223482704169180
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
+    TemplateAsset {
+      Id: 10082212731695126074
     }
   }
 }
@@ -1832,7 +1096,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820312
+      X: -2.65820313
       Y: -2.88830566
       Z: 173.224487
     }
@@ -2001,7 +1265,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320312
+      X: -2.03320313
       Y: -0.890655518
       Z: 143.656
     }
@@ -2524,7 +1788,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820312
+      X: -2.65820313
       Y: -2.88830566
       Z: 173.224487
     }
@@ -2693,7 +1957,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320312
+      X: -2.03320313
       Y: -0.890655518
       Z: 143.656
     }

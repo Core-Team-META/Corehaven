@@ -1,16 +1,618 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
+  Id: 7192807854345907469
+  Name: "MerchantBossArea"
+  Transform {
+    Location {
+      X: 32162.5313
+      Y: 9903.3418
+      Z: -205.316284
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "MerchantBossArea"
+  }
+}
+Objects {
+  Id: 3795342459197005188
+  Name: "GuardBossArea"
+  Transform {
+    Location {
+      X: 43083.0469
+      Y: 13806.7891
+      Z: 3779.4126
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "GuardBossArea"
+  }
+}
+Objects {
+  Id: 17789063122605940897
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 42502.9219
+      Y: 12903.4443
+      Z: 4163.13525
+    }
+    Rotation {
+      Yaw: 114.065033
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 6817118149852492372
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 43045.9453
+      Y: 12084.5859
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 101.152519
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 8938618292706830494
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 43793.9688
+      Y: 12836.2432
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 113.987831
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 2141475228549282016
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 43660.9609
+      Y: 12693.2783
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 101.152565
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 3557779658946969728
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 45261.5469
+      Y: 14083.2012
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 101.152519
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 10457108222317967696
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 45045.7266
+      Y: 13914.8086
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 101.152489
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 4972867828538180340
+  Name: "Skeleton Mob"
+  Transform {
+    Location {
+      X: 44774.207
+      Y: 13727.9863
+      Z: 4672.125
+    }
+    Rotation {
+      Yaw: 101.152458
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14324126384198850775
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 3233553565227767491
+  Name: "Gate_MarketPlace"
+  Transform {
+    Location {
+      X: 34060.0781
+      Y: 13278.459
+      Z: 1873.22156
+    }
+    Rotation {
+      Yaw: 56.9673691
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  ChildIds: 13561581057815118844
+  ChildIds: 1210265117355136587
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1210265117355136587
+  Name: "Portcullis"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: -0.7265625
+    }
+    Rotation {
+      Roll: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3233553565227767491
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13561581057815118844
+  Name: "Portcullis"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: -549.831055
+    }
+    Rotation {
+      Roll: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3233553565227767491
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16906987100920141136
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 34288.7109
+      Y: 13048.3975
+      Z: 1810.47083
+    }
+    Rotation {
+      Yaw: 146.966949
+    }
+    Scale {
+      X: 2.24862385
+      Y: 1.76377475
+      Z: 1.38609636
+    }
+  }
+  ParentId: 11788695356358832208
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 9.93218517
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3614043721913139583
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 34347.4063
+      Y: 13138.6221
+      Z: 1810.47083
+    }
+    Rotation {
+      Yaw: 146.966949
+    }
+    Scale {
+      X: 2.24862385
+      Y: 1.76377475
+      Z: 1.38609636
+    }
+  }
+  ParentId: 11788695356358832208
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 8
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 9.93218517
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 7959758257364523290
   Name: "Blacksmith"
   Transform {
     Location {
-      X: 39867.8594
-      Y: 19148.9355
-      Z: 3654.36475
+      X: 39923.9
+      Y: 19458.1406
+      Z: 3691.68872
     }
     Rotation {
-      Yaw: -10.3659821
+      Yaw: -10.3660278
     }
     Scale {
       X: 1
@@ -934,7 +1536,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 171.877991
     }
     Scale {
@@ -2354,7 +2956,7 @@ Objects {
   Name: "Pier_Plank"
   Transform {
     Location {
-      X: -742.841308
+      X: -742.841309
       Y: -739.980469
       Z: -11.5664492
     }
@@ -3720,6 +4322,154 @@ Objects {
   }
 }
 Objects {
+  Id: 12531957312112597743
+  Name: "Gate_MarketPlace"
+  Transform {
+    Location {
+      X: 28380.9219
+      Y: 9924.57715
+      Z: 1561.93518
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  ChildIds: 13854171170132722120
+  ChildIds: 17050819363386255952
+  ChildIds: 13528941143595795058
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13528941143595795058
+  Name: "Portcullis"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: 550.557129
+    }
+    Rotation {
+      Roll: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12531957312112597743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17050819363386255952
+  Name: "Portcullis"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: -0.7265625
+    }
+    Rotation {
+      Roll: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12531957312112597743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13854171170132722120
+  Name: "Portcullis"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: -549.831055
+    }
+    Rotation {
+      Roll: 179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12531957312112597743
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 6862860880747255112
   Name: "Small_Cabin"
   Transform {
@@ -3785,15 +4535,15 @@ Objects {
     Location {
       X: 44249.668
       Y: 13352.9434
-      Z: 4085.56445
+      Z: 4163.13525
     }
     Rotation {
-      Yaw: 114.065186
+      Yaw: 114.06514
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 1.90855718
+      Y: 1.90855718
+      Z: 1.90855718
     }
   }
   ParentId: 11788695356358832208
@@ -3860,12 +4610,11 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 111.149414
-      Y: -164.90332
-      Z: -6.10351562e-05
+      X: -63.9296875
+      Y: 322.226563
     }
     Rotation {
-      Yaw: 104.208641
+      Yaw: 104.208611
     }
     Scale {
       X: 1
@@ -3891,12 +4640,11 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: 288.25293
-      Y: -334.049805
-      Z: -6.10351562e-05
+      X: 113.173828
+      Y: 153.080078
     }
     Rotation {
-      Yaw: 104.208565
+      Yaw: 104.208542
     }
     Scale {
       X: 1
@@ -3954,7 +4702,7 @@ Objects {
     Location {
       X: 13.9370117
       Y: -354.266602
-      Z: 6.10351562e-05
+      Z: 6.10351563e-05
     }
     Rotation {
       Yaw: 104.208481

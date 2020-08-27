@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17583731156094274833
+  Name: "Bricks Stone Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bricks_stone_block_001"
+  }
+}
+Assets {
   Id: 15930833156793906970
   Name: "Invisible"
   PlatformAssetType: 2
@@ -86,6 +95,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_found_001"
+  }
+}
+Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
+  Id: 3214006606721471794
+  Name: "Curb 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_8m_001"
   }
 }
 Assets {

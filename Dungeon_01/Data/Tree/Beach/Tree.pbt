@@ -256,7 +256,7 @@ Objects {
   Transform {
     Location {
       X: 5216.65137
-      Y: 2146.21142
+      Y: 2146.21143
       Z: -116.087646
     }
     Rotation {
@@ -874,7 +874,7 @@ Objects {
   Transform {
     Location {
       X: -1054.16016
-      Y: 2425.46142
+      Y: 2425.46143
       Z: 973.943
     }
     Rotation {
@@ -1339,6 +1339,11 @@ Objects {
   ChildIds: 10987333126480288243
   ChildIds: 10295797342643669235
   ChildIds: 7991493270172846500
+  ChildIds: 2384245128882472271
+  ChildIds: 8082811927286869834
+  ChildIds: 13631489163436494471
+  ChildIds: 3328469235905257187
+  ChildIds: 826542153258265139
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1347,6 +1352,206 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 826542153258265139
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 596.78125
+      Y: 2110.52881
+      Z: -858.829834
+    }
+    Rotation {
+      Yaw: -56.3319092
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 4.28103161
+    }
+  }
+  ParentId: 4885281447776484896
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720712756894007893
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3328469235905257187
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 397.697266
+      Y: 2532.89795
+      Z: -489.340332
+    }
+    Rotation {
+      Yaw: 4.35147905
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 2.1625483
+    }
+  }
+  ParentId: 4885281447776484896
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720712756894007893
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13631489163436494471
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 397.697266
+      Y: 2532.89795
+      Z: -786.077637
+    }
+    Rotation {
+      Yaw: 4.35147619
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 2.1625483
+    }
+  }
+  ParentId: 4885281447776484896
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720712756894007893
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8082811927286869834
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 569.808594
+      Y: 2288.61377
+      Z: -941.074463
+    }
+    Rotation {
+      Yaw: -51.1565857
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 3.13255882
+    }
+  }
+  ParentId: 4885281447776484896
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720712756894007893
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2384245128882472271
+  Name: "Rock Hexagonal"
+  Transform {
+    Location {
+      X: 402.478516
+      Y: 2355.87402
+      Z: -852.178
+    }
+    Rotation {
+      Yaw: -50.2623
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 3.41743946
+    }
+  }
+  ParentId: 4885281447776484896
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7720712756894007893
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -1396,7 +1601,7 @@ Objects {
     Location {
       X: 2618.16602
       Y: 1620.09314
-      Z: -558.004394
+      Z: -558.004395
     }
     Rotation {
       Yaw: -140.093094
@@ -1795,7 +2000,7 @@ Objects {
   Transform {
     Location {
       X: -815.264648
-      Y: -83.8789062
+      Y: -83.8789063
       Z: 219.552612
     }
     Rotation {
@@ -1916,7 +2121,7 @@ Objects {
     Location {
       X: 283.619141
       Y: 2243.94141
-      Z: -1205.57812
+      Z: -1205.57813
     }
     Rotation {
       Yaw: 7.42949247
@@ -1996,7 +2201,7 @@ Objects {
     Location {
       X: 402.478516
       Y: 2355.87402
-      Z: -968.573242
+      Z: -441.867432
     }
     Rotation {
       Yaw: -50.2622681
@@ -2036,10 +2241,10 @@ Objects {
     Location {
       X: 596.78125
       Y: 2110.52881
-      Z: -1023.52637
+      Z: -476.374023
     }
     Rotation {
-      Yaw: -56.332
+      Yaw: -56.3319397
     }
     Scale {
       X: 1
@@ -2076,10 +2281,10 @@ Objects {
     Location {
       X: 569.808594
       Y: 2288.61377
-      Z: -919.618652
+      Z: -552.597656
     }
     Rotation {
-      Yaw: -51.1564941
+      Yaw: -51.1565552
     }
     Scale {
       X: 1
@@ -2154,7 +2359,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 2660.39062
+      X: 2660.39063
       Y: 1329.26038
       Z: -839.260254
     }
@@ -2236,7 +2441,7 @@ Objects {
     Location {
       X: 2713.61914
       Y: 1494.78748
-      Z: -586.945312
+      Z: -586.945313
     }
     Rotation {
       Yaw: -134.784607
@@ -2434,7 +2639,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1226.44726
+      X: 1226.44727
       Y: 2032.88367
       Z: -617.567383
     }
@@ -2754,8 +2959,8 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 922.642578
-      Y: 1867.10925
+      X: 743.296875
+      Y: 2039.1355
       Z: -886.847656
     }
     Rotation {
@@ -2834,7 +3039,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1226.44726
+      X: 1226.44727
       Y: 2032.88367
       Z: -853.065918
     }
@@ -3274,7 +3479,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 132.164062
+      X: 132.164063
       Y: 40.1337891
       Z: -723.527832
     }
@@ -3552,7 +3757,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 3667.50976
+      X: 3667.50977
       Y: 1007.54742
       Z: -643.65918
     }
@@ -3672,7 +3877,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 3524.94726
+      X: 3524.94727
       Y: 1112.93384
       Z: -569.742188
     }
@@ -4427,7 +4632,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1900.83642
+      X: 1900.83643
       Y: 879.116699
       Z: 797.595337
     }
@@ -4507,7 +4712,7 @@ Objects {
     Location {
       X: 3238.90063
       Y: 1068.58984
-      Z: 50.4414062
+      Z: 50.4414063
     }
     Rotation {
     }
@@ -5528,7 +5733,7 @@ Objects {
   Transform {
     Location {
       X: -1744.53223
-      Y: -649.060058
+      Y: -649.060059
       Z: 237.690308
     }
     Rotation {
@@ -5648,7 +5853,7 @@ Objects {
   Transform {
     Location {
       X: -815.264648
-      Y: -83.8789062
+      Y: -83.8789063
       Z: 219.552612
     }
     Rotation {
@@ -6208,7 +6413,7 @@ Objects {
   Transform {
     Location {
       X: -2506.5918
-      Y: -2559.76562
+      Y: -2559.76563
       Z: 305.591614
     }
     Rotation {
@@ -6288,7 +6493,7 @@ Objects {
   Transform {
     Location {
       X: -2162.5166
-      Y: -996.289062
+      Y: -996.289063
       Z: 545.337097
     }
     Rotation {
@@ -6527,7 +6732,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1915.50976
+      X: -1915.50977
       Y: -580.685547
       Z: 228.283813
     }
@@ -6728,7 +6933,7 @@ Objects {
   Transform {
     Location {
       X: -2162.5166
-      Y: -996.289062
+      Y: -996.289063
       Z: 309.838379
     }
     Rotation {
@@ -7047,7 +7252,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 76.3320312
+      X: 76.3320313
       Y: 326.079102
       Z: 511.891907
     }

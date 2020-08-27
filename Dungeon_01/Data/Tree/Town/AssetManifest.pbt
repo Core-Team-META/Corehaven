@@ -251,15 +251,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14452616722762075696
-  Name: "Fantasy Castle Pillar 01 Base"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_001_base"
-  }
-}
-Assets {
   Id: 14405960884493885038
   Name: "Fantasy Pommel 05"
   PlatformAssetType: 1
@@ -797,6 +788,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "dirt_001"
+  }
+}
+Assets {
+  Id: 8623684838399619731
+  Name: "Decal Soil Cracks Smal Variants 02"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_002"
   }
 }
 Assets {
