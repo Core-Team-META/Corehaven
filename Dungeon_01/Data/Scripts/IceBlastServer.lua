@@ -12,7 +12,7 @@ local DAMAGE = 12.0
 function OnTargetImpacted(weapon, impactData)
     if impactData.targetObject then
 	    local center = impactData:GetHitResult():GetImpactPosition()
-	    local npcs = API_NPC.GetNPCsInSphere(center, BLAST_RADIUS)
+	    local npcs = API_NPC.GetAwakeNPCsInSphere(center, BLAST_RADIUS)
 
         local blastTemplate = World.SpawnAsset(IMPACT_TEMPLATE, {position = center})
 

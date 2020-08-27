@@ -4903,6 +4903,14 @@ Objects {
   ChildIds: 15578309455072553221
   ChildIds: 11057943133536056281
   ChildIds: 68810063867550561
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 3901611470749939446
+      }
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4935,6 +4943,15 @@ Objects {
   ParentId: 14150692841257623222
   WantsNetworking: true
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 337373426812660397
+      value {
+        Overrides {
+          Name: "AnimatedMeshStance"
+          String: "idle"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 11860081688404186785
       value {
@@ -5081,6 +5098,14 @@ Objects {
   ParentId: 15214246396461168156
   ChildIds: 3122953853775054413
   ChildIds: 16402946568641427450
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 3038033862842891513
+      }
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5210,6 +5235,14 @@ Objects {
   ParentId: 15214246396461168156
   ChildIds: 13810144695036899010
   ChildIds: 15199776073160027248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 12209002379312399336
+      }
+    }
+  }
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5511,15 +5544,6 @@ Objects {
         }
       }
     }
-    ParameterOverrideMap {
-      key: 9491223094250427728
-      value {
-        Overrides {
-          Name: "AnimatedMeshStance"
-          String: "1hand_melee_shield_block"
-        }
-      }
-    }
     TemplateAsset {
       Id: 8115993960793536338
     }
@@ -5576,7 +5600,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Scale"
-      Float: 1
+      Float: 1.4
+    }
+    Overrides {
+      Name: "cs:AggroScaleMultiplier"
+      Float: 1.5
     }
     Overrides {
       Name: "cs:ShowNumbers"
@@ -5655,14 +5683,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:ShowNames:tooltip"
-      String: "Show names as part of the nameplate. Default names are hidden either way."
-    }
-    Overrides {
-      Name: "cs:ShowOnSelf:tooltip"
-      String: "Show a nameplate on the local player"
-    }
-    Overrides {
       Name: "cs:HealthNumberColor"
       Color {
         R: 1
@@ -5670,6 +5690,14 @@ Objects {
         B: 1
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:ShowNames:tooltip"
+      String: "Show names as part of the nameplate. Default names are hidden either way."
+    }
+    Overrides {
+      Name: "cs:ShowOnSelf:tooltip"
+      String: "Show a nameplate on the local player"
     }
     Overrides {
       Name: "cs:ShowOnTeammates:tooltip"

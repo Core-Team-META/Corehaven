@@ -33,6 +33,7 @@ local SHOW_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("ShowOnEnemies")
 local MAX_DISTANCE_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("MaxDistanceOnEnemies")
 local SHOW_ON_DEAD_PLAYERS = COMPONENT_ROOT:GetCustomProperty("ShowOnDeadPlayers")
 local SCALE = COMPONENT_ROOT:GetCustomProperty("Scale")
+local AGGRO_SCALE_MULTIPLIER = COMPONENT_ROOT:GetCustomProperty("AggroScaleMultiplier")
 local SHOW_NUMBERS = COMPONENT_ROOT:GetCustomProperty("ShowNumbers")
 local ANIMATE_CHANGES = COMPONENT_ROOT:GetCustomProperty("AnimateChanges")
 local CHANGE_ANIMATION_TIME = COMPONENT_ROOT:GetCustomProperty("ChangeAnimationTime")
@@ -127,6 +128,9 @@ function CreateNameplate(character, data)
 	nameplates[character].statusEffectIcons = {}
 	nameplates[character].panel = nameplateRoot:GetCustomProperty("Panel"):WaitForObject()
 
+	-- UI parented to a player doesn't display, so we stick them in the nameplate folder
+	nameplateRoot:GetCustomProperty("Container"):WaitForObject().parent = COMPONENT_ROOT
+
 	if not STATUS_EFFECT_X_STEP then
 		STATUS_EFFECT_X_STEP = nameplates[character].panel.width / API_SE.MAX_STATUS_EFFECTS
 	end
@@ -151,8 +155,6 @@ function CreateNameplate(character, data)
 		data.animatedMesh:AttachCoreObject(nameplateRoot, "nameplate")
 		nameplateRoot:SetPosition(Vector3.UP * 230.0)
 	end
-
-	nameplateRoot:SetScale(Vector3.New(SCALE, SCALE, SCALE))
 
 	-- Static properties on pieces
 	nameplates[character].borderPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH))
@@ -214,7 +216,7 @@ function OnNPCCreated(npc, data)
 end
 
 function OnNPCDestroyed(npc)
-	nameplates[npc].templateRoot:Destroy()
+	-- AnimatedMeshes destroy their attachments when destroyed, so we don't need to
 	nameplates[npc] = nil
 end
 
@@ -321,6 +323,17 @@ function Tick(deltaTime)
 			    end
 		    end
 
+			-- Update scale for aggro
+			local scale = SCALE
+
+			if not character:IsA("Player") then
+				if API_NPC.GetTarget(character) == LOCAL_PLAYER then
+					scale = scale * AGGRO_SCALE_MULTIPLIER
+				end
+			end
+
+			nameplate.templateRoot:SetScale(Vector3.New(scale))
+
 		    -- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
@@ -334,7 +347,7 @@ function Tick(deltaTime)
 				nameplate.panel.visibility = Visibility.INHERIT
 				nameplate.panel.x = screenPosition.x
 				nameplate.panel.y = screenPosition.y
-				local uiScale = math.min(10.0, 250.0 / targetDistance)
+				local uiScale = math.min(10.0, 250.0 / targetDistance) * scale
 
 				for i = 1, API_SE.MAX_STATUS_EFFECTS do
 					local data = statusEffects[i]
@@ -345,7 +358,8 @@ function Tick(deltaTime)
 						local timeText = iconTemplate:GetCustomProperty("TimeText"):WaitForObject()
 
 						-- Apply scale
-						iconTemplate.x = uiScale * STATUS_EFFECT_X_STEP * (i - (API_SE.MAX_STATUS_EFFECTS + 1) / 2)
+						iconTemplate.x = uiScale * STATUS_EFFECT_X_STEP * (i - (API_SE.MAX_STATUS_EFFECTS + 1) / 2) * 1.5
+						iconTemplate.y = uiScale * -40.0
 						iconTemplate.width = math.floor(uiScale * 100.0)
 						iconTemplate.height = math.floor(uiScale * 100.0)
 						icon.width = math.floor(uiScale * -10.0)

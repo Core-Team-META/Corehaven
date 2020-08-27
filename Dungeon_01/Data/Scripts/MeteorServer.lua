@@ -15,7 +15,7 @@ local ACCELERATION = Vector3.New(0.0, 0.0, 1000.0)
 
 function OnImpactEvent(projectile, other, hitResult, sourcePlayer)
     local hitPosition = hitResult:GetImpactPosition()
-    local npcs = API_NPC.GetNPCsInSphere(hitPosition, 1000.0)
+    local npcs = API_NPC.GetAwakeNPCsInSphere(hitPosition, 1000.0)
 
     for _, npc in pairs(npcs) do
         local offset = npc:GetWorldPosition() - hitPosition

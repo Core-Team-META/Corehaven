@@ -18,7 +18,7 @@ icon - to show on ui
 color - color in ui (usually the background)
 <effectTemplate> - template to spawn and attach to character for effects
 <startFunction(sourceCharacter, character)> - called when applied
-<tickFunction(sourceCharacter, character)> - called exactly once a second (on average)
+<tickFunction(sourceCharacter, character)> - called exactly once per seconds (on average)
 <endFunction(sourceCharacter, character)> - called when expires or removed. Note this may have expired because they died.
 <doesStun> - whether this status effect stuns the target
 <moveSpeedMultiplier> - how much to slow or speed up the characters's movement

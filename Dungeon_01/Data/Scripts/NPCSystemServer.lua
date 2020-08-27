@@ -23,12 +23,18 @@ CoreObject -> table:
 ]]
 local npcStates = {}
 
+local activePulls = {}			-- CoreObject -> true
+
 function IsTableEmpty(table)
 	for _, _ in pairs(table) do
 		return false
 	end
 
 	return true
+end
+
+function IsAsleep(npc)
+	return npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP
 end
 
 function SetCurrentTask(npc, task)
@@ -79,6 +85,7 @@ function ResetNPC(npc)
 end
 
 function UpdateCurrentTask(npc)
+	assert(not IsAsleep(npc))
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
 	local tasks = API_NPC.GetAllTaskData()
@@ -138,6 +145,7 @@ function UpdateCurrentTask(npc)
 end
 
 function MoveAlongPath(npc, deltaTime, path)
+	assert(not IsAsleep(npc))
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
 	local npcPosition = npc:GetWorldPosition()
@@ -169,8 +177,19 @@ function GetXYDistance(p1, p2)
 	return math.sqrt((p1.x - p2.x) ^ 2 + (p1.y - p2.y) ^ 2)
 end
 
+function GetNPCsInPull(pull)
+	local result = pull:GetChildren()
+
+	for _, npc in pairs(result) do
+		assert(npcStates[npc])
+	end
+
+	return result
+end
+
 function AddPlayerToThreatTable(npc, player)
 	local npcState = npcStates[npc]
+	assert(not IsAsleep(npc))
 	assert(not npcState.threatTable[player])
 
 	if not API_NPC.GetTarget(npc) then
@@ -178,9 +197,21 @@ function AddPlayerToThreatTable(npc, player)
 	end
 
 	npcState.threatTable[player] = 0.0
+
+	-- Get the rest of the pull too
+	for _, pullNpc in pairs(GetNPCsInPull(npc.parent)) do
+		if not npcStates[pullNpc].threatTable[player] then
+			if not API_NPC.GetTarget(pullNpc) then
+				API_NPC.SetTarget(pullNpc, player)
+			end
+
+			npcState.threatTable[pullNpc] = 0.0
+		end
+	end
 end
 
 function OnDamaged(sourceCharacter, npc, amount)
+	assert(not IsAsleep(npc))
 	if sourceCharacter:IsA("Player") and not npcStates[npc].threatTable[sourceCharacter] then
 		AddPlayerToThreatTable(npc, sourceCharacter)
 	end
@@ -190,41 +221,84 @@ function OnHealed(sourceCharacter, npc, amount)
 end
 
 function SetStunnedFlag(npc, isStunned)
+	assert(not IsAsleep(npc))
 	npcStates[npc].shouldBeStunned = isStunned
 end
 
 function SuggestMoveUpdate(npc)
+	assert(not IsAsleep(npc))
 	npcStates[npc].shouldMoveUpdate = true
 end
 
-function Tick(deltaTime)
-	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
-		if not npcStates[npc] then
-			-- New NPC
-			local npcState = {}
-			npcState.taskHistory = {}
-			npcState.taskCooldownEndTimes = {}
-			npcState.currentTaskEndTime = 0.0
-			npcState.nextMoveUpdateTime = 0.0
-			npcState.threatTable = {}
-			npcState.shouldBeStunned = false
-			npcState.shouldMoveUpdate = false
-			npcStates[npc] = npcState
-			API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
-			SetCurrentTask(npc, API_NPC.STATE_IDLE)
-		end
+function Wake(npc)
+	assert(npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP)
+	SetCurrentTask(npc, API_NPC.STATE_IDLE)
+end
 
+function OnNPCCreated(npc, data)
+	local npcState = {}
+	npcState.taskHistory = {}
+	npcState.taskCooldownEndTimes = {}
+	npcState.currentTaskEndTime = 0.0
+	npcState.nextMoveUpdateTime = 0.0
+	npcState.threatTable = {}
+	npcState.shouldBeStunned = false
+	npcState.shouldMoveUpdate = false
+	npcStates[npc] = npcState
+	API_NPC.SetHitPoints(npc, data.maxHitPoints)
+	SetCurrentTask(npc, API_NPC.STATE_ASLEEP)
+end
+
+
+function WakePull(pull)
+	activePulls[pull] = true
+
+	for _, npc in pairs(GetNPCsInPull(pull)) do
+		Wake(npc)
+	end
+end
+
+function Tick(deltaTime)
+	-- Update Pulls
+	for _, pull in pairs(NPC_FOLDER:GetChildren()) do
+		if not activePulls[pull] then
+			local prerequisite = pull:GetCustomProperty("Prerequisite")
+
+			if prerequisite then
+				local requiredPull = prerequisite:GetObject()
+
+				if activePulls[requiredPull] then
+					local pullCleared = true
+
+					for _, npc in pairs(GetNPCsInPull(requiredPull)) do
+						if not API_NPC.IsDead(npc) then
+							pullCleared = false
+							break
+						end
+					end
+
+					if pullCleared then
+						WakePull(pull)
+					end
+				end
+			else
+				WakePull(pull)
+			end
+		end
+	end
+
+	-- Update NPCS
+	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
 		local npcState = npcStates[npc]
 		local npcPosition = npc:GetWorldPosition()
 		local currentTask = npcState.taskHistory[1]
 
 		if currentTask == API_NPC.STATE_DEAD then
 			if time() >= npcState.currentTaskEndTime then
-				API_NPC.UnregisterNPC(npc)
 				npcStates[npc] = nil
 				npc:Destroy()
 			end
-		else
+		elseif currentTask ~= API_NPC.STATE_ASLEEP then
 			-- Are we dead?
 			if API_NPC.IsDead(npc) then
 				SetCurrentTask(npc, API_NPC.STATE_DEAD)
@@ -266,7 +340,7 @@ function Tick(deltaTime)
 						end
 					end
 				else
-					-- Update threat table with new entries
+					-- Update threat with new nearby players
 					for _, player in pairs(Game.FindPlayersInSphere(npcPosition, npcData.engageRange, {ignoreDead = true})) do
 						if not npcState.threatTable[player] then
 							AddPlayerToThreatTable(npc, player)
@@ -324,7 +398,8 @@ function Tick(deltaTime)
 					if time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate then
 						-- Movement
 						local targetPosition = API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0
-						local path =  API_P.GetPath(npcPosition, targetPosition)
+						local path = API_P.GetPath(npcPosition, targetPosition)
+						assert(path and GetXYDistance(path[#path], targetPosition) < 100.0)
 
 						if path and (path[#path] - npcPosition).size > 100.0 then
 							if currentTask ~= API_NPC.STATE_CHASING then
@@ -342,11 +417,6 @@ function Tick(deltaTime)
 								end
 							end
 						end
-
-						if not path or GetXYDistance(path[#path], targetPosition) > 100.0 then
-							-- Effectively evading, might need some messaging
-							API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
-						end
 					end
 				end
 			end
@@ -361,7 +431,13 @@ functionTable.OnDamaged = OnDamaged
 functionTable.OnHealed = OnHealed
 functionTable.SetStunnedFlag = SetStunnedFlag
 functionTable.SuggestMoveUpdate = SuggestMoveUpdate
+functionTable.IsAsleep = IsAsleep
 API_NPC.RegisterSystem(functionTable)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
-
 API_P.RegisterRectangles(NAV_MESH_FOLDER)
+Task.Wait()		-- Work around networked property backing data issue
+Events.Connect("NPC_Created", OnNPCCreated)
+
+for npc, data in pairs(API_NPC.GetAllNPCData()) do
+	OnNPCCreated(npc, data)
+end
