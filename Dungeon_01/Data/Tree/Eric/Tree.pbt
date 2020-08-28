@@ -5244,6 +5244,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
       Name: "cs:NPC_Folder"
       ObjectReference {
         SelfId: 15214246396461168156

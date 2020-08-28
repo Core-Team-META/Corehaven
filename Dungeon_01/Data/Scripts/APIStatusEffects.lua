@@ -304,6 +304,23 @@ function API.GetCharacterMoveSpeedMultiplier(character)
 	return characterSpeedMultipliers[character]
 end
 
+-- Client
+function API.ComputeCharacterMoveSpeedMultiplier(character)
+	local minMoveSpeedMultiplier = 1.0
+	local maxMoveSpeedMultiplier = 1.0
+
+	for _, data in pairs(API.GetStatusEffectsOnCharacter(character)) do
+		local statusEffectData = API.STATUS_EFFECT_DEFINITIONS[data.name]
+
+		if statusEffectData.moveSpeedMultiplier then
+			minMoveSpeedMultiplier = math.min(statusEffectData.moveSpeedMultiplier, minMoveSpeedMultiplier)
+			maxMoveSpeedMultiplier = math.max(statusEffectData.moveSpeedMultiplier, maxMoveSpeedMultiplier)
+		end
+	end
+
+	return minMoveSpeedMultiplier * maxMoveSpeedMultiplier
+end
+
 -- Server only
 function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 	if IsCharacterDead(targetCharacter) then

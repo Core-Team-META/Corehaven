@@ -73,9 +73,6 @@ function FindRayCapsuleCollisionDistance(rayStart, rayDirection, capsuleCenter, 
 end
 
 function FindClickTarget()
-	-- Clear auto target history
-	autoTargetHistory = {}
-
 	local viewPosition = LOCAL_PLAYER:GetViewWorldPosition()
 	local viewForward = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD
 	local cursorPoint = UI.GetCursorPlaneIntersection(viewPosition + viewForward * 100.0, viewForward)
@@ -136,7 +133,7 @@ function FindAutoTarget()
 		end
 	end
 
-	table.sort(candidates, function(a, b) return a.priority > b.priority end)	-- Reverse sort
+	table.sort(candidates, function(a, b) return a.priority > b.priority end)	-- High to low
 
 	-- Find the first candidate that isn't in our history or our current target (which may have been from another method)
 	-- We also mark their history rank for the next step if this one falls through
@@ -194,6 +191,9 @@ function OnBindingPressed(player, binding)
 	local newTarget = currentTarget
 
 	if binding == "ability_primary" then
+		-- Clear auto target history
+		autoTargetHistory = {}
+
 		newTarget = FindClickTarget()
 	elseif binding == AUTO_TARGET_BINDING then
 		newTarget = FindAutoTarget()
