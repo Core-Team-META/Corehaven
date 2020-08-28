@@ -1,7 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
-local API_K = require(script:GetCustomProperty("APIKnockback"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 
 local WEAPON = script:GetCustomProperty("Weapon"):WaitForObject()
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()
@@ -26,7 +26,6 @@ function OnTargetImpacted(weapon, impactData)
             local knockDirection = displacement:GetNormalized() + Vector3.UP * 0.1
             API_SE.ApplyStatusEffect(impactData.weaponOwner, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Minor Burn"].id)
             API_D.ApplyDamage(impactData.weaponOwner, npc, DAMAGE)
-            --API_K.ApplyImpulse(npc, knockDirection * KNOCKBACK_SPEED * (1.0 - distance / BLAST_RADIUS))
         end
     end
 end

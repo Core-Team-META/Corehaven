@@ -214,6 +214,12 @@
             }
           }
           Overrides {
+            Name: "cs:APIPlayerState"
+            AssetReference {
+              Id: 7188294788371852653
+            }
+          }
+          Overrides {
             Name: "cs:Weapon"
             ObjectReference {
               SubObjectId: 2540043550526196656

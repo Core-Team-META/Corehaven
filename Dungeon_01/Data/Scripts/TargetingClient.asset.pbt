@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 4438077864703270684
-  Name: "PlayerColorSetterServer"
+  Id: 16993397788607648993
+  Name: "TargetingClient"
   PlatformAssetType: 3
   TextAsset {
   }

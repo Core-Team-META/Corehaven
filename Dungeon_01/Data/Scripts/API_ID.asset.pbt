@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 3530404045527005474
-  Name: "DamageEffectsClient"
+  Id: 8196531844027121028
+  Name: "API_ID"
   PlatformAssetType: 3
   TextAsset {
   }
