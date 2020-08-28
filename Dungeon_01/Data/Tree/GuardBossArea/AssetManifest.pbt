@@ -134,12 +134,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6985710649117550935
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_sm"
+  }
+}
+Assets {
   Id: 4565574025644870814
   Name: "Fantasy Castle Trim - Battlement 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_battlement_001"
+  }
+}
+Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
   }
 }
 Assets {
