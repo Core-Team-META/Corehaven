@@ -49,6 +49,14 @@
             Float: 1200
           }
           Overrides {
+            Name: "cs:CapsuleHeight"
+            Float: 210
+          }
+          Overrides {
+            Name: "cs:CapsuleWidth"
+            Float: 100
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "soldier_melee"
           }

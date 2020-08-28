@@ -1,20 +1,8 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local API = {}
-
--- string GetShortId(CoreObject)
--- Returns the id of the object without the human-readable name on the end for networking
--- Example: "842B77E668FD9258" instead of "842B77E668FD9258:Capture Point Assault"
-function GetShortId(object)
-    if object then
-        if object:IsA("Player") then
-            return object.id
-        else
-            return string.sub(object.id, 1, string.find(object.id, ":") - 1)
-        end
-    end
-end
 
 -- sourceCharacter may be nil
 function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
@@ -26,7 +14,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
     local targetMultiplier = API_SE.GetCharacterDamageTakenMultiplier(targetCharacter)
     local adjustedAmount = amount * sourceMultiplier * targetMultiplier
-    local effectiveAmount = nil
+    local effectiveAmount = 0.0
         
     if adjustedAmount > 0.0 then
         if targetCharacter:IsA("Player") then
@@ -51,7 +39,9 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
     end
 
     local overkill = adjustedAmount - effectiveAmount
-    Events.BroadcastToAllPlayers("DamageDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), effectiveAmount, overkill)
+    local sourceId = API_ID.GetIdFromCharacter(sourceCharacter)
+    local targetId = API_ID.GetIdFromCharacter(targetCharacter)
+    Events.BroadcastToAllPlayers("DamageDone", sourceId, targetId, effectiveAmount, overkill)
 end
 
 -- sourcePlayer may be nil
@@ -68,19 +58,9 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     end
 
     local overheal = amount - effectiveAmount
-    Events.BroadcastToAllPlayers("HealingDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), effectiveAmount, overheal)
-end
-
-function API.GetCharacterFromId(id)
-    if id then
-        for _, player in pairs(Game.GetPlayers()) do
-            if player.id == id then
-                return player
-            end
-        end
-
-        return World.FindObjectById(id)
-    end
+    local sourceId = API_ID.GetIdFromCharacter(sourceCharacter)
+    local targetId = API_ID.GetIdFromCharacter(targetCharacter)
+    Events.BroadcastToAllPlayers("HealingDone", sourceId, targetId, effectiveAmount, overheal)
 end
 
 return API

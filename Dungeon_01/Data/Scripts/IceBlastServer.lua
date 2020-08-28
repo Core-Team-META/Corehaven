@@ -1,6 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 
 local WEAPON = script:GetCustomProperty("Weapon"):WaitForObject()
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()

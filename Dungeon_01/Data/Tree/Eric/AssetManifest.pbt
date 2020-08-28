@@ -125,6 +125,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3965397322580208730
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
+  Id: 3694488038676663105
+  Name: "Outline Object"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_local_outline"
+  }
+}
+Assets {
   Id: 3035981269979443436
   Name: "Icon Explosion"
   PlatformAssetType: 9

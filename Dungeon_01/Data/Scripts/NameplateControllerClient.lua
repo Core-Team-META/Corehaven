@@ -1,5 +1,5 @@
 ﻿--[[
-Copyright 2019 Manticore Games, Inc. 
+Copyright 2019-2020 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -19,6 +19,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 local AS = require(script:GetCustomProperty("APISpectator"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
 local STATUS_EFFECT_TEMPLATE = script:GetCustomProperty("StatusEffectTemplate")
@@ -156,9 +157,11 @@ function CreateNameplate(character, data)
 	-- Setup static properties
 	if character:IsA("Player") then
 		nameplateRoot:AttachToPlayer(character, "nameplate")
+		nameplates[character].baseScale = character:GetWorldScale().z
 	elseif data and data.animatedMesh then
-		data.animatedMesh:AttachCoreObject(nameplateRoot, "nameplate")
-		nameplateRoot:SetPosition(Vector3.UP * 230.0)
+		data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
+		nameplateRoot:SetPosition(Vector3.UP * data.capsuleHeight * 1.1)		-- Bigger enemies need a bigger gap before their nameplate
+		nameplates[character].baseScale = data.capsuleHeight / 200.0
 	end
 
 	-- Static properties on pieces
@@ -333,7 +336,7 @@ function Tick(deltaTime)
 		    end
 
 			-- Update scale for aggro
-			local scale = SCALE
+			local scale = SCALE * nameplate.baseScale
 
 			if not character:IsA("Player") then
 				if API_NPC.GetTarget(character) == LOCAL_PLAYER then
@@ -465,7 +468,7 @@ function Tick(deltaTime)
 				end
 			end
 
-			-- Update name and health color based on teams
+			-- Update name and health color based on teams and state
 			if SHOW_NAMES then
 				local nameColor = nil
 				local healthColor = nil
@@ -484,6 +487,14 @@ function Tick(deltaTime)
 						nameColor = ENEMY_NAME_READY_COLOR
 						healthColor = ENEMY_HEALTH_READY_COLOR
 					end
+				end
+
+				-- Adjust slightly if it's our target
+				if API_PS.GetTarget(LOCAL_PLAYER) == character then
+					nameplate.nameText:SetScale(Vector3.New(1.3))
+					nameColor = Color.Lerp(nameColor, Color.WHITE, 0.2)
+				else
+					nameplate.nameText:SetScale(Vector3.ONE)
 				end
 
 				nameplate.nameText:SetColor(nameColor)

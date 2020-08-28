@@ -208,15 +208,15 @@
             }
           }
           Overrides {
-            Name: "cs:APIKnockback"
-            AssetReference {
-              Id: 13949068266456080686
-            }
-          }
-          Overrides {
             Name: "cs:API_NPC"
             AssetReference {
               Id: 1793953622129874134
+            }
+          }
+          Overrides {
+            Name: "cs:APIPlayerState"
+            AssetReference {
+              Id: 7188294788371852653
             }
           }
           Overrides {

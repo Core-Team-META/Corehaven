@@ -60,6 +60,9 @@ function API.RegisterNPCFolder(npcFolder)
 		data.maxHitPoints = npc:GetCustomProperty("MaxHitPoints")
 		data.speed = npc:GetCustomProperty("MoveSpeed")
 		data.engageRange = npc:GetCustomProperty("EngageRange")
+		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
+		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
+
 		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
 		data.spawnPosition = npc:GetWorldPosition()
 		data.spawnRotation = npc:GetWorldRotation()
@@ -197,12 +200,30 @@ function API.IsPlayerInCombat(player)
 	return systemFunctions.IsPlayerInCombat(player)
 end
 
+function FindSphereToCapsuleDistance(sphereCenter, sphereRadius, capsuleCenter, capsuleHeight, capsuleWidth)
+	local capsuleRadius = capsuleWidth / 2.0
+	local capsuleTopCenter = capsuleCenter + Vector3.UP * (capsuleHeight - capsuleWidth) / 2.0
+	local capsuleBottomCenter =  capsuleCenter - Vector3.UP * (capsuleHeight - capsuleWidth) / 2.0
+
+	if sphereCenter.z >= capsuleTopCenter.z then
+		return math.max(0.0, (sphereCenter - capsuleTopCenter).size - sphereRadius - capsuleRadius)
+	elseif sphereCenter.z <= capsuleBottomCenter.z then
+		return math.max(0.0, (sphereCenter - capsuleBottomCenter).size - sphereRadius - capsuleRadius)
+	else
+		local xyOffset = sphereCenter - capsuleCenter
+		xyOffset.z = 0.0
+		return math.max(0.0, xyOffset.size - sphereRadius - capsuleRadius)
+	end
+end
+
 function API.GetAwakeNPCsInSphere(center, radius)
 	local result = {}
 
 	for npc, _ in pairs(npcs) do
-		if (npc:GetWorldPosition() - center).size <= radius and not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
-			table.insert(result, npc)
+		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
+			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
+				table.insert(result, npc)
+			end
 		end
 	end
 
