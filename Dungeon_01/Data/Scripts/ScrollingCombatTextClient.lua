@@ -5,9 +5,15 @@ local ELEMENT_TEMPLATE = script:GetCustomProperty("ElementTemplate")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-function ShowText(targetCharacter, amount, color)
+function ShowText(targetCharacter, amount, over, color)
 	local element = World.SpawnAsset(ELEMENT_TEMPLATE, {parent = CONTAINER})
-	element.text = string.format("%.1f", amount)
+
+	if over > 0.0 then
+		element.text = string.format("%.0f (%.0f)", amount, over)
+	else
+		element.text = string.format("%.0f", amount)
+	end
+
 	element:SetColor(color)
 
 	local t = time()
@@ -23,7 +29,7 @@ function ShowText(targetCharacter, amount, color)
 			worldPosition = worldPosition + Vector3.UP * 45.0
 		end
 
-		local position = UI.GetScreenPosition(worldPosition)
+		local position = UI.GetScreenPosition(worldPosition) - Vector2.New(0.0, 60.0)
 
 		if position then
 			element.x = position.x
@@ -39,21 +45,21 @@ function ShowText(targetCharacter, amount, color)
 	element:Destroy()
 end
 
-function OnDamageDone(sourceCharacterId, targetCharacterId, amount)
+function OnDamageDone(sourceCharacterId, targetCharacterId, amount, overkill)
 	local sourceCharacter = API_D.GetCharacterFromId(sourceCharacterId)
 	local targetCharacter = API_D.GetCharacterFromId(targetCharacterId)
 
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
-		ShowText(targetCharacter, amount, Color.RED)
+		ShowText(targetCharacter, amount, overkill, Color.RED)
 	end
 end
 
-function OnHealingDone(sourceCharacterId, targetCharacterId, amount)
+function OnHealingDone(sourceCharacterId, targetCharacterId, amount, overheal)
 	local sourceCharacter = API_D.GetCharacterFromId(sourceCharacterId)
 	local targetCharacter = API_D.GetCharacterFromId(targetCharacterId)
 
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
-		ShowText(targetCharacter, amount, Color.GREEN)
+		ShowText(targetCharacter, amount, overheal, Color.GREEN)
 	end
 end
 

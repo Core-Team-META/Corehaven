@@ -3255,6 +3255,72 @@ Objects {
   }
 }
 Objects {
+  Id: 16850574512810482299
+  Name: "ReceiveDamageEffects"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 6440247630371225714
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 6440247630371225714
+  Name: "ReceiveDamageEffectsClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16850574512810482299
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 16019090002437471970
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3530404045527005474
+    }
+  }
+}
+Objects {
   Id: 12927392021329101415
   Name: "PlayerState"
   Transform {
@@ -3513,6 +3579,7 @@ Objects {
   ChildIds: 16639853090526485838
   ChildIds: 9020948649989783179
   ChildIds: 15118100775574367944
+  ChildIds: 14005748578567332780
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3521,6 +3588,64 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 14005748578567332780
+  Name: "Plane"
+  Transform {
+    Location {
+      X: -4260.56934
+      Y: -3078.25122
+      Z: -182.062347
+    }
+    Rotation {
+      Pitch: 5.65896845
+      Yaw: 30.4721565
+      Roll: 8.47230422e-06
+    }
+    Scale {
+      X: 17
+      Y: 9
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -5627,7 +5752,24 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:EnemyNameColor"
+      Name: "cs:EnemyNameAsleepColor"
+      Color {
+        R: 0.324
+        G: 0.307481408
+        B: 0.271835983
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyNameReadyColor"
+      Color {
+        R: 0.570000052
+        G: 0.2491391
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyNameCombatColor"
       Color {
         R: 0.450000048
         A: 1
@@ -5660,7 +5802,24 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:EnemyHealthColor"
+      Name: "cs:EnemyHealthAsleepColor"
+      Color {
+        R: 0.324
+        G: 0.307481408
+        B: 0.271835983
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyHealthReadyColor"
+      Color {
+        R: 0.570000052
+        G: 0.2491391
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyHealthCombatColor"
       Color {
         R: 1
         A: 1
@@ -5740,7 +5899,7 @@ Objects {
       String: "Name color for teammates and self"
     }
     Overrides {
-      Name: "cs:EnemyNameColor:tooltip"
+      Name: "cs:EnemyNameCombatColor:tooltip"
       String: "Name color for enemies"
     }
     Overrides {
@@ -5756,7 +5915,7 @@ Objects {
       String: "Color of friendly health bars"
     }
     Overrides {
-      Name: "cs:EnemyHealthColor:tooltip"
+      Name: "cs:EnemyHealthCombatColor:tooltip"
       String: "Color of enemy health bars"
     }
     Overrides {
@@ -6015,72 +6174,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16850574512810482299
-  Name: "ReceiveDamageEffects"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  ChildIds: 6440247630371225714
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 6440247630371225714
-  Name: "ReceiveDamageEffectsClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16850574512810482299
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 16019090002437471970
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3530404045527005474
-    }
-  }
-}
-Objects {
   Id: 1977994650734686530
   Name: "Cast Bar"
   Transform {
@@ -6131,6 +6224,73 @@ Objects {
     }
     TemplateAsset {
       Id: 10375164435398555586
+    }
+  }
+}
+Objects {
+  Id: 10845545255335035765
+  Name: "AutoHealing"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 3839391392380546448
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3839391392380546448
+  Name: "AutoHealingServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10845545255335035765
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8685390158023215944
     }
   }
 }

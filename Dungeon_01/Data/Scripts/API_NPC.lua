@@ -149,7 +149,9 @@ function API.ApplyHealing(sourceCharacter, npc, amount)
 end
 
 function API.GetHitPoints(npc)
-	return npc:GetCustomProperty("HitPoints")
+	-- Separate lines so we don't return both values from GetCustomProperty()
+	local result = npc:GetCustomProperty("HitPoints")
+	return result
 end
 
 function API.SetTarget(npc, target)
@@ -185,6 +187,14 @@ end
 function API.SuggestMoveUpdate(npc)
 	assert(not systemFunctions.IsAsleep(npc))
 	systemFunctions.SuggestMoveUpdate(npc)
+end
+
+function API.IsAsleep(npc)
+	return systemFunctions.IsAsleep(npc)
+end
+
+function API.IsPlayerInCombat(player)
+	return systemFunctions.IsPlayerInCombat(player)
 end
 
 function API.GetAwakeNPCsInSphere(center, radius)

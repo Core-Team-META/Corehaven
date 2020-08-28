@@ -1763,7 +1763,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:AsleepStance"
-            String: "1hand_sword_idle_relaxed"
+            String: "1hand_melee_idle_relaxed"
           }
           Overrides {
             Name: "cs:IdleStance"

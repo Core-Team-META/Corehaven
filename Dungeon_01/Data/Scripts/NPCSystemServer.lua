@@ -258,6 +258,41 @@ function WakePull(pull)
 	end
 end
 
+function IsNPCInCombat(npc)
+	local currentTask = npcStates[npc].taskHistory[1]
+
+	if currentTask == API_NPC.STATE_ASLEEP then
+		return false
+	end
+
+	if currentTask == API_NPC.STATE_IDLE then
+		return false
+	end
+
+	if currentTask == API_NPC.STATE_DEAD then
+		return false
+	end
+
+	return true
+end
+
+function IsPlayerInCombat(player)
+	for npc, _ in pairs(API_NPC.GetAllNPCData()) do
+		local npcState = npcStates[npc]
+		local currentTask = npcState.taskHistory[1]
+
+		if IsNPCInCombat(npc) then
+			for threatPlayer, _ in pairs(npcState.threatTable) do
+				if threatPlayer == player then
+					return true
+				end
+			end
+		end
+	end
+
+	return false
+end
+
 function Tick(deltaTime)
 	-- Update Pulls
 	for _, pull in pairs(NPC_FOLDER:GetChildren()) do
@@ -432,6 +467,7 @@ functionTable.OnHealed = OnHealed
 functionTable.SetStunnedFlag = SetStunnedFlag
 functionTable.SuggestMoveUpdate = SuggestMoveUpdate
 functionTable.IsAsleep = IsAsleep
+functionTable.IsPlayerInCombat = IsPlayerInCombat
 API_NPC.RegisterSystem(functionTable)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_P.RegisterRectangles(NAV_MESH_FOLDER)

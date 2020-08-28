@@ -26,12 +26,12 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
     local targetMultiplier = API_SE.GetCharacterDamageTakenMultiplier(targetCharacter)
     local adjustedAmount = amount * sourceMultiplier * targetMultiplier
-
-    Events.BroadcastToAllPlayers("DamageDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), adjustedAmount)
+    local effectiveAmount = nil
         
     if adjustedAmount > 0.0 then
         if targetCharacter:IsA("Player") then
-            local damage = Damage.New(adjustedAmount)
+            effectiveAmount = math.min(adjustedAmount, targetCharacter.hitPoints)
+            local damage = Damage.New(effectiveAmount)
 
             if sourceCharacter:IsA("Player") then
                 damage.sourcePlayer = sourceCharacter
@@ -45,20 +45,30 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
             targetCharacter:ApplyDamage(damage)
         else
-            API_NPC.ApplyDamage(sourceCharacter, targetCharacter, adjustedAmount)
+            effectiveAmount = math.min(adjustedAmount, API_NPC.GetHitPoints(targetCharacter))
+            API_NPC.ApplyDamage(sourceCharacter, targetCharacter, effectiveAmount)
         end
     end
+
+    local overkill = adjustedAmount - effectiveAmount
+    Events.BroadcastToAllPlayers("DamageDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), effectiveAmount, overkill)
 end
 
 -- sourcePlayer may be nil
 function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
-    Events.BroadcastToAllPlayers("HealingDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), amount)
-    
+    local effectiveAmount = nil
+
     if targetCharacter:IsA("Player") then
-        targetCharacter.hitPoints = math.min(targetCharacter.maxHitPoints, targetCharacter.hitPoints + amount)
+        effectiveAmount = math.min(amount, targetCharacter.maxHitPoints - targetCharacter.hitPoints)
+        targetCharacter.hitPoints = targetCharacter.hitPoints + effectiveAmount
     else
-        API_NPC.ApplyHealing(sourceCharacter, targetCharacter, amount)
+        local maxHitPoints = API_NPC.GetAllNPCData()[targetCharacter].maxHitPoints
+        effectiveAmount = math.min(amount, maxHitPoints - API_NPC.GetHitPoints(targetCharacter))
+        API_NPC.ApplyHealing(sourceCharacter, targetCharacter, effectiveAmount)
     end
+
+    local overheal = amount - effectiveAmount
+    Events.BroadcastToAllPlayers("HealingDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), effectiveAmount, overheal)
 end
 
 function API.GetCharacterFromId(id)

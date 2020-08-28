@@ -40,11 +40,15 @@ local CHANGE_ANIMATION_TIME = COMPONENT_ROOT:GetCustomProperty("ChangeAnimationT
 
 -- User exposed properties (colors)
 local FRIENDLY_NAME_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyNameColor")
-local ENEMY_NAME_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameColor")
+local ENEMY_NAME_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameAsleepColor")
+local ENEMY_NAME_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameReadyColor")
+local ENEMY_NAME_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameCombatColor")
 local BORDER_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderColor")
 local BACKGROUND_COLOR = COMPONENT_ROOT:GetCustomProperty("BackgroundColor")
 local FRIENDLY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyHealthColor")
-local ENEMY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthColor")
+local ENEMY_HEALTH_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthAsleepColor")
+local ENEMY_HEALTH_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthReadyColor")
+local ENEMY_HEALTH_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthCombatColor")
 local DAMAGE_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("DamageChangeColor")
 local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor") 
 local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor") 
@@ -127,9 +131,10 @@ function CreateNameplate(character, data)
 
 	nameplates[character].statusEffectIcons = {}
 	nameplates[character].panel = nameplateRoot:GetCustomProperty("Panel"):WaitForObject()
+	nameplates[character].container = nameplateRoot:GetCustomProperty("Container"):WaitForObject()
 
 	-- UI parented to a player doesn't display, so we stick them in the nameplate folder
-	nameplateRoot:GetCustomProperty("Container"):WaitForObject().parent = COMPONENT_ROOT
+	nameplates[character].container.parent = COMPONENT_ROOT
 
 	if not STATUS_EFFECT_X_STEP then
 		STATUS_EFFECT_X_STEP = nameplates[character].panel.width / API_SE.MAX_STATUS_EFFECTS
@@ -207,6 +212,7 @@ end
 -- nil OnPlayerLeft(Player)
 -- Destroy their nameplate
 function OnPlayerLeft(player)
+	nameplates[player].container:Destroy()
 	nameplates[player].templateRoot:Destroy()
 	nameplates[player] = nil
 end
@@ -216,6 +222,7 @@ function OnNPCCreated(npc, data)
 end
 
 function OnNPCDestroyed(npc)
+	nameplates[npc].container:Destroy()
 	-- AnimatedMeshes destroy their attachments when destroyed, so we don't need to
 	nameplates[npc] = nil
 end
@@ -278,8 +285,10 @@ function Tick(deltaTime)
 
 		if not visible then
 			nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+			nameplate.container.visibility = Visibility.FORCE_OFF
 		else
 			nameplate.templateRoot.visibility = Visibility.INHERIT
+			nameplate.container.visibility = Visibility.INHERIT
 			RotateNameplate(nameplate)
 
 			-- Update cast bar
@@ -465,8 +474,16 @@ function Tick(deltaTime)
 					nameColor = FRIENDLY_NAME_COLOR
 					healthColor = FRIENDLY_HEALTH_COLOR
 				else
-					nameColor = ENEMY_NAME_COLOR
-					healthColor = ENEMY_HEALTH_COLOR
+					if API_NPC.IsAsleep(character) then
+						nameColor = ENEMY_NAME_ASLEEP_COLOR
+						healthColor = ENEMY_HEALTH_ASLEEP_COLOR
+					elseif API_NPC.GetTarget(character) then
+						nameColor = ENEMY_NAME_COMBAT_COLOR
+						healthColor = ENEMY_HEALTH_COMBAT_COLOR
+					else
+						nameColor = ENEMY_NAME_READY_COLOR
+						healthColor = ENEMY_HEALTH_READY_COLOR
+					end
 				end
 
 				nameplate.nameText:SetColor(nameColor)

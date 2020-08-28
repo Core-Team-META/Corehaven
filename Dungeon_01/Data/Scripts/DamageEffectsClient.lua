@@ -4,7 +4,7 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-function OnDamageDone(sourceCharacterId, targetCharacterId, amount)
+function OnDamageDone(sourceCharacterId, targetCharacterId, amount, overkill)
 	local targetCharacter = API_D.GetCharacterFromId(targetCharacterId)
 
 	if targetCharacter == LOCAL_PLAYER and amount > 0.0 then

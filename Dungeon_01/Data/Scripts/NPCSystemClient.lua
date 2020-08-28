@@ -18,6 +18,10 @@ function FixTaskName(taskName)
 	end
 end
 
+function IsAsleep(npc)
+	return npc:GetCustomProperty("CurrentTask") == API_NPC.STATE_ASLEEP
+end
+
 function Tick(deltaTime)
 	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
 		local previousTask = previousTasks[npc]		-- May be nil
@@ -104,4 +108,5 @@ function Tick(deltaTime)
 	end
 end
 
+API_NPC.RegisterSystem({IsAsleep = IsAsleep})
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
