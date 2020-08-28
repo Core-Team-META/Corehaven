@@ -287,6 +287,7 @@ Objects {
   ChildIds: 10576877606614635057
   ChildIds: 3129409067651023909
   ChildIds: 8997074294930383282
+  ChildIds: 7950803564724564324
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -294,6 +295,70 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 7950803564724564324
+  Name: "Outline Object"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3418556955307438825
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Thickness"
+      Float: 1.5
+    }
+    Overrides {
+      Name: "bp:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Dynamic Thickness"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Hierarchy Discovery Depth"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Show Behind Objects"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Multi-Color"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.8
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3694488038676663105
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
@@ -470,6 +535,12 @@ Objects {
       Name: "cs:TargetOutline"
       ObjectReference {
         SelfId: 8997074294930383282
+      }
+    }
+    Overrides {
+      Name: "cs:HighlightOutline"
+      ObjectReference {
+        SelfId: 7950803564724564324
       }
     }
   }

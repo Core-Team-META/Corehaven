@@ -5,6 +5,7 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
 local TARGET_OUTLINE = script:GetCustomProperty("TargetOutline"):WaitForObject()
+local HIGHLIGHT_OUTLINE = script:GetCustomProperty("HighlightOutline"):WaitForObject()
 
 local AUTO_TARGET_BINDING = ROOT:GetCustomProperty("AutoTargetBinding")
 local AUTO_TARGET_HISTORY_DURATION = ROOT:GetCustomProperty("AutoTargetHistoryDuration")
@@ -78,13 +79,14 @@ function FindClickTarget()
 	local viewPosition = LOCAL_PLAYER:GetViewWorldPosition()
 	local viewForward = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD
 	local cursorPoint = UI.GetCursorPlaneIntersection(viewPosition + viewForward * 100.0, viewForward)
-	local cursorForward = cursorPoint - viewPosition
-	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
-	local closestNPC = nil
-	local closestDistance = math.huge
-	local hitCurrentTarget = false
 
 	if cursorPoint then
+		local cursorForward = cursorPoint - viewPosition
+		local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+		local closestNPC = nil
+		local closestDistance = math.huge
+		local hitCurrentTarget = false
+
 		for npc, data in pairs(API_NPC.GetAllNPCData()) do
 			local capsuleCenter = npc:GetWorldPosition() + Vector3.UP * data.capsuleHeight / 2.0
 			-- Fudge the capsule size to make it easier to click
@@ -101,12 +103,12 @@ function FindClickTarget()
 				end
 			end
 		end
-	end
 
-	if closestNPC then
-		return closestNPC
-	elseif hitCurrentTarget then
-		return currentTarget
+		if closestNPC then
+			return closestNPC
+		elseif hitCurrentTarget then
+			return currentTarget
+		end
 	end
 end
 
@@ -232,10 +234,18 @@ function Tick(deltaTime)
 			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.0, 0.0))
 			TARGET_OUTLINE:SetSmartProperty("Color A", Color.New(2.0, 0.0, 0.0))
 		end
-
 	else
 		TARGET_MARKER.visibility = Visibility.FORCE_OFF
 		TARGET_OUTLINE:SetSmartProperty("Enabled", false)
+	end
+
+	local currentHighlight = FindClickTarget()
+
+	if currentHighlight and currentHighlight ~= currentTarget then
+		HIGHLIGHT_OUTLINE:SetSmartProperty("Enabled", true)
+		HIGHLIGHT_OUTLINE:SetSmartProperty("Object To Outline", currentHighlight)
+	else
+		HIGHLIGHT_OUTLINE:SetSmartProperty("Enabled", false)
 	end
 end
 
