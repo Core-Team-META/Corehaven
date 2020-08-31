@@ -312,6 +312,55 @@ Objects {
         Max: 102400
       }
     }
+    Foliage {
+      Asset {
+        Id: 6510101324272813730
+      }
+      DistanceBetweenInstances: 210
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      CastShadow: true
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 0.8
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: 5500
+        Max: 102400
+      }
+    }
   }
 }
 Objects {

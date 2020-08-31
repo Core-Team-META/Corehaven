@@ -89,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17451336740485325589
-  Name: "Text 02: L"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_011"
-  }
-}
-Assets {
   Id: 17314902742472478485
   Name: "Glass 01"
   PlatformAssetType: 2
@@ -428,6 +419,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x3m_angledR_001"
+  }
+}
+Assets {
+  Id: 12551342492419660247
+  Name: "Fantasy Castle Wall 03 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_003"
   }
 }
 Assets {
@@ -1376,6 +1376,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1892362005922537256
+  Name: "Bricks Large Foundation 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_large_foundation_001"
+  }
+}
+Assets {
   Id: 1656869165372446794
   Name: "Text 03: Y"
   PlatformAssetType: 1
@@ -1463,6 +1472,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_axe_001"
+  }
+}
+Assets {
+  Id: 753262057780649076
+  Name: "Fantasy Castle Wall 01 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_001_door_01"
   }
 }
 Assets {
