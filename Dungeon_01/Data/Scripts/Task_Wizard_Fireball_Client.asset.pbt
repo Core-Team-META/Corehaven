@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 4692914598627417192
-  Name: "Task_TestMelee_Client"
+  Id: 3428048190548918422
+  Name: "Task_Wizard_Fireball_Client"
   PlatformAssetType: 3
   TextAsset {
   }

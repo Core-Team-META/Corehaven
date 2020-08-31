@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 15850025496335791577
-  Name: "Task_TestMelee_Server"
+  Id: 6981915963613025786
+  Name: "Task_Wizard_Meteor_Server"
   PlatformAssetType: 3
   TextAsset {
   }

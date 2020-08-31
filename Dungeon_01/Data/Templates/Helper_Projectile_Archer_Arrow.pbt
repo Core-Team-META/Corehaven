@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 5333833631319763796
-  Name: "Helper_Archer_Arrow"
+  Name: "Helper_Projectile_Archer_Arrow"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

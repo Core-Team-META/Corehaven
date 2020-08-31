@@ -5,8 +5,6 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local currentTask = nil
 
 function OnTaskStart(npc, animatedMesh)
-	local target = API_NPC.GetTarget(npc)
-
 	currentTask = Task.Spawn(function()
 		for i = 1, 3 do
 			Task.Wait(0.3)

@@ -191,6 +191,7 @@ function AddPlayerToThreatTable(npc, player)
 	local npcState = npcStates[npc]
 	assert(not IsAsleep(npc))
 	assert(not npcState.threatTable[player])
+	assert(player:IsA("Player"))
 
 	if not API_NPC.GetTarget(npc) then
 		API_NPC.SetTarget(npc, player)
@@ -205,7 +206,7 @@ function AddPlayerToThreatTable(npc, player)
 				API_NPC.SetTarget(pullNpc, player)
 			end
 
-			npcState.threatTable[pullNpc] = 0.0
+			npcStates[pullNpc].threatTable[player] = 0.0
 		end
 	end
 end
