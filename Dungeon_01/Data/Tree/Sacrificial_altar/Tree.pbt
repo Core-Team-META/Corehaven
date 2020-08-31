@@ -30,15 +30,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1602.74756
-            Y: -2636.64185
-            Z: 22.84198
+            X: -695.352539
+            Y: -1951.45105
+            Z: 22.8414917
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -22.5030518
+            Yaw: -13.4585266
           }
         }
         Overrides {
@@ -169,230 +169,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10347570493856191626
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 10201.4014
-      Y: 1633.1156
-      Z: 730.324402
-    }
-    Rotation {
-      Yaw: -22.5030365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 3228.74463
-            Y: 188.093124
-            Z: 22.8421021
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
-  Id: 9686758988271389849
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 10657.8984
-      Y: 898.163086
-      Z: 730.324524
-    }
-    Rotation {
-      Yaw: -22.5030365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2506.45947
-            Y: 1866.97937
-            Z: 22.8421021
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
-  Id: 11655066923682042867
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 8526.93359
-      Y: 2137.89502
-      Z: 730.324402
-    }
-    Rotation {
-      Yaw: -22.5030365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -768.744629
-            Y: 1974.96484
-            Z: 22.8421021
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
-  Id: 15780623230475023481
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 10448.5225
-      Y: 787.1427
-      Z: 730.324402
-    }
-    Rotation {
-      Yaw: -22.5030365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 831.991699
-            Y: 2371.75879
-            Z: 22.8421021
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
   Id: 11116182014837739630
   Name: "Torch_Holder_Undead"
   Transform {
@@ -422,120 +198,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2962.95654
-            Y: 1132.02686
+            X: 2818.20752
+            Y: 989.273315
             Z: 22.8422241
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
-  Id: 6132852437532568562
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 9847.4707
-      Y: -1858.30261
-      Z: 730.32428
-    }
-    Rotation {
-      Yaw: -22.5030365
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 1239.06592
-            Y: -2075.44141
-            Z: 22.84198
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -22.5030518
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
-  Id: 7666973380319472775
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 4493.35547
-      Y: -958.170288
-      Z: 730.32428
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2550.21436
-            Y: -985.661621
-            Z: 22.8421021
           }
         }
         Overrides {
@@ -588,8 +253,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2996.48926
-            Y: 927.778809
+            X: -2967.35645
+            Y: 1019.50598
             Z: 22.2391357
           }
         }
@@ -857,7 +522,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -3017.13916
-            Y: -775.360962
+            Y: -895.928101
             Z: 22.84198
           }
         }

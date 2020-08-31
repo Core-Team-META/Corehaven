@@ -1,6 +1,300 @@
 ﻿Name: "Cemetery"
 RootId: 11492308109361872204
 Objects {
+  Id: 3778950141716769080
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 319.749146
+      Y: -1328.13867
+      Z: 274.897522
+    }
+    Rotation {
+      Pitch: 15.8217707
+      Yaw: -89.9997482
+      Roll: -89.9998093
+    }
+    Scale {
+      X: 0.9654814
+      Y: 0.343915671
+      Z: 0.79625988
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11901432559165484225
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 566.240234
+      Y: -1328.23535
+      Z: 274.896851
+    }
+    Rotation {
+      Pitch: 15.821682
+      Yaw: -87.5991211
+      Roll: -89.9998093
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.0000025
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12292696792366618193
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 642.660156
+      Y: -1328.13672
+      Z: 274.896606
+    }
+    Rotation {
+      Pitch: 15.8217707
+      Yaw: -89.9997482
+      Roll: -89.9998093
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.13773727
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10992698137394407980
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 703.561523
+      Y: -1328.13672
+      Z: 274.896423
+    }
+    Rotation {
+      Pitch: 15.8217707
+      Yaw: -89.9997482
+      Roll: -89.9998093
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.13773727
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18335911573929464933
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 452.701172
+      Y: -1330.21875
+      Z: 261.255249
+    }
+    Rotation {
+      Pitch: 15.821743
+      Yaw: -89.9996796
+      Roll: 90.0001297
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.13773727
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15507868241981869978
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 451.162598
+      Y: -1328.1377
+      Z: 274.897156
+    }
+    Rotation {
+      Pitch: 15.8217707
+      Yaw: -89.9997482
+      Roll: -89.9998093
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.13773727
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9498543334792877011
+  Name: "Large Wood Beam 8m"
+  Transform {
+    Location {
+      X: 332.701172
+      Y: -1330.21875
+      Z: 261.255249
+    }
+    Rotation {
+      Pitch: 15.8217497
+      Yaw: -89.9996948
+      Roll: 90.0001526
+    }
+    Scale {
+      X: 0.965481758
+      Y: 0.343916863
+      Z: 1.0000025
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 8742086498883200592
   Name: "Tree Oak 01"
   Transform {
@@ -9480,14 +9774,14 @@ Objects {
   Name: "Cart"
   Transform {
     Location {
-      X: 1080.29248
-      Y: 618.410156
-      Z: 330.670349
+      X: 1096.50024
+      Y: -2586.396
+      Z: 528.349487
     }
     Rotation {
-      Pitch: -1.36603776e-05
-      Yaw: -112.835197
-      Roll: 4.07517291e-05
+      Pitch: -0.000122070313
+      Yaw: 49.8731842
+      Roll: 1.8073164e-05
     }
     Scale {
       X: 1.17026448
@@ -18956,7 +19250,6 @@ Objects {
   ChildIds: 7017278740219204471
   ChildIds: 18360140037731407204
   ChildIds: 7724010224893723544
-  ChildIds: 4170241199546567277
   ChildIds: 14862721252908336856
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -19009,56 +19302,6 @@ Objects {
       Temperature: 6500
       LocalLight {
         AttenuationRadius: 1372.58752
-        PointLight {
-          SourceRadius: 20
-          SoftSourceRadius: 20
-          FallOffExponent: 8
-          UseFallOffExponent: true
-        }
-      }
-      MaxDrawDistance: 10000
-      MaxDistanceFadeRange: 1000
-    }
-  }
-}
-Objects {
-  Id: 4170241199546567277
-  Name: "Point Light"
-  Transform {
-    Location {
-      X: 431.866699
-      Y: 2795.1875
-      Z: -863.938904
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2584723845459114718
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Light {
-    Intensity: 69.1016159
-    Color {
-      R: 0.820000052
-      G: 0.293245047
-      A: 1
-    }
-    VolumetricIntensity: 5
-    TeamSettings {
-    }
-    Light {
-      Temperature: 6500
-      LocalLight {
-        AttenuationRadius: 785.764221
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -19330,6 +19573,7 @@ Objects {
   ChildIds: 1598932469178106904
   ChildIds: 1614906230227465610
   ChildIds: 6416393617765843093
+  ChildIds: 300415412596945708
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -19341,12 +19585,52 @@ Objects {
   }
 }
 Objects {
+  Id: 300415412596945708
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 926.2771
+      Y: -3994.06592
+      Z: -0.000122070313
+    }
+    Rotation {
+      Yaw: 89.9999542
+    }
+    Scale {
+      X: 3.08783984
+      Y: 3.02356648
+      Z: 3.7376318
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 897429753597555270
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 6416393617765843093
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
       X: 926.2771
-      Y: -2906.44482
+      Y: -2949.86279
       Z: -0.000122070313
     }
     Rotation {

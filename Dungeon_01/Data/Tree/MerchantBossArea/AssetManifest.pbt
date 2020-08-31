@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13697624696730172247
+  Name: "Callout Sparkle"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_sparkles_volume_vfx"
+  }
+}
+Assets {
   Id: 13338945733164541885
   Name: "Bone Human Scattered 01"
   PlatformAssetType: 1
@@ -131,6 +140,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_scap_01_ref"
+  }
+}
+Assets {
+  Id: 12918556334648073243
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
   }
 }
 Assets {
@@ -203,15 +221,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_001"
-  }
-}
-Assets {
-  Id: 10567573856586224296
-  Name: "Bricks Cobblestone Floor Arches 001"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_cobblestone_floor_arch_001"
   }
 }
 Assets {
@@ -512,6 +521,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2198988441437446815
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 1791824646994413759
   Name: "Bone Human Pile Straight 01"
   PlatformAssetType: 1
@@ -572,6 +590,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_hand_01_ref"
+  }
+}
+Assets {
+  Id: 720721651154426493
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
   }
 }
 Assets {

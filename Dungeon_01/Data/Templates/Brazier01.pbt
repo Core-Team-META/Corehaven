@@ -83,6 +83,15 @@
             Name: "bp:Density"
             Float: 7.8102932
           }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.13
+              G: 1
+              B: 0.723443866
+              A: 1
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -655,10 +664,11 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 39.1458435
+          Intensity: 22
           Color {
-            R: 0.74
-            G: 0.235231802
+            R: 0.13
+            G: 1
+            B: 0.723443866
             A: 1
           }
           VolumetricIntensity: 5
