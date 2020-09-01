@@ -44,12 +44,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16089504577365745032
-  Name: "Metal Old Beaten Gold 02"
-  PlatformAssetType: 2
+  Id: 17091585152308057626
+  Name: "Curb 2m"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_002"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_2m_001"
   }
 }
 Assets {
@@ -194,15 +194,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
-  }
-}
-Assets {
-  Id: 13577817942653603668
-  Name: "Rocky Ground 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "rocky_001"
   }
 }
 Assets {
@@ -572,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_board_6m"
+  }
+}
+Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
   }
 }
 Assets {

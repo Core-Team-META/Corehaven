@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17583731156094274833
+  Name: "Bricks Stone Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bricks_stone_block_001"
+  }
+}
+Assets {
   Id: 16983260950034190065
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
@@ -440,6 +449,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
   Id: 4241954836035827010
   Name: "Candle Holder 02"
   PlatformAssetType: 1
@@ -464,6 +482,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_001_ref"
+  }
+}
+Assets {
+  Id: 3214006606721471794
+  Name: "Curb 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_8m_001"
   }
 }
 Assets {

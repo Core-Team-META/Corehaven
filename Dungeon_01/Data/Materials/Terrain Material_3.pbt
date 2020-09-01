@@ -8,7 +8,7 @@
     ParameterOverrides {
       Overrides {
         Name: "material1side_scale"
-        Float: 0.3
+        Float: 0.05
       }
       Overrides {
         Name: "material1_scale"
