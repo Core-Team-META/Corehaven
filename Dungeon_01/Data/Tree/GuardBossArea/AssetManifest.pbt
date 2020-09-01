@@ -169,3 +169,12 @@ Assets {
     AssetId: "sm_arch_fancy_3m_001"
   }
 }
+Assets {
+  Id: 3214006606721471794
+  Name: "Curb 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_8m_001"
+  }
+}

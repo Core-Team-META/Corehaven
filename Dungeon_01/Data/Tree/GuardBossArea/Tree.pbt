@@ -1,6 +1,258 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 2408974082457330723
+  Name: "Gate_Ruins01"
+  Transform {
+    Location {
+      X: 1421.91797
+      Y: -758.256348
+      Z: 238.055664
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -51.1675529
+      Roll: -179.999954
+    }
+    Scale {
+      X: 1.09880269
+      Y: 1.09880269
+      Z: 1.09880269
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6729065790959285272
+  Name: "curb"
+  Transform {
+    Location {
+      X: -2368.54688
+      Y: 3837.19141
+      Z: -37.0026855
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 38.8318138
+      Roll: -179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7329545321095660634
+  Name: "curb"
+  Transform {
+    Location {
+      X: -2324.21875
+      Y: 3782.11865
+      Z: -40.1223145
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 38.8308868
+      Roll: -176.44162
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12327829351077512051
+  Name: "curb"
+  Transform {
+    Location {
+      X: 1427.98242
+      Y: -790.083496
+      Z: 147.726807
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 38.8309326
+      Roll: -176.44162
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15979826231737023311
+  Name: "curb"
+  Transform {
+    Location {
+      X: 1383.95508
+      Y: -735.385742
+      Z: 143.110107
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: 38.8318672
+      Roll: -179.999954
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14614752272746248535
+  Name: "Gate_Ruins02"
+  Transform {
+    Location {
+      X: -2330.58398
+      Y: 3814.3208
+      Z: 17.3508301
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -51.1675835
+      Roll: -179.999954
+    }
+    Scale {
+      X: 1.09880269
+      Y: 1.09880269
+      Z: 1.09880269
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4542959667302136808
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 11582736650382336940
   Name: "Arch"
   Transform {
