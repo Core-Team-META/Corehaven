@@ -9002,14 +9002,14 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 217.824219
+      X: 128.835938
       Y: -6074.80859
       Z: 6584.12109
     }
     Rotation {
       Pitch: 1.48335314
       Yaw: 124.03949
-      Roll: 5.4560318
+      Roll: 5.45603848
     }
     Scale {
       X: 1.52420223
@@ -9372,7 +9372,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 334.988281
+      X: 246
       Y: -6171.38
       Z: 6618.69824
     }

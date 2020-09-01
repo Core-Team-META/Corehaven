@@ -65,13 +65,13 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -568.175598
-      Y: -665.600098
+      X: -656.866699
+      Y: -658.333679
       Z: 541.07373
     }
     Rotation {
-      Pitch: 25.8713417
-      Yaw: 111.795441
+      Pitch: 25.8713284
+      Yaw: 111.795364
       Roll: -122.275131
     }
     Scale {
@@ -149,14 +149,14 @@ Objects {
   Name: "Rock 02"
   Transform {
     Location {
-      X: -682.202759
-      Y: -379.434021
+      X: -770.89386
+      Y: -372.167572
       Z: 493.997559
     }
     Rotation {
-      Pitch: -65.1644592
-      Yaw: -110.524719
-      Roll: -164.289627
+      Pitch: -65.1644
+      Yaw: -110.524658
+      Roll: -164.289581
     }
     Scale {
       X: 0.813425839
