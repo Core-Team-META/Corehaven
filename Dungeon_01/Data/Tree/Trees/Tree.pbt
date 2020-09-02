@@ -1,6 +1,57 @@
 ﻿Name: "Trees"
 RootId: 6952976605387069163
 Objects {
+  Id: 2151307462076853862
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: -23237.1426
+      Y: -2755.48633
+      Z: 549.713623
+    }
+    Rotation {
+      Yaw: 46.6913795
+    }
+    Scale {
+      X: 0.664749384
+      Y: 0.664749384
+      Z: 0.664749384
+    }
+  }
+  ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2885800070905631850
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5367458741699470218
   Name: "Tree Oak 01"
   Transform {
@@ -149,7 +200,7 @@ Objects {
     Location {
       X: -10027.1113
       Y: -536.427734
-      Z: 1134.58472
+      Z: 1169.24402
     }
     Rotation {
       Yaw: -51.6976929
@@ -594,12 +645,12 @@ Objects {
       Z: 298.164337
     }
     Rotation {
-      Yaw: -30.5046482
+      Yaw: -30.5046387
     }
     Scale {
-      X: 0.982201874
-      Y: 0.982201874
-      Z: 0.982201874
+      X: 1.03962922
+      Y: 1.03962922
+      Z: 1.03962922
     }
   }
   ParentId: 6952976605387069163
@@ -640,12 +691,14 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: -17560.3145
-      Y: 133.255493
-      Z: 319.148499
+      X: -17644.3555
+      Y: 320.247925
+      Z: 463.071808
     }
     Rotation {
-      Yaw: -24.9264526
+      Pitch: -1.88375854
+      Yaw: -27.1138306
+      Roll: 0.213316649
     }
     Scale {
       X: 1
@@ -810,9 +863,9 @@ Objects {
       Yaw: 173.582382
     }
     Scale {
-      X: 1.15235484
-      Y: 1.15235484
-      Z: 1.15235484
+      X: 1.37361765
+      Y: 1.37361765
+      Z: 1.37361765
     }
   }
   ParentId: 6952976605387069163
@@ -850,9 +903,9 @@ Objects {
       Yaw: -82.2582397
     }
     Scale {
-      X: 0.903548598
-      Y: 0.903548598
-      Z: 0.903548598
+      X: 0.994091451
+      Y: 0.994091451
+      Z: 0.994091451
     }
   }
   ParentId: 6952976605387069163

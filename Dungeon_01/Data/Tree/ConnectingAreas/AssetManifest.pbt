@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15836124893126841361
+  Name: "Fantasy Castle Wall 02 - Doorway 01 Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_door_01"
+  }
+}
+Assets {
   Id: 15818682822090430829
   Name: "Pipe - Thin"
   PlatformAssetType: 1
@@ -548,6 +557,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11476426231281021703
+  Name: "Craftsman Roof 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001"
+  }
+}
+Assets {
   Id: 11390981272720591546
   Name: "Craftsman Porch Fence Railing 01"
   PlatformAssetType: 1
@@ -917,6 +935,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7513385921730942068
+  Name: "Fantasy Castle Wall 02 Half - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_win_01"
+  }
+}
+Assets {
   Id: 7362232965091765999
   Name: "Bricks Mortar Thick 01"
   PlatformAssetType: 2
@@ -932,6 +959,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x4m_001"
+  }
+}
+Assets {
+  Id: 7232672974994690852
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
   }
 }
 Assets {

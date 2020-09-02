@@ -1,6 +1,280 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 9867226282999984822
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2968.125
+      Y: 473.808105
+      Z: 1022.12256
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 128.584335
+      Roll: 89.9996643
+    }
+    Scale {
+      X: 1.11943853
+      Y: 22.3716545
+      Z: 0.526730418
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10010083964673251729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 441767878598384375
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 3671.35742
+      Y: 807.22168
+      Z: 1873.23486
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 38.5843925
+      Roll: 89.9996643
+    }
+    Scale {
+      X: 17.8333244
+      Y: 1.06163812
+      Z: 17.8332863
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33006811
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10010083964673251729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2209113171314329367
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 3631.94727
+      Y: 856.614746
+      Z: 1816.36816
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 38.5844307
+      Roll: 89.9996567
+    }
+    Scale {
+      X: 16
+      Y: 4.05068779
+      Z: 16
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.33006811
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10010083964673251729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6133223328714610255
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2114.73242
+      Y: 1543.43359
+      Z: 1022.12329
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 128.584396
+      Roll: 89.9996643
+    }
+    Scale {
+      X: 1.11943853
+      Y: 22.3716545
+      Z: 0.526730418
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10010083964673251729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8056465903999542458
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2145.46094
+      Y: 1680.6875
+      Z: 1022.12256
+    }
+    Rotation {
+      Pitch: 3.4150944e-05
+      Yaw: 38.5844765
+      Roll: 89.9996567
+    }
+    Scale {
+      X: 1.11943853
+      Y: 22.3716545
+      Z: 0.526730418
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10010083964673251729
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 2408974082457330723
   Name: "Gate_Ruins01"
   Transform {
@@ -820,8 +1094,8 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement Corner 01"
   Transform {
     Location {
-      X: 2220.61914
-      Y: 1343.61523
+      X: 2255.54297
+      Y: 1346.94775
       Z: 2177.10938
     }
     Rotation {
@@ -860,8 +1134,8 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement 01"
   Transform {
     Location {
-      X: 2906.37305
-      Y: 2402.55029
+      X: 2941.29688
+      Y: 2405.88281
       Z: 2179.90088
     }
     Rotation {
@@ -900,12 +1174,12 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement Corner 01"
   Transform {
     Location {
-      X: 2909.16602
-      Y: 2404.04053
+      X: 2944.08984
+      Y: 2407.37305
       Z: 2181.729
     }
     Rotation {
-      Yaw: 39.6510658
+      Yaw: 39.6510315
     }
     Scale {
       X: 1
@@ -940,12 +1214,12 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement 01"
   Transform {
     Location {
-      X: 3958.81836
-      Y: 1730.68262
+      X: 3993.74219
+      Y: 1734.01514
       Z: 2179.90088
     }
     Rotation {
-      Yaw: 128.214798
+      Yaw: 128.214752
     }
     Scale {
       X: 1
@@ -980,12 +1254,12 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement 01"
   Transform {
     Location {
-      X: 2219.83398
-      Y: 1349.77197
+      X: 2254.75781
+      Y: 1353.10449
       Z: 2179.90088
     }
     Rotation {
-      Yaw: -51.7847176
+      Yaw: -51.7847595
     }
     Scale {
       X: 1
@@ -1020,8 +1294,8 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement Corner 01"
   Transform {
     Location {
-      X: 3269.48633
-      Y: 676.416
+      X: 3304.41016
+      Y: 679.748535
       Z: 2181.729
     }
     Rotation {
@@ -1102,12 +1376,12 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement Corner 01"
   Transform {
     Location {
-      X: 3958.0332
-      Y: 1736.8418
+      X: 3992.95703
+      Y: 1740.17432
       Z: 2177.10938
     }
     Rotation {
-      Yaw: -50.348587
+      Yaw: -50.3486023
     }
     Scale {
       X: 1
@@ -1142,12 +1416,12 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement 01"
   Transform {
     Location {
-      X: 3272.2793
-      Y: 677.905762
+      X: 3307.20313
+      Y: 681.238281
       Z: 2179.90088
     }
     Rotation {
-      Yaw: 38.2154312
+      Yaw: 38.2153931
     }
     Scale {
       X: 1
@@ -3118,13 +3392,13 @@ Objects {
     }
     Rotation {
       Pitch: 3.4150944e-05
-      Yaw: 38.5845146
-      Roll: 89.999649
+      Yaw: 38.5844765
+      Roll: 89.9996567
     }
     Scale {
-      X: 17.5927105
-      Y: 3.9999907
-      Z: 16.4999561
+      X: 17
+      Y: 4.05068779
+      Z: 17
     }
   }
   ParentId: 3795342459197005188
@@ -3174,14 +3448,14 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 2453.03125
-      Y: 1680.23438
+      X: 2381.32422
+      Y: 1623.02344
       Z: 1022.12109
     }
     Rotation {
       Pitch: 3.4150944e-05
-      Yaw: 38.5845604
-      Roll: 89.9996643
+      Yaw: 38.5845146
+      Roll: 89.999649
     }
     Scale {
       X: 5.434093
@@ -3324,9 +3598,9 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 2876.95313
-      Y: 533.210938
-      Z: 1020.5874
+      X: 2920.0918
+      Y: 479.14209
+      Z: 1020.58691
     }
     Rotation {
       Pitch: -0.000335693359
@@ -3380,13 +3654,13 @@ Objects {
     }
     Rotation {
       Pitch: -0.000335693359
-      Yaw: -51.4155884
+      Yaw: -51.4156494
       Roll: 89.9999619
     }
     Scale {
-      X: 2.5
-      Y: 22.25
-      Z: 2.25
+      X: 3.09871
+      Y: 22.2500019
+      Z: 2.25000477
     }
   }
   ParentId: 3795342459197005188

@@ -5,17 +5,17 @@ Objects {
   Name: "Craftsman Roof 02 Corner Out"
   Transform {
     Location {
-      X: 407.176147
+      X: 431.929871
       Y: 277.728516
-      Z: 589.074219
+      Z: 639.215332
     }
     Rotation {
-      Yaw: -89.9999924
+      Yaw: -90
     }
     Scale {
-      X: 0.985341907
-      Y: 0.740447044
-      Z: 0.6
+      X: 0.985340655
+      Y: 0.779204428
+      Z: 1.04793942
     }
   }
   ParentId: 7959758257364523290
