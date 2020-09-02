@@ -67,76 +67,16 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2843.8125
-      Y: 4248.72852
+      X: 2814.86621
+      Y: 4204.21191
       Z: 2041.28345
     }
     Rotation {
-      Yaw: 146.966827
+      Yaw: 146.966751
     }
     Scale {
-      X: 1.583
-      Y: 1.76377475
-      Z: 1.38609636
-    }
-  }
-  ParentId: 7192807854345907469
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17583731156094274833
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 9.93218517
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3214006606721471794
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13227069207313987500
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: 2902.50781
-      Y: 4338.95313
-      Z: 2041.28345
-    }
-    Rotation {
-      Yaw: 146.966827
-    }
-    Scale {
-      X: 1.583
-      Y: 1.76377475
+      X: 3.73931193
+      Y: 2.95759249
       Z: 1.38609636
     }
   }
@@ -188,11 +128,11 @@ Objects {
   Transform {
     Location {
       X: 2184.875
-      Y: 3235.28027
-      Z: 3470.6
+      Y: 3235.28
+      Z: 3539.33789
     }
     Rotation {
-      Yaw: -33.0332718
+      Yaw: -33.0332947
       Roll: 179.999954
     }
     Scale {
@@ -249,11 +189,11 @@ Objects {
   Transform {
     Location {
       X: 2126.21875
-      Y: 3145.0293
-      Z: 3470.6
+      Y: 3145.02905
+      Z: 3539.33789
     }
     Rotation {
-      Yaw: -33.0332718
+      Yaw: -33.0332947
       Roll: 179.999954
     }
     Scale {
@@ -311,12 +251,12 @@ Objects {
     Location {
       X: 1715.91797
       Y: 3538.13672
-      Z: 2766.16162
+      Z: 2708.49609
     }
     Rotation {
       Pitch: 90
-      Yaw: -90
-      Roll: 123.033859
+      Yaw: -9.46234131
+      Roll: -156.428421
     }
     Scale {
       X: 2.24862409
@@ -435,12 +375,12 @@ Objects {
     Location {
       X: 2602.46875
       Y: 2961.6582
-      Z: 2766.16162
+      Z: 2708.49609
     }
     Rotation {
       Pitch: -90
-      Yaw: -14.0362635
-      Roll: 161.002731
+      Yaw: -165.96373
+      Roll: -47.0698853
     }
     Scale {
       X: 2.24862409
@@ -2837,12 +2777,12 @@ Objects {
   Name: "FireMerchant"
   Transform {
     Location {
-      X: 3009.95117
-      Y: 2220.53345
+      X: 3049.71191
+      Y: 2139.42432
       Z: 2775.03491
     }
     Rotation {
-      Yaw: -47.1100464
+      Yaw: -47.1099854
     }
     Scale {
       X: 0.6

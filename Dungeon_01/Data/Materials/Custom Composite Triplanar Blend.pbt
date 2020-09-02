@@ -9,7 +9,7 @@
       Overrides {
         Name: "cmp:Sides"
         AssetReference {
-          Id: 9345249492029097138
+          Id: 1892362005922537256
         }
       }
       Overrides {
@@ -29,12 +29,12 @@
       }
     }
     Assets {
-      Id: 9345249492029097138
-      Name: "Bricks Chunky Stone 01"
+      Id: 1892362005922537256
+      Name: "Bricks Large Foundation 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_stone_chunky_001"
+        AssetId: "mi_brick_large_foundation_001"
       }
     }
     Assets {

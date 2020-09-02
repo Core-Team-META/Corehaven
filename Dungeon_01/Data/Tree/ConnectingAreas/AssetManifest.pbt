@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18398451643293659336
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 18200200076012147990
   Name: "Fantasy Castle Pillar 02 - Top"
   PlatformAssetType: 1
@@ -71,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17625015986202955236
+  Name: "Fantasy Castle Trim - Battlement Corner 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001_corner_01"
+  }
+}
+Assets {
   Id: 17587880652047825598
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -131,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
+  Id: 16077212917008984281
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {
@@ -269,6 +296,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14265726385927418716
+  Name: "Fantasy Castle Trim - Battlement 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001_4m"
+  }
+}
+Assets {
   Id: 14252695843363782250
   Name: "Spiral"
   PlatformAssetType: 1
@@ -404,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13271671005623298099
+  Name: "Stone Railing 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_railing_6m_001"
+  }
+}
+Assets {
   Id: 12918556334648073243
   Name: "Fire Volume VFX"
   PlatformAssetType: 8
@@ -455,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_railing_6m_bend_001"
+  }
+}
+Assets {
+  Id: 12455776894202311928
+  Name: "Fantasy Castle Wall 02 Half - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_002_win_03"
   }
 }
 Assets {
@@ -572,6 +626,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_porch_001_rail"
+  }
+}
+Assets {
+  Id: 11357606075096969467
+  Name: "Fern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_001"
+  }
+}
+Assets {
+  Id: 11330013614507144582
+  Name: "Stone Block Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_02"
   }
 }
 Assets {
@@ -836,6 +908,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8363385752180729983
+  Name: "Leafy Patch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_groundcover_002"
+  }
+}
+Assets {
   Id: 8318010931141529991
   Name: "Fantasy Castle Wall 01 - Doorway 02"
   PlatformAssetType: 1
@@ -1034,12 +1115,30 @@ Assets {
   }
 }
 Assets {
+  Id: 6510101324272813730
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 6507305604196926970
   Name: "Decal Soil Cracks Big 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_soil_cracks_001"
+  }
+}
+Assets {
+  Id: 6469962064224697995
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {
@@ -1187,12 +1286,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5001748803505888629
+  Name: "Fantasy Castle Pillar Wall 01 Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_wall_001_arch_01"
+  }
+}
+Assets {
   Id: 4670984589696572448
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 4565574025644870814
+  Name: "Fantasy Castle Trim - Battlement 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_battlement_001"
   }
 }
 Assets {
@@ -1259,6 +1376,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3557498420996982810
+  Name: "Fantasy Castle Trim - Parapet 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001_4m"
+  }
+}
+Assets {
   Id: 3533190463953898497
   Name: "Fantasy Chest Treasure Pile 01"
   PlatformAssetType: 1
@@ -1310,6 +1436,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 3130920172929180917
+  Name: "Liquid Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_liquid"
   }
 }
 Assets {
@@ -1373,6 +1508,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_square_shingles_001_uv"
+  }
+}
+Assets {
+  Id: 2007256510569021566
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
   }
 }
 Assets {

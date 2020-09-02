@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 17583731156094274833
-  Name: "Bricks Stone Block 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bricks_stone_block_001"
-  }
-}
-Assets {
   Id: 15161882535366734727
   Name: "Hill 03"
   PlatformAssetType: 1
@@ -116,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7534413844238277162
+  Name: "Bricks Mismatched Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_mismatch_001"
+  }
+}
+Assets {
   Id: 7243485854034201519
   Name: "Arch"
   PlatformAssetType: 1
@@ -176,5 +176,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curb_8m_001"
+  }
+}
+Assets {
+  Id: 1892362005922537256
+  Name: "Bricks Large Foundation 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_large_foundation_001"
   }
 }

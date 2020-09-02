@@ -2014,12 +2014,12 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: -1114.72302
-      Y: 1878.17932
+      X: -1252.89783
+      Y: 2097.25562
       Z: 55.9779053
     }
     Rotation {
-      Yaw: 34.3830299
+      Yaw: 28.7331944
     }
     Scale {
       X: 3.08784056
