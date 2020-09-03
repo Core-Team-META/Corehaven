@@ -197,14 +197,17 @@ end
 
 function view:OnBindingReleased(binding)
     if binding == "ability_primary" then
-        self.isHoldingIcon = false
-        local toSlotIndex = nil
-        if self.slotUnderCursor or not self.isCursorInBounds then
-            local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
-            if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
-                inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
+        if self.isHoldingIcon then 
+            if self.slotUnderCursor or not self.isCursorInBounds then
+                local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
+                if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+                    inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
+                end
             end
         end
+        self.isHoldingIcon = false
+        self.fromSlotIndex = nil
+        self:UpdateCursorState()
     end
 end
 

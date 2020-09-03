@@ -29,6 +29,7 @@ function view:NewEntry()
     local entry = World.SpawnAsset(ENTRY_TEMPLATE, { parent = LOOT_VIEW })
     entry.clientUserData.icon = entry:GetCustomProperty("Icon"):WaitForObject()
     entry.clientUserData.iconBorder = entry:GetCustomProperty("IconBorder"):WaitForObject()
+    entry.clientUserData.iconGradient = entry:GetCustomProperty("IconGradient"):WaitForObject()
     entry.clientUserData.button = entry:GetCustomProperty("Button"):WaitForObject()
     entry.clientUserData.buttonText = entry:GetCustomProperty("ButtonText"):WaitForObject()
     -- The button needs a back-reference so that callbacks can act properly.
@@ -57,6 +58,7 @@ function view:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
         -- Set the colors according to rarity.
         local color = shouldGrayOut and COLOR_GRAYED_OUT or ItemThemes.GetRarityColor(lootInfo.item:GetRarity())
         entry.clientUserData.iconBorder:SetColor(color)
+        entry.clientUserData.iconGradient:SetColor(color)
         entry.clientUserData.buttonText:SetColor(color)
         color.a = 0.2
         entry.clientUserData.button:SetButtonColor(color)
@@ -73,6 +75,7 @@ end
 function view:Clear()
     for entry,_ in pairs(self.lootEntries) do
         entry.visibility = Visibility.FORCE_OFF
+        entry.clientUserData.button.isInteractable = false
         self.lootEntries[entry] = nil
         self.lootEntryFreeSet[entry] = true
     end

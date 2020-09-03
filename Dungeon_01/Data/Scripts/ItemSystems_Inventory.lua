@@ -60,12 +60,12 @@ end
 
 -- True if the slot represents a backpack item.
 function Inventory:IsBackpackSlot(slotIndex)
-    return #Inventory.EQUIP_SLOTS < slotIndex and slotIndex <= Inventory.TOTAL_CAPACITY
+    return slotIndex and #Inventory.EQUIP_SLOTS < slotIndex and slotIndex <= Inventory.TOTAL_CAPACITY
 end
 
 -- True if the slot represents an equipped item.
 function Inventory:IsEquipSlot(slotIndex)
-    return 1 <= slotIndex and slotIndex <= #Inventory.EQUIP_SLOTS
+    return slotIndex and 1 <= slotIndex and slotIndex <= #Inventory.EQUIP_SLOTS
 end
 
 -- True if the slot accepts the given type.
@@ -95,7 +95,7 @@ end
 
 -- Gets the first free backpack slot.
 function Inventory:GetFreeBackpackSlot()
-    for slotIndex = 1,Inventory.TOTAL_CAPACITY do
+    for slotIndex = #Inventory.EQUIP_SLOTS+1,Inventory.TOTAL_CAPACITY do
         if self:IsBackpackSlot(slotIndex) and self:IsEmptySlot(slotIndex) then
             return slotIndex
         end
@@ -115,6 +115,10 @@ end
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
     local item = self:GetItem(fromSlotIndex)
     if item then
+        if not toSlotIndex then
+            -- This acts as a delete request.
+            return true
+        end
         if self:IsBackpackSlot(toSlotIndex) then
             return true
         end
