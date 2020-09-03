@@ -84,6 +84,8 @@ local function SetupControl(control, processSlot)
     if IsSlotControl(control) then
         control.clientUserData.icon = control:GetCustomProperty("Icon"):WaitForObject()
         control.clientUserData.border = control:GetCustomProperty("Border"):WaitForObject()
+        control.clientUserData.gradient = control:GetCustomProperty("Gradient"):WaitForObject()
+        control.clientUserData.gradientColored = control:GetCustomProperty("GradientColored"):WaitForObject()
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
         assert(control.clientUserData.icon and control.clientUserData.border)
@@ -252,15 +254,19 @@ function view:DrawSlots()
         local isHeldSlot = self.isHoldingIcon and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
         if item and not isHeldSlot then
+            local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
             slot.clientUserData.item = item
             slot.clientUserData.icon.visibility = Visibility.INHERIT
             slot.clientUserData.icon:SetImage(item:GetIcon())
+            slot.clientUserData.gradient.visibility = Visibility.INHERIT
+            slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
-                slot.clientUserData.border:SetColor(ItemThemes.GetRarityColor(item:GetRarity()))
+                slot.clientUserData.border:SetColor(rarityColor)
             end
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
+            slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
         end

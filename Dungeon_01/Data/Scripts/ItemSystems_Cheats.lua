@@ -11,8 +11,7 @@ local function OnBindingPressed(player, binding)
     if binding == BINDING_DROP_LOOT then
         local dropKey = database:RandomDropKey()
         local playerPosition = player:GetWorldPosition()
-        local floorPosition= World.Raycast(playerPosition, playerPosition - 500 * Vector3.UP, { ignorePlayers = true }):GetImpactPosition()
-        Events.Broadcast("DropLoot", dropKey, floorPosition)
+        Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
     elseif binding == BINDING_CLEAR_INVENTORY then
         local playerData = Storage.GetPlayerData(player)
         playerData.inventoryHash = nil
