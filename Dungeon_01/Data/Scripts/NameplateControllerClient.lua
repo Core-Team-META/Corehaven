@@ -16,10 +16,11 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local AS = require(script:GetCustomProperty("APISpectator"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
 local STATUS_EFFECT_TEMPLATE = script:GetCustomProperty("StatusEffectTemplate")
@@ -87,18 +88,6 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Variables
 local nameplates = {}
-
--- Player GetViewedPlayer()
--- Returns which player the local player is spectating (or themselves if not spectating)
-function GetViewedPlayer()
-	local specatatorTarget = AS.GetSpectatorTarget()
-
-	if AS.IsSpectating() and specatatorTarget then
-		return specatatorTarget
-	end
-
-	return LOCAL_PLAYER
-end
 
 function CreateNameplate(character, data)
 	assert(character:IsA("Player") or data)
@@ -243,22 +232,22 @@ function IsNameplateVisible(character)
 		end
 	end
 
-	if character == GetViewedPlayer() then
+	if character == LOCAL_PLAYER then
 		return SHOW_ON_SELF
 	end
 
 	-- Special casing this for Boss Fight, all NPCs are enemy
 	-- 0 distance is special, and means we always display them
-	if not character:IsA("Player") or Teams.AreTeamsEnemies(character.team, GetViewedPlayer().team) then
+	if not character:IsA("Player") or Teams.AreTeamsEnemies(character.team, LOCAL_PLAYER.team) then
 		if SHOW_ON_ENEMIES then
-			local distance = (character:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
 			end
 		end
 	else
 		if SHOW_ON_TEAMMATES then
-			local distance = (character:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
 			end
@@ -327,7 +316,7 @@ function Tick(deltaTime)
 								nameplate.castProgressPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * castProgress, HEALTHBAR_HEIGHT))
 								nameplate.castProgressPiece:SetPosition(Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, castProgressPieceOffset, -100.0 * (HEALTHBAR_HEIGHT + BORDER_WIDTH)))
 			        			nameplate.castProgressPiece:SetColor(Color.YELLOW)
-		                        nameplate.castNameText.text = ability.name
+		                        nameplate.castNameText.text = API_A.GetAbilityName(ability)
 			                    break
 			                end
 			            end

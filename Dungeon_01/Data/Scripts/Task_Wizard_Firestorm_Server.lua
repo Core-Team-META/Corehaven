@@ -1,8 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
-
 local RANGE = 1000.0
 local COOLDOWN = 12.0
 local TICK_DAMAGE = 15.0

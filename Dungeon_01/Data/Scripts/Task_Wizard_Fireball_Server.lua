@@ -1,9 +1,11 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_P = require(script:GetCustomProperty("APIProjectile"))
 
 local RANGE = 1000.0
 local COOLDOWN = 0.0
 local DAMAGE = 17.0
+local PROJECTILE_SPEED = 2000.0
 
 local currentTask = nil
 
@@ -15,8 +17,7 @@ function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
 
 	currentTask = Task.Spawn(function()
-		local travelTime = (target:GetWorldPosition() - npc:GetWorldPosition()).size / 3000.0
-		Task.Wait(1.5 + travelTime)
+		Task.Wait(1.5 + API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
 		API_D.ApplyDamage(npc, target, DAMAGE)
 	end)
 

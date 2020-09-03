@@ -393,6 +393,19 @@ function API.RemoveStatusEffect(character, index)
 	end
 end
 
+-- Client and Server
+function API.IsStunned(character)
+	local statusEffects = API.GetStatusEffectsOnCharacter(character)
+
+	for _, data in pairs(statusEffects) do
+		if API.STATUS_EFFECT_DEFINITIONS[data.name].doesStun then
+			return true
+		end
+	end
+
+	return false
+end
+
 function UpdateCharacter(character)
 	local tracker = API.GetStateTracker(character)
 

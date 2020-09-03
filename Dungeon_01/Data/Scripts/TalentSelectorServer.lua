@@ -1,4 +1,4 @@
-﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()

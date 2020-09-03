@@ -168,7 +168,7 @@ function FindAutoTarget()
 	end
 
 	if target then
-		-- Pop them to the front of the list
+		-- Move them to the front of the list
 		table.remove(autoTargetHistory, minRank)
 		table.insert(autoTargetHistory, target)
 	end
@@ -190,7 +190,7 @@ function OnBindingPressed(player, binding)
 	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
 	local newTarget = currentTarget
 
-	if binding == "ability_primary" then
+	if binding == "ability_primary" and UI.IsCursorVisible() then
 		-- Clear auto target history
 		autoTargetHistory = {}
 
@@ -207,6 +207,15 @@ function OnBindingPressed(player, binding)
 	if newTarget ~= currentTarget then
 		table.insert(targetChangeTimeHistory, t)
 		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromCharacter(newTarget))
+	end
+end
+
+function OnDamageDone(sourceId, targetId, amount, overkill)
+	local targetPlayer = API_ID.GetCharacterFromId(targetId)
+	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+
+	if targetPlayer == LOCAL_PLAYER and not currentTarget then
+		Events.BroadcastToServer("SetTarget", sourceId)
 	end
 end
 
@@ -241,7 +250,7 @@ function Tick(deltaTime)
 
 	local currentHighlight = FindClickTarget()
 
-	if currentHighlight and currentHighlight ~= currentTarget then
+	if currentHighlight and currentHighlight ~= currentTarget and UI.IsCursorVisible() then
 		HIGHLIGHT_OUTLINE:SetSmartProperty("Enabled", true)
 		HIGHLIGHT_OUTLINE:SetSmartProperty("Object To Outline", currentHighlight)
 	else
@@ -250,3 +259,4 @@ function Tick(deltaTime)
 end
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+Events.Connect("DamageDone", OnDamageDone)

@@ -71,11 +71,17 @@ function OnButtonHovered(button, talentData)
 	TOOLTIP_COST_TEXT.text = "Cost: " .. talentData.cost
 	TOOLTIP_REQUIRED_LEVEL_TEXT.text = "Required level: " .. talentData.requiredLevel
 	tooltipTalentData = talentData
+	local buttonTemplate = talentData.buttonTemplate
+	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
+	highLight.visibility = Visibility.INHERIT
 end
 
 function OnButtonUnhovered(button, talentData)
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
+	local buttonTemplate = talentData.buttonTemplate
+	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
+	highLight.visibility = Visibility.FORCE_OFF
 end
 
 function OnBindingPressed(player, binding)
@@ -140,8 +146,10 @@ function BuildTalentTreeUI()
 			local unadjustedTreeHeight = UTILITY.TREE_HEIGHT * MAX_BUTTON_SIZE + (UTILITY.TREE_HEIGHT + 1) * BUTTON_PADDING
 			local minTreeHeight = treeScale * unadjustedTreeHeight + treeNameText.height
 			local treeBackgroundImage = treePanel:GetCustomProperty("BackgroundImage"):WaitForObject()
-			treeBackgroundImage.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
-			treeBackgroundImage:SetColor(UTILITY.TALENT_TREE_DATA[treeName].backgroundColor)
+			treeBackgroundImage:SetImage(UTILITY.TALENT_TREE_DATA[treeName].backgroundImage)
+			local backgroundOffset = UTILITY.TALENT_TREE_DATA[treeName].backgroundOffset
+			treeBackgroundImage.x = backgroundOffset.x
+			treeBackgroundImage.y = backgroundOffset.y
 			local treeBorderImage = treePanel:GetCustomProperty("BorderImage"):WaitForObject()
 			treeBorderImage.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
 
@@ -215,18 +223,14 @@ function Tick(deltaTime)
 		if UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName) then
 			for _, talentData in pairs(treeData) do
 				local buttonTemplate = talentData.buttonTemplate
-				local buttonBackgroundImage = buttonTemplate:GetCustomProperty("BackgroundImage"):WaitForObject()
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
+				local check = buttonTemplate:GetCustomProperty("Check"):WaitForObject()
+				button.isInteractable = UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData)
 
 				if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, talentData) then
-					buttonBackgroundImage:SetColor(Color.Lerp(talentData.iconColor, Color.BLACK, 0.3))
-					button:SetButtonColor(Color.BLACK)
-				elseif UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
-					buttonBackgroundImage:SetColor(talentData.iconColor)
-					button:SetButtonColor(Color.BLACK)
+					check.visibility = Visibility.INHERIT
 				else
-					buttonBackgroundImage:SetColor(Color.Lerp(talentData.iconColor, Color.SILVER, 0.6))
-					button:SetButtonColor(Color.GRAY)
+					check.visibility = Visibility.FORCE_OFF
 				end
 			end
 		end

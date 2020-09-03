@@ -15,18 +15,13 @@
             Z: 1
           }
         }
-        ParentId: 6977633620135338639
-        ChildIds: 15800543480931944006
+        ParentId: 379056897218762481
+        ChildIds: 11831892971915444085
+        ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
         ChildIds: 3595806782696598917
         ChildIds: 6905341891173339613
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:Background"
-            ObjectReference {
-              SubObjectId: 15800543480931944006
-            }
-          }
           Overrides {
             Name: "cs:Icon"
             ObjectReference {
@@ -95,7 +90,7 @@
         }
       }
       Objects {
-        Id: 15800543480931944006
+        Id: 11831892971915444085
         Name: "UI Image"
         Transform {
           Location {
@@ -109,7 +104,6 @@
           }
         }
         ParentId: 2794857081652719891
-        ChildIds: 15734142479675734061
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -117,8 +111,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 85
-          Height: 85
+          Width: 80
+          Height: 80
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -126,12 +120,12 @@
           }
           Image {
             Brush {
-              Id: 16532880832873788683
+              Id: 17736261020205249573
             }
             Color {
               R: 1
-              G: 0.00999999
-              B: 0.00999999
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -165,8 +159,7 @@
             Z: 1
           }
         }
-        ParentId: 15800543480931944006
-        ChildIds: 11831892971915444085
+        ParentId: 2794857081652719891
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -184,59 +177,6 @@
           Image {
             Brush {
               Id: 5635343760568520525
-            }
-            Color {
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11831892971915444085
-        Name: "UI Image"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15734142479675734061
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 75
-          Height: 75
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 2567098970669214622
             }
             Color {
               A: 1
@@ -637,12 +577,12 @@
       }
     }
     Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
+      Id: 17736261020205249573
+      Name: "Fantasy Ability Red 007"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "UI_Fantasy_Ability_Red_007"
       }
     }
     Assets {
@@ -652,15 +592,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameFlat_019"
-      }
-    }
-    Assets {
-      Id: 2567098970669214622
-      Name: "Banana"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_banana"
       }
     }
     PrimaryAssetId {

@@ -1,8 +1,10 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
-local API_H = require(script:GetCustomProperty("APIHoming"))
+local API_P = require(script:GetCustomProperty("APIProjectile"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
+
+local PROJECTILE_SPEED = 2000.0
 
 function OnTaskStart(npc, animatedMesh)
 	local target = API_NPC.GetTarget(npc)
@@ -11,12 +13,7 @@ function OnTaskStart(npc, animatedMesh)
 	animatedMesh.playbackRateMultiplier = 0.3
 
 	Task.Wait(1.5)
-	local projectileStart = npc:GetWorldPosition()
-	local projectileEnd = target:GetWorldPosition()
-	local projectile = Projectile.Spawn(PROJECTILE_TEMPLATE, projectileStart, projectileEnd - projectileStart)
-	projectile.speed = 3000.0
-	projectile.lifeSpan = (projectileEnd - projectileStart).size / projectile.speed
-	API_H.SetHomingTarget(projectile, target)
+	API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
 end
 
 function OnTaskEnd(npc, animatedMesh)

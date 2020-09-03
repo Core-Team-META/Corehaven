@@ -1,11 +1,15 @@
 ﻿local API = {}
 
+function API.GetShortId(id)
+    return string.sub(id, 1, string.find(id, ":") - 1)
+end
+
 function API.GetIdFromCharacter(character)
     if character then
         if character:IsA("Player") then
             return character.id
         else
-            return string.sub(character.id, 1, string.find(character.id, ":") - 1)
+            return API.GetShortId(character.id)
         end
     end
 

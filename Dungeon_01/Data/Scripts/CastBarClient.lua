@@ -16,7 +16,8 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local AS = require(script:GetCustomProperty("API"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
+
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
@@ -30,21 +31,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local castingAbility = nil
 local interruptTime = nil
 
--- Player GetViewedPlayer()
--- Returns which player the local player is spectating (or themselves if not spectating)
-function GetViewedPlayer()
-    local specatatorTarget = AS.GetSpectatorTarget()
-
-    if AS.IsSpectating() and specatatorTarget then
-        return specatatorTarget
-    end
-
-    return LOCAL_PLAYER
-end
-
 function Tick(deltaTime)
-    local player = GetViewedPlayer()
-
     if interruptTime then
         if interruptTime + 0.5 < time() then
             interruptTime = nil
@@ -57,10 +44,10 @@ function Tick(deltaTime)
         end
 
         castingAbility = nil
-    elseif player then
+    else
         PANEL.visibility = Visibility.FORCE_OFF
 
-        for _, ability in pairs(player:GetAbilities()) do
+        for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
             if ability:GetCurrentPhase() == AbilityPhase.CAST then
                 local remainingTime = ability:GetPhaseTimeRemaining()
                 local totalTime = ability.castPhaseSettings.duration
@@ -73,7 +60,7 @@ function Tick(deltaTime)
                     PROGRESS_BAR:SetFillColor(Color.YELLOW)
 
                     if SHOW_NAME then
-                        TEXT_BOX.text = ability.name
+                        TEXT_BOX.text = API_A.GetAbilityName(ability)
                     end
 
                     return

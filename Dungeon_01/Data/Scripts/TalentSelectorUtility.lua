@@ -1,4 +1,6 @@
-﻿local UTILITY = {}
+﻿local API_A = require(script:GetCustomProperty("APIAbility"))
+
+local UTILITY = {}
 
 UTILITY.TREE_WIDTH = nil
 UTILITY.TREE_HEIGHT = nil
@@ -51,7 +53,8 @@ function ReadTalentTreeDefinition(root)
 		local treeData = {}
 		treeData.name = treeGroup.name
 		treeData.order = treeGroup:GetCustomProperty("Order")
-		treeData.backgroundColor = treeGroup:GetCustomProperty("BackgroundColor")
+		treeData.backgroundImage = treeGroup:GetCustomProperty("BackgroundImage")
+		treeData.backgroundOffset = treeGroup:GetCustomProperty("BackgroundOffset")
 
 		if UTILITY.TALENT_TREE_TABLE[treeGroup.name] then
 			warn(string.format("Talent tree (%s) has duplicate name", treeGroup.name))
@@ -80,8 +83,13 @@ function ReadTalentTreeDefinition(root)
 			end
 		end
 
-		if treeData.backgroundColor == nil then
-			warn(string.format("BackgroundColor missing on talent tree %s", treeGroup.name))
+		if treeData.backgroundImage == nil then
+			warn(string.format("BackgroundImage missing on talent tree %s", treeGroup.name))
+			treeHasErrors = true
+		end
+
+		if treeData.backgroundOffset == nil then
+			warn(string.format("BackgroundOffset missing on talent tree %s", treeGroup.name))
 			treeHasErrors = true
 		end
 
@@ -105,10 +113,9 @@ function ReadTalentTreeDefinition(root)
 				talentData.requiredLevel = talentGroup:GetCustomProperty("RequiredLevel")
 				talentData.treeX = talentGroup:GetCustomProperty("TreeX")
 				talentData.treeY = talentGroup:GetCustomProperty("TreeY")
-				talentData.equipmentTemplate = talentGroup:GetCustomProperty("EquipmentTemplate")
+				talentData.abilityName = talentGroup:GetCustomProperty("AbilityName")
 				talentData.description = talentGroup:GetCustomProperty("Description")
 				talentData.icon = talentGroup:GetCustomProperty("Icon")
-				talentData.iconColor = talentGroup:GetCustomProperty("IconColor")
 				talentData.cost = talentGroup:GetCustomProperty("Cost")
 				talentData.requiresAbove = talentGroup:GetCustomProperty("RequiresAbove")
 				talentData.requiresAboveLeft = talentGroup:GetCustomProperty("RequiresAboveLeft")
@@ -144,11 +151,6 @@ function ReadTalentTreeDefinition(root)
 					talentHasErrors = true
 				end
 
-				if talentData.equipmentTemplate == nil then
-					warn(string.format("EquipmentTemplate missing on talent %s", talentGroup.name))
-					talentHasErrors = true
-				end
-
 				if talentData.description == nil or talentData.description == "" then
 					warn(string.format("Description missing on talent %s", talentGroup.name))
 					talentHasErrors = true
@@ -156,11 +158,6 @@ function ReadTalentTreeDefinition(root)
 
 				if talentData.icon == nil then
 					warn(string.format("Icon missing on talent %s", talentGroup.name))
-					talentHasErrors = true
-				end
-
-				if talentData.iconColor == nil then
-					warn(string.format("IconColor missing on talent %s", talentGroup.name))
 					talentHasErrors = true
 				end
 
@@ -380,8 +377,11 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	local suffix = string.sub(talentString, talentData.index + 1)
 	local newTalentString = prefix .. "1" .. suffix
 	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", newTalentString)
-	local equipment = World.SpawnAsset(talentData.equipmentTemplate)
-	equipment:Equip(player)
+
+	if talentData.abilityName then
+		API_A.GivePlayerAbility(player, talentData.abilityName)
+	end
+
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)
 end
 

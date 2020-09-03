@@ -107,15 +107,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4555739328168523004
-  Name: "Icon Diamond"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Diamond"
-  }
-}
-Assets {
   Id: 4041875515624588224
   Name: "Icon Player Mount"
   PlatformAssetType: 9
@@ -140,23 +131,5 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_local_outline"
-  }
-}
-Assets {
-  Id: 3035981269979443436
-  Name: "Icon Explosion"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Explosion"
-  }
-}
-Assets {
-  Id: 1835334004209904278
-  Name: "Icon Fireball"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Fireball"
   }
 }

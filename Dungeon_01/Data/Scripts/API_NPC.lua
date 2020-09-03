@@ -49,7 +49,6 @@ function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskSt
 end
 
 function API.RegisterNPCFolder(npcFolder)
-	-- We assume anything with a "HitPoints" custom property is an npc
 	function AddNPC(npc)
 		-- Specifically, all NPCs should be client contexts so we don't have to worry about objects replicating at
 		-- different times
@@ -94,6 +93,7 @@ function API.RegisterNPCFolder(npcFolder)
 
 	function FindNPCs_R(root)
 		for _, child in pairs(root:GetChildren()) do
+			-- We assume anything with a "HitPoints" custom property is an npc
 			_, isNPC = child:GetCustomProperty("HitPoints")
 
 			if isNPC then
@@ -108,6 +108,7 @@ function API.RegisterNPCFolder(npcFolder)
 
 	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
 		Task.Wait()		-- Networked custom properties are not available for a frame
+		-- We assume anything with a "HitPoints" custom property is an npc
 		_, isNPC = newChild:GetCustomProperty("HitPoints")
 
 		if isNPC then

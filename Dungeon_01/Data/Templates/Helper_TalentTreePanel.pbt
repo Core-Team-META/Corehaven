@@ -48,8 +48,8 @@
         Control {
           Width: 375
           Height: 695
-          UIX: -265.690063
-          UIY: -108.564636
+          UIX: -9.51898193
+          UIY: -88.0831
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -93,18 +93,19 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
+          Width: 1000
           Height: 1000
+          UIX: -272.110535
+          UIY: -196.850586
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
           Image {
             Brush {
-              Id: 16532880832873788683
+              Id: 6294033131084533737
             }
             Color {
               R: 1
@@ -162,7 +163,7 @@
           UseParentWidth: true
           Image {
             Brush {
-              Id: 12017046880637070245
+              Id: 11820217174656569202
             }
             Color {
               A: 1
@@ -241,21 +242,21 @@
       }
     }
     Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
+      Id: 6294033131084533737
+      Name: "Fantasy Ability Blue 015"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "UI_Fantasy_Ability_Blue_015"
       }
     }
     Assets {
-      Id: 12017046880637070245
-      Name: "Frame Outlined 002"
+      Id: 11820217174656569202
+      Name: "Fantasy Frame 007"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_019"
+        AssetId: "UI_Fantasy_Frame_007"
       }
     }
     PrimaryAssetId {
