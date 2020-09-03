@@ -1016,6 +1016,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7534413844238277162
+  Name: "Bricks Mismatched Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_mismatch_001"
+  }
+}
+Assets {
   Id: 7513385921730942068
   Name: "Fantasy Castle Wall 02 Half - Window 01"
   PlatformAssetType: 1
@@ -1391,6 +1400,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
+  }
+}
+Assets {
+  Id: 3516309676574310372
+  Name: "Fantasy Castle Wall 01 Half - Window 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_half_001_win_02"
   }
 }
 Assets {

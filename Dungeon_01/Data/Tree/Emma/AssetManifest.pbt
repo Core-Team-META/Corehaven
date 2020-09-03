@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13667574386253162857
+  Name: "Fantasy Castle Bannister 01 - Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_straight"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -44,6 +53,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8509093714030348746
+  Name: "Trim Top 8m 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_top_6m_002"
+  }
+}
+Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
   Id: 7695830393755413980
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -53,12 +80,30 @@ Assets {
   }
 }
 Assets {
+  Id: 7232672974994690852
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
+  }
+}
+Assets {
   Id: 4542959667302136808
   Name: "Portcullis"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
+  Id: 4193024863549911546
+  Name: "Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_bottom_002"
   }
 }
 Assets {
