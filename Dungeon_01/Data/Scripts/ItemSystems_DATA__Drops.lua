@@ -16,12 +16,12 @@
   },
   {
     DropKey = 'SkeletonAssassin',
-    ItemName = 'Curved Knife',
+    ItemName = 'Bandit Knife',
     Likelihood = '100',
   },
   {
     DropKey = 'SkeletonAssassin',
-    ItemName = 'Obsidian Dagger',
+    ItemName = 'Curved Knife',
     Likelihood = '100',
   },
   {
@@ -31,7 +31,17 @@
   },
   {
     DropKey = 'SkeletonAssassin',
-    ItemName = 'Butter Knife',
+    ItemName = 'Backtwister',
+    Likelihood = '100',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Basic Boots',
+    Likelihood = '100',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'RuggedBoots',
     Likelihood = '100',
   },
 }

@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 6261641378857855418
-  Name: "ItemSystems_DATA_Drops"
+  Id: 17924584475135965221
+  Name: "ItemSystems_DATA_Boots_Stats"
   PlatformAssetType: 3
   TextAsset {
   }

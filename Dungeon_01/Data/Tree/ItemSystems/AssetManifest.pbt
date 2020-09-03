@@ -1,10 +1,37 @@
 ﻿Assets {
+  Id: 18102569763011537109
+  Name: "Fantasy Dagger 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_006"
+  }
+}
+Assets {
   Id: 17389391497886536859
   Name: "Icon Random"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Random"
+  }
+}
+Assets {
+  Id: 17345248961038332993
+  Name: "Fantasy Dagger 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_007"
+  }
+}
+Assets {
+  Id: 16682379839823736248
+  Name: "Fantasy Dagger 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_005"
   }
 }
 Assets {
@@ -17,12 +44,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14949040613125658966
+  Name: "Fantasy Dagger 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_004"
+  }
+}
+Assets {
   Id: 14739427260152500224
   Name: "Shield"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_icon_Shield"
+  }
+}
+Assets {
+  Id: 13807331663854887932
+  Name: "Fantasy Dagger 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_003"
   }
 }
 Assets {
@@ -35,12 +80,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13425991512167903095
-  Name: "Daggers"
+  Id: 12819003227636962768
+  Name: "Fantasy Dagger 023"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Daggers"
+    AssetId: "UI_Fantasy_Weapon_Dagger_023"
   }
 }
 Assets {
@@ -50,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_020"
+  }
+}
+Assets {
+  Id: 11298192433756718641
+  Name: "Fantasy Dagger 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_002"
   }
 }
 Assets {
@@ -80,21 +134,21 @@ Assets {
   }
 }
 Assets {
+  Id: 7914877523917694110
+  Name: "Fantasy Dagger 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_016"
+  }
+}
+Assets {
   Id: 7807124703160164224
   Name: "Icon Time"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Time"
-  }
-}
-Assets {
-  Id: 6888408564660649061
-  Name: "Light Sword"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_SciFI_Icon_012"
   }
 }
 Assets {
@@ -116,21 +170,21 @@ Assets {
   }
 }
 Assets {
-  Id: 6219384021562230794
-  Name: "Icon Weapon Sword"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_WeaponSword"
-  }
-}
-Assets {
   Id: 5868275997044220508
   Name: "Icon Player Mount"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_PlayerMount"
+  }
+}
+Assets {
+  Id: 4970040763593452072
+  Name: "Fantasy Dagger 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Weapon_Dagger_001"
   }
 }
 Assets {
