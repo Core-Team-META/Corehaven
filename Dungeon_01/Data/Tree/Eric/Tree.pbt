@@ -1560,7 +1560,7 @@ Objects {
     Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
-        SelfId: 2330302539704572805
+        SelfId: 8070407745297500615
       }
     }
     Overrides {
@@ -1679,7 +1679,7 @@ Objects {
     Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
-        SelfId: 2330302539704572805
+        SelfId: 8070407745297500615
       }
     }
     Overrides {
