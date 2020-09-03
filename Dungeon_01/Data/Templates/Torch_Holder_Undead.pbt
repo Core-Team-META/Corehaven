@@ -7,7 +7,7 @@
       RootId: 2264634198754595121
       Objects {
         Id: 2264634198754595121
-        Name: "Torch_Holder"
+        Name: "Torch_Holder_Undead"
         Transform {
           Scale {
             X: 1
@@ -737,7 +737,7 @@
                 UseFallOffExponent: true
               }
             }
-            MaxDrawDistance: 5000
+            MaxDrawDistance: 10000
             MaxDistanceFadeRange: 2000
           }
         }

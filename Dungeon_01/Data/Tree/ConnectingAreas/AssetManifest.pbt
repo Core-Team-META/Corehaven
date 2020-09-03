@@ -278,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14476679536478096151
+  Name: "Fantasy Castle Pillar 02 - Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_base"
+  }
+}
+Assets {
   Id: 14405960884493885038
   Name: "Fantasy Pommel 05"
   PlatformAssetType: 1
@@ -980,6 +989,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
+  }
+}
+Assets {
   Id: 7814966837604519694
   Name: "Bricks Rough Stone Floor 01"
   PlatformAssetType: 2
@@ -1358,6 +1376,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4286823887220239396
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_4m"
+  }
+}
+Assets {
   Id: 4247430867898109902
   Name: "Stucco Tintable"
   PlatformAssetType: 2
@@ -1652,6 +1679,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
+  Id: 666374143927038811
+  Name: "Cube - Chamfered Large"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_chamfer"
   }
 }
 Assets {

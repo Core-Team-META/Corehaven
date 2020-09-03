@@ -188,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12817510901257393900
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
-  }
-}
-Assets {
   Id: 12510064410993333055
   Name: "Fantasy Pommel 04"
   PlatformAssetType: 1
@@ -347,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_ribcage_01_ref"
+  }
+}
+Assets {
+  Id: 8509093714030348746
+  Name: "Trim Top 8m 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_top_6m_002"
   }
 }
 Assets {
