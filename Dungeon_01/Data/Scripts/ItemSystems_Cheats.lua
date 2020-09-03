@@ -1,0 +1,26 @@
+﻿if not script:GetCustomProperty("Enable") then return end
+
+local BINDING_DROP_LOOT = script:GetCustomProperty("BindingDropLoot")
+local BINDING_CLEAR_INVENTORY = script:GetCustomProperty("BindingClearInventory")
+local BINDING_PRINT_INVENTORY = script:GetCustomProperty("BindingPrintInventory")
+local Database = require(script:GetCustomProperty("ItemSystems_Database"))
+
+local database = Database.New()
+
+local function OnBindingPressed(player, binding)
+    if binding == BINDING_DROP_LOOT then
+        local dropKey = database:RandomDropKey()
+        local playerPosition = player:GetWorldPosition()
+        local floorPosition= World.Raycast(playerPosition, playerPosition - 500 * Vector3.UP, { ignorePlayers = true }):GetImpactPosition()
+        Events.Broadcast("DropLoot", dropKey, floorPosition)
+    elseif binding == BINDING_CLEAR_INVENTORY then
+        local playerData = Storage.GetPlayerData(player)
+        playerData.inventoryHash = nil
+        Storage.SetPlayerData(player, playerData)
+        print("Inventory was cleared. Restart game to see changes.")
+    elseif binding == BINDING_PRINT_INVENTORY then
+        print(player.serverUserData.inventory)
+    end
+end
+
+Game.playerJoinedEvent:Connect(function(player) player.bindingPressedEvent:Connect(OnBindingPressed) end)
