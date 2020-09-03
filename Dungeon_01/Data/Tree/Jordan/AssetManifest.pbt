@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17736261020205249573
+  Name: "Fantasy Ability Red 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Red_007"
+  }
+}
+Assets {
   Id: 16682379839823736248
   Name: "Fantasy Dagger 005"
   PlatformAssetType: 9
@@ -59,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 11383569197837134801
+  Name: "Fantasy Ability Red 020"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Red_020"
   }
 }
 Assets {
