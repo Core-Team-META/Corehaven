@@ -103,7 +103,7 @@ function Database:_LoadCatalog()
                 name = row.Name,
                 type = row.Type,
                 rarity = row.Rarity,
-                meshMUID = row.MUID,
+                meshMUID = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
                 iconMUID = row.Icon,
                 description = row.Lore,
                 _RollStats = function()

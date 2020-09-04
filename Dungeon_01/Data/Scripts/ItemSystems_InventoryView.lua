@@ -215,8 +215,8 @@ function view:OnBindingReleased(binding)
                     inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
                     if toSlotIndex then
                         if inventory:IsEquipSlot(toSlotIndex) then
-                            local equippedItem = inventory:GetItem(self.fromSlotIndex)
-                            PlaySound(ItemThemes.GetItemSFX(equippedItem:GetType()))
+                            local newlyEquippedItem = inventory:GetItem(toSlotIndex)
+                            PlaySound(ItemThemes.GetItemSFX(newlyEquippedItem:GetType()))
                         else
                             PlaySound(SFX_MOVE)
                         end
