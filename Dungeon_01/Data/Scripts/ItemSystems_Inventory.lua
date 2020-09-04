@@ -60,12 +60,12 @@ end
 
 -- True if the slot represents a backpack item.
 function Inventory:IsBackpackSlot(slotIndex)
-    return #Inventory.EQUIP_SLOTS < slotIndex and slotIndex <= Inventory.TOTAL_CAPACITY
+    return slotIndex and #Inventory.EQUIP_SLOTS < slotIndex and slotIndex <= Inventory.TOTAL_CAPACITY
 end
 
 -- True if the slot represents an equipped item.
 function Inventory:IsEquipSlot(slotIndex)
-    return 1 <= slotIndex and slotIndex <= #Inventory.EQUIP_SLOTS
+    return slotIndex and 1 <= slotIndex and slotIndex <= #Inventory.EQUIP_SLOTS
 end
 
 -- True if the slot accepts the given type.
@@ -95,7 +95,7 @@ end
 
 -- Gets the first free backpack slot.
 function Inventory:GetFreeBackpackSlot()
-    for slotIndex = 1,Inventory.TOTAL_CAPACITY do
+    for slotIndex = #Inventory.EQUIP_SLOTS+1,Inventory.TOTAL_CAPACITY do
         if self:IsBackpackSlot(slotIndex) and self:IsEmptySlot(slotIndex) then
             return slotIndex
         end
@@ -111,10 +111,19 @@ function Inventory:GetFreeEquipSlot(slotType)
     end
 end
 
+-- Get the cumulative stat totals from all equipped items.
+function Inventory:GetStatTotals()
+    return self.statTotals
+end
+
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
     local item = self:GetItem(fromSlotIndex)
     if item then
+        if not toSlotIndex then
+            -- This acts as a delete request.
+            return true
+        end
         if self:IsBackpackSlot(toSlotIndex) then
             return true
         end
@@ -127,12 +136,12 @@ end
 -- Move an item. If there is an item in the destination slot, the items will swap. Acts as delete if destination slot is nil.
 function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     if not self:CanMoveItem(fromSlotIndex, toSlotIndex) then return end
-    local swap = nil
+    local swapItem = nil
     if toSlotIndex then
-        swap = self.slotItems[toSlotIndex]
-        self.slotItems[toSlotIndex] = self.slotItems[fromSlotIndex]
+        swapItem = self.slotItems[toSlotIndex]
+        self:_SetSlotItem(toSlotIndex, self.slotItems[fromSlotIndex])
     end
-    self.slotItems[fromSlotIndex] = swap
+    self:_SetSlotItem(fromSlotIndex, swapItem)
     self:_FireEvent("itemMovedEvent", fromSlotIndex, toSlotIndex)
 end
 
@@ -168,6 +177,11 @@ function Inventory:ClaimLoot(lootIndex)
     end
 end
 
+-- Get a specific loot item.
+function Inventory:GetLootItem(lootIndex)
+    return self.lootInfos[lootIndex] and self.lootInfos[lootIndex].item or nil
+end
+
 -- Get information for all loots registered to this inventory.
 function Inventory:GetLootInfos()
     return self.lootInfos
@@ -196,6 +210,7 @@ function Inventory:_Init(database)
     self.database = database
     self.lootInfos = {}
     self:_ClearSlots()
+    self:_RecalculateStatTotals()
 end
 
 function Inventory:_ClearSlots()
@@ -266,11 +281,40 @@ function Inventory:_SetSlotItem(slotIndex, item)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
-        local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
         self.equippedItems[slotIndex] = item
-        self.isOffhandDisabled = constraints.isOffhandDisabled or false
+        self.isOffhandDisabled = false
+        if item then
+            local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
+            self.isOffhandDisabled = constraints.isOffhandDisabled or false
+        end
+        self:_RecalculateStatTotals()
         self:_FireEvent("itemEquippedEvent", slotIndex, item)
     end
+end
+
+function Inventory:_RecalculateStatTotals()
+    self.statTotals = self.statTotals or {}
+    for _,statName in ipairs(Item.STATS) do
+        self.statTotals[statName] = 0
+    end
+    for slotIndex = 1,#Inventory.EQUIP_SLOTS do
+        local item = self:GetItem(slotIndex)
+        if item then
+            if Inventory.EQUIP_SLOTS[slotIndex].slotType == "OffHand" and self.isOffhandDisabled then
+                -- We have to be careful to not include offhand stats when they are disabled (by having a 2H weapon in mainhand).
+            else
+                -- Accumulate stat contribution.
+                for _,statName in ipairs(Item.STATS) do
+                    local itemStatAmount = item:GetStatTotal(statName)
+                    self.statTotals[statName] = self.statTotals[statName] + itemStatAmount
+                end
+            end
+        end
+    end
+    -- We bake the percent health into health so that all subsequent systems can make use of only the health amount.
+    local healthMultiplier = 1.0 + (self.statTotals.HealthPercent / 100)
+    self.statTotals.Health = math.floor(self.statTotals.Health * healthMultiplier)
+    self.statTotals.HealthPercent = nil
 end
 
 function Inventory:__tostring()

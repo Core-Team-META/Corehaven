@@ -6,6 +6,13 @@
 ]]
 local Item = require(script:GetCustomProperty("Item"))
 
+local DATA_CATALOGS = {}
+local DATA_STATS = {}
+for _,itemType in ipairs(Item.TYPES) do
+    table.insert(DATA_CATALOGS, require(script:GetCustomProperty(string.format("%s_Catalog", itemType))))
+    table.insert(DATA_STATS, require(script:GetCustomProperty(string.format("%s_Stats", itemType))))
+end
+
 local Database = {}
 Database.__index = Database
 
@@ -56,81 +63,85 @@ function Database:_Init()
 end
 
 function Database:_LoadStats()
-    local data = require(script:GetCustomProperty("DATA_Stats"))
     self.itemStatRollInfos = {}
-    for _,row in ipairs(data) do
-        assert(Item.STATS[row.Stat], string.format("unrecognized item stat %s", row.Stat))
-        self.itemStatRollInfos[row.StatKey] = self.itemStatRollInfos[row.StatKey] or { base = {}, bonus = {} }
-        local statRollInfos = self.itemStatRollInfos[row.StatKey]
-        local rollInfo = { statName = row.Stat, rollMin = tonumber(row.Min), rollMax = tonumber(row.Max), likelihood = tonumber(row.Likelihood) }
-        if row.Group == "Base" then
-            table.insert(statRollInfos.base, rollInfo)
-        else
-            assert(rollInfo.likelihood, "bonus stat missing likelihood")
-            statRollInfos.bonus[row.Group] = statRollInfos.bonus[row.Group] or { cumulativeLikelihood = 0 }
-            local bonusGroup = statRollInfos.bonus[row.Group]
-            bonusGroup.cumulativeLikelihood = bonusGroup.cumulativeLikelihood + rollInfo.likelihood
-            table.insert(bonusGroup, rollInfo)
+    for _,data in ipairs(DATA_STATS) do
+        for _,row in ipairs(data) do
+            assert(Item.STATS[row.Stat], string.format("unrecognized item stat %s", row.Stat))
+            self.itemStatRollInfos[row.StatKey] = self.itemStatRollInfos[row.StatKey] or { base = {}, bonus = {} }
+            local statRollInfos = self.itemStatRollInfos[row.StatKey]
+            local rollInfo = { statName = row.Stat, rollMin = tonumber(row.Min), rollMax = tonumber(row.Max), likelihood = tonumber(row.Likelihood) }
+            if row.Group == "Base" then
+                table.insert(statRollInfos.base, rollInfo)
+            else
+                assert(rollInfo.likelihood, "bonus stat missing likelihood")
+                statRollInfos.bonus[row.Group] = statRollInfos.bonus[row.Group] or { cumulativeLikelihood = 0 }
+                local bonusGroup = statRollInfos.bonus[row.Group]
+                bonusGroup.cumulativeLikelihood = bonusGroup.cumulativeLikelihood + rollInfo.likelihood
+                table.insert(bonusGroup, rollInfo)
+            end
         end
     end
 end
 
 function Database:_LoadCatalog()
-    local data = require(script:GetCustomProperty("DATA_Catalog"))
     self.itemDatasByIndex = {}
     self.itemDatasByName = {}
     self.itemDatasByMUID = {}
-    for i,row in ipairs(data) do
-        assert(not self.itemDatasByName[row.Name], "duplicate item name is not allowed - %s", row.Name)
-        assert(not self.itemDatasByMUID[row.MUID], "duplicate item MUID is not allowed - %s", row.MUID)
-        assert(Item.TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
-        assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
-        assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
-        local itemData = {
-            index = i,
-            name = row.Name,
-            type = row.Type,
-            rarity = row.Rarity,
-            meshMUID = row.MUID,
-            iconMUID = row.Icon,
-            description = row.Lore,
-            _RollStats = function()
-                local statRollInfos = self.itemStatRollInfos[row.StatKey]
-                local stats = {}
-                for _,rollInfo in ipairs(statRollInfos.base) do
-                    local statInfo = Item._StatInfo{
-                        name = rollInfo.statName,
-                        value = math.random(rollInfo.rollMin, rollInfo.rollMax),
-                        isBase = true,
-                    }
-                    table.insert(stats, statInfo)
-                end
-                for _,bonusGroup in pairs(statRollInfos.bonus) do
-                    local roll = math.random() * bonusGroup.cumulativeLikelihood
-                    for _,rollInfo in ipairs(bonusGroup) do
-                        if roll <= rollInfo.likelihood then
-                            local statInfo = Item._StatInfo{
-                                name = rollInfo.statName,
-                                value = math.random(rollInfo.rollMin, rollInfo.rollMax),
-                                isBonus = true
-                            }
-                            table.insert(stats, statInfo)
-                            break
-                        end
-                        roll = roll - rollInfo.likelihood
+    local index = 1
+    for _,data in ipairs(DATA_CATALOGS) do
+        for _,row in ipairs(data) do
+            assert(not self.itemDatasByName[row.Name], string.format("duplicate item name is not allowed - %s", row.Name))
+            assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))
+            assert(Item.TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
+            assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
+            assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
+            local itemData = {
+                index = index,
+                name = row.Name,
+                type = row.Type,
+                rarity = row.Rarity,
+                meshMUID = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
+                iconMUID = row.Icon,
+                description = row.Lore,
+                _RollStats = function()
+                    local statRollInfos = self.itemStatRollInfos[row.StatKey]
+                    local stats = {}
+                    for _,rollInfo in ipairs(statRollInfos.base) do
+                        local statInfo = Item._StatInfo{
+                            name = rollInfo.statName,
+                            value = math.random(rollInfo.rollMin, rollInfo.rollMax),
+                            isBase = true,
+                        }
+                        table.insert(stats, statInfo)
                     end
+                    for _,bonusGroup in pairs(statRollInfos.bonus) do
+                        local roll = math.random() * bonusGroup.cumulativeLikelihood
+                        for _,rollInfo in ipairs(bonusGroup) do
+                            if roll <= rollInfo.likelihood then
+                                local statInfo = Item._StatInfo{
+                                    name = rollInfo.statName,
+                                    value = math.random(rollInfo.rollMin, rollInfo.rollMax),
+                                    isBonus = true
+                                }
+                                table.insert(stats, statInfo)
+                                break
+                            end
+                            roll = roll - rollInfo.likelihood
+                        end
+                    end
+                    return stats
                 end
-                return stats
-            end
-        }
-        self.itemDatasByIndex[itemData.index] = itemData
-        self.itemDatasByName[itemData.name] = itemData
-        self.itemDatasByMUID[itemData.meshMUID] = itemData
+            }
+            index = index + 1
+            self.itemDatasByIndex[itemData.index] = itemData
+            self.itemDatasByName[itemData.name] = itemData
+            self.itemDatasByMUID[itemData.meshMUID] = itemData
+        end
     end
 end
 
 function Database:_LoadDrops()
-    local data = require(script:GetCustomProperty("DATA_Drops"))
+    local data = require(script:GetCustomProperty("Drops"))
     self.itemDropTables = {}
     self.itemDropKeys = {}
     for i,row in ipairs(data) do

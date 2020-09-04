@@ -7,7 +7,7 @@
       RootId: 5257186260722694675
       Objects {
         Id: 5257186260722694675
-        Name: "SFX_InventoryClick"
+        Name: "SFX_InventoryClaimLoot"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15583302069736707182
+        ChildIds: 10884261172042540157
         Lifespan: 2
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,8 +29,8 @@
         }
       }
       Objects {
-        Id: 15583302069736707182
-        Name: "Button Click 01 SFX"
+        Id: 10884261172042540157
+        Name: "Magic Sparkle Dust Item 01 SFX"
         Transform {
           Location {
           }
@@ -51,7 +51,7 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 15545017021280293231
+            Id: 11611539838803987820
           }
           AutoPlay: true
           Transient: true
@@ -62,12 +62,12 @@
       }
     }
     Assets {
-      Id: 15545017021280293231
-      Name: "Button Click 01 SFX"
+      Id: 11611539838803987820
+      Name: "Magic Sparkle Dust Item 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfxui_click_01_Cue"
+        AssetId: "sfx_magic_sparkle_dust_item_01_Cue_ref"
       }
     }
     PrimaryAssetId {

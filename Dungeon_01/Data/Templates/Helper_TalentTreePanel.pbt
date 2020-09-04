@@ -108,9 +108,9 @@
               Id: 6294033131084533737
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.546875
+              G: 0.546875
+              B: 0.546875
               A: 1
             }
             TeamSettings {
@@ -166,6 +166,9 @@
               Id: 11820217174656569202
             }
             Color {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -208,7 +211,8 @@
         }
         Control {
           Width: 200
-          Height: 40
+          Height: 58
+          UIY: 11.7646942
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -218,9 +222,12 @@
           Text {
             Label: "Talent Tree Name"
             Color {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
-            Size: 20
+            Size: 24
             Justification {
               Value: "mc:etextjustify:center"
             }

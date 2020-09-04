@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 6261641378857855418
-  Name: "ItemSystems_DATA_Drops"
+  Id: 14528184167296635963
+  Name: "ItemSystems_DATA_Wand_Catalog"
   PlatformAssetType: 3
   TextAsset {
   }

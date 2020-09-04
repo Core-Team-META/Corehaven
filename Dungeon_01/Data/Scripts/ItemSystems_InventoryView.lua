@@ -1,5 +1,9 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
+local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
+local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
+local PLAYER_LEVEL = script:GetCustomProperty("PlayerLevel"):WaitForObject()
+local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
@@ -7,6 +11,9 @@ local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
 local TEMPLATE_SLOT_BACKPACK = script:GetCustomProperty("TemplateSlotBackpack")
 local TEMPLATE_SLOT_EQUIPPED = script:GetCustomProperty("TemplateSlotEquipped")
 local CURSOR_HIGHLIGHT_BACKPACK = script:GetCustomProperty("CursorHighlightBackpack")
+local SFX_EQUIP = script:GetCustomProperty("SFX_Equip")
+local SFX_MOVE = script:GetCustomProperty("SFX_Move")
+local SFX_DISCARD = script:GetCustomProperty("SFX_Discard")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Hardcoded UI placement settings.
@@ -16,6 +23,15 @@ local SLOT_DOCK = "TopCenter"
 -- Wait for inventory to load.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
 local inventory = LOCAL_PLAYER.clientUserData.inventory
+
+-----------------------------------------------------------------------------------------------------------------
+PLAYER_NAME.text = LOCAL_PLAYER.name
+PLAYER_ICON:SetImage(LOCAL_PLAYER)
+
+-----------------------------------------------------------------------------------------------------------------
+local function PlaySound(sfx)
+    World.SpawnAsset(sfx, { parent = script })
+end
 
 -----------------------------------------------------------------------------------------------------------------
 -- Setup all UI elements.
@@ -84,9 +100,14 @@ local function SetupControl(control, processSlot)
     if IsSlotControl(control) then
         control.clientUserData.icon = control:GetCustomProperty("Icon"):WaitForObject()
         control.clientUserData.border = control:GetCustomProperty("Border"):WaitForObject()
+        control.clientUserData.gradient = control:GetCustomProperty("Gradient"):WaitForObject()
+        control.clientUserData.gradientColored = control:GetCustomProperty("GradientColored"):WaitForObject()
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
         assert(control.clientUserData.icon and control.clientUserData.border)
+        if control:GetCustomProperty("NotAllowed") then
+            control.clientUserData.notAllowed = control:GetCustomProperty("NotAllowed"):WaitForObject()
+        end
         if processSlot then processSlot(control) end
     end
 end
@@ -124,6 +145,14 @@ function view:Init()
 end
 
 function view:InitStats()
+    self.statElements = {}
+    for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
+        statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
+        statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statElement.name))
+        statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
+        statElement.clientUserData.hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
+        self.statElements[statElement.name] = statElement
+    end
 end
 
 function view:InitEquippedSlots()
@@ -195,14 +224,27 @@ end
 
 function view:OnBindingReleased(binding)
     if binding == "ability_primary" then
-        self.isHoldingIcon = false
-        local toSlotIndex = nil
-        if self.slotUnderCursor or not self.isCursorInBounds then
-            local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
-            if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
-                inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
+        if self.isHoldingIcon then 
+            if self.slotUnderCursor or not self.isCursorInBounds then
+                local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
+                if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+                    inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
+                    if toSlotIndex then
+                        if inventory:IsEquipSlot(toSlotIndex) then
+                            local newlyEquippedItem = inventory:GetItem(toSlotIndex)
+                            PlaySound(ItemThemes.GetItemSFX(newlyEquippedItem:GetType()))
+                        else
+                            PlaySound(SFX_MOVE)
+                        end
+                    else
+                        PlaySound(SFX_DISCARD)
+                    end
+                end
             end
         end
+        self.isHoldingIcon = false
+        self.fromSlotIndex = nil
+        self:UpdateCursorState()
     end
 end
 
@@ -233,6 +275,11 @@ function view:UpdateCursorState()
     end
 end
 
+function view:UpdatePlayerInfo()
+    local playerLevel = LOCAL_PLAYER:GetResource("Level") or 1
+    PLAYER_LEVEL.text = string.format("Level %d", playerLevel)
+end
+
 function view:Draw()
     if not INVENTORY_VIEW.clientUserData.isVisible then
         INVENTORY_VIEW.visibility = Visibility.FORCE_OFF
@@ -241,10 +288,20 @@ function view:Draw()
         return
     end
     INVENTORY_VIEW.visibility = Visibility.INHERIT
+    self:UpdatePlayerInfo()
     self:UpdateCursorState()
+    self:DrawStats()
     self:DrawSlots()
     self:DrawHoverHighlight()
     self:DrawHoverInfo()
+end
+
+function view:DrawStats()
+    local statTotals = inventory:GetStatTotals()
+    for statName,statAmount in pairs(statTotals) do
+        local statElement = self.statElements[statName]
+        statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
+    end
 end
 
 function view:DrawSlots()
@@ -252,15 +309,17 @@ function view:DrawSlots()
         local isHeldSlot = self.isHoldingIcon and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
         if item and not isHeldSlot then
+            local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
             slot.clientUserData.item = item
             slot.clientUserData.icon.visibility = Visibility.INHERIT
             slot.clientUserData.icon:SetImage(item:GetIcon())
+            slot.clientUserData.gradient.visibility = Visibility.INHERIT
+            slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
-            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
-                slot.clientUserData.border:SetColor(ItemThemes.GetRarityColor(item:GetRarity()))
-            end
+            slot.clientUserData.border:SetColor(rarityColor)
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
+            slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
         end
@@ -269,7 +328,17 @@ end
 
 function view:DrawHoverHighlight()
     if self.slotUnderCursor and (self.itemUnderCursor or self.isHoldingIcon) then
-        self.slotUnderCursor.clientUserData.border:SetImage(CURSOR_HIGHLIGHT_BACKPACK)
+        local toSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
+        if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+            self.slotUnderCursor.clientUserData.border:SetImage(CURSOR_HIGHLIGHT_BACKPACK)
+        end 
+    end
+    for _,slot in ipairs(self.equippedSlots) do
+        local toSlotIndex = slot.clientUserData.slotIndex
+        slot.clientUserData.notAllowed.visibility = Visibility.FORCE_OFF
+        if self.isHoldingIcon and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+            slot.clientUserData.notAllowed.visibility = Visibility.INHERIT
+        end
     end
 end
 
@@ -294,7 +363,7 @@ function view:DrawHoverInfo()
             if statInfo then
                 entry.visibility = Visibility.INHERIT
                 entry.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statInfo.name))
-                entry.clientUserData.value.text = ItemThemes.GetStatFormattedValue(statInfo.name, statInfo.value)
+                entry.clientUserData.value.text = ItemThemes.GetItemStatFormattedValue(statInfo.name, statInfo.value)
                 if statInfo.isBase then
                     entry.x = PANEL_ITEM_HOVER.clientUserData.statOffsetXBase
                     entry.y = PANEL_ITEM_HOVER.clientUserData.statOffsetY + offsetYBase

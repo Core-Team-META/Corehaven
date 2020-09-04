@@ -1,6 +1,823 @@
 ﻿Name: "NecromancerBossArea"
 RootId: 11492308109361872204
 Objects {
+  Id: 16681838481404550134
+  Name: "Brazier01"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 226.46875
+            Y: -2831.34766
+            Z: 863.53717
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9999313
+            Roll: -89.9999313
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 17377410458487339065
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 1863.76758
+      Y: 7601.32031
+      Z: -178.038147
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999313
+      Roll: -89.9999313
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1059.10352
+            Y: -2828.05273
+            Z: 863.536743
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 6.83018879e-06
+            Yaw: -89.9999313
+            Roll: -89.9999313
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 13613672200141327335
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 1029.04492
+      Y: 14479.6309
+      Z: -165.2995
+    }
+    Rotation {
+      Pitch: -0.00180316984
+      Yaw: -71.086937
+      Roll: -89.9987793
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2895.61914
+            Y: 1524.48047
+            Z: 877.749634
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.00170754723
+            Yaw: -24.3324986
+            Roll: -89.999939
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 10056627335527444558
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 3508.60547
+      Y: 14460.2227
+      Z: -165.342773
+    }
+    Rotation {
+      Pitch: -0.000976717
+      Yaw: -111.02742
+      Roll: -89.9985733
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 143.246094
+            Y: 4173.95703
+            Z: 876.267334
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.0015572831
+            Yaw: -81.495285
+            Roll: -89.9989624
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 433929379910811896
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 2763.01367
+      Y: 14665.998
+      Z: -165.324829
+    }
+    Rotation {
+      Pitch: -0.00122260384
+      Yaw: -100.619629
+      Roll: -89.9986649
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -608.253906
+            Y: 3989.41211
+            Z: 876.275818
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.00180316984
+            Yaw: -71.086937
+            Roll: -89.9987793
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 8039918623769920808
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 3508.60547
+      Y: 14460.2227
+      Z: -165.342773
+    }
+    Rotation {
+      Pitch: -0.000976717
+      Yaw: -111.02742
+      Roll: -89.9985733
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1125.71484
+            Y: 4175.7793
+            Z: 876.250488
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.00122260384
+            Yaw: -100.619637
+            Roll: -89.998642
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 4664051382566669192
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 5474.42969
+      Y: 12739.3242
+      Z: -165.397583
+    }
+    Rotation {
+      Pitch: -3.4150944e-05
+      Yaw: -155.112
+      Roll: -89.9987183
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1871.30664
+            Y: 3970.00391
+            Z: 876.232544
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000976717
+            Yaw: -111.02742
+            Roll: -89.9985733
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 16928075775240018020
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 5761.71094
+      Y: 11996.5234
+      Z: -165.409424
+    }
+    Rotation {
+      Pitch: 7.51320767e-05
+      Yaw: -164.230362
+      Roll: -89.9991379
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3837.13086
+            Y: 2249.10547
+            Z: 876.177734
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -3.4150944e-05
+            Yaw: -155.112015
+            Roll: -89.9986954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 3247852450194927619
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 2696.40234
+      Y: 7662.16602
+      Z: -178.038574
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: -89.9999313
+      Roll: -89.9999313
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4124.41211
+            Y: 1506.30469
+            Z: 876.165894
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 7.51320767e-05
+            Yaw: -164.230347
+            Roll: -89.9991379
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
+  Id: 17646194289192880563
+  Name: "Brazier01"
+  Transform {
+    Location {
+      X: 1780.54492
+      Y: 14664.1758
+      Z: -165.307983
+    }
+    Rotation {
+      Pitch: -0.0015572831
+      Yaw: -81.495285
+      Roll: -89.9989624
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7100775556368623387
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Brazier01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2607.79102
+            Y: 2277.4375
+            Z: 877.764038
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.00174169813
+            Yaw: -25.2294121
+            Roll: -90.0005188
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17125525118502607253
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0424804688
+            Y: -19.8443584
+            Z: -0.000988006592
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: 9.7072716e-06
+            Roll: 89.9998779
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14876623392528977624
+    }
+  }
+}
+Objects {
   Id: 9414899789047110463
   Name: "Gate_Cemetery_"
   Transform {

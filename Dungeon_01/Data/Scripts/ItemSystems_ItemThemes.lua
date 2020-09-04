@@ -18,7 +18,7 @@ local STAT_ICONS = {
     Tenacity        = script:GetCustomProperty("StatIconTenacity"),
 }
 
-local STAT_FORMATS = {
+local ITEM_STAT_FORMATS = {
     Health          = "+%d",
     HealthPercent   = "+%d%%",
     Defense         = "+%d",
@@ -30,6 +30,34 @@ local STAT_FORMATS = {
     Tenacity        = "+%d%%",
 }
 
+local PLAYER_STAT_FORMATS = {
+    Health          = "%d",
+    Defense         = "%d",
+    Attack          = "%d",
+    Magic           = "%d",
+    CritChance      = "%d%%",
+    Haste           = "%d%%",
+    CDR             = "%d%%",
+    Tenacity        = "%d%%",
+}
+
+local ITEM_SFX = {
+    Armor      = script:GetCustomProperty("SFX_EquipArmor"),
+    Axe        = script:GetCustomProperty("SFX_EquipAxe"),
+    Boots      = script:GetCustomProperty("SFX_EquipBoots"),
+    Dagger     = script:GetCustomProperty("SFX_EquipDagger"),
+    Greatsword = script:GetCustomProperty("SFX_EquipGreatsword"),
+    Focus      = script:GetCustomProperty("SFX_EquipFocus"),
+    Helmet     = script:GetCustomProperty("SFX_EquipHelmet"),
+    Mace       = script:GetCustomProperty("SFX_EquipMace"),
+    Shield     = script:GetCustomProperty("SFX_EquipShield"),
+    Staff      = script:GetCustomProperty("SFX_EquipStaff"),
+    Sword      = script:GetCustomProperty("SFX_EquipSword"),
+    Trinket    = script:GetCustomProperty("SFX_EquipTrinket"),
+    Warhammer  = script:GetCustomProperty("SFX_EquipWarhammer"),
+    Wand       = script:GetCustomProperty("SFX_EquipWand"),
+}
+
 return {
     GetRarityColor = function(rarity)
         return Color.New(RARITY_COLORS[rarity])
@@ -39,7 +67,15 @@ return {
         return STAT_ICONS[statName]
     end,
 
-    GetStatFormattedValue = function(statName, statValue)
-        return string.format(STAT_FORMATS[statName], statValue)
+    GetItemStatFormattedValue = function(statName, statValue)
+        return string.format(ITEM_STAT_FORMATS[statName], statValue)
+    end,
+
+    GetPlayerStatFormattedValue = function(statName, statValue)
+        return string.format(PLAYER_STAT_FORMATS[statName], statValue)
+    end,
+
+    GetItemSFX = function(itemType)
+        return ITEM_SFX[itemType]
     end,
 }

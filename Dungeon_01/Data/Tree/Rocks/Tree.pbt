@@ -1,6 +1,69 @@
 ﻿Name: "Rocks"
 RootId: 14148918943805634918
 Objects {
+  Id: 5482747778402169665
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -12178.4609
+      Y: 12807.9551
+      Z: 1074.59924
+    }
+    Rotation {
+      Pitch: 63.433609
+      Yaw: -39.4511719
+      Roll: -126.941376
+    }
+    Scale {
+      X: 2.15773463
+      Y: 2.15896797
+      Z: 3.09711
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 18182658761357647811
   Name: "Rock Flat 02"
   Transform {

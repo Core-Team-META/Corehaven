@@ -15,20 +15,26 @@
             Z: 1
           }
         }
-        ParentId: 14941095892963387303
+        ParentId: 17155143211693072178
         ChildIds: 5348629821032280837
         ChildIds: 6315064856389920910
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
             ObjectReference {
-              SubObjectId: 5348629821032280837
+              SubObjectId: 8279737145471925589
             }
           }
           Overrides {
             Name: "cs:IconBorder"
             ObjectReference {
-              SubObjectId: 1770998771488572327
+              SubObjectId: 106599881622017060
+            }
+          }
+          Overrides {
+            Name: "cs:IconGradient"
+            ObjectReference {
+              SubObjectId: 8759942697037870164
             }
           }
           Overrides {
@@ -90,7 +96,9 @@
           }
         }
         ParentId: 15873319186262965235
-        ChildIds: 1770998771488572327
+        ChildIds: 481419494720558477
+        ChildIds: 8279737145471925589
+        ChildIds: 106599881622017060
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -108,12 +116,9 @@
           }
           Image {
             Brush {
-              Id: 1800484346299675619
+              Id: 13778967266379385506
             }
             Color {
-              R: 0.9
-              G: 0.9
-              B: 0.9
               A: 1
             }
             TeamSettings {
@@ -134,7 +139,180 @@
         }
       }
       Objects {
-        Id: 1770998771488572327
+        Id: 481419494720558477
+        Name: "Gradient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5348629821032280837
+        ChildIds: 8759942697037870164
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 16532880832873788683
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8759942697037870164
+        Name: "GradientInner"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 481419494720558477
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 16477742065922762353
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8279737145471925589
+        Name: "Icon"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5348629821032280837
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -10
+          Height: -10
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 106599881622017060
         Name: "Border"
         Transform {
           Location {
@@ -166,12 +344,12 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 17203018534405021992
+              Id: 12017046880637070245
             }
             Color {
-              R: 0.9
-              G: 0.9
-              B: 0.9
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -326,21 +504,39 @@
       }
     }
     Assets {
-      Id: 1800484346299675619
-      Name: "Sword"
+      Id: 13778967266379385506
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_icon_Sword"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
-      Id: 17203018534405021992
-      Name: "Frame Outlined 001"
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_020"
+        AssetId: "BackgroundNoOutline_019"
+      }
+    }
+    Assets {
+      Id: 16477742065922762353
+      Name: "UI Gradient Circular 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Basic_Shape_001"
+      }
+    }
+    Assets {
+      Id: 12017046880637070245
+      Name: "Frame Outlined 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSolid4px_019"
       }
     }
     Assets {

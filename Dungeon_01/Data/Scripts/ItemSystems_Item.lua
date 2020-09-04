@@ -19,16 +19,16 @@ Item.TYPES = Enum{
     "Axe",
     "Boots",
     "Dagger",
-    "Greatsword",
     "Focus",
+    "Greatsword",
     "Helmet",
     "Mace",
     "Shield",
     "Staff",
     "Sword",
     "Trinket",
-    "Warhammer",
     "Wand",
+    "Warhammer",
 }
 
 Item.STATS = Enum{

@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 12313079519373165937
-  Name: "ItemSystems_DATA_Catalog"
+  Id: 12682885469124827438
+  Name: "ItemSystems_DATA_Sword_Catalog"
   PlatformAssetType: 3
   TextAsset {
   }

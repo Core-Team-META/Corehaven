@@ -7,41 +7,41 @@
       Overrides {
         Name: "cs:RarityCommon"
         Color {
-          R: 0.713000059
-          G: 0.713000059
-          B: 0.713000059
+          R: 1
+          G: 1
+          B: 1
           A: 1
         }
       }
       Overrides {
         Name: "cs:RarityUncommon"
         Color {
-          G: 0.468000025
-          B: 0.00309946644
+          R: 0.0331125259
+          G: 1
           A: 1
         }
       }
       Overrides {
         Name: "cs:RarityRare"
         Color {
-          G: 0.340926915
-          B: 0.99
+          G: 0.134039372
+          B: 0.919999957
           A: 1
         }
       }
       Overrides {
         Name: "cs:RarityEpic"
         Color {
-          R: 0.466225624
-          B: 0.88
+          R: 0.960000038
+          B: 0.896423519
           A: 1
         }
       }
       Overrides {
         Name: "cs:RarityLegendary"
         Color {
-          R: 0.88
-          G: 0.209801316
+          R: 0.940000057
+          G: 0.336158961
           A: 1
         }
       }
@@ -91,6 +91,90 @@
         Name: "cs:StatIconTenacity"
         AssetReference {
           Id: 9505356526787877396
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipArmor"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipAxe"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipBoots"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipDagger"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipGreatsword"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipFocus"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipHelmet"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipMace"
+        AssetReference {
+          Id: 16757952733114463039
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipShield"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipStaff"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipSword"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipTrinket"
+        AssetReference {
+          Id: 1246853273103719825
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipWarhammer"
+        AssetReference {
+          Id: 16757952733114463039
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipWand"
+        AssetReference {
+          Id: 3961394470878237143
         }
       }
     }

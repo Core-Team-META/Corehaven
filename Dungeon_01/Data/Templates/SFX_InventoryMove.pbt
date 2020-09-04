@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 12893355638564104218
-  Name: "SFX_InventoryEquip"
+  Id: 17100161445438500121
+  Name: "SFX_InventoryMove"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3720840178431637716
+      RootId: 10722407312561325193
       Objects {
-        Id: 3720840178431637716
-        Name: "SFX_InventoryEquip"
+        Id: 10722407312561325193
+        Name: "SFX_InventoryMove"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 1462379099899678436
+        ChildIds: 15279824680781497839
         Lifespan: 2
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,8 +29,8 @@
         }
       }
       Objects {
-        Id: 1462379099899678436
-        Name: "Quick Grab Equip Object 01 SFX"
+        Id: 15279824680781497839
+        Name: "Button Click Press Core 01 SFX"
         Transform {
           Location {
           }
@@ -42,7 +42,7 @@
             Z: 1
           }
         }
-        ParentId: 3720840178431637716
+        ParentId: 10722407312561325193
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -51,7 +51,7 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 14845266776703616140
+            Id: 3193982394305217901
           }
           AutoPlay: true
           Transient: true
@@ -62,12 +62,12 @@
       }
     }
     Assets {
-      Id: 14845266776703616140
-      Name: "Quick Grab Equip Object 01 SFX"
+      Id: 3193982394305217901
+      Name: "Button Click Press Core 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_quick_equip_grab_object_01a_Cue_ref"
+        AssetId: "sfxui_click_press_core_01_Cue_ref"
       }
     }
     PrimaryAssetId {

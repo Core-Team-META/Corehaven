@@ -1,20 +1,21 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
+local LOOT_SCROLL_PANEL = script:GetCustomProperty("ScrollPanel"):WaitForObject()
 local PANEL_CLAIM_INSTRUCTIONS = script:GetCustomProperty("ClaimInstructions"):WaitForObject()
 local PANEL_CLAIM_WARNING = script:GetCustomProperty("InventoryFullWarning"):WaitForObject()
-local ENTRY_PADDING_TOP = script:GetCustomProperty("PaddingTop")
 local ENTRY_PADDING_BETWEEN = script:GetCustomProperty("PaddingBetween")
-local ENTRY_PADDING_BOTTOM = script:GetCustomProperty("PaddingBottom")
 local ENTRY_TEMPLATE = script:GetCustomProperty("LootEntryTemplate")
 local DEFAULT_ICON = script:GetCustomProperty("DefaultIcon")
 local SFX_CLAIM = script:GetCustomProperty("SFX_Claim")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
--- Get the original view height to work from as we dynamically resize it.
-local VIEW_HEIGHT_MIN = LOOT_VIEW.height
-
 -- Don't do anything until inventory has loaded.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
+local inventory = LOCAL_PLAYER.clientUserData.inventory
+
+local function PlaySound(sfx)
+    World.SpawnAsset(sfx, { parent = script })
+end
 
 -- Keep a set of entries which can be re-used.
 local view = {}
@@ -26,9 +27,10 @@ function view:Init()
 end
 
 function view:NewEntry()
-    local entry = World.SpawnAsset(ENTRY_TEMPLATE, { parent = LOOT_VIEW })
+    local entry = World.SpawnAsset(ENTRY_TEMPLATE, { parent = LOOT_SCROLL_PANEL })
     entry.clientUserData.icon = entry:GetCustomProperty("Icon"):WaitForObject()
     entry.clientUserData.iconBorder = entry:GetCustomProperty("IconBorder"):WaitForObject()
+    entry.clientUserData.iconGradient = entry:GetCustomProperty("IconGradient"):WaitForObject()
     entry.clientUserData.button = entry:GetCustomProperty("Button"):WaitForObject()
     entry.clientUserData.buttonText = entry:GetCustomProperty("ButtonText"):WaitForObject()
     -- The button needs a back-reference so that callbacks can act properly.
@@ -57,6 +59,7 @@ function view:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
         -- Set the colors according to rarity.
         local color = shouldGrayOut and COLOR_GRAYED_OUT or ItemThemes.GetRarityColor(lootInfo.item:GetRarity())
         entry.clientUserData.iconBorder:SetColor(color)
+        entry.clientUserData.iconGradient:SetColor(color)
         entry.clientUserData.buttonText:SetColor(color)
         color.a = 0.2
         entry.clientUserData.button:SetButtonColor(color)
@@ -73,10 +76,11 @@ end
 function view:Clear()
     for entry,_ in pairs(self.lootEntries) do
         entry.visibility = Visibility.FORCE_OFF
+        entry.clientUserData.button.isInteractable = false
         self.lootEntries[entry] = nil
         self.lootEntryFreeSet[entry] = true
     end
-    self.yOffset = ENTRY_PADDING_TOP
+    self.yOffset = 0
     self.numEntries = 0
 end
 
@@ -88,8 +92,7 @@ function view:DrawEntry(lootEntry)
 end
 
 function view:FinalizeHeight()
-    local contentHeight = ENTRY_PADDING_BOTTOM + self.yOffset - ENTRY_PADDING_BETWEEN
-    LOOT_VIEW.height = math.max(contentHeight, VIEW_HEIGHT_MIN)
+    LOOT_SCROLL_PANEL.height = self.yOffset
 end
 
 function view:Update()
@@ -103,8 +106,8 @@ function view:Update()
     PANEL_CLAIM_INSTRUCTIONS.visibility = Visibility.FORCE_OFF
     PANEL_CLAIM_WARNING.visibility = Visibility.FORCE_OFF
     -- Get all loots for the local player.
-    local lootInfos = LOCAL_PLAYER.clientUserData.inventory:GetLootInfos()
-    local isBackpackFull = LOCAL_PLAYER.clientUserData.inventory:IsBackpackFull()
+    local lootInfos = inventory:GetLootInfos()
+    local isBackpackFull = inventory:IsBackpackFull()
     -- Set the warning if backpack is full.
     if #lootInfos > 0 then
         PANEL_CLAIM_INSTRUCTIONS.visibility = isBackpackFull and Visibility.FORCE_OFF or Visibility.INHERIT
@@ -122,9 +125,15 @@ end
 
 function view:OnClick(button)
     local lootIndex = button.clientUserData.entry.clientUserData.lootIndex
-    if LOCAL_PLAYER.clientUserData.inventory:CanClaimLoot(lootIndex) then
-        LOCAL_PLAYER.clientUserData.inventory:ClaimLoot(lootIndex)
-        World.SpawnAsset(SFX_CLAIM, { parent = script })
+    if inventory:CanClaimLoot(lootIndex) then
+        inventory:ClaimLoot(lootIndex)
+        local claimedItem = inventory:GetLootItem(lootIndex)
+        PlaySound(ItemThemes.GetItemSFX(claimedItem:GetType()))
+        PlaySound(SFX_CLAIM)
+        local wasLastLoot = self.numEntries == 1
+        if wasLastLoot then
+            LOOT_VIEW.clientUserData.isVisible = false
+        end
     end
 end
 

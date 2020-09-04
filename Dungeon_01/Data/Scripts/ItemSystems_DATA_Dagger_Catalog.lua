@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonDagger',
     MUID = '9B5749AF1E386F07:TEST_DAGGER_01',
-    Icon = 'BA52B425782D6F77:Daggers',
+    Icon = 'EFB97B38D33D783A:Fantasy Wood 007',
     Lore = 'Crude wooden stabby thing.',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Common',
     StatKey = 'CommonDagger',
     MUID = 'F2ADFC053F8E9677:TEST_DAGGER_02',
-    Icon = '18FC9AF93CD7F3E3:Sword',
+    Icon = 'E783B813C8D4EDB8:Fantasy Dagger 005',
     Lore = 'Standard issue dagger.',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonDagger',
     MUID = '13284F445692EF89:TEST_DAGGER_03',
-    Icon = '564FB0D0DEF5080A:Icon Weapon Sword',
+    Icon = '9CCB3E287A134631:Fantasy Dagger 002',
     Lore = 'Cruel and menacing, just like its maker.',
   },
   {
@@ -32,7 +32,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonDagger',
     MUID = '9D87559D6E205CCA:TEST_DAGGER_04',
-    Icon = '564FB0D0DEF5080A:Icon Weapon Sword',
+    Icon = 'CF75A93BF63E1956:Fantasy Dagger 004',
     Lore = 'An elegant carving knife.',
   },
   {
@@ -41,7 +41,7 @@
     Rarity = 'Rare',
     StatKey = 'RareDagger',
     MUID = 'A8269FB04ED0D52C:TEST_DAGGER_05',
-    Icon = '5F988B17DC5B3C65:Light Sword',
+    Icon = 'B1E63F847DE315D0:Fantasy Dagger 023',
     Lore = 'Remarkably sharp blade which seems to absorb the light around it.',
   },
   {
@@ -50,16 +50,16 @@
     Rarity = 'Rare',
     StatKey = 'RareDagger',
     MUID = '5B6E526EFD89398C:TEST_DAGGER_06',
-    Icon = '5F988B17DC5B3C65:Light Sword',
+    Icon = '6DD74B2C55D6649E:Fantasy Dagger 016',
     Lore = 'A macabre twist on the classic carver.',
   },
   {
-    Name = 'Butter Knife',
+    Name = 'Backtwister',
     Type = 'Dagger',
     Rarity = 'Epic',
     StatKey = 'EpicDagger',
     MUID = '9DADD913974CF66D:TEST_DAGGER_07',
-    Icon = '18FC9AF93CD7F3E3:Sword',
-    Lore = 'Butter makes everything better.',
+    Icon = 'BF9D7EFE7012E3FC:Fantasy Dagger 003',
+    Lore = 'Blood makes everything better.',
   },
 }
