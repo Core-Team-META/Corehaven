@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17619734228923154917
+  Name: "Fantasy Boot 016"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_016"
+  }
+}
+Assets {
   Id: 17345248961038332993
   Name: "Fantasy Dagger 007"
   PlatformAssetType: 9
@@ -44,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16613986136746132697
+  Name: "Fantasy Boot 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_007"
+  }
+}
+Assets {
   Id: 14949040613125658966
   Name: "Fantasy Dagger 004"
   PlatformAssetType: 9
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Weapon_Dagger_023"
+  }
+}
+Assets {
+  Id: 12508503946332270658
+  Name: "Fantasy Boot 015"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_015"
   }
 }
 Assets {
@@ -158,6 +185,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Weapon_Dagger_001"
+  }
+}
+Assets {
+  Id: 4753212364645921439
+  Name: "Fantasy Boot 019"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_019"
+  }
+}
+Assets {
+  Id: 4286856046924265701
+  Name: "Fantasy Boot 017"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Gear_Boot_017"
   }
 }
 Assets {
