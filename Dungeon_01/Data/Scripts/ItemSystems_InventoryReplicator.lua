@@ -54,7 +54,7 @@ local function ServerInitInventory()
     local inventory = OWNER.serverUserData.inventory
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
     inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
-        local itemHash = equipItem:RuntimeHash()
+        local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
     end)
