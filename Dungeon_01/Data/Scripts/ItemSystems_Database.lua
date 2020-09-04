@@ -6,15 +6,12 @@
 ]]
 local Item = require(script:GetCustomProperty("Item"))
 
-local DATA_CATALOGS = {
-    require(script:GetCustomProperty("Dagger_Catalog")),
-    require(script:GetCustomProperty("Boots_Catalog")),
-}
-
-local DATA_STATS = {
-    require(script:GetCustomProperty("Dagger_Stats")),
-    require(script:GetCustomProperty("Boots_Stats")),
-}
+local DATA_CATALOGS = {}
+local DATA_STATS = {}
+for _,itemType in ipairs(Item.TYPES) do
+    table.insert(DATA_CATALOGS, require(script:GetCustomProperty(string.format("%s_Catalog", itemType))))
+    table.insert(DATA_STATS, require(script:GetCustomProperty(string.format("%s_Stats", itemType))))
+end
 
 local Database = {}
 Database.__index = Database
