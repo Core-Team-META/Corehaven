@@ -1,17 +1,13 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
+local LOOT_SCROLL_PANEL = script:GetCustomProperty("ScrollPanel"):WaitForObject()
 local PANEL_CLAIM_INSTRUCTIONS = script:GetCustomProperty("ClaimInstructions"):WaitForObject()
 local PANEL_CLAIM_WARNING = script:GetCustomProperty("InventoryFullWarning"):WaitForObject()
-local ENTRY_PADDING_TOP = script:GetCustomProperty("PaddingTop")
 local ENTRY_PADDING_BETWEEN = script:GetCustomProperty("PaddingBetween")
-local ENTRY_PADDING_BOTTOM = script:GetCustomProperty("PaddingBottom")
 local ENTRY_TEMPLATE = script:GetCustomProperty("LootEntryTemplate")
 local DEFAULT_ICON = script:GetCustomProperty("DefaultIcon")
 local SFX_CLAIM = script:GetCustomProperty("SFX_Claim")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
-
--- Get the original view height to work from as we dynamically resize it.
-local VIEW_HEIGHT_MIN = LOOT_VIEW.height
 
 -- Don't do anything until inventory has loaded.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
@@ -31,7 +27,7 @@ function view:Init()
 end
 
 function view:NewEntry()
-    local entry = World.SpawnAsset(ENTRY_TEMPLATE, { parent = LOOT_VIEW })
+    local entry = World.SpawnAsset(ENTRY_TEMPLATE, { parent = LOOT_SCROLL_PANEL })
     entry.clientUserData.icon = entry:GetCustomProperty("Icon"):WaitForObject()
     entry.clientUserData.iconBorder = entry:GetCustomProperty("IconBorder"):WaitForObject()
     entry.clientUserData.iconGradient = entry:GetCustomProperty("IconGradient"):WaitForObject()
@@ -84,7 +80,7 @@ function view:Clear()
         self.lootEntries[entry] = nil
         self.lootEntryFreeSet[entry] = true
     end
-    self.yOffset = ENTRY_PADDING_TOP
+    self.yOffset = 0
     self.numEntries = 0
 end
 
@@ -96,8 +92,7 @@ function view:DrawEntry(lootEntry)
 end
 
 function view:FinalizeHeight()
-    local contentHeight = ENTRY_PADDING_BOTTOM + self.yOffset - ENTRY_PADDING_BETWEEN
-    LOOT_VIEW.height = math.max(contentHeight, VIEW_HEIGHT_MIN)
+    LOOT_SCROLL_PANEL.height = self.yOffset
 end
 
 function view:Update()

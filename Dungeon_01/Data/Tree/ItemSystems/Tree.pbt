@@ -608,7 +608,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 500
@@ -5914,6 +5914,7 @@ Objects {
   ParentId: 17155143211693072178
   ChildIds: 7210290309032103060
   ChildIds: 16777731965664047550
+  ChildIds: 4239841458936430252
   ChildIds: 15139464503578271811
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5923,9 +5924,9 @@ Objects {
   }
   Control {
     Width: 300
-    Height: 250
+    Height: 353
     UIX: -810
-    UIY: -300
+    UIY: -650
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5936,7 +5937,7 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomright"
+          Value: "mc:euianchor:topright"
         }
       }
       TargetAnchor {
@@ -6167,6 +6168,103 @@ Objects {
   }
 }
 Objects {
+  Id: 4239841458936430252
+  Name: "Scroller"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14941095892963387303
+  ChildIds: 13962190692024766614
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -10
+    Height: -70
+    UIY: 40
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    ScrollPanel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 13962190692024766614
+  Name: "ScrollPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4239841458936430252
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    UIY: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 16777731965664047550
   Name: "UI_ItemSystems_Frame"
   Transform {
@@ -6215,6 +6313,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ScrollPanel"
+      ObjectReference {
+        SelfId: 13962190692024766614
+      }
+    }
+    Overrides {
       Name: "cs:ClaimInstructions"
       ObjectReference {
         SelfId: 1595627268590997294
@@ -6227,16 +6331,8 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:PaddingTop"
-      Int: 40
-    }
-    Overrides {
       Name: "cs:PaddingBetween"
       Int: 4
-    }
-    Overrides {
-      Name: "cs:PaddingBottom"
-      Int: 30
     }
     Overrides {
       Name: "cs:DefaultIcon"
