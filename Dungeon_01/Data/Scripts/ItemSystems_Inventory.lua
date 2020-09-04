@@ -210,6 +210,7 @@ function Inventory:_Init(database)
     self.database = database
     self.lootInfos = {}
     self:_ClearSlots()
+    self:_RecalculateStatTotals()
 end
 
 function Inventory:_ClearSlots()
