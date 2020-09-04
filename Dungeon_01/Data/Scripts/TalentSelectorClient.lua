@@ -150,8 +150,8 @@ function BuildTalentTreeUI()
 			local backgroundOffset = UTILITY.TALENT_TREE_DATA[treeName].backgroundOffset
 			treeBackgroundImage.x = backgroundOffset.x
 			treeBackgroundImage.y = backgroundOffset.y
-			local treeBorderImage = treePanel:GetCustomProperty("BorderImage"):WaitForObject()
-			treeBorderImage.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
+			local treePanel = treePanel:GetCustomProperty("Panel"):WaitForObject()
+			treePanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
 
 			for talentName, talentData in pairs(treeData) do
 				-- Talent buttons
@@ -225,7 +225,16 @@ function Tick(deltaTime)
 				local buttonTemplate = talentData.buttonTemplate
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				local check = buttonTemplate:GetCustomProperty("Check"):WaitForObject()
-				button.isInteractable = UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData)
+				
+				if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
+					button:SetButtonColor(Color.WHITE)
+					button:SetHoveredColor(Color.WHITE)
+					button:SetPressedColor(Color.WHITE)
+				else
+					button:SetButtonColor(Color.New(0.15, 0.15, 0.15))
+					button:SetHoveredColor(Color.New(0.15, 0.15, 0.15))
+					button:SetPressedColor(Color.New(0.15, 0.15, 0.15))
+				end
 
 				if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, talentData) then
 					check.visibility = Visibility.INHERIT

@@ -204,9 +204,11 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
+          Width: -10
+          Height: -5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -399,5 +401,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

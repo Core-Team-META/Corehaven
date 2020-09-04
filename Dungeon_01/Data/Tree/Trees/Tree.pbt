@@ -289,7 +289,7 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 4608.82227
+      X: 4608.82226
       Y: 2842.09302
       Z: 4354.03125
     }
@@ -552,7 +552,7 @@ Objects {
     Location {
       X: 9873.18164
       Y: 3081.50244
-      Z: 4435.73145
+      Z: 4435.73144
     }
     Rotation {
     }

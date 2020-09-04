@@ -192,7 +192,7 @@ function Tick()
 	for player, abilityName in pairs(castingAbilityNames) do
 		local target = GetAbilityTarget(player, abilityName)
 
-		if not IsCastValid(player, GetAbilityTarget(player, abilityName), abilityName) then
+		if not IsCastValid(player, GetAbilityTarget(player, abilityName), abilityName, false) then
 			local ability = playerAbilities[player][abilityName]
 			ability:Interrupt()
 		end
@@ -200,7 +200,7 @@ function Tick()
 end
 
 -- Client and Server
-function IsCastValid(player, target, abilityName)
+function IsCastValid(player, target, abilityName, broadcastError)
 	local ability = playerAbilities[player][abilityName]
 	local data = abilityData[abilityName]
 	assert(ability)
@@ -209,21 +209,37 @@ function IsCastValid(player, target, abilityName)
 
 	-- Is the caster dead
 	if player.isDead then
+		if broadcastError then
+			Events.Broadcast("BannerMessage", "You are dead")
+		end
+
 		return false
 	end
 
 	-- Is the caster moving
 	if player:GetVelocity().size > 0.1 then
+		if broadcastError then
+			--Events.Broadcast("BannerMessage", "Cannot cast while moving")
+		end
+
 		return false
 	end
 
 	-- Is the caster not on the ground
 	if not player.isGrounded then
+		if broadcastError then
+			--Events.Broadcast("BannerMessage", "Cannot cast while moving")
+		end
+
 		return false
 	end
 
 	-- Is the caster stunned
 	if API_SE.IsStunned(player) then
+		if broadcastError then
+			Events.Broadcast("BannerMessage", "You are stunned")
+		end
+
 		return false
 	end
 
@@ -231,21 +247,65 @@ function IsCastValid(player, target, abilityName)
 	if data.targets and not data.groundTargets then
 		-- Does the caster have a target
 		if not target then
+			if broadcastError then
+				Events.Broadcast("BannerMessage", "Target required")
+			end
+
 			return false
 		end
 
-		-- Is the target out of range
-		if data.range and (target:GetWorldPosition() - player:GetWorldPosition()).size > data.range then
+		-- Is the player target dead
+		if target:IsA("Player") and target.isDead then
+			if broadcastError then
+				Events.Broadcast("BannerMessage", "Target is dead")
+			end
+
 			return false
+		end
+
+		-- Is the NPC target dead or asleep
+		if not target:IsA("Player") then
+			if API_NPC.IsDead(target) then
+				if broadcastError then
+					Events.Broadcast("BannerMessage", "Target is dead")
+				end
+
+				return false
+			end
+
+			if API_NPC.IsAsleep(target) then
+				if broadcastError then
+					Events.Broadcast("BannerMessage", "Target is asleep")
+				end
+
+				return false
+			end
 		end
 
 		-- Is this a hostile spell with a friendly target
 		if not data.friendlyTargetValid and target:IsA("Player") then
+			if broadcastError then
+				Events.Broadcast("BannerMessage", "Invalid target")
+			end
+
 			return false
 		end
 
 		-- Is this a friendly spell with a hostile target
 		if not data.enemyTargetValid and not target:IsA("Player") then
+			if broadcastError then
+				Events.Broadcast("BannerMessage", "Invalid target")
+			end
+
+			return false
+		end
+
+		-- Is the target out of range
+		if data.range and (target:GetWorldPosition() - player:GetWorldPosition()).size > data.range then
+			if broadcastError then
+				Events.Broadcast("BannerMessage", "Target out of range")
+			end
+
 			return false
 		end
 
@@ -254,21 +314,14 @@ function IsCastValid(player, target, abilityName)
 			local offset = target:GetWorldPosition() - player:GetWorldPosition()
 
 			if offset .. (player:GetWorldRotation() * Vector3.FORWARD) < 0.0 then
+				if broadcastError then
+					Events.Broadcast("BannerMessage", "Target is behind you")
+				end
+
 				return false
 			end
 		end
 
-		-- Is the player target dead
-		if target:IsA("Player") and target.isDead then
-			return false
-		end
-
-		-- Is the NPC target dead or asleep
-		if not target:IsA("Player") then
-			if API_NPC.IsDead(target) or API_NPC.IsAsleep(target) then
-				return false
-			end
-		end
 	end
 
 	return true
@@ -284,22 +337,25 @@ function API.CanActivate(player, abilityName)
 
 	-- Is that ability disabled
 	if not ability.isEnabled then
+		--Events.Broadcast("BannerMessage", "Ability unavailable")
 		return false
 	end
 
 	-- Is that ability on cooldown
 	if ability:GetCurrentPhase() ~= AbilityPhase.READY then
+		--Events.Broadcast("BannerMessage", "Ability not ready")
 		return false
 	end
 
 	-- Is the caster currently casting something else
 	for _, otherAbility in pairs(playerAbilities[player]) do
 		if otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
+			--Events.Broadcast("BannerMessage", "You are busy")
 			return false
 		end
 	end
 
-	return IsCastValid(player, target, abilityName)
+	return IsCastValid(player, target, abilityName, true)
 end
 
 -- Owning client

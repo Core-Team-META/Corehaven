@@ -303,7 +303,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -210.660645
+      X: -210.660644
       Y: 1696.16199
       Z: 241.54541
     }
@@ -1182,7 +1182,7 @@ Objects {
   Transform {
     Location {
       X: 2199.50635
-      Y: -2572.66309
+      Y: -2572.66308
       Z: 459.127197
     }
     Rotation {
@@ -1479,7 +1479,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4733.03809
+      X: 4733.03808
       Y: -1257.89624
       Z: 328.821045
     }
@@ -1915,7 +1915,7 @@ Objects {
   Transform {
     Location {
       X: 4672.1377
-      Y: 704.438477
+      Y: 704.438476
       Z: 553.690674
     }
     Rotation {
@@ -1955,7 +1955,7 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4679.49561
+      X: 4679.4956
       Y: 135.958008
       Z: 553.690674
     }
@@ -2648,7 +2648,7 @@ Objects {
   Transform {
     Location {
       X: 4591.86719
-      Y: -7.85351563
+      Y: -7.85351562
       Z: 132.606934
     }
     Rotation {
@@ -3051,7 +3051,7 @@ Objects {
   Transform {
     Location {
       X: 1339.75903
-      Y: 2874.46729
+      Y: 2874.46728
       Z: -60.4375
     }
     Rotation {
@@ -3312,7 +3312,7 @@ Objects {
   Transform {
     Location {
       X: -17.2338867
-      Y: 71.1914063
+      Y: 71.1914062
       Z: 95.887207
     }
     Rotation {
@@ -3563,7 +3563,7 @@ Objects {
   Transform {
     Location {
       X: -27.1599121
-      Y: -53.1757813
+      Y: -53.1757812
       Z: 5.9375
     }
     Rotation {
@@ -4478,7 +4478,7 @@ Objects {
       Z: 212.26709
     }
     Rotation {
-      Pitch: -0.000122070313
+      Pitch: -0.000122070312
       Yaw: 89.9987106
       Roll: -68.3931885
     }
@@ -5212,7 +5212,7 @@ Objects {
   Transform {
     Location {
       X: -23.3554688
-      Y: 1772.18311
+      Y: 1772.1831
       Z: 758.464355
     }
     Rotation {
@@ -5795,7 +5795,7 @@ Objects {
   Transform {
     Location {
       X: -152.922607
-      Y: -828.657227
+      Y: -828.657226
       Z: 90.1650391
     }
     Rotation {

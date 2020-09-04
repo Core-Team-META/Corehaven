@@ -2414,7 +2414,7 @@
             Z: 650
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -6043,7 +6043,7 @@
             Z: 150.000061
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -9148,7 +9148,7 @@
             Y: 1650
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -9350,7 +9350,7 @@
             Y: 850
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -29028,7 +29028,7 @@
             Z: 450
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -29759,5 +29759,5 @@
       AssetId: "Craftsman_House_01"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

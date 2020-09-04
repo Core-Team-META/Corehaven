@@ -2797,7 +2797,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:faceaimwhenactive"
       }
-      DefaultRotationRate: 540
+      DefaultRotationRate: 1620
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -6542,6 +6542,87 @@ Objects {
   }
 }
 Objects {
+  Id: 13192756415298209341
+  Name: "Message Banner"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2215929790428371099
+      value {
+        Overrides {
+          Name: "Size"
+          Int: 25
+        }
+        Overrides {
+          Name: "Height"
+          Int: 60
+        }
+        Overrides {
+          Name: "Label"
+          String: ""
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11168525500713847895
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Message Banner"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:DefaultDuration"
+          Float: 1.3
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13469228761640500648
+      value {
+        Overrides {
+          Name: "UIY"
+          Float: -50
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 10162334270769856324
+    }
+  }
+}
+Objects {
   Id: 10932166170612842634
   Name: "LocalStatusEffectDisplay"
   Transform {
@@ -7656,33 +7737,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 2993574341092730881
-    }
-  }
-}
-Objects {
-  Id: 9992615365985103502
-  Name: "AbilityInterruptServer"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 1797690215326622225
     }
   }
 }

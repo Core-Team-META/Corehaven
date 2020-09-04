@@ -338,7 +338,7 @@
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: -2.03320313
+            X: -2.03320312
             Y: -0.890655518
             Z: 143.656
           }
@@ -820,5 +820,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

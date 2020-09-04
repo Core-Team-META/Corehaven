@@ -220,5 +220,5 @@
       AssetId: "Fantasy_Weapon_-_Dagger_01__Prop_"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

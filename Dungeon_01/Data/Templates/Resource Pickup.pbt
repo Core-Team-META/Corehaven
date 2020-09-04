@@ -257,5 +257,5 @@
       AssetId: "Resource_Pickup"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

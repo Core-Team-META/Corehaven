@@ -6911,7 +6911,7 @@ Objects {
   Transform {
     Location {
       X: 903.878906
-      Y: -1485.07227
+      Y: -1485.07226
       Z: -5.60882568
     }
     Rotation {
@@ -9071,7 +9071,7 @@ Objects {
   Transform {
     Location {
       X: 475.850586
-      Y: -342.938477
+      Y: -342.938476
       Z: 44.6119385
     }
     Rotation {
@@ -9163,7 +9163,7 @@ Objects {
   Transform {
     Location {
       X: -0.896240234
-      Y: 7.95507813
+      Y: 7.95507812
       Z: 91.5492554
     }
     Rotation {
@@ -15695,7 +15695,7 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: 732.997559
+      X: 732.997558
       Y: -893.862305
       Z: 32.3016968
     }
@@ -15748,7 +15748,7 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: 732.997559
+      X: 732.997558
       Y: -893.862305
       Z: 32.3016968
     }
