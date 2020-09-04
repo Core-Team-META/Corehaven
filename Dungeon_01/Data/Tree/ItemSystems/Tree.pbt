@@ -6687,6 +6687,24 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:PlayerName"
+      ObjectReference {
+        SelfId: 4367171715193905911
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerIcon"
+      ObjectReference {
+        SelfId: 11880853008329394328
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerLevel"
+      ObjectReference {
+        SelfId: 14548223140074534457
+      }
+    }
+    Overrides {
       Name: "cs:EquippedSlotsPanel"
       ObjectReference {
         SelfId: 6007599505303159785

@@ -1,5 +1,8 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
+local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
+local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
+local PLAYER_LEVEL = script:GetCustomProperty("PlayerLevel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
@@ -19,6 +22,10 @@ local SLOT_DOCK = "TopCenter"
 -- Wait for inventory to load.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
 local inventory = LOCAL_PLAYER.clientUserData.inventory
+
+-----------------------------------------------------------------------------------------------------------------
+PLAYER_NAME.text = LOCAL_PLAYER.name
+PLAYER_ICON:SetImage(LOCAL_PLAYER)
 
 -----------------------------------------------------------------------------------------------------------------
 local function PlaySound(sfx)
@@ -259,6 +266,11 @@ function view:UpdateCursorState()
     end
 end
 
+function view:UpdatePlayerInfo()
+    local playerLevel = LOCAL_PLAYER:GetResource("Level") or 1
+    PLAYER_LEVEL.text = string.format("Level %d", playerLevel)
+end
+
 function view:Draw()
     if not INVENTORY_VIEW.clientUserData.isVisible then
         INVENTORY_VIEW.visibility = Visibility.FORCE_OFF
@@ -267,6 +279,7 @@ function view:Draw()
         return
     end
     INVENTORY_VIEW.visibility = Visibility.INHERIT
+    self:UpdatePlayerInfo()
     self:UpdateCursorState()
     self:DrawSlots()
     self:DrawHoverHighlight()
