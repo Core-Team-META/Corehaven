@@ -73,7 +73,7 @@
   },
   {
     DropKey = 'SkeletonAssassin',
-    ItemName = 'Rugged Leather Armor',
+    ItemName = 'Rugged Armor',
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
@@ -92,6 +92,36 @@
   {
     DropKey = 'SkeletonAssassin',
     ItemName = 'Merchant\'s Shirt',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Leather Cap',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Rugged Cap',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Metal Cap',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Enchanted Hood',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Viking Helmet',
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
