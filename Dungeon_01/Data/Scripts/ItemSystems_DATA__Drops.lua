@@ -65,4 +65,34 @@
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Leather Armor',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Rugged Leather Armor',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Scale Armor',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Enchanted Robes',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Merchant\'s Shirt',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
