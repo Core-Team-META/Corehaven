@@ -8,15 +8,6 @@
   }
 }
 Assets {
-  Id: 17389391497886536859
-  Name: "Icon Random"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Random"
-  }
-}
-Assets {
   Id: 17345248961038332993
   Name: "Fantasy Dagger 007"
   PlatformAssetType: 9
@@ -80,15 +71,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13662931040490641671
-  Name: "Icon Stat Offense"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_StatOffense"
-  }
-}
-Assets {
   Id: 12819003227636962768
   Name: "Fantasy Dagger 023"
   PlatformAssetType: 9
@@ -143,15 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7807124703160164224
-  Name: "Icon Time"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Time"
-  }
-}
-Assets {
   Id: 6496470667387325629
   Name: "Coin Purse"
   PlatformAssetType: 9
@@ -170,15 +143,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5868275997044220508
-  Name: "Icon Player Mount"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_PlayerMount"
-  }
-}
-Assets {
   Id: 5635343760568520525
   Name: "Frame Outlined Thick 002"
   PlatformAssetType: 9
@@ -194,24 +158,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Weapon_Dagger_001"
-  }
-}
-Assets {
-  Id: 4314886786387000778
-  Name: "Glove"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Glove"
-  }
-}
-Assets {
-  Id: 3854129195189155340
-  Name: "Icon Stamina"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Stamina"
   }
 }
 Assets {
@@ -248,23 +194,5 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_icon_Sword"
-  }
-}
-Assets {
-  Id: 1285653368607626957
-  Name: "Icon Health"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Health"
-  }
-}
-Assets {
-  Id: 1276674272060746657
-  Name: "Icon Stat Defense"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_StatDefense"
   }
 }

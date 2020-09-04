@@ -3,6 +3,7 @@ local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
 local PLAYER_LEVEL = script:GetCustomProperty("PlayerLevel"):WaitForObject()
+local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
@@ -144,6 +145,14 @@ function view:Init()
 end
 
 function view:InitStats()
+    self.statElements = {}
+    for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
+        statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
+        statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statElement.name))
+        statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
+        statElement.clientUserData.hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
+        self.statElements[statElement.name] = statElement
+    end
 end
 
 function view:InitEquippedSlots()
