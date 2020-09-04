@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17273973329748654138
+  Name: "Fantasy Wood 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Wood_007"
+  }
+}
+Assets {
   Id: 16682379839823736248
   Name: "Fantasy Dagger 005"
   PlatformAssetType: 9

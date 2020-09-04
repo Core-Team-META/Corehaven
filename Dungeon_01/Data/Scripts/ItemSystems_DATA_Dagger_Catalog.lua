@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonDagger',
     MUID = '9B5749AF1E386F07:TEST_DAGGER_01',
-    Icon = 'F0B6B407EF673441:Fantasy Dagger 007',
+    Icon = 'EFB97B38D33D783A:Fantasy Wood 007',
     Lore = 'Crude wooden stabby thing.',
   },
   {
