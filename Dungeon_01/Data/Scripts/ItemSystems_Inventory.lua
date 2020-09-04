@@ -172,6 +172,11 @@ function Inventory:ClaimLoot(lootIndex)
     end
 end
 
+-- Get a specific loot item.
+function Inventory:GetLootItem(lootIndex)
+    return self.lootInfos[lootIndex] and self.lootInfos[lootIndex].item or nil
+end
+
 -- Get information for all loots registered to this inventory.
 function Inventory:GetLootInfos()
     return self.lootInfos

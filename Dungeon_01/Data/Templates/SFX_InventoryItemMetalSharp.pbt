@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 14868982219782730319
-  Name: "SFX_InventoryClaimLoot"
+  Id: 12893355638564104218
+  Name: "SFX_InventoryItemMetalSharp"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 5257186260722694675
+      RootId: 3720840178431637716
       Objects {
-        Id: 5257186260722694675
-        Name: "SFX_InventoryClaimLoot"
+        Id: 3720840178431637716
+        Name: "SFX_InventoryItemMetalSharp"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 10884261172042540157
+        ChildIds: 11967646377332981504
         Lifespan: 2
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29,8 +29,8 @@
         }
       }
       Objects {
-        Id: 10884261172042540157
-        Name: "Magic Sparkle Dust Item 01 SFX"
+        Id: 11967646377332981504
+        Name: "Meta Gear Shuffle Knife Sword 01 SFX"
         Transform {
           Location {
           }
@@ -42,7 +42,7 @@
             Z: 1
           }
         }
-        ParentId: 5257186260722694675
+        ParentId: 3720840178431637716
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -51,7 +51,7 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 11611539838803987820
+            Id: 5157433990984576436
           }
           AutoPlay: true
           Transient: true
@@ -62,12 +62,12 @@
       }
     }
     Assets {
-      Id: 11611539838803987820
-      Name: "Magic Sparkle Dust Item 01 SFX"
+      Id: 5157433990984576436
+      Name: "Meta Gear Shuffle Knife Sword 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_magic_sparkle_dust_item_01_Cue_ref"
+        AssetId: "sfx_meta_equip_sword_sheathe_gear_01_Cue_ref"
       }
     }
     PrimaryAssetId {

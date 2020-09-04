@@ -6728,6 +6728,18 @@ Objects {
         Id: 5635343760568520525
       }
     }
+    Overrides {
+      Name: "cs:SFX_Move"
+      AssetReference {
+        Id: 17100161445438500121
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_Discard"
+      AssetReference {
+        Id: 1817346499606343559
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -15,6 +15,11 @@ local VIEW_HEIGHT_MIN = LOOT_VIEW.height
 
 -- Don't do anything until inventory has loaded.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
+local inventory = LOCAL_PLAYER.clientUserData.inventory
+
+local function PlaySound(sfx)
+    World.SpawnAsset(sfx, { parent = script })
+end
 
 -- Keep a set of entries which can be re-used.
 local view = {}
@@ -106,8 +111,8 @@ function view:Update()
     PANEL_CLAIM_INSTRUCTIONS.visibility = Visibility.FORCE_OFF
     PANEL_CLAIM_WARNING.visibility = Visibility.FORCE_OFF
     -- Get all loots for the local player.
-    local lootInfos = LOCAL_PLAYER.clientUserData.inventory:GetLootInfos()
-    local isBackpackFull = LOCAL_PLAYER.clientUserData.inventory:IsBackpackFull()
+    local lootInfos = inventory:GetLootInfos()
+    local isBackpackFull = inventory:IsBackpackFull()
     -- Set the warning if backpack is full.
     if #lootInfos > 0 then
         PANEL_CLAIM_INSTRUCTIONS.visibility = isBackpackFull and Visibility.FORCE_OFF or Visibility.INHERIT
@@ -125,9 +130,11 @@ end
 
 function view:OnClick(button)
     local lootIndex = button.clientUserData.entry.clientUserData.lootIndex
-    if LOCAL_PLAYER.clientUserData.inventory:CanClaimLoot(lootIndex) then
-        LOCAL_PLAYER.clientUserData.inventory:ClaimLoot(lootIndex)
-        World.SpawnAsset(SFX_CLAIM, { parent = script })
+    if inventory:CanClaimLoot(lootIndex) then
+        inventory:ClaimLoot(lootIndex)
+        local claimedItem = inventory:GetLootItem(lootIndex)
+        PlaySound(ItemThemes.GetItemSFX(claimedItem:GetType()))
+        PlaySound(SFX_CLAIM)
         local wasLastLoot = self.numEntries == 1
         if wasLastLoot then
             LOOT_VIEW.clientUserData.isVisible = false

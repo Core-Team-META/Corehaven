@@ -7,6 +7,9 @@ local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
 local TEMPLATE_SLOT_BACKPACK = script:GetCustomProperty("TemplateSlotBackpack")
 local TEMPLATE_SLOT_EQUIPPED = script:GetCustomProperty("TemplateSlotEquipped")
 local CURSOR_HIGHLIGHT_BACKPACK = script:GetCustomProperty("CursorHighlightBackpack")
+local SFX_EQUIP = script:GetCustomProperty("SFX_Equip")
+local SFX_MOVE = script:GetCustomProperty("SFX_Move")
+local SFX_DISCARD = script:GetCustomProperty("SFX_Discard")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Hardcoded UI placement settings.
@@ -16,6 +19,11 @@ local SLOT_DOCK = "TopCenter"
 -- Wait for inventory to load.
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
 local inventory = LOCAL_PLAYER.clientUserData.inventory
+
+-----------------------------------------------------------------------------------------------------------------
+local function PlaySound(sfx)
+    World.SpawnAsset(sfx, { parent = script })
+end
 
 -----------------------------------------------------------------------------------------------------------------
 -- Setup all UI elements.
@@ -205,6 +213,16 @@ function view:OnBindingReleased(binding)
                 local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
                 if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
                     inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
+                    if toSlotIndex then
+                        if inventory:IsEquipSlot(toSlotIndex) then
+                            local equippedItem = inventory:GetItem(self.fromSlotIndex)
+                            PlaySound(ItemThemes.GetItemSFX(equippedItem:GetType()))
+                        else
+                            PlaySound(SFX_MOVE)
+                        end
+                    else
+                        PlaySound(SFX_DISCARD)
+                    end
                 end
             end
         end

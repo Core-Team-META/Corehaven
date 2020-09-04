@@ -93,6 +93,90 @@
           Id: 9505356526787877396
         }
       }
+      Overrides {
+        Name: "cs:SFX_EquipArmor"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipAxe"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipBoots"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipDagger"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipGreatsword"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipFocus"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipHelmet"
+        AssetReference {
+          Id: 1538004691548728471
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipMace"
+        AssetReference {
+          Id: 16757952733114463039
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipShield"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipStaff"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipSword"
+        AssetReference {
+          Id: 12893355638564104218
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipTrinket"
+        AssetReference {
+          Id: 1246853273103719825
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipWarhammer"
+        AssetReference {
+          Id: 16757952733114463039
+        }
+      }
+      Overrides {
+        Name: "cs:SFX_EquipWand"
+        AssetReference {
+          Id: 3961394470878237143
+        }
+      }
     }
     Assets {
       Id: 1285653368607626957
