@@ -19,6 +19,7 @@
         ChildIds: 7371804287230856144
         ChildIds: 16577243887167407429
         ChildIds: 6649207122798874075
+        ChildIds: 598107552338339180
         ChildIds: 11450314268423252432
         ChildIds: 14735673224064154605
         UnregisteredParameters {
@@ -52,6 +53,12 @@
             Name: "cs:GradientColored"
             ObjectReference {
               SubObjectId: 8663014260370444111
+            }
+          }
+          Overrides {
+            Name: "cs:NotAllowed"
+            ObjectReference {
+              SubObjectId: 598107552338339180
             }
           }
         }
@@ -324,6 +331,63 @@
         }
       }
       Objects {
+        Id: 598107552338339180
+        Name: "NotAllowed"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12787936571800940537
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -30
+          Height: -30
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 11160196220782830895
+            }
+            Color {
+              R: 0.371000022
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 11450314268423252432
         Name: "Frame"
         Transform {
@@ -403,8 +467,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -11
-          Height: -11
+          Width: -12
+          Height: -12
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -421,6 +485,7 @@
               R: 1
               G: 1
               B: 1
+              A: 0.4
             }
             TeamSettings {
             }
@@ -465,6 +530,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Basic_Shape_001"
+      }
+    }
+    Assets {
+      Id: 11160196220782830895
+      Name: "Icon Close"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Close"
       }
     }
     Assets {

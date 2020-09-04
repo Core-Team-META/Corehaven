@@ -128,6 +128,10 @@ function view:OnClick(button)
     if LOCAL_PLAYER.clientUserData.inventory:CanClaimLoot(lootIndex) then
         LOCAL_PLAYER.clientUserData.inventory:ClaimLoot(lootIndex)
         World.SpawnAsset(SFX_CLAIM, { parent = script })
+        local wasLastLoot = self.numEntries == 1
+        if wasLastLoot then
+            LOOT_VIEW.clientUserData.isVisible = false
+        end
     end
 end
 

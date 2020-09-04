@@ -608,7 +608,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 500
@@ -4276,6 +4276,28 @@ Objects {
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14735673224064154605
+      value {
+        Overrides {
+          Name: "Width"
+          Int: -12
+        }
+        Overrides {
+          Name: "Height"
+          Int: -12
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 0.4
           }
         }
       }

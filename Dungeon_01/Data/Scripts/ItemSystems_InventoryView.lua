@@ -89,6 +89,9 @@ local function SetupControl(control, processSlot)
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
         assert(control.clientUserData.icon and control.clientUserData.border)
+        if control:GetCustomProperty("NotAllowed") then
+            control.clientUserData.notAllowed = control:GetCustomProperty("NotAllowed"):WaitForObject()
+        end
         if processSlot then processSlot(control) end
     end
 end
@@ -276,7 +279,17 @@ end
 
 function view:DrawHoverHighlight()
     if self.slotUnderCursor and (self.itemUnderCursor or self.isHoldingIcon) then
-        self.slotUnderCursor.clientUserData.border:SetImage(CURSOR_HIGHLIGHT_BACKPACK)
+        local toSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
+        if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+            self.slotUnderCursor.clientUserData.border:SetImage(CURSOR_HIGHLIGHT_BACKPACK)
+        end 
+    end
+    for _,slot in ipairs(self.equippedSlots) do
+        local toSlotIndex = slot.clientUserData.slotIndex
+        slot.clientUserData.notAllowed.visibility = Visibility.FORCE_OFF
+        if self.isHoldingIcon and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+            slot.clientUserData.notAllowed.visibility = Visibility.INHERIT
+        end
     end
 end
 
