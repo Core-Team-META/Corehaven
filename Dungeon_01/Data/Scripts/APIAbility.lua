@@ -32,17 +32,20 @@ AssetReference icon								Icon to use in ui
 AssetReference abilityTemplate					A template consisting of only an ability. These must be unique
 <AssetReference> selfCasterEffectTemplate		Template spawned on the caster at cast start, visible to the caster
 <AssetReference> otherCasterEffectTemplate		Template spawned on the caster at cast start, visible to other players
-<AssetReference> selfTargetEffectTemplate		Template spawned at the target at impact time, visible to the caster
-<AssetReference> otherTargetEffectTemplate		Template spawned at the target at impact time, visible to others
+<AssetReference> selfTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to the caster
+<AssetReference> otherTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to others
 <AssetReference> reticleTemplate				Reticle for ground target ability
-<function> onCastClient(caster, target)			Client function called on start, returns the time to impact
-<function> onCastServer(caster, target)			Server function called on start
+<function> onCastClient(caster, target)			Client function called on cast, returns the time to impact
+<function> onCastServer(caster, target)			Server function called on cast
 ]]
 local abilityData = {}						--  string -> table (above)
 local playerAbilities = {}					--  Player -> table (string -> Ability)
 
 -- This maps template IDs to ability names, so we can let core's networking handle everything
 local abilityMap = {}						--  string -> string
+
+-- Abilities that is currently casting. Used on both client and server to interrupt if it becomes invalid
+local castingAbilityNames = {}				--  Player -> string (nil for none)
 
 -- Client and Server, called directly in this API
 function RegisterAbility(data)
@@ -72,15 +75,45 @@ function OnPlayerLeft(player)
 end
 
 -- Client and Server
--- Used for effects and function calls
+function GetAbilityTarget(player, abilityName)
+	local data = abilityData[abilityName]
+	local ability = playerAbilities[player][abilityName]
+
+	if data.targets then
+		if data.groundTargets then
+			return ability:GetTargetData():GetHitPosition()
+		else
+			return ability:GetTargetData().hitObject
+		end
+	end
+end
+
+-- Client and Server
+-- Used for effects, target and function calls
 function OnCast(ability)
 	local player = ability.owner
-	local data = abilityData[abilityMap[ability.sourceTemplateId]]
+	local abilityName = abilityMap[ability.sourceTemplateId]
+	local data = abilityData[abilityName]
+	assert(not castingAbilityNames[player])
+	castingAbilityNames[player] = abilityName
 
 	if IS_CLIENT then
-		if player == LOCAL_PLAYER and data.selfCasterEffectTemplate then
-			local effects = World.SpawnAsset(data.selfCasterEffectTemplate)
-			effects:AttachToPlayer(player, "root")
+		if player == LOCAL_PLAYER then
+			-- Set target - [THIS HAS TO BE IN ONCAST OR IT DOESN'T WORK]
+			if data.targets then
+				if data.groundTargets then
+					-- Use reticle position, etc.
+				else
+					local abilityTarget = AbilityTarget.New()
+					abilityTarget.hitObject = API_PS.GetTarget(LOCAL_PLAYER)
+					ability:SetTargetData(abilityTarget)
+				end
+			end
+
+			if data.selfCasterEffectTemplate then
+				local effects = World.SpawnAsset(data.selfCasterEffectTemplate)
+				effects:AttachToPlayer(player, "root")
+			end
 		elseif data.otherCasterEffectTemplate then
 			local effects = World.SpawnAsset(data.otherCasterEffectTemplate)
 			effects:AttachToPlayer(player, "root")
@@ -92,16 +125,11 @@ end
 -- Used for function calls
 function OnExecute(ability)
 	local player = ability.owner
-	local data = abilityData[abilityMap[ability.sourceTemplateId]]
-	local target = nil
-
-	if data.targets then
-		if data.groundTargets then
-			target = ability:GetTargetData():GetHitPosition()
-		else
-			target = ability:GetTargetData().hitObject
-		end
-	end
+	local abilityName = abilityMap[ability.sourceTemplateId]
+	local data = abilityData[abilityName]
+	local target = GetAbilityTarget(player, abilityName)
+	assert(castingAbilityNames[player] == abilityName)
+	castingAbilityNames[player] = nil
 
 	if IS_CLIENT then
 		local impactDelay = 0.0
@@ -134,70 +162,94 @@ function OnExecute(ability)
 	end
 end
 
--- Client only
-function Tick()
-	-- We use Core's networking to replicate abilities, so we catch them here and hook them up
-	for _, player in pairs(Game.GetPlayers()) do
-		for _, ability in pairs(player:GetAbilities()) do
-			local data = abilityData[abilityMap[ability.sourceTemplateId]]
+-- Client and Server
+function OnInterrupted(ability)
+	local player = ability.owner
+	local abilityName = abilityMap[ability.sourceTemplateId]
+	-- When the server interrupts, that gets replicated so the client can get it twice
+	assert(IS_CLIENT or castingAbilityNames[player] == abilityName)
+	castingAbilityNames[player] = nil
+end
 
-			if not playerAbilities[player][data.name] then
-				playerAbilities[player][data.name] = ability
-				ability.castEvent:Connect(OnCast)
-				ability.executeEvent:Connect(OnExecute)
+-- Client and Server
+function Tick()
+	if IS_CLIENT then
+		-- We use Core's networking to replicate abilities, so we catch them here and hook them up
+		for _, player in pairs(Game.GetPlayers()) do
+			for _, ability in pairs(player:GetAbilities()) do
+				local data = abilityData[abilityMap[ability.sourceTemplateId]]
+
+				if not playerAbilities[player][data.name] then
+					playerAbilities[player][data.name] = ability
+					ability.castEvent:Connect(OnCast)
+					ability.executeEvent:Connect(OnExecute)
+					ability.interruptedEvent:Connect(OnInterrupted)
+				end
 			end
+		end
+	end
+
+	for player, abilityName in pairs(castingAbilityNames) do
+		local target = GetAbilityTarget(player, abilityName)
+
+		if not IsCastValid(player, GetAbilityTarget(player, abilityName), abilityName) then
+			local ability = playerAbilities[player][abilityName]
+			ability:Interrupt()
 		end
 	end
 end
 
 -- Client and Server
-function API.CanActivate(player, abilityName)
+function IsCastValid(player, target, abilityName)
 	local ability = playerAbilities[player][abilityName]
 	local data = abilityData[abilityName]
+	assert(ability)
+	assert(ability:GetCurrentPhase() == AbilityPhase.CAST or ability:GetCurrentPhase() == AbilityPhase.READY)
+	assert(ability.isEnabled)
 
-	-- Does the player not have that ability?
-	if not ability then
-		return false
-	end
-
-	-- Is the player dead
+	-- Is the caster dead
 	if player.isDead then
 		return false
 	end
 
-	-- Is that ability on cooldown
-	if ability:GetCurrentPhase() ~= AbilityPhase.READY or not ability.isEnabled then
+	-- Is the caster moving
+	if player:GetVelocity().size > 0.1 then
 		return false
 	end
 
-	-- Is the player currently casting something
-	for _, otherAbility in pairs(playerAbilities[player]) do
-		if otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
-			return false
-		end
+	-- Is the caster not on the ground
+	if not player.isGrounded then
+		return false
 	end
 
-	-- Does the player have a valid target in range
-	if data.targets and not data.groundTargets then
-		local target = API_PS.GetTarget(player)
+	-- Is the caster stunned
+	if API_SE.IsStunned(player) then
+		return false
+	end
 
+	-- Is this ability targeted
+	if data.targets and not data.groundTargets then
+		-- Does the caster have a target
 		if not target then
 			return false
 		end
 
+		-- Is the target out of range
 		if data.range and (target:GetWorldPosition() - player:GetWorldPosition()).size > data.range then
 			return false
 		end
 
-		-- valid team, facing, isdead
+		-- Is this a hostile spell with a friendly target
 		if not data.friendlyTargetValid and target:IsA("Player") then
 			return false
 		end
 
+		-- Is this a friendly spell with a hostile target
 		if not data.enemyTargetValid and not target:IsA("Player") then
 			return false
 		end
 
+		-- Does this spell require facing and the target is behind the caster
 		if data.requiresFacing then
 			local offset = target:GetWorldPosition() - player:GetWorldPosition()
 
@@ -206,21 +258,48 @@ function API.CanActivate(player, abilityName)
 			end
 		end
 
+		-- Is the player target dead
 		if target:IsA("Player") and target.isDead then
 			return false
 		end
 
-		if not target:IsA("Player") and API_NPC.IsDead(target) then
+		-- Is the NPC target dead or asleep
+		if not target:IsA("Player") then
+			if API_NPC.IsDead(target) or API_NPC.IsAsleep(target) then
+				return false
+			end
+		end
+	end
+
+	return true
+end
+
+-- Client and Server
+-- This checks a few specific conditions only relevant at cast start
+function API.CanActivate(player, abilityName)
+	local ability = playerAbilities[player][abilityName]
+	local data = abilityData[abilityName]
+	local target = API_PS.GetTarget(player)
+	assert(ability)
+
+	-- Is that ability disabled
+	if not ability.isEnabled then
+		return false
+	end
+
+	-- Is that ability on cooldown
+	if ability:GetCurrentPhase() ~= AbilityPhase.READY then
+		return false
+	end
+
+	-- Is the caster currently casting something else
+	for _, otherAbility in pairs(playerAbilities[player]) do
+		if otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
 			return false
 		end
 	end
 
-	-- Is the player stunned
-	if API_SE.IsStunned(player) then
-		return false
-	end
-
-	return true
+	return IsCastValid(player, target, abilityName)
 end
 
 -- Owning client
@@ -230,17 +309,10 @@ function API.Activate(abilityName)
 	local data = abilityData[abilityName]
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 
-	ability:Activate()
-
-	if data.targets then
-		if data.groundTargets then
-			-- Spawn reticle, etc.
-			return
-		else
-			local abilityTarget = AbilityTarget.New()
-			abilityTarget.hitObject = API_PS.GetTarget(LOCAL_PLAYER)
-			ability:SetTargetData(abilityTarget)
-		end
+	if data.targets and data.groundTargets then
+		-- Spawn reticle, etc.
+	else
+		ability:Activate()
 	end
 end
 
@@ -252,6 +324,7 @@ function API.GivePlayerAbility(player, abilityName)
 	ability.owner = player
 	ability.castEvent:Connect(OnCast)
 	ability.executeEvent:Connect(OnExecute)
+	ability.interruptedEvent:Connect(OnInterrupted)
 	playerAbilities[player][abilityName] = ability
 end
 
@@ -264,6 +337,7 @@ function API.ResetPlayerAbilities(player)
 	end
 
 	playerAbilities[player] = {}
+	castingAbilityNames[player] = nil
 end
 
 -- Client and Server
@@ -287,9 +361,10 @@ function API.Initialize(isClient)
 
 	if IS_CLIENT then
 		LOCAL_PLAYER = Game.GetLocalPlayer()
-		local tick = Task.Spawn(Tick)
-		tick.repeatCount = -1
 	end
+
+	local tick = Task.Spawn(Tick)
+	tick.repeatCount = -1
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

@@ -30,20 +30,22 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local castingAbility = nil
 local interruptTime = nil
+local onInterruptedListener = nil
+
+function OnInterrupted(ability)
+    TEXT_BOX.text = "Cast Interrupted"
+    PROGRESS_BAR:SetFillColor(Color.RED)
+    interruptTime = os.clock()
+    castingAbility = nil
+    onInterruptedListener:Disconnect()
+    onInterruptedListener = nil
+end
 
 function Tick(deltaTime)
     if interruptTime then
-        if interruptTime + 0.5 < time() then
+        if interruptTime + 0.5 < os.clock() then
             interruptTime = nil
         end
-    elseif castingAbility and castingAbility:GetCurrentPhase() ~= AbilityPhase.CAST then
-        if castingAbility:GetCurrentPhase() == AbilityPhase.READY then
-            TEXT_BOX.text = "Cast Interrupted"
-            PROGRESS_BAR:SetFillColor(Color.RED)
-            interruptTime = time()
-        end
-
-        castingAbility = nil
     else
         PANEL.visibility = Visibility.FORCE_OFF
 
@@ -54,6 +56,13 @@ function Tick(deltaTime)
 
                 if totalTime >= MIN_CAST_TIME then
                     castingAbility = ability
+
+                    if onInterruptedListener then
+                        onInterruptedListener:Disconnect()
+                        onInterruptedListener = nil
+                    end
+                    
+                    onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted)
 
                     PANEL.visibility = Visibility.INHERIT
                     PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
