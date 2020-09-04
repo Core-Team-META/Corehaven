@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 16032825565257178054
-  Name: "TEST_HELMET_05"
+  Id: 17419659626591398152
+  Name: "ITEM_Armor_LeatherArmor"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_BOOTS_03"
+        Name: "TEST_ARMOR_01"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,14 @@
         ChildIds: 5529803406879642450
         ChildIds: 9272687909282299361
         ChildIds: 13545949256429233863
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 13322074126134490018
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -177,6 +185,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 13322074126134490018
+      Name: "Fantasy Gear Top 015"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Gear_Top_015"
       }
     }
     Assets {

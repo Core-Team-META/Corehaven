@@ -5,11 +5,10 @@ local BINDING_CLEAR_INVENTORY = script:GetCustomProperty("BindingClearInventory"
 local BINDING_PRINT_INVENTORY = script:GetCustomProperty("BindingPrintInventory")
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 
-local database = Database.New()
-
 local function OnBindingPressed(player, binding)
+    Database:WaitUntilLoaded()
     if binding == BINDING_DROP_LOOT then
-        local dropKey = database:RandomDropKey()
+        local dropKey = Database:RandomDropKey()
         local playerPosition = player:GetWorldPosition()
         Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
     elseif binding == BINDING_CLEAR_INVENTORY then

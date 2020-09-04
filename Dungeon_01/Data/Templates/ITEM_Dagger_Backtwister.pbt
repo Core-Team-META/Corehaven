@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 677015141702066796
-  Name: "TEST_BOOTS_01"
+  Id: 11361976113091638893
+  Name: "ITEM_Dagger_Backtwister"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -20,6 +20,14 @@
         ChildIds: 5529803406879642450
         ChildIds: 9272687909282299361
         ChildIds: 13545949256429233863
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 13807331663854887932
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -177,6 +185,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 13807331663854887932
+      Name: "Fantasy Dagger 003"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Dagger_003"
       }
     }
     Assets {

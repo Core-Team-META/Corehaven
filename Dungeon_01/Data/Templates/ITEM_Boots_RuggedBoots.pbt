@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 5952575342512792516
-  Name: "TEST_ARMOR_02"
+  Id: 3427213701677311018
+  Name: "ITEM_Boots_RuggedBoots"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_BOOTS_03"
+        Name: "TEST_BOOTS_02"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,14 @@
         ChildIds: 5529803406879642450
         ChildIds: 9272687909282299361
         ChildIds: 13545949256429233863
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 12508503946332270658
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -177,6 +185,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 12508503946332270658
+      Name: "Fantasy Boot 015"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Gear_Boot_015"
       }
     }
     Assets {

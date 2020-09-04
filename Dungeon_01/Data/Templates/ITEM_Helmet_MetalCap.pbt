@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 11930481815958285163
-  Name: "TEST_HELMET_01"
+  Id: 6794588461138357277
+  Name: "ITEM_Helmet_MetalCap"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_BOOTS_03"
+        Name: "TEST_HELMET_03"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,14 @@
         ChildIds: 5529803406879642450
         ChildIds: 9272687909282299361
         ChildIds: 13545949256429233863
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 1829990688765389665
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -177,6 +185,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 1829990688765389665
+      Name: "Fantasy Gear Head 017"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Gear_Head_017"
       }
     }
     Assets {

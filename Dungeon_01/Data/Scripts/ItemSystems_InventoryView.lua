@@ -312,7 +312,7 @@ function view:DrawSlots()
             local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
             slot.clientUserData.item = item
             slot.clientUserData.icon.visibility = Visibility.INHERIT
-            slot.clientUserData.icon:SetImage(item:GetIcon())
+            item:ApplyIconImageSettings(slot.clientUserData.icon)
             slot.clientUserData.gradient.visibility = Visibility.INHERIT
             slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
@@ -327,17 +327,25 @@ function view:DrawSlots()
 end
 
 function view:DrawHoverHighlight()
-    if self.slotUnderCursor and (self.itemUnderCursor or self.isHoldingIcon) then
+    if self.slotUnderCursor then
         local toSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
-        if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+        local shouldHighlight = false
+        if not self.isHoldingIcon and self.itemUnderCursor then
+            shouldHighlight = true
+        elseif self.isHoldingIcon and inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+            shouldHighlight = true
+        end
+        if shouldHighlight then
             self.slotUnderCursor.clientUserData.border:SetImage(CURSOR_HIGHLIGHT_BACKPACK)
         end 
     end
     for _,slot in ipairs(self.equippedSlots) do
         local toSlotIndex = slot.clientUserData.slotIndex
+        --slot.visibility = Visibility.INHERIT
         slot.clientUserData.notAllowed.visibility = Visibility.FORCE_OFF
         if self.isHoldingIcon and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
             slot.clientUserData.notAllowed.visibility = Visibility.INHERIT
+           -- slot.visibility = Visibility.FORCE_OFF
         end
     end
 end

@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 13732142082833267683
-  Name: "TEST_BOOTS_03"
+  Name: "ITEM_Boots_SteelToe"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -20,6 +20,14 @@
         ChildIds: 5529803406879642450
         ChildIds: 9272687909282299361
         ChildIds: 13545949256429233863
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 4753212364645921439
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -177,6 +185,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 4753212364645921439
+      Name: "Fantasy Boot 019"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Gear_Boot_019"
       }
     }
     Assets {
