@@ -800,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9405728001328588797
+  Name: "Stone Arch (doorway) 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_doorway_001"
+  }
+}
+Assets {
   Id: 9372549160589526323
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
