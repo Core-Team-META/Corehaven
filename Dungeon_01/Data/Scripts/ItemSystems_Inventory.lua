@@ -280,7 +280,7 @@ end
 function Inventory:_SetSlotItem(slotIndex, item)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
-    if self:IsEquipSlot(slotIndex) then
+    if item and self:IsEquipSlot(slotIndex) then
         local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
         self.equippedItems[slotIndex] = item
         self.isOffhandDisabled = constraints.isOffhandDisabled or false
