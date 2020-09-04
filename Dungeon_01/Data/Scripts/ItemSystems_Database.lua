@@ -6,6 +6,9 @@
 ]]
 local Item = require(script:GetCustomProperty("Item"))
 
+-- Load the database over a fixed number of frames.
+local LOAD_FRAME_LIMIT = 10
+
 local DATA_CATALOGS = {}
 local DATA_STATS = {}
 for _,itemType in ipairs(Item.TYPES) do
@@ -13,17 +16,15 @@ for _,itemType in ipairs(Item.TYPES) do
     table.insert(DATA_STATS, require(script:GetCustomProperty(string.format("%s_Stats", itemType))))
 end
 
-local Database = {}
-Database.__index = Database
-
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Database.New()
-    local o = {}
-    setmetatable(o, Database)
-    o:_Init()
-    return o
+local Database = {}
+
+function Database:WaitUntilLoaded()
+    while not self.isLoaded do
+        Task.Wait()
+    end
 end
 
 function Database:CreateItemFromDrop(dropKey)
@@ -57,9 +58,13 @@ end
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
 function Database:_Init()
-    self:_LoadStats()
-    self:_LoadCatalog()
-    self:_LoadDrops()
+    Task.Spawn(function()
+        self:_LoadStats()
+        self:_LoadCatalog()
+        self:_LoadDrops()
+        self:_LoadAssetDerivedInformation()
+        self.isLoaded = true
+    end)
 end
 
 function Database:_LoadStats()
@@ -101,7 +106,6 @@ function Database:_LoadCatalog()
                 type = row.Type,
                 rarity = row.Rarity,
                 meshMUID = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
-                iconMUID = row.Icon,
                 description = row.Lore,
                 _RollStats = function()
                     local statRollInfos = self.itemStatRollInfos[row.StatKey]
@@ -156,6 +160,21 @@ function Database:_LoadDrops()
         local dropInfo = { itemName = row.ItemName, likelihood = tonumber(row.Likelihood) }
         table.insert(dropTable, dropInfo)
         dropTable.cumulativeLikelihood = dropTable.cumulativeLikelihood + dropInfo.likelihood
+    end
+end
+
+function Database:_LoadAssetDerivedInformation()
+    local itemCount = #self.itemDatasByIndex
+    local itemsPerFrame = math.ceil(itemCount / LOAD_FRAME_LIMIT)
+    for index,itemData in ipairs(self.itemDatasByIndex) do
+        if index % itemsPerFrame == 0 then
+            Task.Wait()
+        end
+        local tempObject = World.SpawnAsset(itemData.meshMUID)
+        itemData.iconMUID = tempObject:GetCustomProperty("Icon")
+        itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
+        itemData.iconColorOverride = tempObject:GetCustomProperty("IconOverride")
+        tempObject:Destroy()
     end
 end
 

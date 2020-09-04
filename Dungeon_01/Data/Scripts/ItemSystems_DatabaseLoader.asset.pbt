@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 1680988108412715813
-  Name: "ReliableEvents"
+  Id: 17283198374940582863
+  Name: "ItemSystems_DatabaseLoader"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:Deque"
+        Name: "cs:ItemSystems_Database"
         AssetReference {
-          Id: 4561615774595589971
+          Id: 4685988691808682848
         }
       }
     }

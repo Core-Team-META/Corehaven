@@ -1,8 +1,6 @@
 ﻿local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local LOOT_TEMPLATE = script:GetCustomProperty("LootTemplate")
 
-local database = Database.New()
-
 -- Drops are assigned by lottery.
 local playerLotteryTickets = {}
 
@@ -53,8 +51,10 @@ local function ChoosePlayerByLottery()
 end
 
 local function OnDropLoot(dropKey, dropWorldPosition)
+    -- If for some crazy reason the database has yet to load and loot is already dropping, ignore it.
+    Database:WaitUntilLoaded()
     local winner = ChoosePlayerByLottery()
-    local item = database:CreateItemFromDrop(dropKey)
+    local item = Database:CreateItemFromDrop(dropKey)
     local object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
     -- Encode information into the objects loot property.
     local lootInfo = string.format("%s/%s", winner.id, item:RuntimeHash())

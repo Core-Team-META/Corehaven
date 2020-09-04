@@ -15,6 +15,7 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  ChildIds: 12586167111700513532
   ChildIds: 384554401536302131
   ChildIds: 5776161782523781617
   Collidable_v2 {
@@ -8530,6 +8531,33 @@ Objects {
   }
 }
 Objects {
+  Id: 12586167111700513532
+  Name: "ItemSystems_DatabaseLoader"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3873329528123528015
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17283198374940582863
+    }
+  }
+}
+Objects {
   Id: 3291337978348903876
   Name: "Server"
   Transform {
@@ -8544,6 +8572,7 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  ChildIds: 2441683231896896007
   ChildIds: 10980697081060261463
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8557,7 +8586,7 @@ Objects {
 }
 Objects {
   Id: 10980697081060261463
-  Name: "ItemSystems_Cheats"
+  Name: "ItemSystems_DeveloperCheats"
   Transform {
     Location {
     }
@@ -8603,6 +8632,33 @@ Objects {
   Script {
     ScriptAsset {
       Id: 12805538840666149581
+    }
+  }
+}
+Objects {
+  Id: 2441683231896896007
+  Name: "ItemSystems_DatabaseLoader"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3291337978348903876
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17283198374940582863
     }
   }
 }

@@ -7,7 +7,7 @@
       RootId: 5431857275646351811
       Objects {
         Id: 5431857275646351811
-        Name: "TEST_DAGGER"
+        Name: "TEST_DAGGER_01"
         Transform {
           Scale {
             X: 1
@@ -20,6 +20,14 @@
         ChildIds: 18209328367245891157
         ChildIds: 2768151908576700034
         ChildIds: 11595416432272815457
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 17273973329748654138
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -180,6 +188,15 @@
       }
     }
     Assets {
+      Id: 17273973329748654138
+      Name: "Fantasy Wood 007"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Equip_Wood_007"
+      }
+    }
+    Assets {
       Id: 3682206342183528038
       Name: "Fantasy Sword Grip 01"
       PlatformAssetType: 1
@@ -220,5 +237,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

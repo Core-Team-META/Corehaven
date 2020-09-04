@@ -20,6 +20,18 @@
         ChildIds: 2872379025877207826
         ChildIds: 6507454108015442315
         ChildIds: 5800275328258167900
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Icon"
+            AssetReference {
+              Id: 7914877523917694110
+            }
+          }
+          Overrides {
+            Name: "cs:IconRotation"
+            Float: 180
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -180,6 +192,15 @@
       }
     }
     Assets {
+      Id: 7914877523917694110
+      Name: "Fantasy Dagger 016"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Weapon_Dagger_016"
+      }
+    }
+    Assets {
       Id: 3682206342183528038
       Name: "Fantasy Sword Grip 01"
       PlatformAssetType: 1
@@ -220,5 +241,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

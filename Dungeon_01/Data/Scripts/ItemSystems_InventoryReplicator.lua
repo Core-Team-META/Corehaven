@@ -4,8 +4,8 @@
 
     Manages the replication of inventories across client/server.
 ]]
-local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
+local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
@@ -22,14 +22,14 @@ while not OWNER do
 end
 
 ---------------------------------------------------------------------------------------------------------
--- A database instance is required.
-local database = Database.New()
+-- Wait until the database has fully loaded to proceed.
+Database:WaitUntilLoaded()
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
     local playerData = Storage.GetPlayerData(OWNER)
     print("Loading inventory: ", playerData.inventoryHash)
-    OWNER.serverUserData.inventory = Inventory.FromHash(database, playerData.inventoryHash)
+    OWNER.serverUserData.inventory = Inventory.FromHash(Database, playerData.inventoryHash)
     COMPONENT:SetNetworkedCustomProperty("LOAD", OWNER.serverUserData.inventory:RuntimeHash())
 end
 
@@ -39,7 +39,7 @@ local function ClientLoadInventory()
         Task.Wait()
         loadHash = COMPONENT:GetCustomProperty("LOAD")
     end
-    OWNER.clientUserData.inventory = Inventory.FromHash(database, loadHash)
+    OWNER.clientUserData.inventory = Inventory.FromHash(Database, loadHash)
 end
 
 ---------------------------------------------------------------------------------------------------------
