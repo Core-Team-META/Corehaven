@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 677015141702066796
-  Name: "TEST_BOOTS_01"
+  Name: "ITEM_Boots_BasicBoots"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

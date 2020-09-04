@@ -4,8 +4,7 @@
     Type = 'Dagger',
     Rarity = 'Common',
     StatKey = 'CommonDagger',
-    MUID = '9B5749AF1E386F07:TEST_DAGGER_01',
-    Icon = 'EFB97B38D33D783A:Fantasy Wood 007',
+    MUID = '9B5749AF1E386F07:ITEM_Dagger_PointyStick',
     Lore = 'Crude wooden stabby thing.',
   },
   {
@@ -13,8 +12,7 @@
     Type = 'Dagger',
     Rarity = 'Common',
     StatKey = 'CommonDagger',
-    MUID = 'F2ADFC053F8E9677:TEST_DAGGER_02',
-    Icon = 'E783B813C8D4EDB8:Fantasy Dagger 005',
+    MUID = 'F2ADFC053F8E9677:ITEM_Dagger_IronDagger',
     Lore = 'Standard issue dagger.',
   },
   {
@@ -22,8 +20,7 @@
     Type = 'Dagger',
     Rarity = 'Uncommon',
     StatKey = 'UncommonDagger',
-    MUID = '13284F445692EF89:TEST_DAGGER_03',
-    Icon = '9CCB3E287A134631:Fantasy Dagger 002',
+    MUID = '13284F445692EF89:ITEM_Dagger_BanditKnife',
     Lore = 'Cruel and menacing, just like its maker.',
   },
   {
@@ -31,8 +28,7 @@
     Type = 'Dagger',
     Rarity = 'Uncommon',
     StatKey = 'UncommonDagger',
-    MUID = '9D87559D6E205CCA:TEST_DAGGER_04',
-    Icon = 'CF75A93BF63E1956:Fantasy Dagger 004',
+    MUID = '9D87559D6E205CCA:ITEM_Dagger_CurvedKnife',
     Lore = 'An elegant carving knife.',
   },
   {
@@ -40,8 +36,7 @@
     Type = 'Dagger',
     Rarity = 'Rare',
     StatKey = 'RareDagger',
-    MUID = 'A8269FB04ED0D52C:TEST_DAGGER_05',
-    Icon = 'B1E63F847DE315D0:Fantasy Dagger 023',
+    MUID = 'A8269FB04ED0D52C:ITEM_Dagger_ObsidianDagger',
     Lore = 'Remarkably sharp blade which seems to absorb the light around it.',
   },
   {
@@ -49,8 +44,7 @@
     Type = 'Dagger',
     Rarity = 'Rare',
     StatKey = 'RareDagger',
-    MUID = '5B6E526EFD89398C:TEST_DAGGER_06',
-    Icon = '6DD74B2C55D6649E:Fantasy Dagger 016',
+    MUID = '5B6E526EFD89398C:ITEM_Dagger_CarrionCarver',
     Lore = 'A macabre twist on the classic carver.',
   },
   {
@@ -58,8 +52,7 @@
     Type = 'Dagger',
     Rarity = 'Epic',
     StatKey = 'EpicDagger',
-    MUID = '9DADD913974CF66D:TEST_DAGGER_07',
-    Icon = 'BF9D7EFE7012E3FC:Fantasy Dagger 003',
+    MUID = '9DADD913974CF66D:ITEM_Dagger_Backtwister',
     Lore = 'Blood makes everything better.',
   },
 }

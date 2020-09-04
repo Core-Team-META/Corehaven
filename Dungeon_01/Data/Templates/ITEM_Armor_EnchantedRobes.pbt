@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 17419659626591398152
-  Name: "TEST_ARMOR_01"
+  Id: 4397988812337525454
+  Name: "ITEM_Armor_EnchantedRobes"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_ARMOR_01"
+        Name: "TEST_ARMOR_04"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 13322074126134490018
+              Id: 15587843699754177765
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 13322074126134490018
-      Name: "Fantasy Gear Top 015"
+      Id: 15587843699754177765
+      Name: "Fantasy Gear Top 003"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Top_015"
+        AssetId: "UI_Fantasy_Gear_Top_003"
       }
     }
     Assets {

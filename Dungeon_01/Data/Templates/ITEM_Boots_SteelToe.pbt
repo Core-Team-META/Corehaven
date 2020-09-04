@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 12550598932483368425
-  Name: "TEST_ARMOR_05"
+  Id: 13732142082833267683
+  Name: "ITEM_Boots_SteelToe"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_ARMOR_05"
+        Name: "TEST_BOOTS_03"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 16062266420109663488
+              Id: 4753212364645921439
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 16062266420109663488
-      Name: "Fantasy Gear Top 008"
+      Id: 4753212364645921439
+      Name: "Fantasy Boot 019"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Top_008"
+        AssetId: "UI_Fantasy_Gear_Boot_019"
       }
     }
     Assets {

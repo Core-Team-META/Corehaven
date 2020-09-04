@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 11361976113091638893
-  Name: "TEST_DAGGER_07"
+  Id: 3427213701677311018
+  Name: "ITEM_Boots_RuggedBoots"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_DAGGER_07"
+        Name: "TEST_BOOTS_02"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 13807331663854887932
+              Id: 12508503946332270658
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 13807331663854887932
-      Name: "Fantasy Dagger 003"
+      Id: 12508503946332270658
+      Name: "Fantasy Boot 015"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Dagger_003"
+        AssetId: "UI_Fantasy_Gear_Boot_015"
       }
     }
     Assets {

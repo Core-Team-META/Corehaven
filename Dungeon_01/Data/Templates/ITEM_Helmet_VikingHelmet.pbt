@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 10093306677297253491
-  Name: "TEST_HELMET_02"
+  Id: 16032825565257178054
+  Name: "ITEM_Helmet_VikingHelmet"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_HELMET_02"
+        Name: "TEST_HELMET_05"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 246146845710323462
+              Id: 592535293332890832
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 246146845710323462
-      Name: "Fantasy Gear Head 014"
+      Id: 592535293332890832
+      Name: "Fantasy Gear Head 016"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Head_014"
+        AssetId: "UI_Fantasy_Gear_Head_016"
       }
     }
     Assets {

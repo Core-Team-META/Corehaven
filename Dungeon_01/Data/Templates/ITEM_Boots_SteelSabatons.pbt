@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 16032825565257178054
-  Name: "TEST_HELMET_05"
+  Id: 3631325234750246348
+  Name: "ITEM_Boots_SteelSabatons"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_HELMET_05"
+        Name: "TEST_BOOTS_05"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 592535293332890832
+              Id: 4286856046924265701
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 592535293332890832
-      Name: "Fantasy Gear Head 016"
+      Id: 4286856046924265701
+      Name: "Fantasy Boot 017"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Head_016"
+        AssetId: "UI_Fantasy_Gear_Boot_017"
       }
     }
     Assets {

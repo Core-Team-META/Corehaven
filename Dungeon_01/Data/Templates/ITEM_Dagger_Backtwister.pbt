@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 5952575342512792516
-  Name: "TEST_ARMOR_02"
+  Id: 11361976113091638893
+  Name: "ITEM_Dagger_Backtwister"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_ARMOR_02"
+        Name: "TEST_DAGGER_07"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 11501467241282188165
+              Id: 13807331663854887932
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 11501467241282188165
-      Name: "Fantasy Gear Top 014"
+      Id: 13807331663854887932
+      Name: "Fantasy Dagger 003"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Top_014"
+        AssetId: "UI_Fantasy_Weapon_Dagger_003"
       }
     }
     Assets {

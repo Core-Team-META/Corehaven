@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4397988812337525454
-  Name: "TEST_ARMOR_04"
+  Id: 11930481815958285163
+  Name: "ITEM_Helmet_LeatherCap"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_ARMOR_04"
+        Name: "TEST_HELMET_01"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 15587843699754177765
+              Id: 12674831966383992944
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 15587843699754177765
-      Name: "Fantasy Gear Top 003"
+      Id: 12674831966383992944
+      Name: "Fantasy Gear Head 015"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Top_003"
+        AssetId: "UI_Fantasy_Gear_Head_015"
       }
     }
     Assets {

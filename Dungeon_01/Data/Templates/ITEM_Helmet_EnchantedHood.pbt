@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 2769523516120597907
-  Name: "TEST_ARMOR_03"
+  Id: 10329690887521538313
+  Name: "ITEM_Helmet_EnchantedHood"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_ARMOR_03"
+        Name: "TEST_HELMET_04"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 11281259791898433816
+              Id: 11839012387892238605
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 11281259791898433816
-      Name: "Fantasy Gear Top 010"
+      Id: 11839012387892238605
+      Name: "Fantasy Gear Head 005"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Top_010"
+        AssetId: "UI_Fantasy_Gear_Head_005"
       }
     }
     Assets {

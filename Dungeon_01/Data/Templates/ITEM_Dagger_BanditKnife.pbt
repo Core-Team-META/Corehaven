@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 5827906008867114834
-  Name: "TEST_BOOTS_04"
+  Id: 1380440440717897609
+  Name: "ITEM_Dagger_BanditKnife"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14221847442462413670
+      RootId: 1875786192613678382
       Objects {
-        Id: 14221847442462413670
-        Name: "TEST_BOOTS_04"
+        Id: 1875786192613678382
+        Name: "TEST_DAGGER_03"
         Transform {
           Scale {
             X: 1
@@ -16,15 +16,15 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 11527184425841715004
-        ChildIds: 5529803406879642450
-        ChildIds: 9272687909282299361
-        ChildIds: 13545949256429233863
+        ChildIds: 9336256486147668586
+        ChildIds: 4764008835196200639
+        ChildIds: 3163526662430967769
+        ChildIds: 7208035644754219612
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 16613986136746132697
+              Id: 11298192433756718641
             }
           }
         }
@@ -39,7 +39,7 @@
         }
       }
       Objects {
-        Id: 11527184425841715004
+        Id: 9336256486147668586
         Name: "Fantasy Sword Grip 01"
         Transform {
           Location {
@@ -53,7 +53,7 @@
             Z: 0.851540744
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 1875786192613678382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -76,7 +76,7 @@
         }
       }
       Objects {
-        Id: 5529803406879642450
+        Id: 4764008835196200639
         Name: "Fantasy Sword Blade 01"
         Transform {
           Location {
@@ -90,7 +90,7 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 1875786192613678382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -113,7 +113,7 @@
         }
       }
       Objects {
-        Id: 9272687909282299361
+        Id: 3163526662430967769
         Name: "Fantasy Sword Guard 02"
         Transform {
           Location {
@@ -127,7 +127,7 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 1875786192613678382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -150,7 +150,7 @@
         }
       }
       Objects {
-        Id: 13545949256429233863
+        Id: 7208035644754219612
         Name: "Fantasy Pommel 01"
         Transform {
           Location {
@@ -164,7 +164,7 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 1875786192613678382
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 16613986136746132697
-      Name: "Fantasy Boot 007"
+      Id: 11298192433756718641
+      Name: "Fantasy Dagger 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Boot_007"
+        AssetId: "UI_Fantasy_Weapon_Dagger_002"
       }
     }
     Assets {
