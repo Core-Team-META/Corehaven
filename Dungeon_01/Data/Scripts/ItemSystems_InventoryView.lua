@@ -264,9 +264,7 @@ function view:DrawSlots()
             slot.clientUserData.gradient.visibility = Visibility.INHERIT
             slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
-            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
-                slot.clientUserData.border:SetColor(rarityColor)
-            end
+            slot.clientUserData.border:SetColor(rarityColor)
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF

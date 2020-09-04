@@ -38,9 +38,6 @@ Objects {
   Name: "ItemSystems"
   Transform {
     Location {
-      X: -23900
-      Y: -10100
-      Z: -800
     }
     Rotation {
     }

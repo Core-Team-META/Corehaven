@@ -19,8 +19,8 @@
         ChildIds: 7371804287230856144
         ChildIds: 16577243887167407429
         ChildIds: 6649207122798874075
-        ChildIds: 14735673224064154605
         ChildIds: 11450314268423252432
+        ChildIds: 14735673224064154605
         UnregisteredParameters {
           Overrides {
             Name: "cs:Anchor"
@@ -324,64 +324,6 @@
         }
       }
       Objects {
-        Id: 14735673224064154605
-        Name: "Border"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12787936571800940537
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: -10
-          Height: -10
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 12017046880637070245
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 11450314268423252432
         Name: "Frame"
         Transform {
@@ -439,6 +381,64 @@
           }
         }
       }
+      Objects {
+        Id: 14735673224064154605
+        Name: "Border"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12787936571800940537
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -11
+          Height: -11
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 12017046880637070245
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 10386822047949910996
@@ -468,21 +468,21 @@
       }
     }
     Assets {
-      Id: 12017046880637070245
-      Name: "Frame Outlined 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_019"
-      }
-    }
-    Assets {
       Id: 382436319866788354
       Name: "Frame SciFi Empty 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameSciFi_001e"
+      }
+    }
+    Assets {
+      Id: 12017046880637070245
+      Name: "Frame Outlined 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSolid4px_019"
       }
     }
     PrimaryAssetId {

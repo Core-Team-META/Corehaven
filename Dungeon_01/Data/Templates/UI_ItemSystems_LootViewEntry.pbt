@@ -172,7 +172,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 6980104993132211032
+              Id: 16532880832873788683
             }
             Color {
               A: 1
@@ -344,7 +344,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 16471580195087108593
+              Id: 12017046880637070245
             }
             Color {
               R: 1
@@ -513,12 +513,12 @@
       }
     }
     Assets {
-      Id: 6980104993132211032
-      Name: "BG Flat 004"
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_22"
+        AssetId: "BackgroundNoOutline_019"
       }
     }
     Assets {
@@ -531,12 +531,12 @@
       }
     }
     Assets {
-      Id: 16471580195087108593
-      Name: "Frame Outlined 001"
+      Id: 12017046880637070245
+      Name: "Frame Outlined 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_020"
+        AssetId: "FrameSolid4px_019"
       }
     }
     Assets {

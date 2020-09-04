@@ -608,7 +608,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 500
@@ -6703,7 +6703,7 @@ Objects {
     Overrides {
       Name: "cs:CursorHighlightBackpack"
       AssetReference {
-        Id: 11963909620227360546
+        Id: 5635343760568520525
       }
     }
   }

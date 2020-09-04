@@ -89,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11963909620227360546
-  Name: "Frame Outlined Thick 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameFlat_020"
-  }
-}
-Assets {
   Id: 11298192433756718641
   Name: "Fantasy Dagger 002"
   PlatformAssetType: 9
@@ -176,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_PlayerMount"
+  }
+}
+Assets {
+  Id: 5635343760568520525
+  Name: "Frame Outlined Thick 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_019"
   }
 }
 Assets {
