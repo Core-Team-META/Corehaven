@@ -608,7 +608,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 500
@@ -4438,9 +4438,9 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4494,9 +4494,9 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4550,9 +4550,9 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4606,9 +4606,9 @@ Objects {
         Id: 10277004524862014404
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4662,9 +4662,9 @@ Objects {
         Id: 7957169483103266877
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4718,9 +4718,9 @@ Objects {
         Id: 16634052309904547918
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4774,9 +4774,9 @@ Objects {
         Id: 14739427260152500224
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -4830,9 +4830,9 @@ Objects {
         Id: 1800484346299675619
       }
       Color {
-        R: 1
-        G: 1
-        A: 0.3
+        R: 0.669999957
+        G: 0.372715086
+        A: 0.5
       }
       TeamSettings {
       }
@@ -5047,9 +5047,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5107,9 +5106,8 @@ Objects {
         Id: 4314886786387000778
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -5212,9 +5210,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5272,9 +5269,8 @@ Objects {
         Id: 7807124703160164224
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -5377,9 +5373,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5437,9 +5432,8 @@ Objects {
         Id: 5868275997044220508
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -5542,9 +5536,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5602,9 +5595,8 @@ Objects {
         Id: 17389391497886536859
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -5707,9 +5699,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5767,9 +5758,8 @@ Objects {
         Id: 3854129195189155340
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -5872,9 +5862,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -5932,9 +5921,8 @@ Objects {
         Id: 13662931040490641671
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -6037,9 +6025,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -6097,9 +6084,8 @@ Objects {
         Id: 1276674272060746657
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
@@ -6202,9 +6188,8 @@ Objects {
     Text {
       Label: "1337"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       Size: 16
@@ -6262,9 +6247,8 @@ Objects {
         Id: 1285653368607626957
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.669999957
+        G: 0.372715205
         A: 1
       }
       TeamSettings {
