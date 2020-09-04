@@ -131,12 +131,12 @@ end
 -- Move an item. If there is an item in the destination slot, the items will swap. Acts as delete if destination slot is nil.
 function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     if not self:CanMoveItem(fromSlotIndex, toSlotIndex) then return end
-    local swap = nil
+    local swapItem = nil
     if toSlotIndex then
-        swap = self.slotItems[toSlotIndex]
-        self.slotItems[toSlotIndex] = self.slotItems[fromSlotIndex]
+        swapItem = self.slotItems[toSlotIndex]
+        self:_SetSlotItem(toSlotIndex, self.slotItems[fromSlotIndex])
     end
-    self.slotItems[fromSlotIndex] = swap
+    self:_SetSlotItem(fromSlotIndex, swapItem)
     self:_FireEvent("itemMovedEvent", fromSlotIndex, toSlotIndex)
 end
 
@@ -278,8 +278,13 @@ function Inventory:_SetSlotItem(slotIndex, item)
         local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
         self.equippedItems[slotIndex] = item
         self.isOffhandDisabled = constraints.isOffhandDisabled or false
+        self:_RecalculateStatTotals()
         self:_FireEvent("itemEquippedEvent", slotIndex, item)
     end
+end
+
+function Inventory:_RecalculateStatTotals()
+
 end
 
 function Inventory:__tostring()
