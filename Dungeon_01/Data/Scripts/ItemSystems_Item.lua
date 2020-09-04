@@ -102,12 +102,15 @@ function Item:GetRarity()
     return self.data.rarity
 end
 
-function Item:GetIcon()
+function Item:ApplyIconImageSettings(uiImage)
+    uiImage:SetImage(self.data.iconMUID)
+    uiImage:SetColor(self.data.iconColorTint or Color.WHITE)
+    uiImage.rotationAngle = self.data.iconRotation or 0
     return self.data.iconMUID
 end
 
 function Item:GetMesh()
-    return self.data.meshMUID
+    return self.data.muid
 end
 
 function Item:GetDescription()
@@ -163,7 +166,7 @@ end
 function Item:_IntoHash(isRuntime)
     local hashParts = {}
     table.insert(hashParts, isRuntime and HASH_RUNTIME or HASH_PERSISTENT)
-    table.insert(hashParts, isRuntime and Base64.Encode24(self.data.index) or self.data.meshMUID)
+    table.insert(hashParts, isRuntime and Base64.Encode24(self.data.index) or self.data.muid)
     table.insert(hashParts, HASH_DELIM_ID_END)
     for _,stat in ipairs(self.stats) do
         local statIndex = self.STATS[stat.name]

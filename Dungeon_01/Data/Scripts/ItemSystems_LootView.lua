@@ -55,7 +55,7 @@ function view:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
         entry.clientUserData.lootIndex = lootIndex
         -- Set the icon and name according to the item.
         entry.clientUserData.buttonText.text = lootInfo.item:GetName()
-        entry.clientUserData.icon:SetImage(lootInfo.item:GetIcon())
+        lootInfo.item:ApplyIconImageSettings(entry.clientUserData.icon)
         -- Set the colors according to rarity.
         local color = shouldGrayOut and COLOR_GRAYED_OUT or ItemThemes.GetRarityColor(lootInfo.item:GetRarity())
         entry.clientUserData.iconBorder:SetColor(color)

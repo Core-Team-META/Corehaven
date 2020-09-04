@@ -105,7 +105,7 @@ function Database:_LoadCatalog()
                 name = row.Name,
                 type = row.Type,
                 rarity = row.Rarity,
-                meshMUID = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
+                muid = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
                 description = row.Lore,
                 _RollStats = function()
                     local statRollInfos = self.itemStatRollInfos[row.StatKey]
@@ -139,7 +139,7 @@ function Database:_LoadCatalog()
             index = index + 1
             self.itemDatasByIndex[itemData.index] = itemData
             self.itemDatasByName[itemData.name] = itemData
-            self.itemDatasByMUID[itemData.meshMUID] = itemData
+            self.itemDatasByMUID[itemData.muid] = itemData
         end
     end
 end
@@ -170,10 +170,11 @@ function Database:_LoadAssetDerivedInformation()
         if index % itemsPerFrame == 0 then
             Task.Wait()
         end
-        local tempObject = World.SpawnAsset(itemData.meshMUID)
+        local tempObject = World.SpawnAsset(itemData.muid)
         itemData.iconMUID = tempObject:GetCustomProperty("Icon")
+        assert(itemData.iconMUID, string.format("item template %s missing icon property", itemData.muid))
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
-        itemData.iconColorOverride = tempObject:GetCustomProperty("IconOverride")
+        itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
         tempObject:Destroy()
     end
 end
