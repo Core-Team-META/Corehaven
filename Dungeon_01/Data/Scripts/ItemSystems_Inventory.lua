@@ -111,6 +111,11 @@ function Inventory:GetFreeEquipSlot(slotType)
     end
 end
 
+-- Get the cumulative stat totals from all equipped items.
+function Inventory:GetStatTotals()
+    return self.statTotals
+end
+
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
     local item = self:GetItem(fromSlotIndex)
@@ -284,7 +289,28 @@ function Inventory:_SetSlotItem(slotIndex, item)
 end
 
 function Inventory:_RecalculateStatTotals()
-
+    self.statTotals = self.statTotals or {}
+    for _,statName in ipairs(Item.STATS) do
+        self.statTotals[statName] = 0
+    end
+    for slotIndex = 1,#Inventory.EQUIP_SLOTS do
+        local item = self:GetItem(slotIndex)
+        if item then
+            if Inventory.EQUIP_SLOTS[slotIndex].slotType == "OffHand" and self.isOffhandDisabled then
+                -- We have to be careful to not include offhand stats when they are disabled (by having a 2H weapon in mainhand).
+            else
+                -- Accumulate stat contribution.
+                for _,statName in ipairs(Item.STATS) do
+                    local itemStatAmount = item:GetStatTotal(statName)
+                    self.statTotals[statName] = self.statTotals[statName] + itemStatAmount
+                end
+            end
+        end
+    end
+    -- We bake the percent health into health so that all subsequent systems can make use of only the health amount.
+    local healthMultiplier = 1.0 + (self.statTotals.HealthPercent / 100)
+    self.statTotals.Health = math.floor(self.statTotals.Health * healthMultiplier)
+    self.statTotals.HealthPercent = nil
 end
 
 function Inventory:__tostring()

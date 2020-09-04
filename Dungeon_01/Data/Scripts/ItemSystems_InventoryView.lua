@@ -290,9 +290,18 @@ function view:Draw()
     INVENTORY_VIEW.visibility = Visibility.INHERIT
     self:UpdatePlayerInfo()
     self:UpdateCursorState()
+    self:DrawStats()
     self:DrawSlots()
     self:DrawHoverHighlight()
     self:DrawHoverInfo()
+end
+
+function view:DrawStats()
+    local statTotals = inventory:GetStatTotals()
+    for statName,statAmount in pairs(statTotals) do
+        local statElement = self.statElements[statName]
+        statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
+    end
 end
 
 function view:DrawSlots()
@@ -354,7 +363,7 @@ function view:DrawHoverInfo()
             if statInfo then
                 entry.visibility = Visibility.INHERIT
                 entry.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statInfo.name))
-                entry.clientUserData.value.text = ItemThemes.GetStatFormattedValue(statInfo.name, statInfo.value)
+                entry.clientUserData.value.text = ItemThemes.GetItemStatFormattedValue(statInfo.name, statInfo.value)
                 if statInfo.isBase then
                     entry.x = PANEL_ITEM_HOVER.clientUserData.statOffsetXBase
                     entry.y = PANEL_ITEM_HOVER.clientUserData.statOffsetY + offsetYBase

@@ -18,7 +18,7 @@ local STAT_ICONS = {
     Tenacity        = script:GetCustomProperty("StatIconTenacity"),
 }
 
-local STAT_FORMATS = {
+local ITEM_STAT_FORMATS = {
     Health          = "+%d",
     HealthPercent   = "+%d%%",
     Defense         = "+%d",
@@ -28,6 +28,17 @@ local STAT_FORMATS = {
     Haste           = "+%d%%",
     CDR             = "+%d%%",
     Tenacity        = "+%d%%",
+}
+
+local PLAYER_STAT_FORMATS = {
+    Health          = "%d",
+    Defense         = "%d",
+    Attack          = "%d",
+    Magic           = "%d",
+    CritChance      = "%d%%",
+    Haste           = "%d%%",
+    CDR             = "%d%%",
+    Tenacity        = "%d%%",
 }
 
 local ITEM_SFX = {
@@ -56,8 +67,12 @@ return {
         return STAT_ICONS[statName]
     end,
 
-    GetStatFormattedValue = function(statName, statValue)
-        return string.format(STAT_FORMATS[statName], statValue)
+    GetItemStatFormattedValue = function(statName, statValue)
+        return string.format(ITEM_STAT_FORMATS[statName], statValue)
+    end,
+
+    GetPlayerStatFormattedValue = function(statName, statValue)
+        return string.format(PLAYER_STAT_FORMATS[statName], statValue)
     end,
 
     GetItemSFX = function(itemType)
