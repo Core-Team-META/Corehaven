@@ -611,9 +611,9 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
-    Width: 500
-    Height: 550
-    UIX: -300
+    Width: 660
+    Height: 650
+    UIX: -140
     UIY: -300
     RenderTransformPivot {
       Anchor {
@@ -1378,8 +1378,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 500
-    Height: 260
+    Width: 660
+    Height: 340
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1426,11 +1426,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1452,11 +1452,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: 210
+          Float: 280
         }
         Overrides {
           Name: "Anchor"
@@ -1502,11 +1502,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1528,11 +1528,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: 150
+          Float: 200
         }
         Overrides {
           Name: "Anchor"
@@ -1578,11 +1578,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1604,11 +1604,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 120
         }
         Overrides {
           Name: "Anchor"
@@ -1654,11 +1654,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1680,11 +1680,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: 30
+          Float: 40
         }
         Overrides {
           Name: "Anchor"
@@ -1730,11 +1730,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1756,11 +1756,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: -30
+          Float: -40
         }
         Overrides {
           Name: "Anchor"
@@ -1806,11 +1806,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1832,11 +1832,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: -90
+          Float: -120
         }
         Overrides {
           Name: "Anchor"
@@ -1882,11 +1882,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1908,11 +1908,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: -150
+          Float: -200
         }
         Overrides {
           Name: "Anchor"
@@ -1958,11 +1958,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -1984,11 +1984,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 190
+          Float: 250
         }
         Overrides {
           Name: "UIX"
-          Float: -210
+          Float: -280
         }
         Overrides {
           Name: "Anchor"
@@ -2034,11 +2034,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2060,11 +2060,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: 210
+          Float: 280
         }
         Overrides {
           Name: "Anchor"
@@ -2110,11 +2110,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2136,11 +2136,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: 150
+          Float: 200
         }
         Overrides {
           Name: "Anchor"
@@ -2186,11 +2186,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2212,11 +2212,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 120
         }
         Overrides {
           Name: "Anchor"
@@ -2262,11 +2262,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2288,11 +2288,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: 30
+          Float: 40
         }
         Overrides {
           Name: "Anchor"
@@ -2338,11 +2338,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2364,11 +2364,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: -30
+          Float: -40
         }
         Overrides {
           Name: "Anchor"
@@ -2414,11 +2414,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2440,11 +2440,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: -90
+          Float: -120
         }
         Overrides {
           Name: "Anchor"
@@ -2490,11 +2490,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2516,11 +2516,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: -150
+          Float: -200
         }
         Overrides {
           Name: "Anchor"
@@ -2566,11 +2566,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2592,11 +2592,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 130
+          Float: 170
         }
         Overrides {
           Name: "UIX"
-          Float: -210
+          Float: -280
         }
         Overrides {
           Name: "Anchor"
@@ -2642,11 +2642,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2668,11 +2668,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: 210
+          Float: 280
         }
         Overrides {
           Name: "Anchor"
@@ -2718,11 +2718,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2744,11 +2744,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: 150
+          Float: 200
         }
         Overrides {
           Name: "Anchor"
@@ -2794,11 +2794,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2820,11 +2820,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 120
         }
         Overrides {
           Name: "Anchor"
@@ -2870,11 +2870,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2896,11 +2896,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: 30
+          Float: 40
         }
         Overrides {
           Name: "Anchor"
@@ -2946,11 +2946,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -2972,11 +2972,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: -30
+          Float: -40
         }
         Overrides {
           Name: "Anchor"
@@ -3022,11 +3022,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3048,11 +3048,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: -90
+          Float: -120
         }
         Overrides {
           Name: "Anchor"
@@ -3098,11 +3098,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3124,11 +3124,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: -150
+          Float: -200
         }
         Overrides {
           Name: "Anchor"
@@ -3174,11 +3174,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3200,11 +3200,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 70
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: -210
+          Float: -280
         }
         Overrides {
           Name: "Anchor"
@@ -3250,11 +3250,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3280,7 +3280,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 210
+          Float: 280
         }
         Overrides {
           Name: "Anchor"
@@ -3326,11 +3326,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3356,7 +3356,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 150
+          Float: 200
         }
         Overrides {
           Name: "Anchor"
@@ -3402,11 +3402,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3432,7 +3432,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 120
         }
         Overrides {
           Name: "Anchor"
@@ -3478,11 +3478,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3508,7 +3508,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 30
+          Float: 40
         }
         Overrides {
           Name: "Anchor"
@@ -3554,11 +3554,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3584,7 +3584,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -30
+          Float: -40
         }
         Overrides {
           Name: "Anchor"
@@ -3630,11 +3630,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3660,7 +3660,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -90
+          Float: -120
         }
         Overrides {
           Name: "Anchor"
@@ -3706,11 +3706,11 @@ Objects {
         }
         Overrides {
           Name: "Width"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Height"
-          Int: 60
+          Int: 80
         }
         Overrides {
           Name: "Position"
@@ -3736,7 +3736,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -150
+          Float: -200
         }
         Overrides {
           Name: "Anchor"
@@ -3792,6 +3792,10 @@ Objects {
           Rotator {
           }
         }
+        Overrides {
+          Name: "UIY"
+          Float: 10
+        }
       }
     }
     TemplateAsset {
@@ -3823,7 +3827,7 @@ Objects {
   Control {
     Width: -20
     Height: 2
-    UIY: -255
+    UIY: -335
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3897,9 +3901,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 500
+    Width: 660
     Height: 60
-    UIY: -260
+    UIY: -360
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3956,7 +3960,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 210
+          Float: 280
         }
         Overrides {
           Name: "Scale"
@@ -4008,7 +4012,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 150
+          Float: 200
         }
         Overrides {
           Name: "Scale"
@@ -4060,7 +4064,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 90
+          Float: 120
         }
         Overrides {
           Name: "Scale"
@@ -4112,7 +4116,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 30
+          Float: 40
         }
         Overrides {
           Name: "Scale"
@@ -4164,7 +4168,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -30
+          Float: -40
         }
         Overrides {
           Name: "Scale"
@@ -4216,7 +4220,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -90
+          Float: -120
         }
         Overrides {
           Name: "Scale"
@@ -4268,7 +4272,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: -150
+          Float: -200
         }
         Overrides {
           Name: "Scale"
@@ -4379,9 +4383,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 500
+    Width: 660
     Height: 60
-    UIY: -320
+    UIY: -420
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4427,7 +4431,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: 210
+    UIX: 280
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4483,7 +4487,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: 150
+    UIX: 200
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4539,7 +4543,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: 90
+    UIX: 120
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4595,7 +4599,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: 30
+    UIX: 40
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4651,7 +4655,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -30
+    UIX: -40
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4707,7 +4711,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -90
+    UIX: -120
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4763,7 +4767,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -150
+    UIX: -200
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4819,7 +4823,7 @@ Objects {
   Control {
     Width: 30
     Height: 30
-    UIX: -210
+    UIX: -280
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4875,7 +4879,7 @@ Objects {
   Control {
     Width: -20
     Height: 2
-    UIY: -355
+    UIY: -455
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5013,7 +5017,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 383
+          Float: 513
         }
       }
     }
@@ -5069,7 +5073,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 383
+          Float: 513
         }
       }
     }
@@ -5125,7 +5129,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 263
+          Float: 353
         }
       }
     }
@@ -5181,7 +5185,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 263
+          Float: 353
         }
       }
     }
@@ -5237,7 +5241,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 143
+          Float: 193
         }
       }
     }
@@ -5293,7 +5297,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 143
+          Float: 193
         }
       }
     }
@@ -5349,7 +5353,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 23
+          Float: 33
         }
       }
     }
@@ -5395,7 +5399,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 23
+          Float: 33
         }
       }
     }
@@ -5428,7 +5432,7 @@ Objects {
   Control {
     Width: -20
     Height: 2
-    UIY: -458
+    UIY: 90
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5451,12 +5455,12 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomcenter"
+          Value: "mc:euianchor:topcenter"
         }
       }
       TargetAnchor {
         Anchor {
-          Value: "mc:euianchor:bottomcenter"
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
