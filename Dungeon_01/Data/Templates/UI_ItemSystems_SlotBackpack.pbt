@@ -60,9 +60,9 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 60
-          Height: 60
-          UIX: -210
+          Width: 80
+          Height: 80
+          UIX: -280
           UIY: 10
           RenderTransformPivot {
             Anchor {
