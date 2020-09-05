@@ -218,6 +218,8 @@ function view:OnBindingPressed(binding)
             self.isHoldingIcon = true
             self.fromSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
             HOLDING_ICON:SetImage(self.slotUnderCursor.clientUserData.icon:GetImage())
+            HOLDING_ICON:SetColor(self.slotUnderCursor.clientUserData.icon:GetColor())
+            HOLDING_ICON.rotationAngle = self.slotUnderCursor.clientUserData.icon.rotationAngle
         end
     end
 end
@@ -230,7 +232,7 @@ function view:OnBindingReleased(binding)
                 if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
                     inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
                     if toSlotIndex then
-                        if inventory:IsEquipSlot(toSlotIndex) then
+                        if inventory:IsEquipSlot(toSlotIndex) or inventory:IsEquipSlot(self.fromSlotIndex) then
                             local newlyEquippedItem = inventory:GetItem(toSlotIndex)
                             PlaySound(ItemThemes.GetItemSFX(newlyEquippedItem:GetType()))
                         else
@@ -341,11 +343,9 @@ function view:DrawHoverHighlight()
     end
     for _,slot in ipairs(self.equippedSlots) do
         local toSlotIndex = slot.clientUserData.slotIndex
-        --slot.visibility = Visibility.INHERIT
         slot.clientUserData.notAllowed.visibility = Visibility.FORCE_OFF
         if self.isHoldingIcon and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
             slot.clientUserData.notAllowed.visibility = Visibility.INHERIT
-           -- slot.visibility = Visibility.FORCE_OFF
         end
     end
 end

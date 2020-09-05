@@ -118,19 +118,7 @@ end
 
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
-    local item = self:GetItem(fromSlotIndex)
-    if item then
-        if not toSlotIndex then
-            -- This acts as a delete request.
-            return true
-        end
-        if self:IsBackpackSlot(toSlotIndex) then
-            return true
-        end
-        if self:IsEquipSlotType(toSlotIndex, Item.SLOT_CONSTRAINTS[item:GetType()].slotType) then
-            return true
-        end
-    end
+    return self:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex) and self:_CanMoveItemOneWay(toSlotIndex, fromSlotIndex)
 end
 
 -- Move an item. If there is an item in the destination slot, the items will swap. Acts as delete if destination slot is nil.
@@ -275,6 +263,22 @@ function Inventory:_DefineEvent(eventName)
             table.insert(self.eventHandlers[eventName], handler)
         end
     }
+end
+
+function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
+    if not toSlotIndex then
+        return true
+    end
+    local item = self:GetItem(fromSlotIndex)
+    if not item then
+        return true
+    end
+    if self:IsBackpackSlot(toSlotIndex) then
+        return true
+    end
+    if self:IsEquipSlotType(toSlotIndex, Item.SLOT_CONSTRAINTS[item:GetType()].slotType) then
+        return true
+    end
 end
 
 function Inventory:_SetSlotItem(slotIndex, item)
