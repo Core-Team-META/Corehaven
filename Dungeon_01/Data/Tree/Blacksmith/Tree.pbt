@@ -388,7 +388,7 @@ Objects {
   Transform {
     Location {
       X: -6.95233154
-      Y: 164.622558
+      Y: 164.622559
       Z: 173.838867
     }
     Rotation {
@@ -427,7 +427,7 @@ Objects {
     Location {
       X: -7.8950491
       Y: -0.237792969
-      Z: 7.29101562
+      Z: 7.29101563
     }
     Rotation {
     }
@@ -663,7 +663,7 @@ Objects {
     Location {
       X: 61.0763435
       Y: -10.6567383
-      Z: 4.36914062
+      Z: 4.36914063
     }
     Rotation {
       Roll: 179.999969
@@ -715,7 +715,7 @@ Objects {
     Location {
       X: -44.3201561
       Y: 3.05078125
-      Z: 4.36914062
+      Z: 4.36914063
     }
     Rotation {
       Roll: 179.999969
@@ -819,7 +819,7 @@ Objects {
     Location {
       X: 8.04552174
       Y: 2.27490234
-      Z: -0.672851562
+      Z: -0.672851563
     }
     Rotation {
       Yaw: -6.83018288e-06
@@ -908,7 +908,7 @@ Objects {
   Transform {
     Location {
       X: 26.5911255
-      Y: -0.571289062
+      Y: -0.571289063
       Z: 141.130371
     }
     Rotation {
@@ -1210,7 +1210,7 @@ Objects {
   Transform {
     Location {
       X: -0.324462891
-      Y: -0.176757812
+      Y: -0.176757813
       Z: 133.978516
     }
     Rotation {
@@ -1271,7 +1271,7 @@ Objects {
   Transform {
     Location {
       X: -0.324462891
-      Y: -0.176757812
+      Y: -0.176757813
       Z: 100.97998
     }
     Rotation {
@@ -3443,7 +3443,7 @@ Objects {
     Rotation {
       Pitch: 4.70154667
       Yaw: 90.2116089
-      Roll: -0.0180664062
+      Roll: -0.0180664063
     }
     Scale {
       X: 0.316107154
@@ -4454,7 +4454,7 @@ Objects {
   Transform {
     Location {
       X: -13.6337891
-      Y: 7.52539062
+      Y: 7.52539063
     }
     Rotation {
       Roll: 2.92137
@@ -4509,14 +4509,14 @@ Objects {
   Name: "SwordStand"
   Transform {
     Location {
-      X: -490.029419
-      Y: -489.71582
+      X: -490.029205
+      Y: -489.715424
       Z: 224.022949
     }
     Rotation {
       Pitch: 2.33574
       Yaw: -82.1758423
-      Roll: 163.048859
+      Roll: 163.048798
     }
     Scale {
       X: 1
