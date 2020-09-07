@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9879860904421587827
+  Name: "Skull and  Bones 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_ground_bones_001_uv"
+  }
+}
+Assets {
   Id: 9405728001328588797
   Name: "Stone Arch (doorway) 001"
   PlatformAssetType: 1
@@ -143,15 +152,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7534413844238277162
-  Name: "Bricks Mismatched Stone 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_mismatch_001"
-  }
-}
-Assets {
   Id: 7243485854034201519
   Name: "Arch"
   PlatformAssetType: 1
@@ -185,15 +185,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_03"
-  }
-}
-Assets {
-  Id: 5357777918645578075
-  Name: "Bricks Stone Floor Large 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_floor_large_001"
   }
 }
 Assets {
@@ -266,15 +257,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_large_foundation_001"
-  }
-}
-Assets {
-  Id: 1381354497149909715
-  Name: "Stone Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "stone_001"
   }
 }
 Assets {

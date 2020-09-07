@@ -634,6 +634,9 @@ Objects {
   ChildIds: 3002335126204831613
   ChildIds: 7370756806406076031
   ChildIds: 17935503301378004365
+  ChildIds: 2459120150977363642
+  ChildIds: 8793627363162393281
+  ChildIds: 3627992885306111024
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -642,6 +645,207 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3627992885306111024
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1477.26978
+      Y: 423.319275
+      Z: 918.976807
+    }
+    Rotation {
+      Pitch: -0.0970459
+      Yaw: -179.613892
+      Roll: -159.933441
+    }
+    Scale {
+      X: 1.90120804
+      Y: 0.999999106
+      Z: 0.999999106
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.38903475
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8793627363162393281
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -17.2636795
+      Y: 638.303223
+      Z: 949.400879
+    }
+    Rotation {
+      Pitch: -14.2756958
+      Yaw: -89.9993286
+      Roll: -179.999252
+    }
+    Scale {
+      X: 5.5357132
+      Y: 0.825081646
+      Z: 0.511725962
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2519316253986562073
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.38903475
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2459120150977363642
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1455.91724
+      Y: 643.670166
+      Z: 950.737915
+    }
+    Rotation {
+      Pitch: -14.2757263
+      Yaw: -89.9993286
+      Roll: -179.999283
+    }
+    Scale {
+      X: 5.5357132
+      Y: 0.825081646
+      Z: 0.511725962
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2519316253986562073
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.38903475
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7695830393755413980
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -804,6 +1008,30 @@ Objects {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
     }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -864,6 +1092,30 @@ Objects {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
     }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -923,6 +1175,30 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
+    }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -985,6 +1261,30 @@ Objects {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
     }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1045,6 +1345,30 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
+    }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1107,6 +1431,30 @@ Objects {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
     }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1166,6 +1514,30 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
       Float: 2.38903475
+    }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
     }
   }
   Collidable_v2 {

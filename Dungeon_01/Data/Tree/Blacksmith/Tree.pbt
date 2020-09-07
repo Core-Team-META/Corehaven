@@ -1,12 +1,68 @@
 ﻿Name: "Blacksmith"
 RootId: 7959758257364523290
 Objects {
+  Id: 6084677125503610240
+  Name: "Craftsman Roof 02 Corner Out"
+  Transform {
+    Location {
+      X: -376.280792
+      Y: 1063.19885
+      Z: 639.215332
+    }
+    Rotation {
+      Yaw: 0.645178378
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7959758257364523290
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Building_Roof:id"
+      AssetReference {
+        Id: 12117352669071188071
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        G: 0.164238155
+        B: 0.799999952
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14125454669066356878
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 14693456440193238939
   Name: "Craftsman Roof 02 Corner Out"
   Transform {
     Location {
-      X: 431.929871
-      Y: 277.728516
+      X: 431.929504
+      Y: 277.728027
       Z: 639.215332
     }
     Rotation {
@@ -870,12 +926,12 @@ Objects {
   Name: "Anvil"
   Transform {
     Location {
-      X: 250.267456
-      Y: -85.7246094
+      X: 250.267761
+      Y: -85.7243042
       Z: 50.6484375
     }
     Rotation {
-      Yaw: 62.9038658
+      Yaw: 62.9038925
     }
     Scale {
       X: 1

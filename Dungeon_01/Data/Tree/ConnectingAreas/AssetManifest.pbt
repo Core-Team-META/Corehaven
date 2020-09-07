@@ -287,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14451595530263497460
+  Name: "Pipe - Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_002"
+  }
+}
+Assets {
   Id: 14405960884493885038
   Name: "Fantasy Pommel 05"
   PlatformAssetType: 1
@@ -1088,6 +1097,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6985710649117550935
+  Name: "Fantasy Castle Stairs Spiral Trim 01 - Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_spiral_trim_001_sm"
+  }
+}
+Assets {
   Id: 6977568964552625050
   Name: "Curtains Straight"
   PlatformAssetType: 1
@@ -1292,6 +1310,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_017"
+  }
+}
+Assets {
+  Id: 5165368408382866828
+  Name: "Fantasy Castle Bannister 01 - Curve Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_bannister_001_curve_sm"
   }
 }
 Assets {

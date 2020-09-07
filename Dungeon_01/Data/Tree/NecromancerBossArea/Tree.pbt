@@ -17168,6 +17168,9 @@ Objects {
   ChildIds: 1614906230227465610
   ChildIds: 6416393617765843093
   ChildIds: 300415412596945708
+  ChildIds: 17813143559687829480
+  ChildIds: 5320387424212436685
+  ChildIds: 16462418174454319674
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17176,6 +17179,189 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 16462418174454319674
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 3257.04834
+      Y: -605.972656
+      Z: 749.612427
+    }
+    Rotation {
+      Yaw: -1.00274658
+    }
+    Scale {
+      X: 0.671572149
+      Y: 11.4174919
+      Z: 1.09511161
+    }
+  }
+  ParentId: 6273792433856062057
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5320387424212436685
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 3250.83057
+      Y: -961.195801
+      Z: 285.510468
+    }
+    Rotation {
+      Yaw: -1.00274658
+    }
+    Scale {
+      X: 0.671572328
+      Y: 2.20338058
+      Z: 8.93317318
+    }
+  }
+  ParentId: 6273792433856062057
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17813143559687829480
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 3286.47314
+      Y: -148.216309
+      Z: 285.510468
+    }
+    Rotation {
+      Yaw: -1.00274658
+    }
+    Scale {
+      X: 0.671572328
+      Y: 2.20338058
+      Z: 8.93317318
+    }
+  }
+  ParentId: 6273792433856062057
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -17501,7 +17687,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 2989.21436
+      X: 3261.6709
       Y: 21.0400391
     }
     Rotation {
@@ -17618,7 +17804,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 2030.13086
+      X: 2151.87549
       Y: 21.0410156
     }
     Rotation {

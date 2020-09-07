@@ -1,6 +1,57 @@
 ﻿Name: "Trees"
 RootId: 6952976605387069163
 Objects {
+  Id: 4635991798926405841
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: -2942.85352
+      Y: 12104.1367
+      Z: 2606.96167
+    }
+    Rotation {
+      Yaw: 37.6840744
+    }
+    Scale {
+      X: 1.07918632
+      Y: 1.07918632
+      Z: 1.07918632
+    }
+  }
+  ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2885800070905631850
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 2151307462076853862
   Name: "Tree Oak 01"
   Transform {
@@ -158,12 +209,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 3963.61133
-      Y: 2352.48755
+      X: 3901.16406
+      Y: 2271.10693
       Z: 3818.9458
     }
     Rotation {
-      Yaw: -37.5007324
+      Yaw: -37.5006714
     }
     Scale {
       X: 0.859755
@@ -294,7 +345,9 @@ Objects {
       Z: 4354.03125
     }
     Rotation {
-      Yaw: -113.540344
+      Pitch: 5.34727287
+      Yaw: -113.539642
+      Roll: 1.41488372e-05
     }
     Scale {
       X: 1.02260745
@@ -420,12 +473,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 1649.41211
+      X: 1623.03516
       Y: 8276.42188
-      Z: 3899.75684
+      Z: 3827.01782
     }
     Rotation {
-      Yaw: -130.058258
+      Yaw: -118.162506
     }
     Scale {
       X: 1.02260745
@@ -589,12 +642,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 3790.16602
-      Y: 10426.8926
-      Z: 4131.49658
+      X: 3306.54688
+      Y: 10784.0791
+      Z: 3886.50049
     }
     Rotation {
-      Yaw: 31.404562
+      Yaw: 65.9832458
     }
     Scale {
       X: 1.07918632

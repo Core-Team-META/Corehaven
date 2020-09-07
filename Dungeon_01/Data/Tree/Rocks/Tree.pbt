@@ -1,6 +1,951 @@
 ﻿Name: "Rocks"
 RootId: 14148918943805634918
 Objects {
+  Id: 1599198449836969840
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11799.0322
+      Y: 13615.5371
+      Z: 2657.38965
+    }
+    Rotation {
+      Pitch: -51.84021
+      Yaw: -165.040573
+      Roll: -55.5661
+    }
+    Scale {
+      X: 1.32004344
+      Y: 1.32080305
+      Z: 1.88213122
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7455879845671110692
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11609.2412
+      Y: 13642.2402
+      Z: 2523.21338
+    }
+    Rotation {
+      Pitch: -6.50460815
+      Yaw: -138.955917
+      Roll: -87.0661621
+    }
+    Scale {
+      X: 2.16031265
+      Y: 2.16155481
+      Z: 3.0801928
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9945544985838043112
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -10547.3018
+      Y: 14457.8164
+      Z: 2859.64209
+    }
+    Rotation {
+      Pitch: -41.0409241
+      Yaw: 142.680984
+      Roll: 97.860321
+    }
+    Scale {
+      X: 1.13461781
+      Y: 1.55460286
+      Z: 2.21528363
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6618179299921225027
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -10277.2402
+      Y: 14170.5488
+      Z: 2602.54443
+    }
+    Rotation {
+      Pitch: 84.8633575
+      Yaw: 16.072813
+      Roll: 168.938278
+    }
+    Scale {
+      X: 1.55370569
+      Y: 1.55459976
+      Z: 2.21528912
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17033499542269880146
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11657.3691
+      Y: 13766.1152
+      Z: 2429.00293
+    }
+    Rotation {
+      Pitch: -59.2348938
+      Yaw: -155.624207
+      Roll: -19.2875671
+    }
+    Scale {
+      X: 1.89745224
+      Y: 1.89854622
+      Z: 3.16090727
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4041349792827960842
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11395.5742
+      Y: 14397.3213
+      Z: 2782.29248
+    }
+    Rotation {
+      Pitch: -63.5416565
+      Yaw: -150.764175
+      Roll: -104.399994
+    }
+    Scale {
+      X: 0.812219679
+      Y: 0.812687099
+      Z: 1.15807092
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14005586750898201824
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11444.8887
+      Y: 14237.1445
+      Z: 2774.54102
+    }
+    Rotation {
+      Pitch: 52.4625854
+      Yaw: 19.1327076
+      Roll: 41.8811417
+    }
+    Scale {
+      X: 1.28771591
+      Y: 1.28845692
+      Z: 1.83603823
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5003071335231321280
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -11187.5098
+      Y: 14445.3398
+      Z: 2605.93457
+    }
+    Rotation {
+      Pitch: 64.1463547
+      Yaw: 9.77557373
+      Roll: 75.0164108
+    }
+    Scale {
+      X: 1.55370569
+      Y: 1.55459976
+      Z: 2.21528912
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15317682338713013509
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9218.59766
+      Y: 15539.0361
+      Z: 3182.45313
+    }
+    Rotation {
+      Pitch: -33.5904846
+      Yaw: -69.3219604
+      Roll: -29.0499268
+    }
+    Scale {
+      X: 0.924503326
+      Y: 0.925035775
+      Z: 2.02049494
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14690689363572816225
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9246.40625
+      Y: 15427.5029
+      Z: 2895.82178
+    }
+    Rotation {
+      Pitch: -39.5147705
+      Yaw: -68.3892822
+      Roll: -50.1347961
+    }
+    Scale {
+      X: 1.55370581
+      Y: 1.5546006
+      Z: 3.395612
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11134256785009544673
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -8869.58398
+      Y: 15237.4668
+      Z: 2785.87402
+    }
+    Rotation {
+      Pitch: 46.0288658
+      Yaw: 122.349251
+      Roll: -163.836304
+    }
+    Scale {
+      X: 1.55370581
+      Y: 1.5546006
+      Z: 3.395612
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7540107265298157603
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9545.27539
+      Y: 15737.96
+      Z: 2872.43652
+    }
+    Rotation {
+      Pitch: -30.6427917
+      Yaw: -73.3939819
+      Roll: 104.825447
+    }
+    Scale {
+      X: 1.55370581
+      Y: 1.5546006
+      Z: 3.395612
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8788451535695320637
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9880.8457
+      Y: 16435.6094
+      Z: 2737.15381
+    }
+    Rotation {
+      Pitch: 50.8833199
+      Yaw: 36.1783829
+      Roll: -117.656158
+    }
+    Scale {
+      X: 0.864572048
+      Y: 0.865069866
+      Z: 1.88951516
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3655054750745000873
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9669.08398
+      Y: 16132.2139
+      Z: 2864.64697
+    }
+    Rotation {
+      Pitch: -55.4534912
+      Yaw: -97.9421082
+      Roll: -99.7973633
+    }
+    Scale {
+      X: 1.55370581
+      Y: 1.5546006
+      Z: 3.395612
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16857420707493844018
+  Name: "Rock Flat 02"
+  Transform {
+    Location {
+      X: -9503.73242
+      Y: 16716.8672
+      Z: 2712.64209
+    }
+    Rotation {
+      Pitch: 88.6563644
+      Yaw: 22.5106735
+      Roll: 43.0979538
+    }
+    Scale {
+      X: 1.55370581
+      Y: 1.5546006
+      Z: 3.395612
+    }
+  }
+  ParentId: 14148918943805634918
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8104857108586852033
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7086338982397992348
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5482747778402169665
   Name: "Rock Flat 02"
   Transform {
