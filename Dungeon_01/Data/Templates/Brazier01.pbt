@@ -86,9 +86,8 @@
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.13
-              G: 1
-              B: 0.723443866
+              R: 0.52
+              G: 0.0929801464
               A: 1
             }
           }
@@ -178,7 +177,7 @@
             Z: -0.000988006592
           }
           Rotation {
-            Pitch: -0.000129773587
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -664,11 +663,10 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 22
+          Intensity: 64.6368866
           Color {
-            R: 0.13
-            G: 1
-            B: 0.723443866
+            R: 0.61
+            G: 0.133311272
             A: 1
           }
           VolumetricIntensity: 5
@@ -677,7 +675,7 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 1001.96228
+              AttenuationRadius: 1190.72815
               PointLight {
                 SourceRadius: 20
                 SoftSourceRadius: 20

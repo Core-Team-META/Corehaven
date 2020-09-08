@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12494784180091766806
+  Name: "Prism - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
   Id: 12377676071953128633
   Name: "Pipe - Thick"
   PlatformAssetType: 1
@@ -431,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
+  }
+}
+Assets {
   Id: 7695830393755413980
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -593,6 +611,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4302455817819108423
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
+  }
+}
+Assets {
   Id: 4286823887220239396
   Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   PlatformAssetType: 1
@@ -629,6 +656,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3214006606721471794
+  Name: "Curb 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_8m_001"
+  }
+}
+Assets {
   Id: 3090596827184957478
   Name: "Rope"
   PlatformAssetType: 2
@@ -662,6 +698,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_001"
+  }
+}
+Assets {
+  Id: 2721411165435899975
+  Name: "Additive Edgeline Top Fade"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_add_edgeline_sharpline_topfade"
   }
 }
 Assets {
