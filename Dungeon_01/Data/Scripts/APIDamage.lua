@@ -44,6 +44,31 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
     Events.BroadcastToAllPlayers("DamageDone", sourceId, targetId, effectiveAmount, overkill)
 end
 
+-- This looks at the type of sourceCharacter, and only damages things they could damage. It either deals full damage to
+-- all targets hit (hasFalloff = false), or does full damage in the middle, 0 on the edge, and linear falloff.
+function API.ApplyAreaDamage(sourceCharacter, center, radius, maxAmount, hasFalloff)
+    local targets = nil
+    local adjustedCenter = center
+
+    if sourceCharacter:IsA("Player") then
+        targets = API_NPC.GetAwakeNPCsInSphere(center, radius)
+    else
+        targets = Game.FindPlayersInSphere(playerCenter, radius, {ignoreDead = true})
+        adjustedCenter = center + Vector3.UP * 100.0
+    end
+
+    for _, target in pairs(targets) do
+        local damage = maxAmount
+
+        if hasFalloff then
+            local distance = (target:GetWorldPosition() - adjustedCenter).size
+            damage = CoreMath.Lerp(maxAmount, 0.0, CoreMath.Clamp(distance / radius))
+        end
+
+        API.ApplyDamage(sourceCharacter, target, damage)
+    end
+end
+
 -- sourcePlayer may be nil
 function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     local effectiveAmount = nil

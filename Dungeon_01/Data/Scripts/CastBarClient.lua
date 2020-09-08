@@ -28,7 +28,6 @@ local MIN_CAST_TIME = COMPONENT_ROOT:GetCustomProperty("MinCastTime")
 local SHOW_NAME = COMPONENT_ROOT:GetCustomProperty("ShowName")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-local castingAbility = nil
 local interruptTime = nil
 local onInterruptedListener = nil
 
@@ -36,7 +35,6 @@ function OnInterrupted(ability)
     TEXT_BOX.text = "Cast Interrupted"
     PROGRESS_BAR:SetFillColor(Color.RED)
     interruptTime = os.clock()
-    castingAbility = nil
     onInterruptedListener:Disconnect()
     onInterruptedListener = nil
 end
@@ -55,8 +53,6 @@ function Tick(deltaTime)
                 local totalTime = ability.castPhaseSettings.duration
 
                 if totalTime >= MIN_CAST_TIME then
-                    castingAbility = ability
-
                     if onInterruptedListener then
                         onInterruptedListener:Disconnect()
                         onInterruptedListener = nil

@@ -16,6 +16,11 @@ local API = {}
 -- This system assumes abilities never change owners after being spawned. For ground target abilities, "activate" is
 -- when we create the reticle, but the Core ability only casts when the user actually clicks.
 
+-- Time before the previous ability cast or cooldown is finished thata player can activate another ability and it is
+-- queued to cast when available. Must be less than GLOBAL_COOLDOWN since we assume only one thing can be queued.
+local QUEUE_TIME = 0.5
+local GLOBAL_COOLDOWN = 1.5					--	Time after activating a spell where no other spell can be activated
+
 -- These are set in Initialize()
 local IS_CLIENT = nil
 local LOCAL_PLAYER = nil
@@ -23,8 +28,8 @@ local LOCAL_PLAYER = nil
 --[[	Ability data includes (Note that AssetReferences are just strings):
 string name										User-facing unique name
 bool targets									Whether this ability has a target
-bool friendlyTargetValid						Whether this can target another player
-bool enemyTargetValid							Whether this can target an enemy npc
+<bool> friendlyTargetValid						Whether this can target another player
+<bool> enemyTargetValid							Whether this can target an enemy npc
 bool requiresFacing								Whether the target must be in front of the player
 bool groundTargets								Whether that target is a spot on the ground (vs their active npc target)
 AssetReference icon								Icon to use in ui
@@ -38,14 +43,21 @@ AssetReference abilityTemplate					A template consisting of only an ability. The
 <function> onCastClient(caster, target)			Client function called on cast, returns the time to impact
 <function> onCastServer(caster, target)			Server function called on cast
 ]]
-local abilityData = {}						--  string -> table (above)
-local playerAbilities = {}					--  Player -> table (string -> Ability)
+local abilityData = {}						--	string -> table (above)
+local playerAbilities = {}					--	Player -> table (string -> Ability)
 
 -- This maps template IDs to ability names, so we can let core's networking handle everything
-local abilityMap = {}						--  string -> string
+local abilityMap = {}						--	string -> string
 
 -- Abilities that is currently casting. Used on both client and server to interrupt if it becomes invalid
-local castingAbilityNames = {}				--  Player -> string (nil for none)
+local castingAbilityNames = {}				--	Player -> string (nil for none)
+
+-- Client only
+local globalCooldownEndTime = 0.0
+local queuedAbilityName = nil
+local queuedAbilityTarget = nil
+local groundTargetAbilityName = nil
+local groundTargetReticle = nil
 
 -- Client and Server, called directly in this API
 function RegisterAbility(data)
@@ -88,6 +100,39 @@ function GetAbilityTarget(player, abilityName)
 	end
 end
 
+-- Owning client
+function CancelGroundTargeting()
+	if groundTargetReticle then
+		groundTargetReticle:Destroy()
+		groundTargetAbilityName = nil
+		groundTargetReticle = nil
+	end
+end
+
+-- Owning client
+-- Used for ground target abilities
+function OnBindingPressed(player, binding)
+	if groundTargetReticle then
+		if binding == "ability_primary" then
+			if API.CanActivate(groundTargetAbilityName) then
+				local timeUntilReady = API.GetTimeUntilReady(groundTargetAbilityName)
+				local ability = playerAbilities[LOCAL_PLAYER][groundTargetAbilityName]
+				queuedAbilityTarget = groundTargetReticle:GetWorldPosition()
+
+				if timeUntilReady == 0.0 then
+					ability:Activate()
+				else
+					queuedAbilityName = groundTargetAbilityName
+				end
+			end
+
+			CancelGroundTargeting()
+		elseif binding == "ability_secondary" then
+			CancelGroundTargeting()
+		end
+	end
+end
+
 -- Client and Server
 -- Used for effects, target and function calls
 function OnCast(ability)
@@ -99,15 +144,20 @@ function OnCast(ability)
 
 	if IS_CLIENT then
 		if player == LOCAL_PLAYER then
-			-- Set target - [THIS HAS TO BE IN ONCAST OR IT DOESN'T WORK]
+			globalCooldownEndTime = os.clock() + GLOBAL_COOLDOWN
+			
+			-- Set target (THIS HAS TO BE IN ONCAST OR IT DOESN'T WORK)
 			if data.targets then
+				local abilityTarget = AbilityTarget.New()
+
 				if data.groundTargets then
-					-- Use reticle position, etc.
+					abilityTarget:SetHitPosition(queuedAbilityTarget)
 				else
-					local abilityTarget = AbilityTarget.New()
-					abilityTarget.hitObject = API_PS.GetTarget(LOCAL_PLAYER)
-					ability:SetTargetData(abilityTarget)
+					abilityTarget.hitObject = queuedAbilityTarget
 				end
+
+				queuedAbilityTarget = nil
+				ability:SetTargetData(abilityTarget)
 			end
 
 			if data.selfCasterEffectTemplate then
@@ -187,8 +237,33 @@ function Tick()
 				end
 			end
 		end
+
+		-- Check queued ability
+		if queuedAbilityName then
+			if API.GetTimeUntilReady(queuedAbilityName) == 0.0 then
+				if API.CanActivate(queuedAbilityName) then
+					local ability = playerAbilities[LOCAL_PLAYER][queuedAbilityName]
+					ability:Activate()
+				end
+
+				queuedAbilityName = nil
+			end
+		end
+
+		-- Update ground targeting
+		if groundTargetReticle then
+			local hitResult = UI.GetCursorHitResult()
+
+			if hitResult then
+				groundTargetReticle.visibility = Visibility.INHERIT
+				groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
+			else
+				groundTargetReticle.visibility = Visibility.FORCE_OFF
+			end
+		end
 	end
 
+	-- Interrupt ability if it's no longer a valid cast
 	for player, abilityName in pairs(castingAbilityNames) do
 		local target = GetAbilityTarget(player, abilityName)
 
@@ -282,7 +357,7 @@ function IsCastValid(player, target, abilityName, broadcastError)
 			end
 		end
 
-		-- Is this a hostile spell with a friendly target
+		-- Is this a hostile ability with a friendly target
 		if not data.friendlyTargetValid and target:IsA("Player") then
 			if broadcastError then
 				Events.Broadcast("BannerMessage", "Invalid target")
@@ -291,7 +366,7 @@ function IsCastValid(player, target, abilityName, broadcastError)
 			return false
 		end
 
-		-- Is this a friendly spell with a hostile target
+		-- Is this a friendly ability with a hostile target
 		if not data.enemyTargetValid and not target:IsA("Player") then
 			if broadcastError then
 				Events.Broadcast("BannerMessage", "Invalid target")
@@ -309,7 +384,7 @@ function IsCastValid(player, target, abilityName, broadcastError)
 			return false
 		end
 
-		-- Does this spell require facing and the target is behind the caster
+		-- Does this ability require facing and the target is behind the caster
 		if data.requiresFacing then
 			local offset = target:GetWorldPosition() - player:GetWorldPosition()
 
@@ -327,12 +402,58 @@ function IsCastValid(player, target, abilityName, broadcastError)
 	return true
 end
 
--- Client and Server
--- This checks a few specific conditions only relevant at cast start
-function API.CanActivate(player, abilityName)
-	local ability = playerAbilities[player][abilityName]
+-- Owning client
+-- This means, how long until we can literally activate the ability object. This does not include the action queue time.
+function API.GetTimeUntilReady(abilityName)
+	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
+
+	local t = 0.0
+
+	-- Global cooldown
+	t = math.max(t, globalCooldownEndTime - os.clock())
+
+	-- Casting another ability
+	for _, otherAbility in pairs(playerAbilities[LOCAL_PLAYER]) do
+		if ability ~= otherAbility and otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
+			t = math.max(t, otherAbility:GetPhaseTimeRemaining())
+			break
+		end
+	end
+
+	-- Regular cooldown
+	local currentPhase = ability:GetCurrentPhase()
+
+	if currentPhase ~= AbilityPhase.READY then
+		local timeRemaining = ability:GetPhaseTimeRemaining()
+		local executeDuration = ability.executePhaseSettings.duration
+		local recoveryDuration = ability.recoveryPhaseSettings.duration
+		local cooldownDuration = ability.cooldownPhaseSettings.duration
+
+		if currentPhase == AbilityPhase.CAST then
+		    timeRemaining = timeRemaining + executeDuration + recoveryDuration + cooldownDuration
+		end
+
+		if currentPhase == AbilityPhase.EXECUTE then
+		    timeRemaining = timeRemaining + recoveryDuration + cooldownDuration
+		end
+
+		if currentPhase == AbilityPhase.RECOVERY then
+		    timeRemaining = timeRemaining + cooldownDuration
+		end
+
+		t = math.max(t, timeRemaining)
+	end
+
+	return t
+end
+
+-- Owning client
+-- This checks a few specific conditions only relevant at cast start. This is literally "can I press this button", even
+-- if the result is queueing up the ability.
+function API.CanActivate(abilityName)
+	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 	local data = abilityData[abilityName]
-	local target = API_PS.GetTarget(player)
+	local target = API_PS.GetTarget(LOCAL_PLAYER)
 	assert(ability)
 
 	-- Is that ability disabled
@@ -341,34 +462,34 @@ function API.CanActivate(player, abilityName)
 		return false
 	end
 
-	-- Is that ability on cooldown
-	if ability:GetCurrentPhase() ~= AbilityPhase.READY then
-		--Events.Broadcast("BannerMessage", "Ability not ready")
+	if API.GetTimeUntilReady(abilityName) > QUEUE_TIME then
 		return false
 	end
 
-	-- Is the caster currently casting something else
-	for _, otherAbility in pairs(playerAbilities[player]) do
-		if otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
-			--Events.Broadcast("BannerMessage", "You are busy")
-			return false
-		end
-	end
-
-	return IsCastValid(player, target, abilityName, true)
+	return IsCastValid(LOCAL_PLAYER, target, abilityName, true)
 end
 
 -- Owning client
 function API.Activate(abilityName)
-	assert(API.CanActivate(LOCAL_PLAYER, abilityName))
+	assert(API.CanActivate(abilityName))
 
+	local timeUntilReady = API.GetTimeUntilReady(abilityName)
 	local data = abilityData[abilityName]
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 
+	CancelGroundTargeting()
+
 	if data.targets and data.groundTargets then
-		-- Spawn reticle, etc.
+		groundTargetReticle = World.SpawnAsset(data.reticleTemplate)
+		groundTargetAbilityName = abilityName
 	else
-		ability:Activate()
+		queuedAbilityTarget = API_PS.GetTarget(LOCAL_PLAYER)
+
+		if timeUntilReady == 0.0 then
+			ability:Activate()
+		else
+			queuedAbilityName = abilityName
+		end
 	end
 end
 
@@ -382,6 +503,16 @@ function API.GivePlayerAbility(player, abilityName)
 	ability.executeEvent:Connect(OnExecute)
 	ability.interruptedEvent:Connect(OnInterrupted)
 	playerAbilities[player][abilityName] = ability
+end
+
+-- Server
+function API.RemovePlayerAbility(player, abilityName)
+	assert(abilityData[abilityName])
+	asset(castingAbilityNames[player] ~= abilityName)
+	local ability = playerAbilities[player][abilityName]
+	assert(ability)
+	ability:Destroy()
+	playerAbilities[player][abilityName] = nil
 end
 
 -- Server
@@ -417,6 +548,7 @@ function API.Initialize(isClient)
 
 	if IS_CLIENT then
 		LOCAL_PLAYER = Game.GetLocalPlayer()
+		LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 	end
 
 	local tick = Task.Spawn(Tick)

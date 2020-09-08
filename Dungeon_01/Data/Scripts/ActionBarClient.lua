@@ -95,7 +95,7 @@ local USER_FACING_BINDINGS =
 }
 
 local buttonData = {}			-- int -> table {abilityName = string, button = CoreObject}
-local invalidAbilitiyNames = {} -- So we don't spam warnings
+local invalidAbilityNames = {}	-- So we don't spam warnings
 
 local draggingIndex = 0
 local wasCursorVisible = false	-- Last frame, for change detection
@@ -181,7 +181,7 @@ function OnBindingPressed(player, binding)
 		if slotBinding == binding then
 			local abilityName = buttonData[i].abilityName
 
-			if abilityName and API_A.CanActivate(LOCAL_PLAYER, abilityName) then
+			if abilityName and API_A.CanActivate(abilityName) then
 				API_A.Activate(abilityName)
 			end
 
@@ -197,8 +197,9 @@ function OnBindingReleased(player, binding)
 end
 
 function Tick(deltaTime)
+	local playerAbilities = API_A.GetPlayerAbilities(LOCAL_PLAYER)
 	-- Looking for new abilities
-	for abilityName, ability in pairs(API_A.GetPlayerAbilities(LOCAL_PLAYER)) do
+	for abilityName, ability in pairs(playerAbilities) do
 		local found = false
 
 		for _, data in pairs(buttonData) do
@@ -208,8 +209,8 @@ function Tick(deltaTime)
 			end
 		end
 
-		for _, invalidAbilitiyNames in pairs(invalidAbilitiyNames) do
-			if invalidAbilitiyNames == abilityName then
+		for _, invalidAbilityNames in pairs(invalidAbilityNames) do
+			if invalidAbilityNames == abilityName then
 				found = true
 				break
 			end
@@ -228,16 +229,35 @@ function Tick(deltaTime)
 			end
 
 			if not socketFound then
-				table.insert(invalidAbilitiyNames, abilityName)
+				table.insert(invalidAbilityNames, abilityName)
 				warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
 			end
+		end
+	end
+
+	-- Look for removed abilities
+	for i, data in pairs(buttonData) do
+		if data.abilityName and not playerAbilities[data.abilityName] then
+			data.button:Destroy()
+			buttonData[i] = nil
+		end
+	end
+
+	local i = 1
+	while i <= #invalidAbilityNames do
+		abilityName = invalidAbilityNames[i]
+
+		if not playerAbilities[abilityName] then
+			table.remove(invalidAbilityNames, i)
+		else
+			i = i + 1
 		end
 	end
 
 	-- Updating cooldown displays
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
-			local ability = API_A.GetPlayerAbilities(LOCAL_PLAYER)[data.abilityName]
+			local ability = playerAbilities[data.abilityName]
 			local currentPhase = ability:GetCurrentPhase()
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
 			local cooldownTimeText = data.button:GetCustomProperty("CooldownTimeText"):WaitForObject()
@@ -289,7 +309,7 @@ function Tick(deltaTime)
 	-- Update enabled visual state
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
-			local ability = API_A.GetPlayerAbilities(LOCAL_PLAYER)[data.abilityName]
+			local ability = playerAbilities[data.abilityName]
 			local abilityData = API_A.GetAbilityData(data.abilityName)
 			local icon = data.button:GetCustomProperty("Icon"):WaitForObject()
 
