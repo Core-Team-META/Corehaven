@@ -519,7 +519,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
-      Float: 4.26716137
+      Float: 6
     }
   }
   Collidable_v2 {
@@ -563,6 +563,24 @@ Objects {
       Name: "bp:White Tint"
       Float: -0.0205963254
     }
+    Overrides {
+      Name: "bp:Color Contrast"
+      Color {
+        R: 0.854166687
+        G: 0.854166687
+        B: 0.854166687
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint"
+      Color {
+        R: 0.78
+        G: 0.829536378
+        B: 1
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -573,48 +591,6 @@ Objects {
   Blueprint {
     BlueprintAsset {
       Id: 14287158626056218606
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 15259539449552694624
-  Name: "Tonemapping Post Process"
-  Transform {
-    Location {
-      X: 141.371094
-      Y: 964.821289
-      Z: 281.147766
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6268336843513052151
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Toe"
-      Float: 0.561181307
-    }
-    Overrides {
-      Name: "bp:Slope"
-      Float: 0.903623581
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3118065895286266118
     }
     TeamSettings {
     }
@@ -645,7 +621,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Radius"
-      Float: 332.438751
+      Float: 239.862228
     }
   }
   Collidable_v2 {

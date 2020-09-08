@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17583731156094274833
+  Name: "Bricks Stone Block 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bricks_stone_block_001"
+  }
+}
+Assets {
   Id: 15161882535366734727
   Name: "Hill 03"
   PlatformAssetType: 1
@@ -53,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13846976516959842924
+  Name: "Cylinder - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_rounded_001"
+  }
+}
+Assets {
   Id: 13577817942653603668
   Name: "Rocky Ground 01"
   PlatformAssetType: 2
@@ -77,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
+  Id: 9879860904421587827
+  Name: "Skull and  Bones 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_ground_bones_001_uv"
   }
 }
 Assets {
@@ -107,21 +134,21 @@ Assets {
   }
 }
 Assets {
+  Id: 7814966837604519694
+  Name: "Bricks Rough Stone Floor 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_floor_rough_001"
+  }
+}
+Assets {
   Id: 7695830393755413980
   Name: "Cube - Chamfered Small Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_hq_003"
-  }
-}
-Assets {
-  Id: 7534413844238277162
-  Name: "Bricks Mismatched Stone 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_stone_mismatch_001"
   }
 }
 Assets {
@@ -152,6 +179,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6748009613930740616
+  Name: "Stone Block Long"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_03"
+  }
+}
+Assets {
   Id: 4565574025644870814
   Name: "Fantasy Castle Trim - Battlement 01"
   PlatformAssetType: 1
@@ -179,6 +215,24 @@ Assets {
   }
 }
 Assets {
+  Id: 3648690672332385891
+  Name: "Trim Bottom 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_bottom_6m_002"
+  }
+}
+Assets {
+  Id: 3577357595658140295
+  Name: "Fantasy Castle Wall 01 - Curved"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_curve_001"
+  }
+}
+Assets {
   Id: 3214006606721471794
   Name: "Curb 8m"
   PlatformAssetType: 1
@@ -188,11 +242,29 @@ Assets {
   }
 }
 Assets {
+  Id: 2007256510569021566
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
+  }
+}
+Assets {
   Id: 1892362005922537256
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_large_foundation_001"
+  }
+}
+Assets {
+  Id: 1367565729547875542
+  Name: "Fantasy Castle Wall 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001"
   }
 }

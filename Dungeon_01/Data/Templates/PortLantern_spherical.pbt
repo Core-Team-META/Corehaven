@@ -16,6 +16,7 @@
           }
         }
         ParentId: 10874816195359804700
+        ChildIds: 18404520262375363526
         ChildIds: 6156279244924452981
         ChildIds: 8545045838586853368
         Collidable_v2 {
@@ -29,11 +30,51 @@
         }
       }
       Objects {
+        Id: 18404520262375363526
+        Name: "Candle Flame VFX_port"
+        Transform {
+          Location {
+            X: -63.484848
+            Y: -4.93334198
+            Z: 492.814484
+          }
+          Rotation {
+            Yaw: -105.041924
+          }
+          Scale {
+            X: 6.72386312
+            Y: 6.72386312
+            Z: 6.72386312
+          }
+        }
+        ParentId: 11497261407930304372
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 6156279244924452981
         Name: "LanternPole"
         Transform {
           Location {
-            X: 65.8320312
+            X: 65.8320313
             Y: 2.11199951
           }
           Rotation {
@@ -581,7 +622,7 @@
           Location {
             X: 27.140625
             Y: 6.92230225
-            Z: 578.532226
+            Z: 578.532227
           }
           Rotation {
             Yaw: -179.999954
@@ -977,7 +1018,7 @@
           Location {
             X: -123.815918
             Y: -4.1449585
-            Z: 586.820312
+            Z: 586.820313
           }
           Rotation {
             Pitch: -86.0711899
@@ -1203,7 +1244,7 @@
         Name: "Large Round Wood Beam 8m"
         Transform {
           Location {
-            X: 39.2851562
+            X: 39.2851563
             Y: -4.14489746
             Z: 524.706055
           }
@@ -1244,7 +1285,7 @@
         Name: "rope"
         Transform {
           Location {
-            X: -44.0844726
+            X: -44.0844727
             Y: -4.1449585
             Z: 580.59668
           }
@@ -1479,7 +1520,7 @@
           Rotation {
             Pitch: -73.6717377
             Yaw: 0.000117229967
-            Roll: -6.10351562e-05
+            Roll: -6.10351563e-05
           }
           Scale {
             X: 0.184972122
@@ -2432,7 +2473,7 @@
           Rotation {
             Pitch: 4.09811328e-05
             Yaw: 2.7320717e-05
-            Roll: -6.10351562e-05
+            Roll: -6.10351563e-05
           }
           Scale {
             X: 0.18511638
@@ -2736,7 +2777,7 @@
           Rotation {
             Pitch: 5.46415104e-05
             Yaw: 2.72139987e-05
-            Roll: -6.10351562e-05
+            Roll: -6.10351563e-05
           }
           Scale {
             X: 0.18511638
@@ -3190,7 +3231,7 @@
             Z: 81.939888
           }
           Rotation {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: -89.999939
             Roll: 89.9999237
           }
@@ -3365,6 +3406,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 9199751096616988864
+      Name: "Candle Flame VFX"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "fxsm_candleflame"
       }
     }
     Assets {

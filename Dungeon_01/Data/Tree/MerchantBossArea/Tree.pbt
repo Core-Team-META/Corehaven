@@ -1,6 +1,872 @@
 ﻿Name: "MerchantBossArea"
 RootId: 7192807854345907469
 Objects {
+  Id: 14112507542900153145
+  Name: "Decal Stone Cracks Variants 01"
+  Transform {
+    Location {
+      X: 2678.74219
+      Y: -1787.67847
+      Z: 2289.58838
+    }
+    Rotation {
+      Yaw: -30.1719074
+      Roll: 90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11107698037655416298
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 16351730611072424099
+  Name: "Decal Stone Cracks Variants 01"
+  Transform {
+    Location {
+      X: 2729.16211
+      Y: -1813.14966
+      Z: 2873.09668
+    }
+    Rotation {
+      Yaw: -30.1719074
+      Roll: 90.0000076
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 11107698037655416298
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 14242056486534417873
+  Name: "Decal Stains Top 01"
+  Transform {
+    Location {
+      X: 3140.9043
+      Y: -1983.95288
+      Z: 2685.45483
+    }
+    Rotation {
+      Pitch: -1.24600399
+      Yaw: 62.2662468
+      Roll: 91.5622635
+    }
+    Scale {
+      X: 1.36916256
+      Y: 2.46160293
+      Z: 1.0000025
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16507931824687121508
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 18048908057229279218
+  Name: "Decal Stains Top 01"
+  Transform {
+    Location {
+      X: 1369.16602
+      Y: -3349.7915
+      Z: 2372.63086
+    }
+    Rotation {
+      Pitch: 0.171116725
+      Yaw: 18.7950821
+      Roll: 91.9911804
+    }
+    Scale {
+      X: 1.36916423
+      Y: 3.99572659
+      Z: 1.00000083
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16507931824687121508
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 16513258616352320605
+  Name: "Decal Stains Top 01"
+  Transform {
+    Location {
+      X: 2040.97168
+      Y: -2208.1958
+      Z: 2345.57666
+    }
+    Rotation {
+      Pitch: -0.603570104
+      Yaw: 41.2732582
+      Roll: 91.9055862
+    }
+    Scale {
+      X: 1.48047495
+      Y: 1.3976481
+      Z: 1.00000584
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 16507931824687121508
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 14746335038236077784
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+      X: -437.129883
+      Y: -34.6475525
+      Z: 1871.25439
+    }
+    Rotation {
+    }
+    Scale {
+      X: 66.2212219
+      Y: 53.3682899
+      Z: 2.70019865
+    }
+  }
+  ParentId: 7192807854345907469
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+        X: 20
+        Y: 50
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 4.9482336
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.95061636
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.291666657
+        G: 0.291666657
+        B: 0.291666657
+        A: 0.269000024
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3837058515785757415
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 7980384607112585997
+  Name: "Bone Human Scattered 01"
+  Transform {
+    Location {
+      X: -1070.49072
+      Y: -198.600952
+      Z: 1748.97119
+    }
+    Rotation {
+      Pitch: 2.31760597
+      Yaw: 83.7178116
+      Roll: 1.6955018
+    }
+    Scale {
+      X: 0.699351
+      Y: 0.699351
+      Z: 0.699351
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13338945733164541885
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3354601623245839208
+  Name: "Bone Human Scattered 01"
+  Transform {
+    Location {
+      X: -754.98584
+      Y: 57.9985046
+      Z: 1747.48584
+    }
+    Rotation {
+      Pitch: 1.65720868
+      Yaw: 0.0122973584
+      Roll: 0.425215602
+    }
+    Scale {
+      X: 0.699351
+      Y: 0.699351
+      Z: 0.699351
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13338945733164541885
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13410491890584344964
+  Name: "Bone Human Scattered 02"
+  Transform {
+    Location {
+      X: -660.918457
+      Y: -379.62439
+      Z: 1747.48584
+    }
+    Rotation {
+      Yaw: 37.605957
+    }
+    Scale {
+      X: 0.828802347
+      Y: 0.828802347
+      Z: 0.828802347
+    }
+  }
+  ParentId: 7192807854345907469
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 761582533373190679
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16914329448798879810
+  Name: "FireMerchant"
+  Transform {
+    Location {
+      X: -221.569824
+      Y: 3353.1792
+      Z: 3053.46436
+    }
+    Rotation {
+      Yaw: -4.29418945
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 13341573436831121514
+  ChildIds: 566360565418929451
+  ChildIds: 3769778985457928890
+  ChildIds: 1090192409986803579
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1090192409986803579
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -62.6922073
+      Y: -561.627197
+      Z: -455.603638
+    }
+    Rotation {
+      Yaw: 7.70643044
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 16914329448798879810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 27.7700272
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1282.58801
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 3769778985457928890
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -40.5591621
+      Y: 136.205261
+      Z: 123.218582
+    }
+    Rotation {
+      Pitch: 1.89170957
+      Yaw: -178.545685
+      Roll: 68.0754166
+    }
+    Scale {
+      X: 7.21906185
+      Y: 9.30297947
+      Z: 5.42133188
+    }
+  }
+  ParentId: 16914329448798879810
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 566360565418929451
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -33.6913147
+      Y: 163.022812
+      Z: 102.026367
+    }
+    Rotation {
+      Yaw: 95.4983292
+    }
+    Scale {
+      X: 2.57564116
+      Y: 4.53383398
+      Z: 2.00902128
+    }
+  }
+  ParentId: 16914329448798879810
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 42.2979889
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.69715309
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57046938
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 13341573436831121514
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -8.565732
+      Y: -262.591919
+      Z: 324.650879
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 16914329448798879810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1282.58801
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 1344931866224842842
+  Name: "FireMerchant"
+  Transform {
+    Location {
+      X: 3636.11816
+      Y: -1388.17773
+      Z: 2806.12109
+    }
+    Rotation {
+      Yaw: 145.357544
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 14192694418608230730
+  ChildIds: 3177949432424930068
+  ChildIds: 8529121333865155048
+  ChildIds: 11975467426933682725
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11975467426933682725
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -62.6922073
+      Y: -561.627197
+      Z: -455.603638
+    }
+    Rotation {
+      Yaw: 7.70643044
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 1344931866224842842
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 27.7700272
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1282.58801
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 8529121333865155048
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -32.9517
+      Y: 34.8777237
+      Z: 254.70845
+    }
+    Rotation {
+      Pitch: 1.89170957
+      Yaw: -178.545685
+      Roll: 89.9988251
+    }
+    Scale {
+      X: 6.08801174
+      Y: 7.84542751
+      Z: 4.5719409
+    }
+  }
+  ParentId: 1344931866224842842
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 3177949432424930068
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -22.3361588
+      Y: 11.7832909
+      Z: 73.9402237
+    }
+    Rotation {
+      Yaw: 95.4983292
+    }
+    Scale {
+      X: 1.66666639
+      Y: 1.61808896
+      Z: 2.00902128
+    }
+  }
+  ParentId: 1344931866224842842
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 42.2979889
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.69715309
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57046938
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 14192694418608230730
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -32.2281647
+      Y: 49.1000977
+      Z: 92.3893204
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 1344931866224842842
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 13280156272671498817
   Name: "Portcullis"
   Transform {
@@ -233,7 +1099,7 @@ Objects {
   Name: "Portcullis"
   Transform {
     Location {
-      X: 4189.32812
+      X: 4189.32813
       Y: -642.931641
       Z: 2078.53467
     }
@@ -335,7 +1201,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2159.51562
+      X: 2159.51563
       Y: 3251.7666
       Z: 2035.64624
     }
@@ -937,7 +1803,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -3403.01562
+      X: -3403.01563
       Y: -2951.9873
       Z: 1956.56702
     }
@@ -1472,8 +2338,8 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -2769.00976
-      Y: 3204.94726
+      X: -2769.00977
+      Y: 3204.94727
       Z: 1954.15833
     }
     Rotation {
@@ -1592,7 +2458,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -2690.69726
+      X: -2690.69727
       Y: 3023.77148
       Z: 1954.15833
     }
@@ -2177,7 +3043,7 @@ Objects {
   Transform {
     Location {
       X: -1619.5625
-      Y: 2261.16894
+      Y: 2261.16895
       Z: 1954.15833
     }
     Rotation {
@@ -2417,7 +3283,7 @@ Objects {
   Transform {
     Location {
       X: -217.640625
-      Y: 2845.72558
+      Y: 2845.72559
       Z: 1954.15833
     }
     Rotation {
@@ -2967,7 +3833,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 1016.70312
+      X: 1016.70313
       Y: 2678.02246
       Z: 1745.05774
     }
@@ -3369,7 +4235,7 @@ Objects {
   Transform {
     Location {
       X: 395.054688
-      Y: 2918.25976
+      Y: 2918.25977
       Z: 2019.65234
     }
     Rotation {
@@ -4103,7 +4969,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 3645.32812
+      X: 3645.32813
       Y: -852.951172
       Z: 1630.49243
     }
@@ -4446,7 +5312,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2734.57812
+      X: 2734.57813
       Y: -1620.44336
       Z: 2035.94922
     }
@@ -4740,7 +5606,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2527.76562
+      X: 2527.76563
       Y: 1453.22852
       Z: 2019.65222
     }
@@ -4920,7 +5786,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 2309.14062
+      X: 2309.14063
       Y: 1678.02832
       Z: 1935.07532
     }
@@ -5207,6 +6073,7 @@ Objects {
   ChildIds: 14264383911174415246
   ChildIds: 10035970240999349023
   ChildIds: 17229429383361778005
+  ChildIds: 12621178664629828655
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5215,6 +6082,57 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 12621178664629828655
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 379.748718
+      Y: -704.234619
+      Z: 0.000203450516
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 17168727746265290771
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 17.529232
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1405.06787
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
   }
 }
 Objects {
@@ -5446,7 +6364,7 @@ Objects {
   Transform {
     Location {
       X: -3844.01807
-      Y: -959.441894
+      Y: -959.441895
       Z: 2615.80371
     }
     Rotation {
@@ -5802,7 +6720,7 @@ Objects {
     Location {
       X: -2103.4082
       Y: -2045.11206
-      Z: 2062.32812
+      Z: 2062.32813
     }
     Rotation {
       Pitch: 2.04905664e-05
@@ -5842,7 +6760,7 @@ Objects {
   Name: "Column Base 01"
   Transform {
     Location {
-      X: -3512.4956
+      X: -3512.49561
       Y: -2503.27197
       Z: 1752.8772
     }
@@ -5884,7 +6802,7 @@ Objects {
   Name: "Column Base 01"
   Transform {
     Location {
-      X: -3512.4956
+      X: -3512.49561
       Y: -2503.27197
       Z: 1752.8772
     }
@@ -6398,7 +7316,7 @@ Objects {
   Transform {
     Location {
       X: -4740.91
-      Y: -2471.3081
+      Y: -2471.30811
       Z: 1942.63574
     }
     Rotation {
@@ -6679,7 +7597,7 @@ Objects {
   Transform {
     Location {
       X: 1648.21289
-      Y: -2300.57226
+      Y: -2300.57227
       Z: 1745.05835
     }
     Rotation {
@@ -6965,7 +7883,7 @@ Objects {
   Name: "Column Base 01"
   Transform {
     Location {
-      X: 1242.66308
+      X: 1242.66309
       Y: -2539.33252
       Z: 2140.31738
     }
@@ -7613,7 +8531,7 @@ Objects {
   Name: "Column Base 01"
   Transform {
     Location {
-      X: 2478.32226
+      X: 2478.32227
       Y: -1416.98499
       Z: 2140.31738
     }
@@ -7829,7 +8747,7 @@ Objects {
   Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
     Location {
-      X: 2694.48144
+      X: 2694.48145
       Y: -968.87207
       Z: 2031.71008
     }
@@ -7870,7 +8788,7 @@ Objects {
   Transform {
     Location {
       X: 3085.24219
-      Y: -1127.27978
+      Y: -1127.27979
       Z: 2028.2981
     }
     Rotation {
@@ -8964,7 +9882,7 @@ Objects {
     Location {
       X: 3505.83203
       Y: 6142.29736
-      Z: 3357.7583
+      Z: 3266.49072
     }
     Rotation {
       Yaw: -132.429321
@@ -9601,7 +10519,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 384.195312
+      X: 384.195313
       Y: -3668.60547
       Z: 1873.79382
     }
@@ -11847,9 +12765,9 @@ Objects {
   Name: "FireMerchant"
   Transform {
     Location {
-      X: 3049.71191
-      Y: 2139.42432
-      Z: 2775.03491
+      X: 3108.01953
+      Y: 2076.65771
+      Z: 2808.93311
     }
     Rotation {
       Yaw: -47.1099854
@@ -11940,16 +12858,16 @@ Objects {
   Name: "Fire Volume VFX"
   Transform {
     Location {
-      X: 12.6386919
-      Y: -4.46507
-      Z: 0.119832352
+      X: -26.1649494
+      Y: -70.2546921
+      Z: 111.575111
     }
     Rotation {
       Yaw: 85.7025528
     }
     Scale {
-      X: 1.66666639
-      Y: 1.61808896
+      X: 1.66666305
+      Y: 1.86002672
       Z: 2.00902128
     }
   }
@@ -11990,9 +12908,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -12.8204441
-      Y: 48.1322708
-      Z: 0.000203450516
+      X: -12.8200264
+      Y: 48.1326485
+      Z: -298.30484
     }
     Rotation {
       Yaw: -2.85568237
@@ -12023,7 +12941,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 1000
+        AttenuationRadius: 1221.34802
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -12058,7 +12976,13 @@ Objects {
   ChildIds: 7890226167529193759
   ChildIds: 15556019364222874943
   ChildIds: 11751201277853384579
-  ChildIds: 7474514473896670146
+  ChildIds: 8423088248910544158
+  ChildIds: 2334365366552074566
+  ChildIds: 9568019780650515047
+  ChildIds: 18111615567658763851
+  ChildIds: 14407457611747288955
+  ChildIds: 518979524252544953
+  ChildIds: 7928906807687090825
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12070,20 +12994,232 @@ Objects {
   }
 }
 Objects {
-  Id: 7474514473896670146
+  Id: 7928906807687090825
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -2741.72705
+      Y: -1309.7229
+      Z: -905.453491
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 11817743743075077680
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 578.328552
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 518979524252544953
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1997.74939
+      Y: -1036.17834
+      Z: -942.874939
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 11817743743075077680
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 578.328552
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 14407457611747288955
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -2453.35205
+      Y: -535.345825
+      Z: 330.331
+    }
+    Rotation {
+      Pitch: 39.2537956
+      Yaw: 129.286301
+      Roll: 14.5658522
+    }
+    Scale {
+      X: 6.7283392
+      Y: 9.22622585
+      Z: 4.30000448
+    }
+  }
+  ParentId: 11817743743075077680
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 18111615567658763851
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -2391.10669
+      Y: -684.786377
+      Z: 110.994263
+    }
+    Rotation {
+      Pitch: 41.3982086
+      Yaw: 110.623451
+      Roll: 2.42332029
+    }
+    Scale {
+      X: 6.85270119
+      Y: 10.9410295
+      Z: 6.3759141
+    }
+  }
+  ParentId: 11817743743075077680
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9568019780650515047
   Name: "Fire Volume VFX"
   Transform {
     Location {
-      X: -496.661713
-      Y: 73.4951248
-      Z: 704.570068
+      X: -2415.34277
+      Y: -434.998779
+      Z: 5.4744463
     }
     Rotation {
-      Yaw: 90.1790085
+      Yaw: 111.190979
     }
     Scale {
-      X: 1.66666687
-      Y: 8.94627857
+      X: 4.02780724
+      Y: 7.47822
       Z: 2.00902128
     }
   }
@@ -12100,6 +13236,115 @@ Objects {
     Overrides {
       Name: "bp:Life"
       Float: 1.57046938
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.5
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 2334365366552074566
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -2484.46362
+      Y: -701.47113
+      Z: 411.718933
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 11817743743075077680
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1313.20801
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 8423088248910544158
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -2926.18555
+      Y: 117.516273
+      Z: 333.665955
+    }
+    Rotation {
+      Yaw: 111.191017
+    }
+    Scale {
+      X: 7.82230043
+      Y: 16.5829697
+      Z: 2.00902128
+    }
+  }
+  ParentId: 11817743743075077680
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 42.2979889
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.69715309
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57046938
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1.5
     }
   }
   Collidable_v2 {
@@ -12548,7 +13793,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7323017
     }
     Scale {
@@ -12672,7 +13917,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -12734,7 +13979,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -12858,7 +14103,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -12920,7 +14165,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -13043,7 +14288,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -13167,7 +14412,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -13291,7 +14536,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7324257
     }
     Scale {
@@ -13601,7 +14846,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6107101
     }
     Scale {
@@ -13663,7 +14908,7 @@ Objects {
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: -59.1427917
     }
     Scale {
@@ -13973,7 +15218,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6105881
     }
     Scale {
@@ -15910,7 +17155,7 @@ Objects {
     Location {
       X: 2070.72754
       Y: 1458.56873
-      Z: 1760.5581
+      Z: 1760.55811
     }
     Rotation {
       Pitch: -0.381225586
@@ -16300,7 +17545,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7323017
     }
     Scale {
@@ -16424,7 +17669,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -16486,7 +17731,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -16610,7 +17855,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -16672,7 +17917,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -16795,7 +18040,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -16919,7 +18164,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -17043,7 +18288,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7324257
     }
     Scale {
@@ -17353,7 +18598,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6107101
     }
     Scale {
@@ -17415,7 +18660,7 @@ Objects {
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: -59.1427917
     }
     Scale {
@@ -17725,7 +18970,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6105881
     }
     Scale {
@@ -19707,7 +20952,6 @@ Objects {
   ChildIds: 4047868041375985863
   ChildIds: 12548936014618323443
   ChildIds: 18374773084500921259
-  ChildIds: 2550962648286702777
   ChildIds: 10112441115163290208
   ChildIds: 13740507634616943453
   ChildIds: 4455627521105069802
@@ -19747,6 +20991,7 @@ Objects {
   ChildIds: 4430898546136707463
   ChildIds: 12140697637895952251
   ChildIds: 16786342074684772973
+  ChildIds: 1355675058694108272
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -19755,6 +21000,76 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 1355675058694108272
+  Name: "Crescent - 02"
+  Transform {
+    Location {
+      X: -6.94322395
+      Y: -6.32833147
+      Z: -11.2565556
+    }
+    Rotation {
+      Yaw: -90.9447632
+    }
+    Scale {
+      X: 0.609453797
+      Y: 0.609453797
+      Z: 0.609453797
+    }
+  }
+  ParentId: 1568477126506915030
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7715152830417178651
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.222012907
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.380208343
+        G: 0.0930718407
+        B: 0.0930718407
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3094595809475267403
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -20283,7 +21598,7 @@ Objects {
     Rotation {
       Pitch: 5.46415104e-05
       Yaw: 2.7214e-05
-      Roll: -6.10351562e-05
+      Roll: -6.10351563e-05
     }
     Scale {
       X: 0.18511638
@@ -20592,7 +21907,7 @@ Objects {
     Rotation {
       Pitch: 4.09811328e-05
       Yaw: 2.7320717e-05
-      Roll: -6.10351562e-05
+      Roll: -6.10351563e-05
     }
     Scale {
       X: 0.18511638
@@ -22334,7 +23649,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7323017
     }
     Scale {
@@ -22458,7 +23773,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -22520,7 +23835,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -22644,7 +23959,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -22706,7 +24021,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -22829,7 +24144,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -22953,7 +24268,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -23077,7 +24392,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7324257
     }
     Scale {
@@ -23387,7 +24702,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6107101
     }
     Scale {
@@ -23449,7 +24764,7 @@ Objects {
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: -59.1427917
     }
     Scale {
@@ -23759,7 +25074,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6105881
     }
     Scale {
@@ -24451,52 +25766,13 @@ Objects {
   }
 }
 Objects {
-  Id: 2550962648286702777
-  Name: "Wooden Bucket"
-  Transform {
-    Location {
-      X: -240.703415
-      Y: 47.7678909
-      Z: 100.020493
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.824351668
-      Y: 0.824351668
-      Z: 0.824351668
-    }
-  }
-  ParentId: 1568477126506915030
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11667075996946480541
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 18374773084500921259
   Name: "Wooden Barrel"
   Transform {
     Location {
-      X: -354.297211
-      Y: 95.953804
-      Z: -12.577486
+      X: 237.678543
+      Y: 92.0098572
+      Z: -9.35405636
     }
     Rotation {
     }
@@ -26809,7 +28085,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7323017
     }
     Scale {
@@ -26933,7 +28209,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -26995,7 +28271,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -27119,7 +28395,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -27181,7 +28457,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -27304,7 +28580,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -27428,7 +28704,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -2.07556152
     }
     Scale {
@@ -27552,7 +28828,7 @@ Objects {
     }
     Rotation {
       Pitch: 4.09811328e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: 22.7324257
     }
     Scale {
@@ -27862,7 +29138,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6107101
     }
     Scale {
@@ -27924,7 +29200,7 @@ Objects {
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -0.000122070312
+      Yaw: -0.000122070313
       Roll: -59.1427917
     }
     Scale {
@@ -28234,7 +29510,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 11.6105881
     }
     Scale {
@@ -30352,7 +31628,7 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: 115.657226
+      X: 115.657227
       Y: -341.451019
       Z: 1763.23096
     }
@@ -30911,7 +32187,7 @@ Objects {
   Name: "Bone Human Pile Straight 01"
   Transform {
     Location {
-      X: -184.438476
+      X: -184.438477
       Y: -34.0634766
       Z: 1780.78442
     }
@@ -33447,7 +34723,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 754.878784
+        AttenuationRadius: 2078.70728
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -33736,7 +35012,7 @@ Objects {
   Name: "Decal Moss Patch"
   Transform {
     Location {
-      X: -265.914062
+      X: -265.914063
       Y: -423.380096
       Z: 1698.66675
     }
@@ -34112,7 +35388,7 @@ Objects {
   Name: "Bone Human Skull Pile 02"
   Transform {
     Location {
-      X: -476.469726
+      X: -476.469727
       Y: -184.255188
       Z: 1749.92029
     }
@@ -34315,7 +35591,7 @@ Objects {
   Name: "Bone Human Skull Pile 01"
   Transform {
     Location {
-      X: -505.903808
+      X: -505.903809
       Y: -56.2338715
       Z: 1745.47339
     }
@@ -34397,7 +35673,7 @@ Objects {
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
-      X: -286.375976
+      X: -286.375977
       Y: 365.074097
       Z: 1748.71777
     }
@@ -34499,7 +35775,7 @@ Objects {
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
-      X: -316.816894
+      X: -316.816895
       Y: -350.631
       Z: 1755.7301
     }
@@ -35299,7 +36575,7 @@ Objects {
   Name: "Bone Human Skull Pile 02"
   Transform {
     Location {
-      X: -470.132812
+      X: -470.132813
       Y: -41.2690735
       Z: 1741.14355
     }
@@ -37162,7 +38438,7 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: 81.1469726
+      X: 81.1469727
       Y: -138.43515
     }
     Rotation {
@@ -37201,7 +38477,7 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 191.469726
+      X: 191.469727
       Y: -127.108948
       Z: 57.3408203
     }
@@ -38901,7 +40177,7 @@ Objects {
   Name: "Small Open Crate"
   Transform {
     Location {
-      X: 81.1469726
+      X: 81.1469727
       Y: -138.43515
     }
     Rotation {
@@ -38940,7 +40216,7 @@ Objects {
   Name: "Small Crate Lid"
   Transform {
     Location {
-      X: 191.469726
+      X: 191.469727
       Y: -127.108948
       Z: 57.3408203
     }
@@ -40593,7 +41869,7 @@ Objects {
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   Transform {
     Location {
-      X: 2721.78808
+      X: 2721.78809
       Y: 646.855713
       Z: 0.000244140625
     }
@@ -40877,7 +42153,7 @@ Objects {
   Name: "Stone Railing Curved 6m"
   Transform {
     Location {
-      X: 1838.88476
+      X: 1838.88477
       Y: -3.58884239
       Z: 0.000207471516
     }
@@ -41057,7 +42333,7 @@ Objects {
   Name: "Stone Railing Curved 6m"
   Transform {
     Location {
-      X: 1838.88476
+      X: 1838.88477
       Y: -3.58884239
       Z: 0.000207471516
     }
@@ -41136,7 +42412,7 @@ Objects {
       Z: -20.5972538
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: -92.6781311
       Roll: 179.999939
     }
@@ -41813,7 +43089,7 @@ Objects {
   Name: "Stone Railing Curved 6m"
   Transform {
     Location {
-      X: 1838.88476
+      X: 1838.88477
       Y: -46.0474739
       Z: -19.8660202
     }

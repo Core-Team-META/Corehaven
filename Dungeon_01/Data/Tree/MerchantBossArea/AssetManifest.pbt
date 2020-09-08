@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16507931824687121508
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
   Id: 15792735055830902497
   Name: "Bone Human Humerus 01"
   PlatformAssetType: 1
@@ -248,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_pelvis_01_ref"
+  }
+}
+Assets {
+  Id: 11107698037655416298
+  Name: "Decal Stone Cracks Variants 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stone_cracks_001"
   }
 }
 Assets {
@@ -545,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
+  Id: 3837058515785757415
+  Name: "Wispy Fog Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fog_volume_vfx"
   }
 }
 Assets {

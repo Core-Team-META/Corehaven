@@ -125,4 +125,46 @@
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Dull Blade',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Short Sword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Katana',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Jagged Sword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Twisted Kris',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Ancient Sword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Goldspike',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

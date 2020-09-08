@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10010083964673251729
+  Name: "Cube - Rounded Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_001"
+  }
+}
+Assets {
   Id: 7822473577673662489
   Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
@@ -104,6 +113,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_bricks_mortar_001_uv"
+  }
+}
+Assets {
+  Id: 7243485854034201519
+  Name: "Arch"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_arch_001"
+  }
+}
+Assets {
+  Id: 7232672974994690852
+  Name: "Column Segment 1m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_segment_001"
   }
 }
 Assets {
@@ -131,6 +158,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_3m_001"
+  }
+}
+Assets {
+  Id: 3557498420996982810
+  Name: "Fantasy Castle Trim - Parapet 01 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_parapet_001_4m"
+  }
+}
+Assets {
+  Id: 2007256510569021566
+  Name: "Cube - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_rounded_002"
   }
 }
 Assets {

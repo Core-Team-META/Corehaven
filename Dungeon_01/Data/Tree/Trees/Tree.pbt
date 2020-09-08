@@ -1,6 +1,57 @@
 ﻿Name: "Trees"
 RootId: 6952976605387069163
 Objects {
+  Id: 4635991798926405841
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: -3081.12598
+      Y: 11781.6992
+      Z: 2581.27808
+    }
+    Rotation {
+      Yaw: 98.207489
+    }
+    Scale {
+      X: 1.07918632
+      Y: 1.07918632
+      Z: 1.07918632
+    }
+  }
+  ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2885800070905631850
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 2151307462076853862
   Name: "Tree Oak 01"
   Transform {
@@ -158,12 +209,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 3963.61133
-      Y: 2352.48755
+      X: 3901.16406
+      Y: 2271.10693
       Z: 3818.9458
     }
     Rotation {
-      Yaw: -37.5007324
+      Yaw: -37.5006714
     }
     Scale {
       X: 0.859755
@@ -289,12 +340,14 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 4608.82226
+      X: 4608.82227
       Y: 2842.09302
       Z: 4354.03125
     }
     Rotation {
-      Yaw: -113.540344
+      Pitch: 5.34727287
+      Yaw: -113.539642
+      Roll: 1.41488372e-05
     }
     Scale {
       X: 1.02260745
@@ -420,12 +473,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 1708.99316
-      Y: 8319.22656
-      Z: 3594.51855
+      X: 1623.03516
+      Y: 8276.42188
+      Z: 3827.01782
     }
     Rotation {
-      Yaw: -144.305634
+      Yaw: -118.162506
     }
     Scale {
       X: 1.02260745
@@ -552,7 +605,7 @@ Objects {
     Location {
       X: 9873.18164
       Y: 3081.50244
-      Z: 4435.73144
+      Z: 4435.73145
     }
     Rotation {
     }
@@ -589,12 +642,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 3820.83984
-      Y: 10445.6182
-      Z: 4131.49658
+      X: 3306.54688
+      Y: 10784.0791
+      Z: 3886.50049
     }
     Rotation {
-      Yaw: 31.4045391
+      Yaw: 65.9832458
     }
     Scale {
       X: 1.07918632
@@ -734,11 +787,13 @@ Objects {
   Transform {
     Location {
       X: -14457.3203
-      Y: 6956.17871
-      Z: 308.536682
+      Y: 6905.77295
+      Z: 188.811554
     }
     Rotation {
-      Yaw: -87.6864929
+      Pitch: 3.00371218
+      Yaw: -87.6864624
+      Roll: 2.13737053e-06
     }
     Scale {
       X: 1.1203177
@@ -747,6 +802,23 @@ Objects {
     }
   }
   ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -909,6 +981,23 @@ Objects {
     }
   }
   ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:id"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

@@ -1,6 +1,2675 @@
 ﻿Name: "Walling"
 RootId: 11997563873140279666
 Objects {
+  Id: 5956599479652507409
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 114.369019
+      Y: -1191.06458
+      Z: 102.463623
+    }
+    Rotation {
+      Pitch: 7.93915892
+      Yaw: -28.2141113
+      Roll: -47.3004456
+    }
+    Scale {
+      X: 0.845620513
+      Y: 1.00000334
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14789199081367735592
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: -84.036377
+      Y: 2607.44824
+      Z: 1201.27832
+    }
+    Rotation {
+      Yaw: -90.000061
+    }
+    Scale {
+      X: 1.10655987
+      Y: 0.99999845
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 738250542015159893
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: -160.678711
+      Y: 1943.52856
+      Z: 90.1650391
+    }
+    Rotation {
+      Yaw: 90.1602631
+    }
+    Scale {
+      X: 4.41457176
+      Y: 1.90002453
+      Z: 20.1206169
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1892362005922537256
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5378469420966756285
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3155.5686
+      Y: -1760.13281
+      Z: 572.813
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4320657310064800169
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3155.5686
+      Y: -1760.13281
+      Z: 595.868164
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9543553052352458765
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 3541.55762
+      Y: 2897.37061
+      Z: 901.831055
+    }
+    Rotation {
+      Yaw: 179.999878
+    }
+    Scale {
+      X: 1
+      Y: 0.99999845
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3557498420996982810
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 202097688439363401
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3213.57422
+      Y: 2874.3457
+      Z: -232.10376
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.815803111
+      Y: 0.815803111
+      Z: 0.815803111
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15142901597954876585
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3213.63647
+      Y: 2874.42773
+      Z: 260.901611
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.815803111
+      Y: 0.815803111
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13304908840312358092
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6115695483972357340
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 1892.26697
+      Y: 2874.36572
+      Z: -232.10376
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.815803111
+      Y: 0.815803111
+      Z: 0.815803111
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15506595116625116963
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 1892.33008
+      Y: 2874.44849
+      Z: 260.901611
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.815803111
+      Y: 0.815803111
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13304908840312358092
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4319863881300801278
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 3219.69287
+      Y: 2935.54
+      Z: 1506.83105
+    }
+    Rotation {
+      Yaw: -88.0874939
+      Roll: 179.999756
+    }
+    Scale {
+      X: 1.59589732
+      Y: 1.81409049
+      Z: 7.20558167
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12524397288563500639
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1890.29871
+      Y: 2887.47241
+      Z: 880.958
+    }
+    Rotation {
+      Yaw: -91.2320557
+      Roll: 9.48619169e-11
+    }
+    Scale {
+      X: 1.59588397
+      Y: 1.81409514
+      Z: 3.16871047
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10628993885621378562
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1848.23511
+      Y: 2886.06665
+      Z: 1461.83105
+    }
+    Rotation {
+      Yaw: -88.0874329
+      Roll: 89.9991608
+    }
+    Scale {
+      X: 1.59589648
+      Y: 1.81408966
+      Z: 7.12090158
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13503583588685882746
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2559.7439
+      Y: 3103.89014
+      Z: 846.543945
+    }
+    Rotation {
+      Pitch: -6.10351563e-05
+      Yaw: -178.624512
+      Roll: 89.9994812
+    }
+    Scale {
+      X: 9.30272865
+      Y: 8.02203
+      Z: 2.88125634
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17885961249823315681
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7243485854034201519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12506487295652592771
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1835.48584
+      Y: 3297.12646
+      Z: 1461.83105
+    }
+    Rotation {
+      Yaw: -88.2195435
+      Roll: 89.9993591
+    }
+    Scale {
+      X: 1.59589732
+      Y: 1.81409049
+      Z: 7.20558167
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2170277020112746029
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1877.55603
+      Y: 3298.43384
+      Z: -79.6550293
+    }
+    Rotation {
+      Yaw: -91.3640747
+    }
+    Scale {
+      X: 1.59588397
+      Y: 1.81409514
+      Z: 7.91574097
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6876252004998291464
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 3207.05322
+      Y: 3343.44141
+      Z: 1506.83105
+    }
+    Rotation {
+      Yaw: -88.2195435
+      Roll: 179.999756
+    }
+    Scale {
+      X: 1.59589732
+      Y: 1.81409049
+      Z: 7.20558167
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11844046909338349836
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 603.791
+      Y: 3535.14404
+      Z: -79.6550293
+    }
+    Rotation {
+      Yaw: 88.6358414
+    }
+    Scale {
+      X: 1.59588397
+      Y: 1.81409514
+      Z: 5.21986866
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 770072246921375205
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 612.262451
+      Y: 3481.82861
+      Z: 832.946045
+    }
+    Rotation {
+      Yaw: -0.206054688
+    }
+    Scale {
+      X: 0.88370204
+      Y: 1.00000119
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13604062255347747313
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 1319.84448
+      Y: 3479.27393
+      Z: 832.946045
+    }
+    Rotation {
+      Yaw: -0.206054688
+    }
+    Scale {
+      X: 0.780846655
+      Y: 1.00000978
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12553141304861116320
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 3211.99072
+      Y: 3549.76416
+      Z: 1506.83105
+    }
+    Rotation {
+      Yaw: -88.2195435
+      Roll: 179.999756
+    }
+    Scale {
+      X: 1.59589732
+      Y: 1.81409049
+      Z: 7.20558167
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16071909903372087256
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1882.48523
+      Y: 3504.74902
+      Z: -79.6550293
+    }
+    Rotation {
+      Yaw: -91.3640747
+    }
+    Scale {
+      X: 1.59588397
+      Y: 1.81409514
+      Z: 7.91574097
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10970077364816922884
+  Name: "Wall End Fancy 2m"
+  Transform {
+    Location {
+      X: 1828.98157
+      Y: 3506.87207
+      Z: 1461.83105
+    }
+    Rotation {
+      Pitch: 6.83018879e-06
+      Yaw: -88.219574
+      Roll: 89.999382
+    }
+    Scale {
+      X: 1.59589732
+      Y: 1.81409049
+      Z: 7.20558167
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16822568136084734308
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12264420498884339307
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 1855.79761
+      Y: 3511.41187
+      Z: 1495.75684
+    }
+    Rotation {
+      Yaw: 1.8166163
+    }
+    Scale {
+      X: 0.88370204
+      Y: 1.00000119
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17668125281134904332
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 2563.04053
+      Y: 3533.84717
+      Z: 1495.75684
+    }
+    Rotation {
+      Yaw: 1.8166163
+    }
+    Scale {
+      X: 0.852385938
+      Y: 1.00000405
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11531767084373723259
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 3036.73462
+      Y: 2869.19287
+      Z: 839.049561
+    }
+    Rotation {
+      Pitch: 6.83018879e-05
+      Yaw: 90.5271072
+      Roll: 0.000113024849
+    }
+    Scale {
+      X: 1.25361621
+      Y: 1.59780753
+      Z: 1.50248647
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10108082341516656600
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 3031.49805
+      Y: 3551.56787
+      Z: 839.050049
+    }
+    Rotation {
+      Pitch: 6.83018879e-05
+      Yaw: 90.9244919
+      Roll: 0.000113024391
+    }
+    Scale {
+      X: 1.25361621
+      Y: 1.59780753
+      Z: 1.50248647
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7090274701688907859
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 3032.89941
+      Y: 3288.33643
+      Z: 839.050049
+    }
+    Rotation {
+      Pitch: 6.83018879e-05
+      Yaw: 90.5271225
+      Roll: 0.000113024871
+    }
+    Scale {
+      X: 1.25361621
+      Y: 1.59780753
+      Z: 1.50248647
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9115008172616359672
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2540.15698
+      Y: 3359.14258
+      Z: 846.541748
+    }
+    Rotation {
+      Pitch: -6.10351563e-05
+      Yaw: -176.760361
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 9.30272102
+      Y: 8.02202606
+      Z: 0.833694637
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17885961249823315681
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7243485854034201519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1290316191281383590
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2533.65527
+      Y: 3474.30713
+      Z: 846.540527
+    }
+    Rotation {
+      Pitch: -6.10351563e-05
+      Yaw: -176.760345
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 9.30272198
+      Y: 8.02202225
+      Z: 0.988469422
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17885961249823315681
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7243485854034201519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13967034104561659743
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2979.11255
+      Y: 3402.0957
+      Z: 402.983887
+    }
+    Rotation {
+      Pitch: -6.10351563e-05
+      Yaw: -178.781372
+      Roll: 89.9992905
+    }
+    Scale {
+      X: 0.352884471
+      Y: 8.68887234
+      Z: 1.41214263
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1892362005922537256
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15734363539342713842
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 2112.14307
+      Y: 3383.66089
+      Z: 402.982666
+    }
+    Rotation {
+      Pitch: -6.10351563e-05
+      Yaw: -178.781387
+      Roll: 89.9992447
+    }
+    Scale {
+      X: 0.352884471
+      Y: 8.68887234
+      Z: 1.41214263
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1892362005922537256
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14979822225480267631
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2059.88916
+      Y: 3293.7793
+      Z: 110.915771
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 993372040268730927
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2059.8894
+      Y: 3499.26831
+      Z: 110.915771
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15009847465001031926
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2061.95801
+      Y: 3498.52075
+      Z: 768.237305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9164383115011148023
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2061.95801
+      Y: 3498.52075
+      Z: 791.29248
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16452074092088813977
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2062.46899
+      Y: 3302.37866
+      Z: 768.237305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6538124042462689332
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2062.46899
+      Y: 3302.37866
+      Z: 791.29248
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12770980052951179815
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3032.30249
+      Y: 3504.10693
+      Z: 791.29248
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6674517392736727046
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3032.30249
+      Y: 3504.10693
+      Z: 768.237305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9544089907017004916
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3033.88696
+      Y: 3307.97461
+      Z: 791.29248
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8773248566966117011
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3033.88696
+      Y: 3307.97461
+      Z: 768.237305
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 747782774075179987
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3034.65625
+      Y: 3298.55176
+      Z: 110.915771
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10559981402297887822
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3032.22681
+      Y: 3504.03418
+      Z: 110.915771
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10475678935345830039
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2050.12158
+      Y: -1753.85876
+      Z: -53.4685059
+    }
+    Rotation {
+      Pitch: 1.85985363
+      Yaw: 178.321838
+      Roll: 179.921555
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17810230414495270553
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 538.939453
+      Y: -1945.21838
+      Z: 405.998291
+    }
+    Rotation {
+      Pitch: -23.9163818
+      Yaw: 12.4874935
+      Roll: -51.5470581
+    }
+    Scale {
+      X: 0.845620513
+      Y: 1.00000334
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10375903537074702874
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 3907.24243
+      Y: -1748.25134
+      Z: 1171.81543
+    }
+    Rotation {
+      Pitch: 4.13943577
+      Yaw: 3.43480325
+      Roll: 2.27376745e-07
+    }
+    Scale {
+      X: 0.845620513
+      Y: 1.00000334
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9966402475751185870
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 2583.22681
+      Y: -2542.22095
+      Z: 1348.40869
+    }
+    Rotation {
+      Yaw: -176.565277
+    }
+    Scale {
+      X: 0.845620513
+      Y: 1.00000334
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1295003584785782085
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 3286.66602
+      Y: -2500.01855
+      Z: 1348.40869
+    }
+    Rotation {
+      Yaw: -176.565277
+    }
+    Scale {
+      X: 0.88370204
+      Y: 1.00000119
+      Z: 1
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14210182850964294617
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2210.71143
+      Y: -1962.93774
+      Z: 24.1506348
+    }
+    Rotation {
+      Pitch: 76.1717377
+      Yaw: -9.95080566
+      Roll: -30.3732605
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3279228239096630821
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3102.65845
+      Y: -1762.65186
+      Z: -107.14624
+    }
+    Rotation {
+      Pitch: -4.36682129
+      Yaw: -6.10351563e-05
+      Roll: 7.44476154e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2051717203729690081
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 865.454834
+      Y: -2367.2334
+      Z: -54.4863281
+    }
+    Rotation {
+      Pitch: -3.63562
+      Yaw: -0.796539307
+      Roll: 12.3652
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8028150299810205376
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 901.207031
+      Y: -2232.46436
+      Z: 604.734863
+    }
+    Rotation {
+      Pitch: -3.63562
+      Yaw: -0.796539307
+      Roll: 12.3652792
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4793545117304938762
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 905.438
+      Y: -2235.10254
+      Z: 583.474609
+    }
+    Rotation {
+      Pitch: -3.63562
+      Yaw: -0.796539307
+      Roll: 12.3652792
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2393273897755319573
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2111.76587
+      Y: -2564.13354
+      Z: 602.835205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2729357946153910077
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2111.76587
+      Y: -2564.13354
+      Z: 625.890381
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10598624689783051041
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3083.20313
+      Y: -2558.52344
+      Z: 602.835205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9613379230692416645
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3083.20313
+      Y: -2558.52344
+      Z: 625.890381
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1658219161818727163
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2111.24854
+      Y: -2367.99365
+      Z: 602.835205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3952853109711387336
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2111.24854
+      Y: -2367.99365
+      Z: 625.890381
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11395099514454248466
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3081.62598
+      Y: -2362.37549
+      Z: 602.835205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.60969329
+      Y: 2.60969329
+      Z: 0.76490289
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17156886729935235945
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3081.62598
+      Y: -2362.37549
+      Z: 625.890381
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.8143692
+      Y: 2.8143692
+      Z: 0.295267761
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7232672974994690852
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13901992881833817227
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 3081.54443
+      Y: -2362.45898
+      Z: -54.4863281
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13448647962580067062
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 2109.18896
+      Y: -2367.23779
+      Z: -54.4863281
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1.15
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5869212505320404737
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 3080.82593
+      Y: -2314.90552
+      Z: 673.647949
+    }
+    Rotation {
+      Pitch: 6.83018879e-05
+      Yaw: 90.9244919
+      Roll: 0.000113024391
+    }
+    Scale {
+      X: 1.25361621
+      Y: 1.59780753
+      Z: 1.50248647
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 11778079468983009250
   Name: "Default Floor"
   Transform {
@@ -55,130 +2724,6 @@ Objects {
       IsEnemyCollisionEnabled: true
     }
     DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13714583100410589315
-  Name: "Wall End Fancy 2m"
-  Transform {
-    Location {
-      X: 5258.43799
-      Y: -687.790039
-      Z: 553.690674
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: 178.385086
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16822568136084734308
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12632340981137097503
-  Name: "Wall End Fancy 2m"
-  Transform {
-    Location {
-      X: 5276.57666
-      Y: -119.617188
-      Z: 553.690674
-    }
-    Rotation {
-      Yaw: -1.6149292
-      Roll: 179.999954
-    }
-    Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16822568136084734308
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12612905657108373158
-  Name: "Arch Fancy 3m"
-  Transform {
-    Location {
-      X: 5260.02051
-      Y: -687.691406
-      Z: 553.690674
-    }
-    Rotation {
-      Yaw: -1.61483765
-      Roll: -9.15527344e-05
-    }
-    Scale {
-      X: 1.23727977
-      Y: 0.946400642
-      Z: 0.9464
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4397331359527074146
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
     EnableCameraCollision: true
     StaticMesh {
       Physics {
@@ -303,7 +2848,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -210.660644
+      X: -210.660645
       Y: 1696.16199
       Z: 241.54541
     }
@@ -915,19 +3460,19 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -20.5784912
-      Y: -1697.1936
-      Z: 299.687256
+      X: 50.6621094
+      Y: -1608.98193
+      Z: 596.205811
     }
     Rotation {
-      Pitch: -0.217376709
-      Yaw: 97.3260117
-      Roll: -16.0083
+      Pitch: 8.57757664
+      Yaw: 179.57164
+      Roll: -4.52258301
     }
     Scale {
-      X: 3.47124386
-      Y: 1.90001619
-      Z: 12.317028
+      X: 3.47121716
+      Y: 1.90000939
+      Z: 6.42523909
     }
   }
   ParentId: 11997563873140279666
@@ -935,21 +3480,12 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 1892362005922537256
+        Id: 17885961249823315681
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.806423843
-        B: 0.63
-        A: 1
-      }
     }
   }
   Collidable_v2 {
@@ -960,7 +3496,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 2007256510569021566
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1019,14 +3555,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 3931.9126
-      Y: -2132.8877
-      Z: 328.744141
+      X: 3910.98486
+      Y: -2163.42969
+      Z: 191.812744
     }
     Rotation {
-      Pitch: -11.3850708
-      Yaw: 2.37050867
-      Roll: 38.7892151
+      Pitch: -31.1116943
+      Yaw: 36.2931
+      Roll: 92.3866
     }
     Scale {
       X: 0.815803111
@@ -1062,13 +3598,13 @@ Objects {
   Transform {
     Location {
       X: 3824.60498
-      Y: -2399.69434
+      Y: -2399.69238
       Z: 91.2219238
     }
     Rotation {
-      Pitch: -9.050354
-      Yaw: -0.916687
-      Roll: 25.4799633
+      Pitch: -14.6157837
+      Yaw: -3.65936279
+      Roll: 26.04245
     }
     Scale {
       X: 0.815803111
@@ -1103,16 +3639,16 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 3049.19507
-      Y: -2508.68286
-      Z: -19.3527832
+      X: 3083.96606
+      Y: -2567.95068
+      Z: -54.4863281
     }
     Rotation {
     }
     Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.815803111
+      X: 1
+      Y: 1
+      Z: 1.15
     }
   }
   ParentId: 11997563873140279666
@@ -1125,84 +3661,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14452616722762075696
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6253858577463387120
-  Name: "Fantasy Castle Pillar 01 Base"
-  Transform {
-    Location {
-      X: 3049.25879
-      Y: -2508.60303
-      Z: 459.127197
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.548918307
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13304908840312358092
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16573907643862156180
-  Name: "Fantasy Castle Pillar 01 Base"
-  Transform {
-    Location {
-      X: 2199.50635
-      Y: -2572.66308
-      Z: 459.127197
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.548918307
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13304908840312358092
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1220,16 +3678,16 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 2199.43579
-      Y: -2572.73657
-      Z: -19.3527832
+      X: 2109.18188
+      Y: -2572.73608
+      Z: -54.4863281
     }
     Rotation {
     }
     Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.815803111
+      X: 1
+      Y: 1
+      Z: 1.15
     }
   }
   ParentId: 11997563873140279666
@@ -1242,84 +3700,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14452616722762075696
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16032437399726470292
-  Name: "Fantasy Castle Pillar 01 Base"
-  Transform {
-    Location {
-      X: 878.078613
-      Y: -2411.93018
-      Z: 50.8076172
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.815803111
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14452616722762075696
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10730773637384589184
-  Name: "Fantasy Castle Pillar 01 Base"
-  Transform {
-    Location {
-      X: 878.14209
-      Y: -2411.85693
-      Z: 529.287598
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.548918307
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13304908840312358092
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1337,12 +3717,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4725.54883
-      Y: -1344.18628
-      Z: 782.154053
+      X: 4815.79053
+      Y: -1098.78662
+      Z: 782.154541
     }
     Rotation {
-      Yaw: 85.0710831
+      Yaw: 85.0710602
     }
     Scale {
       X: 3.00346613
@@ -1399,12 +3779,12 @@ Objects {
   Name: "Trim Crenellated 4m 01"
   Transform {
     Location {
-      X: 4621.1377
-      Y: -1721.05786
+      X: 4711.37256
+      Y: -1475.64209
       Z: 1201.27832
     }
     Rotation {
-      Yaw: 83.8411255
+      Yaw: 83.841095
     }
     Scale {
       X: 1.04769051
@@ -1439,8 +3819,8 @@ Objects {
   Name: "Trim Crenellated 4m 01"
   Transform {
     Location {
-      X: 4760.83594
-      Y: -797.874512
+      X: 4851.08643
+      Y: -552.484863
       Z: 1201.27832
     }
     Rotation {
@@ -1479,12 +3859,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4733.03808
-      Y: -1257.89624
-      Z: 328.821045
+      X: 4823.28271
+      Y: -1012.49829
+      Z: 328.821533
     }
     Rotation {
-      Yaw: 85.0710831
+      Yaw: 85.0710602
     }
     Scale {
       X: 2.40382862
@@ -1541,12 +3921,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4747.23096
-      Y: -1093.02246
-      Z: 718.946533
+      X: 4837.48242
+      Y: -847.625488
+      Z: 718.947
     }
     Rotation {
-      Yaw: 85.0710831
+      Yaw: 85.0710602
     }
     Scale {
       X: 3.00346613
@@ -1603,12 +3983,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4750.29199
-      Y: -1057.97
-      Z: 472.348877
+      X: 4840.54785
+      Y: -812.58252
+      Z: 472.349365
     }
     Rotation {
-      Yaw: 85.0710602
+      Yaw: 85.0710297
     }
     Scale {
       X: 2.40382862
@@ -1665,12 +4045,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4732.57617
-      Y: -1263.84351
-      Z: 82.7670898
+      X: 4822.8208
+      Y: -1018.44214
+      Z: 82.7675781
     }
     Rotation {
-      Yaw: 85.0710526
+      Yaw: 85.0710297
     }
     Scale {
       X: 6.60892487
@@ -1727,9 +4107,9 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4837.89453
-      Y: -437.930664
-      Z: 430.062
+      X: 4928.14355
+      Y: -192.557129
+      Z: 430.0625
     }
     Rotation {
       Yaw: 90.1602631
@@ -1789,18 +4169,18 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4732.97266
-      Y: 953.929199
-      Z: 553.690674
+      X: 4725.66699
+      Y: 1133.27881
+      Z: 553.69043
     }
     Rotation {
       Yaw: -174.667236
       Roll: -179.999954
     }
     Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
+      X: 1.23727655
+      Y: 0.946404517
+      Z: 3.59340549
     }
   }
   ParentId: 11997563873140279666
@@ -1830,13 +4210,13 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4682.19141
-      Y: 1520.20605
-      Z: 553.690674
+      X: 4674.89258
+      Y: 1699.54736
+      Z: 553.69043
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 5.33253
+      Yaw: 5.33253336
       Roll: 179.999954
     }
     Scale {
@@ -1872,13 +4252,13 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: 4732.57031
-      Y: 953.869141
-      Z: 553.690674
+      X: 4725.26221
+      Y: 1133.22168
+      Z: 553.69043
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 5.33262968
+      Yaw: 5.33263779
       Roll: -9.15527344e-05
     }
     Scale {
@@ -1914,18 +4294,18 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4672.1377
-      Y: 704.438476
-      Z: 553.690674
+      X: 4664.83105
+      Y: 883.787598
+      Z: 553.69043
     }
     Rotation {
       Yaw: 0.948037326
       Roll: 179.999954
     }
     Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
+      X: 1.23728275
+      Y: 0.9464
+      Z: 3.18854356
     }
   }
   ParentId: 11997563873140279666
@@ -1955,9 +4335,9 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4679.4956
-      Y: 135.958008
-      Z: 553.690674
+      X: 4769.76318
+      Y: 381.30957
+      Z: 553.691162
     }
     Rotation {
       Pitch: 6.83018879e-06
@@ -1997,14 +4377,14 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: 4704.10303
-      Y: 80.152832
+      X: 4704.10059
+      Y: 80.1518555
       Z: 142.108887
     }
     Rotation {
-      Pitch: 86.0059891
-      Yaw: 165.310928
-      Roll: 143.313828
+      Pitch: 81.5533
+      Yaw: 134.197098
+      Roll: 112.351898
     }
     Scale {
       X: 1.23727977
@@ -2039,9 +4419,9 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: 4726.08252
-      Y: -684.130859
-      Z: 553.690674
+      X: 4816.35449
+      Y: -438.758301
+      Z: 553.691162
     }
     Rotation {
       Yaw: 0.948133111
@@ -2080,9 +4460,9 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4717.19873
-      Y: -115.842285
-      Z: 553.690674
+      X: 4807.46875
+      Y: 129.510742
+      Z: 553.691162
     }
     Rotation {
       Yaw: 0.948037326
@@ -2121,9 +4501,9 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4724.51758
-      Y: -684.299316
-      Z: 553.690674
+      X: 4814.77051
+      Y: -438.933105
+      Z: 553.691162
     }
     Rotation {
       Pitch: 6.83018879e-06
@@ -2163,9 +4543,9 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4679.19971
-      Y: -930.588867
-      Z: 553.690674
+      X: 4769.45508
+      Y: -685.202637
+      Z: 553.691162
     }
     Rotation {
       Yaw: -8.53222656
@@ -2204,13 +4584,13 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4592.78857
-      Y: -1492.49951
-      Z: 553.690674
+      X: 4690.02637
+      Y: -1217.33032
+      Z: 553.691162
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 171.467545
+      Yaw: 171.467484
       Roll: -179.999954
     }
     Scale {
@@ -2246,9 +4626,9 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: 4594.33301
-      Y: -1492.5708
-      Z: 553.690674
+      X: 4684.60742
+      Y: -1247.17285
+      Z: 553.691162
     }
     Rotation {
       Yaw: -8.53216553
@@ -2287,12 +4667,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4521.15137
-      Y: -1683.34473
-      Z: 119.910156
+      X: 4618.09131
+      Y: -1340.19556
+      Z: 119.910645
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 76.1624222
     }
     Scale {
       X: 0.815803111
@@ -2327,12 +4707,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4521.15137
-      Y: -1683.34473
-      Z: 610.580566
+      X: 4618.09131
+      Y: -1340.19556
+      Z: 610.581055
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 76.1624222
     }
     Scale {
       X: 0.815803111
@@ -2367,12 +4747,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4521.15137
-      Y: -1683.34473
-      Z: 758.464355
+      X: 4618.09131
+      Y: -1340.19556
+      Z: 758.464844
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 76.1624222
     }
     Scale {
       X: 0.815803111
@@ -2407,12 +4787,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4597.47852
-      Y: 1791.36426
-      Z: 758.464355
+      X: 4599.36328
+      Y: 1783.86621
+      Z: 692.498535
     }
     Rotation {
-      Yaw: 104.143188
+      Yaw: 104.143196
     }
     Scale {
       X: 0.815803111
@@ -2447,12 +4827,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4597.47852
-      Y: 1791.36426
-      Z: 119.910156
+      X: 4599.36328
+      Y: 1783.86621
+      Z: -84.9855957
     }
     Rotation {
-      Yaw: 104.143188
+      Yaw: 104.143196
     }
     Scale {
       X: 0.815803111
@@ -2487,17 +4867,17 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4597.47852
-      Y: 1791.36426
-      Z: 610.580566
+      X: 4599.36328
+      Y: 1783.86621
+      Z: 401.892822
     }
     Rotation {
-      Yaw: 104.143188
+      Yaw: 104.143196
     }
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.24568595
+      Z: 0.50314188
     }
   }
   ParentId: 11997563873140279666
@@ -2527,12 +4907,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4717.2666
-      Y: 804.894043
-      Z: 125.557617
+      X: 4709.96338
+      Y: 999.522949
+      Z: -73.9946289
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999542
     }
     Scale {
       X: 0.815803111
@@ -2567,12 +4947,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4779.74512
-      Y: -3.77441406
-      Z: 112.574707
+      X: 4775.4624
+      Y: 249.735352
+      Z: 112.575195
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999542
     }
     Scale {
       X: 0.815803111
@@ -2607,12 +4987,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4779.74512
-      Y: -3.77441406
-      Z: 603.245117
+      X: 4775.4624
+      Y: 249.735352
+      Z: 603.245605
     }
     Rotation {
-      Yaw: 89.9999771
+      Yaw: 89.9999542
     }
     Scale {
       X: 0.815803111
@@ -2648,7 +5028,7 @@ Objects {
   Transform {
     Location {
       X: 4591.86719
-      Y: -7.85351562
+      Y: -7.85351563
       Z: 132.606934
     }
     Rotation {
@@ -2689,17 +5069,17 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4741.42676
-      Y: -825.18457
-      Z: 610.580566
+      X: 4831.67822
+      Y: -579.804199
+      Z: 525.713379
     }
     Rotation {
-      Yaw: 79.5067
+      Yaw: 79.5066452
     }
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.24568595
+      Z: 0.391418338
     }
   }
   ParentId: 11997563873140279666
@@ -2729,12 +5109,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4741.42676
-      Y: -825.18457
-      Z: 119.910156
+      X: 4831.67822
+      Y: -579.804199
+      Z: 36.6899414
     }
     Rotation {
-      Yaw: 79.5067
+      Yaw: 79.5066452
     }
     Scale {
       X: 0.815803111
@@ -2769,12 +5149,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4741.42676
-      Y: -825.18457
-      Z: 758.464355
+      X: 4831.67822
+      Y: -579.804199
+      Z: 758.464844
     }
     Rotation {
-      Yaw: 79.5067
+      Yaw: 79.5066681
     }
     Scale {
       X: 0.815803111
@@ -2930,8 +5310,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 854.624634
-      Y: 2811.58618
+      X: 938.470215
+      Y: 2811.56982
       Z: 35.4072266
     }
     Rotation {
@@ -2972,8 +5352,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 665.851074
-      Y: 2874.50903
+      X: 749.698
+      Y: 2874.49463
       Z: -67.0395508
     }
     Rotation {
@@ -3011,16 +5391,19 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 1339.81885
-      Y: 2874.54248
-      Z: 418.04248
+      X: 1390.38416
+      Y: 2884.35986
+      Z: 425.132568
     }
     Rotation {
+      Pitch: -1.89025879
+      Yaw: 3.41472719e-06
+      Roll: 5.04030631e-08
     }
     Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.548918307
+      X: 0.815807343
+      Y: 0.815796554
+      Z: 0.73633
     }
   }
   ParentId: 11997563873140279666
@@ -3050,11 +5433,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 1339.75903
-      Y: 2874.46728
-      Z: -60.4375
+      X: 1373.22363
+      Y: 2874.46338
+      Z: -61.5419922
     }
     Rotation {
+      Pitch: -1.89025879
+      Yaw: 3.41472719e-06
+      Roll: 5.04030631e-08
     }
     Scale {
       X: 0.815803111
@@ -3137,7 +5523,7 @@ Objects {
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.548918307
+      Z: 0.7
     }
   }
   ParentId: 11997563873140279666
@@ -3167,8 +5553,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 2017.72498
-      Y: 2874.38892
+      X: 2076.96655
+      Y: 2874.3772
       Z: -60.3615723
     }
     Rotation {
@@ -3206,8 +5592,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 2017.78821
-      Y: 2874.47168
+      X: 2077.0293
+      Y: 2874.45923
       Z: 418.04248
     }
     Rotation {
@@ -3215,7 +5601,7 @@ Objects {
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.548918307
+      Z: 0.7
     }
   }
   ParentId: 11997563873140279666
@@ -3245,8 +5631,8 @@ Objects {
   Name: "Archery_Target"
   Transform {
     Location {
-      X: 2610.29883
-      Y: -5288.08105
+      X: 2152.54346
+      Y: -5945.1875
       Z: -39.8881836
     }
     Rotation {
@@ -3312,7 +5698,7 @@ Objects {
   Transform {
     Location {
       X: -17.2338867
-      Y: 71.1914062
+      Y: 71.1914063
       Z: 95.887207
     }
     Rotation {
@@ -3563,7 +5949,7 @@ Objects {
   Transform {
     Location {
       X: -27.1599121
-      Y: -53.1757812
+      Y: -53.1757813
       Z: 5.9375
     }
     Rotation {
@@ -3996,70 +6382,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6421341477434392834
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: -151.428467
-      Y: -1449.95801
-      Z: 826.397
-    }
-    Rotation {
-      Pitch: 33.1092529
-      Yaw: 90.1911469
-      Roll: 0.104638562
-    }
-    Scale {
-      X: 3.07869768
-      Y: 1.89999735
-      Z: 1.76143372
-    }
-  }
-  ParentId: 11997563873140279666
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 1892362005922537256
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.806423843
-        B: 0.63
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 12635604829995091674
   Name: "Default Floor"
   Transform {
@@ -4119,19 +6441,19 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: -76.4401855
-      Y: 117.014648
-      Z: 553.691406
+      X: -76.1161041
+      Y: 117.434113
+      Z: 531.953857
     }
     Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -179.051895
-      Roll: -179.999954
+      Pitch: 1.36603776e-05
+      Yaw: -179.051971
+      Roll: -178.629532
     }
     Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
+      X: 1.23727453
+      Y: 0.946406662
+      Z: 2.43440437
     }
   }
   ParentId: 11997563873140279666
@@ -4265,14 +6587,14 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -9.10803223
-      Y: -1505.4436
-      Z: 504.317383
+      X: 35.0325928
+      Y: -1466.68616
+      Z: 443.33252
     }
     Rotation {
-      Pitch: -12.2632751
-      Yaw: -2.72906494
-      Roll: 28.6808205
+      Pitch: 3.50846982
+      Yaw: 5.76551771
+      Roll: 28.0237122
     }
     Scale {
       X: 1.23727977
@@ -4349,13 +6671,13 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: -83.7807541
-      Y: -135.526611
-      Z: 553.691406
+      X: -83.7619095
+      Y: -136.650665
+      Z: 482.717773
     }
     Rotation {
-      Yaw: 0.94803834
-      Roll: -175.892776
+      Yaw: 0.94803524
+      Roll: -177.589783
     }
     Scale {
       X: 1.23727977
@@ -4473,14 +6795,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 145.800293
-      Y: -1732.40942
-      Z: 212.26709
+      X: 522.125
+      Y: -1713.39868
+      Z: 269.126465
     }
     Rotation {
-      Pitch: -0.000122070312
-      Yaw: 89.9987106
-      Roll: -68.3931885
+      Pitch: -12.6936951
+      Yaw: 121.111649
+      Roll: -111.085266
     }
     Scale {
       X: 0.815803111
@@ -4515,19 +6837,19 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -53.237915
-      Y: -774.404
-      Z: 599.555664
+      X: -42.3017578
+      Y: -778.121094
+      Z: 561.720459
     }
     Rotation {
       Pitch: -5.61038208
-      Yaw: 89.9999161
-      Roll: 1.71576619e-06
+      Yaw: 89.9998932
+      Roll: 1.28682461e-06
     }
     Scale {
-      X: 0.815803111
-      Y: 0.815803111
-      Z: 0.24568595
+      X: 0.81579417
+      Y: 0.81576848
+      Z: 0.5
     }
   }
   ParentId: 11997563873140279666
@@ -4558,13 +6880,13 @@ Objects {
   Transform {
     Location {
       X: -23.3618164
-      Y: -825.179199
-      Z: 119.910156
+      Y: -829.538086
+      Z: 75.5383301
     }
     Rotation {
       Pitch: -5.61038208
-      Yaw: 89.999939
-      Roll: 1.28682461e-06
+      Yaw: 89.9999161
+      Roll: 1.71576619e-06
     }
     Scale {
       X: 0.815803111
@@ -4599,9 +6921,9 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.361084
-      Y: -3.74707031
-      Z: 119.910156
+      X: -36.6209145
+      Y: -3.74785614
+      Z: -23.7116699
     }
     Rotation {
       Yaw: 90.0000076
@@ -4639,9 +6961,9 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.361084
-      Y: -3.74707031
-      Z: 610.580566
+      X: -36.767334
+      Y: -3.74675751
+      Z: 465.951416
     }
     Rotation {
       Yaw: 90.0000076
@@ -4649,7 +6971,7 @@ Objects {
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.24568595
+      Z: 0.5
     }
   }
   ParentId: 11997563873140279666
@@ -4679,8 +7001,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.361084
-      Y: -3.74707031
+      X: -50.6781158
+      Y: -3.74741364
       Z: 758.464355
     }
     Rotation {
@@ -4761,14 +7083,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 685.772949
-      Y: -1732.41113
-      Z: 227.342285
+      X: 1049.10913
+      Y: -1816.10938
+      Z: 194.400146
     }
     Rotation {
-      Pitch: -0.000152587891
-      Yaw: 89.9993591
-      Roll: -70.4501343
+      Pitch: 1.54453111
+      Yaw: 122.025902
+      Roll: -131.152191
     }
     Scale {
       X: 0.815803111
@@ -4927,13 +7249,13 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: -74.869873
-      Y: 117.18457
-      Z: 553.691406
+      X: -74.5433502
+      Y: 117.424683
+      Z: 528.369385
     }
     Rotation {
-      Yaw: 0.948161066
-      Roll: -9.15527344e-05
+      Yaw: 0.948158562
+      Roll: 2.79300976
     }
     Scale {
       X: 1.23727977
@@ -4968,18 +7290,18 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: -83.7810059
-      Y: 685.510742
-      Z: 553.691406
+      X: -83.744812
+      Y: 683.422913
+      Z: 510.917969
     }
     Rotation {
-      Yaw: 0.948040664
-      Roll: 179.999954
+      Yaw: 0.948039055
+      Roll: -177.20694
     }
     Scale {
-      X: 1.23727977
-      Y: 0.946402133
-      Z: 2.18511462
+      X: 1.23728549
+      Y: 0.946405
+      Z: 3.69817567
     }
   }
   ParentId: 11997563873140279666
@@ -5051,9 +7373,9 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.3604126
-      Y: 804.942
-      Z: -54.0703125
+      X: -20.8554688
+      Y: 804.943237
+      Z: -76.2990723
     }
     Rotation {
       Yaw: 90.0000076
@@ -5091,9 +7413,9 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.3604126
-      Y: 804.942
-      Z: 432.934814
+      X: -21.1580811
+      Y: 804.942627
+      Z: 364.615723
     }
     Rotation {
       Yaw: 90.0000076
@@ -5101,7 +7423,7 @@ Objects {
     Scale {
       X: 0.815803111
       Y: 0.815803111
-      Z: 0.570676088
+      Z: 0.683657229
     }
   }
   ParentId: 11997563873140279666
@@ -5131,9 +7453,9 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.361084
-      Y: 804.942871
-      Z: 758.464355
+      X: -23.3604126
+      Y: 804.942
+      Z: 747.357178
     }
     Rotation {
       Yaw: 90.0000076
@@ -5171,8 +7493,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.355957
-      Y: 1772.18274
+      X: -23.3583984
+      Y: 1940.2981
       Z: -54.0703125
     }
     Rotation {
@@ -5211,8 +7533,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.3554688
-      Y: 1772.1831
+      X: -23.3583984
+      Y: 1940.2981
       Z: 758.464355
     }
     Rotation {
@@ -5251,8 +7573,8 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -23.355957
-      Y: 1772.18274
+      X: -23.3583984
+      Y: 1940.2981
       Z: 432.934814
     }
     Rotation {
@@ -5571,16 +7893,16 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -156.40863
-      Y: 523.674866
+      X: -113.200806
+      Y: 523.796082
       Z: 973.57666
     }
     Rotation {
       Yaw: 90.1602859
     }
     Scale {
-      X: 27.2938099
-      Y: 1.89998794
+      X: 27.293808
+      Y: 1.08147264
       Z: 3.42637
     }
   }
@@ -5642,21 +7964,12 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 1892362005922537256
+        Id: 17885961249823315681
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
       Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.806423843
-        B: 0.63
-        A: 1
-      }
     }
   }
   Collidable_v2 {
@@ -5794,17 +8107,17 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -152.922607
-      Y: -828.657226
-      Z: 90.1650391
+      X: -144.680481
+      Y: -828.63269
+      Z: 877.331787
     }
     Rotation {
-      Yaw: 90.1602936
+      Yaw: 90.1602859
     }
     Scale {
       X: 2.18121839
       Y: 1.89999723
-      Z: 20.1206169
+      Z: 1.55281162
     }
   }
   ParentId: 11997563873140279666
@@ -5812,7 +8125,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 1892362005922537256
+        Id: 17885961249823315681
       }
     }
     Overrides {
@@ -5828,7 +8141,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 12095835209017042614
+      Id: 10010083964673251729
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -5847,19 +8160,19 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -151.428467
-      Y: -949.499
-      Z: 771.371582
+      X: -151.388
+      Y: -975.034607
+      Z: 577.69458
     }
     Rotation {
-      Pitch: -51.3709412
-      Yaw: 90.2561874
-      Roll: -0.200223044
+      Pitch: -88.9074707
+      Yaw: 96.7229843
+      Roll: -6.63726807
     }
     Scale {
-      X: 3.07869768
-      Y: 1.89999735
-      Z: 1.76143372
+      X: 3.07870126
+      Y: 1.89997375
+      Z: 2.4961853
     }
   }
   ParentId: 11997563873140279666
@@ -5867,7 +8180,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 1892362005922537256
+        Id: 17885961249823315681
       }
     }
     Overrides {
