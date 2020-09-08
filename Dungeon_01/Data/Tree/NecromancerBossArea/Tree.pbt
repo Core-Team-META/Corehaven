@@ -2011,9 +2011,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2152,9 +2152,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2253,9 +2253,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2354,9 +2354,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2415,9 +2415,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2476,9 +2476,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2537,9 +2537,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2598,9 +2598,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -2899,9 +2899,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -3040,9 +3040,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -3141,9 +3141,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -3202,9 +3202,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -3263,9 +3263,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -17171,6 +17171,9 @@ Objects {
   ChildIds: 17813143559687829480
   ChildIds: 5320387424212436685
   ChildIds: 16462418174454319674
+  ChildIds: 12282144525985433933
+  ChildIds: 18129520232654972307
+  ChildIds: 4770566201001648417
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -17179,6 +17182,127 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 4770566201001648417
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 3213.4043
+      Y: -213.838867
+      Z: 673.956665
+    }
+    Rotation {
+      Yaw: -90
+      Roll: -90
+    }
+    Scale {
+      X: 0.881272614
+      Y: 0.995725691
+      Z: 1.09835708
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18129520232654972307
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 3215.65918
+      Y: -913.422119
+      Z: -2.07803345
+    }
+    Rotation {
+      Pitch: 90
+    }
+    Scale {
+      X: 0.889446557
+      Y: 0.941923082
+      Z: 1.09835708
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12282144525985433933
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 3225.7959
+      Y: -271.103027
+      Z: -2.07803345
+    }
+    Rotation {
+      Pitch: 90
+    }
+    Scale {
+      X: 0.889446557
+      Y: 0.774501204
+      Z: 1.09835708
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -17214,9 +17338,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -17275,9 +17399,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -17308,7 +17432,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 3286.47314
+      X: 3265.26172
       Y: -148.216309
       Z: 285.510468
     }
@@ -17336,9 +17460,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -18007,9 +18131,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }
@@ -18098,7 +18222,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 447.320801
+      X: 468.34082
       Y: 27.8554688
       Z: 33.9559326
     }
@@ -18258,7 +18382,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -447.679199
+      X: -457.03186
       Y: 27.8554688
       Z: 33.9559326
     }
@@ -18501,9 +18625,9 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
         A: 1
       }
     }

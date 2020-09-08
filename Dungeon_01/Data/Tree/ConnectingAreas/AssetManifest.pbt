@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18113635384891617429
+  Name: "Branches Cluster Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_small_001"
+  }
+}
+Assets {
   Id: 18097083884483661581
   Name: "Crescent - 02"
   PlatformAssetType: 1
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-arch_6m_002"
+  }
+}
+Assets {
+  Id: 17864286086334893165
+  Name: "Dresser Drawer"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_drawer_wide_001"
   }
 }
 Assets {
@@ -170,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15896950384246215608
+  Name: "Decal Leaves 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_leaves_001"
+  }
+}
+Assets {
   Id: 15836124893126841361
   Name: "Fantasy Castle Wall 02 - Doorway 01 Half"
   PlatformAssetType: 1
@@ -230,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F7_Text_065"
+  }
+}
+Assets {
+  Id: 15133650127023849428
+  Name: "Chest Big Closed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_003"
   }
 }
 Assets {
@@ -764,6 +800,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9694408950118880386
+  Name: "Craftsman End Table"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_end_table_001"
+  }
+}
+Assets {
   Id: 9662723091772095612
   Name: "Fantasy Castle Door 01"
   PlatformAssetType: 1
@@ -941,6 +986,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001_door_02"
+  }
+}
+Assets {
+  Id: 8300636919331825686
+  Name: "Tree Birch Bare 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_004"
   }
 }
 Assets {
@@ -1304,6 +1358,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
   Id: 5252633986049924065
   Name: "Text 03: R"
   PlatformAssetType: 1
@@ -1418,6 +1481,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 3965397322580208730
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
+  Id: 3837058515785757415
+  Name: "Wispy Fog Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fog_volume_vfx"
   }
 }
 Assets {
@@ -1592,6 +1673,15 @@ Assets {
   }
 }
 Assets {
+  Id: 1940573144649138177
+  Name: "Craftsman Dining Chair"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_chair_dining_001"
+  }
+}
+Assets {
   Id: 1892362005922537256
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
@@ -1709,6 +1799,15 @@ Assets {
   }
 }
 Assets {
+  Id: 681895079083266829
+  Name: "Fern 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_003"
+  }
+}
+Assets {
   Id: 666374143927038811
   Name: "Cube - Chamfered Large"
   PlatformAssetType: 1
@@ -1724,5 +1823,14 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_004"
+  }
+}
+Assets {
+  Id: 45617072321620321
+  Name: "Flower Daisy Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_flower_daisy_001"
   }
 }

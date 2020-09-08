@@ -16,6 +16,7 @@
           }
         }
         ParentId: 10874816195359804700
+        ChildIds: 18404520262375363526
         ChildIds: 6156279244924452981
         ChildIds: 8545045838586853368
         Collidable_v2 {
@@ -26,6 +27,46 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 18404520262375363526
+        Name: "Candle Flame VFX_port"
+        Transform {
+          Location {
+            X: -63.484848
+            Y: -4.93334198
+            Z: 492.814484
+          }
+          Rotation {
+            Yaw: -105.041924
+          }
+          Scale {
+            X: 6.72386312
+            Y: 6.72386312
+            Z: 6.72386312
+          }
+        }
+        ParentId: 11497261407930304372
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -3365,6 +3406,15 @@
             }
           }
         }
+      }
+    }
+    Assets {
+      Id: 9199751096616988864
+      Name: "Candle Flame VFX"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "fxsm_candleflame"
       }
     }
     Assets {

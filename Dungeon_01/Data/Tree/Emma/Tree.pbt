@@ -615,28 +615,51 @@ Objects {
   ParentId: 11788695356358832208
   ChildIds: 13512795126437692371
   ChildIds: 1890878382283839670
-  ChildIds: 4969849455633182689
   ChildIds: 14288279076665648186
-  ChildIds: 12802944135735076604
   ChildIds: 9734722144300187971
-  ChildIds: 14187489183964943795
-  ChildIds: 3774093325040267761
-  ChildIds: 10272728587612290180
   ChildIds: 2992117520697730052
-  ChildIds: 3598955573346191703
-  ChildIds: 14170812849417812391
   ChildIds: 11502977051299720817
-  ChildIds: 1302935393356402574
   ChildIds: 10318038174495179742
   ChildIds: 1193590179614122881
   ChildIds: 11545085002948609527
-  ChildIds: 6103168649523636737
   ChildIds: 3002335126204831613
-  ChildIds: 7370756806406076031
-  ChildIds: 17935503301378004365
   ChildIds: 2459120150977363642
   ChildIds: 8793627363162393281
   ChildIds: 3627992885306111024
+  ChildIds: 15415178000413663035
+  ChildIds: 12951101809253390741
+  ChildIds: 13236593839308307117
+  ChildIds: 12066014476846021450
+  ChildIds: 12178227050394319941
+  ChildIds: 2049125963285324833
+  ChildIds: 3734632589604301246
+  ChildIds: 10624488704339349503
+  ChildIds: 8018320626226656315
+  ChildIds: 13795172645408819631
+  ChildIds: 369498368161353495
+  ChildIds: 3417896121576939917
+  ChildIds: 14022688342770917874
+  ChildIds: 7645148611081574364
+  ChildIds: 7965291450716624686
+  ChildIds: 2413275204947008155
+  ChildIds: 1969942262305874678
+  ChildIds: 10086812877419747627
+  ChildIds: 8107996829288880338
+  ChildIds: 17444991004379268309
+  ChildIds: 16537797295875185828
+  ChildIds: 11856067965440820188
+  ChildIds: 12290737054092633466
+  ChildIds: 14506485206031714046
+  ChildIds: 7969633374646192548
+  ChildIds: 18229785072313550926
+  ChildIds: 14052056348118796614
+  ChildIds: 1168665749222672255
+  ChildIds: 676337993076765200
+  ChildIds: 5918070939470978172
+  ChildIds: 16504361422375774454
+  ChildIds: 3557361433100675463
+  ChildIds: 5251382437170591753
+  ChildIds: 3487776314689703691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -645,6 +668,2366 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3487776314689703691
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -97.3310242
+      Y: 392.629333
+      Z: 321.472473
+    }
+    Rotation {
+      Pitch: -0.000122070313
+      Yaw: 90.0000763
+      Roll: 5.86239807e-11
+    }
+    Scale {
+      X: 0.796087801
+      Y: 1.39455938
+      Z: 1.39455867
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5251382437170591753
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1453.91663
+      Y: 445.772797
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: -9.15527344e-05
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3557361433100675463
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1437.44373
+      Y: 427.208221
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 89.9999466
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16504361422375774454
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 765.195
+      Y: 440.115295
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: -90.000061
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5918070939470978172
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 724.437134
+      Y: 437.596405
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 89.999939
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 676337993076765200
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 0.904155731
+      Y: 451.247101
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: -90.000061
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1168665749222672255
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 723.894714
+      Y: 380.705536
+      Z: 319.32196
+    }
+    Rotation {
+      Pitch: -0.000122070313
+      Yaw: 90.0000916
+      Roll: 5.2110205e-11
+    }
+    Scale {
+      X: 0.796087801
+      Y: 1.39455938
+      Z: 1.39455867
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14052056348118796614
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1429.69873
+      Y: 370.454681
+      Z: 319.32196
+    }
+    Rotation {
+      Pitch: -0.000122070313
+      Yaw: 90.0001
+      Roll: 5.2110205e-11
+    }
+    Scale {
+      X: 0.796087801
+      Y: 1.39455938
+      Z: 1.39455867
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18229785072313550926
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1433.12854
+      Y: 403.829
+      Z: -287.700745
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.853319824
+      Y: 0.881027758
+      Z: 0.90264225
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7969633374646192548
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1424.96057
+      Y: 396.745148
+      Z: 139.223724
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.252143502
+      Y: 1.23896801
+      Z: 1.26936483
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14506485206031714046
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 719.972473
+      Y: 414.20578
+      Z: -291.562073
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.853319824
+      Y: 0.881027758
+      Z: 0.90264225
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12290737054092633466
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 711.793579
+      Y: 407.123077
+      Z: 132.245422
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.315790951
+      Y: 1.23896801
+      Z: 1.26936483
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11856067965440820188
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -40.1992531
+      Y: 425.265259
+      Z: -169.436096
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.853319824
+      Y: 0.881027758
+      Z: 0.90264225
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16537797295875185828
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -48.3887672
+      Y: 418.181854
+      Z: 132.245422
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.315790951
+      Y: 1.23896801
+      Z: 1.26936483
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17444991004379268309
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 0.483503342
+      Y: -778.730408
+      Z: 139.223724
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 89.9998169
+    }
+    Scale {
+      X: 0.315790951
+      Y: 1.23896801
+      Z: 1.26936483
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8107996829288880338
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -54.9926186
+      Y: -247.081955
+      Z: 139.223724
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999969
+    }
+    Scale {
+      X: 0.315790951
+      Y: 1.23896801
+      Z: 1.26936483
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10086812877419747627
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -29.5192909
+      Y: -745.884094
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 89.9999466
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1969942262305874678
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1456.64844
+      Y: 426.21579
+      Z: -156.075104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.743358731
+      Y: 0.743358731
+      Z: 0.987769186
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4193024863549911546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2413275204947008155
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 743.800293
+      Y: 435.930359
+      Z: -156.075104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.743358731
+      Y: 0.743358731
+      Z: 0.987769186
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4193024863549911546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7965291450716624686
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -18.4074135
+      Y: 447.016632
+      Z: -156.075104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.743358731
+      Y: 0.743358731
+      Z: 0.987769186
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4193024863549911546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7645148611081574364
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -24.3630276
+      Y: -214.754959
+      Z: -156.075104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.743358731
+      Y: 0.743358731
+      Z: 0.987769186
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4193024863549911546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14022688342770917874
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -29.7076073
+      Y: -746.527
+      Z: -156.075104
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.743358731
+      Y: 0.743358731
+      Z: 0.987769186
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4193024863549911546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3417896121576939917
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -21.2618599
+      Y: 431.839569
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 0.723852694
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 369498368161353495
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -25.5129204
+      Y: -199.746429
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 1.63665473
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13795172645408819631
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -25.8165112
+      Y: -230.020569
+      Z: 330.723602
+    }
+    Rotation {
+      Yaw: 177.007111
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8018320626226656315
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -31.438755
+      Y: -726.169861
+      Z: 330.723602
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2664847478369185144
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.30440497
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1.42715394
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.255208343
+        G: 0.200631499
+        B: 0.172797322
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10624488704339349503
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -24.1990471
+      Y: -758.726563
+      Z: 388.051697
+    }
+    Rotation {
+      Pitch: 0.000102452832
+      Yaw: 89.999794
+      Roll: 2.27982147e-11
+    }
+    Scale {
+      X: 1.35955536
+      Y: 1
+      Z: 0.999999464
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2519316253986562073
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.125
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 2.38903475
+    }
+    Overrides {
+      Name: "ma:Building_Accent:id"
+      AssetReference {
+        Id: 7646389220357853141
+      }
+    }
+    Overrides {
+      Name: "ma:Building_Accent:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.145833328
+        G: 0.10307727
+        B: 0.0812716931
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11390981272720591546
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3734632589604301246
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1431.47119
+      Y: 406.970459
+      Z: 365.15918
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.66618675
+      Y: 0.99999994
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2049125963285324833
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 768.010559
+      Y: 409.9646
+      Z: 365.15918
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 89.9996796
+    }
+    Scale {
+      X: 0.66618675
+      Y: 0.99999994
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12178227050394319941
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -45.5469742
+      Y: 410.048737
+      Z: 365.15918
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 179.999939
+    }
+    Scale {
+      X: 0.66618675
+      Y: 0.99999994
+      Z: 1
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12066014476846021450
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 1511.90283
+      Y: 396.494598
+      Z: 319.32196
+    }
+    Rotation {
+      Yaw: -179.999893
+      Roll: -0.000122070313
+    }
+    Scale {
+      X: 2.90949965
+      Y: 1.39455914
+      Z: 1.39455891
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13236593839308307117
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: -49.8691902
+      Y: -239.954041
+      Z: -169.436096
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -3.05175781e-05
+      Roll: 179.999924
+    }
+    Scale {
+      X: 0.853319824
+      Y: 0.881027758
+      Z: 0.90264225
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12951101809253390741
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 9.48534203
+      Y: -248.796677
+      Z: 385.87915
+    }
+    Rotation {
+      Yaw: -179.999893
+      Roll: -90.000061
+    }
+    Scale {
+      X: 1.07894659
+      Y: 1.39456034
+      Z: 1.39455879
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15415178000413663035
+  Name: "Cube - Chamfered Small Polished"
+  Transform {
+    Location {
+      X: 7.84081268
+      Y: -711.268616
+      Z: 319.32196
+    }
+    Rotation {
+      Yaw: -179.999893
+      Roll: 89.999939
+    }
+    Scale {
+      X: 1.10649335
+      Y: 1.39456034
+      Z: 1.39455903
+    }
+  }
+  ParentId: 12715987557631592755
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 14231809728886464860
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13840443032411406179
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -849,226 +3232,21 @@ Objects {
   }
 }
 Objects {
-  Id: 17935503301378004365
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -22.4719582
-      Y: 452.549408
-      Z: 313.606323
-    }
-    Rotation {
-      Pitch: -90
-      Roll: 89.9997482
-    }
-    Scale {
-      X: 11.5183802
-      Y: 0.476060241
-      Z: 0.511724055
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7370756806406076031
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: 744.462585
-      Y: 441.417114
-      Z: 313.606323
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: 90
-      Roll: -0.000152587891
-    }
-    Scale {
-      X: 11.5183802
-      Y: 0.476060241
-      Z: 0.511724055
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 3002335126204831613
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 426.203217
-      Y: 423.847137
+      X: 726.165649
+      Y: 431.533112
       Z: 388.053955
     }
     Rotation {
       Yaw: 179.999878
-      Roll: 0.000102452461
+      Roll: 0.000102452403
     }
     Scale {
-      X: 1.35156143
-      Y: 1.00000143
-      Z: 1
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-    Overrides {
-      Name: "ma:Building_Accent:id"
-      AssetReference {
-        Id: 7646389220357853141
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Accent:color"
-      Color {
-        R: 0.145833328
-        G: 0.10307727
-        B: 0.0812716931
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:color"
-      Color {
-        R: 0.145833328
-        G: 0.10307727
-        B: 0.0812716931
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11390981272720591546
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6103168649523636737
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: 941.295
-      Y: 426.362274
-      Z: 388.053955
-    }
-    Rotation {
-      Yaw: 179.999878
-      Roll: 0.000102452599
-    }
-    Scale {
-      X: 1.5
-      Y: 1
+      X: 1.83175611
+      Y: 1.00000036
       Z: 1
     }
   }
@@ -1142,16 +3320,16 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: 1473.67981
-      Y: 427.068909
+      X: 1445.5929
+      Y: 434.011658
       Z: 388.053955
     }
     Rotation {
       Yaw: 179.999878
-      Roll: 0.000102452737
+      Roll: 0.000102452679
     }
     Scale {
-      X: 1.5
+      X: 1.77415884
       Y: 1
       Z: 1
     }
@@ -1311,104 +3489,19 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -109.647415
-      Y: -163.491409
+      X: -24.1977558
+      Y: -197.338516
       Z: 388.052734
     }
     Rotation {
       Pitch: 0.000102452832
-      Yaw: 89.9998474
-      Roll: 1.62844391e-11
+      Yaw: 89.9998245
+      Roll: 1.95413269e-11
     }
     Scale {
-      X: 1.5
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-    Overrides {
-      Name: "ma:Building_Accent:id"
-      AssetReference {
-        Id: 7646389220357853141
-      }
-    }
-    Overrides {
-      Name: "ma:Building_Accent:color"
-      Color {
-        R: 0.145833328
-        G: 0.10307727
-        B: 0.0812716931
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Trim:color"
-      Color {
-        R: 0.145833328
-        G: 0.10307727
-        B: 0.0812716931
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11390981272720591546
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 1302935393356402574
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -109.648628
-      Y: -755.931152
-      Z: 388.051636
-    }
-    Rotation {
-      Pitch: 0.000102452832
-      Yaw: 89.9998474
-      Roll: 1.62844391e-11
-    }
-    Scale {
-      X: 1.5
-      Y: 1
-      Z: 1
+      X: 1.54033625
+      Y: 0.999999762
+      Z: 0.99999994
     }
   }
   ParentId: 12715987557631592755
@@ -1481,17 +3574,17 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -95.3252258
-      Y: -756.141785
+      X: -29.7994862
+      Y: -747.237488
       Z: 388.051636
     }
     Rotation {
       Yaw: 179.999893
-      Roll: 0.000102452817
+      Roll: 0.000102452788
     }
     Scale {
-      X: 1.66097772
-      Y: 0.99999851
+      X: 1.96078026
+      Y: 1.00000191
       Z: 1
     }
   }
@@ -1561,133 +3654,12 @@ Objects {
   }
 }
 Objects {
-  Id: 14170812849417812391
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: 1462.31482
-      Y: 430.9888
-      Z: 313.606323
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: -26.565033
-      Roll: 116.564857
-    }
-    Scale {
-      X: 11.5183802
-      Y: 0.476060241
-      Z: 0.511724055
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3598955573346191703
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: 1472.35535
-      Y: 655.991
-      Z: 345.668457
-    }
-    Rotation {
-      Yaw: 89.9998474
-      Roll: -89.999939
-    }
-    Scale {
-      X: 5.20000029
-      Y: 0.8
-      Z: 0.7
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 2992117520697730052
   Name: "Default Floor"
   Transform {
     Location {
-      X: 640.568298
-      Y: 845.530884
+      X: 640.8078
+      Y: 862.796509
       Z: 375.668457
     }
     Rotation {
@@ -1741,200 +3713,23 @@ Objects {
   }
 }
 Objects {
-  Id: 10272728587612290180
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: 693.912231
-      Y: 431.000427
-      Z: 365.668457
-    }
-    Rotation {
-    }
-    Scale {
-      X: 15.1723814
-      Y: 0.300000727
-      Z: 0.4
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3774093325040267761
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -108.041176
-      Y: -208.448441
-    }
-    Rotation {
-      Pitch: -90
-      Yaw: 90
-      Roll: -0.000152587891
-    }
-    Scale {
-      X: 7.75198603
-      Y: 0.476059109
-      Z: 0.51172471
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14187489183964943795
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -401.410278
-      Y: -220.862167
-      Z: 346.084961
-    }
-    Rotation {
-      Yaw: 179.999893
-      Roll: -89.9997559
-    }
-    Scale {
-      X: 6.61556101
-      Y: 0.8
-      Z: 0.700001478
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 9734722144300187971
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -106.210289
-      Y: -747.131104
+      X: -58.9231491
+      Y: -721.621521
+      Z: -181.821533
     }
     Rotation {
-      Pitch: -90
-      Yaw: 26.565033
-      Roll: 63.4347153
+      Pitch: 90
+      Yaw: -26.565033
+      Roll: -116.564972
     }
     Scale {
-      X: 7.75198603
-      Y: 0.476059109
-      Z: 0.51172471
+      X: 0.87909174
+      Y: 0.994889081
+      Z: 0.881024301
     }
   }
   ParentId: 12715987557631592755
@@ -1942,7 +3737,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 2519316253986562073
+        Id: 14231809728886464860
       }
     }
     Overrides {
@@ -1951,11 +3746,20 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
     }
   }
   Collidable_v2 {
@@ -1966,67 +3770,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12802944135735076604
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -452.650116
-      Y: -744.559204
-      Z: 346.085938
-    }
-    Rotation {
-      Yaw: 179.999893
-      Roll: -89.999939
-    }
-    Scale {
-      X: 7.63333941
-      Y: 0.75
-      Z: 0.750001073
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
+      Id: 13840443032411406179
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2099,77 +3843,17 @@ Objects {
   }
 }
 Objects {
-  Id: 4969849455633182689
-  Name: "Cube - Chamfered Small Polished"
-  Transform {
-    Location {
-      X: -400.103546
-      Y: 433.958923
-      Z: 346.085938
-    }
-    Rotation {
-      Yaw: 179.999893
-      Roll: -89.999939
-    }
-    Scale {
-      X: 6.61556101
-      Y: 0.8
-      Z: 0.700001478
-    }
-  }
-  ParentId: 12715987557631592755
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 2519316253986562073
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 1890878382283839670
   Name: "Default Floor"
   Transform {
     Location {
-      X: -579.262573
-      Y: 224.375931
+      X: -514.574829
+      Y: 224.373703
       Z: 373.395508
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 89.999939
+      Yaw: 89.9999313
     }
     Scale {
       X: 19.8488674
@@ -2224,13 +3908,13 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -93.8562775
-      Y: 175.749451
+      X: -15.9570522
+      Y: 174.616333
       Z: 365.668457
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: 89.9999466
+      Yaw: 89.999939
     }
     Scale {
       X: 19.1287575
@@ -2243,7 +3927,7 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 2519316253986562073
+        Id: 14231809728886464860
       }
     }
     Overrides {
@@ -2252,11 +3936,20 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.125
+      Float: 1
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 2.38903475
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.364583343
+        G: 0.206134424
+        B: 0.125325531
+        A: 1
+      }
     }
   }
   Collidable_v2 {

@@ -211,6 +211,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15405931409970163737
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+      }
+    }
     TemplateAsset {
       Id: 10082212731695126074
     }

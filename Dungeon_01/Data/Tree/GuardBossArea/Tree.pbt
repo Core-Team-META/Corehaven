@@ -1,6 +1,230 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 14073112526476146139
+  Name: "Arch"
+  Transform {
+    Location {
+      X: 117.212891
+      Y: 1807.28564
+      Z: -152.705566
+    }
+    Rotation {
+      Pitch: 0.00272524543
+      Yaw: 129.886414
+      Roll: 89.9992828
+    }
+    Scale {
+      X: 7.98601389
+      Y: 2.33284497
+      Z: 2.95421529
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15334086284730696509
+  Name: "Arch"
+  Transform {
+    Location {
+      X: -813.886719
+      Y: 1029.13965
+      Z: -152.690674
+    }
+    Rotation {
+      Pitch: 0.00272524543
+      Yaw: 129.886429
+      Roll: 89.9992828
+    }
+    Scale {
+      X: 7.98601389
+      Y: 2.33284497
+      Z: 2.95421529
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7814966837604519694
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13544934196026051172
+  Name: "curb"
+  Transform {
+    Location {
+      X: -413.472656
+      Y: 1513.46387
+      Z: -60.0925293
+    }
+    Rotation {
+      Pitch: 0.2394391
+      Yaw: -52.4313354
+      Roll: 179.996246
+    }
+    Scale {
+      X: 10.0320425
+      Y: 0.317966074
+      Z: 0.377885789
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 10.341135
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.497367173
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2007256510569021566
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17089783488717544269
+  Name: "curb"
+  Transform {
+    Location {
+      X: -387.814453
+      Y: 1533.20068
+      Z: -60.0905762
+    }
+    Rotation {
+      Pitch: 0.2394391
+      Yaw: -52.4313354
+      Roll: 179.996246
+    }
+    Scale {
+      X: 10.0320425
+      Y: 0.317966074
+      Z: 0.377885789
+    }
+  }
+  ParentId: 3795342459197005188
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 10.341135
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.497367173
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2007256510569021566
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 16757467172631025302
   Name: "Hill 04"
   Transform {
@@ -953,15 +1177,15 @@ Objects {
     Location {
       X: 4168.55371
       Y: 2690.91699
-      Z: 577.84375
+      Z: 635.97583
     }
     Rotation {
-      Yaw: 52.5475464
+      Yaw: 52.5475769
     }
     Scale {
       X: 3.23654985
       Y: 3.23654985
-      Z: 3.88501549
+      Z: 3.46880913
     }
   }
   ParentId: 11354874484705814930
@@ -9889,9 +10113,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: -819.253906
-      Y: 1039.94922
-      Z: -48.5952148
+      X: -923.603516
+      Y: 956.0625
+      Z: -48.5949707
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -9899,9 +10123,9 @@ Objects {
       Roll: -179.999954
     }
     Scale {
-      X: 5.65195894
-      Y: 1.01783442
-      Z: 1.00000012
+      X: 5.93910313
+      Y: 1.01783872
+      Z: 1.00000036
     }
   }
   ParentId: 3795342459197005188
@@ -9951,9 +10175,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 169.253906
-      Y: 1839.09277
-      Z: -48.5966797
+      X: 275.556641
+      Y: 1925.25977
+      Z: -48.5969238
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -9961,9 +10185,9 @@ Objects {
       Roll: -179.999954
     }
     Scale {
-      X: 5.652
-      Y: 1.01782513
-      Z: 1.00000048
+      X: 5.939147
+      Y: 1.01782942
+      Z: 1.00000072
     }
   }
   ParentId: 3795342459197005188
@@ -10013,19 +10237,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -387.396484
-      Y: 2114.2207
-      Z: -152.663574
+      X: -226.742188
+      Y: 2163.37305
+      Z: -152.667969
     }
     Rotation {
-      Pitch: 0.00201490568
-      Yaw: 167.961777
-      Roll: 90.0009842
+      Pitch: 0.00216517
+      Yaw: 148.294647
+      Roll: 89.9998398
     }
     Scale {
-      X: 4.47720671
-      Y: 2.3328464
-      Z: 2.10910892
+      X: 5.92402744
+      Y: 2.33284378
+      Z: 3.46472645
     }
   }
   ParentId: 3795342459197005188
@@ -10063,19 +10287,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -983.091797
-      Y: 1694.5166
-      Z: -152.663086
+      X: -1023.16016
+      Y: 1403.2832
+      Z: -152.671387
     }
     Rotation {
-      Pitch: 0.00150947168
-      Yaw: 77.9627686
-      Roll: 89.9980774
+      Pitch: 0.00241105654
+      Yaw: 112.096107
+      Roll: 89.9988
     }
     Scale {
-      X: 4.47720671
-      Y: 2.3328464
-      Z: 2.10910892
+      X: 4.47720623
+      Y: 2.33284473
+      Z: 2.95422578
     }
   }
   ParentId: 3795342459197005188
@@ -10113,19 +10337,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 250.148438
-      Y: 1355.43799
-      Z: -152.708252
+      X: 259.035156
+      Y: 1397.10742
+      Z: -152.706787
     }
     Rotation {
-      Pitch: 0.00150947168
-      Yaw: 77.962822
-      Roll: 89.998085
+      Pitch: 0.00172803772
+      Yaw: 84.6414108
+      Roll: 89.9981842
     }
     Scale {
-      X: 4.47720671
-      Y: 2.3328464
-      Z: 2.10910892
+      X: 5.90197659
+      Y: 2.3328495
+      Z: 3.97616196
     }
   }
   ParentId: 3795342459197005188
@@ -10163,19 +10387,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -322.351563
-      Y: 853.865723
-      Z: -152.709229
+      X: -392.001953
+      Y: 851.268555
+      Z: -152.707764
     }
     Rotation {
       Pitch: -0.0012512207
       Yaw: 2.13538051
-      Roll: 89.9982224
+      Roll: 89.9982
     }
     Scale {
-      X: 4.47720671
-      Y: 2.3328464
-      Z: 2.10910892
+      X: 6.82358503
+      Y: 2.33284712
+      Z: 4.38049316
     }
   }
   ParentId: 3795342459197005188
@@ -10213,19 +10437,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 559.802734
-      Y: 392.520508
+      X: 542.828125
+      Y: 378.516602
       Z: -152.740234
     }
     Rotation {
       Pitch: -0.000122070313
-      Yaw: 39.5229607
-      Roll: 89.9981308
+      Yaw: 39.5229225
+      Roll: 89.9981155
     }
     Scale {
-      X: 10.9813051
-      Y: 2.33285499
-      Z: 18.1180172
+      X: 14.2722654
+      Y: 2.33285284
+      Z: 18.1180077
     }
   }
   ParentId: 3795342459197005188
@@ -10263,19 +10487,19 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1217.78516
-      Y: 2556.52881
+      X: -1234.75977
+      Y: 2542.5249
       Z: -152.648682
     }
     Rotation {
       Pitch: -0.000122070313
-      Yaw: 39.5229912
+      Yaw: 39.5229607
       Roll: 89.9981308
     }
     Scale {
-      X: 9.93067646
-      Y: 2.33284926
-      Z: 16.9700718
+      X: 12.9067774
+      Y: 2.33284712
+      Z: 16.9700623
     }
   }
   ParentId: 3795342459197005188
@@ -10313,9 +10537,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 103.509766
-      Y: 1781.61182
-      Z: -56.6132813
+      X: 209.8125
+      Y: 1867.77881
+      Z: -56.6135254
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -10323,9 +10547,9 @@ Objects {
       Roll: -179.999954
     }
     Scale {
-      X: 5.65195799
-      Y: 2.9931314
-      Z: 0.99999696
+      X: 5.93910217
+      Y: 2.99314332
+      Z: 0.999997377
     }
   }
   ParentId: 3795342459197005188
@@ -10375,9 +10599,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: -754.929688
-      Y: 1091.30811
-      Z: -56.6120605
+      X: -859.279297
+      Y: 1007.42139
+      Z: -56.6118164
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -10385,9 +10609,9 @@ Objects {
       Roll: -179.999954
     }
     Scale {
-      X: 5.65195799
-      Y: 2.9931314
-      Z: 0.99999696
+      X: 5.93910217
+      Y: 2.99314332
+      Z: 0.999997377
     }
   }
   ParentId: 3795342459197005188
@@ -25856,18 +26080,18 @@ Objects {
   Name: "Portcullis"
   Transform {
     Location {
-      X: 11.6582031
-      Y: 418.305176
+      X: 33.0351563
+      Y: 319.935547
       Z: 109.713379
     }
     Rotation {
       Pitch: -90
-      Roll: -52.4856262
+      Roll: -52.4855652
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.866425753
+      Y: 0.866425753
+      Z: 0.866425753
     }
   }
   ParentId: 3803416987226999788
@@ -25899,18 +26123,18 @@ Objects {
   Name: "Portcullis"
   Transform {
     Location {
-      X: -423.048828
-      Y: 84.5825195
+      X: -318.900391
+      Y: 49.7583
       Z: 109.713379
     }
     Rotation {
       Pitch: -90
-      Roll: -52.4856873
+      Roll: -52.4856262
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 1
+      X: 0.866425753
+      Y: 0.866425753
+      Z: 0.866425753
     }
   }
   ParentId: 3803416987226999788

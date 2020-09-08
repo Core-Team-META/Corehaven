@@ -5631,8 +5631,8 @@ Objects {
   Name: "Archery_Target"
   Transform {
     Location {
-      X: 1369.58691
-      Y: -5221.33
+      X: 2152.54346
+      Y: -5945.1875
       Z: -39.8881836
     }
     Rotation {
