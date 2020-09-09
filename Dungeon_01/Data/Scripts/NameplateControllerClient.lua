@@ -265,6 +265,28 @@ function RotateNameplate(nameplate)
 	nameplate.templateRoot:SetWorldRotation(Rotation.New(quat))
 end
 
+-- nil OnInterrupted(Ability)
+-- Handle interrupted abilities with propert ui
+function OnInterrupted(ability, nameplate)
+	nameplate.castBarGroup.visibility = Visibility.INHERIT
+    nameplate.castProgressPiece:SetColor(Color.RED)
+    nameplate.castNameText.text = "Cast Interrupted"
+    nameplate.interruptTime = time()
+	nameplate.onInterruptedListener:Disconnect()
+	nameplate.onInterruptedListener = nil
+	nameplate.onExecuteListener:Disconnect()
+	nameplate.onExecuteListener = nil
+end
+
+-- nil OnExecute(ability)
+-- Clear the interrupted handler
+function OnExecute(ability, nameplate)
+	nameplate.onInterruptedListener:Disconnect()
+	nameplate.onInterruptedListener = nil
+	nameplate.onExecuteListener:Disconnect()
+	nameplate.onExecuteListener = nil
+end
+
 -- nil Tick(float)
 -- Update dynamic properties (ex. team, health, and health animation) of every nameplate
 function Tick(deltaTime)
@@ -293,15 +315,6 @@ function Tick(deltaTime)
 			        if nameplate.interruptTime + 0.5 < time() then
 			            nameplate.interruptTime = nil
 			        end
-			    elseif nameplate.castingAbility and nameplate.castingAbility:GetCurrentPhase() ~= AbilityPhase.CAST then
-			        if nameplate.castingAbility:GetCurrentPhase() == AbilityPhase.READY then
-						nameplate.castBarGroup.visibility = Visibility.INHERIT
-				        nameplate.castProgressPiece:SetColor(Color.RED)
-				        nameplate.castNameText.text = "Cast Interrupted"
-				        nameplate.interruptTime = time()
-				    end
-
-			        nameplate.castingAbility = nil
 			    else
 			        for _, ability in pairs(character:GetAbilities()) do
 			            if ability:GetCurrentPhase() == AbilityPhase.CAST then
@@ -309,7 +322,11 @@ function Tick(deltaTime)
 			                local totalTime = ability.castPhaseSettings.duration
 
 			                if totalTime >= 0.3 then
-			                	nameplate.castingAbility = ability
+			                	if not nameplate.onInterruptedListener then
+				                	nameplate.onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted, nameplate)
+				                	nameplate.onExecuteListener = ability.executeEvent:Connect(OnExecute, nameplate)
+				                end
+				                
 								nameplate.castBarGroup.visibility = Visibility.INHERIT
 			                    local castProgress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
 								local castProgressPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - castProgress)

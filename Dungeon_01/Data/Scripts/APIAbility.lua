@@ -45,11 +45,12 @@ AssetReference abilityTemplate					A template consisting of only an ability. The
 ]]
 local abilityData = {}						--	string -> table (above)
 local playerAbilities = {}					--	Player -> table (string -> Ability)
+local playerAbilityCooldownEnds = {}		--	Player -> table (string -> float) | Client Only
 
 -- This maps template IDs to ability names, so we can let core's networking handle everything
 local abilityMap = {}						--	string -> string
 
--- Abilities that is currently casting. Used on both client and server to interrupt if it becomes invalid
+-- Abilities that are currently casting. Used on server to interrupt if it becomes invalid
 local castingAbilityNames = {}				--	Player -> string (nil for none)
 
 -- Client only
@@ -64,6 +65,7 @@ function RegisterAbility(data)
 	assert(not abilityData[data.name])
 	assert(data.name)
 	assert(data.icon)
+	assert(data.cooldown)
 	assert(data.abilityTemplate)
 	assert(not data.groundTargets or data.reticleTemplate)
 	assert(not abilityMap[data.abilityTemplate])
@@ -79,11 +81,13 @@ end
 -- Client and Server
 function OnPlayerJoined(player)
 	playerAbilities[player] = {}
+	playerAbilityCooldownEnds[player] = {}
 end
 
 -- Client and Server
 function OnPlayerLeft(player)
 	playerAbilities[player] = nil
+playerAbilityCooldownEnds[player] = nil
 end
 
 -- Client and Server
@@ -181,6 +185,8 @@ function OnExecute(ability)
 	castingAbilityNames[player] = nil
 
 	if IS_CLIENT then
+		playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] = os.clock() + data.cooldown
+
 		local impactDelay = 0.0
 
 		if data.onCastClient then
@@ -215,6 +221,11 @@ end
 function OnInterrupted(ability)
 	local player = ability.owner
 	castingAbilityNames[player] = nil
+
+	if IS_CLIENT then
+		queuedAbilityName = nil
+		queuedAbilityTarget = nil
+	end
 end
 
 -- Client and Server
@@ -245,7 +256,7 @@ function Tick()
 
 		-- Check queued ability
 		if queuedAbilityName then
-			if API.GetTimeUntilReady(queuedAbilityName) == 0.0 then
+			if GetTimeUntilReady(queuedAbilityName) == 0.0 then
 				if CanCast(queuedAbilityName) then
 					local ability = playerAbilities[LOCAL_PLAYER][queuedAbilityName]
 					ability:Activate()
@@ -345,13 +356,15 @@ end
 -- Owning client
 -- This means, how long until we can literally activate the ability object. In our terms, this is when we can 'cast'.
 -- Note that abiltiy:GetPhaseTimeRemaining() can return a zero or negative number, but we still need to wait a frame.
-function API.GetTimeUntilReady(abilityName)
+function GetTimeUntilReady(abilityName)
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
+	local data = abilityData[abilityName]
+	local clock = os.clock()
 
 	local t = 0.0
 
 	-- Global cooldown
-	t = math.max(t, globalCooldownEndTime - os.clock())
+	t = math.max(t, globalCooldownEndTime - clock)
 
 	-- Casting another ability
 	for _, otherAbility in pairs(playerAbilities[LOCAL_PLAYER]) do
@@ -364,28 +377,42 @@ function API.GetTimeUntilReady(abilityName)
 	-- Regular cooldown
 	local currentPhase = ability:GetCurrentPhase()
 
-	if currentPhase ~= AbilityPhase.READY then
-		local timeRemaining = math.max(ability:GetPhaseTimeRemaining(), 0.01)
-		local executeDuration = ability.executePhaseSettings.duration
-		local recoveryDuration = ability.recoveryPhaseSettings.duration
-		local cooldownDuration = ability.cooldownPhaseSettings.duration
-
-		if currentPhase == AbilityPhase.CAST then
-		    timeRemaining = timeRemaining + executeDuration + recoveryDuration + cooldownDuration
+	if currentPhase == AbilityPhase.CAST then
+		t = math.max(t, ability:GetPhaseTimeRemaining() + data.cooldown, 0.01)
+	else
+		if playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] then
+			t = math.max(t, playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] - clock)
 		end
-
-		if currentPhase == AbilityPhase.EXECUTE then
-		    timeRemaining = timeRemaining + recoveryDuration + cooldownDuration
-		end
-
-		if currentPhase == AbilityPhase.RECOVERY then
-		    timeRemaining = timeRemaining + cooldownDuration
-		end
-
-		t = math.max(t, timeRemaining)
 	end
 
 	return t
+end
+
+-- Owning client
+-- Like above, but only what should be shown in UI
+function API.GetVisibleCooldownData(abilityName)
+	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
+	local data = abilityData[abilityName]
+	local clock = os.clock()
+
+	-- Global cooldown
+	local globalCooldownRemaining = math.max(0.0, globalCooldownEndTime - clock)
+	local cooldownRemaining = 0.0
+
+	-- Regular cooldown
+	local currentPhase = ability:GetCurrentPhase()
+
+	if currentPhase ~= AbilityPhase.CAST then
+		if playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] then
+			cooldownRemaining = math.max(0.0, playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] - clock)
+		end
+	end
+
+	if cooldownRemaining > globalCooldownRemaining then
+		return {remaining = cooldownRemaining, total = data.cooldown}
+	elseif globalCooldownRemaining > 0.0 then
+		return {remaining = globalCooldownRemaining, total = GLOBAL_COOLDOWN}
+	end
 end
 
 -- Owning client
@@ -425,7 +452,7 @@ function API.CanTrigger(abilityName)
 		return false
 	end
 
-	if API.GetTimeUntilReady(abilityName) > QUEUE_TIME then
+	if GetTimeUntilReady(abilityName) > QUEUE_TIME then
 		return false
 	end
 
@@ -474,7 +501,7 @@ function CanActivate(abilityName)
 		return false
 	end
 
-	if API.GetTimeUntilReady(abilityName) > QUEUE_TIME then
+	if GetTimeUntilReady(abilityName) > QUEUE_TIME then
 		return false
 	end
 
@@ -502,7 +529,7 @@ function CanCast(abilityName)
 		return false
 	end
 
-	if API.GetTimeUntilReady(abilityName) > 0.0 then
+	if GetTimeUntilReady(abilityName) > 0.0 then
 		return false
 	end
 
@@ -561,6 +588,10 @@ function API.GivePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
 	assert(not playerAbilities[player][abilityName])
 	local ability = World.SpawnAsset(abilityData[abilityName].abilityTemplate)
+	-- These are all lumped into the cooldown property on the ability, and maintained by script
+	assert(ability.executePhaseSettings.duration == 0.0)
+	assert(ability.recoveryPhaseSettings.duration == 0.0)
+	assert(ability.cooldownPhaseSettings.duration == 0.0)
 	ability.owner = player
 	ability.castEvent:Connect(OnCast)
 	ability.executeEvent:Connect(OnExecute)

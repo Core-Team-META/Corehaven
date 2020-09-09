@@ -191,20 +191,14 @@ function OnBindingPressed(player, binding)
 	local newTarget = currentTarget
 
 	if binding == "ability_primary" and UI.IsCursorVisible() then
-		-- Clear auto target history
-		autoTargetHistory = {}
+		autoTargetHistory = {}			-- Clear auto target history
 
 		newTarget = FindClickTarget()
 	elseif binding == AUTO_TARGET_BINDING then
 		newTarget = FindAutoTarget()
-
-		-- Auto targetting can't clear our current target
-		if not newTarget and currentTarget then
-			return
-		end
 	end
 
-	if newTarget ~= currentTarget then
+	if newTarget and newTarget ~= currentTarget then
 		table.insert(targetChangeTimeHistory, t)
 		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromCharacter(newTarget))
 	end

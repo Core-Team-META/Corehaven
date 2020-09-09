@@ -11,6 +11,7 @@ data.requiresFacing = true
 data.groundTargets = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
+data.cooldown = script:GetCustomProperty("Cooldown")
 data.abilityTemplate = script:GetCustomProperty("AbilityTemplate")
 data.selfCasterEffectTemplate = script:GetCustomProperty("SelfCasterEffectTemplate")
 data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemplate")

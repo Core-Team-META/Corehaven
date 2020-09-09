@@ -261,47 +261,30 @@ function Tick(deltaTime)
 			local currentPhase = ability:GetCurrentPhase()
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
 			local cooldownTimeText = data.button:GetCustomProperty("CooldownTimeText"):WaitForObject()
+            local cooldownData = API_A.GetVisibleCooldownData(data.abilityName)
 
-	        if currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then
+            -- Update the shadow
+            if not cooldownData then
 	        	progressIndicator.visibility = Visibility.FORCE_OFF
 	        	cooldownTimeText.visibility = Visibility.FORCE_OFF
 	        else
 	        	progressIndicator.visibility = Visibility.INHERIT
 	        	cooldownTimeText.visibility = Visibility.INHERIT
+            	cooldownTimeText.text = string.format("%.1f", cooldownData.remaining)
 
-	            -- For a player, recovery, cooldown and execute phases all constitute an ability's cooldown
-	            local playerCooldownRemaining = ability:GetPhaseTimeRemaining()
-		        local executeDuration = ability.executePhaseSettings.duration
-		        local recoveryDuration = ability.recoveryPhaseSettings.duration
-		        local cooldownDuration = ability.cooldownPhaseSettings.duration
+            	local cooldownRatio = cooldownData.remaining / cooldownData.total
+                local shadowAngle = CoreMath.Clamp(1.0 - cooldownRatio, 0.0, 1.0) * 360.0
+				local rightShadow = data.button:GetCustomProperty("RightShadow"):WaitForObject()
+				local leftShadow = data.button:GetCustomProperty("LeftShadow"):WaitForObject()
 
-	            if currentPhase ~= AbilityPhase.COOLDOWN then   -- Execute or recovery
-	                playerCooldownRemaining = playerCooldownRemaining + cooldownDuration
-	            end
-
-	            if currentPhase == AbilityPhase.EXECUTE then
-	                playerCooldownRemaining = playerCooldownRemaining + recoveryDuration
-	            end
-
-	            local totalPlayerCooldown = executeDuration + recoveryDuration + cooldownDuration
-	            cooldownTimeText.text = string.format("%.1f", playerCooldownRemaining)
-
-	            -- Update the shadow
-	            if totalPlayerCooldown > 0.3 then
-	            	local cooldownRatio = playerCooldownRemaining / totalPlayerCooldown
-	                local shadowAngle = CoreMath.Clamp(1.0 - cooldownRatio, 0.0, 1.0) * 360.0
-					local rightShadow = data.button:GetCustomProperty("RightShadow"):WaitForObject()
-					local leftShadow = data.button:GetCustomProperty("LeftShadow"):WaitForObject()
-
-	                if shadowAngle <= 180.0 then
-	                    leftShadow.rotationAngle = 0.0
-	                    rightShadow.visibility = Visibility.INHERIT
-	                    rightShadow.rotationAngle = shadowAngle
-	                else
-	                    leftShadow.rotationAngle = shadowAngle - 180.0
-	                    rightShadow.visibility = Visibility.FORCE_OFF
-	                end
-	            end
+                if shadowAngle <= 180.0 then
+                    leftShadow.rotationAngle = 0.0
+                    rightShadow.visibility = Visibility.INHERIT
+                    rightShadow.rotationAngle = shadowAngle
+                else
+                    leftShadow.rotationAngle = shadowAngle - 180.0
+                    rightShadow.visibility = Visibility.FORCE_OFF
+                end
 	        end
 		end
 	end

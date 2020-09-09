@@ -19,6 +19,10 @@
         Float: 3000
       }
       Overrides {
+        Name: "cs:Cooldown"
+        Float: 0
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 3104063149705331375

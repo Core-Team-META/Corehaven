@@ -57,7 +57,6 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 6
             CanMove: true
             CanJump: true
             CanRotate: true
