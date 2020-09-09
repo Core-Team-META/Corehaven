@@ -1331,6 +1331,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5491281491597075830
+  Name: "Fantasy Castle Stairs 01 - Bannister"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_bannister"
+  }
+}
+Assets {
   Id: 5480047238419307272
   Name: "Flower Bellflower 01"
   PlatformAssetType: 1
