@@ -52,7 +52,7 @@ Objects {
       Z: 2873.09668
     }
     Rotation {
-      Yaw: -30.1719074
+      Yaw: -30.1719055
       Roll: 90.0000076
     }
     Scale {
@@ -5972,51 +5972,6 @@ Objects {
     }
     Rotation {
       Yaw: 171.136261
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7192807854345907469
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
-  Id: 4355953567166936534
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 2185.13672
-      Y: 7533.18799
-      Z: 3393.09521
-    }
-    Rotation {
-      Yaw: -71.6389771
     }
     Scale {
       X: 1

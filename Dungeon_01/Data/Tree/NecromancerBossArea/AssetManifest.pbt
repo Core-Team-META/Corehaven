@@ -1,4 +1,22 @@
 ﻿Assets {
+  Id: 18427031532110002262
+  Name: "Kelp Tall Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tall_bush_01"
+  }
+}
+Assets {
+  Id: 18398451643293659336
+  Name: "Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 18195697283062358788
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -8,21 +26,21 @@
   }
 }
 Assets {
+  Id: 18113635384891617429
+  Name: "Branches Cluster Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_small_001"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_dark_001_uv"
-  }
-}
-Assets {
-  Id: 17883309447763556868
-  Name: "Stone Arch 3m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_stone-arch_6m_002"
   }
 }
 Assets {
@@ -50,6 +68,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curb_2m_001"
+  }
+}
+Assets {
+  Id: 16918364317049548273
+  Name: "Tree Birch 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_003"
+  }
+}
+Assets {
+  Id: 16077212917008984281
+  Name: "Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_002"
   }
 }
 Assets {
@@ -89,15 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15170515694484672370
-  Name: "Text 04: ?"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F7_Text_065"
-  }
-}
-Assets {
   Id: 15117047820700872013
   Name: "Pyramid - 4-Sided Truncated Hollow Thin"
   PlatformAssetType: 1
@@ -113,15 +140,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_worn_001"
-  }
-}
-Assets {
-  Id: 14476679536478096151
-  Name: "Fantasy Castle Pillar 02 - Base"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_002_base"
   }
 }
 Assets {
@@ -152,21 +170,12 @@ Assets {
   }
 }
 Assets {
-  Id: 14277110016425605982
-  Name: "Pipe - 3-Sided Thick"
+  Id: 14371453254464818053
+  Name: "Branches Cluster Big"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_3_sided_thick_001"
-  }
-}
-Assets {
-  Id: 14267747156564835807
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
+    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {
@@ -176,15 +185,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_4_sided_thin_001"
-  }
-}
-Assets {
-  Id: 13846976516959842924
-  Name: "Cylinder - Rounded Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_001"
   }
 }
 Assets {
@@ -215,15 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13271671005623298099
-  Name: "Stone Railing 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_railing_6m_001"
-  }
-}
-Assets {
   Id: 12494784180091766806
   Name: "Prism - 8-Sided Polished"
   PlatformAssetType: 1
@@ -248,15 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
-  }
-}
-Assets {
-  Id: 11667075996946480541
-  Name: "Wooden Bucket"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bucket_001"
   }
 }
 Assets {
@@ -305,12 +287,21 @@ Assets {
   }
 }
 Assets {
-  Id: 10123498949289312814
-  Name: "Craftsman Roof 01 Peak"
+  Id: 10692466588413953031
+  Name: "Tree Birch 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_roof_001_peak"
+    AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
+  Id: 10161356557666659885
+  Name: "Bush Leafy Low 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_leafy_bush_002"
   }
 }
 Assets {
@@ -350,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9405728001328588797
-  Name: "Stone Arch (doorway) 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_stone_doorway_001"
-  }
-}
-Assets {
   Id: 9380460844045970728
   Name: "Human Gal"
   PlatformAssetType: 17
@@ -374,6 +356,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
+  Id: 9271993209994119787
+  Name: "Branches Cluster Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_medium_001"
   }
 }
 Assets {
@@ -440,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8026695780395936248
+  Name: "Bone Human Skull Pile 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_skull_pile_02_ref"
+  }
+}
+Assets {
   Id: 7822473577673662489
   Name: "Fantasy Castle Pillar 01 Mid"
   PlatformAssetType: 1
@@ -485,12 +485,12 @@ Assets {
   }
 }
 Assets {
-  Id: 7232672974994690852
-  Name: "Column Segment 1m"
+  Id: 7086338982397992348
+  Name: "Rock Flat 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
+    AssetId: "sm_rock_generic_005"
   }
 }
 Assets {
@@ -503,12 +503,21 @@ Assets {
   }
 }
 Assets {
-  Id: 6585207450897081622
-  Name: "Sphere"
+  Id: 6528381076757568107
+  Name: "Bush Leafy Tall 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
+    AssetId: "sm_foliage_gen_leafy_bush_001"
+  }
+}
+Assets {
+  Id: 6469962064224697995
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
   }
 }
 Assets {
@@ -530,6 +539,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6143956280833607398
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
   Id: 5979208797743596287
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -548,15 +566,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
-  }
-}
-Assets {
   Id: 5512335830567327151
   Name: "Arch Fancy Peaked 2m"
   PlatformAssetType: 1
@@ -566,21 +575,21 @@ Assets {
   }
 }
 Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
   Id: 4670984589696572448
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 4565526659431827540
-  Name: "Large Wood Board 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
   }
 }
 Assets {
@@ -638,6 +647,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3502032020333133703
+  Name: "Bottle 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_005"
+  }
+}
+Assets {
   Id: 3277498022036755698
   Name: "Chain Ceiling Anchor"
   PlatformAssetType: 1
@@ -662,15 +680,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_curb_8m_001"
-  }
-}
-Assets {
-  Id: 3090596827184957478
-  Name: "Rope"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_rope_001"
   }
 }
 Assets {
@@ -737,6 +746,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2198988441437446815
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
+  }
+}
+Assets {
   Id: 1892362005922537256
   Name: "Bricks Large Foundation 01"
   PlatformAssetType: 2
@@ -746,12 +764,12 @@ Assets {
   }
 }
 Assets {
-  Id: 1637968536887231183
-  Name: "Prism - 3-Sided"
+  Id: 1418690025087534347
+  Name: "Rock Flat 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_001"
+    AssetId: "sm_rock_generic_004"
   }
 }
 Assets {
@@ -761,6 +779,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 1373893966887443091
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
+  Id: 1325257806995508552
+  Name: "Bone Human Skull Pile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_skull_pile_01_ref"
   }
 }
 Assets {
@@ -788,15 +824,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_post"
-  }
-}
-Assets {
-  Id: 820217430221713418
-  Name: "Fantasy Axe Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_axe_001"
   }
 }
 Assets {

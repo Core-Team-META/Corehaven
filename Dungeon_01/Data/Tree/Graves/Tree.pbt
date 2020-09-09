@@ -1,6 +1,573 @@
 ﻿Name: "Graves"
 RootId: 2722472797830911535
 Objects {
+  Id: 999768413304663620
+  Name: "Fantasy Candle  Lit - Group 02 (Prop)"
+  Transform {
+    Location {
+      X: 495.227783
+      Y: 11357.876
+      Z: -750.337708
+    }
+    Rotation {
+      Yaw: -105.495461
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2512677760193325878
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle  Lit - Group 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2681.99414
+            Y: -1813.16406
+            Z: 73.5181885
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -67.685
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13712355303030680714
+      value {
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 639.568542
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 13.9449549
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234125137
+            Y: 53.8996582
+            Z: 108.923645
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9262271138265005806
+    }
+  }
+}
+Objects {
+  Id: 5561857862445499619
+  Name: "Fantasy Candle  Lit - Group 02 (Prop)"
+  Transform {
+    Location {
+      X: 3921.48608
+      Y: 11661.8916
+      Z: -750.623474
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2512677760193325878
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle  Lit - Group 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2618.06079
+            Y: -1084.45605
+            Z: 27.3850098
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -105.495453
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13712355303030680714
+      value {
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9262271138265005806
+    }
+  }
+}
+Objects {
+  Id: 9475493632440965382
+  Name: "Fantasy Candle Lit - 04 (Prop)"
+  Transform {
+    Location {
+      X: 493.545898
+      Y: 11402.3311
+      Z: -751.277405
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1446354904182978224
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2636.43945
+            Y: -1062.85645
+            Z: 25.6622314
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 54.2022972
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.16674805
+            Y: 1.16674805
+            Z: 1.16674805
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8863833470049518112
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 507.795319
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 6.09119701
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234619141
+            Z: 55.1331787
+          }
+        }
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 900175639907875110
+    }
+  }
+}
+Objects {
+  Id: 10204933294118225618
+  Name: "Fantasy Candle Lit - 04 (Prop)"
+  Transform {
+    Location {
+      X: 3949.5061
+      Y: 11617.4111
+      Z: -750.623474
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1446354904182978224
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2614.91602
+            Y: -1046.46094
+            Z: 26.4453125
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8863833470049518112
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 507.795319
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 6.09119701
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234619141
+            Z: 55.1331787
+          }
+        }
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 900175639907875110
+    }
+  }
+}
+Objects {
+  Id: 9197394503243127373
+  Name: "Fantasy Candle  Lit - Group 02 (Prop)"
+  Transform {
+    Location {
+      X: 3921.48608
+      Y: 11661.8916
+      Z: -750.623474
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2512677760193325878
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle  Lit - Group 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4087.00317
+            Y: -1815.61328
+            Z: 217.722412
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -105.90863
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13712355303030680714
+      value {
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9262271138265005806
+    }
+  }
+}
+Objects {
+  Id: 8956475496831311489
+  Name: "Fantasy Candle Lit - 04 (Prop)"
+  Transform {
+    Location {
+      X: 3949.5061
+      Y: 11617.4111
+      Z: -750.623474
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2722472797830911535
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 1446354904182978224
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - 04 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -4119.74609
+            Y: -1937.88574
+            Z: 266.843567
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 170.255478
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.22763145
+            Y: 1.22763145
+            Z: 1.22763145
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8863833470049518112
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 507.795319
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 6.09119701
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234619141
+            Z: 55.1331787
+          }
+        }
+        Overrides {
+          Name: "MaxDrawDistance"
+          Float: 10000
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 900175639907875110
+    }
+  }
+}
+Objects {
+  Id: 5260675330938183629
+  Name: "Hill 02"
+  Transform {
+    Location {
+      X: -2354.82715
+      Y: -482.082031
+      Z: -9.64508057
+    }
+    Rotation {
+      Pitch: -1.4460144
+      Yaw: 38.290947
+      Roll: 6.96673203
+    }
+    Scale {
+      X: 0.647659719
+      Y: 0.647659719
+      Z: 0.463777035
+    }
+  }
+  ParentId: 2722472797830911535
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13577817942653603668
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 3.32115841
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.65820432
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7008085874275181725
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1306399709826436712
+  Name: "Hill 02"
+  Transform {
+    Location {
+      X: -2292.67822
+      Y: -549.008789
+      Z: -9.64508057
+    }
+    Rotation {
+      Yaw: -157.694138
+    }
+    Scale {
+      X: 0.647659719
+      Y: 0.647659719
+      Z: 0.463777035
+    }
+  }
+  ParentId: 2722472797830911535
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13577817942653603668
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 3.32115841
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.65820432
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7008085874275181725
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 3700843681360852261
   Name: "Hill 02"
   Transform {
@@ -118,19 +685,19 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 384.253601
+          Float: 792.668396
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 0.234619141
-            Y: -15.542325
-            Z: 31.8514042
+            X: 30.5056744
+            Y: -15.5424795
+            Z: 101.039078
           }
         }
         Overrides {
           Name: "Intensity"
-          Float: 4.54176044
+          Float: 10.3606787
         }
         Overrides {
           Name: "MaxDrawDistance"
@@ -17715,17 +18282,17 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 507.795319
+          Float: 1007.00818
         }
         Overrides {
           Name: "Intensity"
-          Float: 6.09119701
+          Float: 15.9931135
         }
         Overrides {
           Name: "Position"
           Vector {
             X: 0.234619141
-            Z: 55.1331787
+            Z: 80.6507568
           }
         }
         Overrides {
@@ -20484,11 +21051,11 @@ Objects {
       value {
         Overrides {
           Name: "AttenuationRadius"
-          Float: 446.024475
+          Float: 792.668396
         }
         Overrides {
           Name: "Intensity"
-          Float: 10.2230282
+          Float: 22.1375904
         }
         Overrides {
           Name: "Position"
