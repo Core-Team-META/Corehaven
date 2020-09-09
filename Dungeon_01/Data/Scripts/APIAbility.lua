@@ -19,7 +19,7 @@ local API = {}
 -- Time before the previous ability cast or cooldown is finished thata player can activate another ability and it is
 -- queued to cast when available. Must be less than GLOBAL_COOLDOWN since we assume only one thing can be queued.
 local QUEUE_TIME = 0.5
-local GLOBAL_COOLDOWN = 1.5					--	Time after activating a spell where no other spell can be activated
+local GLOBAL_COOLDOWN = 1.0					--	Time after activating a spell where no other spell can be activated
 
 -- These are set in Initialize()
 local IS_CLIENT = nil
@@ -114,19 +114,18 @@ end
 function OnBindingPressed(player, binding)
 	if groundTargetReticle then
 		if binding == "ability_primary" then
-			if API.CanActivate(groundTargetAbilityName) then
-				local timeUntilReady = API.GetTimeUntilReady(groundTargetAbilityName)
+			if CanActivate(groundTargetAbilityName) then
 				local ability = playerAbilities[LOCAL_PLAYER][groundTargetAbilityName]
 				queuedAbilityTarget = groundTargetReticle:GetWorldPosition()
 
-				if timeUntilReady == 0.0 then
+				if CanCast(groundTargetAbilityName) then
 					ability:Activate()
 				else
 					queuedAbilityName = groundTargetAbilityName
 				end
-			end
 
-			CancelGroundTargeting()
+				CancelGroundTargeting()
+			end
 		elseif binding == "ability_secondary" then
 			CancelGroundTargeting()
 		end
@@ -215,9 +214,6 @@ end
 -- Client and Server
 function OnInterrupted(ability)
 	local player = ability.owner
-	local abilityName = abilityMap[ability.sourceTemplateId]
-	-- When the server interrupts, that gets replicated so the client can get it twice
-	assert(IS_CLIENT or castingAbilityNames[player] == abilityName)
 	castingAbilityNames[player] = nil
 end
 
@@ -238,10 +234,19 @@ function Tick()
 			end
 		end
 
+		-- Update ground targeting
+		if groundTargetReticle then
+			local hitResult = UI.GetCursorHitResult()
+
+			if hitResult then
+				groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
+			end
+		end
+
 		-- Check queued ability
 		if queuedAbilityName then
 			if API.GetTimeUntilReady(queuedAbilityName) == 0.0 then
-				if API.CanActivate(queuedAbilityName) then
+				if CanCast(queuedAbilityName) then
 					local ability = playerAbilities[LOCAL_PLAYER][queuedAbilityName]
 					ability:Activate()
 				end
@@ -249,161 +254,97 @@ function Tick()
 				queuedAbilityName = nil
 			end
 		end
-
-		-- Update ground targeting
-		if groundTargetReticle then
-			local hitResult = UI.GetCursorHitResult()
-
-			if hitResult then
-				groundTargetReticle.visibility = Visibility.INHERIT
-				groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
-			else
-				groundTargetReticle.visibility = Visibility.FORCE_OFF
+	else
+		-- Interrupt ability if it's no longer a valid cast
+		for player, abilityName in pairs(castingAbilityNames) do
+			if not CanContinue(player, abilityName) then
+				local ability = playerAbilities[player][abilityName]
+				ability:Interrupt()
 			end
-		end
-	end
-
-	-- Interrupt ability if it's no longer a valid cast
-	for player, abilityName in pairs(castingAbilityNames) do
-		local target = GetAbilityTarget(player, abilityName)
-
-		if not IsCastValid(player, GetAbilityTarget(player, abilityName), abilityName, false) then
-			local ability = playerAbilities[player][abilityName]
-			ability:Interrupt()
 		end
 	end
 end
 
--- Client and Server
-function IsCastValid(player, target, abilityName, broadcastError)
-	local ability = playerAbilities[player][abilityName]
+-- Owning client
+-- The ordering here is intentional to get errors that are most useful
+function IsTargetValid(player, target, abilityName)
 	local data = abilityData[abilityName]
-	assert(ability)
-	assert(ability:GetCurrentPhase() == AbilityPhase.CAST or ability:GetCurrentPhase() == AbilityPhase.READY)
-	assert(ability.isEnabled)
+	assert(data.targets)
+	local targetPosition = nil
 
-	-- Is the caster dead
-	if player.isDead then
-		if broadcastError then
-			Events.Broadcast("BannerMessage", "You are dead")
-		end
-
-		return false
+	-- Does the caster have a target
+	if not target then
+		return false, "Target required"
 	end
 
-	-- Is the caster moving
-	if player:GetVelocity().size > 0.1 then
-		if broadcastError then
-			--Events.Broadcast("BannerMessage", "Cannot cast while moving")
+	if data.groundTargets then
+		targetPosition = target
+	else
+		if target:IsA("Player") and target.isDead then		-- Is the player target dead
+			return false, "Target is dead"
 		end
-
-		return false
-	end
-
-	-- Is the caster not on the ground
-	if not player.isGrounded then
-		if broadcastError then
-			--Events.Broadcast("BannerMessage", "Cannot cast while moving")
-		end
-
-		return false
-	end
-
-	-- Is the caster stunned
-	if API_SE.IsStunned(player) then
-		if broadcastError then
-			Events.Broadcast("BannerMessage", "You are stunned")
-		end
-
-		return false
-	end
-
-	-- Is this ability targeted
-	if data.targets and not data.groundTargets then
-		-- Does the caster have a target
-		if not target then
-			if broadcastError then
-				Events.Broadcast("BannerMessage", "Target required")
-			end
-
-			return false
-		end
-
-		-- Is the player target dead
-		if target:IsA("Player") and target.isDead then
-			if broadcastError then
-				Events.Broadcast("BannerMessage", "Target is dead")
-			end
-
-			return false
-		end
-
-		-- Is the NPC target dead or asleep
-		if not target:IsA("Player") then
+		
+		if not target:IsA("Player") then					-- Is the NPC target dead or asleep
 			if API_NPC.IsDead(target) then
-				if broadcastError then
-					Events.Broadcast("BannerMessage", "Target is dead")
-				end
-
-				return false
+				return false, "Target is dead"
 			end
 
 			if API_NPC.IsAsleep(target) then
-				if broadcastError then
-					Events.Broadcast("BannerMessage", "Target is asleep")
-				end
-
-				return false
+				return false, "Target is asleep"
 			end
 		end
 
 		-- Is this a hostile ability with a friendly target
 		if not data.friendlyTargetValid and target:IsA("Player") then
-			if broadcastError then
-				Events.Broadcast("BannerMessage", "Invalid target")
-			end
-
-			return false
+			return false, "Invalid target"
 		end
 
 		-- Is this a friendly ability with a hostile target
 		if not data.enemyTargetValid and not target:IsA("Player") then
-			if broadcastError then
-				Events.Broadcast("BannerMessage", "Invalid target")
-			end
-
-			return false
+			return false, "Invalid target"
 		end
 
-		-- Is the target out of range
-		if data.range and (target:GetWorldPosition() - player:GetWorldPosition()).size > data.range then
-			if broadcastError then
-				Events.Broadcast("BannerMessage", "Target out of range")
-			end
+		targetPosition = target:GetWorldPosition()
+	end
 
-			return false
+	-- Is the target out of range
+	if data.range and (targetPosition - player:GetWorldPosition()).size > data.range then
+		return false, "Target out of range"
+	end
+
+	-- Does this ability require facing and the target is behind the caster
+	if data.requiresFacing then
+		local offset = targetPosition - player:GetWorldPosition()
+
+		if offset .. (player:GetWorldRotation() * Vector3.FORWARD) < 0.0 then
+			return false, "Target is behind you"
 		end
-
-		-- Does this ability require facing and the target is behind the caster
-		if data.requiresFacing then
-			local offset = target:GetWorldPosition() - player:GetWorldPosition()
-
-			if offset .. (player:GetWorldRotation() * Vector3.FORWARD) < 0.0 then
-				if broadcastError then
-					Events.Broadcast("BannerMessage", "Target is behind you")
-				end
-
-				return false
-			end
-		end
-
 	end
 
 	return true
 end
 
 -- Owning client
--- This means, how long until we can literally activate the ability object. This does not include the action queue time.
+function IsCasterValid(player)
+	-- This sort of corresponds with "are we trying to move". We set acceleration to be quite high.
+	if player:GetVelocity().size > player.maxWalkSpeed * 0.2 then
+		return false
+	end
+
+	if not player.isGrounded then						-- Are we not on the ground
+		return false
+	end
+
+	if API_SE.IsStunned(player) then					-- Are we stunned
+		return false, "You are stunned"
+	end
+
+	return true
+end
+
+-- Owning client
+-- This means, how long until we can literally activate the ability object. In our terms, this is when we can 'cast'.
+-- Note that abiltiy:GetPhaseTimeRemaining() can return a zero or negative number, but we still need to wait a frame.
 function API.GetTimeUntilReady(abilityName)
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 
@@ -415,7 +356,7 @@ function API.GetTimeUntilReady(abilityName)
 	-- Casting another ability
 	for _, otherAbility in pairs(playerAbilities[LOCAL_PLAYER]) do
 		if ability ~= otherAbility and otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
-			t = math.max(t, otherAbility:GetPhaseTimeRemaining())
+			t = math.max(t, otherAbility:GetPhaseTimeRemaining(), 0.01)
 			break
 		end
 	end
@@ -424,7 +365,7 @@ function API.GetTimeUntilReady(abilityName)
 	local currentPhase = ability:GetCurrentPhase()
 
 	if currentPhase ~= AbilityPhase.READY then
-		local timeRemaining = ability:GetPhaseTimeRemaining()
+		local timeRemaining = math.max(ability:GetPhaseTimeRemaining(), 0.01)
 		local executeDuration = ability.executePhaseSettings.duration
 		local recoveryDuration = ability.recoveryPhaseSettings.duration
 		local cooldownDuration = ability.cooldownPhaseSettings.duration
@@ -448,17 +389,39 @@ function API.GetTimeUntilReady(abilityName)
 end
 
 -- Owning client
--- This checks a few specific conditions only relevant at cast start. This is literally "can I press this button", even
--- if the result is queueing up the ability.
-function API.CanActivate(abilityName)
+-- Whether the user can press the hotkey
+function API.CanTrigger(abilityName)
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 	local data = abilityData[abilityName]
-	local target = API_PS.GetTarget(LOCAL_PLAYER)
 	assert(ability)
 
-	-- Is that ability disabled
-	if not ability.isEnabled then
-		--Events.Broadcast("BannerMessage", "Ability unavailable")
+	if not ability.isEnabled or LOCAL_PLAYER.isDead then
+		return false
+	end
+
+	if data.targets then
+		if data.groundTargets then
+			return true 
+		else
+			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, API_PS.GetTarget(LOCAL_PLAYER), abilityName)
+
+			if not targetValid then
+				if errorMessage then
+					Events.Broadcast("BannerMessage", errorMessage)
+				end
+
+				return false
+			end
+		end
+	end
+
+	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER)
+
+	if not canCast then
+		if errorMessage then
+			Events.Broadcast("BannerMessage", errorMessage)
+		end
+
 		return false
 	end
 
@@ -466,14 +429,112 @@ function API.CanActivate(abilityName)
 		return false
 	end
 
-	return IsCastValid(LOCAL_PLAYER, target, abilityName, true)
+	return true
 end
 
 -- Owning client
-function API.Activate(abilityName)
-	assert(API.CanActivate(abilityName))
+-- Whether the user can queue up this action (or cast it). For a ground target spell, this is when you click to confirm
+-- the target, otherwise this is the same as triggering.
+function CanActivate(abilityName)
+	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
+	local data = abilityData[abilityName]
+	assert(ability)
 
-	local timeUntilReady = API.GetTimeUntilReady(abilityName)
+	if not ability.isEnabled or LOCAL_PLAYER.isDead then
+		return false
+	end
+
+	if data.targets then
+		local target = nil
+
+		if data.groundTargets then
+			target = groundTargetReticle:GetWorldPosition()
+		else
+			target = API_PS.GetTarget(LOCAL_PLAYER)
+		end
+
+		local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, target, abilityName)
+
+		if not targetValid then
+			if errorMessage then
+				Events.Broadcast("BannerMessage", errorMessage)
+			end
+
+			return false
+		end
+	end
+
+	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER)
+
+	if not canCast then
+		if errorMessage then
+			Events.Broadcast("BannerMessage", errorMessage)
+		end
+
+		return false
+	end
+
+	if API.GetTimeUntilReady(abilityName) > QUEUE_TIME then
+		return false
+	end
+
+	return true
+end
+
+-- Owning client
+-- Whether this ability can be cast right now.
+function CanCast(abilityName)
+	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
+	local data = abilityData[abilityName]
+	assert(ability)
+
+	if not ability.isEnabled or LOCAL_PLAYER.isDead then
+		return false
+	end
+
+	if data.targets then
+		if not IsTargetValid(LOCAL_PLAYER, queuedAbilityTarget, abilityName) then
+			return false
+		end
+	end
+
+	if not IsCasterValid(LOCAL_PLAYER) then
+		return false
+	end
+
+	if API.GetTimeUntilReady(abilityName) > 0.0 then
+		return false
+	end
+
+	return true
+end
+
+-- Client or Server
+-- Whether this cast can continue (and should not be interrupted)
+function CanContinue(player, abilityName)
+	local data = abilityData[abilityName]
+
+	if player.isDead then
+		return false
+	end
+
+	if data.targets then
+		if not IsTargetValid(player, GetAbilityTarget(player, abilityName), abilityName) then
+			return false
+		end
+	end
+
+	if not IsCasterValid(player) then
+		return false
+	end
+
+	return true
+end
+
+-- Owning client
+function API.Trigger(abilityName)
+	assert(API.CanTrigger(abilityName))
+
 	local data = abilityData[abilityName]
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
 
@@ -483,9 +544,11 @@ function API.Activate(abilityName)
 		groundTargetReticle = World.SpawnAsset(data.reticleTemplate)
 		groundTargetAbilityName = abilityName
 	else
-		queuedAbilityTarget = API_PS.GetTarget(LOCAL_PLAYER)
+		if data.targets then
+			queuedAbilityTarget = API_PS.GetTarget(LOCAL_PLAYER)
+		end
 
-		if timeUntilReady == 0.0 then
+		if CanCast(abilityName) then
 			ability:Activate()
 		else
 			queuedAbilityName = abilityName

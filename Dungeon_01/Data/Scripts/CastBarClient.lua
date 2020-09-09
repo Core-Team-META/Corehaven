@@ -33,43 +33,46 @@ local onInterruptedListener = nil
 
 function OnInterrupted(ability)
     TEXT_BOX.text = "Cast Interrupted"
-    PROGRESS_BAR:SetFillColor(Color.RED)
+    PROGRESS_BAR:SetBackgroundColor(Color.RED)
     interruptTime = os.clock()
     onInterruptedListener:Disconnect()
     onInterruptedListener = nil
 end
 
 function Tick(deltaTime)
+    PANEL.visibility = Visibility.FORCE_OFF
+
     if interruptTime then
         if interruptTime + 0.5 < os.clock() then
             interruptTime = nil
+            PROGRESS_BAR:SetBackgroundColor(Color.GRAY)
+        else
+            PANEL.visibility = Visibility.INHERIT
         end
-    else
-        PANEL.visibility = Visibility.FORCE_OFF
+    end
 
-        for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
-            if ability:GetCurrentPhase() == AbilityPhase.CAST then
-                local remainingTime = ability:GetPhaseTimeRemaining()
-                local totalTime = ability.castPhaseSettings.duration
+    for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
+        if ability:GetCurrentPhase() == AbilityPhase.CAST then
+            local remainingTime = ability:GetPhaseTimeRemaining()
+            local totalTime = ability.castPhaseSettings.duration
 
-                if totalTime >= MIN_CAST_TIME then
-                    if onInterruptedListener then
-                        onInterruptedListener:Disconnect()
-                        onInterruptedListener = nil
-                    end
-                    
-                    onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted)
-
-                    PANEL.visibility = Visibility.INHERIT
-                    PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
-                    PROGRESS_BAR:SetFillColor(Color.YELLOW)
-
-                    if SHOW_NAME then
-                        TEXT_BOX.text = API_A.GetAbilityName(ability)
-                    end
-
-                    return
+            if totalTime >= MIN_CAST_TIME then
+                if onInterruptedListener then
+                    onInterruptedListener:Disconnect()
+                    onInterruptedListener = nil
                 end
+                
+                onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted)
+
+                PANEL.visibility = Visibility.INHERIT
+                PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
+                PROGRESS_BAR:SetFillColor(Color.YELLOW)
+
+                if SHOW_NAME and not interruptTime then
+                    TEXT_BOX.text = API_A.GetAbilityName(ability)
+                end
+
+                return
             end
         end
     end

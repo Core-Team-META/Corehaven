@@ -99,6 +99,15 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 8087503863578717839
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "Equip Basic Staff"
+        }
+      }
+    }
     TemplateAsset {
       Id: 5174374985022455588
     }
@@ -2777,7 +2786,7 @@ Objects {
     IsDefault: true
     PlayerMovementSettings {
       WalkSpeed: 640
-      MaxAcceleration: 1800
+      MaxAcceleration: 6000
       WalkableFloorAngle: 44
       JumpMaxCount: 1
       JumpVelocity: 900

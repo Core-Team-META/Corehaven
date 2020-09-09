@@ -181,8 +181,8 @@ function OnBindingPressed(player, binding)
 		if slotBinding == binding then
 			local abilityName = buttonData[i].abilityName
 
-			if abilityName and API_A.CanActivate(abilityName) then
-				API_A.Activate(abilityName)
+			if abilityName and API_A.CanTrigger(abilityName) then
+				API_A.Trigger(abilityName)
 			end
 
 			return
