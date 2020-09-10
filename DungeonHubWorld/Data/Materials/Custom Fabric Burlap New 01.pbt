@@ -2,7 +2,7 @@
   Id: 5834629590559539512
   Name: "Custom Fabric Burlap New 01"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 7715152830417178651
     ParameterOverrides {
@@ -25,9 +25,8 @@
       }
       Overrides {
         Name: "gradient_direction"
-        Color {
-          B: 1
-          A: 1
+        Vector {
+          Z: 1
         }
       }
     }

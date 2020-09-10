@@ -2,7 +2,7 @@
   Id: 15637059557978593585
   Name: "Smuggler Metal Outfit"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 9081998061972125087
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 13035452383338782066
   Name: "Pier_planks"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 2352186918021370913
     ParameterOverrides {
