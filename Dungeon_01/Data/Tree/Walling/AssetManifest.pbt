@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13365380242432489149
+  Name: "Curb 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_4m_001"
+  }
+}
+Assets {
   Id: 13304908840312358092
   Name: "Fantasy Castle Pillar 01 Top"
   PlatformAssetType: 1

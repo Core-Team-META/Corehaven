@@ -1,6 +1,500 @@
 ﻿Name: "Walling"
 RootId: 11997563873140279666
 Objects {
+  Id: 3117512457095818950
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 870.508057
+      Y: 3279.99902
+      Z: 602.546143
+    }
+    Rotation {
+      Yaw: 178.925217
+    }
+    Scale {
+      X: 1.47295523
+      Y: 0.690198481
+      Z: 0.690191865
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17275839105547708442
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 861.845215
+      Y: 2890.99414
+      Z: 589.08374
+    }
+    Rotation {
+      Yaw: 178.722321
+    }
+    Scale {
+      X: 0.828267276
+      Y: 0.690195382
+      Z: 0.690191865
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15749970662422965818
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 4785.90967
+      Y: -1305.94385
+      Z: 678.336914
+    }
+    Rotation {
+      Yaw: 82.0840149
+    }
+    Scale {
+      X: 3.00346613
+      Y: 1.90002
+      Z: 2.5382731
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 7362232965091765999
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.630208313
+        G: 0.630208313
+        B: 0.630208313
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 461020410119843450
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 4802.07373
+      Y: -1102.29395
+      Z: 527.767822
+    }
+    Rotation {
+      Yaw: -100.269714
+    }
+    Scale {
+      X: 5.98292065
+      Y: 0.121344052
+      Z: 5.04730844
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17182213627188061271
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 4812.48633
+      Y: -1104.16187
+      Z: 527.767822
+    }
+    Rotation {
+      Yaw: -100.269531
+    }
+    Scale {
+      X: 5.98292
+      Y: 0.746606529
+      Z: 5.04730844
+    }
+  }
+  ParentId: 11997563873140279666
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 11939533283457838960
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10192185539785964921
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 629.022461
+      Y: 3076.70117
+      Z: 600.513428
+    }
+    Rotation {
+      Yaw: -90.0004272
+    }
+    Scale {
+      X: 1.09647954
+      Y: 1.69461596
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15591223841873082247
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 582.006836
+      Y: 3076.70801
+      Z: 635.101807
+    }
+    Rotation {
+      Yaw: -90.0004
+    }
+    Scale {
+      X: 1.09647954
+      Y: 1.69461596
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10931137712347628610
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 536.322
+      Y: 3076.71167
+      Z: 664.372803
+    }
+    Rotation {
+      Yaw: -90.0003662
+    }
+    Scale {
+      X: 1.09647954
+      Y: 1.69461596
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17404664787809874427
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: 488.866943
+      Y: 3076.71484
+      Z: 688.938721
+    }
+    Rotation {
+      Yaw: -90.0003357
+    }
+    Scale {
+      X: 1.09647954
+      Y: 1.69461596
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6494923155167050053
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: -455.981201
+      Y: 2116.90674
+      Z: 1105.1626
+    }
+    Rotation {
+      Yaw: 179.999802
+    }
+    Scale {
+      X: 1.87519407
+      Y: 1.69461381
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5479112709843497220
+  Name: "Trim Crenellated 4m 01"
+  Transform {
+    Location {
+      X: -455.97876
+      Y: 2074.78223
+      Z: 1083.41602
+    }
+    Rotation {
+      Yaw: 179.999863
+    }
+    Scale {
+      X: 1.87519407
+      Y: 1.69461381
+      Z: 1.69461668
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13365380242432489149
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5956599479652507409
   Name: "Trim Crenellated 4m 01"
   Transform {
@@ -705,56 +1199,16 @@ Objects {
   }
 }
 Objects {
-  Id: 11844046909338349836
-  Name: "Wall End Fancy 2m"
-  Transform {
-    Location {
-      X: 603.791
-      Y: 3535.14404
-      Z: -79.6550293
-    }
-    Rotation {
-      Yaw: 88.6358414
-    }
-    Scale {
-      X: 1.59588397
-      Y: 1.81409514
-      Z: 5.21986866
-    }
-  }
-  ParentId: 11997563873140279666
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16822568136084734308
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 770072246921375205
   Name: "Trim Crenellated 4m 01"
   Transform {
     Location {
-      X: 612.262451
-      Y: 3481.82861
-      Z: 832.946045
+      X: 514.466797
+      Y: 3339.375
+      Z: 832.946777
     }
     Rotation {
-      Yaw: -0.206054688
+      Yaw: 0.854075074
     }
     Scale {
       X: 0.88370204
@@ -789,12 +1243,12 @@ Objects {
   Name: "Trim Crenellated 4m 01"
   Transform {
     Location {
-      X: 1319.84448
-      Y: 3479.27393
-      Z: 832.946045
+      X: 1221.96399
+      Y: 3349.89722
+      Z: 832.946533
     }
     Rotation {
-      Yaw: -0.206054688
+      Yaw: 0.854075074
     }
     Scale {
       X: 0.780846655
@@ -834,7 +1288,7 @@ Objects {
       Z: 1506.83105
     }
     Rotation {
-      Yaw: -88.2195435
+      Yaw: -88.9649048
       Roll: 179.999756
     }
     Scale {
@@ -870,16 +1324,17 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 1882.48523
-      Y: 3504.74902
+      X: 1882.0083
+      Y: 3522.04639
       Z: -79.6550293
     }
     Rotation {
-      Yaw: -91.3640747
+      Yaw: -92.109375
+      Roll: 8.90589338e-11
     }
     Scale {
-      X: 1.59588397
-      Y: 1.81409514
+      X: 1.91986859
+      Y: 1.81410468
       Z: 7.91574097
     }
   }
@@ -910,14 +1365,13 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 1828.98157
-      Y: 3506.87207
+      X: 1828.53613
+      Y: 3524.85815
       Z: 1461.83105
     }
     Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -88.219574
-      Roll: 89.999382
+      Yaw: -88.9649048
+      Roll: 89.9992676
     }
     Scale {
       X: 1.59589732
@@ -3717,12 +4171,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4815.79053
-      Y: -1098.78662
-      Z: 782.154541
+      X: 4814.73828
+      Y: -1098.68481
+      Z: 828.768799
     }
     Rotation {
-      Yaw: 85.0710602
+      Yaw: 82.0840454
     }
     Scale {
       X: 3.00346613
@@ -3819,12 +4273,14 @@ Objects {
   Name: "Trim Crenellated 4m 01"
   Transform {
     Location {
-      X: 4851.08643
-      Y: -552.484863
+      X: 4832.62646
+      Y: -551.882813
       Z: 1201.27832
     }
     Rotation {
-      Yaw: 88.2261124
+      Pitch: -3.01544189
+      Yaw: 91.7665405
+      Roll: 2.35113293e-06
     }
     Scale {
       X: 1
@@ -3859,12 +4315,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4823.28271
-      Y: -1012.49829
-      Z: 328.821533
+      X: 4830.71387
+      Y: -983.84082
+      Z: 301.27002
     }
     Rotation {
-      Yaw: 85.0710602
+      Yaw: 82.0840302
     }
     Scale {
       X: 2.40382862
@@ -3921,12 +4377,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4837.48242
-      Y: -847.625488
+      X: 4849.48096
+      Y: -848.998535
       Z: 718.947
     }
     Rotation {
-      Yaw: 85.0710602
+      Yaw: 82.0840454
     }
     Scale {
       X: 3.00346613
@@ -3983,12 +4439,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4840.54785
-      Y: -812.58252
+      X: 4854.36523
+      Y: -814.163086
       Z: 472.349365
     }
     Rotation {
-      Yaw: 85.0710297
+      Yaw: 82.0839157
     }
     Scale {
       X: 2.40382862
@@ -4045,12 +4501,12 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 4822.8208
-      Y: -1018.44214
+      X: 4825.9541
+      Y: -1018.81885
       Z: 82.7675781
     }
     Rotation {
-      Yaw: 85.0710297
+      Yaw: 82.0839157
     }
     Scale {
       X: 6.60892487
@@ -4584,14 +5040,14 @@ Objects {
   Name: "Wall End Fancy 2m"
   Transform {
     Location {
-      X: 4690.02637
-      Y: -1217.33032
-      Z: 553.691162
+      X: 4684.81592
+      Y: -1251.88501
+      Z: 485.828125
     }
     Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: 171.467484
-      Roll: -179.999954
+      Pitch: 1.36603776e-05
+      Yaw: 171.467361
+      Roll: -172.904922
     }
     Scale {
       X: 1.23727977
@@ -4787,12 +5243,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4599.36328
-      Y: 1783.86621
-      Z: 692.498535
+      X: 4588.09131
+      Y: 1535.32813
+      Z: -85.7780762
     }
     Rotation {
-      Yaw: 104.143196
+      Pitch: 76.8694763
+      Yaw: -116.648499
+      Roll: -64.0869141
     }
     Scale {
       X: 0.815803111
@@ -4827,12 +5285,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4599.36328
-      Y: 1783.86621
+      X: 4596.71
+      Y: 1794.37939
       Z: -84.9855957
     }
     Rotation {
-      Yaw: 104.143196
+      Yaw: 104.143227
     }
     Scale {
       X: 0.815803111
@@ -4867,12 +5325,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4599.36328
-      Y: 1783.86621
+      X: 4596.71
+      Y: 1794.37939
       Z: 401.892822
     }
     Rotation {
-      Yaw: 104.143196
+      Yaw: 104.143227
     }
     Scale {
       X: 0.815803111
@@ -5027,14 +5485,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4591.86719
-      Y: -7.85351563
-      Z: 132.606934
+      X: 4782.58105
+      Y: -88.8261719
+      Z: 139.999756
     }
     Rotation {
-      Pitch: -9.25680542
-      Yaw: 154.366333
-      Roll: 96.3979
+      Pitch: -9.25674438
+      Yaw: 154.366837
+      Roll: 102.081993
     }
     Scale {
       X: 0.815803111
@@ -5069,12 +5527,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4831.67822
-      Y: -579.804199
+      X: 4831.67676
+      Y: -579.803223
       Z: 525.713379
     }
     Rotation {
-      Yaw: 79.5066452
+      Yaw: 81.8821182
     }
     Scale {
       X: 0.815803111
@@ -5109,12 +5567,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4831.67822
-      Y: -579.804199
+      X: 4831.67676
+      Y: -579.803223
       Z: 36.6899414
     }
     Rotation {
-      Yaw: 79.5066452
+      Yaw: 81.8821182
     }
     Scale {
       X: 0.815803111
@@ -5149,12 +5607,12 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 4831.67822
-      Y: -579.804199
+      X: 4831.67676
+      Y: -579.803223
       Z: 758.464844
     }
     Rotation {
-      Yaw: 79.5066681
+      Yaw: 81.8821182
     }
     Scale {
       X: 0.815803111
@@ -7912,59 +8370,6 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 1892362005922537256
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12095835209017042614
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 1888208787136031689
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: -150.657959
-      Y: -1583.26074
-      Z: 90.1650391
-    }
-    Rotation {
-      Yaw: 90.1602936
-    }
-    Scale {
-      X: 1.58143842
-      Y: 1.89999533
-      Z: 20.1206169
-    }
-  }
-  ParentId: 11997563873140279666
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17885961249823315681
       }
     }
     Overrides {
