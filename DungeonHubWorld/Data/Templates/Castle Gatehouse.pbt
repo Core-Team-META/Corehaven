@@ -7736,5 +7736,5 @@
       AssetId: "Castle_Gatehouse"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

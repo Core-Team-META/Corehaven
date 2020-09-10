@@ -2,7 +2,7 @@
   Id: 14931813462523523395
   Name: "Bard\'s Hat Feather - Copy"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 6079892327784756655
     ParameterOverrides {
@@ -72,11 +72,10 @@
       }
       Overrides {
         Name: "gradient_direction"
-        Color {
-          R: 0.987682045
-          G: 1
-          B: 0.0699999928
-          A: 1
+        Vector {
+          X: 0.987682045
+          Y: 1
+          Z: 0.0699999928
         }
       }
     }
