@@ -2,7 +2,7 @@
   Id: 11120014160960541034
   Name: "Window_Emissive"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 12827530473249900764
     ParameterOverrides {

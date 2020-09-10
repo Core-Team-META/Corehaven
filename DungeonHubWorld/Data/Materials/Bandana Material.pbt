@@ -2,7 +2,7 @@
   Id: 15494574963793893893
   Name: "Bandana Material"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 16891349665421486861
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 8192150990700315742
   Name: "Custom Transparent Bubble Glass"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 13235260225615248053
     ParameterOverrides {
