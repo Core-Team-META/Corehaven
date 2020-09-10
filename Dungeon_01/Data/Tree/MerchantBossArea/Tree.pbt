@@ -5962,51 +5962,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7408291926157970009
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 5901.46
-      Y: 9137.59
-      Z: 4077.896
-    }
-    Rotation {
-      Yaw: 171.136261
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7192807854345907469
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 17168727746265290771
   Name: "FireMerchant"
   Transform {
@@ -9835,9 +9790,9 @@ Objects {
   Name: "Skeleton Mob"
   Transform {
     Location {
-      X: 3505.83203
-      Y: 6142.29736
-      Z: 3266.49072
+      X: 3621.41211
+      Y: 5805.74
+      Z: 2968.81445
     }
     Rotation {
       Yaw: -132.429321
