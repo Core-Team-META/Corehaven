@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4877051327853959270
-  Name: "Enemy_Wizard"
+  Id: 7177116420543446741
+  Name: "Enemy_Necromancer"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 12555114022526006492
       Objects {
         Id: 12555114022526006492
-        Name: "Enemy_Wizard"
+        Name: "Enemy_Necromancer"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,8 @@
           }
         }
         ParentId: 2862615558091888578
-        ChildIds: 9552928976720207289
-        ChildIds: 15258255637776816989
+        ChildIds: 16773701333920112244
+        ChildIds: 3773207492193256547
         ChildIds: 11860041625734473373
         UnregisteredParameters {
           Overrides {
@@ -34,11 +34,11 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Wizard"
+            String: "Necromancer"
           }
           Overrides {
             Name: "cs:MaxHitPoints"
-            Float: 100
+            Float: 120
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -58,26 +58,26 @@
           }
           Overrides {
             Name: "cs:Task1"
-            String: "wizard_fireball"
+            String: "necromancer_shadow_blast"
           }
           Overrides {
             Name: "cs:Task2"
-            String: "wizard_firestorm"
+            String: "necromancer_raise_skeleton"
           }
           Overrides {
             Name: "cs:Task3"
-            String: "wizard_meteor"
+            String: "necromancer_decay"
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
-              Id: 10106175966705151247
+              Id: 17668372975116330879
             }
           }
           Overrides {
             Name: "cs:DeathEffectTemplate"
             AssetReference {
-              Id: 3546493444851876681
+              Id: 17247616326098749555
             }
           }
           Overrides {
@@ -104,7 +104,7 @@
         }
       }
       Objects {
-        Id: 9552928976720207289
+        Id: 16773701333920112244
         Name: "AttachCostumeClient"
         Transform {
           Location {
@@ -122,7 +122,7 @@
           Overrides {
             Name: "cs:CostumeFolder"
             ObjectReference {
-              SubObjectId: 15258255637776816989
+              SubObjectId: 3773207492193256547
             }
           }
           Overrides {
@@ -145,7 +145,7 @@
         }
       }
       Objects {
-        Id: 15258255637776816989
+        Id: 3773207492193256547
         Name: "Costume"
         Transform {
           Location {
@@ -159,8 +159,8 @@
           }
         }
         ParentId: 12555114022526006492
-        ChildIds: 2991977800690752903
-        ChildIds: 4393995068763251594
+        ChildIds: 15939061312405223543
+        ChildIds: 9740147278317972489
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -172,7 +172,7 @@
         }
       }
       Objects {
-        Id: 2991977800690752903
+        Id: 15939061312405223543
         Name: "left_prop"
         Transform {
           Location {
@@ -185,8 +185,8 @@
             Z: 1
           }
         }
-        ParentId: 15258255637776816989
-        ChildIds: 16405737494435235163
+        ParentId: 3773207492193256547
+        ChildIds: 1100693579887170606
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -199,7 +199,7 @@
         }
       }
       Objects {
-        Id: 16405737494435235163
+        Id: 1100693579887170606
         Name: "Torch Fire VFX"
         Transform {
           Location {
@@ -212,12 +212,13 @@
             Z: 1
           }
         }
-        ParentId: 2991977800690752903
+        ParentId: 15939061312405223543
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.99
+              R: 0.289404154
+              B: 0.460000038
               A: 1
             }
           }
@@ -240,7 +241,7 @@
         }
       }
       Objects {
-        Id: 4393995068763251594
+        Id: 9740147278317972489
         Name: "right_prop"
         Transform {
           Location {
@@ -253,8 +254,8 @@
             Z: 1
           }
         }
-        ParentId: 15258255637776816989
-        ChildIds: 10460053753790772364
+        ParentId: 3773207492193256547
+        ChildIds: 12592962742745296433
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -267,7 +268,7 @@
         }
       }
       Objects {
-        Id: 10460053753790772364
+        Id: 12592962742745296433
         Name: "Torch Fire VFX"
         Transform {
           Location {
@@ -280,12 +281,13 @@
             Z: 1
           }
         }
-        ParentId: 4393995068763251594
+        ParentId: 9740147278317972489
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.99
+              R: 0.289404154
+              B: 0.460000038
               A: 1
             }
           }
@@ -357,7 +359,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 964220761491511210
+            Id: 11034401590223327193
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -386,12 +388,12 @@
       }
     }
     Assets {
-      Id: 964220761491511210
-      Name: "Fantasy Human Gal 1"
+      Id: 11034401590223327193
+      Name: "Fantasy Human Guy 2"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
-        AssetId: "npc_human_gal_fantasy_003_ref"
+        AssetId: "npc_human_guy_fantasy_003_ref"
       }
     }
     PrimaryAssetId {

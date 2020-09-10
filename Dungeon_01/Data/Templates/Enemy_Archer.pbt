@@ -42,7 +42,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 650
+            Float: 800
           }
           Overrides {
             Name: "cs:EngageRange"
