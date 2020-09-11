@@ -221,4 +221,34 @@
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Wooden Shield',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Square Shield',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Iron Shield',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Tower Shield',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Ornate Shield',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
