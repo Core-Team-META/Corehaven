@@ -92,7 +92,7 @@ local function ClientInitInventoryReplicated()
     local inventory = OWNER.clientUserData.inventory
     -- Whenever an equipment change is received from the server, update the local inventory.
     COMPONENT.networkedPropertyChangedEvent:Connect(function(_, prop)
-        local equipIndex = prop:match("E%d")
+        local equipIndex = tonumber(prop:match("E(%d)"))
         if equipIndex then
             local equipItemHash = COMPONENT:GetCustomProperty(prop)
             inventory:UpdateEquipSlotFromHash(equipIndex, equipItemHash)

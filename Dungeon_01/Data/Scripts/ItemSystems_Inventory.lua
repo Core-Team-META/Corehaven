@@ -89,8 +89,14 @@ function Inventory:GetItem(slotIndex)
 end
 
 -- Get a table of equipped items, indexed by equipment slot name.
-function Inventory:GetEquippedItems()
-
+function Inventory:IterateEquipSlots()
+    local function iter(_, slotIndex)
+        slotIndex = slotIndex + 1
+        if slotIndex <= #Inventory.EQUIP_SLOTS then
+            return slotIndex, self:GetItem(slotIndex)
+        end
+    end
+    return iter, nil, 0 
 end
 
 -- Gets the first free backpack slot.
@@ -188,7 +194,11 @@ end
 -- Update an equipment slot from hash value. Used by replicated clients.
 function Inventory:UpdateEquipSlotFromHash(slotIndex, itemHash)
     assert(self:IsEquipSlot(slotIndex))
-
+    local item = nil
+    if #itemHash > 0 then
+        item = self.database:CreateItemFromHash(itemHash)
+    end
+    self:_SetSlotItem(slotIndex, item)
 end
 
 ---------------------------------------------------------------------------------------------------------

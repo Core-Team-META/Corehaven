@@ -175,6 +175,7 @@ function Database:_LoadAssetDerivedInformation()
         assert(itemData.iconMUID, string.format("item template %s missing icon property", itemData.muid))
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
         itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
+        itemData.animationStance = tempObject:GetCustomProperty("AnimationStance")
         tempObject:Destroy()
     end
 end
