@@ -167,4 +167,58 @@
     Likelihood = '100',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Dull Greatsword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Iron Greatsword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Bastard Greatsword',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Claymore',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Spiked Bludgeon',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Stone Mace',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Iron Mace',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Ram\'s Head Club',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'SkeletonAssassin',
+    ItemName = 'Spiked Club',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
