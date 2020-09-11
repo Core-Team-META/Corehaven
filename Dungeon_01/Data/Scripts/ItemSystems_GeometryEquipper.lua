@@ -36,8 +36,6 @@ local function UpdateItemGeometry(slotIndex, item)
     end
     if item then
         local itemRoot = World.SpawnAsset(item:GetMUID(), { parent = COMPONENT })
-        -- local stance = itemRoot:GetCustomProperty("AnimationStance")
-        -- OWNER.animationStance = stance
         itemRoot.clientUserData.geometries = {}
         for propName,propValue in pairs(itemRoot:GetCustomProperties()) do
             local socket = propName:match("SOCKET_(.+)")

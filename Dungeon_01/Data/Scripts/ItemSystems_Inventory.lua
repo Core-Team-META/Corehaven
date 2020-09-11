@@ -28,15 +28,18 @@ assert(Inventory.TOTAL_CAPACITY <= 64, "inventory size limit is 64 for compressi
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Inventory.FromHash(database, hash)
+function Inventory.New(database)
     local o = {}
     setmetatable(o, Inventory)
     o:_Init(database)
     o:_DefineEvent("lootClaimedEvent")
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
-    if hash then o:_LoadHash(hash) end
     return o
+end
+
+function Inventory:LoadHash(hash)
+    self:_LoadHash(hash)
 end
 
 -- Converts the 1-based backpack index into the correct inventory slot index.
@@ -76,6 +79,11 @@ end
 -- True if the slot is empty.
 function Inventory:IsEmptySlot(slotIndex)
     return self.slotItems[slotIndex] == nil
+end
+
+-- True if the slot is the primary weapon slot.
+function Inventory:IsPrimaryWeaponSlot(slotIndex)
+    return slotIndex == 1
 end
 
 -- True if the backpack is full.

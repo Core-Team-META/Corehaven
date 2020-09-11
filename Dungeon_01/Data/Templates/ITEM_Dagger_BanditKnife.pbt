@@ -26,7 +26,7 @@
           }
           Overrides {
             Name: "cs:AnimationStance"
-            String: "1hand_melee_prop"
+            String: "1hand_melee_stance"
           }
           Overrides {
             Name: "cs:SOCKET_right_prop"
