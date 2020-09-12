@@ -1,1 +1,47 @@
-﻿return {}
+﻿return {
+  {
+    Name = 'Wooden Warhammer',
+    Type = 'Warhammer',
+    Rarity = 'Common',
+    StatKey = 'CommonWarhammer',
+    MUID = '5F57161C547674E0:ITEM_Warhammer_WoodenWarhammer',
+    Lore = 'The most basic leather cap.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Stone Warhammer',
+    Type = 'Warhammer',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonWarhammer',
+    MUID = '6BB25CEC01A298F1:ITEM_Warhammer_StoneWarhammer',
+    Lore = 'Not very stylish at all.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Heavy Warhammer',
+    Type = 'Warhammer',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonWarhammer',
+    MUID = '17E0BAD66C9B9D61:ITEM_Warhammer_HeavyWarhammer',
+    Lore = 'Simple, yet effective.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Studded Warhammer',
+    Type = 'Warhammer',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonMagicWarhammer',
+    MUID = '96E39263E3B90CFC:ITEM_Warhammer_StuddedWarhammer',
+    Lore = 'Makes the wearer feel smart.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Ornate Warhammer',
+    Type = 'Warhammer',
+    Rarity = 'Rare',
+    StatKey = 'RareWarhammer',
+    MUID = 'A857B10E3EBB4B5F:ITEM_Warhammer_OrnateWarhammer',
+    Lore = 'Rrrraaaaaaaaaarrrrgghh!',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+}
