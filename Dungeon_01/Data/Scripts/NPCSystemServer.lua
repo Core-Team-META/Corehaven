@@ -326,7 +326,7 @@ function KillNPC(npc)
 	else
 		for _, dropInfo in pairs(npcData.dropData) do
 			if math.random() <= dropInfo.chance then
-				Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition())
+				Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0)
 			end
 		end
 
