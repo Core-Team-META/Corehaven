@@ -8,7 +8,7 @@ local COOLDOWN = 12.0
 local VOLLEY_RADIUS	= 140.0
 local DAMAGE = 45.0
 
-local currentTask = nil
+local currentTasks = {}
 
 function GetPriority(taskHistory)
 	return 0.5
@@ -17,10 +17,10 @@ end
 function OnTaskStart(npc, threatTable)
 	local targetPlayer = API_NPC.GetRandomCharacterInThreatTable(threatTable)
 
-	currentTask = Task.Spawn(function()
+	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.7)
 
-		-- Subtask won't get interrupted if the caster is interrupted or dies
+		-- Subtask won't get interrupted
 		Task.Spawn(function()
 			local rayStart = targetPlayer:GetWorldPosition()
 			local rayEnd = rayStart - Vector3.UP * 300.0
@@ -48,11 +48,12 @@ function OnTaskStart(npc, threatTable)
 	return 1.5
 end
 
-function OnTaskEnd(npc)
-	if currentTask then
-		currentTask:Cancel()
-		currentTask = nil
+function OnTaskEnd(npc, interrupted)
+	if interrupted and currentTasks[npc] then
+		currentTasks[npc]:Cancel()
 	end
+
+	currentTasks[npc] = nil
 end
 
 API_NPC.RegisterTaskServer("archer_volley", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

@@ -3,13 +3,11 @@
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 function OnTaskStart(npc, animatedMesh)
-	local target = API_NPC.GetTarget(npc)
-
 	animatedMesh:PlayAnimation("2hand_staff_magic_up")
 	animatedMesh.playbackRateMultiplier = 0.3
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 	animatedMesh.playbackRateMultiplier = 1.0
 end

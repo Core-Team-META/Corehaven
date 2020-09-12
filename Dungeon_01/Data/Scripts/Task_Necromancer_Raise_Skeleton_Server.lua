@@ -13,23 +13,16 @@ function GetPriority(taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	currentTask = Task.Spawn(function()
-		Task.Wait(2.4)
+	return 2.5
+end
 
+function OnTaskEnd(npc, interrupted)
+	if not interrupted then
 		if math.random(2) == 1 then
 			API_NPC.SpawnNPC(SUMMON_TEMPLATE1, npc, npc:GetWorldPosition(), npc:GetWorldRotation())
 		else
 			API_NPC.SpawnNPC(SUMMON_TEMPLATE2, npc, npc:GetWorldPosition(), npc:GetWorldRotation())
 		end
-	end)
-
-	return 2.5
-end
-
-function OnTaskEnd(npc)
-	if currentTask then
-		currentTask:Cancel()
-		currentTask = nil
 	end
 end
 

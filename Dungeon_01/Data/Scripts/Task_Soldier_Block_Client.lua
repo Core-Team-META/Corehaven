@@ -9,7 +9,7 @@ function OnTaskStart(npc, animatedMesh)
 	animatedMesh.animationStance = "1hand_melee_shield_block"
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh.animationStance = previousStances[npc]
 	previousStances[npc] = nil
 end

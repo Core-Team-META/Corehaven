@@ -7,17 +7,9 @@ local AGGRO_TEMPLATE = script:GetCustomProperty("AggroTemplate")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-local previousTasks = {}		-- CoreObject -> string
+local previousTaskStrings = {}		-- CoreObject -> string
 local previousTargets = {}	-- CoreObject -> Player
 local taskEffects = {}			-- CoreObject -> CoreObject
-
-function FixTaskName(taskName)
-	if string.sub(taskName, 1, 1) == "!" then
-		return string.sub(taskName, 2)
-	else
-		return taskName
-	end
-end
 
 function IsAsleep(npc)
 	return npc:GetCustomProperty("CurrentTask") == API_NPC.STATE_ASLEEP
@@ -25,13 +17,14 @@ end
 
 function Tick(deltaTime)
 	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
-		local previousTask = previousTasks[npc]		-- May be nil
-		local currentTask = npc:GetCustomProperty("CurrentTask")
-		local fixedTaskName = FixTaskName(currentTask)
+		local previousTaskString = previousTaskStrings[npc]		-- May be nil
+		local currentTaskString = npc:GetCustomProperty("CurrentTask")
 		local mesh = npcData.animatedMesh
 		assert(mesh)
 
-		if currentTask ~= previousTask then
+		if currentTaskString ~= previousTaskString then
+			local previousTask, _, _ = API_NPC.DecodeTaskString(previousTaskString)
+			local currentTask, interrupted, _ = API_NPC.DecodeTaskString(currentTaskString)
 			assert(currentTask)
 
 			-- Fade out previous effect
@@ -42,14 +35,14 @@ function Tick(deltaTime)
 
 			-- Handle end task stuff first
 			if previousTask then
-				local taskData = API_NPC.GetAllTaskData()[previousTask]
+				local previousTaskData = API_NPC.GetAllTaskData()[previousTask]
 
-				if taskData and taskData.onTaskEnd then
-					taskData.onTaskEnd(npc, npcData.animatedMesh)
+				if previousTaskData and previousTaskData.onTaskEnd then
+					previousTaskData.onTaskEnd(npc, npcData.animatedMesh, interrupted)
 				end
 			end
 
-			local taskData = API_NPC.GetAllTaskData()[fixedTaskName]
+			local taskData = API_NPC.GetAllTaskData()[currentTask]
 			local asleepStance = mesh:GetCustomProperty("AsleepStance") or "unarmed_idle_relaxed"
 			local idleStance = mesh:GetCustomProperty("IdleStance") or "unarmed_idle_relaxed"
 			local runStance = mesh:GetCustomProperty("RunStance") or "unarmed_run_forward"
@@ -57,18 +50,18 @@ function Tick(deltaTime)
 			local deathAnimation = mesh:GetCustomProperty("DeathAnimation") or "unarmed_death"
 			local stunnedAnimation = mesh:GetCustomProperty("StunnedStance") or "unarmed_bind_pose"
 
-			if fixedTaskName == API_NPC.STATE_ASLEEP then
+			if currentTask == API_NPC.STATE_ASLEEP then
 				mesh.animationStance = asleepStance
-			elseif fixedTaskName == API_NPC.STATE_IDLE then
+			elseif currentTask == API_NPC.STATE_IDLE then
 				mesh.animationStance = idleStance
-			elseif fixedTaskName == API_NPC.STATE_CHASING or fixedTaskName == API_NPC.STATE_RESETTING then
+			elseif currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_RESETTING then
 				mesh:StopAnimations()
 				mesh.animationStance = runStance
-			elseif fixedTaskName == API_NPC.STATE_STARING then
+			elseif currentTask == API_NPC.STATE_STARING then
 				mesh.animationStance = stareStance
-			elseif fixedTaskName == API_NPC.STATE_DEAD then
+			elseif currentTask == API_NPC.STATE_DEAD then
 				mesh:PlayAnimation(deathAnimation, {shouldLoop = true})
-			elseif fixedTaskName == API_NPC.STATE_STUNNED then
+			elseif currentTask == API_NPC.STATE_STUNNED then
 				mesh.animationStance = stunnedAnimation
 			else
 				mesh.animationStance = idleStance
@@ -92,7 +85,7 @@ function Tick(deltaTime)
 				end
 			end
 
-			previousTasks[npc] = currentTask
+			previousTaskStrings[npc] = currentTaskString
 		end
 
 		local previousTarget = previousTargets[npc]

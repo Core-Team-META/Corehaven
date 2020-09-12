@@ -3,12 +3,10 @@
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 function OnTaskStart(npc, animatedMesh)
-	local target = API_NPC.GetTarget(npc)
-
 	animatedMesh:PlayAnimation("2hand_staff_magic_up")
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 end
 

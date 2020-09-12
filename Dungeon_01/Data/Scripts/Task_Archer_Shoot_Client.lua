@@ -12,7 +12,7 @@ function OnTaskStart(npc, animatedMesh)
 	animatedMesh:PlayAnimation("2hand_rifle_shoot")
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 end
 

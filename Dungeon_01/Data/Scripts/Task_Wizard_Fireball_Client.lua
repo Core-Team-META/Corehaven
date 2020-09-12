@@ -6,21 +6,23 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 local PROJECTILE_SPEED = 2000.0
 
+local targets = {}
+
 function OnTaskStart(npc, animatedMesh)
-	local target = API_NPC.GetTarget(npc)
+	targets[npc] = API_NPC.GetTarget(npc)
 
 	animatedMesh:PlayAnimation("2hand_staff_magic_bolt")
 	animatedMesh.playbackRateMultiplier = 0.3
-
-	Task.Spawn(function()
-		Task.Wait(1.5)
-		API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
-	end)
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 	animatedMesh.playbackRateMultiplier = 1.0
+
+	if not interrupted then
+		API_P.CreateProjectile(npc, targets[npc], PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+		targets[npc] = nil
+	end
 end
 
 API_NPC.RegisterTaskClient("wizard_fireball", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

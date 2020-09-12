@@ -5,7 +5,7 @@ local RANGE = 120.0
 local COOLDOWN = 0.0
 local DAMAGE = 20.0
 
-local currentTask = nil
+local currentTasks = {}
 
 function GetPriority(taskHistory)
 	return 1.0
@@ -14,21 +14,22 @@ end
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
 	
-	currentTask = Task.Spawn(function()
-		Task.Wait(0.3)
+	currentTasks[npc] = Task.Spawn(function()
+		Task.Wait(0.4)
 		API_D.ApplyDamage(npc, target, DAMAGE)
 	end)
 
 	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
-	return 1.05
+	return 1.5
 end
 
-function OnTaskEnd(npc)
-	if currentTask then
-		currentTask:Cancel()
-		currentTask = nil
+function OnTaskEnd(npc, interrupted)
+	if interrupted and currentTasks[npc] then
+		currentTasks[npc]:Cancel()
 	end
+
+	currentTasks[npc] = nil
 end
 
 API_NPC.RegisterTaskServer("soldier_melee", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

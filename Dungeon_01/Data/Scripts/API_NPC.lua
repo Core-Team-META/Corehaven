@@ -19,7 +19,7 @@ local systemFunctions = nil
 -- Registers a named task for npcs, with optional task start and task end handlers.
 -- They have the following signatures:
 -- onTaskStart(npc, AnimatedMesh)
--- onTaskEnd(npc, AnimatedMesh)
+-- onTaskEnd(npc, AnimatedMesh, interrupted)
 function API.RegisterTaskClient(taskName, effectTemplate, onTaskStart, onTaskEnd)
 	local data = {}
 	data.effectTemplate = effectTemplate
@@ -35,12 +35,8 @@ end
 -- <float> onTaskStart(npc, threatTable)
 -- 	   This should return the duration of this task, and spawn a task if delayed action is needed instead of calling
 --     Task.Wait(), which may cause strange or broken behavior.
--- nil onTaskEnd(npc)
+-- nil onTaskEnd(npc, interrupted)
 function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskStart, onTaskEnd)
-	if taskName[1] == "!" then
-		error(string.format("Task %s cannot be registered. Task names cannot start with '!'", taskName))
-	end
-
 	local data = {}
 	data.range = range
 	data.cooldown = cooldown
@@ -284,6 +280,28 @@ function API.GetRandomCharacterInThreatTable(threatTable)
 	end
 
 	return temp[math.random(#temp)]
+end
+
+-- This encoding is horribly inefficient, but it's really easy to debug and doesn't change enough for it to matter
+function API.EncodeTaskString(task, interrupted, parity)
+	function BoolToString(bool)
+		if bool then
+			return "t"
+		else
+			return "f"
+		end
+	end
+
+	return string.format("%s%s%s", BoolToString(interrupted), BoolToString(parity), task)
+end
+
+function API.DecodeTaskString(taskString)
+	if taskString then
+		local interrupted = (string.sub(taskString, 1, 1) == "t")
+		local parity = (string.sub(taskString, 2, 2) == "t")
+		local task = string.sub(taskString, 3)
+		return task, interrupted, parity
+	end
 end
 
 return API

@@ -20,7 +20,7 @@ function OnTaskStart(npc, threatTable)
 	return 4.0
 end
 
-function OnTaskEnd(npc)
+function OnTaskEnd(npc, interrupted)
 	API_SE.RemoveStatusEffect(npc, statusEffectIndices[npc])
 	statusEffectIndices[npc] = nil
 end

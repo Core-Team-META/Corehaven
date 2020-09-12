@@ -2,10 +2,10 @@
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local currentTask = nil
+local currentTasks = {}
 
 function OnTaskStart(npc, animatedMesh)
-	currentTask = Task.Spawn(function()
+	currentTasks[npc] = Task.Spawn(function()
 		for i = 1, 3 do
 			Task.Wait(0.3)
 			animatedMesh:PlayAnimation("2hand_rifle_shoot")
@@ -13,12 +13,12 @@ function OnTaskStart(npc, animatedMesh)
 	end)
 end
 
-function OnTaskEnd(npc, animatedMesh)
-	if currentTask then
-		currentTask:Cancel()
-		currentTask = nil
+function OnTaskEnd(npc, animatedMesh, interrupted)
+	if interrupted and currentTasks[npc] then
+		currentTasks[npc]:Cancel()
 	end
 
+	currentTasks[npc] = nil
 	animatedMesh:StopAnimations()
 end
 

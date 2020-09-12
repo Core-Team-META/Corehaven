@@ -5,14 +5,14 @@ local RANGE = 1000.0
 local COOLDOWN = 12.0
 local TICK_DAMAGE = 15.0
 
-local currentTask = nil
+local currentTasks = {}
 
 function GetPriority(taskHistory)
 	return 0.5
 end
 
 function OnTaskStart(npc, threatTable)
-	currentTask = Task.Spawn(function()
+	currentTasks[npc] = Task.Spawn(function()
 		for i = 1, 3 do
 			Task.Wait(1.0)
 
@@ -27,12 +27,12 @@ function OnTaskStart(npc, threatTable)
 	return 3.0
 end
 
-function OnTaskEnd(npc)
-	if currentTask then
-		currentTask:Cancel()
-		currentTask = nil
+function OnTaskEnd(npc, interrupted)
+	if interrupted and currentTasks[npc] then
+		currentTasks[npc]:Cancel()
 	end
 
+	currentTasks[npc] = nil
 	npc:StopRotate()
 end
 

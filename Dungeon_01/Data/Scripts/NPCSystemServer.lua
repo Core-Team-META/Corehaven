@@ -38,7 +38,7 @@ function IsAsleep(npc)
 	return npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP
 end
 
-function SetCurrentTask(npc, task)
+function SetCurrentTask(npc, task, interrupted)
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
 	local tasks = API_NPC.GetAllTaskData()
@@ -56,20 +56,18 @@ function SetCurrentTask(npc, task)
 		local taskData = tasks[previousTask]
 
 		if taskData and taskData.onTaskEnd then
-			taskData.onTaskEnd(npc)
+			taskData.onTaskEnd(npc, interrupted)
 		end
 	end
 
 	npcState.taskHistory[TASK_HISTORY_LENGTH] = nil
 	table.insert(npcState.taskHistory, 1, task)
 
-	if npc:GetCustomProperty("CurrentTask") == task then
-		-- NPCs can repeat the same task. To try to get client visuals matching, we alternate with an '!' added.
-		-- If tasks are quick enough, the client may miss some, but since that is only visual, that's okay.
-		npc:SetNetworkedCustomProperty("CurrentTask", string.format("!%s", task))
-	else
-		npc:SetNetworkedCustomProperty("CurrentTask", task)
-	end
+	-- We assume that the client will get updates fast enough to see every task. If they miss one, the only effect will
+	-- be some missed cosmetics. We also toggle the parity every change so the same task can be repeated.
+	_, _, p = API_NPC.DecodeTaskString(npc:GetCustomProperty("CurrentTask"))
+	local newTaskString = API_NPC.EncodeTaskString(task, interrupted, not p)
+	npc:SetNetworkedCustomProperty("CurrentTask", newTaskString)
 end
 
 function ResetNPC(npc)
@@ -116,7 +114,7 @@ function UpdateCurrentTask(npc)
 		local currentTask = npcState.taskHistory[1]
 
 		if currentTask ~= API_NPC.STATE_CHASING and currentTask ~= API_NPC.STATE_STARING then
-			SetCurrentTask(npc, API_NPC.STATE_CHASING)
+			SetCurrentTask(npc, API_NPC.STATE_CHASING, false)
 		end
 	else
 		local r = math.random() * totalPriorty
@@ -124,7 +122,7 @@ function UpdateCurrentTask(npc)
 		for taskName, priority in pairs(possibleTasks) do
 			if r < priority then
 				local taskData = tasks[taskName]
-				SetCurrentTask(npc, taskName)
+				SetCurrentTask(npc, taskName, false)
 				npcState.taskCooldownEndTimes[taskName] = time() + taskData.cooldown
 				local duration = nil
 
@@ -237,7 +235,7 @@ end
 
 function Wake(npc)
 	assert(npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP)
-	SetCurrentTask(npc, API_NPC.STATE_IDLE)
+	SetCurrentTask(npc, API_NPC.STATE_IDLE, false)
 end
 
 function OnNPCCreated(npc, data)
@@ -251,7 +249,7 @@ function OnNPCCreated(npc, data)
 	npcState.threatTable = {}
 	npcStates[npc] = npcState
 	API_NPC.SetHitPoints(npc, data.maxHitPoints)
-	SetCurrentTask(npc, API_NPC.STATE_ASLEEP)
+	SetCurrentTask(npc, API_NPC.STATE_ASLEEP, false)
 
 	-- Inherit our spawn parent's target and threat table
 	if data.spawnParent then
@@ -262,7 +260,7 @@ function OnNPCCreated(npc, data)
 		local target = API_NPC.GetTarget(data.spawnParent)
 
 		if target then
-			SetCurrentTask(npc, API_NPC.STATE_CHASING)
+			SetCurrentTask(npc, API_NPC.STATE_CHASING, false)
 			API_NPC.SetTarget(npc, target)
 		else
 			-- Our parent already reset or died
@@ -319,7 +317,7 @@ function KillNPC(npc)
 	local npcState = npcStates[npc]
 	local npcData = API_NPC.GetAllNPCData()[npc]
 
-	SetCurrentTask(npc, API_NPC.STATE_DEAD)
+	SetCurrentTask(npc, API_NPC.STATE_DEAD, true)
 	API_NPC.SetTarget(npc, nil)
 	API_NPC.SetHitPoints(npc, 0.0)
 
@@ -397,7 +395,7 @@ function Tick(deltaTime)
 						-- We're home
 						if GetXYDistance(npcPosition, npcData.spawnPosition) < 10.0 then
 							ResetNPC(npc)
-							SetCurrentTask(npc, API_NPC.STATE_IDLE)
+							SetCurrentTask(npc, API_NPC.STATE_IDLE, false)
 							npc:SetWorldRotation(npcData.spawnRotation)
 							npcState.currentTaskEndTime = 0.0
 						else
@@ -454,14 +452,14 @@ function Tick(deltaTime)
 						if not API_NPC.GetTarget(npc) then
 							assert(IsTableEmpty(npcState.threatTable))
 							ResetNPC(npc)
-							SetCurrentTask(npc, API_NPC.STATE_RESETTING)
+							SetCurrentTask(npc, API_NPC.STATE_RESETTING, true)
 						end
 					end
 
 					if API_NPC.GetTarget(npc) then
 						-- Should we be stunned?
 						if npcState.shouldBeStunned and currentTask ~= API_NPC.STATE_STUNNED then
-							SetCurrentTask(npc, API_NPC.STATE_STUNNED)
+							SetCurrentTask(npc, API_NPC.STATE_STUNNED, true)
 						elseif -- Always looking for a new task in these states
 							currentTask == API_NPC.STATE_IDLE or
 							currentTask == API_NPC.STATE_CHASING or
@@ -485,13 +483,13 @@ function Tick(deltaTime)
 
 						if path and (path[#path] - npcPosition).size > 100.0 then
 							if currentTask ~= API_NPC.STATE_CHASING then
-								SetCurrentTask(npc, API_NPC.STATE_CHASING)
+								SetCurrentTask(npc, API_NPC.STATE_CHASING, false)
 							end
 
 							MoveAlongPath(npc, deltaTime, path)
 						else
 							if currentTask ~= API_NPC.STATE_STARING then
-								SetCurrentTask(npc, API_NPC.STATE_STARING)
+								SetCurrentTask(npc, API_NPC.STATE_STARING, false)
 								npcState.nextMoveUpdateTime = time() + 0.5		-- Don't want rapid toggling
 
 								if GetXYDistance(targetPosition, npcPosition) > 10.0 then

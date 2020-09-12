@@ -6,7 +6,7 @@ function OnTaskStart(npc, animatedMesh)
 	animatedMesh:PlayAnimation("2hand_staff_magic_up")
 end
 
-function OnTaskEnd(npc, animatedMesh)
+function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 end
 
