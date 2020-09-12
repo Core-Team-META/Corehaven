@@ -1,7 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
-local RANGE = 1000.0
+local RANGE = 1100.0
 local COOLDOWN = 7.0
 local DECAY_COUNT = {1, 1, 2, 2, 3, 3, 4, 4}	-- Based on how many targets are in our threat table
 
