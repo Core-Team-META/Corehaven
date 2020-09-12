@@ -1886,7 +1886,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 10512562362778365331
+        Id: 16884239609476660373
       }
     }
     Overrides {
@@ -2258,7 +2258,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 10512562362778365331
+        Id: 16884239609476660373
       }
     }
     Overrides {

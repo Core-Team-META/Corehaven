@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 16884239609476660373
+  Name: "Fantasy Ability Teal 023"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Teal_023"
+  }
+}
+Assets {
   Id: 16532880832873788683
   Name: "BG Flat 002"
   PlatformAssetType: 9
@@ -41,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_022"
-  }
-}
-Assets {
-  Id: 10512562362778365331
-  Name: "Shield"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Shield"
   }
 }
 Assets {

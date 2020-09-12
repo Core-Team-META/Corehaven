@@ -8,7 +8,6 @@ local data = {}
 data.name = "Block"
 data.duration = 4.0
 data.icon = ICON
-data.color = Color.YELLOW
 data.effectTemplate = EFFECT_TEMPLATE
 data.damageTakenMultiplier = 0.25
 

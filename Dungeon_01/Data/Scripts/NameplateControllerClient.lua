@@ -387,7 +387,6 @@ function Tick(deltaTime)
 
 						local effectData = API_SE.STATUS_EFFECT_DEFINITIONS[data.name]
 						iconTemplate.visibility = Visibility.INHERIT
-						iconTemplate:SetColor(effectData.color)
 						icon:SetImage(effectData.icon)
 
 						if effectData.duration then

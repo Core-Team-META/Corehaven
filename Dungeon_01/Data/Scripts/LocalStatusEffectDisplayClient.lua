@@ -21,7 +21,6 @@ function Tick(deltaTime)
 			local effectData = API_SE.STATUS_EFFECT_DEFINITIONS[data.name]
 			displayTemplate.visibility = Visibility.INHERIT
 			displayTemplate:GetCustomProperty("Icon"):WaitForObject():SetImage(effectData.icon)
-			displayTemplate:GetCustomProperty("Background"):WaitForObject():SetColor(effectData.color)
 			displayTemplate:GetCustomProperty("NameText"):WaitForObject().text = data.name
 			local timeText = displayTemplate:GetCustomProperty("TimeText"):WaitForObject()
 

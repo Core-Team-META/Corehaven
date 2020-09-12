@@ -15,7 +15,6 @@ statusEffectData fields:
 name - player-facing name
 <duration> - default duration, or missing for unlimited duration
 icon - to show on ui
-color - color in ui (usually the background)
 <effectTemplate> - template to spawn and attach to character for effects
 <startFunction(sourceCharacter, character)> - called when applied
 <tickFunction(sourceCharacter, character)> - called exactly once per seconds (on average)
@@ -236,10 +235,6 @@ function API.DefineStatusEffect(statusEffectData)
 
 	if not statusEffectData.icon then
 		error(string.format("DefineStatusEffect for %s missing icon", statusEffectData.name))
-	end
-
-	if not statusEffectData.color then
-		error(string.format("DefineStatusEffect for %s missing color", statusEffectData.name))
 	end
 
 	if API.STATUS_EFFECT_DEFINITIONS[statusEffectData.name] then

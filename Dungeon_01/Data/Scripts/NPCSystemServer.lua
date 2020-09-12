@@ -180,10 +180,12 @@ function GetXYDistance(p1, p2)
 end
 
 function GetNPCsInPull(pull)
-	local result = pull:GetChildren()
+	local result = {}
 
-	for _, npc in pairs(result) do
-		assert(npcStates[npc])
+	for _, child in pairs(pull:GetChildren()) do
+		if npcStates[child] then
+			table.insert(result, child)
+		end
 	end
 
 	return result

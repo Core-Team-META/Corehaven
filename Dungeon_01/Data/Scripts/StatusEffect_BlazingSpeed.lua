@@ -13,7 +13,6 @@ local data = {}
 data.name = "Blazing Speed"
 data.duration = 2.0
 data.icon = ICON
-data.color = Color.RUBY
 data.effectTemplate = EFFECT_TEMPLATE
 data.moveSpeedMultiplier = 2.5
 data.tickFunction = EffectTick

@@ -13,7 +13,6 @@ local data = {}
 data.name = "Decay"
 data.duration = 12.0
 data.icon = ICON
-data.color = Color.PURPLE
 data.effectTemplate = EFFECT_TEMPLATE
 data.tickFunction = EffectTick
 

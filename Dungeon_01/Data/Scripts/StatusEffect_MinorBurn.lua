@@ -13,7 +13,6 @@ local data = {}
 data.name = "Minor Burn"
 data.duration = 5.0
 data.icon = ICON
-data.color = Color.RUBY
 data.effectTemplate = EFFECT_TEMPLATE
 data.tickFunction = EffectTick
 
