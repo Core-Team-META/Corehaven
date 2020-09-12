@@ -109,8 +109,12 @@ function Item:ApplyIconImageSettings(uiImage)
     return self.data.iconMUID
 end
 
-function Item:GetMesh()
+function Item:GetMUID()
     return self.data.muid
+end
+
+function Item:GetAnimationStance()
+    return self.data.animationStance
 end
 
 function Item:GetDescription()

@@ -189,6 +189,7 @@
         }
         ParentId: 1996766622101972086
         ChildIds: 5094200514235811791
+        ChildIds: 11026318964588231323
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -231,6 +232,41 @@
         Script {
           ScriptAsset {
             Id: 1910939002984116838
+          }
+        }
+      }
+      Objects {
+        Id: 11026318964588231323
+        Name: "GeometryEquipper"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 8297189619817587089
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:InventoryComponent"
+            ObjectReference {
+              SubObjectId: 1996766622101972086
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 11439501495497780355
           }
         }
       }

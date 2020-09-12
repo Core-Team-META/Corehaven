@@ -29,7 +29,7 @@ Database:WaitUntilLoaded()
 local function ServerLoadInventory()
     local playerData = Storage.GetPlayerData(OWNER)
     print("Loading inventory: ", playerData.inventoryHash)
-    OWNER.serverUserData.inventory = Inventory.FromHash(Database, playerData.inventoryHash)
+    OWNER.serverUserData.inventory:LoadHash(playerData.inventoryHash)
     COMPONENT:SetNetworkedCustomProperty("LOAD", OWNER.serverUserData.inventory:RuntimeHash())
 end
 
@@ -39,7 +39,7 @@ local function ClientLoadInventory()
         Task.Wait()
         loadHash = COMPONENT:GetCustomProperty("LOAD")
     end
-    OWNER.clientUserData.inventory = Inventory.FromHash(Database, loadHash)
+    OWNER.clientUserData.inventory:LoadHash(loadHash)
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -51,12 +51,18 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerInitInventory()
+    OWNER.serverUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.serverUserData.inventory
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
     inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
+        -- We will also update the player's animation stance depending on the item.
+        if inventory:IsPrimaryWeaponSlot(equipIndex) then
+            OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
+            print("Changed animation stance!", OWNER.animationStance)
+        end
     end)
     -- Whenever a client rearranges their local inventory, update the server inventory and persist.
     Events.ConnectForPlayer("IIM", function(player, fromSlotIndex, toSlotIndex)
@@ -77,6 +83,7 @@ local function ServerInitInventory()
 end
 
 local function ClientInitInventoryLocal()
+    OWNER.clientUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.clientUserData.inventory
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
@@ -89,10 +96,11 @@ local function ClientInitInventoryLocal()
 end
 
 local function ClientInitInventoryReplicated()
+    OWNER.clientUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.clientUserData.inventory
     -- Whenever an equipment change is received from the server, update the local inventory.
     COMPONENT.networkedPropertyChangedEvent:Connect(function(_, prop)
-        local equipIndex = prop:match("E%d")
+        local equipIndex = tonumber(prop:match("E(%d)"))
         if equipIndex then
             local equipItemHash = COMPONENT:GetCustomProperty(prop)
             inventory:UpdateEquipSlotFromHash(equipIndex, equipItemHash)
@@ -102,17 +110,17 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function InitServer()
-    ServerLoadInventory()
     ServerInitInventory()
+    ServerLoadInventory()
 end
 
 local function InitClient()
-    ClientLoadInventory()
     if OWNER == Game.GetLocalPlayer() then
         ClientInitInventoryLocal()
     else
         ClientInitInventoryReplicated()
     end
+    ClientLoadInventory()
 end
 
 if script.isServerOnly then InitServer() end

@@ -28,15 +28,18 @@ assert(Inventory.TOTAL_CAPACITY <= 64, "inventory size limit is 64 for compressi
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Inventory.FromHash(database, hash)
+function Inventory.New(database)
     local o = {}
     setmetatable(o, Inventory)
     o:_Init(database)
     o:_DefineEvent("lootClaimedEvent")
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
-    if hash then o:_LoadHash(hash) end
     return o
+end
+
+function Inventory:LoadHash(hash)
+    self:_LoadHash(hash)
 end
 
 -- Converts the 1-based backpack index into the correct inventory slot index.
@@ -78,6 +81,11 @@ function Inventory:IsEmptySlot(slotIndex)
     return self.slotItems[slotIndex] == nil
 end
 
+-- True if the slot is the primary weapon slot.
+function Inventory:IsPrimaryWeaponSlot(slotIndex)
+    return slotIndex == 1
+end
+
 -- True if the backpack is full.
 function Inventory:IsBackpackFull()
     return self:GetFreeBackpackSlot() == nil
@@ -89,8 +97,14 @@ function Inventory:GetItem(slotIndex)
 end
 
 -- Get a table of equipped items, indexed by equipment slot name.
-function Inventory:GetEquippedItems()
-
+function Inventory:IterateEquipSlots()
+    local function iter(_, slotIndex)
+        slotIndex = slotIndex + 1
+        if slotIndex <= #Inventory.EQUIP_SLOTS then
+            return slotIndex, self:GetItem(slotIndex)
+        end
+    end
+    return iter, nil, 0 
 end
 
 -- Gets the first free backpack slot.
@@ -188,7 +202,11 @@ end
 -- Update an equipment slot from hash value. Used by replicated clients.
 function Inventory:UpdateEquipSlotFromHash(slotIndex, itemHash)
     assert(self:IsEquipSlot(slotIndex))
-
+    local item = nil
+    if #itemHash > 0 then
+        item = self.database:CreateItemFromHash(itemHash)
+    end
+    self:_SetSlotItem(slotIndex, item)
 end
 
 ---------------------------------------------------------------------------------------------------------

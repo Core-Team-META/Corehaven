@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 12324544025194901135
-  Name: "ITEM_Sword_IronGreatsword"
+  Id: 11665356817719102183
+  Name: "ITEM_Greatword_Bastard"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "ITEM_Sword_IronGreatsword"
+        Name: "ITEM_Greatword_Bastard"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 18395261131135298376
+              Id: 10626637766316488762
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 18395261131135298376
-      Name: "Fantasy Sword 021"
+      Id: 10626637766316488762
+      Name: "Fantasy Sword 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_021"
+        AssetId: "UI_Fantasy_Weapon_Sword_002"
       }
     }
     Assets {

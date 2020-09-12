@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 8930948548750333534
-  Name: "ITEM_Sword_Claymore"
+  Id: 13151943989050507685
+  Name: "ITEM_Mace_IronMace"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "ITEM_Sword_Claymore"
+        Name: "ITEM_Mace_SpikedClub"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 1908032260203119107
+              Id: 7315998350293375969
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 1908032260203119107
-      Name: "Fantasy Sword 013"
+      Id: 7315998350293375969
+      Name: "Fantasy Club 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_013"
+        AssetId: "UI_Fantasy_Weapon_Club_002"
       }
     }
     Assets {

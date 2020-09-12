@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 16889564898213671633
-  Name: "ITEM_Sword_DullGreatsword"
+  Id: 1615517204719504979
+  Name: "ITEM_Mace_SpikedClub"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "ITEM_Sword_DullGreatsword"
+        Name: "ITEM_Mace_RamsHeadClub - Copy"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 297470662679274775
+              Id: 4592358013428655033
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 297470662679274775
-      Name: "Fantasy Sword 006"
+      Id: 4592358013428655033
+      Name: "Fantasy Club 008"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_006"
+        AssetId: "UI_Fantasy_Weapon_Club_008"
       }
     }
     Assets {
