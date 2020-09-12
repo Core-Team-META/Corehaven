@@ -115,5 +115,5 @@ function Tick(deltaTime)
 	end
 end
 
-API_NPC.RegisterSystem({IsAsleep = IsAsleep})
+API_NPC.RegisterSystem({IsAsleep = IsAsleep}, true)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)

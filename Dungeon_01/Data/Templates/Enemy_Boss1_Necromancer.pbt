@@ -57,6 +57,10 @@
             Float: 150
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 40
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "boss1_necromancer_shadow_worm"
           }
@@ -71,6 +75,22 @@
           Overrides {
             Name: "cs:Task4"
             String: "boss1_necromancer_shadow_eruptions"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "Boss1Main"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "Boss1Rare"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
+            Float: 0.3
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -132,10 +152,7 @@
           Overrides {
             Name: "cs:AnimatedMesh"
             ObjectReference {
-              SelfId: 17968981358669301164
               SubObjectId: 11860041625734473373
-              InstanceId: 17304627681895772242
-              TemplateId: 7177116420543446741
             }
           }
         }

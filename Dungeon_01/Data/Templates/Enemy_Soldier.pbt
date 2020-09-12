@@ -57,12 +57,24 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 10
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "soldier_melee"
           }
           Overrides {
             Name: "cs:Task2"
             String: "soldier_block"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.02
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

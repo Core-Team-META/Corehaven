@@ -38,7 +38,7 @@
           }
           Overrides {
             Name: "cs:MaxHitPoints"
-            Float: 75
+            Float: 80
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -57,12 +57,24 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 10
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "archer_shoot"
           }
           Overrides {
             Name: "cs:Task2"
             String: "archer_volley"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.02
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

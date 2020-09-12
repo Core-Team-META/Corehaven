@@ -42,7 +42,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 800
+            Float: 1000
           }
           Overrides {
             Name: "cs:EngageRange"
@@ -57,8 +57,20 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 5
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "reanimated_skeleton_slash"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.02
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -811,19 +823,19 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:AsleepStance"
-            String: "2hand_staff_idle_relaxed"
+            String: "1hand_melee_idle_relaxed"
           }
           Overrides {
             Name: "cs:IdleStance"
-            String: "2hand_staff_idle_ready"
+            String: "1hand_melee_idle_ready"
           }
           Overrides {
             Name: "cs:RunStance"
-            String: "2hand_staff_run_forward"
+            String: "1hand_melee_run_forward"
           }
           Overrides {
             Name: "cs:StareStance"
-            String: "2hand_staff_idle_ready"
+            String: "1hand_melee_idle_ready"
           }
           Overrides {
             Name: "cs:DeathAnimation"

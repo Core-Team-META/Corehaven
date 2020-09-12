@@ -2,10 +2,10 @@
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
 
-local RANGE = 1000.0
+local RANGE = 600.0
 local COOLDOWN = 0.0
-local DAMAGE = 17.0
-local PROJECTILE_SPEED = 2000.0
+local DAMAGE = 14.0
+local PROJECTILE_SPEED = 1700.0
 
 local currentTask = nil
 
@@ -38,4 +38,4 @@ function OnTaskEnd(npc)
 	end
 end
 
-API_NPC.RegisterTaskServer("wizard_fireball", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskServer("reanimated_wizard_fireball", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

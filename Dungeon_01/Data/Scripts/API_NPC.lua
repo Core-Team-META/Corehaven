@@ -9,6 +9,8 @@ API.STATE_RESETTING = "resetting"
 API.STATE_DEAD = "dead"
 API.STATE_STUNNED = "stunned"
 
+local IS_CLIENT = nil
+
 local tasks = {}		-- string -> table
 local npcs = {}			-- CoreObject -> table
 local systemFunctions = nil
@@ -61,17 +63,42 @@ function API.RegisterNPCFolder(npcFolder)
 		data.engageRange = npc:GetCustomProperty("EngageRange")
 		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
+		data.experience = npc:GetCustomProperty("Experience")
 
 		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
 		data.spawnPosition = npc:GetWorldPosition()
 		data.spawnRotation = npc:GetWorldRotation()
+
+		if not IS_CLIENT then
+			data.spawnParent = npc.serverUserData.spawnParent
+			npc.serverUserData.spawnParent = nil
+		end
+
 		data.taskList = {}
+		local i = 1
 		
-		for i = 1, 9 do
+		while true do
 			local task = npc:GetCustomProperty(string.format("Task%d", i))
 
 			if task then
-				table.insert(data.taskList, task)
+				data.taskList[i] = task
+				i = i + 1
+			else
+				break
+			end
+		end
+
+		data.dropData = {}
+		i = 1
+
+		while true do
+			local key = npc:GetCustomProperty(string.format("DropKey%d", i))
+			local chance = npc:GetCustomProperty(string.format("DropChance%d", i))
+
+			if key then
+				assert(chance)
+				data.dropData[i] = {key = key, chance = chance}
+				i = i + 1
 			else
 				break
 			end
@@ -117,8 +144,19 @@ function API.RegisterNPCFolder(npcFolder)
 	end)
 end
 
-function API.RegisterSystem(functionTable)
+-- Server only
+function API.SpawnNPC(templateId, spawnParent, position, rotation)
+	local npc = World.SpawnAsset(templateId, {parent = spawnParent.parent})
+	-- We do these separately so they are world coordinates
+	npc:SetWorldPosition(position)
+	npc:SetWorldRotation(rotation)
+	-- Pass this value to descendantAddedEvent just above
+	npc.serverUserData.spawnParent = spawnParent
+end
+
+function API.RegisterSystem(functionTable, isClient)
 	systemFunctions = functionTable
+	IS_CLIENT = isClient
 end
 
 -- table GetAllTaskData() [Client, Server]

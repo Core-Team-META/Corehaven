@@ -57,6 +57,10 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 12
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "wizard_fireball"
           }
@@ -67,6 +71,14 @@
           Overrides {
             Name: "cs:Task3"
             String: "wizard_meteor"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.02
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

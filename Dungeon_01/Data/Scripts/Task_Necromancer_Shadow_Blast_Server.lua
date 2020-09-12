@@ -2,10 +2,10 @@
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
 
-local RANGE = 1000.0
+local RANGE = 1100.0
 local COOLDOWN = 0.0
-local DAMAGE = 17.0
-local PROJECTILE_SPEED = 2000.0
+local DAMAGE = 25.0
+local PROJECTILE_SPEED = 2300.0
 
 local currentTask = nil
 
@@ -17,7 +17,7 @@ function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
 
 	currentTask = Task.Spawn(function()
-		Task.Wait(1.4)
+		Task.Wait(1.7)
 
 		-- Subtask won't get interrupted if the caster is interrupted or dies
 		Task.Spawn(function()
@@ -28,7 +28,7 @@ function OnTaskStart(npc, threatTable)
 
 	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
-	return 1.5
+	return 1.8
 end
 
 function OnTaskEnd(npc)
@@ -38,4 +38,4 @@ function OnTaskEnd(npc)
 	end
 end
 
-API_NPC.RegisterTaskServer("wizard_fireball", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskServer("necromancer_shadow_blast", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

@@ -42,7 +42,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 800
+            Float: 1000
           }
           Overrides {
             Name: "cs:EngageRange"
@@ -57,8 +57,20 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 5
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "reanimated_wizard_fireball"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.02
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

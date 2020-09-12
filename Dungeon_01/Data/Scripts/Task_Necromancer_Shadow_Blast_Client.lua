@@ -4,16 +4,16 @@ local API_P = require(script:GetCustomProperty("APIProjectile"))
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local PROJECTILE_SPEED = 2000.0
+local PROJECTILE_SPEED = 2300.0
 
 function OnTaskStart(npc, animatedMesh)
 	local target = API_NPC.GetTarget(npc)
 
 	animatedMesh:PlayAnimation("2hand_staff_magic_bolt")
-	animatedMesh.playbackRateMultiplier = 0.3
+	animatedMesh.playbackRateMultiplier = 0.27
 
 	Task.Spawn(function()
-		Task.Wait(1.5)
+		Task.Wait(1.8)
 		API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
 	end)
 end
@@ -23,4 +23,4 @@ function OnTaskEnd(npc, animatedMesh)
 	animatedMesh.playbackRateMultiplier = 1.0
 end
 
-API_NPC.RegisterTaskClient("wizard_fireball", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskClient("necromancer_shadow_blast", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

@@ -57,6 +57,10 @@
             Float: 100
           }
           Overrides {
+            Name: "cs:Experience"
+            Float: 20
+          }
+          Overrides {
             Name: "cs:Task1"
             String: "necromancer_shadow_blast"
           }
@@ -67,6 +71,14 @@
           Overrides {
             Name: "cs:Task3"
             String: "necromancer_decay"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "BasicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.04
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -372,7 +384,8 @@
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1
             PlayOnStartAnimation {
-              PlaybackRate: 0.134948507
+              Animation: "2hand_staff_magic_up"
+              PlaybackRate: 0.3
             }
           }
         }

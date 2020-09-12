@@ -301,7 +301,7 @@ function Tick(deltaTime)
 			nameplate.templateRoot.visibility = Visibility.FORCE_OFF
 			nameplate.container.visibility = Visibility.FORCE_OFF
 		else
-			nameplate.templateRoot.visibility = Visibility.INHERIT
+			nameplate.templateRoot.visibility = Visibility.FORCE_ON		-- Some animated meshes are hidden and replaced by costumes
 			nameplate.container.visibility = Visibility.INHERIT
 			RotateNameplate(nameplate)
 

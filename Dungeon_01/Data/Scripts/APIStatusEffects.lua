@@ -425,7 +425,7 @@ function UpdateCharacter(character)
 						tickCounts[character][i] = tickCounts[character][i] + 1
 						statusEffectData.tickFunction(sourceCharacter, character)
 
-						-- The tick might kill you, which removes all your status effects. The rest of this is no longer valid.
+						-- The tick might kill you, which removes all your status effects. The rest of this is then no longer valid.
 						if IsCharacterDead(character) then
 							return
 						end
