@@ -12,7 +12,13 @@ local previousTargets = {}	-- CoreObject -> Player
 local taskEffects = {}			-- CoreObject -> CoreObject
 
 function IsAsleep(npc)
-	return npc:GetCustomProperty("CurrentTask") == API_NPC.STATE_ASLEEP
+	local currentTask, _, _ = API_NPC.DecodeTaskString(npc:GetCustomProperty("CurrentTask"))
+	return currentTask == API_NPC.STATE_ASLEEP
+end
+
+function OnNPCCreated(npc, data)
+	assert(data.animatedMesh)
+	data.animatedMesh:Follow(data.followRoot, data.speed * 1.5)
 end
 
 function Tick(deltaTime)
@@ -110,3 +116,9 @@ end
 
 API_NPC.RegisterSystem({IsAsleep = IsAsleep}, true)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
+Task.Wait()		-- Work around networked property backing data issue
+Events.Connect("NPC_Created", OnNPCCreated)
+
+for npc, data in pairs(API_NPC.GetAllNPCData()) do
+	OnNPCCreated(npc, data)
+end

@@ -18,6 +18,7 @@
         ParentId: 2862615558091888578
         ChildIds: 9552928976720207289
         ChildIds: 15258255637776816989
+        ChildIds: 9698445035616721956
         ChildIds: 11860041625734473373
         UnregisteredParameters {
           Overrides {
@@ -90,6 +91,12 @@
             Name: "cs:DeathEffectTemplate"
             AssetReference {
               Id: 3546493444851876681
+            }
+          }
+          Overrides {
+            Name: "cs:FollowRoot"
+            ObjectReference {
+              SubObjectId: 9698445035616721956
             }
           }
           Overrides {
@@ -317,6 +324,32 @@
           Vfx {
             AutoPlay: true
           }
+        }
+      }
+      Objects {
+        Id: 9698445035616721956
+        Name: "FollowRoot"
+        Transform {
+          Location {
+            Z: 105
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12555114022526006492
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {

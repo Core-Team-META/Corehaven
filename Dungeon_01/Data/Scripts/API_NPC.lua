@@ -61,7 +61,6 @@ function API.RegisterNPCFolder(npcFolder)
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
 		data.experience = npc:GetCustomProperty("Experience")
 
-		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
 		data.spawnPosition = npc:GetWorldPosition()
 		data.spawnRotation = npc:GetWorldRotation()
 
@@ -102,6 +101,8 @@ function API.RegisterNPCFolder(npcFolder)
 
 		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
 		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
+		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
+		data.followRoot = npc:GetCustomProperty("FollowRoot"):GetObject()		-- This will give nil on server
 
 		npcs[npc] = data
 
