@@ -23,10 +23,14 @@ local currentEquippedGeometry = {}
 local function DestroyGeometry(slotIndex)
     if currentEquippedGeometry[slotIndex] then
         local itemRoot = currentEquippedGeometry[slotIndex]
-        for _,geometry in ipairs(itemRoot.clientUserData.geometries) do
-            geometry:Destroy()
+        if Object.IsValid(itemRoot) then
+            for _,geometry in ipairs(itemRoot.clientUserData.geometries) do
+                if Object.IsValid(geometry) then
+                    geometry:Destroy()
+                end
+            end
+            itemRoot:Destroy()
         end
-        currentEquippedGeometry[slotIndex]:Destroy()
         currentEquippedGeometry[slotIndex] = nil
     end
 end
