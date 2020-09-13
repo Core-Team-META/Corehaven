@@ -39,7 +39,10 @@ function Inventory.New(database)
 end
 
 function Inventory:LoadHash(hash)
-    self:_LoadHash(hash)
+    self:_ClearSlots()
+    if hash then
+        self:_LoadHash(hash)
+    end
 end
 
 -- Converts the 1-based backpack index into the correct inventory slot index.
@@ -249,7 +252,6 @@ end
 
 local SLOT_PATTERN = "<([^<>;]+)>([^<>;]+);"
 function Inventory:_LoadHash(hash)
-    self:_ClearSlots()
     local hashType = hash:sub(1,1)
     local hashData = hash:sub(2)
     local isRuntime = hashType == "R"
