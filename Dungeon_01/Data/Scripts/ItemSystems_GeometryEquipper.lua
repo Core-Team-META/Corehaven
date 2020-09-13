@@ -20,12 +20,7 @@ local inventory = OWNER.clientUserData.inventory
 local currentEquippedGeometry = {}
 
 ---------------------------------------------------------------------------------------------------------
-local function UpdateItemGeometry(slotIndex, item)
-    if currentEquippedGeometry[slotIndex] then
-        if item and item:GetMUID() == currentEquippedGeometry[slotIndex].sourceTemplateId then
-            return
-        end
-    end
+local function DestroyGeometry(slotIndex)
     if currentEquippedGeometry[slotIndex] then
         local itemRoot = currentEquippedGeometry[slotIndex]
         for _,geometry in ipairs(itemRoot.clientUserData.geometries) do
@@ -34,6 +29,16 @@ local function UpdateItemGeometry(slotIndex, item)
         currentEquippedGeometry[slotIndex]:Destroy()
         currentEquippedGeometry[slotIndex] = nil
     end
+end
+
+---------------------------------------------------------------------------------------------------------
+local function UpdateItemGeometry(slotIndex, item)
+    if currentEquippedGeometry[slotIndex] then
+        if item and item:GetMUID() == currentEquippedGeometry[slotIndex].sourceTemplateId then
+            return
+        end
+    end
+    DestroyGeometry(slotIndex)
     if item then
         local itemRoot = World.SpawnAsset(item:GetMUID(), { parent = COMPONENT })
         itemRoot.clientUserData.geometries = {}
@@ -56,7 +61,15 @@ local function UpdateEquippedGeometry()
     end
 end
 
+local function CleanupEquippedGeometry()
+    for slotIndex,_ in inventory:IterateEquipSlots() do
+        DestroyGeometry(slotIndex)
+    end
+end
+
 ---------------------------------------------------------------------------------------------------------
 function Tick(dt)
     UpdateEquippedGeometry()
 end
+
+script.destroyEvent:Connect(CleanupEquippedGeometry)
