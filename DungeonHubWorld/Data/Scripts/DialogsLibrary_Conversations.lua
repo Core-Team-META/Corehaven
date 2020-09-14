@@ -69,7 +69,7 @@ function Dialogs.RegisterDialogue()
 
     id = "WecomeDialog3"
     API.RegisterDialogueId(id)
-    API.AddText(id, "You can get the map of Corehaven in the visitor center.")
+    API.AddText(id, "It seems like you have already received the map. Just press [TAB] to see the map!")
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Other Worlds", "WecomeDialog6")
@@ -78,7 +78,7 @@ function Dialogs.RegisterDialogue()
 
     id = "WecomeDialog4"
     API.RegisterDialogueId(id)
-    API.AddText(id, "It seems like you have already received the map. Just press [TAB] to see the map!")
+    API.AddText(id, "You can get the map of Corehaven in the visitor center.")
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Other Worlds", "WecomeDialog6")

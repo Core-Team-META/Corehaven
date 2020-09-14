@@ -27,6 +27,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2271583699116595092
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "New Lumeria: Stillwater"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14546490105472636833
       value {
         Overrides {
@@ -92,6 +101,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 2271583699116595092
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "Treasure of Baland-Ur"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 14546490105472636833
       value {
@@ -159,6 +177,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2271583699116595092
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "Forgotten Cisterns"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14546490105472636833
       value {
         Overrides {
@@ -225,6 +252,15 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
+      key: 2271583699116595092
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "Best Little Horror House"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 14546490105472636833
       value {
         Overrides {
@@ -282,6 +318,15 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 2271583699116595092
+      value {
+        Overrides {
+          Name: "InteractionLabel"
+          String: "Corruption of Aurealis"
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 14546490105472636833
       value {

@@ -1,35 +1,6 @@
 ﻿Name: "GameSettings"
 RootId: 12721835720583858691
 Objects {
-  Id: 453904204925054689
-  Name: "NPCs and Dialogs"
-  Transform {
-    Location {
-      X: 3334.76831
-      Y: -182.73761
-      Z: 6153.40137
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12721835720583858691
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "NPCs and Dialogs"
-  }
-}
-Objects {
   Id: 14034009749862207918
   Name: "Dialog Display Manager"
   Transform {
@@ -2865,6 +2836,7 @@ Objects {
     UseAsDefault: true
     AttachToLocalPlayer: true
     InitialDistance: 400
+    IsDistanceAdjustable: true
     MinDistance: 300
     MaxDistance: 600
     PositionOffset {
@@ -2949,8 +2921,37 @@ Objects {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
-      MountChannelingTime: 2
       FlipOnMultiJump: true
+    }
+  }
+}
+Objects {
+  Id: 2101363236511866032
+  Name: "ResourcePersisterServer"
+  Transform {
+    Location {
+      X: 3334.76831
+      Y: -182.73761
+      Z: 6153.40137
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12721835720583858691
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13451820863796807922
     }
   }
 }
@@ -3041,9 +3042,11 @@ Objects {
     IsDefault: true
     GameSettings {
       RagdollOnDeath: true
+      EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:teamandall"
       }
+      EnablePlayModeProfiler: true
     }
   }
 }
