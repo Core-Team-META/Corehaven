@@ -190,8 +190,8 @@ Objects {
   }
 }
 Objects {
-  Id: 14746335038236077784
-  Name: "Wispy Fog Volume VFX"
+  Id: 10649564318495434196
+  Name: "MerchanArea_VFX"
   Transform {
     Location {
       X: -437.129883
@@ -201,12 +201,39 @@ Objects {
     Rotation {
     }
     Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 14746335038236077784
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 14746335038236077784
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+      X: -0.0009765625
+      Y: -9.15527344e-05
+    }
+    Rotation {
+    }
+    Scale {
       X: 66.2212219
       Y: 53.3682899
       Z: 2.70019865
     }
   }
-  ParentId: 7192807854345907469
+  ParentId: 10649564318495434196
   UnregisteredParameters {
     Overrides {
       Name: "bp:Wind Speed"
@@ -9786,51 +9813,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13594801141972273757
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 3621.41211
-      Y: 5805.74
-      Z: 2968.81445
-    }
-    Rotation {
-      Yaw: -132.429321
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7192807854345907469
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 6886650282300260610
   Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
@@ -9964,7 +9946,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
+      Float: 16
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
@@ -12888,7 +12870,6 @@ Objects {
   ChildIds: 11751201277853384579
   ChildIds: 8423088248910544158
   ChildIds: 2334365366552074566
-  ChildIds: 9568019780650515047
   ChildIds: 18111615567658763851
   ChildIds: 14407457611747288955
   ChildIds: 518979524252544953
@@ -13116,60 +13097,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9568019780650515047
-  Name: "Fire Volume VFX"
-  Transform {
-    Location {
-      X: -2415.34277
-      Y: -434.998779
-      Z: 5.4744463
-    }
-    Rotation {
-      Yaw: 111.190979
-    }
-    Scale {
-      X: 4.02780724
-      Y: 7.47822
-      Z: 2.00902128
-    }
-  }
-  ParentId: 11817743743075077680
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 42.2979889
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 2.69715309
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 1.57046938
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.5
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 12918556334648073243
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
   Id: 2334365366552074566
   Name: "Point Light"
   Transform {
@@ -13227,7 +13154,7 @@ Objects {
     Location {
       X: -2926.18555
       Y: 117.516273
-      Z: 333.665955
+      Z: 626.946411
     }
     Rotation {
       Yaw: 111.191017
@@ -13254,7 +13181,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Particle Scale Multiplier"
-      Float: 1.5
+      Float: 1
     }
   }
   Collidable_v2 {

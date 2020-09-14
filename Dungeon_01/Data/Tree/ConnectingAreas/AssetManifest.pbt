@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18427031532110002262
+  Name: "Kelp Tall Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tall_bush_01"
+  }
+}
+Assets {
   Id: 18398451643293659336
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -167,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
+  Id: 16346219242794769146
+  Name: "Fern 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_004"
   }
 }
 Assets {
@@ -494,6 +512,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13365380242432489149
+  Name: "Curb 4m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curb_4m_001"
+  }
+}
+Assets {
   Id: 13271671005623298099
   Name: "Stone Railing 8m"
   PlatformAssetType: 1
@@ -728,6 +755,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10692466588413953031
+  Name: "Tree Birch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_001"
+  }
+}
+Assets {
   Id: 10567573856586224296
   Name: "Bricks Cobblestone Floor Arches 001"
   PlatformAssetType: 2
@@ -851,6 +887,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_stairs_001_150cm"
+  }
+}
+Assets {
+  Id: 9405728001328588797
+  Name: "Stone Arch (doorway) 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_doorway_001"
   }
 }
 Assets {
@@ -1277,6 +1322,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5983271944506817572
+  Name: "Rock Block 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_006"
+  }
+}
+Assets {
   Id: 5979208797743596287
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
@@ -1493,6 +1547,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4193024863549911546
+  Name: "Column Base 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_column_bottom_002"
+  }
+}
+Assets {
   Id: 3965397322580208730
   Name: "2D Basic Shapes Decal"
   PlatformAssetType: 14
@@ -1661,6 +1724,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_white_001_uv"
+  }
+}
+Assets {
+  Id: 2198988441437446815
+  Name: "Rock Pile 002"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_002"
   }
 }
 Assets {

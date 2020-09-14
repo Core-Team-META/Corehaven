@@ -64,69 +64,6 @@ Objects {
   }
 }
 Objects {
-  Id: 7455879845671110692
-  Name: "Rock Flat 02"
-  Transform {
-    Location {
-      X: -11609.2412
-      Y: 13642.2402
-      Z: 2523.21338
-    }
-    Rotation {
-      Pitch: -6.50460815
-      Yaw: -138.955917
-      Roll: -87.0661621
-    }
-    Scale {
-      X: 2.16031265
-      Y: 2.16155481
-      Z: 3.0801928
-    }
-  }
-  ParentId: 14148918943805634918
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8104857108586852033
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7086338982397992348
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 9945544985838043112
   Name: "Rock Flat 02"
   Transform {
@@ -950,19 +887,19 @@ Objects {
   Name: "Rock Flat 02"
   Transform {
     Location {
-      X: -11917.4189
-      Y: 12777.624
-      Z: 1092.69067
+      X: -11297.4248
+      Y: 11882.6963
+      Z: 1140.17859
     }
     Rotation {
-      Pitch: 71.7780838
-      Yaw: -127.565887
-      Roll: 149.271622
+      Pitch: 78.0605
+      Yaw: -142.845596
+      Roll: 150.678619
     }
     Scale {
-      X: 2.15773463
-      Y: 2.15896797
-      Z: 3.09711
+      X: 2.33784747
+      Y: 2.33918357
+      Z: 3.35563445
     }
   }
   ParentId: 14148918943805634918
