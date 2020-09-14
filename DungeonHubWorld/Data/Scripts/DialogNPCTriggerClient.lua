@@ -37,7 +37,9 @@ end
 
 function NPCPlayLoopAnimation()
     if Object.IsValid(ANIMATED_MESH) then
-        ANIMATED_MESH:PlayAnimation(DEFAULT_ANIMATION, {shouldLoop = true})
+        if DEFAULT_ANIMATION ~= "" then
+            ANIMATED_MESH:PlayAnimation(DEFAULT_ANIMATION, {shouldLoop = true})
+        end
         TriggerDialogIndicator(true)
     end
 end
