@@ -22,6 +22,7 @@ local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
 
 -- User exposed properties
 local MAP_BINDING = COMPONENT_ROOT:GetCustomProperty("MapBinding")
+local CHECK_RESOURCE = COMPONENT_ROOT:GetCustomProperty("CheckResource")
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -35,6 +36,9 @@ function OnBindingPressed(player, binding)
 	end
 
 	if not LOCAL_PLAYER.isDead and binding == MAP_BINDING and not LOCAL_PLAYER:GetOverrideCamera() then
+		if CHECK_RESOURCE ~= "" and LOCAL_PLAYER:GetResource(CHECK_RESOURCE) == 0 then
+			return
+		end
 		LOCAL_PLAYER:SetOverrideCamera(CAMERA)
 		AS.SetIsSpectating(true)
 	end

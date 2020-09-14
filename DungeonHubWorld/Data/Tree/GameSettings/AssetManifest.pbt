@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14781323992507639982
-  Name: "Icon Profile"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Profile"
-  }
-}
-Assets {
   Id: 14184234900815611965
   Name: "Frame Beveled 001"
   PlatformAssetType: 9
@@ -59,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 7871110820329172543
+  Name: "Magic Star Collect 03 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_magic_star_collect_03_Cue_ref"
   }
 }
 Assets {

@@ -1260,6 +1260,10 @@ Objects {
             Yaw: 15.0001259
           }
         }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "MapRequest1"
+        }
       }
     }
     TemplateAsset {
