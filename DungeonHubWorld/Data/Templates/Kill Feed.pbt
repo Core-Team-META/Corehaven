@@ -295,5 +295,5 @@
       AssetId: "Kill_Feed"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
 }

@@ -4428,6 +4428,6 @@
   Marketplace {
     Description: "For D&D event hub"
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
   DirectlyPublished: true
 }

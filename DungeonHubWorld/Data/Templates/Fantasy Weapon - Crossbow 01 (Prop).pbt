@@ -317,5 +317,5 @@
       AssetId: "Fantasy_Weapon_-_Crossbow_01__Prop_"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
 }
