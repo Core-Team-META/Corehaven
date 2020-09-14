@@ -6,9 +6,7 @@ local SUMMON_TEMPLATE2 = script:GetCustomProperty("SummonTemplate2")
 local RANGE = 0.0
 local COOLDOWN = 20.0
 
-local currentTask = nil
-
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 4.0
 end
 

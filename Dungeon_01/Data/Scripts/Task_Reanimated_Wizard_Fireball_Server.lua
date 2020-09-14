@@ -9,7 +9,7 @@ local PROJECTILE_SPEED = 1700.0
 
 local targets = {}
 
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 1.0
 end
 

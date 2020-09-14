@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Reanimated Soldier"
+            String: "Reanimated Guard"
           }
           Overrides {
             Name: "cs:MaxHitPoints"

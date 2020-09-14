@@ -7,7 +7,7 @@ local DAMAGE = 20.0
 
 local currentTasks = {}
 
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 1.0
 end
 

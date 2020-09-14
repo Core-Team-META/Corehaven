@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Necromancer Boss"
+            String: "Arokai, the Fiendraiser"
           }
           Overrides {
             Name: "cs:MaxHitPoints"
@@ -63,19 +63,19 @@
           }
           Overrides {
             Name: "cs:Task1"
-            String: "boss1_necromancer_shadow_worm"
+            String: "boss1_shadow_worm"
           }
           Overrides {
             Name: "cs:Task2"
-            String: "boss1_necromancer_raise_army"
+            String: "boss1_raise_army"
           }
           Overrides {
             Name: "cs:Task3"
-            String: "boss1_necromancer_raise_elite"
+            String: "boss1_raise_plague_wolves"
           }
           Overrides {
             Name: "cs:Task4"
-            String: "boss1_necromancer_shadow_eruptions"
+            String: "boss1_shadow_eruptions"
           }
           Overrides {
             Name: "cs:DropKey1"
