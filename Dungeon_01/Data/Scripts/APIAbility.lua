@@ -614,6 +614,12 @@ end
 function API.GivePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
 	assert(not playerAbilities[player][abilityName])
+
+	-- TEMP TO AVOID LEAKING ABILITIES
+	if playerAbilities[player][abilityName] then
+		return
+	end
+
 	local ability = World.SpawnAsset(abilityData[abilityName].abilityTemplate)
 	-- These are all lumped into the cooldown property on the ability, and maintained by script
 	assert(ability.executePhaseSettings.duration == 0.0)

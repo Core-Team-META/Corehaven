@@ -218,8 +218,19 @@ end
 
 function OnDamaged(sourceCharacter, npc, amount)
 	assert(not IsAsleep(npc))
-	if sourceCharacter:IsA("Player") and not npcStates[npc].threatTable[sourceCharacter] then
+	assert(sourceCharacter:IsA("Player"))
+	local npcState = npcStates[npc]
+	local target = API_NPC.GetTarget(npc)
+
+	if not npcState.threatTable[sourceCharacter] then
 		AddPlayerToThreatTable(npc, sourceCharacter)
+	end
+
+	npcState.threatTable[sourceCharacter] = npcState.threatTable[sourceCharacter] + amount
+
+	-- Pulling aggro
+	if target and target ~= sourceCharacter and npcState.threatTable[sourceCharacter] > npcState.threatTable[target] * 1.2 then
+		API_NPC.SetTarget(npc, sourceCharacter)
 	end
 end
 

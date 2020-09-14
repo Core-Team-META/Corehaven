@@ -5,8 +5,8 @@ Objects {
   Name: "Map Location"
   Transform {
     Location {
-      X: -980
-      Y: -14710
+      X: 90
+      Y: -15130
       Z: -7100
     }
     Rotation {
@@ -164,6 +164,185 @@ Objects {
       Name: "cs:ComponentRoot"
       ObjectReference {
         SelfId: 5134333649887401686
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4779571415404645947
+    }
+  }
+}
+Objects {
+  Id: 8847375285817499328
+  Name: "Map Location"
+  Transform {
+    Location {
+      X: -1430
+      Y: -9130
+      Z: -7100
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4958045848858137993
+  ChildIds: 5836443962512324776
+  ChildIds: 9988191806714182146
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Name"
+      String: "Training Field"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9988191806714182146
+  Name: "ServerContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8847375285817499328
+  ChildIds: 7348704993928027719
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 7348704993928027719
+  Name: "Sphere"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 2.04905591e-05
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 0.1
+    }
+  }
+  ParentId: 9988191806714182146
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3982193030776093519
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5836443962512324776
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8847375285817499328
+  ChildIds: 10663047179143403204
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 10663047179143403204
+  Name: "MapLocationNameClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5836443962512324776
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API"
+      AssetReference {
+        Id: 10457224786555656347
+      }
+    }
+    Overrides {
+      Name: "cs:ComponentRoot"
+      ObjectReference {
+        SelfId: 8847375285817499328
       }
     }
   }
