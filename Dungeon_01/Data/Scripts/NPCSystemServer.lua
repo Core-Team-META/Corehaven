@@ -254,10 +254,10 @@ function OnNPCCreated(npc, data)
 	API_NPC.SetHitPoints(npc, data.maxHitPoints)
 	SetCurrentTask(npc, API_NPC.STATE_ASLEEP, false)
 
-	-- Inherit our spawn parent's target and threat table
+	-- Inherit our spawn parent's target and threat table entries
 	if data.spawnParent then
 		for enemy, threat in pairs(npcStates[data.spawnParent].threatTable) do
-			npcState.threatTable[enemy] = threat
+			npcState.threatTable[enemy] = 0.0
 		end
 
 		local target = API_NPC.GetTarget(data.spawnParent)

@@ -30,7 +30,7 @@ function API.GetTarget(player)
 	local helper = API.GetStateHelper(player)
 
 	if helper then
-		return API_ID.GetCharacterFromId(helper:GetCustomProperty("TargetID"))
+		return API_ID.GetObjectFromId(helper:GetCustomProperty("TargetID"))
 	end
 end
 

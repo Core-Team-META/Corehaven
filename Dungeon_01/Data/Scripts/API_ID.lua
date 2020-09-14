@@ -4,7 +4,7 @@ function API.GetShortId(id)
     return string.sub(id, 1, string.find(id, ":") - 1)
 end
 
-function API.GetIdFromCharacter(character)
+function API.GetIdFromObject(character)
     if character then
         if character:IsA("Player") then
             return character.id
@@ -16,7 +16,7 @@ function API.GetIdFromCharacter(character)
     return ""
 end
 
-function API.GetCharacterFromId(id)
+function API.GetObjectFromId(id)
     if id and id ~= "" then
         for _, player in pairs(Game.GetPlayers()) do
             if player.id == id then

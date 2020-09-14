@@ -115,10 +115,8 @@ function UpdateCharacterEffectState(character)
 	-- Multipliers
 	local minMoveSpeedMultiplier = 1.0
 	local maxMoveSpeedMultiplier = 1.0
-	local minDamageDealtMultiplier = 1.0
-	local maxDamageDealtMultiplier = 1.0
-	local minDamageTakenMultiplier = 1.0
-	local maxDamageTakenMultiplier = 1.0
+	damageDealtMultipliers[character] = 1.0
+	damageTakenMultipliers[character] = 1.0
 	local minFrictionMultiplier = 1.0
 	local maxFrictionMultiplier = 1.0
 	local minKnockbackMultiplier = 1.0
@@ -133,13 +131,11 @@ function UpdateCharacterEffectState(character)
 		end
 
 		if statusEffectData.damageDealtMultiplier then
-			minDamageDealtMultiplier = math.min(statusEffectData.damageDealtMultiplier, minDamageDealtMultiplier)
-			maxDamageDealtMultiplier = math.max(statusEffectData.damageDealtMultiplier, maxDamageDealtMultiplier)
+			damageDealtMultipliers[character] = damageDealtMultipliers[character] * statusEffectData.damageDealtMultiplier
 		end
 
 		if statusEffectData.damageTakenMultiplier then
-			minDamageTakenMultiplier = math.min(statusEffectData.damageTakenMultiplier, minDamageTakenMultiplier)
-			maxDamageTakenMultiplier = math.max(statusEffectData.damageTakenMultiplier, maxDamageTakenMultiplier)
+			damageTakenMultipliers[character] = damageTakenMultipliers[character] * statusEffectData.damageTakenMultiplier
 		end
 
 		if statusEffectData.frictionMultiplier then
@@ -159,8 +155,6 @@ function UpdateCharacterEffectState(character)
 		character.brakingFrictionFactor = DEFAULT_PLAYER_SETTINGS.brakingFrictionFactor * minFrictionMultiplier * maxFrictionMultiplier
 	end
 
-	damageDealtMultipliers[character] = minDamageDealtMultiplier * maxDamageDealtMultiplier
-	damageTakenMultipliers[character] = minDamageTakenMultiplier * maxDamageTakenMultiplier
 	knockbackMultipliers[character] = minKnockbackMultiplier * maxKnockbackMultiplier
 	characterSpeedMultipliers[character] = minMoveSpeedMultiplier * maxMoveSpeedMultiplier
 

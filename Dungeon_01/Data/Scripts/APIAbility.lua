@@ -189,12 +189,12 @@ function OnExecute(ability)
 
 		if data.targets then
 			if data.groundTargets then
-				Events.BroadcastToServer("AbilityExecute", abilityName, target)
+				Events.BroadcastToServer("SAE", abilityName, target)
 			else
-				Events.BroadcastToServer("AbilityExecute", abilityName, API_ID.GetIdFromCharacter(target))
+				Events.BroadcastToServer("SAE", abilityName, API_ID.GetIdFromObject(target))
 			end
 		else
-			Events.BroadcastToServer("AbilityExecute", abilityName, nil)
+			Events.BroadcastToServer("SAE", abilityName, nil)
 		end
 	end
 
@@ -224,12 +224,12 @@ function OnExecute(ability)
 end
 
 -- Server
-function OnServerExecute(player, abilityName, targetOrId)
+function OnServerAbilityExecute(player, abilityName, targetOrId)
 	local data = abilityData[abilityName]
 	local target = targetOrId
 
 	if data.targets and not data.groundTargets then
-		target = API_ID.GetCharacterFromId(targetOrId)
+		target = API_ID.GetObjectFromId(targetOrId)
 	end
 
 	if data.onCastServer then
@@ -243,6 +243,17 @@ function OnInterrupted(ability)
 		castingAbilityName = nil
 		queuedAbilityName = nil
 		queuedAbilityTarget = nil
+	end
+end
+
+-- Server
+-- This allows other clients to see the right state most of the time
+function OnServerAbilityInterrupt(abilityId, timeRemaining)
+	local ability = API_ID.GetObjectFromId(abilityId)
+
+	-- Making a hack so we don't accidentally interrupt the next cast when it's the same spell again
+	if ability:GetCurrentPhase() == AbilityPhase.CAST and math.abs(ability:GetPhaseTimeRemaining() - timeRemaining) < 0.2 then
+		--ability:Interrupt()
 	end
 end
 
@@ -286,7 +297,9 @@ function Tick()
 	-- Interrupt ability if it's no longer a valid cast
 	if castingAbilityName and not CanContinue(LOCAL_PLAYER, castingAbilityName) then
 		local ability = playerAbilities[LOCAL_PLAYER][castingAbilityName]
+		assert(ability:GetCurrentPhase() == AbilityPhase.CAST)
 		ability:Interrupt()
+		Events.BroadcastToServer("SAI", API_ID.GetIdFromObject(ability), ability:GetPhaseTimeRemaining())
 	end
 end
 
@@ -657,7 +670,8 @@ function API.Initialize(isClient)
 		local tick = Task.Spawn(Tick)
 		tick.repeatCount = -1
 	else
-		Events.ConnectForPlayer("AbilityExecute", OnServerExecute)
+		Events.ConnectForPlayer("SAE", OnServerAbilityExecute)
+		Events.Connect("SAI", OnServerAbilityInterrupt)
 	end
 end
 

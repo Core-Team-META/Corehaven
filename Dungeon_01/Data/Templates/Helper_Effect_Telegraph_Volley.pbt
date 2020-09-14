@@ -7,7 +7,7 @@
       RootId: 18304474188253320742
       Objects {
         Id: 18304474188253320742
-        Name: "Helper_Telegraph_Volley"
+        Name: "Helper_Effect_Telegraph_Volley"
         Transform {
           Scale {
             X: 1
@@ -36,8 +36,8 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
+            X: 0.78125
+            Y: 0.78125
             Z: 5
           }
         }
