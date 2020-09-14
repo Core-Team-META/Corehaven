@@ -98,6 +98,11 @@ function Item:GetType()
     return self.data.type
 end
 
+function Item:GetEquipSlotType()
+    self.slotType = self.slotType or self.SLOT_CONSTRAINTS[self:GetType()].slotType
+    return self.slotType
+end
+
 function Item:GetRarity()
     return self.data.rarity
 end

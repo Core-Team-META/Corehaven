@@ -107,37 +107,37 @@
   {
     DropKey = 'CHEAT',
     ItemName = 'Dull Blade',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Short Sword',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Katana',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Jagged Sword',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Twisted Kris',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Ancient Sword',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',
     ItemName = 'Goldspike',
-    Likelihood = '100',
+    Likelihood = '1000000',
   },
   {
     DropKey = 'CHEAT',

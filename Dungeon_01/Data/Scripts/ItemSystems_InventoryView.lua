@@ -149,7 +149,9 @@ function view:InitStats()
     for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
         statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
         statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statElement.name))
+        statElement.clientUserData.iconDefaultColor = statElement.clientUserData.icon:GetColor()
         statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
+        statElement.clientUserData.valueDefaultColor = statElement.clientUserData.value:GetColor()
         statElement.clientUserData.hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
         self.statElements[statElement.name] = statElement
     end
@@ -296,13 +298,16 @@ function view:Draw()
     self:DrawSlots()
     self:DrawHoverHighlight()
     self:DrawHoverInfo()
+    self:DrawHoverStatCompare()
 end
 
 function view:DrawStats()
-    local statTotals = inventory:GetStatTotals()
-    for statName,statAmount in pairs(statTotals) do
+    self.statTotals = inventory:GetStatTotals()
+    for statName,statAmount in pairs(self.statTotals) do
         local statElement = self.statElements[statName]
         statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
+        statElement.clientUserData.value:SetColor(statElement.clientUserData.valueDefaultColor)
+        statElement.clientUserData.icon:SetColor(statElement.clientUserData.iconDefaultColor)
     end
 end
 
@@ -361,7 +366,7 @@ function view:DrawHoverInfo()
         PANEL_ITEM_HOVER.clientUserData.title.text = item:GetName()
         PANEL_ITEM_HOVER.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
         PANEL_ITEM_HOVER.clientUserData.description.text = item:GetDescription()
-        -- Attributes.
+        -- Attributes.d
         local stats = item:GetStats()
         self:EnsureSufficientHoverStatEntries(#stats)
         local offsetYBase = 0
@@ -393,6 +398,28 @@ function view:DrawHoverInfo()
         PANEL_ITEM_HOVER.clientUserData.classification:SetColor(color)
     else
         PANEL_ITEM_HOVER.visibility = Visibility.FORCE_OFF
+    end
+end
+
+function view:DrawHoverStatCompare()
+    if not self._hasWarnedStatCalculation then
+        self._hasWarnedStatCalculation = true
+        warn("Quick compare stat calculation does not properly account for percent health changes. This will be fixed soon.")
+    end
+    if self.itemUnderCursor and not self.isHoldingIcon then
+        if inventory:IsBackpackSlot(self.slotUnderCursor.clientUserData.slotIndex) then
+            local statDeltas = inventory:GetStatDeltas(self.itemUnderCursor)
+            for statName,delta in pairs(statDeltas) do
+                if delta ~= 0 then
+                    local currentAmount = self.statTotals[statName]
+                    local statElement = self.statElements[statName]
+                    local compareColor = delta > 0 and Color.GREEN or Color.RED
+                    statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, currentAmount + delta)
+                    statElement.clientUserData.value:SetColor(compareColor)
+                    statElement.clientUserData.icon:SetColor(compareColor)
+                end
+            end
+        end
     end
 end
 

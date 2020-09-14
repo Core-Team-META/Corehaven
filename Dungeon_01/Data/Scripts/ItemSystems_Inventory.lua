@@ -133,6 +133,20 @@ function Inventory:GetStatTotals()
     return self.statTotals
 end
 
+-- Get the stat deltas if the given item is equipped instead of the currently equipped item (in corresponding slot).
+function Inventory:GetStatDeltas(compareItem)
+    local slotIndex = self:ConvertEquipSlotIndex(compareItem:GetEquipSlotType())
+    local currentItem = self:GetItem(slotIndex)
+    local statDeltas = {}
+    for statName,_ in pairs(self.statTotals) do
+        statDeltas[statName] = compareItem:GetStatTotal(statName)
+        if currentItem then
+            statDeltas[statName] = statDeltas[statName] - currentItem:GetStatTotal(statName)
+        end
+    end
+    return statDeltas
+end
+
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
     return self:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex) and self:_CanMoveItemOneWay(toSlotIndex, fromSlotIndex)
@@ -296,7 +310,7 @@ function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
     if self:IsBackpackSlot(toSlotIndex) then
         return true
     end
-    if self:IsEquipSlotType(toSlotIndex, Item.SLOT_CONSTRAINTS[item:GetType()].slotType) then
+    if self:IsEquipSlotType(toSlotIndex, item:GetEquipSlotType()) then
         return true
     end
 end
