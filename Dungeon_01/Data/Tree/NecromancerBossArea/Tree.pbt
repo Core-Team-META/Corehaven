@@ -61711,7 +61711,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16681838481404550134
+  Id: 17243331249136582928
   Name: "Brazier01"
   Transform {
     Scale {

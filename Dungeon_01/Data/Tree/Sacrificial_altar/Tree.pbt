@@ -4,13 +4,6 @@ Objects {
   Id: 15278292460052330618
   Name: "Torch_Holder_Undead"
   Transform {
-    Location {
-      X: 4677.80176
-      Y: -1129.7915
-      Z: 730.32428
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -18,6 +11,12 @@ Objects {
     }
   }
   ParentId: 16359149036364134668
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2264634198754595121
@@ -38,14 +37,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -8.9468689
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

@@ -26,8 +26,8 @@
         ChildIds: 17206396302852173150
         ChildIds: 12285617534029154823
         ChildIds: 3502321681292712536
+        ChildIds: 1875968229313787637
         ChildIds: 6647466482477562149
-        ChildIds: 8955058645285049615
         ChildIds: 15405931409970163737
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -562,6 +562,104 @@
         }
       }
       Objects {
+        Id: 1875968229313787637
+        Name: "ClientContext"
+        Transform {
+          Location {
+            X: -2.31621242
+            Y: -1.13692522
+            Z: 183.818115
+          }
+          Rotation {
+            Yaw: 8.94688
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2264634198754595121
+        ChildIds: 8955058645285049615
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 8955058645285049615
+        Name: "Torch Fire VFX"
+        Transform {
+          Location {
+            Y: -0.000183105469
+          }
+          Rotation {
+            Yaw: -8.94689274
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1875968229313787637
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.823899269
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              G: 0.480000019
+              B: 0.308344483
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Initial Velocity"
+            Vector {
+              Z: 100
+            }
+          }
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+              X: 10
+              Z: 400
+            }
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.00981688
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 4.33679581
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4603537691901304316
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
         Id: 6647466482477562149
         Name: "Large Round Wood Beam 8m"
         Transform {
@@ -618,76 +716,6 @@
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 8955058645285049615
-        Name: "Torch Fire VFX"
-        Transform {
-          Location {
-            X: -2.31640625
-            Y: -1.13696289
-            Z: 183.818115
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2264634198754595121
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Life"
-            Float: 0.823899269
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              G: 0.480000019
-              B: 0.308344483
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Initial Velocity"
-            Vector {
-              Z: 100
-            }
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              X: 10
-              Z: 400
-            }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 1.00981688
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 4.33679581
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4603537691901304316
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
           }
         }
       }
@@ -798,21 +826,21 @@
       }
     }
     Assets {
-      Id: 13577817942653603668
-      Name: "Rocky Ground 01"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "rocky_001"
-      }
-    }
-    Assets {
       Id: 4603537691901304316
       Name: "Torch Fire VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_torch_fire"
+      }
+    }
+    Assets {
+      Id: 13577817942653603668
+      Name: "Rocky Ground 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "rocky_001"
       }
     }
     PrimaryAssetId {
