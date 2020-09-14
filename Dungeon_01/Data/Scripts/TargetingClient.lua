@@ -200,16 +200,15 @@ function OnBindingPressed(player, binding)
 
 	if newTarget and newTarget ~= currentTarget then
 		table.insert(targetChangeTimeHistory, t)
-		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromCharacter(newTarget))
+		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(newTarget))
 	end
 end
 
-function OnDamageDone(sourceId, targetId, amount, overkill)
-	local targetPlayer = API_ID.GetCharacterFromId(targetId)
+function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
 	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
 
-	if targetPlayer == LOCAL_PLAYER and not currentTarget then
-		Events.BroadcastToServer("SetTarget", sourceId)
+	if targetCharacter == LOCAL_PLAYER and not currentTarget then
+		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
 	end
 end
 

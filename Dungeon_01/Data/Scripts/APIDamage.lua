@@ -4,10 +4,12 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local API = {}
 
+local systemFunctions = nil
+
 local godMode = false
 
 function OnBindingPressed(player, binding)
-    if binding == "ability_extra_34" then
+    if binding == "ability_extra_56" then
         godMode = not godMode
     end
 end
@@ -55,9 +57,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
     end
 
     local overkill = adjustedAmount - effectiveAmount
-    local sourceId = API_ID.GetIdFromCharacter(sourceCharacter)
-    local targetId = API_ID.GetIdFromCharacter(targetCharacter)
-    Events.BroadcastToAllPlayers("DamageDone", sourceId, targetId, effectiveAmount, overkill)
+    systemFunctions.ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill)
 end
 
 -- This looks at the type of sourceCharacter, and only damages things they could damage. It either deals full damage to
@@ -99,9 +99,12 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     end
 
     local overheal = amount - effectiveAmount
-    local sourceId = API_ID.GetIdFromCharacter(sourceCharacter)
-    local targetId = API_ID.GetIdFromCharacter(targetCharacter)
-    Events.BroadcastToAllPlayers("HealingDone", sourceId, targetId, effectiveAmount, overheal)
+    systemFunctions.ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overheal)
+end
+
+-- Server Only
+function API.RegisterReplicatorFunctions(functionTable)
+    systemFunctions = functionTable
 end
 
 return API

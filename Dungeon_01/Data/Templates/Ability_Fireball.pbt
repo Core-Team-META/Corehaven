@@ -65,7 +65,6 @@
             }
           }
           Animation: "2hand_staff_magic_bolt"
-          CanBePrevented: true
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
           }

@@ -53,19 +53,13 @@ function ShowText(targetCharacter, amount, over, color)
 	element:Destroy()
 end
 
-function OnDamageDone(sourceCharacterId, targetCharacterId, amount, overkill)
-	local sourceCharacter = API_ID.GetCharacterFromId(sourceCharacterId)
-	local targetCharacter = API_ID.GetCharacterFromId(targetCharacterId)
-
+function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
 		ShowText(targetCharacter, amount, overkill, Color.RED)
 	end
 end
 
-function OnHealingDone(sourceCharacterId, targetCharacterId, amount, overheal)
-	local sourceCharacter = API_ID.GetCharacterFromId(sourceCharacterId)
-	local targetCharacter = API_ID.GetCharacterFromId(targetCharacterId)
-
+function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal)
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
 		ShowText(targetCharacter, amount, overheal, Color.GREEN)
 	end

@@ -5,18 +5,14 @@ local API_P = require(script:GetCustomProperty("APIProjectile"))
 local RANGE = 600.0
 local COOLDOWN = 0.0
 
-local N_JUMPS = 3
+local N_JUMPS = 6
 -- Based on which jump
-local DAMAGE = {15.0, 25.0, 40.0, 60.0, 80.0, 100.0}
+local DAMAGE = {10.0, 25.0, 40.0, 55.0, 70.0, 85.0}
 local RADIUS = {50.0, 100.0, 200.0, 400.0, 800.0, 1600.0}
-local PROJECTILE_SPEED = {2500.0, 800.0, 400.0, 300.0, 200.0, 100.0}
+local PROJECTILE_SPEED = {2500.0, 800.0, 400.0, 300.0, 250.0, 200.0}
 
 local currentTasks = {}
 local targets = {}
-
-function RandomFloat(min, max)
-	return min + math.random() * max - min
-end
 
 function GetPriority(npc, taskHistory)
 	return 1.0
@@ -49,9 +45,11 @@ function OnTaskEnd(npc, interrupted)
 			local jumps = {[0] = npc:GetWorldPosition(), [1] = targets[npc]:GetWorldPosition()}
 			local forward = (jumps[1] - jumps[0]):GetNormalized()
 			local right = (forward ^ Vector3.UP):GetNormalized()
+			local stream = RandomStream.New()
+			Events.BroadcastToAllPlayers("SW", jumps, stream:GetInitialSeed())
 
 			for i = 2, N_JUMPS do
-				jumps[i] = jumps[i - 1] + i * (forward * RandomFloat(300.0, 500.0) + right * RandomFloat(-200.0, 200.0))
+				jumps[i] = jumps[i - 1] + i * (forward * stream:GetNumber(150.0, 250.0) + right * stream:GetNumber(-200.0, 200.0))
 			end
 
 			for i = 1, N_JUMPS do
@@ -62,8 +60,6 @@ function OnTaskEnd(npc, interrupted)
 					jumps[i] = hitResult:GetImpactPosition()
 				end
 			end
-
-			Events.BroadcastToAllPlayers("SW", jumps)
 
 			for i = 1, N_JUMPS do
 				Task.Wait(API_P.GetTravelTime(jumps[i - 1], jumps[i], PROJECTILE_SPEED[i]))
