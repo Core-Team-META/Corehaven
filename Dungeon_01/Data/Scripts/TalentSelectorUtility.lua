@@ -113,7 +113,16 @@ function ReadTalentTreeDefinition(root)
 				talentData.requiredLevel = talentGroup:GetCustomProperty("RequiredLevel")
 				talentData.treeX = talentGroup:GetCustomProperty("TreeX")
 				talentData.treeY = talentGroup:GetCustomProperty("TreeY")
-				talentData.abilityName = talentGroup:GetCustomProperty("AbilityName")
+				talentData.abilityNames = {}
+
+				local i = 1
+				local continue = true
+
+				while continue do					
+					talentData.abilityNames[i], continue = talentGroup:GetCustomProperty(string.format("AbilityName%d", i))
+					i = i + 1
+				end
+
 				talentData.description = talentGroup:GetCustomProperty("Description")
 				talentData.icon = talentGroup:GetCustomProperty("Icon")
 				talentData.cost = talentGroup:GetCustomProperty("Cost")
@@ -378,8 +387,8 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	local newTalentString = prefix .. "1" .. suffix
 	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", newTalentString)
 
-	if talentData.abilityName then
-		API_A.GivePlayerAbility(player, talentData.abilityName)
+	for _, abilityName in pairs(talentData.abilityNames) do
+		API_A.GivePlayerAbility(player, abilityName)
 	end
 
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)

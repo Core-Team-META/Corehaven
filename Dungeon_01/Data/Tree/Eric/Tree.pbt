@@ -987,6 +987,7 @@ Objects {
   ChildIds: 15455047430509318690
   ChildIds: 15315120758282498123
   ChildIds: 6503201800919598133
+  ChildIds: 6004305408932559212
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1002,6 +1003,1467 @@ Objects {
     InstanceId: 7736934404878119431
     TemplateId: 15499716775352985803
     WasRoot: true
+  }
+}
+Objects {
+  Id: 6004305408932559212
+  Name: "TalentTrees"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13653382731491750667
+  ChildIds: 1371762416235142949
+  ChildIds: 343842076446698092
+  ChildIds: 14385941321693623248
+  ChildIds: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NUsableTrees"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:TreeWidth"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeHeight"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:NUsableTrees:tooltip"
+      String: "Each player gets access to this many trees at random"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 250039235746734385
+    SubobjectId: 7366309384517271016
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6858076160098670492
+  Name: "Divinity"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 11739659864115600922
+  ChildIds: 12766202776203964267
+  ChildIds: 8656554226348028838
+  ChildIds: 2435950492341338217
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 17332468096773076319
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 2435950492341338217
+  Name: "Righteous Hammer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15830314128515121469
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 8656554226348028838
+  Name: "Mystic Teachings"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11555609066855197595
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 12766202776203964267
+  Name: "Spirited Conviction"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3310085838530546671
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: true
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11739659864115600922
+  Name: "Divine Bolt"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Attacks single target and creates an AOE effect on impact which heals nearby allies in a set radius (including caster)"
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11309381679699856108
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 14385941321693623248
+  Name: "Magic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 18090954595178628674
+  ChildIds: 6269920636709688557
+  ChildIds: 11445867908990253238
+  ChildIds: 5851381824001695082
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 9543125629159503556
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 5851381824001695082
+  Name: "Magic4"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12689850831228166194
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11445867908990253238
+  Name: "Magic3"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9396890354519138748
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6269920636709688557
+  Name: "Magic2"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 14483312212422558777
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 18090954595178628674
+  Name: "Magic1"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3078059190705841288
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 343842076446698092
+  Name: "Might"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 4599952072255057778
+  ChildIds: 10637771026153913134
+  ChildIds: 9909220555032041133
+  ChildIds: 7129815457093020938
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 17298839733138424596
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 7129815457093020938
+  Name: "Hot Blooded"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11152365331067406223
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9909220555032041133
+  Name: "Rising Fury"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 10413665510572766999
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 10637771026153913134
+  Name: "Whirlwind"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9153911445835367319
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 4599952072255057778
+  Name: "Execute"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 6233758241235046407
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 1371762416235142949
+  Name: "Protection"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 17901531123941060381
+  ChildIds: 18232739182728710361
+  ChildIds: 8802180108852620436
+  ChildIds: 6692680696126703812
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 14809824387673401113
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6692680696126703812
+  Name: "Healer\'s Favorite"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 8867435165229130154
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 8802180108852620436
+  Name: "Hardened Armor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 16884239609476660373
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 18232739182728710361
+  Name: "Aspect of Atlas"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11819073848126166701
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 17901531123941060381
+  Name: "Enrage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lobs a blast of fire that explodes for moderate damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Fireball"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 6534868485720375971
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
   }
 }
 Objects {
@@ -1928,7 +3390,7 @@ Objects {
     Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
-        SelfId: 8070407745297500615
+        SelfId: 6004305408932559212
       }
     }
     Overrides {
@@ -2047,7 +3509,7 @@ Objects {
     Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
-        SelfId: 8070407745297500615
+        SelfId: 6004305408932559212
       }
     }
     Overrides {
