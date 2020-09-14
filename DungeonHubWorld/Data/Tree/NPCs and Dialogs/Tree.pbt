@@ -167,6 +167,10 @@ Objects {
           Name: "cs:DefaultLoopAnimation"
           String: "unarmed_no"
         }
+        Overrides {
+          Name: "cs:Name"
+          String: "Man"
+        }
       }
     }
     TemplateAsset {
@@ -299,6 +303,10 @@ Objects {
           Name: "cs:DefaultLoopAnimation"
           String: ""
         }
+        Overrides {
+          Name: "cs:Name"
+          String: "Julliette"
+        }
       }
     }
     TemplateAsset {
@@ -423,7 +431,7 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Josh"
+          String: ""
         }
         Overrides {
           Name: "cs:DefaultLoopAnimation"
@@ -432,6 +440,10 @@ Objects {
         Overrides {
           Name: "cs:PlayDialogAnimations"
           Bool: false
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "NoBother"
         }
       }
     }
@@ -568,6 +580,10 @@ Objects {
           Name: "cs:Name"
           String: "Bard"
         }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "MerchantDialog"
+        }
       }
     }
     TemplateAsset {
@@ -703,6 +719,14 @@ Objects {
         Overrides {
           Name: "cs:PlayDialogAnimations"
           Bool: false
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "NoBother"
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: ""
         }
       }
     }
@@ -1107,7 +1131,11 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Joe"
+          String: "Guy"
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "WecomeDialog1"
         }
       }
     }
@@ -1263,6 +1291,10 @@ Objects {
         Overrides {
           Name: "cs:StartDialogId"
           String: "MapRequest1"
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Gadot"
         }
       }
     }
