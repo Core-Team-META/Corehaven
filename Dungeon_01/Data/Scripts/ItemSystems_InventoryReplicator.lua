@@ -61,7 +61,6 @@ local function ServerInitInventory()
         -- We will also update the player's animation stance depending on the item.
         if inventory:IsPrimaryWeaponSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
-            print("Changed animation stance!", OWNER.animationStance)
         end
     end)
     -- Whenever a client rearranges their local inventory, update the server inventory and persist.

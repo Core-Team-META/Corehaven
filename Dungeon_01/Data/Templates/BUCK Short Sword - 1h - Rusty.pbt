@@ -1,52 +1,12 @@
 ﻿Assets {
-  Id: 1901842675994406170
-  Name: "ITEM_Sword_DullBlade"
+  Id: 6214627487501043449
+  Name: "BUCK Short Sword - 1h - Rusty"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14221847442462413670
+      RootId: 15385136908304056414
       Objects {
-        Id: 14221847442462413670
-        Name: "ITEM_Sword_DullBlade"
-        Transform {
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4781671109827199097
-        ChildIds: 962273436045771995
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 5581240718347034597
-            }
-          }
-          Overrides {
-            Name: "cs:AnimationStance"
-            String: "1hand_melee_stance"
-          }
-          Overrides {
-            Name: "cs:SOCKET_right_prop"
-            ObjectReference {
-              SubObjectId: 962273436045771995
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 962273436045771995
+        Id: 15385136908304056414
         Name: "BUCK Short Sword - 1h - Rusty"
         Transform {
           Scale {
@@ -55,11 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
-        ChildIds: 11497361963050560198
-        ChildIds: 9954899554458086127
-        ChildIds: 15545846683318590501
-        ChildIds: 14591622860553543382
+        ParentId: 11196326354558377530
+        ChildIds: 5140445404756569667
+        ChildIds: 5980422348251180650
+        ChildIds: 1109472271243221152
+        ChildIds: 1344194441450740307
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -71,7 +31,7 @@
         }
       }
       Objects {
-        Id: 11497361963050560198
+        Id: 5140445404756569667
         Name: "Fantasy Staff Guard 02"
         Transform {
           Location {
@@ -88,7 +48,7 @@
             Z: 1
           }
         }
-        ParentId: 962273436045771995
+        ParentId: 15385136908304056414
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:color"
@@ -134,7 +94,7 @@
         }
       }
       Objects {
-        Id: 9954899554458086127
+        Id: 5980422348251180650
         Name: "Fantasy Pommel 04"
         Transform {
           Location {
@@ -149,7 +109,7 @@
             Z: 1.0030421
           }
         }
-        ParentId: 962273436045771995
+        ParentId: 15385136908304056414
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -186,7 +146,7 @@
         }
       }
       Objects {
-        Id: 15545846683318590501
+        Id: 1109472271243221152
         Name: "Fantasy Sword Guard 02"
         Transform {
           Location {
@@ -203,7 +163,7 @@
             Z: 1
           }
         }
-        ParentId: 962273436045771995
+        ParentId: 15385136908304056414
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -254,7 +214,7 @@
         }
       }
       Objects {
-        Id: 14591622860553543382
+        Id: 1344194441450740307
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
@@ -268,7 +228,7 @@
             Z: 1
           }
         }
-        ParentId: 962273436045771995
+        ParentId: 15385136908304056414
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -309,15 +269,6 @@
             }
           }
         }
-      }
-    }
-    Assets {
-      Id: 5581240718347034597
-      Name: "Fantasy Sword 008"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_008"
       }
     }
     Assets {

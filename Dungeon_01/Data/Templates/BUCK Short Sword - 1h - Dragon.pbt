@@ -1,52 +1,12 @@
 ﻿Assets {
-  Id: 1464157479120038932
-  Name: "ITEM_Sword_JaggedSword"
+  Id: 9878213642028427841
+  Name: "BUCK Short Sword - 1h - Dragon"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14221847442462413670
+      RootId: 5082154030933286193
       Objects {
-        Id: 14221847442462413670
-        Name: "ITEM_Sword_JaggedSword"
-        Transform {
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4781671109827199097
-        ChildIds: 18268810374878848344
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Icon"
-            AssetReference {
-              Id: 7995417716076161082
-            }
-          }
-          Overrides {
-            Name: "cs:AnimationStance"
-            String: "1hand_melee_stance"
-          }
-          Overrides {
-            Name: "cs:SOCKET_right_prop"
-            ObjectReference {
-              SubObjectId: 18268810374878848344
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 18268810374878848344
+        Id: 5082154030933286193
         Name: "BUCK Short Sword - 1h - Dragon"
         Transform {
           Scale {
@@ -55,15 +15,15 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
-        ChildIds: 13667596198692830334
-        ChildIds: 6319828344115494405
-        ChildIds: 8702078164487312802
-        ChildIds: 15271378349818481688
-        ChildIds: 6628623255135807115
-        ChildIds: 16142880474920202512
-        ChildIds: 13252635704424577592
-        ChildIds: 13829228575073773129
+        ParentId: 11196326354558377530
+        ChildIds: 481221331335398423
+        ChildIds: 17056293359812085356
+        ChildIds: 14106215113374952907
+        ChildIds: 7561121179092874353
+        ChildIds: 16212171062400884450
+        ChildIds: 6559389877156432249
+        ChildIds: 930692480912081489
+        ChildIds: 354623329953570336
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -75,7 +35,7 @@
         }
       }
       Objects {
-        Id: 13667596198692830334
+        Id: 481221331335398423
         Name: "Fantasy Sword Guard 01"
         Transform {
           Location {
@@ -92,7 +52,7 @@
             Z: 1.12683856
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -127,7 +87,7 @@
         }
       }
       Objects {
-        Id: 6319828344115494405
+        Id: 17056293359812085356
         Name: "Cone - Bullet"
         Transform {
           Location {
@@ -141,7 +101,7 @@
             Z: 0.276745051
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -177,7 +137,7 @@
         }
       }
       Objects {
-        Id: 8702078164487312802
+        Id: 14106215113374952907
         Name: "Blade"
         Transform {
           Location {
@@ -191,9 +151,9 @@
             Z: 1
           }
         }
-        ParentId: 18268810374878848344
-        ChildIds: 2058128235458587584
-        ChildIds: 9070750193164342378
+        ParentId: 5082154030933286193
+        ChildIds: 12073968828245283753
+        ChildIds: 14330855514577775619
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -205,7 +165,7 @@
         }
       }
       Objects {
-        Id: 2058128235458587584
+        Id: 12073968828245283753
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
@@ -219,7 +179,7 @@
             Z: 0.949364603
           }
         }
-        ParentId: 8702078164487312802
+        ParentId: 14106215113374952907
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -248,7 +208,7 @@
         }
       }
       Objects {
-        Id: 9070750193164342378
+        Id: 14330855514577775619
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
@@ -262,7 +222,7 @@
             Z: 0.997944891
           }
         }
-        ParentId: 8702078164487312802
+        ParentId: 14106215113374952907
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -291,7 +251,7 @@
         }
       }
       Objects {
-        Id: 15271378349818481688
+        Id: 7561121179092874353
         Name: "Cone - Bullet"
         Transform {
           Location {
@@ -305,7 +265,7 @@
             Z: 0.276745051
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -334,7 +294,7 @@
         }
       }
       Objects {
-        Id: 6628623255135807115
+        Id: 16212171062400884450
         Name: "Fantasy Sword Grip 01"
         Transform {
           Location {
@@ -351,7 +311,7 @@
             Z: 1
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
@@ -397,7 +357,7 @@
         }
       }
       Objects {
-        Id: 16142880474920202512
+        Id: 6559389877156432249
         Name: "Fantasy Staff Head 02"
         Transform {
           Location {
@@ -414,7 +374,7 @@
             Z: 0.641580522
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -486,7 +446,7 @@
         }
       }
       Objects {
-        Id: 13252635704424577592
+        Id: 930692480912081489
         Name: "Fantasy Staff Head 02"
         Transform {
           Location {
@@ -503,7 +463,7 @@
             Z: 0.641580582
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
@@ -558,7 +518,7 @@
         }
       }
       Objects {
-        Id: 13829228575073773129
+        Id: 354623329953570336
         Name: "Gem - Diamond 6-Sided Polished"
         Transform {
           Location {
@@ -574,7 +534,7 @@
             Z: 0.121517248
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 5082154030933286193
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -601,15 +561,6 @@
             }
           }
         }
-      }
-    }
-    Assets {
-      Id: 7995417716076161082
-      Name: "Fantasy Sword 007"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Sword_007"
       }
     }
     Assets {

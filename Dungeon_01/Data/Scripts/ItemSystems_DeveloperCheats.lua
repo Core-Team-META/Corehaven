@@ -8,7 +8,7 @@ local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local function OnBindingPressed(player, binding)
     Database:WaitUntilLoaded()
     if binding == BINDING_DROP_LOOT then
-        local dropKey = Database:RandomDropKey()
+        local dropKey = "CHEAT"
         local playerPosition = player:GetWorldPosition()
         Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
     elseif binding == BINDING_CLEAR_INVENTORY then
