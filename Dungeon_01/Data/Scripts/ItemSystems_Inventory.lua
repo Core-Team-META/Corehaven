@@ -39,7 +39,10 @@ function Inventory.New(database)
 end
 
 function Inventory:LoadHash(hash)
-    self:_LoadHash(hash)
+    self:_ClearSlots()
+    if hash then
+        self:_LoadHash(hash)
+    end
 end
 
 -- Converts the 1-based backpack index into the correct inventory slot index.
@@ -128,6 +131,20 @@ end
 -- Get the cumulative stat totals from all equipped items.
 function Inventory:GetStatTotals()
     return self.statTotals
+end
+
+-- Get the stat deltas if the given item is equipped instead of the currently equipped item (in corresponding slot).
+function Inventory:GetStatDeltas(compareItem)
+    local slotIndex = self:ConvertEquipSlotIndex(compareItem:GetEquipSlotType())
+    local currentItem = self:GetItem(slotIndex)
+    local statDeltas = {}
+    for statName,_ in pairs(self.statTotals) do
+        statDeltas[statName] = compareItem:GetStatTotal(statName)
+        if currentItem then
+            statDeltas[statName] = statDeltas[statName] - currentItem:GetStatTotal(statName)
+        end
+    end
+    return statDeltas
 end
 
 -- True if the move operation is valid.
@@ -249,7 +266,6 @@ end
 
 local SLOT_PATTERN = "<([^<>;]+)>([^<>;]+);"
 function Inventory:_LoadHash(hash)
-    self:_ClearSlots()
     local hashType = hash:sub(1,1)
     local hashData = hash:sub(2)
     local isRuntime = hashType == "R"
@@ -294,7 +310,7 @@ function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
     if self:IsBackpackSlot(toSlotIndex) then
         return true
     end
-    if self:IsEquipSlotType(toSlotIndex, Item.SLOT_CONSTRAINTS[item:GetType()].slotType) then
+    if self:IsEquipSlotType(toSlotIndex, item:GetEquipSlotType()) then
         return true
     end
 end
