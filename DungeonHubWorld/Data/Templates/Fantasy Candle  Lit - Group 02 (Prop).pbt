@@ -286,5 +286,5 @@
       AssetId: "tm_fan_candle_grp_002_lit_01"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
 }

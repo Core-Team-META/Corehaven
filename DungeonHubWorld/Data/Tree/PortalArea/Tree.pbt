@@ -1,6 +1,32 @@
 ﻿Name: "PortalArea"
 RootId: 1079375006114686061
 Objects {
+  Id: 9922386037024802545
+  Name: "Game Portals"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1079375006114686061
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Game Portals"
+  }
+}
+Objects {
   Id: 8910584186850633800
   Name: "PortalArea_underwater_stairs"
   Transform {

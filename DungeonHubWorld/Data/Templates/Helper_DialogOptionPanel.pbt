@@ -15,9 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 10295667213608938436
+        ParentId: 4781671109827199097
         ChildIds: 13285001699807447940
-        ChildIds: 543843639767722679
+        ChildIds: 7808093126569634813
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -74,7 +74,7 @@
           Overrides {
             Name: "cs:Button"
             ObjectReference {
-              SubObjectId: 543843639767722679
+              SubObjectId: 7808093126569634813
             }
           }
         }
@@ -91,7 +91,7 @@
         }
       }
       Objects {
-        Id: 543843639767722679
+        Id: 7808093126569634813
         Name: "UI Button"
         Transform {
           Location {
@@ -113,7 +113,7 @@
         }
         Control {
           Width: 100
-          Height: 30
+          Height: 50
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -123,46 +123,50 @@
           UseParentHeight: true
           Button {
             FontColor {
+              R: 1
+              G: 0.993791401
+              B: 0.90625
               A: 1
             }
             FontSize: 20
             ButtonColor {
-              R: 0.5
-              G: 0.5
-              B: 0.5
+              R: 0.109375
+              G: 0.0921116173
+              B: 0.0797526
               A: 1
             }
             HoveredColor {
-              R: 0.7
-              G: 0.583333373
+              R: 0.296875
+              G: 0.22651954
+              B: 0.140706375
               A: 1
             }
             PressedColor {
-              R: 0.3
-              G: 0.3
-              B: 0.3
+              R: 0.536458313
+              G: 0.392442167
+              B: 0.189995661
               A: 1
             }
             DisabledColor {
-              R: 0.1
-              G: 0.1
-              B: 0.1
+              R: 0.130208328
+              G: 0.102937877
+              B: 0.0834147111
               A: 1
             }
             Brush {
-              Id: 9244900968547814763
+              Id: 1535835570629998324
             }
             IsButtonEnabled: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -170,12 +174,12 @@
       }
     }
     Assets {
-      Id: 9244900968547814763
-      Name: "BG Gradient 003"
+      Id: 1535835570629998324
+      Name: "BG Gradient 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundFlat_021"
+        AssetId: "BackgroundFlat_020"
       }
     }
     PrimaryAssetId {
@@ -183,5 +187,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
 }

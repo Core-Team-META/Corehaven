@@ -2011,6 +2011,6 @@
   Marketplace {
     Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
-  SerializationVersion: 63
+  SerializationVersion: 62
   DirectlyPublished: true
 }
