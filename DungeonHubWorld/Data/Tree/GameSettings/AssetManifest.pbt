@@ -97,3 +97,12 @@ Assets {
     AssetId: "FrameHighlighted_020"
   }
 }
+Assets {
+  Id: 481891369288056637
+  Name: "Clunky Click 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ui_chunky_click_01_Cue_ref"
+  }
+}

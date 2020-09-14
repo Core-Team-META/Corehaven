@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 5584882102336224056
-  Name: "DialogsLibrary_GenericConversation"
+  Name: "DialogsLibrary_Conversations"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {

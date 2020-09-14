@@ -327,7 +327,7 @@ Objects {
     }
   }
   ParentId: 8355496857395536503
-  ChildIds: 14791299879151487152
+  ChildIds: 12452905228365354844
   ChildIds: 4908789842241329468
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -386,8 +386,8 @@ Objects {
   }
 }
 Objects {
-  Id: 14791299879151487152
-  Name: "NPC Dialogue Trigger"
+  Id: 12452905228365354844
+  Name: "NPC Dialog Trigger"
   Transform {
     Scale {
       X: 1
@@ -396,12 +396,6 @@ Objects {
     }
   }
   ParentId: 13741373586418428718
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -413,9 +407,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 4330
-            Y: -1760
-            Z: -80
+            X: 4390
+            Y: -1740
+            Z: -70
           }
         }
         Overrides {
@@ -424,14 +418,26 @@ Objects {
           }
         }
         Overrides {
-          Name: "cs:PlayDialogueAnimations"
-          Bool: false
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
         }
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
             SelfId: 4908789842241329468
           }
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: false
         }
       }
     }

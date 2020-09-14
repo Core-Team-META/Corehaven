@@ -257,6 +257,32 @@ Objects {
   }
 }
 Objects {
+  Id: 4958045848858137993
+  Name: "Locations"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13588444122091554519
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Map Locations"
+  }
+}
+Objects {
   Id: 2734733877656755987
   Name: "Lights"
   Transform {

@@ -17,8 +17,8 @@ Objects {
   ChildIds: 14430764027136311552
   ChildIds: 3661421621534174169
   ChildIds: 12721835720583858691
+  ChildIds: 16081963787198384805
   ChildIds: 15440326544402457957
-  ChildIds: 4958045848858137993
   ChildIds: 16816246272091159722
   ChildIds: 13588444122091554519
   UnregisteredParameters {
@@ -85,32 +85,6 @@ Objects {
   }
 }
 Objects {
-  Id: 4958045848858137993
-  Name: "Map Locations"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Map Locations"
-  }
-}
-Objects {
   Id: 15440326544402457957
   Name: "Atmospherics"
   Transform {
@@ -137,6 +111,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Atmospherics"
+  }
+}
+Objects {
+  Id: 16081963787198384805
+  Name: "UI"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "UI"
   }
 }
 Objects {

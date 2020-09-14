@@ -9,8 +9,8 @@ local ANIMATED_MESH = ROOT:GetCustomProperty("AnimatedMesh")
 local DEFAULT_ANIMATION = ROOT:GetCustomProperty("DefaultLoopAnimation")
 local PLAY_ANIMATIONS = ROOT:GetCustomProperty("PlayDialogAnimations")
 
-if ANIMATED_MESH then
-    ANIMATED_MESH = ROOT:GetCustomProperty("AnimatedMesh"):WaitForObject()
+if ANIMATED_MESH ~= nil then
+    ANIMATED_MESH = ROOT:GetCustomProperty("AnimatedMesh"):WaitForObject(1)
 end
 
 -- Constants
@@ -84,7 +84,9 @@ function OnInteracted(whichTrigger, other)
 end
 
 -- Initialize
-TRIGGER.interactionLabel = "Talk to ".. NAME
+if NAME ~= "" then
+    TRIGGER.interactionLabel = "Talk to ".. NAME
+end
 TRIGGER.interactedEvent:Connect(OnInteracted)
 
 if PLAY_ANIMATIONS then

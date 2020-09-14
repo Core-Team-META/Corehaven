@@ -15,29 +15,6 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER I
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
 
---[[
-This script will print out text letter by letter, like an old RPG, or something.
-Full UIUtilitiesAPI will come out later. At the moment, this has very limited usage.
-
-client
-    Event.Broadcast(EVENT_NAME,[string])
-    the printout works by calling like this,
-    this works best when there is no fade in or out time (or you can space out the event calls, that works too).
-]]
-
--- NPCs condition trigger
--- No condition trigger
--- Condition with texts => options => texts?
-
--- === Text
--- Condition
--- Text
-
--- Options
------ String
---------- Text
-
-
 -- Internal custom properties
 local API = require(script:GetCustomProperty("APIDialogsLibrary"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
@@ -54,6 +31,7 @@ local PRINT_TEXT_DELAY = ROOT:GetCustomProperty("PrintTextDelay")
 local PLAYER_PROMPT_DELAY = ROOT:GetCustomProperty("PlayerPromptDelay")
 local PLAY_PRINT_SOUND = ROOT:GetCustomProperty("PlayPrintSound")
 local PRINT_SOUND = ROOT:GetCustomProperty("PrintSound"):WaitForObject()
+local CLICK_SOUND = ROOT:GetCustomProperty("ClickSound"):WaitForObject()
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -88,8 +66,8 @@ end
 -- Prints text slowly
 function PrintText(text)
     textPrintTime = time()
-    text = string.gsub(text, "{name}", LOCAL_PLAYER.name)
     currentText = text
+    text = string.gsub(text, "{name}", LOCAL_PLAYER.name)
     for i = 1, string.len(text) do
         if(PLAY_PRINT_SOUND) then
             PRINT_SOUND:Play()
@@ -178,10 +156,15 @@ end
 function OnDialogOptionSelect(dialogId)
     userPromtTime = userPromtTime - PLAYER_PROMPT_DELAY
     ProcessDialog(API.GetDialogLibrary(), dialogId)
+    CLICK_SOUND:Play()
 end
 
 function OnStartDialog(name, dialogId, sourceId)
-    NAME_TEXT.text = name
+    if name == "" then
+        NAME_TEXT.text = "You"
+    else
+        NAME_TEXT.text = name
+    end
 
     if sourceId then
         currentAnimatedMesh = World.FindObjectById(sourceId)
@@ -194,8 +177,10 @@ function OnBindingPressed(player, binding)
 	if binding == "ability_primary" then
         if textPrintTime and textPrintTime ~= 0 then
             textPrintTime = textPrintTime - (PRINT_TEXT_DELAY * string.len(currentText))
+            CLICK_SOUND:Play()
         elseif userPromtTime and userPromtTime ~= 0 and not selectingOption then
             userPromtTime = userPromtTime - PLAYER_PROMPT_DELAY
+            CLICK_SOUND:Play()
         end
 	end
 end
@@ -211,4 +196,3 @@ Events.Connect("DialogOptionSelect", OnDialogOptionSelect)
 Events.Connect("StartDialog", OnStartDialog)
 
 ToggleUIInteraction(false)
-
