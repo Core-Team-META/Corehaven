@@ -45,13 +45,13 @@ AssetReference abilityTemplate					A template consisting of only an ability. The
 ]]
 local abilityData = {}						--	string -> table (above)
 local playerAbilities = {}					--	Player -> table (string -> Ability)
-local playerAbilityCooldownEnds = {}		--	Player -> table (string -> float) | Client Only
+local abilityCooldownEnds = {}				--	string -> float | Client Only
 
 -- This maps template IDs to ability names, so we can let core's networking handle everything
 local abilityMap = {}						--	string -> string
 
--- Abilities that are currently casting. Used on server to interrupt if it becomes invalid
-local castingAbilityNames = {}				--	Player -> string (nil for none)
+-- Abilities that are currently casting. Used on client to interrupt if it becomes invalid
+local castingAbilityName = nil
 
 -- Client only
 local globalCooldownEndTime = 0.0
@@ -81,13 +81,11 @@ end
 -- Client and Server
 function OnPlayerJoined(player)
 	playerAbilities[player] = {}
-	playerAbilityCooldownEnds[player] = {}
 end
 
 -- Client and Server
 function OnPlayerLeft(player)
 	playerAbilities[player] = nil
-playerAbilityCooldownEnds[player] = nil
 end
 
 -- Client and Server
@@ -142,11 +140,12 @@ function OnCast(ability)
 	local player = ability.owner
 	local abilityName = abilityMap[ability.sourceTemplateId]
 	local data = abilityData[abilityName]
-	assert(not castingAbilityNames[player])
-	castingAbilityNames[player] = abilityName
 
 	if IS_CLIENT then
 		if player == LOCAL_PLAYER then
+			assert(not castingAbilityName)
+			castingAbilityName = abilityName
+
 			globalCooldownEndTime = os.clock() + GLOBAL_COOLDOWN
 			
 			-- Set target (THIS HAS TO BE IN ONCAST OR IT DOESN'T WORK)
@@ -174,105 +173,120 @@ function OnCast(ability)
 	end
 end
 
--- Client and Server
+-- Client
 -- Used for function calls
 function OnExecute(ability)
 	local player = ability.owner
 	local abilityName = abilityMap[ability.sourceTemplateId]
 	local data = abilityData[abilityName]
 	local target = GetAbilityTarget(player, abilityName)
-	assert(castingAbilityNames[player] == abilityName)
-	castingAbilityNames[player] = nil
 
-	if IS_CLIENT then
-		playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] = os.clock() + data.cooldown
+	if player == LOCAL_PLAYER then
+		assert(castingAbilityName == abilityName)
+		castingAbilityName = nil
 
-		local impactDelay = 0.0
+		abilityCooldownEnds[abilityName] = os.clock() + data.cooldown
 
-		if data.onCastClient then
-			impactDelay = data.onCastClient(player, target)
-		end
-
-		Task.Wait(impactDelay)
-
-		if target then
-			if player == LOCAL_PLAYER and data.selfTargetEffectTemplate then
-				if data.groundTargets then
-					World.SpawnAsset(data.selfTargetEffectTemplate, {position = target})
-				else
-					World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
-				end
-			elseif data.otherTargetEffectTemplate then
-				if data.groundTargets then
-					World.SpawnAsset(data.otherTargetEffectTemplate, {position = target})
-				else
-					World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
-				end
+		if data.targets then
+			if data.groundTargets then
+				Events.BroadcastToServer("AbilityExecute", abilityName, target)
+			else
+				Events.BroadcastToServer("AbilityExecute", abilityName, API_ID.GetIdFromCharacter(target))
 			end
+		else
+			Events.BroadcastToServer("AbilityExecute", abilityName, nil)
 		end
-	else
-		if data.onCastServer then
-			data.onCastServer(player, target)
+	end
+
+	local impactDelay = 0.0
+
+	if data.onCastClient then
+		impactDelay = data.onCastClient(player, target)
+	end
+
+	Task.Wait(impactDelay)
+
+	if target then
+		if player == LOCAL_PLAYER and data.selfTargetEffectTemplate then
+			if data.groundTargets then
+				World.SpawnAsset(data.selfTargetEffectTemplate, {position = target})
+			else
+				World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
+			end
+		elseif data.otherTargetEffectTemplate then
+			if data.groundTargets then
+				World.SpawnAsset(data.otherTargetEffectTemplate, {position = target})
+			else
+				World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
+			end
 		end
 	end
 end
 
--- Client and Server
-function OnInterrupted(ability)
-	local player = ability.owner
-	castingAbilityNames[player] = nil
+-- Server
+function OnServerExecute(player, abilityName, targetOrId)
+	local data = abilityData[abilityName]
+	local target = targetOrId
 
-	if IS_CLIENT then
+	if data.targets and not data.groundTargets then
+		target = API_ID.GetCharacterFromId(targetOrId)
+	end
+
+	if data.onCastServer then
+		data.onCastServer(player, target)
+	end
+end
+
+-- Client
+function OnInterrupted(ability)
+	if ability.owner == LOCAL_PLAYER then
+		castingAbilityName = nil
 		queuedAbilityName = nil
 		queuedAbilityTarget = nil
 	end
 end
 
--- Client and Server
+-- Client
 function Tick()
-	if IS_CLIENT then
-		-- We use Core's networking to replicate abilities, so we catch them here and hook them up
-		for _, player in pairs(Game.GetPlayers()) do
-			for _, ability in pairs(player:GetAbilities()) do
-				local data = abilityData[abilityMap[ability.sourceTemplateId]]
+	-- We use Core's networking to replicate abilities, so we catch them here and hook them up
+	for _, player in pairs(Game.GetPlayers()) do
+		for _, ability in pairs(player:GetAbilities()) do
+			local data = abilityData[abilityMap[ability.sourceTemplateId]]
 
-				if not playerAbilities[player][data.name] then
-					playerAbilities[player][data.name] = ability
-					ability.castEvent:Connect(OnCast)
-					ability.executeEvent:Connect(OnExecute)
-					ability.interruptedEvent:Connect(OnInterrupted)
-				end
+			if not playerAbilities[player][data.name] then
+				playerAbilities[player][data.name] = ability
+				ability.castEvent:Connect(OnCast)
+				ability.executeEvent:Connect(OnExecute)
+				ability.interruptedEvent:Connect(OnInterrupted)
 			end
 		end
+	end
 
-		-- Update ground targeting
-		if groundTargetReticle then
-			local hitResult = UI.GetCursorHitResult()
+	-- Update ground targeting
+	if groundTargetReticle then
+		local hitResult = UI.GetCursorHitResult()
 
-			if hitResult then
-				groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
-			end
+		if hitResult then
+			groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
 		end
+	end
 
-		-- Check queued ability
-		if queuedAbilityName then
-			if GetTimeUntilReady(queuedAbilityName) == 0.0 then
-				if CanCast(queuedAbilityName) then
-					local ability = playerAbilities[LOCAL_PLAYER][queuedAbilityName]
-					ability:Activate()
-				end
+	-- Check queued ability
+	if queuedAbilityName then
+		if GetTimeUntilReady(queuedAbilityName) == 0.0 then
+			if CanCast(queuedAbilityName) then
+				local ability = playerAbilities[LOCAL_PLAYER][queuedAbilityName]
+				ability:Activate()
+			end
 
-				queuedAbilityName = nil
-			end
+			queuedAbilityName = nil
 		end
-	else
-		-- Interrupt ability if it's no longer a valid cast
-		for player, abilityName in pairs(castingAbilityNames) do
-			if not CanContinue(player, abilityName) then
-				local ability = playerAbilities[player][abilityName]
-				ability:Interrupt()
-			end
-		end
+	end
+
+	-- Interrupt ability if it's no longer a valid cast
+	if castingAbilityName and not CanContinue(LOCAL_PLAYER, castingAbilityName) then
+		local ability = playerAbilities[LOCAL_PLAYER][castingAbilityName]
+		ability:Interrupt()
 	end
 end
 
@@ -380,8 +394,8 @@ function GetTimeUntilReady(abilityName)
 	if currentPhase == AbilityPhase.CAST then
 		t = math.max(t, ability:GetPhaseTimeRemaining() + data.cooldown, 0.01)
 	else
-		if playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] then
-			t = math.max(t, playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] - clock)
+		if abilityCooldownEnds[abilityName] then
+			t = math.max(t, abilityCooldownEnds[abilityName] - clock)
 		end
 	end
 
@@ -403,8 +417,8 @@ function API.GetVisibleCooldownData(abilityName)
 	local currentPhase = ability:GetCurrentPhase()
 
 	if currentPhase ~= AbilityPhase.CAST then
-		if playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] then
-			cooldownRemaining = math.max(0.0, playerAbilityCooldownEnds[LOCAL_PLAYER][abilityName] - clock)
+		if abilityCooldownEnds[abilityName] then
+			cooldownRemaining = math.max(0.0, abilityCooldownEnds[abilityName] - clock)
 		end
 	end
 
@@ -536,7 +550,7 @@ function CanCast(abilityName)
 	return true
 end
 
--- Client or Server
+-- Client
 -- Whether this cast can continue (and should not be interrupted)
 function CanContinue(player, abilityName)
 	local data = abilityData[abilityName]
@@ -594,15 +608,12 @@ function API.GivePlayerAbility(player, abilityName)
 	assert(ability.cooldownPhaseSettings.duration == 0.0)
 	ability.owner = player
 	ability.castEvent:Connect(OnCast)
-	ability.executeEvent:Connect(OnExecute)
-	ability.interruptedEvent:Connect(OnInterrupted)
 	playerAbilities[player][abilityName] = ability
 end
 
 -- Server
 function API.RemovePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
-	asset(castingAbilityNames[player] ~= abilityName)
 	local ability = playerAbilities[player][abilityName]
 	assert(ability)
 	ability:Destroy()
@@ -618,7 +629,6 @@ function API.ResetPlayerAbilities(player)
 	end
 
 	playerAbilities[player] = {}
-	castingAbilityNames[player] = nil
 end
 
 -- Client and Server
@@ -643,10 +653,12 @@ function API.Initialize(isClient)
 	if IS_CLIENT then
 		LOCAL_PLAYER = Game.GetLocalPlayer()
 		LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-	end
 
-	local tick = Task.Spawn(Tick)
-	tick.repeatCount = -1
+		local tick = Task.Spawn(Tick)
+		tick.repeatCount = -1
+	else
+		Events.ConnectForPlayer("AbilityExecute", OnServerExecute)
+	end
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)

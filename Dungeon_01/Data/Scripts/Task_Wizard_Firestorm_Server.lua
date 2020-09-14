@@ -7,7 +7,7 @@ local TICK_DAMAGE = 15.0
 
 local currentTasks = {}
 
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 0.5
 end
 

@@ -352,7 +352,7 @@ function Tick(deltaTime)
 
 			nameplate.templateRoot:SetScale(Vector3.New(scale))
 
-		    -- Update status effects
+			-- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
 			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 220.0

@@ -7,7 +7,7 @@ local DECAY_COUNT = {1, 1, 2, 2, 3, 3, 4, 4}	-- Based on how many targets are in
 
 local targetSets = {}
 
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 3.0
 end
 

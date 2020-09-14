@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Soldier"
+            String: "Stormhaven Guard"
           }
           Overrides {
             Name: "cs:MaxHitPoints"

@@ -7,7 +7,7 @@ local data = {}
 
 data.name = script:GetCustomProperty("Name")
 data.targets = true
-data.requiresFacing = true
+data.requiresFacing = false
 data.groundTargets = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")

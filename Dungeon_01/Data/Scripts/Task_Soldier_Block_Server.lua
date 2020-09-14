@@ -6,7 +6,7 @@ local COOLDOWN = 12.0
 
 local statusEffectIndices = {}
 
-function GetPriority(taskHistory)
+function GetPriority(npc, taskHistory)
 	return 1.0
 end
 

@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15250420552015252669
-  Name: "Icon Rock"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Rock"
-  }
-}
-Assets {
   Id: 14206563083884513420
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
@@ -44,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11826505342427441899
+  Name: "Fantasy Ability Green 007"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Green_007"
+  }
+}
+Assets {
   Id: 10536251484879582863
   Name: "Frame Beveled 004"
   PlatformAssetType: 9
@@ -59,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
-  }
-}
-Assets {
-  Id: 8509829824645761235
-  Name: "Icon Damage"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Damage"
   }
 }
 Assets {
@@ -98,30 +89,12 @@ Assets {
   }
 }
 Assets {
-  Id: 5940518029781971244
-  Name: "Icon Ice"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Ice"
-  }
-}
-Assets {
   Id: 5635343760568520525
   Name: "Frame Outlined Thick 002"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_019"
-  }
-}
-Assets {
-  Id: 4041875515624588224
-  Name: "Icon Player Mount"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_PlayerMount"
   }
 }
 Assets {

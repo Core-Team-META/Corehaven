@@ -1,26 +1,30 @@
 ﻿local API = {}
 
-function GetCorrectPosition(character)
-	if character:IsA("Player") then
-		return character:GetWorldPosition()
+function GetCorrectPosition(characterOrPosition)
+	if characterOrPosition:IsA("Vector3") then
+		return characterOrPosition
+	elseif characterOrPosition:IsA("Player") then
+		return characterOrPosition:GetWorldPosition()
 	else
-		return character:GetWorldPosition() + Vector3.UP * 100.0 * character:GetWorldScale().z
+		return characterOrPosition:GetWorldPosition() + Vector3.UP * 100.0 * characterOrPosition:GetWorldScale().z
 	end
 end
 
-function API.GetTravelTime(sourceCharacter, targetCharacter, speed)
-	return (GetCorrectPosition(targetCharacter) - GetCorrectPosition(sourceCharacter)).size / speed
+-- source and target can be npcs, players, or just Vector3s
+function API.GetTravelTime(source, target, speed)
+	return (GetCorrectPosition(target) - GetCorrectPosition(source)).size / speed
 end
 
 -- Client only
-function API.CreateProjectile(sourceCharacter, targetCharacter, speed, projectileTemplate)
-	local projectile = World.SpawnAsset(projectileTemplate, {position = GetCorrectPosition(sourceCharacter)})
+-- source and target can be npcs, players, or just Vector3s
+function API.CreateProjectile(source, target, speed, projectileTemplate)
+	local projectile = World.SpawnAsset(projectileTemplate, {position = GetCorrectPosition(source)})
 	local previousT = os.clock()
 
 	Task.Spawn(function()
 		while true do
 			local t = os.clock()
-			local offset = GetCorrectPosition(targetCharacter) - projectile:GetWorldPosition()
+			local offset = GetCorrectPosition(target) - projectile:GetWorldPosition()
 			local stepSize = speed * (t - previousT)
 
 			if offset.size < stepSize then

@@ -4,6 +4,20 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local API = {}
 
+local godMode = false
+
+function OnBindingPressed(player, binding)
+    if binding == "ability_extra_34" then
+        godMode = not godMode
+    end
+end
+
+function OnPlayerJoined(player)
+    player.bindingPressedEvent:Connect(OnBindingPressed)
+end
+
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
+
 -- sourceCharacter may be nil
 function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
     local sourceMultiplier = 1.0
@@ -31,7 +45,9 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
                 damage.reason = DamageReason.MAP
             end
 
-            targetCharacter:ApplyDamage(damage)
+            if not godMode then
+                targetCharacter:ApplyDamage(damage)
+            end
         else
             effectiveAmount = math.min(adjustedAmount, API_NPC.GetHitPoints(targetCharacter))
             API_NPC.ApplyDamage(sourceCharacter, targetCharacter, effectiveAmount)
@@ -53,8 +69,8 @@ function API.ApplyAreaDamage(sourceCharacter, center, radius, maxAmount, hasFall
     if sourceCharacter:IsA("Player") then
         targets = API_NPC.GetAwakeNPCsInSphere(center, radius)
     else
-        targets = Game.FindPlayersInSphere(playerCenter, radius, {ignoreDead = true})
         adjustedCenter = center + Vector3.UP * 100.0
+        targets = Game.FindPlayersInSphere(adjustedCenter, radius, {ignoreDead = true})
     end
 
     for _, target in pairs(targets) do

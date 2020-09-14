@@ -31,7 +31,7 @@ end
 -- nil RegisterTaskServer(string, float, float, function, <function>, <function>) [Server]
 -- Registers a named task for npcs, with range, cooldown, priority function, and optional task start and task end handlers.
 -- They have the following signatures:
--- float getPriority(taskHistory)
+-- float getPriority(npc, taskHistory)
 -- <float> onTaskStart(npc, threatTable)
 -- 	   This should return the duration of this task, and spawn a task if delayed action is needed instead of calling
 --     Task.Wait(), which may cause strange or broken behavior.

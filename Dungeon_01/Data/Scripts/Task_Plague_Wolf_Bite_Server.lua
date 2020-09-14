@@ -1,9 +1,10 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local RANGE = 120.0
 local COOLDOWN = 0.0
-local DAMAGE = 12.0
+local DAMAGE = 30.0
 
 local currentTasks = {}
 
@@ -15,8 +16,9 @@ function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
 	
 	currentTasks[npc] = Task.Spawn(function()
-		Task.Wait(0.4)
+		Task.Wait(0.6)
 		API_D.ApplyDamage(npc, target, DAMAGE)
+		API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Plagued Wound"].id)
 	end)
 
 	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
@@ -24,7 +26,7 @@ function OnTaskStart(npc, threatTable)
 	return 1.5
 end
 
-function OnTaskEnd(npc)
+function OnTaskEnd(npc, interrupted)
 	if interrupted and currentTasks[npc] then
 		currentTasks[npc]:Cancel()
 	end
@@ -32,4 +34,4 @@ function OnTaskEnd(npc)
 	currentTasks[npc] = nil
 end
 
-API_NPC.RegisterTaskServer("reanimated_skeleton_slash", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskServer("plague_wolf_bite", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

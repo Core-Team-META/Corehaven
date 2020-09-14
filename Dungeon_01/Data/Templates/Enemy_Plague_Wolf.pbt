@@ -43,7 +43,7 @@
           }
           Overrides {
             Name: "cs:MoveSpeed"
-            Float: 1200
+            Float: 300
           }
           Overrides {
             Name: "cs:EngageRange"
@@ -10844,7 +10844,7 @@
           }
           Overrides {
             Name: "cs:RunStance"
-            String: "unarmed_run_forward"
+            String: "unarmed_walk_forward"
           }
           Overrides {
             Name: "cs:StareStance"

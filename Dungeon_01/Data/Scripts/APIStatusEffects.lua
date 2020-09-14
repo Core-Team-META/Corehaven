@@ -32,6 +32,8 @@ API.STATUS_EFFECT_DEFINITIONS = {}		-- name -> table
 
 local STATUS_EFFECT_ID_TABLE = {}		-- id -> table
 
+local trackerCache = {}					-- Object -> CoreObject
+
 local tickCounts = {}					-- Object -> index -> int
 local damageDealtMultipliers = {}		-- Object -> float
 local damageTakenMultipliers = {}		-- Object -> float
@@ -206,7 +208,11 @@ end
 
 -- Client and Server
 function API.GetStateTracker(character)
-	return STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
+	if not trackerCache[character] then
+		trackerCache[character] = STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
+	end
+
+	return trackerCache[character]
 end
 
 -- Client and Server
@@ -354,8 +360,8 @@ function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 		end
 	end
 
-	-- Knock one off?
-	warn(string.format("Failed to apply status effect id: %d to character %s because they already had max", id, targetCharacter.name))
+	-- No room, we fail to apply for now
+	--warn(string.format("Failed to apply status effect id: %d to character %s because they already had max", id, targetCharacter.name))
 end
 
 -- Server only
