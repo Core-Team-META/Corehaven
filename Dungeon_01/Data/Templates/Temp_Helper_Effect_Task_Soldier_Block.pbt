@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 7077121001255402992
-  Name: "Helper_Effect_Task_Archer_Shoot"
+  Id: 1339185167007903276
+  Name: "Temp_Helper_Effect_Task_Soldier_Block"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1895998656251077153
+      RootId: 7864980302997022250
       Objects {
-        Id: 1895998656251077153
-        Name: "Helper_Effect_Task_Archer_Shoot"
+        Id: 7864980302997022250
+        Name: "Temp_Helper_Effect_Task_Soldier_Block"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 3529628060384767774
+        ChildIds: 8919689378314456355
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -28,11 +28,10 @@
         }
       }
       Objects {
-        Id: 3529628060384767774
+        Id: 8919689378314456355
         Name: "ClientContext"
         Transform {
           Location {
-            Z: -42.9382362
           }
           Rotation {
           }
@@ -42,10 +41,10 @@
             Z: 1
           }
         }
-        ParentId: 1895998656251077153
-        ChildIds: 3648452552618180535
-        ChildIds: 3274761596307843695
-        ChildIds: 1064091926953690356
+        ParentId: 7864980302997022250
+        ChildIds: 10141199945448111031
+        ChildIds: 4260145738348528034
+        ChildIds: 6019720339188434963
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -56,55 +55,104 @@
         }
       }
       Objects {
-        Id: 3648452552618180535
-        Name: "Cylinder - Bottom-Aligned"
+        Id: 10141199945448111031
+        Name: "Energy Shield Panel"
         Transform {
           Location {
+            X: 87.8060608
+            Z: 121.571922
           }
           Rotation {
           }
           Scale {
-            X: 1.30280864
-            Y: 1.30280864
-            Z: 1.71447098
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
-        ParentId: 3529628060384767774
+        ParentId: 8919689378314456355
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4469657443425330169
+            Name: "bp:Type"
+            Enum {
+              Value: "mc:evfxshieldpanels:11"
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Pattern Index"
+            Int: 1
+          }
+          Overrides {
+            Name: "bp:Overall Opacity"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Shape Erosion"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Damage"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Chunk Damage"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Edge Width"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Base Shield Color"
+            Color {
+              R: 0.6
+              G: 0.333774865
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Edge Color"
+            Color {
+              R: 0.7
+              G: 0.0417521
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Crack Edge Color"
+            Color {
+              R: 0.7
+              G: 0.044147253
+              A: 1
             }
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 17587880652047825598
+        Blueprint {
+          BlueprintAsset {
+            Id: 3422899817721348945
           }
-          Teams {
+          TeamSettings {
           }
-          DisableDistanceFieldLighting: true
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
       Objects {
-        Id: 3274761596307843695
-        Name: "Crossbow Draw Pull Back Load 01 SFX"
+        Id: 4260145738348528034
+        Name: "Sci-fi Object Humming 01 SFX"
         Transform {
           Location {
-            Z: 42.9382362
           }
           Rotation {
           }
@@ -114,7 +162,7 @@
             Z: 1
           }
         }
-        ParentId: 3529628060384767774
+        ParentId: 8919689378314456355
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -123,23 +171,24 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 13152335808383593938
+            Id: 1562030989764207176
           }
           AutoPlay: true
-          Volume: 0.6
-          Falloff: 2000
-          Radius: 4000
+          Repeat: true
+          Pitch: -666.381226
+          Volume: 0.1
+          Falloff: 1500
+          Radius: 1500
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 1064091926953690356
-        Name: "Crossbow Compound Bow Shot 01 SFX"
+        Id: 6019720339188434963
+        Name: "Magic Shield Buff Powerup Spell 01 SFX"
         Transform {
           Location {
-            Z: 42.9382362
           }
           Rotation {
           }
@@ -149,8 +198,8 @@
             Z: 1
           }
         }
-        ParentId: 3529628060384767774
-        ChildIds: 5713941273722457278
+        ParentId: 8919689378314456355
+        ChildIds: 10948356259246655668
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -159,19 +208,20 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 7117527121828865812
+            Id: 626533208483825201
           }
           AutoPlay: true
           Volume: 0.6
-          Falloff: 2000
-          Radius: 4000
+          Falloff: 2300
+          Radius: 950
           EnableOcclusion: true
+          FadeOutTime: 5
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 5713941273722457278
+        Id: 10948356259246655668
         Name: "UtilityAudioOneshot"
         Transform {
           Location {
@@ -184,7 +234,7 @@
             Z: 1
           }
         }
-        ParentId: 1064091926953690356
+        ParentId: 6019720339188434963
         UnregisteredParameters {
           Overrides {
             Name: "cs:Delay"
@@ -205,30 +255,30 @@
       }
     }
     Assets {
-      Id: 17587880652047825598
-      Name: "Cylinder - Bottom-Aligned"
-      PlatformAssetType: 1
+      Id: 3422899817721348945
+      Name: "Energy Shield Panel"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_001"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_forceField"
       }
     }
     Assets {
-      Id: 13152335808383593938
-      Name: "Crossbow Draw Pull Back Load 01 SFX"
+      Id: 1562030989764207176
+      Name: "Sci-fi Object Humming 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_crossbow_draw_pull_back_load_01a_Cue_ref"
+        AssetId: "sfx_scifi_object_humming_01_Cue_ref"
       }
     }
     Assets {
-      Id: 7117527121828865812
-      Name: "Crossbow Compound Bow Shot 01 SFX"
+      Id: 626533208483825201
+      Name: "Magic Shield Buff Powerup Spell 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_crossbow_compound_bow_shot_01a_Cue_ref"
+        AssetId: "sfx_magic_shield_buff_powerup_spell_01_Cue_ref"
       }
     }
     PrimaryAssetId {

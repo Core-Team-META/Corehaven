@@ -7,7 +7,7 @@
       RootId: 10618264255608054961
       Objects {
         Id: 10618264255608054961
-        Name: "Helper_Archer_Arrow"
+        Name: "Helper_Projectile_Archer_Arrow"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 11484887903957546677
+        ChildIds: 4249199446600036513
+        ChildIds: 18115426270521132770
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,36 +29,142 @@
         }
       }
       Objects {
-        Id: 11484887903957546677
-        Name: "Helper_Archer_Arrow"
+        Id: 4249199446600036513
+        Name: "Fantasy Crossbow Bolt 01"
         Transform {
           Location {
           }
           Rotation {
-            Pitch: -90
           }
           Scale {
-            X: 0.1
-            Y: 0.1
+            X: 1
+            Y: 1
             Z: 1
           }
         }
         ParentId: 10618264255608054961
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.078125
+              G: 0.0726614296
+              B: 0.06875
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10219341742639680186
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 10219341742639680186
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.265625
+              G: 0.265625
+              B: 0.265625
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         CoreMesh {
           MeshAsset {
-            Id: 15767187264673962515
+            Id: 3337256621200851928
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18115426270521132770
+        Name: "Fantasy Crossbow Bolt 01"
+        Transform {
+          Location {
+            X: 11.6382971
+          }
+          Rotation {
+          }
+          Scale {
+            X: -1.43255115
+            Y: 0.429023385
+            Z: 0.699832
+          }
+        }
+        ParentId: 10618264255608054961
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.078125
+              G: 0.0726614296
+              B: 0.06875
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10500461731014761394
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 10500461731014761394
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.265625
+              G: 0.265625
+              B: 0.265625
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 10500461731014761394
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 3337256621200851928
+          }
+          Teams {
+          }
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -66,12 +173,21 @@
       }
     }
     Assets {
-      Id: 15767187264673962515
-      Name: "Cylinder"
+      Id: 3337256621200851928
+      Name: "Fantasy Crossbow Bolt 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_002"
+        AssetId: "sm_weap_fan_bolt_cross_001"
+      }
+    }
+    Assets {
+      Id: 10219341742639680186
+      Name: "Metal Steel Brushed"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_stainless-steel_001_uv"
       }
     }
     PrimaryAssetId {

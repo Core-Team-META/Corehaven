@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4135686357839385894
-  Name: "Helper_Effect_Task_Soldier_Melee"
+  Id: 17831245111179643081
+  Name: "Temp_Helper_Effect_Task_Soldier_Melee"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1066563426975644260
+      RootId: 9928170580789137035
       Objects {
-        Id: 1066563426975644260
-        Name: "Helper_Effect_Task_Soldier_Melee"
+        Id: 9928170580789137035
+        Name: "Temp_Helper_Effect_Task_Soldier_Melee"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5252351625861972223
+        ChildIds: 10833528375878531964
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -28,7 +28,7 @@
         }
       }
       Objects {
-        Id: 5252351625861972223
+        Id: 10833528375878531964
         Name: "ClientContext"
         Transform {
           Location {
@@ -41,11 +41,10 @@
             Z: 1
           }
         }
-        ParentId: 1066563426975644260
-        ChildIds: 18089324034617473176
-        ChildIds: 47228245395361514
-        ChildIds: 13871445890293200209
-        ChildIds: 8385293094744578473
+        ParentId: 9928170580789137035
+        ChildIds: 16580552284098740079
+        ChildIds: 2020844308374964751
+        ChildIds: 13934916565658230827
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -56,52 +55,7 @@
         }
       }
       Objects {
-        Id: 18089324034617473176
-        Name: "Cylinder - Bottom-Aligned"
-        Transform {
-          Location {
-            Z: -42.9382362
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.30280864
-            Y: 1.30280864
-            Z: 1.71447098
-          }
-        }
-        ParentId: 5252351625861972223
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4469657443425330169
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 17587880652047825598
-          }
-          Teams {
-          }
-          DisableDistanceFieldLighting: true
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 47228245395361514
+        Id: 16580552284098740079
         Name: "Vertical Melee Swipe"
         Transform {
           Location {
@@ -115,15 +69,14 @@
             Z: 1
           }
         }
-        ParentId: 5252351625861972223
-        ChildIds: 7138002782569514974
+        ParentId: 10833528375878531964
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
             Color {
               R: 0.984375
-              G: 0.606860399
-              B: 0.502441347
+              G: 0.48236084
+              B: 0.34350583
               A: 1
             }
           }
@@ -131,14 +84,14 @@
             Name: "bp:Edge Color"
             Color {
               R: 0.979167
-              G: 0.660871625
-              B: 0.65277797
+              G: 0.491777241
+              B: 0.479383826
               A: 1
             }
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 4
+            Float: 5
           }
           Overrides {
             Name: "bp:Size"
@@ -178,45 +131,12 @@
           TeamSettings {
           }
           Vfx {
+            AutoPlay: true
           }
         }
       }
       Objects {
-        Id: 7138002782569514974
-        Name: "UtilityVFXOneshot"
-        Transform {
-          Location {
-            Z: -98.6136551
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 47228245395361514
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Delay"
-            Float: 0.38
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 1948828140381252845
-          }
-        }
-      }
-      Objects {
-        Id: 13871445890293200209
+        Id: 2020844308374964751
         Name: "Melee Combat - Air Swipe Whooshes Set 01 SFX"
         Transform {
           Location {
@@ -229,7 +149,7 @@
             Z: 1
           }
         }
-        ParentId: 5252351625861972223
+        ParentId: 10833528375878531964
         UnregisteredParameters {
           Overrides {
             Name: "bp:Type"
@@ -262,7 +182,7 @@
         }
       }
       Objects {
-        Id: 8385293094744578473
+        Id: 13934916565658230827
         Name: "Sword Blade Hits Klangs Set 01 SFX"
         Transform {
           Location {
@@ -275,7 +195,7 @@
             Z: 1
           }
         }
-        ParentId: 5252351625861972223
+        ParentId: 10833528375878531964
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -298,15 +218,6 @@
             IsAttenuationEnabled: true
           }
         }
-      }
-    }
-    Assets {
-      Id: 17587880652047825598
-      Name: "Cylinder - Bottom-Aligned"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_cylinder_001"
       }
     }
     Assets {

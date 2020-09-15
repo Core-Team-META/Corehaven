@@ -36,17 +36,18 @@
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 0.39489013
+            Y: 0.39489013
+            Z: 0.39489013
           }
         }
         ParentId: 3091730133586088574
+        ChildIds: 10194581063605036942
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5351428073291024820
+              Id: 17869577602384161078
             }
           }
           Overrides {
@@ -78,6 +79,39 @@
           }
         }
       }
+      Objects {
+        Id: 10194581063605036942
+        Name: "Torch Fire VFX"
+        Transform {
+          Location {
+            Z: -54.9710541
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.53234982
+            Y: 2.53234982
+            Z: 2.53234982
+          }
+        }
+        ParentId: 16527224310060125571
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4603537691901304316
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
     }
     Assets {
       Id: 6585207450897081622
@@ -89,12 +123,12 @@
       }
     }
     Assets {
-      Id: 5351428073291024820
-      Name: "Opaque Emissive"
-      PlatformAssetType: 2
+      Id: 4603537691901304316
+      Name: "Torch Fire VFX"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_opaque_emissive"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_torch_fire"
       }
     }
     PrimaryAssetId {

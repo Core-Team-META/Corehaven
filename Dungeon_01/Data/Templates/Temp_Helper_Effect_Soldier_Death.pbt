@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 6070064999687689145
-  Name: "Helper_Effect_Soldier_Death"
+  Id: 10467189461768618039
+  Name: "Temp_Helper_Effect_Soldier_Death"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2823496566815150323
+      RootId: 2751423936079659977
       Objects {
-        Id: 2823496566815150323
-        Name: "Helper_Effect_Soldier_Death"
+        Id: 2751423936079659977
+        Name: "Temp_Helper_Effect_Soldier_Death"
         Transform {
           Scale {
             X: 1
@@ -16,11 +16,11 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 9020051384249705017
-        ChildIds: 10260587111084581445
-        ChildIds: 385628053646235184
-        ChildIds: 6880078577526759373
-        ChildIds: 3737549405283919171
+        ChildIds: 2675868500490696653
+        ChildIds: 18128364437948797969
+        ChildIds: 4634970288553188572
+        ChildIds: 8590301746134295493
+        ChildIds: 11614448872842316475
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -31,7 +31,7 @@
         }
       }
       Objects {
-        Id: 9020051384249705017
+        Id: 2675868500490696653
         Name: "Blunt Chainmail Armor Hit Impact 01 SFX"
         Transform {
           Location {
@@ -44,7 +44,7 @@
             Z: 1
           }
         }
-        ParentId: 2823496566815150323
+        ParentId: 2751423936079659977
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -65,7 +65,7 @@
         }
       }
       Objects {
-        Id: 10260587111084581445
+        Id: 18128364437948797969
         Name: "Gore Bloody Impact 01 SFX"
         Transform {
           Location {
@@ -78,7 +78,7 @@
             Z: 1
           }
         }
-        ParentId: 2823496566815150323
+        ParentId: 2751423936079659977
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -99,7 +99,7 @@
         }
       }
       Objects {
-        Id: 385628053646235184
+        Id: 4634970288553188572
         Name: "Male Generic Pain Groan 02 SFX"
         Transform {
           Location {
@@ -112,7 +112,7 @@
             Z: 1
           }
         }
-        ParentId: 2823496566815150323
+        ParentId: 2751423936079659977
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -133,7 +133,7 @@
         }
       }
       Objects {
-        Id: 6880078577526759373
+        Id: 8590301746134295493
         Name: "Smoke Puff Radial VFX"
         Transform {
           Location {
@@ -147,8 +147,8 @@
             Z: 1.2
           }
         }
-        ParentId: 2823496566815150323
-        ChildIds: 5476801852544165560
+        ParentId: 2751423936079659977
+        ChildIds: 6958956861331817907
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
@@ -181,7 +181,7 @@
         }
       }
       Objects {
-        Id: 5476801852544165560
+        Id: 6958956861331817907
         Name: "UtilityVFXOneshot"
         Transform {
           Location {
@@ -195,7 +195,7 @@
             Z: 0.2
           }
         }
-        ParentId: 6880078577526759373
+        ParentId: 8590301746134295493
         UnregisteredParameters {
           Overrides {
             Name: "cs:Delay"
@@ -215,7 +215,7 @@
         }
       }
       Objects {
-        Id: 3737549405283919171
+        Id: 11614448872842316475
         Name: "Generic Player Impact VFX"
         Transform {
           Location {
@@ -229,7 +229,7 @@
             Z: 3
           }
         }
-        ParentId: 2823496566815150323
+        ParentId: 2751423936079659977
         UnregisteredParameters {
           Overrides {
             Name: "bp:color"
