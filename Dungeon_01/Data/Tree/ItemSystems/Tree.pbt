@@ -5859,6 +5859,14 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ClickTimeout"
+      Float: 0.08
+    }
+    Overrides {
+      Name: "cs:ClickDeadzoneRadius"
+      Float: 3
+    }
+    Overrides {
       Name: "cs:TemplateSlotEquipped"
       AssetReference {
         Id: 2004628425292049853
