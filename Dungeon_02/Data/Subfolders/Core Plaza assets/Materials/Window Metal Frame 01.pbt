@@ -2,7 +2,7 @@
   Id: 1016911708248590329
   Name: "Window Metal Frame 01"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 11945076888191994327
     ParameterOverrides {

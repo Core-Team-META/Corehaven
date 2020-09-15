@@ -46,5 +46,5 @@
     Version: "1.1.0"
     Description: "This is a template that has example code for manipulating UI elements according to various curves.\r\n\r\nThere is a ReadMe that has some usage tips, as well as comments in the scripts."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

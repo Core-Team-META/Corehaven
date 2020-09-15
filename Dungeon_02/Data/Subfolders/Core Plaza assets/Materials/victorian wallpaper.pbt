@@ -2,7 +2,7 @@
   Id: 14505044370553194787
   Name: "victorian wallpaper"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 2619013598545263236
     ParameterOverrides {

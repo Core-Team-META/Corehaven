@@ -2,7 +2,7 @@
   Id: 13260730389771164622
   Name: "Go light"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 5021118056026342768
     ParameterOverrides {

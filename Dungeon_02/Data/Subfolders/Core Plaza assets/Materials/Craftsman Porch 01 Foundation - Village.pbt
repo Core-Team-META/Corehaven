@@ -2,7 +2,7 @@
   Id: 5599703049118414392
   Name: "Craftsman Porch 01 Foundation - Village"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 15887506416279628297
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 11739992402149198828
   Name: "Waffle"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 16872281456320893949
     ParameterOverrides {

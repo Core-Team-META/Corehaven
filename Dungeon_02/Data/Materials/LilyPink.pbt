@@ -2,7 +2,7 @@
   Id: 2774629526216622
   Name: "LilyPink"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 13204211068541557238
     ParameterOverrides {

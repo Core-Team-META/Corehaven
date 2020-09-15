@@ -4592,6 +4592,6 @@
   Marketplace {
     Description: "Note: needs player storage enabled in Game Settings to function!\r\n\r\nDisplays the Collectibles that the player has found from the Collectibles Template (also on CC)"
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }
