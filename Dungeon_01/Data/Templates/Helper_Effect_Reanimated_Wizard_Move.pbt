@@ -18,7 +18,7 @@
         ParentId: 4781671109827199097
         ChildIds: 18092356626124130760
         ChildIds: 16213868165847959776
-        ChildIds: 14028831051559983482
+        ChildIds: 5763698841556857945
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -99,8 +99,8 @@
         }
       }
       Objects {
-        Id: 14028831051559983482
-        Name: "Creature Beast Reptile High Snarl 01 SFX"
+        Id: 5763698841556857945
+        Name: "Male Generic Fight Grunt 01 SFX"
         Transform {
           Location {
           }
@@ -113,7 +113,7 @@
           }
         }
         ParentId: 3149170464123690541
-        ChildIds: 2207787520914904149
+        ChildIds: 1482448699838109314
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -122,19 +122,18 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 7199091668667737966
+            Id: 13138174875216727191
           }
-          Pitch: -1000
-          Volume: 0.2
-          Falloff: 500
-          Radius: 2000
+          Volume: 0.4
+          Falloff: 1500
+          Radius: 2500
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 2207787520914904149
+        Id: 1482448699838109314
         Name: "UtilityAudioOneshot"
         Transform {
           Location {
@@ -147,7 +146,7 @@
             Z: 1
           }
         }
-        ParentId: 14028831051559983482
+        ParentId: 5763698841556857945
         UnregisteredParameters {
           Overrides {
             Name: "cs:Delay"
@@ -186,12 +185,12 @@
       }
     }
     Assets {
-      Id: 7199091668667737966
-      Name: "Creature Beast Reptile High Snarl 01 SFX"
+      Id: 13138174875216727191
+      Name: "Male Generic Fight Grunt 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_creature_beast_reptile_high_snarl_01a_Cue_ref"
+        AssetId: "sfx_male_generic_fight_grunt_01a_Cue_ref"
       }
     }
     PrimaryAssetId {
