@@ -18,13 +18,11 @@
         ParentId: 4781671109827199097
         UnregisteredParameters {
           Overrides {
-            Name: "cs:Color"
-            Color {
-              A: 1
-            }
+            Name: "cs:TargetID"
+            String: ""
           }
           Overrides {
-            Name: "cs:Color:isrep"
+            Name: "cs:TargetID:isrep"
             Bool: true
           }
         }
@@ -45,5 +43,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

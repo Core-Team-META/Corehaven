@@ -1,5 +1,4 @@
-﻿local API_C = require(script:GetCustomProperty("APICursor"))
-local API_OI = require(script:GetCustomProperty("APIObjectIcon"))
+﻿local API_A = require(script:GetCustomProperty("APIAbility"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
@@ -8,7 +7,6 @@ local SOCKET_TEMPLATE = script:GetCustomProperty("SocketTemplate")
 local BUTTON_TEMPLATE = script:GetCustomProperty("ButtonTemplate")
 
 local NUMBER_OF_SLOTS = ROOT:GetCustomProperty("NumberOfSlots")
-local CONFIGURATION_BINDING = ROOT:GetCustomProperty("ConfigurationBinding")
 local SLOT_BINDINGS = {}
 
 for i = 1, NUMBER_OF_SLOTS do
@@ -96,8 +94,8 @@ local USER_FACING_BINDINGS =
 	ability_extra_67 = "End"
 }
 
-local buttonData = {}			-- int -> table {ability = CoreObject, button = CoreObject}
-local invalidAbilities = {} 	-- So we don't spam warnings
+local buttonData = {}			-- int -> table {abilityName = string, button = CoreObject}
+local invalidAbilityNames = {}	-- So we don't spam warnings
 
 local draggingIndex = 0
 local wasCursorVisible = false	-- Last frame, for change detection
@@ -108,30 +106,14 @@ function PlaceInSocket(uiObject, socketIndex)
 	uiObject:GetCustomProperty("BindingText"):WaitForObject().text = USER_FACING_BINDINGS[SLOT_BINDINGS[socketIndex]]
 end
 
-function SpawnAbilityButton(ability, socketIndex)
+function SpawnAbilityButton(abilityName, socketIndex)
 	local button = World.SpawnAsset(BUTTON_TEMPLATE, {parent = PANEL})
 	PlaceInSocket(button, socketIndex)
-	local background = button:GetCustomProperty("Background"):WaitForObject()
 	local icon = button:GetCustomProperty("Icon"):WaitForObject()
-	local iconData = API_OI.GetObjectIconData(ability)
-	icon:SetImage(iconData.icon)
-	background:SetColor(iconData.color)
+	local abilityData = API_A.GetAbilityData(abilityName)
+	icon:SetImage(abilityData.icon)
 	button:GetCustomProperty("CooldownTimeText"):WaitForObject().text = ""
 	return button
-end
-
-function CanActivateAbility(ability)
-	if ability:GetCurrentPhase() == AbilityPhase.READY and ability.isEnabled then
-		for _, otherAbility in pairs(ability.owner:GetAbilities()) do
-			if otherAbility:GetCurrentPhase() == AbilityPhase.CAST then
-				return false
-			end
-		end
-
-		return true
-	else
-		return false
-	end
 end
 
 function GetSocketIndexAtCursorPosition()
@@ -165,7 +147,7 @@ function ReleaseDraggingButton()
 			buttonData[draggingIndex] = buttonData[dropIndex]
 			buttonData[dropIndex] = data
 
-			if buttonData[draggingIndex].ability then
+			if buttonData[draggingIndex].abilityName then
 				PlaceInSocket(buttonData[draggingIndex].button, draggingIndex)
 			end
 		end
@@ -183,31 +165,27 @@ function ReleaseDraggingButton()
 end
 
 function OnBindingPressed(player, binding)
-	if UI.IsCursorVisible() then
-		if binding == "ability_primary" then
-			local index = GetSocketIndexAtCursorPosition()
+	-- Moving icons
+	if UI.IsCursorVisible() and binding == "ability_primary" then
+		local index = GetSocketIndexAtCursorPosition()
 
-			if index ~= 0 and buttonData[index].ability then
-				draggingIndex = index
-				local button = buttonData[draggingIndex].button
-				button.parent = CONTAINER
-			end
+		if index ~= 0 and buttonData[index].abilityName then
+			draggingIndex = index
+			local button = buttonData[draggingIndex].button
+			button.parent = CONTAINER
 		end
-	else
-		if binding == CONFIGURATION_BINDING then
-			API_C.SetCursorVisibility(script, true)
-		else
-			for i, slotBinding in pairs(SLOT_BINDINGS) do
-				if slotBinding == binding then
-					local ability = buttonData[i].ability
+	end
 
-					if ability and CanActivateAbility(ability) then
-						ability:Activate()
-					end
+	-- Using abilities
+	for i, slotBinding in pairs(SLOT_BINDINGS) do
+		if slotBinding == binding then
+			local abilityName = buttonData[i].abilityName
 
-					return
-				end
+			if abilityName and API_A.CanTrigger(abilityName) then
+				API_A.Trigger(abilityName)
 			end
+
+			return
 		end
 	end
 end
@@ -216,123 +194,112 @@ function OnBindingReleased(player, binding)
 	if binding == "ability_primary" then
 		ReleaseDraggingButton()
 	end
-
-	if binding == CONFIGURATION_BINDING then
-		API_C.SetCursorVisibility(script, false)
-		ReleaseDraggingButton()
-	end
 end
 
 function Tick(deltaTime)
+	local playerAbilities = API_A.GetPlayerAbilities(LOCAL_PLAYER)
 	-- Looking for new abilities
-	for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
-        if is_valid_muid(ability.id) and API_OI.GetObjectIconData(ability) then
-			local found = false
+	for abilityName, ability in pairs(playerAbilities) do
+		local found = false
 
-			for _, data in pairs(buttonData) do
-				if data.ability == ability then
-					found = true
+		for _, data in pairs(buttonData) do
+			if data.abilityName == abilityName then
+				found = true
+				break
+			end
+		end
+
+		for _, invalidAbilityNames in pairs(invalidAbilityNames) do
+			if invalidAbilityNames == abilityName then
+				found = true
+				break
+			end
+		end
+
+		if not found then
+			local socketFound = false
+
+			for i, data in pairs(buttonData) do
+				if not data.abilityName then
+					data.abilityName = abilityName
+					data.button = SpawnAbilityButton(abilityName, i)
+					socketFound = true
 					break
 				end
 			end
 
-			for _, invalidAbility in pairs(invalidAbilities) do
-				if invalidAbility == ability then
-					found = true
-					break
-				end
+			if not socketFound then
+				table.insert(invalidAbilityNames, abilityName)
+				warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
 			end
+		end
+	end
 
-			if not found then
-				if ability.actionBinding ~= "nil" then
-					table.insert(invalidAbilities, ability)
-					local formatString = "Ability %s on local player has binding %s. Action bar requires no bindings."
-					warn(string.format(formatString, ability.name, ability.actionBinding))
-				else
-					local socketFound = false
+	-- Look for removed abilities
+	for i, data in pairs(buttonData) do
+		if data.abilityName and not playerAbilities[data.abilityName] then
+			data.button:Destroy()
+			buttonData[i] = nil
+		end
+	end
 
-					for i, data in pairs(buttonData) do
-						if not data.ability then
-							data.ability = ability
-							data.button = SpawnAbilityButton(ability, i)
-							socketFound = true
-							break
-						end
-					end
+	local i = 1
+	while i <= #invalidAbilityNames do
+		abilityName = invalidAbilityNames[i]
 
-					if not socketFound then
-						table.insert(invalidAbilities, ability)
-						warn(string.format("New ability %s on local player. Action bar is full.", ability.name))
-					end
-				end
-			end
+		if not playerAbilities[abilityName] then
+			table.remove(invalidAbilityNames, i)
+		else
+			i = i + 1
 		end
 	end
 
 	-- Updating cooldown displays
 	for _, data in pairs(buttonData) do
-		if data.ability then
-			local currentPhase = data.ability:GetCurrentPhase()
+		if data.abilityName then
+			local ability = playerAbilities[data.abilityName]
+			local currentPhase = ability:GetCurrentPhase()
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
 			local cooldownTimeText = data.button:GetCustomProperty("CooldownTimeText"):WaitForObject()
+            local cooldownData = API_A.GetVisibleCooldownData(data.abilityName)
 
-	        if currentPhase == AbilityPhase.READY or currentPhase == AbilityPhase.CAST then
+            -- Update the shadow
+            if not cooldownData then
 	        	progressIndicator.visibility = Visibility.FORCE_OFF
 	        	cooldownTimeText.visibility = Visibility.FORCE_OFF
 	        else
 	        	progressIndicator.visibility = Visibility.INHERIT
 	        	cooldownTimeText.visibility = Visibility.INHERIT
+            	cooldownTimeText.text = string.format("%.1f", cooldownData.remaining)
 
-	            -- For a player, recovery, cooldown and execute phases all constitute an ability's cooldown
-	            local playerCooldownRemaining = data.ability:GetPhaseTimeRemaining()
-		        local executeDuration = data.ability.executePhaseSettings.duration
-		        local recoveryDuration = data.ability.recoveryPhaseSettings.duration
-		        local cooldownDuration = data.ability.cooldownPhaseSettings.duration
+            	local cooldownRatio = cooldownData.remaining / cooldownData.total
+                local shadowAngle = CoreMath.Clamp(1.0 - cooldownRatio, 0.0, 1.0) * 360.0
+				local rightShadow = data.button:GetCustomProperty("RightShadow"):WaitForObject()
+				local leftShadow = data.button:GetCustomProperty("LeftShadow"):WaitForObject()
 
-	            if currentPhase ~= AbilityPhase.COOLDOWN then   -- Execute or recovery
-	                playerCooldownRemaining = playerCooldownRemaining + cooldownDuration
-	            end
-
-	            if currentPhase == AbilityPhase.EXECUTE then
-	                playerCooldownRemaining = playerCooldownRemaining + recoveryDuration
-	            end
-
-	            local totalPlayerCooldown = executeDuration + recoveryDuration + cooldownDuration
-	            cooldownTimeText.text = string.format("%.1f", playerCooldownRemaining)
-
-	            -- Update the shadow
-	            if totalPlayerCooldown > 0.3 then
-	            	local cooldownRatio = playerCooldownRemaining / totalPlayerCooldown
-	                local shadowAngle = CoreMath.Clamp(1.0 - cooldownRatio, 0.0, 1.0) * 360.0
-					local rightShadow = data.button:GetCustomProperty("RightShadow"):WaitForObject()
-					local leftShadow = data.button:GetCustomProperty("LeftShadow"):WaitForObject()
-
-	                if shadowAngle <= 180.0 then
-	                    leftShadow.rotationAngle = 0.0
-	                    rightShadow.visibility = Visibility.INHERIT
-	                    rightShadow.rotationAngle = shadowAngle
-	                else
-	                    leftShadow.rotationAngle = shadowAngle - 180.0
-	                    rightShadow.visibility = Visibility.FORCE_OFF
-	                end
-	            end
+                if shadowAngle <= 180.0 then
+                    leftShadow.rotationAngle = 0.0
+                    rightShadow.visibility = Visibility.INHERIT
+                    rightShadow.rotationAngle = shadowAngle
+                else
+                    leftShadow.rotationAngle = shadowAngle - 180.0
+                    rightShadow.visibility = Visibility.FORCE_OFF
+                end
 	        end
 		end
 	end
 
 	-- Update enabled visual state
 	for _, data in pairs(buttonData) do
-		if data.ability then
-			local background = data.button:GetCustomProperty("Background"):WaitForObject()
+		if data.abilityName then
+			local ability = playerAbilities[data.abilityName]
+			local abilityData = API_A.GetAbilityData(data.abilityName)
 			local icon = data.button:GetCustomProperty("Icon"):WaitForObject()
-			local iconData = API_OI.GetObjectIconData(data.ability)
 
-			if data.ability.isEnabled then
-				background:SetColor(iconData.color)
-				icon:SetColor(Color.BLACK)
+			if ability.isEnabled then
+				icon:SetColor(Color.WHITE)
 			else
-				background:SetColor(Color.Lerp(iconData.color, Color.GRAY, 0.2))
-				icon:SetColor(Color.New(0.17, 0.17, 0.17))
+				icon:SetColor(Color.New(0.15, 0.15, 0.15))
 			end
 		end
 	end

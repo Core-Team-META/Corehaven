@@ -1,19 +1,25 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local API = {}
 
--- string GetShortId(CoreObject)
--- Returns the id of the object without the human-readable name on the end for networking
--- Example: "842B77E668FD9258" instead of "842B77E668FD9258:Capture Point Assault"
-function GetShortId(object)
-    if object then
-        if object:IsA("Player") then
-            return object.id
-        else
-            return string.sub(object.id, 1, string.find(object.id, ":") - 1)
-        end
+local systemFunctions = nil
+
+local godMode = false
+
+function OnBindingPressed(player, binding)
+    if binding == "ability_extra_56" then
+        godMode = not godMode
     end
 end
+
+function OnPlayerJoined(player)
+    player.bindingPressedEvent:Connect(OnBindingPressed)
+end
+
+Game.playerJoinedEvent:Connect(OnPlayerJoined)
 
 -- sourceCharacter may be nil
 function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
@@ -21,16 +27,25 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
     if sourceCharacter then
         sourceMultiplier = API_SE.GetCharacterDamageDealtMultiplier(sourceCharacter)
+
+        if sourceCharacter:IsA("Player") then
+            sourceMultiplier = sourceMultiplier * API_PP.GetPlayerDamageDealtMultiplier(sourceCharacter)
+        end
     end
 
     local targetMultiplier = API_SE.GetCharacterDamageTakenMultiplier(targetCharacter)
-    local adjustedAmount = amount * sourceMultiplier * targetMultiplier
 
-    Events.BroadcastToAllPlayers("DamageDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), adjustedAmount)
+    if targetCharacter:IsA("Player") then
+        targetMultiplier = targetMultiplier * API_PP.GetPlayerDamageTakenMultiplier(targetCharacter)
+    end
+    
+    local adjustedAmount = amount * sourceMultiplier * targetMultiplier
+    local effectiveAmount = 0.0
         
     if adjustedAmount > 0.0 then
         if targetCharacter:IsA("Player") then
-            local damage = Damage.New(adjustedAmount)
+            effectiveAmount = math.min(adjustedAmount, targetCharacter.hitPoints)
+            local damage = Damage.New(effectiveAmount)
 
             if sourceCharacter:IsA("Player") then
                 damage.sourcePlayer = sourceCharacter
@@ -42,34 +57,64 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
                 damage.reason = DamageReason.MAP
             end
 
-            targetCharacter:ApplyDamage(damage)
+            if not godMode then
+                targetCharacter:ApplyDamage(damage)
+            end
         else
-            API_NPC.ApplyDamage(adjustedAmount)
+            effectiveAmount = math.min(adjustedAmount, API_NPC.GetHitPoints(targetCharacter))
+            API_NPC.ApplyDamage(sourceCharacter, targetCharacter, effectiveAmount)
         end
+    end
+
+    local overkill = adjustedAmount - effectiveAmount
+    systemFunctions.ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+end
+
+-- This looks at the type of sourceCharacter, and only damages things they could damage. It either deals full damage to
+-- all targets hit (hasFalloff = false), or does full damage in the middle, 0 on the edge, and linear falloff.
+function API.ApplyAreaDamage(sourceCharacter, center, radius, maxAmount, hasFalloff)
+    local targets = nil
+    local adjustedCenter = center
+
+    if sourceCharacter:IsA("Player") then
+        targets = API_NPC.GetAwakeNPCsInSphere(center, radius)
+    else
+        adjustedCenter = center + Vector3.UP * 100.0
+        targets = Game.FindPlayersInSphere(adjustedCenter, radius, {ignoreDead = true})
+    end
+
+    for _, target in pairs(targets) do
+        local damage = maxAmount
+
+        if hasFalloff then
+            local distance = (target:GetWorldPosition() - adjustedCenter).size
+            damage = CoreMath.Lerp(maxAmount, 0.0, CoreMath.Clamp(distance / radius))
+        end
+
+        API.ApplyDamage(sourceCharacter, target, damage)
     end
 end
 
 -- sourcePlayer may be nil
 function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
-    Events.BroadcastToAllPlayers("HealingDone", GetShortId(sourceCharacter), GetShortId(targetCharacter), amount)
-    
+    local effectiveAmount = nil
+
     if targetCharacter:IsA("Player") then
-        targetCharacter.hitPoints = math.min(targetCharacter.maxHitPoints, targetCharacter.hitPoints + amount)
+        effectiveAmount = math.min(amount, targetCharacter.maxHitPoints - targetCharacter.hitPoints)
+        targetCharacter.hitPoints = targetCharacter.hitPoints + effectiveAmount
     else
-        API_NPC.ApplyHealing(amount)
+        local maxHitPoints = API_NPC.GetAllNPCData()[targetCharacter].maxHitPoints
+        effectiveAmount = math.min(amount, maxHitPoints - API_NPC.GetHitPoints(targetCharacter))
+        API_NPC.ApplyHealing(sourceCharacter, targetCharacter, effectiveAmount)
     end
+
+    local overheal = amount - effectiveAmount
+    systemFunctions.ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal)
 end
 
-function API.GetCharacterFromId(id)
-    if id then
-        for _, player in pairs(Game.GetPlayers()) do
-            if player.id == id then
-                return player
-            end
-        end
-
-        return World.FindObjectById(id)
-    end
+-- Server Only
+function API.RegisterReplicatorFunctions(functionTable)
+    systemFunctions = functionTable
 end
 
 return API

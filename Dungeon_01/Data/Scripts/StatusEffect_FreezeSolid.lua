@@ -8,7 +8,6 @@ local data = {}
 data.name = "Freeze Solid"
 data.duration = 4.0
 data.icon = ICON
-data.color = Color.CYAN
 data.effectTemplate = EFFECT_TEMPLATE
 data.doesStun = true
 data.damageTakenMultiplier = 0.0

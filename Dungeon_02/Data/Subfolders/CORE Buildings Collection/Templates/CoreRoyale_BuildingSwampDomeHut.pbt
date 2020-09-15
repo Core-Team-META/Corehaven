@@ -1602,7 +1602,7 @@
         Name: "HornPiling"
         Transform {
           Location {
-            X: 156.132813
+            X: 156.132812
             Y: 297.346863
           }
           Rotation {
@@ -4043,7 +4043,7 @@
         Name: "Deck"
         Transform {
           Location {
-            X: 69.0039063
+            X: 69.0039062
             Y: 24.7460938
             Z: 523.762817
           }
@@ -8514,7 +8514,7 @@
           }
           Rotation {
             Yaw: -52.0002136
-            Roll: -13.1782227
+            Roll: -13.1782226
           }
           Scale {
             X: 3.53377151
@@ -11249,7 +11249,7 @@
         Transform {
           Location {
             X: 0.0891723558
-            Y: 0.0727539063
+            Y: 0.0727539062
             Z: 15.7451172
           }
           Rotation {
@@ -11489,7 +11489,7 @@
         Transform {
           Location {
             X: 0.0899658129
-            Y: 0.0727539063
+            Y: 0.0727539062
             Z: 407.702271
           }
           Rotation {

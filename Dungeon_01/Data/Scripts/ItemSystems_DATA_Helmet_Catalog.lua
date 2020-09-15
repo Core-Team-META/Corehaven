@@ -1,0 +1,42 @@
+﻿return {
+  {
+    Name = 'Leather Cap',
+    Type = 'Helmet',
+    Rarity = 'Common',
+    StatKey = 'CommonHelmet',
+    MUID = 'A59196004F736B6B:ITEM_Helmet_LeatherCap',
+    Lore = 'The most basic leather cap.',
+  },
+  {
+    Name = 'Rugged Cap',
+    Type = 'Helmet',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonHelmet',
+    MUID = '8C12A0F245618C73:ITEM_Helmet_RuggedCap',
+    Lore = 'Not very stylish at all.',
+  },
+  {
+    Name = 'Metal Cap',
+    Type = 'Helmet',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonHelmet',
+    MUID = '5E4B3A34C51EAC1D:ITEM_Helmet_MetalCap',
+    Lore = 'Simple, yet effective.',
+  },
+  {
+    Name = 'Enchanted Hood',
+    Type = 'Helmet',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonMagicHelmet',
+    MUID = '8F5A6F22164F9109:ITEM_Helmet_EnchantedHood',
+    Lore = 'Makes the wearer feel smart.',
+  },
+  {
+    Name = 'Viking Helmet',
+    Type = 'Helmet',
+    Rarity = 'Rare',
+    StatKey = 'RareHelmet',
+    MUID = 'DE8009E7F2F49BC6:ITEM_Helmet_VikingHelmet',
+    Lore = 'Rrrraaaaaaaaaarrrrgghh!',
+  },
+}

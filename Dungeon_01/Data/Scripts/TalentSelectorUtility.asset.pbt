@@ -3,6 +3,20 @@
   Name: "TalentSelectorUtility"
   PlatformAssetType: 3
   TextAsset {
+    CustomParameters {
+      Overrides {
+        Name: "cs:APIAbility"
+        AssetReference {
+          Id: 17706441704388140225
+        }
+      }
+      Overrides {
+        Name: "cs:APIPlayerPassives"
+        AssetReference {
+          Id: 2536345701790434189
+        }
+      }
+    }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

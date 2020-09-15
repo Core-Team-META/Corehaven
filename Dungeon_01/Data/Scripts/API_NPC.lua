@@ -1,54 +1,42 @@
 ﻿local API = {}
 
 -- Predefined Tasks:
+API.STATE_ASLEEP = "asleep"			-- Functionally disabled, cannot be interacted with
 API.STATE_IDLE = "idle"
 API.STATE_CHASING = "chasing"
 API.STATE_STARING = "staring"		-- This is chasing without moving
 API.STATE_RESETTING = "resetting"
 API.STATE_DEAD = "dead"
-API.STUNNED = "stunned"
+API.STATE_STUNNED = "stunned"
+
+local IS_CLIENT = nil
 
 local tasks = {}		-- string -> table
 local npcs = {}			-- CoreObject -> table
+local systemFunctions = nil
 
--- nil RegisterTaskClient(string, <function>, <function>) [Client]
+-- nil RegisterTaskClient(string, <string>, <function>, <function>) [Client]
 -- Registers a named task for npcs, with optional task start and task end handlers.
 -- They have the following signatures:
--- onTaskStart(AnimatedMesh)
--- onTaskEnd(AnimatedMesh)
-function API.RegisterTaskClient(taskName, onTaskStart, onTaskEnd)
+-- onTaskStart(npc, AnimatedMesh)
+-- onTaskEnd(npc, AnimatedMesh, interrupted)
+function API.RegisterTaskClient(taskName, effectTemplate, onTaskStart, onTaskEnd)
 	local data = {}
+	data.effectTemplate = effectTemplate
 	data.onTaskStart = onTaskStart
 	data.onTaskEnd = onTaskEnd
 	tasks[taskName] = data
 end
 
--- nil RegisterNPCClient(CoreObject, string, table, float, <AnimatedMesh>) [Client]
--- Registers an npc and its animated mesh, if it has one.
-function API.RegisterNPCClient(root, name, taskList, maxHitPoints, animatedMesh)
-	local data = {}
-	data.name = name
-	data.taskList = taskList
-	data.maxHitPoints = maxHitPoints
-	data.animatedMesh = animatedMesh
-	npcs[root] = data
-
-	Events.Broadcast("NPC_Created", root, data)
-end
-
 -- nil RegisterTaskServer(string, float, float, function, <function>, <function>) [Server]
 -- Registers a named task for npcs, with range, cooldown, priority function, and optional task start and task end handlers.
 -- They have the following signatures:
--- float getPriority(taskHistory)
--- <float> onTaskStart(npc, target, threadTable)
+-- float getPriority(npc, taskHistory)
+-- <float> onTaskStart(npc, threatTable)
 -- 	   This should return the duration of this task, and spawn a task if delayed action is needed instead of calling
 --     Task.Wait(), which may cause strange or broken behavior.
--- nil onTaskEnd()
+-- nil onTaskEnd(npc, interrupted)
 function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskStart, onTaskEnd)
-	if taskName[1] == "!" then
-		error(string.format("Task %s cannot be registered. Task names cannot start with '!'", taskName))
-	end
-
 	local data = {}
 	data.range = range
 	data.cooldown = cooldown
@@ -58,28 +46,114 @@ function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskSt
 	tasks[taskName] = data
 end
 
--- nil RegisterNPCServer(CoreObject, table, float, float, float) [Server]
--- Registers an npc. engageRange is the distance from the npc to a target that it will engage.
-function API.RegisterNPCServer(root, taskList, maxHitPoints, speed, engageRange)
-	local data = {}
-	data.taskList = taskList
-	data.maxHitPoints = maxHitPoints
-	data.speed = speed
-	data.engageRange = engageRange
-	data.spawnPosition = root:GetWorldPosition()
-	data.spawnRotation = root:GetWorldRotation()
-	npcs[root] = data
+function API.RegisterNPCFolder(npcFolder)
+	function AddNPC(npc)
+		-- Specifically, all NPCs should be client contexts so we don't have to worry about objects replicating at
+		-- different times
+		assert(npc:IsA("NetworkContext"))
 
-	Events.Broadcast("NPC_Created", root, data)
+		local data = {}
+		data.name = npc:GetCustomProperty("Name")
+		data.maxHitPoints = npc:GetCustomProperty("MaxHitPoints")
+		data.speed = npc:GetCustomProperty("MoveSpeed")
+		data.engageRange = npc:GetCustomProperty("EngageRange")
+		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
+		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
+		data.experience = npc:GetCustomProperty("Experience")
+
+		data.spawnPosition = npc:GetWorldPosition()
+		data.spawnRotation = npc:GetWorldRotation()
+
+		if not IS_CLIENT then
+			data.spawnParent = npc.serverUserData.spawnParent
+			npc.serverUserData.spawnParent = nil
+		end
+
+		data.taskList = {}
+		local i = 1
+		
+		while true do
+			local task = npc:GetCustomProperty(string.format("Task%d", i))
+
+			if task then
+				data.taskList[i] = task
+				i = i + 1
+			else
+				break
+			end
+		end
+
+		data.dropData = {}
+		i = 1
+
+		while true do
+			local key = npc:GetCustomProperty(string.format("DropKey%d", i))
+			local chance = npc:GetCustomProperty(string.format("DropChance%d", i))
+
+			if key then
+				assert(chance)
+				data.dropData[i] = {key = key, chance = chance}
+				i = i + 1
+			else
+				break
+			end
+		end
+
+		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
+		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
+		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
+		data.followRoot = npc:GetCustomProperty("FollowRoot"):GetObject()		-- This will give nil on server
+
+		npcs[npc] = data
+
+		Events.Broadcast("NPC_Created", npc, data)
+
+		npc.destroyEvent:Connect(function(npc)
+			npcs[npc] = nil
+
+			Events.Broadcast("NPC_Destroyed", npc)
+		end)
+	end
+
+	function FindNPCs_R(root)
+		for _, child in pairs(root:GetChildren()) do
+			-- We assume anything with a "HitPoints" custom property is an npc
+			_, isNPC = child:GetCustomProperty("HitPoints")
+
+			if isNPC then
+				AddNPC(child)
+			else
+				FindNPCs_R(child)
+			end
+		end
+	end
+
+	FindNPCs_R(npcFolder)
+
+	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
+		Task.Wait()		-- Networked custom properties are not available for a frame
+		-- We assume anything with a "HitPoints" custom property is an npc
+		_, isNPC = newChild:GetCustomProperty("HitPoints")
+
+		if isNPC then
+			AddNPC(newChild)
+		end
+	end)
 end
 
--- nil UnregisterNPC(CoreObject) [Client, Server]
--- Removes an npc from tracking (generally when it is destroyed). Should be called
--- indepedently on client and server.
-function API.UnregisterNPC(root)
-	npcs[root] = nil
+-- Server only
+function API.SpawnNPC(templateId, spawnParent, position, rotation)
+	local npc = World.SpawnAsset(templateId, {parent = spawnParent.parent})
+	-- We do these separately so they are world coordinates
+	npc:SetWorldPosition(position)
+	npc:SetWorldRotation(rotation)
+	-- Pass this value to descendantAddedEvent just above
+	npc.serverUserData.spawnParent = spawnParent
+end
 
-	Events.Broadcast("NPC_Destroyed", root)
+function API.RegisterSystem(functionTable, isClient)
+	systemFunctions = functionTable
+	IS_CLIENT = isClient
 end
 
 -- table GetAllTaskData() [Client, Server]
@@ -95,21 +169,49 @@ function API.GetAllNPCData()
 end
 
 function API.SetHitPoints(npc, hitPoints)
+	assert(not systemFunctions.IsAsleep(npc))
 	npc:SetNetworkedCustomProperty("HitPoints", hitPoints)
 end
 
-function API.ApplyDamage(npc, amount)
+function API.ApplyDamage(sourceCharacter, npc, amount)
+	assert(not systemFunctions.IsAsleep(npc))
 	local currentHealth = API.GetHitPoints(npc)
+	systemFunctions.OnDamaged(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.max(0.0, currentHealth - amount))
 end
 
-function API.ApplyHealing(npc, amount)
+function API.ApplyHealing(sourceCharacter, npc, amount)
+	assert(not systemFunctions.IsAsleep(npc))
 	local currentHealth = API.GetHitPoints(npc)
+	systemFunctions.OnHealed(sourceCharacter, npc, amount)
 	API.SetHitPoints(npc, math.min(npcs[npc].maxHitPoints, currentHealth + amount))
 end
 
 function API.GetHitPoints(npc)
-	return npc:GetCustomProperty("HitPoints")
+	-- Separate lines so we don't return both values from GetCustomProperty()
+	local result = npc:GetCustomProperty("HitPoints")
+	return result
+end
+
+function API.SetTarget(npc, target)
+	assert(not systemFunctions.IsAsleep(npc))
+	if target then
+		npc:SetNetworkedCustomProperty("TargetID", target.id)
+	else
+		npc:SetNetworkedCustomProperty("TargetID", "")
+	end
+end
+
+function API.GetTarget(npc)
+	local id = npc:GetCustomProperty("TargetID")
+
+	if id ~= "" then
+		for _, player in pairs(Game.GetPlayers()) do
+			if player.id == id then
+				return player
+			end
+		end
+	end
 end
 
 function API.IsDead(npc)
@@ -117,10 +219,90 @@ function API.IsDead(npc)
 end
 
 function API.SetStunned(npc, isStunned)
-	-- We intentionally don't register/call a function in NPCSystemServer because we haven't used that pattern anywhere
-	-- else here, and also we want to be able to call this multiple times in a row (false then true, for example)
-	-- without causing any task transitions. Therefore we poll this value in the tick function in NPCSystemServer
-	npc.serverUserData.isStunned = isStunned
+	assert(not systemFunctions.IsAsleep(npc))
+	systemFunctions.SetStunnedFlag(npc, isStunned)
+end
+
+function API.SuggestMoveUpdate(npc)
+	assert(not systemFunctions.IsAsleep(npc))
+	systemFunctions.SuggestMoveUpdate(npc)
+end
+
+function API.IsAsleep(npc)
+	return systemFunctions.IsAsleep(npc)
+end
+
+function API.IsPlayerInCombat(player)
+	return systemFunctions.IsPlayerInCombat(player)
+end
+
+function FindSphereToCapsuleDistance(sphereCenter, sphereRadius, capsuleCenter, capsuleHeight, capsuleWidth)
+	local capsuleRadius = capsuleWidth / 2.0
+	local capsuleTopCenter = capsuleCenter + Vector3.UP * (capsuleHeight - capsuleWidth) / 2.0
+	local capsuleBottomCenter =  capsuleCenter - Vector3.UP * (capsuleHeight - capsuleWidth) / 2.0
+
+	if sphereCenter.z >= capsuleTopCenter.z then
+		return math.max(0.0, (sphereCenter - capsuleTopCenter).size - sphereRadius - capsuleRadius)
+	elseif sphereCenter.z <= capsuleBottomCenter.z then
+		return math.max(0.0, (sphereCenter - capsuleBottomCenter).size - sphereRadius - capsuleRadius)
+	else
+		local xyOffset = sphereCenter - capsuleCenter
+		xyOffset.z = 0.0
+		return math.max(0.0, xyOffset.size - sphereRadius - capsuleRadius)
+	end
+end
+
+function API.GetAwakeNPCsInSphere(center, radius)
+	local result = {}
+
+	for npc, _ in pairs(npcs) do
+		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
+			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
+				table.insert(result, npc)
+			end
+		end
+	end
+
+	return result
+end
+
+function API.LookAtTargetWithoutPitch(npc, target)
+	assert(not systemFunctions.IsAsleep(npc))
+	local direction = target - npc:GetWorldPosition()
+	direction.z = 0.0
+	npc:SetWorldRotation(Rotation.New(direction, Vector3.UP))
+end
+
+function API.GetRandomCharacterInThreatTable(threatTable)
+	local temp = {}
+
+	for character, _ in pairs(threatTable) do
+		table.insert(temp, character)
+	end
+
+	return temp[math.random(#temp)]
+end
+
+-- This encoding is horribly inefficient, but it's really easy to debug and doesn't change enough for it to matter
+function API.EncodeTaskString(task, interrupted, parity)
+	function BoolToString(bool)
+		if bool then
+			return "t"
+		else
+			return "f"
+		end
+	end
+
+	return string.format("%s%s%s", BoolToString(interrupted), BoolToString(parity), task)
+end
+
+function API.DecodeTaskString(taskString)
+	if taskString then
+		local interrupted = (string.sub(taskString, 1, 1) == "t")
+		local parity = (string.sub(taskString, 2, 2) == "t")
+		local task = string.sub(taskString, 3)
+		return task, interrupted, parity
+	end
 end
 
 return API

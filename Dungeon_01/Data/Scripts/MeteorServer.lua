@@ -1,5 +1,6 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_K = require(script:GetCustomProperty("APIKnockback"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local ABILITY = script:GetCustomProperty("Ability"):WaitForObject()
 local METEOR_TEMPLATE = script:GetCustomProperty("MeteorTemplate")
@@ -14,13 +15,14 @@ local ACCELERATION = Vector3.New(0.0, 0.0, 1000.0)
 
 function OnImpactEvent(projectile, other, hitResult, sourcePlayer)
     local hitPosition = hitResult:GetImpactPosition()
-    local players = Game.FindPlayersInSphere(hitPosition, 1000.0)
+    local npcs = API_NPC.GetAwakeNPCsInSphere(hitPosition, 1000.0)
 
-    for _, player in pairs(players) do
-        local offset = player:GetWorldPosition() - hitPosition
-        API_D.ApplyDamage(sourcePlayer, player, (2000.0 - offset.size) / 50.0)
-        API_K.ApplyImpulse(player, 0.2 * offset:GetNormalized() * (2000.0 - offset.size))
+    for _, npc in pairs(npcs) do
+        local offset = npc:GetWorldPosition() - hitPosition
+        API_D.ApplyDamage(sourcePlayer, npc, (2000.0 - offset.size) / 50.0)
+        --API_K.ApplyImpulse(player, 0.2 * offset:GetNormalized() * (2000.0 - offset.size))
     end
+    
     World.SpawnAsset(METEOR_IMPACT, {position = hitPosition})
 end
 

@@ -7,7 +7,7 @@
       RootId: 11497261407930304372
       Objects {
         Id: 11497261407930304372
-        Name: "PortLantern"
+        Name: "PortLantern_spherical_single"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 14769292999516845280
+        ParentId: 10874816195359804700
+        ChildIds: 18404520262375363526
         ChildIds: 6156279244924452981
         ChildIds: 8545045838586853368
         Collidable_v2 {
@@ -26,6 +27,46 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 18404520262375363526
+        Name: "Candle Flame VFX_port"
+        Transform {
+          Location {
+            X: -63.484848
+            Y: -4.93334198
+            Z: 492.814484
+          }
+          Rotation {
+            Yaw: -105.041924
+          }
+          Scale {
+            X: 6.72386312
+            Y: 6.72386312
+            Z: 6.72386312
+          }
+        }
+        ParentId: 11497261407930304372
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -75,6 +116,7 @@
         ChildIds: 10686770278380438601
         ChildIds: 4456686130723015945
         ChildIds: 11024319572215379608
+        ChildIds: 683725077394985086
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1748,6 +1790,54 @@
         }
       }
       Objects {
+        Id: 683725077394985086
+        Name: "Large Round Wood Beam 8m"
+        Transform {
+          Location {
+            X: 27.1474018
+            Y: 6.86008072
+            Z: -1.18721008
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.691035688
+            Y: 0.691035688
+            Z: 1.33469319
+          }
+        }
+        ParentId: 6156279244924452981
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 7232672974994690852
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 8545045838586853368
         Name: "Sphere_Lantern"
         Transform {
@@ -3319,6 +3409,15 @@
       }
     }
     Assets {
+      Id: 9199751096616988864
+      Name: "Candle Flame VFX"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "fxsm_candleflame"
+      }
+    }
+    Assets {
       Id: 7602223482704169180
       Name: "Large Round Wood Beam 8m"
       PlatformAssetType: 1
@@ -3343,6 +3442,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_rope_001"
+      }
+    }
+    Assets {
+      Id: 7232672974994690852
+      Name: "Column Segment 1m"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_column_segment_001"
       }
     }
     Assets {
@@ -3431,5 +3539,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

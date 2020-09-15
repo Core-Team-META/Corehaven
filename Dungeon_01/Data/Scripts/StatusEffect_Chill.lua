@@ -8,8 +8,7 @@ local data = {}
 data.name = "Chill"
 data.duration = 5.0
 data.icon = ICON
-data.color = Color.CYAN
 data.effectTemplate = EFFECT_TEMPLATE
-data.moveSpeedMultiplier = 0.7
+data.moveSpeedMultiplier = 0.2
 
 API_SE.DefineStatusEffect(data)

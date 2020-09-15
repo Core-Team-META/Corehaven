@@ -25,9 +25,8 @@
       }
       Overrides {
         Name: "gradient_direction"
-        Color {
-          B: 1
-          A: 1
+        Vector {
+          Z: 1
         }
       }
     }

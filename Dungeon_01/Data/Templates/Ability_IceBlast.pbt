@@ -131,7 +131,7 @@
           IsEnabled: true
           KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 1.5
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -142,7 +142,7 @@
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.4
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -163,7 +163,7 @@
             }
           }
           CooldownPhaseSettings {
-            Duration: 1.6
+            Duration: 1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -205,6 +205,18 @@
             Name: "cs:APIStatusEffects"
             AssetReference {
               Id: 1831660344620141067
+            }
+          }
+          Overrides {
+            Name: "cs:API_NPC"
+            AssetReference {
+              Id: 1793953622129874134
+            }
+          }
+          Overrides {
+            Name: "cs:APIPlayerState"
+            AssetReference {
+              Id: 7188294788371852653
             }
           }
           Overrides {
@@ -297,7 +309,6 @@
         }
         ParentId: 6674696222507124645
         ChildIds: 18326829894643732422
-        ChildIds: 18046344454486907653
         UnregisteredParameters {
         }
         WantsNetworking: true
@@ -359,41 +370,6 @@
           }
         }
       }
-      Objects {
-        Id: 18046344454486907653
-        Name: "MovingInterrupt"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4652969845494424319
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Ability"
-            ObjectReference {
-              SubObjectId: 6674696222507124645
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 12496250561717470390
-          }
-        }
-      }
     }
     Assets {
       Id: 4555739328168523004
@@ -409,5 +385,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

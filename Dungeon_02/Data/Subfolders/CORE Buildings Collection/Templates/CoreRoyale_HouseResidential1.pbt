@@ -5043,7 +5043,7 @@
             Z: 599.999878
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -5085,7 +5085,7 @@
             Z: 599.999878
           }
           Rotation {
-            Yaw: -6.10351563e-05
+            Yaw: -6.10351562e-05
           }
           Scale {
             X: 1
@@ -9219,7 +9219,7 @@
         Transform {
           Location {
             X: -265
-            Y: 6.10351563e-05
+            Y: 6.10351562e-05
             Z: 19.9999828
           }
           Rotation {
@@ -11611,7 +11611,7 @@
         Name: "Wedge"
         Transform {
           Location {
-            X: -28.4726563
+            X: -28.4726562
             Y: 883.233704
             Z: 619.999878
           }
@@ -16691,7 +16691,7 @@
         Name: "Ivy"
         Transform {
           Location {
-            X: 712.657227
+            X: 712.657226
             Y: -3.07727051
             Z: 129.112793
           }
@@ -27380,7 +27380,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -27882,7 +27882,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -28384,7 +28384,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -28886,7 +28886,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -29388,7 +29388,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -29890,7 +29890,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -30393,7 +30393,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -30974,7 +30974,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -31477,7 +31477,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -31980,7 +31980,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -32483,7 +32483,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -32986,7 +32986,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -33490,7 +33490,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 6.11132813
+            X: 6.11132812
             Y: -250
             Z: 250
           }
@@ -36985,7 +36985,7 @@
             Z: 198.749512
           }
           Rotation {
-            Pitch: -6.10351563e-05
+            Pitch: -6.10351562e-05
             Yaw: -179.999893
             Roll: -179.999893
           }
@@ -39990,7 +39990,7 @@
         Transform {
           Location {
             X: -633.496521
-            Y: 667.032227
+            Y: 667.032226
             Z: 24.6497803
           }
           Rotation {
@@ -42140,7 +42140,7 @@
         Transform {
           Location {
             X: -25
-            Y: 24.9882813
+            Y: 24.9882812
             Z: -14.6497803
           }
           Rotation {
@@ -42902,7 +42902,7 @@
           Location {
             X: -1593.4176
             Y: 259.845459
-            Z: 25.2539063
+            Z: 25.2539062
           }
           Rotation {
             Yaw: -179.274536
@@ -44083,7 +44083,7 @@
         Name: "Counter Drawer"
         Transform {
           Location {
-            X: -1296.54395
+            X: -1296.54394
             Y: 508.624146
             Z: 39.6497803
           }
@@ -44125,7 +44125,7 @@
         Name: "Counter Drawer"
         Transform {
           Location {
-            X: -1296.54395
+            X: -1296.54394
             Y: 508.624146
             Z: 74.6497803
           }
@@ -44167,7 +44167,7 @@
         Name: "Counter Drawer"
         Transform {
           Location {
-            X: -1296.54395
+            X: -1296.54394
             Y: 508.624146
             Z: 109.64978
           }
@@ -45134,7 +45134,7 @@
         Transform {
           Location {
             X: -963.847656
-            Y: 297.820313
+            Y: 297.820312
             Z: 329.64978
           }
           Rotation {
@@ -45680,7 +45680,7 @@
         Transform {
           Location {
             X: -1709.42151
-            Y: 338.382813
+            Y: 338.382812
             Z: 324.64978
           }
           Rotation {
@@ -45974,7 +45974,7 @@
         Transform {
           Location {
             X: -1709.42151
-            Y: 338.382813
+            Y: 338.382812
             Z: 469.64978
           }
           Rotation {
@@ -46501,7 +46501,7 @@
           Location {
             X: -516.358337
             Y: -512.22937
-            Z: 25.2539063
+            Z: 25.2539062
           }
           Rotation {
             Yaw: 0.725480139
@@ -48534,7 +48534,7 @@
           Location {
             X: 686.26709
             Y: 2847.28076
-            Z: 0.000122070313
+            Z: 0.000122070312
           }
           Rotation {
             Yaw: 90.7254715

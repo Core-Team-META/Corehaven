@@ -16,7 +16,8 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local AS = require(script:GetCustomProperty("API"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
+
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
@@ -27,57 +28,51 @@ local MIN_CAST_TIME = COMPONENT_ROOT:GetCustomProperty("MinCastTime")
 local SHOW_NAME = COMPONENT_ROOT:GetCustomProperty("ShowName")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-local castingAbility = nil
 local interruptTime = nil
+local onInterruptedListener = nil
 
--- Player GetViewedPlayer()
--- Returns which player the local player is spectating (or themselves if not spectating)
-function GetViewedPlayer()
-    local specatatorTarget = AS.GetSpectatorTarget()
-
-    if AS.IsSpectating() and specatatorTarget then
-        return specatatorTarget
-    end
-
-    return LOCAL_PLAYER
+function OnInterrupted(ability)
+    TEXT_BOX.text = "Cast Interrupted"
+    PROGRESS_BAR:SetBackgroundColor(Color.RED)
+    interruptTime = os.clock()
+    onInterruptedListener:Disconnect()
+    onInterruptedListener = nil
 end
 
 function Tick(deltaTime)
-    local player = GetViewedPlayer()
+    PANEL.visibility = Visibility.FORCE_OFF
 
     if interruptTime then
-        if interruptTime + 0.5 < time() then
+        if interruptTime + 0.5 < os.clock() then
             interruptTime = nil
+            PROGRESS_BAR:SetBackgroundColor(Color.GRAY)
+        else
+            PANEL.visibility = Visibility.INHERIT
         end
-    elseif castingAbility and castingAbility:GetCurrentPhase() ~= AbilityPhase.CAST then
-        if castingAbility:GetCurrentPhase() == AbilityPhase.READY then
-            TEXT_BOX.text = "Cast Interrupted"
-            PROGRESS_BAR:SetFillColor(Color.RED)
-            interruptTime = time()
-        end
+    end
 
-        castingAbility = nil
-    elseif player then
-        PANEL.visibility = Visibility.FORCE_OFF
+    for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
+        if ability:GetCurrentPhase() == AbilityPhase.CAST then
+            local remainingTime = ability:GetPhaseTimeRemaining()
+            local totalTime = ability.castPhaseSettings.duration
 
-        for _, ability in pairs(player:GetAbilities()) do
-            if ability:GetCurrentPhase() == AbilityPhase.CAST then
-                local remainingTime = ability:GetPhaseTimeRemaining()
-                local totalTime = ability.castPhaseSettings.duration
-
-                if totalTime >= MIN_CAST_TIME then
-                    castingAbility = ability
-
-                    PANEL.visibility = Visibility.INHERIT
-                    PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
-                    PROGRESS_BAR:SetFillColor(Color.YELLOW)
-
-                    if SHOW_NAME then
-                        TEXT_BOX.text = ability.name
-                    end
-
-                    return
+            if totalTime >= MIN_CAST_TIME then
+                if onInterruptedListener then
+                    onInterruptedListener:Disconnect()
+                    onInterruptedListener = nil
                 end
+                
+                onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted)
+
+                PANEL.visibility = Visibility.INHERIT
+                PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
+                PROGRESS_BAR:SetFillColor(Color.YELLOW)
+
+                if SHOW_NAME and not interruptTime then
+                    TEXT_BOX.text = API_A.GetAbilityName(ability)
+                end
+
+                return
             end
         end
     end

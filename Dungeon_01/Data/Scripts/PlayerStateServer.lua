@@ -4,13 +4,13 @@ local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
 
 function OnPlayerJoined(player)
 	local helper = World.SpawnAsset(PLAYER_STATE_TEMPLATE, {parent = PLAYER_STATE_HELPERS})
-	helper.name = API_PS.GetPlayerStateHelperName(player)
+	helper.name = API_PS.GetStateHelperName(player)
 end
 
 function OnPlayerLeft(player)
-	API_PS.GetPlayerStateHelper(player):Destroy()
+	API_PS.GetStateHelper(player):Destroy()
 end
 
-API_PS.SetPlayerStateHelperGroup(PLAYER_STATE_HELPERS)
+API_PS.SetStateHelperGroup(PLAYER_STATE_HELPERS)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)

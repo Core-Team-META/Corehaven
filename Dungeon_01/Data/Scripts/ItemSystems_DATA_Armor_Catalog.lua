@@ -1,0 +1,42 @@
+﻿return {
+  {
+    Name = 'Leather Armor',
+    Type = 'Armor',
+    Rarity = 'Common',
+    StatKey = 'CommonArmor',
+    MUID = 'F1BF10231731A908:ITEM_Armor_LeatherArmor',
+    Lore = 'The most basic leather armor.',
+  },
+  {
+    Name = 'Rugged Armor',
+    Type = 'Armor',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonArmor',
+    MUID = '529BCBBC653963C4:ITEM_Armor_RuggedArmor',
+    Lore = 'Somehow, this armor remains effective.',
+  },
+  {
+    Name = 'Scale Armor',
+    Type = 'Armor',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonArmor',
+    MUID = '266F52F6DF758593:ITEM_Armor_ScaleArmor',
+    Lore = 'Popular for its ability to deflect piercing blows.',
+  },
+  {
+    Name = 'Enchanted Robes',
+    Type = 'Armor',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonMagicArmor',
+    MUID = '3D08CB85F58532CE:ITEM_Armor_EnchantedRobes',
+    Lore = 'One wonders about the wizard who placed the enchantment.',
+  },
+  {
+    Name = 'Merchant\'s Shirt',
+    Type = 'Armor',
+    Rarity = 'Rare',
+    StatKey = 'RareArmor',
+    MUID = 'AE2CAF3BB11165E9:ITEM_Armor_MerchantsShirt',
+    Lore = 'Nice shirt.',
+  },
+}

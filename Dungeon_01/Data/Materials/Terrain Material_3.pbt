@@ -2,13 +2,13 @@
   Id: 14268256038143050909
   Name: "Terrain Material_3"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 2472481516520430682
     ParameterOverrides {
       Overrides {
         Name: "material1side_scale"
-        Float: 0.3
+        Float: 0.05
       }
       Overrides {
         Name: "material1_scale"

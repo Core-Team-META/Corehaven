@@ -10,7 +10,25 @@
           Id: 1831660344620141067
         }
       }
+      Overrides {
+        Name: "cs:API_NPC"
+        AssetReference {
+          Id: 1793953622129874134
+        }
+      }
+      Overrides {
+        Name: "cs:API_ID"
+        AssetReference {
+          Id: 8196531844027121028
+        }
+      }
+      Overrides {
+        Name: "cs:APIPlayerPassives"
+        AssetReference {
+          Id: 2536345701790434189
+        }
+      }
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

@@ -15,29 +15,6 @@ COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER I
 OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 --]]
 
---[[
-This script will print out text letter by letter, like an old RPG, or something.
-Full UIUtilitiesAPI will come out later. At the moment, this has very limited usage.
-
-client
-    Event.Broadcast(EVENT_NAME,[string])
-    the printout works by calling like this,
-    this works best when there is no fade in or out time (or you can space out the event calls, that works too).
-]]
-
--- NPCs condition trigger
--- No condition trigger
--- Condition with texts => options => texts?
-
--- === Text
--- Condition
--- Text
-
--- Options
------ String
---------- Text
-
-
 -- Internal custom properties
 local API = require(script:GetCustomProperty("APIDialogsLibrary"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
@@ -47,6 +24,8 @@ local INSTRUCTION_TEXT = script:GetCustomProperty("InstructionText"):WaitForObje
 local NAME_TEXT = script:GetCustomProperty("NameText"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local OPTIONS_PANEL = script:GetCustomProperty("OptionsPanel"):WaitForObject()
+local REWARD_PANEL = script:GetCustomProperty("ResourceRewardPanel"):WaitForObject()
+local REWARD_TEXT = script:GetCustomProperty("ResourceRewardText"):WaitForObject()
 local HELPER = script:GetCustomProperty("Helper")
 
 -- User exposed properties
@@ -54,11 +33,15 @@ local PRINT_TEXT_DELAY = ROOT:GetCustomProperty("PrintTextDelay")
 local PLAYER_PROMPT_DELAY = ROOT:GetCustomProperty("PlayerPromptDelay")
 local PLAY_PRINT_SOUND = ROOT:GetCustomProperty("PlayPrintSound")
 local PRINT_SOUND = ROOT:GetCustomProperty("PrintSound"):WaitForObject()
+local CLICK_SOUND = ROOT:GetCustomProperty("ClickSound"):WaitForObject()
+local REWARD_SOUND = ROOT:GetCustomProperty("RewardSound"):WaitForObject()
 
 -- Constants
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 local TEXT_LETTER_COLUMN_SIZE = DIALOG_TEXT.fontSize / 2
 local TEXT_LETTER_ROW_SIZE = DIALOG_TEXT.fontSize * 2
+local REWARD_TEXT_LETTER_COLUMN_SIZE = REWARD_TEXT.fontSize / 2
+local REWARD_TEXT_LETTER_ROW_SIZE = REWARD_TEXT.fontSize * 2
 
 -- Internal variables
 local currentText = ""
@@ -88,8 +71,8 @@ end
 -- Prints text slowly
 function PrintText(text)
     textPrintTime = time()
-    text = string.gsub(text, "{name}", LOCAL_PLAYER.name)
     currentText = text
+    text = string.gsub(text, "{name}", LOCAL_PLAYER.name)
     for i = 1, string.len(text) do
         if(PLAY_PRINT_SOUND) then
             PRINT_SOUND:Play()
@@ -113,11 +96,47 @@ function ResizePanelBasedOnText(text)
     PANEL.height = row * TEXT_LETTER_ROW_SIZE - DIALOG_TEXT.height
 end
 
+function ResizeRewardPanelBasedOnText(text)
+    local length = string.len(text)
+
+    local width = REWARD_PANEL.width + REWARD_TEXT.width
+
+    local column = width / REWARD_TEXT_LETTER_COLUMN_SIZE
+    local row = math.ceil(length / column)
+
+    REWARD_PANEL.height = row * REWARD_TEXT_LETTER_ROW_SIZE - REWARD_TEXT.height
+end
+
+function ShowReward(rewardTable)
+    REWARD_PANEL.visibility = Visibility.INHERIT
+    REWARD_SOUND:Play()
+
+    Events.BroadcastToServer("DialogResourceReward", rewardTable.resource)
+
+    ResizeRewardPanelBasedOnText(rewardTable.text)
+    REWARD_TEXT.text = rewardTable.text
+end
+
 function ProcessDialog(dialogTable, id)
     if not dialogTable then return end
     if not dialogTable[id] then return end
 
     ToggleUIInteraction(true)
+
+    if dialogTable[id].condition then
+
+        INSTRUCTION_TEXT.text = ""
+
+        local isConditionTrue = LOCAL_PLAYER:GetResource(dialogTable[id].condition.conditionResource) > 0
+
+        if isConditionTrue then
+            ProcessDialog(dialogTable, dialogTable[id].condition.targetDialogId1)
+        else
+            ProcessDialog(dialogTable, dialogTable[id].condition.targetDialogId2)
+        end
+
+        return
+    end
 
     if dialogTable[id].texts then
 
@@ -130,6 +149,10 @@ function ProcessDialog(dialogTable, id)
                 currentAnimatedMesh:PlayAnimation(textTable.animation)
             end
 
+            if textTable.rewardTable then
+                ShowReward(textTable.rewardTable)
+            end
+
             PrintText(textTable.text)
 
             userPromtTime = time()
@@ -137,6 +160,8 @@ function ProcessDialog(dialogTable, id)
                 Task.Wait()
             end
             userPromtTime = 0
+
+            REWARD_PANEL.visibility = Visibility.FORCE_OFF
         end
     end
 
@@ -178,10 +203,15 @@ end
 function OnDialogOptionSelect(dialogId)
     userPromtTime = userPromtTime - PLAYER_PROMPT_DELAY
     ProcessDialog(API.GetDialogLibrary(), dialogId)
+    CLICK_SOUND:Play()
 end
 
 function OnStartDialog(name, dialogId, sourceId)
-    NAME_TEXT.text = name
+    if name == "" then
+        NAME_TEXT.text = "You"
+    else
+        NAME_TEXT.text = name
+    end
 
     if sourceId then
         currentAnimatedMesh = World.FindObjectById(sourceId)
@@ -194,8 +224,10 @@ function OnBindingPressed(player, binding)
 	if binding == "ability_primary" then
         if textPrintTime and textPrintTime ~= 0 then
             textPrintTime = textPrintTime - (PRINT_TEXT_DELAY * string.len(currentText))
+            CLICK_SOUND:Play()
         elseif userPromtTime and userPromtTime ~= 0 and not selectingOption then
             userPromtTime = userPromtTime - PLAYER_PROMPT_DELAY
+            CLICK_SOUND:Play()
         end
 	end
 end
@@ -211,4 +243,3 @@ Events.Connect("DialogOptionSelect", OnDialogOptionSelect)
 Events.Connect("StartDialog", OnStartDialog)
 
 ToggleUIInteraction(false)
-

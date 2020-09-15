@@ -1,0 +1,38 @@
+﻿return {
+  {
+    Name = 'Dull Greatsword',
+    Type = 'Greatsword',
+    Rarity = 'Common',
+    StatKey = 'CommonGreatsword',
+    MUID = 'EA63C9CA48EEB2D1:ITEM_Greatsword_Dull',
+    Lore = 'Crude wooden stabby thing.',
+    ['Author Notes (will be ignored by script)'] = 'Fantasy Wood 007',
+  },
+  {
+    Name = 'Iron Greatsword',
+    Type = 'Greatsword',
+    Rarity = 'Common',
+    StatKey = 'CommonGreatsword',
+    MUID = 'AB09937E2067AE8F:ITEM_Greatsword_Iron',
+    Lore = 'Standard issue dagger.',
+    ['Author Notes (will be ignored by script)'] = 'Fantasy Dagger 005',
+  },
+  {
+    Name = 'Bastard Greatsword',
+    Type = 'Greatsword',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonGreatsword',
+    MUID = 'A1E3AC3852540AE7:ITEM_Greatword_Bastard',
+    Lore = 'Cruel and menacing, just like its maker.',
+    ['Author Notes (will be ignored by script)'] = 'Fantasy Dagger 002',
+  },
+  {
+    Name = 'Claymore',
+    Type = 'Greatsword',
+    Rarity = 'Uncommon',
+    StatKey = 'UncommonGreatsword',
+    MUID = '7BF11A630B8DD65E:ITEM_Greatsword_Claymore',
+    Lore = 'Cruel and menacing, just like its maker.',
+    ['Author Notes (will be ignored by script)'] = 'Fantasy Dagger 002',
+  },
+}

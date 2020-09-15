@@ -2,7 +2,7 @@
   Id: 3791364621850349454
   Name: "Custom Wallpaper Hearts 01"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 3980870876410975057
     ParameterOverrides {

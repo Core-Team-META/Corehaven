@@ -15,18 +15,12 @@
             Z: 1
           }
         }
-        ParentId: 2198406274922840658
+        ParentId: 7192392490166968682
         ChildIds: 8434796127765774335
         ChildIds: 10216661985740700542
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
-            ObjectReference {
-              SubObjectId: 4851000782464452691
-            }
-          }
-          Overrides {
-            Name: "cs:Background"
             ObjectReference {
               SubObjectId: 8434796127765774335
             }
@@ -91,7 +85,6 @@
           }
         }
         ParentId: 9169047931933056159
-        ChildIds: 10727794161224351454
         ChildIds: 4851000782464452691
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -100,8 +93,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 80
-          Height: 80
+          Width: 70
+          Height: 70
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -109,7 +102,7 @@
           }
           Image {
             Brush {
-              Id: 16532880832873788683
+              Id: 13851069143721853527
             }
             Color {
               R: 0.399000019
@@ -129,64 +122,6 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 10727794161224351454
-        Name: "UI Image"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8434796127765774335
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 80
-          Height: 80
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 13291744040931261266
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -215,8 +150,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
-          Height: -10
+          Width: 10
+          Height: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -227,8 +162,12 @@
           UseParentHeight: true
           Image {
             Brush {
+              Id: 12017046880637070245
             }
             Color {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -363,21 +302,21 @@
       }
     }
     Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
+      Id: 13851069143721853527
+      Name: "Fantasy Ability Blue 029"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "UI_Fantasy_Ability_Blue_029"
       }
     }
     Assets {
-      Id: 13291744040931261266
-      Name: "Frame Outline Thin 002"
+      Id: 12017046880637070245
+      Name: "Frame Outlined 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_019"
+        AssetId: "FrameSolid4px_019"
       }
     }
     PrimaryAssetId {
@@ -385,5 +324,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

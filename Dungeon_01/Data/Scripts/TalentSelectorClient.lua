@@ -1,6 +1,4 @@
 ﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
-local API_BGS = require(script:GetCustomProperty("APIBasicGameState"))
-local API_C = require(script:GetCustomProperty("APICursor"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -11,6 +9,7 @@ local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionTex
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
 local TOOLTIP_STATE_TEXT = script:GetCustomProperty("TooltipStateText"):WaitForObject()
+local TOGGLE_BUTTON = script:GetCustomProperty("ToggleButton"):WaitForObject()
 local TALENT_TREE_PANEL_TEMPLATE = script:GetCustomProperty("TalentTreePanelTemplate")
 local TALENT_BUTTON_TEMPLATE = script:GetCustomProperty("TalentButtonTemplate")
 local TALENT_REQUIREMENT_ARROW_TEMPLATE = script:GetCustomProperty("TalentRequirementArrowTemplate")
@@ -28,26 +27,24 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local tooltipTalentData = nil
 local talentTreesVisible = false
 
+function ToggleTalentTrees()
+	if talentTreesVisible then
+		HideTalentTrees()
+	else
+		ShowTalentTrees()
+	end
+end
+
 function ShowTalentTrees()
-	API_C.SetCursorVisibility(script, true)
 	UI_CONTAINER.visibility = Visibility.INHERIT
 	talentTreesVisible = true
 end
 
 function HideTalentTrees()
-	API_C.SetCursorVisibility(script, false)
 	UI_CONTAINER.visibility = Visibility.FORCE_OFF
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
 	talentTreesVisible = false
-end
-
-function OnGameStateChanged(oldState, newState, stateHasDuration, stateEndTime)
-	if oldState == API_BGS.GAME_STATE_LOBBY and newState ~= API_BGS.GAME_STATE_LOBBY then
-		HideTalentTrees()
-	elseif oldState ~= API_BGS.GAME_STATE_LOBBY and newState == API_BGS.GAME_STATE_LOBBY then
-		ShowTalentTrees()
-	end
 end
 
 function OnButtonClicked(button, talentData)
@@ -55,6 +52,10 @@ function OnButtonClicked(button, talentData)
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
 		Events.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
 	end
+end
+
+function OnToggleButtonClicked(button)
+	ToggleTalentTrees()
 end
 
 function OnButtonHovered(button, talentData)
@@ -70,11 +71,23 @@ function OnButtonHovered(button, talentData)
 	TOOLTIP_COST_TEXT.text = "Cost: " .. talentData.cost
 	TOOLTIP_REQUIRED_LEVEL_TEXT.text = "Required level: " .. talentData.requiredLevel
 	tooltipTalentData = talentData
+	local buttonTemplate = talentData.buttonTemplate
+	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
+	highLight.visibility = Visibility.INHERIT
 end
 
 function OnButtonUnhovered(button, talentData)
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
+	local buttonTemplate = talentData.buttonTemplate
+	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
+	highLight.visibility = Visibility.FORCE_OFF
+end
+
+function OnBindingPressed(player, binding)
+	if binding == "ability_extra_44" then
+		ToggleTalentTrees()
+	end
 end
 
 function BuildTalentTreeUI()
@@ -133,10 +146,12 @@ function BuildTalentTreeUI()
 			local unadjustedTreeHeight = UTILITY.TREE_HEIGHT * MAX_BUTTON_SIZE + (UTILITY.TREE_HEIGHT + 1) * BUTTON_PADDING
 			local minTreeHeight = treeScale * unadjustedTreeHeight + treeNameText.height
 			local treeBackgroundImage = treePanel:GetCustomProperty("BackgroundImage"):WaitForObject()
-			treeBackgroundImage.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
-			treeBackgroundImage:SetColor(UTILITY.TALENT_TREE_DATA[treeName].backgroundColor)
-			local treeBorderImage = treePanel:GetCustomProperty("BorderImage"):WaitForObject()
-			treeBorderImage.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
+			treeBackgroundImage:SetImage(UTILITY.TALENT_TREE_DATA[treeName].backgroundImage)
+			local backgroundOffset = UTILITY.TALENT_TREE_DATA[treeName].backgroundOffset
+			treeBackgroundImage.x = backgroundOffset.x
+			treeBackgroundImage.y = backgroundOffset.y
+			local treePanel = treePanel:GetCustomProperty("Panel"):WaitForObject()
+			treePanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
 
 			for talentName, talentData in pairs(treeData) do
 				-- Talent buttons
@@ -208,18 +223,23 @@ function Tick(deltaTime)
 		if UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName) then
 			for _, talentData in pairs(treeData) do
 				local buttonTemplate = talentData.buttonTemplate
-				local buttonBackgroundImage = buttonTemplate:GetCustomProperty("BackgroundImage"):WaitForObject()
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
+				local check = buttonTemplate:GetCustomProperty("Check"):WaitForObject()
+				
+				if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
+					button:SetButtonColor(Color.WHITE)
+					button:SetHoveredColor(Color.WHITE)
+					button:SetPressedColor(Color.WHITE)
+				else
+					button:SetButtonColor(Color.New(0.15, 0.15, 0.15))
+					button:SetHoveredColor(Color.New(0.15, 0.15, 0.15))
+					button:SetPressedColor(Color.New(0.15, 0.15, 0.15))
+				end
 
 				if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, talentData) then
-					buttonBackgroundImage:SetColor(Color.Lerp(talentData.iconColor, Color.BLACK, 0.3))
-					button:SetButtonColor(Color.BLACK)
-				elseif UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
-					buttonBackgroundImage:SetColor(talentData.iconColor)
-					button:SetButtonColor(Color.BLACK)
+					check.visibility = Visibility.INHERIT
 				else
-					buttonBackgroundImage:SetColor(Color.Lerp(talentData.iconColor, Color.SILVER, 0.6))
-					button:SetButtonColor(Color.GRAY)
+					check.visibility = Visibility.FORCE_OFF
 				end
 			end
 		end
@@ -242,14 +262,6 @@ end
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
 BuildTalentTreeUI()
 
-while not API_BGS.IsGameStateManagerRegistered() do
-	Task.Wait()
-end
-
-if API_BGS.GetGameState() == API_BGS.GAME_STATE_LOBBY then
-	ShowTalentTrees()
-else
-	HideTalentTrees()
-end
-
-Events.Connect("GameStateChanged", OnGameStateChanged)
+LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+TOGGLE_BUTTON.clickedEvent:Connect(OnToggleButtonClicked)
+HideTalentTrees()

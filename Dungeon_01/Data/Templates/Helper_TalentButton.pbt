@@ -4,9 +4,9 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 12273801183539571243
+      RootId: 9053946131096921490
       Objects {
-        Id: 12273801183539571243
+        Id: 9053946131096921490
         Name: "Helper_TalentButton"
         Transform {
           Scale {
@@ -15,31 +15,31 @@
             Z: 1
           }
         }
-        ParentId: 6789558373467895326
-        ChildIds: 17200725327504392135
+        ParentId: 379056897218762481
+        ChildIds: 785947515750534923
         UnregisteredParameters {
           Overrides {
             Name: "cs:Panel"
             ObjectReference {
-              SubObjectId: 17200725327504392135
-            }
-          }
-          Overrides {
-            Name: "cs:BackgroundImage"
-            ObjectReference {
-              SubObjectId: 16276839059512020685
-            }
-          }
-          Overrides {
-            Name: "cs:Frame"
-            ObjectReference {
-              SubObjectId: 14247951071274551680
+              SubObjectId: 785947515750534923
             }
           }
           Overrides {
             Name: "cs:Button"
             ObjectReference {
-              SubObjectId: 1791990730863343300
+              SubObjectId: 2113276658621038071
+            }
+          }
+          Overrides {
+            Name: "cs:Highlight"
+            ObjectReference {
+              SubObjectId: 14813150703085048943
+            }
+          }
+          Overrides {
+            Name: "cs:Check"
+            ObjectReference {
+              SubObjectId: 9566688098915570145
             }
           }
         }
@@ -54,7 +54,7 @@
         }
       }
       Objects {
-        Id: 17200725327504392135
+        Id: 785947515750534923
         Name: "UI Panel"
         Transform {
           Location {
@@ -67,10 +67,11 @@
             Z: 1
           }
         }
-        ParentId: 12273801183539571243
-        ChildIds: 14247951071274551680
-        ChildIds: 16276839059512020685
-        ChildIds: 1791990730863343300
+        ParentId: 9053946131096921490
+        ChildIds: 2113276658621038071
+        ChildIds: 14813150703085048943
+        ChildIds: 1059229685843091345
+        ChildIds: 9566688098915570145
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -80,6 +81,8 @@
         Control {
           Width: 100
           Height: 100
+          UIX: 1153.33948
+          UIY: 438.07782
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -102,8 +105,8 @@
         }
       }
       Objects {
-        Id: 14247951071274551680
-        Name: "UI Image"
+        Id: 2113276658621038071
+        Name: "UI Button"
         Transform {
           Location {
           }
@@ -115,60 +118,7 @@
             Z: 1
           }
         }
-        ParentId: 17200725327504392135
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 16532880832873788683
-            }
-            Color {
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 16276839059512020685
-        Name: "UI Image"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17200725327504392135
+        ParentId: 785947515750534923
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -186,12 +136,95 @@
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            DisabledColor {
+              R: 0.15
+              G: 0.15
+              B: 0.15
+              A: 1
+            }
+            Brush {
+              Id: 14809824387673401113
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14813150703085048943
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 3.25688781e-12
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 785947515750534923
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: -10
+          Height: -5
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
           Image {
             Brush {
-              Id: 16532880832873788683
+              Id: 6072604091791075315
             }
             Color {
-              R: 0.99
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -212,8 +245,8 @@
         }
       }
       Objects {
-        Id: 1791990730863343300
-        Name: "UI Button"
+        Id: 1059229685843091345
+        Name: "UI Image"
         Transform {
           Location {
           }
@@ -225,7 +258,7 @@
             Z: 1
           }
         }
-        ParentId: 17200725327504392135
+        ParentId: 785947515750534923
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -233,46 +266,25 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -20
-          Height: -20
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           UseParentHeight: true
-          Button {
-            FontColor {
-              A: 1
+          Image {
+            Brush {
+              Id: 6372050267507288416
             }
-            FontSize: 20
-            ButtonColor {
-              A: 1
-            }
-            HoveredColor {
+            Color {
               R: 1
               G: 1
               B: 1
               A: 1
             }
-            PressedColor {
-              R: 0.402
-              G: 0.402
-              B: 0.402
-              A: 1
+            TeamSettings {
             }
-            DisabledColor {
-              R: 0.539999962
-              G: 0.725827634
-              B: 1
-              A: 1
-            }
-            Brush {
-              Id: 5759640291131439973
-            }
-            IsButtonEnabled: true
           }
           AnchorLayout {
             SelfAnchor {
@@ -288,23 +300,100 @@
           }
         }
       }
-    }
-    Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+      Objects {
+        Id: 9566688098915570145
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: 3.25688781e-12
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 785947515750534923
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: 30
+          Height: 30
+          UIX: -15
+          UIY: -15
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 15002233724434219397
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomright"
+              }
+            }
+          }
+        }
       }
     }
     Assets {
-      Id: 5759640291131439973
-      Name: "Boat"
+      Id: 14809824387673401113
+      Name: "Fantasy Ability Blue 017"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Boatmedium"
+        AssetId: "UI_Fantasy_Ability_Blue_017"
+      }
+    }
+    Assets {
+      Id: 6072604091791075315
+      Name: "Gradient Corners"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Gradient_Corners"
+      }
+    }
+    Assets {
+      Id: 6372050267507288416
+      Name: "Frame SciFi Empty 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSciFi_001e"
+      }
+    }
+    Assets {
+      Id: 15002233724434219397
+      Name: "Icon Checkmark"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Checkmark"
       }
     }
     PrimaryAssetId {
@@ -312,5 +401,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

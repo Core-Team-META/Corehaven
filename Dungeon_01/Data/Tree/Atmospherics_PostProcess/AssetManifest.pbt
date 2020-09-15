@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3118065895286266118
-  Name: "Tonemapping Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_tonemapping"
-  }
-}
-Assets {
   Id: 2224571462023946700
   Name: "Environment Fog Default VFX"
   PlatformAssetType: 6

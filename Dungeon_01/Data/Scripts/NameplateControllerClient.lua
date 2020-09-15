@@ -1,5 +1,5 @@
 ﻿--[[
-Copyright 2019 Manticore Games, Inc. 
+Copyright 2019-2020 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -16,9 +16,11 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local AS = require(script:GetCustomProperty("APISpectator"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
 local STATUS_EFFECT_TEMPLATE = script:GetCustomProperty("StatusEffectTemplate")
@@ -33,17 +35,22 @@ local SHOW_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("ShowOnEnemies")
 local MAX_DISTANCE_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("MaxDistanceOnEnemies")
 local SHOW_ON_DEAD_PLAYERS = COMPONENT_ROOT:GetCustomProperty("ShowOnDeadPlayers")
 local SCALE = COMPONENT_ROOT:GetCustomProperty("Scale")
+local TARGET_SCALE_MULTIPLIER = COMPONENT_ROOT:GetCustomProperty("TargetScaleMultiplier")
 local SHOW_NUMBERS = COMPONENT_ROOT:GetCustomProperty("ShowNumbers")
 local ANIMATE_CHANGES = COMPONENT_ROOT:GetCustomProperty("AnimateChanges")
 local CHANGE_ANIMATION_TIME = COMPONENT_ROOT:GetCustomProperty("ChangeAnimationTime")
 
 -- User exposed properties (colors)
 local FRIENDLY_NAME_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyNameColor")
-local ENEMY_NAME_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameColor")
+local ENEMY_NAME_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameAsleepColor")
+local ENEMY_NAME_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameReadyColor")
+local ENEMY_NAME_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameCombatColor")
 local BORDER_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderColor")
 local BACKGROUND_COLOR = COMPONENT_ROOT:GetCustomProperty("BackgroundColor")
 local FRIENDLY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyHealthColor")
-local ENEMY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthColor")
+local ENEMY_HEALTH_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthAsleepColor")
+local ENEMY_HEALTH_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthReadyColor")
+local ENEMY_HEALTH_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthCombatColor")
 local DAMAGE_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("DamageChangeColor")
 local HEAL_CHANGE_COLOR = COMPONENT_ROOT:GetCustomProperty("HealChangeColor") 
 local HEALTH_NUMBER_COLOR = COMPONENT_ROOT:GetCustomProperty("HealthNumberColor") 
@@ -82,21 +89,10 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 -- Variables
 local nameplates = {}
 
--- Player GetViewedPlayer()
--- Returns which player the local player is spectating (or themselves if not spectating)
-function GetViewedPlayer()
-	local specatatorTarget = AS.GetSpectatorTarget()
-
-	if AS.IsSpectating() and specatatorTarget then
-		return specatatorTarget
-	end
-
-	return LOCAL_PLAYER
-end
-
 function CreateNameplate(character, data)
 	assert(character:IsA("Player") or data)
 	local nameplateRoot = World.SpawnAsset(NAMEPLATE_TEMPLATE)
+	nameplateRoot.visibility = Visibility.FORCE_OFF
 
 	nameplates[character] = {}
 	nameplates[character].templateRoot = nameplateRoot
@@ -125,6 +121,10 @@ function CreateNameplate(character, data)
 
 	nameplates[character].statusEffectIcons = {}
 	nameplates[character].panel = nameplateRoot:GetCustomProperty("Panel"):WaitForObject()
+	nameplates[character].container = nameplateRoot:GetCustomProperty("Container"):WaitForObject()
+
+	-- UI parented to a player doesn't display, so we stick them in the nameplate folder
+	nameplates[character].container.parent = COMPONENT_ROOT
 
 	if not STATUS_EFFECT_X_STEP then
 		STATUS_EFFECT_X_STEP = nameplates[character].panel.width / API_SE.MAX_STATUS_EFFECTS
@@ -143,18 +143,15 @@ function CreateNameplate(character, data)
 	nameplates[character].lastHealthTime = 0.0
 	nameplates[character].lastFrameHealthFraction = 1.0
 
-	--! (Temp Workaround)
-	Task.Wait(0.1)
-
 	-- Setup static properties
 	if character:IsA("Player") then
 		nameplateRoot:AttachToPlayer(character, "nameplate")
+		nameplates[character].baseScale = character:GetWorldScale().z
 	elseif data and data.animatedMesh then
-		data.animatedMesh:AttachCoreObject(nameplateRoot, "nameplate")
-		nameplateRoot:SetPosition(Vector3.UP * 230.0)
+		data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
+		nameplateRoot:SetPosition(Vector3.UP * data.capsuleHeight * 1.1)		-- Bigger enemies need a bigger gap before their nameplate
+		nameplates[character].baseScale = data.capsuleHeight / 200.0
 	end
-
-	nameplateRoot:SetScale(Vector3.New(SCALE, SCALE, SCALE))
 
 	-- Static properties on pieces
 	nameplates[character].borderPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH))
@@ -207,6 +204,7 @@ end
 -- nil OnPlayerLeft(Player)
 -- Destroy their nameplate
 function OnPlayerLeft(player)
+	nameplates[player].container:Destroy()
 	nameplates[player].templateRoot:Destroy()
 	nameplates[player] = nil
 end
@@ -216,7 +214,8 @@ function OnNPCCreated(npc, data)
 end
 
 function OnNPCDestroyed(npc)
-	nameplates[npc].templateRoot:Destroy()
+	nameplates[npc].container:Destroy()
+	-- AnimatedMeshes destroy their attachments when destroyed, so we don't need to
 	nameplates[npc] = nil
 end
 
@@ -233,22 +232,22 @@ function IsNameplateVisible(character)
 		end
 	end
 
-	if character == GetViewedPlayer() then
+	if character == LOCAL_PLAYER then
 		return SHOW_ON_SELF
 	end
 
 	-- Special casing this for Boss Fight, all NPCs are enemy
 	-- 0 distance is special, and means we always display them
-	if not character:IsA("Player") or Teams.AreTeamsEnemies(character.team, GetViewedPlayer().team) then
+	if not character:IsA("Player") or Teams.AreTeamsEnemies(character.team, LOCAL_PLAYER.team) then
 		if SHOW_ON_ENEMIES then
-			local distance = (character:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
 			end
 		end
 	else
 		if SHOW_ON_TEAMMATES then
-			local distance = (character:GetWorldPosition() - GetViewedPlayer():GetWorldPosition()).size
+			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
 			end
@@ -266,6 +265,28 @@ function RotateNameplate(nameplate)
 	nameplate.templateRoot:SetWorldRotation(Rotation.New(quat))
 end
 
+-- nil OnInterrupted(Ability)
+-- Handle interrupted abilities with propert ui
+function OnInterrupted(ability, nameplate)
+	nameplate.castBarGroup.visibility = Visibility.INHERIT
+    nameplate.castProgressPiece:SetColor(Color.RED)
+    nameplate.castNameText.text = "Cast Interrupted"
+    nameplate.interruptTime = time()
+	nameplate.onInterruptedListener:Disconnect()
+	nameplate.onInterruptedListener = nil
+	nameplate.onExecuteListener:Disconnect()
+	nameplate.onExecuteListener = nil
+end
+
+-- nil OnExecute(ability)
+-- Clear the interrupted handler
+function OnExecute(ability, nameplate)
+	nameplate.onInterruptedListener:Disconnect()
+	nameplate.onInterruptedListener = nil
+	nameplate.onExecuteListener:Disconnect()
+	nameplate.onExecuteListener = nil
+end
+
 -- nil Tick(float)
 -- Update dynamic properties (ex. team, health, and health animation) of every nameplate
 function Tick(deltaTime)
@@ -278,8 +299,10 @@ function Tick(deltaTime)
 
 		if not visible then
 			nameplate.templateRoot.visibility = Visibility.FORCE_OFF
+			nameplate.container.visibility = Visibility.FORCE_OFF
 		else
-			nameplate.templateRoot.visibility = Visibility.INHERIT
+			nameplate.templateRoot.visibility = Visibility.FORCE_ON		-- Some animated meshes are hidden and replaced by costumes
+			nameplate.container.visibility = Visibility.INHERIT
 			RotateNameplate(nameplate)
 
 			-- Update cast bar
@@ -292,15 +315,6 @@ function Tick(deltaTime)
 			        if nameplate.interruptTime + 0.5 < time() then
 			            nameplate.interruptTime = nil
 			        end
-			    elseif nameplate.castingAbility and nameplate.castingAbility:GetCurrentPhase() ~= AbilityPhase.CAST then
-			        if nameplate.castingAbility:GetCurrentPhase() == AbilityPhase.READY then
-						nameplate.castBarGroup.visibility = Visibility.INHERIT
-				        nameplate.castProgressPiece:SetColor(Color.RED)
-				        nameplate.castNameText.text = "Cast Interrupted"
-				        nameplate.interruptTime = time()
-				    end
-
-			        nameplate.castingAbility = nil
 			    else
 			        for _, ability in pairs(character:GetAbilities()) do
 			            if ability:GetCurrentPhase() == AbilityPhase.CAST then
@@ -308,14 +322,18 @@ function Tick(deltaTime)
 			                local totalTime = ability.castPhaseSettings.duration
 
 			                if totalTime >= 0.3 then
-			                	nameplate.castingAbility = ability
+			                	if not nameplate.onInterruptedListener then
+				                	nameplate.onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted, nameplate)
+				                	nameplate.onExecuteListener = ability.executeEvent:Connect(OnExecute, nameplate)
+				                end
+				                
 								nameplate.castBarGroup.visibility = Visibility.INHERIT
 			                    local castProgress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
 								local castProgressPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - castProgress)
 								nameplate.castProgressPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * castProgress, HEALTHBAR_HEIGHT))
 								nameplate.castProgressPiece:SetPosition(Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, castProgressPieceOffset, -100.0 * (HEALTHBAR_HEIGHT + BORDER_WIDTH)))
 			        			nameplate.castProgressPiece:SetColor(Color.YELLOW)
-		                        nameplate.castNameText.text = ability.name
+		                        nameplate.castNameText.text = API_A.GetAbilityName(ability)
 			                    break
 			                end
 			            end
@@ -323,7 +341,16 @@ function Tick(deltaTime)
 			    end
 		    end
 
-		    --[[ Update status effects
+			-- Update scale for target
+			local scale = SCALE * nameplate.baseScale
+
+			if API_PS.GetTarget(LOCAL_PLAYER) == character then
+				scale = scale * TARGET_SCALE_MULTIPLIER
+			end
+
+			nameplate.templateRoot:SetScale(Vector3.New(scale))
+
+			-- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
 			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 220.0
@@ -331,12 +358,12 @@ function Tick(deltaTime)
 			local targetDistance = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD .. (nameplatePosition - LOCAL_PLAYER:GetViewWorldPosition())
 
 			if targetDistance > 0.0 and screenPosition then
-				local statusEffects = API_SE.GetStatusEffectsOnPlayer(player)
+				local statusEffects = API_SE.GetStatusEffectsOnCharacter(character)
 				
 				nameplate.panel.visibility = Visibility.INHERIT
 				nameplate.panel.x = screenPosition.x
 				nameplate.panel.y = screenPosition.y
-				local uiScale = math.min(10.0, 250.0 / targetDistance)
+				local uiScale = math.min(10.0, 250.0 / targetDistance) * scale
 
 				for i = 1, API_SE.MAX_STATUS_EFFECTS do
 					local data = statusEffects[i]
@@ -347,7 +374,8 @@ function Tick(deltaTime)
 						local timeText = iconTemplate:GetCustomProperty("TimeText"):WaitForObject()
 
 						-- Apply scale
-						iconTemplate.x = uiScale * STATUS_EFFECT_X_STEP * (i - (API_SE.MAX_STATUS_EFFECTS + 1) / 2)
+						iconTemplate.x = uiScale * STATUS_EFFECT_X_STEP * (i - (API_SE.MAX_STATUS_EFFECTS + 1) / 2) * 1.5
+						iconTemplate.y = uiScale * -40.0
 						iconTemplate.width = math.floor(uiScale * 100.0)
 						iconTemplate.height = math.floor(uiScale * 100.0)
 						icon.width = math.floor(uiScale * -10.0)
@@ -357,7 +385,6 @@ function Tick(deltaTime)
 
 						local effectData = API_SE.STATUS_EFFECT_DEFINITIONS[data.name]
 						iconTemplate.visibility = Visibility.INHERIT
-						iconTemplate:SetColor(effectData.color)
 						icon:SetImage(effectData.icon)
 
 						if effectData.duration then
@@ -377,7 +404,7 @@ function Tick(deltaTime)
 				end
 			else
 				nameplate.panel.visibility = Visibility.FORCE_OFF
-			end]]
+			end
 
 			if SHOW_HEALTHBARS then
 				local hitPoints = nil
@@ -444,7 +471,7 @@ function Tick(deltaTime)
 				end
 			end
 
-			-- Update name and health color based on teams
+			-- Update name and health color based on teams and state
 			if SHOW_NAMES then
 				local nameColor = nil
 				local healthColor = nil
@@ -453,8 +480,24 @@ function Tick(deltaTime)
 					nameColor = FRIENDLY_NAME_COLOR
 					healthColor = FRIENDLY_HEALTH_COLOR
 				else
-					nameColor = ENEMY_NAME_COLOR
-					healthColor = ENEMY_HEALTH_COLOR
+					if API_NPC.IsAsleep(character) then
+						nameColor = ENEMY_NAME_ASLEEP_COLOR
+						healthColor = ENEMY_HEALTH_ASLEEP_COLOR
+					elseif API_NPC.GetTarget(character) then
+						nameColor = ENEMY_NAME_COMBAT_COLOR
+						healthColor = ENEMY_HEALTH_COMBAT_COLOR
+					else
+						nameColor = ENEMY_NAME_READY_COLOR
+						healthColor = ENEMY_HEALTH_READY_COLOR
+					end
+				end
+
+				-- Adjust slightly if it's our target
+				if API_PS.GetTarget(LOCAL_PLAYER) == character then
+					nameplate.nameText:SetScale(Vector3.New(1.3))
+					nameColor = Color.Lerp(nameColor, Color.WHITE, 0.2)
+				else
+					nameplate.nameText:SetScale(Vector3.ONE)
 				end
 
 				nameplate.nameText:SetColor(nameColor)

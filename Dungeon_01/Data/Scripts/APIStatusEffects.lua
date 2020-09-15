@@ -15,10 +15,9 @@ statusEffectData fields:
 name - player-facing name
 <duration> - default duration, or missing for unlimited duration
 icon - to show on ui
-color - color in ui (usually the background)
 <effectTemplate> - template to spawn and attach to character for effects
 <startFunction(sourceCharacter, character)> - called when applied
-<tickFunction(sourceCharacter, character)> - called exactly once a second (on average)
+<tickFunction(sourceCharacter, character)> - called exactly once per seconds (on average)
 <endFunction(sourceCharacter, character)> - called when expires or removed. Note this may have expired because they died.
 <doesStun> - whether this status effect stuns the target
 <moveSpeedMultiplier> - how much to slow or speed up the characters's movement
@@ -33,10 +32,13 @@ API.STATUS_EFFECT_DEFINITIONS = {}		-- name -> table
 
 local STATUS_EFFECT_ID_TABLE = {}		-- id -> table
 
+local trackerCache = {}					-- Object -> CoreObject
+
 local tickCounts = {}					-- Object -> index -> int
 local damageDealtMultipliers = {}		-- Object -> float
 local damageTakenMultipliers = {}		-- Object -> float
 local knockbackMultipliers = {}			-- Object -> float
+local characterSpeedMultipliers = {}	-- Object -> float
 
 function GetStringHash(string)
 	local hash = 0
@@ -113,10 +115,8 @@ function UpdateCharacterEffectState(character)
 	-- Multipliers
 	local minMoveSpeedMultiplier = 1.0
 	local maxMoveSpeedMultiplier = 1.0
-	local minDamageDealtMultiplier = 1.0
-	local maxDamageDealtMultiplier = 1.0
-	local minDamageTakenMultiplier = 1.0
-	local maxDamageTakenMultiplier = 1.0
+	damageDealtMultipliers[character] = 1.0
+	damageTakenMultipliers[character] = 1.0
 	local minFrictionMultiplier = 1.0
 	local maxFrictionMultiplier = 1.0
 	local minKnockbackMultiplier = 1.0
@@ -131,13 +131,11 @@ function UpdateCharacterEffectState(character)
 		end
 
 		if statusEffectData.damageDealtMultiplier then
-			minDamageDealtMultiplier = math.min(statusEffectData.damageDealtMultiplier, minDamageDealtMultiplier)
-			maxDamageDealtMultiplier = math.max(statusEffectData.damageDealtMultiplier, maxDamageDealtMultiplier)
+			damageDealtMultipliers[character] = damageDealtMultipliers[character] * statusEffectData.damageDealtMultiplier
 		end
 
 		if statusEffectData.damageTakenMultiplier then
-			minDamageTakenMultiplier = math.min(statusEffectData.damageTakenMultiplier, minDamageTakenMultiplier)
-			maxDamageTakenMultiplier = math.max(statusEffectData.damageTakenMultiplier, maxDamageTakenMultiplier)
+			damageTakenMultipliers[character] = damageTakenMultipliers[character] * statusEffectData.damageTakenMultiplier
 		end
 
 		if statusEffectData.frictionMultiplier then
@@ -155,13 +153,14 @@ function UpdateCharacterEffectState(character)
 		character.maxWalkSpeed = DEFAULT_PLAYER_SETTINGS.maxWalkSpeed * minMoveSpeedMultiplier * maxMoveSpeedMultiplier
 		character.groundFriction = DEFAULT_PLAYER_SETTINGS.groundFriction * minFrictionMultiplier * maxFrictionMultiplier
 		character.brakingFrictionFactor = DEFAULT_PLAYER_SETTINGS.brakingFrictionFactor * minFrictionMultiplier * maxFrictionMultiplier
-	else
-		--! NPC move speed
 	end
 
-	damageDealtMultipliers[character] = minDamageDealtMultiplier * maxDamageDealtMultiplier
-	damageTakenMultipliers[character] = minDamageTakenMultiplier * maxDamageTakenMultiplier
 	knockbackMultipliers[character] = minKnockbackMultiplier * maxKnockbackMultiplier
+	characterSpeedMultipliers[character] = minMoveSpeedMultiplier * maxMoveSpeedMultiplier
+
+	if not character:IsA("Player") then
+		API_NPC.SuggestMoveUpdate(character)
+	end
 end
 
 function OnPlayerJoined(player)
@@ -169,6 +168,7 @@ function OnPlayerJoined(player)
 	damageDealtMultipliers[player] = 1.0
 	damageTakenMultipliers[player] = 1.0
 	knockbackMultipliers[player] = 1.0
+	characterSpeedMultipliers[player] = 1.0
 end
 
 function OnPlayerLeft(player)
@@ -176,6 +176,7 @@ function OnPlayerLeft(player)
 	damageDealtMultipliers[player] = nil
 	damageTakenMultipliers[player] = nil
 	knockbackMultipliers[player] = nil
+	characterSpeedMultipliers[player] = nil
 end
 
 function OnNPCCreated(npc, data)
@@ -183,6 +184,7 @@ function OnNPCCreated(npc, data)
 	damageDealtMultipliers[npc] = 1.0
 	damageTakenMultipliers[npc] = 1.0
 	knockbackMultipliers[npc] = 1.0
+	characterSpeedMultipliers[npc] = 1.0
 end
 
 function OnNPCDestroyed(npc)
@@ -190,6 +192,7 @@ function OnNPCDestroyed(npc)
 	damageDealtMultipliers[npc] = nil
 	damageTakenMultipliers[npc] = nil
 	knockbackMultipliers[npc] = nil
+	characterSpeedMultipliers[npc] = nil
 end
 
 -- Client and Server
@@ -199,7 +202,11 @@ end
 
 -- Client and Server
 function API.GetStateTracker(character)
-	return STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
+	if not trackerCache[character] then
+		trackerCache[character] = STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
+	end
+
+	return trackerCache[character]
 end
 
 -- Client and Server
@@ -228,10 +235,6 @@ function API.DefineStatusEffect(statusEffectData)
 
 	if not statusEffectData.icon then
 		error(string.format("DefineStatusEffect for %s missing icon", statusEffectData.name))
-	end
-
-	if not statusEffectData.color then
-		error(string.format("DefineStatusEffect for %s missing color", statusEffectData.name))
 	end
 
 	if API.STATUS_EFFECT_DEFINITIONS[statusEffectData.name] then
@@ -291,10 +294,32 @@ function API.GetCharacterKnockbackMultiplier(character)
 	return knockbackMultipliers[character]
 end
 
+-- Server
+function API.GetCharacterMoveSpeedMultiplier(character)
+	return characterSpeedMultipliers[character]
+end
+
+-- Client
+function API.ComputeCharacterMoveSpeedMultiplier(character)
+	local minMoveSpeedMultiplier = 1.0
+	local maxMoveSpeedMultiplier = 1.0
+
+	for _, data in pairs(API.GetStatusEffectsOnCharacter(character)) do
+		local statusEffectData = API.STATUS_EFFECT_DEFINITIONS[data.name]
+
+		if statusEffectData.moveSpeedMultiplier then
+			minMoveSpeedMultiplier = math.min(statusEffectData.moveSpeedMultiplier, minMoveSpeedMultiplier)
+			maxMoveSpeedMultiplier = math.max(statusEffectData.moveSpeedMultiplier, maxMoveSpeedMultiplier)
+		end
+	end
+
+	return minMoveSpeedMultiplier * maxMoveSpeedMultiplier
+end
+
 -- Server only
 function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 	if IsCharacterDead(targetCharacter) then
-		warn(string.format("Trying to apply status effect id: %d to player %s who is dead", id, targetCharacter.name))
+		warn(string.format("Trying to apply status effect id: %d to character %s who is dead", id, targetCharacter.name))
 		return
 	end
 
@@ -325,12 +350,12 @@ function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 			end
 
 			UpdateCharacterEffectState(targetCharacter)
-			return
+			return i
 		end
 	end
 
-	-- Knock one off?
-	warn(string.format("Failed to apply status effect id: %d to player %s because they already had max", id, targetCharacter.name))
+	-- No room, we fail to apply for now
+	--warn(string.format("Failed to apply status effect id: %d to character %s because they already had max", id, targetCharacter.name))
 end
 
 -- Server only
@@ -359,8 +384,21 @@ function API.RemoveStatusEffect(character, index)
 
 		UpdateCharacterEffectState(character, statusEffectData.type)
 	else
-		error(string.format("Failed to remove status effect index: %d on player %s (they don't have it)", index, character.name))
+		-- error(string.format("Failed to remove status effect index: %d on character %s (they don't have it)", index, character.name))
 	end
+end
+
+-- Client and Server
+function API.IsStunned(character)
+	local statusEffects = API.GetStatusEffectsOnCharacter(character)
+
+	for _, data in pairs(statusEffects) do
+		if API.STATUS_EFFECT_DEFINITIONS[data.name].doesStun then
+			return true
+		end
+	end
+
+	return false
 end
 
 function UpdateCharacter(character)
@@ -382,7 +420,7 @@ function UpdateCharacter(character)
 						tickCounts[character][i] = tickCounts[character][i] + 1
 						statusEffectData.tickFunction(sourceCharacter, character)
 
-						-- The tick might kill you, which removes all your status effects. The rest of this is no longer valid.
+						-- The tick might kill you, which removes all your status effects. The rest of this is then no longer valid.
 						if IsCharacterDead(character) then
 							return
 						end
