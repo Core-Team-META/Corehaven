@@ -1,6 +1,556 @@
 ﻿Name: "MerchantBossArea"
 RootId: 7192807854345907469
 Objects {
+  Id: 17518633568395451488
+  Name: "FireMerchant"
+  Transform {
+    Location {
+      X: 4850.65332
+      Y: 7521.1792
+      Z: 3636.71289
+    }
+    Rotation {
+      Yaw: -167.765778
+    }
+    Scale {
+      X: 0.6
+      Y: 0.6
+      Z: 0.6
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 9085575625704267441
+  ChildIds: 5116551104058935190
+  ChildIds: 3240070905098721249
+  ChildIds: 13514629289334474929
+  ChildIds: 9350728618720909186
+  ChildIds: 13940929650539863899
+  ChildIds: 8734129317499667142
+  ChildIds: 1806040385332528700
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1806040385332528700
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: 102.222099
+      Y: 118.481888
+      Z: -256.808258
+    }
+    Rotation {
+      Pitch: 10.9462795
+      Yaw: 111.884354
+      Roll: 27.733736
+    }
+    Scale {
+      X: 1.31986892
+      Y: 1.67517853
+      Z: 0.851053953
+    }
+  }
+  ParentId: 17518633568395451488
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enable Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 8734129317499667142
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: 90.3579788
+      Y: 55.386631
+      Z: -293.746338
+    }
+    Rotation {
+      Pitch: 26.0002
+      Yaw: 125.55088
+      Roll: 19.5333843
+    }
+    Scale {
+      X: 2.50733542
+      Y: 6.57569933
+      Z: 3.03931904
+    }
+  }
+  ParentId: 17518633568395451488
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enable Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13940929650539863899
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -369.668365
+      Y: 14.0162401
+      Z: -293.746338
+    }
+    Rotation {
+      Pitch: 37.4838142
+      Yaw: 81.6562958
+      Roll: -27.9320374
+    }
+    Scale {
+      X: 4.04718399
+      Y: 7.44778061
+      Z: 3.03931737
+    }
+  }
+  ParentId: 17518633568395451488
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enable Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 9350728618720909186
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -326.82843
+      Y: 0.936635315
+      Z: -183.124176
+    }
+    Rotation {
+      Pitch: 19.9661236
+      Yaw: 92.0939713
+      Roll: -21.3110962
+    }
+    Scale {
+      X: 1.15580559
+      Y: 2.37505364
+      Z: 0.745268106
+    }
+  }
+  ParentId: 17518633568395451488
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 2
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Enable Hot Spot"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13514629289334474929
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -205.468796
+      Y: -1033.07788
+      Z: 78.8118439
+    }
+    Rotation {
+      Yaw: 7.70644569
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 17518633568395451488
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 27.7700272
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1680.64771
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 3240070905098721249
+  Name: "Scorch Mark Decal"
+  Transform {
+    Location {
+      X: -67.144928
+      Y: 34.0105629
+      Z: 255.838211
+    }
+    Rotation {
+      Pitch: 1.89170957
+      Yaw: -178.545685
+      Roll: 89.9988
+    }
+    Scale {
+      X: 6.08801174
+      Y: 7.84542751
+      Z: 4.5719409
+    }
+  }
+  ParentId: 17518633568395451488
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Color A"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color B"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Color C"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 720721651154426493
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5116551104058935190
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: -22.3361588
+      Y: 11.7832909
+      Z: 73.9402237
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17518633568395451488
+  ChildIds: 12430923870912443179
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 12430923870912443179
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -25.8288822
+      Y: 131.125427
+      Z: -77.3242188
+    }
+    Rotation {
+      Yaw: 95.498291
+    }
+    Scale {
+      X: 1.66666639
+      Y: 1.61808896
+      Z: 2.00902128
+    }
+  }
+  ParentId: 5116551104058935190
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 42.2979889
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.69715309
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57046938
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 9085575625704267441
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -32.2281647
+      Y: 49.1000977
+      Z: 92.3893204
+    }
+    Rotation {
+      Yaw: -2.85568237
+    }
+    Scale {
+      X: 1.66666663
+      Y: 1.66666663
+      Z: 1.66666663
+    }
+  }
+  ParentId: 17518633568395451488
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 63.9368286
+    Color {
+      R: 0.85
+      G: 0.23642382
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1000
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 14112507542900153145
   Name: "Decal Stone Cracks Variants 01"
   Transform {
@@ -529,6 +1079,18 @@ Objects {
       Name: "bp:Shape Index"
       Int: 1
     }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -799,6 +1361,18 @@ Objects {
     Overrides {
       Name: "bp:Shape Index"
       Int: 1
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
     }
   }
   Collidable_v2 {
@@ -6168,6 +6742,18 @@ Objects {
     Overrides {
       Name: "bp:Shape Index"
       Int: 1
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
     }
   }
   Collidable_v2 {
@@ -12836,6 +13422,18 @@ Objects {
       Name: "bp:Shape Index"
       Int: 1
     }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13153,6 +13751,18 @@ Objects {
       Name: "bp:Shape Index"
       Int: 1
     }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13213,6 +13823,18 @@ Objects {
     Overrides {
       Name: "bp:Shape Index"
       Int: 1
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
     }
   }
   Collidable_v2 {
@@ -13325,6 +13947,18 @@ Objects {
     Overrides {
       Name: "bp:Shape Index"
       Int: 1
+    }
+    Overrides {
+      Name: "bp:Hot Spot Fade Time"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Delay"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Fade Time"
+      Float: 0
     }
   }
   Collidable_v2 {

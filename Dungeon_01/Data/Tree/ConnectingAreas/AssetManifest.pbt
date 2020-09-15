@@ -1115,6 +1115,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7809640231404909079
+  Name: "Short Banner Manticore"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_banner_002"
+  }
+}
+Assets {
   Id: 7715152830417178651
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -1457,6 +1466,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5117326109845707677
+  Name: "Plane"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_4m_001"
+  }
+}
+Assets {
   Id: 5070702300223246221
   Name: "Fantasy Castle Wall 02 - Doorway 01"
   PlatformAssetType: 1
@@ -1472,6 +1490,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_wall_001_arch_01"
+  }
+}
+Assets {
+  Id: 4793433194361754592
+  Name: "Short Banner Fleur-de-lis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_banner_003"
   }
 }
 Assets {
@@ -1850,6 +1877,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_bannister_001_post"
+  }
+}
+Assets {
+  Id: 823315618078266062
+  Name: "Decal Leaves 02"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_leaves_002"
   }
 }
 Assets {
