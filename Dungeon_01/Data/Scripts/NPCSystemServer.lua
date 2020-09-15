@@ -217,6 +217,31 @@ function AddPlayerToThreatTable(npc, player)
 	end
 end
 
+function GetThreatTable(npc)
+	assert(not IsAsleep(npc))
+	local npcState = npcStates[npc]
+	return npcState.threatTable
+end
+
+function SetThreat(npc, player, threat)
+	assert(not IsAsleep(npc))
+	local npcState = npcStates[npc]
+	local target = API_NPC.GetTarget(npc)
+
+	npcState.threatTable[player] = threat
+
+	-- Pulling aggro
+	if target and target ~= sourceCharacter and npcState.threatTable[player] > npcState.threatTable[target] * 1.2 then
+		API_NPC.SetTarget(npc, player)
+	end
+end
+
+function AddThreat(npc, player, addedThreat)
+	assert(not IsAsleep(npc))
+	local npcState = npcStates[npc]
+	SetThreat(npc, player, npcState.threatTable[player] + addedThreat)
+end
+
 function OnDamaged(sourceCharacter, npc, amount)
 	assert(not IsAsleep(npc))
 	assert(sourceCharacter:IsA("Player"))
@@ -227,13 +252,8 @@ function OnDamaged(sourceCharacter, npc, amount)
 		AddPlayerToThreatTable(npc, sourceCharacter)
 	end
 
-	local threatAmount = amount * API_PP.GetPlayerThreatMultiplier(sourceCharacter)
-	npcState.threatTable[sourceCharacter] = npcState.threatTable[sourceCharacter] + threatAmount
-
-	-- Pulling aggro
-	if target and target ~= sourceCharacter and npcState.threatTable[sourceCharacter] > npcState.threatTable[target] * 1.2 then
-		API_NPC.SetTarget(npc, sourceCharacter)
-	end
+	local addedThreat = amount * API_PP.GetPlayerThreatMultiplier(sourceCharacter)
+	AddThreat(npc, sourceCharacter, addedThreat)
 end
 
 function OnHealed(sourceCharacter, npc, amount)
@@ -529,6 +549,9 @@ functionTable.SetStunnedFlag = SetStunnedFlag
 functionTable.SuggestMoveUpdate = SuggestMoveUpdate
 functionTable.IsAsleep = IsAsleep
 functionTable.IsPlayerInCombat = IsPlayerInCombat
+functionTable.GetThreatTable = GetThreatTable
+functionTable.SetThreat = SetThreat
+functionTable.AddThreat = AddThreat
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)

@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 16527224310060125571
+        ChildIds: 3493556478041803573
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28,34 +28,44 @@
         }
       }
       Objects {
-        Id: 16527224310060125571
-        Name: "Sphere"
+        Id: 3493556478041803573
+        Name: "Plasma Ball Projectile VFX"
         Transform {
           Location {
           }
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 3091730133586088574
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 5351428073291024820
+            Name: "bp:color"
+            Color {
+              R: 0.216887474
+              B: 0.25
+              A: 1
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.473510027
-              B: 0.5
-              A: 1
-            }
+            Name: "bp:Emissive Boost"
+            Float: 25
+          }
+          Overrides {
+            Name: "bp:Enable Arc Ball"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Arcs "
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.700089
           }
         }
         Collidable_v2 {
@@ -64,38 +74,25 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 6585207450897081622
+        Blueprint {
+          BlueprintAsset {
+            Id: 7009243008104945347
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
     }
     Assets {
-      Id: 6585207450897081622
-      Name: "Sphere"
-      PlatformAssetType: 1
+      Id: 7009243008104945347
+      Name: "Plasma Ball Projectile VFX"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
-      }
-    }
-    Assets {
-      Id: 5351428073291024820
-      Name: "Opaque Emissive"
-      PlatformAssetType: 2
-      PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxma_opaque_emissive"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_plasmaball_projectile"
       }
     }
     PrimaryAssetId {

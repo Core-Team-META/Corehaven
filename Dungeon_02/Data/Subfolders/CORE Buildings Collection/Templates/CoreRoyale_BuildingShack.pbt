@@ -327,7 +327,7 @@
         Name: "Craftsman Roof 02 End"
         Transform {
           Location {
-            X: 62.8632812
+            X: 62.8632813
             Y: 917.276367
             Z: 499.995117
           }
@@ -386,7 +386,7 @@
         Name: "Craftsman Roof 02 Eaves End"
         Transform {
           Location {
-            X: 62.8632812
+            X: 62.8632813
             Y: 917.276367
             Z: 499.995117
           }
@@ -529,7 +529,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 12.8969726
+            X: 12.8969727
             Y: 967.301636
           }
           Rotation {
@@ -571,9 +571,9 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 12.8969726
+            X: 12.8969727
             Y: 967.301636
-            Z: 32.3789062
+            Z: 32.3789063
           }
           Rotation {
             Pitch: 1.36603776e-05
@@ -615,7 +615,7 @@
         Name: "Craftsman Roof 01 Beam"
         Transform {
           Location {
-            X: 12.8969726
+            X: 12.8969727
             Y: 967.301636
             Z: 148.26416
           }
@@ -705,7 +705,7 @@
           Location {
             X: 12.8974495
             Y: 67.7532349
-            Z: 32.3789062
+            Z: 32.3789063
           }
           Rotation {
             Pitch: 1.36603776e-05
@@ -793,7 +793,7 @@
           Location {
             X: 8.62457275
             Y: 967.301331
-            Z: 32.3789062
+            Z: 32.3789063
           }
           Rotation {
             Pitch: 2.73207552e-05

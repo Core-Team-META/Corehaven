@@ -23,8 +23,10 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 40
-          Height: 40
+          Width: 50
+          Height: 50
+          UIX: 546.501709
+          UIY: 350.46225
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -36,7 +38,7 @@
               R: 0.950000048
               A: 1
             }
-            Size: 18
+            Size: 26
             Justification {
               Value: "mc:etextjustify:center"
             }

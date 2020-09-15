@@ -2835,7 +2835,7 @@
             Z: -1190
           }
           Rotation {
-            Yaw: -0.000122070312
+            Yaw: -0.000122070313
           }
           Scale {
             X: 1
@@ -2883,7 +2883,7 @@
             Z: -1200
           }
           Rotation {
-            Yaw: -0.000122070312
+            Yaw: -0.000122070313
           }
           Scale {
             X: 1
@@ -20402,7 +20402,7 @@
         Name: "Whitebox Wall 01 Window Slot 2x"
         Transform {
           Location {
-            X: 0.00122070312
+            X: 0.00122070313
             Y: 1799.99902
             Z: 600
           }
@@ -20456,7 +20456,7 @@
         Name: "Craftsman Part - Doorway"
         Transform {
           Location {
-            X: 0.00122070312
+            X: 0.00122070313
             Y: 1599.99976
             Z: 900
           }
@@ -20506,7 +20506,7 @@
         Name: "Craftsman Roof 01 End"
         Transform {
           Location {
-            X: 0.00122070312
+            X: 0.00122070313
             Y: 1799.99902
             Z: 1200
           }
@@ -30170,7 +30170,7 @@
         Transform {
           Location {
             X: -1600.00684
-            Y: 3390.07812
+            Y: 3390.07813
             Z: 145.66748
           }
           Rotation {
@@ -30217,8 +30217,8 @@
         Name: "Shipping Container Side 6m"
         Transform {
           Location {
-            X: -1600.01562
-            Y: 3090.07812
+            X: -1600.01563
+            Y: 3090.07813
             Z: 145.66748
           }
           Rotation {
@@ -30271,8 +30271,8 @@
           }
           Rotation {
             Pitch: -90
-            Yaw: -0.000122070312
-            Roll: -0.000122070312
+            Yaw: -0.000122070313
+            Roll: -0.000122070313
           }
           Scale {
             X: 0.75
@@ -30469,8 +30469,8 @@
           }
           Rotation {
             Pitch: -90
-            Yaw: -0.000122070312
-            Roll: -0.000122070312
+            Yaw: -0.000122070313
+            Roll: -0.000122070313
           }
           Scale {
             X: 0.75
@@ -31142,7 +31142,7 @@
         Transform {
           Location {
             X: -2200.02148
-            Y: -2369.94726
+            Y: -2369.94727
             Z: 400
           }
           Rotation {
@@ -31189,7 +31189,7 @@
         Transform {
           Location {
             X: -1700.02246
-            Y: -2369.94726
+            Y: -2369.94727
             Z: 400
           }
           Rotation {
@@ -33297,7 +33297,7 @@
         Transform {
           Location {
             X: -999.999
-            Y: -1999.95312
+            Y: -1999.95313
             Z: 1000
           }
           Rotation {
@@ -33344,7 +33344,7 @@
         Transform {
           Location {
             X: -1799.99902
-            Y: -1999.94726
+            Y: -1999.94727
             Z: 1000
           }
           Rotation {
@@ -34229,7 +34229,7 @@
         Transform {
           Location {
             X: -3400.00049
-            Y: 799.997558
+            Y: 799.997559
             Z: 100
           }
           Rotation {

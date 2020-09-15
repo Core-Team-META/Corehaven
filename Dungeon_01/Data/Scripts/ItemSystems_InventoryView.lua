@@ -8,6 +8,8 @@ local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObj
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
+local CLICK_TIMEOUT = script:GetCustomProperty("ClickTimeout")
+local CLICK_DEADZONE_RADIUS = script:GetCustomProperty("ClickDeadzoneRadius")
 local TEMPLATE_SLOT_BACKPACK = script:GetCustomProperty("TemplateSlotBackpack")
 local TEMPLATE_SLOT_EQUIPPED = script:GetCustomProperty("TemplateSlotEquipped")
 local CURSOR_HIGHLIGHT_BACKPACK = script:GetCustomProperty("CursorHighlightBackpack")
@@ -200,6 +202,22 @@ function view:InitItemHover()
     self.itemHoverStatEntries = {}
 end
 
+function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
+    if inventory:CanMoveItem(fromSlotIndex, toSlotIndex) then
+        inventory:MoveItem(fromSlotIndex, toSlotIndex)
+        if toSlotIndex then
+            if inventory:IsEquipSlot(toSlotIndex) or inventory:IsEquipSlot(fromSlotIndex) then
+                local newlyEquippedItem = inventory:GetItem(toSlotIndex)
+                PlaySound(ItemThemes.GetItemSFX(newlyEquippedItem:GetType()))
+            else
+                PlaySound(SFX_MOVE)
+            end
+        else
+            PlaySound(SFX_DISCARD)
+        end
+    end
+end
+
 function view:EnsureSufficientHoverStatEntries(numRequired)
     for i=1,numRequired do
         if not self.itemHoverStatEntries[i] then
@@ -217,35 +235,39 @@ end
 function view:OnBindingPressed(binding)
     if binding == "ability_primary" then
         if self.itemUnderCursor then
-            self.isHoldingIcon = true
-            self.fromSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
-            HOLDING_ICON:SetImage(self.slotUnderCursor.clientUserData.icon:GetImage())
-            HOLDING_ICON:SetColor(self.slotUnderCursor.clientUserData.icon:GetColor())
-            HOLDING_ICON.rotationAngle = self.slotUnderCursor.clientUserData.icon.rotationAngle
+            self.clickTime = time()
+            self.clickPosition = UI.GetCursorPosition()
+            self.clickSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
         end
     end
 end
 
 function view:OnBindingReleased(binding)
     if binding == "ability_primary" then
-        if self.isHoldingIcon then 
-            if self.slotUnderCursor or not self.isCursorInBounds then
-                local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
-                if inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
-                    inventory:MoveItem(self.fromSlotIndex, toSlotIndex)
-                    if toSlotIndex then
-                        if inventory:IsEquipSlot(toSlotIndex) or inventory:IsEquipSlot(self.fromSlotIndex) then
-                            local newlyEquippedItem = inventory:GetItem(toSlotIndex)
-                            PlaySound(ItemThemes.GetItemSFX(newlyEquippedItem:GetType()))
-                        else
-                            PlaySound(SFX_MOVE)
-                        end
-                    else
-                        PlaySound(SFX_DISCARD)
-                    end
+        if self.clickSlotIndex then
+            -- This is a click.
+            local clickedItem = inventory:GetItem(self.clickSlotIndex)
+            if inventory:IsEquipSlot(self.clickSlotIndex) then
+                local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
+                if emptyBackpackSlotIndex then
+                    self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+                end
+            else
+                local equipSlotIndex = inventory:ConvertEquipSlotIndex(clickedItem:GetEquipSlotType())
+                if equipSlotIndex then
+                    self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
                 end
             end
+        elseif self.isHoldingIcon then 
+           -- This is a drag and drop.
+            if self.slotUnderCursor or not self.isCursorInBounds then
+                local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
+                self:AttemptMoveItem(self.fromSlotIndex, toSlotIndex)
+            end
         end
+        self.clickTime = nil
+        self.clickPosition = nil
+        self.clickSlotIndex = nil
         self.isHoldingIcon = false
         self.fromSlotIndex = nil
         self:UpdateCursorState()
@@ -270,6 +292,22 @@ function view:UpdateCursorState()
             end
         end
     end
+    -- Click logic.
+    if self.clickTime then
+        local elapsed = time() - self.clickTime
+        local distance = (cursorPosition - self.clickPosition).size
+        if elapsed >= CLICK_TIMEOUT or distance >= CLICK_DEADZONE_RADIUS then
+            self.clickTime = nil
+            self.clickPosition = nil
+            self.clickSlotIndex = nil
+            self.isHoldingIcon = true
+            self.fromSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
+            HOLDING_ICON:SetImage(self.slotUnderCursor.clientUserData.icon:GetImage())
+            HOLDING_ICON:SetColor(self.slotUnderCursor.clientUserData.icon:GetColor())
+            HOLDING_ICON.rotationAngle = self.slotUnderCursor.clientUserData.icon.rotationAngle
+        end
+    end
+    -- Drag logic.
     if self.isHoldingIcon then
         HOLDING_ICON.visibility = Visibility.INHERIT
         HOLDING_ICON.x = cursorPosition.x

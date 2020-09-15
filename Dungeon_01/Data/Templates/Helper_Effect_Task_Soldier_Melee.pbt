@@ -46,6 +46,7 @@
         ChildIds: 47228245395361514
         ChildIds: 13871445890293200209
         ChildIds: 8385293094744578473
+        ChildIds: 12877458447519866876
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -299,6 +300,41 @@
           }
         }
       }
+      Objects {
+        Id: 12877458447519866876
+        Name: "Male Generic Fight Grunt 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5252351625861972223
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 13138174875216727191
+          }
+          AutoPlay: true
+          Pitch: -299.601563
+          Volume: 0.3
+          Falloff: 500
+          Radius: 1500
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
     }
     Assets {
       Id: 17587880652047825598
@@ -334,6 +370,15 @@
       PrimaryAsset {
         AssetType: "AudioBlueprintAssetRef"
         AssetId: "sfxabp_sword_hit_klangs_ref"
+      }
+    }
+    Assets {
+      Id: 13138174875216727191
+      Name: "Male Generic Fight Grunt 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_male_generic_fight_grunt_01a_Cue_ref"
       }
     }
     PrimaryAssetId {
