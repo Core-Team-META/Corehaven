@@ -6508,6 +6508,14 @@ Objects {
     }
   }
   ParentId: 3873329528123528015
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ItemSystems_Database"
+      AssetReference {
+        Id: 4685988691808682848
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6640,6 +6648,14 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ItemSystems_Database"
+      AssetReference {
+        Id: 4685988691808682848
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

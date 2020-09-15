@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:MaxHitPoints"
-            Float: 2400
+            Float: 4000
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -47,7 +47,7 @@
           }
           Overrides {
             Name: "cs:EngageRange"
-            Float: 2500
+            Float: 500
           }
           Overrides {
             Name: "cs:CapsuleHeight"

@@ -305,4 +305,16 @@ function API.DecodeTaskString(taskString)
 	end
 end
 
+function API.GetThreatTable(npc)
+	return systemFunctions.GetThreatTable(npc)
+end
+
+function API.SetThreat(npc, player, threat)
+	systemFunctions.SetThreat(npc, player, threat)
+end
+
+function API.AddThreat(npc, player, addedThreat)
+	systemFunctions.AddThreat(npc, player, addedThreat)
+end
+
 return API

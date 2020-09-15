@@ -42,7 +42,12 @@ function OnTaskStart(npc, threatTable)
 				local t = CoreMath.Clamp(playerOffset.size / METEOR_RADIUS)
 
 				API_D.ApplyDamage(npc, player, CoreMath.Lerp(t, MAX_DAMAGE, 0.0))
-				API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))
+
+				if playerOffset.size > 0.1 then
+					API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))
+				else
+					API_K.ApplyImpulse(player, 150.0 * Vector3.UP)
+				end
 			end
 
 			telegraph:Destroy()

@@ -40,6 +40,18 @@
           Id: 3639041783491094762
         }
       }
+      Overrides {
+        Name: "cs:Ability_Cleave"
+        AssetReference {
+          Id: 16228603322221377071
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Enrage"
+        AssetReference {
+          Id: 12653130121520336365
+        }
+      }
     }
   }
   SerializationVersion: 63

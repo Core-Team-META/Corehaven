@@ -32,6 +32,7 @@ bool targets									Whether this ability has a target
 <bool> enemyTargetValid							Whether this can target an enemy npc
 bool requiresFacing								Whether the target must be in front of the player
 bool groundTargets								Whether that target is a spot on the ground (vs their active npc target)
+bool canMove									Whether the caster can move while casting
 AssetReference icon								Icon to use in ui
 <float> range									Max range of target if targeted
 AssetReference abilityTemplate					A template consisting of only an ability. These must be unique
@@ -363,14 +364,18 @@ function IsTargetValid(player, target, abilityName)
 end
 
 -- Owning client
-function IsCasterValid(player)
-	-- This sort of corresponds with "are we trying to move". We set acceleration to be quite high.
-	if player:GetVelocity().size > player.maxWalkSpeed * 0.2 then
-		return false
-	end
+function IsCasterValid(player, abilityName)
+	local data = abilityData[abilityName]
 
-	if not player.isGrounded then						-- Are we not on the ground
-		return false
+	if not data.canMove then
+		-- This sort of corresponds with "are we trying to move". We set acceleration to be quite high.
+		if player:GetVelocity().size > player.maxWalkSpeed * 0.2 then
+			return false
+		end
+
+		if not player.isGrounded then						-- Are we not on the ground
+			return false
+		end
 	end
 
 	if API_SE.IsStunned(player) then					-- Are we stunned
@@ -469,7 +474,7 @@ function API.CanTrigger(abilityName)
 		end
 	end
 
-	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER)
+	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER, abilityName)
 
 	if not canCast then
 		if errorMessage then
@@ -518,7 +523,7 @@ function CanActivate(abilityName)
 		end
 	end
 
-	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER)
+	local canCast, errorMessage = IsCasterValid(LOCAL_PLAYER, abilityName)
 
 	if not canCast then
 		if errorMessage then
@@ -552,7 +557,7 @@ function CanCast(abilityName)
 		end
 	end
 
-	if not IsCasterValid(LOCAL_PLAYER) then
+	if not IsCasterValid(LOCAL_PLAYER, abilityName) then
 		return false
 	end
 
@@ -578,7 +583,7 @@ function CanContinue(player, abilityName)
 		end
 	end
 
-	if not IsCasterValid(player) then
+	if not IsCasterValid(player, abilityName) then
 		return false
 	end
 
@@ -622,7 +627,6 @@ function API.GivePlayerAbility(player, abilityName)
 
 	local ability = World.SpawnAsset(abilityData[abilityName].abilityTemplate)
 	-- These are all lumped into the cooldown property on the ability, and maintained by script
-	assert(ability.executePhaseSettings.duration == 0.0)
 	assert(ability.recoveryPhaseSettings.duration == 0.0)
 	assert(ability.cooldownPhaseSettings.duration == 0.0)
 	ability.owner = player

@@ -2348,7 +2348,11 @@ Objects {
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Cleave"
+    }
+    Overrides {
+      Name: "cs:AbilityName2"
+      String: "Enrage"
     }
     Overrides {
       Name: "cs:Passive1"
@@ -9560,7 +9564,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 2259.75708
-            Y: 11023.5918
+            Y: 12107.0273
             Z: -779.137695
           }
         }
@@ -9604,8 +9608,6 @@ Objects {
   ChildIds: 10934825501748225389
   ChildIds: 10559724502583114512
   ChildIds: 13603167341179968622
-  ChildIds: 13696188073305927128
-  ChildIds: 15149585640441221473
   UnregisteredParameters {
     Overrides {
       Name: "cs:Prerequisite"
@@ -9622,132 +9624,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 15149585640441221473
-  Name: "Enemy_Reanimated_Soldier"
-  Transform {
-    Location {
-      X: 2174.06079
-      Y: 7814.21777
-      Z: -557.454773
-    }
-    Rotation {
-      Yaw: -100.754189
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6061401416720682591
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12555114022526006492
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Reanimated_Soldier"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2045.34399
-            Y: 7666.05859
-            Z: -557.454712
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -100.754181
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 3829230591249549958
-    }
-  }
-}
-Objects {
-  Id: 13696188073305927128
-  Name: "Enemy_Reanimated_Soldier"
-  Transform {
-    Location {
-      X: 2330.21826
-      Y: 7668.69775
-      Z: -557.454834
-    }
-    Rotation {
-      Yaw: -100.754189
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6061401416720682591
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 12555114022526006492
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Reanimated_Soldier"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 2174.06079
-            Y: 7814.21777
-            Z: -557.454773
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -100.754181
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 3829230591249549958
-    }
   }
 }
 Objects {
@@ -9787,9 +9663,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2330.21826
-            Y: 7668.69775
-            Z: -557.454834
+            X: 2064.32104
+            Y: 9121.64453
+            Z: -749.724792
           }
         }
         Overrides {
@@ -9849,9 +9725,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 2514.7644
-            Y: 7836.70752
-            Z: -557.454834
+            X: 2301.55591
+            Y: 9044.60547
+            Z: -728.927795
           }
         }
         Overrides {
@@ -9913,8 +9789,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 2445.59448
-            Y: 7988.84473
-            Z: -557.454834
+            Y: 9320.97266
+            Z: -780.483887
           }
         }
         Overrides {
@@ -9975,8 +9851,8 @@ Objects {
           Name: "Position"
           Vector {
             X: 1997.40918
-            Y: 8008.23828
-            Z: -557.454834
+            Y: 9340.36621
+            Z: -780.483887
           }
         }
         Overrides {
@@ -10074,9 +9950,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1680.31567
-            Y: 2929.53638
-            Z: 4.95755
+            X: 2081.92505
+            Y: 3648.49194
+            Z: 4.95742798
           }
         }
         Overrides {
@@ -10146,15 +10022,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1463.26648
-            Y: 3338.66
-            Z: 4.9575386
+            X: 1864.87585
+            Y: 4057.61548
+            Z: 4.95741653
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -135.327454
+            Yaw: -135.327484
           }
         }
         Overrides {
@@ -10209,15 +10085,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1761.66064
-            Y: 3170.6687
-            Z: 13.7415771
+            X: 2163.27
+            Y: 3889.62427
+            Z: 13.7414551
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -128.269684
+            Yaw: -128.269623
           }
         }
         Overrides {
@@ -10271,9 +10147,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1381.43066
-            Y: 3018.92847
-            Z: 13.7415047
+            X: 1783.04
+            Y: 3737.88403
+            Z: 13.7413826
           }
         }
         Overrides {
