@@ -10,6 +10,12 @@
           Id: 17706441704388140225
         }
       }
+      Overrides {
+        Name: "cs:APIPlayerPassives"
+        AssetReference {
+          Id: 2536345701790434189
+        }
+      }
     }
   }
   SerializationVersion: 63

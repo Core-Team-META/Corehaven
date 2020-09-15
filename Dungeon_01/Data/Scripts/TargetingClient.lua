@@ -4,8 +4,7 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
-local TARGET_OUTLINE = script:GetCustomProperty("TargetOutline"):WaitForObject()
-local HIGHLIGHT_OUTLINE = script:GetCustomProperty("HighlightOutline"):WaitForObject()
+local TARGET_LIGHT = script:GetCustomProperty("TargetLight"):WaitForObject()
 
 local AUTO_TARGET_BINDING = ROOT:GetCustomProperty("AutoTargetBinding")
 local AUTO_TARGET_HISTORY_DURATION = ROOT:GetCustomProperty("AutoTargetHistoryDuration")
@@ -213,41 +212,38 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
 end
 
 function Tick(deltaTime)
-	-- We intentionally do not predict the target because spells cannot transmit target data, so the server will use the
-	-- value it knows, and we don't want to make the client lie about that. If we find a way around this, adding
-	-- prediction will be valuable.
+	-- We intentionally did not predict the target. We found a way around this, so we will add prediction.
 	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
 
 	if currentTarget then
 		TARGET_MARKER.visibility = Visibility.INHERIT
-		TARGET_OUTLINE:SetSmartProperty("Enabled", true)
-		TARGET_OUTLINE:SetSmartProperty("Object To Outline", currentTarget)
+		TARGET_LIGHT.visibility = Visibility.INHERIT
 
 		if currentTarget:IsA("Player") then
 			local playerScale = currentTarget:GetWorldScale()
-			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition() - playerScale.z * 100.0)
+			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition() - playerScale.z * 100.0 * Vector3.UP)
 			TARGET_MARKER:SetWorldScale(playerScale)
-			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(0.0, 2.0, 0.0))
-			TARGET_OUTLINE:SetSmartProperty("Color A", Color.New(0.0, 2.0, 0.0))
+			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(0.7, 2.0, 0.0))
+			local targetHat = (currentTarget:GetWorldPosition() - LOCAL_PLAYER:GetViewWorldPosition()):GetNormalized()
+			TARGET_LIGHT:SetWorldPosition(currentTarget:GetWorldPosition() - targetHat * playerScale.z * 200.0)
+			TARGET_LIGHT:SetWorldRotation(Rotation.New(targetHat, Vector3.UP))
+			TARGET_LIGHT:SetWorldScale(playerScale)
+			TARGET_LIGHT:SetColor(Color.New(0.7, 2.0, 0.0))
 		else
 			local data = API_NPC.GetAllNPCData()[currentTarget]
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition())
 			TARGET_MARKER:SetWorldScale(Vector3.New(data.capsuleWidth / 150.0))
-			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.0, 0.0))
-			TARGET_OUTLINE:SetSmartProperty("Color A", Color.New(2.0, 0.0, 0.0))
+			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.7, 0.0))
+			local targetCenter = currentTarget:GetWorldPosition() + data.capsuleHeight * Vector3.UP * 0.5
+			local targetHat = (targetCenter - LOCAL_PLAYER:GetViewWorldPosition()):GetNormalized()
+			TARGET_LIGHT:SetWorldPosition(targetCenter - targetHat * data.capsuleWidth * 2.0)
+			TARGET_LIGHT:SetWorldRotation(Rotation.New(targetHat, Vector3.UP))
+			TARGET_LIGHT:SetWorldScale(Vector3.New(data.capsuleWidth / 150.0))
+			TARGET_LIGHT:SetColor(Color.New(2.0, 0.7, 0.0))
 		end
 	else
 		TARGET_MARKER.visibility = Visibility.FORCE_OFF
-		TARGET_OUTLINE:SetSmartProperty("Enabled", false)
-	end
-
-	local currentHighlight = FindClickTarget()
-
-	if currentHighlight and currentHighlight ~= currentTarget and UI.IsCursorVisible() then
-		HIGHLIGHT_OUTLINE:SetSmartProperty("Enabled", true)
-		HIGHLIGHT_OUTLINE:SetSmartProperty("Object To Outline", currentHighlight)
-	else
-		HIGHLIGHT_OUTLINE:SetSmartProperty("Enabled", false)
+		TARGET_LIGHT.visibility = Visibility.FORCE_OFF
 	end
 end
 

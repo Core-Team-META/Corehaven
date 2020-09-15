@@ -7,40 +7,39 @@ local N_ENTRIES = 8
 local currentIndex = 1
 local cachedProperties = {}
 
-function ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+function ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overAmount, typeCharacter)
     local sourceId = API_ID.GetIdFromObject(sourceCharacter)
     local targetId = API_ID.GetIdFromObject(targetCharacter)
     local propertyName = string.format("Entry%d", currentIndex)
-    local encodedValue = string.format("D|%s|%s|%.1f|%.1f", sourceId, targetId, effectiveAmount, overkill)
+    local encodedValue = string.format("%s|%s|%s|%.1f|%.1f", typeCharacter, sourceId, targetId, effectiveAmount, overAmount)
 
     -- Some basic avoidance of missed events
     if encodedValue == cachedProperties[currentIndex] then
-    	for i = 1, 8 do
-    		if i == 8 then
-    			return		-- This event is missed, but we had 8 dupes, so you REALLY won't notice
-    		end
+        for i = 1, 8 do
+            if i == 8 then
+                return      -- This event is missed, but we had 8 dupes, so you REALLY won't notice
+            end
 
-    		local newIndex = (currentIndex + i - 1) % N_ENTRIES + 1
+            local newIndex = (currentIndex + i - 1) % N_ENTRIES + 1
 
-    		if encodedValue ~= cachedProperties[newIndex] then
-    			currentIndex = newIndex
-    			break
-    		end
-    	end
+            if encodedValue ~= cachedProperties[newIndex] then
+                currentIndex = newIndex
+                break
+            end
+        end
     end
 
-	cachedProperties[currentIndex] = encodedValue
+    cachedProperties[currentIndex] = encodedValue
     script:SetNetworkedCustomProperty(propertyName, encodedValue)
     currentIndex = currentIndex % N_ENTRIES + 1
 end
 
+function ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+    ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overkill, "D")
+end
+
 function ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal)
-    local sourceId = API_ID.GetIdFromObject(sourceCharacter)
-    local targetId = API_ID.GetIdFromObject(targetCharacter)
-    local propertyName = string.format("Entry%d", currentIndex)
-    local encodedValue = string.format("H|%s|%s|%.1f|%.1f", sourceId, targetId, effectiveAmount, overkill)
-    script:SetNetworkedCustomProperty(propertyName, encodedValue)
-    currentIndex = currentIndex % N_ENTRIES + 1
+    ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overheal, "H")
 end
 
 API_D.RegisterReplicatorFunctions({ReplicateDamage = ReplicateDamage, ReplicateHealing = ReplicateHealing})

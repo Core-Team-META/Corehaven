@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
-local API_P = require(script:GetCustomProperty("APIPathing"))
+local API_EP = require(script:GetCustomProperty("APIEnemyPathing"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
@@ -226,7 +227,8 @@ function OnDamaged(sourceCharacter, npc, amount)
 		AddPlayerToThreatTable(npc, sourceCharacter)
 	end
 
-	npcState.threatTable[sourceCharacter] = npcState.threatTable[sourceCharacter] + amount
+	local threatAmount = amount * API_PP.GetPlayerThreatMultiplier(sourceCharacter)
+	npcState.threatTable[sourceCharacter] = npcState.threatTable[sourceCharacter] + threatAmount
 
 	-- Pulling aggro
 	if target and target ~= sourceCharacter and npcState.threatTable[sourceCharacter] > npcState.threatTable[target] * 1.2 then
@@ -422,7 +424,7 @@ function Tick(deltaTime)
 
 							-- Update movement
 							if time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate then
-								local path = API_P.GetPath(npcPosition, npcData.spawnPosition)
+								local path = API_EP.GetPath(npcPosition, npcData.spawnPosition)
 
 								if path then
 									MoveAlongPath(npc, deltaTime, path)
@@ -492,7 +494,7 @@ function Tick(deltaTime)
 					if time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate then
 						-- Movement
 						local targetPosition = API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0
-						local path = API_P.GetPath(npcPosition, targetPosition)
+						local path = API_EP.GetPath(npcPosition, targetPosition)
 						assert(path and GetXYDistance(path[#path], targetPosition) < 100.0)
 
 						if path and (path[#path] - npcPosition).size > 100.0 then
@@ -529,7 +531,7 @@ functionTable.IsAsleep = IsAsleep
 functionTable.IsPlayerInCombat = IsPlayerInCombat
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
-API_P.RegisterRectangles(NAV_MESH_FOLDER)
+API_EP.RegisterRectangles(NAV_MESH_FOLDER)
 Task.Wait()		-- Work around networked property backing data issue
 Events.Connect("NPC_Created", OnNPCCreated)
 

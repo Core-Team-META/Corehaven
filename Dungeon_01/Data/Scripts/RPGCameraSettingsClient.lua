@@ -1,5 +1,6 @@
 ﻿local LOCAL_PLAYER = Game.GetLocalPlayer()
 
+
 function OnBindingPressed(player, binding)
 	if binding == "ability_secondary" then
 		UI.SetCursorVisible(false)

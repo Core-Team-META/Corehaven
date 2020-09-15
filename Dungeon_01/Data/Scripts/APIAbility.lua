@@ -3,11 +3,11 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
-local abilityScripts = {}
+local abilityDefinitions = {}
 
 for propertyName, script in pairs(script:GetCustomProperties()) do
 	if string.sub(propertyName, 1, 3) ~= "API" then
-		table.insert(abilityScripts, require(script))
+		table.insert(abilityDefinitions, require(script))
 	end
 end
 
@@ -62,8 +62,8 @@ local groundTargetReticle = nil
 
 -- Client and Server, called directly in this API
 function RegisterAbility(data)
-	assert(not abilityData[data.name])
 	assert(data.name)
+	assert(not abilityData[data.name])
 	assert(data.icon)
 	assert(data.cooldown)
 	assert(data.abilityTemplate)
@@ -684,7 +684,7 @@ end
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
-for _, data in pairs(abilityScripts) do
+for _, data in pairs(abilityDefinitions) do
 	RegisterAbility(data)
 end
 

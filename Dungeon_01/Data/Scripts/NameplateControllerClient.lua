@@ -35,7 +35,7 @@ local SHOW_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("ShowOnEnemies")
 local MAX_DISTANCE_ON_ENEMIES = COMPONENT_ROOT:GetCustomProperty("MaxDistanceOnEnemies")
 local SHOW_ON_DEAD_PLAYERS = COMPONENT_ROOT:GetCustomProperty("ShowOnDeadPlayers")
 local SCALE = COMPONENT_ROOT:GetCustomProperty("Scale")
-local AGGRO_SCALE_MULTIPLIER = COMPONENT_ROOT:GetCustomProperty("AggroScaleMultiplier")
+local TARGET_SCALE_MULTIPLIER = COMPONENT_ROOT:GetCustomProperty("TargetScaleMultiplier")
 local SHOW_NUMBERS = COMPONENT_ROOT:GetCustomProperty("ShowNumbers")
 local ANIMATE_CHANGES = COMPONENT_ROOT:GetCustomProperty("AnimateChanges")
 local CHANGE_ANIMATION_TIME = COMPONENT_ROOT:GetCustomProperty("ChangeAnimationTime")
@@ -341,13 +341,11 @@ function Tick(deltaTime)
 			    end
 		    end
 
-			-- Update scale for aggro
+			-- Update scale for target
 			local scale = SCALE * nameplate.baseScale
 
-			if not character:IsA("Player") then
-				if API_NPC.GetTarget(character) == LOCAL_PLAYER then
-					scale = scale * AGGRO_SCALE_MULTIPLIER
-				end
+			if API_PS.GetTarget(LOCAL_PLAYER) == character then
+				scale = scale * TARGET_SCALE_MULTIPLIER
 			end
 
 			nameplate.templateRoot:SetScale(Vector3.New(scale))

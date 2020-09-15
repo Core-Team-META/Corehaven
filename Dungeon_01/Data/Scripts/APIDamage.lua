@@ -1,6 +1,7 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local API = {}
 
@@ -26,9 +27,18 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
 
     if sourceCharacter then
         sourceMultiplier = API_SE.GetCharacterDamageDealtMultiplier(sourceCharacter)
+
+        if sourceCharacter:IsA("Player") then
+            sourceMultiplier = sourceMultiplier * API_PP.GetPlayerDamageDealtMultiplier(sourceCharacter)
+        end
     end
 
     local targetMultiplier = API_SE.GetCharacterDamageTakenMultiplier(targetCharacter)
+
+    if targetCharacter:IsA("Player") then
+        targetMultiplier = targetMultiplier * API_PP.GetPlayerDamageTakenMultiplier(targetCharacter)
+    end
+    
     local adjustedAmount = amount * sourceMultiplier * targetMultiplier
     local effectiveAmount = 0.0
         
@@ -99,7 +109,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     end
 
     local overheal = amount - effectiveAmount
-    systemFunctions.ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overheal)
+    systemFunctions.ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal)
 end
 
 -- Server Only

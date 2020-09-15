@@ -260,15 +260,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3694488038676663105
-  Name: "Outline Object"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_local_outline"
-  }
-}
-Assets {
   Id: 3310085838530546671
   Name: "Fantasy Ability Yellow 030"
   PlatformAssetType: 9

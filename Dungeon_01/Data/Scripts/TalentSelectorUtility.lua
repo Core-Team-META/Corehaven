@@ -1,4 +1,5 @@
 ﻿local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local UTILITY = {}
 
@@ -114,12 +115,21 @@ function ReadTalentTreeDefinition(root)
 				talentData.treeX = talentGroup:GetCustomProperty("TreeX")
 				talentData.treeY = talentGroup:GetCustomProperty("TreeY")
 				talentData.abilityNames = {}
+				talentData.passives = {}
 
 				local i = 1
 				local continue = true
 
 				while continue do					
 					talentData.abilityNames[i], continue = talentGroup:GetCustomProperty(string.format("AbilityName%d", i))
+					i = i + 1
+				end
+
+				i = 1
+				continue = true
+
+				while continue do					
+					talentData.passives[i], continue = talentGroup:GetCustomProperty(string.format("Passive%d", i))
 					i = i + 1
 				end
 
@@ -389,6 +399,10 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 
 	for _, abilityName in pairs(talentData.abilityNames) do
 		API_A.GivePlayerAbility(player, abilityName)
+	end
+
+	for _, passive in pairs(talentData.passives) do
+		API_PP.GivePlayerPassive(player, passive)
 	end
 
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)
