@@ -1,5 +1,36 @@
-﻿Name: "Ambience Beach and Seagulls Kit 01"
+﻿Name: "Above Water Trigger 1"
 RootId: 4709921911163071863
+Objects {
+  Id: 14915773487131165472
+  Name: "Nature Water Splash Small 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4709921911163071863
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 1372802368050553655
+    }
+    Pitch: -360.960938
+    Volume: 0.234227613
+    Falloff: -1
+    Radius: -1
+  }
+}
 Objects {
   Id: 3364940490031023604
   Name: "Nature Beach Large Waves Loop 01 SFX"

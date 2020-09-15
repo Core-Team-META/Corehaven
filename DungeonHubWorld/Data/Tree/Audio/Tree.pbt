@@ -17,11 +17,17 @@ Objects {
   }
   ParentId: 16816246272091159722
   ChildIds: 14664823471903355022
-  ChildIds: 4709921911163071863
   ChildIds: 13567950407992685600
   ChildIds: 12466583247107377849
   ChildIds: 559866666904587842
   ChildIds: 16998547501729419787
+  ChildIds: 11188168495048710640
+  ChildIds: 13055747170863140833
+  ChildIds: 7933604656628401909
+  ChildIds: 4709921911163071863
+  ChildIds: 17536180878966129797
+  ChildIds: 1942555496709667414
+  ChildIds: 8695524661514775327
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29,6 +35,458 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 8695524661514775327
+  Name: "Underwater Trigger 2"
+  Transform {
+    Location {
+      X: -354.249023
+      Y: -22339.3594
+      Z: 1250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17646804855349459136
+  ChildIds: 4380571036103168857
+  ChildIds: 10972137557918255636
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10972137557918255636
+  Name: "Nature Water Splash Large 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8695524661514775327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9556132196479142670
+    }
+    Pitch: 67.4509277
+    Volume: 0.381955832
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 4380571036103168857
+  Name: "Ambience Underwater Designed 01 SFX"
+  Transform {
+    Location {
+      X: 2760.46631
+      Y: -4845.18945
+      Z: -2083.13135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8695524661514775327
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17272062021236783540
+    }
+    Pitch: 186.299316
+    Volume: 1.31756854
+    Falloff: 100
+    Radius: 926.491089
+    FadeInTime: 1
+    FadeOutTime: 2
+  }
+}
+Objects {
+  Id: 1942555496709667414
+  Name: "Above Water Trigger 2"
+  Transform {
+    Location {
+      X: 15680.1865
+      Y: -13684.1533
+      Z: -8474.96289
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17646804855349459136
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Above Water Trigger 2"
+  }
+  InstanceHistory {
+    SelfId: 4709921911163071863
+    SubobjectId: 13584721725753573957
+    InstanceId: 7396862440289050985
+    TemplateId: 6519358497995125257
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 17536180878966129797
+  Name: "Underwater Trigger 2"
+  Transform {
+    Location {
+      X: 9356.36816
+      Y: -18026.5039
+      Z: -10246.3174
+    }
+    Rotation {
+      Yaw: -0.390075684
+    }
+    Scale {
+      X: 159.969604
+      Y: 221.35054
+      Z: 26.7500076
+    }
+  }
+  ParentId: 17646804855349459136
+  ChildIds: 8034901888965966189
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:AudioFolderStart"
+      ObjectReference {
+        SelfId: 8695524661514775327
+      }
+    }
+    Overrides {
+      Name: "cs:AudioFolderStop"
+      ObjectReference {
+        SelfId: 1942555496709667414
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 8034901888965966189
+  Name: "AudioTriggerZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.0207253899
+      Y: 0.0198019855
+      Z: 0.0373831652
+    }
+  }
+  ParentId: 17536180878966129797
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 315260016457486503
+    }
+  }
+}
+Objects {
+  Id: 4709921911163071863
+  Name: "Above Water Trigger 1"
+  Transform {
+    Location {
+      X: 11834.4287
+      Y: 455.207031
+      Z: -8474.96289
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17646804855349459136
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Above Water Trigger 1"
+  }
+  InstanceHistory {
+    SelfId: 4709921911163071863
+    SubobjectId: 13584721725753573957
+    InstanceId: 7396862440289050985
+    TemplateId: 6519358497995125257
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 7933604656628401909
+  Name: "Underwater Trigger 1"
+  Transform {
+    Location {
+      X: -4200
+      Y: -8200
+      Z: 1250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17646804855349459136
+  ChildIds: 56705730514041083
+  ChildIds: 6761998506790467600
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6761998506790467600
+  Name: "Nature Water Splash Large 01 SFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7933604656628401909
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 9556132196479142670
+    }
+    Pitch: 67.4509277
+    Volume: 0.381955832
+    Falloff: -1
+    Radius: -1
+  }
+}
+Objects {
+  Id: 56705730514041083
+  Name: "Ambience Underwater Designed 01 SFX"
+  Transform {
+    Location {
+      X: 2760.46631
+      Y: -4845.18945
+      Z: -2083.13135
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7933604656628401909
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 17272062021236783540
+    }
+    Pitch: 186.299316
+    Volume: 1.31756854
+    Falloff: 100
+    Radius: 926.491089
+    FadeInTime: 1
+    FadeOutTime: 2
+  }
+}
+Objects {
+  Id: 13055747170863140833
+  Name: "Underwater Trigger 1"
+  Transform {
+    Location {
+      X: 5510.61719
+      Y: 742.032227
+      Z: -10125.5684
+    }
+    Rotation {
+      Yaw: -0.390075684
+    }
+    Scale {
+      X: 159.96962
+      Y: 141.892181
+      Z: 26.7500076
+    }
+  }
+  ParentId: 17646804855349459136
+  ChildIds: 13256037670595844330
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:AudioFolderStart"
+      ObjectReference {
+        SelfId: 7933604656628401909
+      }
+    }
+    Overrides {
+      Name: "cs:AudioFolderStop"
+      ObjectReference {
+        SelfId: 4709921911163071863
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 13256037670595844330
+  Name: "AudioTriggerZone"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 3.4150944e-06
+    }
+    Scale {
+      X: 0.0207253899
+      Y: 0.0198019855
+      Z: 0.0373831652
+    }
+  }
+  ParentId: 13055747170863140833
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 315260016457486503
+    }
+  }
+}
+Objects {
+  Id: 11188168495048710640
+  Name: "Hidden Cove Area"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17646804855349459136
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Hidden Cove Area"
   }
 }
 Objects {
@@ -353,44 +811,6 @@ Objects {
     SubobjectId: 6020247343916752988
     InstanceId: 14865311758994937726
     TemplateId: 2588772337675611479
-  }
-}
-Objects {
-  Id: 4709921911163071863
-  Name: "Ambience Beach and Seagulls Kit 01"
-  Transform {
-    Location {
-      X: 11834.4287
-      Y: 455.207123
-      Z: -8474.96289
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17646804855349459136
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Ambience Beach and Seagulls Kit 01"
-  }
-  InstanceHistory {
-    SelfId: 4709921911163071863
-    SubobjectId: 13584721725753573957
-    InstanceId: 7396862440289050985
-    TemplateId: 6519358497995125257
-    WasRoot: true
   }
 }
 Objects {

@@ -16,3 +16,12 @@ Assets {
     AssetId: "sfx_nature_beach_large_waves_loop_01_Cue_ref"
   }
 }
+Assets {
+  Id: 1372802368050553655
+  Name: "Nature Water Splash Small 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_nature_water_splash_small_01a_Cue_ref"
+  }
+}
