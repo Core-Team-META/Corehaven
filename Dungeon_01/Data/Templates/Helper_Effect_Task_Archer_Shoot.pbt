@@ -126,9 +126,9 @@
             Id: 13152335808383593938
           }
           AutoPlay: true
-          Volume: 0.6
+          Volume: 0.3
           Falloff: 2000
-          Radius: 4000
+          Radius: 2000
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
@@ -150,7 +150,6 @@
           }
         }
         ParentId: 3529628060384767774
-        ChildIds: 5713941273722457278
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -168,39 +167,6 @@
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 5713941273722457278
-        Name: "UtilityAudioOneshot"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 1064091926953690356
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Delay"
-            Float: 0.1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 599413335234479971
-          }
         }
       }
     }

@@ -3276,7 +3276,7 @@
         Transform {
           Location {
             X: 507.075317
-            Y: 1168.65478
+            Y: 1168.65479
             Z: 4.64990234
           }
           Rotation {
@@ -8461,6 +8461,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

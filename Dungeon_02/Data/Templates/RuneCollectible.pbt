@@ -310,7 +310,7 @@
         Name: "Decal Elven Symbols"
         Transform {
           Location {
-            X: 23.3945312
+            X: 23.3945313
             Y: 3.14746094
             Z: -10.6248951
           }
@@ -525,5 +525,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

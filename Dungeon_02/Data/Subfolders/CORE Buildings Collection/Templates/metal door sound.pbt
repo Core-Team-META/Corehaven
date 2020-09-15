@@ -36,7 +36,7 @@
         Name: "Metal Door Hatch Slide 02 SFX"
         Transform {
           Location {
-            X: -33.1938476
+            X: -33.1938477
             Y: -62.4648438
             Z: -25
           }
@@ -148,5 +148,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
 }

@@ -2191,8 +2191,8 @@
         Transform {
           Location {
             X: -158.484375
-            Y: 69.0664062
-            Z: 1.96289062
+            Y: 69.0664063
+            Z: 1.96289063
           }
           Rotation {
             Yaw: 67.4629517
@@ -4924,7 +4924,7 @@
         Name: "PumpkinTall"
         Transform {
           Location {
-            X: 799.070312
+            X: 799.070313
             Y: -94.5839844
             Z: 88.0410156
           }
@@ -5657,6 +5657,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

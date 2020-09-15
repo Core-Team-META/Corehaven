@@ -3410,7 +3410,7 @@
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: 2268.64062
+            X: 2268.64063
             Y: -167.018555
             Z: -110.869507
           }
@@ -3774,7 +3774,7 @@
         Name: "Craftsman Porch Fence Post 01"
         Transform {
           Location {
-            X: 1893.32812
+            X: 1893.32813
             Y: 951.029297
             Z: -144.68103
           }
@@ -4047,7 +4047,7 @@
         Transform {
           Location {
             X: -713.9375
-            Y: -39.0351562
+            Y: -39.0351563
             Z: 41.4213867
           }
           Rotation {
@@ -4567,7 +4567,7 @@
         Transform {
           Location {
             X: -1160.96875
-            Y: 620.632812
+            Y: 620.632813
           }
           Rotation {
             Yaw: -179.998428
@@ -4798,7 +4798,7 @@
         Transform {
           Location {
             X: -951.105469
-            Y: 516.289062
+            Y: 516.289063
             Z: 580
           }
           Rotation {
@@ -5060,7 +5060,7 @@
         Transform {
           Location {
             X: -2120.52734
-            Y: 250.039062
+            Y: 250.039063
             Z: 280
           }
           Rotation {
@@ -5265,7 +5265,7 @@
         Transform {
           Location {
             X: 3858.1875
-            Y: -873.164062
+            Y: -873.164063
             Z: -15
           }
           Rotation {
@@ -5846,7 +5846,7 @@
         Transform {
           Location {
             X: 100
-            Y: -324.914062
+            Y: -324.914063
             Z: -15
           }
           Rotation {
@@ -6784,7 +6784,7 @@
         Name: "Cube - bottom aligned"
         Transform {
           Location {
-            X: 99.9414062
+            X: 99.9414063
             Y: 525.054688
             Z: -15
           }
@@ -6832,7 +6832,7 @@
         Name: "Cube - bottom aligned"
         Transform {
           Location {
-            X: 99.9414062
+            X: 99.9414063
             Y: 775.085938
             Z: -15
           }
@@ -7449,7 +7449,7 @@
         Transform {
           Location {
             X: 1.73056793
-            Y: 90.4101562
+            Y: 90.4101563
             Z: 13.1196289
           }
           Rotation {
@@ -7997,7 +7997,7 @@
         Transform {
           Location {
             X: 1.73056793
-            Y: 90.4101562
+            Y: 90.4101563
             Z: 13.1196289
           }
           Rotation {
@@ -8735,7 +8735,7 @@
         Name: "Stone Block Long"
         Transform {
           Location {
-            X: 104.757812
+            X: 104.757813
             Y: 7.69928741
             Z: -5.13916
           }
@@ -9039,7 +9039,7 @@
         Name: "Stone Block Standard"
         Transform {
           Location {
-            X: -464.695312
+            X: -464.695313
             Y: 12.7691956
             Z: -5.16845703
           }
@@ -10880,7 +10880,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -11089,7 +11089,7 @@
         Transform {
           Location {
             X: -1439.18555
-            Y: 295.539062
+            Y: 295.539063
             Z: 107.441406
           }
           Rotation {
@@ -11215,7 +11215,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -11423,7 +11423,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -11878,7 +11878,7 @@
         Name: "Lily Pads 002"
         Transform {
           Location {
-            X: -178.726562
+            X: -178.726563
             Y: 7.51171875
             Z: 65
           }
@@ -11921,7 +11921,7 @@
         Transform {
           Location {
             X: 44.90625
-            Y: -54.0195312
+            Y: -54.0195313
             Z: 35
           }
           Rotation {
@@ -12017,7 +12017,7 @@
         Transform {
           Location {
             X: 49.90625
-            Y: -15.4726562
+            Y: -15.4726563
           }
           Rotation {
           }
@@ -12265,7 +12265,7 @@
         Transform {
           Location {
             X: 467.15625
-            Y: -219.445312
+            Y: -219.445313
             Z: 71.6608887
           }
           Rotation {
@@ -12464,7 +12464,7 @@
         Transform {
           Location {
             X: 478.074219
-            Y: -85.2070312
+            Y: -85.2070313
             Z: -1.19970703
           }
           Rotation {
@@ -12511,7 +12511,7 @@
         Transform {
           Location {
             X: 0.3125
-            Y: 22.5351562
+            Y: 22.5351563
           }
           Rotation {
           }
@@ -14222,7 +14222,7 @@
         Name: "Lily Pads 002"
         Transform {
           Location {
-            X: 201.039062
+            X: 201.039063
             Y: -28.3710938
             Z: 65
           }
@@ -14353,7 +14353,7 @@
         Transform {
           Location {
             X: 377.078125
-            Y: 140.445312
+            Y: 140.445313
             Z: -1.19970703
           }
           Rotation {
@@ -14449,7 +14449,7 @@
         Transform {
           Location {
             X: -50.7929688
-            Y: 71.6289062
+            Y: 71.6289063
           }
           Rotation {
             Yaw: 179.999954
@@ -14497,7 +14497,7 @@
           Location {
             X: -466.570282
             Y: 145.175888
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: 179.999954
@@ -14556,7 +14556,7 @@
         Transform {
           Location {
             X: -50.7890625
-            Y: 10.1757812
+            Y: 10.1757813
             Z: -1.19970703
           }
           Rotation {
@@ -14605,7 +14605,7 @@
           Location {
             X: 365.207062
             Y: 145.17569
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: 179.999954
@@ -14663,7 +14663,7 @@
         Name: "Stone Railing Curved 6m"
         Transform {
           Location {
-            X: 351.039062
+            X: 351.039063
             Y: 6.62890625
             Z: 71.6608887
           }
@@ -14747,7 +14747,7 @@
         Name: "Stone Railing 8m"
         Transform {
           Location {
-            X: 368.289062
+            X: 368.289063
             Y: 6.62890625
             Z: 71.6608887
           }
@@ -14841,7 +14841,7 @@
           Location {
             X: -50.7890587
             Y: 10.1757936
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -15781,7 +15781,7 @@
         Transform {
           Location {
             X: -1439.18555
-            Y: 295.539062
+            Y: 295.539063
             Z: 107.441406
           }
           Rotation {
@@ -15907,7 +15907,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -16115,7 +16115,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -16533,7 +16533,7 @@
         Transform {
           Location {
             X: 466.824127
-            Y: -2609.3706
+            Y: -2609.37061
             Z: 153.714355
           }
           Rotation {
@@ -18994,7 +18994,7 @@
         Transform {
           Location {
             X: 17.77771
-            Y: -521.320312
+            Y: -521.320313
             Z: 360.3125
           }
           Rotation {
@@ -19039,7 +19039,7 @@
           Location {
             X: -119.116882
             Y: -403.23056
-            Z: 414.726562
+            Z: 414.726563
           }
           Rotation {
             Pitch: -2.09285855
@@ -20820,7 +20820,7 @@
         Name: "Craftsman Floor 01 4m x 4m"
         Transform {
           Location {
-            X: 2056.02392
+            X: 2056.02393
             Y: -272.096191
             Z: 10.793457
           }
@@ -27772,7 +27772,7 @@
         Name: "Cube - bottom aligned"
         Transform {
           Location {
-            X: -612.476562
+            X: -612.476563
             Y: -783.246094
             Z: 30
           }
@@ -27871,8 +27871,8 @@
         Transform {
           Location {
             X: -1825.33203
-            Y: 28.3320312
-            Z: 23.4101562
+            Y: 28.3320313
+            Z: 23.4101563
           }
           Rotation {
             Yaw: -90.0001373
@@ -27920,7 +27920,7 @@
           Location {
             X: 623.843628
             Y: 311.051208
-            Z: 23.4101562
+            Z: 23.4101563
           }
           Rotation {
             Yaw: 89.999939
@@ -28100,7 +28100,7 @@
         Name: "Stone Railing Curved 6m"
         Transform {
           Location {
-            X: -1797.14062
+            X: -1797.14063
             Y: -69.8515625
             Z: 155.398438
           }
@@ -28268,8 +28268,8 @@
         Name: "Stone Railing Curved 6m"
         Transform {
           Location {
-            X: -1797.14062
-            Y: -69.8789062
+            X: -1797.14063
+            Y: -69.8789063
             Z: 10.3291016
           }
           Rotation {
@@ -30748,7 +30748,7 @@
         Transform {
           Location {
             X: -800
-            Y: -399.976562
+            Y: -399.976563
             Z: 610
           }
           Rotation {
@@ -31250,7 +31250,7 @@
         Transform {
           Location {
             X: -3200.00024
-            Y: -0.00219726562
+            Y: -0.00219726563
             Z: 610
           }
           Rotation {
@@ -32683,7 +32683,7 @@
         Transform {
           Location {
             X: -6400.00146
-            Y: 1399.9956
+            Y: 1399.99561
             Z: 610
           }
           Rotation {
@@ -32735,7 +32735,7 @@
         Transform {
           Location {
             X: -6400.00195
-            Y: 2399.9956
+            Y: 2399.99561
             Z: 610
           }
           Rotation {
@@ -32879,7 +32879,7 @@
         Transform {
           Location {
             X: -6400.00195
-            Y: 2399.9956
+            Y: 2399.99561
             Z: 610
           }
           Rotation {
@@ -32927,7 +32927,7 @@
         Transform {
           Location {
             X: -6400.00146
-            Y: 1599.9956
+            Y: 1599.99561
             Z: 610
           }
           Rotation {
@@ -32975,7 +32975,7 @@
         Transform {
           Location {
             X: -6400.00146
-            Y: 1399.9956
+            Y: 1399.99561
             Z: 610
           }
           Rotation {
@@ -36732,7 +36732,7 @@
         Name: "I-Beam 4m"
         Transform {
           Location {
-            X: -491.007812
+            X: -491.007813
             Y: 18.2863655
             Z: -0.974121094
           }
@@ -36778,7 +36778,7 @@
           Location {
             X: -494.051239
             Y: -21.5423737
-            Z: 19.8188476
+            Z: 19.8188477
           }
           Rotation {
             Pitch: -90
@@ -36939,7 +36939,7 @@
         Name: "Craftsman Wall 01 Garage"
         Transform {
           Location {
-            X: -374.851562
+            X: -374.851563
             Y: 225
             Z: 10
           }
@@ -37164,7 +37164,7 @@
         Transform {
           Location {
             X: -2055.59326
-            Y: -888.341308
+            Y: -888.341309
             Z: 10
           }
           Rotation {
@@ -40770,7 +40770,7 @@
         Transform {
           Location {
             X: -1374.99988
-            Y: -325.000976
+            Y: -325.000977
             Z: 10
           }
           Rotation {
@@ -41655,7 +41655,7 @@
         Transform {
           Location {
             X: 1424.99976
-            Y: 475.000976
+            Y: 475.000977
             Z: 10
           }
           Rotation {
@@ -44067,7 +44067,7 @@
             Y: -1199.99963
           }
           Rotation {
-            Yaw: -0.000122070312
+            Yaw: -0.000122070313
           }
           Scale {
             X: 1
@@ -44305,7 +44305,7 @@
         Name: "Craftsman Wall 01 Doorway"
         Transform {
           Location {
-            X: 175.000976
+            X: 175.000977
             Y: -1475
             Z: 10
           }
@@ -44976,7 +44976,7 @@
         Transform {
           Location {
             X: -3425.00024
-            Y: 124.997558
+            Y: 124.997559
             Z: 10
           }
           Rotation {
@@ -45124,7 +45124,7 @@
         Transform {
           Location {
             X: -3425.00073
-            Y: 924.997558
+            Y: 924.997559
             Z: 10
           }
           Rotation {
@@ -51547,7 +51547,7 @@
         Name: "Craftsman Floor 01 8m x 8m"
         Transform {
           Location {
-            X: 125.000976
+            X: 125.000977
             Y: -1299.99988
             Z: 10
           }
@@ -53057,7 +53057,7 @@
         Transform {
           Location {
             X: 3725.00073
-            Y: -899.997558
+            Y: -899.997559
             Z: 10
           }
           Rotation {
@@ -57433,7 +57433,7 @@
         Transform {
           Location {
             X: 1299.99976
-            Y: 400.000976
+            Y: 400.000977
             Z: 10
           }
           Rotation {
@@ -58119,7 +58119,7 @@
         Transform {
           Location {
             X: -3500.00049
-            Y: 799.997558
+            Y: 799.997559
             Z: 10
           }
           Rotation {
@@ -61738,7 +61738,7 @@
           Location {
             X: 1899.99622
             Y: -25.0006104
-            Z: 10.2539062
+            Z: 10.2539063
           }
           Rotation {
             Yaw: -89.9999542
@@ -65137,7 +65137,7 @@
         Name: "Craftsman Wall Interior 01 Corner"
         Transform {
           Location {
-            X: 0.000122070312
+            X: 0.000122070313
             Y: -175.000015
             Z: 10
           }
@@ -65626,7 +65626,7 @@
         Name: "Craftsman Wall Interior 01 Corner"
         Transform {
           Location {
-            X: 0.000122070312
+            X: 0.000122070313
             Y: -175.000015
             Z: 10
           }
@@ -66083,7 +66083,7 @@
         Name: "Craftsman Roof Arch 01"
         Transform {
           Location {
-            X: 0.00122070312
+            X: 0.00122070313
             Y: -1624.62109
           }
           Rotation {
@@ -68866,7 +68866,7 @@
         Transform {
           Location {
             X: -1871.73438
-            Y: -636.945312
+            Y: -636.945313
             Z: 1096.34912
           }
           Rotation {
@@ -69155,7 +69155,7 @@
         Name: "Large Wood Beam 8m"
         Transform {
           Location {
-            X: -589.132812
+            X: -589.132813
             Y: -1160.14453
             Z: 1099.99951
           }
@@ -69400,7 +69400,7 @@
         Transform {
           Location {
             X: -1266.17188
-            Y: 432.945312
+            Y: 432.945313
             Z: 1100
           }
           Rotation {
@@ -69460,7 +69460,7 @@
         Transform {
           Location {
             X: -530.28125
-            Y: 431.476562
+            Y: 431.476563
             Z: 1100
           }
           Rotation {
@@ -69548,8 +69548,8 @@
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.697916687
-              G: 0.458007812
-              B: 0.458007812
+              G: 0.458007813
+              B: 0.458007813
               A: 1
             }
           }
@@ -69853,8 +69853,8 @@
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 0.697916687
-              G: 0.458007812
-              B: 0.458007812
+              G: 0.458007813
+              B: 0.458007813
               A: 1
             }
           }
@@ -70574,7 +70574,7 @@
         Transform {
           Location {
             X: -699.999939
-            Y: -175.004394
+            Y: -175.004395
             Z: 10
           }
           Rotation {
@@ -71038,7 +71038,7 @@
           Location {
             X: 239.488708
             Y: -556.296753
-            Z: 34.4570312
+            Z: 34.4570313
           }
           Rotation {
             Yaw: -72.0231934
@@ -72338,7 +72338,7 @@
         Transform {
           Location {
             X: -43.4609375
-            Y: 43.0351562
+            Y: 43.0351563
             Z: 590
           }
           Rotation {
@@ -72389,7 +72389,7 @@
           Location {
             X: -174.964783
             Y: -88.4610596
-            Z: 607.688476
+            Z: 607.688477
           }
           Rotation {
             Yaw: 44.999939
@@ -72617,7 +72617,7 @@
           Location {
             X: 310.035248
             Y: -88.4607239
-            Z: 607.688476
+            Z: 607.688477
           }
           Rotation {
             Yaw: 135
@@ -72919,7 +72919,7 @@
         Transform {
           Location {
             X: -43.4609375
-            Y: 43.0351562
+            Y: 43.0351563
             Z: 590
           }
           Rotation {
@@ -72970,7 +72970,7 @@
           Location {
             X: -174.964783
             Y: -88.4610596
-            Z: 607.688476
+            Z: 607.688477
           }
           Rotation {
             Yaw: 44.999939
@@ -73198,7 +73198,7 @@
           Location {
             X: 310.035248
             Y: -88.4607239
-            Z: 607.688476
+            Z: 607.688477
           }
           Rotation {
             Yaw: 135
@@ -74465,7 +74465,7 @@
         Transform {
           Location {
             X: -690.746094
-            Y: 200.945312
+            Y: 200.945313
           }
           Rotation {
             Yaw: 6.14717064e-05
@@ -74533,8 +74533,8 @@
         Name: "Craftsman Wall 01"
         Transform {
           Location {
-            X: 85.5664062
-            Y: 200.195312
+            X: 85.5664063
+            Y: 200.195313
           }
           Rotation {
             Yaw: -48.6426392
@@ -75099,7 +75099,7 @@
         Transform {
           Location {
             X: -690.746094
-            Y: 200.945312
+            Y: 200.945313
           }
           Rotation {
             Yaw: -3.07358459e-05
@@ -75171,8 +75171,8 @@
         Name: "Craftsman Wall 01"
         Transform {
           Location {
-            X: 85.5664062
-            Y: 200.195312
+            X: 85.5664063
+            Y: 200.195313
           }
           Rotation {
             Yaw: -48.6426277
@@ -78399,7 +78399,7 @@
         Transform {
           Location {
             X: 175.000015
-            Y: 0.000122070312
+            Y: 0.000122070313
             Z: 10
           }
           Rotation {
@@ -78552,7 +78552,7 @@
         Transform {
           Location {
             X: 175.000015
-            Y: 0.000122070312
+            Y: 0.000122070313
             Z: 685
           }
           Rotation {
@@ -79535,7 +79535,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: -22.8632812
+            X: -22.8632813
             Y: 1.640625
             Z: 27.6435547
           }
@@ -79699,7 +79699,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: 30.4101562
+            X: 30.4101563
             Y: 21.0703125
             Z: 27.6435547
           }
@@ -79864,7 +79864,7 @@
         Transform {
           Location {
             X: 9.81640625
-            Y: -44.1289062
+            Y: -44.1289063
             Z: 27.6435547
           }
           Rotation {
@@ -80184,8 +80184,8 @@
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -21.6601562
-            Y: -22.4882812
+            X: -21.6601563
+            Y: -22.4882813
             Z: 2.85205078
           }
           Rotation {
@@ -81126,7 +81126,7 @@
         Transform {
           Location {
             X: -11.8496513
-            Y: -177.507812
+            Y: -177.507813
             Z: 110
           }
           Rotation {
@@ -81294,7 +81294,7 @@
         Transform {
           Location {
             X: -1.84967434
-            Y: -272.507812
+            Y: -272.507813
             Z: 110
           }
           Rotation {
@@ -81461,7 +81461,7 @@
         Transform {
           Location {
             X: -6.84967089
-            Y: -257.507812
+            Y: -257.507813
             Z: 110
           }
           Rotation {
@@ -82420,7 +82420,7 @@
         Transform {
           Location {
             X: -11.8496513
-            Y: -177.507812
+            Y: -177.507813
             Z: 110
           }
           Rotation {
@@ -82612,7 +82612,7 @@
         Transform {
           Location {
             X: -1.84967434
-            Y: -272.507812
+            Y: -272.507813
             Z: 110
           }
           Rotation {
@@ -82787,7 +82787,7 @@
         Transform {
           Location {
             X: -6.84967089
-            Y: -257.507812
+            Y: -257.507813
             Z: 110
           }
           Rotation {
@@ -83359,7 +83359,7 @@
         Transform {
           Location {
             X: -11.8496513
-            Y: -177.507812
+            Y: -177.507813
             Z: 110
           }
           Rotation {
@@ -83551,7 +83551,7 @@
         Transform {
           Location {
             X: -1.84967434
-            Y: -272.507812
+            Y: -272.507813
             Z: 110
           }
           Rotation {
@@ -83726,7 +83726,7 @@
         Transform {
           Location {
             X: -6.84967089
-            Y: -257.507812
+            Y: -257.507813
             Z: 110
           }
           Rotation {
@@ -84204,7 +84204,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: -22.8632812
+            X: -22.8632813
             Y: 1.640625
             Z: 27.6435547
           }
@@ -84368,7 +84368,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: 30.4101562
+            X: 30.4101563
             Y: 21.0703125
             Z: 27.6435547
           }
@@ -84533,7 +84533,7 @@
         Transform {
           Location {
             X: 9.81640625
-            Y: -44.1289062
+            Y: -44.1289063
             Z: 27.6435547
           }
           Rotation {
@@ -84853,8 +84853,8 @@
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -21.6601562
-            Y: -22.4882812
+            X: -21.6601563
+            Y: -22.4882813
             Z: 2.85205078
           }
           Rotation {
@@ -85552,7 +85552,7 @@
         Transform {
           Location {
             X: -36.4063263
-            Y: -318.507812
+            Y: -318.507813
           }
           Rotation {
           }
@@ -85614,7 +85614,7 @@
           Location {
             X: 41.3750153
             Y: 69.9999924
-            Z: 2.54101562
+            Z: 2.54101563
           }
           Rotation {
             Yaw: -90
@@ -85671,7 +85671,7 @@
           Location {
             X: 633.15625
             Y: -677.230469
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
           }
@@ -85727,7 +85727,7 @@
           Location {
             X: 430.640625
             Y: -677.230469
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
           }
@@ -85783,7 +85783,7 @@
           Location {
             X: -597.667969
             Y: 578.839844
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
             Yaw: -89.9999924
@@ -85840,7 +85840,7 @@
           Location {
             X: -597.667969
             Y: 376.324219
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
             Yaw: -89.9999924
@@ -86392,7 +86392,7 @@
           Location {
             X: 59.9101677
             Y: 51.691391
-            Z: -285.254394
+            Z: -285.254395
           }
           Rotation {
           }
@@ -86622,7 +86622,7 @@
         Transform {
           Location {
             X: -42.4296875
-            Y: 110.882812
+            Y: 110.882813
             Z: 71.675293
           }
           Rotation {
@@ -86704,7 +86704,7 @@
         Transform {
           Location {
             X: -42.4296875
-            Y: -110.851562
+            Y: -110.851563
             Z: 71.675293
           }
           Rotation {
@@ -86795,7 +86795,7 @@
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 15.6445312
+            X: 15.6445313
             Y: 0.203125
           }
           Rotation {
@@ -86846,7 +86846,7 @@
         Name: "Wedge"
         Transform {
           Location {
-            X: 35.6445312
+            X: 35.6445313
             Y: -179.796875
             Z: 18.2143555
           }
@@ -86893,7 +86893,7 @@
         Name: "Wedge"
         Transform {
           Location {
-            X: 35.6445312
+            X: 35.6445313
             Y: 180.203125
             Z: 18.2143555
           }
@@ -86941,7 +86941,7 @@
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 35.6445312
+            X: 35.6445313
             Y: 0.203125
             Z: 458.214355
           }
@@ -86993,7 +86993,7 @@
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 35.6445312
+            X: 35.6445313
             Y: -119.097656
             Z: 188.5625
           }
@@ -87045,7 +87045,7 @@
         Name: "Prism - 6-Sided Half"
         Transform {
           Location {
-            X: 35.6445312
+            X: 35.6445313
             Y: 119.753906
             Z: 188.5625
           }
@@ -87444,7 +87444,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: -22.8632812
+            X: -22.8632813
             Y: 1.640625
             Z: 27.6435547
           }
@@ -87608,7 +87608,7 @@
         Name: "Firewood"
         Transform {
           Location {
-            X: 30.4101562
+            X: 30.4101563
             Y: 21.0703125
             Z: 27.6435547
           }
@@ -87765,7 +87765,7 @@
         Transform {
           Location {
             X: 9.81640625
-            Y: -44.1289062
+            Y: -44.1289063
             Z: 27.6435547
           }
           Rotation {
@@ -88077,8 +88077,8 @@
         Name: "Rock Pile 002"
         Transform {
           Location {
-            X: -21.6601562
-            Y: -22.4882812
+            X: -21.6601563
+            Y: -22.4882813
             Z: 2.85205078
           }
           Rotation {
@@ -88479,7 +88479,7 @@
           Location {
             X: 416.304688
             Y: 182.78125
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
           }
@@ -88847,7 +88847,7 @@
         Transform {
           Location {
             X: 789.8125
-            Y: 31.8164062
+            Y: 31.8164063
           }
           Rotation {
             Yaw: 72.0710526
@@ -89446,7 +89446,7 @@
         Name: "Curtains Staright"
         Transform {
           Location {
-            X: 1.66601562
+            X: 1.66601563
             Y: 788.332031
           }
           Rotation {
@@ -89487,7 +89487,7 @@
         Name: "Curtains Staright"
         Transform {
           Location {
-            X: 1.66601562
+            X: 1.66601563
             Y: 1208.33203
           }
           Rotation {
@@ -89528,7 +89528,7 @@
         Name: "Curtains Staright"
         Transform {
           Location {
-            X: 1.66601562
+            X: 1.66601563
             Y: -1211.66797
           }
           Rotation {
@@ -89569,7 +89569,7 @@
         Name: "Curtains Staright"
         Transform {
           Location {
-            X: 1.66601562
+            X: 1.66601563
             Y: -791.667969
           }
           Rotation {
@@ -89755,7 +89755,7 @@
         Name: "Cube - bottom aligned"
         Transform {
           Location {
-            X: 840.757812
+            X: 840.757813
             Y: -1350.66016
             Z: -18.0239258
           }
@@ -96243,7 +96243,7 @@
         Transform {
           Location {
             X: -594.9375
-            Y: -660.320312
+            Y: -660.320313
             Z: 4520
           }
           Rotation {
@@ -96869,7 +96869,7 @@
         Name: "Cabinet Door - Small"
         Transform {
           Location {
-            X: -714.945312
+            X: -714.945313
             Y: -744.9375
             Z: 4240
           }
@@ -100291,7 +100291,7 @@
         Name: "Carpet Tile 02"
         Transform {
           Location {
-            X: -69.6289062
+            X: -69.6289063
             Y: 914.855469
             Z: 13.5898438
           }
@@ -100347,7 +100347,7 @@
         Name: "Carpet Tile 01"
         Transform {
           Location {
-            X: -69.6289062
+            X: -69.6289063
             Y: 123.082031
             Z: 12.8120117
           }
@@ -101189,7 +101189,7 @@
           Location {
             X: 384.058594
             Y: 1292.98438
-            Z: 150.375976
+            Z: 150.375977
           }
           Rotation {
             Yaw: -10.3521576
@@ -101229,7 +101229,7 @@
         Name: "Garage"
         Transform {
           Location {
-            X: -182.882812
+            X: -182.882813
             Y: -678.878906
             Z: -594.746094
           }
@@ -101430,7 +101430,7 @@
         Name: "Simple Crate 150cm"
         Transform {
           Location {
-            X: 103.695312
+            X: 103.695313
             Y: -398.703125
           }
           Rotation {
@@ -101628,7 +101628,7 @@
         Name: "Craftsman Coffee Table"
         Transform {
           Location {
-            X: 98.3945312
+            X: 98.3945313
             Y: -700.683594
           }
           Rotation {
@@ -102112,7 +102112,7 @@
         Transform {
           Location {
             X: -230.375
-            Y: -876.132812
+            Y: -876.132813
             Z: 5
           }
           Rotation {
@@ -102515,7 +102515,7 @@
         Transform {
           Location {
             X: -85.2773438
-            Y: -523.226562
+            Y: -523.226563
             Z: 5
           }
           Rotation {
@@ -102744,7 +102744,7 @@
           Location {
             X: 395
             Y: -134.464844
-            Z: 0.254882812
+            Z: 0.254882813
           }
           Rotation {
             Yaw: 89.9999542
@@ -102966,7 +102966,7 @@
         Transform {
           Location {
             X: 592.175781
-            Y: -931.070312
+            Y: -931.070313
             Z: 9.26416
           }
           Rotation {
@@ -103008,7 +103008,7 @@
         Transform {
           Location {
             X: 1197.63281
-            Y: -931.070312
+            Y: -931.070313
             Z: 9.26416
           }
           Rotation {
@@ -105181,7 +105181,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -105390,7 +105390,7 @@
         Transform {
           Location {
             X: -1439.18555
-            Y: 295.539062
+            Y: 295.539063
             Z: 107.441406
           }
           Rotation {
@@ -105516,7 +105516,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -105724,7 +105724,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -106179,7 +106179,7 @@
         Name: "Lily Pads 002"
         Transform {
           Location {
-            X: -178.726562
+            X: -178.726563
             Y: 7.51171875
             Z: 65
           }
@@ -106222,7 +106222,7 @@
         Transform {
           Location {
             X: 44.90625
-            Y: -54.0195312
+            Y: -54.0195313
             Z: 35
           }
           Rotation {
@@ -106318,7 +106318,7 @@
         Transform {
           Location {
             X: 49.90625
-            Y: -15.4726562
+            Y: -15.4726563
           }
           Rotation {
           }
@@ -106566,7 +106566,7 @@
         Transform {
           Location {
             X: 467.15625
-            Y: -219.445312
+            Y: -219.445313
             Z: 71.6608887
           }
           Rotation {
@@ -106765,7 +106765,7 @@
         Transform {
           Location {
             X: 478.074219
-            Y: -85.2070312
+            Y: -85.2070313
             Z: -1.19970703
           }
           Rotation {
@@ -106812,7 +106812,7 @@
         Transform {
           Location {
             X: 0.3125
-            Y: 22.5351562
+            Y: 22.5351563
           }
           Rotation {
           }
@@ -108523,7 +108523,7 @@
         Name: "Lily Pads 002"
         Transform {
           Location {
-            X: 201.039062
+            X: 201.039063
             Y: -28.3710938
             Z: 65
           }
@@ -108654,7 +108654,7 @@
         Transform {
           Location {
             X: 377.078125
-            Y: 140.445312
+            Y: 140.445313
             Z: -1.19970703
           }
           Rotation {
@@ -108750,7 +108750,7 @@
         Transform {
           Location {
             X: -50.7929688
-            Y: 71.6289062
+            Y: 71.6289063
           }
           Rotation {
             Yaw: 179.999954
@@ -108798,7 +108798,7 @@
           Location {
             X: -466.570282
             Y: 145.175888
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: 179.999954
@@ -108857,7 +108857,7 @@
         Transform {
           Location {
             X: -50.7890625
-            Y: 10.1757812
+            Y: 10.1757813
             Z: -1.19970703
           }
           Rotation {
@@ -108906,7 +108906,7 @@
           Location {
             X: 365.207062
             Y: 145.17569
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: 179.999954
@@ -108964,7 +108964,7 @@
         Name: "Stone Railing Curved 6m"
         Transform {
           Location {
-            X: 351.039062
+            X: 351.039063
             Y: 6.62890625
             Z: 71.6608887
           }
@@ -109048,7 +109048,7 @@
         Name: "Stone Railing 8m"
         Transform {
           Location {
-            X: 368.289062
+            X: 368.289063
             Y: 6.62890625
             Z: 71.6608887
           }
@@ -109142,7 +109142,7 @@
           Location {
             X: -50.7890587
             Y: 10.1757936
-            Z: 2.44726562
+            Z: 2.44726563
           }
           Rotation {
             Yaw: -3.05175781e-05
@@ -110126,7 +110126,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -110417,7 +110417,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -110845,7 +110845,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -111180,7 +111180,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -111306,7 +111306,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -111734,7 +111734,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -112069,7 +112069,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -112195,7 +112195,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -112623,7 +112623,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -112958,7 +112958,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -113084,7 +113084,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -113512,7 +113512,7 @@
         Transform {
           Location {
             X: -763.775391
-            Y: 148.945312
+            Y: 148.945313
             Z: 0.142089844
           }
           Rotation {
@@ -113847,7 +113847,7 @@
         Transform {
           Location {
             X: -2021.75781
-            Y: 410.007812
+            Y: 410.007813
             Z: 0.142089844
           }
           Rotation {
@@ -113973,7 +113973,7 @@
         Transform {
           Location {
             X: 454.425781
-            Y: -85.4101562
+            Y: -85.4101563
             Z: 107.441406
           }
           Rotation {
@@ -116998,6 +116998,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

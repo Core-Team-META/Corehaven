@@ -67,10 +67,10 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "I'm very glad you decided to visit us!", EXCITEMENT_ANIMATION)
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
-    API.AddOption(id, "Map", "WecomeDialog2")
+    API.AddOption(id, "Nothing", "WecomeDialog5")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
-    API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Map", "WecomeDialog2")
 
     id = "WecomeDialog2"
     API.RegisterDialogueId(id)
@@ -82,9 +82,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Use your map to navigate Corehaven, and maybe see other adventurers around here.", YES_ANIMATION)
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
-    API.AddOption(id, "Portal Area", "WecomeDialog6")
-    API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Portal Area", "WecomeDialog6")
 
     id = "WecomeDialog4"
     API.RegisterDialogueId(id)
@@ -92,9 +92,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Just ask the lady named Elora there to give you the map!")
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
-    API.AddOption(id, "Portal Area", "WecomeDialog6")
-    API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Portal Area", "WecomeDialog6")
 
     id = "WecomeDialog5"
     API.RegisterDialogueId(id)
@@ -109,9 +109,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Use your map to guide yourself to the Portal Area.", TALK_ANIMATION)
     API.AddText(id, "What else would you like to know?")
 
-    API.AddOption(id, "Map", "WecomeDialog2")
-    API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Map", "WecomeDialog2")
 
     id = "WecomeDialog7"
     API.RegisterDialogueId(id)
@@ -122,16 +122,16 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Once he returns, the Training Field will be available as usual... Hopefully.", TALK_ANIMATION)
     API.AddText(id, "Would... Would you like to know about anything else?")
 
-    API.AddOption(id, "Map", "WecomeDialog2")
-    API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Map", "WecomeDialog2")
 
     --Character Conversations
     id = "MerchantDialog"
     API.RegisterDialogueId(id)
     API.AddText(id, "Welcome.")
     API.AddText(id, "I am not open yet.", NO_ANIMATION)
-    API.AddText(id, "Visit my shop sometimes later!", YES_ANIMATION)
+    API.AddText(id, "Visit my shop sometimes later!", TALK_ANIMATION)
 
     id = "NoBother"
     API.RegisterDialogueId(id)
@@ -140,15 +140,90 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "By the look of it, he is probably waiting for something to come?")
     API.AddText(id, "I wonder what is it that he awaits?...")
 
+    id = "NoBother2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "An adventurer?")
+    API.AddText(id, "Seems like I shouldn't bother this person...")
+
     id = "Smuggler1"
     API.RegisterDialogueId(id)
-    API.AddText(id, "Uhuhuhu...", CRY_ANIMATION)
-    API.AddText(id, "I got beaten by... by a ghost... and got scared in...", CRY_ANIMATION)
-    API.AddText(id, "Uhuhu... in the horrifying house...", CRY_ANIMATION)
+    API.AddText(id, "*crying* uhuhuhu...", CRY_ANIMATION)
+    API.AddText(id, "I got beaten by... by a ghost...", CRY_ANIMATION)
+    API.AddText(id, "in... *crying*", CRY_ANIMATION)
+    API.AddText(id, "...the horrifying house *crying*.", CRY_ANIMATION)
 
-    id = "Smuggler2"
+    id = "Smuggler2.1"
     API.RegisterDialogueId(id)
-    API.AddText(id, "Gha-ha-ha!", LAUGH_ANIMATION)
+    API.AddText(id, "Beautiful islands!", EXCITEMENT_ANIMATION)
+    API.AddText(id, "They were floating... it's amazing!", EXCITEMENT_ANIMATION)
+    API.AddOption(id, "Floating?", "Smuggler2.2")
+
+    id = "Smuggler2.2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "But... it's corrupted... and unbalanced...", CRY_ANIMATION)
+    API.AddOption(id, "Corrupted?!", "Smuggler2.3")
+    API.AddOption(id, "Unbalanced?!", "Smuggler2.4")
+
+    id = "Smuggler2.3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "...?")
+    API.AddText(id, "Why are you interested?", TALK_ANIMATION)
+    API.AddText(id, "Tell you what, just meet with the Wisp in Aurealis, and you will know everything.", TALK_ANIMATION)
+    API.AddText(id, "If you want to restore balance, that is...", LAUGH_ANIMATION)
+
+    id = "Smuggler2.4"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "It's those crystals... and the Goddess Kasura...", CRY_ANIMATION)
+    API.AddText(id, "Wait... Why are you interested?", TALK_ANIMATION)
+    API.AddText(id, "Tell you what, just meet with the Wisp in Aurealis, and you will know everything.", TALK_ANIMATION)
+    API.AddText(id, "If you want to restore balance, that is...", LAUGH_ANIMATION)
+
+    id = "Smuggler3.1"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "I almost found the tresures...")
+    API.AddOption(id, "Treasures?", "Smuggler3.2")
+
+    id = "Smuggler3.2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Mythic treasures...")
+    API.AddOption(id, "Where are they?", "Smuggler3.3")
+
+    id = "Smuggler3.3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "In... Baland-Ur...")
+
+    id = "Smuggler4.1"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Have you heard about the mysterious crystals and luminous stones?", TALK_ANIMATION)
+    API.AddOption(id, "Nevermind", "Smuggler4.4")
+    API.AddOption(id, "Tell Me", "Smuggler4.2")
+
+    id = "Smuggler4.2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "If you ask the Wandering Healer about it, you might learn more..", TALK_ANIMATION)
+    API.AddOption(id, "Nevermind", "Smuggler4.4")
+    API.AddOption(id, "Healer?", "Smuggler4.3")
+
+    id = "Smuggler4.3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Curious, eh?", YES_ANIMATION)
+    API.AddText(id, "You can find the Healer in Cisterns...", TALK_ANIMATION)
+    API.AddText(id, "... That's all I can tell you. Good luck.", TALK_ANIMATION)
+
+    id = "Smuggler4.4"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Not interested?")
+    API.AddText(id, "Goodbye then.", WAVE_ANIMATION)
+
+    id = "Smuggler5.1"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "We couldnt's uncover the secret...")
+    API.AddOption(id, "Secret?", "Smuggler5.2")
+
+    id = "Smuggler5.2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Secret of mysterious spire...")
+    API.AddText(id, "...in that Village of Stillwater.")
 
     id = "Tavern1"
     API.RegisterDialogueId(id)
@@ -156,9 +231,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Welcome to my tavern!", TALK_ANIMATION)
     API.AddText(id, "Are you also one of those adventurers?", TALK_ANIMATION)
 
-    API.AddOption(id, "Yes", "Tavern2")
-    API.AddOption(id, "No", "Tavern3")
     API.AddOption(id, "...", "Tavern4")
+    API.AddOption(id, "No", "Tavern3")
+    API.AddOption(id, "Yes", "Tavern2")
 
     id = "Tavern2"
     API.RegisterDialogueId(id)
@@ -179,6 +254,33 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "It's okay, my friend.", TALK_ANIMATION)
     API.AddText(id, "This place is for everyone.", YES_ANIMATION)
 
+    id = "Priestess"
+    API.RegisterDialogueId(id)
+    API.AddText(id, '...')
+    API.AddText(id, 'I am waiting for someone to come back...')
+
+    id = "Stranger"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'Hey... What do you want?')
+
+    API.AddOption(id, "...", "Stranger4")
+    API.AddOption(id, "Owner?", "Stranger2")
+    API.AddOption(id, "Train", "Stranger3")
+
+    id = "Stranger2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'We used to have someone here who teaches us the way of fighting...')
+    API.AddText(id, 'But that person left Corehaven and set sail on a Galleon to far away islands.', TALK_ANIMATION)
+
+    id = "Stranger3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'Once he comes back... Maybe you will get to train with us.')
+
+    id = "Stranger4"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'We lost our magical energy we once have...')
+    API.AddText(id, 'If that person returns back home, we might get our powers back.', TALK_ANIMATION)
+
     -- Other dialogs
     id = "Sign"
     API.RegisterDialogueId(id)
@@ -188,6 +290,11 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, '"Gather your fellow warriors from all around the world to challenges in the dungeon worlds!"')
     API.AddText(id, '"Good luck to all of you!"')
     API.AddText(id, '"~ Manticore Guild ~"')
+
+    id = "Sleep"
+    API.RegisterDialogueId(id)
+    API.AddText(id, '"ZzzZzz"')
+    API.AddText(id, 'This man snores really loud...')
 
 end
 

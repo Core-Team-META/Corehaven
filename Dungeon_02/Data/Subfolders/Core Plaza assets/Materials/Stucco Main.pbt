@@ -2,7 +2,7 @@
   Id: 11477591083548203198
   Name: "Stucco Main"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 4586850360570615697
     ParameterOverrides {

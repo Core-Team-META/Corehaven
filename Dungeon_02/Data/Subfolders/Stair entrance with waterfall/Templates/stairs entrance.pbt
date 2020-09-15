@@ -669,7 +669,7 @@
         Transform {
           Location {
             X: 4360.4248
-            Y: -3368.14892
+            Y: -3368.14893
             Z: 212.179352
           }
           Rotation {
@@ -1201,7 +1201,7 @@
         Transform {
           Location {
             X: 4360.4248
-            Y: -3368.14892
+            Y: -3368.14893
             Z: 309.925598
           }
           Rotation {
@@ -2691,7 +2691,7 @@
           Location {
             X: 4662.55859
             Y: -3742.552
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6532974
@@ -2851,7 +2851,7 @@
           Location {
             X: 5460.57275
             Y: -2657.56885
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6534052
@@ -3091,7 +3091,7 @@
           Location {
             X: 4745.7959
             Y: -4128.13086
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6533871
@@ -3531,7 +3531,7 @@
           Location {
             X: 5839.5332
             Y: -2620.98853
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6536026
@@ -4131,7 +4131,7 @@
         Name: "Fantasy Castle Stairs Spiral Wall 01 - Small"
         Transform {
           Location {
-            X: 4614.0581
+            X: 4614.05811
             Y: -2494.03857
             Z: -29.7113037
           }
@@ -4423,7 +4423,7 @@
         Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
         Transform {
           Location {
-            X: 4046.72558
+            X: 4046.72559
             Y: -3840.21362
             Z: 299.486542
           }
@@ -6051,7 +6051,7 @@
           Location {
             X: 4957.45
             Y: -2105.47461
-            Z: -0.000122070312
+            Z: -0.000122070313
           }
           Rotation {
             Yaw: -80.9908524
@@ -6103,7 +6103,7 @@
           Location {
             X: 3984.94873
             Y: -3444.68359
-            Z: -0.000122070312
+            Z: -0.000122070313
           }
           Rotation {
             Yaw: 9.0091
@@ -6624,8 +6624,8 @@
         Name: "Square Column Segment"
         Transform {
           Location {
-            X: 4070.46728
-            Y: -3834.13476
+            X: 4070.46729
+            Y: -3834.13477
             Z: 309.925598
           }
           Rotation {
@@ -6664,8 +6664,8 @@
         Name: "Square Column Segment"
         Transform {
           Location {
-            X: 4070.46728
-            Y: -3834.13476
+            X: 4070.46729
+            Y: -3834.13477
             Z: 212.179352
           }
           Rotation {
@@ -6825,7 +6825,7 @@
         Transform {
           Location {
             X: 4133.34717
-            Y: -4223.44726
+            Y: -4223.44727
             Z: 112.179321
           }
           Rotation {
@@ -7586,7 +7586,7 @@
           Location {
             X: 5149.49365
             Y: -4078.55542
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6536198
@@ -7906,7 +7906,7 @@
           Location {
             X: 5920.47803
             Y: -3036.13037
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 11.6536732
@@ -8226,7 +8226,7 @@
           Location {
             X: 6196.16357
             Y: -3226.22876
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 53.8992767
@@ -8304,7 +8304,7 @@
         Name: "Square Column Topper 01"
         Transform {
           Location {
-            X: 6199.72558
+            X: 6199.72559
             Y: -3225.75537
             Z: 715
           }
@@ -8546,7 +8546,7 @@
           Location {
             X: 5424.72754
             Y: -4284.10449
-            Z: 449.789062
+            Z: 449.789063
           }
           Rotation {
             Yaw: 53.8992767
@@ -8920,6 +8920,6 @@
   Marketplace {
     Description: "A big Stair Entrance, with a waterfall."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

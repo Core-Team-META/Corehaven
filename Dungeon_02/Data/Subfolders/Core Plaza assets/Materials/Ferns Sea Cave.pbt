@@ -2,7 +2,7 @@
   Id: 13971553579454236023
   Name: "Ferns Sea Cave"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 17476469376396895430
     ParameterOverrides {

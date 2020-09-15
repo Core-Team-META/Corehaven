@@ -2,7 +2,7 @@
   Id: 13819987182437342366
   Name: "Opaque Window Glass Custom Material"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 2258330122587909962
     ParameterOverrides {

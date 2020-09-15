@@ -20,6 +20,7 @@
         ChildIds: 7281223958825482728
         ChildIds: 14567791011331642868
         ChildIds: 3021994181952833888
+        ChildIds: 3553644822710393804
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -78,7 +79,6 @@
           }
         }
         ParentId: 15527512314092961875
-        ChildIds: 5433344749199491928
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -89,45 +89,13 @@
           AudioAsset {
             Id: 1678695103760504749
           }
+          AutoPlay: true
           Volume: 0.4
           Falloff: 1000
           Radius: 3000
           EnableOcclusion: true
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
-        }
-      }
-      Objects {
-        Id: 5433344749199491928
-        Name: "UtilityAudioOneshot"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7281223958825482728
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Delay"
-            Float: 0.1
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 599413335234479971
-          }
         }
       }
       Objects {
@@ -594,6 +562,41 @@
           }
         }
       }
+      Objects {
+        Id: 3553644822710393804
+        Name: "Creature Beast Huff Short 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15527512314092961875
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 2725668498590125249
+          }
+          AutoPlay: true
+          Pitch: -200
+          Volume: 1
+          Falloff: 1000
+          Radius: 2000
+          EnableOcclusion: true
+          IsSpatializationEnabled: true
+          IsAttenuationEnabled: true
+        }
+      }
     }
     Assets {
       Id: 8364038353463878773
@@ -647,6 +650,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_trail_variants"
+      }
+    }
+    Assets {
+      Id: 2725668498590125249
+      Name: "Creature Beast Huff Short 01 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_creature_beast_huff_short_01_Cue_ref"
       }
     }
     PrimaryAssetId {

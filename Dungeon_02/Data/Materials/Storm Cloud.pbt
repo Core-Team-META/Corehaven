@@ -2,7 +2,7 @@
   Id: 15681535117411795644
   Name: "Storm Cloud"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 1082809058784319555
     ParameterOverrides {

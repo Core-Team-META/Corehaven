@@ -2,7 +2,7 @@
   Id: 803656265444130668
   Name: "Oak Tree Purple"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 3777304638623268409
     ParameterOverrides {

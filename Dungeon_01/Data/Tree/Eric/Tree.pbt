@@ -5274,7 +5274,7 @@ Objects {
   Transform {
     Location {
       X: -451.307251
-      Y: 14164.2812
+      Y: 14164.2813
       Z: -387.004883
     }
     Rotation {
@@ -5360,7 +5360,7 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: 6323.4331
+      X: 6323.43311
       Y: 11582.2373
       Z: -387.004944
     }
@@ -7043,7 +7043,7 @@ Objects {
   Transform {
     Location {
       X: -7441.44434
-      Y: -4464.08642
+      Y: -4464.08643
       Z: -296.436462
     }
     Rotation {
@@ -7099,7 +7099,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7983.78808
+      X: -7983.78809
       Y: -4977.01367
       Z: -360.496063
     }
@@ -9756,7 +9756,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101562
+      X: 756.101563
       Y: 2354.04834
       Z: 13.7415161
     }
@@ -10053,7 +10053,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101562
+      X: 756.101563
       Y: 2354.04834
       Z: 13.7415161
     }

@@ -132,6 +132,7 @@
           }
         }
         ParentId: 7238122778064263058
+        ChildIds: 1245617115929598486
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -162,10 +163,55 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          DisableDistanceFieldLighting: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 1245617115929598486
+        Name: "Torch Fire VFX"
+        Transform {
+          Location {
+            Z: -65.6430893
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.33333325
+            Y: 3.33333325
+            Z: 3.33333325
+          }
+        }
+        ParentId: 4785264965657490341
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.6
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4603537691901304316
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
@@ -245,6 +291,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_sphere_001"
+      }
+    }
+    Assets {
+      Id: 4603537691901304316
+      Name: "Torch Fire VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_torch_fire"
       }
     }
     PrimaryAssetId {

@@ -2068,7 +2068,7 @@
             Y: -0.128881812
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.599999964
@@ -2383,7 +2383,7 @@
             Y: 3.73655891
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.599999964
@@ -2477,7 +2477,7 @@
             Y: -5.61965227
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.599999964
@@ -2792,7 +2792,7 @@
             Y: 5.25779867
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.599999964
@@ -2886,7 +2886,7 @@
             Y: 0.213113919
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.599999964
@@ -3290,7 +3290,7 @@
         Name: "Rock Block 01"
         Transform {
           Location {
-            X: -382.935058
+            X: -382.935059
             Y: -3.15042615
           }
           Rotation {
@@ -5493,7 +5493,7 @@
         Transform {
           Location {
             X: 354.743073
-            Y: -0.000122070312
+            Y: -0.000122070313
             Z: -25.5288391
           }
           Rotation {
@@ -6038,7 +6038,7 @@
         Transform {
           Location {
             X: 287.60321
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: -6.09088135
           }
           Rotation {
@@ -6086,7 +6086,7 @@
         Transform {
           Location {
             X: -287.603394
-            Y: 6.10351562e-05
+            Y: 6.10351563e-05
             Z: -6.09088135
           }
           Rotation {
@@ -7677,6 +7677,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

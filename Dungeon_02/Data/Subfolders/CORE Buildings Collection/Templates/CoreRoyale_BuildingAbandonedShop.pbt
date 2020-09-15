@@ -5351,7 +5351,7 @@
         Transform {
           Location {
             X: -2119.92358
-            Y: 3829.79394
+            Y: 3829.79395
             Z: 960
           }
           Rotation {
@@ -5812,7 +5812,7 @@
             Z: -85
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 1
@@ -5945,7 +5945,7 @@
             Z: -85
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 1
@@ -6079,7 +6079,7 @@
           }
           Rotation {
             Pitch: 10.0000315
-            Yaw: -0.000122070312
+            Yaw: -0.000122070313
             Roll: -89.9998779
           }
           Scale {
@@ -6687,6 +6687,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@
   Id: 17377009341241512576
   Name: "store wood siding "
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 16572361283348950017
     ParameterOverrides {

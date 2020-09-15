@@ -2,7 +2,7 @@
   Id: 4150479622941714130
   Name: "Entrance Plastic Shiny"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 17860830441923358832
     ParameterOverrides {

@@ -1031,14 +1031,14 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 170.235397
-      Y: 271.332428
-      Z: 136.066635
+      X: 169.840118
+      Y: 232.920151
+      Z: 138.094711
     }
     Rotation {
       Pitch: -0.675933838
       Yaw: -90
-      Roll: 0.00858750567
+      Roll: 0.00858763885
     }
     Scale {
       X: 0.733888268
@@ -1392,7 +1392,6 @@ Objects {
   ChildIds: 1133903040963880793
   ChildIds: 1644732841863584453
   ChildIds: 16195796766836392325
-  ChildIds: 13782518222386008616
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1401,73 +1400,6 @@ Objects {
   }
   Folder {
     IsGroup: true
-  }
-}
-Objects {
-  Id: 13782518222386008616
-  Name: "Craftsman Roof 01 Beam"
-  Transform {
-    Location {
-      X: 9.15644
-      Y: 238.076279
-      Z: 11.9234486
-    }
-    Rotation {
-      Pitch: -1.70339966
-      Yaw: 11.0661077
-      Roll: -0.33303833
-    }
-    Scale {
-      X: 0.271413207
-      Y: 1.15993392
-      Z: 0.315930665
-    }
-  }
-  ParentId: 5494289459825484981
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17557104084763797115
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.8188436
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6807357076135762555
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {

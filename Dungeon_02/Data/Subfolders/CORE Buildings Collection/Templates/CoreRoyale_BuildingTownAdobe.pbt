@@ -12562,7 +12562,7 @@
             Z: 800
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.25
@@ -12634,7 +12634,7 @@
             Z: 800
           }
           Rotation {
-            Yaw: -6.10351562e-05
+            Yaw: -6.10351563e-05
           }
           Scale {
             X: 0.25
@@ -17530,6 +17530,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 62
+  SerializationVersion: 63
   DirectlyPublished: true
 }
