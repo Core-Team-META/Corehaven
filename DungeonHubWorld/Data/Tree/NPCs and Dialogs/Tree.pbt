@@ -30,10 +30,10 @@ Objects {
   ChildIds: 10468232154757843446
   ChildIds: 3299933945099914928
   ChildIds: 1924168955277639462
-  ChildIds: 6328857406631412163
+  ChildIds: 11170132355414705905
   ChildIds: 10480283390017259191
-  ChildIds: 1638125352508803373
-  ChildIds: 13327619542024756140
+  ChildIds: 924223727289080656
+  ChildIds: 866783569642170081
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -44,9 +44,13 @@ Objects {
   }
 }
 Objects {
-  Id: 13327619542024756140
-  Name: "Commoner_F_01"
+  Id: 866783569642170081
+  Name: "Group"
   Transform {
+    Location {
+    }
+    Rotation {
+    }
     Scale {
       X: 1
       Y: 1
@@ -54,46 +58,94 @@ Objects {
     }
   }
   ParentId: 8355496857395536503
+  ChildIds: 17380347573135731853
+  ChildIds: 9648739632739741137
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9648739632739741137
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 866783569642170081
   TemplateInstance {
     ParameterOverrideMap {
-      key: 4937038475953313194
+      key: 8616549876975302597
       value {
         Overrides {
           Name: "Name"
-          String: "Commoner_F_01"
+          String: "NPC Dialog Trigger"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -6245
-            Y: 3770
-            Z: 1555
+            X: -5710
+            Y: 2740
+            Z: 1590
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -69.9998474
+            Yaw: -24.9998627
           }
         }
         Overrides {
           Name: "Scale"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Smuggler3.1"
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Adventurer"
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 3816051918113686917
+            SubObjectId: 6153812158312227725
+            InstanceId: 17380347573135731853
+            TemplateId: 14260632711062808493
           }
         }
       }
     }
     TemplateAsset {
-      Id: 16111421637692519603
+      Id: 4839589651670793246
     }
   }
 }
 Objects {
-  Id: 1638125352508803373
-  Name: "Priestess"
+  Id: 17380347573135731853
+  Name: "Commoner_M_01"
   Transform {
     Scale {
       X: 1
@@ -101,27 +153,44 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 866783569642170081
   TemplateInstance {
     ParameterOverrideMap {
-      key: 15932366417693831876
+      key: 6153812158312227725
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_sit_ground_crossed"
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationRate"
+          Float: 0
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationPosition"
+          Float: 0.865074396
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6804185482513935256
       value {
         Overrides {
           Name: "Name"
-          String: "Priestess"
+          String: "Commoner_M_01"
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: -2215
-            Y: 3970
-            Z: 1015
+            X: -5725
+            Y: 2765
+            Z: 1570
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 24.9998856
+            Yaw: -29.9997673
           }
         }
         Overrides {
@@ -135,7 +204,183 @@ Objects {
       }
     }
     TemplateAsset {
-      Id: 999399356414642350
+      Id: 14260632711062808493
+    }
+  }
+}
+Objects {
+  Id: 924223727289080656
+  Name: "Group"
+  Transform {
+    Location {
+      X: -3610
+      Y: 1850
+      Z: -6250
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 7446452585190222613
+  ChildIds: 6550914287740128038
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6550914287740128038
+  Name: "Commoner_M_02"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 924223727289080656
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9134226063112657249
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_use_bandage"
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationRate"
+          Float: 0.892223418
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationPosition"
+          Float: 0
+        }
+        Overrides {
+          Name: "DisableReceiveDecals"
+          Bool: true
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10509631408962189416
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Commoner_M_02"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1795
+            Y: 1170
+            Z: 7795
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -19.9997482
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15822903472387647849
+    }
+  }
+}
+Objects {
+  Id: 7446452585190222613
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Location {
+      X: -7220
+      Y: 3700
+      Z: -6250
+    }
+    Rotation {
+      Yaw: -24.999918
+    }
+    Scale {
+      X: 1.19999993
+      Y: 1.19999993
+      Z: 1.19999993
+    }
+  }
+  ParentId: 924223727289080656
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialog Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -1795
+            Y: 1160
+            Z: 7825
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -24.9998055
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 6632466429702069431
+            SubObjectId: 9134226063112657249
+            InstanceId: 6550914287740128038
+            TemplateId: 15822903472387647849
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Adventurer"
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Smuggler4.1"
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
     }
   }
 }
@@ -267,15 +512,15 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Smuggler"
+          String: "Adventurer"
         }
         Overrides {
           Name: "cs:StartDialogId"
-          String: "Smuggler2"
+          String: "Smuggler2.1"
         }
         Overrides {
           Name: "cs:DefaultLoopAnimation"
-          String: "unarmed_laugh"
+          String: "unarmed_magic_up"
         }
         Overrides {
           Name: "Scale"
@@ -302,6 +547,160 @@ Objects {
   }
 }
 Objects {
+  Id: 11170132355414705905
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 6328857406631412163
+  ChildIds: 9509892764580073178
+  ChildIds: 8040658191015629833
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8040658191015629833
+  Name: "Fantasy Human Gal 2"
+  Transform {
+    Location {
+      X: -5795
+      Y: 2080
+      Z: 1645
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11170132355414705905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7947441615123677894
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 9509892764580073178
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11170132355414705905
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialog Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -5815
+            Y: 2090
+            Z: 1570
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -24.9998474
+          }
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: false
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Adventurers"
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Smuggler5.1"
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 8040658191015629833
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14349045989581707847
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 2.10000014
+            Y: 3.4
+            Z: 3.4
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
   Id: 6328857406631412163
   Name: "Smuggler_F_Leather"
   Transform {
@@ -311,7 +710,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 11170132355414705905
   TemplateInstance {
     ParameterOverrideMap {
       key: 15361399326142505981
@@ -331,7 +730,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -104.999855
+            Yaw: -104.999863
           }
         }
         Overrides {
@@ -1092,7 +1491,13 @@ Objects {
         }
         Overrides {
           Name: "cs:StartDialogId"
-          String: "NoBother"
+          String: "NoBother2"
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 7075018509036230757
+          }
         }
       }
     }
@@ -1232,6 +1637,14 @@ Objects {
         Overrides {
           Name: "cs:StartDialogId"
           String: "MerchantDialog"
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: true
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
         }
       }
     }
@@ -1515,6 +1928,14 @@ Objects {
         Overrides {
           Name: "cs:PlayDialogAnimations"
           Bool: true
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "MerchantDialog"
         }
       }
     }
