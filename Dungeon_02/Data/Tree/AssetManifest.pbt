@@ -233,15 +233,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15748382232661747833
-  Name: "Decal Vines End 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_liane_002"
-  }
-}
-Assets {
   Id: 15663227477796206871
   Name: "Wall End Fancy 2m"
   PlatformAssetType: 1
@@ -284,15 +275,6 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_forestbirds_ref"
-  }
-}
-Assets {
-  Id: 15009143983141370612
-  Name: "Fantasy Corners 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Corners_004"
   }
 }
 Assets {
@@ -476,15 +458,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12559796121075739811
-  Name: "Stone Basic"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "stone_001"
-  }
-}
-Assets {
   Id: 12467798854610493452
   Name: "Waterfall Top Volume VFX"
   PlatformAssetType: 8
@@ -584,15 +557,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11686664538044071765
-  Name: "Lense - Quarter"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarterlense_001"
-  }
-}
-Assets {
   Id: 11676106217465315892
   Name: "Kelp Tall Bush 01"
   PlatformAssetType: 1
@@ -626,15 +590,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bush_generic_002"
-  }
-}
-Assets {
-  Id: 10858823349557683820
-  Name: "Scifi Corners 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_SciFi_Corners_003"
   }
 }
 Assets {
@@ -737,15 +692,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9411494299355455685
-  Name: "Fantasy Symbol 03"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Symbol_03"
-  }
-}
-Assets {
   Id: 9405092179001815141
   Name: "Jungle Vine (tileable)"
   PlatformAssetType: 2
@@ -770,15 +716,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_clover_patch_001"
-  }
-}
-Assets {
-  Id: 9057539458172052458
-  Name: "Ivy 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_005"
   }
 }
 Assets {
@@ -917,15 +854,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7256653248404110546
-  Name: "Icon Rock"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Rock"
-  }
-}
-Assets {
   Id: 7240897054821455019
   Name: "Fairy Dot Volume VFX"
   PlatformAssetType: 8
@@ -998,15 +926,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6069789934792842042
-  Name: "Tree Redwood Bare Small"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_006"
-  }
-}
-Assets {
   Id: 5997899144091735683
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1
@@ -1022,15 +941,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_008"
-  }
-}
-Assets {
-  Id: 5710984810966512123
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -1097,15 +1007,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4927371234374033460
-  Name: "BG Flat 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_019"
-  }
-}
-Assets {
   Id: 4887463216853819466
   Name: "Arch"
   PlatformAssetType: 1
@@ -1139,15 +1040,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_gen_branches_small_001"
-  }
-}
-Assets {
-  Id: 4223281573148032664
-  Name: "Gem - Trillion Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_trillion_polished_001"
   }
 }
 Assets {
@@ -1193,15 +1085,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_003"
-  }
-}
-Assets {
-  Id: 2790062659457270157
-  Name: "Tree Redwood Bare Big"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_redwood_003"
   }
 }
 Assets {
@@ -1286,6 +1169,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2181351573371274359
+  Name: "Tree Redwood Bare Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_006"
+  }
+}
+Assets {
   Id: 2159983635773558597
   Name: "Flower Wild Lily 02"
   PlatformAssetType: 1
@@ -1355,15 +1247,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_liana-vine_end_001_uv"
-  }
-}
-Assets {
-  Id: 1239456110199431252
-  Name: "Decal Vines Tile 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_liane_001"
   }
 }
 Assets {

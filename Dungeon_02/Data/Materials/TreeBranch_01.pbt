@@ -2,7 +2,7 @@
   Id: 16108791282564693003
   Name: "TreeBranch_01"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 17687305985467625492
     ParameterOverrides {

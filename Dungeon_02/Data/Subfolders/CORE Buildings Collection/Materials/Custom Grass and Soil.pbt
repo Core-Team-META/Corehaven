@@ -2,7 +2,7 @@
   Id: 16904124704137093934
   Name: "Custom Grass and Soil"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 884462330746487990
     ParameterOverrides {

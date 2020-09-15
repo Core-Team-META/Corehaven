@@ -2,7 +2,7 @@
   Id: 13034820078143402780
   Name: "Mansion Leather Couch"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 13349528077905922012
     ParameterOverrides {

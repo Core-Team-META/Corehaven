@@ -2,7 +2,7 @@
   Id: 12313774959540797933
   Name: "Advanced Material Water"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 2258330122587909962
     ParameterOverrides {

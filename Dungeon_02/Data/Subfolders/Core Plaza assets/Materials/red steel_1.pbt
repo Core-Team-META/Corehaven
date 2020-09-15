@@ -2,7 +2,7 @@
   Id: 2062392902332726406
   Name: "red steel"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 63
   CustomMaterialAsset {
     BaseMaterialId: 9879633121196264389
     ParameterOverrides {
