@@ -15,8 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 10874816195359804700
-        ChildIds: 9911024199321216724
+        ParentId: 11492308109361872204
+        ChildIds: 9505553813740339923
         ChildIds: 9581213982885349844
         ChildIds: 17125525118502607253
         ChildIds: 16168707975662468078
@@ -40,18 +40,47 @@
         }
       }
       Objects {
-        Id: 9911024199321216724
-        Name: "Fire Volume VFX"
+        Id: 9505553813740339923
+        Name: "ClientContext"
         Transform {
           Location {
-            X: 1.51562309
-            Y: 63.7283096
+            X: 1.51562691
+            Y: 63.7283249
             Z: 0.780105591
           }
           Rotation {
             Pitch: -90
-            Yaw: 40.9717369
-            Roll: 49.0282021
+            Yaw: 42.8789139
+            Roll: 47.1210098
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7100775556368623387
+        ChildIds: 299943583314227979
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 299943583314227979
+        Name: "Fire Volume VFX"
+        Transform {
+          Location {
+            X: -0.000732421875
+          }
+          Rotation {
+            Pitch: -6.83018879e-05
+            Yaw: 7.51321058e-05
+            Roll: -5.46415504e-05
           }
           Scale {
             X: 0.372678459
@@ -59,7 +88,7 @@
             Z: 0.372678459
           }
         }
-        ParentId: 7100775556368623387
+        ParentId: 9505553813740339923
         UnregisteredParameters {
           Overrides {
             Name: "bp:Volume Type"

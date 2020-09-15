@@ -4,13 +4,6 @@ Objects {
   Id: 15278292460052330618
   Name: "Torch_Holder_Undead"
   Transform {
-    Location {
-      X: 4677.80176
-      Y: -1129.7915
-      Z: 730.32428
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -18,6 +11,12 @@ Objects {
     }
   }
   ParentId: 16359149036364134668
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2264634198754595121
@@ -38,14 +37,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -8.9468689
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -582,6 +573,19 @@ Objects {
             Z: 22.84198
           }
         }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
       }
     }
     TemplateAsset {
@@ -618,7 +622,7 @@ Objects {
   ChildIds: 4825426252684567826
   ChildIds: 10604220362644130217
   ChildIds: 2107624698212724381
-  ChildIds: 9721150231352856644
+  ChildIds: 10865813824503464527
   ChildIds: 2118072203674153465
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -682,8 +686,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9721150231352856644
-  Name: "Torch Fire VFX"
+  Id: 10865813824503464527
+  Name: "TorchFire"
   Transform {
     Location {
       X: -2.31640625
@@ -699,6 +703,33 @@ Objects {
     }
   }
   ParentId: 5400282013282173920
+  ChildIds: 9721150231352856644
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 9721150231352856644
+  Name: "Torch Fire VFX"
+  Transform {
+    Location {
+      X: 0.0012500158
+      Y: -0.000143904472
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10865813824503464527
   UnregisteredParameters {
     Overrides {
       Name: "bp:Life"

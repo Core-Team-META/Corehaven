@@ -1,6 +1,43 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 4515501329326320072
+  Name: "Bush 02"
+  Transform {
+    Location {
+      X: -6286.63965
+      Y: 3514.04688
+      Z: -635.953613
+    }
+    Rotation {
+      Yaw: 12.1782341
+    }
+    Scale {
+      X: 0.777365267
+      Y: 0.556962192
+      Z: 0.777361751
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16077212917008984281
+    }
+    Teams {
+    }
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 7676128103013057087
   Name: "Bush 02"
   Transform {

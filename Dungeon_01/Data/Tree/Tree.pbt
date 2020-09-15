@@ -493,9 +493,9 @@ Objects {
   Name: "Sea"
   Transform {
     Location {
-      X: -7008.4043
-      Y: -8193.64844
-      Z: -1036.98572
+      X: 27236.707
+      Y: -16091.6787
+      Z: -1019.56519
     }
     Rotation {
     }

@@ -190,8 +190,8 @@ Objects {
   }
 }
 Objects {
-  Id: 14746335038236077784
-  Name: "Wispy Fog Volume VFX"
+  Id: 10649564318495434196
+  Name: "MerchanArea_VFX"
   Transform {
     Location {
       X: -437.129883
@@ -201,12 +201,39 @@ Objects {
     Rotation {
     }
     Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 14746335038236077784
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 14746335038236077784
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+      X: -0.0009765625
+      Y: -9.15527344e-05
+    }
+    Rotation {
+    }
+    Scale {
       X: 66.2212219
       Y: 53.3682899
       Z: 2.70019865
     }
   }
-  ParentId: 7192807854345907469
+  ParentId: 10649564318495434196
   UnregisteredParameters {
     Overrides {
       Name: "bp:Wind Speed"
@@ -394,7 +421,7 @@ Objects {
   }
   ParentId: 7192807854345907469
   ChildIds: 13341573436831121514
-  ChildIds: 566360565418929451
+  ChildIds: 14377107941644207914
   ChildIds: 3769778985457928890
   ChildIds: 1090192409986803579
   Collidable_v2 {
@@ -520,8 +547,8 @@ Objects {
   }
 }
 Objects {
-  Id: 566360565418929451
-  Name: "Fire Volume VFX"
+  Id: 14377107941644207914
+  Name: "ClientContext"
   Transform {
     Location {
       X: -33.6913147
@@ -529,7 +556,32 @@ Objects {
       Z: 102.026367
     }
     Rotation {
-      Yaw: 95.4983292
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16914329448798879810
+  ChildIds: 566360565418929451
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 566360565418929451
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: 95.4983139
     }
     Scale {
       X: 2.57564116
@@ -537,7 +589,7 @@ Objects {
       Z: 2.00902128
     }
   }
-  ParentId: 16914329448798879810
+  ParentId: 14377107941644207914
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
@@ -640,7 +692,7 @@ Objects {
   }
   ParentId: 7192807854345907469
   ChildIds: 14192694418608230730
-  ChildIds: 3177949432424930068
+  ChildIds: 12170431593372677645
   ChildIds: 8529121333865155048
   ChildIds: 11975467426933682725
   Collidable_v2 {
@@ -766,8 +818,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3177949432424930068
-  Name: "Fire Volume VFX"
+  Id: 12170431593372677645
+  Name: "ClientContext"
   Transform {
     Location {
       X: -22.3361588
@@ -775,7 +827,35 @@ Objects {
       Z: 73.9402237
     }
     Rotation {
-      Yaw: 95.4983292
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1344931866224842842
+  ChildIds: 3177949432424930068
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 3177949432424930068
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: 0.00110775034
+      Y: 0.00125998107
+      Z: -0.000203450516
+    }
+    Rotation {
+      Yaw: 95.4983139
     }
     Scale {
       X: 1.66666639
@@ -783,7 +863,7 @@ Objects {
       Z: 2.00902128
     }
   }
-  ParentId: 1344931866224842842
+  ParentId: 12170431593372677645
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
@@ -5981,7 +6061,7 @@ Objects {
   }
   ParentId: 7192807854345907469
   ChildIds: 14264383911174415246
-  ChildIds: 10035970240999349023
+  ChildIds: 6333186939952783574
   ChildIds: 17229429383361778005
   ChildIds: 12621178664629828655
   Collidable_v2 {
@@ -6107,13 +6187,41 @@ Objects {
   }
 }
 Objects {
-  Id: 10035970240999349023
-  Name: "Fire Volume VFX"
+  Id: 6333186939952783574
+  Name: "ClientContext"
   Transform {
     Location {
       X: 12.6386919
       Y: -4.46507
       Z: 0.119832352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17168727746265290771
+  ChildIds: 10035970240999349023
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 10035970240999349023
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -0.000756544527
+      Y: 0.00029985694
+      Z: 0.000203450516
     }
     Rotation {
       Yaw: 85.7025528
@@ -6124,7 +6232,7 @@ Objects {
       Z: 2.00902128
     }
   }
-  ParentId: 17168727746265290771
+  ParentId: 6333186939952783574
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
@@ -9786,51 +9894,6 @@ Objects {
   }
 }
 Objects {
-  Id: 13594801141972273757
-  Name: "Skeleton Mob"
-  Transform {
-    Location {
-      X: 3621.41211
-      Y: 5805.74
-      Z: 2968.81445
-    }
-    Rotation {
-      Yaw: -132.429321
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7192807854345907469
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14324126384198850775
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
-      }
-    }
-  }
-}
-Objects {
   Id: 6886650282300260610
   Name: "Fantasy Castle Stairs Spiral Trim 01 - 4m"
   Transform {
@@ -9964,7 +10027,7 @@ Objects {
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 8
+      Float: 16
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
@@ -10978,13 +11041,40 @@ Objects {
   }
 }
 Objects {
-  Id: 10259411291175924085
-  Name: "Callout Sparkle"
+  Id: 10196864188894658396
+  Name: "ClientContext"
   Transform {
     Location {
       X: -109.213867
       Y: 13.3876648
       Z: 2025.86011
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 10259411291175924085
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 10259411291175924085
+  Name: "Callout Sparkle"
+  Transform {
+    Location {
+      X: 0.0009765625
+      Y: -3.05175781e-05
     }
     Rotation {
       Yaw: -1.95944202
@@ -10995,7 +11085,7 @@ Objects {
       Z: 1.97516668
     }
   }
-  ParentId: 7192807854345907469
+  ParentId: 10196864188894658396
   UnregisteredParameters {
     Overrides {
       Name: "bp:Volume Type"
@@ -12690,7 +12780,7 @@ Objects {
   }
   ParentId: 7192807854345907469
   ChildIds: 3883369062054738664
-  ChildIds: 13124693926849025193
+  ChildIds: 16199724360131971221
   ChildIds: 15980252979486229511
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -12764,13 +12854,41 @@ Objects {
   }
 }
 Objects {
-  Id: 13124693926849025193
-  Name: "Fire Volume VFX"
+  Id: 16199724360131971221
+  Name: "ClientContext"
   Transform {
     Location {
       X: -26.1649494
       Y: -70.2546921
       Z: 111.575111
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8997957456689928142
+  ChildIds: 13124693926849025193
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 13124693926849025193
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -0.00296077435
+      Y: -0.00169263082
+      Z: -0.000406901032
     }
     Rotation {
       Yaw: 85.7025528
@@ -12781,7 +12899,7 @@ Objects {
       Z: 2.00902128
     }
   }
-  ParentId: 8997957456689928142
+  ParentId: 16199724360131971221
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"
@@ -12884,11 +13002,9 @@ Objects {
   }
   ParentId: 7192807854345907469
   ChildIds: 7890226167529193759
-  ChildIds: 15556019364222874943
+  ChildIds: 4097427950733977989
   ChildIds: 11751201277853384579
-  ChildIds: 8423088248910544158
   ChildIds: 2334365366552074566
-  ChildIds: 9568019780650515047
   ChildIds: 18111615567658763851
   ChildIds: 14407457611747288955
   ChildIds: 518979524252544953
@@ -13116,60 +13232,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9568019780650515047
-  Name: "Fire Volume VFX"
-  Transform {
-    Location {
-      X: -2415.34277
-      Y: -434.998779
-      Z: 5.4744463
-    }
-    Rotation {
-      Yaw: 111.190979
-    }
-    Scale {
-      X: 4.02780724
-      Y: 7.47822
-      Z: 2.00902128
-    }
-  }
-  ParentId: 11817743743075077680
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 42.2979889
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 2.69715309
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 1.57046938
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.5
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 12918556334648073243
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
-  }
-}
-Objects {
   Id: 2334365366552074566
   Name: "Point Light"
   Transform {
@@ -13217,60 +13279,6 @@ Objects {
       }
       MaxDrawDistance: 10000
       MaxDistanceFadeRange: 1000
-    }
-  }
-}
-Objects {
-  Id: 8423088248910544158
-  Name: "Fire Volume VFX"
-  Transform {
-    Location {
-      X: -2926.18555
-      Y: 117.516273
-      Z: 333.665955
-    }
-    Rotation {
-      Yaw: 111.191017
-    }
-    Scale {
-      X: 7.82230043
-      Y: 16.5829697
-      Z: 2.00902128
-    }
-  }
-  ParentId: 11817743743075077680
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 42.2979889
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 2.69715309
-    }
-    Overrides {
-      Name: "bp:Life"
-      Float: 1.57046938
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.5
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 12918556334648073243
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
     }
   }
 }
@@ -13336,13 +13344,96 @@ Objects {
   }
 }
 Objects {
+  Id: 4097427950733977989
+  Name: "ClientContext"
+  Transform {
+    Location {
+      X: -1517.11694
+      Y: 109.421066
+      Z: 0.119832352
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11817743743075077680
+  ChildIds: 15556019364222874943
+  ChildIds: 8423088248910544158
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 8423088248910544158
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -1409.06482
+      Y: 8.09366798
+      Z: 626.826965
+    }
+    Rotation {
+      Yaw: 111.191017
+    }
+    Scale {
+      X: 7.82230043
+      Y: 16.5829697
+      Z: 2.00902128
+    }
+  }
+  ParentId: 4097427950733977989
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 42.2979889
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.69715309
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 1.57046938
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
   Id: 15556019364222874943
   Name: "Fire Volume VFX"
   Transform {
     Location {
-      X: -108.048462
-      Y: 101.325859
-      Z: 0.119832352
+      X: 1409.07214
+      Y: -8.09672
+      Z: 0.000203450516
     }
     Rotation {
       Yaw: 85.7025528
@@ -13353,7 +13444,7 @@ Objects {
       Z: 2.00902128
     }
   }
-  ParentId: 11817743743075077680
+  ParentId: 4097427950733977989
   UnregisteredParameters {
     Overrides {
       Name: "bp:Emissive Boost"

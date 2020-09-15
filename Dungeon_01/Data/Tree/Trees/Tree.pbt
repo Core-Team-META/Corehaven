@@ -5,12 +5,12 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: -2989.27637
-      Y: 11835.6084
+      X: -2963.75684
+      Y: 11734.9131
       Z: 2526.6958
     }
     Rotation {
-      Yaw: 121.690605
+      Yaw: 155.167496
     }
     Scale {
       X: 1.07918632
@@ -433,12 +433,14 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 1862.71875
-      Y: 4408.00098
-      Z: 1301.49194
+      X: 1975.87305
+      Y: 4395.12109
+      Z: 1158.85791
     }
     Rotation {
-      Yaw: -171.78215
+      Pitch: -8.96789551
+      Yaw: -151.706345
+      Roll: 5.17569
     }
     Scale {
       X: 1.02260745

@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 17272062021236783540
+  Name: "Ambience Underwater Designed 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_ambience_underwater_designed_01_Cue_ref"
+  }
+}
+Assets {
   Id: 16239932087423220404
   Name: "Fantasy Music Score Set 01"
   PlatformAssetType: 10
@@ -23,6 +32,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioBlueprintAssetRef"
     AssetId: "sfxabp_forestbirds_ref"
+  }
+}
+Assets {
+  Id: 9556132196479142670
+  Name: "Nature Water Splash Large 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfx_water_splash_large_01_Cue_ref"
   }
 }
 Assets {
