@@ -254,6 +254,33 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "It's okay, my friend.", TALK_ANIMATION)
     API.AddText(id, "This place is for everyone.", YES_ANIMATION)
 
+    id = "Priestess"
+    API.RegisterDialogueId(id)
+    API.AddText(id, '...')
+    API.AddText(id, 'I am waiting for someone to come back...')
+
+    id = "Stranger"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'Hey... What do you want?')
+
+    API.AddOption(id, "...", "Stranger4")
+    API.AddOption(id, "Owner?", "Stranger2")
+    API.AddOption(id, "Train", "Stranger3")
+
+    id = "Stranger2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'We used to have someone here who teaches us the way of fighting...')
+    API.AddText(id, 'But that person left Corehaven and set sail on a Galleon to far away islands.', TALK_ANIMATION)
+
+    id = "Stranger3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'Once he comes back... Maybe you will get to train with us.')
+
+    id = "Stranger4"
+    API.RegisterDialogueId(id)
+    API.AddText(id, 'We lost our magical energy we once have...')
+    API.AddText(id, 'If that person returns back home, we might get our powers back.', TALK_ANIMATION)
+
     -- Other dialogs
     id = "Sign"
     API.RegisterDialogueId(id)
@@ -263,6 +290,11 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, '"Gather your fellow warriors from all around the world to challenges in the dungeon worlds!"')
     API.AddText(id, '"Good luck to all of you!"')
     API.AddText(id, '"~ Manticore Guild ~"')
+
+    id = "Sleep"
+    API.RegisterDialogueId(id)
+    API.AddText(id, '"ZzzZzz"')
+    API.AddText(id, 'This man snores really loud...')
 
 end
 

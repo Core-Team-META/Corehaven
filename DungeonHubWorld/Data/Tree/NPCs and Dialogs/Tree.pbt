@@ -34,6 +34,13 @@ Objects {
   ChildIds: 10480283390017259191
   ChildIds: 924223727289080656
   ChildIds: 866783569642170081
+  ChildIds: 6485487148835751902
+  ChildIds: 5242014823355942180
+  ChildIds: 12714735733483420931
+  ChildIds: 10340055090183174356
+  ChildIds: 5159309234536383154
+  ChildIds: 16767020233002569981
+  ChildIds: 16752543726214201114
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -41,6 +48,699 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 16752543726214201114
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 18010771305414530573
+  ChildIds: 9959083287818062245
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9959083287818062245
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16752543726214201114
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialog Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2255
+            Y: 4700
+            Z: 1055
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: false
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+          }
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Sleep"
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
+  Id: 18010771305414530573
+  Name: "Commoner_M_01"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16752543726214201114
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 6153812158312227725
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_death"
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationPosition"
+          Float: 0.706127763
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationRate"
+          Float: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6804185482513935256
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Commoner_M_01"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2250
+            Y: 4670
+            Z: 1015
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 14260632711062808493
+    }
+  }
+}
+Objects {
+  Id: 16767020233002569981
+  Name: "Fantasy Human Gal 1"
+  Transform {
+    Location {
+      X: 1880
+      Y: -11020
+      Z: 1115
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14914706139505143474
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_ready"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_punch_left"
+        PlaybackRate: 1
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
+  Id: 5159309234536383154
+  Name: "Group"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 13350371305715147618
+  ChildIds: 9550736470107417917
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9550736470107417917
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5159309234536383154
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialog Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4160
+            Y: -12440
+            Z: 1840
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 11942801310544410455
+            SubObjectId: 9585201413149408431
+            InstanceId: 13350371305715147618
+            TemplateId: 999399356414642350
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Priestess"
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Priestess"
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: ""
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: false
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
+  Id: 13350371305715147618
+  Name: "Priestess"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5159309234536383154
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 15932366417693831876
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Priestess"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4165
+            Y: -12445
+            Z: 1805
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 145.000076
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 999399356414642350
+    }
+  }
+}
+Objects {
+  Id: 10340055090183174356
+  Name: "Fantasy Human Guy"
+  Transform {
+    Location {
+      X: 3110
+      Y: -12280
+      Z: 1115
+    }
+    Rotation {
+      Yaw: -89.9995117
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 18039984299850060191
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_ready"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_punch_right"
+        PlaybackRate: 0.8
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
+  Id: 12714735733483420931
+  Name: "Fantasy Human Guy"
+  Transform {
+    Location {
+      X: -425
+      Y: -8455
+      Z: 1115
+    }
+    Rotation {
+      Yaw: -174.999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 7947441615123677894
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_ready"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_magic_up"
+        PlaybackRate: 1
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
+  Id: 5242014823355942180
+  Name: "Fantasy Human Guy"
+  Transform {
+    Location {
+      X: -255
+      Y: -10090
+      Z: 1115
+    }
+    Rotation {
+      Yaw: -174.999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 489066997074814127
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_ready"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        Animation: "unarmed_magic_bolt"
+        PlaybackRate: 1
+        ShouldLoop: true
+      }
+    }
+  }
+}
+Objects {
+  Id: 6485487148835751902
+  Name: "Group"
+  Transform {
+    Location {
+      X: 1195
+      Y: -6270
+      Z: 1085
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 11254139885197496211
+  ChildIds: 13492454561738277994
+  ChildIds: 8858571126252782383
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8858571126252782383
+  Name: "NPC Dialog Trigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6485487148835751902
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8616549876975302597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "NPC Dialog Trigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1380
+            Y: -3245
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -24.9997864
+          }
+        }
+        Overrides {
+          Name: "cs:AnimatedMesh"
+          ObjectReference {
+            SelfId: 11254139885197496211
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Stranger"
+        }
+        Overrides {
+          Name: "cs:StartDialogId"
+          String: "Stranger"
+        }
+        Overrides {
+          Name: "cs:DefaultLoopAnimation"
+          String: "unarmed_use_bandage"
+        }
+        Overrides {
+          Name: "cs:PlayDialogAnimations"
+          Bool: true
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.19999993
+            Y: 1.19999993
+            Z: 1.19999993
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4839589651670793246
+    }
+  }
+}
+Objects {
+  Id: 13492454561738277994
+  Name: "Fox Mob"
+  Transform {
+    Location {
+      X: 1305
+      Y: -3125
+    }
+    Rotation {
+      Yaw: -124.999863
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6485487148835751902
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11645586294150863616
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStance: "unarmed_idle_relaxed"
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
+  }
+}
+Objects {
+  Id: 11254139885197496211
+  Name: "Human Guy 1"
+  Transform {
+    Location {
+      X: 1395
+      Y: -3215
+      Z: 65
+    }
+    Rotation {
+      Yaw: -149.999832
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6485487148835751902
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.200000048
+        G: 0.0874172449
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail2:color"
+      Color {
+        R: 0.200000048
+        G: 0.0874172449
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13577800829012533233
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    AnimatedMesh {
+      AnimationStancePlaybackRate: 1
+      AnimationStanceShouldLoop: true
+      AnimationPlaybackRateMultiplier: 1
+      PlayOnStartAnimation {
+        PlaybackRate: 1
+      }
+    }
   }
 }
 Objects {
@@ -1708,7 +2408,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18039984299850060191
+      Id: 489066997074814127
     }
     Teams {
       IsTeamCollisionEnabled: true
