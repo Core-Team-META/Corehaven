@@ -92,13 +92,13 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 51752.9727
-      Y: 8257.27734
-      Z: 5378.53
+      X: 51725.418
+      Y: 8208.82
+      Z: 5362.66064
     }
     Rotation {
       Pitch: 0.095001094
-      Yaw: -14.1923828
+      Yaw: -14.1924438
       Roll: -2.4385376
     }
     Scale {
@@ -198,13 +198,13 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 46931.5
-      Y: 9975.30762
-      Z: 4720.60254
+      X: 46936.25
+      Y: 9786.55566
+      Z: 4591.8125
     }
     Rotation {
       Pitch: 0.095001094
-      Yaw: -14.1922913
+      Yaw: -14.1923523
       Roll: -2.4385376
     }
     Scale {
@@ -276,17 +276,17 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 44493.6953
-            Y: 8582.31152
-            Z: 4237.37793
+            X: 44732.7305
+            Y: 8538.86816
+            Z: 4238.48633
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: 0.124794379
-            Yaw: -13.4933777
-            Roll: -2.43722534
+            Pitch: -0.0830383301
+            Yaw: -18.3706665
+            Roll: -2.43908691
           }
         }
         Overrides {
@@ -309,14 +309,14 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 44416.8125
-      Y: 8582.26367
-      Z: 4750.67676
+      X: 44657.8867
+      Y: 8544.75879
+      Z: 4752.05176
     }
     Rotation {
-      Pitch: 0.095001094
-      Yaw: -14.1922
-      Roll: -2.4385376
+      Pitch: -0.112762451
+      Yaw: -19.0694275
+      Roll: -2.43777466
     }
     Scale {
       X: 1

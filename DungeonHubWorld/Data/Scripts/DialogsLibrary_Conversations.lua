@@ -287,7 +287,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "There is an announcement on the board...")
     API.AddText(id, '"To all the visitors of Corehaven:"')
     API.AddText(id, '"We finally opened the Portal Area for you to go on adventures!"')
-    API.AddText(id, '"Gather your fellow warriors from all around the world to challenges in the dungeon worlds!"')
+    API.AddText(id, '"Gather your fellow warriors from all around the world to take on the challenges in the dungeons!"')
     API.AddText(id, '"Good luck to all of you!"')
     API.AddText(id, '"~ Manticore Guild ~"')
 

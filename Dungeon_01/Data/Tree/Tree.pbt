@@ -22,6 +22,8 @@ Objects {
   ChildIds: 15088711163151659875
   ChildIds: 7218498012147464502
   ChildIds: 18109997350451454343
+  ChildIds: 15438413245421916821
+  ChildIds: 1503052918030638976
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,6 +33,61 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 1503052918030638976
+  Name: "InvisibleCollisions"
+  Transform {
+    Location {
+      X: -3567.89893
+      Y: -10233.6621
+      Z: -993.3125
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "InvisibleCollisions"
+  }
+}
+Objects {
+  Id: 15438413245421916821
+  Name: "KillZones"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "KillZones"
   }
 }
 Objects {
@@ -523,7 +580,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -533,10 +590,7 @@ Objects {
       Id: 13350819167120802023
     }
     Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
     }
-    EnableCameraCollision: true
     StaticMesh {
       Physics {
       }

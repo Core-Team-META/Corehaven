@@ -1,6 +1,327 @@
 ﻿Name: "Blacksmith"
 RootId: 7959758257364523290
 Objects {
+  Id: 16361909975533738525
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -163.597168
+      Y: -2856.73218
+      Z: -180.816406
+    }
+    Rotation {
+      Yaw: 80.6821
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10226585540312454645
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -44.2504082
+      Y: -2899.57617
+      Z: -132.187744
+    }
+    Rotation {
+      Pitch: -3.09890747
+      Yaw: 6.42941618
+      Roll: 93.6140518
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6134812484964524593
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -90.4316559
+      Y: -2972.79053
+      Z: -180.816406
+    }
+    Rotation {
+      Yaw: 44.8587112
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3313536056638694903
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -3775.25464
+      Y: -1546.40259
+      Z: -187.702148
+    }
+    Rotation {
+      Yaw: 78.9935
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17570156562974839092
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -1256.99158
+      Y: 943.858765
+      Z: 68.7678223
+    }
+    Rotation {
+      Yaw: 78.9935913
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6976975180142003769
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -1131.88892
+      Y: 774.581116
+      Z: 68.7678223
+    }
+    Rotation {
+      Yaw: 78.9936523
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5385830121438190785
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -1140.22632
+      Y: 887.865295
+      Z: 68.7678223
+    }
+    Rotation {
+      Yaw: 78.9937057
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2051308492807351477
+  Name: "Wooden Barrel"
+  Transform {
+    Location {
+      X: -1158.40283
+      Y: 1011.26141
+      Z: 68.7678223
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.2
+      Y: 1.2
+      Z: 1.2
+    }
+  }
+  ParentId: 7959758257364523290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8277973835846626301
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 6084677125503610240
   Name: "Craftsman Roof 02 Corner Out"
   Transform {
@@ -4565,14 +4886,14 @@ Objects {
   Name: "SwordStand"
   Transform {
     Location {
-      X: -490.029205
-      Y: -489.715424
+      X: -341.746521
+      Y: -534.399109
       Z: 224.022949
     }
     Rotation {
-      Pitch: 2.33574
-      Yaw: -82.1758423
-      Roll: 163.048798
+      Pitch: 1.86473036
+      Yaw: -83.7189331
+      Roll: 162.991867
     }
     Scale {
       X: 1
@@ -6225,1692 +6546,6 @@ Objects {
     }
   }
   ParentId: 63950026356082708
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17519262517010555805
-  Name: "SwordStand"
-  Transform {
-    Location {
-      X: -851.366821
-      Y: -424.923828
-      Z: 222.458496
-    }
-    Rotation {
-      Pitch: 2.335747
-      Yaw: 97.8241806
-      Roll: 163.049011
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 7959758257364523290
-  ChildIds: 10529006830532277277
-  ChildIds: 7212815197696032411
-  ChildIds: 7165420409091362732
-  ChildIds: 11715579561864199747
-  ChildIds: 15243571264378736437
-  ChildIds: 4139479860214060177
-  ChildIds: 16026968118650819645
-  ChildIds: 4364650627318249546
-  ChildIds: 3575770660912278033
-  ChildIds: 5388701483639080566
-  ChildIds: 5868630747008699242
-  ChildIds: 10984623343455302077
-  ChildIds: 13760005811323091740
-  ChildIds: 14369175782281396715
-  ChildIds: 6947597924945566383
-  ChildIds: 12044435288284986594
-  ChildIds: 10540102947299399378
-  ChildIds: 234855727118757414
-  ChildIds: 4121230306389249550
-  ChildIds: 15722217643042187590
-  ChildIds: 3843153096830007561
-  ChildIds: 6622827526491035393
-  ChildIds: 10925777559916091656
-  ChildIds: 3208657091292139989
-  ChildIds: 17972003773352006036
-  ChildIds: 12683242791103902657
-  ChildIds: 4864958205111271612
-  ChildIds: 5821964018713285389
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 5821964018713285389
-  Name: "Fantasy Weapon - Sword 03 (Prop)"
-  Transform {
-    Location {
-      X: -85.0235519
-      Y: 0.965171814
-      Z: 2.18936729
-    }
-    Rotation {
-      Pitch: -13.7002869
-      Yaw: -171.492279
-      Roll: -35.1633301
-    }
-    Scale {
-      X: 0.969256341
-      Y: 0.969256341
-      Z: 0.969256341
-    }
-  }
-  ParentId: 17519262517010555805
-  ChildIds: 1002291196250847324
-  ChildIds: 16409671004464872050
-  ChildIds: 12367195805949805938
-  ChildIds: 2858590072926640718
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 2858590072926640718
-  Name: "Fantasy Pommel 03"
-  Transform {
-    Location {
-      Z: -13
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.25
-      Y: 1.25
-      Z: 1.25
-    }
-  }
-  ParentId: 5821964018713285389
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14405960884493885038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12367195805949805938
-  Name: "Fantasy Sword Blade 04"
-  Transform {
-    Location {
-      Z: 20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 5821964018713285389
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.59375
-        G: 0.59375
-        B: 0.59375
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 18434079688766523124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4342756216088781504
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16409671004464872050
-  Name: "Fantasy Sword Guard 02"
-  Transform {
-    Location {
-      Z: 11
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.25
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 5821964018713285389
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1920010878601219178
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 1002291196250847324
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      Z: -15
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 5821964018713285389
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4864958205111271612
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 96.4184875
-      Y: 104.818977
-      Z: 102.130417
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.37014854
-      Y: 0.0912025943
-      Z: 0.188830927
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12683242791103902657
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 98.9425507
-      Y: 87.2638474
-      Z: 107.588722
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.370155096
-      Y: 0.14794156
-      Z: 0.188822731
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17972003773352006036
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 111.216248
-      Y: 1.89929199
-      Z: 134.130524
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.37014854
-      Y: 0.0912025943
-      Z: 0.188830927
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3208657091292139989
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 109.054504
-      Y: 16.9343414
-      Z: 129.45578
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.370155096
-      Y: 0.14794156
-      Z: 0.188822731
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10925777559916091656
-  Name: "Fantasy Weapon - Sword 03 (Prop)"
-  Transform {
-    Location {
-      X: 52.7333221
-      Y: 7.02335739
-      Z: 3.62389159
-    }
-    Rotation {
-      Pitch: -0.289545357
-      Yaw: -40.2798042
-      Roll: -2.05142593
-    }
-    Scale {
-      X: 0.969256341
-      Y: 0.969256341
-      Z: 0.969256341
-    }
-  }
-  ParentId: 17519262517010555805
-  ChildIds: 8883405712588611959
-  ChildIds: 4647215427098036391
-  ChildIds: 8908677464400474828
-  ChildIds: 4450764053907865332
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 4450764053907865332
-  Name: "Fantasy Pommel 03"
-  Transform {
-    Location {
-      Z: -13
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.25
-      Y: 1.25
-      Z: 1.25
-    }
-  }
-  ParentId: 10925777559916091656
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14405960884493885038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8908677464400474828
-  Name: "Fantasy Sword Blade 04"
-  Transform {
-    Location {
-      Z: 20
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 10925777559916091656
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.59375
-        G: 0.59375
-        B: 0.59375
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 18434079688766523124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4342756216088781504
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4647215427098036391
-  Name: "Fantasy Sword Guard 02"
-  Transform {
-    Location {
-      Z: 11
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.25
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 10925777559916091656
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1920010878601219178
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8883405712588611959
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      Z: -15
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 10925777559916091656
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6622827526491035393
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      X: -128.548187
-      Y: -19.4633179
-      Z: -10.5317459
-    }
-    Rotation {
-      Pitch: -20.6661091
-      Yaw: -0.716439545
-      Roll: 0.748072505
-    }
-    Scale {
-      X: 1.10308647
-      Y: 1.10308647
-      Z: 1.10308647
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3843153096830007561
-  Name: "Fantasy Weapon - Sword 02 (Prop)"
-  Transform {
-    Location {
-      X: -121.762131
-      Y: -19.2972946
-      Z: 7.45303535
-    }
-    Rotation {
-      Pitch: -20.6661167
-      Yaw: -0.716432691
-      Roll: 0.748073041
-    }
-    Scale {
-      X: 1.10308647
-      Y: 1.10308647
-      Z: 1.10308647
-    }
-  }
-  ParentId: 17519262517010555805
-  ChildIds: 13131871411023632491
-  ChildIds: 9877459696838623810
-  ChildIds: 15423706066910356737
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 15423706066910356737
-  Name: "Fantasy Pommel 03"
-  Transform {
-    Location {
-      X: -0.00034495577
-      Y: -7.6080476e-05
-      Z: -15.0001535
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.41293347
-      Y: 1.41293347
-      Z: 1.41293347
-    }
-  }
-  ParentId: 3843153096830007561
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1383772742094820961
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 9877459696838623810
-  Name: "Fantasy Sword Blade 03"
-  Transform {
-    Location {
-      Z: 17.9407806
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 0.6292454
-      Z: 1
-    }
-  }
-  ParentId: 3843153096830007561
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.59375
-        G: 0.59375
-        B: 0.59375
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 18434079688766523124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4801985963367974663
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13131871411023632491
-  Name: "Fantasy Sword Guard 01"
-  Transform {
-    Location {
-      Z: 8.69589615
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3843153096830007561
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1920010878601219178
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15722217643042187590
-  Name: "Fantasy Pommel 04"
-  Transform {
-    Location {
-      X: -0.00011920929
-      Y: -4.33921814e-05
-      Z: -23.9000874
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -89.9999619
-      Roll: -5.16925775e-06
-    }
-    Scale {
-      X: 1.5
-      Y: 1.5
-      Z: 1.75
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 12510064410993333055
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4121230306389249550
-  Name: "Fantasy Pommel 03"
-  Transform {
-    Location {
-      X: -0.000208854675
-      Y: -1.1920929e-06
-      Z: -12.999918
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
-    }
-    Scale {
-      X: 1.25
-      Y: 1.25
-      Z: 1.25
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9675776263369201294
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 234855727118757414
-  Name: "Fantasy Sword Blade 04"
-  Transform {
-    Location {
-      X: -0.000130653381
-      Y: -1.78813934e-05
-      Z: 20.000021
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13888119501670323283
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10540102947299399378
-  Name: "Fantasy Sword Guard 02"
-  Transform {
-    Location {
-      X: 3.29017639e-05
-      Y: -5.28097153e-05
-      Z: 10.9998245
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
-    }
-    Scale {
-      X: 1.25
-      Y: 1
-      Z: 1.25
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9544913535066953067
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 12044435288284986594
-  Name: "Fantasy Staff Head 01"
-  Transform {
-    Location {
-      X: 0.00038433075
-      Y: 5.60283661e-05
-      Z: 15.0000153
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
-    }
-    Scale {
-      X: 1
-      Y: 1.5
-      Z: 1
-    }
-  }
-  ParentId: 17519262517010555805
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_Detail1:color"
-      Color {
-        R: 0.59375
-        G: 0.59375
-        B: 0.59375
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_Detail1:id"
-      AssetReference {
-        Id: 18434079688766523124
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17237692812658431496
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 6947597924945566383
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      X: -0.00038433075
-      Y: -5.60283661e-05
-      Z: -15.0000153
-    }
-    Rotation {
-      Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14369175782281396715
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -135.629883
-      Y: 6.4344635
-      Z: 8.99229431
-    }
-    Rotation {
-      Pitch: 16.7587357
-      Yaw: -81.8185272
-      Roll: -179.936127
-    }
-    Scale {
-      X: 0.042002216
-      Y: 0.18234387
-      Z: 0.202972129
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13760005811323091740
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -80.9560547
-      Y: 14.1637039
-      Z: 8.56071854
-    }
-    Rotation {
-      Pitch: 16.7587357
-      Yaw: -81.8185272
-      Roll: -179.936127
-    }
-    Scale {
-      X: 0.042002216
-      Y: 0.18234387
-      Z: 0.202972129
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10984623343455302077
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -30.8875141
-      Y: 21.3457031
-      Z: 8.50673103
-    }
-    Rotation {
-      Pitch: 16.7587357
-      Yaw: -81.8185272
-      Roll: -179.936127
-    }
-    Scale {
-      X: 0.042002216
-      Y: 0.18234387
-      Z: 0.202972129
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5868630747008699242
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 14.8851547
-      Y: 27.9114914
-      Z: 8.45737457
-    }
-    Rotation {
-      Pitch: 16.7587357
-      Yaw: -81.8185272
-      Roll: -179.936127
-    }
-    Scale {
-      X: 0.042002216
-      Y: 0.18234387
-      Z: 0.202972129
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 5388701483639080566
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 53.8283157
-      Y: 33.4976349
-      Z: 8.41538429
-    }
-    Rotation {
-      Pitch: 16.7587357
-      Yaw: -81.8185272
-      Roll: -179.936127
-    }
-    Scale {
-      X: 0.042002216
-      Y: 0.18234387
-      Z: 0.202972129
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 3575770660912278033
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 99.1778107
-      Y: 88.6759949
-      Z: 112.869774
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.359467804
-      Y: 0.507144749
-      Z: 0.173754334
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4364650627318249546
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 111.133118
-      Y: 2.52086639
-      Z: 139.734497
-    }
-    Rotation {
-      Pitch: 0.326790392
-      Yaw: -172.201
-      Roll: -17.164135
-    }
-    Scale {
-      X: 0.359467804
-      Y: 0.507144749
-      Z: 0.173754334
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16026968118650819645
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -172.736191
-      Y: -21.2355804
-      Z: 164.442947
-    }
-    Rotation {
-      Pitch: -85.5577545
-      Yaw: 0.0657408237
-      Roll: -80.5604172
-    }
-    Scale {
-      X: 0.187986031
-      Y: 0.3
-      Z: 0.300000191
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 4139479860214060177
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -182.99472
-      Y: 11.3271942
-      Z: 13.7718887
-    }
-    Rotation {
-      Pitch: 16.7598495
-      Yaw: -81.7891159
-      Roll: 175.423203
-    }
-    Scale {
-      X: 0.0678944886
-      Y: 0.370293111
-      Z: 0.41219002
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 15243571264378736437
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: -201.011139
-      Y: 71.1976471
-      Z: 133.802948
-    }
-    Rotation {
-      Pitch: -56.1625519
-      Yaw: -73.9031677
-      Roll: 172.113388
-    }
-    Scale {
-      X: 0.190735027
-      Y: 0.3
-      Z: 0.300000101
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11715579561864199747
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 96.2438354
-      Y: 114.288788
-      Z: 134.935074
-    }
-    Rotation {
-      Pitch: -55.9607048
-      Yaw: -92.0115891
-      Roll: -169.843262
-    }
-    Scale {
-      X: 0.190735027
-      Y: 0.3
-      Z: 0.300000101
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7165420409091362732
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 90.0807
-      Y: 51.0999908
-      Z: 15.4126091
-    }
-    Rotation {
-      Pitch: 16.7606201
-      Yaw: -81.8556213
-      Roll: -174.082962
-    }
-    Scale {
-      X: 0.0678944886
-      Y: 0.370293111
-      Z: 0.41219002
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 7212815197696032411
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 124.264862
-      Y: 26.8030624
-      Z: -3.65515518
-    }
-    Rotation {
-      Pitch: 0.425240725
-      Yaw: -171.571289
-      Roll: 72.8382187
-    }
-    Scale {
-      X: 0.39819783
-      Y: 0.445214957
-      Z: 0.17375806
-    }
-  }
-  ParentId: 17519262517010555805
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13840443032411406179
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10529006830532277277
-  Name: "Large Wood Beam 8m"
-  Transform {
-    Location {
-      X: 124.601807
-      Y: 21.0575714
-      Z: 162.970062
-    }
-    Rotation {
-      Pitch: -84.2839127
-      Yaw: -165.864624
-      Roll: 82.3349304
-    }
-    Scale {
-      X: 0.187986031
-      Y: 0.3
-      Z: 0.300000191
-    }
-  }
-  ParentId: 17519262517010555805
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

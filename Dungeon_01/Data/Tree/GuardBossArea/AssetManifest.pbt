@@ -206,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8673189580857260805
+  Name: "Dirt 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "dirt_001"
+  }
+}
+Assets {
   Id: 8251884538862213694
   Name: "Hill 04"
   PlatformAssetType: 1
