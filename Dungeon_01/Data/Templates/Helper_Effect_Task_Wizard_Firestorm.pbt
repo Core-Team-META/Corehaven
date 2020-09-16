@@ -296,7 +296,7 @@
         Name: "Level Up VFX"
         Transform {
           Location {
-            Z: -86.2563477
+            Z: -86.2563476
           }
           Rotation {
           }
