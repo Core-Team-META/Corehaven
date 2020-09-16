@@ -1,6 +1,90 @@
 ﻿Name: "Walling"
 RootId: 11997563873140279666
 Objects {
+  Id: 68228521848063848
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 3128.49756
+      Y: 3442.04297
+      Z: -975.283203
+    }
+    Rotation {
+      Pitch: 0.00011611321
+      Yaw: 0.924440682
+      Roll: -4.73413086
+    }
+    Scale {
+      X: 2.84709072
+      Y: 4.34844685
+      Z: 3.52844882
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14981949629743501478
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: 2003.48364
+      Y: 3423.91455
+      Z: -975.2854
+    }
+    Rotation {
+      Pitch: 0.00011611321
+      Yaw: 0.924454331
+      Roll: -4.73413086
+    }
+    Scale {
+      X: 2.84709072
+      Y: 4.34844685
+      Z: 3.52844882
+    }
+  }
+  ParentId: 11997563873140279666
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 3117512457095818950
   Name: "Trim Crenellated 4m 01"
   Transform {
@@ -3914,9 +3998,9 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: 50.6621094
-      Y: -1608.98193
-      Z: 596.205811
+      X: -164.753052
+      Y: -1607.37097
+      Z: 628.699
     }
     Rotation {
       Pitch: 8.57757664
@@ -4751,8 +4835,8 @@ Objects {
   Transform {
     Location {
       X: 4664.83105
-      Y: 883.787598
-      Z: 553.69043
+      Y: 883.787109
+      Z: 599.433838
     }
     Rotation {
       Yaw: 0.948037326
@@ -7253,14 +7337,14 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 522.125
-      Y: -1713.39868
-      Z: 269.126465
+      X: 511.146729
+      Y: -1695.20874
+      Z: 264.34082
     }
     Rotation {
       Pitch: -12.6936951
-      Yaw: 121.111649
-      Roll: -111.085266
+      Yaw: 121.111641
+      Roll: -111.085251
     }
     Scale {
       X: 0.815803111
