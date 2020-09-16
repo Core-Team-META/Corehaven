@@ -34,6 +34,7 @@ bool requiresFacing								Whether the target must be in front of the player
 bool groundTargets								Whether that target is a spot on the ground (vs their active npc target)
 bool canMove									Whether the caster can move while casting
 AssetReference icon								Icon to use in ui
+float cooldown									The base cooldown for this ability
 <float> range									Max range of target if targeted
 AssetReference abilityTemplate					A template consisting of only an ability. These must be unique
 <AssetReference> selfCasterEffectTemplate		Template spawned on the caster at cast start, visible to the caster
@@ -112,6 +113,26 @@ function CancelGroundTargeting()
 	end
 end
 
+-- Local client
+function GetGlobalCooldown()
+	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
+
+	--!! get percent not raw value?
+
+	return GLOBAL_COOLDOWN / (1.0 + cooldownReductionStat / 200.0)
+end
+
+-- Owning client
+function GetAbilityCooldown(abilityName)
+	assert(playerAbilities[LOCAL_PLAYER][abilityName])
+	local data = abilityData[abilityName]
+	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
+
+	--!! get percent not raw value?
+
+	return data.cooldown / (1.0 + cooldownReductionStat / 200.0)
+end
+
 -- Owning client
 -- Used for ground target abilities
 function OnBindingPressed(player, binding)
@@ -147,7 +168,7 @@ function OnCast(ability)
 			assert(not castingAbilityName)
 			castingAbilityName = abilityName
 
-			globalCooldownEndTime = os.clock() + GLOBAL_COOLDOWN
+			globalCooldownEndTime = os.clock() + GetGlobalCooldown()
 			
 			-- Set target (THIS HAS TO BE IN ONCAST OR IT DOESN'T WORK)
 			if data.targets then
@@ -186,7 +207,7 @@ function OnExecute(ability)
 		assert(castingAbilityName == abilityName)
 		castingAbilityName = nil
 
-		abilityCooldownEnds[abilityName] = os.clock() + data.cooldown
+		abilityCooldownEnds[abilityName] = os.clock() + GetAbilityCooldown(abilityName)
 
 		if data.targets then
 			if data.groundTargets then
@@ -410,7 +431,7 @@ function GetTimeUntilReady(abilityName)
 	local currentPhase = ability:GetCurrentPhase()
 
 	if currentPhase == AbilityPhase.CAST then
-		t = math.max(t, ability:GetPhaseTimeRemaining() + data.cooldown, 0.01)
+		t = math.max(t, ability:GetPhaseTimeRemaining() + GetAbilityCooldown(abilityName), 0.01)
 	else
 		if abilityCooldownEnds[abilityName] then
 			t = math.max(t, abilityCooldownEnds[abilityName] - clock)
@@ -441,9 +462,9 @@ function API.GetVisibleCooldownData(abilityName)
 	end
 
 	if cooldownRemaining > globalCooldownRemaining then
-		return {remaining = cooldownRemaining, total = data.cooldown}
+		return {remaining = cooldownRemaining, total = GetAbilityCooldown(abilityName)}
 	elseif globalCooldownRemaining > 0.0 then
-		return {remaining = globalCooldownRemaining, total = GLOBAL_COOLDOWN}
+		return {remaining = globalCooldownRemaining, total = GetGlobalCooldown()}
 	end
 end
 

@@ -559,7 +559,7 @@
         Transform {
           Location {
             X: 5.03900099
-            Y: -6.10351563e-05
+            Y: -6.10351562e-05
             Z: -6.06852531
           }
           Rotation {
@@ -10855,8 +10855,8 @@
             String: "unarmed_death"
           }
           Overrides {
-            Name: "cs:StunnedStance"
-            String: "unarmed_bind_pose"
+            Name: "cs:StunnedAnimation"
+            String: "unarmed_stun_dizzy"
           }
         }
         Collidable_v2 {

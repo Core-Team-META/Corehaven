@@ -30,7 +30,7 @@ function API.CreateProjectile(source, target, speed, projectileTemplate)
 			if offset.size < stepSize then
 				break
 			end
-
+			
 			projectile:SetWorldPosition(projectile:GetWorldPosition() + offset:GetNormalized() * stepSize)
 			projectile:SetWorldRotation(Rotation.New(offset, Vector3.UP))
 			previousT = t

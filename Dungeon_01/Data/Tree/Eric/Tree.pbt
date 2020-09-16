@@ -1352,6 +1352,9 @@ Objects {
   ChildIds: 6269920636709688557
   ChildIds: 11445867908990253238
   ChildIds: 5851381824001695082
+  ChildIds: 8701836073468113419
+  ChildIds: 11649629773917677399
+  ChildIds: 16208921014815592880
   UnregisteredParameters {
     Overrides {
       Name: "cs:Order"
@@ -1386,8 +1389,8 @@ Objects {
   }
 }
 Objects {
-  Id: 5851381824001695082
-  Name: "Magic4"
+  Id: 16208921014815592880
+  Name: "Empower Energies"
   Transform {
     Location {
     }
@@ -1411,15 +1414,90 @@ Objects {
     }
     Overrides {
       Name: "cs:TreeY"
-      Int: 2
+      Int: 3
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Empower a player, increasing their damage and speed for a short duration."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Empower Energies"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3078059190705841288
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11649629773917677399
+  Name: "Cosmic Blast"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Draw celestial bodies to the ground, causing large damage in an area."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Cosmic Blast"
     }
     Overrides {
       Name: "cs:Icon"
@@ -1461,8 +1539,158 @@ Objects {
   }
 }
 Objects {
+  Id: 8701836073468113419
+  Name: "Creeping Curse"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Curse your target, causing them to take damage over time. The curse may jump to nearby targets."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Creeping Curse"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15612050688073808511
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 5851381824001695082
+  Name: "Phase Out"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You phase out of your corporeal form, avoiding the next few attacks entirely."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Phase Out"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9646465928758980906
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
   Id: 11445867908990253238
-  Name: "Magic3"
+  Name: "Siphon Vitality"
   Transform {
     Location {
     }
@@ -1490,16 +1718,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Drains the life force of your target, dealing damage and healing you."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Siphon Vitality"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 9396890354519138748
+        Id: 12559015832711781866
       }
     }
     Overrides {
@@ -1537,7 +1765,7 @@ Objects {
 }
 Objects {
   Id: 6269920636709688557
-  Name: "Magic2"
+  Name: "Reverse Wounds"
   Transform {
     Location {
     }
@@ -1565,16 +1793,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Go back in time, undoing all damage from the last few seconds."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Reverse Wounds"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 14483312212422558777
+        Id: 2617890565520931984
       }
     }
     Overrides {
@@ -1612,7 +1840,7 @@ Objects {
 }
 Objects {
   Id: 18090954595178628674
-  Name: "Magic1"
+  Name: "Energy Bolt"
   Transform {
     Location {
     }
@@ -1640,16 +1868,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Unleashes a bolt of magic at the target."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Energy Bolt"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 3078059190705841288
+        Id: 8251184018033354750
       }
     }
     Overrides {
@@ -2056,6 +2284,9 @@ Objects {
   ChildIds: 18232739182728710361
   ChildIds: 8802180108852620436
   ChildIds: 6692680696126703812
+  ChildIds: 2167866083139725003
+  ChildIds: 4418391808158998545
+  ChildIds: 570315840505543400
   UnregisteredParameters {
     Overrides {
       Name: "cs:Order"
@@ -2090,8 +2321,233 @@ Objects {
   }
 }
 Objects {
+  Id: 570315840505543400
+  Name: "Spiked Armor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You now return damage everytime to take damage from a nearby foe."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Spiked Armor"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15541642479332885797
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 4418391808158998545
+  Name: "Crippling Whirl"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Spin around crippling all nearby foes, reducing their speed and damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Crippling Whirl"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 4950921733684647490
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 2167866083139725003
+  Name: "Shield Bash"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Smash your target with your shield, dealing high damage and stunning them briefly."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Shield Bash"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18150175252654389294
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
   Id: 6692680696126703812
-  Name: "Healer\'s Favorite"
+  Name: "Power Through"
   Transform {
     Location {
     }
@@ -2119,16 +2575,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Grit your teeth and take reduced damage temporarily."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Power Through"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 8867435165229130154
+        Id: 11819073848126166701
       }
     }
     Overrides {
@@ -2166,7 +2622,7 @@ Objects {
 }
 Objects {
   Id: 8802180108852620436
-  Name: "Hardened Armor"
+  Name: "Taste for Blood"
   Transform {
     Location {
     }
@@ -2194,16 +2650,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Your attacks now heal you for a fraction of the damage they deal."
     }
     Overrides {
-      Name: "cs:AbilityName1"
-      String: "Fireball"
+      Name: "cs:Passive1"
+      String: "Taste for Blood"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 16884239609476660373
+        Id: 11152365331067406223
       }
     }
     Overrides {
@@ -2241,7 +2697,7 @@ Objects {
 }
 Objects {
   Id: 18232739182728710361
-  Name: "Aspect of Atlas"
+  Name: "Refresh"
   Transform {
     Location {
     }
@@ -2269,16 +2725,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Very quickly replenish yourself, healing a portion of your total health."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Refresh"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 11819073848126166701
+        Id: 8988782777998787278
       }
     }
     Overrides {
@@ -2344,7 +2800,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Taunts all nearby enemies to attack you."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -3535,6 +3991,12 @@ Objects {
   ChildIds: 16964593153730871236
   ChildIds: 7995165258269245459
   ChildIds: 13266281684635771093
+  ChildIds: 6839740683404315167
+  ChildIds: 2914462382390600381
+  ChildIds: 5631328318510683058
+  ChildIds: 3868882901671596007
+  ChildIds: 2157325720099339269
+  ChildIds: 5319242349765635803
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3547,6 +4009,336 @@ Objects {
   InstanceHistory {
     SelfId: 12414977104385033478
     SubobjectId: 10104356363581192144
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 5319242349765635803
+  Name: "StatusEffect_EmpoweredEnergies"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3078059190705841288
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13485398659010677421
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 2157325720099339269
+  Name: "StatusEffect_CreepingCurse"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15612050688073808511
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1475420062530195056
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 3868882901671596007
+  Name: "StatusEffect_PhasedOut"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9646465928758980906
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16690510668652701854
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 5631328318510683058
+  Name: "StatusEffect_Cripple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18192159038187223433
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7614585749622226063
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 2914462382390600381
+  Name: "StatusEffect_ShieldBash"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18150175252654389294
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17657017764969359531
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 6839740683404315167
+  Name: "StatusEffect_PowerThrough"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11819073848126166701
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17178651036768685129
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -3734,6 +4526,12 @@ Objects {
   ChildIds: 2940080681273343574
   ChildIds: 17251058805238137224
   ChildIds: 14822330552275089005
+  ChildIds: 5356320598549026719
+  ChildIds: 17680069917567519353
+  ChildIds: 10442717036777800243
+  ChildIds: 11108611977690016750
+  ChildIds: 1674180576722981443
+  ChildIds: 14043769265250930861
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3745,6 +4543,336 @@ Objects {
   InstanceHistory {
     SelfId: 1827629710844690405
     SubobjectId: 4120286767298661683
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 14043769265250930861
+  Name: "StatusEffect_EmpoweredEnergies"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3078059190705841288
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13485398659010677421
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 1674180576722981443
+  Name: "StatusEffect_CreepingCurse"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15612050688073808511
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1475420062530195056
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 11108611977690016750
+  Name: "StatusEffect_PhasedOut"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9646465928758980906
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16690510668652701854
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 10442717036777800243
+  Name: "StatusEffect_Cripple"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18192159038187223433
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7614585749622226063
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 17680069917567519353
+  Name: "StatusEffect_ShieldBash"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18150175252654389294
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17657017764969359531
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 5356320598549026719
+  Name: "StatusEffect_PowerThrough"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11819073848126166701
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17178651036768685129
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -5274,7 +6402,7 @@ Objects {
   Transform {
     Location {
       X: -451.307251
-      Y: 14164.2813
+      Y: 14164.2812
       Z: -387.004883
     }
     Rotation {
@@ -5360,7 +6488,7 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: 6323.43311
+      X: 6323.4331
       Y: 11582.2373
       Z: -387.004944
     }
@@ -7043,7 +8171,7 @@ Objects {
   Transform {
     Location {
       X: -7441.44434
-      Y: -4464.08643
+      Y: -4464.08642
       Z: -296.436462
     }
     Rotation {
@@ -7099,7 +8227,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7983.78809
+      X: -7983.78808
       Y: -4977.01367
       Z: -360.496063
     }
@@ -9756,7 +10884,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101563
+      X: 756.101562
       Y: 2354.04834
       Z: 13.7415161
     }
@@ -10053,7 +11181,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101563
+      X: 756.101562
       Y: 2354.04834
       Z: 13.7415161
     }
@@ -11233,14 +12361,6 @@ Objects {
   Id: 5849849260701017683
   Name: "Enemy_Boss1_Necromancer"
   Transform {
-    Location {
-      X: 2259.75708
-      Y: 11023.5918
-      Z: -779.137695
-    }
-    Rotation {
-      Yaw: -89.9999924
-    }
     Scale {
       X: 1
       Y: 1

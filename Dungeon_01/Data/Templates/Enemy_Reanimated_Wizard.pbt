@@ -382,8 +382,8 @@
             String: "unarmed_death"
           }
           Overrides {
-            Name: "cs:StunnedStance"
-            String: "unarmed_bind_pose"
+            Name: "cs:StunnedAnimation"
+            String: "unarmed_stun_dizzy"
           }
         }
         Collidable_v2 {

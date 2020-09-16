@@ -729,7 +729,7 @@
           Rotation {
             Pitch: 3.4150944e-05
             Yaw: 1.99243514e-05
-            Roll: -0.000122070313
+            Roll: -0.000122070312
           }
           Scale {
             X: 0.330839664
@@ -1539,8 +1539,8 @@
             String: "unarmed_death"
           }
           Overrides {
-            Name: "cs:StunnedStance"
-            String: "unarmed_bind_pose"
+            Name: "cs:StunnedAnimation"
+            String: "unarmed_stun_dizzy"
           }
         }
         Collidable_v2 {

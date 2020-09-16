@@ -494,8 +494,10 @@ function Tick(deltaTime)
 
 					if API_NPC.GetTarget(npc) then
 						-- Should we be stunned?
-						if npcState.shouldBeStunned and currentTask ~= API_NPC.STATE_STUNNED then
-							SetCurrentTask(npc, API_NPC.STATE_STUNNED, true)
+						if npcState.shouldBeStunned then
+							if currentTask ~= API_NPC.STATE_STUNNED then
+								SetCurrentTask(npc, API_NPC.STATE_STUNNED, true)
+							end
 						elseif -- Always looking for a new task in these states
 							currentTask == API_NPC.STATE_IDLE or
 							currentTask == API_NPC.STATE_CHASING or

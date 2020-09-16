@@ -52,6 +52,72 @@
           Id: 12653130121520336365
         }
       }
+      Overrides {
+        Name: "cs:Ability_Refresh"
+        AssetReference {
+          Id: 6628333839649202416
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_PowerThrough"
+        AssetReference {
+          Id: 16639452448460186915
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_ShieldBash"
+        AssetReference {
+          Id: 16742234104346326110
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_CripplingWhirl"
+        AssetReference {
+          Id: 12923629426731567236
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_EnergyBolt"
+        AssetReference {
+          Id: 11796288697500220596
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_ReverseWounds"
+        AssetReference {
+          Id: 7268644478511274054
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SiphonVitality"
+        AssetReference {
+          Id: 6605733087661830397
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_PhaseOut"
+        AssetReference {
+          Id: 3521339287080108413
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_CreepingCurse"
+        AssetReference {
+          Id: 234727043416621351
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_CosmicBlast"
+        AssetReference {
+          Id: 18154848797076415804
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_EmpowerEnergies"
+        AssetReference {
+          Id: 5705387378154348391
+        }
+      }
     }
   }
   SerializationVersion: 63

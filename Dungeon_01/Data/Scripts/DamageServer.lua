@@ -35,10 +35,12 @@ function ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overA
 end
 
 function ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+    Events.Broadcast("DamageDone", sourceCharacter, targetCharacter, effectiveAmount, overkill)
     ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overkill, "D")
 end
 
 function ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal)
+    Events.Broadcast("HealingDone", sourceCharacter, targetCharacter, effectiveAmount, overheal)
     ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overheal, "H")
 end
 

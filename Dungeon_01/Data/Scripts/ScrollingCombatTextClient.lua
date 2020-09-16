@@ -54,8 +54,10 @@ function ShowText(targetCharacter, amount, over, color)
 end
 
 function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
-	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
+	if targetCharacter == LOCAL_PLAYER then
 		ShowText(targetCharacter, amount, overkill, Color.RED)
+	elseif sourceCharacter == LOCAL_PLAYER then
+		ShowText(targetCharacter, amount, overkill, Color.WHITE)
 	end
 end
 

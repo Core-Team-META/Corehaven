@@ -102,6 +102,11 @@ function API.GetPlayerDamageTakenMultiplier(player)
 	return result
 end
 
+-- We stick these in _G to avoid a dependency loop
+_G.Passives = {}
+_G.Passives.GetPlayerDamageDealtMultiplier = API.GetPlayerDamageDealtMultiplier
+_G.Passives.GetPlayerDamageTakenMultiplier = API.GetPlayerDamageTakenMultiplier
+
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 
