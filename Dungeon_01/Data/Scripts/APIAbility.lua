@@ -293,7 +293,15 @@ function Tick()
 				ability.interruptedEvent:Connect(OnInterrupted)
 			end
 		end
+
+		-- Same as above for removed abilities
+		for abilityName, ability in pairs(playerAbilities[player]) do
+			if not Object.IsValid(ability) then
+				playerAbilities[player][abilityName] = nil
+			end
+		end
 	end
+
 
 	-- Update ground targeting
 	if groundTargetReticle then
@@ -639,12 +647,13 @@ end
 -- Server
 function API.GivePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
-	assert(not playerAbilities[player][abilityName])
 
 	-- TEMP TO AVOID LEAKING ABILITIES
 	if playerAbilities[player][abilityName] then
 		return
 	end
+
+	assert(not playerAbilities[player][abilityName])
 
 	local ability = World.SpawnAsset(abilityData[abilityName].abilityTemplate)
 	-- These are all lumped into the cooldown property on the ability, and maintained by script
@@ -659,6 +668,12 @@ end
 function API.RemovePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
 	local ability = playerAbilities[player][abilityName]
+
+	-- PAIRED WITH ABOVE
+	if not ability then
+		return
+	end
+
 	assert(ability)
 	ability:Destroy()
 	playerAbilities[player][abilityName] = nil

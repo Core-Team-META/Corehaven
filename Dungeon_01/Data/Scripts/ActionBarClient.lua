@@ -200,46 +200,51 @@ function Tick(deltaTime)
 	local playerAbilities = API_A.GetPlayerAbilities(LOCAL_PLAYER)
 	-- Looking for new abilities
 	for abilityName, ability in pairs(playerAbilities) do
-		local found = false
+		-- We can't be sure the ability system has cleared out the reference clientside
+		if Object.IsValid(ability) then
+			local found = false
 
-		for _, data in pairs(buttonData) do
-			if data.abilityName == abilityName then
-				found = true
-				break
-			end
-		end
-
-		for _, invalidAbilityNames in pairs(invalidAbilityNames) do
-			if invalidAbilityNames == abilityName then
-				found = true
-				break
-			end
-		end
-
-		if not found then
-			local socketFound = false
-
-			for i, data in pairs(buttonData) do
-				if not data.abilityName then
-					data.abilityName = abilityName
-					data.button = SpawnAbilityButton(abilityName, i)
-					socketFound = true
+			for _, data in pairs(buttonData) do
+				if data.abilityName == abilityName then
+					found = true
 					break
 				end
 			end
 
-			if not socketFound then
-				table.insert(invalidAbilityNames, abilityName)
-				warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
+			for _, invalidAbilityNames in pairs(invalidAbilityNames) do
+				if invalidAbilityNames == abilityName then
+					found = true
+					break
+				end
+			end
+
+			if not found then
+				local socketFound = false
+
+				for i, data in pairs(buttonData) do
+					if not data.abilityName then
+						data.abilityName = abilityName
+						data.button = SpawnAbilityButton(abilityName, i)
+						socketFound = true
+						break
+					end
+				end
+
+				if not socketFound then
+					table.insert(invalidAbilityNames, abilityName)
+					warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
+				end
 			end
 		end
 	end
 
 	-- Look for removed abilities
 	for i, data in pairs(buttonData) do
-		if data.abilityName and not playerAbilities[data.abilityName] then
-			data.button:Destroy()
-			buttonData[i] = nil
+		if data.abilityName then
+			if not playerAbilities[data.abilityName] or not Object.IsValid(playerAbilities[data.abilityName]) then
+				data.button:Destroy()
+				buttonData[i] = {}
+			end
 		end
 	end
 

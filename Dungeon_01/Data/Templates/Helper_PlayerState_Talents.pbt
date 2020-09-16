@@ -22,7 +22,15 @@
             Int: 0
           }
           Overrides {
+            Name: "cs:TreeName"
+            String: ""
+          }
+          Overrides {
             Name: "cs:TalentPoints:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:TreeName:isrep"
             Bool: true
           }
         }

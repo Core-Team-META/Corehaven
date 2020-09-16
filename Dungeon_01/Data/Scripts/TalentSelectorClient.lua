@@ -219,6 +219,9 @@ function Tick(deltaTime)
 		return
 	end
 	
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(LOCAL_PLAYER)
+	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
+
 	for treeName, treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
 		if UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName) then
 			for _, talentData in pairs(treeData) do
@@ -249,12 +252,16 @@ function Tick(deltaTime)
 		if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, tooltipTalentData) then
 			TOOLTIP_STATE_TEXT:SetColor(Color.SAPPHIRE)
 			TOOLTIP_STATE_TEXT.text = "Talent known"
-		elseif UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, tooltipTalentData) then
-			TOOLTIP_STATE_TEXT:SetColor(Color.EMERALD)
-			TOOLTIP_STATE_TEXT.text = "Click to learn"
 		else
-			TOOLTIP_STATE_TEXT:SetColor(Color.RUBY)
-			TOOLTIP_STATE_TEXT.text = "Requirement missing"
+			local canLearn, errorMessage = UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, tooltipTalentData)
+
+			if canLearn then
+				TOOLTIP_STATE_TEXT:SetColor(Color.EMERALD)
+				TOOLTIP_STATE_TEXT.text = "Click to learn"
+			else
+				TOOLTIP_STATE_TEXT:SetColor(Color.RUBY)
+				TOOLTIP_STATE_TEXT.text = errorMessage
+			end
 		end
 	end
 end

@@ -894,7 +894,7 @@ Objects {
 }
 Objects {
   Id: 13653382731491750667
-  Name: "TalentSelector"
+  Name: "Talent Selector"
   Transform {
     Location {
     }
@@ -1568,7 +1568,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Curse your target, causing them to take damage over time. The curse may jump to nearby targets."
+      String: "Curse your target. When the curse expires, it deals moderate damage to the target and leaps to another nearby target."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -3234,7 +3234,7 @@ Objects {
   }
   Control {
     Width: 300
-    Height: 300
+    Height: 350
     UIX: 1190
     UIY: 430
     RenderTransformPivot {
@@ -3413,7 +3413,7 @@ Objects {
   }
   Control {
     Width: -30
-    Height: 40
+    Height: 30
     UIY: -10
     RenderTransformPivot {
       Anchor {
@@ -3427,7 +3427,7 @@ Objects {
       Color {
         A: 1
       }
-      Size: 18
+      Size: 14
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -3476,7 +3476,7 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 130
+    Height: 190
     UIY: -10
     RenderTransformPivot {
       Anchor {
@@ -3997,6 +3997,8 @@ Objects {
   ChildIds: 3868882901671596007
   ChildIds: 2157325720099339269
   ChildIds: 5319242349765635803
+  ChildIds: 13029928197597224894
+  ChildIds: 6036269598842147232
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4009,6 +4011,118 @@ Objects {
   InstanceHistory {
     SelfId: 12414977104385033478
     SubobjectId: 10104356363581192144
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 6036269598842147232
+  Name: "StatusEffect_Impaled"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15672460151371888059
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13467088948767748133
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 13029928197597224894
+  Name: "StatusEffect_Caught"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 10038193862238259236
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5992297943058161847
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -4532,6 +4646,8 @@ Objects {
   ChildIds: 11108611977690016750
   ChildIds: 1674180576722981443
   ChildIds: 14043769265250930861
+  ChildIds: 6684413165972078287
+  ChildIds: 18361604372941635436
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4543,6 +4659,118 @@ Objects {
   InstanceHistory {
     SelfId: 1827629710844690405
     SubobjectId: 4120286767298661683
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 18361604372941635436
+  Name: "StatusEffect_Impaled"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15672460151371888059
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13467088948767748133
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 6684413165972078287
+  Name: "StatusEffect_Caught"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 10038193862238259236
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5992297943058161847
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -5703,7 +5931,7 @@ Objects {
 }
 Objects {
   Id: 16850574512810482299
-  Name: "ReceiveDamageEffects"
+  Name: "Receive Damage Effects"
   Transform {
     Location {
     }
@@ -5775,7 +6003,7 @@ Objects {
 }
 Objects {
   Id: 12927392021329101415
-  Name: "PlayerState"
+  Name: "Player State"
   Transform {
     Location {
     }
@@ -5941,7 +6169,7 @@ Objects {
 }
 Objects {
   Id: 9585485467565999811
-  Name: "NPCSystem"
+  Name: "NPC System"
   Transform {
     Location {
     }
@@ -6565,6 +6793,19 @@ Objects {
   ChildIds: 14979739482358510295
   ChildIds: 13539171473115265621
   ChildIds: 5592828360412113200
+  ChildIds: 1446483789260921831
+  ChildIds: 5997273433562117662
+  ChildIds: 465613074178480119
+  ChildIds: 10370396109385836172
+  ChildIds: 8874393156927827386
+  ChildIds: 630414455468982424
+  ChildIds: 4157665168177385501
+  ChildIds: 562071995167172757
+  ChildIds: 14861519828799339233
+  ChildIds: 10300252999541557371
+  ChildIds: 11806396906547234386
+  ChildIds: 9426468930398710718
+  ChildIds: 16095864974671023309
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6573,6 +6814,738 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 16095864974671023309
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 9151.04883
+      Y: 1554.52405
+      Z: 750.512573
+    }
+    Rotation {
+      Yaw: -35.399292
+    }
+    Scale {
+      X: 16.5563812
+      Y: 12.5675974
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9426468930398710718
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 10289.0107
+      Y: -225.439636
+      Z: 750.512573
+    }
+    Rotation {
+      Yaw: 16.5702915
+    }
+    Scale {
+      X: 8.86101818
+      Y: 17.2801819
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11806396906547234386
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 9428.70215
+      Y: -426.480347
+      Z: 750.512817
+    }
+    Rotation {
+    }
+    Scale {
+      X: 13.7309389
+      Y: 28.0507412
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10300252999541557371
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 8314.38867
+      Y: 1181.94006
+      Z: 750.512817
+    }
+    Rotation {
+    }
+    Scale {
+      X: 15.6511345
+      Y: 16.5760517
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14861519828799339233
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 8314.38867
+      Y: -1667.33984
+      Z: 750.512817
+    }
+    Rotation {
+    }
+    Scale {
+      X: 15.6511345
+      Y: 16.5760517
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 562071995167172757
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 6159.40723
+      Y: -98.4573669
+      Z: 750.512817
+    }
+    Rotation {
+    }
+    Scale {
+      X: 32.4867973
+      Y: 37.7950821
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4157665168177385501
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 4193.7876
+      Y: -191.30835
+      Z: 596.821
+    }
+    Rotation {
+      Pitch: 35.0140305
+    }
+    Scale {
+      X: 7.249156
+      Y: 14.4245577
+      Z: 1.6277977e-06
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 630414455468982424
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 2856.59058
+      Y: -1306.60962
+      Z: 188.966125
+    }
+    Rotation {
+      Roll: -35.8450623
+    }
+    Scale {
+      X: 4.45445156
+      Y: 7.1931839
+      Z: 4.35704379e-07
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8874393156927827386
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 3240.08691
+      Y: -191.30835
+      Z: 390.340332
+    }
+    Rotation {
+    }
+    Scale {
+      X: 14.0724068
+      Y: 16.422081
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10370396109385836172
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 2505.04907
+      Y: -1960.1189
+      Z: -0.606903076
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.78359318
+      Y: 6.42590809
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 465613074178480119
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1307.70776
+      Y: -3000.2605
+      Z: 19.9778137
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.7809267
+      Y: 11.8588257
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5997273433562117662
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 277.819641
+      Y: -2962.67871
+      Z: -0.606903076
+    }
+    Rotation {
+    }
+    Scale {
+      X: 7.95264292
+      Y: 14.6788502
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1446483789260921831
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 1349.37598
+      Y: -1557.74
+      Z: -0.606903076
+    }
+    Rotation {
+    }
+    Scale {
+      X: 15.2482281
+      Y: 14.6788502
+      Z: 7.80764964e-08
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -8810,6 +9783,12 @@ Objects {
   ChildIds: 911873837834379264
   ChildIds: 11717187977221348043
   ChildIds: 5646387279078241973
+  ChildIds: 1127825816940719693
+  ChildIds: 13564066849654714208
+  ChildIds: 9797938732383260055
+  ChildIds: 13493818778051895137
+  ChildIds: 11390249800228364156
+  ChildIds: 10329578844992929256
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8818,6 +9797,288 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 10329578844992929256
+  Name: "Task_Market_Vendor_Throw_Hammer_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5551277897750072332
+    }
+  }
+}
+Objects {
+  Id: 11390249800228364156
+  Name: "Task_Market_Vendor_Throw_Fruit_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17967179124297610167
+    }
+  }
+}
+Objects {
+  Id: 13493818778051895137
+  Name: "Task_Market_Vendor_Throw_Bread_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6864676640018972284
+    }
+  }
+}
+Objects {
+  Id: 9797938732383260055
+  Name: "Task_Market_Security_Impale_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14507829302702524350
+    }
+  }
+}
+Objects {
+  Id: 13564066849654714208
+  Name: "Task_Market_Security_Throw_Net_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1865890581863965557
+    }
+  }
+}
+Objects {
+  Id: 1127825816940719693
+  Name: "Task_Market_Security_Melee_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13621934068905924218
+    }
   }
 }
 Objects {
@@ -9644,6 +10905,12 @@ Objects {
   ChildIds: 13922160594556412427
   ChildIds: 4917597342255010112
   ChildIds: 6475425031944501264
+  ChildIds: 7007993321808811721
+  ChildIds: 3184554300100649591
+  ChildIds: 6288364177343079329
+  ChildIds: 17158094228917528276
+  ChildIds: 12682046934567391246
+  ChildIds: 11393466762114833855
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9651,6 +10918,306 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 11393466762114833855
+  Name: "Task_Market_Vendor_Throw_Hammer_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 5333833631319763796
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 7077121001255402992
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6358694923843598338
+    }
+  }
+}
+Objects {
+  Id: 12682046934567391246
+  Name: "Task_Market_Vendor_Throw_Fruit_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 5333833631319763796
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 7077121001255402992
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10819236365686813396
+    }
+  }
+}
+Objects {
+  Id: 17158094228917528276
+  Name: "Task_Market_Vendor_Throw_Bread_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 5333833631319763796
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 7077121001255402992
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18369944369565764
+    }
+  }
+}
+Objects {
+  Id: 6288364177343079329
+  Name: "Task_Market_Security_Impale_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14025742078982313852
+    }
+  }
+}
+Objects {
+  Id: 3184554300100649591
+  Name: "Task_Market_Security_Throw_Net_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 13540390578621358507
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 5333833631319763796
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 13974772185808046013
+    }
+  }
+}
+Objects {
+  Id: 7007993321808811721
+  Name: "Task_Market_Security_Melee_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4001138460957121007
+    }
   }
 }
 Objects {
@@ -10618,6 +12185,12 @@ Objects {
   ChildIds: 17237219385868355196
   ChildIds: 6061401416720682591
   ChildIds: 13835231596194112360
+  ChildIds: 5401360050509869661
+  ChildIds: 18264186195243234998
+  ChildIds: 2328479559981384820
+  ChildIds: 17678118130310445151
+  ChildIds: 4145414953606654737
+  ChildIds: 10844456368183575790
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10626,6 +12199,2024 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10844456368183575790
+  Name: "Pull 14"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 15636285162546739188
+  ChildIds: 13900739914955579852
+  ChildIds: 17480479286996764339
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17480479286996764339
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: 7757.71826
+      Y: 1215.53638
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: -155.340088
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10844456368183575790
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10260.8848
+            Y: 371.720276
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -155.340103
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 13900739914955579852
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: 7556.45947
+      Y: 1897.62402
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: -165.39003
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10844456368183575790
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 10027.7
+            Y: 908.101257
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -165.389954
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 15636285162546739188
+  Name: "Enemy_Boss2_Merchant"
+  Transform {
+    Location {
+      X: -12800
+      Y: -5600
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10844456368183575790
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Boss2_Merchant"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9989.27051
+            Y: 568.418823
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -157.061615
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1748089756742422245
+    }
+  }
+}
+Objects {
+  Id: 4145414953606654737
+  Name: "Pull 13"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 12150918680370611358
+  ChildIds: 18066442885184428096
+  ChildIds: 16056143466713693235
+  ChildIds: 17683421610730654410
+  ChildIds: 10755082907082445160
+  ChildIds: 8786757270091462599
+  ChildIds: 13444539640615278046
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 17678118130310445151
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13444539640615278046
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: 9977.54688
+      Y: 1281.67822
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 168.107605
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7757.71826
+            Y: 1215.53638
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -155.340088
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 8786757270091462599
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: 9635.72558
+      Y: -1906.25269
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 168.10762
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7556.45947
+            Y: 1897.62402
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -165.39003
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 10755082907082445160
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Location {
+      X: 10061.2031
+      Y: 981.655273
+      Z: 745.127808
+    }
+    Rotation {
+      Yaw: -177.969482
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7222.80713
+            Y: 1649.86426
+            Z: 745.127808
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.935547
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 17683421610730654410
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Location {
+      X: 9768.93359
+      Y: -1043.39209
+      Z: 745.127808
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7948.32324
+            Y: 1337.31519
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -160.647339
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 16056143466713693235
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Location {
+      X: -12800
+      Y: -5800
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7640.11572
+            Y: 1597.60107
+            Z: 745.127808
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -154.938065
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 18066442885184428096
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Location {
+      X: 7036.90869
+      Y: -1911.53149
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 127.3778
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7303.64892
+            Y: 1219.61804
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -168.733047
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 12150918680370611358
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4145414953606654737
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 8075.69482
+            Y: 1787.92664
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -150.942657
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Highrock Fruit Merchant"
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 17678118130310445151
+  Name: "Pull 12"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 5142247273320300696
+  ChildIds: 4372697220903459334
+  ChildIds: 8057323004700178191
+  ChildIds: 12295186798480302619
+  ChildIds: 4944489697019105661
+  ChildIds: 14588541688551104553
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 2328479559981384820
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14588541688551104553
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: -12800
+      Y: -6400
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9635.72558
+            Y: -1906.25269
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 168.10762
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 4944489697019105661
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Location {
+      X: 9768.93359
+      Y: -1043.39209
+      Z: 745.127808
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9977.8418
+            Y: -1452.6825
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 167.177551
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 12295186798480302619
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Location {
+      X: -12800
+      Y: -5800
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9768.93359
+            Y: -1043.39209
+            Z: 745.127808
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -177.969482
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 8057323004700178191
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Location {
+      X: 7036.90869
+      Y: -1911.53149
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 127.3778
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9432.4668
+            Y: -1421.37512
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 150.5401
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 4372697220903459334
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Location {
+      X: 6589.81299
+      Y: -1617.70923
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 129.241516
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9113.80664
+            Y: -2072.34033
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 152.404114
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Highrock Fruit Merchant"
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 5142247273320300696
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17678118130310445151
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 9116.94629
+            Y: -1733.79871
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 152.404114
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Highrock Fruit Merchant"
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:EngageRange"
+          Float: 1e+06
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 2328479559981384820
+  Name: "Pull 11"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 15824446334116510744
+  ChildIds: 14394866825517427441
+  ChildIds: 3716316958108012141
+  ChildIds: 113247610193094500
+  ChildIds: 401453902322024208
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 18264186195243234998
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 401453902322024208
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Location {
+      X: 7431.23584
+      Y: -1860.48218
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 127.377747
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2328479559981384820
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7531.51758
+            Y: -2260.36914
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 127.377708
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 113247610193094500
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Location {
+      X: 7036.90869
+      Y: -1911.53149
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 127.3778
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2328479559981384820
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7431.23584
+            Y: -1860.48218
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 127.377747
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 3716316958108012141
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Location {
+      X: -12800
+      Y: -6000
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2328479559981384820
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 7036.90869
+            Y: -1911.53149
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 127.3778
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 14394866825517427441
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Location {
+      X: 6589.81299
+      Y: -1617.70923
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 129.241516
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2328479559981384820
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6948.07959
+            Y: -1543.25317
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 129.241455
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Highrock Fruit Merchant"
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 15824446334116510744
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2328479559981384820
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 6589.81299
+            Y: -1617.70923
+            Z: 745.12793
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 129.241516
+          }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Highrock Fruit Merchant"
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 5
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 18264186195243234998
+  Name: "Pull 10"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 485904316130621454
+  ChildIds: 755680363899379034
+  ChildIds: 10700787128250073654
+  ChildIds: 16181168701382606747
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 5401360050509869661
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16181168701382606747
+  Name: "Enemy_Wizard"
+  Transform {
+    Location {
+      X: -12800
+      Y: -7600
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18264186195243234998
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12555114022526006492
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Wizard"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5048.34277
+            Y: 151.21167
+            Z: 745.127869
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4877051327853959270
+    }
+  }
+}
+Objects {
+  Id: 10700787128250073654
+  Name: "Enemy_Wizard"
+  Transform {
+    Location {
+      X: -12800
+      Y: -7600
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18264186195243234998
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12555114022526006492
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Wizard"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5048.34277
+            Y: -475.70575
+            Z: 745.127869
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 4877051327853959270
+    }
+  }
+}
+Objects {
+  Id: 755680363899379034
+  Name: "Enemy_Soldier"
+  Transform {
+    Location {
+      X: -12800
+      Y: -7800
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18264186195243234998
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Soldier"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5011.52295
+            Y: -44.1526794
+            Z: 745.127869
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8115993960793536338
+    }
+  }
+}
+Objects {
+  Id: 485904316130621454
+  Name: "Enemy_Soldier"
+  Transform {
+    Location {
+      X: -12800
+      Y: -7800
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18264186195243234998
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Soldier"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 5011.52295
+            Y: -275.705658
+            Z: 745.127869
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.999954
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8115993960793536338
+    }
+  }
+}
+Objects {
+  Id: 5401360050509869661
+  Name: "Pull 9"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15214246396461168156
+  ChildIds: 12678466802436667442
+  ChildIds: 2360123789423329664
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 13835231596194112360
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2360123789423329664
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: -12800
+      Y: -6400
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5401360050509869661
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2744.1416
+            Y: -1415.15601
+            Z: 110.240875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9998779
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9491223094250427728
+      value {
+        Overrides {
+          Name: "AnimatedMeshStance"
+          String: ""
+        }
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_sit_chair_upright"
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationPosition"
+          Float: 1
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationShouldLoop"
+          Bool: true
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 105
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
+  }
+}
+Objects {
+  Id: 12678466802436667442
+  Name: "Enemy_Market_Security"
+  Transform {
+    Location {
+      X: -12800
+      Y: -6400
+      Z: -1000
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5401360050509869661
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2892.4292
+            Y: -1415.15601
+            Z: 110.240875
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -89.9998779
+          }
+        }
+        Overrides {
+          Name: "cs:Experience"
+          Float: 20
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9491223094250427728
+      value {
+        Overrides {
+          Name: "AnimatedMeshStance"
+          String: ""
+        }
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_sit_chair_upright"
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationPosition"
+          Float: 1
+        }
+        Overrides {
+          Name: "PlayOnStartAnimationShouldLoop"
+          Bool: true
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            Z: 105
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
   }
 }
 Objects {
@@ -12347,6 +15938,11 @@ Objects {
   ChildIds: 16556976493485494553
   ChildIds: 9503070795346245350
   ChildIds: 5849849260701017683
+  ChildIds: 9034748390291794509
+  ChildIds: 2777737521032377915
+  ChildIds: 1367838062680978060
+  ChildIds: 5386632776434691282
+  ChildIds: 2696850772350626567
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12355,6 +15951,241 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 2696850772350626567
+  Name: "Enemy_Boss2_Merchant"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2862615558091888578
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Boss2_Merchant"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12800
+            Y: -5600
+            Z: -1000
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1748089756742422245
+    }
+  }
+}
+Objects {
+  Id: 5386632776434691282
+  Name: "Enemy_Market_Vendor3"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2862615558091888578
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 4895222135026899750
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor3"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12800
+            Y: -5800
+            Z: -1000
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5880110875377466251
+    }
+  }
+}
+Objects {
+  Id: 1367838062680978060
+  Name: "Enemy_Market_Vendor2"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2862615558091888578
+  WantsNetworking: true
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7409618946245289721
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor2"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12800
+            Y: -6000
+            Z: -1000
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 5082364805724053926
+    }
+  }
+}
+Objects {
+  Id: 2777737521032377915
+  Name: "Enemy_Market_Vendor1"
+  Transform {
+    Location {
+      X: 9116.94629
+      Y: -1733.79871
+      Z: 745.12793
+    }
+    Rotation {
+      Yaw: 152.404114
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2862615558091888578
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8945637705819614061
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Vendor1"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12800
+            Y: -6200
+            Z: -1000
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13356867953963008844
+    }
+  }
+}
+Objects {
+  Id: 9034748390291794509
+  Name: "Enemy_Market_Security"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2862615558091888578
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Market_Security"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -12800
+            Y: -6400
+            Z: -1000
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9491223094250427728
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: ""
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12280544877365688236
+    }
   }
 }
 Objects {
@@ -13965,7 +17796,7 @@ Objects {
 }
 Objects {
   Id: 10845545255335035765
-  Name: "AutoHealing"
+  Name: "Auto Healing"
   Transform {
     Location {
     }
