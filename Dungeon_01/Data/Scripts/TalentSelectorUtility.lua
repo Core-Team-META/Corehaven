@@ -361,24 +361,35 @@ end
 
 -- Client and Server
 function UTILITY.CanPlayerAcquireTalent(player, talentData)
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
+
+	if currentTreeName ~= "" and currentTreeName ~= talentData.treeName then
+		return false, string.format("You are specialized to %s", currentTreeName)
+	end
+
 	if player:GetResource("Level") < talentData.requiredLevel then
-		return false
+		return false, string.format("Level %d required", talentData.requiredLevel)
 	end
 
 	if UTILITY.DoesPlayerHaveTalent(player, talentData) then
-		return false
+		return false, "Talent already known"
 	end
 
 	for _, requiredTalentData in pairs(UTILITY.GetRequiredTalentData(talentData)) do
 		if not UTILITY.DoesPlayerHaveTalent(player, requiredTalentData) then
-			return false
+			return false, string.format("%s required", requiredTalentData.name)
 		end
 	end
 
 	local talentPoints = UTILITY.GetPlayerTalentPoints(player)
 
 	if talentPoints < talentData.cost then
-		return false
+		if talentData.cost > 1 then
+			return false, string.format("%d talent points required", talentData.cost)
+		else
+			return false, "Talent point required"
+		end
 	end
 
 	return true
@@ -389,6 +400,9 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	if not UTILITY.CanPlayerAcquireTalent(player, talentData) then
 		return
 	end
+
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+	playerStateHelper:SetNetworkedCustomProperty("TreeName", talentData.treeName)
 
 	local playerStateTreeHelper = UTILITY.GetPlayerStateTreeHelper(player, talentData.treeName)
 	local talentString = playerStateTreeHelper:GetCustomProperty("TalentString")
@@ -406,6 +420,42 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	end
 
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)
+end
+
+-- Server only
+function UTILITY.ResetTalentTrees(player)
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
+
+	if currentTreeName == "" then
+		return
+	end
+
+	for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[currentTreeName]) do
+		if UTILITY.DoesPlayerHaveTalent(player, talentData) then
+			for _, abilityName in pairs(talentData.abilityNames) do
+				-- We can't use ResetPlayerAbilities() because trinkets may have given them some
+				API_A.RemovePlayerAbility(player, abilityName)
+			end
+
+			for _, passive in pairs(talentData.passives) do
+				API_PP.RemovePlayerPassive(player, passive)		-- Same as above
+			end
+
+			UTILITY.AddPlayerTalentPoints(player, talentData.cost)
+		end
+	end
+
+	playerStateHelper:SetNetworkedCustomProperty("TreeName", "")
+
+	local playerStateTreeHelper = UTILITY.GetPlayerStateTreeHelper(player, currentTreeName)
+	local talentString = ""
+
+	for _, _ in pairs(UTILITY.TALENT_TREE_TABLE[currentTreeName]) do
+		talentString = talentString .. "0"
+	end
+
+	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
 end
 
 -- Server only

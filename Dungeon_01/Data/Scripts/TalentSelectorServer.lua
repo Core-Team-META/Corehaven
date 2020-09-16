@@ -7,6 +7,12 @@ local PLAYER_STATE_TREE_TEMPLATE = script:GetCustomProperty("PlayerStateTreeTemp
 
 local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
+function OnBindingPressed(player, binding)
+	if binding == "ability_extra_37" then
+		UTILITY.ResetTalentTrees(player)
+	end
+end
+
 function OnPlayerJoined(player)
 	local talentTreeTable = UTILITY.TALENT_TREE_TABLE
 
@@ -37,6 +43,8 @@ function OnPlayerJoined(player)
 
 		playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
 	end
+
+	player.bindingPressedEvent:Connect(OnBindingPressed)
 end
 
 function OnPlayerLeft(player)

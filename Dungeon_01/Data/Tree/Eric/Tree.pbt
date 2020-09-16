@@ -894,7 +894,7 @@ Objects {
 }
 Objects {
   Id: 13653382731491750667
-  Name: "TalentSelector"
+  Name: "Talent Selector"
   Transform {
     Location {
     }
@@ -1568,7 +1568,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Curse your target, causing them to take damage over time. The curse may jump to nearby targets."
+      String: "Curse your target. When the curse expires, it deals moderate damage to the target and leaps to another nearby target."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -3234,7 +3234,7 @@ Objects {
   }
   Control {
     Width: 300
-    Height: 300
+    Height: 350
     UIX: 1190
     UIY: 430
     RenderTransformPivot {
@@ -3413,7 +3413,7 @@ Objects {
   }
   Control {
     Width: -30
-    Height: 40
+    Height: 30
     UIY: -10
     RenderTransformPivot {
       Anchor {
@@ -3427,7 +3427,7 @@ Objects {
       Color {
         A: 1
       }
-      Size: 18
+      Size: 14
       Justification {
         Value: "mc:etextjustify:left"
       }
@@ -3476,7 +3476,7 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 130
+    Height: 190
     UIY: -10
     RenderTransformPivot {
       Anchor {
@@ -5703,7 +5703,7 @@ Objects {
 }
 Objects {
   Id: 16850574512810482299
-  Name: "ReceiveDamageEffects"
+  Name: "Receive Damage Effects"
   Transform {
     Location {
     }
@@ -5775,7 +5775,7 @@ Objects {
 }
 Objects {
   Id: 12927392021329101415
-  Name: "PlayerState"
+  Name: "Player State"
   Transform {
     Location {
     }
@@ -5941,7 +5941,7 @@ Objects {
 }
 Objects {
   Id: 9585485467565999811
-  Name: "NPCSystem"
+  Name: "NPC System"
   Transform {
     Location {
     }
@@ -13965,7 +13965,7 @@ Objects {
 }
 Objects {
   Id: 10845545255335035765
-  Name: "AutoHealing"
+  Name: "Auto Healing"
   Transform {
     Location {
     }
