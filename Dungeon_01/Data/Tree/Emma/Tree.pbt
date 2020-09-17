@@ -92,13 +92,13 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 51725.418
-      Y: 8208.82
+      X: 51672.2227
+      Y: 8256.47559
       Z: 5362.66064
     }
     Rotation {
       Pitch: 0.095001094
-      Yaw: -14.1924438
+      Yaw: -14.1925049
       Roll: -2.4385376
     }
     Scale {

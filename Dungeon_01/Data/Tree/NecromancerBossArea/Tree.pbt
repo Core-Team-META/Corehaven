@@ -63307,6 +63307,21 @@ Objects {
   ChildIds: 17375801679016342059
   ChildIds: 15301295294288655183
   ChildIds: 17494192009503177075
+  ChildIds: 5895650889964592361
+  ChildIds: 6097294848426860278
+  ChildIds: 12228094784808754467
+  ChildIds: 7165289582187988116
+  ChildIds: 11566075677954136812
+  ChildIds: 1107740419631093218
+  ChildIds: 14328387286998971453
+  ChildIds: 5044117847652491417
+  ChildIds: 12861571519778636378
+  ChildIds: 6679495382130620515
+  ChildIds: 13305851561431193419
+  ChildIds: 1160890666357201044
+  ChildIds: 7040728306569931836
+  ChildIds: 4452440713304316958
+  ChildIds: 14066681133318909080
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63315,6 +63330,11950 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 14066681133318909080
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 3063.35718
+      Y: 65.6794128
+      Z: 118.637512
+    }
+    Rotation {
+      Yaw: -171.283203
+    }
+    Scale {
+      X: 1.14152539
+      Y: 2.78208733
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4452440713304316958
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 3280.82373
+      Y: -1352.6864
+      Z: 118.637512
+    }
+    Rotation {
+      Yaw: -171.283203
+    }
+    Scale {
+      X: 1.14152539
+      Y: 2.78208733
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7040728306569931836
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 2184.54443
+      Y: -77.5623398
+      Z: 86.6368408
+    }
+    Rotation {
+      Yaw: -171.283203
+    }
+    Scale {
+      X: 1.14152479
+      Y: 3.05998158
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1160890666357201044
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 2396.66968
+      Y: -1461.09058
+      Z: 86.6368408
+    }
+    Rotation {
+      Yaw: -171.283203
+    }
+    Scale {
+      X: 1.14152479
+      Y: 3.05998158
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13305851561431193419
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 2489.95532
+      Y: -2076.85864
+      Z: 320.321869
+    }
+    Rotation {
+      Yaw: 36.558136
+      Roll: 5.92741544e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  ChildIds: 17021299753928105231
+  ChildIds: 15974186452555306061
+  ChildIds: 12232416151401258179
+  ChildIds: 6887270971115073
+  ChildIds: 16164306457403186969
+  ChildIds: 15089043634875733965
+  ChildIds: 13344498531159684848
+  ChildIds: 8561841082671368303
+  ChildIds: 18194380646543977166
+  ChildIds: 13779210693806710081
+  ChildIds: 13628850058215112315
+  ChildIds: 6305707049022287597
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6305707049022287597
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5632553
+            Y: -94.8633
+            Z: 396.366119
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.71629554
+            Yaw: -0.00903320313
+            Roll: -2.59243774
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10134550710589340035
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.220014095
+            Y: 0.440931797
+            Z: 412.462524
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13278653974622053425
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.181940079
+            Y: 0.325871468
+            Z: 338.220093
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14720090312666200685
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.181711435
+            Y: 0.32581687
+            Z: 337.779327
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17420108951511977882
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.219795227
+            Y: 0.440828919
+            Z: 412.511597
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 13628850058215112315
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -111.995262
+            Y: -164.488937
+            Z: 462.180084
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 13779210693806710081
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -144.918793
+            Y: -227.409332
+            Z: 511.392639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 18194380646543977166
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -172.162964
+            Y: -296.988403
+            Z: 561.328064
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 8561841082671368303
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.7081871
+            Y: -37.3587685
+            Z: 347.962158
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 13344498531159684848
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33962536
+            Y: 28.3226852
+            Z: 296.466583
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 15089043634875733965
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786228
+            Y: -0.157222643
+            Z: 504.336456
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114058226
+            Y: 5.39538097
+            Z: 507.101044
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786228
+            Y: -0.157222643
+            Z: 523.048
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.350647
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786228
+            Y: -0.157222643
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 5.14560318
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.5841446
+            Y: 91.2440643
+            Z: 242.85376
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140449733
+            Y: -6.4122982
+            Z: 507.622
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 16164306457403186969
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1486359
+            Y: 160.27626
+            Z: 185.995178
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 6887270971115073
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 99.0013123
+            Y: 227.990845
+            Z: 128.269974
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.08508301
+            Yaw: -0.0192260742
+            Roll: 2.02970386
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10134550710589340035
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.151165962
+            Y: 0.0848869085
+            Z: 392.077484
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13278653974622053425
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.151208162
+            Y: 0.0850634575
+            Z: 320.442383
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14720090312666200685
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.151142836
+            Y: 0.085200429
+            Z: 320.002411
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17420108951511977882
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.151027203
+            Y: 0.0848864317
+            Z: 392.127777
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 12232416151401258179
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 11.6182308
+      Y: 66.0302
+      Z: 237.051849
+    }
+    Rotation {
+      Pitch: 35.7175102
+      Yaw: -118.578918
+      Roll: 0.000243963819
+    }
+    Scale {
+      X: 1.51410222
+      Y: 1.37383986
+      Z: 0.70552808
+    }
+  }
+  ParentId: 13305851561431193419
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15974186452555306061
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  ChildIds: 15263844484553243116
+  ChildIds: 13658583472719354686
+  ChildIds: 6650788026328422298
+  ChildIds: 1034261319700101809
+  ChildIds: 13720795785079500256
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13720795785079500256
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 1127.27417
+      Y: 207.52774
+      Z: 161.535797
+    }
+    Rotation {
+      Pitch: -0.286315918
+      Yaw: -28.178772
+      Roll: 0.675993085
+    }
+    Scale {
+      X: 0.421085596
+      Y: 0.153352052
+      Z: 5.02295923
+    }
+  }
+  ParentId: 15974186452555306061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1034261319700101809
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 739.888123
+      Y: -534.998657
+      Z: 744.344727
+    }
+    Rotation {
+      Pitch: -0.286315918
+      Yaw: -28.178772
+      Roll: 0.675993383
+    }
+    Scale {
+      X: 0.421085596
+      Y: 0.153352052
+      Z: 5.02295923
+    }
+  }
+  ParentId: 15974186452555306061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6650788026328422298
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -47.3829536
+      Y: -113.967377
+      Z: 744.344727
+    }
+    Rotation {
+      Pitch: -0.286315918
+      Yaw: -28.178772
+      Roll: 0.675993085
+    }
+    Scale {
+      X: 0.421085596
+      Y: 0.153352052
+      Z: 5.02295923
+    }
+  }
+  ParentId: 15974186452555306061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13658583472719354686
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 333.828217
+      Y: 631.861328
+      Z: 161.535797
+    }
+    Rotation {
+      Pitch: -0.286315918
+      Yaw: -28.178772
+      Roll: 0.675992787
+    }
+    Scale {
+      X: 0.421085596
+      Y: 0.153352052
+      Z: 5.02295923
+    }
+  }
+  ParentId: 15974186452555306061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15263844484553243116
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 149.65773
+      Y: 287.487701
+      Z: 231.906235
+    }
+    Rotation {
+      Pitch: -0.286376953
+      Yaw: -28.1793213
+      Roll: 125.715103
+    }
+    Scale {
+      X: 0.421084464
+      Y: 0.0444213375
+      Z: 10.866828
+    }
+  }
+  ParentId: 15974186452555306061
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17021299753928105231
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13305851561431193419
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 134.228668
+            Y: 295.313873
+            Z: 75.0195923
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 6679495382130620515
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 2471.07568
+      Y: -1560.55042
+      Z: 363.592529
+    }
+    Rotation {
+      Yaw: 98.6592102
+    }
+    Scale {
+      X: 0.926644683
+      Y: 1.86249924
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12861571519778636378
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 2344.73779
+      Y: -1095.83203
+      Z: 320.321869
+    }
+    Rotation {
+      Yaw: 36.5581589
+      Roll: 5.92741713e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  ChildIds: 13815540652308868163
+  ChildIds: 7021457394462646665
+  ChildIds: 17359608186833698076
+  ChildIds: 12644679036129237040
+  ChildIds: 402480291160187820
+  ChildIds: 14403098128577964243
+  ChildIds: 14020702924386743620
+  ChildIds: 15240813473063963730
+  ChildIds: 756683408590859915
+  ChildIds: 9103773140382662757
+  ChildIds: 6558399060444977314
+  ChildIds: 5282400433293851436
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5282400433293851436
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5632782
+            Y: -94.8634415
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 6558399060444977314
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -111.995239
+            Y: -164.488831
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 9103773140382662757
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -144.918777
+            Y: -227.409256
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 756683408590859915
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6896.04395
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -179.287521
+            Y: -293.091614
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 15240813473063963730
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.7081223
+            Y: -37.3591194
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 14020702924386743620
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33939171
+            Y: 28.3231182
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.986395359
+            Yaw: -0.0158691406
+            Roll: -1.84494019
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 14403098128577964243
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 27.3202133
+            Y: 96.3596
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 402480291160187820
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1487541
+            Y: 160.276428
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 12644679036129237040
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 99.0012054
+            Y: 227.990372
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.24038696
+            Yaw: -0.0251159668
+            Roll: 2.32042074
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 17359608186833698076
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: -13.0450821
+      Y: 19.9129791
+      Z: 32.0058289
+    }
+    Rotation {
+      Yaw: -118.582947
+    }
+    Scale {
+      X: 1.01016939
+      Y: 1.37383926
+      Z: 0.705530703
+    }
+  }
+  ParentId: 12861571519778636378
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7021457394462646665
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  ChildIds: 16032728875147144789
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16032728875147144789
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 143.640747
+      Y: 269.46582
+      Z: -6.92749
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.280936748
+      Y: 0.0444225967
+      Z: 7.58520222
+    }
+  }
+  ParentId: 7021457394462646665
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13815540652308868163
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12861571519778636378
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 142.152664
+            Y: 310.130829
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 5044117847652491417
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 2287.95776
+      Y: -752.038818
+      Z: 247.535706
+    }
+    Rotation {
+      Yaw: -171.283203
+    }
+    Scale {
+      X: 1.14152467
+      Y: 16.6652508
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14328387286998971453
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 2362.00952
+      Y: -833.577942
+      Z: 363.592529
+    }
+    Rotation {
+      Yaw: 98.6592102
+    }
+    Scale {
+      X: 1.1274569
+      Y: 1.86249709
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1107740419631093218
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 2230.39795
+      Y: -349.14209
+      Z: 320.321869
+    }
+    Rotation {
+      Yaw: 37.3901253
+      Roll: 5.92811043e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  ChildIds: 342696571041447646
+  ChildIds: 1628635846518101073
+  ChildIds: 9258441012470420912
+  ChildIds: 14958889665914145617
+  ChildIds: 3456593704539260266
+  ChildIds: 17069987778362513709
+  ChildIds: 10191567456651049328
+  ChildIds: 4969041854186856927
+  ChildIds: 1057653434328912825
+  ChildIds: 2949674169961357961
+  ChildIds: 12864758656525019993
+  ChildIds: 12002500097562065865
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12002500097562065865
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5633163
+            Y: -94.8636
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.620106
+            Yaw: -0.00604248047
+            Roll: -1.12020874
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 12864758656525019993
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -111.995171
+            Y: -164.488815
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.46731469
+            Yaw: -0.00347900391
+            Roll: -0.844238281
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 2949674169961357961
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -150.345459
+            Y: -237.211578
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 1057653434328912825
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6896.04395
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -179.287521
+            Y: -293.091614
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 4969041854186856927
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.7081223
+            Y: -37.3591194
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 10191567456651049328
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33937836
+            Y: 28.3232517
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 17069987778362513709
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.5843258
+            Y: 91.2438583
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.858520508
+            Yaw: -0.0116271973
+            Roll: 1.55105639
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 3456593704539260266
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1487541
+            Y: 160.276428
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 14958889665914145617
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 90.9739838
+            Y: 213.490677
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 9258441012470420912
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: -13.0450821
+      Y: 19.9129791
+      Z: 32.0058289
+    }
+    Rotation {
+      Yaw: -118.582947
+    }
+    Scale {
+      X: 1.01016939
+      Y: 1.37383926
+      Z: 0.705530703
+    }
+  }
+  ParentId: 1107740419631093218
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1628635846518101073
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  ChildIds: 17652453282317292208
+  ChildIds: 9673185735095420434
+  ChildIds: 2587311897257919780
+  ChildIds: 13871134688247392037
+  ChildIds: 5331982843263492313
+  ChildIds: 4608099164429274541
+  ChildIds: 6814320919461063463
+  ChildIds: 14699366246430224483
+  ChildIds: 1934989284988718820
+  ChildIds: 6063136686121990754
+  ChildIds: 9139691269176304686
+  ChildIds: 2543366998419090020
+  ChildIds: 16395176194219733063
+  ChildIds: 8331433004484713313
+  ChildIds: 7357374235057065670
+  ChildIds: 17083626368632885126
+  ChildIds: 11926197177801565168
+  ChildIds: 1844152586785797369
+  ChildIds: 5966826700323481301
+  ChildIds: 1484002941138110038
+  ChildIds: 3874334088141518395
+  ChildIds: 2231778096140017413
+  ChildIds: 13992308158110696905
+  ChildIds: 17301952310842436188
+  ChildIds: 13118042338602361328
+  ChildIds: 3336993118788183273
+  ChildIds: 6464293697517539039
+  ChildIds: 13752371297287730717
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13752371297287730717
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 284.754761
+      Y: -1337.09314
+      Z: 81.4543762
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6464293697517539039
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 294.065857
+      Y: -1319.64661
+      Z: 338.451935
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573576
+      Y: 0.162591815
+      Z: 0.752890527
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3336993118788183273
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 286.707855
+      Y: -1333.43384
+      Z: 277.15097
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13118042338602361328
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -103.94899
+      Y: -2065.33545
+      Z: 681.032715
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17301952310842436188
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -103.94899
+      Y: -2065.33545
+      Z: 879.742188
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13992308158110696905
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -98.878006
+      Y: -2055.83862
+      Z: 944.574707
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573576
+      Y: 0.162591815
+      Z: 0.752890527
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2231778096140017413
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 70.2051697
+      Y: -1734.875
+      Z: 407.656372
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.0444182418
+      Y: 0.0444239117
+      Z: 12.0726852
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3874334088141518395
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 113.499847
+      Y: -1658.73083
+      Z: 617.389771
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.0444192737
+      Y: 0.0444242097
+      Z: 10.7621517
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1484002941138110038
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 96.9283905
+      Y: -1688.99292
+      Z: 569.890442
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.0444182418
+      Y: 0.0444239117
+      Z: 12.0726852
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5966826700323481301
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 106.245941
+      Y: -1710.71118
+      Z: -55.9016724
+    }
+    Rotation {
+      Yaw: -0.832000732
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1628635846518101073
+  ChildIds: 17273892177639879600
+  ChildIds: 652817785220218685
+  ChildIds: 16741982714362042286
+  ChildIds: 1681201989212163626
+  ChildIds: 9338517201504478695
+  ChildIds: 4308370339396029947
+  ChildIds: 10264710880392109468
+  ChildIds: 10765303155083066866
+  ChildIds: 15407707009278884016
+  ChildIds: 5441028802760365017
+  ChildIds: 4866397420468217805
+  ChildIds: 13962825972309261120
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13962825972309261120
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786712
+            Y: -0.157222643
+            Z: 504.443359
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114056677
+            Y: 5.39538145
+            Z: 507.207764
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929138
+            Yaw: 61.3241196
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786712
+            Y: -0.157222643
+            Z: 523.154968
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.350647
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216786712
+            Y: -0.157222643
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 5.18991184
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5632858
+            Y: -94.863266
+            Z: 396.366119
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140447855
+            Y: -6.4122982
+            Z: 507.72876
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929138
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 4866397420468217805
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -107.060982
+            Y: -167.127808
+            Z: 449.644897
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 5441028802760365017
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -143.693756
+            Y: -234.52092
+            Z: 511.392639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.844268799
+            Yaw: -0.0116577148
+            Roll: 1.57906592
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10134550710589340035
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.169757605
+            Y: 0.119639754
+            Z: 388.866638
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13278653974622053425
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.169727564
+            Y: 0.119683802
+            Z: 317.231354
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14720090312666200685
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.169542551
+            Y: 0.119856298
+            Z: 316.791779
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17420108951511977882
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.169493914
+            Y: 0.119663477
+            Z: 388.91687
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 15407707009278884016
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -172.162964
+            Y: -296.988403
+            Z: 561.328064
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 10765303155083066866
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.708271
+            Y: -37.3587418
+            Z: 347.962158
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.42266846
+            Yaw: -0.0330505371
+            Roll: 2.66167188
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 10264710880392109468
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33962536
+            Y: 28.3226852
+            Z: 296.466583
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 4308370339396029947
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.5841446
+            Y: 91.2440643
+            Z: 242.85376
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 9338517201504478695
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1486397
+            Y: 160.276245
+            Z: 185.995178
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.1986084
+            Yaw: -0.0234680176
+            Roll: 2.24241638
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 10134550710589340035
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.208557129
+            Y: 0.192390919
+            Z: 389.988342
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13278653974622053425
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.20865345
+            Y: 0.192401469
+            Z: 318.353
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 14720090312666200685
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.208431244
+            Y: 0.192505598
+            Z: 317.913
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17420108951511977882
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.208235741
+            Y: 0.192307949
+            Z: 390.037445
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 1681201989212163626
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 99.0013
+            Y: 227.990875
+            Z: 128.269974
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 16741982714362042286
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 11.6182308
+      Y: 66.0302
+      Z: 237.051849
+    }
+    Rotation {
+      Pitch: 35.7175102
+      Yaw: -118.578918
+      Roll: 0.000243963819
+    }
+    Scale {
+      X: 1.51410222
+      Y: 1.37383986
+      Z: 0.70552808
+    }
+  }
+  ParentId: 5966826700323481301
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 652817785220218685
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  ChildIds: 1930308058422699217
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1930308058422699217
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 149.65773
+      Y: 287.487701
+      Z: 231.906235
+    }
+    Rotation {
+      Pitch: -0.286376953
+      Yaw: -28.1793213
+      Roll: 125.715103
+    }
+    Scale {
+      X: 0.421084464
+      Y: 0.0444213375
+      Z: 10.866828
+    }
+  }
+  ParentId: 652817785220218685
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17273892177639879600
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5966826700323481301
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 134.228668
+            Y: 295.313873
+            Z: 75.0195923
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 1844152586785797369
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -495.280579
+      Y: -882.64856
+      Z: 338.451935
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573576
+      Y: 0.162591815
+      Z: 0.752890527
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11926197177801565168
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -502.638885
+      Y: -896.435669
+      Z: 277.15097
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17083626368632885126
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -504.59198
+      Y: -900.095093
+      Z: 81.4543762
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7357374235057065670
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -893.292908
+      Y: -1628.33838
+      Z: 681.032715
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8331433004484713313
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -888.223633
+      Y: -1618.84058
+      Z: 944.574707
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573576
+      Y: 0.162591815
+      Z: 0.752890527
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16395176194219733063
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -893.292908
+      Y: -1628.33838
+      Z: 879.742188
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.162573293
+      Y: 0.162590429
+      Z: 0.513807297
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2543366998419090020
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -719.140381
+      Y: -1297.87756
+      Z: 407.656372
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.0444182418
+      Y: 0.0444239117
+      Z: 12.0726852
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9139691269176304686
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -675.846802
+      Y: -1221.73267
+      Z: 617.389771
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0910645
+      Roll: 125.992165
+    }
+    Scale {
+      X: 0.0444192737
+      Y: 0.0444242097
+      Z: 10.7621517
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6063136686121990754
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -692.418579
+      Y: -1251.99463
+      Z: 569.890442
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.091095
+      Roll: 125.992188
+    }
+    Scale {
+      X: 0.0444182418
+      Y: 0.0444239117
+      Z: 12.0726852
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1934989284988718820
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.67392
+      Y: 604.870361
+      Z: 327.253
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923767
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14699366246430224483
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.673462
+      Y: 604.870056
+      Z: 399.121765
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923462
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6814320919461063463
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4179382
+      Y: -84.6729355
+      Z: 399.118408
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924072
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4608099164429274541
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4177246
+      Y: -84.6730576
+      Z: 327.249664
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995422
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5331982843263492313
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 143.640747
+      Y: 269.46582
+      Z: -6.92749
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.280936748
+      Y: 0.0444225967
+      Z: 7.58520222
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13871134688247392037
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.673584
+      Y: 604.870117
+      Z: 52.1512756
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924072
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2587311897257919780
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.67334
+      Y: 604.870117
+      Z: 124.02005
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923767
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9673185735095420434
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4179382
+      Y: -84.6729355
+      Z: 124.016724
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17652453282317292208
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4177246
+      Y: -84.6730576
+      Z: 52.1479492
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924683
+      Roll: 89.9995041
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 1628635846518101073
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 342696571041447646
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1107740419631093218
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 134.228577
+            Y: 295.313873
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -2.049057e-05
+            Roll: 3.55454665e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 11566075677954136812
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 3345.58496
+      Y: -1431.09668
+      Z: 363.592529
+    }
+    Rotation {
+      Yaw: 98.6592178
+    }
+    Scale {
+      X: 0.926644683
+      Y: 1.86249924
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7165289582187988116
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 3244.28296
+      Y: -962.672363
+      Z: 320.321869
+    }
+    Rotation {
+      Yaw: 36.5581741
+      Roll: 5.92741925e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  ChildIds: 8273412478581299706
+  ChildIds: 8268944128556935417
+  ChildIds: 3438108698857921869
+  ChildIds: 929590781419800892
+  ChildIds: 18111586370726961589
+  ChildIds: 2662586611379103225
+  ChildIds: 15820672329761424752
+  ChildIds: 9510471410878486958
+  ChildIds: 4539461978742152651
+  ChildIds: 17837213547775166784
+  ChildIds: 6382060897328291431
+  ChildIds: 9741255612094945050
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9741255612094945050
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5631104
+            Y: -94.8633499
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.870439231
+            Yaw: -0.0123596191
+            Roll: -1.62799072
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 6382060897328291431
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -111.995323
+            Y: -164.488892
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.532030702
+            Yaw: -0.00463867188
+            Roll: -0.994934082
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 17837213547775166784
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -144.918777
+            Y: -227.409256
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 4539461978742152651
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6896.04395
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -179.287521
+            Y: -293.091614
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 9510471410878486958
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.7081223
+            Y: -37.3591194
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 15820672329761424752
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216785036
+            Y: -0.157222658
+            Z: 490.905701
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114062488
+            Y: 5.39538097
+            Z: 493.670105
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929138
+            Yaw: 61.3241
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216785036
+            Y: -0.157222658
+            Z: 509.61731
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.350647
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0216785036
+            Y: -0.157222658
+            Z: 254.854645
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.87013149
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33937836
+            Y: 28.3232517
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.14045459
+            Y: -6.4122982
+            Z: 494.191101
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 2662586611379103225
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.5841675
+            Y: 91.2436905
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 18111586370726961589
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1487541
+            Y: 160.276428
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 929590781419800892
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 99.0012817
+            Y: 227.990463
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 3438108698857921869
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: -13.0450821
+      Y: 19.9129791
+      Z: 32.0058289
+    }
+    Rotation {
+      Yaw: -118.582947
+    }
+    Scale {
+      X: 1.01016939
+      Y: 1.37383926
+      Z: 0.705530703
+    }
+  }
+  ParentId: 7165289582187988116
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8268944128556935417
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  ChildIds: 16365433137917973579
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16365433137917973579
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 143.640747
+      Y: 269.46582
+      Z: -6.92749
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.280936748
+      Y: 0.0444225967
+      Z: 7.58520222
+    }
+  }
+  ParentId: 8268944128556935417
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8273412478581299706
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7165289582187988116
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 134.228577
+            Y: 295.313873
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -2.049057e-05
+            Roll: 3.55454665e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 12228094784808754467
+  Name: "Fantasy Castle Bannister 01 - Post"
+  Transform {
+    Location {
+      X: 3175.80811
+      Y: -667.744263
+      Z: 247.535706
+    }
+    Rotation {
+      Yaw: -171.283218
+    }
+    Scale {
+      X: 1.14152336
+      Y: 18.0121346
+      Z: 1.75242293
+    }
+  }
+  ParentId: 691385885930139767
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9345249492029097138
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.556966126
+        G: 0.693389893
+        B: 0.921875
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6097294848426860278
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: 3236.52344
+      Y: -704.123535
+      Z: 363.592529
+    }
+    Rotation {
+      Yaw: 98.6591949
+    }
+    Scale {
+      X: 1.1274569
+      Y: 1.86249709
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15686909077460378362
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5895650889964592361
+  Name: "Metal_Fence_Top"
+  Transform {
+    Location {
+      X: 3129.92871
+      Y: -215.984406
+      Z: 320.321869
+    }
+    Rotation {
+      Yaw: 37.3901939
+      Roll: 5.9281117e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 691385885930139767
+  ChildIds: 7726184399330098697
+  ChildIds: 11843591172089109526
+  ChildIds: 16146999755681317476
+  ChildIds: 11665950820852197836
+  ChildIds: 7415866848203553937
+  ChildIds: 7332038656200000037
+  ChildIds: 16725361575276427931
+  ChildIds: 12810364811607754979
+  ChildIds: 16141928350944416121
+  ChildIds: 15689154880639577943
+  ChildIds: 9103246459500043637
+  ChildIds: 8168399726384985022
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8168399726384985022
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -75.5632782
+            Y: -94.8634415
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 9103246459500043637
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -116.95475
+            Y: -173.447311
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 15689154880639577943
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -144.918777
+            Y: -227.409256
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 16141928350944416121
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6896.04395
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0531647205
+            Y: -0.099830687
+            Z: 494.20816
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.145702839
+            Y: 5.45268488
+            Z: 496.97406
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929138
+            Yaw: 61.3241196
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0531060696
+            Y: -0.0999470949
+            Z: 512.921265
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.0230716467
+            Y: -0.237896502
+            Z: 247.257614
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.995821
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -179.287537
+            Y: -293.091736
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.786590576
+            Yaw: -0.00973510742
+            Roll: 1.42107797
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.108848333
+            Y: -6.35499048
+            Z: 497.494751
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 12810364811607754979
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 6970.1748
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215978846
+            Y: -0.15706706
+            Z: 496.028473
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.11425671
+            Y: 5.3956728
+            Z: 498.792877
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929138
+            Yaw: 61.3241196
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215978846
+            Y: -0.15706706
+            Z: 514.740112
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215978846
+            Y: -0.15706706
+            Z: 247.258942
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.995821
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -42.7081223
+            Y: -37.3591194
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.14033094
+            Y: -6.41207695
+            Z: 499.313873
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 16725361575276427931
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7041.18848
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8.33925247
+            Y: 28.3232956
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: 0.63112992
+            Yaw: -0.00622558594
+            Roll: -1.14022827
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 7332038656200000037
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7119.76953
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24.5841675
+            Y: 91.2436905
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 7415866848203553937
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7196.85205
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 62.1487541
+            Y: 160.276428
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 11665950820852197836
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Location {
+      X: 2882.6228
+      Y: 7272.83496
+      Z: -210.659821
+    }
+    Rotation {
+      Yaw: 27.6211052
+      Roll: 5.92870716e-15
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 99.0012817
+            Y: 227.990463
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
+  }
+}
+Objects {
+  Id: 16146999755681317476
+  Name: "Fantasy Castle Trim - Parapet 01"
+  Transform {
+    Location {
+      X: -13.0450821
+      Y: 19.9129791
+      Z: 32.0058289
+    }
+    Rotation {
+      Yaw: -118.582947
+    }
+    Scale {
+      X: 1.01016939
+      Y: 1.37383926
+      Z: 0.705530703
+    }
+  }
+  ParentId: 5895650889964592361
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17583731156094274833
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 6.00807095
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 3.07193351
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3214006606721471794
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11843591172089109526
+  Name: "Metal_Fence_part"
+  Transform {
+    Location {
+      X: -159.812866
+      Y: -256.603516
+      Z: 55.9016724
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  ChildIds: 17898434147486260804
+  ChildIds: 16629488869829907216
+  ChildIds: 15158760601176166783
+  ChildIds: 6283139280298830895
+  ChildIds: 16982758536050621037
+  ChildIds: 15276884644518478310
+  ChildIds: 1602722574343234175
+  ChildIds: 12725237832637177464
+  ChildIds: 733861414391739227
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 733861414391739227
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.67392
+      Y: 604.870361
+      Z: 327.253
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923767
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12725237832637177464
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.673462
+      Y: 604.870056
+      Z: 399.121765
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923462
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1602722574343234175
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4179382
+      Y: -84.6729355
+      Z: 399.118408
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924072
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15276884644518478310
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4177246
+      Y: -84.6730576
+      Z: 327.249664
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995422
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16982758536050621037
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 143.640747
+      Y: 269.46582
+      Z: -6.92749
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.280936748
+      Y: 0.0444225967
+      Z: 7.58520222
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6283139280298830895
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.673584
+      Y: 604.870117
+      Z: 52.1512756
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924072
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15158760601176166783
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: 322.67334
+      Y: 604.870117
+      Z: 124.02005
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0923767
+      Roll: 89.9994888
+    }
+    Scale {
+      X: 0.123342581
+      Y: 0.123341948
+      Z: 0.164730653
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16629488869829907216
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4179382
+      Y: -84.6729355
+      Z: 124.016724
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924377
+      Roll: 89.9995
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17898434147486260804
+  Name: "Prism - 8-Sided Polished"
+  Transform {
+    Location {
+      X: -52.4177246
+      Y: -84.6730576
+      Z: 52.1479492
+    }
+    Rotation {
+      Pitch: 4.09811328e-05
+      Yaw: -28.0924683
+      Roll: 89.9995041
+    }
+    Scale {
+      X: 0.0444180705
+      Y: 0.0444226786
+      Z: 15.8147936
+    }
+  }
+  ParentId: 11843591172089109526
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18168149806092884960
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12494784180091766806
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7726184399330098697
+  Name: "Metal_Fence_Long_Arrow"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5895650889964592361
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2920878940643365415
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 464.91748
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5501286636472828538
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.114093423
+            Y: 5.39551163
+            Z: 467.681885
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 5646570714700823046
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 483.629089
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -31.3505859
+            Roll: 1.11283611e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 6063224670038848191
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.0215611234
+            Y: -0.157320097
+            Z: 244.006439
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 0.0444227792
+            Y: 0.0444227792
+            Z: 4.66612291
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8681517526589976931
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Metal_Fence_Long_Arrow"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 134.228577
+            Y: 295.313873
+            Z: 55.9017639
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -2.049057e-05
+            Roll: 3.55454665e-22
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17777628464871604092
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.140479922
+            Y: -6.41223764
+            Z: 468.202881
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -45.8929443
+            Yaw: -118.675873
+            Roll: -179.999634
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15949454448780097931
+    }
   }
 }
 Objects {
@@ -80546,6 +92505,11 @@ Objects {
   ChildIds: 12282144525985433933
   ChildIds: 18129520232654972307
   ChildIds: 4770566201001648417
+  ChildIds: 11166570616672227996
+  ChildIds: 214442172252397454
+  ChildIds: 12401713084125270019
+  ChildIds: 16137491002932719375
+  ChildIds: 3215031833031669988
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -80554,6 +92518,206 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3215031833031669988
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: -429.689087
+      Y: 995.155273
+      Z: -550.376953
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 0.800000191
+      Y: 1.01435542
+      Z: 0.8
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16137491002932719375
+  Name: "Fantasy Castle Pillar 01 Top"
+  Transform {
+    Location {
+      X: -430.335938
+      Y: 995.155273
+      Z: -240.376953
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 0.80000031
+      Y: 0.894082189
+      Z: 0.8
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13304908840312358092
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12401713084125270019
+  Name: "Arch Fancy 3m"
+  Transform {
+    Location {
+      X: -437.678833
+      Y: 995.155273
+      Z: 229.623169
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 1.49999988
+      Y: 1.49999988
+      Z: 1.49999988
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4397331359527074146
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 214442172252397454
+  Name: "Fantasy Castle Pillar 01 Top"
+  Transform {
+    Location {
+      X: 462.321289
+      Y: 995.155273
+      Z: -240.376953
+    }
+    Rotation {
+      Yaw: 179.999954
+    }
+    Scale {
+      X: 0.80000031
+      Y: 0.894082189
+      Z: 0.8
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13304908840312358092
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11166570616672227996
+  Name: "Fantasy Castle Pillar 01 Base"
+  Transform {
+    Location {
+      X: 468.34082
+      Y: 995.155273
+      Z: -550.376953
+    }
+    Rotation {
+      Yaw: -90
+    }
+    Scale {
+      X: 0.800000191
+      Y: 1.01435542
+      Z: 0.8
+    }
+  }
+  ParentId: 6273792433856062057
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14452616722762075696
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -81714,7 +93878,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Top"
   Transform {
     Location {
-      X: -457.678711
+      X: -429.640259
       Y: 27.8554688
       Z: 343.955933
     }
@@ -81754,7 +93918,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: -457.03186
+      X: -428.993408
       Y: 27.8554688
       Z: 33.9559326
     }

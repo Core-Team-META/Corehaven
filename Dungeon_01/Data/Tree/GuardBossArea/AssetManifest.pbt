@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16507931824687121508
+  Name: "Decal Stains Top 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stain_top_001"
+  }
+}
+Assets {
   Id: 16077212917008984281
   Name: "Bush 02"
   PlatformAssetType: 1
@@ -287,6 +296,24 @@ Assets {
   }
 }
 Assets {
+  Id: 6510101324272813730
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
+  Id: 6469962064224697995
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
   Id: 5611890132274510529
   Name: "Ivy 02"
   PlatformAssetType: 1
@@ -347,6 +374,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_3m_001"
+  }
+}
+Assets {
+  Id: 4227200627548369820
+  Name: "Grass Short"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_002"
   }
 }
 Assets {
