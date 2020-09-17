@@ -3155,7 +3155,7 @@
         Name: "Right_LegPivot"
         Transform {
           Location {
-            X: -6.10351563e-05
+            X: -6.10351562e-05
             Y: 15.897583
             Z: 1.52587891e-05
           }
@@ -7036,7 +7036,7 @@
         Transform {
           Location {
             X: -12.8708191
-            Y: -6.94726563
+            Y: -6.94726562
             Z: 0.349105835
           }
           Rotation {
@@ -9628,7 +9628,7 @@
         Name: "Horn"
         Transform {
           Location {
-            X: 327.938477
+            X: 327.938476
             Y: 15.0509796
             Z: -44.1498222
           }
@@ -12529,7 +12529,7 @@
         Transform {
           Location {
             X: 1.91217041
-            Y: -3.33007813
+            Y: -3.33007812
             Z: 40.8556595
           }
           Rotation {
@@ -13033,7 +13033,7 @@
           Rotation {
             Pitch: 16.4070282
             Yaw: -43.3937378
-            Roll: 140.410645
+            Roll: 140.410644
           }
           Scale {
             X: 0.0641327649
@@ -13956,7 +13956,7 @@
         Transform {
           Location {
             X: -73.0594482
-            Y: -38.0976563
+            Y: -38.0976562
             Z: 17.2264709
           }
           Rotation {
@@ -14169,7 +14169,7 @@
         Transform {
           Location {
             X: -79.3219
-            Y: -4.55664063
+            Y: -4.55664062
             Z: 11.6821289
           }
           Rotation {
@@ -14328,7 +14328,7 @@
         Transform {
           Location {
             X: -67.2642822
-            Y: 13.9726563
+            Y: 13.9726562
             Z: 11.2909546
           }
           Rotation {
@@ -15320,6 +15320,6 @@
   Marketplace {
     Description: "DnD Plague Dragon WIP"
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
   DirectlyPublished: true
 }

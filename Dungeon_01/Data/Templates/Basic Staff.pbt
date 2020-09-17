@@ -320,7 +320,7 @@
         Name: "Plasma Ball Projectile VFX"
         Transform {
           Location {
-            Z: 64.4257813
+            Z: 64.4257812
           }
           Rotation {
             Yaw: -89.9999542
@@ -460,5 +460,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
 }

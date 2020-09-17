@@ -5,7 +5,7 @@ Objects {
   Name: "DragonBossArea"
   Transform {
     Location {
-      X: 51071.9727
+      X: 51071.9726
       Y: -2579.42578
       Z: 7005.88867
     }
@@ -34,7 +34,7 @@ Objects {
   Name: "MerchantBossArea"
   Transform {
     Location {
-      X: 32162.5313
+      X: 32162.5312
       Y: 9903.3418
       Z: -205.316284
     }
@@ -92,8 +92,8 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 51672.2227
-      Y: 8256.47559
+      X: 51672.2226
+      Y: 8256.47558
       Z: 5362.66064
     }
     Rotation {
@@ -424,7 +424,7 @@ Objects {
   Transform {
     Location {
       X: -63.9296875
-      Y: 322.226563
+      Y: 322.226562
     }
     Rotation {
       Yaw: 104.208611
@@ -446,6 +446,7 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -476,6 +477,7 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -506,6 +508,7 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -515,7 +518,7 @@ Objects {
     Location {
       X: 13.9370117
       Y: -354.266602
-      Z: 6.10351563e-05
+      Z: 6.10351562e-05
     }
     Rotation {
       Yaw: 104.208481
@@ -537,6 +540,7 @@ Objects {
   }
   PlayerSpawnPoint {
     TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {

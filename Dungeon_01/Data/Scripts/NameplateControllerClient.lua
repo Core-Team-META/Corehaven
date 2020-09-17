@@ -494,8 +494,7 @@ function Tick(deltaTime)
 
 				-- Adjust slightly if it's our target
 				if API_PS.GetTarget(LOCAL_PLAYER) == character then
-					nameplate.nameText:SetScale(Vector3.New(1.3))
-					nameColor = Color.Lerp(nameColor, Color.WHITE, 0.2)
+					nameplate.nameText:SetScale(Vector3.New(1.15))
 				else
 					nameplate.nameText:SetScale(Vector3.ONE)
 				end

@@ -5,7 +5,7 @@ Objects {
   Name: "TalentTrees"
   Transform {
     Location {
-      X: 71.7070313
+      X: 71.7070312
       Y: 57.2109375
     }
     Rotation {

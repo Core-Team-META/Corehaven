@@ -475,7 +475,7 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 11115.9063
+      X: 11115.9062
       Y: 514.338867
       Z: -2.04138184
     }
@@ -626,7 +626,7 @@ Objects {
   Transform {
     Location {
       X: 5405.58105
-      Y: 2222.82813
+      Y: 2222.82812
       Z: -603.47522
     }
     Rotation {
@@ -780,7 +780,7 @@ Objects {
       Z: 434.16803
     }
     Rotation {
-      Pitch: -32.6601563
+      Pitch: -32.6601562
       Yaw: 106.069
       Roll: -177.295364
     }
@@ -876,7 +876,7 @@ Objects {
   Transform {
     Location {
       X: 10266.3711
-      Y: 849.591309
+      Y: 849.591308
       Z: -116.087769
     }
     Rotation {
@@ -1119,7 +1119,7 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: -128.063477
+      X: -128.063476
       Y: 521.058105
       Z: 507.636963
     }
@@ -1167,7 +1167,7 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 2775.93311
+      X: 2775.9331
       Y: 5655.13428
       Z: 1023.39355
     }
@@ -1931,7 +1931,7 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: -1167.75977
+      X: -1167.75976
       Y: 2000.68433
       Z: 881.97876
     }
@@ -1974,7 +1974,7 @@ Objects {
   Transform {
     Location {
       X: -1054.16016
-      Y: 2425.46143
+      Y: 2425.46142
       Z: 973.943
     }
     Rotation {
@@ -2652,7 +2652,7 @@ Objects {
     Location {
       X: -1508.68945
       Y: -319.993042
-      Z: -517.129395
+      Z: -517.129394
     }
     Rotation {
       Yaw: 141.051651
@@ -2770,7 +2770,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1926.00977
+      X: 1926.00976
       Y: -2580.05493
       Z: -768.65918
     }
@@ -3691,7 +3691,7 @@ Objects {
   Transform {
     Location {
       X: 434.710938
-      Y: -1494.85059
+      Y: -1494.85058
       Z: -1233.35474
     }
     Rotation {
@@ -3851,7 +3851,7 @@ Objects {
   Transform {
     Location {
       X: 925.03125
-      Y: -1804.88477
+      Y: -1804.88476
       Z: -1233.35474
     }
     Rotation {
@@ -3890,7 +3890,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 844.601563
+      X: 844.601562
       Y: -1659.39844
       Z: -1233.35474
     }
@@ -4772,7 +4772,7 @@ Objects {
     Location {
       X: 506.669922
       Y: 131.133301
-      Z: 494.778809
+      Z: 494.778808
     }
     Rotation {
       Yaw: -32.4925537
@@ -5250,7 +5250,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 325.945313
+      X: 325.945312
       Y: -139.527283
       Z: 597.566406
     }
@@ -5410,7 +5410,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 3420.14063
+      X: 3420.14062
       Y: -144.72113
       Z: -755.881104
     }
@@ -6010,7 +6010,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 583.601563
+      X: 583.601562
       Y: 292.466553
       Z: -2389.04907
     }
@@ -6370,7 +6370,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1512.32813
+      X: 1512.32812
       Y: -2240.11426
       Z: 468.916016
     }
@@ -6490,7 +6490,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1781.76563
+      X: 1781.76562
       Y: -2357.1377
       Z: 391.311035
     }
@@ -6692,7 +6692,7 @@ Objects {
     Location {
       X: 3013.08984
       Y: -2207.56
-      Z: 364.848145
+      Z: 364.848144
     }
     Rotation {
       Yaw: -140.093094
@@ -6730,7 +6730,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 2856.76563
+      X: 2856.76562
       Y: -2245.104
       Z: 451.14209
     }
@@ -7450,7 +7450,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1664.01563
+      X: -1664.01562
       Y: -754.803711
       Z: -139.805176
     }
@@ -7530,7 +7530,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1664.01563
+      X: -1664.01562
       Y: -754.803711
       Z: -619.636963
     }
@@ -7570,7 +7570,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1443.07813
+      X: -1443.07812
       Y: -482.357544
       Z: -271.970703
     }
@@ -7771,7 +7771,7 @@ Objects {
   Transform {
     Location {
       X: -1678.06055
-      Y: -292.500977
+      Y: -292.500976
       Z: -721.931641
     }
     Rotation {
@@ -9090,7 +9090,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 5492.94727
+      X: 5492.94726
       Y: -1638.58911
       Z: 477.84375
     }
@@ -9171,8 +9171,8 @@ Objects {
   Transform {
     Location {
       X: 6085.33398
-      Y: -1049.41895
-      Z: 940.657227
+      Y: -1049.41894
+      Z: 940.657226
     }
     Rotation {
       Yaw: -12.0888062
@@ -9452,7 +9452,7 @@ Objects {
     Location {
       X: 4826.13086
       Y: -1518.64746
-      Z: -238.907227
+      Z: -238.907226
     }
     Rotation {
       Yaw: -12.0886536
@@ -9732,7 +9732,7 @@ Objects {
     Location {
       X: 5032.01
       Y: -1307.47876
-      Z: -246.191895
+      Z: -246.191894
     }
     Rotation {
       Yaw: -12.088562
@@ -11052,7 +11052,7 @@ Objects {
     Location {
       X: 157.074219
       Y: -132.047363
-      Z: -298.750977
+      Z: -298.750976
     }
     Rotation {
       Yaw: 148.925171
@@ -11210,7 +11210,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 325.945313
+      X: 325.945312
       Y: -139.527283
       Z: -403.168457
     }
@@ -11290,7 +11290,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 325.945313
+      X: 325.945312
       Y: -139.527283
       Z: -1077.72607
     }
@@ -11332,7 +11332,7 @@ Objects {
     Location {
       X: 258.242188
       Y: 14.1983643
-      Z: -931.726563
+      Z: -931.726562
     }
     Rotation {
       Yaw: 148.925171
@@ -11410,7 +11410,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -92.3164063
+      X: -92.3164062
       Y: 328.703979
       Z: -631.960693
     }
@@ -11532,7 +11532,7 @@ Objects {
     Location {
       X: 397.697266
       Y: 2532.89795
-      Z: -746.657227
+      Z: -746.657226
     }
     Rotation {
       Yaw: 4.35148191
@@ -11772,7 +11772,7 @@ Objects {
     Location {
       X: 261.128906
       Y: 2264.4519
-      Z: -1205.57813
+      Z: -1205.57812
     }
     Rotation {
       Yaw: 7.42950726
@@ -12210,7 +12210,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1226.44727
+      X: 1226.44726
       Y: 2032.88367
       Z: -617.567383
     }
@@ -12570,7 +12570,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 1226.44727
+      X: 1226.44726
       Y: 2032.88367
       Z: -853.065918
     }
@@ -12850,7 +12850,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -92.3164063
+      X: -92.3164062
       Y: 328.703979
       Z: -948.892578
     }
@@ -13090,7 +13090,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 3667.50977
+      X: 3667.50976
       Y: 1007.54742
       Z: -643.65918
     }
@@ -13210,7 +13210,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: 3524.94727
+      X: 3524.94726
       Y: 1112.93384
       Z: -569.742188
     }
@@ -13481,7 +13481,7 @@ Objects {
     Location {
       X: -1236.24805
       Y: 890.380859
-      Z: 600.841309
+      Z: 600.841308
     }
     Rotation {
       Yaw: 67.7505722
@@ -13919,7 +13919,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1915.50977
+      X: -1915.50976
       Y: -580.685547
       Z: 308.515381
     }
@@ -14159,7 +14159,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -2805.91309
+      X: -2805.91308
       Y: -2722.7168
       Z: 455.936462
     }
@@ -14279,7 +14279,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -2642.23145
+      X: -2642.23144
       Y: -3472.67383
       Z: -53.9663086
     }
@@ -14359,7 +14359,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -2642.23145
+      X: -2642.23144
       Y: -3472.67383
       Z: 287.427429
     }
@@ -14678,7 +14678,7 @@ Objects {
     Location {
       X: 3238.90063
       Y: 1068.58984
-      Z: 50.4414063
+      Z: 50.4414062
     }
     Rotation {
     }
@@ -15262,7 +15262,7 @@ Objects {
   Transform {
     Location {
       X: -2773.01758
-      Y: -3226.91895
+      Y: -3226.91894
       Z: 525.707886
     }
     Rotation {
@@ -15502,7 +15502,7 @@ Objects {
   Transform {
     Location {
       X: -1744.53223
-      Y: -649.060059
+      Y: -649.060058
       Z: 181.044922
     }
     Rotation {
@@ -15982,7 +15982,7 @@ Objects {
   Transform {
     Location {
       X: -2506.5918
-      Y: -2559.76563
+      Y: -2559.76562
       Z: 164.081421
     }
     Rotation {
@@ -16181,7 +16181,7 @@ Objects {
   Name: "Rock Hexagonal"
   Transform {
     Location {
-      X: -1915.50977
+      X: -1915.50976
       Y: -580.685547
       Z: 508.98175
     }

@@ -5,7 +5,7 @@ local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 function OnNetworkedPropertyChangedEvent(object, propertyName)
 	local newValue = SERVER_SCRIPT:GetCustomProperty(propertyName)
 	local tokens = {CoreString.Split(newValue, "|")}
-	assert(#tokens == 5)
+	assert(#tokens >= 5)		-- Extra tokens used to force changes when the event is identical
 	local sourceCharacter = API_ID.GetObjectFromId(tokens[2])
 	local targetCharacter = API_ID.GetObjectFromId(tokens[3])
 	local effectiveAmount = tonumber(tokens[4])

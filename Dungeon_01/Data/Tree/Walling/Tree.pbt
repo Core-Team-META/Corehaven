@@ -232,7 +232,7 @@ Objects {
   Transform {
     Location {
       X: 4802.07373
-      Y: -1102.29395
+      Y: -1102.29394
       Z: 527.767822
     }
     Rotation {
@@ -797,7 +797,7 @@ Objects {
   Transform {
     Location {
       X: 3541.55762
-      Y: 2897.37061
+      Y: 2897.3706
       Z: 901.831055
     }
     Rotation {
@@ -1120,7 +1120,7 @@ Objects {
       Z: 846.543945
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -178.624512
       Roll: 89.9994812
     }
@@ -1655,7 +1655,7 @@ Objects {
   Transform {
     Location {
       X: 3032.89941
-      Y: 3288.33643
+      Y: 3288.33642
       Z: 839.050049
     }
     Rotation {
@@ -1701,7 +1701,7 @@ Objects {
       Z: 846.541748
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -176.760361
       Roll: 89.9994888
     }
@@ -1751,7 +1751,7 @@ Objects {
       Z: 846.540527
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -176.760345
       Roll: 89.9994888
     }
@@ -1801,7 +1801,7 @@ Objects {
       Z: 402.983887
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -178.781372
       Roll: 89.9992905
     }
@@ -1851,7 +1851,7 @@ Objects {
       Z: 402.982666
     }
     Rotation {
-      Pitch: -6.10351563e-05
+      Pitch: -6.10351562e-05
       Yaw: -178.781387
       Roll: 89.9992447
     }
@@ -2570,7 +2570,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 2210.71143
+      X: 2210.71142
       Y: -1962.93774
       Z: 24.1506348
     }
@@ -2618,7 +2618,7 @@ Objects {
     }
     Rotation {
       Pitch: -4.36682129
-      Yaw: -6.10351563e-05
+      Yaw: -6.10351562e-05
       Roll: 7.44476154e-07
     }
     Scale {
@@ -2858,7 +2858,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 3083.20313
+      X: 3083.20312
       Y: -2558.52344
       Z: 602.835205
     }
@@ -2897,7 +2897,7 @@ Objects {
   Name: "Fantasy Castle Pillar 01 Base"
   Transform {
     Location {
-      X: 3083.20313
+      X: 3083.20312
       Y: -2558.52344
       Z: 625.890381
     }
@@ -3386,7 +3386,7 @@ Objects {
   Name: "Default Floor"
   Transform {
     Location {
-      X: -210.660645
+      X: -210.660644
       Y: 1696.16199
       Z: 241.54541
     }
@@ -4358,7 +4358,7 @@ Objects {
   Transform {
     Location {
       X: 4832.62646
-      Y: -551.882813
+      Y: -551.882812
       Z: 1201.27832
     }
     Rotation {
@@ -4917,7 +4917,7 @@ Objects {
   Name: "Arch Fancy 3m"
   Transform {
     Location {
-      X: 4704.10059
+      X: 4704.10058
       Y: 80.1518555
       Z: 142.108887
     }
@@ -5209,7 +5209,7 @@ Objects {
     Location {
       X: 4618.09131
       Y: -1340.19556
-      Z: 119.910645
+      Z: 119.910644
     }
     Rotation {
       Yaw: 76.1624222
@@ -5328,7 +5328,7 @@ Objects {
   Transform {
     Location {
       X: 4588.09131
-      Y: 1535.32813
+      Y: 1535.32812
       Z: -85.7780762
     }
     Rotation {
@@ -6240,7 +6240,7 @@ Objects {
   Transform {
     Location {
       X: -17.2338867
-      Y: 71.1914063
+      Y: 71.1914062
       Z: 95.887207
     }
     Rotation {
@@ -6491,7 +6491,7 @@ Objects {
   Transform {
     Location {
       X: -27.1599121
-      Y: -53.1757813
+      Y: -53.1757812
       Z: 5.9375
     }
     Rotation {

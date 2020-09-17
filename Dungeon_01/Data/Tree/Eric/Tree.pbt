@@ -1035,7 +1035,7 @@ Objects {
 }
 Objects {
   Id: 2435950492341338217
-  Name: "Righteous Hammer"
+  Name: "Illuminate"
   Transform {
     Location {
     }
@@ -1063,16 +1063,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Lights up an area, healing friends and hurting enemies for a short duration."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Illuminate"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 15830314128515121469
+        Id: 2037116453720966790
       }
     }
     Overrides {
@@ -1110,7 +1110,7 @@ Objects {
 }
 Objects {
   Id: 8656554226348028838
-  Name: "Mystic Teachings"
+  Name: "Heal"
   Transform {
     Location {
     }
@@ -1138,16 +1138,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Heals your target."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Heal"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 11555609066855197595
+        Id: 3111334347525175861
       }
     }
     Overrides {
@@ -1185,7 +1185,7 @@ Objects {
 }
 Objects {
   Id: 12766202776203964267
-  Name: "Spirited Conviction"
+  Name: "Mending Light"
   Transform {
     Location {
     }
@@ -1213,16 +1213,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lobs a blast of fire that explodes for moderate damage."
+      String: "Empowers your target with holy energy, healing them over time."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Mending Light"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 3310085838530546671
+        Id: 3853565587853589068
       }
     }
     Overrides {
@@ -1239,7 +1239,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RequiresAboveRight"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1260,7 +1260,7 @@ Objects {
 }
 Objects {
   Id: 11739659864115600922
-  Name: "Divine Bolt"
+  Name: "Divine Blast"
   Transform {
     Location {
     }
@@ -1288,11 +1288,11 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Attacks single target and creates an AOE effect on impact which heals nearby allies in a set radius (including caster)"
+      String: "Attacks single target, sending a wave out from the target healing all nearby party members."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Fireball"
+      String: "Divine Blast"
     }
     Overrides {
       Name: "cs:Icon"
@@ -2800,7 +2800,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Taunts all nearby enemies to attack you."
+      String: "Taunts all nearby enemies to attack you. Also grants the basic attack Cleave."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -4003,6 +4003,7 @@ Objects {
   ChildIds: 773327055568200340
   ChildIds: 15727019843615085721
   ChildIds: 11412411694743050781
+  ChildIds: 2401327985882557355
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4015,6 +4016,65 @@ Objects {
   InstanceHistory {
     SelfId: 12414977104385033478
     SubobjectId: 10104356363581192144
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 2401327985882557355
+  Name: "StatusEffect_MendingLight"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3853565587853589068
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6986235628790938270
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -4868,6 +4928,7 @@ Objects {
   ChildIds: 13472326496850560289
   ChildIds: 18432663121736611104
   ChildIds: 1282219696968188546
+  ChildIds: 3784925803237623956
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4879,6 +4940,65 @@ Objects {
   InstanceHistory {
     SelfId: 1827629710844690405
     SubobjectId: 4120286767298661683
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 3784925803237623956
+  Name: "StatusEffect_MendingLight"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3853565587853589068
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6986235628790938270
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }

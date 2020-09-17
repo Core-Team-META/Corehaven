@@ -12,7 +12,7 @@ local NPC_ICON = script:GetCustomProperty("NPCIcon")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local TALENT_TREE_COLORS = {
-	Protection = Color.RED,
+	Protection = Color.New(0.17, 0.02, 0.0),
 	Might = Color.New(0.6, 0.23, 0.0),
 	Magic = Color.New(0.24, 0.0, 0.55),
 	Divinity = Color.New(0.15, 0.65, 0.0)
@@ -160,6 +160,7 @@ function UpdateFrame(data, character)
 			data.frame:GetCustomProperty("Name"):WaitForObject().text = npcData.name
 			data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = API_NPC.GetHitPoints(character) / npcData.maxHitPoints
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(NPC_ICON)
+		data.frame:GetCustomProperty("ProgressBar"):WaitForObject():SetFillColor(Color.RED)
 		end
 
 		-- Status Effects

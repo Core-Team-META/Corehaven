@@ -107,7 +107,7 @@ Objects {
   Name: "Torch_Holder_Undead"
   Transform {
     Location {
-      X: 6926.19727
+      X: 6926.19726
       Y: 1741.10107
       Z: 730.324402
     }
@@ -163,7 +163,7 @@ Objects {
   Name: "Torch_Holder_Undead"
   Transform {
     Location {
-      X: 10245.1563
+      X: 10245.1562
       Y: -1219.52539
       Z: 730.324402
     }
@@ -211,7 +211,7 @@ Objects {
   Name: "Torch_Holder_Undead"
   Transform {
     Location {
-      X: 10245.1563
+      X: 10245.1562
       Y: -1219.52539
       Z: 730.324402
     }
@@ -300,7 +300,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2967.35645
+            X: -2967.35644
             Y: 1019.50598
             Z: 22.2391357
           }
@@ -848,7 +848,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.65820313
+      X: -2.65820312
       Y: -2.88830566
       Z: 173.224487
     }
@@ -1017,7 +1017,7 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.03320313
+      X: -2.03320312
       Y: -0.890655518
       Z: 143.656
     }

@@ -205,7 +205,7 @@ Objects {
   Transform {
     Location {
       X: 20726.5195
-      Y: 20990.0977
+      Y: 20990.0976
       Z: 3765.60327
     }
     Rotation {
@@ -353,7 +353,7 @@ Objects {
   Name: "Guard_Area_InvisibleCollision"
   Transform {
     Location {
-      X: 22137.8145
+      X: 22137.8144
       Y: 18619.4883
       Z: 4519.52686
     }
@@ -402,7 +402,7 @@ Objects {
   Name: "Guard_Area_InvisibleCollision"
   Transform {
     Location {
-      X: 23061.7559
+      X: 23061.7558
       Y: 18765.8867
       Z: 4519.52686
     }

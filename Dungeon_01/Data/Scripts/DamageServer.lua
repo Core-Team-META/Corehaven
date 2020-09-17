@@ -15,18 +15,7 @@ function ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overA
 
     -- Some basic avoidance of missed events
     if encodedValue == cachedProperties[currentIndex] then
-        for i = 1, 8 do
-            if i == 8 then
-                return      -- This event is missed, but we had 8 dupes, so you REALLY won't notice
-            end
-
-            local newIndex = (currentIndex + i - 1) % N_ENTRIES + 1
-
-            if encodedValue ~= cachedProperties[newIndex] then
-                currentIndex = newIndex
-                break
-            end
-        end
+        encodedValue = encodedValue .. "|"
     end
 
     cachedProperties[currentIndex] = encodedValue

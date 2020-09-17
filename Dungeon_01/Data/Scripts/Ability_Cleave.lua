@@ -25,17 +25,19 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	Task.Wait(DAMAGE_DELAY)
-	local casterPosition = caster:GetWorldPosition()
-	local attackStat = caster.serverUserData.inventory:GetStatTotals().Attack
+	Task.Spawn(function()
+		Task.Wait(DAMAGE_DELAY)
+		local casterPosition = caster:GetWorldPosition()
+		local attackStat = caster.serverUserData.inventory:GetStatTotals().Attack
 
-	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
-		local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
+		for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
+			local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
 
-		if dot > 0.0 then
-			API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
+			if dot > 0.0 then
+				API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
+			end
 		end
-	end
+	end)
 end
 
 return data

@@ -118,7 +118,31 @@
           Id: 5705387378154348391
         }
       }
+      Overrides {
+        Name: "cs:Ability_DivineBlast"
+        AssetReference {
+          Id: 15058145420934614033
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_MendingLight"
+        AssetReference {
+          Id: 825098659234595574
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Heal"
+        AssetReference {
+          Id: 7297571783720429533
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Illuminate"
+        AssetReference {
+          Id: 16913468257274036374
+        }
+      }
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
 }

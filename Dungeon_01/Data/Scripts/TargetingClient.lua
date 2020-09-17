@@ -212,7 +212,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
 end
 
 function Tick(deltaTime)
-	-- We intentionally did not predict the target. We found a way around this, so we will add prediction.
+	-- We intentionally did not predict the target. We have since found a way around this, so it will be added.
 	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
 
 	if currentTarget then
