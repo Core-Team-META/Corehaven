@@ -139,13 +139,16 @@ end
 -- Runtime view logic.
 local view = {}
 
+-----------------------------------------------------------------------------------------------------------------
 function view:Init()
     self:InitStats()
     self:InitEquippedSlots()
     self:InitBackpackSlots()
     self:InitItemHover()
+    self:Close()
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:InitStats()
     self.statElements = {}
     for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
@@ -159,6 +162,7 @@ function view:InitStats()
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:InitEquippedSlots()
     self.allSlots = self.allSlots or {}
     self.equippedSlots = {}
@@ -176,6 +180,7 @@ function view:InitEquippedSlots()
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:InitBackpackSlots()
     self.allSlots = self.allSlots or {}
     self.backpackSlots = {}
@@ -188,6 +193,7 @@ function view:InitBackpackSlots()
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:InitItemHover()
     PANEL_ITEM_HOVER.clientUserData.inner = PANEL_ITEM_HOVER:GetCustomProperty("StatParent"):WaitForObject()
     PANEL_ITEM_HOVER.clientUserData.innerBaseHeight = PANEL_ITEM_HOVER.clientUserData.inner.height
@@ -202,6 +208,7 @@ function view:InitItemHover()
     self.itemHoverStatEntries = {}
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
     if inventory:CanMoveItem(fromSlotIndex, toSlotIndex) then
         inventory:MoveItem(fromSlotIndex, toSlotIndex)
@@ -218,6 +225,7 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
 function view:EnsureSufficientHoverStatEntries(numRequired)
     for i=1,numRequired do
         if not self.itemHoverStatEntries[i] then
@@ -232,51 +240,120 @@ function view:EnsureSufficientHoverStatEntries(numRequired)
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
+function view:IsVisible()
+    return INVENTORY_VIEW.clientUserData.isVisible 
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:SetClickState(clickSlot)
+    self.isClick = true
+    self.clickTime = time()
+    self.clickPosition = UI.GetCursorPosition()
+    self.clickSlot = clickSlot
+    self.clickSlotIndex = clickSlot.clientUserData.slotIndex
+end
+
+function view:ClearClickState()
+    self.isClick = nil
+    self.clickTime = nil
+    self.clickPosition = nil
+    self.clickSlot = nil
+    self.clickSlotIndex = nil
+end
+
+function view:SetDragState(originSlot)
+    self.isDragging = true
+    self.fromSlotIndex = originSlot.clientUserData.slotIndex
+    HOLDING_ICON.visibility = Visibility.INHERIT
+    HOLDING_ICON:SetImage(originSlot.clientUserData.icon:GetImage())
+    HOLDING_ICON:SetColor(originSlot.clientUserData.icon:GetColor())
+    HOLDING_ICON.rotationAngle = originSlot.clientUserData.icon.rotationAngle
+end
+
+function view:ClearDragState()
+    self.isDragging = nil
+    self.fromSlotIndex = nil
+    HOLDING_ICON.visibility = Visibility.FORCE_OFF
+end
+
+function view:SetHoverState(slotUnderCursor)
+    self.slotUnderCursor = slotUnderCursor
+    self.itemUnderCursor = inventory:GetItem(slotUnderCursor.clientUserData.slotIndex)
+end
+
+function view:ClearHoverState()
+    self.slotUnderCursor = nil
+    self.itemUnderCursor = nil
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:PerformClickAction()
+    local clickedItem = inventory:GetItem(self.clickSlotIndex)
+    if inventory:IsEquipSlot(self.clickSlotIndex) then
+        local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
+        if emptyBackpackSlotIndex then
+            self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+        end
+    else
+        local equipSlotIndex = inventory:ConvertEquipSlotIndex(clickedItem:GetEquipSlotType())
+        if equipSlotIndex then
+            self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
+        end
+    end
+end
+
+function view:PerformDragDropAction()
+    if self.slotUnderCursor or not self.isCursorInBounds then
+        local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
+        self:AttemptMoveItem(self.fromSlotIndex, toSlotIndex)
+    end
+end
+
+-----------------------------------------------------------------------------------------------------------------
 function view:OnBindingPressed(binding)
+    if self.isClosed then return end
     if binding == "ability_primary" then
         if self.itemUnderCursor then
-            self.clickTime = time()
-            self.clickPosition = UI.GetCursorPosition()
-            self.clickSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
+            self:SetClickState(self.slotUnderCursor)
         end
     end
 end
 
 function view:OnBindingReleased(binding)
     if binding == "ability_primary" then
-        if self.clickSlotIndex then
-            -- This is a click.
-            local clickedItem = inventory:GetItem(self.clickSlotIndex)
-            if inventory:IsEquipSlot(self.clickSlotIndex) then
-                local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
-                if emptyBackpackSlotIndex then
-                    self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
-                end
-            else
-                local equipSlotIndex = inventory:ConvertEquipSlotIndex(clickedItem:GetEquipSlotType())
-                if equipSlotIndex then
-                    self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
-                end
-            end
-        elseif self.isHoldingIcon then 
-           -- This is a drag and drop.
-            if self.slotUnderCursor or not self.isCursorInBounds then
-                local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
-                self:AttemptMoveItem(self.fromSlotIndex, toSlotIndex)
-            end
+        if self.isClick then
+            self:PerformClickAction()
+
+        elseif self.isDragging then
+            self:PerformDragDropAction()
         end
-        self.clickTime = nil
-        self.clickPosition = nil
-        self.clickSlotIndex = nil
-        self.isHoldingIcon = false
-        self.fromSlotIndex = nil
-        self:UpdateCursorState()
+        self:ClearClickState()
+        self:ClearDragState()
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
+function view:Open()
+    if not self.isClosed then return end
+    self.isClosed =  nil
+    INVENTORY_VIEW.visibility = Visibility.INHERIT
+    self:ClearHoverState()
+    self:ClearClickState()
+    self:ClearDragState()
+end
+
+function view:Close()
+    if self.isClosed then return end
+    self.isClosed = true
+    INVENTORY_VIEW.visibility = Visibility.FORCE_OFF
+    self:ClearHoverState()
+    self:ClearClickState()
+    self:ClearDragState()
+end
+
 function view:UpdateCursorState()
-    self.slotUnderCursor = nil
-    self.itemUnderCursor = nil
+    self:ClearHoverState()
     -- No interactions when the cursor is disabled.
     if not UI.IsCursorVisible() then return end
     local cursorPosition = UI.GetCursorPosition()
@@ -286,8 +363,7 @@ function view:UpdateCursorState()
     if self.isCursorInBounds then
         for _,slot in ipairs(self.allSlots) do
             if IsInsideHitbox(slot, cursorPosition, xRef, yRef) then
-                self.slotUnderCursor = slot
-                self.itemUnderCursor = inventory:GetItem(slot.clientUserData.slotIndex)
+                self:SetHoverState(slot)
                 break
             end
         end
@@ -297,18 +373,12 @@ function view:UpdateCursorState()
         local elapsed = time() - self.clickTime
         local distance = (cursorPosition - self.clickPosition).size
         if elapsed >= CLICK_TIMEOUT or distance >= CLICK_DEADZONE_RADIUS then
-            self.clickTime = nil
-            self.clickPosition = nil
-            self.clickSlotIndex = nil
-            self.isHoldingIcon = true
-            self.fromSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
-            HOLDING_ICON:SetImage(self.slotUnderCursor.clientUserData.icon:GetImage())
-            HOLDING_ICON:SetColor(self.slotUnderCursor.clientUserData.icon:GetColor())
-            HOLDING_ICON.rotationAngle = self.slotUnderCursor.clientUserData.icon.rotationAngle
+            self:SetDragState(self.clickSlot)
+            self:ClearClickState()
         end
     end
     -- Drag logic.
-    if self.isHoldingIcon then
+    if self.isDragging then
         HOLDING_ICON.visibility = Visibility.INHERIT
         HOLDING_ICON.x = cursorPosition.x
         HOLDING_ICON.y = cursorPosition.y
@@ -323,20 +393,18 @@ function view:UpdatePlayerInfo()
 end
 
 function view:Draw()
-    if not INVENTORY_VIEW.clientUserData.isVisible then
-        INVENTORY_VIEW.visibility = Visibility.FORCE_OFF
-        self.isHoldingItem = nil
-        self.isAwaitingDeleteConfirmation = nil
-        return
+    if not self:IsVisible() then
+        self:Close()
+    else
+        self:Open()    
+        self:UpdatePlayerInfo()
+        self:UpdateCursorState()
+        self:DrawStats()
+        self:DrawSlots()
+        self:DrawHoverHighlight()
+        self:DrawHoverInfo()
+        self:DrawHoverStatCompare()
     end
-    INVENTORY_VIEW.visibility = Visibility.INHERIT
-    self:UpdatePlayerInfo()
-    self:UpdateCursorState()
-    self:DrawStats()
-    self:DrawSlots()
-    self:DrawHoverHighlight()
-    self:DrawHoverInfo()
-    self:DrawHoverStatCompare()
 end
 
 function view:DrawStats()
@@ -351,7 +419,7 @@ end
 
 function view:DrawSlots()
     for _,slot in ipairs(self.allSlots) do
-        local isHeldSlot = self.isHoldingIcon and slot.clientUserData.slotIndex == self.fromSlotIndex
+        local isHeldSlot = self.isDragging and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
         if item and not isHeldSlot then
             local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
@@ -375,9 +443,9 @@ function view:DrawHoverHighlight()
     if self.slotUnderCursor then
         local toSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
         local shouldHighlight = false
-        if not self.isHoldingIcon and self.itemUnderCursor then
+        if not self.isDragging and self.itemUnderCursor then
             shouldHighlight = true
-        elseif self.isHoldingIcon and inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+        elseif self.isDragging and inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
             shouldHighlight = true
         end
         if shouldHighlight then
@@ -387,14 +455,14 @@ function view:DrawHoverHighlight()
     for _,slot in ipairs(self.equippedSlots) do
         local toSlotIndex = slot.clientUserData.slotIndex
         slot.clientUserData.notAllowed.visibility = Visibility.FORCE_OFF
-        if self.isHoldingIcon and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
+        if self.isDragging and not inventory:CanMoveItem(self.fromSlotIndex, toSlotIndex) then
             slot.clientUserData.notAllowed.visibility = Visibility.INHERIT
         end
     end
 end
 
 function view:DrawHoverInfo()
-    if self.itemUnderCursor and not self.isHoldingIcon then
+    if self.itemUnderCursor and not self.isDragging then
         -- UI properties.
         PANEL_ITEM_HOVER.visibility = Visibility.INHERIT
         PANEL_ITEM_HOVER.x = self.slotUnderCursor.clientUserData.xAbsolute
@@ -444,7 +512,7 @@ function view:DrawHoverStatCompare()
         self._hasWarnedStatCalculation = true
         warn("Quick compare stat calculation does not properly account for percent health changes. This will be fixed soon.")
     end
-    if self.itemUnderCursor and not self.isHoldingIcon then
+    if self.itemUnderCursor and not self.isDragging then
         if inventory:IsBackpackSlot(self.slotUnderCursor.clientUserData.slotIndex) then
             local statDeltas = inventory:GetStatDeltas(self.itemUnderCursor)
             for statName,delta in pairs(statDeltas) do
