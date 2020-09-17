@@ -349,10 +349,6 @@ function Inventory:_RecalculateStatTotals()
             end
         end
     end
-    -- We bake the percent health into health so that all subsequent systems can make use of only the health amount.
-    local healthMultiplier = 1.0 + (self.statTotals.HealthPercent / 100)
-    self.statTotals.Health = math.floor(self.statTotals.Health * healthMultiplier)
-    self.statTotals.HealthPercent = nil
 end
 
 function Inventory:__tostring()

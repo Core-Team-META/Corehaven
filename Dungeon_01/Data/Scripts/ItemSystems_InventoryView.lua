@@ -26,6 +26,10 @@ local SLOT_DOCK = "TopCenter"
 while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
 local inventory = LOCAL_PLAYER.clientUserData.inventory
 
+-- Wait for stat sheet to load.
+while not LOCAL_PLAYER.clientUserData.statSheet do Task.Wait() end
+local statSheet = LOCAL_PLAYER.clientUserData.statSheet
+
 -----------------------------------------------------------------------------------------------------------------
 PLAYER_NAME.text = LOCAL_PLAYER.name
 PLAYER_ICON:SetImage(LOCAL_PLAYER)
@@ -403,17 +407,21 @@ function view:Draw()
         self:DrawSlots()
         self:DrawHoverHighlight()
         self:DrawHoverInfo()
-        self:DrawHoverStatCompare()
+        --self:DrawHoverStatCompare()
     end
 end
 
 function view:DrawStats()
-    self.statTotals = inventory:GetStatTotals()
-    for statName,statAmount in pairs(self.statTotals) do
+    self.statTotals = self.statTotals or {}
+    for _,statName in ipairs(statSheet.STATS) do
+        local statAmount = statSheet:GetStatTotalValue(statName)
         local statElement = self.statElements[statName]
-        statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
-        statElement.clientUserData.value:SetColor(statElement.clientUserData.valueDefaultColor)
-        statElement.clientUserData.icon:SetColor(statElement.clientUserData.iconDefaultColor)
+        if statElement then
+            statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
+            statElement.clientUserData.value:SetColor(statElement.clientUserData.valueDefaultColor)
+            statElement.clientUserData.icon:SetColor(statElement.clientUserData.iconDefaultColor)
+        end
+        self.statTotals[statName] = statAmount
     end
 end
 
@@ -519,10 +527,12 @@ function view:DrawHoverStatCompare()
                 if delta ~= 0 then
                     local currentAmount = self.statTotals[statName]
                     local statElement = self.statElements[statName]
-                    local compareColor = delta > 0 and Color.GREEN or Color.RED
-                    statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, currentAmount + delta)
-                    statElement.clientUserData.value:SetColor(compareColor)
-                    statElement.clientUserData.icon:SetColor(compareColor)
+                    if statElement then
+                        local compareColor = delta > 0 and Color.GREEN or Color.RED
+                        statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, currentAmount + delta)
+                        statElement.clientUserData.value:SetColor(compareColor)
+                        statElement.clientUserData.icon:SetColor(compareColor)
+                    end
                 end
             end
         end
