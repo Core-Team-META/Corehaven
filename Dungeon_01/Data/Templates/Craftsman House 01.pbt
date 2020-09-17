@@ -29759,5 +29759,5 @@
       AssetId: "Craftsman_House_01"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
 }

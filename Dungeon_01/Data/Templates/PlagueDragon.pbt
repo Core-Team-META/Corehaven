@@ -18438,6 +18438,6 @@
   Marketplace {
     Description: "For DnD event games"
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
   DirectlyPublished: true
 }

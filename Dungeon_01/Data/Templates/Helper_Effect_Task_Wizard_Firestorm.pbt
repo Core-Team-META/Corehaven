@@ -296,7 +296,7 @@
         Name: "Level Up VFX"
         Transform {
           Location {
-            Z: -86.2563476
+            Z: -86.2563477
           }
           Rotation {
           }
@@ -404,5 +404,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 63
+  SerializationVersion: 64
 }
