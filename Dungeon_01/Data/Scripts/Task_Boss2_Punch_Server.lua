@@ -1,11 +1,9 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
-local API_P = require(script:GetCustomProperty("APIProjectile"))
 
-local RANGE = 700.0
+local RANGE = 120.0
 local COOLDOWN = 0.0
-local DAMAGE = 4.0
-local PROJECTILE_SPEED = 1500.0
+local DAMAGE = 15.0
 
 local currentTasks = {}
 
@@ -15,9 +13,9 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
-
+	
 	currentTasks[npc] = Task.Spawn(function()
-		Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
+		Task.Wait(0.4)
 		API_D.ApplyDamage(npc, target, DAMAGE)
 	end)
 
@@ -34,4 +32,4 @@ function OnTaskEnd(npc, interrupted)
 	currentTasks[npc] = nil
 end
 
-API_NPC.RegisterTaskServer("market_vendor_throw_fruit", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskServer("boss2_punch", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

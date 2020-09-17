@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18259903282264474392
+  Name: "Moon"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_icon_Moon"
+  }
+}
+Assets {
   Id: 18192159038187223433
   Name: "Fantasy Ability Red 030"
   PlatformAssetType: 9
@@ -14,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Blue_051"
+  }
+}
+Assets {
+  Id: 18097083884483661581
+  Name: "Crescent - 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crescent_002"
   }
 }
 Assets {
@@ -107,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12781087704127034770
+  Name: "Icon Star"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Star"
+  }
+}
+Assets {
   Id: 12689850831228166194
   Name: "Fantasy Ability Purple 020"
   PlatformAssetType: 9
@@ -197,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10408352433735589465
+  Name: "UI Basic Shape Circle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Circle"
+  }
+}
+Assets {
   Id: 10184847056121543272
   Name: "Basic Material"
   PlatformAssetType: 2
@@ -269,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7115413583786975077
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
   Id: 7112862594463965100
   Name: "Goods"
   PlatformAssetType: 9
@@ -284,6 +329,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 6804582409165656232
+  Name: "Star - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_star_beveled_001"
   }
 }
 Assets {
@@ -311,6 +365,24 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameFlat_019"
+  }
+}
+Assets {
+  Id: 5632528163303928666
+  Name: "UI Basic Shape Triangle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Triangle"
+  }
+}
+Assets {
+  Id: 5351428073291024820
+  Name: "Opaque Emissive"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxma_opaque_emissive"
   }
 }
 Assets {
@@ -356,5 +428,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_012"
+  }
+}
+Assets {
+  Id: 946231543756952257
+  Name: "Prism - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hq_001"
   }
 }

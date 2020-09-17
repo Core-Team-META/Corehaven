@@ -225,19 +225,19 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:AsleepStance"
-            String: "1hand_melee_idle_relaxed"
+            String: "unarmed_idle_relaxed"
           }
           Overrides {
             Name: "cs:IdleStance"
-            String: "1hand_melee_idle_ready"
+            String: "unarmed_idle_ready"
           }
           Overrides {
             Name: "cs:RunStance"
-            String: "1hand_melee_run_forward"
+            String: "unarmed_run_forward"
           }
           Overrides {
             Name: "cs:StareStance"
-            String: "1hand_melee_idle_ready"
+            String: "unarmed_idle_ready"
           }
           Overrides {
             Name: "cs:DeathAnimation"

@@ -12,4 +12,4 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh.playbackRateMultiplier = 1.0
 end
 
-API_NPC.RegisterTaskClient("boss1_raise_plague_wolves", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskClient("boss2_command_undead", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

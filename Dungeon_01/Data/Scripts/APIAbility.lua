@@ -115,22 +115,22 @@ end
 
 -- Local client
 function GetGlobalCooldown()
-	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
+--	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
 
 	--!! get percent not raw value?
 
-	return GLOBAL_COOLDOWN / (1.0 + cooldownReductionStat / 200.0)
+	return GLOBAL_COOLDOWN --/ (1.0 + cooldownReductionStat / 200.0)
 end
 
 -- Owning client
 function GetAbilityCooldown(abilityName)
 	assert(playerAbilities[LOCAL_PLAYER][abilityName])
 	local data = abilityData[abilityName]
-	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
+--	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
 
 	--!! get percent not raw value?
 
-	return data.cooldown / (1.0 + cooldownReductionStat / 200.0)
+	return data.cooldown --/ (1.0 + cooldownReductionStat / 200.0)
 end
 
 -- Owning client

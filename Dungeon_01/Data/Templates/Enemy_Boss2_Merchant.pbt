@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Vinchelli, the Esteemed Jeweler"
+            String: "Vincelli, the Esteemed Jeweler"
           }
           Overrides {
             Name: "cs:MaxHitPoints"
@@ -63,19 +63,19 @@
           }
           Overrides {
             Name: "cs:Task1"
-            String: "boss2_attack1"
+            String: "boss2_punch"
           }
           Overrides {
             Name: "cs:Task2"
-            String: "boss2_attack1"
+            String: "boss2_encourage_commerce"
           }
           Overrides {
             Name: "cs:Task3"
-            String: "boss2_attack1"
+            String: "boss2_command_undead"
           }
           Overrides {
             Name: "cs:Task4"
-            String: "boss2_attack1"
+            String: "boss2_throw_coins"
           }
           Overrides {
             Name: "cs:DropKey1"

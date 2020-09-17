@@ -2,9 +2,16 @@
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
+local animations =
+{
+	"unarmed_punch_left",
+	"unarmed_punch_right"
+}
+
 function OnTaskStart(npc, animatedMesh)
-	animatedMesh:PlayAnimation("2hand_staff_magic_up", {shouldLoop = true})
-	animatedMesh.playbackRateMultiplier = 0.5
+	local animation = animations[math.random(#animations)]
+	animatedMesh:PlayAnimation(animation)
+	animatedMesh.playbackRateMultiplier = 0.7
 end
 
 function OnTaskEnd(npc, animatedMesh, interrupted)
@@ -12,4 +19,4 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh.playbackRateMultiplier = 1.0
 end
 
-API_NPC.RegisterTaskClient("boss1_raise_plague_wolves", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)
+API_NPC.RegisterTaskClient("boss2_punch", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)
