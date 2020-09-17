@@ -10,6 +10,6 @@ data.duration = 5.0
 data.icon = ICON
 data.effectTemplate = EFFECT_TEMPLATE
 data.moveSpeedMultiplier = 0.6
-data.damageDoneMultiplier = 0.8
+data.damageDealtMultiplier = 0.8
 
 API_SE.DefineStatusEffect(data)

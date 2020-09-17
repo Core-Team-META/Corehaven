@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4295659846319462830
+  Name: "Fantasy Ability Green 012"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Green_012"
+  }
+}
+Assets {
   Id: 3965397322580208730
   Name: "2D Basic Shapes Decal"
   PlatformAssetType: 14

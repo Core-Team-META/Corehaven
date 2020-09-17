@@ -458,6 +458,15 @@ function UTILITY.ResetTalentTrees(player)
 	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
 end
 
+-- Client and Server
+function UTILITY.GetPlayerTreeName(player)
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+
+	if playerStateHelper then
+		return playerStateHelper:GetCustomProperty("TreeName")
+	end
+end
+
 -- Server only
 function UTILITY.AddPlayerTalentPoints(player, addedPoints)
 	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
