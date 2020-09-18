@@ -6,7 +6,7 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
 
 local N_POOLS = 150
-local POOL_RADIUS = 800.0
+local POOL_RADIUS = 500.0
 local MAX_DISTANCE = 3500.0
 local INITIAL_DELAY = 2.0
 local INCREMENTAL_DELAY = 0.1

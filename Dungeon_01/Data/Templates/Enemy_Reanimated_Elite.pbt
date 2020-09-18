@@ -71,7 +71,7 @@
           }
           Overrides {
             Name: "cs:Task3"
-            String: "reanimated_elite_throw"
+            String: "reanimated_elite_marrow_typhoon"
           }
           Overrides {
             Name: "cs:DropKey1"

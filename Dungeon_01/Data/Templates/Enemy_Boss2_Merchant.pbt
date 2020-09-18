@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Vincelli, the Esteemed Jeweler"
+            String: "Vincelli, the Esteemed"
           }
           Overrides {
             Name: "cs:MaxHitPoints"

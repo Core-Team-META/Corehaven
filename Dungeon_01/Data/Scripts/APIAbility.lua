@@ -298,6 +298,20 @@ function Tick()
 		for abilityName, ability in pairs(playerAbilities[player]) do
 			if not Object.IsValid(ability) then
 				playerAbilities[player][abilityName] = nil
+				abilityCooldownEnds[abilityName] = nil
+
+				if castingAbilityName == abilityName then
+					castingAbilityName = nil
+				end
+
+				if queuedAbilityName == abilityName then
+					queuedAbilityName = nil
+					queuedAbilityTarget = nil
+				end
+
+				if groundTargetAbilityName == abilityName then
+					CancelGroundTargeting()
+				end
 			end
 		end
 	end

@@ -23,7 +23,7 @@ function API.CreateProjectile(source, target, speed, projectileTemplate)
 
 	Task.Spawn(function()
 		while true do
-			if not Object.IsValid(target) then
+			if target:IsA("Object") and not Object.IsValid(target) then
 				break
 			end
 			

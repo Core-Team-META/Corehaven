@@ -18,7 +18,7 @@ function OnTaskStart(npc, threatTable)
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.4)
 
-		if Object.IsValid(Target) then
+		if Object.IsValid(target) then
 			API_D.ApplyDamage(npc, target, DAMAGE)
 		end
 	end)

@@ -239,8 +239,9 @@ function IsNameplateVisible(character)
 	-- Special casing this for Boss Fight, all NPCs are enemy
 	-- 0 distance is special, and means we always display them
 	if not character:IsA("Player") or Teams.AreTeamsEnemies(character.team, LOCAL_PLAYER.team) then
-		if SHOW_ON_ENEMIES then
+		if SHOW_ON_ENEMIES and not API_NPC.IsAsleep(character) then
 			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
+
 			if MAX_DISTANCE_ON_ENEMIES == 0.0 or distance <= MAX_DISTANCE_ON_ENEMIES then
 				return true
 			end
@@ -248,6 +249,7 @@ function IsNameplateVisible(character)
 	else
 		if SHOW_ON_TEAMMATES then
 			local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
+
 			if MAX_DISTANCE_ON_TEAMMATES == 0.0 or distance <= MAX_DISTANCE_ON_TEAMMATES then
 				return true
 			end
