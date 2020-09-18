@@ -156,13 +156,32 @@ end
 function view:InitStats()
     self.statElements = {}
     for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
+        local statName = statElement.name
+        self.statElements[statName] = statElement
+        -- Store all the control references for later.
         statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
         statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statElement.name))
         statElement.clientUserData.iconDefaultColor = statElement.clientUserData.icon:GetColor()
         statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
-        statElement.clientUserData.valueDefaultColor = statElement.clientUserData.value:GetColor()
-        statElement.clientUserData.hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
-        self.statElements[statElement.name] = statElement
+        statElement.clientUserData.previewDelta = statElement:GetCustomProperty("PreviewDelta"):WaitForObject()
+        statElement.clientUserData.name = statElement:GetCustomProperty("Name"):WaitForObject()
+        statElement.clientUserData.name.text = ItemThemes.GetPlayerStatDisplayName(statName)
+        statElement.clientUserData.defaultTextColor = statElement.clientUserData.name:GetColor()
+        -- Certain elements come and go with hover buttons.
+        local explanation = statElement:GetCustomProperty("Explanation"):WaitForObject()
+        explanation.text = ItemThemes.GetPlayerStatExplanation(statName)
+        local hoverHighlight = statElement:GetCustomProperty("HoverHighlight"):WaitForObject()
+        local hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
+        hoverButton.hoveredEvent:Connect(function()
+            hoverHighlight.visibility = Visibility.INHERIT
+            explanation.visibility = Visibility.INHERIT
+            statElement.clientUserData.previewDelta.visibility = Visibility.FORCE_OFF
+        end)
+        hoverButton.unhoveredEvent:Connect(function()
+            hoverHighlight.visibility = Visibility.FORCE_OFF
+            explanation.visibility = Visibility.FORCE_OFF
+            statElement.clientUserData.previewDelta.visibility = Visibility.INHERIT
+        end)
     end
 end
 
@@ -407,7 +426,7 @@ function view:Draw()
         self:DrawSlots()
         self:DrawHoverHighlight()
         self:DrawHoverInfo()
-        --self:DrawHoverStatCompare()
+        self:DrawHoverStatCompare()
     end
 end
 
@@ -418,8 +437,9 @@ function view:DrawStats()
         local statElement = self.statElements[statName]
         if statElement then
             statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
-            statElement.clientUserData.value:SetColor(statElement.clientUserData.valueDefaultColor)
-            statElement.clientUserData.icon:SetColor(statElement.clientUserData.iconDefaultColor)
+            statElement.clientUserData.value:SetColor(statElement.clientUserData.defaultTextColor)
+            statElement.clientUserData.icon:SetColor(statElement.clientUserData.defaultTextColor)
+            statElement.clientUserData.name:SetColor(statElement.clientUserData.defaultTextColor)
         end
         self.statTotals[statName] = statAmount
     end
@@ -516,25 +536,71 @@ function view:DrawHoverInfo()
 end
 
 function view:DrawHoverStatCompare()
-    if not self._hasWarnedStatCalculation then
-        self._hasWarnedStatCalculation = true
-        warn("Quick compare stat calculation does not properly account for percent health changes. This will be fixed soon.")
+    -- Lazy initialize a set of modifiers used to test out our hypothetical weapon swap.
+    if not self.previewModifiers then
+        self.cachedStats = {}
+        self.previewModifiers = {}
+        for _,statName in ipairs(statSheet.STATS) do
+            self.previewModifiers[statName] = {
+                add = statSheet:NewStatModifierAdd(statName, 0, true),
+                mul = statSheet:NewStatModifierMul(statName, 1, true),
+            }
+        end
     end
+    -- Default initialize modifier values.
+    for statName,modifiers in pairs(self.previewModifiers) do
+        modifiers.add.addend = 0
+        modifiers.mul.multiplier = 1
+        self.statElements[statName].clientUserData.previewDelta.text = ""
+    end
+    -- Conditionally apply hypothetical modifiers to preview stat changes.
     if self.itemUnderCursor and not self.isDragging then
         if inventory:IsBackpackSlot(self.slotUnderCursor.clientUserData.slotIndex) then
-            local statDeltas = inventory:GetStatDeltas(self.itemUnderCursor)
-            for statName,delta in pairs(statDeltas) do
-                if delta ~= 0 then
-                    local currentAmount = self.statTotals[statName]
-                    local statElement = self.statElements[statName]
-                    if statElement then
-                        local compareColor = delta > 0 and Color.GREEN or Color.RED
-                        statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, currentAmount + delta)
-                        statElement.clientUserData.value:SetColor(compareColor)
-                        statElement.clientUserData.icon:SetColor(compareColor)
+            local previewItem = self.itemUnderCursor
+            local targetEquipSlotIndex = inventory:ConvertEquipSlotIndex(previewItem:GetEquipSlotType())
+            local exchangeItem = inventory:GetItem(targetEquipSlotIndex)
+            -- First the item we are hypothetically equipping.
+            for _,itemStatName in ipairs(previewItem.STATS) do
+                local statValue = previewItem:GetStatTotal(itemStatName)
+                if itemStatName == "HealthPercent" then
+                    self.previewModifiers.Health.mul.multiplier = 1 + statValue / 100
+                else
+                    self.previewModifiers[itemStatName].add.addend = statValue
+                end
+            end
+            -- Then the item we are hypothetically unequipping. Here we are inverting the modifiers which we know it will have applied.
+            if exchangeItem then
+                for _,itemStatName in ipairs(exchangeItem.STATS) do
+                    local statValue = exchangeItem:GetStatTotal(itemStatName)
+                    if itemStatName == "HealthPercent" then
+                        self.previewModifiers.Health.mul.multiplier = self.previewModifiers.Health.mul.multiplier * (1 / (1 + statValue / 100))
+                    else
+                        self.previewModifiers[itemStatName].add.addend = self.previewModifiers[itemStatName].add.addend - statValue
                     end
                 end
             end
+            -- Then the final stat calculation and drawing of appropriate graphics.
+            for _,statName in ipairs(statSheet.STATS) do
+                self.cachedStats[statName] = statSheet:GetStatTotalValue(statName)
+            end
+            statSheet:Update()
+            for _,statName in ipairs(statSheet.STATS) do
+                local statValue = statSheet:GetStatTotalValue(statName)
+                local statDelta = statValue - self.cachedStats[statName]
+                local statElement = self.statElements[statName]
+                if statDelta ~= 0 then
+                    local compareColor = statDelta > 0 and Color.GREEN or Color.RED
+                    local compareToken = statDelta > 0 and "+ " or "- "
+                    statElement.clientUserData.previewDelta.text = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(statDelta))
+                    statElement.clientUserData.previewDelta:SetColor(compareColor)
+                end
+            end
+            -- We got what we came for, restore the original stats.
+            for statName,modifiers in pairs(self.previewModifiers) do
+                modifiers.add.addend = 0
+                modifiers.mul.multiplier = 1
+            end
+            statSheet:Update()
         end
     end
 end
