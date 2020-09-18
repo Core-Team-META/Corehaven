@@ -2,7 +2,7 @@
   {
     StatKey = 'CommonStaff',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Magic',
     Min = '10',
     Max = '15',
     Likelihood = '',
@@ -11,7 +11,7 @@
   {
     StatKey = 'UncommonStaff',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Magic',
     Min = '10',
     Max = '20',
     Likelihood = '',
@@ -20,7 +20,7 @@
   {
     StatKey = 'UncommonStaff',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'Magic',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -29,7 +29,7 @@
   {
     StatKey = 'UncommonStaff',
     Group = 'Bonus1',
-    Stat = 'Health',
+    Stat = 'CDR',
     Min = '10',
     Max = '20',
     Likelihood = '100',
@@ -38,7 +38,7 @@
   {
     StatKey = 'UncommonMagicStaff',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Magic',
     Min = '5',
     Max = '10',
     Likelihood = '',
@@ -47,7 +47,7 @@
   {
     StatKey = 'UncommonMagicStaff',
     Group = 'Bonus1',
-    Stat = 'Magic',
+    Stat = 'CDR',
     Min = '10',
     Max = '15',
     Likelihood = '100',
@@ -56,7 +56,7 @@
   {
     StatKey = 'UncommonMagicStaff',
     Group = 'Bonus1',
-    Stat = 'CDR',
+    Stat = 'Health',
     Min = '5',
     Max = '5',
     Likelihood = '100',
@@ -65,7 +65,7 @@
   {
     StatKey = 'RareStaff',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Magic',
     Min = '15',
     Max = '20',
     Likelihood = '',
@@ -74,7 +74,7 @@
   {
     StatKey = 'RareStaff',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'CDR',
     Min = '10',
     Max = '15',
     Likelihood = '100',
@@ -83,7 +83,7 @@
   {
     StatKey = 'RareStaff',
     Group = 'Bonus1',
-    Stat = 'HealthPercent',
+    Stat = 'Magic',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -101,7 +101,7 @@
   {
     StatKey = 'RareStaff',
     Group = 'Bonus2',
-    Stat = 'Haste',
+    Stat = 'Magic',
     Min = '5',
     Max = '10',
     Likelihood = '100',

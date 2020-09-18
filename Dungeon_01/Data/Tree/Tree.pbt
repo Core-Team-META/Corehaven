@@ -24,7 +24,9 @@ Objects {
   ChildIds: 11176579868672163906
   ChildIds: 15088711163151659875
   ChildIds: 7218498012147464502
+  ChildIds: 17888335466626026311
   ChildIds: 18109997350451454343
+  ChildIds: 10625773096399959754
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,6 +36,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 10625773096399959754
+  Name: "PlayerStats"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PlayerStats"
   }
 }
 Objects {
@@ -60,6 +88,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "ItemSystems"
+  }
+}
+Objects {
+  Id: 17888335466626026311
+  Name: "DeveloperCheats"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "DeveloperCheats"
   }
 }
 Objects {

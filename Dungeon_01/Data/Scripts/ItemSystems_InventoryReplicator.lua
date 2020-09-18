@@ -43,6 +43,35 @@ local function ClientLoadInventory()
 end
 
 ---------------------------------------------------------------------------------------------------------
+local function ServerUpdateStatSheet(inventory, modifiers)
+    local statSheet = OWNER.serverUserData.statSheet
+    -- First time through, make sure all modifiers are present.
+    local isFromItem = true
+    modifiers.Health        = modifiers.Health          or statSheet:NewStatModifierAdd("Health",       0, isFromItem)
+    modifiers.HealthPercent = modifiers.HealthPercent   or statSheet:NewStatModifierMul("Health",       1, isFromItem)
+    modifiers.Defense       = modifiers.Defense         or statSheet:NewStatModifierAdd("Defense",      0, isFromItem)
+    modifiers.Attack        = modifiers.Attack          or statSheet:NewStatModifierAdd("Attack",       0, isFromItem)
+    modifiers.Magic         = modifiers.Magic           or statSheet:NewStatModifierAdd("Magic",        0, isFromItem)
+    modifiers.CritChance    = modifiers.CritChance      or statSheet:NewStatModifierAdd("CritChance",   0, isFromItem)
+    modifiers.CDR           = modifiers.CDR             or statSheet:NewStatModifierAdd("CDR",          0, isFromItem)
+    modifiers.Haste         = modifiers.Haste           or statSheet:NewStatModifierAdd("Haste",        0, isFromItem)
+    modifiers.Tenacity      = modifiers.Tenacity        or statSheet:NewStatModifierAdd("Tenacity",     0, isFromItem)
+    -- Read total item stats and apply to stat sheet.
+    local itemStatTotals = inventory:GetStatTotals()
+    modifiers.Health.addend             = itemStatTotals.Health
+    modifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100)+ 1
+    modifiers.Defense.addend            = itemStatTotals.Defense
+    modifiers.Attack.addend             = itemStatTotals.Attack
+    modifiers.Magic.addend              = itemStatTotals.Magic
+    modifiers.CritChance.addend         = itemStatTotals.CritChance
+    modifiers.CDR.addend                = itemStatTotals.CDR
+    modifiers.Haste.addend              = itemStatTotals.Haste
+    modifiers.Tenacity.addend           = itemStatTotals.Tenacity
+    -- Tell the stat sheet to recalculate.
+    statSheet:Update()
+end
+
+---------------------------------------------------------------------------------------------------------
 local function ServerSaveInventory(inventory)
     local playerData = Storage.GetPlayerData(OWNER)
     playerData.inventoryHash = inventory:PersistentHash()
@@ -53,12 +82,16 @@ end
 local function ServerInitInventory()
     OWNER.serverUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.serverUserData.inventory
+    -- Prepare a set of stat modifiers for each equipped item.
+    local statModifiers = {}
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
     inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
-        -- We will also update the player's animation stance depending on the item.
+        -- Update the player's stat sheet.
+        ServerUpdateStatSheet(inventory, statModifiers)
+        -- Update the player's animation stance depending on the item.
         if inventory:IsPrimaryWeaponSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
         end

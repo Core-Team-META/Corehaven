@@ -5860,11 +5860,11 @@ Objects {
     }
     Overrides {
       Name: "cs:ClickTimeout"
-      Float: 0.08
+      Float: 0.1
     }
     Overrides {
       Name: "cs:ClickDeadzoneRadius"
-      Float: 3
+      Float: 4
     }
     Overrides {
       Name: "cs:TemplateSlotEquipped"
@@ -6552,7 +6552,6 @@ Objects {
   }
   ParentId: 18109997350451454343
   ChildIds: 2441683231896896007
-  ChildIds: 10980697081060261463
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6561,57 +6560,6 @@ Objects {
   }
   NetworkContext {
     Type: Server
-  }
-}
-Objects {
-  Id: 10980697081060261463
-  Name: "ItemSystems_DeveloperCheats"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3291337978348903876
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Enable"
-      Bool: true
-    }
-    Overrides {
-      Name: "cs:BindingDropLoot"
-      String: "ability_extra_47"
-    }
-    Overrides {
-      Name: "cs:BindingClearInventory"
-      String: "ability_extra_66"
-    }
-    Overrides {
-      Name: "cs:BindingPrintInventory"
-      String: "ability_extra_57"
-    }
-    Overrides {
-      Name: "cs:ItemSystems_Database"
-      AssetReference {
-        Id: 4685988691808682848
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12805538840666149581
-    }
   }
 }
 Objects {
@@ -6678,7 +6626,7 @@ Objects {
 }
 Objects {
   Id: 11526225340873313358
-  Name: "ItemSystems_InventorySpawner"
+  Name: "InventoryComponentSpawner"
   Transform {
     Location {
     }
@@ -6691,6 +6639,14 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ComponentTemplate"
+      AssetReference {
+        Id: 3392029348791641646
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

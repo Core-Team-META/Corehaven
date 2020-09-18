@@ -2,7 +2,7 @@
   {
     StatKey = 'CommonAxe',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '15',
     Likelihood = '',
@@ -11,7 +11,7 @@
   {
     StatKey = 'UncommonAxe',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '20',
     Likelihood = '',
@@ -20,7 +20,7 @@
   {
     StatKey = 'UncommonAxe',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'CritChance',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -29,7 +29,7 @@
   {
     StatKey = 'UncommonAxe',
     Group = 'Bonus1',
-    Stat = 'Health',
+    Stat = 'Attack',
     Min = '10',
     Max = '20',
     Likelihood = '100',
@@ -38,7 +38,7 @@
   {
     StatKey = 'UncommonMagicAxe',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '5',
     Max = '10',
     Likelihood = '',
@@ -47,7 +47,7 @@
   {
     StatKey = 'UncommonMagicAxe',
     Group = 'Bonus1',
-    Stat = 'Magic',
+    Stat = 'Attack',
     Min = '10',
     Max = '15',
     Likelihood = '100',
@@ -56,7 +56,7 @@
   {
     StatKey = 'UncommonMagicAxe',
     Group = 'Bonus1',
-    Stat = 'CDR',
+    Stat = 'CritChance',
     Min = '5',
     Max = '5',
     Likelihood = '100',
@@ -65,7 +65,7 @@
   {
     StatKey = 'RareAxe',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '15',
     Max = '20',
     Likelihood = '',
@@ -74,7 +74,7 @@
   {
     StatKey = 'RareAxe',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '15',
     Likelihood = '100',
@@ -83,7 +83,7 @@
   {
     StatKey = 'RareAxe',
     Group = 'Bonus1',
-    Stat = 'HealthPercent',
+    Stat = 'CritChance',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -92,7 +92,7 @@
   {
     StatKey = 'RareAxe',
     Group = 'Bonus2',
-    Stat = 'CDR',
+    Stat = 'Attack',
     Min = '2',
     Max = '5',
     Likelihood = '100',
@@ -101,7 +101,7 @@
   {
     StatKey = 'RareAxe',
     Group = 'Bonus2',
-    Stat = 'Haste',
+    Stat = 'CritChance',
     Min = '5',
     Max = '10',
     Likelihood = '100',

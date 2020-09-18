@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 16508647158301111682
-  Name: "ItemSystems_InventorySpawner"
+  Id: 12805538840666149581
+  Name: "DeveloperCheats"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:InventoryTemplate"
+        Name: "cs:ItemSystems_Database"
         AssetReference {
-          Id: 3392029348791641646
+          Id: 4685988691808682848
         }
       }
     }
