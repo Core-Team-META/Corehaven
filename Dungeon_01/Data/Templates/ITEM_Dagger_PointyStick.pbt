@@ -34,6 +34,10 @@
               SubObjectId: 511350655788888342
             }
           }
+          Overrides {
+            Name: "cs:IconRotation"
+            Int: 180
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

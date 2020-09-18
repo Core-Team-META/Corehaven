@@ -63,7 +63,6 @@
         ParentId: 1875786192613678382
         ChildIds: 15818978632015497580
         ChildIds: 521377505615095936
-        ChildIds: 9241134364550460632
         ChildIds: 11753728699677933378
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -91,6 +90,17 @@
           }
         }
         ParentId: 44526080545092235
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.026041666
+              G: 0.0101516219
+              B: 0.00570921367
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -117,17 +127,37 @@
         Name: "Fantasy Sword Blade 01"
         Transform {
           Location {
-            Z: 14.8256073
+            Z: 7.8918457
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.78407371
+            Y: 0.78407371
+            Z: 0.78407371
           }
         }
         ParentId: 44526080545092235
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 18434079688766523124
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 18434079688766523124
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 18434079688766523124
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -150,48 +180,11 @@
         }
       }
       Objects {
-        Id: 9241134364550460632
-        Name: "Fantasy Sword Guard 02"
-        Transform {
-          Location {
-            Z: 9.56092834
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 44526080545092235
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9544913535066953067
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 11753728699677933378
         Name: "Fantasy Pommel 01"
         Transform {
           Location {
-            Z: -12.6728745
+            Z: -10.0059204
           }
           Rotation {
           }
@@ -202,6 +195,14 @@
           }
         }
         ParentId: 44526080545092235
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -252,12 +253,12 @@
       }
     }
     Assets {
-      Id: 9544913535066953067
-      Name: "Fantasy Sword Guard 02"
-      PlatformAssetType: 1
+      Id: 18434079688766523124
+      Name: "Metal Basic 01"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_sword_002"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_basic_001"
       }
     }
     Assets {
@@ -267,6 +268,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_pommel_001"
+      }
+    }
+    Assets {
+      Id: 11337413471323694429
+      Name: "Metal Gold 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_001"
       }
     }
     PrimaryAssetId {
