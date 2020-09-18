@@ -28,6 +28,24 @@
           Id: 10028331438348720174
         }
       }
+      Overrides {
+        Name: "cs:Passive_RisingFury"
+        AssetReference {
+          Id: 14567875589382608270
+        }
+      }
+      Overrides {
+        Name: "cs:Passive_Execution"
+        AssetReference {
+          Id: 7278283097227767218
+        }
+      }
+      Overrides {
+        Name: "cs:Passive_Evasive"
+        AssetReference {
+          Id: 11350890868968224954
+        }
+      }
     }
   }
   SerializationVersion: 64

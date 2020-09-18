@@ -1,10 +1,5 @@
-﻿local API_D = require(script:GetCustomProperty("APIDamage"))
-local API_NPC = require(script:GetCustomProperty("API_NPC"))
-
-local BASE_DAMAGE = 20.0
-local DAMAGE_MULTIPLIER = 0.6
-local DAMAGE_DELAY = 0.1
-local SWING_RANGE = 400.0
+﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local data = {}
 
@@ -21,23 +16,21 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	return DAMAGE_DELAY
+	return 0.0
 end
 
 function data.onCastServer(caster, target)
-	Task.Spawn(function()
-		Task.Wait(DAMAGE_DELAY)
-		local casterPosition = caster:GetWorldPosition()
-		local attackStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Attack
+	local potionType = math.random(4)
 
-		for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
-			local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
-
-			if dot > 0.0 then
-				API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
-			end
-		end
-	end)
+	if potionType == 1 then			-- Straight heal
+		API_D.ApplyHealing(caster, caster, 50.0)
+	elseif potionType == 2 then		-- Hot
+		API_SE.ApplyStatusEffect(caster, caster, API_SE.STATUS_EFFECT_DEFINITIONS["Restorative Potion"].id)
+	elseif potionType == 3 then		-- Mitigation
+		API_SE.ApplyStatusEffect(caster, caster, API_SE.STATUS_EFFECT_DEFINITIONS["Toughness Potion"].id)
+	elseif potionType == 4 then		-- Invincibility
+		API_SE.ApplyStatusEffect(caster, caster, API_SE.STATUS_EFFECT_DEFINITIONS["Invincibility Potion"].id)
+	end
 end
 
 return data

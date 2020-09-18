@@ -1,8 +1,8 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
-local BASE_DAMAGE = 20.0
-local DAMAGE_MULTIPLIER = 0.6
+local BASE_DAMAGE = 24.0
+local DAMAGE_MULTIPLIER = 0.8
 local DAMAGE_DELAY = 0.1
 local SWING_RANGE = 400.0
 

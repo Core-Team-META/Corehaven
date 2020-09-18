@@ -1,31 +1,31 @@
 ﻿Assets {
-  Id: 16742234104346326110
-  Name: "Ability_ShieldBash"
+  Id: 2993313201134032743
+  Name: "Ability_SneakAttack"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Shield Bash"
+        String: "Sneak Attack"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 18150175252654389294
+          Id: 7256816805999550841
         }
       }
       Overrides {
         Name: "cs:Range"
-        Float: 400
+        Float: 3000
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 22
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 10673185589754828442
+          Id: 5478913708981894126
         }
       }
       Overrides {
@@ -49,9 +49,9 @@
         }
       }
       Overrides {
-        Name: "cs:APIStatusEffects"
+        Name: "cs:APIProjectile"
         AssetReference {
-          Id: 1831660344620141067
+          Id: 17739477946418166285
         }
       }
       Overrides {
@@ -62,12 +62,12 @@
       }
     }
     Assets {
-      Id: 18150175252654389294
-      Name: "Fantasy Ability Blue 051"
+      Id: 7256816805999550841
+      Name: "Fantasy Ability Red 004"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_051"
+        AssetId: "UI_Fantasy_Ability_Red_004"
       }
     }
   }

@@ -378,6 +378,16 @@ function KillNPC(npc)
 	Events.Broadcast("NPC_Died", npc)
 end
 
+function IsPullCleared(pull)
+	for _, npc in pairs(GetNPCsInPull(pull)) do
+		if not API_NPC.IsDead(npc) then
+			return false
+		end
+	end
+
+	return true
+end
+
 function Tick(deltaTime)
 	-- Update Pulls
 	for _, pull in pairs(NPC_FOLDER:GetChildren()) do
@@ -387,19 +397,8 @@ function Tick(deltaTime)
 			if prerequisite then
 				local requiredPull = prerequisite:GetObject()
 
-				if activePulls[requiredPull] then
-					local pullCleared = true
-
-					for _, npc in pairs(GetNPCsInPull(requiredPull)) do
-						if not API_NPC.IsDead(npc) then
-							pullCleared = false
-							break
-						end
-					end
-
-					if pullCleared then
-						WakePull(pull)
-					end
+				if activePulls[requiredPull] and IsPullCleared(requiredPull) then
+					WakePull(pull)
 				end
 			else
 				WakePull(pull)
@@ -554,6 +553,7 @@ functionTable.IsPlayerInCombat = IsPlayerInCombat
 functionTable.GetThreatTable = GetThreatTable
 functionTable.SetThreat = SetThreat
 functionTable.AddThreat = AddThreat
+functionTable.IsPullCleared = IsPullCleared
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)

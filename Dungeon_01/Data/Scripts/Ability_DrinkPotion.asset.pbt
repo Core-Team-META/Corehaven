@@ -1,31 +1,31 @@
 ﻿Assets {
-  Id: 16742234104346326110
-  Name: "Ability_ShieldBash"
+  Id: 9965955114855537821
+  Name: "Ability_DrinkPotion"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Shield Bash"
+        String: "Drink Potion"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 18150175252654389294
+          Id: 3748994048496907479
         }
       }
       Overrides {
         Name: "cs:Range"
-        Float: 400
+        Float: 0
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 20
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 10673185589754828442
+          Id: 2291837529778361503
         }
       }
       Overrides {
@@ -62,12 +62,12 @@
       }
     }
     Assets {
-      Id: 18150175252654389294
-      Name: "Fantasy Ability Blue 051"
+      Id: 3748994048496907479
+      Name: "Fantasy Ability Red 018"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_051"
+        AssetId: "UI_Fantasy_Ability_Red_018"
       }
     }
   }

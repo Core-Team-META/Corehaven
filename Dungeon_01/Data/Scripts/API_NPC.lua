@@ -317,4 +317,8 @@ function API.AddThreat(npc, player, addedThreat)
 	systemFunctions.AddThreat(npc, player, addedThreat)
 end
 
+function API.IsPullCleared(pull)
+	return systemFunctions.IsPullCleared(pull)
+end
+
 return API

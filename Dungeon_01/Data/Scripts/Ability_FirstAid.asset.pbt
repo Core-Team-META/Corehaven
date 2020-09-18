@@ -1,22 +1,22 @@
 ﻿Assets {
-  Id: 16742234104346326110
-  Name: "Ability_ShieldBash"
+  Id: 14855283366359618783
+  Name: "Ability_FirstAid"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Shield Bash"
+        String: "First Aid"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 18150175252654389294
+          Id: 15785925261575531730
         }
       }
       Overrides {
         Name: "cs:Range"
-        Float: 400
+        Float: 0
       }
       Overrides {
         Name: "cs:Cooldown"
@@ -25,7 +25,7 @@
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 10673185589754828442
+          Id: 10675129086321838991
         }
       }
       Overrides {
@@ -49,12 +49,6 @@
         }
       }
       Overrides {
-        Name: "cs:APIStatusEffects"
-        AssetReference {
-          Id: 1831660344620141067
-        }
-      }
-      Overrides {
         Name: "cs:APIDamage"
         AssetReference {
           Id: 16915150100797142409
@@ -62,12 +56,12 @@
       }
     }
     Assets {
-      Id: 18150175252654389294
-      Name: "Fantasy Ability Blue 051"
+      Id: 15785925261575531730
+      Name: "Fantasy Ability Green 019"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_051"
+        AssetId: "UI_Fantasy_Ability_Green_019"
       }
     }
   }

@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 17394048562990261073
   ChildIds: 16287755660477971277
   ChildIds: 11788695356358832208
   ChildIds: 1503052918030638976
@@ -149,7 +148,7 @@ Objects {
   Name: "Jordan"
   Transform {
     Location {
-      X: -71.7070313
+      X: -71.7070312
       Y: -57.2109375
     }
     Rotation {
@@ -668,7 +667,7 @@ Objects {
   Name: "InvisibleCollisions"
   Transform {
     Location {
-      X: -3567.89893
+      X: -3567.89892
       Y: -10233.6621
       Z: -993.3125
     }
@@ -727,7 +726,7 @@ Objects {
   Transform {
     Location {
       X: 11354.4316
-      Y: 3524.63477
+      Y: 3524.63476
       Z: -582.461914
     }
     Rotation {
@@ -748,293 +747,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "BossAreaGates"
-  }
-}
-Objects {
-  Id: 17394048562990261073
-  Name: "Spawn Points"
-  Transform {
-    Location {
-      X: -8888.25293
-      Y: -9265.95
-      Z: -820.642334
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  ChildIds: 16813558807825262224
-  ChildIds: 13839931771254792625
-  ChildIds: 2684969813152097032
-  ChildIds: 2692474767044581678
-  ChildIds: 15826158755144287883
-  ChildIds: 17931313894893274203
-  ChildIds: 2553031238537616700
-  ChildIds: 17928185298399832387
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 17928185298399832387
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 3388.42871
-      Y: 1350.9082
-      Z: 0.000122070313
-    }
-    Rotation {
-      Yaw: 142.024338
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 2553031238537616700
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 3245.29541
-      Y: 1856.89307
-      Z: 6.10351563e-05
-    }
-    Rotation {
-      Yaw: 142.024414
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 17931313894893274203
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 3105.99561
-      Y: 1468.40674
-    }
-    Rotation {
-      Yaw: 142.024338
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 15826158755144287883
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 3001.67871
-      Y: 1881.92969
-      Z: 6.10351563e-05
-    }
-    Rotation {
-      Yaw: 142.024414
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 2692474767044581678
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -63.9296875
-      Y: 322.226563
-    }
-    Rotation {
-      Yaw: 104.208611
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 2684969813152097032
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 113.173828
-      Y: 153.080078
-    }
-    Rotation {
-      Yaw: 104.208542
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 13839931771254792625
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: -63.1816406
-      Y: -121.041016
-    }
-    Rotation {
-      Yaw: 104.208496
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
-  }
-}
-Objects {
-  Id: 16813558807825262224
-  Name: "Spawn Point"
-  Transform {
-    Location {
-      X: 13.9370117
-      Y: -354.266602
-      Z: 6.10351563e-05
-    }
-    Rotation {
-      Yaw: 104.208481
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 17394048562990261073
-  UnregisteredParameters {
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  PlayerSpawnPoint {
-    TeamInt: 1
-    PlayerScaleMultiplier: 1
   }
 }

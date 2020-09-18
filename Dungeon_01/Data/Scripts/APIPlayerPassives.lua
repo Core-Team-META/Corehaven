@@ -66,6 +66,11 @@ function API.ResetPlayerPassives(player)
 	playerPassives[player] = {}
 end
 
+function API.DoesPlayerHavePassive(player, passive)
+	assert(passiveData[passive])
+	return playerPassives[player][passive] == true	-- Cast this to an actual bool
+end
+
 function API.GetPlayerThreatMultiplier(player)
 	local result = 1.0
 

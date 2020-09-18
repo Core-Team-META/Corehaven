@@ -154,6 +154,36 @@
           Id: 10074041898080811053
         }
       }
+      Overrides {
+        Name: "cs:Ability_SweepingSlash"
+        AssetReference {
+          Id: 11272257922258550436
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_FirstAid"
+        AssetReference {
+          Id: 14855283366359618783
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_DrinkPotion"
+        AssetReference {
+          Id: 9965955114855537821
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Wound"
+        AssetReference {
+          Id: 14690783643482390684
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SneakAttack"
+        AssetReference {
+          Id: 2993313201134032743
+        }
+      }
     }
   }
   SerializationVersion: 64

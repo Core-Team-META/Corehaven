@@ -122,7 +122,8 @@ end
 
 -- This takes a function of the form:
 -- float Function(character, character, float)
--- and calls it on the initial damage number, replacing it with the return value
+-- and calls it on the initial damage number, replacing it with the return value. Since these are called in an
+-- unspecified order, they should be communitive (all multiplicative is a good start).
 function API.RegisterPreDamageHook(hookFunction)
     table.insert(preDamageHooks, hookFunction)
 end

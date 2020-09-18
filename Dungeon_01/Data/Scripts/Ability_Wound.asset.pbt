@@ -1,17 +1,17 @@
 ﻿Assets {
-  Id: 16742234104346326110
-  Name: "Ability_ShieldBash"
+  Id: 14690783643482390684
+  Name: "Ability_Wound"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Shield Bash"
+        String: "Wound"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 18150175252654389294
+          Id: 12558162289108193643
         }
       }
       Overrides {
@@ -20,12 +20,12 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 8
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 10673185589754828442
+          Id: 4200389437305254305
         }
       }
       Overrides {
@@ -54,20 +54,14 @@
           Id: 1831660344620141067
         }
       }
-      Overrides {
-        Name: "cs:APIDamage"
-        AssetReference {
-          Id: 16915150100797142409
-        }
-      }
     }
     Assets {
-      Id: 18150175252654389294
-      Name: "Fantasy Ability Blue 051"
+      Id: 12558162289108193643
+      Name: "Fantasy Ability Red 041"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_051"
+        AssetId: "UI_Fantasy_Ability_Red_041"
       }
     }
   }

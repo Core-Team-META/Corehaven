@@ -1,31 +1,31 @@
 ﻿Assets {
-  Id: 16742234104346326110
-  Name: "Ability_ShieldBash"
+  Id: 11272257922258550436
+  Name: "Ability_SweepingSlash"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Shield Bash"
+        String: "Sweeping Slash"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 18150175252654389294
+          Id: 1442513464906163155
         }
       }
       Overrides {
         Name: "cs:Range"
-        Float: 400
+        Float: 0
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 0
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 10673185589754828442
+          Id: 3470311051587704324
         }
       }
       Overrides {
@@ -49,25 +49,25 @@
         }
       }
       Overrides {
-        Name: "cs:APIStatusEffects"
-        AssetReference {
-          Id: 1831660344620141067
-        }
-      }
-      Overrides {
         Name: "cs:APIDamage"
         AssetReference {
           Id: 16915150100797142409
         }
       }
+      Overrides {
+        Name: "cs:API_NPC"
+        AssetReference {
+          Id: 1793953622129874134
+        }
+      }
     }
     Assets {
-      Id: 18150175252654389294
-      Name: "Fantasy Ability Blue 051"
+      Id: 1442513464906163155
+      Name: "Fantasy Ability Red 034"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Blue_051"
+        AssetId: "UI_Fantasy_Ability_Red_034"
       }
     }
   }
