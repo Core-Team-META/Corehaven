@@ -11,7 +11,7 @@
   {
     StatKey = 'CommonSword',
     Group = 'Base',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '3',
     Likelihood = '',
@@ -29,7 +29,7 @@
   {
     StatKey = 'UncommonSword',
     Group = 'Base',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '5',
     Likelihood = '',
@@ -47,7 +47,7 @@
   {
     StatKey = 'UncommonSword',
     Group = 'Bonus1',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '3',
     Likelihood = '100',
@@ -65,7 +65,7 @@
   {
     StatKey = 'RareSword',
     Group = 'Base',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '3',
     Max = '7',
     Likelihood = '',
@@ -83,7 +83,7 @@
   {
     StatKey = 'RareSword',
     Group = 'Bonus1',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '3',
     Likelihood = '100',
@@ -101,7 +101,7 @@
   {
     StatKey = 'RareSword',
     Group = 'Bonus2',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '3',
     Likelihood = '100',
@@ -119,7 +119,7 @@
   {
     StatKey = 'EpicSword',
     Group = 'Base',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '5',
     Max = '10',
     Likelihood = '',
@@ -137,7 +137,7 @@
   {
     StatKey = 'EpicSword',
     Group = 'Bonus1',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -155,7 +155,7 @@
   {
     StatKey = 'EpicSword',
     Group = 'Bonus2',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '1',
     Max = '3',
     Likelihood = '100',
@@ -173,7 +173,7 @@
   {
     StatKey = 'EpicSword',
     Group = 'Bonus3',
-    Stat = 'CritChance',
+    Stat = 'Defense',
     Min = '5',
     Max = '10',
     Likelihood = '40',

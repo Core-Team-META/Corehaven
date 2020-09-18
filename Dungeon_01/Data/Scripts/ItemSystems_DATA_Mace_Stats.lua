@@ -2,7 +2,7 @@
   {
     StatKey = 'CommonMace',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '15',
     Likelihood = '',
@@ -11,7 +11,7 @@
   {
     StatKey = 'UncommonMace',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '20',
     Likelihood = '',
@@ -38,7 +38,7 @@
   {
     StatKey = 'UncommonMagicMace',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '5',
     Max = '10',
     Likelihood = '',
@@ -65,7 +65,7 @@
   {
     StatKey = 'RareMace',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '15',
     Max = '20',
     Likelihood = '',

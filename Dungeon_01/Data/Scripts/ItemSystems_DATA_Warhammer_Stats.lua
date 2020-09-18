@@ -2,7 +2,7 @@
   {
     StatKey = 'CommonWarhammer',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '15',
     Likelihood = '',
@@ -11,7 +11,7 @@
   {
     StatKey = 'UncommonWarhammer',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '10',
     Max = '20',
     Likelihood = '',
@@ -20,7 +20,7 @@
   {
     StatKey = 'UncommonWarhammer',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'HealthPercent',
     Min = '5',
     Max = '10',
     Likelihood = '100',
@@ -38,7 +38,7 @@
   {
     StatKey = 'UncommonMagicWarhammer',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '5',
     Max = '10',
     Likelihood = '',
@@ -65,7 +65,7 @@
   {
     StatKey = 'RareWarhammer',
     Group = 'Base',
-    Stat = 'Defense',
+    Stat = 'Attack',
     Min = '15',
     Max = '20',
     Likelihood = '',
@@ -74,7 +74,7 @@
   {
     StatKey = 'RareWarhammer',
     Group = 'Bonus1',
-    Stat = 'Defense',
+    Stat = 'Health',
     Min = '10',
     Max = '15',
     Likelihood = '100',
@@ -92,7 +92,7 @@
   {
     StatKey = 'RareWarhammer',
     Group = 'Bonus2',
-    Stat = 'CDR',
+    Stat = 'Defense',
     Min = '2',
     Max = '5',
     Likelihood = '100',
@@ -101,7 +101,7 @@
   {
     StatKey = 'RareWarhammer',
     Group = 'Bonus2',
-    Stat = 'Haste',
+    Stat = 'Attack',
     Min = '5',
     Max = '10',
     Likelihood = '100',
