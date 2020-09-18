@@ -22,6 +22,12 @@
           Id: 4038947708810426771
         }
       }
+      Overrides {
+        Name: "cs:Passive_HolyPresence"
+        AssetReference {
+          Id: 10028331438348720174
+        }
+      }
     }
   }
   SerializationVersion: 64

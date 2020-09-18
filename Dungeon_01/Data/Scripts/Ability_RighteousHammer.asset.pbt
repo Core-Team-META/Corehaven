@@ -1,17 +1,17 @@
 ﻿Assets {
-  Id: 234727043416621351
-  Name: "Ability_CreepingCurse"
+  Id: 439156593338236567
+  Name: "Ability_RighteousHammer"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Creeping Curse"
+        String: "Righteous Hammer"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 15612050688073808511
+          Id: 15830314128515121469
         }
       }
       Overrides {
@@ -20,12 +20,12 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 18
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 11916650442979808988
+          Id: 12661262948507566861
         }
       }
       Overrides {
@@ -56,12 +56,12 @@
       }
     }
     Assets {
-      Id: 15612050688073808511
-      Name: "Fantasy Ability Teal 009"
+      Id: 15830314128515121469
+      Name: "Fantasy Ability Yellow 020"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Teal_009"
+        AssetId: "UI_Fantasy_Ability_Yellow_021"
       }
     }
   }

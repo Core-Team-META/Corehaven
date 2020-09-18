@@ -23,7 +23,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Creeping Curse"].id)
+	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Righteous Hammer"].id)
 end
 
 return data

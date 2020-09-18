@@ -142,6 +142,18 @@
           Id: 16913468257274036374
         }
       }
+      Overrides {
+        Name: "cs:Ability_RighteousHammer"
+        AssetReference {
+          Id: 439156593338236567
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SpiritualConduit"
+        AssetReference {
+          Id: 10074041898080811053
+        }
+      }
     }
   }
   SerializationVersion: 64

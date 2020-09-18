@@ -1000,6 +1000,9 @@ Objects {
   ChildIds: 12766202776203964267
   ChildIds: 8656554226348028838
   ChildIds: 2435950492341338217
+  ChildIds: 3451560461803088695
+  ChildIds: 9493492601717869297
+  ChildIds: 5604193199934608457
   UnregisteredParameters {
     Overrides {
       Name: "cs:Order"
@@ -1029,6 +1032,231 @@ Objects {
   InstanceHistory {
     SelfId: 16340714578511042047
     SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 5604193199934608457
+  Name: "Spiritual Conduit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Your target is empowered with spirits, lashing out repeatedly at nearby targets."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Spirital Conduit"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13887755575610655442
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9493492601717869297
+  Name: "Holy Presence"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You and your allies take reduced damage."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Holy Presence"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15930323680083439980
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 3451560461803088695
+  Name: "Righteous Hammer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Throw a hammer at your target, stunning them."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Righteous Hammer"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15830314128515121469
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
     InstanceId: 7736934404878119431
     TemplateId: 15499716775352985803
   }
@@ -4007,6 +4235,8 @@ Objects {
   ChildIds: 2339542894780812040
   ChildIds: 16462493564936061515
   ChildIds: 16353839590824053094
+  ChildIds: 6622498677958727690
+  ChildIds: 1011723058510986425
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4019,6 +4249,124 @@ Objects {
   InstanceHistory {
     SelfId: 12414977104385033478
     SubobjectId: 10104356363581192144
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 1011723058510986425
+  Name: "StatusEffect_SpiritualConduit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13887755575610655442
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10001170249109950089
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 6622498677958727690
+  Name: "StatusEffect_RighteousHammer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15830314128515121469
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1405588008348253591
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -5118,6 +5466,8 @@ Objects {
   ChildIds: 8189473819051696775
   ChildIds: 4812171575968807465
   ChildIds: 14636608455811984043
+  ChildIds: 7850547208970523523
+  ChildIds: 14477195544522613728
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5129,6 +5479,124 @@ Objects {
   InstanceHistory {
     SelfId: 1827629710844690405
     SubobjectId: 4120286767298661683
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 14477195544522613728
+  Name: "StatusEffect_SpiritualConduit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13887755575610655442
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10001170249109950089
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 7850547208970523523
+  Name: "StatusEffect_RighteousHammer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15830314128515121469
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1405588008348253591
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }

@@ -5,9 +5,9 @@ local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local abilityDefinitions = {}
 
-for propertyName, script in pairs(script:GetCustomProperties()) do
+for propertyName, otherScript in pairs(script:GetCustomProperties()) do
 	if string.sub(propertyName, 1, 3) ~= "API" then
-		table.insert(abilityDefinitions, require(script))
+		table.insert(abilityDefinitions, require(otherScript))
 	end
 end
 
@@ -61,6 +61,7 @@ local queuedAbilityName = nil
 local queuedAbilityTarget = nil
 local groundTargetAbilityName = nil
 local groundTargetReticle = nil
+local altDown = false
 
 -- Client and Server, called directly in this API
 function RegisterAbility(data)
@@ -134,7 +135,7 @@ function GetAbilityCooldown(abilityName)
 end
 
 -- Owning client
--- Used for ground target abilities
+-- Used for ground target abilities and some key state
 function OnBindingPressed(player, binding)
 	if groundTargetReticle then
 		if binding == "ability_primary" then
@@ -153,6 +154,17 @@ function OnBindingPressed(player, binding)
 		elseif binding == "ability_secondary" then
 			CancelGroundTargeting()
 		end
+	end
+
+	if binding == "ability_extra_14" then
+		altDown = true
+	end
+end
+
+-- Owning client
+function OnBindingRelease(player, binding)
+	if binding == "ability_extra_14" then
+		altDown = false
 	end
 end
 
@@ -273,7 +285,7 @@ end
 function OnServerAbilityInterrupt(abilityId, timeRemaining)
 	local ability = API_ID.GetObjectFromId(abilityId)
 
-	-- Making a hack so we don't accidentally interrupt the next cast when it's the same spell again
+	-- A failed hack so we don't accidentally interrupt the next cast when it's the same spell again
 	if ability:GetCurrentPhase() == AbilityPhase.CAST and math.abs(ability:GetPhaseTimeRemaining() - timeRemaining) < 0.2 then
 		--ability:Interrupt()
 	end
@@ -491,6 +503,20 @@ function API.GetVisibleCooldownData(abilityName)
 end
 
 -- Owning client
+-- This wraps behavior for things like alt to self cast, or (future) spells that auto target self
+function GetEffectiveTarget(abilityName)
+	local data = abilityData[abilityName]
+	assert(data.targets)
+	assert(not data.groundTargets)
+	
+	if data.friendlyTargetValid and altDown then
+		return LOCAL_PLAYER
+	end
+
+	return API_PS.GetTarget(LOCAL_PLAYER)
+end
+
+-- Owning client
 -- Whether the user can press the hotkey
 function API.CanTrigger(abilityName)
 	local ability = playerAbilities[LOCAL_PLAYER][abilityName]
@@ -505,7 +531,7 @@ function API.CanTrigger(abilityName)
 		if data.groundTargets then
 			return true 
 		else
-			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, API_PS.GetTarget(LOCAL_PLAYER), abilityName)
+			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, GetEffectiveTarget(abilityName), abilityName)
 
 			if not targetValid then
 				if errorMessage then
@@ -552,7 +578,7 @@ function CanActivate(abilityName)
 		if data.groundTargets then
 			target = groundTargetReticle:GetWorldPosition()
 		else
-			target = API_PS.GetTarget(LOCAL_PLAYER)
+			target = GetEffectiveTarget(abilityName)
 		end
 
 		local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, target, abilityName)
@@ -647,7 +673,7 @@ function API.Trigger(abilityName)
 		groundTargetAbilityName = abilityName
 	else
 		if data.targets then
-			queuedAbilityTarget = API_PS.GetTarget(LOCAL_PLAYER)
+			queuedAbilityTarget = GetEffectiveTarget(abilityName)
 		end
 
 		if CanCast(abilityName) then
@@ -726,6 +752,7 @@ function API.Initialize(isClient)
 	if IS_CLIENT then
 		LOCAL_PLAYER = Game.GetLocalPlayer()
 		LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
+		LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingRelease)
 
 		local tick = Task.Spawn(Tick)
 		tick.repeatCount = -1

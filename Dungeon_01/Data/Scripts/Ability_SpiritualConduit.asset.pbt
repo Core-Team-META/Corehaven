@@ -1,17 +1,17 @@
 ﻿Assets {
-  Id: 234727043416621351
-  Name: "Ability_CreepingCurse"
+  Id: 10074041898080811053
+  Name: "Ability_SpiritualConduit"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
         Name: "cs:Name"
-        String: "Creeping Curse"
+        String: "Spirital Conduit"
       }
       Overrides {
         Name: "cs:Icon"
         AssetReference {
-          Id: 15612050688073808511
+          Id: 13887755575610655442
         }
       }
       Overrides {
@@ -20,12 +20,12 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 14
+        Float: 8
       }
       Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
-          Id: 11916650442979808988
+          Id: 3087943568374366425
         }
       }
       Overrides {
@@ -56,12 +56,12 @@
       }
     }
     Assets {
-      Id: 15612050688073808511
-      Name: "Fantasy Ability Teal 009"
+      Id: 13887755575610655442
+      Name: "Fantasy Ability Yellow 003"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ability_Teal_009"
+        AssetId: "UI_Fantasy_Ability_Yellow_003"
       }
     }
   }

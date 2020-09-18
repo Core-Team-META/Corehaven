@@ -71,6 +71,24 @@ Assets {
   }
 }
 Assets {
+  Id: 15930323680083439980
+  Name: "Fantasy Ability Yellow 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_002"
+  }
+}
+Assets {
+  Id: 15830314128515121469
+  Name: "Fantasy Ability Yellow 020"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_021"
+  }
+}
+Assets {
   Id: 15672460151371888059
   Name: "Fantasy Ability Red 006"
   PlatformAssetType: 9
@@ -113,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
+  Id: 13887755575610655442
+  Name: "Fantasy Ability Yellow 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_003"
   }
 }
 Assets {

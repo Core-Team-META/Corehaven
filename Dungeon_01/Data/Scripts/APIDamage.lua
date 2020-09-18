@@ -5,6 +5,7 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 local API = {}
 
 local systemFunctions = nil
+local preDamageHooks = {}
 
 local godMode = false
 
@@ -22,6 +23,12 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 
 -- sourceCharacter may be nil
 function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
+    local adjustedAmount = amount
+
+    for _, hookFunction in pairs(preDamageHooks) do
+        adjustedAmount = hookFunction(sourceCharacter, targetCharacter, adjustedAmount)
+    end
+
     local sourceMultiplier = 1.0
 
     if sourceCharacter then
@@ -38,7 +45,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount)
         targetMultiplier = targetMultiplier * _G.Passives.GetPlayerDamageTakenMultiplier(targetCharacter)
     end
     
-    local adjustedAmount = amount * sourceMultiplier * targetMultiplier
+    adjustedAmount = adjustedAmount * sourceMultiplier * targetMultiplier
     local effectiveAmount = 0.0
         
     if adjustedAmount > 0.0 then
@@ -111,6 +118,13 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount)
     local overheal = amount - effectiveAmount
     systemFunctions.ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal)
     return effectiveAmount, overheal
+end
+
+-- This takes a function of the form:
+-- float Function(character, character, float)
+-- and calls it on the initial damage number, replacing it with the return value
+function API.RegisterPreDamageHook(hookFunction)
+    table.insert(preDamageHooks, hookFunction)
 end
 
 -- Server Only

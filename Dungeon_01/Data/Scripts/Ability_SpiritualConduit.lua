@@ -4,11 +4,10 @@ local data = {}
 
 data.name = script:GetCustomProperty("Name")
 data.targets = true
-data.friendlyTargetValid = false
-data.enemyTargetValid = true
-data.requiresFacing = true
+data.friendlyTargetValid = true
+data.enemyTargetValid = false
+data.requiresFacing = false
 data.groundTargets = false
-data.canMove = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
 data.cooldown = script:GetCustomProperty("Cooldown")
@@ -23,7 +22,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Creeping Curse"].id)
+	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Spiritual Conduit"].id)
 end
 
 return data
