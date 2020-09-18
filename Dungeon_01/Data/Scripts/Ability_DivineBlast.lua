@@ -35,7 +35,7 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
-	local magicStat = caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
 	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 
 	local impactTime = time()

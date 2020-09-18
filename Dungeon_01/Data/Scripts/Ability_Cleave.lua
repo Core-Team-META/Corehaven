@@ -28,7 +28,7 @@ function data.onCastServer(caster, target)
 	Task.Spawn(function()
 		Task.Wait(DAMAGE_DELAY)
 		local casterPosition = caster:GetWorldPosition()
-		local attackStat = caster.serverUserData.inventory:GetStatTotals().Attack
+		local attackStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Attack
 
 		for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
 			local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)

@@ -30,7 +30,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	local magicStat = caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
 	local siphonAmount = API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 	Task.Wait(API_P.GetTravelTime(target, caster, PROJECTILE_SPEED))
 	API_D.ApplyHealing(caster, caster, siphonAmount)

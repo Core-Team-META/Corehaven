@@ -27,7 +27,7 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(IMPACT_DELAY)
-	local magicStat = caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
 	API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat, false)
 end
 
