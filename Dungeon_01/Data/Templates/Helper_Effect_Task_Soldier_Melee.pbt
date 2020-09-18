@@ -326,7 +326,7 @@
             Id: 13138174875216727191
           }
           AutoPlay: true
-          Pitch: -299.601563
+          Pitch: -299.601562
           Volume: 0.3
           Falloff: 500
           Radius: 1500
