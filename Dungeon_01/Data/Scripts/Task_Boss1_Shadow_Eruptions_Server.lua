@@ -24,36 +24,38 @@ function OnTaskStart(npc, threatTable)
 end
 
 function OnTaskEnd(npc, interrupted)
-	local order = {1, 2, 3, 4}
+	if not interrupted then
+		local order = {1, 2, 3, 4}
 
-	-- Scramble order
-	for i = 1, #order - 1 do
-		local j = math.random(i, #order)
-		local temp = order[j]
-		order[j] = order[i]
-		order[i] = temp
-	end
+		-- Scramble order
+		for i = 1, #order - 1 do
+			local j = math.random(i, #order)
+			local temp = order[j]
+			order[j] = order[i]
+			order[i] = temp
+		end
 
-	Events.BroadcastToAllPlayers("SE", order)
+		Events.BroadcastToAllPlayers("SE", order)
 
-	Task.Spawn(function()
-		for i = 1, #order do
-			Task.Wait(2.5)
-			local ringIndex = order[i]
+		Task.Spawn(function()
+			for i = 1, #order do
+				Task.Wait(2.5)
+				local ringIndex = order[i]
 
-			for _, player in pairs(Game.GetPlayers()) do
-				local offset = player:GetWorldPosition() - ERUPTIONS_GROUP:GetWorldPosition()
-				offset.z = 0.0
-				local r = offset.size
+				for _, player in pairs(Game.GetPlayers()) do
+					local offset = player:GetWorldPosition() - ERUPTIONS_GROUP:GetWorldPosition()
+					offset.z = 0.0
+					local r = offset.size
 
-				if r < RADII[ringIndex] then
-					if ringIndex == 1 or r >= RADII[ringIndex - 1] then
-						API_D.ApplyDamage(npc, player, DAMAGE)
+					if r < RADII[ringIndex] then
+						if ringIndex == 1 or r >= RADII[ringIndex - 1] then
+							API_D.ApplyDamage(npc, player, DAMAGE)
+						end
 					end
 				end
 			end
-		end
-	end)
+		end)
+	end
 end
 
 API_NPC.RegisterTaskServer("boss1_shadow_eruptions", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

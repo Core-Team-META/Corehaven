@@ -25,17 +25,21 @@ function OnTaskStart(npc, threatTable)
 			Task.Wait(2.5 / ARMY_SIZE[targetCount])
 
 			local rotation = Rotation.New(0.0, 0.0, math.random() * 360.0)
-			local targetPosition = API_NPC.GetRandomCharacterInThreatTable(threatTable):GetWorldPosition() - rotation * Vector3.FORWARD * 200.0
-			hitResult = World.Raycast(targetPosition + Vector3.UP * 500.0, targetPosition - Vector3.UP * 500.0, {ignorePlayers = true})
+			local target = API_NPC.GetRandomCharacterInThreatTable(threatTable)
 
-			if hitResult then
-				targetPosition = hitResult:GetImpactPosition()
-			end
+			if Object.IsValid(target) then
+				local targetPosition = target:GetWorldPosition() - rotation * Vector3.FORWARD * 200.0
+				hitResult = World.Raycast(targetPosition + Vector3.UP * 500.0, targetPosition - Vector3.UP * 500.0, {ignorePlayers = true})
 
-			if math.random(2) == 1 then
-				API_NPC.SpawnNPC(SUMMON_TEMPLATE1, npc, targetPosition, rotation)
-			else
-				API_NPC.SpawnNPC(SUMMON_TEMPLATE2, npc, targetPosition, rotation)
+				if hitResult then
+					targetPosition = hitResult:GetImpactPosition()
+				end
+
+				if math.random(2) == 1 then
+					API_NPC.SpawnNPC(SUMMON_TEMPLATE1, npc, targetPosition, rotation)
+				else
+					API_NPC.SpawnNPC(SUMMON_TEMPLATE2, npc, targetPosition, rotation)
+				end
 			end
 		end
 	end)

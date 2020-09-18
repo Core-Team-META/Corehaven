@@ -17,7 +17,9 @@ function OnTaskStart(npc, threatTable)
 			Task.Wait(1.0)
 
 			for player, _ in pairs(threatTable) do
-				API_D.ApplyDamage(npc, player, TICK_DAMAGE)
+				if Object.IsValid(player) then
+					API_D.ApplyDamage(npc, player, TICK_DAMAGE)
+				end
 			end
 		end
 	end)

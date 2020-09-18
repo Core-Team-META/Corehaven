@@ -12,13 +12,15 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 	
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.4)
-		API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Impaled"].id)
-	end)
 
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
+		if Object.IsValid(target) then
+			API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Impaled"].id)
+		end
+	end)
 
 	return 1.5
 end

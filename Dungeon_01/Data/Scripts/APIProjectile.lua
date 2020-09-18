@@ -23,6 +23,10 @@ function API.CreateProjectile(source, target, speed, projectileTemplate)
 
 	Task.Spawn(function()
 		while true do
+			if not Object.IsValid(target) then
+				break
+			end
+			
 			local t = os.clock()
 			local offset = GetCorrectPosition(target) - projectile:GetWorldPosition()
 			local stepSize = speed * (t - previousT)

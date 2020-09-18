@@ -13,13 +13,15 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 	
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.4)
-		API_D.ApplyDamage(npc, target, DAMAGE)
+		
+		if Object.IsValid(target) then
+			API_D.ApplyDamage(npc, target, DAMAGE)
+		end
 	end)
-
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
 	return 1.5
 end

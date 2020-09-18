@@ -19,13 +19,14 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	targets[npc] = API_NPC.GetTarget(npc)
-	API_NPC.LookAtTargetWithoutPitch(npc, targets[npc]:GetWorldPosition())
+	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
+	targets[npc] = target
 
 	currentTasks[npc] = Task.Spawn(function()
 		while true do
 			Task.Wait(0.3)
-			API_NPC.LookAtTargetWithoutPitch(npc, targets[npc]:GetWorldPosition())
+			API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 		end
 	end)
 
@@ -37,12 +38,12 @@ function OnTaskEnd(npc, interrupted)
 		currentTasks[npc]:Cancel()
 	end
 
-	currentTasks[npc] = nil
+	if Object.IsValid(targets[npc]) and not interrupted then
+		local targetPosition = targets[npc]:GetWorldPosition()
 
-	if not interrupted then
 		Task.Spawn(function()
 			-- We start at 0, because the npc position isn't a jump
-			local jumps = {[0] = npc:GetWorldPosition(), [1] = targets[npc]:GetWorldPosition()}
+			local jumps = {[0] = npc:GetWorldPosition(), [1] = targetPosition}
 			local forward = (jumps[1] - jumps[0]):GetNormalized()
 			local right = (forward ^ Vector3.UP):GetNormalized()
 			local stream = RandomStream.New()
@@ -67,6 +68,9 @@ function OnTaskEnd(npc, interrupted)
 			end
 		end)
 	end
+	
+	currentTasks[npc] = nil
+	targets[npc] = nil
 end
 
 API_NPC.RegisterTaskServer("boss1_shadow_worm", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

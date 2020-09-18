@@ -7,7 +7,7 @@
       RootId: 12555114022526006492
       Objects {
         Id: 12555114022526006492
-        Name: "Enemy_Wizard"
+        Name: "Enemy_Fire_Wizard"
         Transform {
           Scale {
             X: 1

@@ -32,7 +32,7 @@ end
 function OnTaskEnd(npc, interrupted)
 	if not interrupted then
 		for _, target in pairs(targetSets[npc]) do
-			if not target.isDead then
+			if Object.IsValid(target) and not target.isDead then
 				API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Decay"].id)
 			end
 		end

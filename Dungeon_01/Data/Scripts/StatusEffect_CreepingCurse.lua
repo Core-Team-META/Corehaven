@@ -5,7 +5,6 @@ local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local ICON = script:GetCustomProperty("Icon")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local PROJECTILE_SPEED = 1200.0
 local BASE_DAMAGE = 30.0
 local DAMAGE_MULTIPLIER = 0.6
 local JUMP_RANGE = 1000.0

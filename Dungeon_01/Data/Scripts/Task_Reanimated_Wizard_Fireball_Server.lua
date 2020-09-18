@@ -22,11 +22,20 @@ end
 
 function OnTaskEnd(npc, interrupted)
 	if not interrupted then
+		local target = targets[npc]
+
 		Task.Spawn(function()
-			Task.Wait(API_P.GetTravelTime(npc, targets[npc], PROJECTILE_SPEED))
-			API_D.ApplyDamage(npc, targets[npc], DAMAGE)
+			if Object.IsValid(target) then
+				Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
+
+				if Object.IsValid(target) then
+					API_D.ApplyDamage(npc, target, DAMAGE)
+				end
+			end
 		end)
 	end
+	
+	targets[npc] = nil
 end
 
 API_NPC.RegisterTaskServer("reanimated_wizard_fireball", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

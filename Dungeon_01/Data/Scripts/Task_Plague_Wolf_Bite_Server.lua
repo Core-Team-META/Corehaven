@@ -14,14 +14,16 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 	
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.6)
-		API_D.ApplyDamage(npc, target, DAMAGE)
-		API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Plagued Wound"].id)
-	end)
 
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
+		if Object.IsValid(target) then
+			API_D.ApplyDamage(npc, target, DAMAGE)
+			API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Plagued Wound"].id)
+		end
+	end)
 
 	return 1.5
 end

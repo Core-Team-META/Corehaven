@@ -35,39 +35,47 @@ function OnTaskStart(npc, threatTable)
 end
 
 function OnTaskEnd(npc, interrupted)
-	Task.Spawn(function()
-		taggedPlayers[npc] = {}
+	if not interrupted then
+		Task.Spawn(function()
+			taggedPlayers[npc] = {}
 
-		for _, player in pairs(Game.GetPlayers()) do
-			if not player.isDead then
-				local shapeIndex = math.random(4)
-				local statusEffectIndex = API_SE.ApplyStatusEffect(npc, player, API_SE.STATUS_EFFECT_DEFINITIONS[statusEffectNames[shapeIndex]].id)
-				taggedPlayers[npc][player] = {shapeIndex = shapeIndex, statusEffectIndex = statusEffectIndex}
-			end
-		end
-
-		local startTime = time()
-
-		while time() - startTime < DURATION do
-			for player, data in pairs(taggedPlayers[npc]) do
-				local distance = (STALLS[data.shapeIndex]:GetWorldPosition() - player:GetWorldPosition()).size
-
-				if distance <= SHOP_RADIUS then
-					taggedPlayers[npc][player] = nil
-					API_SE.RemoveStatusEffect(player, data.statusEffectIndex)
+			for _, player in pairs(Game.GetPlayers()) do
+				if not player.isDead then
+					local shapeIndex = math.random(4)
+					local statusEffectIndex = API_SE.ApplyStatusEffect(npc, player, API_SE.STATUS_EFFECT_DEFINITIONS[statusEffectNames[shapeIndex]].id)
+					taggedPlayers[npc][player] = {shapeIndex = shapeIndex, statusEffectIndex = statusEffectIndex}
 				end
 			end
 
-			Task.Wait()
-		end
+			local startTime = time()
 
-		for player, data in pairs(taggedPlayers[npc]) do
-			API_SE.RemoveStatusEffect(player, data.statusEffectIndex)
-			API_D.ApplyDamage(npc, player, DAMAGE)
-		end
+			while time() - startTime < DURATION do
+				for player, data in pairs(taggedPlayers[npc]) do
+					if Object.IsValid(player) then
+						local distance = (STALLS[data.shapeIndex]:GetWorldPosition() - player:GetWorldPosition()).size
 
-		taggedPlayers[npc] = nil
-	end)
+						if distance <= SHOP_RADIUS then
+							taggedPlayers[npc][player] = nil
+							API_SE.RemoveStatusEffect(player, data.statusEffectIndex)
+						end
+					else
+						taggedPlayers[npc][player] = nil
+					end
+				end
+
+				Task.Wait()
+			end
+
+			for player, data in pairs(taggedPlayers[npc]) do
+				if Object.IsValid(player) then
+					API_SE.RemoveStatusEffect(player, data.statusEffectIndex)
+					API_D.ApplyDamage(npc, player, DAMAGE)
+				end
+			end
+
+			taggedPlayers[npc] = nil
+		end)
+	end
 end
 
 API_NPC.RegisterTaskServer("boss2_encourage_commerce", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

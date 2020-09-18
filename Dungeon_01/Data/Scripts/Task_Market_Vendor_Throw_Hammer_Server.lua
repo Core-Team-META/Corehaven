@@ -15,13 +15,18 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
 	currentTasks[npc] = Task.Spawn(function()
-		Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
-		API_D.ApplyDamage(npc, target, DAMAGE)
-	end)
+		-- Nested checks here to avoid conflicting with the cancel condition below
+		if Object.IsValid(target) then
+			Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
 
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
+			if Object.IsValid(target) then
+				API_D.ApplyDamage(npc, target, DAMAGE)
+			end
+		end
+	end)
 
 	return 1.6
 end

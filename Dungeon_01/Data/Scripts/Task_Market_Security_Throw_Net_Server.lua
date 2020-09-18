@@ -16,18 +16,22 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.1)
 
 		Task.Spawn(function()
-			Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
-			API_D.ApplyDamage(npc, target, DAMAGE)
-			API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Caught"].id)
+			if Object.IsValid(target) then
+				Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
+				
+				if Object.IsValid(target) then
+					API_D.ApplyDamage(npc, target, DAMAGE)
+					API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Caught"].id)
+				end
+			end
 		end)
 	end)
-
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
 	return 1.5
 end

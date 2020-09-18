@@ -12,10 +12,8 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local target = API_NPC.GetTarget(npc)
-	
-	statusEffectIndices[npc] = API_SE.ApplyStatusEffect(npc, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Block"].id)
-
 	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
+	statusEffectIndices[npc] = API_SE.ApplyStatusEffect(npc, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Block"].id)
 
 	return 4.0
 end

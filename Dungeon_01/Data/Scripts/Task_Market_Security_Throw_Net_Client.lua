@@ -4,17 +4,21 @@ local API_P = require(script:GetCustomProperty("APIProjectile"))
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local PROJECTILE_SPEED = 2000.0
+local PROJECTILE_SPEED = 1200.0
 
 local currentTasks = {}
 
 function OnTaskStart(npc, animatedMesh)
 	animatedMesh:PlayAnimation("unarmed_throw")
 	animatedMesh.playbackRateMultiplier = 0.3
+	local target = API_NPC.GetTarget(npc)
 
 	currentTasks[npc] = Task.Spawn(function()
 		Task.Wait(0.1)
-		API_P.CreateProjectile(npc, API_NPC.GetTarget(npc), PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+		
+		if Object.IsValid(target) then
+			API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+		end
 	end)
 end
 

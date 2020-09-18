@@ -103,7 +103,7 @@ function UpdateCurrentTask(npc)
 
 		if not cooldownEndTime or cooldownEndTime <= time() then
 			if taskData.range == 0.0 or taskData.range >= distanceToTarget then
-				local priority = taskData.getPriority(npc, npcData.taskHistory)
+				local priority = taskData.getPriority(npc, npcState.taskHistory)
 				assert(priority >= 0.0)
 				
 				if priority > 0.0 then

@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13545083026230016674
+  Name: "Fantasy Ability Blue 028"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Blue_028"
+  }
+}
+Assets {
   Id: 12781087704127034770
   Name: "Icon Star"
   PlatformAssetType: 9
@@ -224,6 +233,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10094985332226947399
+  Name: "Fantasy Ability Blue 014"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Blue_014"
+  }
+}
+Assets {
   Id: 10038193862238259236
   Name: "Fantasy Ability Green 014"
   PlatformAssetType: 9
@@ -284,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_022"
+  }
+}
+Assets {
+  Id: 7974945132844636755
+  Name: "Fantasy Ability Blue 044"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Blue_044"
   }
 }
 Assets {
