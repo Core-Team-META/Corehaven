@@ -85,7 +85,7 @@ function StatSheet:GetLevelProgress()
         return 1.0
     else
         local prev, next = self:GetLevelExperienceInterval()
-        return CoreMath.Clamp(self.experience - prev) / (next - prev)
+        return CoreMath.Clamp((self.experience - prev) / (next - prev))
     end
 end
 

@@ -608,7 +608,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 660
@@ -5491,7 +5491,8 @@ Objects {
   ParentId: 6427885708988809054
   ChildIds: 11880853008329394328
   ChildIds: 4367171715193905911
-  ChildIds: 14548223140074534457
+  ChildIds: 10757061219501401814
+  ChildIds: 8098623273716594289
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5524,8 +5525,178 @@ Objects {
   }
 }
 Objects {
+  Id: 8098623273716594289
+  Name: "LevelNumber"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8618125357592173978
+  ChildIds: 16337828928216541316
+  ChildIds: 14548223140074534457
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 35
+    Height: 35
+    UIX: 112
+    UIY: 66
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 11636672077374519341
+      }
+      Color {
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 14548223140074534457
-  Name: "Level"
+  Name: "LevelNumberText"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8098623273716594289
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 40
+    Height: 40
+    UIY: 1
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "12"
+      Color {
+        R: 0.840000033
+        G: 0.166887432
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16337828928216541316
+  Name: "Frame"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8098623273716594289
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 16471580195087108593
+      }
+      Color {
+        R: 0.840000033
+        G: 0.166887432
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10757061219501401814
+  Name: "LevelProgressBar"
   Transform {
     Location {
     }
@@ -5546,31 +5717,31 @@ Objects {
   }
   Control {
     Width: 200
-    Height: 60
-    UIX: 94
-    UIY: 46
+    Height: 25
+    UIX: 130
+    UIY: 66
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
-    Text {
-      Label: "Level 99"
+    StatBar {
       Color {
-        R: 0.669999957
-        G: 0.372715205
+        R: 0.840000033
+        G: 0.166887432
         A: 1
       }
-      Size: 18
-      Justification {
-        Value: "mc:etextjustify:left"
+      BackgroundColor {
+        R: 0.840000033
+        G: 0.166887432
+        A: 0.373000026
       }
-      AutoWrapText: true
+      Percent: 0.292354614
     }
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:topleft"
+          Value: "mc:euianchor:middleleft"
         }
       }
       TargetAnchor {
@@ -5606,7 +5777,7 @@ Objects {
     Width: 350
     Height: 60
     UIX: 94
-    UIY: 10
+    UIY: 5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -5615,8 +5786,8 @@ Objects {
     Text {
       Label: "AVeryLongNameIndeed"
       Color {
-        R: 0.669999957
-        G: 0.372715205
+        R: 0.840000033
+        G: 0.166887432
         A: 1
       }
       Size: 20
@@ -5732,11 +5903,11 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 3481758651789323561
+        Id: 16471580195087108593
       }
       Color {
-        R: 0.669999957
-        G: 0.372715205
+        R: 0.840000033
+        G: 0.166887432
         A: 1
       }
       TeamSettings {
@@ -5834,6 +6005,12 @@ Objects {
       Name: "cs:PlayerLevel"
       ObjectReference {
         SelfId: 14548223140074534457
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerLevelProgress"
+      ObjectReference {
+        SelfId: 10757061219501401814
       }
     }
     Overrides {

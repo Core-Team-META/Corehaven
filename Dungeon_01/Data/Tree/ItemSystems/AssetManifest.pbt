@@ -8,12 +8,30 @@
   }
 }
 Assets {
+  Id: 16471580195087108593
+  Name: "Frame Outlined 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid4px_020"
+  }
+}
+Assets {
   Id: 14739427260152500224
   Name: "Shield"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_icon_Shield"
+  }
+}
+Assets {
+  Id: 11636672077374519341
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
   }
 }
 Assets {
