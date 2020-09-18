@@ -21,7 +21,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 7914877523917694110
+              Id: 15871260821495560172
             }
           }
           Overrides {
@@ -121,7 +121,7 @@
         Name: "Fantasy Sword Blade 01"
         Transform {
           Location {
-            Z: 14.8256073
+            Z: 14.3381348
           }
           Rotation {
           }
@@ -158,12 +158,13 @@
         Name: "Fantasy Sword Guard 02"
         Transform {
           Location {
-            Z: 9.56092834
+            Z: 18.305542
           }
           Rotation {
+            Roll: 179.999954
           }
           Scale {
-            X: 1
+            X: 1.0999608
             Y: 1
             Z: 1
           }
@@ -229,12 +230,12 @@
       }
     }
     Assets {
-      Id: 7914877523917694110
-      Name: "Fantasy Dagger 016"
+      Id: 15871260821495560172
+      Name: "Fantasy Dagger 007"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Weapon_Dagger_016"
+        AssetId: "UI_Fantasy_Weapon_Dagger_007"
       }
     }
     Assets {

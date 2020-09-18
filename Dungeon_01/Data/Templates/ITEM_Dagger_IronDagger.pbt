@@ -62,9 +62,9 @@
         }
         ParentId: 4719329915901716271
         ChildIds: 17177525113747695408
-        ChildIds: 6280621938545943655
-        ChildIds: 15264574723981071385
-        ChildIds: 2397045049083616460
+        ChildIds: 18052689721858205001
+        ChildIds: 5788711544997483976
+        ChildIds: 13286352261405739062
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -91,6 +91,14 @@
           }
         }
         ParentId: 8326870281322413333
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -113,21 +121,41 @@
         }
       }
       Objects {
-        Id: 6280621938545943655
-        Name: "Fantasy Sword Blade 01"
+        Id: 18052689721858205001
+        Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 14.8256073
+            Z: 6.72290039
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.51758939
+            Y: 0.508234262
+            Z: 0.416581511
           }
         }
         ParentId: 8326870281322413333
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -136,7 +164,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5605120965849612947
+            Id: 4342756216088781504
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -150,21 +178,30 @@
         }
       }
       Objects {
-        Id: 15264574723981071385
-        Name: "Fantasy Sword Guard 02"
+        Id: 5788711544997483976
+        Name: "Ring - Thick"
         Transform {
           Location {
-            Z: 9.56092834
+            Z: -14.557312
           }
           Rotation {
+            Roll: -89.9999695
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.114075467
+            Y: 0.114075467
+            Z: 0.114075467
           }
         }
         ParentId: 8326870281322413333
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -173,7 +210,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 9544913535066953067
+            Id: 2901702164758099337
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -187,21 +224,29 @@
         }
       }
       Objects {
-        Id: 2397045049083616460
-        Name: "Fantasy Pommel 01"
+        Id: 13286352261405739062
+        Name: "Cube - Chamfered Large Polished"
         Transform {
           Location {
-            Z: -12.6728745
+            Z: 10.5735474
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.183026418
+            Y: 0.06543
+            Z: 0.0289359931
           }
         }
         ParentId: 8326870281322413333
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -210,7 +255,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1383772742094820961
+            Id: 2670205319698482526
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -243,30 +288,48 @@
       }
     }
     Assets {
-      Id: 5605120965849612947
-      Name: "Fantasy Sword Blade 01"
-      PlatformAssetType: 1
+      Id: 11337413471323694429
+      Name: "Metal Gold 01"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_sword_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_001"
       }
     }
     Assets {
-      Id: 9544913535066953067
-      Name: "Fantasy Sword Guard 02"
+      Id: 4342756216088781504
+      Name: "Fantasy Sword Blade 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_sword_002"
+        AssetId: "sm_weap_fan_blade_sword_002"
       }
     }
     Assets {
-      Id: 1383772742094820961
-      Name: "Fantasy Pommel 01"
+      Id: 8221347909026897831
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
+      }
+    }
+    Assets {
+      Id: 2901702164758099337
+      Name: "Ring - Extra Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_001"
+        AssetId: "sm_torus_006"
+      }
+    }
+    Assets {
+      Id: 2670205319698482526
+      Name: "Cube - Chamfered Large Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_hq_002"
       }
     }
     PrimaryAssetId {

@@ -7,7 +7,7 @@ Objects {
     Location {
       X: 10807.2246
       Y: 3736.2583
-      Z: 4435.73144
+      Z: 4435.73145
     }
     Rotation {
       Yaw: 28.998991
@@ -392,7 +392,7 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 4608.82226
+      X: 4608.82227
       Y: 2842.09302
       Z: 4354.03125
     }
@@ -659,7 +659,7 @@ Objects {
     Location {
       X: 9873.18164
       Y: 3081.50244
-      Z: 4435.73144
+      Z: 4435.73145
     }
     Rotation {
       Pitch: 2.54996896

@@ -41,6 +41,28 @@ local PLAYER_STAT_FORMATS = {
     Tenacity        = "%d%%",
 }
 
+local PLAYER_STAT_DISPLAY_NAMES = {
+    Health          = "Health",
+    Defense         = "Defense",
+    Attack          = "Attack",
+    Magic           = "Magic",
+    CritChance      = "Crit Chance",
+    Haste           = "Haste",
+    CDR             = "Cooldown Reduction",
+    Tenacity        = "Tenacity"
+}
+
+local PLAYER_STAT_EXPLANATIONS = {
+    Health          = "amount of damage your character can survive",
+    Defense         = "reduces incoming damage",
+    Attack          = "increases damage with weapons",
+    Magic           = "increases damage with abilities",
+    CritChance      = "increases your chance to critically strike",
+    Haste           = "increases the speed of your actions",
+    CDR             = "makes abilities recharge faster",
+    Tenacity        = "makes crowd control durations shorter",
+}
+
 local ITEM_SFX = {
     Armor      = script:GetCustomProperty("SFX_EquipArmor"),
     Axe        = script:GetCustomProperty("SFX_EquipAxe"),
@@ -73,6 +95,14 @@ return {
 
     GetPlayerStatFormattedValue = function(statName, statValue)
         return string.format(PLAYER_STAT_FORMATS[statName], statValue)
+    end,
+    
+    GetPlayerStatDisplayName = function(statName)
+        return PLAYER_STAT_DISPLAY_NAMES[statName]
+    end,
+
+    GetPlayerStatExplanation = function(statName)
+        return PLAYER_STAT_EXPLANATIONS[statName]
     end,
 
     GetItemSFX = function(itemType)

@@ -40,6 +40,16 @@ local function ServerReplicateStatSheet()
         COMPONENT:SetNetworkedCustomProperty(prop.."A", addValue)
         COMPONENT:SetNetworkedCustomProperty(prop.."M", mulValue)
     end
+    -- Hitpoints.
+    local oldMaxHitPoints = OWNER.maxHitPoints
+    local newMaxHitPoints = OWNER.serverUserData.statSheet:GetStatTotalValue("Health")
+    OWNER.maxHitPoints = newMaxHitPoints
+    if newMaxHitPoints > oldMaxHitPoints then
+        local adjustment = newMaxHitPoints - oldMaxHitPoints
+        OWNER.hitPoints = OWNER.hitPoints + adjustment
+    else
+        OWNER.hitPoints = math.min(OWNER.hitPoints, OWNER.maxHitPoints)
+    end
 end
 
 local function ServerSaveStatSheet()

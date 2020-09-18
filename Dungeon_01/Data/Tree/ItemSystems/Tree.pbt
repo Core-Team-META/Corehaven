@@ -612,9 +612,9 @@ Objects {
   }
   Control {
     Width: 660
-    Height: 650
+    Height: 800
     UIX: -140
-    UIY: -300
+    UIY: -200
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4442,9 +4442,10 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4498,9 +4499,10 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4554,9 +4556,10 @@ Objects {
         Id: 8125907229295996063
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4610,9 +4613,10 @@ Objects {
         Id: 10277004524862014404
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4666,9 +4670,10 @@ Objects {
         Id: 7957169483103266877
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4722,9 +4727,10 @@ Objects {
         Id: 16634052309904547918
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4778,9 +4784,10 @@ Objects {
         Id: 14739427260152500224
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4834,9 +4841,10 @@ Objects {
         Id: 1800484346299675619
       }
       Color {
-        R: 0.669999957
-        G: 0.372715086
-        A: 0.5
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
       }
       TeamSettings {
       }
@@ -4932,10 +4940,10 @@ Objects {
   ChildIds: 13477964554167505308
   ChildIds: 10664458283639368500
   ChildIds: 11104839311659160755
-  ChildIds: 16622614502704588783
   ChildIds: 8085012896379348270
-  ChildIds: 14218505010115311904
   ChildIds: 14446643815341576269
+  ChildIds: 16622614502704588783
+  ChildIds: 14218505010115311904
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4947,7 +4955,7 @@ Objects {
   Control {
     Width: 100
     Height: 135
-    UIY: 100
+    UIY: 95
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4967,62 +4975,6 @@ Objects {
           Value: "mc:euianchor:topcenter"
         }
       }
-    }
-  }
-}
-Objects {
-  Id: 14446643815341576269
-  Name: "UI_ItemSystems_PlayerStat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12279205267669011023
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16846208118194305403
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Tenacity"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 50
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 513
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15262117826806054713
     }
   }
 }
@@ -5069,67 +5021,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 5
+          Float: 210
         }
         Overrides {
           Name: "UIX"
-          Float: 513
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 15262117826806054713
-    }
-  }
-}
-Objects {
-  Id: 8085012896379348270
-  Name: "UI_ItemSystems_PlayerStat"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12279205267669011023
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 16846208118194305403
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Haste"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        Overrides {
-          Name: "UIY"
-          Float: 50
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 353
+          Float: 20
         }
       }
     }
@@ -5181,11 +5077,127 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 5
+          Float: 180
         }
         Overrides {
           Name: "UIX"
-          Float: 353
+          Float: 20
+        }
+        Overrides {
+          Name: "Width"
+          Int: -40
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15262117826806054713
+    }
+  }
+}
+Objects {
+  Id: 14446643815341576269
+  Name: "UI_ItemSystems_PlayerStat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12279205267669011023
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16846208118194305403
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Tenacity"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 150
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 20
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 15262117826806054713
+    }
+  }
+}
+Objects {
+  Id: 8085012896379348270
+  Name: "UI_ItemSystems_PlayerStat"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12279205267669011023
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16846208118194305403
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Haste"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 120
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 20
         }
       }
     }
@@ -5237,11 +5249,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 50
+          Float: 90
         }
         Overrides {
           Name: "UIX"
-          Float: 193
+          Float: 20
         }
       }
     }
@@ -5293,11 +5305,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 5
+          Float: 60
         }
         Overrides {
           Name: "UIX"
-          Float: 193
+          Float: 20
         }
       }
     }
@@ -5349,11 +5361,11 @@ Objects {
         }
         Overrides {
           Name: "UIY"
-          Float: 50
+          Float: 30
         }
         Overrides {
           Name: "UIX"
-          Float: 33
+          Float: 20
         }
       }
     }
@@ -5396,10 +5408,6 @@ Objects {
           Name: "Rotation"
           Rotator {
           }
-        }
-        Overrides {
-          Name: "UIX"
-          Float: 33
         }
       }
     }
