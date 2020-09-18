@@ -41,7 +41,7 @@ function data.onCastServer(caster, target)
 
 	caster:SetWorldPosition(teleportPosition + Vector3.UP * 110.0 * caster:GetWorldScale().z)
 	caster:SetWorldRotation(target:GetWorldRotation())
-	local attackStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Attack
+	local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
 end
 

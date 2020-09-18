@@ -26,7 +26,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 
 	Task.Spawn(function()
 		for i = 1, N_TICKS do
