@@ -694,7 +694,7 @@ Objects {
   Name: "Grass Tall"
   Transform {
     Location {
-      X: 2358.75976
+      X: 2358.75977
       Y: 1862.77686
       Z: -63.8168945
     }
@@ -775,7 +775,7 @@ Objects {
   Transform {
     Location {
       X: -1846.30469
-      Y: -36.4125976
+      Y: -36.4125977
       Z: 60.7446289
     }
     Rotation {
@@ -816,7 +816,7 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: -2219.32226
+      X: -2219.32227
       Y: -20.6357422
       Z: 127.575928
     }
@@ -899,7 +899,7 @@ Objects {
     Location {
       X: -2215.33
       Y: 382.910156
-      Z: 101.278808
+      Z: 101.278809
     }
     Rotation {
       Yaw: 83.7257156
@@ -1551,7 +1551,7 @@ Objects {
     Location {
       X: -351.933594
       Y: 3948.04688
-      Z: 50.9750976
+      Z: 50.9750977
     }
     Rotation {
       Pitch: 14.4439774
@@ -1961,7 +1961,7 @@ Objects {
     Location {
       X: 577.888672
       Y: 4055.62939
-      Z: 33.6601562
+      Z: 33.6601563
     }
     Rotation {
       Pitch: 50.091938
@@ -2163,7 +2163,7 @@ Objects {
     Rotation {
       Pitch: 6.01894665
       Yaw: 56.2705498
-      Roll: -2.67382812
+      Roll: -2.67382813
     }
     Scale {
       X: 1.59159851
@@ -2941,7 +2941,7 @@ Objects {
   Transform {
     Location {
       X: 278.984375
-      Y: 4340.6831
+      Y: 4340.68311
       Z: 231.416504
     }
     Rotation {
@@ -3587,7 +3587,7 @@ Objects {
   Name: "Bush 02"
   Transform {
     Location {
-      X: 589.132812
+      X: 589.132813
       Y: -5015.25049
       Z: 530.906494
     }
@@ -3700,7 +3700,7 @@ Objects {
   Name: "Bush 02"
   Transform {
     Location {
-      X: 852.632812
+      X: 852.632813
       Y: -6063.2666
       Z: 528.739502
     }
@@ -4557,7 +4557,7 @@ Objects {
     Location {
       X: -4884.77246
       Y: 2559.00049
-      Z: -64.5219726
+      Z: -64.5219727
     }
     Rotation {
       Pitch: -28.1426392
@@ -4610,7 +4610,7 @@ Objects {
     Location {
       X: -4657.80664
       Y: 3129.47607
-      Z: -64.5219726
+      Z: -64.5219727
     }
     Rotation {
       Pitch: 5.97974157
@@ -4780,12 +4780,12 @@ Objects {
   Transform {
     Location {
       X: -4527.63379
-      Y: 2536.39892
+      Y: 2536.39893
       Z: 1292.68799
     }
     Rotation {
       Pitch: -9.15527344e-05
-      Yaw: 38.1000976
+      Yaw: 38.1000977
       Roll: 89.9994888
     }
     Scale {
@@ -4843,7 +4843,7 @@ Objects {
       Z: 1438.1626
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628632
       Roll: 89.9994888
     }
@@ -4939,7 +4939,7 @@ Objects {
   Name: "Ivy 05"
   Transform {
     Location {
-      X: -4570.72558
+      X: -4570.72559
       Y: 2720.9292
       Z: 557.675049
     }
@@ -5065,7 +5065,7 @@ Objects {
   Name: "Ivy 04"
   Transform {
     Location {
-      X: -4123.57226
+      X: -4123.57227
       Y: 2938.6792
       Z: 910.031738
     }
@@ -5230,9 +5230,9 @@ Objects {
   Name: "Bush 02"
   Transform {
     Location {
-      X: -5812.88476
+      X: -5812.88477
       Y: 3661.66943
-      Z: -651.719726
+      Z: -651.719727
     }
     Rotation {
       Pitch: 7.72266245
@@ -5309,8 +5309,8 @@ Objects {
   Transform {
     Location {
       X: -7101.25098
-      Y: 3197.20312
-      Z: -651.719726
+      Y: 3197.20313
+      Z: -651.719727
     }
     Rotation {
       Pitch: 7.72266245
@@ -5700,7 +5700,7 @@ Objects {
   Transform {
     Location {
       X: -2936.50293
-      Y: 5037.53808
+      Y: 5037.53809
       Z: -65.4929199
     }
     Rotation {
@@ -6260,7 +6260,7 @@ Objects {
   Name: "Ivy 05"
   Transform {
     Location {
-      X: -2959.54394
+      X: -2959.54395
       Y: 3360.46
       Z: 759.671387
     }
@@ -6429,7 +6429,7 @@ Objects {
   Transform {
     Location {
       X: -2075.54688
-      Y: 4169.8081
+      Y: 4169.80811
       Z: 1197.58398
     }
     Rotation {
@@ -6512,7 +6512,7 @@ Objects {
   Name: "Ivy 04"
   Transform {
     Location {
-      X: -1549.44726
+      X: -1549.44727
       Y: 4224.26953
       Z: 815.091553
     }
@@ -6806,9 +6806,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 2146.95312
+      X: 2146.95313
       Y: 1958.21094
-      Z: -49.4125976
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -6869,8 +6869,8 @@ Objects {
   Transform {
     Location {
       X: -888.046875
-      Y: -526.789062
-      Z: -49.4125976
+      Y: -526.789063
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -6932,7 +6932,7 @@ Objects {
     Location {
       X: -1463.04688
       Y: 183.210938
-      Z: -49.4125976
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -6994,7 +6994,7 @@ Objects {
     Location {
       X: -1988.04688
       Y: 833.210938
-      Z: -49.4125976
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -7054,9 +7054,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 1056.95312
+      X: 1056.95313
       Y: 3303.21094
-      Z: -49.4125976
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -7116,9 +7116,9 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 1571.95312
+      X: 1571.95313
       Y: 2668.21094
-      Z: -49.4125976
+      Z: -49.4125977
     }
     Rotation {
       Pitch: 4.09811328e-05
@@ -7935,12 +7935,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -2455.38476
+      X: -2455.38477
       Y: -433.076416
       Z: 474.636
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 121.954117
       Roll: 89.9987717
     }
@@ -7985,12 +7985,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 2480.57812
-      Y: 1643.14892
+      X: 2480.57813
+      Y: 1643.14893
       Z: 841.400879
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 45.0943184
       Roll: 89.9992142
     }
@@ -8049,7 +8049,7 @@ Objects {
       Z: 988.412598
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7937241
       Roll: 89.9992371
     }
@@ -8108,7 +8108,7 @@ Objects {
       Z: 1438.41406
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7936974
       Roll: 89.9992294
     }
@@ -8167,7 +8167,7 @@ Objects {
       Z: 1593.13818
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7936974
       Roll: 89.9992294
     }
@@ -8344,7 +8344,7 @@ Objects {
       Z: 2499.34473
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7936707
       Roll: 89.9992294
     }
@@ -8403,7 +8403,7 @@ Objects {
       Z: 2340.67725
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7936974
       Roll: 89.9992294
     }
@@ -8459,10 +8459,10 @@ Objects {
     Location {
       X: 3013.45117
       Y: 2118.40186
-      Z: 2494.91308
+      Z: 2494.91309
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7937241
       Roll: 89.9992371
     }
@@ -8517,7 +8517,7 @@ Objects {
   Transform {
     Location {
       X: 2491.7793
-      Y: 1655.27978
+      Y: 1655.27979
       Z: 2042.2583
     }
     Rotation {
@@ -8576,11 +8576,11 @@ Objects {
   Transform {
     Location {
       X: 2641.90039
-      Y: 1789.60058
+      Y: 1789.60059
       Z: 1733.75195
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.7937241
       Roll: 89.9992371
     }
@@ -8639,7 +8639,7 @@ Objects {
       Z: 1733.75049
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.793766
       Roll: 89.9992599
     }
@@ -8698,7 +8698,7 @@ Objects {
       Z: 2189.04297
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.793766
       Roll: 89.9992599
     }
@@ -8752,7 +8752,7 @@ Objects {
   Name: "Fantasy Castle Trim - Battlement 01"
   Transform {
     Location {
-      X: 3102.69726
+      X: 3102.69727
       Y: 654.137207
       Z: 859.897217
     }
@@ -9006,7 +9006,7 @@ Objects {
     Location {
       X: -2870.54883
       Y: 931.269043
-      Z: 421.653808
+      Z: 421.653809
     }
     Rotation {
       Pitch: 89.2685699
@@ -9994,7 +9994,7 @@ Objects {
   Transform {
     Location {
       X: 259.40625
-      Y: 5584.54394
+      Y: 5584.54395
       Z: 547.418457
     }
     Rotation {
@@ -10093,12 +10093,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1998.00976
+      X: -1998.00977
       Y: 3541.24365
       Z: -152.607666
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.5229225
       Roll: 89.9981155
     }
@@ -10145,7 +10145,7 @@ Objects {
     Location {
       X: -2615.89844
       Y: 3305.46
-      Z: -43.3164062
+      Z: -43.3164063
     }
     Rotation {
       Yaw: -50.4748535
@@ -10597,7 +10597,7 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: 1334.60644
+      X: 1334.60645
       Y: -2136.35718
     }
     Rotation {
@@ -11349,7 +11349,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 958.532226
+      X: 958.532227
       Y: 140.992676
       Z: 969.80127
     }
@@ -12063,7 +12063,7 @@ Objects {
     Location {
       X: -817.295898
       Y: 324.038574
-      Z: 1498.53808
+      Z: 1498.53809
     }
     Rotation {
       Pitch: 3.4150944e-05
@@ -12463,7 +12463,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 137.664062
+      X: 137.664063
       Y: 954.74707
       Z: 618.176514
     }
@@ -12865,7 +12865,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -157.250976
+      X: -157.250977
       Y: -782.755371
       Z: 806.280273
     }
@@ -13334,7 +13334,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 43.4257812
+      X: 43.4257813
       Y: 76.9707
       Z: 373.530518
     }
@@ -13629,8 +13629,8 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: 5272.54394
-      Y: 3183.57226
+      X: 5272.54395
+      Y: 3183.57227
       Z: -375.595459
     }
     Rotation {
@@ -14153,7 +14153,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -873.789062
+      X: -873.789063
       Y: 99.0927734
     }
     Rotation {
@@ -14204,7 +14204,7 @@ Objects {
   Transform {
     Location {
       X: -442.525391
-      Y: 462.969726
+      Y: 462.969727
       Z: 0.317871094
     }
     Rotation {
@@ -14428,7 +14428,7 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: 1072.32226
+      X: 1072.32227
       Y: -170.175293
     }
     Rotation {
@@ -14782,7 +14782,7 @@ Objects {
   Name: "Fantasy Castle Wall 01 - Curved"
   Transform {
     Location {
-      X: -1036.51562
+      X: -1036.51563
       Y: 61.7675781
       Z: 1.38867188
     }
@@ -14872,7 +14872,7 @@ Objects {
   Transform {
     Location {
       X: -986.335938
-      Y: 345.039062
+      Y: 345.039063
     }
     Rotation {
       Yaw: 39.0177879
@@ -15009,7 +15009,7 @@ Objects {
   Name: "Tower"
   Transform {
     Location {
-      X: -943.789062
+      X: -943.789063
       Y: -1918.72388
       Z: -12.831543
     }
@@ -16071,7 +16071,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 137.664062
+      X: 137.664063
       Y: 954.74707
       Z: 618.176514
     }
@@ -16474,7 +16474,7 @@ Objects {
   Transform {
     Location {
       X: -157.246094
-      Y: -782.754394
+      Y: -782.754395
       Z: 1164.30542
     }
     Rotation {
@@ -16942,9 +16942,9 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -127.632812
+      X: -127.632813
       Y: -867.338379
-      Z: 1115.25976
+      Z: 1115.25977
     }
     Rotation {
       Pitch: -0.00034150944
@@ -16992,7 +16992,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 43.4257812
+      X: 43.4257813
       Y: 76.9707
       Z: 414.131592
     }
@@ -17488,7 +17488,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -873.789062
+      X: -873.789063
       Y: 99.0927734
     }
     Rotation {
@@ -17763,7 +17763,7 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: 1072.32226
+      X: 1072.32227
       Y: -170.175293
     }
     Rotation {
@@ -18117,7 +18117,7 @@ Objects {
   Name: "Fantasy Castle Wall 01 - Curved"
   Transform {
     Location {
-      X: -1036.51562
+      X: -1036.51563
       Y: 61.7675781
       Z: 1.38867188
     }
@@ -18207,7 +18207,7 @@ Objects {
   Transform {
     Location {
       X: -986.335938
-      Y: 345.039062
+      Y: 345.039063
     }
     Rotation {
       Yaw: 39.0177879
@@ -18295,8 +18295,8 @@ Objects {
   Transform {
     Location {
       X: 3648.67383
-      Y: 1891.16308
-      Z: 1105.35644
+      Y: 1891.16309
+      Z: 1105.35645
     }
     Rotation {
       Yaw: 128.214584
@@ -18549,7 +18549,7 @@ Objects {
   Transform {
     Location {
       X: -735.113281
-      Y: 4211.66894
+      Y: 4211.66895
       Z: -69.5939941
     }
     Rotation {
@@ -18921,7 +18921,7 @@ Objects {
   Transform {
     Location {
       X: 1673.60352
-      Y: 4399.71728
+      Y: 4399.71729
       Z: 1107.07251
     }
     Rotation {
@@ -18964,7 +18964,7 @@ Objects {
     Location {
       X: 2163.19336
       Y: 3777.88379
-      Z: 1105.35644
+      Z: 1105.35645
     }
     Rotation {
       Yaw: 128.214584
@@ -19004,7 +19004,7 @@ Objects {
     Location {
       X: 2657.10156
       Y: 3150.56738
-      Z: 1105.35644
+      Z: 1105.35645
     }
     Rotation {
       Yaw: 128.214615
@@ -19044,7 +19044,7 @@ Objects {
     Location {
       X: 3153.51367
       Y: 2520.06982
-      Z: 1105.35644
+      Z: 1105.35645
     }
     Rotation {
       Yaw: 128.214676
@@ -19512,7 +19512,7 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 577.945312
+      X: 577.945313
       Y: -302.019531
       Z: -137.838135
     }
@@ -19574,8 +19574,8 @@ Objects {
   Name: "curb"
   Transform {
     Location {
-      X: 1141.95312
-      Y: -421.789062
+      X: 1141.95313
+      Y: -421.789063
       Z: 141.896729
     }
     Rotation {
@@ -19965,7 +19965,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -3928.95312
+      X: -3928.95313
       Y: 2615.36572
       Z: 833.07666
     }
@@ -20078,7 +20078,7 @@ Objects {
   Transform {
     Location {
       X: 275.556641
-      Y: 1925.25976
+      Y: 1925.25977
       Z: -48.5969238
     }
     Rotation {
@@ -20344,7 +20344,7 @@ Objects {
       Z: -152.739014
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.5228844
       Roll: 89.9981155
     }
@@ -20389,12 +20389,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1234.75976
+      X: -1234.75977
       Y: 2542.5249
       Z: -152.648682
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 39.5229607
       Roll: 89.9981308
     }
@@ -20688,7 +20688,7 @@ Objects {
   Transform {
     Location {
       X: -1794.47656
-      Y: 3205.58642
+      Y: 3205.58643
       Z: -54.2473145
     }
     Rotation {
@@ -20750,7 +20750,7 @@ Objects {
   Transform {
     Location {
       X: -2974.37793
-      Y: 2387.14062
+      Y: 2387.14063
       Z: 1141.31396
     }
     Rotation {
@@ -20799,12 +20799,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -3088.88476
-      Y: 2256.4331
+      X: -3088.88477
+      Y: 2256.43311
       Z: 600.324463
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7633858
       Roll: 92.247139
     }
@@ -20854,7 +20854,7 @@ Objects {
       Z: 801.286621
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7633591
       Roll: 92.2471695
     }
@@ -21204,7 +21204,7 @@ Objects {
       Z: 551.710938
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 126.435295
       Roll: 89.9991302
     }
@@ -21304,7 +21304,7 @@ Objects {
       Z: 90.4587402
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 35.8415642
       Roll: 89.9987259
     }
@@ -21404,7 +21404,7 @@ Objects {
       Z: 703.25293
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -21604,7 +21604,7 @@ Objects {
       Z: 170.503418
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -21750,11 +21750,11 @@ Objects {
   Transform {
     Location {
       X: -2691.95703
-      Y: 2577.97558
+      Y: 2577.97559
       Z: 389.800537
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 35.737957
       Roll: 89.9994888
     }
@@ -21854,7 +21854,7 @@ Objects {
       Z: -68.8371582
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -21899,12 +21899,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -3064.39062
+      X: -3064.39063
       Y: 2230.98291
       Z: 229.388672
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -21954,7 +21954,7 @@ Objects {
       Z: 229.387695
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22004,7 +22004,7 @@ Objects {
       Z: 401.55127
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22050,7 +22050,7 @@ Objects {
   Transform {
     Location {
       X: -494.859375
-      Y: 4739.16894
+      Y: 4739.16895
       Z: 389.085449
     }
     Rotation {
@@ -22104,7 +22104,7 @@ Objects {
       Z: 380.077637
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 44.5076027
       Roll: 89.9993896
     }
@@ -22149,12 +22149,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1216.64062
+      X: -1216.64063
       Y: 3899.54199
       Z: 224.409668
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 35.737957
       Roll: 89.9994888
     }
@@ -22204,7 +22204,7 @@ Objects {
       Z: 64.6657715
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22254,7 +22254,7 @@ Objects {
       Z: 229.385498
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627335
       Roll: 89.9994888
     }
@@ -22304,7 +22304,7 @@ Objects {
       Z: 565.626221
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627335
       Roll: 89.9994888
     }
@@ -22404,7 +22404,7 @@ Objects {
       Z: 839.489502
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628288
       Roll: 89.9994888
     }
@@ -22454,7 +22454,7 @@ Objects {
       Z: 690.220459
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628288
       Roll: 89.9994888
     }
@@ -22504,7 +22504,7 @@ Objects {
       Z: 841.800049
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22554,7 +22554,7 @@ Objects {
       Z: 382.372314
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627335
       Roll: 89.9994888
     }
@@ -22604,7 +22604,7 @@ Objects {
       Z: 842.721191
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627716
       Roll: 89.9994888
     }
@@ -22654,7 +22654,7 @@ Objects {
       Z: 241.007324
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22704,7 +22704,7 @@ Objects {
       Z: 541.099121
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628288
       Roll: 89.9994888
     }
@@ -22754,7 +22754,7 @@ Objects {
       Z: 906.50708
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626953
       Roll: 89.9994888
     }
@@ -22804,7 +22804,7 @@ Objects {
       Z: 152.719971
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626648
       Roll: 89.9994888
     }
@@ -22854,7 +22854,7 @@ Objects {
       Z: 391.925293
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22904,7 +22904,7 @@ Objects {
       Z: 248.085693
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -22954,7 +22954,7 @@ Objects {
       Z: 250.898193
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7628
       Roll: 89.9994888
     }
@@ -23004,7 +23004,7 @@ Objects {
       Z: 381.084717
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627716
       Roll: 89.9994888
     }
@@ -23054,7 +23054,7 @@ Objects {
       Z: 688.35083
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627335
       Roll: 89.9994888
     }
@@ -23104,7 +23104,7 @@ Objects {
       Z: 1293.89404
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7627335
       Roll: 89.9994888
     }
@@ -23154,7 +23154,7 @@ Objects {
       Z: 1142.48877
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626953
       Roll: 89.9994888
     }
@@ -23204,7 +23204,7 @@ Objects {
       Z: 90.7453613
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626648
       Roll: 89.9994888
     }
@@ -23254,7 +23254,7 @@ Objects {
       Z: 1291.58789
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626953
       Roll: 89.9994888
     }
@@ -23304,7 +23304,7 @@ Objects {
       Z: 526.046875
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626419
       Roll: 89.9995
     }
@@ -23354,7 +23354,7 @@ Objects {
       Z: 714.894775
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626038
       Roll: 89.9994888
     }
@@ -23413,7 +23413,7 @@ Objects {
       Z: 541.557617
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626419
       Roll: 89.9995
     }
@@ -23640,48 +23640,6 @@ Objects {
   }
 }
 Objects {
-  Id: 161215019347269763
-  Name: "Gate_Ruins02"
-  Transform {
-    Location {
-      X: -2010.08398
-      Y: 4002.80664
-      Z: 23.2192383
-    }
-    Rotation {
-      Pitch: 4.09811328e-05
-      Yaw: -51.1676331
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1.09880269
-      Y: 1.09880269
-      Z: 1.09880269
-    }
-  }
-  ParentId: 3795342459197005188
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4542959667302136808
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 14018789465685992263
   Name: "Arch"
   Transform {
@@ -23691,7 +23649,7 @@ Objects {
       Z: 271.336914
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 39.7416153
       Roll: 89.9992905
     }
@@ -23741,7 +23699,7 @@ Objects {
       Z: 271.336914
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7624664
       Roll: 89.9994888
     }
@@ -23791,7 +23749,7 @@ Objects {
       Z: 271.338135
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 39.7416496
       Roll: 89.9992905
     }
@@ -24082,48 +24040,6 @@ Objects {
   }
 }
 Objects {
-  Id: 2408974082457330723
-  Name: "Gate_Ruins01"
-  Transform {
-    Location {
-      X: 1421.91797
-      Y: -758.256348
-      Z: 238.055664
-    }
-    Rotation {
-      Pitch: 4.09811328e-05
-      Yaw: -51.1675529
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1.09880269
-      Y: 1.09880269
-      Z: 1.09880269
-    }
-  }
-  ParentId: 3795342459197005188
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4542959667302136808
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 6729065790959285272
   Name: "curb"
   Transform {
@@ -24328,48 +24244,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14614752272746248535
-  Name: "Gate_Ruins02"
-  Transform {
-    Location {
-      X: -2480.50586
-      Y: 3624.14111
-      Z: 23.2197266
-    }
-    Rotation {
-      Pitch: 4.09811328e-05
-      Yaw: -51.1676025
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1.09880269
-      Y: 1.09880269
-      Z: 1.09880269
-    }
-  }
-  ParentId: 3795342459197005188
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4542959667302136808
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 11582736650382336940
   Name: "Arch"
   Transform {
@@ -24524,7 +24398,7 @@ Objects {
   Transform {
     Location {
       X: 609.78125
-      Y: -326.695312
+      Y: -326.695313
       Z: -150.606934
     }
     Rotation {
@@ -24708,7 +24582,7 @@ Objects {
       Z: 191.099609
     }
     Rotation {
-      Pitch: -9.53320312
+      Pitch: -9.53320313
       Yaw: -157.356583
       Roll: 23.8655434
     }
@@ -24844,7 +24718,7 @@ Objects {
   Name: "Hill 04"
   Transform {
     Location {
-      X: -3127.14062
+      X: -3127.14063
       Y: 2222.75391
       Z: 99.1733398
     }
@@ -25220,7 +25094,7 @@ Objects {
   Name: "Hill 03"
   Transform {
     Location {
-      X: -330.695312
+      X: -330.695313
       Y: -1108.56372
       Z: 124.598389
     }
@@ -25272,7 +25146,7 @@ Objects {
     Location {
       X: 1288.15625
       Y: 3484.79053
-      Z: 33.7563476
+      Z: 33.7563477
     }
     Rotation {
       Yaw: -141.47702
@@ -25499,7 +25373,7 @@ Objects {
   Transform {
     Location {
       X: 17388.0332
-      Y: 7553.82226
+      Y: 7553.82227
       Z: 2968.21875
     }
     Rotation {
@@ -25625,7 +25499,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -1439.34375
-            Y: 3564.94726
+            Y: 3564.94727
             Z: -26.4165039
           }
         }
@@ -26008,10 +25882,10 @@ Objects {
     Location {
       X: -2374.30273
       Y: -563.076416
-      Z: 170.810058
+      Z: 170.810059
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 121.954086
       Roll: 89.998764
     }
@@ -27032,7 +26906,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -4992.95312
+      X: -4992.95313
       Y: -1631.29
       Z: 871.952637
     }
@@ -27655,7 +27529,7 @@ Objects {
   Transform {
     Location {
       X: -2688.65625
-      Y: -2130.44726
+      Y: -2130.44727
       Z: 117.45459
     }
     Rotation {
@@ -27832,7 +27706,7 @@ Objects {
   Transform {
     Location {
       X: -3191.63086
-      Y: -2459.65478
+      Y: -2459.65479
       Z: 723.03418
     }
     Rotation {
@@ -27892,7 +27766,7 @@ Objects {
     Location {
       X: -2728.99805
       Y: -2151.53418
-      Z: 724.789062
+      Z: 724.789063
     }
     Rotation {
       Pitch: -0.000793457031
@@ -29441,7 +29315,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 128.601562
+      X: 128.601563
       Y: -802.770508
       Z: 1406.53931
     }
@@ -29756,7 +29630,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -151.257812
+      X: -151.257813
       Y: -821.706543
       Z: 2631.53345
     }
@@ -29819,7 +29693,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -151.257812
+      X: -151.257813
       Y: -821.705078
       Z: 2361.60474
     }
@@ -29882,7 +29756,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -151.257812
+      X: -151.257813
       Y: -821.703613
       Z: 2090.76489
     }
@@ -29945,7 +29819,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -151.257812
+      X: -151.257813
       Y: -821.702148
       Z: 1820.97681
     }
@@ -31415,7 +31289,7 @@ Objects {
   Transform {
     Location {
       X: -452.287109
-      Y: -374.254394
+      Y: -374.254395
       Z: 1478.85181
     }
     Rotation {
@@ -31532,7 +31406,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -759.382812
+      X: -759.382813
       Y: 32.0249023
       Z: 1472.51245
     }
@@ -31650,7 +31524,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -641.976562
+      X: -641.976563
       Y: -113.904785
       Z: 1322.63354
     }
@@ -32148,7 +32022,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 137.664062
+      X: 137.664063
       Y: 954.74707
       Z: 618.176514
     }
@@ -32550,7 +32424,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 137.664062
+      X: 137.664063
       Y: 954.74707
       Z: 414.509033
     }
@@ -32816,7 +32690,7 @@ Objects {
   Name: "Stone Arch (doorway) 001"
   Transform {
     Location {
-      X: -363.945312
+      X: -363.945313
       Y: -515.637207
       Z: 798.098389
     }
@@ -33100,9 +32974,9 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -127.632812
+      X: -127.632813
       Y: -867.338379
-      Z: 1115.25976
+      Z: 1115.25977
     }
     Rotation {
       Pitch: -0.00034150944
@@ -33504,7 +33378,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: 55.4570312
+      X: 55.4570313
       Y: 91.2255859
       Z: 2412.49536
     }
@@ -33575,7 +33449,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 66.4257812
+      X: 66.4257813
       Y: 79.6611328
       Z: 2804.85474
     }
@@ -34049,7 +33923,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 66.4257812
+      X: 66.4257813
       Y: 79.6611328
       Z: 2654.52954
     }
@@ -34461,7 +34335,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 66.4257812
+      X: 66.4257813
       Y: 79.6611328
       Z: 2535.05591
     }
@@ -34873,7 +34747,7 @@ Objects {
   Name: "Tower_part01"
   Transform {
     Location {
-      X: 43.4257812
+      X: 43.4257813
       Y: 76.9707
       Z: 414.131592
     }
@@ -35247,7 +35121,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -873.789062
+      X: -873.789063
       Y: 99.0927734
     }
     Rotation {
@@ -35522,7 +35396,7 @@ Objects {
   Name: "Fantasy Castle Wall 01"
   Transform {
     Location {
-      X: 1072.32226
+      X: 1072.32227
       Y: -170.175293
     }
     Rotation {
@@ -35876,7 +35750,7 @@ Objects {
   Name: "Fantasy Castle Wall 01 - Curved"
   Transform {
     Location {
-      X: -1036.51562
+      X: -1036.51563
       Y: 61.7675781
       Z: 1.38842773
     }
@@ -35966,7 +35840,7 @@ Objects {
   Transform {
     Location {
       X: -986.335938
-      Y: 345.039062
+      Y: 345.039063
     }
     Rotation {
       Yaw: 39.0177879
@@ -36430,7 +36304,7 @@ Objects {
       Z: 469.71167
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7625389
       Roll: 89.9994888
     }
@@ -36480,7 +36354,7 @@ Objects {
       Z: 255.230957
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7624664
       Roll: 89.9994888
     }
@@ -36525,12 +36399,12 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1039.76562
+      X: -1039.76563
       Y: 5005.09668
       Z: 915.171875
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626953
       Roll: 89.9994888
     }
@@ -36580,7 +36454,7 @@ Objects {
       Z: 693.472656
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626648
       Roll: 89.9994888
     }
@@ -36630,7 +36504,7 @@ Objects {
       Z: 48.1501465
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626419
       Roll: 89.9995
     }
@@ -36926,7 +36800,7 @@ Objects {
   Transform {
     Location {
       X: 2008.26172
-      Y: 3245.45312
+      Y: 3245.45313
       Z: 1065.30786
     }
     Rotation {
@@ -37104,7 +36978,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -7.08789062
+      X: -7.08789063
       Y: -1191.58472
       Z: 789.680908
     }
@@ -37467,7 +37341,7 @@ Objects {
   Name: "Arch"
   Transform {
     Location {
-      X: -1243.70312
+      X: -1243.70313
       Y: -847.696777
       Z: 383.97168
     }
@@ -37957,7 +37831,7 @@ Objects {
       Z: 526.048096
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7626038
       Roll: 89.9994888
     }
@@ -38049,7 +37923,7 @@ Objects {
       Z: 714.896
     }
     Rotation {
-      Pitch: -6.10351562e-05
+      Pitch: -6.10351563e-05
       Yaw: 41.7625732
       Roll: 89.9994888
     }
@@ -38129,7 +38003,7 @@ Objects {
   Transform {
     Location {
       X: 137.126953
-      Y: -167.629394
+      Y: -167.629395
       Z: -491.293701
     }
     Rotation {
@@ -38401,7 +38275,7 @@ Objects {
   Transform {
     Location {
       X: 137.126953
-      Y: -167.629394
+      Y: -167.629395
       Z: 21.6379395
     }
     Rotation {
@@ -38669,7 +38543,7 @@ Objects {
   Transform {
     Location {
       X: 137.126953
-      Y: -167.629394
+      Y: -167.629395
     }
     Rotation {
     }
@@ -38848,7 +38722,7 @@ Objects {
   Transform {
     Location {
       X: 137.126953
-      Y: -167.629394
+      Y: -167.629395
       Z: 12.0324707
     }
     Rotation {
@@ -39027,7 +38901,7 @@ Objects {
   Name: "Portcullis"
   Transform {
     Location {
-      X: 33.0351562
+      X: 33.0351563
       Y: 319.935547
       Z: 109.713379
     }

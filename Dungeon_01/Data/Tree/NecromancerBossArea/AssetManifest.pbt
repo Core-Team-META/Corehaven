@@ -593,15 +593,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4542959667302136808
-  Name: "Portcullis"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_portcullis_001"
-  }
-}
-Assets {
   Id: 4488444258523261897
   Name: "Flare Billboard"
   PlatformAssetType: 6

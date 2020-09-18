@@ -308,7 +308,7 @@ Objects {
   Transform {
     Location {
       X: -3833.19385
-      Y: 5353.10644
+      Y: 5353.10645
       Z: 1028.80933
     }
     Rotation {
@@ -548,7 +548,7 @@ Objects {
   Transform {
     Location {
       X: -4082.47729
-      Y: 5638.66308
+      Y: 5638.66309
       Z: 995.283936
     }
     Rotation {
@@ -758,7 +758,7 @@ Objects {
   Transform {
     Location {
       X: -2059.63696
-      Y: 6411.82812
+      Y: 6411.82813
       Z: 1037.1095
     }
     Rotation {
@@ -800,7 +800,7 @@ Objects {
   Transform {
     Location {
       X: -1593.36902
-      Y: 8344.13476
+      Y: 8344.13477
       Z: 1857.72021
     }
     Rotation {
@@ -1691,8 +1691,8 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 2586.0581
-      Y: 6995.76562
+      X: 2586.05811
+      Y: 6995.76563
       Z: 1165.00415
     }
     Rotation {
@@ -1733,7 +1733,7 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 2481.5581
+      X: 2481.55811
       Y: 6649.05664
       Z: 973.193481
     }
@@ -2518,8 +2518,8 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -2302.77978
-      Y: 6066.14062
+      X: -2302.77979
+      Y: 6066.14063
       Z: 1474.04
     }
     Rotation {
@@ -3443,7 +3443,7 @@ Objects {
     Rotation {
       Pitch: 4.09811328e-05
       Yaw: 2.7320717e-05
-      Roll: -6.10351562e-05
+      Roll: -6.10351563e-05
     }
     Scale {
       X: 0.18511638
@@ -5374,7 +5374,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 211.126587
     }
@@ -5485,7 +5485,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -5532,7 +5532,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -5579,7 +5579,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -5706,7 +5706,7 @@ Objects {
   Transform {
     Location {
       X: 8.81640625
-      Y: -0.719726562
+      Y: -0.719726563
       Z: 348.915771
     }
     Rotation {
@@ -6038,7 +6038,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 211.126587
     }
@@ -6149,7 +6149,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -6196,7 +6196,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -6243,7 +6243,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -6370,7 +6370,7 @@ Objects {
   Transform {
     Location {
       X: 8.81640625
-      Y: -0.719726562
+      Y: -0.719726563
       Z: 348.915771
     }
     Rotation {
@@ -6518,7 +6518,7 @@ Objects {
   Name: "Headstone03"
   Transform {
     Location {
-      X: 1684.69726
+      X: 1684.69727
       Y: -2731.4707
       Z: 442.748779
     }
@@ -6650,7 +6650,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -6697,7 +6697,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -6744,7 +6744,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -8212,7 +8212,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -9249,7 +9249,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -10265,7 +10265,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -10718,7 +10718,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 211.126587
     }
@@ -10829,7 +10829,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -10876,7 +10876,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -10923,7 +10923,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -11884,7 +11884,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -12218,7 +12218,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.432029933
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.08936157e-07
     }
     Scale {
@@ -12349,7 +12349,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -12601,7 +12601,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -12657,7 +12657,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -13040,7 +13040,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -15049,7 +15049,7 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -4651.59228
+      X: -4651.59229
       Y: 2146.81152
       Z: 1379.86475
     }
@@ -15835,7 +15835,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -16769,7 +16769,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -17716,7 +17716,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -18663,7 +18663,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -19610,7 +19610,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -20557,7 +20557,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -21504,7 +21504,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -22508,7 +22508,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -23455,7 +23455,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -23791,7 +23791,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.432029933
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.08936157e-07
     }
     Scale {
@@ -23922,7 +23922,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -24174,7 +24174,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -24230,7 +24230,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -24613,7 +24613,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -26901,7 +26901,7 @@ Objects {
   Name: "Headstone03"
   Transform {
     Location {
-      X: -4695.82226
+      X: -4695.82227
       Y: 4130.85352
       Z: 1059.39966
     }
@@ -27571,7 +27571,7 @@ Objects {
   Transform {
     Location {
       X: 8.81640625
-      Y: -0.719726562
+      Y: -0.719726563
       Z: 348.915771
     }
     Rotation {
@@ -27803,7 +27803,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.432029933
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.08936157e-07
     }
     Scale {
@@ -27934,7 +27934,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -28186,7 +28186,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -28242,7 +28242,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -28625,7 +28625,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -31035,7 +31035,7 @@ Objects {
   Transform {
     Location {
       X: -703.456238
-      Y: 8219.44726
+      Y: 8219.44727
       Z: 1641.34473
     }
     Rotation {
@@ -31075,7 +31075,7 @@ Objects {
   Transform {
     Location {
       X: -703.456238
-      Y: 8219.44726
+      Y: 8219.44727
       Z: 1394.26782
     }
     Rotation {
@@ -31115,7 +31115,7 @@ Objects {
   Transform {
     Location {
       X: -1157.44189
-      Y: 8059.94726
+      Y: 8059.94727
       Z: 1983.61157
     }
     Rotation {
@@ -31731,7 +31731,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -32598,7 +32598,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -33465,7 +33465,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -34332,7 +34332,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -35200,7 +35200,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -36679,7 +36679,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -37547,7 +37547,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -38414,7 +38414,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -39281,7 +39281,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -40428,7 +40428,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -41296,7 +41296,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -41547,7 +41547,7 @@ Objects {
   Transform {
     Location {
       X: -3290.15527
-      Y: 6411.39062
+      Y: 6411.39063
       Z: 1983.61145
     }
     Rotation {
@@ -42163,7 +42163,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -43030,7 +43030,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -43281,7 +43281,7 @@ Objects {
   Transform {
     Location {
       X: -2989.31445
-      Y: -62.4414062
+      Y: -62.4414063
       Z: 820.953125
     }
     Rotation {
@@ -43385,7 +43385,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -43491,7 +43491,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -44018,7 +44018,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -44494,7 +44494,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -44600,7 +44600,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -45127,7 +45127,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -45503,7 +45503,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -45586,7 +45586,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -46113,7 +46113,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -46407,7 +46407,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -46934,7 +46934,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -47672,7 +47672,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -47776,7 +47776,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 182.903564
           }
         }
@@ -48492,7 +48492,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -48997,7 +48997,7 @@ Objects {
   Name: "Metal_Fence_Arrow"
   Transform {
     Location {
-      X: 5114.23144
+      X: 5114.23145
       Y: 8780.50195
       Z: -164.720444
     }
@@ -49570,7 +49570,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -49946,7 +49946,7 @@ Objects {
   Name: "Metal_Fence_Arrow"
   Transform {
     Location {
-      X: 5114.23144
+      X: 5114.23145
       Y: 8780.50195
       Z: -164.720444
     }
@@ -50519,7 +50519,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -51317,7 +51317,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -52116,7 +52116,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -52977,7 +52977,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -53228,7 +53228,7 @@ Objects {
   Transform {
     Location {
       X: -2747.48
-      Y: 3677.16894
+      Y: 3677.16895
       Z: 1194.03845
     }
     Rotation {
@@ -53773,7 +53773,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -54570,7 +54570,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -55006,7 +55006,7 @@ Objects {
   Transform {
     Location {
       X: 5273.22754
-      Y: -2441.39062
+      Y: -2441.39063
       Z: 81.3838043
     }
     Rotation {
@@ -55258,7 +55258,7 @@ Objects {
   Transform {
     Location {
       X: 3178.44849
-      Y: -320.688476
+      Y: -320.688477
       Z: 52.900116
     }
     Rotation {
@@ -55411,7 +55411,7 @@ Objects {
     Rotation {
       Pitch: 0.000191245286
       Yaw: -72.8891
-      Roll: -6.10351562e-05
+      Roll: -6.10351563e-05
     }
     Scale {
       X: 2.25
@@ -55672,7 +55672,7 @@ Objects {
   Transform {
     Location {
       X: 2995.84131
-      Y: 18394.5058
+      Y: 18394.5059
       Z: -115.677856
     }
     Rotation {
@@ -55811,7 +55811,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.432029933
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.08936157e-07
     }
     Scale {
@@ -55942,7 +55942,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -56194,7 +56194,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -56250,7 +56250,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -56633,7 +56633,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -58642,7 +58642,7 @@ Objects {
   Name: "Mausoleum02"
   Transform {
     Location {
-      X: -1064.21728
+      X: -1064.21729
       Y: 13490.7295
       Z: -693.297729
     }
@@ -58911,7 +58911,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -59163,7 +59163,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -59219,7 +59219,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -59602,7 +59602,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -61829,7 +61829,7 @@ Objects {
   Transform {
     Location {
       X: 1029.04492
-      Y: 14479.6308
+      Y: 14479.6309
       Z: -165.2995
     }
     Rotation {
@@ -61861,7 +61861,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -2925.88476
+            X: -2925.88477
             Y: 1537.2334
             Z: 877.749634
           }
@@ -61887,7 +61887,7 @@ Objects {
   Transform {
     Location {
       X: 3508.60547
-      Y: 14460.2226
+      Y: 14460.2227
       Z: -165.342773
     }
     Rotation {
@@ -61956,7 +61956,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62043,7 +62043,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62061,7 +62061,7 @@ Objects {
   Transform {
     Location {
       X: 3508.60547
-      Y: 14460.2226
+      Y: 14460.2227
       Z: -165.342773
     }
     Rotation {
@@ -62130,7 +62130,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62217,7 +62217,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62304,7 +62304,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62391,7 +62391,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62478,7 +62478,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Pitch: -0.000122070312
+            Pitch: -0.000122070313
             Yaw: 9.7072716e-06
             Roll: 89.9998779
           }
@@ -62491,121 +62491,11 @@ Objects {
   }
 }
 Objects {
-  Id: 9414899789047110463
-  Name: "Gate_Cemetery_"
-  Transform {
-    Location {
-      X: 641.536133
-      Y: -2976.42188
-      Z: 502.706787
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11492308109361872204
-  ChildIds: 16235939956296624940
-  ChildIds: 4388737212892879606
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 4388737212892879606
-  Name: "Portcullis"
-  Transform {
-    Location {
-      X: -274.720459
-    }
-    Rotation {
-      Pitch: -3.4150944e-05
-      Yaw: 89.9999542
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9414899789047110463
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4542959667302136808
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16235939956296624940
-  Name: "Portcullis"
-  Transform {
-    Location {
-      X: 274.720459
-    }
-    Rotation {
-      Pitch: -3.4150944e-05
-      Yaw: 89.9999924
-      Roll: -179.999954
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9414899789047110463
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 4542959667302136808
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 15283033109289965858
   Name: "Mausoleum02"
   Transform {
     Location {
-      X: -1064.21728
+      X: -1064.21729
       Y: 13490.7295
       Z: -693.297729
     }
@@ -63725,7 +63615,7 @@ Objects {
           Name: "Rotation"
           Rotator {
             Pitch: 0.71629554
-            Yaw: -0.00903320312
+            Yaw: -0.00903320313
             Roll: -2.59243774
           }
         }
@@ -65017,7 +64907,7 @@ Objects {
     Location {
       X: 739.888123
       Y: -534.998657
-      Z: 744.344726
+      Z: 744.344727
     }
     Rotation {
       Pitch: -0.286315918
@@ -65067,7 +64957,7 @@ Objects {
     Location {
       X: -47.3829536
       Y: -113.967377
-      Z: 744.344726
+      Z: 744.344727
     }
     Rotation {
       Pitch: -0.286315918
@@ -65857,7 +65747,7 @@ Objects {
   Transform {
     Location {
       X: 2882.6228
-      Y: 6896.04394
+      Y: 6896.04395
       Z: -210.659821
     }
     Rotation {
@@ -67475,7 +67365,7 @@ Objects {
   Transform {
     Location {
       X: 2882.6228
-      Y: 6896.04394
+      Y: 6896.04395
       Z: -210.659821
     }
     Rotation {
@@ -72024,7 +71914,7 @@ Objects {
   Transform {
     Location {
       X: 2882.6228
-      Y: 6896.04394
+      Y: 6896.04395
       Z: -210.659821
     }
     Rotation {
@@ -73162,7 +73052,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 3175.8081
+      X: 3175.80811
       Y: -667.744263
       Z: 247.535706
     }
@@ -73738,7 +73628,7 @@ Objects {
   Transform {
     Location {
       X: 2882.6228
-      Y: 6896.04394
+      Y: 6896.04395
       Z: -210.659821
     }
     Rotation {
@@ -75322,7 +75212,7 @@ Objects {
   Transform {
     Location {
       X: 6683.74219
-      Y: 4310.6206
+      Y: 4310.62061
       Z: 1229.54199
     }
     Rotation {
@@ -75442,7 +75332,7 @@ Objects {
   Transform {
     Location {
       X: 5503.0293
-      Y: 2172.47558
+      Y: 2172.47559
       Z: 477.695282
     }
     Rotation {
@@ -76877,7 +76767,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -77889,7 +77779,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -78227,7 +78117,7 @@ Objects {
     Rotation {
       Pitch: 0.000157094342
       Yaw: -49.2944336
-      Roll: -0.000122070312
+      Roll: -0.000122070313
     }
     Scale {
       X: 1.61368537
@@ -78809,7 +78699,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 0.021484375
-            Y: -0.157226562
+            Y: -0.157226563
             Z: 1.712677
           }
         }
@@ -79066,7 +78956,7 @@ Objects {
     Rotation {
       Pitch: 0.000163924531
       Yaw: -38.6624146
-      Roll: -0.000122070312
+      Roll: -0.000122070313
     }
     Scale {
       X: 1.61368537
@@ -79482,7 +79372,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 7337.38476
+      X: 7337.38477
       Y: 4689.89111
       Z: 637.664429
     }
@@ -79864,7 +79754,7 @@ Objects {
   Transform {
     Location {
       X: -1648.7666
-      Y: 3055.57226
+      Y: 3055.57227
       Z: 472.799683
     }
     Rotation {
@@ -80429,7 +80319,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 5704.20312
+      X: 5704.20313
       Y: 3642.64258
       Z: -48.0881348
     }
@@ -80652,7 +80542,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 5707.14062
+      X: 5707.14063
       Y: 3308.43359
       Z: 42.9314575
     }
@@ -80915,7 +80805,7 @@ Objects {
     Location {
       X: 3249.64917
       Y: 159.972473
-      Z: 477.695312
+      Z: 477.695313
     }
     Rotation {
       Yaw: 25.6379337
@@ -81439,7 +81329,7 @@ Objects {
     Location {
       X: 303.446106
       Y: 424.818329
-      Z: 46.0195312
+      Z: 46.0195313
     }
     Rotation {
       Yaw: 58.5116539
@@ -81639,7 +81529,7 @@ Objects {
     Rotation {
       Pitch: 0.000211735853
       Yaw: -25.2761841
-      Roll: -0.000122070312
+      Roll: -0.000122070313
     }
     Scale {
       X: 2.25
@@ -81675,7 +81565,7 @@ Objects {
   Transform {
     Location {
       X: -4890.02832
-      Y: 1179.66894
+      Y: 1179.66895
       Z: 928.698547
     }
     Rotation {
@@ -82754,7 +82644,7 @@ Objects {
   Name: "Teardrop - Truncated"
   Transform {
     Location {
-      X: 31.4570312
+      X: 31.4570313
       Y: -2.3984375
       Z: 339.632
     }
@@ -82881,7 +82771,7 @@ Objects {
   Transform {
     Location {
       X: -11.9685059
-      Y: 24.9414062
+      Y: 24.9414063
       Z: 344.086365
     }
     Rotation {
@@ -83006,8 +82896,8 @@ Objects {
   Name: "Pipe - Quarter Thin"
   Transform {
     Location {
-      X: 35.6313476
-      Y: 5.83007812
+      X: 35.6313477
+      Y: 5.83007813
       Z: 137.272461
     }
     Rotation {
@@ -83505,7 +83395,7 @@ Objects {
   Name: "Cone - Truncated"
   Transform {
     Location {
-      X: 8.25195312
+      X: 8.25195313
       Y: 47.7792969
       Z: 1.84963989
     }
@@ -84655,7 +84545,7 @@ Objects {
     Rotation {
       Pitch: 4.09811328e-05
       Yaw: 2.7320717e-05
-      Roll: -6.10351562e-05
+      Roll: -6.10351563e-05
     }
     Scale {
       X: 0.18511638
@@ -86334,7 +86224,7 @@ Objects {
       Z: 528.349487
     }
     Rotation {
-      Pitch: -0.000122070312
+      Pitch: -0.000122070313
       Yaw: 49.8731842
       Roll: 1.8073164e-05
     }
@@ -86404,13 +86294,13 @@ Objects {
   Name: "Wheel_Cog"
   Transform {
     Location {
-      X: -79.5507812
+      X: -79.5507813
       Y: -35.2881317
       Z: 2.45215631
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -179.999863
     }
     Scale {
@@ -86472,7 +86362,7 @@ Objects {
     }
     Rotation {
       Pitch: 1.36603776e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.73207443e-05
     }
     Scale {
@@ -86608,13 +86498,13 @@ Objects {
   Name: "Wheel_Cog"
   Transform {
     Location {
-      X: -79.5507812
+      X: -79.5507813
       Y: -35.2882
       Z: 12.6554098
     }
     Rotation {
       Pitch: 2.73207552e-05
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: -179.999893
     }
     Scale {
@@ -86676,7 +86566,7 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 1.36603812e-05
     }
     Scale {
@@ -86844,7 +86734,7 @@ Objects {
       Color {
         R: 0.536458313
         G: 0.382504523
-        B: 0.301757812
+        B: 0.301757813
         A: 1
       }
     }
@@ -86914,7 +86804,7 @@ Objects {
       Color {
         R: 0.536458313
         G: 0.382504523
-        B: 0.301757812
+        B: 0.301757813
         A: 1
       }
     }
@@ -87644,7 +87534,7 @@ Objects {
   Name: "Wheel_Cog"
   Transform {
     Location {
-      X: 56.7875976
+      X: 56.7875977
       Y: 1.99926758
       Z: 22.5117188
     }
@@ -87819,7 +87709,7 @@ Objects {
   Name: "Pipe - Thin"
   Transform {
     Location {
-      X: 85.9438476
+      X: 85.9438477
       Y: -0.0925293
       Z: 11.9697266
     }
@@ -88532,7 +88422,7 @@ Objects {
     Location {
       X: 86.4023438
       Y: 4.48803711
-      Z: 0.911132812
+      Z: 0.911132813
     }
     Rotation {
       Pitch: 0.000191245286
@@ -88671,7 +88561,7 @@ Objects {
     Location {
       X: 86.4023438
       Y: -4.6730957
-      Z: 0.911132812
+      Z: 0.911132813
     }
     Rotation {
       Pitch: 0.00022539623
@@ -90679,7 +90569,7 @@ Objects {
     Location {
       X: -89.8662109
       Y: -4.7902832
-      Z: 0.911132812
+      Z: 0.911132813
     }
     Rotation {
       Pitch: 0.000191245286
@@ -90818,7 +90708,7 @@ Objects {
     Location {
       X: -89.8662109
       Y: 4.37084961
-      Z: 0.911132812
+      Z: 0.911132813
     }
     Rotation {
       Pitch: 0.00022539623
@@ -91712,7 +91602,7 @@ Objects {
     Rotation {
       Pitch: 0.000184415097
       Yaw: -23.9052734
-      Roll: -0.000122070312
+      Roll: -0.000122070313
     }
     Scale {
       X: 2.25
@@ -92969,7 +92859,7 @@ Objects {
   Transform {
     Location {
       X: 3265.26172
-      Y: -148.216308
+      Y: -148.216309
       Z: 285.510468
     }
     Rotation {
@@ -93031,7 +92921,7 @@ Objects {
     Location {
       X: 926.2771
       Y: -3994.06592
-      Z: -0.000122070312
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93071,7 +92961,7 @@ Objects {
     Location {
       X: 926.2771
       Y: -2949.86279
-      Z: -0.000122070312
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93110,8 +93000,8 @@ Objects {
   Transform {
     Location {
       X: 926.2771
-      Y: -1873.83642
-      Z: -0.000122070312
+      Y: -1873.83643
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93151,7 +93041,7 @@ Objects {
     Location {
       X: 3207.3208
       Y: -1102.14453
-      Z: -0.000122070312
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93191,7 +93081,7 @@ Objects {
     Location {
       X: 2057.35107
       Y: -1102.14453
-      Z: -0.000122070312
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93231,7 +93121,7 @@ Objects {
     Location {
       X: 926.2771
       Y: -1093.4541
-      Z: -0.000122070312
+      Z: -0.000122070313
     }
     Rotation {
       Yaw: 89.9999542
@@ -93600,7 +93490,7 @@ Objects {
   Name: "Fantasy Castle Bannister 01 - Post"
   Transform {
     Location {
-      X: 1003.3081
+      X: 1003.30811
       Y: 21.0419922
     }
     Rotation {
@@ -94543,7 +94433,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -94594,7 +94484,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -94689,7 +94579,7 @@ Objects {
   Transform {
     Location {
       X: -959.753357
-      Y: 1552.95312
+      Y: 1552.95313
       Z: 339.196045
     }
     Rotation {
@@ -94737,7 +94627,7 @@ Objects {
   Transform {
     Location {
       X: -979.381836
-      Y: -423.813476
+      Y: -423.813477
       Z: 256.644165
     }
     Rotation {
@@ -95520,7 +95410,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -95786,7 +95676,7 @@ Objects {
   Name: "Headstone03"
   Transform {
     Location {
-      X: 1733.66308
+      X: 1733.66309
       Y: -970.908203
       Z: 269.027527
     }
@@ -96252,7 +96142,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -4289.4956
+      X: -4289.49561
       Y: -2155.4939
       Z: 191.653503
     }
@@ -96300,9 +96190,9 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -4289.4956
+      X: -4289.49561
       Y: -2155.4939
-      Z: 199.341308
+      Z: 199.341309
     }
     Rotation {
       Yaw: -137.596359
@@ -96427,7 +96317,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -96474,7 +96364,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -97208,7 +97098,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -97255,7 +97145,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -97302,7 +97192,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -97348,8 +97238,8 @@ Objects {
   Name: "Headstone02"
   Transform {
     Location {
-      X: 1468.01562
-      Y: 2163.95312
+      X: 1468.01563
+      Y: 2163.95313
       Z: 286.836426
     }
     Rotation {
@@ -97709,7 +97599,7 @@ Objects {
   Transform {
     Location {
       X: 8.81640625
-      Y: -0.719726562
+      Y: -0.719726563
       Z: 348.915771
     }
     Rotation {
@@ -97936,7 +97826,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -97983,7 +97873,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -98063,7 +97953,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 211.126587
     }
@@ -98174,7 +98064,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 174.586914
     }
@@ -98221,7 +98111,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -98268,7 +98158,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -98611,7 +98501,7 @@ Objects {
   Transform {
     Location {
       X: 8.81640625
-      Y: -0.719726562
+      Y: -0.719726563
       Z: 348.915771
     }
     Rotation {
@@ -98894,7 +98784,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
       Z: 70.4338379
     }
@@ -98945,7 +98835,7 @@ Objects {
   Name: "Cube - Chamfered Small Polished"
   Transform {
     Location {
-      X: -2.41601562
+      X: -2.41601563
       Y: 0.0625
     }
     Rotation {
@@ -99842,7 +99732,7 @@ Objects {
     }
     Rotation {
       Pitch: 0.432029933
-      Yaw: -6.10351562e-05
+      Yaw: -6.10351563e-05
       Roll: 2.08936157e-07
     }
     Scale {
@@ -99973,7 +99863,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -100225,7 +100115,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -100281,7 +100171,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -100664,7 +100554,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -102674,7 +102564,7 @@ Objects {
   Transform {
     Location {
       X: 614.667358
-      Y: 565.320312
+      Y: 565.320313
       Z: 92.0449219
     }
     Rotation {
@@ -102706,7 +102596,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -102756,7 +102646,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -102806,7 +102696,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -102856,7 +102746,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -103117,7 +103007,7 @@ Objects {
   Transform {
     Location {
       X: 234.111816
-      Y: 291.070312
+      Y: 291.070313
       Z: 454.288635
     }
     Rotation {
@@ -103369,7 +103259,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -103425,7 +103315,7 @@ Objects {
   Transform {
     Location {
       X: 0.158691406
-      Y: 2.12695312
+      Y: 2.12695313
       Z: -1.4041748
     }
     Rotation {
@@ -103808,7 +103698,7 @@ Objects {
   Transform {
     Location {
       X: -0.279052734
-      Y: -237.188476
+      Y: -237.188477
       Z: 874.322
     }
     Rotation {
@@ -105866,7 +105756,7 @@ Objects {
     Location {
       X: 4619.28271
       Y: 2564.39746
-      Z: 317.966308
+      Z: 317.966309
     }
     Rotation {
       Pitch: -0.958432555
@@ -105991,7 +105881,7 @@ Objects {
   Transform {
     Location {
       X: -3666.86987
-      Y: 1844.39062
+      Y: 1844.39063
       Z: 336.710754
     }
     Rotation {
@@ -106501,7 +106391,7 @@ Objects {
     Rotation {
       Pitch: 0.000327849062
       Yaw: -163.880661
-      Roll: -0.000122070312
+      Roll: -0.000122070313
     }
     Scale {
       X: 2.25
@@ -106579,7 +106469,7 @@ Objects {
   Transform {
     Location {
       X: 614.667358
-      Y: 565.320312
+      Y: 565.320313
       Z: 120.399231
     }
     Rotation {
@@ -106664,7 +106554,7 @@ Objects {
       Z: 258.242828
     }
     Rotation {
-      Yaw: -69.2070312
+      Yaw: -69.2070313
     }
     Scale {
       X: 1.72335804
@@ -107031,7 +106921,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107071,7 +106961,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107111,7 +107001,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107151,7 +107041,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107190,7 +107080,7 @@ Objects {
   Transform {
     Location {
       X: 614.667358
-      Y: 565.320312
+      Y: 565.320313
     }
     Rotation {
     }
@@ -107221,7 +107111,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107271,7 +107161,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107321,7 +107211,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {
@@ -107371,7 +107261,7 @@ Objects {
   Transform {
     Location {
       X: -0.152954102
-      Y: 0.786132812
+      Y: 0.786132813
       Z: 0.767700195
     }
     Rotation {

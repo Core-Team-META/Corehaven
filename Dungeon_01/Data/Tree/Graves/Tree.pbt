@@ -151,7 +151,7 @@ Objects {
   Transform {
     Location {
       X: 493.545898
-      Y: 11402.331
+      Y: 11402.3311
       Z: -751.277405
     }
     Rotation {
@@ -175,7 +175,7 @@ Objects {
           Name: "Position"
           Vector {
             X: -2636.43945
-            Y: -1062.85644
+            Y: -1062.85645
             Z: 25.6622314
           }
         }
@@ -791,7 +791,7 @@ Objects {
   Transform {
     Location {
       X: -122.401123
-      Y: -8767.04394
+      Y: -8767.04395
       Z: 872.014771
     }
     Rotation {
@@ -12019,7 +12019,7 @@ Objects {
   Transform {
     Location {
       X: 903.878906
-      Y: -1485.07226
+      Y: -1485.07227
       Z: -5.60882568
     }
     Rotation {
@@ -14179,7 +14179,7 @@ Objects {
   Transform {
     Location {
       X: 475.850586
-      Y: -342.938476
+      Y: -342.938477
       Z: 44.6119385
     }
     Rotation {
@@ -14271,7 +14271,7 @@ Objects {
   Transform {
     Location {
       X: -0.896240234
-      Y: 7.95507812
+      Y: 7.95507813
       Z: 91.5492554
     }
     Rotation {
@@ -20825,7 +20825,7 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: 732.997558
+      X: 732.997559
       Y: -893.862305
       Z: 32.3016968
     }
@@ -20878,7 +20878,7 @@ Objects {
   Name: "Flower Wild Lily 01"
   Transform {
     Location {
-      X: 732.997558
+      X: 732.997559
       Y: -893.862305
       Z: 32.3016968
     }
