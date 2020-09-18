@@ -117,7 +117,7 @@ function StatSheet:GetStatTotalModifierAdd(statName)
 end
 
 function StatSheet:GetStatTotalModifierMul(statName)
-    return self.statTotalModifiersMul[statName]
+    return self.statTotalModifiersMul[statName] + 1.
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -194,7 +194,7 @@ function StatSheet:_UpdateStats()
     for _,statName in ipairs(self.STATS) do
         self.statBases[statName] = self.STAT_CURVES[statName](self.level)
         self.statTotalModifiersAdd[statName] = 0
-        self.statTotalModifiersMul[statName] = 1
+        self.statTotalModifiersMul[statName] = 0
         self.statHasUppers[statName] = nil
         self.statHasDowners[statName] = nil
     end
@@ -208,7 +208,9 @@ function StatSheet:_UpdateStats()
     end
     -- Multiplicative.
     for modifier,_ in pairs(self.statModifiersMul) do
-        self.statTotalModifiersMul[modifier.statName] = self.statTotalModifiersMul[modifier.statName] * modifier.multiplier
+        -- Multiplicative modifers combine additively. This is semantically confusing, but conceptually what you would expect.
+        local multiplierAsPercent = modifier.multiplier - 1.0
+        self.statTotalModifiersMul[modifier.statName] = self.statTotalModifiersMul[modifier.statName] + multiplierAsPercent
         if not modifier.isStatic then
             self.statHasUppers[modifier.statName] = modifier.multiplier > 1 or self.statHasUppers[modifier.statName]
             self.statHasDowners[modifier.statName] = modifier.multiplier < 1 or self.statHasDowners[modifier.statName]
@@ -216,7 +218,7 @@ function StatSheet:_UpdateStats()
     end
     -- Accumulate and truncate.
     for _,statName in ipairs(self.STATS) do
-        self.statTotals[statName] = math.floor((self.statBases[statName] + self.statTotalModifiersAdd[statName]) * self.statTotalModifiersMul[statName])
+        self.statTotals[statName] = math.floor((self.statBases[statName] + self.statTotalModifiersAdd[statName]) * (1 + self.statTotalModifiersMul[statName]))
     end
 end
 
