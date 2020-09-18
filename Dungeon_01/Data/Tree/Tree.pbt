@@ -93,7 +93,7 @@ Objects {
   Name: "Jordan"
   Transform {
     Location {
-      X: -71.7070312
+      X: -71.7070313
       Y: -57.2109375
     }
     Rotation {
@@ -612,7 +612,7 @@ Objects {
   Name: "InvisibleCollisions"
   Transform {
     Location {
-      X: -3567.89892
+      X: -3567.89893
       Y: -10233.6621
       Z: -993.3125
     }

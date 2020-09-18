@@ -1,6 +1,165 @@
 ﻿Name: "Emma"
 RootId: 11788695356358832208
 Objects {
+  Id: 11532405008632614731
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 49181.207
+      Y: 4710.85107
+      Z: 6332.38379
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.192688
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.89
+      G: 0.159139097
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 2017.46729
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 2000
+    }
+  }
+}
+Objects {
+  Id: 5034290236336176226
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 46950.3047
+      Y: 10503.9824
+      Z: 4813.39941
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.1924438
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.89
+      G: 0.159139097
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 2048.0874
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 2000
+    }
+  }
+}
+Objects {
+  Id: 15435334761372206853
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 51324.207
+      Y: 7666.48828
+      Z: 5763.29297
+    }
+    Rotation {
+      Pitch: 0.095001094
+      Yaw: -14.1925964
+      Roll: -2.4385376
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11788695356358832208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 25
+    Color {
+      R: 0.89
+      G: 0.159139097
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 2017.46729
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 2000
+    }
+  }
+}
+Objects {
   Id: 12155150669136818368
   Name: "DragonBossArea"
   Transform {
@@ -145,14 +304,14 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 48917.625
-      Y: 5273.51465
-      Z: 6303.44434
+      X: 48782.668
+      Y: 5015.29297
+      Z: 6157.00391
     }
     Rotation {
       Pitch: 0.095001094
-      Yaw: -14.1924515
-      Roll: -2.43853784
+      Yaw: -14.1925049
+      Roll: -2.4385376
     }
     Scale {
       X: 1
@@ -223,8 +382,8 @@ Objects {
   Light {
     Intensity: 25
     Color {
-      R: 0.820000052
-      G: 0.293245047
+      R: 0.679999948
+      G: 0.189139038
       A: 1
     }
     VolumetricIntensity: 5
@@ -408,6 +567,10 @@ Objects {
   ChildIds: 13839931771254792625
   ChildIds: 2684969813152097032
   ChildIds: 2692474767044581678
+  ChildIds: 15826158755144287883
+  ChildIds: 17931313894893274203
+  ChildIds: 2553031238537616700
+  ChildIds: 17928185298399832387
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -416,6 +579,133 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17928185298399832387
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 3388.42871
+      Y: 1350.9082
+      Z: 0.000122070313
+    }
+    Rotation {
+      Yaw: 142.024338
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17394048562990261073
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 2553031238537616700
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 3245.29541
+      Y: 1856.89307
+      Z: 6.10351563e-05
+    }
+    Rotation {
+      Yaw: 142.024414
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17394048562990261073
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 17931313894893274203
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 3105.99561
+      Y: 1468.40674
+    }
+    Rotation {
+      Yaw: 142.024338
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17394048562990261073
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 15826158755144287883
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 3001.67871
+      Y: 1881.92969
+      Z: 6.10351563e-05
+    }
+    Rotation {
+      Yaw: 142.024414
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17394048562990261073
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {

@@ -98,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14324126384198850775
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
-  }
-}
-Assets {
   Id: 14265726385927418716
   Name: "Fantasy Castle Trim - Battlement 01 4m"
   PlatformAssetType: 1

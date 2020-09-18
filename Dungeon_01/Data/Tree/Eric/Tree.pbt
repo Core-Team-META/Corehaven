@@ -7626,7 +7626,7 @@ Objects {
   Name: "Blue Triangle"
   Transform {
     Location {
-      X: 3018.8706
+      X: 3018.87061
       Y: 1212.48267
       Z: 1762.53271
     }
@@ -7957,7 +7957,7 @@ Objects {
   Transform {
     Location {
       X: 9511.17578
-      Y: -1776.27978
+      Y: -1776.27979
       Z: 754.049072
     }
     Rotation {
@@ -8411,7 +8411,7 @@ Objects {
   Transform {
     Location {
       X: -451.307251
-      Y: 14164.2812
+      Y: 14164.2813
       Z: -387.004883
     }
     Rotation {
@@ -8497,7 +8497,7 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: 6323.4331
+      X: 6323.43311
       Y: 11582.2373
       Z: -387.004944
     }
@@ -10925,7 +10925,7 @@ Objects {
   Transform {
     Location {
       X: -7441.44434
-      Y: -4464.08642
+      Y: -4464.08643
       Z: -296.436462
     }
     Rotation {
@@ -10981,7 +10981,7 @@ Objects {
   Name: "Plane"
   Transform {
     Location {
-      X: -7983.78808
+      X: -7983.78809
       Y: -4977.01367
       Z: -360.496063
     }
@@ -15327,7 +15327,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9635.72558
+            X: 9635.72559
             Y: -1906.25269
             Z: 745.12793
           }
@@ -15622,7 +15622,7 @@ Objects {
   Name: "Enemy_Market_Security"
   Transform {
     Location {
-      X: 9635.72558
+      X: 9635.72559
       Y: -1906.25269
       Z: 745.12793
     }
@@ -15880,7 +15880,7 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7303.64892
+            X: 7303.64893
             Y: 1219.61804
             Z: 745.12793
           }
@@ -17160,7 +17160,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101562
+      X: 756.101563
       Y: 2354.04834
       Z: 13.7415161
     }
@@ -17457,7 +17457,7 @@ Objects {
   Name: "Enemy_Necromancer"
   Transform {
     Location {
-      X: 756.101562
+      X: 756.101563
       Y: 2354.04834
       Z: 13.7415161
     }
