@@ -261,8 +261,8 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: 3901.16406
-      Y: 2271.10693
+      X: 3772.6875
+      Y: 2260.0918
       Z: 3760.77026
     }
     Rotation {

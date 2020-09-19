@@ -161,6 +161,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5585358043499671604
+  Name: "Trim Large Brick 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_trim_brick_6m_001"
+  }
+}
+Assets {
   Id: 4397331359527074146
   Name: "Arch Fancy 3m"
   PlatformAssetType: 1

@@ -116,6 +116,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13983143036804937474
+  Name: "Fantasy Castle Wall 02 - Window 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_002_win_03"
+  }
+}
+Assets {
   Id: 13846976516959842924
   Name: "Cylinder - Rounded Bottom-Aligned"
   PlatformAssetType: 1

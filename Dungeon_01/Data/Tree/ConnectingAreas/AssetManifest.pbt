@@ -368,6 +368,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14371453254464818053
+  Name: "Branches Cluster Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_big_001"
+  }
+}
+Assets {
   Id: 14267747156564835807
   Name: "Fantasy Castle Wall Foundation 01 - Curved"
   PlatformAssetType: 1
@@ -611,6 +620,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12270007897248279451
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -752,6 +770,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_stone-edge_middle_6m_001"
+  }
+}
+Assets {
+  Id: 11011265141723361006
+  Name: "Ivy 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_001"
   }
 }
 Assets {
@@ -923,6 +950,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_brick_stone_chunky_001"
+  }
+}
+Assets {
+  Id: 9271993209994119787
+  Name: "Branches Cluster Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_branches_medium_001"
   }
 }
 Assets {
@@ -1385,12 +1421,30 @@ Assets {
   }
 }
 Assets {
+  Id: 5611890132274510529
+  Name: "Ivy 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_002"
+  }
+}
+Assets {
   Id: 5581636068186176872
   Name: "Text 03: N"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_013"
+  }
+}
+Assets {
+  Id: 5522049488166926473
+  Name: "Ivy 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_004"
   }
 }
 Assets {
@@ -1727,6 +1781,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2862035055192186654
+  Name: "Ivy 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_005"
+  }
+}
+Assets {
   Id: 2664847478369185144
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -1835,12 +1898,30 @@ Assets {
   }
 }
 Assets {
+  Id: 1418690025087534347
+  Name: "Rock Flat 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_004"
+  }
+}
+Assets {
   Id: 1381354497149909715
   Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 1373893966887443091
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
