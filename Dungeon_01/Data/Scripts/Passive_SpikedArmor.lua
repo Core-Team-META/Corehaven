@@ -1,4 +1,5 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local data = {}
 
@@ -14,12 +15,16 @@ function data.onLose(player)
 	players[player] = nil
 end
 
-function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill)
-	if players[targetCharacter] and sourceCharacter ~= targetCharacter then
-		API_D.ApplyDamage(targetCharacter, sourceCharacter, effectiveAmount * 0.2)
+function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
+	if players[targetCharacter] and sourceCharacter ~= targetCharacter and not API_D.HasTag(tags, API_D.TAG_MINOR) then
+		if not API_NPC.IsDead(sourceCharacter) then
+			API_D.ApplyDamage(targetCharacter, sourceCharacter, amount * 0.2, API_D.TAG_MINOR)
+		end
 	end
+
+	return amount
 end
 
-Events.Connect("DamageDone", OnDamageDone)
+API_D.RegisterPreDamageHook(PreDamageHook)
 
 return data

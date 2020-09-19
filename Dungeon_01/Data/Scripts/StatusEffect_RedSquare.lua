@@ -5,7 +5,7 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 local data = {}
 
-data.name = "Red Moon"
+data.name = "Red Square"
 data.icon = ICON
 data.effectTemplate = EFFECT_TEMPLATE
 

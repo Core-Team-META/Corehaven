@@ -5,7 +5,7 @@ local ICON = script:GetCustomProperty("Icon")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 function EffectTick(sourceCharacter, character)
-	API_D.ApplyDamage(sourceCharacter, character, 6.0)
+	API_D.ApplyDamage(sourceCharacter, character, 6.0, API_D.TAG_PERIODIC)
 end
 
 local data = {}

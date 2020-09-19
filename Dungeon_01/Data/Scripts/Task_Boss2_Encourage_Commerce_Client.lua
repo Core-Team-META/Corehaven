@@ -8,12 +8,12 @@ local ICON = script:GetCustomProperty("Icon"):WaitForObject()
 -- Indices correlated
 local SHAPE_ICONS = {
 	script:GetCustomProperty("Star"),
-	script:GetCustomProperty("Moon"),
+	script:GetCustomProperty("Square"),
 	script:GetCustomProperty("Triangle"),
 	script:GetCustomProperty("Circle")
 }
 
-local STATUS_EFFECT_NAMES = {"Yellow Star", "Red Moon", "Blue Triangle", "Violet Circle"}
+local STATUS_EFFECT_NAMES = {"Yellow Star", "Red Square", "Blue Triangle", "Violet Circle"}
 local COLORS = {Color.YELLOW, Color.RED, Color.CYAN, Color.PURPLE}
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()

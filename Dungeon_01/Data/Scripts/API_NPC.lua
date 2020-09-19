@@ -99,6 +99,9 @@ function API.RegisterNPCFolder(npcFolder)
 			end
 		end
 
+		data.onPullEventName = npc:GetCustomProperty("OnPullEventName")
+		data.onResetEventName = npc:GetCustomProperty("OnResetEventName")
+		data.onDeathEventName = npc:GetCustomProperty("OnDeathEventName")
 		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
 		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
 		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")

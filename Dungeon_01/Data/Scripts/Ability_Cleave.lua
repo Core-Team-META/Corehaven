@@ -28,13 +28,13 @@ function data.onCastServer(caster, target)
 	Task.Spawn(function()
 		Task.Wait(DAMAGE_DELAY)
 		local casterPosition = caster:GetWorldPosition()
-		local attackStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Attack
+		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 
 		for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
 			local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
 
 			if dot > 0.0 then
-				API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
+				API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
 			end
 		end
 	end)

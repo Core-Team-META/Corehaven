@@ -1,7 +1,8 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local DAMAGE = 75.0
+local BASE_DAMAGE = 60.0
+local DAMAGE_MULTIPLIER = 1.0
 
 local data = {}
 
@@ -26,8 +27,9 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
+	local defenseStat = caster.serverUserData.statSheet:GetStatTotalValue("Defense")
 	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Shield Bash"].id)
-	API_D.ApplyDamage(caster, target, DAMAGE)
+	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * defenseStat)
 end
 
 return data

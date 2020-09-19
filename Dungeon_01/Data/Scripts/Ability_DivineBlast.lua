@@ -8,7 +8,7 @@ local DAMAGE_MULTIPLIER = 0.7
 local PROJECTILE_SPEED = 2400.0
 local HEAL_RANGE = 3000.0
 local WAVE_SPEED = 2400.0
-local BASE_HEAL = 10.0
+local BASE_HEAL = 7.0
 local HEAL_MULTIPLIER = 0.2
 
 local data = {}
@@ -35,7 +35,7 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
-	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 
 	local impactTime = time()
@@ -50,7 +50,7 @@ function data.onCastServer(caster, target)
 				local distance = (target:GetWorldPosition() - player:GetWorldPosition()).size
 
 				if distance < waveRadius and not player.isDead then
-					API_D.ApplyHealing(caster, player, BASE_HEAL + HEAL_MULTIPLIER * magicStat)
+					API_D.ApplyHealing(caster, player, BASE_HEAL + HEAL_MULTIPLIER * magicStat, API_D.TAG_AOE)
 					table.insert(healedPlayerIndices, i)
 				end
 			end

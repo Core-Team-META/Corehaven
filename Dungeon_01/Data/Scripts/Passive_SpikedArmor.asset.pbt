@@ -10,6 +10,12 @@
           Id: 16915150100797142409
         }
       }
+      Overrides {
+        Name: "cs:API_NPC"
+        AssetReference {
+          Id: 1793953622129874134
+        }
+      }
     }
   }
   SerializationVersion: 64

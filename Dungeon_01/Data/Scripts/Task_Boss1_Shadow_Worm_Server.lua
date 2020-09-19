@@ -64,7 +64,7 @@ function OnTaskEnd(npc, interrupted)
 
 			for i = 1, N_JUMPS do
 				Task.Wait(API_P.GetTravelTime(jumps[i - 1], jumps[i], PROJECTILE_SPEED[i]))
-				API_D.ApplyAreaDamage(npc, jumps[i], RADIUS[i], DAMAGE[i], false)
+				API_D.ApplyAreaDamage(npc, jumps[i], RADIUS[i], DAMAGE[i], false, API_D.TAG_AOE)
 			end
 		end)
 	end

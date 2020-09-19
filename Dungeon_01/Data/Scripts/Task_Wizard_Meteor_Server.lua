@@ -36,7 +36,7 @@ function OnTaskStart(npc, threatTable)
 			playerOffset.z = 0.0
 			local t = CoreMath.Clamp(playerOffset.size / METEOR_RADIUS)
 
-			API_D.ApplyDamage(npc, player, CoreMath.Lerp(t, MAX_DAMAGE, 0.0))
+			API_D.ApplyDamage(npc, player, CoreMath.Lerp(t, MAX_DAMAGE, 0.0), API_D.TAG_AOE)
 
 			if playerOffset.size > 0.1 then
 				API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))

@@ -46,7 +46,7 @@
         }
         Control {
           Width: 80
-          Height: 120
+          Height: 100
           UIX: 693.550415
           UIY: 370.083466
           RenderTransformPivot {
@@ -266,7 +266,7 @@
         }
         Control {
           Width: 95
-          Height: 35
+          Height: 25
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -274,14 +274,14 @@
           }
           UseParentWidth: true
           Text {
-            Label: "Inflamed"
+            Label: "Plagued Wound"
             Color {
               R: 1
               G: 1
               B: 1
               A: 1
             }
-            Size: 15
+            Size: 12
             Justification {
               Value: "mc:etextjustify:center"
             }

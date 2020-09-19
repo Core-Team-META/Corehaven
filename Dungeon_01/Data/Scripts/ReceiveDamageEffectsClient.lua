@@ -5,10 +5,12 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
+function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	if targetCharacter == LOCAL_PLAYER and amount > 0.0 then
-		local effect = World.SpawnAsset(EFFECT_TEMPLATE)
-		effect:AttachToPlayer(LOCAL_PLAYER, "root")
+		if not API_D.HasTag(tags, API_D.TAG_MINOR) and not API_D.HasTag(tags, API_D.TAG_PERIODIC) then
+			local effect = World.SpawnAsset(EFFECT_TEMPLATE)
+			effect:AttachToPlayer(LOCAL_PLAYER, "root")
+		end
 	end
 end
 

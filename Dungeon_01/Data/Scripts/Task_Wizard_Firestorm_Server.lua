@@ -18,7 +18,7 @@ function OnTaskStart(npc, threatTable)
 
 			for player, _ in pairs(threatTable) do
 				if Object.IsValid(player) then
-					API_D.ApplyDamage(npc, player, TICK_DAMAGE)
+					API_D.ApplyDamage(npc, player, TICK_DAMAGE, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 				end
 			end
 		end

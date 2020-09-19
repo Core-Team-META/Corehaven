@@ -26,7 +26,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 
 	Task.Spawn(function()
 		for i = 1, N_TICKS do
@@ -36,7 +36,7 @@ function data.onCastServer(caster, target)
 				local distance = (player:GetWorldPosition() - target).size
 
 				if distance < RADIUS and not player.isDead then
-					API_D.ApplyHealing(caster, player, BASE_HEAL_RATE + HEAL_RATE_MULTIPLIER * magicStat)
+					API_D.ApplyHealing(caster, player, BASE_HEAL_RATE + HEAL_RATE_MULTIPLIER * magicStat, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 				end
 			end
 		end

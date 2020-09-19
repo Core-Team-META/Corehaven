@@ -61,6 +61,24 @@ function SetCurrentTask(npc, task, interrupted)
 		end
 	end
 
+	if previousTask == API_NPC.STATE_IDLE and task ~= API_NPC.STATE_IDLE then
+		if npcData.onPullEventName then
+			Events.Broadcast(npcData.onPullEventName)
+		end
+	end
+
+	if previousTask ~= API_NPC.STATE_RESETTING and task == API_NPC.STATE_RESETTING then
+		if npcData.onResetEventName then
+			Events.Broadcast(npcData.onResetEventName)
+		end
+	end
+
+	if previousTask ~= API_NPC.STATE_DEAD and task == API_NPC.STATE_DEAD then
+		if npcData.onDeathEventName then
+			Events.Broadcast(npcData.onDeathEventName)
+		end
+	end
+
 	npcState.taskHistory[TASK_HISTORY_LENGTH] = nil
 	table.insert(npcState.taskHistory, 1, task)
 
@@ -363,6 +381,12 @@ function KillNPC(npc)
 		for _, dropInfo in pairs(npcData.dropData) do
 			if math.random() <= dropInfo.chance then
 				Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0)
+			end
+
+			for _, player in pairs(Game.GetPlayers()) do
+				if player.serverUserData.statSheet then
+					player.serverUserData.statSheet:AddExperience(npcData.experience)
+				end
 			end
 		end
 

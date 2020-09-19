@@ -18,6 +18,8 @@ local TALENT_TREE_COLORS = {
 	Divinity = Color.New(0.15, 0.65, 0.0)
 }
 
+local MAX_RANGE = 3000.0
+
 local targetFrame = nil
 local targetTargetFrame = nil
 local partyFrames = {}		-- player -> frame
@@ -144,24 +146,50 @@ function UpdateFrame(data, character)
 		data.frame.visibility = Visibility.FORCE_OFF
 	else
 		data.frame.visibility = Visibility.INHERIT
-		data.frame:GetCustomProperty("ProgressBar"):WaitForObject():SetFillColor(Color.GRAY)
+		local fillColor = nil
+		local nameText = ""
 
 		if character:IsA("Player") then
-			data.frame:GetCustomProperty("Name"):WaitForObject().text = character.name
+			nameText = character.name
+
+			if character.isDead then
+				nameText = nameText .. " (Dead)"
+			end
+
 			data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = character.hitPoints / character.maxHitPoints
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(character)
 			local talentTreeName = TSU.GetPlayerTreeName(character)
 
 			if talentTreeName and talentTreeName ~= "" then
-				data.frame:GetCustomProperty("ProgressBar"):WaitForObject():SetFillColor(TALENT_TREE_COLORS[talentTreeName])
+				fillColor = TALENT_TREE_COLORS[talentTreeName]
+			else
+				fillColor = Color.GRAY
 			end
 		else
 			local npcData = API_NPC.GetAllNPCData()[character]
-			data.frame:GetCustomProperty("Name"):WaitForObject().text = npcData.name
+			nameText = npcData.name
+
+			if API_NPC.IsDead(character) then
+				nameText = nameText .. " (Dead)"
+			end
+			
 			data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = API_NPC.GetHitPoints(character) / npcData.maxHitPoints
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(NPC_ICON)
-		data.frame:GetCustomProperty("ProgressBar"):WaitForObject():SetFillColor(Color.RED)
+			fillColor = Color.RED
 		end
+
+		local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
+		local progressBar = data.frame:GetCustomProperty("ProgressBar"):WaitForObject()
+
+		if distance > MAX_RANGE then
+			progressBar:SetFillColor(Color.Lerp(fillColor, Color.GRAY, 0.4))
+			progressBar:SetBackgroundColor(Color.BLACK)
+		else
+			progressBar:SetFillColor(fillColor)
+			progressBar:SetBackgroundColor(Color.GRAY)
+		end
+
+		data.frame:GetCustomProperty("Name"):WaitForObject().text = nameText
 
 		-- Status Effects
 		for i = 1, API_SE.MAX_STATUS_EFFECTS do

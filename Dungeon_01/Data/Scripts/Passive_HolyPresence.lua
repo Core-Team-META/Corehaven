@@ -15,7 +15,7 @@ function data.onLose(player)
 	players[player] = nil
 end
 
-function PreDamageHook(sourceCharacter, targetCharacter, amount)
+function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 	local result = amount
 
 	for _, _ in pairs(players) do

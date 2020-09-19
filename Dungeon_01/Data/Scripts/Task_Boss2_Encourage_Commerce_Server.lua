@@ -4,7 +4,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local STALLS = {
 	script:GetCustomProperty("YellowStar"):WaitForObject(),
-	script:GetCustomProperty("RedMoon"):WaitForObject(),
+	script:GetCustomProperty("RedSquare"):WaitForObject(),
 	script:GetCustomProperty("BlueTriangle"):WaitForObject(),
 	script:GetCustomProperty("VioletCircle"):WaitForObject()
 }
@@ -16,7 +16,7 @@ local DAMAGE = 60.0
 
 local SHOP_RADIUS = 768.0
 
-local statusEffectNames = {"Yellow Star", "Red Moon", "Blue Triangle", "Violet Circle"}
+local statusEffectNames = {"Yellow Star", "Red Square", "Blue Triangle", "Violet Circle"}
 local taggedPlayers = {}		-- NPC -> (player -> table with shape index and status effect index)
 
 function GetPriority(npc, taskHistory)

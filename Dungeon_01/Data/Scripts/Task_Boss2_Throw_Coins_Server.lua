@@ -50,7 +50,7 @@ function OnTaskEnd(npc, interrupted)
 				end
 
 				Task.Wait(INITIAL_DELAY + (i - 1) * INCREMENTAL_DELAY)
-				API_D.ApplyAreaDamage(npc, target, POOL_RADIUS, DAMAGE, false)
+				API_D.ApplyAreaDamage(npc, target, POOL_RADIUS, DAMAGE, false, API_D.TAG_AOE)
 			end)
 		end
 	end

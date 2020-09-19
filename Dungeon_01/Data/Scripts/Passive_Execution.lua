@@ -15,14 +15,14 @@ function data.onLose(player)
 	players[player] = nil
 end
 
-function PreDamageHook(sourceCharacter, targetCharacter, amount)
+function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 	local adjustedAmount = amount
 
 	if players[sourceCharacter] and sourceCharacter ~= targetCharacter then
 		local targetOffset = targetCharacter:GetWorldPosition() - sourceCharacter:GetWorldPosition()
 
 		-- Attacking from behind
-		if targetOffset .. (targetCharacter:GetWorldRotation() * Vector3.FORWARD) > 0.0 then
+		if targetOffset .. (targetCharacter:GetWorldRotation() * Vector3.FORWARD) > 0.0 and not API_D.HasTag(tags, API_D.TAG_PERIODIC) then
 			adjustedAmount = adjustedAmount * 1.25
 		end
 

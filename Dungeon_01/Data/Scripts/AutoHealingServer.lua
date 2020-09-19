@@ -21,7 +21,7 @@ function Tick(deltaTime)
 
 			if not nextHealTimes[player] or nextHealTimes[player] <= t then
 				if player.hitPoints < player.maxHitPoints then
-					API_D.ApplyHealing(nil, player, player.maxHitPoints * HEAL_AMOUNT)
+					API_D.ApplyHealing(nil, player, player.maxHitPoints * HEAL_AMOUNT, API_D.TAG_PERIODIC)
 					nextHealTimes[player] = t + HEAL_PERIOD
 				end			
 			end

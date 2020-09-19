@@ -115,23 +115,28 @@ function CancelGroundTargeting()
 end
 
 -- Local client
+function GetCooldownReductionMultiplier()
+	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.statSheet:GetStatTotalValue("CDR")
+	return 1.0 / (1.0 + cooldownReductionStat / 200.0)
+end
+
+-- Local client
+function GetHasteReductionMultiplier()
+	local hasteReductionStat = LOCAL_PLAYER.clientUserData.statSheet:GetStatTotalValue("Haste")
+	return 1.0 / (1.0 + hasteReductionStat / 200.0)
+end
+
+-- Local client
 function GetGlobalCooldown()
---	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
-
-	--!! get percent not raw value?
-
-	return GLOBAL_COOLDOWN --/ (1.0 + cooldownReductionStat / 200.0)
+	-- This is intentionally haste and not CDR
+	return GLOBAL_COOLDOWN * GetHasteReductionMultiplier()
 end
 
 -- Owning client
 function GetAbilityCooldown(abilityName)
 	assert(playerAbilities[LOCAL_PLAYER][abilityName])
 	local data = abilityData[abilityName]
---	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.inventory:GetStatTotals().CDR
-
-	--!! get percent not raw value?
-
-	return data.cooldown --/ (1.0 + cooldownReductionStat / 200.0)
+	return data.cooldown * GetCooldownReductionMultiplier()
 end
 
 -- Owning client
@@ -406,14 +411,14 @@ function IsTargetValid(player, target, abilityName)
 		return false, "Target out of range"
 	end
 
-	-- Does this ability require facing and the target is behind the caster
+	--[[ TEMPORARILY DISABLED Does this ability require facing and the target is behind the caster
 	if data.requiresFacing then
 		local offset = targetPosition - player:GetWorldPosition()
 
 		if offset .. (player:GetWorldRotation() * Vector3.FORWARD) < 0.0 then
 			return false, "Target is behind you"
 		end
-	end
+	end]]
 
 	return true
 end

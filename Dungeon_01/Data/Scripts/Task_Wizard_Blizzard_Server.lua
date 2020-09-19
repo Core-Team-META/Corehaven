@@ -54,7 +54,7 @@ function OnTaskEnd(npc, interrupted)
 				Task.Wait(1.0)
 
 				for _, player in pairs(Game.FindPlayersInSphere(target, AREA_RADIUS, {ignoreDead = true})) do
-					API_D.ApplyDamage(npc, player, DAMAGE_RATE)
+					API_D.ApplyDamage(npc, player, DAMAGE_RATE, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 
 					if playerColdTimes[player] and time() - playerColdTimes[player] < 3.5 then
 						API_SE.ApplyStatusEffect(sourceCharacter, player, API_SE.STATUS_EFFECT_DEFINITIONS["Cold"].id)

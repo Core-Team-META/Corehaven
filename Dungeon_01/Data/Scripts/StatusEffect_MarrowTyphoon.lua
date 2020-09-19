@@ -11,7 +11,7 @@ function EffectTick(sourceCharacter, character)
 	assert(not character:IsA("Player"))
 
 	for _, player in pairs(Game.FindPlayersInSphere(character:GetWorldPosition(), RADIUS, {ignoreDead = true})) do
-		API_D.ApplyDamage(character, player, DAMAGE)
+		API_D.ApplyDamage(character, player, DAMAGE, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 	end
 end
 

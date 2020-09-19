@@ -20,7 +20,7 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 45
+        Float: 25
       }
       Overrides {
         Name: "cs:AbilityTemplate"

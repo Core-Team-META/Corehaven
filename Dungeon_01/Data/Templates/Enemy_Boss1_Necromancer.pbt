@@ -94,6 +94,18 @@
             Float: 0.3
           }
           Overrides {
+            Name: "cs:OnPullEventName"
+            String: "Boss1Pulled"
+          }
+          Overrides {
+            Name: "cs:OnResetEventName"
+            String: "Boss1Reset"
+          }
+          Overrides {
+            Name: "cs:OnDeathEventName"
+            String: "Boss1Death"
+          }
+          Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
               Id: 2191240521660447709

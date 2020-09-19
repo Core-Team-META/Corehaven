@@ -38,7 +38,7 @@ function OnTaskStart(npc, threatTable)
 				Task.Wait(2.5)
 
 				for _, player in pairs(Game.FindPlayersInSphere(targetPosition + Vector3.UP * 100.0, VOLLEY_RADIUS, {ignoreDead = true})) do
-					API_D.ApplyDamage(npc, player, DAMAGE)
+					API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 				end
 
 				telegraph:Destroy()

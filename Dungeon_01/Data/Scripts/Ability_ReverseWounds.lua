@@ -12,7 +12,7 @@ function OnPlayerLeft(player)
 	playerDamageHistories[player] = nil
 end
 
-function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
 	if targetCharacter:IsA("Player") then
 		playerDamageHistories[targetCharacter][time()] = effectiveAmount
 	end

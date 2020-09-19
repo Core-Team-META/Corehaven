@@ -48,6 +48,24 @@ function Tick(deltaTime)
 				end
 			end
 
+			if previousTask == API_NPC.STATE_IDLE and currentTask ~= API_NPC.STATE_IDLE then
+				if npcData.onPullEventName then
+					Events.Broadcast(npcData.onPullEventName)
+				end
+			end
+
+			if previousTask ~= API_NPC.STATE_RESETTING and currentTask == API_NPC.STATE_RESETTING then
+				if npcData.onResetEventName then
+					Events.Broadcast(npcData.onResetEventName)
+				end
+			end
+
+			if previousTask ~= API_NPC.STATE_DEAD and currentTask == API_NPC.STATE_DEAD then
+				if npcData.onDeathEventName then
+					Events.Broadcast(npcData.onDeathEventName)
+				end
+			end
+
 			local taskData = API_NPC.GetAllTaskData()[currentTask]
 			local asleepStance = mesh:GetCustomProperty("AsleepStance") or "unarmed_idle_relaxed"
 			local idleStance = mesh:GetCustomProperty("IdleStance") or "unarmed_idle_relaxed"

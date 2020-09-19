@@ -14,7 +14,7 @@ function data.onLose(player)
 	players[player] = nil
 end
 
-function PreDamageHook(sourceCharacter, targetCharacter, amount)
+function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 	if players[targetCharacter] and sourceCharacter ~= targetCharacter then
 		if math.random() < 0.1 then
 			return 0.0

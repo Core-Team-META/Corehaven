@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 17745912846091818266
-  Name: "BlastWeaponProjectileAttackServer"
+  Id: 3595183685994013217
+  Name: "StatusEffect_RedSquare"
   PlatformAssetType: 3
   TextAsset {
   }

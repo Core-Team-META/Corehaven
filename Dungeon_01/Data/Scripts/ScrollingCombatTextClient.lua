@@ -53,7 +53,7 @@ function ShowText(targetCharacter, amount, over, color)
 	element:Destroy()
 end
 
-function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
+function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	if targetCharacter == LOCAL_PLAYER then
 		ShowText(targetCharacter, amount, overkill, Color.RED)
 	elseif sourceCharacter == LOCAL_PLAYER then
@@ -61,7 +61,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
 	end
 end
 
-function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal)
+function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal, tags)
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
 		ShowText(targetCharacter, amount, overheal, Color.GREEN)
 	end

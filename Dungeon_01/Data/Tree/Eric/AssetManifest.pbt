@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18259903282264474392
-  Name: "Moon"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_icon_Moon"
-  }
-}
-Assets {
   Id: 18192159038187223433
   Name: "Fantasy Ability Red 030"
   PlatformAssetType: 9
@@ -23,15 +14,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Blue_051"
-  }
-}
-Assets {
-  Id: 18097083884483661581
-  Name: "Crescent - 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_crescent_002"
   }
 }
 Assets {
@@ -185,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_020"
+  }
+}
+Assets {
+  Id: 12677200001085978883
+  Name: "Cube - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
@@ -437,6 +428,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Red_043"
+  }
+}
+Assets {
+  Id: 6263887203996703520
+  Name: "UI Basic Shape Square"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Square"
   }
 }
 Assets {

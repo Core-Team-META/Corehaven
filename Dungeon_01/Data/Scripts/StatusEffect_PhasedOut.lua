@@ -5,7 +5,7 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
 local chargesRemaining = {}		-- character -> int
 
-function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill)
+function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
 	if chargesRemaining[targetCharacter] then
 		chargesRemaining[targetCharacter] = chargesRemaining[targetCharacter] - 1
 

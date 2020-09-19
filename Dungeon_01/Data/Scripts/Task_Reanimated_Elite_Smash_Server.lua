@@ -26,12 +26,12 @@ function OnTaskStart(npc, threatTable)
 				local dot = (player:GetWorldPosition() - npc):GetNormalized() .. (npc:GetWorldRotation() * Vector3.FORWARD)
 
 				if dot > 0.0 then
-					API_D.ApplyDamage(npc, player, DAMAGE)
+					API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
 					API_K.ApplyImpulse(player, 150.0 * launchDirection)
 				end
 			end
 
-			API_D.ApplyDamage(npc, target, DAMAGE)
+			API_D.ApplyDamage(npc, target, DAMAGE, API_D.TAG_AOE)
 			API_K.ApplyImpulse(target, 150.0 * launchDirection)
 		end
 	end)

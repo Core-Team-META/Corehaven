@@ -4,7 +4,7 @@ local SUMMON_TEMPLATE = script:GetCustomProperty("SummonTemplate")
 local SPAWN_GROUP = script:GetCustomProperty("SpawnGroup"):WaitForObject()
 
 local RANGE = 0.0
-local COOLDOWN = 13.0
+local COOLDOWN = 35.0
 
 function GetPriority(npc, taskHistory)
 	local hitPoints = API_NPC.GetHitPoints(npc)

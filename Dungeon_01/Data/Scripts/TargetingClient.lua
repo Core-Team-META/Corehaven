@@ -203,11 +203,13 @@ function OnBindingPressed(player, binding)
 	end
 end
 
-function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill)
+function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
 
 	if targetCharacter == LOCAL_PLAYER and not currentTarget then
-		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
+		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
+			Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
+		end
 	end
 end
 

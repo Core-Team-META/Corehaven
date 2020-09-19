@@ -14,7 +14,7 @@ function EffectEnd(sourceCharacter, character)
 	World.SpawnAsset(EXPLOSION_TEMPLATE, {position = character:GetWorldPosition()})
 
 	for _, player in pairs(Game.FindPlayersInSphere(character:GetWorldPosition(), EXPLOSION_RADIUS, {ignoreDead = true})) do
-		API_D.ApplyDamage(sourceCharacter, player, DAMAGE)
+		API_D.ApplyDamage(sourceCharacter, player, DAMAGE, API_D.TAG_AOE)
 		API_SE.ApplyStatusEffect(sourceCharacter, player, API_SE.STATUS_EFFECT_DEFINITIONS["Cold"].id)
 	end
 end

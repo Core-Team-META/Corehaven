@@ -49,7 +49,7 @@ function OnTaskEnd(npc, interrupted)
 
 					if r < RADII[ringIndex] then
 						if ringIndex == 1 or r >= RADII[ringIndex - 1] then
-							API_D.ApplyDamage(npc, player, DAMAGE)
+							API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
 						end
 					end
 				end

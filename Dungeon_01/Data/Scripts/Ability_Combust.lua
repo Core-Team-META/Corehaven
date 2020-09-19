@@ -23,7 +23,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	API_D.ApplyAreaDamage(caster, target, RADIUS, DAMAGE, false)
+	API_D.ApplyAreaDamage(caster, target, RADIUS, DAMAGE, false, API_D.TAG_AOE)
 end
 
 return data

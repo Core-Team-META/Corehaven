@@ -14,9 +14,9 @@ function data.onLose(player)
 	players[player] = nil
 end
 
-function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill)
-	if players[sourceCharacter] and sourceCharacter ~= targetCharacter then
-		API_D.ApplyHealing(sourceCharacter, sourceCharacter, effectiveAmount * 0.1)
+function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
+	if players[sourceCharacter] and sourceCharacter ~= targetCharacter and not API_D.HasTag(tags, API_D.TAG_MINOR) then
+		API_D.ApplyHealing(sourceCharacter, sourceCharacter, effectiveAmount * 0.1, API_D.TAG_MINOR)
 	end
 end
 

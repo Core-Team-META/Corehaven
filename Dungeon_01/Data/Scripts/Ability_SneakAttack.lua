@@ -3,7 +3,6 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local BASE_DAMAGE = 35.0
 local DAMAGE_MULTIPLIER = 1.0
-local PROJECTILE_SPEED = 2400.0
 
 local data = {}
 
@@ -13,6 +12,7 @@ data.friendlyTargetValid = false
 data.enemyTargetValid = true
 data.requiresFacing = true
 data.groundTargets = false
+data.canMove = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
 data.cooldown = script:GetCustomProperty("Cooldown")
@@ -35,14 +35,13 @@ function data.onCastServer(caster, target)
 	-- Find the ground
 	hitResult = World.Raycast(teleportPosition + Vector3.UP * 500.0, teleportPosition - Vector3.UP * 500.0, {ignorePlayers = true})
 
+	-- If our Raycast failed, we don't teleport because we don't want to drop the player below the map.
 	if hitResult then
-		teleportPosition = hitResult:GetImpactPosition()
+		caster:SetWorldPosition(hitResult:GetImpactPosition() + Vector3.UP * 110.0 * caster:GetWorldScale().z)
+		caster:SetWorldRotation(target:GetWorldRotation())
+		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
+		API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
 	end
-
-	caster:SetWorldPosition(teleportPosition + Vector3.UP * 110.0 * caster:GetWorldScale().z)
-	caster:SetWorldRotation(target:GetWorldRotation())
-	local attackStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Attack
-	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
 end
 
 return data

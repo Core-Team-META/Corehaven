@@ -1,7 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local BASE_HEAL = 20.0
-local HEAL_MULTIPLIER = 0.6
+local BASE_HEAL = 25.0
+local HEAL_MULTIPLIER = 0.7
 
 local data = {}
 
@@ -25,7 +25,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 	API_D.ApplyHealing(caster, target, BASE_HEAL + HEAL_MULTIPLIER * magicStat)
 end
 

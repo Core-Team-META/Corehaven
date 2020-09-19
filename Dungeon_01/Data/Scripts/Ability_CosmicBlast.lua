@@ -1,9 +1,9 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local RADIUS = 500.0
-local BASE_DAMAGE = 90.0
-local DAMAGE_MULTIPLIER = 3.0
-local IMPACT_DELAY = 3.0
+local BASE_DAMAGE = 60.0
+local DAMAGE_MULTIPLIER = 2.0
+local IMPACT_DELAY = 2.0
 
 local data = {}
 
@@ -27,8 +27,8 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(IMPACT_DELAY)
-	local magicStat = 0.0--caster.serverUserData.inventory:GetStatTotals().Magic
-	API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat, false)
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
+	API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat, false, API_D.TAG_AOE)
 end
 
 return data
