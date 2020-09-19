@@ -3,6 +3,7 @@ local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
 local PLAYER_LEVEL = script:GetCustomProperty("PlayerLevel"):WaitForObject()
+local PLAYER_LEVEL_PROGRESS = script:GetCustomProperty("PlayerLevelProgress"):WaitForObject()
 local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
@@ -411,8 +412,10 @@ function view:UpdateCursorState()
 end
 
 function view:UpdatePlayerInfo()
-    local playerLevel = LOCAL_PLAYER:GetResource("Level") or 1
-    PLAYER_LEVEL.text = string.format("Level %d", playerLevel)
+    local playerLevel = statSheet:GetLevel()
+    local playerLevelProgress = statSheet:GetLevelProgress()
+    PLAYER_LEVEL.text = tostring(playerLevel)
+    PLAYER_LEVEL_PROGRESS.progress = playerLevelProgress
 end
 
 function view:Draw()

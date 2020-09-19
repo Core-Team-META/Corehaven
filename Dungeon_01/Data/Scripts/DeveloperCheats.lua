@@ -54,12 +54,12 @@ local function OnBindingPressed(player, binding)
         local playerPosition = player:GetWorldPosition()
         Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
         print("CHEAT: DROP LOOT")
-    elseif binding == BINDING_CLEAR_INVENTORY then
+    elseif binding == BINDING_INVENTORY_CLEAR then
         local playerData = Storage.GetPlayerData(player)
         playerData.inventoryHash = nil
         Storage.SetPlayerData(player, playerData)
         print("CHEAT: CLEAR INVENTORY")
-    elseif binding == BINDING_PRINT_INVENTORY then
+    elseif binding == BINDING_INVENTORY_PRINT then
         print(player.serverUserData.inventory)
     elseif binding == BINDING_EXPERIENCE_ADD then
         if not player.serverUserData.statSheet then return end
