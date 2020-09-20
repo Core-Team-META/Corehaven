@@ -46,6 +46,7 @@ local ENEMY_NAME_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameAslee
 local ENEMY_NAME_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameReadyColor")
 local ENEMY_NAME_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameCombatColor")
 local BORDER_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderColor")
+local BORDER_AGGRO_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderAggroColor")
 local BACKGROUND_COLOR = COMPONENT_ROOT:GetCustomProperty("BackgroundColor")
 local FRIENDLY_HEALTH_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyHealthColor")
 local ENEMY_HEALTH_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyHealthAsleepColor")
@@ -227,7 +228,7 @@ function IsNameplateVisible(character)
 			return false
 		end
 
-		if not character:IsA("Player") and API_NPC.GetHitPoints(character) <= 0.0 then
+		if not character:IsA("Player") and API_NPC.IsDead(character) then
 			return false
 		end
 	end
@@ -417,7 +418,7 @@ function Tick(deltaTime)
 					maxHitPoints = character.maxHitPoints
 				else
 					hitPoints = API_NPC.GetHitPoints(character)
-					maxHitPoints = npcData[character].maxHitPoints
+					maxHitPoints = API_NPC.GetMaxHitPoints(character)
 				end
 
 				local healthFraction = hitPoints / maxHitPoints
@@ -470,6 +471,13 @@ function Tick(deltaTime)
 				-- Update hit point number
 				if SHOW_NUMBERS then
 					nameplate.healthText.text = string.format("%.0f / %.0f", hitPoints, maxHitPoints)
+				end
+
+				nameplate.borderPiece:SetColor(BORDER_COLOR)
+
+				-- Do we have aggro
+				if not character:IsA("Player") and API_NPC.GetTarget(character) == LOCAL_PLAYER then
+					nameplate.borderPiece:SetColor(BORDER_AGGRO_COLOR)
 				end
 			end
 

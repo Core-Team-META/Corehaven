@@ -9,7 +9,7 @@
         Int: 100
       }
       Overrides {
-        Name: "cs:BaseDefense"
+        Name: "cs:BaseCritChance"
         Int: 10
       }
       Overrides {
@@ -23,10 +23,6 @@
       Overrides {
         Name: "cs:PerLevelHealth"
         Int: 20
-      }
-      Overrides {
-        Name: "cs:PerLevelDefense"
-        Int: 2
       }
       Overrides {
         Name: "cs:PerLevelAttack"

@@ -22,8 +22,8 @@
         ChildIds: 337373426812660397
         UnregisteredParameters {
           Overrides {
-            Name: "cs:HitPoints"
-            Float: 0
+            Name: "cs:HealthFraction"
+            Float: 1
           }
           Overrides {
             Name: "cs:CurrentTask"
@@ -38,7 +38,7 @@
             String: "Highrock Archer"
           }
           Overrides {
-            Name: "cs:MaxHitPoints"
+            Name: "cs:BaseMaxHitPoints"
             Float: 80
           }
           Overrides {
@@ -48,6 +48,10 @@
           Overrides {
             Name: "cs:EngageRange"
             Float: 1400
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: false
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -96,7 +100,7 @@
             }
           }
           Overrides {
-            Name: "cs:HitPoints:isrep"
+            Name: "cs:HealthFraction:isrep"
             Bool: true
           }
           Overrides {
@@ -729,7 +733,7 @@
           Rotation {
             Pitch: 3.4150944e-05
             Yaw: 1.99243514e-05
-            Roll: -0.000122070312
+            Roll: -0.000122070313
           }
           Scale {
             X: 0.330839664

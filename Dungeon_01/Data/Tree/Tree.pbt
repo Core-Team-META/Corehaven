@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 16287755660477971277
   ChildIds: 11788695356358832208
   ChildIds: 1503052918030638976
   ChildIds: 15438413245421916821
@@ -720,34 +719,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Emma"
-  }
-}
-Objects {
-  Id: 16287755660477971277
-  Name: "BossAreaGates"
-  Transform {
-    Location {
-      X: 11354.4316
-      Y: 3524.63477
-      Z: -582.461914
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "BossAreaGates"
   }
 }

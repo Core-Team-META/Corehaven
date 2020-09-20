@@ -476,6 +476,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4542959667302136808
+  Name: "Portcullis"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_portcullis_001"
+  }
+}
+Assets {
   Id: 4295659846319462830
   Name: "Fantasy Ability Green 012"
   PlatformAssetType: 9

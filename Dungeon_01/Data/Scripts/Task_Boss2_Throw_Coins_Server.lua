@@ -13,10 +13,7 @@ local INITIAL_DELAY = 2.0
 local INCREMENTAL_DELAY = 0.1
 
 function GetPriority(npc, taskHistory)
-	local hitPoints = API_NPC.GetHitPoints(npc)
-	local healthFraction = hitPoints / API_NPC.GetAllNPCData()[npc].maxHitPoints
-
-	if healthFraction > 0.95 then
+	if API_NPC.GetHealthFraction(npc) > 0.95 then
 		return 0.0
 	else
 		return 2.0

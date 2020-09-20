@@ -10,6 +10,8 @@ end
 
 --[[	Passive data is a table with the following entries:
 string name										User-facing unique name (also used for talent tree)
+string description								User-facing description
+AssetReference icon								Icon to show on the character sheet
 <float> threatMultiplier						How much threat the player generates
 <float> damageDealtMultiplier					How much damage the player deals
 <float> damageTakenMultiplier					How much damage the player takes
@@ -21,6 +23,8 @@ local playerPassives = {}					--	Player -> table (string -> true)
 
 function RegisterPassive(data)
 	assert(data.name)
+	assert(data.description)
+	assert(data.icon)
 	assert(not passiveData[data.name])
 
 	passiveData[data.name] = data
@@ -105,6 +109,14 @@ function API.GetPlayerDamageTakenMultiplier(player)
 	end
 
 	return result
+end
+
+function API.GetPlayerPassives(player)
+	return playerPassives[player]
+end
+
+function API.GetPassiveData(passive)
+	return passiveData[passive]
 end
 
 -- We stick these in _G to avoid a dependency loop

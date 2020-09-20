@@ -4,6 +4,8 @@ local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local data = {}
 
 data.name = "Execution"
+data.description = script:GetCustomProperty("Description")
+data.icon = script:GetCustomProperty("Icon")
 
 local players = {}
 
@@ -32,7 +34,7 @@ function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 				adjustedAmount = adjustedAmount * 1.5
 			end
 		else
-			if API_NPC.GetHitPoints(targetCharacter) / API_NPC.GetAllNPCData()[targetCharacter].maxHitPoints < 0.25 then
+			if API_NPC.GetHealthFraction(targetCharacter) < 0.25 then
 				adjustedAmount = adjustedAmount * 1.5
 			end
 		end

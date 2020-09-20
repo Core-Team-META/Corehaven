@@ -3,6 +3,8 @@
 local data = {}
 
 data.name = "Taste for Blood"
+data.description = script:GetCustomProperty("Description")
+data.icon = script:GetCustomProperty("Icon")
 
 local players = {}
 

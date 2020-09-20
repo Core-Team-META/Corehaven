@@ -16,6 +16,25 @@
           Id: 16915150100797142409
         }
       }
+      Overrides {
+        Name: "cs:Description"
+        String: "Your attacks have a chance to anger you, giving you increased attack for a short duration. Also grants your basic attack Sweeping Slash."
+      }
+      Overrides {
+        Name: "cs:Icon"
+        AssetReference {
+          Id: 9530887160708419576
+        }
+      }
+    }
+    Assets {
+      Id: 9530887160708419576
+      Name: "Fantasy Ability Yellow 012"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Ability_Yellow_012"
+      }
     }
   }
   SerializationVersion: 64

@@ -5,6 +5,7 @@ local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForO
 local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
 local TOOLTIP_PANEL = script:GetCustomProperty("TooltipPanel"):WaitForObject()
 local TOOLTIP_NAME_TEXT = script:GetCustomProperty("TooltipNameText"):WaitForObject()
+local TOOLTIP_PASSIVE_TEXT = script:GetCustomProperty("TooltipPassiveText"):WaitForObject()
 local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionText"):WaitForObject()
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
@@ -16,7 +17,7 @@ local TALENT_REQUIREMENT_ARROW_TEMPLATE = script:GetCustomProperty("TalentRequir
 
 local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
-local MAX_TOTAL_WIDTH = 1920.0		-- Picked to be symmetrical and not overlap chat
+local MAX_TOTAL_WIDTH = 1920.0
 local TREE_HEIGHT = 700
 local MAX_BUTTON_SIZE = 100.0
 local BUTTON_PADDING = 0.5 * MAX_BUTTON_SIZE
@@ -67,6 +68,13 @@ function OnButtonHovered(button, talentData)
 	TOOLTIP_PANEL.y = cursorPosition.y
 	TOOLTIP_PANEL.visibility = Visibility.INHERIT
 	TOOLTIP_NAME_TEXT.text = talentData.name
+
+	if talentData.isPassive then
+		TOOLTIP_PASSIVE_TEXT.text = "Passive"
+	else
+		TOOLTIP_PASSIVE_TEXT.text = ""
+	end
+
 	TOOLTIP_DESCRIPTION_TEXT.text = talentData.description
 	TOOLTIP_COST_TEXT.text = "Cost: " .. talentData.cost
 	TOOLTIP_REQUIRED_LEVEL_TEXT.text = "Required level: " .. talentData.requiredLevel

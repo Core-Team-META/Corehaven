@@ -136,6 +136,7 @@ function ReadTalentTreeDefinition(root)
 				talentData.description = talentGroup:GetCustomProperty("Description")
 				talentData.icon = talentGroup:GetCustomProperty("Icon")
 				talentData.cost = talentGroup:GetCustomProperty("Cost")
+				talentData.isPassive = talentGroup:GetCustomProperty("IsPassive")
 				talentData.requiresAbove = talentGroup:GetCustomProperty("RequiresAbove")
 				talentData.requiresAboveLeft = talentGroup:GetCustomProperty("RequiresAboveLeft")
 				talentData.requiresAboveRight = talentGroup:GetCustomProperty("RequiresAboveRight")
@@ -182,6 +183,11 @@ function ReadTalentTreeDefinition(root)
 
 				if talentData.cost == nil then
 					warn(string.format("Cost missing on talent %s", talentGroup.name))
+					talentHasErrors = true
+				end
+
+				if talentData.isPassive == nil then
+					warn(string.format("IsPassive missing on talent %s", talentGroup.name))
 					talentHasErrors = true
 				end
 

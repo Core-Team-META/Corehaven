@@ -20,10 +20,7 @@ local statusEffectNames = {"Yellow Star", "Red Square", "Blue Triangle", "Violet
 local taggedPlayers = {}		-- NPC -> (player -> table with shape index and status effect index)
 
 function GetPriority(npc, taskHistory)
-	local hitPoints = API_NPC.GetHitPoints(npc)
-	local healthFraction = hitPoints / API_NPC.GetAllNPCData()[npc].maxHitPoints
-
-	if healthFraction > 0.75 then
+	if API_NPC.GetHealthFraction(npc) > 0.75 then
 		return 0.0
 	else
 		return 2.0

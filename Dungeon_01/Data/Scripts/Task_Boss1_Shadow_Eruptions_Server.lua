@@ -9,10 +9,7 @@ local DAMAGE = 50.0
 local RADII = {1280.0, 2560.0, 3840.0, 7680.0}
 
 function GetPriority(npc, taskHistory)
-	local hitPoints = API_NPC.GetHitPoints(npc)
-	local healthFraction = hitPoints / API_NPC.GetAllNPCData()[npc].maxHitPoints
-
-	if healthFraction > 0.9 then
+	if API_NPC.GetHealthFraction(npc) > 0.9 then
 		return 0.0
 	else
 		return 3.0

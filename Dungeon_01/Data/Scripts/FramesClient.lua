@@ -148,6 +148,8 @@ function UpdateFrame(data, character)
 		data.frame.visibility = Visibility.INHERIT
 		local fillColor = nil
 		local nameText = ""
+		local hitPoints = nil
+		local healthFraction = nil
 
 		if character:IsA("Player") then
 			nameText = character.name
@@ -156,7 +158,8 @@ function UpdateFrame(data, character)
 				nameText = nameText .. " (Dead)"
 			end
 
-			data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = character.hitPoints / character.maxHitPoints
+			hitPoints = character.hitPoints
+			healthFraction = hitPoints / character.maxHitPoints
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(character)
 			local talentTreeName = TSU.GetPlayerTreeName(character)
 
@@ -173,7 +176,8 @@ function UpdateFrame(data, character)
 				nameText = nameText .. " (Dead)"
 			end
 			
-			data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = API_NPC.GetHitPoints(character) / npcData.maxHitPoints
+			hitPoints = API_NPC.GetHitPoints(character)
+			healthFraction = hitPoints / API_NPC.GetMaxHitPoints(character)
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(NPC_ICON)
 			fillColor = Color.RED
 		end
@@ -190,6 +194,8 @@ function UpdateFrame(data, character)
 		end
 
 		data.frame:GetCustomProperty("Name"):WaitForObject().text = nameText
+		data.frame:GetCustomProperty("HitPoints"):WaitForObject().text = string.format("%d", math.floor(hitPoints))
+		data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = healthFraction
 
 		-- Status Effects
 		for i = 1, API_SE.MAX_STATUS_EFFECTS do

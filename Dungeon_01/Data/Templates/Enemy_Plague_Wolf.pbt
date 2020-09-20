@@ -22,8 +22,8 @@
         ChildIds: 5231484171300456939
         UnregisteredParameters {
           Overrides {
-            Name: "cs:HitPoints"
-            Float: 0
+            Name: "cs:HealthFraction"
+            Float: 1
           }
           Overrides {
             Name: "cs:CurrentTask"
@@ -38,7 +38,7 @@
             String: "Plague Wolf"
           }
           Overrides {
-            Name: "cs:MaxHitPoints"
+            Name: "cs:BaseMaxHitPoints"
             Float: 90
           }
           Overrides {
@@ -48,6 +48,10 @@
           Overrides {
             Name: "cs:EngageRange"
             Float: 1400
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: false
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -92,7 +96,7 @@
             }
           }
           Overrides {
-            Name: "cs:HitPoints:isrep"
+            Name: "cs:HealthFraction:isrep"
             Bool: true
           }
           Overrides {
@@ -559,7 +563,7 @@
         Transform {
           Location {
             X: 5.03900099
-            Y: -6.10351562e-05
+            Y: -6.10351563e-05
             Z: -6.06852531
           }
           Rotation {

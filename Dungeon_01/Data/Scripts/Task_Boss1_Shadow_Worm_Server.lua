@@ -11,7 +11,6 @@ local DAMAGE = {10.0, 25.0, 40.0, 55.0, 70.0, 85.0}
 local RADIUS = {50.0, 100.0, 200.0, 400.0, 800.0, 1600.0}
 local PROJECTILE_SPEED = {2500.0, 800.0, 400.0, 300.0, 250.0, 200.0}
 
-local currentTasks = {}
 local targets = {}
 
 function GetPriority(npc, taskHistory)
@@ -19,25 +18,13 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	local target = API_NPC.GetTarget(npc)
-	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
-	targets[npc] = target
-
-	currentTasks[npc] = Task.Spawn(function()
-		while true do
-			Task.Wait(0.3)
-			API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
-		end
-	end)
+	targets[npc] = API_NPC.GetTarget(npc)
+	API_NPC.LookAtTargetWithoutPitch(npc, targets[npc]:GetWorldPosition())
 
 	return 1.5
 end
 
 function OnTaskEnd(npc, interrupted)
-	if currentTasks[npc] then
-		currentTasks[npc]:Cancel()
-	end
-
 	if Object.IsValid(targets[npc]) and not interrupted then
 		local targetPosition = targets[npc]:GetWorldPosition()
 
@@ -69,7 +56,6 @@ function OnTaskEnd(npc, interrupted)
 		end)
 	end
 	
-	currentTasks[npc] = nil
 	targets[npc] = nil
 end
 

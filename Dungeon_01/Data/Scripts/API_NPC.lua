@@ -54,9 +54,10 @@ function API.RegisterNPCFolder(npcFolder)
 
 		local data = {}
 		data.name = npc:GetCustomProperty("Name")
-		data.maxHitPoints = npc:GetCustomProperty("MaxHitPoints")
+		data.baseMaxHitPoints = npc:GetCustomProperty("BaseMaxHitPoints")
 		data.speed = npc:GetCustomProperty("MoveSpeed")
 		data.engageRange = npc:GetCustomProperty("EngageRange")
+		data.immuneToStun = npc:GetCustomProperty("ImmuneToStun")
 		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
 		data.experience = npc:GetCustomProperty("Experience")
@@ -101,7 +102,7 @@ function API.RegisterNPCFolder(npcFolder)
 
 		data.onPullEventName = npc:GetCustomProperty("OnPullEventName")
 		data.onResetEventName = npc:GetCustomProperty("OnResetEventName")
-		data.onDeathEventName = npc:GetCustomProperty("OnDeathEventName")
+		data.onDiedEventName = npc:GetCustomProperty("OnDiedEventName")
 		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
 		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
 		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
@@ -120,8 +121,8 @@ function API.RegisterNPCFolder(npcFolder)
 
 	function FindNPCs_R(root)
 		for _, child in pairs(root:GetChildren()) do
-			-- We assume anything with a "HitPoints" custom property is an npc
-			_, isNPC = child:GetCustomProperty("HitPoints")
+			-- We assume anything with a "HealthFraction" custom property is an npc
+			_, isNPC = child:GetCustomProperty("HealthFraction")
 
 			if isNPC then
 				AddNPC(child)
@@ -135,8 +136,8 @@ function API.RegisterNPCFolder(npcFolder)
 
 	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
 		Task.Wait()		-- Networked custom properties are not available for a frame
-		-- We assume anything with a "HitPoints" custom property is an npc
-		_, isNPC = newChild:GetCustomProperty("HitPoints")
+		-- We assume anything with a "HealthFraction" custom property is an npc
+		_, isNPC = newChild:GetCustomProperty("HealthFraction")
 
 		if isNPC then
 			AddNPC(newChild)
@@ -171,9 +172,27 @@ function API.GetAllNPCData()
 	return npcs
 end
 
+function API.GetMaxHitPoints(npc)
+	return math.max(1, #Game.GetPlayers()) * npcs[npc].baseMaxHitPoints
+end
+
+function API.GetHitPoints(npc)
+	-- Separate lines so we don't return both values from GetCustomProperty()
+	local healthFraction = npc:GetCustomProperty("HealthFraction")
+	return healthFraction * API.GetMaxHitPoints(npc)
+end
+
 function API.SetHitPoints(npc, hitPoints)
 	assert(not systemFunctions.IsAsleep(npc))
-	npc:SetNetworkedCustomProperty("HitPoints", hitPoints)
+	npc:SetNetworkedCustomProperty("HealthFraction", hitPoints / API.GetMaxHitPoints(npc))
+end
+
+function API.GetHealthFraction(npc)
+	return npc:GetCustomProperty("HealthFraction")
+end
+
+function API.SetHealthFraction(npc, healthFraction)
+	npc:SetNetworkedCustomProperty("HealthFraction", healthFraction)
 end
 
 function API.ApplyDamage(sourceCharacter, npc, amount)
@@ -187,13 +206,7 @@ function API.ApplyHealing(sourceCharacter, npc, amount)
 	assert(not systemFunctions.IsAsleep(npc))
 	local currentHealth = API.GetHitPoints(npc)
 	systemFunctions.OnHealed(sourceCharacter, npc, amount)
-	API.SetHitPoints(npc, math.min(npcs[npc].maxHitPoints, currentHealth + amount))
-end
-
-function API.GetHitPoints(npc)
-	-- Separate lines so we don't return both values from GetCustomProperty()
-	local result = npc:GetCustomProperty("HitPoints")
-	return result
+	API.SetHitPoints(npc, math.min(API.GetMaxHitPoints(npc), currentHealth + amount))
 end
 
 function API.SetTarget(npc, target)
@@ -218,7 +231,7 @@ function API.GetTarget(npc)
 end
 
 function API.IsDead(npc)
-	return API.GetHitPoints(npc) == 0.0
+	return API.GetHealthFraction(npc) == 0.0
 end
 
 function API.SetStunned(npc, isStunned)

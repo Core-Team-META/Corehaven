@@ -23,9 +23,13 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	local lookRotation = caster:GetLookWorldRotation()
-	lookRotation.z = target:GetWorldRotation().z
-	caster:SetLookWorldRotation(lookRotation)
+	-- Can't cache local player because this script is required from server scripts as well
+	if caster == Game.GetLocalPlayer() then
+		local lookRotation = caster:GetLookWorldRotation()
+		lookRotation.z = target:GetWorldRotation().z
+		caster:SetLookWorldRotation(lookRotation)
+	end
+
 	return 0.0
 end
 

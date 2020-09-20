@@ -22,8 +22,8 @@
         ChildIds: 11860041625734473373
         UnregisteredParameters {
           Overrides {
-            Name: "cs:HitPoints"
-            Float: 0
+            Name: "cs:HealthFraction"
+            Float: 1
           }
           Overrides {
             Name: "cs:CurrentTask"
@@ -38,8 +38,8 @@
             String: "Arokai, the Fiendraiser"
           }
           Overrides {
-            Name: "cs:MaxHitPoints"
-            Float: 4000
+            Name: "cs:BaseMaxHitPoints"
+            Float: 2000
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -48,6 +48,10 @@
           Overrides {
             Name: "cs:EngageRange"
             Float: 500
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: true
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -102,8 +106,8 @@
             String: "Boss1Reset"
           }
           Overrides {
-            Name: "cs:OnDeathEventName"
-            String: "Boss1Death"
+            Name: "cs:OnDiedEventName"
+            String: "Boss1Died"
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -124,7 +128,7 @@
             }
           }
           Overrides {
-            Name: "cs:HitPoints:isrep"
+            Name: "cs:HealthFraction:isrep"
             Bool: true
           }
           Overrides {

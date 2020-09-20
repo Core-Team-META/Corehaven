@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 14219648839889604066
-  Name: "Passive_ProtectionThreat"
+  Id: 2386621147588617196
+  Name: "DisableMountInCombatServer"
   PlatformAssetType: 3
   TextAsset {
   }

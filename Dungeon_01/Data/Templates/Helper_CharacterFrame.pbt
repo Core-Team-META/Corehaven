@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 10098793317224434536
+        ParentId: 8613217370930780939
         ChildIds: 7240165554611634208
         ChildIds: 688782506963498152
         UnregisteredParameters {
@@ -23,6 +23,12 @@
             Name: "cs:Name"
             ObjectReference {
               SubObjectId: 17208807218970877356
+            }
+          }
+          Overrides {
+            Name: "cs:HitPoints"
+            ObjectReference {
+              SubObjectId: 1496114663645692349
             }
           }
           Overrides {
@@ -86,6 +92,7 @@
         }
         ParentId: 14107807894902521705
         ChildIds: 17208807218970877356
+        ChildIds: 1496114663645692349
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -172,6 +179,66 @@
             Size: 14
             Justification {
               Value: "mc:etextjustify:left"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1496114663645692349
+        Name: "HitPoints"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: 0.000335533085
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7240165554611634208
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -20
+          Height: 35
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Text {
+            Label: "100"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 14
+            Justification {
+              Value: "mc:etextjustify:right"
             }
             AutoWrapText: true
           }

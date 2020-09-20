@@ -3,6 +3,8 @@
 local data = {}
 
 data.name = "Evasive"
+data.description = script:GetCustomProperty("Description")
+data.icon = script:GetCustomProperty("Icon")
 
 local players = {}
 

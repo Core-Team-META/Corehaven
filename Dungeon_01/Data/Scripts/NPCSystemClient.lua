@@ -117,8 +117,9 @@ function Tick(deltaTime)
 		local currentTarget = API_NPC.GetTarget(npc)
 
 		if currentTarget ~= previousTarget then
-			if currentTarget == LOCAL_PLAYER then
-				World.SpawnAsset(AGGRO_TEMPLATE)
+			if currentTarget == LOCAL_PLAYER and previousTarget ~= nil then
+				local scale = Vector3.New(npcData.capsuleWidth, npcData.capsuleWidth, npcData.capsuleHeight) / 100.0
+				World.SpawnAsset(AGGRO_TEMPLATE, {parent = npc, scale = scale})
 			end
 
 			previousTargets[npc] = currentTarget

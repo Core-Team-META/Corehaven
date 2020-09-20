@@ -4,6 +4,8 @@ local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local data = {}
 
 data.name = "Spiked Armor"
+data.description = script:GetCustomProperty("Description")
+data.icon = script:GetCustomProperty("Icon")
 
 local players = {}
 

@@ -22,8 +22,8 @@
         ChildIds: 17631115579134591934
         UnregisteredParameters {
           Overrides {
-            Name: "cs:HitPoints"
-            Float: 0
+            Name: "cs:HealthFraction"
+            Float: 1
           }
           Overrides {
             Name: "cs:CurrentTask"
@@ -38,7 +38,7 @@
             String: "Highrock Baker"
           }
           Overrides {
-            Name: "cs:MaxHitPoints"
+            Name: "cs:BaseMaxHitPoints"
             Float: 65
           }
           Overrides {
@@ -48,6 +48,10 @@
           Overrides {
             Name: "cs:EngageRange"
             Float: 900
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: false
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -92,7 +96,7 @@
             }
           }
           Overrides {
-            Name: "cs:HitPoints:isrep"
+            Name: "cs:HealthFraction:isrep"
             Bool: true
           }
           Overrides {

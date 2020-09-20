@@ -74,8 +74,8 @@ function SetCurrentTask(npc, task, interrupted)
 	end
 
 	if previousTask ~= API_NPC.STATE_DEAD and task == API_NPC.STATE_DEAD then
-		if npcData.onDeathEventName then
-			Events.Broadcast(npcData.onDeathEventName)
+		if npcData.onDiedEventName then
+			Events.Broadcast(npcData.onDiedEventName)
 		end
 	end
 
@@ -92,7 +92,7 @@ end
 function ResetNPC(npc)
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
-	API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
+	API_NPC.SetHealthFraction(npc, 1.0)
 	API_NPC.SetTarget(npc, nil)
 	npcState.taskHistory = {}
 	npcState.taskCooldownEndTimes = {}
@@ -302,7 +302,7 @@ function OnNPCCreated(npc, data)
 	npcState.shouldMoveUpdate = false
 	npcState.threatTable = {}
 	npcStates[npc] = npcState
-	API_NPC.SetHitPoints(npc, data.maxHitPoints)
+	API_NPC.SetHealthFraction(npc, 1.0)
 	SetCurrentTask(npc, API_NPC.STATE_ASLEEP, false)
 
 	-- Inherit our spawn parent's target and threat table entries
@@ -373,7 +373,7 @@ function KillNPC(npc)
 
 	SetCurrentTask(npc, API_NPC.STATE_DEAD, true)
 	API_NPC.SetTarget(npc, nil)
-	API_NPC.SetHitPoints(npc, 0.0)
+	API_NPC.SetHealthFraction(npc, 0.0)
 
 	if npcData.spawnParent then
 		npcState.currentTaskEndTime = time() + SUMMON_DESPAWN_TIME
@@ -459,7 +459,7 @@ function Tick(deltaTime)
 							npcState.currentTaskEndTime = 0.0
 						else
 							-- Heal and remove debuffs constantly while resetting
-							API_NPC.SetHitPoints(npc, npcData.maxHitPoints)
+							API_NPC.SetHealthFraction(npc, 1.0)
 
 							for i, _ in pairs(API_SE.GetStatusEffectsOnCharacter(npc)) do
 								API_SE.RemoveStatusEffect(npc, i)
@@ -517,7 +517,7 @@ function Tick(deltaTime)
 
 					if API_NPC.GetTarget(npc) then
 						-- Should we be stunned?
-						if npcState.shouldBeStunned then
+						if npcState.shouldBeStunned and not npcData.immuneToStun then
 							if currentTask ~= API_NPC.STATE_STUNNED then
 								SetCurrentTask(npc, API_NPC.STATE_STUNNED, true)
 							end

@@ -147,7 +147,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
         effectiveAmount = math.min(adjustedAmount, targetCharacter.maxHitPoints - targetCharacter.hitPoints)
         targetCharacter.hitPoints = targetCharacter.hitPoints + effectiveAmount
     else
-        local maxHitPoints = API_NPC.GetAllNPCData()[targetCharacter].maxHitPoints
+        local maxHitPoints = API_NPC.GetMaxHitPoints(targetCharacter)
         effectiveAmount = math.min(adjustedAmount, maxHitPoints - API_NPC.GetHitPoints(targetCharacter))
         API_NPC.ApplyHealing(sourceCharacter, targetCharacter, effectiveAmount)
     end

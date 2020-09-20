@@ -4,6 +4,8 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 local data = {}
 
 data.name = "Holy Presence"
+data.description = script:GetCustomProperty("Description")
+data.icon = script:GetCustomProperty("Icon")
 
 local players = {}
 

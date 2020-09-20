@@ -22,8 +22,8 @@
         ChildIds: 11860041625734473373
         UnregisteredParameters {
           Overrides {
-            Name: "cs:HitPoints"
-            Float: 0
+            Name: "cs:HealthFraction"
+            Float: 1
           }
           Overrides {
             Name: "cs:CurrentTask"
@@ -38,7 +38,7 @@
             String: "Reanimated Elite"
           }
           Overrides {
-            Name: "cs:MaxHitPoints"
+            Name: "cs:BaseMaxHitPoints"
             Float: 200
           }
           Overrides {
@@ -48,6 +48,10 @@
           Overrides {
             Name: "cs:EngageRange"
             Float: 1400
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: false
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -100,7 +104,7 @@
             }
           }
           Overrides {
-            Name: "cs:HitPoints:isrep"
+            Name: "cs:HealthFraction:isrep"
             Bool: true
           }
           Overrides {

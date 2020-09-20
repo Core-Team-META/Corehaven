@@ -7,10 +7,7 @@ local RANGE = 0.0
 local COOLDOWN = 35.0
 
 function GetPriority(npc, taskHistory)
-	local hitPoints = API_NPC.GetHitPoints(npc)
-	local healthFraction = hitPoints / API_NPC.GetAllNPCData()[npc].maxHitPoints
-
-	if healthFraction > 0.9 then
+	if API_NPC.GetHealthFraction(npc) > 0.9 then
 		return 0.0
 	else
 		return 800.0
