@@ -2024,6 +2024,15 @@ Assets {
   }
 }
 Assets {
+  Id: 534353204237285650
+  Name: "Stone Arch Half 6m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone-arch-half_6m_002"
+  }
+}
+Assets {
   Id: 46061843978868412
   Name: "Ring"
   PlatformAssetType: 1

@@ -272,61 +272,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12830409069971843390
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Location {
-      X: 4493.35547
-      Y: -958.170288
-      Z: 730.32428
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2967.35645
-            Y: 1019.50598
-            Z: 22.2391357
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -17.6199951
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
-  }
-}
-Objects {
   Id: 17487532043565973462
   Name: "Fantasy Weapon - Dagger 01 (Prop)"
   Transform {
@@ -544,53 +489,6 @@ Objects {
     SubobjectId: 17965428028371969005
     InstanceId: 16967881827446885828
     TemplateId: 8199640815021246511
-  }
-}
-Objects {
-  Id: 847824165702445938
-  Name: "Torch_Holder_Undead"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16359149036364134668
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2264634198754595121
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Torch_Holder_Undead"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -3017.13916
-            Y: -895.928101
-            Z: 22.84198
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 10082212731695126074
-    }
   }
 }
 Objects {
