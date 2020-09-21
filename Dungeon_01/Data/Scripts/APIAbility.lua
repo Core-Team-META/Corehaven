@@ -2,6 +2,7 @@
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local abilityDefinitions = {}
 
@@ -228,12 +229,12 @@ function OnExecute(ability)
 
 		if data.targets then
 			if data.groundTargets then
-				Events.BroadcastToServer("SAE", abilityName, target)
+				API_RE.BroadcastToServer("SAE", abilityName, target)
 			else
-				Events.BroadcastToServer("SAE", abilityName, API_ID.GetIdFromObject(target))
+				API_RE.BroadcastToServer("SAE", abilityName, API_ID.GetIdFromObject(target))
 			end
 		else
-			Events.BroadcastToServer("SAE", abilityName, nil)
+			API_RE.BroadcastToServer("SAE", abilityName, nil)
 		end
 	end
 
@@ -360,7 +361,7 @@ function Tick()
 		local ability = playerAbilities[LOCAL_PLAYER][castingAbilityName]
 		assert(ability:GetCurrentPhase() == AbilityPhase.CAST)
 		ability:Interrupt()
-		Events.BroadcastToServer("SAI", API_ID.GetIdFromObject(ability), ability:GetPhaseTimeRemaining())
+		API_RE.BroadcastToServer("SAI", API_ID.GetIdFromObject(ability), ability:GetPhaseTimeRemaining())
 	end
 end
 

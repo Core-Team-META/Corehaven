@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
@@ -199,7 +200,7 @@ function OnBindingPressed(player, binding)
 
 	if newTarget and newTarget ~= currentTarget then
 		table.insert(targetChangeTimeHistory, t)
-		Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(newTarget))
+		API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(newTarget))
 	end
 end
 
@@ -208,7 +209,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 
 	if targetCharacter == LOCAL_PLAYER and not currentTarget then
 		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
-			Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
+			API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
 		end
 	end
 end

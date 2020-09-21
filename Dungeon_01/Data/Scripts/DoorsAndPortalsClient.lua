@@ -1,5 +1,8 @@
 ﻿-- This could be many scripts, but instead I'm hardcoding it here to have fewer scripts.
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+
+local API_ID = require(script:GetCustomProperty("API_ID"))
+
 local DOOR_MOVEMENT_SOUND_TEMPLATE = script:GetCustomProperty("DoorMovementSoundTemplate")
 local DOOR_CLANG_SOUND_TEMPLATE = script:GetCustomProperty("DoorClangSoundTemplate")
 
@@ -40,12 +43,11 @@ function DisableTeleporter(teleporter)
 	teleporter:GetCustomProperty("VisualToggleGroup"):WaitForObject().visibility = Visibility.FORCE_OFF
 end
 
-function OnInteracted(trigger, player)
-	local sourceEffectTemplate = trigger:GetCustomProperty("SourceEffectTemplate")
-	local targetEffectTemplate = trigger:GetCustomProperty("TargetEffectTemplate")
+function OnPlayerTeleport(sourcePosition, triggerId)
+	local trigger = API_ID.GetObjectFromId(triggerId)
 	local targetPosition = trigger:GetCustomProperty("Target"):WaitForObject():GetWorldPosition()
-	World.SpawnAsset(sourceEffectTemplate, {position = player:GetWorldPosition()})
-	World.SpawnAsset(targetEffectTemplate, {position = targetPosition})
+	World.SpawnAsset(trigger:GetCustomProperty("SourceEffectTemplate"), {position = sourcePosition})
+	World.SpawnAsset(trigger:GetCustomProperty("TargetEffectTemplate"), {position = targetPosition})
 end
 
 function OnBossPulled(bossNumber)
@@ -94,6 +96,8 @@ function OnBossDied(bossNumber)
 	end
 end
 
+Events.Connect("PT", OnPlayerTeleport)
+
 Events.Connect("Boss1Pulled", OnBossPulled, 1)
 Events.Connect("Boss1Reset", OnBossReset, 1)
 Events.Connect("Boss1Died", OnBossDied, 1)
@@ -103,8 +107,3 @@ Events.Connect("Boss2Died", OnBossDied, 2)
 Events.Connect("Boss3Pulled", OnBossPulled, 3)
 Events.Connect("Boss3Reset", OnBossReset, 3)
 Events.Connect("Boss3Died", OnBossDied, 3)
-
-BOSS1_PORTAL1.interactedEvent:Connect(OnInteracted)
-BOSS1_PORTAL2.interactedEvent:Connect(OnInteracted)
-BOSS2_PORTAL.interactedEvent:Connect(OnInteracted)
-BOSS3_PORTAL.interactedEvent:Connect(OnInteracted)

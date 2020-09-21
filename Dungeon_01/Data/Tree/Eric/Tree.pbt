@@ -850,6 +850,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:Root"
       ObjectReference {
         SelfId: 16942605652795143332
@@ -4439,6 +4445,12 @@ Objects {
       Name: "cs:TalentSelectorUtility"
       AssetReference {
         Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -14928,6 +14940,12 @@ Objects {
         Id: 1831660344620141067
       }
     }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15190,6 +15208,12 @@ Objects {
       Name: "cs:APIProjectile"
       AssetReference {
         Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
   }
@@ -15559,6 +15583,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:EruptionsGroup"
       ObjectReference {
         SelfId: 8744791227633529172
@@ -15706,6 +15736,12 @@ Objects {
       Name: "cs:APIProjectile"
       AssetReference {
         Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
   }
@@ -16033,9 +16069,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TelegraphTemplate"
+      Name: "cs:APIReliableEvents"
       AssetReference {
-        Id: 1750729380033128680
+        Id: 1680988108412715813
       }
     }
   }
@@ -16171,9 +16207,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TelegraphTemplate"
+      Name: "cs:APIReliableEvents"
       AssetReference {
-        Id: 10719404219839224023
+        Id: 1680988108412715813
       }
     }
   }
@@ -17673,6 +17709,12 @@ Objects {
         Id: 13540390578621358507
       }
     }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 1750729380033128680
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17809,6 +17851,12 @@ Objects {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 4765246375454497163
+      }
+    }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 10719404219839224023
       }
     }
   }
@@ -19210,8 +19258,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10260.8848
-            Y: 371.720276
+            X: 10071.7021
+            Y: 269.107971
             Z: 745.12793
           }
         }
@@ -19265,15 +19313,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10027.7
-            Y: 908.101257
+            X: 9838.51758
+            Y: 805.488953
             Z: 745.12793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -165.389954
+            Yaw: -165.389923
           }
         }
       }
@@ -19421,8 +19469,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9279.42676
-            Y: -2106.94
+            X: 9300.81934
+            Y: -1910.27673
             Z: 745.12793
           }
         }
@@ -19483,15 +19531,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9635.72559
-            Y: -1906.25269
+            X: 9549.91895
+            Y: -1698.98328
             Z: 745.12793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 168.10762
+            Yaw: 168.107605
           }
         }
         Overrides {
@@ -19539,15 +19587,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 9977.8418
-            Y: -1452.6825
+            X: 9777.76563
+            Y: -1355.73572
             Z: 745.12793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 167.177551
+            Yaw: 167.177505
           }
         }
         Overrides {
@@ -19810,15 +19858,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7556.45947
-            Y: 1897.62402
-            Z: 745.12793
+            X: 7290.41
+            Y: 1563.23157
+            Z: 745.128174
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -165.39003
+            Yaw: -165.389969
           }
         }
         Overrides {
@@ -19867,9 +19915,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7222.80713
-            Y: 1649.86426
-            Z: 745.127808
+            X: 7491.3208
+            Y: 1392.63623
+            Z: 745.127686
           }
         }
         Overrides {
@@ -19979,15 +20027,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7640.11572
-            Y: 1597.60107
+            X: 7716.19531
+            Y: 1541.30737
             Z: 745.127808
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -154.938065
+            Yaw: -154.938095
           }
         }
         Overrides {
@@ -20099,9 +20147,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 8075.69482
-            Y: 1787.92664
-            Z: 745.12793
+            X: 8051.62646
+            Y: 1676.75598
+            Z: 745.127808
           }
         }
         Overrides {
@@ -20249,8 +20297,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7531.51758
-            Y: -2260.36914
+            X: 7423.35889
+            Y: -2038.28223
             Z: 745.12793
           }
         }
@@ -20261,7 +20309,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 127.377708
+            Yaw: 127.377663
           }
         }
         Overrides {
@@ -20310,8 +20358,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7431.23584
-            Y: -1860.48218
+            X: 7303.79395
+            Y: -1700.47937
             Z: 745.12793
           }
         }
@@ -20322,7 +20370,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 127.377747
+            Yaw: 127.377708
           }
         }
         Overrides {
@@ -20370,8 +20418,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 7036.90869
-            Y: -1911.53149
+            X: 7014.68066
+            Y: -1809.99817
             Z: 745.12793
           }
         }
@@ -20382,7 +20430,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 127.3778
+            Yaw: 127.377747
           }
         }
         Overrides {
@@ -20437,15 +20485,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6948.07959
-            Y: -1543.25317
+            X: 6947.53662
+            Y: -1498.35925
             Z: 745.12793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 129.241455
+            Yaw: 129.241425
           }
         }
         Overrides {
@@ -20500,15 +20548,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 6589.81299
-            Y: -1617.70923
+            X: 6721.18164
+            Y: -1595.2998
             Z: 745.12793
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 129.241516
+            Yaw: 129.241455
           }
         }
         Overrides {
@@ -25904,6 +25952,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:API_ID"
+      AssetReference {
+        Id: 8196531844027121028
+      }
+    }
+    Overrides {
       Name: "cs:DoorMovementSoundTemplate"
       AssetReference {
         Id: 4300207158938884602
@@ -25948,6 +26002,18 @@ Objects {
       Name: "cs:Root"
       ObjectReference {
         SelfId: 3891430132890496653
+      }
+    }
+    Overrides {
+      Name: "cs:API_ID"
+      AssetReference {
+        Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
   }
@@ -26070,6 +26136,12 @@ Objects {
       Name: "cs:API_ID"
       AssetReference {
         Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {

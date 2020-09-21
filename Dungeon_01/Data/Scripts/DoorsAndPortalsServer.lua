@@ -1,6 +1,9 @@
 ﻿-- This could be many scripts, but instead I'm hardcoding it here to have fewer scripts.
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
+local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
 local BOSS1_GATE = ROOT:GetCustomProperty("Boss1Gate"):WaitForObject()
 local BOSS1_PORTAL1 = ROOT:GetCustomProperty("Boss1Portal1"):WaitForObject()
 local BOSS1_PORTAL2 = ROOT:GetCustomProperty("Boss1Portal2"):WaitForObject()
@@ -29,7 +32,9 @@ function DisableTeleporter(teleporter)
 end
 
 function OnInteracted(trigger, player)
-	player:SetWorldTransform(trigger:GetCustomProperty("Target"):WaitForObject():GetTransform())
+	local target = trigger:GetCustomProperty("Target"):WaitForObject()
+	API_RE.BroadcastToAllPlayers("PT", player:GetWorldPosition(), API_ID.GetIdFromObject(trigger))
+	player:SetWorldTransform(target:GetTransform())
 end
 
 function OnBossPulled(bossNumber)

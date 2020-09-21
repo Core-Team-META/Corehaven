@@ -57,7 +57,7 @@
           }
           AutoPlay: true
           Volume: 1
-          Falloff: 3600
+          Falloff: 5400
           Radius: 1000
           EnableOcclusion: true
           IsSpatializationEnabled: true

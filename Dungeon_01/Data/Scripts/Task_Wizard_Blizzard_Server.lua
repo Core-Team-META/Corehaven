@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 700.0
 local COOLDOWN = 20.0
@@ -44,7 +45,7 @@ end
 function OnTaskEnd(npc, interrupted)
 	if not interrupted then
 		local target = targets[npc]
-		Events.BroadcastToAllPlayers("WB", target)
+		API_RE.BroadcastToAllPlayers("WB", target)
 
 		Task.Spawn(function()
 			for i = 1, DURATION do

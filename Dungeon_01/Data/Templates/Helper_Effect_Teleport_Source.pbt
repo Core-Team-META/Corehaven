@@ -7,7 +7,7 @@
       RootId: 14315841269682930904
       Objects {
         Id: 14315841269682930904
-        Name: "Group"
+        Name: "Helper_Effect_Teleport_Source"
         Transform {
           Scale {
             X: 1
@@ -17,6 +17,7 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 15039089142812313674
+        Lifespan: 3
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

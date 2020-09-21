@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 0.0
 local COOLDOWN = 27.0
@@ -35,7 +36,7 @@ function OnTaskEnd(npc, interrupted)
 	if not interrupted then
 		local npcPosition = npc:GetWorldPosition()
 		local stream = RandomStream.New()
-		Events.BroadcastToAllPlayers("TC", npcPosition, stream:GetInitialSeed())
+		API_RE.BroadcastToAllPlayers("TC", npcPosition, stream:GetInitialSeed())
 
 		for i = 1, N_POOLS do
 			Task.Spawn(function()

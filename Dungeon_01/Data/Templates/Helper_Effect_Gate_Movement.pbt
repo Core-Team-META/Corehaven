@@ -7,7 +7,7 @@
       RootId: 17950890635840175521
       Objects {
         Id: 17950890635840175521
-        Name: "Helper_Effect_Gate_Open"
+        Name: "Helper_Effect_Gate_Movement"
         Transform {
           Scale {
             X: 1
@@ -57,7 +57,7 @@
           AutoPlay: true
           Repeat: true
           Volume: 1
-          Falloff: 3600
+          Falloff: 5400
           Radius: 1000
           IsSpatializationEnabled: true
           IsAttenuationEnabled: true
