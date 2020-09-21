@@ -143,6 +143,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13271671005623298099
+  Name: "Stone Railing 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_railing_6m_001"
+  }
+}
+Assets {
+  Id: 12270007897248279451
+  Name: "Decal Dirt Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_dirt_patch_001"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -161,12 +179,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11107698037655416298
+  Name: "Decal Stone Cracks Variants 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_stone_cracks_001"
+  }
+}
+Assets {
   Id: 11011265141723361006
   Name: "Ivy 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_001"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -221,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "dirt_001"
+  }
+}
+Assets {
+  Id: 8623684838399619731
+  Name: "Decal Soil Cracks Smal Variants 02"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_002"
   }
 }
 Assets {
@@ -305,6 +350,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6507305604196926970
+  Name: "Decal Soil Cracks Big 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_001"
+  }
+}
+Assets {
   Id: 6469962064224697995
   Name: "Rock 03"
   PlatformAssetType: 1
@@ -383,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
-  }
-}
-Assets {
-  Id: 3965397322580208730
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
   }
 }
 Assets {
