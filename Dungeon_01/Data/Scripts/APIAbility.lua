@@ -411,7 +411,7 @@ function IsTargetValid(player, target, abilityName)
 		return false, "Target out of range"
 	end
 
-	--[[ TEMPORARILY DISABLED Does this ability require facing and the target is behind the caster
+	--[[ (Currently disabled) Does this ability require facing and the target is behind the caster
 	if data.requiresFacing then
 		local offset = targetPosition - player:GetWorldPosition()
 
