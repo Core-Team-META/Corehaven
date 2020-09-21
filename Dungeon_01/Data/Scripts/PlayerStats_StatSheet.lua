@@ -95,6 +95,16 @@ function StatSheet:GetLevelExperienceInterval()
     return prev, next
 end
 
+function StatSheet:GetLevelExperienceRemaining()
+    if not self:IsMaxLevel() then
+        return self.EXPERIENCE_CURVE[self.level + 1] - self.experience
+    end
+end
+
+function StatSheet:IsMaxLevel()
+    return self.level == self.MAX_LEVEL
+end
+
 ---------------------------------------------------------------------------------------------------------
 function StatSheet:GetStatTotalValue(statName)
     return self.statTotals[statName]
