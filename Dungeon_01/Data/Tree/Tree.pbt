@@ -28,6 +28,7 @@ Objects {
   ChildIds: 17888335466626026311
   ChildIds: 18109997350451454343
   ChildIds: 10625773096399959754
+  ChildIds: 2833047303521512166
   ChildIds: 17384057280477060277
   UnregisteredParameters {
   }
@@ -737,6 +738,32 @@ Objects {
     }
     DecalBP {
     }
+  }
+}
+Objects {
+  Id: 2833047303521512166
+  Name: "PlayerMainHUD"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PlayerMainHUD"
   }
 }
 Objects {
