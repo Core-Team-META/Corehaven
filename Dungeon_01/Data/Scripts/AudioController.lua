@@ -1,34 +1,16 @@
 ﻿local propAudio = script:GetCustomProperty("Audio"):WaitForObject()
-local propTriggerOn = script:GetCustomProperty("TriggerOn"):WaitForObject()
 local propAudioBoss = script:GetCustomProperty("AudioBoss"):WaitForObject()
---local propTriggerOff = script:GetCustomProperty("TriggerOff"):WaitForObject()
 
-
-
-local trigger = propTriggerOn
-
-function OnBeginOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Begin Trigger Overlap with " .. other.name)
-		propAudio:Stop()
-		propAudioBoss:Play()
-	end
+function StartBoss()
+	propAudio:Stop()
+	propAudioBoss:Play()
 end
 
-function OnEndOverlap(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": End Trigger Overlap with " .. other.name)
-		propAudio:Play()
-		propAudioBoss:Stop()
-	end
+function EndBoss()
+	propAudio:Play()
+	propAudioBoss:Stop()
 end
 
-function OnInteracted(whichTrigger, other)
-	if other:IsA("Player") then
-		print(whichTrigger.name .. ": Trigger Interacted " .. other.name)
-	end
-end
-
-trigger.beginOverlapEvent:Connect(OnBeginOverlap)
-trigger.endOverlapEvent:Connect(OnEndOverlap)
-trigger.interactedEvent:Connect(OnInteracted)
+Events.Connect("Boss1Pulled", StartBoss)
+Events.Connect("Boss1Reset", EndBoss)
+Events.Connect("Boss1Died", EndBoss)
