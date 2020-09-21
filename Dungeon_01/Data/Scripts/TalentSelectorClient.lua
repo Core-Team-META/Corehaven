@@ -274,7 +274,7 @@ function Tick(deltaTime)
 	end
 end
 
-UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
+UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, true)
 BuildTalentTreeUI()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)

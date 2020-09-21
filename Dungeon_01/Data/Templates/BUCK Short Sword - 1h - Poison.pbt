@@ -1558,7 +1558,7 @@
         Name: "Fantasy Pommel 04"
         Transform {
           Location {
-            X: -4.25195312
+            X: -4.25195313
             Z: -19.2111282
           }
           Rotation {

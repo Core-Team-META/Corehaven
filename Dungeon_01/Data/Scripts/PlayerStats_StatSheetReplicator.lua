@@ -64,9 +64,14 @@ local function ServerLoadStatSheet()
     OWNER.serverUserData.statSheet = StatSheet.New()
     OWNER.serverUserData.statSheet:SetExperience(playerData.STATS and playerData.STATS.experience or 0)
     -- Replicate the server-side statsheet to clients.
-    local statSheetReplicationTask = Task.Spawn(function() ServerReplicateStatSheet() end)
+    local statSheetReplicationTask = Task.Spawn(function()
+        ServerSaveStatSheet()
+        ServerReplicateStatSheet()
+    end)
     statSheetReplicationTask.repeatCount = -1
-    script.destroyEvent:Connect(function() statSheetReplicationTask:Cancel() end)
+    script.destroyEvent:Connect(function()
+        statSheetReplicationTask:Cancel()
+    end)
 end
 
 ---------------------------------------------------------------------------------------------------------

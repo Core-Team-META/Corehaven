@@ -79,7 +79,7 @@ function OnTryLearnTalent(player, treeOrder, treeX, treeY)
 	warn(string.format(warningFormatString, player.name, treeOrder))
 end
 
-UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
+UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, false)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.ConnectForPlayer("TryLearnTalent", OnTryLearnTalent)
