@@ -1,16 +1,17 @@
-﻿local propAudio = script:GetCustomProperty("Audio"):WaitForObject()
-local propAudioBoss = script:GetCustomProperty("AudioBoss"):WaitForObject()
+﻿local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
+local AUDIO_BOSS = script:GetCustomProperty("AudioBoss"):WaitForObject()
+local BOSS_NUMBER = script:GetCustomProperty("BossNumber")
 
 function StartBoss()
-	propAudio:Stop()
-	propAudioBoss:Play()
+	AUDIO:Stop()
+	AUDIO_BOSS:Play()
 end
 
 function EndBoss()
-	propAudio:Play()
-	propAudioBoss:Stop()
+	AUDIO:Play()
+	AUDIO_BOSS:Stop()
 end
 
-Events.Connect("Boss1Pulled", StartBoss)
-Events.Connect("Boss1Reset", EndBoss)
-Events.Connect("Boss1Died", EndBoss)
+Events.Connect("Boss" .. BOSS_NUMBER .. "Pulled", StartBoss)
+Events.Connect("Boss" .. BOSS_NUMBER .. "Reset", EndBoss)
+Events.Connect("Boss" .. BOSS_NUMBER .. "Died", EndBoss)
