@@ -629,6 +629,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12155939369553076591
+  Name: "Fantasy Castle Wall 03 - Window 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003_win_01"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -944,6 +953,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9352176419973229113
+  Name: "Fantasy Castle Wall 01 - Cellar"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_001_grate_01"
+  }
+}
+Assets {
   Id: 9345249492029097138
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -1013,6 +1031,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_3x6_001"
+  }
+}
+Assets {
+  Id: 8704263807241749105
+  Name: "Ring - Quarter Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_003"
   }
 }
 Assets {
@@ -1241,6 +1268,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7115413583786975077
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
   Id: 7036641726562825986
   Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
@@ -1439,6 +1475,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5580378743840301598
+  Name: "Capsule"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
+  }
+}
+Assets {
   Id: 5522049488166926473
   Name: "Ivy 04"
   PlatformAssetType: 1
@@ -1472,6 +1517,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_flower_bell_001_ref"
+  }
+}
+Assets {
+  Id: 5414891012670219686
+  Name: "Castle Part - Grate 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_part_grate_001_ref"
   }
 }
 Assets {
@@ -1709,6 +1763,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3277498022036755698
+  Name: "Chain Ceiling Anchor"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_top_001"
+  }
+}
+Assets {
   Id: 3274913409564992894
   Name: "Fantasy Castle Stairs 01"
   PlatformAssetType: 1
@@ -1760,6 +1823,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "dcl_liquid"
+  }
+}
+Assets {
+  Id: 3121311959895985579
+  Name: "Text 06: ?"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F8_Text_065"
   }
 }
 Assets {
