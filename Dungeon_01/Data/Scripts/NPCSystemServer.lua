@@ -62,8 +62,8 @@ function SetCurrentTask(npc, task, interrupted)
 	end
 
 	if previousTask == API_NPC.STATE_IDLE and task ~= API_NPC.STATE_IDLE then
-		if npcData.onPullEventName then
-			Events.Broadcast(npcData.onPullEventName)
+		if npcData.onPulledEventName then
+			Events.Broadcast(npcData.onPulledEventName)
 		end
 	end
 

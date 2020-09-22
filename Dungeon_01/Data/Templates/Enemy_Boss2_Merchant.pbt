@@ -98,7 +98,7 @@
             Float: 0.3
           }
           Overrides {
-            Name: "cs:OnPullEventName"
+            Name: "cs:OnPulledEventName"
             String: "Boss2Pulled"
           }
           Overrides {

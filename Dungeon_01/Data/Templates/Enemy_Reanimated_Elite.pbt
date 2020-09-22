@@ -828,7 +828,7 @@
         Name: "FollowRoot"
         Transform {
           Location {
-            Z: 105
+            Z: 147
           }
           Rotation {
           }

@@ -40,7 +40,7 @@ function OnShadowWorm(jumps, seed)
 	for i = 1, N_JUMPS do
 		local telegraphObject = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = jumps[i], scale = Vector3.New(RADIUS[i] / 100.0)})
 
-		API_P.CreateProjectile(jumps[i - 1], jumps[i], PROJECTILE_SPEED[i], PROJECTILE_TEMPLATE)
+		API_P.CreateProjectile(jumps[i - 1], jumps[i], PROJECTILE_SPEED[i], 0.05, PROJECTILE_TEMPLATE)
 		Task.Wait(API_P.GetTravelTime(jumps[i - 1], jumps[i], PROJECTILE_SPEED[i]))
 
 		telegraphObject:Destroy()

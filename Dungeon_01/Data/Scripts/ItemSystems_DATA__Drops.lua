@@ -309,4 +309,14 @@
     ItemName = 'Spiked Club',
     Likelihood = '100',
   },
+  {
+    DropKey = 'Boss3Main',
+    ItemName = 'Leather Armor',
+    Likelihood = '100',
+  },
+  {
+    DropKey = 'Boss3Rare',
+    ItemName = 'Spiked Club',
+    Likelihood = '100',
+  },
 }

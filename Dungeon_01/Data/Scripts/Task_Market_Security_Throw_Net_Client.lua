@@ -17,7 +17,7 @@ function OnTaskStart(npc, animatedMesh)
 		Task.Wait(0.1)
 		
 		if Object.IsValid(target) then
-			API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+			API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, 1.0, PROJECTILE_TEMPLATE)
 		end
 	end)
 end

@@ -24,7 +24,7 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	API_P.CreateProjectile(caster, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+	API_P.CreateProjectile(caster, target, PROJECTILE_SPEED, 0.0, PROJECTILE_TEMPLATE)
 	return API_P.GetTravelTime(caster, target, PROJECTILE_SPEED)
 end
 

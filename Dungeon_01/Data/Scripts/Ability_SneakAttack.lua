@@ -1,5 +1,7 @@
 ﻿local API_P = require(script:GetCustomProperty("APIProjectile"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local BASE_DAMAGE = 35.0
 local DAMAGE_MULTIPLIER = 1.0
@@ -23,14 +25,18 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	-- Can't cache local player because this script is required from server scripts as well
-	if caster == Game.GetLocalPlayer() then
-		local lookRotation = caster:GetLookWorldRotation()
-		lookRotation.z = target:GetWorldRotation().z
-		caster:SetLookWorldRotation(lookRotation)
-	end
-
 	return 0.0
+end
+
+-- Caster only
+function OnSneakAttack(targetId)
+	-- We don't do this in onCastClient, because sneak attack can fail and not teleport the player.
+	-- Can't cache local player because this script is required from server scripts as well
+	local localPlayer = Game.GetLocalPlayer()
+	local target = API_ID.GetObjectFromId(targetId)
+	local lookRotation = localPlayer:GetLookWorldRotation()
+	lookRotation.z = target:GetWorldRotation().z
+	localPlayer:SetLookWorldRotation(lookRotation)
 end
 
 function data.onCastServer(caster, target)
@@ -45,7 +51,10 @@ function data.onCastServer(caster, target)
 		caster:SetWorldRotation(target:GetWorldRotation())
 		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 		API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
+		API_RE.BroadcastToPlayer(caster, "SA", API_ID.GetIdFromObject(target))
 	end
 end
+
+Events.Connect("SA", OnSneakAttack)
 
 return data

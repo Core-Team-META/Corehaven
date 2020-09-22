@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 15767187264673962515
-  Name: "Cylinder"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_002"
-  }
-}
-Assets {
   Id: 14365328187376915905
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -35,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8886418915356232971
-  Name: "Sci-fi Circuits Ring 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_scifi_002"
-  }
-}
-Assets {
   Id: 8363385752180729983
   Name: "Leafy Patch 02"
   PlatformAssetType: 1
@@ -53,30 +35,12 @@ Assets {
   }
 }
 Assets {
-  Id: 8221347909026897831
-  Name: "Metal Iron 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
   Id: 6510101324272813730
   Name: "Grass Tall"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_001"
-  }
-}
-Assets {
-  Id: 6367527662954153739
-  Name: "Ring"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_002"
   }
 }
 Assets {
@@ -95,15 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_grass_generic_002"
-  }
-}
-Assets {
-  Id: 3965397322580208730
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
   }
 }
 Assets {

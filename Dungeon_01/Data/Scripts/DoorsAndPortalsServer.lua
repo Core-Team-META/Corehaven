@@ -33,7 +33,7 @@ end
 
 function OnInteracted(trigger, player)
 	local target = trigger:GetCustomProperty("Target"):WaitForObject()
-	API_RE.BroadcastToAllPlayers("PT", player:GetWorldPosition(), API_ID.GetIdFromObject(trigger))
+	API_RE.BroadcastToAllPlayers("PT", player:GetWorldPosition(), API_ID.GetIdFromObject(player), API_ID.GetIdFromObject(trigger))
 	player:SetWorldTransform(target:GetTransform())
 end
 

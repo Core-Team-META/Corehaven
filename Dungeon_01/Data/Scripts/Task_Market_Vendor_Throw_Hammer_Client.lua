@@ -8,7 +8,7 @@ local PROJECTILE_SPEED = 1800.0
 
 function OnTaskStart(npc, animatedMesh)
 	local target = API_NPC.GetTarget(npc)
-	API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+	API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, 1.0, PROJECTILE_TEMPLATE)
 	animatedMesh:PlayAnimation("unarmed_throw")
 end
 

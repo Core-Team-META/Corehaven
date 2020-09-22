@@ -1,5 +1,9 @@
 ﻿local API = {}
 
+-- Above this height, we heavily reduce gravity for small gains in height
+local MAX_LINEAR_HEIGHT = 1000.0
+local G = 1000.0		-- This is a constant, that is little g
+
 function GetCorrectPosition(characterOrPosition)
 	if characterOrPosition:IsA("Vector3") then
 		return characterOrPosition
@@ -10,16 +14,27 @@ function GetCorrectPosition(characterOrPosition)
 	end
 end
 
+-- This is really more of "expected travel time"
 -- source and target can be npcs, players, or just Vector3s
-function API.GetTravelTime(source, target, speed)
-	return (GetCorrectPosition(target) - GetCorrectPosition(source)).size / speed
+function API.GetTravelTime(source, target, horizontalSpeed)
+	return (GetCorrectPosition(target) - GetCorrectPosition(source)).size / horizontalSpeed
 end
 
 -- Client only
--- source and target can be npcs, players, or just Vector3s
-function API.CreateProjectile(source, target, speed, projectileTemplate)
+-- source and target can be npcs, players, or just Vector3s. gravityAmount is a multiplier on g
+function API.CreateProjectile(source, target, horizontalSpeed, gravityAmount, projectileTemplate)
 	local projectile = World.SpawnAsset(projectileTemplate, {position = GetCorrectPosition(source)})
+	local expectedTravelTime = API.GetTravelTime(source, target, horizontalSpeed)
+	local peakHeight = G * expectedTravelTime ^ 2 / 8.0		-- y = 1/2 at^2, but t = expectedTravelTime / 2
+
+	if peakHeight > MAX_LINEAR_HEIGHT then
+		peakHeight = (peakHeight - MAX_LINEAR_HEIGHT) ^ (0.5) + MAX_LINEAR_HEIGHT
+	end
+
+	local startT = os.clock()
 	local previousT = os.clock()
+	local basePosition = projectile:GetWorldPosition()
+	local previousPosition = basePosition
 
 	Task.Spawn(function()
 		while true do
@@ -27,17 +42,21 @@ function API.CreateProjectile(source, target, speed, projectileTemplate)
 				break
 			end
 			
-			local t = os.clock()
-			local offset = GetCorrectPosition(target) - projectile:GetWorldPosition()
-			local stepSize = speed * (t - previousT)
+			local currentT = os.clock()
+			local offset = GetCorrectPosition(target) - basePosition
+			local stepSize = horizontalSpeed * (currentT - previousT)
 
 			if offset.size < stepSize then
 				break
 			end
 			
-			projectile:SetWorldPosition(projectile:GetWorldPosition() + offset:GetNormalized() * stepSize)
-			projectile:SetWorldRotation(Rotation.New(offset, Vector3.UP))
-			previousT = t
+			basePosition = basePosition + offset:GetNormalized() * stepSize
+			local verticalOffset = math.max(0.0, (1.0 - (2.0 * (currentT - startT) / expectedTravelTime - 1.0) ^ 2) * peakHeight)
+			local newPosition = basePosition + verticalOffset * Vector3.UP
+			projectile:SetWorldPosition(newPosition)
+			projectile:SetWorldRotation(Rotation.New(newPosition - previousPosition, Vector3.UP))
+			previousT = currentT
+			previousPosition = newPosition
 
 			Task.Wait()
 		end

@@ -20,7 +20,7 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh.playbackRateMultiplier = 1.0
 
 	if Object.IsValid(targets[npc]) and not interrupted then
-		API_P.CreateProjectile(npc, targets[npc], PROJECTILE_SPEED, PROJECTILE_TEMPLATE)
+		API_P.CreateProjectile(npc, targets[npc], PROJECTILE_SPEED, 0.0, PROJECTILE_TEMPLATE)
 	end
 	
 	targets[npc] = nil

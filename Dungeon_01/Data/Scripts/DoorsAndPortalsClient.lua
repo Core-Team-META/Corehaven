@@ -17,6 +17,8 @@ local BOSS3_GATE1 = ROOT:GetCustomProperty("Boss3Gate1"):WaitForObject()
 local BOSS3_GATE2 = ROOT:GetCustomProperty("Boss3Gate2"):WaitForObject()
 local BOSS3_PORTAL = ROOT:GetCustomProperty("Boss3Portal"):WaitForObject()
 
+local LOCAL_PLAYER = Game.GetLocalPlayer()
+
 local currentTasks = {}
 local movementSounds = {}
 
@@ -43,11 +45,17 @@ function DisableTeleporter(teleporter)
 	teleporter:GetCustomProperty("VisualToggleGroup"):WaitForObject().visibility = Visibility.FORCE_OFF
 end
 
-function OnPlayerTeleport(sourcePosition, triggerId)
+function OnPlayerTeleport(sourcePosition, playerId, triggerId)
 	local trigger = API_ID.GetObjectFromId(triggerId)
-	local targetPosition = trigger:GetCustomProperty("Target"):WaitForObject():GetWorldPosition()
+	local target = trigger:GetCustomProperty("Target"):WaitForObject()
 	World.SpawnAsset(trigger:GetCustomProperty("SourceEffectTemplate"), {position = sourcePosition})
-	World.SpawnAsset(trigger:GetCustomProperty("TargetEffectTemplate"), {position = targetPosition})
+	World.SpawnAsset(trigger:GetCustomProperty("TargetEffectTemplate"), {position = target:GetWorldPosition()})
+
+	if API_ID.GetObjectFromId(playerId) == LOCAL_PLAYER then
+		local lookRotation = LOCAL_PLAYER:GetLookWorldRotation()
+		lookRotation.z = target:GetWorldRotation().z
+		LOCAL_PLAYER:SetLookWorldRotation(lookRotation)
+	end
 end
 
 function OnBossPulled(bossNumber)

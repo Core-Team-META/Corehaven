@@ -75,7 +75,7 @@
           }
           Overrides {
             Name: "cs:Task3"
-            String: "boss3_dragon_flyby"
+            String: "boss3_call_dragon"
           }
           Overrides {
             Name: "cs:Task4"
@@ -83,7 +83,7 @@
           }
           Overrides {
             Name: "cs:Task5"
-            String: "boss3_anger"
+            String: "boss3_summon_reinforcements"
           }
           Overrides {
             Name: "cs:DropKey1"
@@ -100,6 +100,18 @@
           Overrides {
             Name: "cs:DropChance2"
             Float: 0.3
+          }
+          Overrides {
+            Name: "cs:OnPulledEventName"
+            String: "Boss3Pulled"
+          }
+          Overrides {
+            Name: "cs:OnResetEventName"
+            String: "Boss3Reset"
+          }
+          Overrides {
+            Name: "cs:OnDiedEventName"
+            String: "Boss3Died"
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -1800,7 +1812,7 @@
         Name: "FollowRoot"
         Transform {
           Location {
-            Z: 105
+            Z: 157
           }
           Rotation {
           }

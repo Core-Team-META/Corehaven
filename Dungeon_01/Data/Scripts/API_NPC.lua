@@ -34,7 +34,7 @@ end
 -- float getPriority(npc, taskHistory)
 -- <float> onTaskStart(npc, threatTable)
 -- 	   This should return the duration of this task, and spawn a task if delayed action is needed instead of calling
---     Task.Wait(), which may cause strange or broken behavior.
+--     Task.Wait(), which may cause strange or broken behavior. A duration of 0.0 means do not end this task.
 -- nil onTaskEnd(npc, interrupted)
 function API.RegisterTaskServer(taskName, range, cooldown, getPriority, onTaskStart, onTaskEnd)
 	local data = {}
@@ -100,7 +100,7 @@ function API.RegisterNPCFolder(npcFolder)
 			end
 		end
 
-		data.onPullEventName = npc:GetCustomProperty("OnPullEventName")
+		data.onPulledEventName = npc:GetCustomProperty("OnPulledEventName")
 		data.onResetEventName = npc:GetCustomProperty("OnResetEventName")
 		data.onDiedEventName = npc:GetCustomProperty("OnDiedEventName")
 		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
@@ -276,6 +276,18 @@ function API.GetAwakeNPCsInSphere(center, radius)
 			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
 				table.insert(result, npc)
 			end
+		end
+	end
+
+	return result
+end
+
+function API.GetNumAwakeNPCs()
+	local result = 0
+
+	for npc, _ in pairs(npcs) do
+		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
+			result = result + 1
 		end
 	end
 
