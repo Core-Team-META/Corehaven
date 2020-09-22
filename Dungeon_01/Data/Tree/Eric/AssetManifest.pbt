@@ -584,24 +584,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
-  }
-}
-Assets {
-  Id: 5635343760568520525
-  Name: "Frame Outlined Thick 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameFlat_019"
-  }
-}
-Assets {
   Id: 5632528163303928666
   Name: "UI Basic Shape Triangle"
   PlatformAssetType: 9

@@ -22,6 +22,7 @@ Objects {
   ChildIds: 5161179683843583964
   ChildIds: 429612536842654522
   ChildIds: 492636135236824593
+  ChildIds: 2833047303521512166
   ChildIds: 11176579868672163906
   ChildIds: 15088711163151659875
   ChildIds: 7218498012147464502
@@ -195,6 +196,32 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Eric"
+  }
+}
+Objects {
+  Id: 2833047303521512166
+  Name: "PlayerMainHUD"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "PlayerMainHUD"
   }
 }
 Objects {
