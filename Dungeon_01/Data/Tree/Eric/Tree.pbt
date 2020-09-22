@@ -1,35 +1,6 @@
 ﻿Name: "Eric"
 RootId: 11176579868672163906
 Objects {
-  Id: 16287755660477971277
-  Name: "BossAreaGates"
-  Transform {
-    Location {
-      X: 11354.4316
-      Y: 3524.63477
-      Z: -582.461914
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "BossAreaGates"
-  }
-}
-Objects {
   Id: 4985076143508798930
   Name: "Test"
   Transform {
@@ -27532,60 +27503,6 @@ Objects {
     }
     TemplateAsset {
       Id: 10128268133290876012
-    }
-  }
-}
-Objects {
-  Id: 9518427724454504292
-  Name: "Health Bar"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 1675656989204002660
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Health Bar"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9845004030667907552
     }
   }
 }
