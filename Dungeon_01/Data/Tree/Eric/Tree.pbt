@@ -356,7 +356,7 @@ Objects {
     Value: "mc:evisibilitysetting:forceoff"
   }
   Light {
-    Intensity: 50
+    Intensity: 6
     Color {
       R: 1
       G: 1
@@ -369,12 +369,12 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 1000
+        AttenuationRadius: 400
         AreaLight {
-          BarnDoorAngle: 50
-          BarnDoorLength: 20
-          SourceWidth: 100
-          SourceHeight: 100
+          BarnDoorAngle: 45
+          BarnDoorLength: 15
+          SourceWidth: 75
+          SourceHeight: 75
         }
       }
       MaxDrawDistance: 5000
