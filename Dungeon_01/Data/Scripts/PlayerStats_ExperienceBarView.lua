@@ -54,7 +54,6 @@ local function UpdateProgressAnimation(dt)
         end
         -- Anytime we wrap around is a level crossing.
         if not blinkTimer and progress < PROGRESS_BAR.progress then
-            print(blinkTimer, progress, PROGRESS_BAR.progress)
             blinkTimer = 0
             SFX_LEVELUP:Play()
         end
@@ -75,7 +74,6 @@ local function UpdateLevelUpAnimation(dt)
         local blinkAmount = 1.0 - 0.5 * math.cos(2 * math.pi * LEVELUP_ANIMATION_CYCLES * blinkTimer / LEVELUP_ANIMATION_DURATION)
         local color = LEVELUP_BLINKER:GetColor()
         color.a = blinkAmount * LEVELUP_ANIMATION_MAX_ALPHA
-        print(color.a)
         LEVELUP_BLINKER:SetColor(color)
         LEVELUP_BLINKER.visibility = Visibility.INHERIT
     else
