@@ -9,6 +9,7 @@ UTILITY.TALENT_TREE_TABLE = nil	-- Key is talent tree name, value is a table of 
 UTILITY.TALENT_TREE_DATA = nil	-- Key is talent tree name, value is table of data
 
 local PLAYER_STATE_GROUP = nil
+local IS_CLIENT = nil			-- Set in InitializeTalentTreeData
 
 function GetTalentDataAtPosition(treeData, x, y)
 	if x < 1 or x > UTILITY.TREE_WIDTH then
@@ -353,9 +354,10 @@ function UTILITY.GetPlayerStateTreeHelperName(player, talentTreeName)
 end
 
 -- Client and Server
-function UTILITY.InitializeTalentTreeData(treeRoot, playerStateGroup)
+function UTILITY.InitializeTalentTreeData(treeRoot, playerStateGroup, isClient)
 	ReadTalentTreeDefinition(treeRoot)
 	PLAYER_STATE_GROUP = playerStateGroup
+	IS_CLIENT = isClient
 end
 
 -- Client and Server
@@ -374,7 +376,11 @@ function UTILITY.CanPlayerAcquireTalent(player, talentData)
 		return false, string.format("You are specialized to %s", currentTreeName)
 	end
 
-	if player:GetResource("Level") < talentData.requiredLevel then
+	if IS_CLIENT and player.clientUserData.statSheet:GetLevel() < talentData.requiredLevel then
+		return false, string.format("Level %d required", talentData.requiredLevel)
+	end
+
+	if not IS_CLIENT and player.serverUserData.statSheet:GetLevel() < talentData.requiredLevel then
 		return false, string.format("Level %d required", talentData.requiredLevel)
 	end
 

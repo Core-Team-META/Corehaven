@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ERUPTIONS_GROUP = script:GetCustomProperty("EruptionsGroup"):WaitForObject()
 
@@ -32,7 +33,7 @@ function OnTaskEnd(npc, interrupted)
 			order[i] = temp
 		end
 
-		Events.BroadcastToAllPlayers("SE", order)
+		API_RE.BroadcastToAllPlayers("SE", order)
 
 		Task.Spawn(function()
 			for i = 1, #order do

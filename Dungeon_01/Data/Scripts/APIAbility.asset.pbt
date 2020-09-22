@@ -29,6 +29,12 @@
         }
       }
       Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
+      Overrides {
         Name: "cs:Ability_Fireball"
         AssetReference {
           Id: 16064944062443818064

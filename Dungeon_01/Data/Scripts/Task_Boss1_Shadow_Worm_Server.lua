@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 600.0
 local COOLDOWN = 0.0
@@ -34,7 +35,7 @@ function OnTaskEnd(npc, interrupted)
 			local forward = (jumps[1] - jumps[0]):GetNormalized()
 			local right = (forward ^ Vector3.UP):GetNormalized()
 			local stream = RandomStream.New()
-			Events.BroadcastToAllPlayers("SW", jumps, stream:GetInitialSeed())
+			API_RE.BroadcastToAllPlayers("SW", jumps, stream:GetInitialSeed())
 
 			for i = 2, N_JUMPS do
 				jumps[i] = jumps[i - 1] + i * (forward * stream:GetNumber(150.0, 250.0) + right * stream:GetNumber(-200.0, 200.0))

@@ -1997,16 +1997,14 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TriggerOn"
-      ObjectReference {
-        SelfId: 12581177865519793046
-      }
-    }
-    Overrides {
       Name: "cs:AudioBoss"
       ObjectReference {
         SelfId: 7213930968662051921
       }
+    }
+    Overrides {
+      Name: "cs:BossNumber"
+      Int: 4
     }
   }
   Collidable_v2 {
@@ -2126,16 +2124,14 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TriggerOn"
-      ObjectReference {
-        SelfId: 12457272230650373378
-      }
-    }
-    Overrides {
       Name: "cs:AudioBoss"
       ObjectReference {
         SelfId: 3038698967365962180
       }
+    }
+    Overrides {
+      Name: "cs:BossNumber"
+      Int: 3
     }
   }
   Collidable_v2 {
@@ -2268,16 +2264,14 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TriggerOn"
-      ObjectReference {
-        SelfId: 8803960839962915759
-      }
-    }
-    Overrides {
       Name: "cs:AudioBoss"
       ObjectReference {
         SelfId: 10313118238889243892
       }
+    }
+    Overrides {
+      Name: "cs:BossNumber"
+      Int: 2
     }
   }
   Collidable_v2 {
@@ -2410,16 +2404,14 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:TriggerOn"
-      ObjectReference {
-        SelfId: 6521246479427992927
-      }
-    }
-    Overrides {
       Name: "cs:AudioBoss"
       ObjectReference {
         SelfId: 2479214405148983547
       }
+    }
+    Overrides {
+      Name: "cs:BossNumber"
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -2493,143 +2485,6 @@ Objects {
       FadeInTime: 2
       FadeOutTime: 3
       IsAttenuationEnabled: true
-    }
-  }
-}
-Objects {
-  Id: 12581177865519793046
-  Name: "Boss4_Trigger"
-  Transform {
-    Location {
-      X: 27030.8047
-      Y: -16306.457
-      Z: 4346.74
-    }
-    Rotation {
-      Yaw: 4.33134842
-    }
-    Scale {
-      X: 121.454063
-      Y: 94.8970718
-      Z: 105.165749
-    }
-  }
-  ParentId: 7218498012147464502
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 12457272230650373378
-  Name: "Boss3_Trigger"
-  Transform {
-    Location {
-      X: 18900
-      Y: 4600
-    }
-    Rotation {
-      Yaw: 39.9998932
-    }
-    Scale {
-      X: 85.7499924
-      Y: 67
-      Z: 74.25
-    }
-  }
-  ParentId: 7218498012147464502
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 8803960839962915759
-  Name: "Boss2_Trigger"
-  Transform {
-    Location {
-      X: 8786.75586
-      Y: -731.089722
-      Z: 1091.1499
-    }
-    Rotation {
-    }
-    Scale {
-      X: 85.6730194
-      Y: 89.829483
-      Z: 74.2345581
-    }
-  }
-  ParentId: 7218498012147464502
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 6521246479427992927
-  Name: "Boss1_Trigger"
-  Transform {
-    Location {
-      X: 2147.11963
-      Y: 13244.0957
-      Z: 1605.84741
-    }
-    Rotation {
-    }
-    Scale {
-      X: 115.264503
-      Y: 114.336868
-      Z: 74.2345581
-    }
-  }
-  ParentId: 7218498012147464502
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
     }
   }
 }

@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
 
@@ -14,7 +14,7 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	targets[npc] = API_NPC.GetTarget(npc)
+	targets[npc] = API_NPC.GetTarget(npc) 
 	API_NPC.LookAtTargetWithoutPitch(npc, targets[npc]:GetWorldPosition())
 
 	return 1.8

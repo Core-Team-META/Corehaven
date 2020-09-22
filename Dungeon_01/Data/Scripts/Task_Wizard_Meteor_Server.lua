@@ -1,8 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_K = require(script:GetCustomProperty("APIKnockback"))
-
-local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 1000.0
 local COOLDOWN = 12.0
@@ -27,8 +26,7 @@ function OnTaskStart(npc, threatTable)
 			targetPosition = hitResult:GetImpactPosition()
 		end
 
-		local telegraphScale = Vector3.New(METEOR_RADIUS / 100.0)
-		local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = targetPosition, scale = telegraphScale})
+		API_RE.BroadcastToAllPlayers("WM", targetPosition)
 		Task.Wait(3.5)
 
 		for _, player in pairs(Game.FindPlayersInSphere(targetPosition + Vector3.UP * 100.0, METEOR_RADIUS, {ignoreDead = true})) do
@@ -44,8 +42,6 @@ function OnTaskStart(npc, threatTable)
 				API_K.ApplyImpulse(player, 150.0 * Vector3.UP)
 			end
 		end
-
-		telegraph:Destroy()
 	end)
 
 	return 1.5

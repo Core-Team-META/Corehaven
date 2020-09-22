@@ -1,4 +1,5 @@
 ﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -51,7 +52,7 @@ end
 function OnButtonClicked(button, talentData)
 	if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
-		Events.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
+		API_RE.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
 	end
 end
 
@@ -274,7 +275,7 @@ function Tick(deltaTime)
 	end
 end
 
-UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP)
+UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, true)
 BuildTalentTreeUI()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)

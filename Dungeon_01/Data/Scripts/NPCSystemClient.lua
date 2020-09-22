@@ -61,8 +61,8 @@ function Tick(deltaTime)
 			end
 
 			if previousTask ~= API_NPC.STATE_DEAD and currentTask == API_NPC.STATE_DEAD then
-				if npcData.onDeathEventName then
-					Events.Broadcast(npcData.onDeathEventName)
+				if npcData.onDiedEventName then
+					Events.Broadcast(npcData.onDiedEventName)
 				end
 			end
 

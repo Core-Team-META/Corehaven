@@ -1,6 +1,205 @@
 ﻿Name: "InvisibleCollisions"
 RootId: 1503052918030638976
 Objects {
+  Id: 2620440770777017750
+  Name: "Guard_Area_InvisibleCollision"
+  Transform {
+    Location {
+      X: 17194.9941
+      Y: 16918.3281
+      Z: 3974.54517
+    }
+    Rotation {
+      Yaw: 20.219511
+    }
+    Scale {
+      X: 5.2439642
+      Y: 16.3729496
+      Z: 15.1623678
+    }
+  }
+  ParentId: 1503052918030638976
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15930833156793906970
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4670984589696572448
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2756737962533275601
+  Name: "Guard_Area_InvisibleCollision"
+  Transform {
+    Location {
+      X: 17496.0215
+      Y: 16183.2334
+      Z: 3765.60376
+    }
+    Rotation {
+      Yaw: 73.9059601
+    }
+    Scale {
+      X: 5.24398613
+      Y: 8.77082729
+      Z: 17.265789
+    }
+  }
+  ParentId: 1503052918030638976
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15930833156793906970
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4670984589696572448
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 903302457838382403
+  Name: "Guard_Area_InvisibleCollision"
+  Transform {
+    Location {
+      X: 19032.8145
+      Y: 17024.2891
+      Z: 4546.28857
+    }
+    Rotation {
+    }
+    Scale {
+      X: 17.7208366
+      Y: 17.7208366
+      Z: 18.7483387
+    }
+  }
+  ParentId: 1503052918030638976
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15930833156793906970
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15767187264673962515
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 530764908384189518
+  Name: "Guard_Area_InvisibleCollision"
+  Transform {
+    Location {
+      X: 19705.4316
+      Y: 16650.8848
+      Z: 3765.60376
+    }
+    Rotation {
+      Yaw: 40.7022667
+    }
+    Scale {
+      X: 14.9052353
+      Y: 8.77082539
+      Z: 15.1623678
+    }
+  }
+  ParentId: 1503052918030638976
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 15930833156793906970
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4670984589696572448
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 685361096997201519
   Name: "Merchant_Area_InvisibleCollision"
   Transform {

@@ -34,3 +34,12 @@ Assets {
     AssetId: "sm_rock_generic_001"
   }
 }
+Assets {
+  Id: 3965397322580208730
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}

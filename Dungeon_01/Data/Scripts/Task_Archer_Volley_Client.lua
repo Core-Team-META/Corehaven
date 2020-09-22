@@ -1,6 +1,9 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
+local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
+
+local VOLLEY_RADIUS	= 140.0
 
 local currentTasks = {}
 
@@ -21,5 +24,14 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	currentTasks[npc] = nil
 	animatedMesh:StopAnimations()
 end
+
+function OnVolley(targetPosition)
+	local telegraphScale = Vector3.New(VOLLEY_RADIUS / 100.0)
+	local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = targetPosition, scale = telegraphScale})
+	Task.Wait(2.5)
+	telegraph:Destroy()
+end
+
+Events.Connect("AV", OnVolley)
 
 API_NPC.RegisterTaskClient("archer_volley", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

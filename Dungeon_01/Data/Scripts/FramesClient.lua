@@ -2,6 +2,7 @@
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local TSU = require(script:GetCustomProperty("TalentSelectorUtility"))
 
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
@@ -92,13 +93,13 @@ function OnBindingPressed(player, binding)
 	if binding == "ability_primary" then
 		for player, data in pairs(partyFrames) do
 			if IsCursorOverFrame(data) then
-				Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(player))
+				API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(player))
 				return
 			end
 		end
 
 		if IsCursorOverFrame(targetTargetFrame) then
-			Events.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(GetTargetTarget()))
+			API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(GetTargetTarget()))
 		end
 	end
 end

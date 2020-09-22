@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17112282066558978098
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
+  }
+}
+Assets {
   Id: 16931855142661323466
   Name: "Craftsman Roof 01 Beam"
   PlatformAssetType: 1
@@ -41,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_parapet_001"
+  }
+}
+Assets {
+  Id: 14844672563279110931
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
   }
 }
 Assets {
