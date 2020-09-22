@@ -5,7 +5,7 @@ local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 
 local BASE_DAMAGE = 35.0
 local DAMAGE_MULTIPLIER = 1.0
-local PROJECTILE_SPEED = 2400.0
+local PROJECTILE_SPEED = 6400.0
 
 local data = {}
 
