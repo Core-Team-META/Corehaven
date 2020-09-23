@@ -7,7 +7,7 @@
       RootId: 13994712722476071660
       Objects {
         Id: 13994712722476071660
-        Name: "Ability_Cleave"
+        Name: "Ability_SweepingSlash"
         Transform {
           Scale {
             X: 1

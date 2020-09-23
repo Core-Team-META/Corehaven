@@ -578,6 +578,7 @@ functionTable.GetThreatTable = GetThreatTable
 functionTable.SetThreat = SetThreat
 functionTable.AddThreat = AddThreat
 functionTable.IsPullCleared = IsPullCleared
+functionTable.GetNPCsInPull = GetNPCsInPull
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)

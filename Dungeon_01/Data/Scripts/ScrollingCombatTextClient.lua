@@ -7,7 +7,7 @@ local ELEMENT_TEMPLATE = script:GetCustomProperty("ElementTemplate")
 
 local SLIDING_OVERLAP_DELAY = 0.3
 local STICKY_OVERLAP_DELAY = 2.2
-local COLUMN_WIDTH = 50.0
+local COLUMN_WIDTH = 75.0
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -125,7 +125,7 @@ end
 -- In general the main number should show the total, including overkill and heal
 function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	if targetCharacter == LOCAL_PLAYER then
-		ShowText(targetCharacter, amount + overkill, overkill, Color.RED, tags)
+		ShowText(targetCharacter, amount + overkill, 0.0, Color.RED, tags)
 	elseif sourceCharacter == LOCAL_PLAYER then
 		-- For damage you deal, we don't even bother showing overkill
 		ShowText(targetCharacter, amount + overkill, 0.0, Color.WHITE, tags)

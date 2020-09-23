@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 3500
+            Float: 4000
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -51,7 +51,7 @@
           }
           Overrides {
             Name: "cs:ImmuneToStun"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "cs:CapsuleHeight"

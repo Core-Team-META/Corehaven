@@ -4,9 +4,9 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 14229686155657361541
+      RootId: 13840291380342644900
       Objects {
-        Id: 14229686155657361541
+        Id: 13840291380342644900
         Name: "Helper_Projectile_Boss3_FlamingRock"
         Transform {
           Scale {
@@ -18,14 +18,15 @@
         ParentId: 4781671109827199097
         ChildIds: 3293006148652433912
         ChildIds: 12198221953739243173
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
+          Type: RuntimeStatic
         }
       }
       Objects {
@@ -33,11 +34,14 @@
         Name: "Rock 03"
         Transform {
           Location {
-            X: 5.1015625
-            Y: 14.3383789
-            Z: 210.88623
+            X: 92.0214844
+            Y: 48.2248154
+            Z: 58.3586426
           }
           Rotation {
+            Pitch: 90
+            Yaw: 0.0527563617
+            Roll: 0.0527868979
           }
           Scale {
             X: 2.80177784
@@ -45,7 +49,7 @@
             Z: 6.98979902
           }
         }
-        ParentId: 14229686155657361541
+        ParentId: 13840291380342644900
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -72,23 +76,27 @@
         Name: "Fire Volume VFX"
         Transform {
           Location {
-            X: -5.09960938
-            Y: -14.3383789
+            X: -5.0995903
+            Y: 19.5482903
+            Z: 48.1596413
           }
           Rotation {
+            Pitch: 90
+            Yaw: 0.0527563617
+            Roll: 0.0527868979
           }
           Scale {
-            X: 10.4495678
-            Y: 9.01445198
-            Z: 1
+            X: 3
+            Y: 3
+            Z: 13
           }
         }
-        ParentId: 14229686155657361541
+        ParentId: 13840291380342644900
         UnregisteredParameters {
           Overrides {
             Name: "bp:Volume Type"
             Enum {
-              Value: "mc:evfxvolumetype:1"
+              Value: "mc:evfxvolumetype:2"
             }
           }
           Overrides {
@@ -110,6 +118,14 @@
           Overrides {
             Name: "bp:Gravity"
             Float: 1
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              G: 0.37
+              B: 0.00245034462
+              A: 1
+            }
           }
         }
         Collidable_v2 {

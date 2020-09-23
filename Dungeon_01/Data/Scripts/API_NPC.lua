@@ -282,10 +282,10 @@ function API.GetAwakeNPCsInSphere(center, radius)
 	return result
 end
 
-function API.GetNumAwakeNPCs()
+function API.GetNumAwakeNPCsInPull(pull)
 	local result = 0
 
-	for npc, _ in pairs(npcs) do
+	for _, npc in pairs(systemFunctions.GetNPCsInPull(pull)) do
 		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
 			result = result + 1
 		end

@@ -31,6 +31,7 @@
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
         AssetReference {
+          Id: 841534158063459245
         }
       }
       Overrides {

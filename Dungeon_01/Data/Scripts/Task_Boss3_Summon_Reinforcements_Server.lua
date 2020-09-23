@@ -4,7 +4,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local SUMMON_TEMPLATES = {
 	script:GetCustomProperty("SummonTemplate1"),		-- Guard
 	script:GetCustomProperty("SummonTemplate2"),		-- Archer
-	script:GetCustomProperty("SummonTemplate3")			-- Fire Wizard
+	script:GetCustomProperty("SummonTemplate3")			-- Ice Wizard
 }
 local SPAWN_GROUP = script:GetCustomProperty("SpawnGroup"):WaitForObject()
 local SPAWN_POINTS = {
@@ -25,7 +25,7 @@ local COOLDOWN = 35.0
 local waveIndices = {}
 
 function GetPriority(npc, taskHistory)
-	if API_NPC.GetHealthFraction(npc) > 0.9 then
+	if API_NPC.GetHealthFraction(npc) > 0.95 then
 		return 0.0
 	else
 		return 800.0
@@ -46,7 +46,7 @@ function OnTaskStart(npc, threatTable)
 	Task.Spawn(function()
 		Task.Wait()	-- Need a frame for the new npcs to be registered
 
-		while API_NPC.GetNumAwakeNPCs() > 1 do
+		while API_NPC.GetNumAwakeNPCsInPull(npc.parent) > 1 do
 			Task.Wait()
 		end
 
@@ -55,7 +55,7 @@ function OnTaskStart(npc, threatTable)
 		end
 	end)
 
-	return 1.5
+	return 0.5
 end
 
 function OnTaskEnd(npc, interrupted)

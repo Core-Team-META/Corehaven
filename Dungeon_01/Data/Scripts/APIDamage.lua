@@ -78,12 +78,12 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
             effectiveAmount = math.min(adjustedAmount, targetCharacter.hitPoints)
             local damage = Damage.New(effectiveAmount)
 
-            if sourceCharacter:IsA("Player") then
-                damage.sourcePlayer = sourceCharacter
-            end
-
             if sourceCharacter then
                 damage.reason = DamageReason.COMBAT
+
+                if sourceCharacter:IsA("Player") then
+                    damage.sourcePlayer = sourceCharacter
+                end
             else
                 damage.reason = DamageReason.MAP
             end
@@ -108,7 +108,8 @@ function API.ApplyAreaDamage(sourceCharacter, center, radius, maxAmount, hasFall
     local targets = nil
     local adjustedCenter = center
 
-    if sourceCharacter:IsA("Player") then
+    -- If no source character, it's the map, so it damages only players
+    if sourceCharacter and sourceCharacter:IsA("Player") then
         targets = API_NPC.GetAwakeNPCsInSphere(center, radius)
     else
         adjustedCenter = center + Vector3.UP * 100.0

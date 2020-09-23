@@ -201,6 +201,7 @@ function Tick(deltaTime)
 		-- orient the fish in the direction of its world velocity.
 		-- fake a small velocity in the fish's forward direction in the xy plane if it isn't moving (seek "flat")
 		local worldVelocityTemp = worldVelocity
+		print(worldVelocity.size)
 		if worldVelocity.size < VELOCITY_THRESHOLD then
 			local fwdVector = ORIENTATIONOBJECT:GetWorldTransform():GetForwardVector()
 			fwdVector.z = 0
@@ -244,12 +245,14 @@ function Tick(deltaTime)
 			--else
 				local targetRot = Quaternion.Slerp(Quaternion.IDENTITY, worldQuatTarget, orientationSwitchLerpProgress):GetRotation()
 				ORIENTATIONOBJECT:SetWorldRotation(targetRot)
+				print("Setting rotation1")
 			--end
 		else
 			local originalQuat = Quaternion.IDENTITY
 			local currentQuat = ORIENTATIONOBJECT:GetTransform():GetQuaternion()
 			local targetRot =Quaternion.Slerp(originalQuat, currentQuat, .9):GetRotation()
 			ORIENTATIONOBJECT:SetRotation(targetRot)
+			print("Setting rotation2")
 		end
 		
 		local localVelocity = ORIENTATIONOBJECT:GetWorldTransform():GetInverse():TransformDirection(worldVelocityTemp)

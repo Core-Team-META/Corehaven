@@ -18,12 +18,14 @@ function OnTaskStart(npc, threatTable)
 	-- Initial values for the single player case
 	local target = API_NPC.GetTarget(npc)
 	local targetThreat = 0.0
+	local hasMultipleTargets = false
 
 	-- Find the player with the most threat who we aren't currently targeting
 	for player, threat in pairs(threatTable) do
 		if player ~= API_NPC.GetTarget(npc) and threat > targetThreat then
 			target = player
 			targetThreat = threat
+			hasMultipleTargets = true
 		end
 	end
 
@@ -49,7 +51,11 @@ function OnTaskStart(npc, threatTable)
 			local launchDirection = offsetDirection * Vector3.FORWARD + Vector3.UP
 			API_D.ApplyDamage(npc, target, DAMAGE)
 			API_K.ApplyImpulse(target, 60.0 * launchDirection)
-			API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Dazed"].id)
+
+			-- When soloing, this is just making it extra hard
+			if hasMultipleTargets then
+				API_SE.ApplyStatusEffect(npc, target, API_SE.STATUS_EFFECT_DEFINITIONS["Dazed"].id)
+			end
 		end
 	end)
 
