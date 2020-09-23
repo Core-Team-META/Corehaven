@@ -6,6 +6,7 @@
     StatKey = 'CommonBoots',
     MUID = '09653DAF34B6626C:ITEM_Boots_BasicBoots',
     Lore = 'The most basic of boots.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Rugged Boots',
@@ -14,14 +15,16 @@
     StatKey = 'UncommonBoots',
     MUID = '2F8FE8B419D3E42A:ITEM_Boots_RuggedBoots',
     Lore = 'These boots have seen it all.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Steel Toe',
     Type = 'Boots',
     Rarity = 'Uncommon',
-    StatKey = 'UncommonBoots',
+    StatKey = 'UncommonAttackBoots',
     MUID = 'BE925E77E4783BE3:ITEM_Boots_SteelToe',
     Lore = 'Impossible to stub your toe in these.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Enchanted Shoes',
@@ -30,6 +33,7 @@
     StatKey = 'UncommonMagicBoots',
     MUID = '50E0E1A332E38F52:ITEM_Boots_EnchantedShoes',
     Lore = 'Soft, silky, and slightly magical!',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Steel Sabatons',
@@ -38,5 +42,6 @@
     StatKey = 'RareBoots',
     MUID = '32650F0FB9334DCC:ITEM_Boots_SteelSabatons',
     Lore = 'Good for kicking.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
 }
