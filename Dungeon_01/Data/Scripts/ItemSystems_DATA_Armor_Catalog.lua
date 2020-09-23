@@ -6,6 +6,7 @@
     StatKey = 'CommonArmor',
     MUID = 'F1BF10231731A908:ITEM_Armor_LeatherArmor',
     Lore = 'The most basic leather armor.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Rugged Armor',
@@ -14,14 +15,16 @@
     StatKey = 'UncommonArmor',
     MUID = '529BCBBC653963C4:ITEM_Armor_RuggedArmor',
     Lore = 'Somehow, this armor remains effective.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Scale Armor',
     Type = 'Armor',
     Rarity = 'Uncommon',
-    StatKey = 'UncommonArmor',
+    StatKey = 'UncommonAttackArmor',
     MUID = '266F52F6DF758593:ITEM_Armor_ScaleArmor',
     Lore = 'Popular for its ability to deflect piercing blows.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Enchanted Robes',
@@ -30,6 +33,7 @@
     StatKey = 'UncommonMagicArmor',
     MUID = '3D08CB85F58532CE:ITEM_Armor_EnchantedRobes',
     Lore = 'One wonders about the wizard who placed the enchantment.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Merchant\'s Shirt',
@@ -38,5 +42,6 @@
     StatKey = 'RareArmor',
     MUID = 'AE2CAF3BB11165E9:ITEM_Armor_MerchantsShirt',
     Lore = 'Nice shirt.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
 }

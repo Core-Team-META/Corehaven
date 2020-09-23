@@ -36,6 +36,24 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
+    StatKey = 'UncommonAttackBoots',
+    Group = 'Base',
+    Stat = 'Defense',
+    Min = '2',
+    Max = '5',
+    Likelihood = '',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    StatKey = 'UncommonAttackBoots',
+    Group = 'Bonus1',
+    Stat = 'Attack',
+    Min = '5',
+    Max = '10',
+    Likelihood = '100',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
     StatKey = 'UncommonMagicBoots',
     Group = 'Base',
     Stat = 'Defense',
@@ -83,7 +101,7 @@
   {
     StatKey = 'RareBoots',
     Group = 'Bonus1',
-    Stat = 'HealthPercent',
+    Stat = 'Attack',
     Min = '5',
     Max = '10',
     Likelihood = '100',

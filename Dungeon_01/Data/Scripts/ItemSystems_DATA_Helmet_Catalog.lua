@@ -6,6 +6,7 @@
     StatKey = 'CommonHelmet',
     MUID = 'A59196004F736B6B:ITEM_Helmet_LeatherCap',
     Lore = 'The most basic leather cap.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Rugged Cap',
@@ -14,14 +15,16 @@
     StatKey = 'UncommonHelmet',
     MUID = '8C12A0F245618C73:ITEM_Helmet_RuggedCap',
     Lore = 'Not very stylish at all.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Metal Cap',
     Type = 'Helmet',
     Rarity = 'Uncommon',
-    StatKey = 'UncommonHelmet',
+    StatKey = 'UncommonAttackHelmet',
     MUID = '5E4B3A34C51EAC1D:ITEM_Helmet_MetalCap',
     Lore = 'Simple, yet effective.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Enchanted Hood',
@@ -30,6 +33,7 @@
     StatKey = 'UncommonMagicHelmet',
     MUID = '8F5A6F22164F9109:ITEM_Helmet_EnchantedHood',
     Lore = 'Makes the wearer feel smart.',
+    ['Author Notes (will be ignored by script)'] = '',
   },
   {
     Name = 'Viking Helmet',
@@ -38,5 +42,6 @@
     StatKey = 'RareHelmet',
     MUID = 'DE8009E7F2F49BC6:ITEM_Helmet_VikingHelmet',
     Lore = 'Rrrraaaaaaaaaarrrrgghh!',
+    ['Author Notes (will be ignored by script)'] = '',
   },
 }
