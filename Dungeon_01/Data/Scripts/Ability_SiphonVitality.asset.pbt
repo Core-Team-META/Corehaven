@@ -31,27 +31,31 @@
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
         AssetReference {
+          Id: 5789560668652292008
         }
       }
       Overrides {
         Name: "cs:OtherCasterEffectTemplate"
         AssetReference {
+          Id: 5789560668652292008
         }
       }
       Overrides {
         Name: "cs:SelfTargetEffectTemplate"
         AssetReference {
+          Id: 12620255149055723196
         }
       }
       Overrides {
         Name: "cs:OtherTargetEffectTemplate"
         AssetReference {
+          Id: 12620255149055723196
         }
       }
       Overrides {
         Name: "cs:ProjectileTemplate"
         AssetReference {
-          Id: 8245670215821833740
+          Id: 10481348771500045721
         }
       }
       Overrides {

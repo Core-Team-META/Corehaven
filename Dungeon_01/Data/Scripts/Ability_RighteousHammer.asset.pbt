@@ -31,21 +31,25 @@
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
         AssetReference {
+          Id: 1512866402217771640
         }
       }
       Overrides {
         Name: "cs:OtherCasterEffectTemplate"
         AssetReference {
+          Id: 1512866402217771640
         }
       }
       Overrides {
         Name: "cs:SelfTargetEffectTemplate"
         AssetReference {
+          Id: 12438296897717429379
         }
       }
       Overrides {
         Name: "cs:OtherTargetEffectTemplate"
         AssetReference {
+          Id: 8517511274719000942
         }
       }
       Overrides {
