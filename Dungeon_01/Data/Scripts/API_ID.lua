@@ -24,7 +24,9 @@ function API.GetObjectFromId(id)
             end
         end
 
-        return World.FindObjectById(id)
+        if is_valid_muid(id) then
+            return World.FindObjectById(id)
+        end
     end
 end
 

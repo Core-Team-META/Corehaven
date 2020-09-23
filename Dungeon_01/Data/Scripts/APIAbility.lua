@@ -251,13 +251,23 @@ function OnExecute(ability)
 			if data.groundTargets then
 				World.SpawnAsset(data.selfTargetEffectTemplate, {position = target})
 			else
-				World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
+				if target:IsA("Player") then
+					local effect = World.SpawnAsset(data.selfTargetEffectTemplate)
+					effect:AttachToPlayer(target, "root")
+				else
+					World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
+				end
 			end
 		elseif data.otherTargetEffectTemplate then
 			if data.groundTargets then
 				World.SpawnAsset(data.otherTargetEffectTemplate, {position = target})
 			else
-				World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
+				if target:IsA("Player") then
+					local effect = World.SpawnAsset(data.otherTargetEffectTemplate)
+					effect:AttachToPlayer(target, "root")
+				else
+					World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
+				end
 			end
 		end
 	end

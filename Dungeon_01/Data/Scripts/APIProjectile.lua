@@ -2,7 +2,7 @@
 
 -- Above this height, we heavily reduce gravity for small gains in height
 local MAX_LINEAR_HEIGHT = 1000.0
-local G = 1000.0		-- This is a constant, that is little g
+local G = 980.0			-- This is little g, as a constant
 
 function GetCorrectPosition(characterOrPosition)
 	if characterOrPosition:IsA("Vector3") then
@@ -23,6 +23,10 @@ end
 -- Client only
 -- source and target can be npcs, players, or just Vector3s. gravityAmount is a multiplier on g
 function API.CreateProjectile(source, target, horizontalSpeed, gravityAmount, projectileTemplate)
+	if not target then		-- This can happen during join in progress. We'd rather not have to handle this in every task
+		return
+	end
+
 	local projectile = World.SpawnAsset(projectileTemplate, {position = GetCorrectPosition(source)})
 	local expectedTravelTime = API.GetTravelTime(source, target, horizontalSpeed)
 	local peakHeight = G * expectedTravelTime ^ 2 / 8.0		-- y = 1/2 at^2, but t = expectedTravelTime / 2
