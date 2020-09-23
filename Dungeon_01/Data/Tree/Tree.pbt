@@ -14,7 +14,6 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 18098791909408029971
   ChildIds: 11788695356358832208
   ChildIds: 1503052918030638976
   ChildIds: 15438413245421916821
@@ -747,67 +746,5 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "Emma"
-  }
-}
-Objects {
-  Id: 18098791909408029971
-  Name: "Wispy Fog Volume VFX"
-  Transform {
-    Location {
-      X: 18883.5059
-      Y: 5426.32373
-      Z: 3038.22217
-    }
-    Rotation {
-      Yaw: -50.5356445
-    }
-    Scale {
-      X: 58.9173775
-      Y: 47.917347
-      Z: 2.70019865
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Wind Speed"
-      Vector {
-        X: 20
-        Y: 50
-      }
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 4.9482336
-    }
-    Overrides {
-      Name: "bp:Density"
-      Float: 2.95061636
-    }
-    Overrides {
-      Name: "bp:color"
-      Color {
-        R: 0.291666657
-        G: 0.291666657
-        B: 0.291666657
-        A: 0.269000024
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3837058515785757415
-    }
-    TeamSettings {
-    }
-    Vfx {
-      AutoPlay: true
-    }
   }
 }

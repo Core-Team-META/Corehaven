@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3837058515785757415
-  Name: "Wispy Fog Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_fog_volume_vfx"
-  }
-}
-Assets {
   Id: 45617072321620321
   Name: "Flower Daisy Patch 01"
   PlatformAssetType: 1
