@@ -194,7 +194,7 @@ function OnBindingPressed(player, binding)
 		autoTargetHistory = {}			-- Clear auto target history
 
 		newTarget = FindClickTarget()
-	elseif binding == AUTO_TARGET_BINDING then
+	elseif binding == AUTO_TARGET_BINDING or binding == "ability_extra_20" then		-- TEMP
 		newTarget = FindAutoTarget()
 	end
 

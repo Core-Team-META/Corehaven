@@ -257,7 +257,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:AutoTargetBinding"
-      String: "ability_extra_20"
+      String: "ability_extra_19"
     }
     Overrides {
       Name: "cs:AutoTargetHistoryDuration"
@@ -8027,7 +8027,6 @@ Objects {
         Value: "mc:eabilityaimmode:viewrelative"
       }
       AppearanceChannelingTime: 2
-      MountChannelingTime: 1
       FlipOnMultiJump: true
     }
   }
@@ -11485,7 +11484,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
     Type: Server
@@ -20683,8 +20682,6 @@ Objects {
     }
   }
   ParentId: 11176579868672163906
-  ChildIds: 2862615558091888578
-  ChildIds: 240087297949756446
   ChildIds: 3038033862842891513
   ChildIds: 3901611470749939446
   ChildIds: 14150692841257623222
@@ -21190,14 +21187,6 @@ Objects {
             Pitch: -5.40884399
             Yaw: -74.3686523
             Roll: -0.375244141
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.6
-            Y: 1.6
-            Z: 1.6
           }
         }
       }
@@ -26170,113 +26159,6 @@ Objects {
   }
 }
 Objects {
-  Id: 240087297949756446
-  Name: "Test"
-  Transform {
-    Location {
-      X: -12800
-      Y: -5600
-      Z: -1000
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15214246396461168156
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 2862615558091888578
-  Name: "Templates"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 15214246396461168156
-  ChildIds: 17520319843758205780
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Prerequisite"
-      ObjectReference {
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 17520319843758205780
-  Name: "Enemy_Boss3_Guard"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2862615558091888578
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 578877340730240389
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Boss3_Guard"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -12800
-            Y: -5000
-            Z: -1000
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 17273001891643549988
-    }
-  }
-}
-Objects {
   Id: 4666466983220308712
   Name: "Nameplates"
   Transform {
@@ -29677,6 +29559,7 @@ Objects {
   ChildIds: 11621608184112275925
   ChildIds: 14203124029835808185
   ChildIds: 9051689462233812789
+  ChildIds: 7984235651677103570
   ChildIds: 3907604587026724610
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -29706,6 +29589,7 @@ Objects {
   ChildIds: 4154837524818371191
   ChildIds: 13531345160731386781
   ChildIds: 17265018184211891219
+  ChildIds: 3218184813219741106
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -29714,6 +29598,70 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3218184813219741106
+  Name: "4"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3907604587026724610
+  ChildIds: 1566438512948016261
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 7984235651677103570
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1566438512948016261
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: 19813.4863
+      Y: 3976.82349
+      Z: 3072.73462
+    }
+    Rotation {
+      Yaw: -51.8113403
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3218184813219741106
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
   }
 }
 Objects {
@@ -29933,6 +29881,41 @@ Objects {
   PlayerSpawnPoint {
     TeamInt: 1
     PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 7984235651677103570
+  Name: "Trigger4"
+  Transform {
+    Location {
+      X: 21505.5371
+      Y: 1745.25708
+      Z: 3618.50854
+    }
+    Rotation {
+      Yaw: 38.5691
+    }
+    Scale {
+      X: 16.0680981
+      Y: 27.4212303
+      Z: 9.1411581
+    }
+  }
+  ParentId: 8669524701085532208
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
   }
 }
 Objects {

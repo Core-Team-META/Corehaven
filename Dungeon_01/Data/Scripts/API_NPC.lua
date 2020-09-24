@@ -282,6 +282,18 @@ function API.GetAwakeNPCsInSphere(center, radius)
 	return result
 end
 
+function API.GetAwakeNPCs()
+	local result = {}
+
+	for npc, _ in pairs(npcs) do
+		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
+			table.insert(result, npc)
+		end
+	end
+
+	return result
+end
+
 function API.GetNumAwakeNPCsInPull(pull)
 	local result = 0
 

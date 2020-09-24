@@ -11,6 +11,7 @@ API.TAG_CRIT = 1
 API.TAG_PERIODIC = 2
 API.TAG_MINOR = 4
 API.TAG_AOE = 8
+API.TAG_HIDDEN = 16
 
 local systemFunctions = nil
 local preDamageHooks = {}

@@ -8,6 +8,7 @@ data.friendlyTargetValid = true
 data.enemyTargetValid = false
 data.requiresFacing = false
 data.groundTargets = false
+data.canMove = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
 data.cooldown = script:GetCustomProperty("Cooldown")

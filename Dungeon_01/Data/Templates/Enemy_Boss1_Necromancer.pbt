@@ -87,7 +87,7 @@
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 1
+            Float: 0.4
           }
           Overrides {
             Name: "cs:DropKey2"
@@ -95,7 +95,7 @@
           }
           Overrides {
             Name: "cs:DropChance2"
-            Float: 0.3
+            Float: 0.1
           }
           Overrides {
             Name: "cs:OnPulledEventName"

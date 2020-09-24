@@ -29,7 +29,7 @@
           IsEnabled: true
           KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 3
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -39,6 +39,7 @@
             }
           }
           ExecutePhaseSettings {
+            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true

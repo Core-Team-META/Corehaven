@@ -11,6 +11,7 @@ data.name = script:GetCustomProperty("Name")
 data.targets = true
 data.requiresFacing = false
 data.groundTargets = true
+data.canMove = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
 data.cooldown = script:GetCustomProperty("Cooldown")

@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 90
+            Float: 45
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -75,7 +75,7 @@
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.03
+            Float: 0.12
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

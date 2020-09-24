@@ -208,6 +208,16 @@ function UpdateFrame(data, character)
 			local effectData = API_SE.STATUS_EFFECT_DEFINITIONS[statusEffectData.name]
 			data.statusEffects[i]:GetCustomProperty("Icon"):WaitForObject():SetImage(effectData.icon)
 		end
+
+		-- Aggro
+		data.frame:GetCustomProperty("AggroBorder"):WaitForObject().visibility = Visibility.FORCE_OFF
+
+		for _, npc in pairs(API_NPC.GetAwakeNPCs()) do
+			if API_NPC.GetTarget(npc) == character then
+				data.frame:GetCustomProperty("AggroBorder"):WaitForObject().visibility = Visibility.INHERIT
+				break
+			end
+		end
 	end
 end
 

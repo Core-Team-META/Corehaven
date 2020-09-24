@@ -7,7 +7,7 @@
       RootId: 637871214168381476
       Objects {
         Id: 637871214168381476
-        Name: "Enemy_Boss4_Plague_Dragon"
+        Name: "Helper_Boss3_Dragon"
         Transform {
           Scale {
             X: 1.07335877

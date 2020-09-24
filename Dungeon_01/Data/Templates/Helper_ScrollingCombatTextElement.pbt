@@ -38,7 +38,7 @@
               R: 0.950000048
               A: 1
             }
-            Size: 26
+            Size: 30
             Justification {
               Value: "mc:etextjustify:center"
             }

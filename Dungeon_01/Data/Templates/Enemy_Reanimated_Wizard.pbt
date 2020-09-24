@@ -75,7 +75,7 @@
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.02
+            Float: 0.08
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

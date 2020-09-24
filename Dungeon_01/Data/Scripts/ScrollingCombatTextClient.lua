@@ -7,13 +7,15 @@ local ELEMENT_TEMPLATE = script:GetCustomProperty("ElementTemplate")
 
 local SLIDING_OVERLAP_DELAY = 0.3
 local STICKY_OVERLAP_DELAY = 2.2
+local FULL_ALPHA_TIME = 0.8
+local FADE_TIME = 0.4
 local COLUMN_WIDTH = 75.0
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Column indices: 1 is center, 2 right, 3 left, 4 more right, alternating sides..
-local lastSlidingSpawnTimes = {}		-- column index -> float, for non crits that slide up
-local lastStickySpawnTimes = {}			-- column index -> float, for crits that stick in place
+local lastSlidingSpawnTimes = {}		-- target -> table | column index -> float, for non crits that slide up
+local lastStickySpawnTimes = {}			-- target -> table | column index -> float, for crits that stick in place
 
 function GetColumnOffset(columnIndex)
 	local offsetSize = columnIndex // 2 * COLUMN_WIDTH
@@ -26,6 +28,10 @@ function GetColumnOffset(columnIndex)
 end
 
 function ShowText(targetCharacter, amount, over, color, tags)
+	if API_D.HasTag(tags, API_D.TAG_HIDDEN) then
+		return
+	end
+
 	Task.Spawn(function()
 		local element = World.SpawnAsset(ELEMENT_TEMPLATE, {parent = CONTAINER})
 
@@ -39,7 +45,7 @@ function ShowText(targetCharacter, amount, over, color, tags)
 		local isSmall = API_D.HasTag(tags, API_D.TAG_MINOR) or API_D.HasTag(tags, API_D.TAG_PERIODIC)
 
 		if isSmall then
-			element.fontSize = 18
+			element.fontSize = 22
 		end
 
 		element:SetColor(color)
@@ -48,21 +54,29 @@ function ShowText(targetCharacter, amount, over, color, tags)
 		local columnIndex = 1
 		local t = 0.0
 
+		if not lastSlidingSpawnTimes[targetCharacter] then
+			lastSlidingSpawnTimes[targetCharacter] = {}
+		end
+
+		if not lastStickySpawnTimes[targetCharacter] then
+			lastStickySpawnTimes[targetCharacter] = {}
+		end
+
 		if isCrit then
-			while lastStickySpawnTimes[columnIndex] and lastStickySpawnTimes[columnIndex] + STICKY_OVERLAP_DELAY > startTime do
+			while lastStickySpawnTimes[targetCharacter][columnIndex] and lastStickySpawnTimes[targetCharacter][columnIndex] + STICKY_OVERLAP_DELAY > startTime do
 				columnIndex = columnIndex + 1
 			end
 			
-			lastStickySpawnTimes[columnIndex] = startTime
+			lastStickySpawnTimes[targetCharacter][columnIndex] = startTime
 		else
-			while lastSlidingSpawnTimes[columnIndex] and lastSlidingSpawnTimes[columnIndex] + SLIDING_OVERLAP_DELAY > startTime do
+			while lastSlidingSpawnTimes[targetCharacter][columnIndex] and lastSlidingSpawnTimes[targetCharacter][columnIndex] + SLIDING_OVERLAP_DELAY > startTime do
 				columnIndex = columnIndex + 1
 			end
 
-			lastSlidingSpawnTimes[columnIndex] = startTime
+			lastSlidingSpawnTimes[targetCharacter][columnIndex] = startTime
 		end
 
-		while t < 2.0 do
+		while t < FULL_ALPHA_TIME + FADE_TIME do
 			t = os.clock() - startTime
 			local worldPosition = targetCharacter:GetWorldPosition()
 
@@ -90,12 +104,12 @@ function ShowText(targetCharacter, amount, over, color, tags)
 				if isCrit then
 					if t < 0.15 then
 						element.y = position.y - math.sin(t / 0.15 * math.pi / 2) * 50.0
-						element.fontSize = 15.0 + t * 200.0
+						element.fontSize = 18.0 + t * 240.0
 					else
 						if t < 0.35 then
-							element.fontSize = 30.0 + (0.35 - t) * 75.0
+							element.fontSize = 36.0 + (0.35 - t) * 90.0
 						else
-							element.fontSize = 30.0
+							element.fontSize = 36.0
 						end
 
 						element.y = position.y - 50.0
@@ -111,6 +125,11 @@ function ShowText(targetCharacter, amount, over, color, tags)
 				end
 
 				element.visibility = Visibility.INHERIT
+
+				local alpha = CoreMath.Clamp(1.0 - (t - FULL_ALPHA_TIME) / FADE_TIME)
+				local fadeColor = color
+				fadeColor.a = alpha
+				element:SetColor(fadeColor)
 			else
 				element.visibility = Visibility.FORCE_OFF
 			end

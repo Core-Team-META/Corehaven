@@ -3,7 +3,7 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local RANGE = 120.0
 local COOLDOWN = 0.0
-local DAMAGE = 20.0
+local DAMAGE = 12.0
 
 local currentTasks = {}
 
