@@ -15,12 +15,13 @@
             Z: 1
           }
         }
-        ParentId: 379056897218762481
+        ParentId: 4781671109827199097
         ChildIds: 11831892971915444085
         ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
         ChildIds: 3595806782696598917
         ChildIds: 6905341891173339613
+        ChildIds: 17455389128647242737
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
@@ -56,6 +57,12 @@
             Name: "cs:BindingText"
             ObjectReference {
               SubObjectId: 6905341891173339613
+            }
+          }
+          Overrides {
+            Name: "cs:ActivateButton"
+            ObjectReference {
+              SubObjectId: 17455389128647242737
             }
           }
         }
@@ -575,6 +582,84 @@
           }
         }
       }
+      Objects {
+        Id: 17455389128647242737
+        Name: "ActivateButton"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2794857081652719891
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -10
+          Height: -10
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.2
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.4
+            }
+            DisabledColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            Brush {
+              Id: 16532880832873788683
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 17736261020205249573
@@ -592,6 +677,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameFlat_019"
+      }
+    }
+    Assets {
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_019"
       }
     }
     PrimaryAssetId {
