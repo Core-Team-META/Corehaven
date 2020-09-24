@@ -222,7 +222,7 @@ function view:InitItemHover()
     PANEL_ITEM_HOVER.clientUserData.inner = PANEL_ITEM_HOVER:GetCustomProperty("StatParent"):WaitForObject()
     PANEL_ITEM_HOVER.clientUserData.innerBaseHeight = PANEL_ITEM_HOVER.clientUserData.inner.height
     PANEL_ITEM_HOVER.clientUserData.pointer = PANEL_ITEM_HOVER:GetCustomProperty("Pointer"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.border = PANEL_ITEM_HOVER:GetCustomProperty("Border"):WaitForObject()
+    PANEL_ITEM_HOVER.clientUserData.borderRoot = PANEL_ITEM_HOVER:GetCustomProperty("BorderRoot"):WaitForObject()
     PANEL_ITEM_HOVER.clientUserData.title = PANEL_ITEM_HOVER:GetCustomProperty("Title"):WaitForObject()
     PANEL_ITEM_HOVER.clientUserData.classification = PANEL_ITEM_HOVER:GetCustomProperty("Classification"):WaitForObject()
     PANEL_ITEM_HOVER.clientUserData.description = PANEL_ITEM_HOVER:GetCustomProperty("Description"):WaitForObject()
@@ -531,8 +531,10 @@ function view:DrawHoverInfo()
         -- Colors.
         local color = ItemThemes.GetRarityColor(item:GetRarity())
         PANEL_ITEM_HOVER.clientUserData.pointer:SetColor(color)
-        PANEL_ITEM_HOVER.clientUserData.border:SetColor(color)
         PANEL_ITEM_HOVER.clientUserData.classification:SetColor(color)
+        for _,control in ipairs(PANEL_ITEM_HOVER.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
+            control:SetColor(color)
+        end
     else
         PANEL_ITEM_HOVER.visibility = Visibility.FORCE_OFF
     end

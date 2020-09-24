@@ -15,7 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 11922184646908098865
+        ChildIds: 14367337440259048512
         ChildIds: 11831892971915444085
         ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
@@ -75,6 +76,8 @@
         Control {
           Width: 90
           Height: 90
+          UIX: -700
+          UIY: -250
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -97,8 +100,61 @@
         }
       }
       Objects {
+        Id: 14367337440259048512
+        Name: "Background (In Case Of Icons With Alpha)"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2794857081652719891
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 90
+          Height: 90
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 16532880832873788683
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 11831892971915444085
-        Name: "UI Image"
+        Name: "Icon"
         Transform {
           Location {
           }
@@ -154,7 +210,7 @@
       }
       Objects {
         Id: 15734142479675734061
-        Name: "UI Image"
+        Name: "Border"
         Transform {
           Location {
           }
@@ -548,15 +604,15 @@
         Control {
           Width: 30
           Height: 30
-          UIX: 12
-          UIY: 8
+          UIX: 11
+          UIY: 5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
           Text {
-            Label: "AB"
+            Label: "Q"
             Color {
               R: 1
               G: 1
@@ -662,6 +718,15 @@
       }
     }
     Assets {
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_019"
+      }
+    }
+    Assets {
       Id: 17736261020205249573
       Name: "Fantasy Ability Red 007"
       PlatformAssetType: 9
@@ -677,15 +742,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameFlat_019"
-      }
-    }
-    Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
       }
     }
     PrimaryAssetId {

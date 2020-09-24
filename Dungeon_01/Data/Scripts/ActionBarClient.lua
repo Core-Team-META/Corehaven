@@ -172,9 +172,10 @@ function DrawAbilityToolTip()
 		ABILITY_TOOLTIP.visibility = Visibility.INHERIT
 		ABILITY_TOOLTIP.parent = socketData.button
 		-- Update the ability(talent) information.
+		local abilityData = API_A.GetAbilityData(socketData.abilityName)
 		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
-		ABILITY_TOOLTIP.clientUserData.classification.text = "???"
-		ABILITY_TOOLTIP.clientUserData.description.text = "???"
+		ABILITY_TOOLTIP.clientUserData.classification.text = "(TODO ability tags TODO)"
+		ABILITY_TOOLTIP.clientUserData.description.text = abilityData.description
 	else
 		HideAbilityToolTip()
 	end
@@ -183,19 +184,29 @@ end
 function SetupAbilityDragToggle()
 	-- The icon is the only thing that changes when drawing the button.
 	ABILITY_DRAG_TOGGLE.clientUserData.lockIcon = ABILITY_DRAG_TOGGLE:GetCustomProperty("LockIcon"):WaitForObject()
+	ABILITY_DRAG_TOGGLE.clientUserData.status = ABILITY_DRAG_TOGGLE:GetCustomProperty("ToolTipStatusText"):WaitForObject()
 	local button = ABILITY_DRAG_TOGGLE:GetCustomProperty("LockButton"):WaitForObject()
 	local sfx = ABILITY_DRAG_TOGGLE:GetCustomProperty("ClickSound"):WaitForObject()
+	local tooltip = ABILITY_DRAG_TOGGLE:GetCustomProperty("ToolTip"):WaitForObject()
 	button.clickedEvent:Connect(function()
 		isDraggingEnabled = not isDraggingEnabled
 		sfx:Play()
 	end)
+	button.hoveredEvent:Connect(function() tooltip.visibility = Visibility.INHERIT end)
+	button.unhoveredEvent:Connect(function() tooltip.visibility = Visibility.FORCE_OFF end)
 end
 
 function DrawAbilityDragToggle()
+	ABILITY_DRAG_TOGGLE.visibility = Visibility.INHERIT
 	local color = ABILITY_DRAG_TOGGLE.clientUserData.lockIcon:GetColor()
 	-- The lock icon is "grayed out" when dragging is enabled.
 	color.a = isDraggingEnabled and 0.4 or 0.9
 	ABILITY_DRAG_TOGGLE.clientUserData.lockIcon:SetColor(color)
+	ABILITY_DRAG_TOGGLE.clientUserData.status.text = isDraggingEnabled and "UNLOCKED" or "LOCKED"
+end
+
+function HideAbilityDragToggle()
+	ABILITY_DRAG_TOGGLE.visibility = Visibility.FORCE_OFF
 end
 
 function ReleaseDraggingButton()
@@ -312,7 +323,7 @@ function Tick(deltaTime)
 	local canClickToActivate = not isDraggingEnabled
 	for i, data in pairs(buttonData) do
 		if data.abilityName and data.button then
-			data.button.clientUserData.activateButton.isEnabled = canClickToActivate and API_A.CanTrigger(data.abilityName) 
+			data.button.clientUserData.activateButton.isEnabled = canClickToActivate
 		end
 	end
 
@@ -363,8 +374,10 @@ function Tick(deltaTime)
 	end
 
 	-- Update enabled visual state
+	local hasAnyAbilities = false
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
+			hasAnyAbilities = true
 			local ability = playerAbilities[data.abilityName]
 			local abilityData = API_A.GetAbilityData(data.abilityName)
 			local icon = data.button:GetCustomProperty("Icon"):WaitForObject()
@@ -394,7 +407,11 @@ function Tick(deltaTime)
 	end
 
 	-- Update the drag toggle button visuals.
-	DrawAbilityDragToggle()
+	if hasAnyAbilities then
+		DrawAbilityDragToggle()
+	else
+		HideAbilityDragToggle()
+	end
 
 	-- Catch cursor changing visibility
 	local isCursorVisible = UI.IsCursorVisible()

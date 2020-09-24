@@ -34,6 +34,8 @@
         Control {
           Width: 100
           Height: 100
+          UIX: -600
+          UIY: -250
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -89,8 +91,8 @@
         Control {
           Width: 30
           Height: 30
-          UIX: 12
-          UIY: 8
+          UIX: 16
+          UIY: 10
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
