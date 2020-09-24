@@ -23,6 +23,10 @@
         Float: 0
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Slash at all targets in front of you, dealing medium damage."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 3470311051587704324

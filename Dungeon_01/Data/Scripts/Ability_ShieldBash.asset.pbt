@@ -23,6 +23,10 @@
         Float: 14
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Smash your target with your shield, dealing high damage and stunning them briefly. Damage scales with defense."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 10673185589754828442

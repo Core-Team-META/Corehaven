@@ -23,6 +23,10 @@
         Float: 15
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Go back in time, undoing all damage from the last few seconds."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 9901992834009575131

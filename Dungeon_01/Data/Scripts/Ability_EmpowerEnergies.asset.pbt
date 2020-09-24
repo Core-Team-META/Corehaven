@@ -23,6 +23,10 @@
         Float: 45
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Empower the caster, increasing your damage and speed for a short duration."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 13496631951148696514

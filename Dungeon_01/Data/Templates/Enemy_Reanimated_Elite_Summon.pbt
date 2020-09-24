@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 14634173065214442235
-  Name: "Enemy_Reanimated_Elite"
+  Id: 11272925145965958020
+  Name: "Enemy_Reanimated_Elite_Summon"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 12555114022526006492
       Objects {
         Id: 12555114022526006492
-        Name: "Enemy_Reanimated_Elite"
+        Name: "Enemy_Reanimated_Elite_Summon"
         Transform {
           Scale {
             X: 1
@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 250
+            Float: 150
           }
           Overrides {
             Name: "cs:MoveSpeed"

@@ -17302,7 +17302,7 @@ Objects {
     Overrides {
       Name: "cs:SummonTemplate"
       AssetReference {
-        Id: 14634173065214442235
+        Id: 11272925145965958020
       }
     }
     Overrides {

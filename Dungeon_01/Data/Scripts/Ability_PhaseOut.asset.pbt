@@ -23,6 +23,10 @@
         Float: 35
       }
       Overrides {
+        Name: "cs:Description"
+        String: "You phase out of your corporeal form, avoiding the next few attacks entirely."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 9939368683614185057

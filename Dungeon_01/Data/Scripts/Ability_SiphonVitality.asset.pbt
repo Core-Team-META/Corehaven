@@ -23,6 +23,10 @@
         Float: 20
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Drains the life force of your target, dealing damage and healing you."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 6365575490064405459

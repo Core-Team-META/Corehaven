@@ -23,6 +23,10 @@
         Float: 22
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Grit your teeth and take reduced damage temporarily."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 13895786195049779236

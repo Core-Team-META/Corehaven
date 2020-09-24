@@ -23,6 +23,10 @@
         Float: 8
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Your target is empowered with spirits, lashing out repeatedly at nearby targets."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 3087943568374366425

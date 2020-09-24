@@ -23,6 +23,10 @@
         Float: 0
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Attacks single target, sending a wave out from the target healing all nearby party members."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 11617514106567966840

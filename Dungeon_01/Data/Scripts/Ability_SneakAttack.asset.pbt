@@ -23,6 +23,10 @@
         Float: 22
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Appear behind your target and strike for high damage."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 5478913708981894126
