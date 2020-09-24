@@ -35,8 +35,10 @@ local function ServerReplicateStatSheet()
         local prop = STAT_PROPS[statName]
         local isBuffed = OWNER.serverUserData.statSheet:IsStatBuffed(statName)
         local isDebuffed = OWNER.serverUserData.statSheet:IsStatDebuffed(statName)
-        local addValue = OWNER.serverUserData.statSheet:GetStatTotalModifierAdd(statName)
-        local mulValue = OWNER.serverUserData.statSheet:GetStatTotalModifierMul(statName)
+        -- It is very important that we only replicate the dynamic modifiers, as all static modifiers are already being applied
+        -- identically on server and client (replication is handled by some other system).
+        local addValue = OWNER.serverUserData.statSheet:GetStatDynamicModifierAdd(statName)
+        local mulValue = OWNER.serverUserData.statSheet:GetStatDynamicModifierMul(statName)
         COMPONENT:SetNetworkedCustomProperty(prop.."A", addValue)
         COMPONENT:SetNetworkedCustomProperty(prop.."M", mulValue)
     end

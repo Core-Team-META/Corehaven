@@ -46,20 +46,20 @@ end
 local function ServerUpdateStatSheet(inventory, modifiers)
     local statSheet = OWNER.serverUserData.statSheet
     -- First time through, make sure all modifiers are present.
-    local isFromItem = true
-    modifiers.Health        = modifiers.Health          or statSheet:NewStatModifierAdd("Health",       0, isFromItem)
-    modifiers.HealthPercent = modifiers.HealthPercent   or statSheet:NewStatModifierMul("Health",       1, isFromItem)
-    modifiers.Defense       = modifiers.Defense         or statSheet:NewStatModifierAdd("Defense",      0, isFromItem)
-    modifiers.Attack        = modifiers.Attack          or statSheet:NewStatModifierAdd("Attack",       0, isFromItem)
-    modifiers.Magic         = modifiers.Magic           or statSheet:NewStatModifierAdd("Magic",        0, isFromItem)
-    modifiers.CritChance    = modifiers.CritChance      or statSheet:NewStatModifierAdd("CritChance",   0, isFromItem)
-    modifiers.CDR           = modifiers.CDR             or statSheet:NewStatModifierAdd("CDR",          0, isFromItem)
-    modifiers.Haste         = modifiers.Haste           or statSheet:NewStatModifierAdd("Haste",        0, isFromItem)
-    modifiers.Tenacity      = modifiers.Tenacity        or statSheet:NewStatModifierAdd("Tenacity",     0, isFromItem)
+    local doNotReplicate = true
+    modifiers.Health        = modifiers.Health          or statSheet:NewStatModifierAdd("Health",       0, doNotReplicate)
+    modifiers.HealthPercent = modifiers.HealthPercent   or statSheet:NewStatModifierMul("Health",       1, doNotReplicate)
+    modifiers.Defense       = modifiers.Defense         or statSheet:NewStatModifierAdd("Defense",      0, doNotReplicate)
+    modifiers.Attack        = modifiers.Attack          or statSheet:NewStatModifierAdd("Attack",       0, doNotReplicate)
+    modifiers.Magic         = modifiers.Magic           or statSheet:NewStatModifierAdd("Magic",        0, doNotReplicate)
+    modifiers.CritChance    = modifiers.CritChance      or statSheet:NewStatModifierAdd("CritChance",   0, doNotReplicate)
+    modifiers.CDR           = modifiers.CDR             or statSheet:NewStatModifierAdd("CDR",          0, doNotReplicate)
+    modifiers.Haste         = modifiers.Haste           or statSheet:NewStatModifierAdd("Haste",        0, doNotReplicate)
+    modifiers.Tenacity      = modifiers.Tenacity        or statSheet:NewStatModifierAdd("Tenacity",     0, doNotReplicate)
     -- Read total item stats and apply to stat sheet.
     local itemStatTotals = inventory:GetStatTotals()
     modifiers.Health.addend             = itemStatTotals.Health
-    modifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100)+ 1
+    modifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100) + 1
     modifiers.Defense.addend            = itemStatTotals.Defense
     modifiers.Attack.addend             = itemStatTotals.Attack
     modifiers.Magic.addend              = itemStatTotals.Magic
