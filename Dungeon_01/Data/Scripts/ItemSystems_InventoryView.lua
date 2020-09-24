@@ -112,6 +112,9 @@ local function SetupControl(control, processSlot)
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
         assert(control.clientUserData.icon and control.clientUserData.border)
+        if control:GetCustomProperty("Disabled") then
+            control.clientUserData.disabled = control:GetCustomProperty("Disabled"):WaitForObject()
+        end
         if control:GetCustomProperty("NotAllowed") then
             control.clientUserData.notAllowed = control:GetCustomProperty("NotAllowed"):WaitForObject()
         end
@@ -466,6 +469,11 @@ function view:DrawSlots()
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
+        end
+
+        -- An additional graphic shows when the slot is not enabled.
+        if inventory:IsEquipSlot(slot.clientUserData.slotIndex) then
+            slot.clientUserData.disabled.visibility = inventory:IsSlotEnabled(slot.clientUserData.slotIndex) and Visibility.FORCE_OFF or Visibility.INHERIT
         end
     end
 end

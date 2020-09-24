@@ -92,7 +92,7 @@ local function ServerInitInventory()
         -- Update the player's stat sheet.
         ServerUpdateStatSheet(inventory, statModifiers)
         -- Update the player's animation stance depending on the item.
-        if inventory:IsPrimaryWeaponSlot(equipIndex) then
+        if inventory:IsMainHandSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
         end
     end)

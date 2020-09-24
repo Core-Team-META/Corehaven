@@ -85,8 +85,22 @@ function Inventory:IsEmptySlot(slotIndex)
 end
 
 -- True if the slot is the primary weapon slot.
-function Inventory:IsPrimaryWeaponSlot(slotIndex)
+function Inventory:IsMainHandSlot(slotIndex)
     return slotIndex == 1
+end
+
+-- Ture if the slot is the offhand weapons slot.
+function Inventory:IsOffHandSlot(slotIndex)
+    return slotIndex == 2
+end 
+
+-- True if the offhand slot is disabled.
+function Inventory:IsSlotEnabled(slotIndex)
+    if self:IsOffHandSlot(slotIndex) then
+        return not self.isOffHandDisabled
+    else
+        return true
+    end
 end
 
 -- True if the backpack is full.
@@ -233,13 +247,14 @@ function Inventory:_Init(database)
     self.database = database
     self.lootInfos = {}
     self:_ClearSlots()
+    self:_UpdateSlotStatus()
     self:_RecalculateStatTotals()
 end
 
 function Inventory:_ClearSlots()
     self.slotItems = {}
     self.equippedItems = {}
-    self.isOffhandDisabled = false
+    self.isOffHandDisabled = false
 end
 
 function Inventory:_IntoHash(isRuntime)
@@ -320,13 +335,17 @@ function Inventory:_SetSlotItem(slotIndex, item)
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
         self.equippedItems[slotIndex] = item
-        self.isOffhandDisabled = false
-        if item then
-            local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
-            self.isOffhandDisabled = constraints.isOffhandDisabled or false
-        end
+        self:_UpdateSlotStatus()
         self:_RecalculateStatTotals()
         self:_FireEvent("itemEquippedEvent", slotIndex, item)
+    end
+end
+
+function Inventory:_UpdateSlotStatus()
+    self.isOffHandDisabled = false
+    local mainHandItem = self:GetItem(1)
+    if mainHandItem and mainHandItem:IsTwoHanded() then
+        self.isOffHandDisabled = true
     end
 end
 
@@ -338,7 +357,7 @@ function Inventory:_RecalculateStatTotals()
     for slotIndex = 1,#Inventory.EQUIP_SLOTS do
         local item = self:GetItem(slotIndex)
         if item then
-            if Inventory.EQUIP_SLOTS[slotIndex].slotType == "OffHand" and self.isOffhandDisabled then
+            if item:GetEquipSlotType() == "OffHand" and self.isOffHandDisabled then
                 -- We have to be careful to not include offhand stats when they are disabled (by having a 2H weapon in mainhand).
             else
                 -- Accumulate stat contribution.
