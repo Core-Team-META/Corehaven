@@ -23,6 +23,10 @@
         Float: 18
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Throw a hammer at your target, stunning them."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 12661262948507566861

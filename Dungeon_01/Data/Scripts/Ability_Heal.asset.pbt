@@ -23,6 +23,10 @@
         Float: 0
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Heals your target."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 7365629020319167245

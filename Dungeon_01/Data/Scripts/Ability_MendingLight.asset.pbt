@@ -23,6 +23,10 @@
         Float: 6
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Empowers your target with holy energy, healing them over time."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 68334386686114509

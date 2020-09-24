@@ -23,6 +23,10 @@
         Float: 12
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Very quickly replenish yourself, healing a portion of your total health."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 4916300664397379492

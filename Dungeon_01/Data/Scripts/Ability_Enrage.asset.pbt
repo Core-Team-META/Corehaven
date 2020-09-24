@@ -23,6 +23,10 @@
         Float: 6
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Taunts all nearby enemies to attack you."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 5017032977863718353

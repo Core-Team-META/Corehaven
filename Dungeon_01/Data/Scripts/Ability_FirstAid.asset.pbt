@@ -23,6 +23,10 @@
         Float: 14
       }
       Overrides {
+        Name: "cs:Description"
+        String: "You tend to your wounds, healing a moderate amount."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 10675129086321838991

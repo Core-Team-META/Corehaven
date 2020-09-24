@@ -23,6 +23,10 @@
         Float: 8
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Wound your target, causing them to take damage over time."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 4200389437305254305

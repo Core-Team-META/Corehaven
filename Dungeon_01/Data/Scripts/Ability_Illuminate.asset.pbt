@@ -23,6 +23,10 @@
         Float: 13
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Lights up an area, healing friends and hurting enemies for a short duration."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 15828643209797385377

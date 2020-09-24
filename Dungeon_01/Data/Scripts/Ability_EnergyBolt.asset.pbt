@@ -23,6 +23,10 @@
         Float: 0
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Unleashes a bolt of magic at the target."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 15244624359982644025

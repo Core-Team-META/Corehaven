@@ -23,6 +23,10 @@
         Float: 14
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Curse your target. When the curse expires, it deals moderate damage to the target and leaps to another nearby target."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 11916650442979808988

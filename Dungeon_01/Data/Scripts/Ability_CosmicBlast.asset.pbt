@@ -23,6 +23,10 @@
         Float: 15
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Draw celestial bodies to the ground, causing large damage in an area."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 17982904600853192015

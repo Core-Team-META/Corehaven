@@ -23,6 +23,10 @@
         Float: 8
       }
       Overrides {
+        Name: "cs:Description"
+        String: "Spin around crippling all nearby foes, hurting them and reducing their speed and damage."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 2541224330033099660

@@ -23,6 +23,10 @@
         Float: 20
       }
       Overrides {
+        Name: "cs:Description"
+        String: "You drink a helpful potion."
+      }
+      Overrides {
         Name: "cs:AbilityTemplate"
         AssetReference {
           Id: 2291837529778361503
