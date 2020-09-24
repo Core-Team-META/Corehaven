@@ -1,6 +1,93 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 7937224026792626142
+  Name: "Fog"
+  Transform {
+    Location {
+      X: -299.541016
+      Y: 1719.53467
+      Z: 58.8095703
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  ChildIds: 18098791909408029971
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 18098791909408029971
+  Name: "Wispy Fog Volume VFX"
+  Transform {
+    Location {
+    }
+    Rotation {
+      Yaw: -50.5356598
+    }
+    Scale {
+      X: 58.9173775
+      Y: 47.917347
+      Z: 2.70019865
+    }
+  }
+  ParentId: 7937224026792626142
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Wind Speed"
+      Vector {
+        X: 20
+        Y: 50
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 4.9482336
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 2.95061636
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.291666657
+        G: 0.291666657
+        B: 0.291666657
+        A: 0.269000024
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3837058515785757415
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
   Id: 17437912343202772387
   Name: "Bush 01"
   Transform {
