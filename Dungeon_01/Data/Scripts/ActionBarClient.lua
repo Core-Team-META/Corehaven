@@ -96,7 +96,6 @@ local USER_FACING_BINDINGS =
 
 local buttonData = {}			-- int -> table {abilityName = string, button = CoreObject}
 local invalidAbilityNames = {}	-- So we don't spam warnings
-local lastActivateTimes = {}	-- abilityName -> float
 
 local draggingIndex = 0
 local wasCursorVisible = false	-- Last frame, for change detection
@@ -184,7 +183,6 @@ function OnBindingPressed(player, binding)
 
 			if abilityName and API_A.CanTrigger(abilityName) then
 				API_A.Trigger(abilityName)
-				lastActivateTimes[abilityName] = os.clock()
 			end
 
 			return
@@ -261,23 +259,9 @@ function Tick(deltaTime)
 		end
 	end
 
+	-- Updating cooldown displays
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
-			--[[ Update cast flash
-			if lastActivateTimes[data.abilityName] then
-				local elapsedTime = os.clock() - lastActivateTimes[data.abilityName]
-				local castFlash = data.button:GetCustomProperty("CastFlash"):WaitForObject()
-
-				if elapsedTime > 0.1 then
-					castFlash.visibility = Visibility.FORCE_OFF
-				else
-					local t = 1.0 - elapsedTime / 0.1
-					castFlash.visibility = Visibility.INHERIT
-					castFlash:SetColor(Color.New(1.0, 1.0, 1.0, t))
-				end
-			end]]
-
-			-- Updating cooldown displays
 			local ability = playerAbilities[data.abilityName]
 			local currentPhase = ability:GetCurrentPhase()
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
@@ -307,8 +291,12 @@ function Tick(deltaTime)
                     rightShadow.visibility = Visibility.FORCE_OFF
                 end
 	        end
+		end
+	end
 
-			-- Update enabled visual state
+	-- Update enabled visual state
+	for _, data in pairs(buttonData) do
+		if data.abilityName then
 			local ability = playerAbilities[data.abilityName]
 			local abilityData = API_A.GetAbilityData(data.abilityName)
 			local icon = data.button:GetCustomProperty("Icon"):WaitForObject()

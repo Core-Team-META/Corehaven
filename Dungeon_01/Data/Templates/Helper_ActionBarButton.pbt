@@ -15,9 +15,8 @@
             Z: 1
           }
         }
-        ParentId: 896353596925728614
+        ParentId: 379056897218762481
         ChildIds: 11831892971915444085
-        ChildIds: 12154386478039111507
         ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
         ChildIds: 3595806782696598917
@@ -27,12 +26,6 @@
             Name: "cs:Icon"
             ObjectReference {
               SubObjectId: 11831892971915444085
-            }
-          }
-          Overrides {
-            Name: "cs:CastFlash"
-            ObjectReference {
-              SubObjectId: 12154386478039111507
             }
           }
           Overrides {
@@ -128,63 +121,6 @@
           Image {
             Brush {
               Id: 17736261020205249573
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12154386478039111507
-        Name: "CastFlash"
-        Transform {
-          Location {
-          }
-          Rotation {
-            Yaw: 4.88533129e-12
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2794857081652719891
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
-        }
-        Control {
-          Width: 90
-          Height: 90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 4429609983468321265
             }
             Color {
               R: 1
@@ -647,15 +583,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Ability_Red_007"
-      }
-    }
-    Assets {
-      Id: 4429609983468321265
-      Name: "BG Highlighted 004"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundHighlighted_022"
       }
     }
     Assets {
