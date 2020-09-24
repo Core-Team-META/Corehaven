@@ -2532,7 +2532,6 @@ Objects {
   ChildIds: 15873111738312572482
   ChildIds: 15032446106698790013
   ChildIds: 3313505070372867298
-  ChildIds: 17689169008048815482
   ChildIds: 1326000758637526301
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2594,38 +2593,6 @@ Objects {
     Falloff: -1
     Radius: -1
     FadeOutTime: 0.1
-  }
-}
-Objects {
-  Id: 17689169008048815482
-  Name: "SFXGainExperience"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3817751886435604143
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  AudioInstance {
-    AudioAsset {
-      Id: 8241287932311685650
-    }
-    Repeat: true
-    Volume: 0.3
-    Falloff: -1
-    Radius: -1
-    FadeOutTime: 0.05
   }
 }
 Objects {
@@ -4376,12 +4343,6 @@ Objects {
       Name: "cs:ToolTipExperienceText"
       ObjectReference {
         SelfId: 10706759172279589970
-      }
-    }
-    Overrides {
-      Name: "cs:SFX_GainExperience"
-      ObjectReference {
-        SelfId: 17689169008048815482
       }
     }
     Overrides {

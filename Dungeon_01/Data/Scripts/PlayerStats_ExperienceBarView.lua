@@ -4,7 +4,6 @@ local HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
 local TOOLTIP_ROOT = script:GetCustomProperty("ToolTipRoot"):WaitForObject()
 local TOOLTIP_LEVEL = script:GetCustomProperty("ToolTipLevelText"):WaitForObject()
 local TOOLTIP_EXPERIENCE = script:GetCustomProperty("ToolTipExperienceText"):WaitForObject()
-local SFX_EXPERIENCE = script:GetCustomProperty("SFX_GainExperience"):WaitForObject()
 local SFX_LEVELUP = script:GetCustomProperty("SFX_LevelUp"):WaitForObject()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -59,12 +58,8 @@ local function UpdateProgressAnimation(dt)
         end
         -- Update.
         PROGRESS_BAR.progress = progress
-        if not SFX_EXPERIENCE.isPlaying then
-            SFX_EXPERIENCE:Play()
-        end
     else
         PROGRESS_BAR.progress = progressLerpStop
-        SFX_EXPERIENCE:Stop()
     end
 end
 
