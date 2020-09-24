@@ -3,6 +3,8 @@
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
+local ABILITY_TOOLTIP = script:GetCustomProperty("AbilityToolTip"):WaitForObject()
+local ABILITY_DRAG_TOGGLE = script:GetCustomProperty("AbilityDragToggle"):WaitForObject()
 local SOCKET_TEMPLATE = script:GetCustomProperty("SocketTemplate")
 local BUTTON_TEMPLATE = script:GetCustomProperty("ButtonTemplate")
 
@@ -98,12 +100,22 @@ local buttonData = {}			-- int -> table {abilityName = string, button = CoreObje
 local invalidAbilityNames = {}	-- So we don't spam warnings
 
 local draggingIndex = 0
+local isDraggingEnabled = false	-- When true, the action bar icons can be re-arranged.
 local wasCursorVisible = false	-- Last frame, for change detection
+
+local function TryTriggerActionAtIndex(index)
+	local abilityName = buttonData[index].abilityName
+
+	if abilityName and API_A.CanTrigger(abilityName) then
+		API_A.Trigger(abilityName)
+	end
+end
 
 function PlaceInSocket(uiObject, socketIndex)
 	uiObject.x = (socketIndex - (NUMBER_OF_SLOTS + 1) / 2) * SOCKET_WIDTH
 	uiObject.y = 0.0
 	uiObject:GetCustomProperty("BindingText"):WaitForObject().text = USER_FACING_BINDINGS[SLOT_BINDINGS[socketIndex]]
+	uiObject.clientUserData.socketIndex = socketIndex
 end
 
 function SpawnAbilityButton(abilityName, socketIndex)
@@ -113,6 +125,10 @@ function SpawnAbilityButton(abilityName, socketIndex)
 	local abilityData = API_A.GetAbilityData(abilityName)
 	icon:SetImage(abilityData.icon)
 	button:GetCustomProperty("CooldownTimeText"):WaitForObject().text = ""
+	button.clientUserData.activateButton = button:GetCustomProperty("ActivateButton"):WaitForObject()
+	button.clientUserData.activateButton.clickedEvent:Connect(function()
+		TryTriggerActionAtIndex(button.clientUserData.socketIndex)
+	end)
 	return button
 end
 
@@ -136,6 +152,50 @@ function GetSocketIndexAtCursorPosition()
 	end
 
 	return index
+end
+
+function SetupAbilityToolTip()
+	ABILITY_TOOLTIP.clientUserData.name = ABILITY_TOOLTIP:GetCustomProperty("AbilityNameText"):WaitForObject()
+	ABILITY_TOOLTIP.clientUserData.classification = ABILITY_TOOLTIP:GetCustomProperty("AbilityClassificationText"):WaitForObject()
+	ABILITY_TOOLTIP.clientUserData.description = ABILITY_TOOLTIP:GetCustomProperty("AbilityDescriptionText"):WaitForObject()
+end
+
+function HideAbilityToolTip()
+	ABILITY_TOOLTIP.parent = ABILITY_TOOLTIP.clientUserData.defaultParent
+	ABILITY_TOOLTIP.visibility = Visibility.FORCE_OFF
+end
+
+function DrawAbilityToolTip()
+	local socketIndex = GetSocketIndexAtCursorPosition()
+	local socketData = buttonData[socketIndex]
+	if socketData and socketData.button then
+		ABILITY_TOOLTIP.visibility = Visibility.INHERIT
+		ABILITY_TOOLTIP.parent = socketData.button
+		-- Update the ability(talent) information.
+		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
+		ABILITY_TOOLTIP.clientUserData.classification.text = "???"
+		ABILITY_TOOLTIP.clientUserData.description.text = "???"
+	else
+		HideAbilityToolTip()
+	end
+end
+
+function SetupAbilityDragToggle()
+	-- The icon is the only thing that changes when drawing the button.
+	ABILITY_DRAG_TOGGLE.clientUserData.lockIcon = ABILITY_DRAG_TOGGLE:GetCustomProperty("LockIcon"):WaitForObject()
+	local button = ABILITY_DRAG_TOGGLE:GetCustomProperty("LockButton"):WaitForObject()
+	local sfx = ABILITY_DRAG_TOGGLE:GetCustomProperty("ClickSound"):WaitForObject()
+	button.clickedEvent:Connect(function()
+		isDraggingEnabled = not isDraggingEnabled
+		sfx:Play()
+	end)
+end
+
+function DrawAbilityDragToggle()
+	local color = ABILITY_DRAG_TOGGLE.clientUserData.lockIcon:GetColor()
+	-- The lock icon is "grayed out" when dragging is enabled.
+	color.a = isDraggingEnabled and 0.4 or 0.9
+	ABILITY_DRAG_TOGGLE.clientUserData.lockIcon:SetColor(color)
 end
 
 function ReleaseDraggingButton()
@@ -170,21 +230,19 @@ function OnBindingPressed(player, binding)
 		local index = GetSocketIndexAtCursorPosition()
 
 		if index ~= 0 and buttonData[index].abilityName then
-			draggingIndex = index
-			local button = buttonData[draggingIndex].button
-			button.parent = CONTAINER
+			if isDraggingEnabled then
+				-- The action bar is unlocked, and a mouse-press indicates a desire to drag&drop.
+				draggingIndex = index
+				local button = buttonData[draggingIndex].button
+				button.parent = CONTAINER
+			end
 		end
 	end
 
 	-- Using abilities
 	for i, slotBinding in pairs(SLOT_BINDINGS) do
 		if slotBinding == binding then
-			local abilityName = buttonData[i].abilityName
-
-			if abilityName and API_A.CanTrigger(abilityName) then
-				API_A.Trigger(abilityName)
-			end
-
+			TryTriggerActionAtIndex(i)
 			return
 		end
 	end
@@ -192,7 +250,9 @@ end
 
 function OnBindingReleased(player, binding)
 	if binding == "ability_primary" then
-		ReleaseDraggingButton()
+		if draggingIndex ~= 0 then
+			ReleaseDraggingButton()
+		end
 	end
 end
 
@@ -238,13 +298,21 @@ function Tick(deltaTime)
 		end
 	end
 
-	-- Look for removed abilities
+	-- Look for removed abilities.
 	for i, data in pairs(buttonData) do
 		if data.abilityName then
 			if not playerAbilities[data.abilityName] or not Object.IsValid(playerAbilities[data.abilityName]) then
 				data.button:Destroy()
 				buttonData[i] = {}
 			end
+		end
+	end
+
+	-- Update button interaction state.	When the action bar is locked, players can "click-to-activate" their abilities.
+	local canClickToActivate = not isDraggingEnabled
+	for i, data in pairs(buttonData) do
+		if data.abilityName and data.button then
+			data.button.clientUserData.activateButton.isEnabled = canClickToActivate and API_A.CanTrigger(data.abilityName) 
 		end
 	end
 
@@ -318,6 +386,16 @@ function Tick(deltaTime)
 		button.y = cursorPosition.y - screenSize.y / 2.0
 	end
 
+	-- Update ability tooltip when not dragging.
+	if draggingIndex == 0 then
+		DrawAbilityToolTip()
+	else
+		HideAbilityToolTip()
+	end
+
+	-- Update the drag toggle button visuals.
+	DrawAbilityDragToggle()
+
 	-- Catch cursor changing visibility
 	local isCursorVisible = UI.IsCursorVisible()
 
@@ -339,6 +417,10 @@ for i = 1, NUMBER_OF_SLOTS do
 end
 
 PANEL.width = SOCKET_WIDTH * (NUMBER_OF_SLOTS - 1) + socketTemplateWidth
+
+-- Setup additional UI components.
+SetupAbilityToolTip()
+SetupAbilityDragToggle()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
