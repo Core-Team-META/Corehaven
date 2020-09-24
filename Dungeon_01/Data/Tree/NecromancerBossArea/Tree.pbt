@@ -1,6 +1,239 @@
 ﻿Name: "NecromancerBossArea"
 RootId: 11492308109361872204
 Objects {
+  Id: 14358643453186425448
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 633.173584
+      Y: 4771.59863
+      Z: 889.03064
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 20.486927
+    Color {
+      G: 0.72
+      B: 0.176423788
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 555.450256
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 10000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 4076660379728913952
+  Name: "Bone Human Skull Pile 02"
+  Transform {
+    Location {
+      X: 584.194092
+      Y: 4635.06055
+      Z: 687.620667
+    }
+    Rotation {
+      Yaw: 146.403961
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8026695780395936248
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14404246141543745854
+  Name: "Bone Human Skull Pile 02"
+  Transform {
+    Location {
+      X: 603.399658
+      Y: 4498.55078
+      Z: 652.988159
+    }
+    Rotation {
+      Yaw: 146.404
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8026695780395936248
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15242573521419086516
+  Name: "Bone Human Skull Pile 01"
+  Transform {
+    Location {
+      X: 547.511719
+      Y: 4479.15234
+      Z: 652.988159
+    }
+    Rotation {
+      Yaw: -97.5198364
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11492308109361872204
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1325257806995508552
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5459061625295234810
+  Name: "Default Floor"
+  Transform {
+    Location {
+      X: 679.730713
+      Y: 4752.78906
+      Z: 653.176758
+    }
+    Rotation {
+      Pitch: -5.15814209
+      Yaw: -79.9471436
+      Roll: -3.00036621
+    }
+    Scale {
+      X: 1.1106106
+      Y: 0.903169155
+      Z: 0.607319474
+    }
+  }
+  ParentId: 11492308109361872204
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 9879860904421587827
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: true
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.24765037
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.395927548
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11198688474246660903
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 7764553591393348917
   Name: "Decal Stone Cracks Variants 01"
   Transform {
@@ -11607,9 +11840,9 @@ Objects {
   Name: "Bottle 05"
   Transform {
     Location {
-      X: 565.623291
-      Y: 4466.33105
-      Z: 652.72113
+      X: 576.388916
+      Y: 4372.31641
+      Z: 678.994812
     }
     Rotation {
       Yaw: -21.4212036
@@ -11647,8 +11880,8 @@ Objects {
   Name: "Bone Human Skull Pile 01"
   Transform {
     Location {
-      X: 599.387451
-      Y: 4540.14258
+      X: 665.05835
+      Y: 4525.14648
       Z: 652.988159
     }
     Rotation {
@@ -11687,8 +11920,8 @@ Objects {
   Name: "Bone Human Skull Pile 01"
   Transform {
     Location {
-      X: 674.828857
-      Y: 4545.65527
+      X: 740.499756
+      Y: 4530.65918
       Z: 652.988159
     }
     Rotation {
@@ -11726,8 +11959,8 @@ Objects {
   Name: "Bone Human Skull Pile 02"
   Transform {
     Location {
-      X: 638.236328
-      Y: 4562.65234
+      X: 703.907227
+      Y: 4547.65625
       Z: 652.988159
     }
     Rotation {
@@ -46020,67 +46253,6 @@ Objects {
       X: 2.410676
       Y: 4.01766348
       Z: 0.706514895
-    }
-  }
-  ParentId: 11492308109361872204
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 4247430867898109902
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 0.806423843
-        B: 0.63
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7695830393755413980
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11230111586888346322
-  Name: "Default Floor"
-  Transform {
-    Location {
-      X: 635.385
-      Y: 4459.08105
-      Z: 652.783508
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.42367506
-      Y: 0.586440563
-      Z: 0.0366180204
     }
   }
   ParentId: 11492308109361872204

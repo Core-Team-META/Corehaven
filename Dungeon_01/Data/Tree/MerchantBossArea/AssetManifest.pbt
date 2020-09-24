@@ -350,6 +350,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8221347909026897831
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
   Id: 8205464909427510479
   Name: "Bone Human Tibula 01"
   PlatformAssetType: 1
@@ -464,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_horn_001"
+  }
+}
+Assets {
+  Id: 6367527662954153739
+  Name: "Ring"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_002"
   }
 }
 Assets {

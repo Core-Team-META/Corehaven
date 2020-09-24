@@ -593,6 +593,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12494784180091766806
+  Name: "Prism - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
   Id: 12457707986059827643
   Name: "Stone Railing Curved 6m"
   PlatformAssetType: 1
@@ -1241,6 +1250,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7438525365025507851
+  Name: "Rock 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
   Id: 7362232965091765999
   Name: "Bricks Mortar Thick 01"
   PlatformAssetType: 2
@@ -1625,6 +1643,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_001"
+  }
+}
+Assets {
+  Id: 4603537691901304316
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
   }
 }
 Assets {

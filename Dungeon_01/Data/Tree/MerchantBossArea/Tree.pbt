@@ -1,6 +1,867 @@
 ﻿Name: "MerchantBossArea"
 RootId: 7192807854345907469
 Objects {
+  Id: 16615048091771584311
+  Name: "MysterySymbol_GateEmblem"
+  Transform {
+    Location {
+      X: 4120.87402
+      Y: -833.984375
+      Z: 2405.7002
+    }
+    Rotation {
+      Yaw: 40.7647133
+      Roll: 1.53878872e-07
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 5715442064687713441
+  ChildIds: 9958972058684962081
+  ChildIds: 10737234693471752507
+  ChildIds: 9776844026998620479
+  ChildIds: 12514925986112008419
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12514925986112008419
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 8.64453125
+      Y: -9.4609375
+      Z: 46.8469238
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 14.0362635
+      Roll: -65.8723755
+    }
+    Scale {
+      X: 0.874485731
+      Y: 0.874492109
+      Z: 1.36927557
+    }
+  }
+  ParentId: 16615048091771584311
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9776844026998620479
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 5.015625
+      Y: -5.79174805
+      Z: 46.8469238
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 14.0362635
+      Roll: -65.8722534
+    }
+    Scale {
+      X: 0.314227253
+      Y: 0.314229518
+      Z: 0.492019057
+    }
+  }
+  ParentId: 16615048091771584311
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8886418915356232971
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10737234693471752507
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 7.50390625
+      Y: -8.01074219
+      Z: 46.8469238
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -51.8365173
+    }
+    Scale {
+      X: 2.21182704
+      Y: 2.21183062
+      Z: 0.130980045
+    }
+  }
+  ParentId: 16615048091771584311
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.359375
+        G: 0.359375
+        B: 0.359375
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15767187264673962515
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9958972058684962081
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 8.64453125
+      Y: -9.4609375
+      Z: 46.8469238
+    }
+    Rotation {
+      Pitch: -90
+      Yaw: 26.565033
+      Roll: -78.401062
+    }
+    Scale {
+      X: 0.571338952
+      Y: 0.571343064
+      Z: 0.894606
+    }
+  }
+  ParentId: 16615048091771584311
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5715442064687713441
+  Name: "Cylinder"
+  Transform {
+    Location {
+      X: 12.0683594
+      Y: -13.8183594
+      Z: 46.8469238
+    }
+    Rotation {
+      Pitch: -90
+      Roll: -51.8366394
+    }
+    Scale {
+      X: 3.62855148
+      Y: 3.62855768
+      Z: 0.214875743
+    }
+  }
+  ParentId: 16615048091771584311
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8221347909026897831
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.604166687
+        G: 0.604166687
+        B: 0.604166687
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15767187264673962515
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17743372035652163433
+  Name: "MysterySymbol"
+  Transform {
+    Location {
+      X: 20075.4902
+      Y: -17045.752
+      Z: 8455.33105
+    }
+    Rotation {
+      Pitch: 5.97420216
+      Yaw: -46.5887451
+      Roll: -0.0791931152
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7192807854345907469
+  ChildIds: 13636255076958290768
+  ChildIds: 4520149454264290435
+  ChildIds: 592537811146635619
+  ChildIds: 10832375600643977005
+  ChildIds: 4720928727117838072
+  ChildIds: 8845962666557652049
+  ChildIds: 7780593314166511202
+  ChildIds: 3776911645267697860
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3776911645267697860
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -1994.36548
+      Y: -1855.07214
+      Z: 396.122467
+    }
+    Rotation {
+      Yaw: 3.41509372e-06
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17743372035652163433
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 6.60767651
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.47549665
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1500
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 7000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 7780593314166511202
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 21.8021221
+      Y: -1.15118504
+      Z: 68.4435425
+    }
+    Rotation {
+      Pitch: 53.9775848
+      Yaw: 59.5019875
+      Roll: 58.9116096
+    }
+    Scale {
+      X: 0.363319486
+      Y: 0.363319486
+      Z: 0.363319486
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3.77939653
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 32
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 8845962666557652049
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 7.96776438
+      Y: -0.92363739
+      Z: 72.1896057
+    }
+    Rotation {
+      Pitch: 53.9772453
+      Yaw: 59.5013313
+      Roll: 57.8713646
+    }
+    Scale {
+      X: 0.840860903
+      Y: 0.840860903
+      Z: 0.840860903
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 6.01058483
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 32
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.0144288754
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 4720928727117838072
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -65.1118164
+      Y: 2.28669739
+      Z: 94.6936
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17743372035652163433
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 6.60767651
+    Color {
+      R: 0.339999974
+      G: 1
+      B: 0.47549665
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 1500
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 7000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
+  Id: 10832375600643977005
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -13.0256414
+      Y: -0.778229237
+      Z: -17.2540283
+    }
+    Rotation {
+      Pitch: 53.9775848
+      Yaw: 59.5019875
+      Roll: 58.9116096
+    }
+    Scale {
+      X: 0.439730793
+      Y: 0.439730793
+      Z: 0.439730793
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3.77939653
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 592537811146635619
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 34.1483421
+      Y: 77.9275
+      Z: 110.927101
+    }
+    Rotation {
+      Pitch: 53.9775848
+      Yaw: 59.5019875
+      Roll: 58.9116096
+    }
+    Scale {
+      X: 0.354879528
+      Y: 0.354879528
+      Z: 0.354879528
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3.77939653
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 4520149454264290435
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 23.6366348
+      Y: -77.8885651
+      Z: 116.40918
+    }
+    Rotation {
+      Pitch: 53.9775734
+      Yaw: 59.5019951
+      Roll: 58.9116211
+    }
+    Scale {
+      X: 0.34231624
+      Y: 0.34231624
+      Z: 0.34231624
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3.77939653
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13636255076958290768
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: -10.1065388
+      Y: 1.30829179
+      Z: 79.2152634
+    }
+    Rotation {
+      Pitch: 53.9775925
+      Yaw: 59.5020485
+      Roll: 58.9116821
+    }
+    Scale {
+      X: 0.838642597
+      Y: 0.838642597
+      Z: 0.838642597
+    }
+  }
+  ParentId: 17743372035652163433
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 3.77939653
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.339999974
+        G: 1
+        B: 0.47549665
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.166666672
+        G: 0.166666672
+        B: 0.166666672
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Sort Order"
+      Int: 1
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 643299253078524773
   Name: "Decal Stains Top 01"
   Transform {
@@ -115,14 +976,14 @@ Objects {
   Name: "MysterySymbol"
   Transform {
     Location {
-      X: 20085.1016
-      Y: -17052.5527
-      Z: 8615.30176
+      X: 20089.6523
+      Y: -14343.2119
+      Z: 8382.73926
     }
     Rotation {
-      Pitch: 10.677846
-      Yaw: -44.4634094
-      Roll: 0.000808434794
+      Pitch: 2.849787
+      Yaw: 50.2312279
+      Roll: 0.000778216578
     }
     Scale {
       X: 1
@@ -328,7 +1189,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 2874.82666
+        AttenuationRadius: 1500
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20

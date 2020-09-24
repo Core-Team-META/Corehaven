@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7720712756894007893
-  Name: "Rock Hexagonal"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_008"
-  }
-}
-Assets {
   Id: 7086338982397992348
   Name: "Rock Flat 02"
   PlatformAssetType: 1
@@ -62,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2198988441437446815
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
   Id: 1418690025087534347
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -86,15 +68,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
-  }
-}
-Assets {
-  Id: 1373893966887443091
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {

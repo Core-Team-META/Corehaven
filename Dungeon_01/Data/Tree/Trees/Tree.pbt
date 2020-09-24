@@ -1,6 +1,108 @@
 ﻿Name: "Trees"
 RootId: 6952976605387069163
 Objects {
+  Id: 2017524017510612080
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: 14506.5586
+      Y: -1123.78442
+      Z: 6500.38086
+    }
+    Rotation {
+      Yaw: -177.818878
+    }
+    Scale {
+      X: 0.829570174
+      Y: 0.829570174
+      Z: 0.829570174
+    }
+  }
+  ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2885800070905631850
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6985381670049490500
+  Name: "Tree Oak 01"
+  Transform {
+    Location {
+      X: 15134.5273
+      Y: -4962.58057
+      Z: 6703.3457
+    }
+    Rotation {
+      Yaw: -88.8162231
+    }
+    Scale {
+      X: 0.829570174
+      Y: 0.829570174
+      Z: 0.829570174
+    }
+  }
+  ParentId: 6952976605387069163
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Leaves:color"
+      Color {
+        R: 0.333333343
+        G: 0.230109423
+        B: 0.10069444
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 2885800070905631850
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 7070839673806132933
   Name: "Tree Oak 01"
   Transform {
