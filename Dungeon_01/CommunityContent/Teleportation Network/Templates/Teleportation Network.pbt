@@ -1021,6 +1021,6 @@
   Marketplace {
     Description: "A basic setup with teleportation pads. A central hub contains teleporters to each location, and each of those has a teleporter back to the main hub."
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
   DirectlyPublished: true
 }

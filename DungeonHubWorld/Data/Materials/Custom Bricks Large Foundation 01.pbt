@@ -2,7 +2,7 @@
   Id: 8315298341030148102
   Name: "Custom Bricks Large Foundation_OFFSET"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 14200381599681868577
     ParameterOverrides {

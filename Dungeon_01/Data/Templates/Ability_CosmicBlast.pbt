@@ -29,7 +29,7 @@
           IsEnabled: true
           KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 0.2
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -39,7 +39,7 @@
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.2
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -77,5 +77,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

@@ -2,7 +2,7 @@
   Id: 10510697877722768305
   Name: "Commoner Outfit - Copy"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 17128509348792783366
     ParameterOverrides {

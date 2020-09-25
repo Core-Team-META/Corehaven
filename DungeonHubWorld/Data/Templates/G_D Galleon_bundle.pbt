@@ -40,5 +40,5 @@
     Version: "1.1.0"
     Description: "Galleon for the D&D contest hub"
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
 }

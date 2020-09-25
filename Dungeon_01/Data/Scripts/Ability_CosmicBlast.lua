@@ -3,7 +3,7 @@
 local RADIUS = 500.0
 local BASE_DAMAGE = 60.0
 local DAMAGE_MULTIPLIER = 2.0
-local IMPACT_DELAY = 2.0
+local IMPACT_DELAY = 1.0
 
 local data = {}
 

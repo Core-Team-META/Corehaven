@@ -35,11 +35,13 @@
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
         AssetReference {
+          Id: 7750974908911944193
         }
       }
       Overrides {
         Name: "cs:OtherCasterEffectTemplate"
         AssetReference {
+          Id: 7750974908911944193
         }
       }
       Overrides {
@@ -69,5 +71,5 @@
       }
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

@@ -49,5 +49,5 @@
     Version: "1.0.0"
     Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves\r\nV. 1.2: Updated materials"
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
 }

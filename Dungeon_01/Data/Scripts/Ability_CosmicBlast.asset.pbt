@@ -35,27 +35,31 @@
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
         AssetReference {
+          Id: 16354732930197094246
         }
       }
       Overrides {
         Name: "cs:OtherCasterEffectTemplate"
         AssetReference {
+          Id: 16354732930197094246
         }
       }
       Overrides {
         Name: "cs:SelfTargetEffectTemplate"
         AssetReference {
+          Id: 9802536836358802692
         }
       }
       Overrides {
         Name: "cs:OtherTargetEffectTemplate"
         AssetReference {
+          Id: 9802536836358802692
         }
       }
       Overrides {
         Name: "cs:ReticleTemplate"
         AssetReference {
-          Id: 8814706256978041888
+          Id: 13771191809182075845
         }
       }
       Overrides {
@@ -75,5 +79,5 @@
       }
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

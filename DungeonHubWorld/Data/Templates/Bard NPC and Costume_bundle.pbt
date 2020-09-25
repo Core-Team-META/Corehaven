@@ -40,5 +40,5 @@
     Version: "1.0.0"
     Description: "For D&D event hub"
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
 }

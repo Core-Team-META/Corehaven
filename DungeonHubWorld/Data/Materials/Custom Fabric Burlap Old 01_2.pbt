@@ -2,7 +2,7 @@
   Id: 10857840130469278927
   Name: "Custom Fabric Burlap Old 01_2"
   PlatformAssetType: 13
-  SerializationVersion: 62
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 6307371810581530536
     ParameterOverrides {

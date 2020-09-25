@@ -567,5 +567,5 @@
       AssetId: "Basic_Door"
     }
   }
-  SerializationVersion: 62
+  SerializationVersion: 65
 }
