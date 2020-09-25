@@ -125,6 +125,7 @@ function SpawnAbilityButton(abilityName, socketIndex)
 	local abilityData = API_A.GetAbilityData(abilityName)
 	icon:SetImage(abilityData.icon)
 	button:GetCustomProperty("CooldownTimeText"):WaitForObject().text = ""
+	button.clientUserData.disabledIndicator = button:GetCustomProperty("DisabledIndicator"):WaitForObject()
 	button.clientUserData.activateButton = button:GetCustomProperty("ActivateButton"):WaitForObject()
 	button.clientUserData.activateButton.clickedEvent:Connect(function()
 		TryTriggerActionAtIndex(button.clientUserData.socketIndex)
@@ -315,6 +316,17 @@ function Tick(deltaTime)
 			if not playerAbilities[data.abilityName] or not Object.IsValid(playerAbilities[data.abilityName]) then
 				data.button:Destroy()
 				buttonData[i] = {}
+			end
+		end
+	end
+
+	-- Show the disabled indicator for any abilities whose equipment requirements are not met.
+	for _,data in pairs(buttonData) do
+		if data.button then
+			if data.abilityName and not API_A.AreEquipmentConstraintsSatisfied(LOCAL_PLAYER, data.abilityName) then
+				data.button.clientUserData.disabledIndicator.visibility = Visibility.INHERIT
+			else
+				data.button.clientUserData.disabledIndicator.visibility = Visibility.FORCE_OFF
 			end
 		end
 	end

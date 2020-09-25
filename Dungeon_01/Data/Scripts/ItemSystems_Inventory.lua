@@ -125,6 +125,15 @@ function Inventory:IterateEquipSlots()
     return iter, nil, 0 
 end
 
+-- Returns true if an item of the requested type is currently equipped and enabled.
+function Inventory:HasEquippedItemType(itemType)
+    local itemConstraints = Item.SLOT_CONSTRAINTS[itemType]
+    assert(itemConstraints, "unrecognized item type")
+    local itemEquipSlot = self:ConvertEquipSlotIndex(itemConstraints.slotType)
+    local currentItem = self:GetItem(itemEquipSlot)
+    return currentItem and currentItem:GetType() == itemType
+end
+
 -- Gets the first free backpack slot.
 function Inventory:GetFreeBackpackSlot()
     for slotIndex = #Inventory.EQUIP_SLOTS+1,Inventory.TOTAL_CAPACITY do

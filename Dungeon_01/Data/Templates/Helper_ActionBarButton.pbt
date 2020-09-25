@@ -15,13 +15,14 @@
             Z: 1
           }
         }
-        ParentId: 11922184646908098865
+        ParentId: 8743380433364127988
         ChildIds: 14367337440259048512
         ChildIds: 11831892971915444085
         ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
         ChildIds: 3595806782696598917
         ChildIds: 6905341891173339613
+        ChildIds: 5935856517260388140
         ChildIds: 17455389128647242737
         UnregisteredParameters {
           Overrides {
@@ -64,6 +65,12 @@
             Name: "cs:ActivateButton"
             ObjectReference {
               SubObjectId: 17455389128647242737
+            }
+          }
+          Overrides {
+            Name: "cs:DisabledIndicator"
+            ObjectReference {
+              SubObjectId: 5935856517260388140
             }
           }
         }
@@ -639,6 +646,177 @@
         }
       }
       Objects {
+        Id: 5935856517260388140
+        Name: "Disabled"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2794857081652719891
+        ChildIds: 21303638140380541
+        ChildIds: 973924656176702236
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          Width: -6
+          Height: -6
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 16532880832873788683
+            }
+            Color {
+              A: 0.6
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 21303638140380541
+        Name: "Circle"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5935856517260388140
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 70
+          Height: 70
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          Image {
+            Brush {
+              Id: 14162752028674158460
+            }
+            Color {
+              R: 0.399999976
+              G: 1.90734852e-07
+              A: 0.6
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 973924656176702236
+        Name: "Line"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5935856517260388140
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 66
+          Height: 4
+          RotationAngle: -45
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          Image {
+            Brush {
+              Id: 13778967266379385506
+            }
+            Color {
+              R: 0.399999976
+              G: 1.90734852e-07
+              A: 0.6
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 17455389128647242737
         Name: "ActivateButton"
         Transform {
@@ -742,6 +920,24 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameFlat_019"
+      }
+    }
+    Assets {
+      Id: 14162752028674158460
+      Name: "Frame Outlined Thick 006"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameFlat_015"
+      }
+    }
+    Assets {
+      Id: 13778967266379385506
+      Name: "BG Flat 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     PrimaryAssetId {

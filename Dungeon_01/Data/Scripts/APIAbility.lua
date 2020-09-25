@@ -140,6 +140,24 @@ function GetAbilityCooldown(abilityName)
 	return data.cooldown * GetCooldownReductionMultiplier()
 end
 
+-- Local client only.
+function AreEquipmentConstraintsSatisfied(player, abilityName)
+	local inventory = player.clientUserData.inventory
+	if not inventory then
+		return false
+	end
+
+	local constraints = abilityData[abilityName].equippedItemConstraints
+	if constraints then
+		for _,requiredItemType in ipairs(constraints) do
+			if not inventory:HasEquippedItemType(requiredItemType) then
+				return false
+			end
+		end
+	end
+	return true
+end
+
 -- Owning client
 -- Used for ground target abilities and some key state
 function OnBindingPressed(player, binding)
@@ -437,6 +455,10 @@ end
 -- Owning client
 function IsCasterValid(player, abilityName)
 	local data = abilityData[abilityName]
+
+	if not AreEquipmentConstraintsSatisfied(LOCAL_PLAYER, abilityName) then
+		return false
+	end
 
 	if not data.canMove then
 		-- This sort of corresponds with "are we trying to move". We set acceleration to be quite high.
@@ -777,6 +799,9 @@ function API.Initialize(isClient)
 		Events.Connect("SAI", OnServerAbilityInterrupt)
 	end
 end
+
+-- Make public.
+API.AreEquipmentConstraintsSatisfied = AreEquipmentConstraintsSatisfied
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
