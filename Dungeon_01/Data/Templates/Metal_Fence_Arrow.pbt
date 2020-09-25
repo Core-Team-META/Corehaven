@@ -15,17 +15,14 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 17484413003108212354
         ChildIds: 8623779459387563632
         ChildIds: 5646570714700823046
         ChildIds: 6063224670038848191
         ChildIds: 12677245148754201361
-        ChildIds: 2920878940643365415
         ChildIds: 5447562920273509517
-        ChildIds: 750152589578076513
         ChildIds: 17777628464871604092
         ChildIds: 5501286636472828538
-        ChildIds: 2390112193830285928
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -238,53 +235,6 @@
         }
       }
       Objects {
-        Id: 2920878940643365415
-        Name: "Prism - 8-Sided Polished"
-        Transform {
-          Location {
-            X: 0.021484375
-            Y: -0.157226563
-            Z: 164.191925
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.0979307815
-            Y: 0.0979307815
-            Z: 0.127120197
-          }
-        }
-        ParentId: 8681517526589976931
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12494784180091766806
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 5447562920273509517
         Name: "Text 05: S"
         Transform {
@@ -332,53 +282,6 @@
         CoreMesh {
           MeshAsset {
             Id: 15671372635376984832
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 750152589578076513
-        Name: "Prism - 8-Sided Polished"
-        Transform {
-          Location {
-            X: 0.021484375
-            Y: -0.157226563
-            Z: 52.5612183
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.068302989
-            Y: 0.068302989
-            Z: 0.169218183
-          }
-        }
-        ParentId: 8681517526589976931
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12494784180091766806
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -515,53 +418,6 @@
           }
         }
       }
-      Objects {
-        Id: 2390112193830285928
-        Name: "Prism - 8-Sided Polished"
-        Transform {
-          Location {
-            X: 0.021484375
-            Y: -0.157226563
-            Z: 128.133087
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.068302989
-            Y: 0.068302989
-            Z: 0.169218183
-          }
-        }
-        ParentId: 8681517526589976931
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 12494784180091766806
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 15671372635376984832
@@ -595,5 +451,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

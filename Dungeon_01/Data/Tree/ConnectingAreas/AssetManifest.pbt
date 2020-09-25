@@ -1349,6 +1349,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6702189381052600733
+  Name: "Stone Window"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_stone_window_001"
+  }
+}
+Assets {
   Id: 6585207450897081622
   Name: "Sphere"
   PlatformAssetType: 1
