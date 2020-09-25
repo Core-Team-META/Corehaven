@@ -312,7 +312,7 @@ function Tick(deltaTime)
 	local canClickToActivate = not isDraggingEnabled
 	for i, data in pairs(buttonData) do
 		if data.abilityName and data.button then
-			data.button.clientUserData.activateButton.isEnabled = canClickToActivate and API_A.CanTrigger(data.abilityName) 
+			data.button.clientUserData.activateButton.isEnabled = canClickToActivate
 		end
 	end
 

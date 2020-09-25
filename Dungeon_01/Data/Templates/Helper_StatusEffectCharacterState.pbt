@@ -7,7 +7,7 @@
       RootId: 12361334303452983452
       Objects {
         Id: 12361334303452983452
-        Name: "Helper_StatusEffectPlayerState"
+        Name: "Helper_StatusEffectCharacterState"
         Transform {
           Scale {
             X: 1
