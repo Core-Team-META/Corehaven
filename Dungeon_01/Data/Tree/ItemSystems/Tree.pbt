@@ -1245,7 +1245,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.8
+        A: 0.9
       }
       TeamSettings {
       }

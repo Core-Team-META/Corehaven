@@ -1,6 +1,8 @@
 ﻿local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
 local LEVELUP_BLINKER = script:GetCustomProperty("LevelUpBlinker"):WaitForObject()
 local HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
+local SEGMENTS_ROOT = script:GetCustomProperty("SegmentsRoot"):WaitForObject()
+local MATCH_WIDTH_OBJECT = script:GetCustomProperty("MatchWidthObject"):WaitForObject()
 local TOOLTIP_ROOT = script:GetCustomProperty("ToolTipRoot"):WaitForObject()
 local TOOLTIP_LEVEL = script:GetCustomProperty("ToolTipLevelText"):WaitForObject()
 local TOOLTIP_EXPERIENCE = script:GetCustomProperty("ToolTipExperienceText"):WaitForObject()
@@ -10,6 +12,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 while not LOCAL_PLAYER.clientUserData.statSheet do Task.Wait() end
 local statSheet = LOCAL_PLAYER.clientUserData.statSheet
 
+-- Animation parameters.
 local PROGRESS_ANIMATION_DURATION = 0.5
 local LEVELUP_ANIMATION_DURATION = 0.2
 local LEVELUP_ANIMATION_CYCLES = 1
@@ -25,6 +28,18 @@ local progressLerpTimer = 0
 local currentLevel = 1
 -- Level up animation state.
 local blinkTimer = nil
+
+local function InitializeControlWidth()
+    Task.Wait()
+    script.parent.width = MATCH_WIDTH_OBJECT.width
+    local markers = SEGMENTS_ROOT:GetChildren()
+    local spacing = script.parent.width / (#markers + 1)
+    local half = (#markers + 1) // 2
+    for i,marker in ipairs(markers) do
+        local x = spacing * (i - half)
+        marker.x = x
+    end
+end
 
 local function UpdateToolTipText()
     TOOLTIP_LEVEL.text = string.format("Level %d", statSheet:GetLevel())
@@ -98,3 +113,5 @@ end
 -- Connect hover button to trigger tooltip.
 HOVER_BUTTON.hoveredEvent:Connect(function() TOOLTIP_ROOT.visibility = Visibility.INHERIT end)
 HOVER_BUTTON.unhoveredEvent:Connect(function() TOOLTIP_ROOT.visibility = Visibility.FORCE_OFF end)
+
+InitializeControlWidth()

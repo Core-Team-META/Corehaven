@@ -110,7 +110,7 @@ Objects {
 }
 Objects {
   Id: 9718378531628205791
-  Name: "UI Panel"
+  Name: "Action Bar"
   Transform {
     Location {
     }
@@ -1986,7 +1986,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.8
+        A: 0.9
       }
       TeamSettings {
       }
@@ -4046,7 +4046,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.8
+        A: 0.9
       }
       TeamSettings {
       }
@@ -4760,7 +4760,7 @@ Objects {
 }
 Objects {
   Id: 3036076526882525714
-  Name: "Decorations"
+  Name: "Segments"
   Transform {
     Location {
     }
@@ -5454,6 +5454,18 @@ Objects {
       Name: "cs:HoverButton"
       ObjectReference {
         SelfId: 15873111738312572482
+      }
+    }
+    Overrides {
+      Name: "cs:SegmentsRoot"
+      ObjectReference {
+        SelfId: 3036076526882525714
+      }
+    }
+    Overrides {
+      Name: "cs:MatchWidthObject"
+      ObjectReference {
+        SelfId: 9718378531628205791
       }
     }
     Overrides {
