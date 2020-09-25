@@ -7422,6 +7422,7 @@ Objects {
     Overrides {
       Name: "cs:LootViewButton"
       ObjectReference {
+        SelfId: 5233136720388310078
       }
     }
     Overrides {
@@ -7437,6 +7438,7 @@ Objects {
     Overrides {
       Name: "cs:InventoryViewButton"
       ObjectReference {
+        SelfId: 11821814594095689041
       }
     }
     Overrides {

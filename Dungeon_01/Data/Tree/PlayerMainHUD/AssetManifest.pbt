@@ -26,6 +26,42 @@ Assets {
   }
 }
 Assets {
+  Id: 10536251484879582863
+  Name: "Frame Beveled 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px_022"
+  }
+}
+Assets {
+  Id: 8334953981554545297
+  Name: "Fantasy Package 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Package_001"
+  }
+}
+Assets {
+  Id: 6980104993132211032
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 6274244425604890526
+  Name: "Fantasy Pack 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Pack_006"
+  }
+}
+Assets {
   Id: 5691032217809589253
   Name: "Fame Metal Empty 003"
   PlatformAssetType: 9
@@ -59,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_collect_small_star_coin_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 3253118148106198509
+  Name: "Fantasy Book 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Book_001"
   }
 }
 Assets {

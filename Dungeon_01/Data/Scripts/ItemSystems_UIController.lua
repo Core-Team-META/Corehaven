@@ -1,8 +1,8 @@
 ﻿local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
---local LOOT_VIEW_BUTTON = script:GetCustomProperty("LootViewButton"):WaitForObject()
+local LOOT_VIEW_BUTTON = script:GetCustomProperty("LootViewButton"):WaitForObject()
 local LOOT_VIEW_HOTKEY = script:GetCustomProperty("LootViewHotkey")
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
---local INVENTORY_VIEW_BUTTON = script:GetCustomProperty("InventoryViewButton"):WaitForObject()
+local INVENTORY_VIEW_BUTTON = script:GetCustomProperty("InventoryViewButton"):WaitForObject()
 local INVENTORY_VIEW_HOTKEY = script:GetCustomProperty("InventoryViewHotkey")
 local SFX_OPEN = script:GetCustomProperty("SFX_InventoryOpen")
 local SFX_CLOSE = script:GetCustomProperty("SFX_InventoryClose")
@@ -28,3 +28,6 @@ LOCAL_PLAYER.bindingPressedEvent:Connect(function(_,binding)
         ToggleView(INVENTORY_VIEW)
     end
 end)
+
+LOOT_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(LOOT_VIEW) end)
+INVENTORY_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(INVENTORY_VIEW) end)
