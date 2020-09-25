@@ -95,14 +95,14 @@ local function ClientUpdateStatSheet(statSheet, modifiers)
 end
 
 local function ClientSetupReplicatedStatSheet()
-    -- No need to replicate other players' stat sheets on client.
-    if OWNER ~= Game.GetLocalPlayer() then return end
     -- Initialize client side stat sheet.
     OWNER.clientUserData.statSheet = StatSheet.New()
     -- Poll for networked stat changes.
     local statModifiers = {}
     local statSheetUpdateTask = Task.Spawn(function() ClientUpdateStatSheet(OWNER.clientUserData.statSheet, statModifiers) end)
     statSheetUpdateTask.repeatCount = -1
+    -- Make sure to cleanup the dangling task when the player leaves (and the statsheet network object is subsequently destroyed).
+    script.destroyEvent:Connect(function() statSheetUpdateTask:Cancel() end)
 end
 
 ---------------------------------------------------------------------------------------------------------

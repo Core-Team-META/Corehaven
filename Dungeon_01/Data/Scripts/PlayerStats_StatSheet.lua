@@ -71,8 +71,7 @@ function StatSheet:SetExperience(experience)
 end
 
 function StatSheet:AddExperience(experience)
-    self.experience = self.experience + experience
-    self:Update()
+    self:SetExperience(self.experience + experience)
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -178,6 +177,7 @@ end
 ---------------------------------------------------------------------------------------------------------
 function StatSheet:_Init()
     self.experience = 0
+    self.level = 1
     self.statBases = {}
     self.statTotals = {}
     self.statTotalModifiersAdd = {}
@@ -196,6 +196,7 @@ function StatSheet:_UpdateLevel()
         self.level = self.MAX_LEVEL
         return
     end
+    local oldLevel = self.level
     -- Bisect the experience curve to find the correct level.
     local lo = 1
     local hi = self.MAX_LEVEL
@@ -211,6 +212,10 @@ function StatSheet:_UpdateLevel()
         elseif not isBelowHiCutoff then
             lo = mi + 1
         end
+    end
+    local newLevel = self.level
+    if newLevel ~= oldLevel then
+        Events.Broadcast("StatSheet_LevelChanged", self, newLevel, oldLevel)
     end
 end
 
