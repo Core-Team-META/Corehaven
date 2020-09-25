@@ -15,15 +15,15 @@
             Z: 1
           }
         }
-        ParentId: 8743380433364127988
+        ParentId: 4781671109827199097
         ChildIds: 14367337440259048512
         ChildIds: 11831892971915444085
-        ChildIds: 15734142479675734061
         ChildIds: 7095211616368065396
         ChildIds: 3595806782696598917
         ChildIds: 6905341891173339613
         ChildIds: 5935856517260388140
         ChildIds: 17455389128647242737
+        ChildIds: 15734142479675734061
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
@@ -137,7 +137,7 @@
           }
           Image {
             Brush {
-              Id: 16532880832873788683
+              Id: 13778967266379385506
             }
             Color {
               A: 1
@@ -196,59 +196,6 @@
               R: 1
               G: 1
               B: 1
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15734142479675734061
-        Name: "Border"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 2794857081652719891
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 90
-          Height: 90
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 5635343760568520525
-            }
-            Color {
               A: 1
             }
             TeamSettings {
@@ -838,8 +785,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
-          Height: -10
+          Width: 2
+          Height: 2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -894,14 +841,124 @@
           }
         }
       }
+      Objects {
+        Id: 15734142479675734061
+        Name: "Border"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2794857081652719891
+        ChildIds: 12789196713209377616
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 90
+          Height: 90
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 5635343760568520525
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12789196713209377616
+        Name: "Border"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15734142479675734061
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 5635343760568520525
+            }
+            Color {
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
-      Id: 16532880832873788683
-      Name: "BG Flat 002"
+      Id: 13778967266379385506
+      Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_019"
+        AssetId: "BackgroundNoOutline_020"
       }
     }
     Assets {
@@ -914,12 +971,12 @@
       }
     }
     Assets {
-      Id: 5635343760568520525
-      Name: "Frame Outlined Thick 002"
+      Id: 16532880832873788683
+      Name: "BG Flat 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameFlat_019"
+        AssetId: "BackgroundNoOutline_019"
       }
     }
     Assets {
@@ -932,12 +989,12 @@
       }
     }
     Assets {
-      Id: 13778967266379385506
-      Name: "BG Flat 001"
+      Id: 5635343760568520525
+      Name: "Frame Outlined Thick 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "BackgroundNoOutline_020"
+        AssetId: "FrameFlat_019"
       }
     }
     PrimaryAssetId {

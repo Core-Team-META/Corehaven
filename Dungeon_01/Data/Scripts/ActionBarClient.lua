@@ -157,7 +157,7 @@ end
 
 function SetupAbilityToolTip()
 	ABILITY_TOOLTIP.clientUserData.name = ABILITY_TOOLTIP:GetCustomProperty("AbilityNameText"):WaitForObject()
-	ABILITY_TOOLTIP.clientUserData.classification = ABILITY_TOOLTIP:GetCustomProperty("AbilityClassificationText"):WaitForObject()
+	ABILITY_TOOLTIP.clientUserData.requirement = ABILITY_TOOLTIP:GetCustomProperty("AbilityRequirementText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.description = ABILITY_TOOLTIP:GetCustomProperty("AbilityDescriptionText"):WaitForObject()
 end
 
@@ -175,8 +175,13 @@ function DrawAbilityToolTip()
 		-- Update the ability(talent) information.
 		local abilityData = API_A.GetAbilityData(socketData.abilityName)
 		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
-		ABILITY_TOOLTIP.clientUserData.classification.text = "(TODO ability tags TODO)"
 		ABILITY_TOOLTIP.clientUserData.description.text = abilityData.description
+		ABILITY_TOOLTIP.clientUserData.requirement.text = ""
+		if abilityData.equippedItemConstraints then
+			ABILITY_TOOLTIP.clientUserData.requirement.text = string.format("requires:  %s", table.concat(abilityData.equippedItemConstraints, ", "))
+			local isDisabled = socketData.button.clientUserData.disabledIndicator.visibility ~= Visibility.FORCE_OFF
+			ABILITY_TOOLTIP.clientUserData.requirement:SetColor(isDisabled and Color.RED or Color.WHITE)
+		end
 	else
 		HideAbilityToolTip()
 	end
