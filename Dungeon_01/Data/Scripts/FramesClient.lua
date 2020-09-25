@@ -90,6 +90,9 @@ function IsCursorOverFrame(data)
 end
 
 function OnBindingPressed(player, binding)
+	-- One frame wait so this happens after we target an enemy if they are behind the frame
+	Task.Wait()
+
 	if binding == "ability_primary" then
 		for player, data in pairs(partyFrames) do
 			if IsCursorOverFrame(data) then

@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 15244624359982644025
-  Name: "Ability_EnergyBolt"
+  Id: 11322068319754823461
+  Name: "Animation_unarmed_magic_up"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13994712722476071660
+      RootId: 1395271830415331670
       Objects {
-        Id: 13994712722476071660
-        Name: "Ability_EnergyBolt"
+        Id: 1395271830415331670
+        Name: "Animation_unarmed_magic_up"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,6 @@
           }
         }
         ParentId: 4781671109827199097
-        UnregisteredParameters {
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27,15 +25,14 @@
         }
         Ability {
           IsEnabled: true
-          KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 2
+            Duration: 0.1
             CanMove: true
             CanJump: true
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           ExecutePhaseSettings {
@@ -44,7 +41,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:none"
+              Value: "mc:eabilitysetfacing:aim"
             }
           }
           RecoveryPhaseSettings {
@@ -60,11 +57,12 @@
             CanMove: true
             CanJump: true
             CanRotate: true
+            PreventOtherAbilities: true
             Facing_V2 {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "2hand_staff_magic_bolt"
+          Animation: "unarmed_magic_up"
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
           }
@@ -76,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 64
 }

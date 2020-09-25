@@ -725,14 +725,7 @@ end
 -- Server
 function API.GivePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
-
-	-- TEMP TO AVOID LEAKING ABILITIES
-	if playerAbilities[player][abilityName] then
-		return
-	end
-
 	assert(not playerAbilities[player][abilityName])
-
 	local ability = World.SpawnAsset(abilityData[abilityName].abilityTemplate)
 	-- These are all lumped into the cooldown property on the ability, and maintained by script
 	assert(ability.recoveryPhaseSettings.duration == 0.0)
@@ -746,12 +739,6 @@ end
 function API.RemovePlayerAbility(player, abilityName)
 	assert(abilityData[abilityName])
 	local ability = playerAbilities[player][abilityName]
-
-	-- PAIRED WITH ABOVE
-	if not ability then
-		return
-	end
-
 	assert(ability)
 	ability:Destroy()
 	playerAbilities[player][abilityName] = nil

@@ -7,7 +7,7 @@
       RootId: 3149170464123690541
       Objects {
         Id: 3149170464123690541
-        Name: "Helper_Effect_Wizard_Move"
+        Name: "Helper_Effect_Boss1_Necromancer_Move"
         Transform {
           Scale {
             X: 1
