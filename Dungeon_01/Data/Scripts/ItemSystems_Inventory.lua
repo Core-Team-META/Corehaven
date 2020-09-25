@@ -130,7 +130,7 @@ function Inventory:HasEquippedItemType(itemType)
     local itemConstraints = Item.SLOT_CONSTRAINTS[itemType]
     assert(itemConstraints, "unrecognized item type")
     local itemEquipSlot = self:ConvertEquipSlotIndex(itemConstraints.slotType)
-    local currentItem = self:GetItem(itemEquipSlot)
+    local currentItem = self:IsSlotEnabled(itemEquipSlot) and self:GetItem(itemEquipSlot) or nil
     return currentItem and currentItem:GetType() == itemType
 end
 
