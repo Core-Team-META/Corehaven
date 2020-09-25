@@ -25,6 +25,16 @@ end
 -- Wait until the database has fully loaded to proceed.
 Database:WaitUntilLoaded()
 
+-- Wait until the player stat sheet has loaded.
+while true do
+    if script.isClientOnly then
+        if OWNER.clientUserData.statSheet then break end
+    else
+        if OWNER.serverUserData.statSheet then break end
+    end
+    Task.Wait()
+end
+
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
     local playerData = Storage.GetPlayerData(OWNER)
@@ -82,15 +92,13 @@ end
 local function ServerInitInventory()
     OWNER.serverUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.serverUserData.inventory
-    -- Prepare a set of stat modifiers for each equipped item.
-    local statModifiers = {}
+    -- Connect the stat sheet.
+    inventory:ConnectToStatSheet(OWNER.serverUserData.statSheet)
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
     inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
-        -- Update the player's stat sheet.
-        ServerUpdateStatSheet(inventory, statModifiers)
         -- Update the player's animation stance depending on the item.
         if inventory:IsMainHandSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
@@ -117,6 +125,8 @@ end
 local function ClientInitInventoryLocal()
     OWNER.clientUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.clientUserData.inventory
+    -- Connect the stat sheet.
+    inventory:ConnectToStatSheet(OWNER.clientUserData.statSheet)
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
         ReliableEvents.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)

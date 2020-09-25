@@ -8,13 +8,13 @@ local function Enum(values) for i,v in ipairs(values) do values[v] = i end retur
 
 StatSheet.STATS = Enum{
     "Health",
-    "Attack",
     "Defense",
+    "Attack",
     "Magic",
-    "CritChance",
-    "CDR",
     "Haste",
     "Tenacity",
+    "CritChance",
+    "CDR",
 }
 
 -- Calculate the base stat amounts at a given level.

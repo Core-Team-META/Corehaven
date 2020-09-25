@@ -240,6 +240,27 @@ function Inventory:UpdateEquipSlotFromHash(slotIndex, itemHash)
     self:_SetSlotItem(slotIndex, item)
 end
 
+-- Connect this inventory instance to a stat sheet instance. Any changes to the inventory will reflect themselves
+-- in the statsheet.
+function Inventory:ConnectToStatSheet(statSheet)
+    assert(not self.connectedStatSheet, "inventory already has connected stat sheet")
+    -- Set up the static modifiers on the stat sheet.
+    local doNotReplicate = true
+    self.connectedStatSheet = statSheet
+    self.connectedStatSheetModifiers = {
+        Health          = statSheet:NewStatModifierAdd("Health",       0, doNotReplicate),
+        HealthPercent   = statSheet:NewStatModifierMul("Health",       1, doNotReplicate),
+        Defense         = statSheet:NewStatModifierAdd("Defense",      0, doNotReplicate),
+        Attack          = statSheet:NewStatModifierAdd("Attack",       0, doNotReplicate),
+        Magic           = statSheet:NewStatModifierAdd("Magic",        0, doNotReplicate),
+        CritChance      = statSheet:NewStatModifierAdd("CritChance",   0, doNotReplicate),
+        CDR             = statSheet:NewStatModifierAdd("CDR",          0, doNotReplicate),
+        Haste           = statSheet:NewStatModifierAdd("Haste",        0, doNotReplicate),
+        Tenacity        = statSheet:NewStatModifierAdd("Tenacity",     0, doNotReplicate),
+    }
+    self:_UpdateConnectedStatSheet()
+end
+
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
@@ -248,7 +269,7 @@ function Inventory:_Init(database)
     self.lootInfos = {}
     self:_ClearSlots()
     self:_UpdateSlotStatus()
-    self:_RecalculateStatTotals()
+    self:_UpdateStatTotals()
 end
 
 function Inventory:_ClearSlots()
@@ -336,7 +357,7 @@ function Inventory:_SetSlotItem(slotIndex, item)
     if self:IsEquipSlot(slotIndex) then
         self.equippedItems[slotIndex] = item
         self:_UpdateSlotStatus()
-        self:_RecalculateStatTotals()
+        self:_UpdateStatTotals()
         self:_FireEvent("itemEquippedEvent", slotIndex, item)
     end
 end
@@ -349,7 +370,7 @@ function Inventory:_UpdateSlotStatus()
     end
 end
 
-function Inventory:_RecalculateStatTotals()
+function Inventory:_UpdateStatTotals()
     self.statTotals = self.statTotals or {}
     for _,statName in ipairs(Item.STATS) do
         self.statTotals[statName] = 0
@@ -368,6 +389,24 @@ function Inventory:_RecalculateStatTotals()
             end
         end
     end
+    self:_UpdateConnectedStatSheet()
+end
+
+function Inventory:_UpdateConnectedStatSheet()
+    if not self.connectedStatSheet then return end
+    -- Read total item stats and apply to stat sheet.
+    local itemStatTotals = self:GetStatTotals()
+    self.connectedStatSheetModifiers.Health.addend             = itemStatTotals.Health
+    self.connectedStatSheetModifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100) + 1
+    self.connectedStatSheetModifiers.Defense.addend            = itemStatTotals.Defense
+    self.connectedStatSheetModifiers.Attack.addend             = itemStatTotals.Attack
+    self.connectedStatSheetModifiers.Magic.addend              = itemStatTotals.Magic
+    self.connectedStatSheetModifiers.CritChance.addend         = itemStatTotals.CritChance
+    self.connectedStatSheetModifiers.CDR.addend                = itemStatTotals.CDR
+    self.connectedStatSheetModifiers.Haste.addend              = itemStatTotals.Haste
+    self.connectedStatSheetModifiers.Tenacity.addend           = itemStatTotals.Tenacity
+    -- Tell the stat sheet to recalculate.
+    self.connectedStatSheet:Update()
 end
 
 function Inventory:__tostring()
