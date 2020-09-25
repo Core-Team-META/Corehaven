@@ -147,20 +147,6 @@ function Inventory:GetStatTotals()
     return self.statTotals
 end
 
--- Get the stat deltas if the given item is equipped instead of the currently equipped item (in corresponding slot).
-function Inventory:GetStatDeltas(compareItem)
-    local slotIndex = self:ConvertEquipSlotIndex(compareItem:GetEquipSlotType())
-    local currentItem = self:GetItem(slotIndex)
-    local statDeltas = {}
-    for statName,_ in pairs(self.statTotals) do
-        statDeltas[statName] = compareItem:GetStatTotal(statName)
-        if currentItem then
-            statDeltas[statName] = statDeltas[statName] - currentItem:GetStatTotal(statName)
-        end
-    end
-    return statDeltas
-end
-
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
     return self:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex) and self:_CanMoveItemOneWay(toSlotIndex, fromSlotIndex)
@@ -261,6 +247,18 @@ function Inventory:ConnectToStatSheet(statSheet)
     self:_UpdateConnectedStatSheet()
 end
 
+-- Returns the result of an "equip-item-quick-compare". Namely, how will the stats change if I equip this item?
+function Inventory:GetQuickCompareStatDeltas(equipSlotIndex, itemToTest)
+    local itemAlreadyEquipped = self:GetItem(equipSlotIndex)
+    local doNotFireEvent = true
+    local statDeltas = {}
+    for _,statName in ipairs(self.connectedStatSheet.STATS) do statDeltas[statName] = -self.connectedStatSheet:GetStatTotalValue(statName) end
+    self:_SetSlotItem(equipSlotIndex, itemToTest, doNotFireEvent)
+    for _,statName in ipairs(self.connectedStatSheet.STATS) do statDeltas[statName] = statDeltas[statName] + self.connectedStatSheet:GetStatTotalValue(statName) end
+    self:_SetSlotItem(equipSlotIndex, itemAlreadyEquipped, doNotFireEvent)
+    return statDeltas
+end
+
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
@@ -351,14 +349,16 @@ function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
     end
 end
 
-function Inventory:_SetSlotItem(slotIndex, item)
+function Inventory:_SetSlotItem(slotIndex, item, doNotFireEvent)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
         self.equippedItems[slotIndex] = item
         self:_UpdateSlotStatus()
         self:_UpdateStatTotals()
-        self:_FireEvent("itemEquippedEvent", slotIndex, item)
+        if not doNotFireEvent then
+            self:_FireEvent("itemEquippedEvent", slotIndex, item)
+        end
     end
 end
 

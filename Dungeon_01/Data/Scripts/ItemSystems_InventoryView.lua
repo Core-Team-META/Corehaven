@@ -549,71 +549,34 @@ function view:DrawHoverInfo()
 end
 
 function view:DrawHoverStatCompare()
-    -- Lazy initialize a set of modifiers used to test out our hypothetical weapon swap.
-    if not self.previewModifiers then
-        self.cachedStats = {}
-        self.previewModifiers = {}
-        for _,statName in ipairs(statSheet.STATS) do
-            self.previewModifiers[statName] = {
-                add = statSheet:NewStatModifierAdd(statName, 0, true),
-                mul = statSheet:NewStatModifierMul(statName, 1, true),
-            }
-        end
-    end
-    -- Default initialize modifier values.
-    for statName,modifiers in pairs(self.previewModifiers) do
-        modifiers.add.addend = 0
-        modifiers.mul.multiplier = 1
-        self.statElements[statName].clientUserData.previewDelta.text = ""
+    for statName,statElement in pairs(self.statElements) do
+        statElement.clientUserData.previewDelta.text = ""
     end
     -- Conditionally apply hypothetical modifiers to preview stat changes.
     if self.itemUnderCursor and not self.isDragging then
-        if inventory:IsBackpackSlot(self.slotUnderCursor.clientUserData.slotIndex) then
-            local previewItem = self.itemUnderCursor
-            local targetEquipSlotIndex = inventory:ConvertEquipSlotIndex(previewItem:GetEquipSlotType())
-            local exchangeItem = inventory:GetItem(targetEquipSlotIndex)
-            -- First the item we are hypothetically equipping.
-            for _,itemStatName in ipairs(previewItem.STATS) do
-                local statValue = previewItem:GetStatTotal(itemStatName)
-                if itemStatName == "HealthPercent" then
-                    self.previewModifiers.Health.mul.multiplier = 1 + statValue / 100
-                else
-                    self.previewModifiers[itemStatName].add.addend = statValue
-                end
+        local targetEquipSlotIndex = nil
+        local itemToTest = nil
+        if inventory:IsEquipSlot(self.slotUnderCursor.clientUserData.slotIndex) then
+            -- Clicking here will unequip any equipped item.
+            targetEquipSlotIndex = self.slotUnderCursor.clientUserData.slotIndex
+            itemToTest = nil
+        else
+            -- Clicking here will attempt to equip the item from the backpack, swapping out any equipped items.
+            targetEquipSlotIndex = inventory:ConvertEquipSlotIndex(self.itemUnderCursor:GetEquipSlotType())
+            itemToTest = self.itemUnderCursor
+        end
+        -- Run the comparison and show the results.
+        local quickCompareStatDeltas = inventory:GetQuickCompareStatDeltas(targetEquipSlotIndex, itemToTest)
+        for statName,statElement in pairs(self.statElements) do
+            local statDelta = quickCompareStatDeltas[statName]
+            if statDelta ~= 0 then
+                local compareColor = statDelta > 0 and Color.GREEN or Color.RED
+                local compareToken = statDelta > 0 and "+ " or "- "
+                statElement.clientUserData.previewDelta.text = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(statDelta))
+                statElement.clientUserData.previewDelta:SetColor(compareColor)
+                statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statSheet:GetStatTotalValue(statName) + statDelta)
+                statElement.clientUserData.value:SetColor(compareColor)
             end
-            -- Then the item we are hypothetically unequipping. Here we are inverting the modifiers which we know it will have applied.
-            if exchangeItem then
-                for _,itemStatName in ipairs(exchangeItem.STATS) do
-                    local statValue = exchangeItem:GetStatTotal(itemStatName)
-                    if itemStatName == "HealthPercent" then
-                        self.previewModifiers.Health.mul.multiplier = self.previewModifiers.Health.mul.multiplier * (1 / (1 + statValue / 100))
-                    else
-                        self.previewModifiers[itemStatName].add.addend = self.previewModifiers[itemStatName].add.addend - statValue
-                    end
-                end
-            end
-            -- Then the final stat calculation and drawing of appropriate graphics.
-            for _,statName in ipairs(statSheet.STATS) do
-                self.cachedStats[statName] = statSheet:GetStatTotalValue(statName)
-            end
-            statSheet:Update()
-            for _,statName in ipairs(statSheet.STATS) do
-                local statValue = statSheet:GetStatTotalValue(statName)
-                local statDelta = statValue - self.cachedStats[statName]
-                local statElement = self.statElements[statName]
-                if statDelta ~= 0 then
-                    local compareColor = statDelta > 0 and Color.GREEN or Color.RED
-                    local compareToken = statDelta > 0 and "+ " or "- "
-                    statElement.clientUserData.previewDelta.text = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(statDelta))
-                    statElement.clientUserData.previewDelta:SetColor(compareColor)
-                end
-            end
-            -- We got what we came for, restore the original stats.
-            for statName,modifiers in pairs(self.previewModifiers) do
-                modifiers.add.addend = 0
-                modifiers.mul.multiplier = 1
-            end
-            statSheet:Update()
         end
     end
 end
