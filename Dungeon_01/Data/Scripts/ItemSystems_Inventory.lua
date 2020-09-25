@@ -118,7 +118,8 @@ function Inventory:IterateEquipSlots()
     local function iter(_, slotIndex)
         slotIndex = slotIndex + 1
         if slotIndex <= #Inventory.EQUIP_SLOTS then
-            return slotIndex, self:GetItem(slotIndex)
+            local item = self:IsSlotEnabled(slotIndex) and self:GetItem(slotIndex) or nil
+            return slotIndex, item
         end
     end
     return iter, nil, 0 
