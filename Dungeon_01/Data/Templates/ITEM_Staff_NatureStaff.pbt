@@ -7,7 +7,7 @@
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "ITEM_Staff_SaphireStaff - Copy"
+        Name: "ITEM_Staff_NatureStaff"
         Transform {
           Scale {
             X: 1
@@ -16,15 +16,22 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 11527184425841715004
-        ChildIds: 5529803406879642450
-        ChildIds: 9272687909282299361
-        ChildIds: 13545949256429233863
+        ChildIds: 16244653056591058982
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
             AssetReference {
               Id: 427858117878211080
+            }
+          }
+          Overrides {
+            Name: "cs:AnimationStance"
+            String: "2hand_staff_stance"
+          }
+          Overrides {
+            Name: "cs:SOCKET_right_prop"
+            ObjectReference {
+              SubObjectId: 16244653056591058982
             }
           }
         }
@@ -39,21 +46,59 @@
         }
       }
       Objects {
-        Id: 11527184425841715004
-        Name: "Fantasy Sword Grip 01"
+        Id: 16244653056591058982
+        Name: "Fantasy Weapon - Staff 01 (Prop)"
         Transform {
           Location {
-            Z: -12.5220032
           }
           Rotation {
           }
           Scale {
             X: 1
             Y: 1
-            Z: 0.851540744
+            Z: 1
           }
         }
         ParentId: 14221847442462413670
+        ChildIds: 4524163515350619510
+        ChildIds: 7394984322462821811
+        ChildIds: 6241895931833723726
+        ChildIds: 17883230259680830206
+        ChildIds: 6537525781734860890
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 4524163515350619510
+        Name: "Fantasy Staff Grip 01"
+        Transform {
+          Location {
+            Z: -16.1568604
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.5
+            Y: 1.5
+            Z: 1
+          }
+        }
+        ParentId: 16244653056591058982
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7233684284515920392
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -62,7 +107,55 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3682206342183528038
+            Id: 6722267691116138132
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7394984322462821811
+        Name: "Pipe - Spiral"
+        Transform {
+          Location {
+            Z: 47.711731
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.171434641
+            Y: 0.171434641
+            Z: 0.327843159
+          }
+        }
+        ParentId: 16244653056591058982
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3680192657369177324
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 11186078670455541833
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -76,21 +169,34 @@
         }
       }
       Objects {
-        Id: 5529803406879642450
-        Name: "Fantasy Sword Blade 01"
+        Id: 6241895931833723726
+        Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: 14.8256006
+            Z: 47.711731
           }
           Rotation {
+            Yaw: -180
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.171434641
+            Y: 0.171434641
+            Z: 0.327843159
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 16244653056591058982
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3680192657369177324
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -99,7 +205,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5605120965849612947
+            Id: 11186078670455541833
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -113,21 +219,21 @@
         }
       }
       Objects {
-        Id: 9272687909282299361
-        Name: "Fantasy Sword Guard 02"
+        Id: 17883230259680830206
+        Name: "Bush Leafy Low 01"
         Transform {
           Location {
-            Z: 9.56092167
+            Z: 46.4002686
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.182372659
+            Y: 0.182372659
+            Z: 0.182372659
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 16244653056591058982
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -136,7 +242,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 9544913535066953067
+            Id: 10161356557666659885
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -150,21 +256,29 @@
         }
       }
       Objects {
-        Id: 13545949256429233863
-        Name: "Fantasy Pommel 01"
+        Id: 6537525781734860890
+        Name: "Fantasy Staff Grip 01"
         Transform {
           Location {
-            Z: -12.6728735
+            Z: -84.9023438
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
+            X: 1.5
+            Y: 1.5
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 16244653056591058982
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7233684284515920392
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -173,13 +287,12 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1383772742094820961
+            Id: 6722267691116138132
           }
           Teams {
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -197,39 +310,48 @@
       }
     }
     Assets {
-      Id: 3682206342183528038
-      Name: "Fantasy Sword Grip 01"
+      Id: 6722267691116138132
+      Name: "Fantasy Staff Grip 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_grip_sword_001"
+        AssetId: "sm_weap_fan_grip_staff_001"
       }
     }
     Assets {
-      Id: 5605120965849612947
-      Name: "Fantasy Sword Blade 01"
-      PlatformAssetType: 1
+      Id: 7233684284515920392
+      Name: "Grass Basic"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_blade_sword_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_001_uv"
       }
     }
     Assets {
-      Id: 9544913535066953067
-      Name: "Fantasy Sword Guard 02"
+      Id: 11186078670455541833
+      Name: "Pipe - Spiral"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_sword_002"
+        AssetId: "sm_pipe_spiral_001"
       }
     }
     Assets {
-      Id: 1383772742094820961
-      Name: "Fantasy Pommel 01"
+      Id: 3680192657369177324
+      Name: "Grass Clumps"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_grass_002_uv"
+      }
+    }
+    Assets {
+      Id: 10161356557666659885
+      Name: "Bush Leafy Low 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_001"
+        AssetId: "sm_foliage_gen_leafy_bush_002"
       }
     }
     PrimaryAssetId {

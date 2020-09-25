@@ -125,6 +125,7 @@ function SpawnAbilityButton(abilityName, socketIndex)
 	local abilityData = API_A.GetAbilityData(abilityName)
 	icon:SetImage(abilityData.icon)
 	button:GetCustomProperty("CooldownTimeText"):WaitForObject().text = ""
+	button.clientUserData.disabledIndicator = button:GetCustomProperty("DisabledIndicator"):WaitForObject()
 	button.clientUserData.activateButton = button:GetCustomProperty("ActivateButton"):WaitForObject()
 	button.clientUserData.activateButton.clickedEvent:Connect(function()
 		TryTriggerActionAtIndex(button.clientUserData.socketIndex)
@@ -156,7 +157,7 @@ end
 
 function SetupAbilityToolTip()
 	ABILITY_TOOLTIP.clientUserData.name = ABILITY_TOOLTIP:GetCustomProperty("AbilityNameText"):WaitForObject()
-	ABILITY_TOOLTIP.clientUserData.classification = ABILITY_TOOLTIP:GetCustomProperty("AbilityClassificationText"):WaitForObject()
+	ABILITY_TOOLTIP.clientUserData.requirement = ABILITY_TOOLTIP:GetCustomProperty("AbilityRequirementText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.description = ABILITY_TOOLTIP:GetCustomProperty("AbilityDescriptionText"):WaitForObject()
 end
 
@@ -174,8 +175,13 @@ function DrawAbilityToolTip()
 		-- Update the ability(talent) information.
 		local abilityData = API_A.GetAbilityData(socketData.abilityName)
 		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
-		ABILITY_TOOLTIP.clientUserData.classification.text = "(TODO ability tags TODO)"
 		ABILITY_TOOLTIP.clientUserData.description.text = abilityData.description
+		ABILITY_TOOLTIP.clientUserData.requirement.text = ""
+		if abilityData.equippedItemConstraints then
+			ABILITY_TOOLTIP.clientUserData.requirement.text = string.format("requires:  %s", table.concat(abilityData.equippedItemConstraints, ", "))
+			local isDisabled = socketData.button.clientUserData.disabledIndicator.visibility ~= Visibility.FORCE_OFF
+			ABILITY_TOOLTIP.clientUserData.requirement:SetColor(isDisabled and Color.RED or Color.WHITE)
+		end
 	else
 		HideAbilityToolTip()
 	end
@@ -315,6 +321,17 @@ function Tick(deltaTime)
 			if not playerAbilities[data.abilityName] or not Object.IsValid(playerAbilities[data.abilityName]) then
 				data.button:Destroy()
 				buttonData[i] = {}
+			end
+		end
+	end
+
+	-- Show the disabled indicator for any abilities whose equipment requirements are not met.
+	for _,data in pairs(buttonData) do
+		if data.button then
+			if data.abilityName and not API_A.AreEquipmentConstraintsSatisfied(LOCAL_PLAYER, data.abilityName) then
+				data.button.clientUserData.disabledIndicator.visibility = Visibility.INHERIT
+			else
+				data.button.clientUserData.disabledIndicator.visibility = Visibility.FORCE_OFF
 			end
 		end
 	end

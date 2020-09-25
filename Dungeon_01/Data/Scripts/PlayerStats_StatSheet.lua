@@ -8,13 +8,13 @@ local function Enum(values) for i,v in ipairs(values) do values[v] = i end retur
 
 StatSheet.STATS = Enum{
     "Health",
-    "Attack",
     "Defense",
+    "Attack",
     "Magic",
-    "CritChance",
-    "CDR",
     "Haste",
     "Tenacity",
+    "CritChance",
+    "CDR",
 }
 
 -- Calculate the base stat amounts at a given level.
@@ -71,8 +71,7 @@ function StatSheet:SetExperience(experience)
 end
 
 function StatSheet:AddExperience(experience)
-    self.experience = self.experience + experience
-    self:Update()
+    self:SetExperience(self.experience + experience)
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -130,6 +129,14 @@ function StatSheet:GetStatTotalModifierMul(statName)
     return self.statTotalModifiersMul[statName] + 1.
 end
 
+function StatSheet:GetStatDynamicModifierAdd(statName)
+    return self.statDynamicModifiersAdd[statName]
+end
+
+function StatSheet:GetStatDynamicModifierMul(statName)
+    return self.statDynamicModifiersMul[statName] + 1.
+end
+
 ---------------------------------------------------------------------------------------------------------
 function StatSheet:NewStatModifierAdd(statName, addend, isStatic)
     local modifier = {
@@ -142,6 +149,11 @@ function StatSheet:NewStatModifierAdd(statName, addend, isStatic)
     return modifier
 end
 
+-- The isStatic flag is used to indicate sources of stats which are already
+-- replicated across server/client by some other means. The primary example of this
+-- is the inventory system, which handles its own replication and applies its own
+-- modifiers already. We do not want to include these amounts in the replicated values
+-- lest they be double-counted.
 function StatSheet:NewStatModifierMul(statName, multiplier, isStatic)
     assert(multiplier >= 0)
     local modifier = {
@@ -165,10 +177,13 @@ end
 ---------------------------------------------------------------------------------------------------------
 function StatSheet:_Init()
     self.experience = 0
+    self.level = 1
     self.statBases = {}
     self.statTotals = {}
     self.statTotalModifiersAdd = {}
     self.statTotalModifiersMul = {}
+    self.statDynamicModifiersAdd = {}
+    self.statDynamicModifiersMul = {}
     self.statModifiersAdd = {}
     self.statModifiersMul = {}
     self.statHasUppers = {}
@@ -181,6 +196,7 @@ function StatSheet:_UpdateLevel()
         self.level = self.MAX_LEVEL
         return
     end
+    local oldLevel = self.level
     -- Bisect the experience curve to find the correct level.
     local lo = 1
     local hi = self.MAX_LEVEL
@@ -197,6 +213,10 @@ function StatSheet:_UpdateLevel()
             lo = mi + 1
         end
     end
+    local newLevel = self.level
+    if newLevel ~= oldLevel then
+        Events.Broadcast("StatSheet_LevelChanged", self, newLevel, oldLevel)
+    end
 end
 
 function StatSheet:_UpdateStats()
@@ -205,13 +225,18 @@ function StatSheet:_UpdateStats()
         self.statBases[statName] = self.STAT_CURVES[statName](self.level)
         self.statTotalModifiersAdd[statName] = 0
         self.statTotalModifiersMul[statName] = 0
+        self.statDynamicModifiersAdd[statName] = 0
+        self.statDynamicModifiersMul[statName] = 0
         self.statHasUppers[statName] = nil
         self.statHasDowners[statName] = nil
     end
     -- Additive.
     for modifier,_ in pairs(self.statModifiersAdd) do
+        -- All modifiers count towards the total.
         self.statTotalModifiersAdd[modifier.statName] = self.statTotalModifiersAdd[modifier.statName] + modifier.addend
+        -- Non-static modifiers are included in the dynamic calculation.
         if not modifier.isStatic then
+            self.statDynamicModifiersAdd[modifier.statName] = self.statDynamicModifiersAdd[modifier.statName] + modifier.addend
             self.statHasUppers[modifier.statName] = modifier.addend > 0 or self.statHasUppers[modifier.statName]
             self.statHasDowners[modifier.statName] = modifier.addend < 0 or self.statHasDowners[modifier.statName]
         end
@@ -220,8 +245,11 @@ function StatSheet:_UpdateStats()
     for modifier,_ in pairs(self.statModifiersMul) do
         -- Multiplicative modifers combine additively. This is semantically confusing, but conceptually what you would expect.
         local multiplierAsPercent = modifier.multiplier - 1.0
+        -- All modifiers count towards the total.
         self.statTotalModifiersMul[modifier.statName] = self.statTotalModifiersMul[modifier.statName] + multiplierAsPercent
+        -- Non-static modifiers are included in the dynamic calculation.
         if not modifier.isStatic then
+            self.statDynamicModifiersMul[modifier.statName] = self.statDynamicModifiersMul[modifier.statName] + multiplierAsPercent
             self.statHasUppers[modifier.statName] = modifier.multiplier > 1 or self.statHasUppers[modifier.statName]
             self.statHasDowners[modifier.statName] = modifier.multiplier < 1 or self.statHasDowners[modifier.statName]
         end

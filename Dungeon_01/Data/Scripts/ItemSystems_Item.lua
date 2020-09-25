@@ -56,15 +56,15 @@ Item.SLOT_CONSTRAINTS = {
     Axe         = { slotType = "MainHand" },
     Boots       = { slotType = "Feet" },
     Dagger      = { slotType = "MainHand" },
-    Greatsword  = { slotType = "MainHand", isOffHandDisabled = true },
+    Greatsword  = { slotType = "MainHand", isTwoHanded = true },
     Focus       = { slotType = "OffHand" },
     Helmet      = { slotType = "Head" },
     Mace        = { slotType = "MainHand" },
     Shield      = { slotType = "OffHand" },
-    Staff       = { slotType = "MainHand", isOffHandDisabled = true },
+    Staff       = { slotType = "MainHand", isTwoHanded = true },
     Sword       = { slotType = "MainHand" },
     Trinket     = { slotType = "Accessory" },
-    Warhammer   = { slotType = "MainHand", isOffHandDisabled = true },
+    Warhammer   = { slotType = "MainHand", isTwoHanded = true },
     Wand        = { slotType = "MainHand" },
 }
 
@@ -105,6 +105,10 @@ end
 
 function Item:GetRarity()
     return self.data.rarity
+end
+
+function Item:IsTwoHanded()
+    return self.SLOT_CONSTRAINTS[self:GetType()].isTwoHanded
 end
 
 function Item:ApplyIconImageSettings(uiImage)

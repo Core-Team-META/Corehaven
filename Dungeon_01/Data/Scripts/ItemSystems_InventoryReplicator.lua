@@ -25,6 +25,16 @@ end
 -- Wait until the database has fully loaded to proceed.
 Database:WaitUntilLoaded()
 
+-- Wait until the player stat sheet has loaded.
+while true do
+    if script.isClientOnly then
+        if OWNER.clientUserData.statSheet then break end
+    else
+        if OWNER.serverUserData.statSheet then break end
+    end
+    Task.Wait()
+end
+
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
     local playerData = Storage.GetPlayerData(OWNER)
@@ -46,20 +56,20 @@ end
 local function ServerUpdateStatSheet(inventory, modifiers)
     local statSheet = OWNER.serverUserData.statSheet
     -- First time through, make sure all modifiers are present.
-    local isFromItem = true
-    modifiers.Health        = modifiers.Health          or statSheet:NewStatModifierAdd("Health",       0, isFromItem)
-    modifiers.HealthPercent = modifiers.HealthPercent   or statSheet:NewStatModifierMul("Health",       1, isFromItem)
-    modifiers.Defense       = modifiers.Defense         or statSheet:NewStatModifierAdd("Defense",      0, isFromItem)
-    modifiers.Attack        = modifiers.Attack          or statSheet:NewStatModifierAdd("Attack",       0, isFromItem)
-    modifiers.Magic         = modifiers.Magic           or statSheet:NewStatModifierAdd("Magic",        0, isFromItem)
-    modifiers.CritChance    = modifiers.CritChance      or statSheet:NewStatModifierAdd("CritChance",   0, isFromItem)
-    modifiers.CDR           = modifiers.CDR             or statSheet:NewStatModifierAdd("CDR",          0, isFromItem)
-    modifiers.Haste         = modifiers.Haste           or statSheet:NewStatModifierAdd("Haste",        0, isFromItem)
-    modifiers.Tenacity      = modifiers.Tenacity        or statSheet:NewStatModifierAdd("Tenacity",     0, isFromItem)
+    local doNotReplicate = true
+    modifiers.Health        = modifiers.Health          or statSheet:NewStatModifierAdd("Health",       0, doNotReplicate)
+    modifiers.HealthPercent = modifiers.HealthPercent   or statSheet:NewStatModifierMul("Health",       1, doNotReplicate)
+    modifiers.Defense       = modifiers.Defense         or statSheet:NewStatModifierAdd("Defense",      0, doNotReplicate)
+    modifiers.Attack        = modifiers.Attack          or statSheet:NewStatModifierAdd("Attack",       0, doNotReplicate)
+    modifiers.Magic         = modifiers.Magic           or statSheet:NewStatModifierAdd("Magic",        0, doNotReplicate)
+    modifiers.CritChance    = modifiers.CritChance      or statSheet:NewStatModifierAdd("CritChance",   0, doNotReplicate)
+    modifiers.CDR           = modifiers.CDR             or statSheet:NewStatModifierAdd("CDR",          0, doNotReplicate)
+    modifiers.Haste         = modifiers.Haste           or statSheet:NewStatModifierAdd("Haste",        0, doNotReplicate)
+    modifiers.Tenacity      = modifiers.Tenacity        or statSheet:NewStatModifierAdd("Tenacity",     0, doNotReplicate)
     -- Read total item stats and apply to stat sheet.
     local itemStatTotals = inventory:GetStatTotals()
     modifiers.Health.addend             = itemStatTotals.Health
-    modifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100)+ 1
+    modifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100) + 1
     modifiers.Defense.addend            = itemStatTotals.Defense
     modifiers.Attack.addend             = itemStatTotals.Attack
     modifiers.Magic.addend              = itemStatTotals.Magic
@@ -82,17 +92,15 @@ end
 local function ServerInitInventory()
     OWNER.serverUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.serverUserData.inventory
-    -- Prepare a set of stat modifiers for each equipped item.
-    local statModifiers = {}
+    -- Connect the stat sheet.
+    inventory:ConnectToStatSheet(OWNER.serverUserData.statSheet)
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
     inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
-        -- Update the player's stat sheet.
-        ServerUpdateStatSheet(inventory, statModifiers)
         -- Update the player's animation stance depending on the item.
-        if inventory:IsPrimaryWeaponSlot(equipIndex) then
+        if inventory:IsMainHandSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
         end
     end)
@@ -117,6 +125,8 @@ end
 local function ClientInitInventoryLocal()
     OWNER.clientUserData.inventory = Inventory.New(Database)
     local inventory = OWNER.clientUserData.inventory
+    -- Connect the stat sheet.
+    inventory:ConnectToStatSheet(OWNER.clientUserData.statSheet)
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
         ReliableEvents.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)

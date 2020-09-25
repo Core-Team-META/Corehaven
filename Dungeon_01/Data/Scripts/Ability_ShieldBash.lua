@@ -13,6 +13,7 @@ data.enemyTargetValid = true
 data.requiresFacing = true
 data.groundTargets = false
 data.canMove = true
+data.equippedItemConstraints = { "Shield" }
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
 data.cooldown = script:GetCustomProperty("Cooldown")

@@ -85,8 +85,22 @@ function Inventory:IsEmptySlot(slotIndex)
 end
 
 -- True if the slot is the primary weapon slot.
-function Inventory:IsPrimaryWeaponSlot(slotIndex)
+function Inventory:IsMainHandSlot(slotIndex)
     return slotIndex == 1
+end
+
+-- Ture if the slot is the offhand weapons slot.
+function Inventory:IsOffHandSlot(slotIndex)
+    return slotIndex == 2
+end 
+
+-- True if the offhand slot is disabled.
+function Inventory:IsSlotEnabled(slotIndex)
+    if self:IsOffHandSlot(slotIndex) then
+        return not self.isOffHandDisabled
+    else
+        return true
+    end
 end
 
 -- True if the backpack is full.
@@ -104,10 +118,20 @@ function Inventory:IterateEquipSlots()
     local function iter(_, slotIndex)
         slotIndex = slotIndex + 1
         if slotIndex <= #Inventory.EQUIP_SLOTS then
-            return slotIndex, self:GetItem(slotIndex)
+            local item = self:IsSlotEnabled(slotIndex) and self:GetItem(slotIndex) or nil
+            return slotIndex, item
         end
     end
     return iter, nil, 0 
+end
+
+-- Returns true if an item of the requested type is currently equipped and enabled.
+function Inventory:HasEquippedItemType(itemType)
+    local itemConstraints = Item.SLOT_CONSTRAINTS[itemType]
+    assert(itemConstraints, "unrecognized item type")
+    local itemEquipSlot = self:ConvertEquipSlotIndex(itemConstraints.slotType)
+    local currentItem = self:IsSlotEnabled(itemEquipSlot) and self:GetItem(itemEquipSlot) or nil
+    return currentItem and currentItem:GetType() == itemType
 end
 
 -- Gets the first free backpack slot.
@@ -131,20 +155,6 @@ end
 -- Get the cumulative stat totals from all equipped items.
 function Inventory:GetStatTotals()
     return self.statTotals
-end
-
--- Get the stat deltas if the given item is equipped instead of the currently equipped item (in corresponding slot).
-function Inventory:GetStatDeltas(compareItem)
-    local slotIndex = self:ConvertEquipSlotIndex(compareItem:GetEquipSlotType())
-    local currentItem = self:GetItem(slotIndex)
-    local statDeltas = {}
-    for statName,_ in pairs(self.statTotals) do
-        statDeltas[statName] = compareItem:GetStatTotal(statName)
-        if currentItem then
-            statDeltas[statName] = statDeltas[statName] - currentItem:GetStatTotal(statName)
-        end
-    end
-    return statDeltas
 end
 
 -- True if the move operation is valid.
@@ -226,6 +236,39 @@ function Inventory:UpdateEquipSlotFromHash(slotIndex, itemHash)
     self:_SetSlotItem(slotIndex, item)
 end
 
+-- Connect this inventory instance to a stat sheet instance. Any changes to the inventory will reflect themselves
+-- in the statsheet.
+function Inventory:ConnectToStatSheet(statSheet)
+    assert(not self.connectedStatSheet, "inventory already has connected stat sheet")
+    -- Set up the static modifiers on the stat sheet.
+    local doNotReplicate = true
+    self.connectedStatSheet = statSheet
+    self.connectedStatSheetModifiers = {
+        Health          = statSheet:NewStatModifierAdd("Health",       0, doNotReplicate),
+        HealthPercent   = statSheet:NewStatModifierMul("Health",       1, doNotReplicate),
+        Defense         = statSheet:NewStatModifierAdd("Defense",      0, doNotReplicate),
+        Attack          = statSheet:NewStatModifierAdd("Attack",       0, doNotReplicate),
+        Magic           = statSheet:NewStatModifierAdd("Magic",        0, doNotReplicate),
+        CritChance      = statSheet:NewStatModifierAdd("CritChance",   0, doNotReplicate),
+        CDR             = statSheet:NewStatModifierAdd("CDR",          0, doNotReplicate),
+        Haste           = statSheet:NewStatModifierAdd("Haste",        0, doNotReplicate),
+        Tenacity        = statSheet:NewStatModifierAdd("Tenacity",     0, doNotReplicate),
+    }
+    self:_UpdateConnectedStatSheet()
+end
+
+-- Returns the result of an "equip-item-quick-compare". Namely, how will the stats change if I equip this item?
+function Inventory:GetQuickCompareStatDeltas(equipSlotIndex, itemToTest)
+    local itemAlreadyEquipped = self:GetItem(equipSlotIndex)
+    local doNotFireEvent = true
+    local statDeltas = {}
+    for _,statName in ipairs(self.connectedStatSheet.STATS) do statDeltas[statName] = -self.connectedStatSheet:GetStatTotalValue(statName) end
+    self:_SetSlotItem(equipSlotIndex, itemToTest, doNotFireEvent)
+    for _,statName in ipairs(self.connectedStatSheet.STATS) do statDeltas[statName] = statDeltas[statName] + self.connectedStatSheet:GetStatTotalValue(statName) end
+    self:_SetSlotItem(equipSlotIndex, itemAlreadyEquipped, doNotFireEvent)
+    return statDeltas
+end
+
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
@@ -233,13 +276,14 @@ function Inventory:_Init(database)
     self.database = database
     self.lootInfos = {}
     self:_ClearSlots()
-    self:_RecalculateStatTotals()
+    self:_UpdateSlotStatus()
+    self:_UpdateStatTotals()
 end
 
 function Inventory:_ClearSlots()
     self.slotItems = {}
     self.equippedItems = {}
-    self.isOffhandDisabled = false
+    self.isOffHandDisabled = false
 end
 
 function Inventory:_IntoHash(isRuntime)
@@ -315,22 +359,28 @@ function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
     end
 end
 
-function Inventory:_SetSlotItem(slotIndex, item)
+function Inventory:_SetSlotItem(slotIndex, item, doNotFireEvent)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
         self.equippedItems[slotIndex] = item
-        self.isOffhandDisabled = false
-        if item then
-            local constraints = Item.SLOT_CONSTRAINTS[item:GetType()]
-            self.isOffhandDisabled = constraints.isOffhandDisabled or false
+        self:_UpdateSlotStatus()
+        self:_UpdateStatTotals()
+        if not doNotFireEvent then
+            self:_FireEvent("itemEquippedEvent", slotIndex, item)
         end
-        self:_RecalculateStatTotals()
-        self:_FireEvent("itemEquippedEvent", slotIndex, item)
     end
 end
 
-function Inventory:_RecalculateStatTotals()
+function Inventory:_UpdateSlotStatus()
+    self.isOffHandDisabled = false
+    local mainHandItem = self:GetItem(1)
+    if mainHandItem and mainHandItem:IsTwoHanded() then
+        self.isOffHandDisabled = true
+    end
+end
+
+function Inventory:_UpdateStatTotals()
     self.statTotals = self.statTotals or {}
     for _,statName in ipairs(Item.STATS) do
         self.statTotals[statName] = 0
@@ -338,7 +388,7 @@ function Inventory:_RecalculateStatTotals()
     for slotIndex = 1,#Inventory.EQUIP_SLOTS do
         local item = self:GetItem(slotIndex)
         if item then
-            if Inventory.EQUIP_SLOTS[slotIndex].slotType == "OffHand" and self.isOffhandDisabled then
+            if item:GetEquipSlotType() == "OffHand" and self.isOffHandDisabled then
                 -- We have to be careful to not include offhand stats when they are disabled (by having a 2H weapon in mainhand).
             else
                 -- Accumulate stat contribution.
@@ -349,6 +399,24 @@ function Inventory:_RecalculateStatTotals()
             end
         end
     end
+    self:_UpdateConnectedStatSheet()
+end
+
+function Inventory:_UpdateConnectedStatSheet()
+    if not self.connectedStatSheet then return end
+    -- Read total item stats and apply to stat sheet.
+    local itemStatTotals = self:GetStatTotals()
+    self.connectedStatSheetModifiers.Health.addend             = itemStatTotals.Health
+    self.connectedStatSheetModifiers.HealthPercent.multiplier  = (itemStatTotals.HealthPercent / 100) + 1
+    self.connectedStatSheetModifiers.Defense.addend            = itemStatTotals.Defense
+    self.connectedStatSheetModifiers.Attack.addend             = itemStatTotals.Attack
+    self.connectedStatSheetModifiers.Magic.addend              = itemStatTotals.Magic
+    self.connectedStatSheetModifiers.CritChance.addend         = itemStatTotals.CritChance
+    self.connectedStatSheetModifiers.CDR.addend                = itemStatTotals.CDR
+    self.connectedStatSheetModifiers.Haste.addend              = itemStatTotals.Haste
+    self.connectedStatSheetModifiers.Tenacity.addend           = itemStatTotals.Tenacity
+    -- Tell the stat sheet to recalculate.
+    self.connectedStatSheet:Update()
 end
 
 function Inventory:__tostring()

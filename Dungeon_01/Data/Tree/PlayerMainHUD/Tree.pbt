@@ -110,7 +110,7 @@ Objects {
 }
 Objects {
   Id: 9718378531628205791
-  Name: "UI Panel"
+  Name: "Action Bar"
   Transform {
     Location {
     }
@@ -1653,8 +1653,8 @@ Objects {
   ChildIds: 4814356655213359360
   ChildIds: 6675141985382541317
   ChildIds: 4668441498163539412
-  ChildIds: 12211857323673767020
   ChildIds: 9583679468381957711
+  ChildIds: 12211857323673767020
   UnregisteredParameters {
     Overrides {
       Name: "cs:AbilityNameText"
@@ -1663,7 +1663,7 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:AbilityClassificationText"
+      Name: "cs:AbilityRequirementText"
       ObjectReference {
         SelfId: 12211857323673767020
       }
@@ -1706,6 +1706,65 @@ Objects {
   }
 }
 Objects {
+  Id: 12211857323673767020
+  Name: "Ability Requirement"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9955130368781355670
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Height: 20
+    UIY: -14
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "requires: Something?"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      Size: 10
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 9583679468381957711
   Name: "Ability Text"
   Transform {
@@ -1729,7 +1788,7 @@ Objects {
   Control {
     Width: -30
     Height: -50
-    UIY: 70
+    UIY: 50
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1768,65 +1827,6 @@ Objects {
   }
 }
 Objects {
-  Id: 12211857323673767020
-  Name: "Ability Classification"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9955130368781355670
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    UIY: 45
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
-    UseParentHeight: true
-    Text {
-      Label: "(ability classification)"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-      Size: 10
-      Justification {
-        Value: "mc:etextjustify:center"
-      }
-      AutoWrapText: true
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topcenter"
-        }
-      }
-    }
-  }
-}
-Objects {
   Id: 4668441498163539412
   Name: "Ability Name"
   Transform {
@@ -1848,7 +1848,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    UIY: 6
+    UIY: 12
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -1986,7 +1986,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.8
+        A: 0.9
       }
       TeamSettings {
       }
@@ -4046,7 +4046,7 @@ Objects {
       Brush {
       }
       Color {
-        A: 0.8
+        A: 0.9
       }
       TeamSettings {
       }
@@ -4760,7 +4760,7 @@ Objects {
 }
 Objects {
   Id: 3036076526882525714
-  Name: "Decorations"
+  Name: "Segments"
   Transform {
     Location {
     }
@@ -5454,6 +5454,18 @@ Objects {
       Name: "cs:HoverButton"
       ObjectReference {
         SelfId: 15873111738312572482
+      }
+    }
+    Overrides {
+      Name: "cs:SegmentsRoot"
+      ObjectReference {
+        SelfId: 3036076526882525714
+      }
+    }
+    Overrides {
+      Name: "cs:MatchWidthObject"
+      ObjectReference {
+        SelfId: 9718378531628205791
       }
     }
     Overrides {
