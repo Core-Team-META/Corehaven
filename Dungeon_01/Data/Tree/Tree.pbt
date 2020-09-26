@@ -4126,7 +4126,7 @@ Objects {
     Location {
       X: -4337.1123
       Y: -9852.52
-      Z: -979.129
+      Z: -1008.49493
     }
     Rotation {
     }
@@ -4140,7 +4140,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "bp:Blend Radius"
-      Float: 50
+      Float: 0
     }
   }
   Collidable_v2 {

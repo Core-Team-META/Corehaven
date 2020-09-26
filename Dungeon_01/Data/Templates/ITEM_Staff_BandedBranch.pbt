@@ -49,6 +49,9 @@
         Id: 4896943107177265695
         Name: "Fantasy Weapon - Staff 01 (Prop)"
         Transform {
+          Location {
+            Z: -16.4455566
+          }
           Scale {
             X: 1
             Y: 1
@@ -57,11 +60,11 @@
         }
         ParentId: 14221847442462413670
         ChildIds: 15110026748131713431
-        ChildIds: 1014799728712127976
-        ChildIds: 10900993090505901016
-        ChildIds: 1231276949267265345
-        ChildIds: 1034298904468204530
-        ChildIds: 6681211260179715129
+        ChildIds: 336819065274469038
+        ChildIds: 16549664124551229066
+        ChildIds: 8162478574469661602
+        ChildIds: 1828694734687439505
+        ChildIds: 9209722843607235135
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -77,17 +80,33 @@
         Name: "Fantasy Staff Grip 01"
         Transform {
           Location {
-            Z: -37.3604813
+            Z: -74.2454224
           }
           Rotation {
           }
           Scale {
             X: 1.5
             Y: 1.5
-            Z: 1
+            Z: 1.93628037
           }
         }
         ParentId: 4896943107177265695
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2664847478369185144
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.556376219
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 64
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -109,21 +128,21 @@
         }
       }
       Objects {
-        Id: 1014799728712127976
-        Name: "Fantasy Staff Guard 01"
+        Id: 336819065274469038
+        Name: "Branches Cluster Small"
         Transform {
           Location {
-            Z: 40
+            X: -0.549804688
+            Y: 1.25097656
+            Z: 50.3617554
           }
           Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: -179.999954
-            Roll: -179.999954
+            Pitch: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.333555818
+            Y: 0.0449607596
+            Z: 0.183046669
           }
         }
         ParentId: 4896943107177265695
@@ -135,7 +154,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 7763088253104705548
+            Id: 18113635384891617429
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -148,18 +167,22 @@
         }
       }
       Objects {
-        Id: 10900993090505901016
-        Name: "Fantasy Staff Guard 01"
+        Id: 16549664124551229066
+        Name: "Branches Cluster Small"
         Transform {
           Location {
-            Z: -44
+            X: -0.477539063
+            Y: -0.7734375
+            Z: 63.9420776
           }
           Rotation {
+            Pitch: -90
+            Roll: 71.5612411
           }
           Scale {
-            X: 0.908333361
-            Y: 0.908333361
-            Z: 0.908333361
+            X: 0.20764032
+            Y: 0.0449607708
+            Z: 0.183046654
           }
         }
         ParentId: 4896943107177265695
@@ -171,7 +194,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 7763088253104705548
+            Id: 18113635384891617429
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -184,22 +207,31 @@
         }
       }
       Objects {
-        Id: 1231276949267265345
-        Name: "Fantasy Pommel 04"
+        Id: 8162478574469661602
+        Name: "Coral Tubes Small"
         Transform {
           Location {
-            Z: -50
+            X: 0.052734375
+            Y: 0.517578125
+            Z: 53.4434204
           }
           Rotation {
-            Yaw: 89.9999619
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.136910826
+            Y: 0.136910826
+            Z: 0.268179119
           }
         }
         ParentId: 4896943107177265695
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 2664847478369185144
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -208,7 +240,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12510064410993333055
+            Id: 13180205663044965576
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -221,21 +253,44 @@
         }
       }
       Objects {
-        Id: 1034298904468204530
-        Name: "Fantasy Sword Guard 01"
+        Id: 1828694734687439505
+        Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            Z: 45
+            X: -0.0166015625
+            Y: -0.03125
+            Z: 56.9603271
           }
           Rotation {
+            Pitch: -13.960083
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.0796794891
+            Y: 0.0796794891
+            Z: 0.0293022916
           }
         }
         ParentId: 4896943107177265695
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7715152830417178651
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0902647823
+              G: 0.470000029
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -244,7 +299,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1920010878601219178
+            Id: 2934774279078928789
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -257,21 +312,44 @@
         }
       }
       Objects {
-        Id: 6681211260179715129
-        Name: "Fantasy Staff Head 01"
+        Id: 9209722843607235135
+        Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            Z: 55
+            X: -0.0166015625
+            Y: -0.03125
+            Z: 54.5033569
           }
           Rotation {
+            Pitch: 14.8095636
           }
           Scale {
-            X: 1.5
-            Y: 1.75
-            Z: 1.5
+            X: 0.0796794891
+            Y: 0.0796794891
+            Z: 0.0293022916
           }
         }
         ParentId: 4896943107177265695
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7715152830417178651
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.0902647823
+              G: 0.470000029
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -280,7 +358,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17237692812658431496
+            Id: 2934774279078928789
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -312,39 +390,48 @@
       }
     }
     Assets {
-      Id: 7763088253104705548
-      Name: "Fantasy Staff Guard 01"
-      PlatformAssetType: 1
+      Id: 2664847478369185144
+      Name: "Wood Raw"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_staff_001"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
       }
     }
     Assets {
-      Id: 12510064410993333055
-      Name: "Fantasy Pommel 04"
+      Id: 18113635384891617429
+      Name: "Branches Cluster Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_004"
+        AssetId: "sm_gen_branches_small_001"
       }
     }
     Assets {
-      Id: 1920010878601219178
-      Name: "Fantasy Sword Guard 01"
+      Id: 13180205663044965576
+      Name: "Coral Tubes Small"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_sword_001"
+        AssetId: "sm_coral_tube_small_01"
       }
     }
     Assets {
-      Id: 17237692812658431496
-      Name: "Fantasy Staff Head 01"
+      Id: 2934774279078928789
+      Name: "Cylinder - Chamfered"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_head_staff_001"
+        AssetId: "sm_cylinder_chamfer"
+      }
+    }
+    Assets {
+      Id: 7715152830417178651
+      Name: "Fabric Burlap New 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_fabric_burlap_002_uv"
       }
     }
     PrimaryAssetId {

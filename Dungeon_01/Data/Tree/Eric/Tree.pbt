@@ -7702,7 +7702,7 @@ Objects {
     AttachToLocalPlayer: true
     InitialDistance: 800
     IsDistanceAdjustable: true
-    MinDistance: 800
+    MinDistance: 200
     MaxDistance: 1400
     PositionOffset {
     }
