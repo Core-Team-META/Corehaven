@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 15792735055830902497
+  Name: "Bone Human Humerus 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_humerus_01_ref"
+  }
+}
+Assets {
   Id: 14844071243425532562
   Name: "Bone Human Jaw 01"
   PlatformAssetType: 1
@@ -17,12 +26,30 @@ Assets {
   }
 }
 Assets {
+  Id: 13116065039401447136
+  Name: "Bone Human Scapula 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_scap_01_ref"
+  }
+}
+Assets {
   Id: 12494784180091766806
   Name: "Prism - 8-Sided Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
+  Id: 11242080456586860449
+  Name: "Bone Human Pelvis Half 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_pelvis_01_ref"
   }
 }
 Assets {
@@ -41,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half_octagon_001"
+  }
+}
+Assets {
+  Id: 8205464909427510479
+  Name: "Bone Human Tibula 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_tib_01_ref"
   }
 }
 Assets {
@@ -95,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 5707603809982655855
+  Name: "Bone Human Femur 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bones_human_femur_01_ref"
   }
 }
 Assets {

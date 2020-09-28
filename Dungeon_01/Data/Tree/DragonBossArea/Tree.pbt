@@ -1,6 +1,1860 @@
 ﻿Name: "DragonBossArea"
 RootId: 12155150669136818368
 Objects {
+  Id: 7941748318889578245
+  Name: "Bone Human Skull Pile 02"
+  Transform {
+    Location {
+      X: -1495.57813
+      Y: -4288.06445
+      Z: 659.090332
+    }
+    Rotation {
+      Yaw: 97.8177643
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12155150669136818368
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8026695780395936248
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6406153719430723723
+  Name: "Skeleton"
+  Transform {
+    Location {
+      X: -1415.93164
+      Y: -4243.4707
+      Z: 650.1875
+    }
+    Rotation {
+      Pitch: 1.40080345
+      Yaw: -83.4657593
+      Roll: 5.45192528
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12155150669136818368
+  ChildIds: 13902069992021099457
+  ChildIds: 5258226280845196105
+  ChildIds: 4704932690596226753
+  ChildIds: 3489433198440457037
+  ChildIds: 12903599930027281141
+  ChildIds: 9836588766568428359
+  ChildIds: 14161297398703806936
+  ChildIds: 11662518182119376450
+  ChildIds: 18057589157504664978
+  ChildIds: 6495463931023401339
+  ChildIds: 14370488318036943415
+  ChildIds: 4851588421642985400
+  ChildIds: 4140575577811614159
+  ChildIds: 5382980436140334758
+  ChildIds: 2233422673375783221
+  ChildIds: 15816341117717280986
+  ChildIds: 14576773949071341775
+  ChildIds: 15589046282440871696
+  ChildIds: 16698575764314790543
+  ChildIds: 8284173145989590810
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8284173145989590810
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 41.2714844
+      Y: 71.9990234
+      Z: 6.03808594
+    }
+    Rotation {
+      Pitch: -17.5674229
+      Yaw: -74.8072891
+      Roll: 93.4503403
+    }
+    Scale {
+      X: -1.07970715
+      Y: 1.00001419
+      Z: 1.00006056
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16698575764314790543
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 42.0976563
+      Y: 64.2363281
+      Z: 6.94628906
+    }
+    Rotation {
+      Pitch: 0.86474973
+      Yaw: -64.3917465
+      Roll: -87.5424
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15589046282440871696
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -9.87890625
+      Y: 35.9296875
+      Z: 4.3359375
+    }
+    Rotation {
+      Pitch: 0.864797533
+      Yaw: -64.3914948
+      Roll: -103.250511
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14576773949071341775
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 79.1442413
+      Y: 7.48333359
+      Z: 5.04643202
+    }
+    Rotation {
+      Pitch: 1.33955026
+      Yaw: -53.5149536
+      Roll: -97.0949707
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15816341117717280986
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -6.828125
+      Y: 17.3896484
+      Z: 8.53710938
+    }
+    Rotation {
+      Pitch: 0.071327664
+      Yaw: -47.5044632
+      Roll: 110.455757
+    }
+    Scale {
+      X: -1.218086
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2233422673375783221
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 12.5234375
+      Y: -14.9404297
+      Z: 7.87402344
+    }
+    Rotation {
+      Pitch: -6.49417782
+      Yaw: -74.7515182
+      Roll: 111.012589
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5382980436140334758
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 90.6599579
+      Y: 1.96089935
+      Z: 5.03378105
+    }
+    Rotation {
+      Pitch: 37.8581314
+      Yaw: -42.1893616
+      Roll: 83.4063568
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4140575577811614159
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -49.7460938
+      Y: -11.2880859
+      Z: 2.21240234
+    }
+    Rotation {
+      Pitch: 0.811542571
+      Yaw: -60.6830368
+      Roll: 90.85215
+    }
+    Scale {
+      X: -0.97198987
+      Y: 0.999991894
+      Z: 1.00000966
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4851588421642985400
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -34.453125
+      Y: -38.8027344
+      Z: 0.364746094
+    }
+    Rotation {
+      Pitch: 0.864961445
+      Yaw: -64.3922577
+      Roll: 90.7978821
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14370488318036943415
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -108.54689
+      Y: -41.779583
+      Z: 1.30481625
+    }
+    Rotation {
+      Pitch: 0.864770174
+      Yaw: -64.3914795
+      Roll: -97.6721802
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6495463931023401339
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -124.173828
+      Y: -89.7929688
+      Z: 9.28418
+    }
+    Rotation {
+      Yaw: 108.740082
+    }
+    Scale {
+      X: -0.93273443
+      Y: 0.999997079
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18057589157504664978
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -89.300087
+      Y: -69.9057312
+      Z: 0.943799496
+    }
+    Rotation {
+      Pitch: 0.864708722
+      Yaw: -64.3914795
+      Roll: -96.137207
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11662518182119376450
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 29.7695313
+      Y: -25.1035156
+      Z: 4.30273438
+    }
+    Rotation {
+      Pitch: 0.592716932
+      Yaw: -59.4687805
+      Roll: -103.188095
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14161297398703806936
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -1.11914063
+      Y: -44.6074219
+      Z: 3.38769531
+    }
+    Rotation {
+      Pitch: -10.1225891
+      Yaw: -60.0718384
+      Roll: -86.7562561
+    }
+    Scale {
+      X: -0.918176174
+      Y: 0.99999845
+      Z: 0.999996305
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9836588766568428359
+  Name: "Bone Human Jaw 01"
+  Transform {
+    Location {
+      X: 101.34375
+      Y: 58.5761719
+      Z: 12.1225586
+    }
+    Rotation {
+      Pitch: 2.75471759
+      Yaw: 116.825462
+      Roll: -45.5039558
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14844071243425532562
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12903599930027281141
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -142.15213
+      Y: -60.9592056
+      Z: 11.0047016
+    }
+    Rotation {
+      Yaw: 132.811035
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3489433198440457037
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -39.6428719
+      Y: 19.6792793
+      Z: 4.44125128
+    }
+    Rotation {
+      Pitch: 0.864831686
+      Yaw: -64.3912354
+      Roll: -86.8695679
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4704932690596226753
+  Name: "Bone Human Spine 01"
+  Transform {
+    Location {
+      X: 44.4121094
+      Y: 24.9589844
+      Z: 0.565917969
+    }
+    Rotation {
+      Pitch: -3.03017235
+      Yaw: 121.704346
+      Roll: -89.1034851
+    }
+    Scale {
+      X: 0.99999243
+      Y: 0.874605536
+      Z: 0.999985039
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6864537800243529225
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5258226280845196105
+  Name: "Bone Human Ribcage 01"
+  Transform {
+    Location {
+      X: 61.1328125
+      Y: 34.4257813
+      Z: 16.8764648
+    }
+    Rotation {
+      Pitch: 1.13158464
+      Yaw: 123.706848
+      Roll: -91.6117477
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8753586571131750167
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13902069992021099457
+  Name: "Bone Human Skull 01"
+  Transform {
+    Location {
+      X: 103.478516
+      Y: 60.2851563
+      Z: 6.26757813
+    }
+    Rotation {
+      Pitch: 2.75468349
+      Yaw: 116.825409
+      Roll: -45.5036926
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6406153719430723723
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14240132263400153354
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5234870791191492481
+  Name: "Bone Human Skull Pile 02"
+  Transform {
+    Location {
+      X: 1049.25391
+      Y: -2024.12109
+      Z: 658.711914
+    }
+    Rotation {
+      Yaw: 63.4365273
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12155150669136818368
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8026695780395936248
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9990699960080474244
+  Name: "Skeleton"
+  Transform {
+    Location {
+      X: 971.970703
+      Y: -2084.85645
+      Z: 652.510254
+    }
+    Rotation {
+      Pitch: -0.074798584
+      Yaw: 107.136719
+      Roll: 9.65744209
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12155150669136818368
+  ChildIds: 9415136362009113629
+  ChildIds: 2179179723471848047
+  ChildIds: 7444753279567516483
+  ChildIds: 16428076666895486896
+  ChildIds: 7627334744412510931
+  ChildIds: 11834464616894141776
+  ChildIds: 9733258339750319240
+  ChildIds: 191995923193555097
+  ChildIds: 18206072328459362183
+  ChildIds: 3042232612461130080
+  ChildIds: 13251146311377586484
+  ChildIds: 7378054022737898236
+  ChildIds: 16430065909692088184
+  ChildIds: 14517867625145922636
+  ChildIds: 14808853606155368652
+  ChildIds: 14200517780465784065
+  ChildIds: 4590613707708001000
+  ChildIds: 5925501029502312046
+  ChildIds: 16580470718136074096
+  ChildIds: 1604686363381223093
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1604686363381223093
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 41.2714844
+      Y: 71.9990234
+      Z: 6.03808594
+    }
+    Rotation {
+      Pitch: -17.5674133
+      Yaw: -74.8072815
+      Roll: 93.4503403
+    }
+    Scale {
+      X: -1.07970715
+      Y: 1.00001419
+      Z: 1.00006056
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16580470718136074096
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 38.1255302
+      Y: 64.8155746
+      Z: 4.89563513
+    }
+    Rotation {
+      Pitch: 1.81519783
+      Yaw: -73.1496582
+      Roll: -91.3644714
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5925501029502312046
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -17.4971161
+      Y: 44.3787193
+      Z: 5.24639416
+    }
+    Rotation {
+      Pitch: 1.81521833
+      Yaw: -73.149231
+      Roll: -100.852844
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4590613707708001000
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 73.3386841
+      Y: 1.36232758
+      Z: 1.26258516
+    }
+    Rotation {
+      Pitch: 2.65276337
+      Yaw: -50.6032715
+      Roll: -102.936737
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14200517780465784065
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -6.828125
+      Y: 17.3896484
+      Z: 8.53710938
+    }
+    Rotation {
+      Pitch: 0.071327664
+      Yaw: -47.5044632
+      Roll: 110.455757
+    }
+    Scale {
+      X: -1.218086
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14808853606155368652
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 12.5234375
+      Y: -14.9404297
+      Z: 7.87402344
+    }
+    Rotation {
+      Pitch: -6.49417782
+      Yaw: -74.7515182
+      Roll: 111.012589
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14517867625145922636
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 90.5976563
+      Y: 2.19921875
+      Z: 2.53076172
+    }
+    Rotation {
+      Pitch: 27.5813274
+      Yaw: -34.2975922
+      Roll: 92.1543
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16430065909692088184
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -49.7773438
+      Y: -10.8125
+      Z: -0.537353516
+    }
+    Rotation {
+      Pitch: 0.811542571
+      Yaw: -60.6830444
+      Roll: 90.85215
+    }
+    Scale {
+      X: -0.97198987
+      Y: 0.999991894
+      Z: 1.00000966
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7378054022737898236
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -34.4781952
+      Y: -38.3772583
+      Z: -2.13633585
+    }
+    Rotation {
+      Pitch: 0.864961445
+      Yaw: -64.3922729
+      Roll: 90.7978897
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13251146311377586484
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -108.578064
+      Y: -41.256485
+      Z: -1.76865768
+    }
+    Rotation {
+      Pitch: 0.864797533
+      Yaw: -64.3916
+      Roll: -100.070587
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3042232612461130080
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -124.298828
+      Y: -89.3476563
+      Z: 4.6640625
+    }
+    Rotation {
+      Yaw: 108.740074
+    }
+    Scale {
+      X: -0.93273443
+      Y: 0.999997079
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18206072328459362183
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -89.3396
+      Y: -69.5567093
+      Z: -1.52598619
+    }
+    Rotation {
+      Pitch: 0.86473608
+      Yaw: -64.3915405
+      Roll: -101.219574
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 191995923193555097
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 29.5248718
+      Y: -37.8687744
+      Z: -3.11324048
+    }
+    Rotation {
+      Pitch: 2.65276337
+      Yaw: -50.603363
+      Roll: -102.936829
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9733258339750319240
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 0.951171875
+      Y: -62.1367188
+      Z: -1.84619141
+    }
+    Rotation {
+      Pitch: -7.89361572
+      Yaw: -59.944397
+      Roll: -86.776062
+    }
+    Scale {
+      X: -0.918176174
+      Y: 0.99999845
+      Z: 0.999996305
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11834464616894141776
+  Name: "Bone Human Jaw 01"
+  Transform {
+    Location {
+      X: 101.34375
+      Y: 58.5761719
+      Z: 12.1225586
+    }
+    Rotation {
+      Pitch: 2.75471759
+      Yaw: 116.825462
+      Roll: -45.5039558
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14844071243425532562
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7627334744412510931
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -142.210602
+      Y: -60.3345184
+      Z: 6.82089329
+    }
+    Rotation {
+      Yaw: 132.811035
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16428076666895486896
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -56.7247543
+      Y: 31.0420418
+      Z: 3.89293385
+    }
+    Rotation {
+      Pitch: 1.81527293
+      Yaw: -73.1491699
+      Roll: -83.918396
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7444753279567516483
+  Name: "Bone Human Spine 01"
+  Transform {
+    Location {
+      X: 44.4121094
+      Y: 24.9589844
+      Z: 0.565917969
+    }
+    Rotation {
+      Pitch: -3.03017235
+      Yaw: 121.704346
+      Roll: -89.1034851
+    }
+    Scale {
+      X: 0.99999243
+      Y: 0.874605536
+      Z: 0.999985039
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6864537800243529225
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2179179723471848047
+  Name: "Bone Human Ribcage 01"
+  Transform {
+    Location {
+      X: 61.1328125
+      Y: 34.4257813
+      Z: 16.8764648
+    }
+    Rotation {
+      Pitch: 1.13158464
+      Yaw: 123.706848
+      Roll: -91.6117477
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8753586571131750167
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9415136362009113629
+  Name: "Bone Human Skull 01"
+  Transform {
+    Location {
+      X: 103.478516
+      Y: 60.2851563
+      Z: 6.26757813
+    }
+    Rotation {
+      Pitch: 2.75468349
+      Yaw: 116.825409
+      Roll: -45.5036926
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9990699960080474244
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14240132263400153354
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 12561081102192741540
   Name: "Fantasy Candle  Lit - Group 02 (Prop)"
   Transform {
@@ -338,6 +2192,889 @@ Objects {
     }
     TemplateAsset {
       Id: 900175639907875110
+    }
+  }
+}
+Objects {
+  Id: 6438057622052938547
+  Name: "Skeleton"
+  Transform {
+    Location {
+      X: -1455.36865
+      Y: -1779.91882
+      Z: 653.367676
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12155150669136818368
+  ChildIds: 2067666668574884314
+  ChildIds: 8809211159559918418
+  ChildIds: 13637679480502329178
+  ChildIds: 17355182558771494768
+  ChildIds: 11450928482262429819
+  ChildIds: 4463149694265776335
+  ChildIds: 1130566870764760767
+  ChildIds: 16083986128595780142
+  ChildIds: 14382856420503329057
+  ChildIds: 17955159780449931410
+  ChildIds: 14961966951618635978
+  ChildIds: 13600239285728043358
+  ChildIds: 11184157327200765255
+  ChildIds: 2626388914318338905
+  ChildIds: 1376654454134508332
+  ChildIds: 18131883990434902751
+  ChildIds: 4158792000821041974
+  ChildIds: 1502603458286855100
+  ChildIds: 14114763746666710435
+  ChildIds: 9850638828194322191
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9850638828194322191
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 41.2714844
+      Y: 71.9990234
+      Z: 6.03808594
+    }
+    Rotation {
+      Pitch: -17.5674229
+      Yaw: -74.8072891
+      Roll: 93.4503403
+    }
+    Scale {
+      X: -1.07970715
+      Y: 1.00001419
+      Z: 1.00006056
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14114763746666710435
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 42.0976563
+      Y: 64.2363281
+      Z: 6.94628906
+    }
+    Rotation {
+      Pitch: 0.86474973
+      Yaw: -64.3917465
+      Roll: -87.5424
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1502603458286855100
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -9.87890625
+      Y: 35.9296875
+      Z: 4.3359375
+    }
+    Rotation {
+      Pitch: 0.864797533
+      Yaw: -64.3914948
+      Roll: -103.250511
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4158792000821041974
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 79.125
+      Y: 7.55859375
+      Z: 4.25292969
+    }
+    Rotation {
+      Pitch: 0.592723787
+      Yaw: -59.4687958
+      Roll: -103.188049
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15792735055830902497
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18131883990434902751
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -6.828125
+      Y: 17.3896484
+      Z: 8.53710938
+    }
+    Rotation {
+      Pitch: 0.071327664
+      Yaw: -47.5044632
+      Roll: 110.455757
+    }
+    Scale {
+      X: -1.218086
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1376654454134508332
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 12.5234375
+      Y: -14.9404297
+      Z: 7.87402344
+    }
+    Rotation {
+      Pitch: -6.49417782
+      Yaw: -74.7515182
+      Roll: 111.012589
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11242080456586860449
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2626388914318338905
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 90.5976563
+      Y: 2.19921875
+      Z: 2.53076172
+    }
+    Rotation {
+      Pitch: 27.5813274
+      Yaw: -34.2975922
+      Roll: 92.1543
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 13116065039401447136
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11184157327200765255
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -49.7460938
+      Y: -11.2880859
+      Z: 2.21240234
+    }
+    Rotation {
+      Pitch: 0.811542571
+      Yaw: -60.6830368
+      Roll: 90.85215
+    }
+    Scale {
+      X: -0.97198987
+      Y: 0.999991894
+      Z: 1.00000966
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13600239285728043358
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -34.453125
+      Y: -38.8027344
+      Z: 0.364746094
+    }
+    Rotation {
+      Pitch: 0.864961445
+      Yaw: -64.3922577
+      Roll: 90.7978821
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 5707603809982655855
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14961966951618635978
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -108.544922
+      Y: -41.7792969
+      Z: 1.30517578
+    }
+    Rotation {
+      Pitch: 0.864797533
+      Yaw: -64.3915634
+      Roll: -100.070557
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17955159780449931410
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -124.298828
+      Y: -89.3476563
+      Z: 4.6640625
+    }
+    Rotation {
+      Yaw: 108.740074
+    }
+    Scale {
+      X: -0.93273443
+      Y: 0.999997079
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14382856420503329057
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -89.3242188
+      Y: -69.8164063
+    }
+    Rotation {
+      Pitch: 0.86473608
+      Yaw: -64.39151
+      Roll: -101.219566
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16083986128595780142
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: 29.7695313
+      Y: -25.1035156
+      Z: 4.30273438
+    }
+    Rotation {
+      Pitch: 0.592716932
+      Yaw: -59.4687805
+      Roll: -103.188095
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8205464909427510479
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1130566870764760767
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -0.966796875
+      Y: -44.9824219
+      Z: 7.88476563
+    }
+    Rotation {
+      Pitch: 0.592751086
+      Yaw: -59.4684067
+      Roll: -86.8068161
+    }
+    Scale {
+      X: -0.918176174
+      Y: 0.99999845
+      Z: 0.999996305
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4463149694265776335
+  Name: "Bone Human Jaw 01"
+  Transform {
+    Location {
+      X: 101.34375
+      Y: 58.5761719
+      Z: 12.1225586
+    }
+    Rotation {
+      Pitch: 2.75471759
+      Yaw: 116.825462
+      Roll: -45.5039558
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14844071243425532562
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11450928482262429819
+  Name: "Bone Human Foot 01"
+  Transform {
+    Location {
+      X: -142.181641
+      Y: -60.8466797
+      Z: 9.84472656
+    }
+    Rotation {
+      Yaw: 132.811035
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1005717095199085538
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17355182558771494768
+  Name: "Bone Human Hand 01"
+  Transform {
+    Location {
+      X: -39.5585938
+      Y: 19.3515625
+      Z: 7.88476563
+    }
+    Rotation {
+      Pitch: 0.864831686
+      Yaw: -64.3912201
+      Roll: -86.8695755
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 744924059225831786
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13637679480502329178
+  Name: "Bone Human Spine 01"
+  Transform {
+    Location {
+      X: 44.4121094
+      Y: 24.9589844
+      Z: 0.565917969
+    }
+    Rotation {
+      Pitch: -3.03017235
+      Yaw: 121.704346
+      Roll: -89.1034851
+    }
+    Scale {
+      X: 0.99999243
+      Y: 0.874605536
+      Z: 0.999985039
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6864537800243529225
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8809211159559918418
+  Name: "Bone Human Ribcage 01"
+  Transform {
+    Location {
+      X: 61.1328125
+      Y: 34.4257813
+      Z: 16.8764648
+    }
+    Rotation {
+      Pitch: 1.13158464
+      Yaw: 123.706848
+      Roll: -91.6117477
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 8753586571131750167
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2067666668574884314
+  Name: "Bone Human Skull 01"
+  Transform {
+    Location {
+      X: 103.478516
+      Y: 60.2851563
+      Z: 6.26757813
+    }
+    Rotation {
+      Pitch: 2.75468349
+      Yaw: 116.825409
+      Roll: -45.5036926
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6438057622052938547
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14240132263400153354
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -798,15 +3535,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1664.42578
-            Y: -1795.67773
-            Z: 655.4375
+            X: -1667.41211
+            Y: -1801.20508
+            Z: 651.021
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -57.8951263
+            Yaw: -85.9363098
           }
         }
         Overrides {
@@ -1635,208 +4372,13 @@ Objects {
   }
 }
 Objects {
-  Id: 4463149694265776335
-  Name: "Bone Human Jaw 01"
-  Transform {
-    Location {
-      X: -1354.19336
-      Y: -1751.73242
-      Z: 687.126953
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14844071243425532562
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 11450928482262429819
-  Name: "Bone Human Foot 01"
-  Transform {
-    Location {
-      X: -1547.39648
-      Y: -1933.54395
-      Z: 663.212402
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 1005717095199085538
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17355182558771494768
-  Name: "Bone Human Hand 01"
-  Transform {
-    Location {
-      X: -1573.03125
-      Y: -1908.50195
-      Z: 649.499
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 744924059225831786
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13637679480502329178
-  Name: "Bone Human Spine 01"
-  Transform {
-    Location {
-      X: -1631.29297
-      Y: -1934.87598
-      Z: 650.95459
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6864537800243529225
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8809211159559918418
-  Name: "Bone Human Ribcage 01"
-  Transform {
-    Location {
-      X: -1617.79102
-      Y: -1869.73145
-      Z: 654.585938
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 8753586571131750167
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 3989585134891116740
   Name: "Bone Human Skull Pile 02"
   Transform {
     Location {
-      X: -1512.18359
-      Y: -1707.91211
-      Z: 656.851563
+      X: -1503.25
+      Y: -1699.7334
+      Z: 658.711914
     }
     Rotation {
     }
@@ -1873,11 +4415,12 @@ Objects {
   Name: "Bone Human Skull Pile 01"
   Transform {
     Location {
-      X: -1447.51953
-      Y: -1826.24902
-      Z: 648.769531
+      X: -1270.86328
+      Y: -1635.21387
+      Z: 662.17627
     }
     Rotation {
+      Yaw: 31.1741
     }
     Scale {
       X: 1
@@ -1895,84 +4438,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 1325257806995508552
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 2067666668574884314
-  Name: "Bone Human Skull 01"
-  Transform {
-    Location {
-      X: -1384.06445
-      Y: -1791.94238
-      Z: 648.87793
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14240132263400153354
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8267608123113676781
-  Name: "Bone Human Skull 01"
-  Transform {
-    Location {
-      X: -1326.48828
-      Y: -1769.15234
-      Z: 649.058105
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 12155150669136818368
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 14240132263400153354
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2019,8 +4484,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1362.40039
-            Y: -1617.1748
+            X: -1360.39844
+            Y: -1630.82422
             Z: 664.389648
           }
         }
@@ -2067,9 +4532,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1590.99414
-            Y: -1747.1416
-            Z: 657.891113
+            X: -1640.32813
+            Y: -1770.67578
+            Z: 655.575195
           }
         }
         Overrides {
@@ -2114,15 +4579,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -1307.99805
-            Y: -1642.5127
+            X: -1322.83203
+            Y: -1630.03125
             Z: 663.701172
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -131.77092
+            Yaw: -156.137497
           }
         }
         Overrides {

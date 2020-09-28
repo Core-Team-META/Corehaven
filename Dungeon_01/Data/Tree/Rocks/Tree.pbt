@@ -1,6 +1,90 @@
 ﻿Name: "Rocks"
 RootId: 14148918943805634918
 Objects {
+  Id: 4965222487911370354
+  Name: "Rock Block 02"
+  Transform {
+    Location {
+      X: 1800.89063
+      Y: -7835.05762
+      Z: 6691.10107
+    }
+    Rotation {
+      Pitch: -2.24545288
+      Yaw: 137.349
+      Roll: -175.549561
+    }
+    Scale {
+      X: 1.73901713
+      Y: 0.617357075
+      Z: 0.264732808
+    }
+  }
+  ParentId: 14148918943805634918
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17112282066558978098
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15946660413951714947
+  Name: "Rock Block 02"
+  Transform {
+    Location {
+      X: -600.429688
+      Y: -7470.50488
+      Z: 6700.87793
+    }
+    Rotation {
+      Pitch: -0.606750488
+      Yaw: -148.036285
+      Roll: -175.476654
+    }
+    Scale {
+      X: 1.92253089
+      Y: 1.44356513
+      Z: 0.210283965
+    }
+  }
+  ParentId: 14148918943805634918
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17112282066558978098
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 8616587813771302149
   Name: "Rock Flat 02"
   Transform {
@@ -5547,11 +5631,14 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -739.859375
-      Y: -9748.70215
-      Z: 6683.15576
+      X: -700.910156
+      Y: -9519.68848
+      Z: 6676.33105
     }
     Rotation {
+      Pitch: -4.01745605
+      Yaw: -0.299346924
+      Roll: 4.26500845
     }
     Scale {
       X: 1.23140967
