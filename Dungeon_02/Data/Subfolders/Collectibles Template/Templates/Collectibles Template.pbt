@@ -46,5 +46,5 @@
     Version: "1.0.0"
     Description: "Note: needs player storage enabled in Game Settings to work!\r\n\r\nCollectibles for the Dust Souls game, which appear in the Collectibles Display Template (also on CC) once the player collects them"
   }
-  SerializationVersion: 63
+  SerializationVersion: 65
 }

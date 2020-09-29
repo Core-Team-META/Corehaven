@@ -2,7 +2,7 @@
   Id: 1603058437537051638
   Name: "Droid Face Girl"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 16675340308621607143
     ParameterOverrides {

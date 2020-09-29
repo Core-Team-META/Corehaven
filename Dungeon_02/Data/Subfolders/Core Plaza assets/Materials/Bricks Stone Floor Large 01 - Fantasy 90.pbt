@@ -2,7 +2,7 @@
   Id: 2318004326047658836
   Name: " Bricks Stone Floor Large 01 - Fantasy 90"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 17986610312513816474
     ParameterOverrides {

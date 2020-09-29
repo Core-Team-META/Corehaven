@@ -2,7 +2,7 @@
   Id: 945912819185289671
   Name: "Fantasy River -  Generic Water"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 11321696832878405883
     ParameterOverrides {

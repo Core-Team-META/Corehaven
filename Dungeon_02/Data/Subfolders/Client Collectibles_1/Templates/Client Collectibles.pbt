@@ -46,5 +46,5 @@
     Version: "1.0.0"
     Description: "Have you ever wanted to have all players in a game collect the same collect the same collectibles, without stealing them from each other? Look no further! Each collectible will remember who it has been collected by, and will properly hide/show itself to each player accordingly! You can reset them on a by-player basis, or reset them for everybody!"
   }
-  SerializationVersion: 63
+  SerializationVersion: 65
 }
