@@ -46,5 +46,5 @@
     Version: "1.0.0"
     Description: "You can use these assets in your map if you want. Not made by me, made by manticore games"
   }
-  SerializationVersion: 63
+  SerializationVersion: 65
 }

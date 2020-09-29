@@ -2,7 +2,7 @@
   Id: 13590237958645226318
   Name: "Bricks Rough Stone Floor 01 - Village Paths"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 11086911526470588819
     ParameterOverrides {

@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 18266495130962870511
+  Name: "Tree Redwood Bare Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_003"
+  }
+}
+Assets {
   Id: 18266209138150363217
   Name: "Tree Oak Stump 01"
   PlatformAssetType: 1
@@ -68,6 +77,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_008"
+  }
+}
+Assets {
+  Id: 17884425380056243870
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
   }
 }
 Assets {

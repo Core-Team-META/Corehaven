@@ -2,7 +2,7 @@
   Id: 10352251674716038110
   Name: "WAter Cloud"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 1082809058784319555
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 13443868567948786358
   Name: "Water Fountain"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 8751986782670100231
     ParameterOverrides {

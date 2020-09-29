@@ -2,7 +2,7 @@
   Id: 607627216008186768
   Name: "WaterFallMain"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 8751986782670100231
     ParameterOverrides {

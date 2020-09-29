@@ -2,7 +2,7 @@
   Id: 15164904727615043911
   Name: "Wood Planks - Village Siding 90"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 17557104084763797115
     ParameterOverrides {
