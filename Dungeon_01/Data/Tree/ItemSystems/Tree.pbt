@@ -6826,6 +6826,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ClickCooldown"
+      Float: 0.5
+    }
+    Overrides {
       Name: "cs:ClickTimeout"
       Float: 0.1
     }

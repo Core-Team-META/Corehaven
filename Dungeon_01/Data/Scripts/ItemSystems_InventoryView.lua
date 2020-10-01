@@ -9,6 +9,7 @@ local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObj
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
+local CLICK_COOLDOWN = script:GetCustomProperty("ClickCooldown")
 local CLICK_TIMEOUT = script:GetCustomProperty("ClickTimeout")
 local CLICK_DEADZONE_RADIUS = script:GetCustomProperty("ClickDeadzoneRadius")
 local TEMPLATE_SLOT_BACKPACK = script:GetCustomProperty("TemplateSlotBackpack")
@@ -316,6 +317,12 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:PerformClickAction()
+    -- We don't want super-fast subsequent clicking, so there is a mild cooldown implemented.
+    if self.clickCooldownStart and time() < self.clickCooldownStart + CLICK_COOLDOWN then
+        return
+    end
+    self.clickCooldownStart = time()
+    -- Now go ahead an perform the appropriate action.
     local clickedItem = inventory:GetItem(self.clickSlotIndex)
     if inventory:IsEquipSlot(self.clickSlotIndex) then
         local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
