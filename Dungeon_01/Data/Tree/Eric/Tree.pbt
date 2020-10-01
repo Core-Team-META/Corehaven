@@ -5233,7 +5233,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 8508600544310168058
+        Id: 6665300397989725070
       }
     }
   }
@@ -6907,7 +6907,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 8508600544310168058
+        Id: 6665300397989725070
       }
     }
   }

@@ -16,7 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 8414761763085446368
+        ChildIds: 9441574123378359738
+        ChildIds: 17097925951051214965
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -27,116 +28,108 @@
         }
       }
       Objects {
-        Id: 8414761763085446368
-        Name: "Energy Shield Panel"
+        Id: 9441574123378359738
+        Name: "Sci-fi Item Callout VFX"
         Transform {
           Location {
-            Z: 100
+            Z: 15
           }
           Rotation {
           }
           Scale {
-            X: 0.993050933
-            Y: 0.993050933
-            Z: 1.09708595
+            X: 4.2124
+            Y: 4.2124
+            Z: 1.83607841
           }
         }
         ParentId: 8714301227356264728
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Type"
-            Enum {
-              Value: "mc:evfxshieldpanels:6"
-            }
+            Name: "bp:Z Velocity"
+            Float: 55
           }
           Overrides {
-            Name: "bp:Pattern Index"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Pattern Scale"
-            Int: 0
-          }
-          Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.286357641
-              B: 0.470000029
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Crack Edge Color"
-            Color {
-              R: 0.48841092
-              B: 0.590000033
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Pattern Opacity"
-            Float: 0.505760252
-          }
-          Overrides {
-            Name: "bp:Pattern Blend Amount"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Overall Opacity"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Onset Erode"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Invert Onset Erode"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Damage"
-            Float: 0.186259195
-          }
-          Overrides {
-            Name: "bp:Chunk Damage"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Cracks Scale"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Crack Patterns"
-            Int: 1
-          }
-          Overrides {
-            Name: "bp:Change Linear Pulse Axis"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Circular Pulse"
+            Name: "bp:Enable Thick Hexes"
             Bool: false
           }
           Overrides {
-            Name: "bp:Invert Texture"
-            Float: 0
+            Name: "bp:Enable Hex Rings"
+            Bool: false
           }
           Overrides {
-            Name: "bp:Shield Noise Scale"
-            Float: 4.44096661
-          }
-          Overrides {
-            Name: "bp:Base Shield Color"
+            Name: "bp:color"
             Color {
-              R: 0.783841252
-              G: 0.52
-              B: 1
+              R: 0.0403312035
+              B: 0.210000038
               A: 1
             }
           }
           Overrides {
-            Name: "bp:Shape Erosion"
-            Float: 0
+            Name: "bp:Inner Fade"
+            Float: 0.350850642
+          }
+          Overrides {
+            Name: "bp:Inner Height"
+            Float: 1.22452116
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 1782426864776563653
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 17097925951051214965
+        Name: "Plasma Charge Up Hold VFX"
+        Transform {
+          Location {
+            Z: 142.463074
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1.38054764
+            Y: 1.38054764
+            Z: 1.38054764
+          }
+        }
+        ParentId: 8714301227356264728
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Enable Inner Core"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Outer Core"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Arc Color"
+            Color {
+              R: 0.261721849
+              B: 0.38
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 15
+          }
+          Overrides {
+            Name: "bp:Arc Density"
+            Float: 0.700769961
           }
         }
         Collidable_v2 {
@@ -147,7 +140,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 3422899817721348945
+            Id: 251653007559229558
           }
           TeamSettings {
           }
@@ -158,12 +151,21 @@
       }
     }
     Assets {
-      Id: 3422899817721348945
-      Name: "Energy Shield Panel"
+      Id: 1782426864776563653
+      Name: "Sci-fi Item Callout VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_forceField"
+        AssetId: "fxbp_SciFi_Callout"
+      }
+    }
+    Assets {
+      Id: 251653007559229558
+      Name: "Plasma Charge Up Hold VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ChargeUp_Hold"
       }
     }
     PrimaryAssetId {
