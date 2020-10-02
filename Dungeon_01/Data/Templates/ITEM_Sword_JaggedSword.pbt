@@ -59,7 +59,6 @@
         ChildIds: 13667596198692830334
         ChildIds: 6319828344115494405
         ChildIds: 8702078164487312802
-        ChildIds: 15271378349818481688
         ChildIds: 6628623255135807115
         ChildIds: 16142880474920202512
         ChildIds: 13252635704424577592
@@ -192,8 +191,9 @@
           }
         }
         ParentId: 18268810374878848344
-        ChildIds: 2058128235458587584
         ChildIds: 9070750193164342378
+        ChildIds: 12352942780070024171
+        ChildIds: 9131028708082617956
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -205,59 +205,16 @@
         }
       }
       Objects {
-        Id: 2058128235458587584
-        Name: "Fantasy Sword Blade 04"
-        Transform {
-          Location {
-            Z: -30.3357468
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 0.949364603
-          }
-        }
-        ParentId: 8702078164487312802
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 412493161198471310
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4342756216088781504
-          }
-          Teams {
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 9070750193164342378
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: -32.1729507
+            Z: -32.1729736
           }
           Rotation {
           }
           Scale {
-            X: 1.17270374
+            X: 0.895867825
             Y: 1.1048851
             Z: 0.997944891
           }
@@ -291,26 +248,29 @@
         }
       }
       Objects {
-        Id: 15271378349818481688
-        Name: "Cone - Bullet"
+        Id: 12352942780070024171
+        Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 15.9948883
+            Z: -2.16485596
           }
           Rotation {
+            Pitch: -3.05175781e-05
+            Yaw: -179.999954
+            Roll: -179.999954
           }
           Scale {
-            X: 0.0199772026
-            Y: 0.044819314
-            Z: 0.276745051
+            X: 1.41592622
+            Y: 1.1048851
+            Z: 0.268204927
           }
         }
-        ParentId: 18268810374878848344
+        ParentId: 8702078164487312802
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4305627177137124836
+              Id: 4458938309585607910
             }
           }
         }
@@ -322,7 +282,53 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 9874412008912951583
+            Id: 4342756216088781504
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9131028708082617956
+        Name: "Fantasy Sword Blade 04"
+        Transform {
+          Location {
+            Z: 9.2578125
+          }
+          Rotation {
+            Pitch: -3.05175781e-05
+            Yaw: -179.999954
+            Roll: -179.999954
+          }
+          Scale {
+            X: 1.0211798
+            Y: 1.10488474
+            Z: 0.268205166
+          }
+        }
+        ParentId: 8702078164487312802
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4458938309585607910
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4342756216088781504
           }
           Teams {
           }

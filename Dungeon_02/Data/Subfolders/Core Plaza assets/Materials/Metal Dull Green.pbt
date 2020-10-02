@@ -2,7 +2,7 @@
   Id: 11745991674328092990
   Name: "Metal Dull Green"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4259473469468090625
     ParameterOverrides {

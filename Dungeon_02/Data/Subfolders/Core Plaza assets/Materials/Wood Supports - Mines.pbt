@@ -2,7 +2,7 @@
   Id: 17239888904858677477
   Name: "Wood Supports - Mines"
   PlatformAssetType: 13
-  SerializationVersion: 63
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4176625818212927453
     ParameterOverrides {

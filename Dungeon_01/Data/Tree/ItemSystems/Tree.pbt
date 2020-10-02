@@ -6826,6 +6826,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ClickCooldown"
+      Float: 0.5
+    }
+    Overrides {
       Name: "cs:ClickTimeout"
       Float: 0.1
     }
@@ -7422,6 +7426,7 @@ Objects {
     Overrides {
       Name: "cs:LootViewButton"
       ObjectReference {
+        SelfId: 5233136720388310078
       }
     }
     Overrides {
@@ -7437,6 +7442,7 @@ Objects {
     Overrides {
       Name: "cs:InventoryViewButton"
       ObjectReference {
+        SelfId: 11821814594095689041
       }
     }
     Overrides {

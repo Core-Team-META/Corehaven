@@ -49,13 +49,13 @@
       Overrides {
         Name: "cs:SelfTargetEffectTemplate"
         AssetReference {
-          Id: 844529263655551516
+          Id: 15121666892172951497
         }
       }
       Overrides {
         Name: "cs:OtherTargetEffectTemplate"
         AssetReference {
-          Id: 844529263655551516
+          Id: 15121666892172951497
         }
       }
       Overrides {

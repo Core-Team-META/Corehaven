@@ -61,6 +61,8 @@
         ChildIds: 5886745392032975229
         ChildIds: 9843149743667694332
         ChildIds: 3859540167532600274
+        ChildIds: 17492209672732786322
+        ChildIds: 18342004807111294488
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -171,7 +173,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 5961184720642333683
+              Id: 11337413471323694429
             }
           }
           Overrides {
@@ -185,7 +187,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5961184720642333683
+              Id: 11337413471323694429
             }
           }
           Overrides {
@@ -200,7 +202,8 @@
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 1
-              G: 0.31788075
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -208,7 +211,8 @@
             Name: "ma:Shared_Trim:color"
             Color {
               R: 1
-              G: 0.31788075
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -237,13 +241,13 @@
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 11.7632523
+            Z: 11.7632446
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
+            X: 0.639140606
+            Y: 0.786425769
             Z: 1
           }
         }
@@ -252,7 +256,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5961184720642333683
+              Id: 2819717477027926411
             }
           }
           Overrides {
@@ -266,20 +270,21 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 5961184720642333683
+              Id: 11337413471323694429
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 5961184720642333683
+              Id: 2819717477027926411
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
               R: 1
-              G: 0.31788075
+              G: 1
+              B: 1
               A: 1
             }
           }
@@ -287,18 +292,23 @@
             Name: "ma:Shared_Detail1:color"
             Color {
               R: 1
-              G: 0.31788075
+              G: 1
+              B: 1
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 0.119791664
-              G: 0.119791664
-              B: 0.119791664
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -451,6 +461,184 @@
           }
         }
       }
+      Objects {
+        Id: 17492209672732786322
+        Name: "Fantasy Sword Blade 04"
+        Transform {
+          Location {
+            Z: 11.7632446
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.3850483
+            Y: 1.37444401
+            Z: 0.937366545
+          }
+        }
+        ParentId: 14879081315461711297
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 26.7437706
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 28.7351074
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 2819717477027926411
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4342756216088781504
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18342004807111294488
+        Name: "Fantasy Sword Guard 02"
+        Transform {
+          Location {
+            Z: 20.4327393
+          }
+          Rotation {
+            Roll: -179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14879081315461711297
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 35.6438065
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 41.1495361
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 38.2978821
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 52.9092102
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9544913535066953067
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 14828962383590629290
@@ -489,12 +677,30 @@
       }
     }
     Assets {
+      Id: 11337413471323694429
+      Name: "Metal Gold 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_001"
+      }
+    }
+    Assets {
       Id: 4342756216088781504
       Name: "Fantasy Sword Blade 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_blade_sword_002"
+      }
+    }
+    Assets {
+      Id: 2819717477027926411
+      Name: "Metal Basic Steel"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "steel_001"
       }
     }
     Assets {

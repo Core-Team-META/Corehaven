@@ -69,14 +69,16 @@
             Name: "bp:color"
             Color {
               R: 1
-              G: 0.938807964
-              B: 0.580000043
+              G: 0.958940446
+              B: 0.38
               A: 0.1
             }
           }
           Overrides {
             Name: "bp:Stroke Color"
             Color {
+              G: 0.460000038
+              B: 0.0944370627
               A: 1
             }
           }

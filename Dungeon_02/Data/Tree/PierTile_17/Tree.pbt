@@ -1,7 +1,7 @@
 ﻿Name: "PierTile_17"
-RootId: 11231111891163200633
+RootId: 7920922798633479696
 Objects {
-  Id: 582760144930498031
+  Id: 2115595748070431908
   Name: "Post"
   Transform {
     Location {
@@ -18,9 +18,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11231111891163200633
-  ChildIds: 3649067153167634752
-  ChildIds: 12195538986133553136
+  ParentId: 7920922798633479696
+  ChildIds: 3452142361487760585
+  ChildIds: 13735098375049315216
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,7 +34,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12195538986133553136
+  Id: 13735098375049315216
   Name: "ClientContext"
   Transform {
     Location {
@@ -50,9 +50,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 582760144930498031
-  ChildIds: 12978420313153927276
-  ChildIds: 12625660760255006862
+  ParentId: 2115595748070431908
+  ChildIds: 474427381305347209
+  ChildIds: 5032470152220181040
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63,18 +63,18 @@ Objects {
   }
 }
 Objects {
-  Id: 12625660760255006862
+  Id: 5032470152220181040
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: 0.529581666
-      Y: -0.00952813122
-      Z: 10.5821075
+      X: 184.617752
+      Y: 28.132494
+      Z: 8.78361702
     }
     Rotation {
-      Pitch: -6.60150051
+      Pitch: -6.60150146
       Yaw: 126.153969
-      Roll: -6.69260263
+      Roll: -6.69259644
     }
     Scale {
       X: 0.390394747
@@ -82,7 +82,7 @@ Objects {
       Z: 0.390394747
     }
   }
-  ParentId: 12195538986133553136
+  ParentId: 13735098375049315216
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -135,18 +135,18 @@ Objects {
   }
 }
 Objects {
-  Id: 12978420313153927276
+  Id: 474427381305347209
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: -0.529581666
-      Y: 0.00950039178
-      Z: 2.60986944e-05
+      X: 183.558716
+      Y: 28.1520157
+      Z: -1.7984885
     }
     Rotation {
-      Pitch: -2.83605838
-      Yaw: 129.177475
-      Roll: 5.29525423
+      Pitch: -2.83605957
+      Yaw: 129.177444
+      Roll: 5.29525757
     }
     Scale {
       X: 0.390394747
@@ -154,7 +154,7 @@ Objects {
       Z: 0.390394747
     }
   }
-  ParentId: 12195538986133553136
+  ParentId: 13735098375049315216
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -207,7 +207,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3649067153167634752
+  Id: 3452142361487760585
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -226,7 +226,7 @@ Objects {
       Z: 0.562187314
     }
   }
-  ParentId: 582760144930498031
+  ParentId: 2115595748070431908
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -282,7 +282,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16405108090339567534
+  Id: 17772314942240961246
   Name: "Post"
   Transform {
     Location {
@@ -299,13 +299,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11231111891163200633
-  ChildIds: 13034399482862045237
-  ChildIds: 8014208085168161844
-  ChildIds: 18082589523084478145
-  ChildIds: 451793192466153602
-  ChildIds: 5835347969124906439
-  ChildIds: 397587095029062755
+  ParentId: 7920922798633479696
+  ChildIds: 11764935769509771674
+  ChildIds: 5237470769265750383
+  ChildIds: 12184307751186614655
+  ChildIds: 8830539827307797101
+  ChildIds: 7643486223748203362
+  ChildIds: 1180187049410686064
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -319,7 +319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 397587095029062755
+  Id: 1180187049410686064
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -338,7 +338,7 @@ Objects {
       Z: 0.562187314
     }
   }
-  ParentId: 16405108090339567534
+  ParentId: 17772314942240961246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -394,18 +394,18 @@ Objects {
   }
 }
 Objects {
-  Id: 5835347969124906439
+  Id: 7643486223748203362
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 240.290314
-      Y: 71.1748581
-      Z: -341.140228
+      X: 424.378265
+      Y: 99.3415604
+      Z: -339.781769
     }
     Rotation {
       Pitch: 83.581604
       Yaw: -89.999939
-      Roll: 163.914337
+      Roll: 163.914307
     }
     Scale {
       X: 0.800011933
@@ -413,7 +413,7 @@ Objects {
       Z: 0.562187314
     }
   }
-  ParentId: 16405108090339567534
+  ParentId: 17772314942240961246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -469,7 +469,7 @@ Objects {
   }
 }
 Objects {
-  Id: 451793192466153602
+  Id: 8830539827307797101
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -488,7 +488,7 @@ Objects {
       Z: 0.562181115
     }
   }
-  ParentId: 16405108090339567534
+  ParentId: 17772314942240961246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -544,7 +544,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18082589523084478145
+  Id: 12184307751186614655
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -563,7 +563,7 @@ Objects {
       Z: 0.562187314
     }
   }
-  ParentId: 16405108090339567534
+  ParentId: 17772314942240961246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -619,7 +619,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8014208085168161844
+  Id: 5237470769265750383
   Name: "ClientContext"
   Transform {
     Location {
@@ -635,9 +635,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16405108090339567534
-  ChildIds: 14200307282080051654
-  ChildIds: 2146378915515606511
+  ParentId: 17772314942240961246
+  ChildIds: 18295312471554283016
+  ChildIds: 1597944942580865592
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -648,7 +648,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2146378915515606511
+  Id: 1597944942580865592
   Name: "Ring - Thick"
   Transform {
     Location {
@@ -664,7 +664,7 @@ Objects {
       Z: 0.390394747
     }
   }
-  ParentId: 8014208085168161844
+  ParentId: 5237470769265750383
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -717,7 +717,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14200307282080051654
+  Id: 18295312471554283016
   Name: "Ring - Thick"
   Transform {
     Location {
@@ -731,7 +731,7 @@ Objects {
       Z: 0.390394747
     }
   }
-  ParentId: 8014208085168161844
+  ParentId: 5237470769265750383
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -784,7 +784,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13034399482862045237
+  Id: 11764935769509771674
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
@@ -803,7 +803,7 @@ Objects {
       Z: 0.562187314
     }
   }
-  ParentId: 16405108090339567534
+  ParentId: 17772314942240961246
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -859,7 +859,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7190988297087697870
+  Id: 4592747402660623340
   Name: "ClientContext"
   Transform {
     Location {
@@ -875,15 +875,15 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11231111891163200633
-  ChildIds: 5494289459825484981
-  ChildIds: 16943106430478053436
-  ChildIds: 6718460429806013223
-  ChildIds: 5699492455201148784
-  ChildIds: 1374656296736634396
-  ChildIds: 17852149959214965047
-  ChildIds: 597518426595023768
-  ChildIds: 13478713942911525545
+  ParentId: 7920922798633479696
+  ChildIds: 10945585001544460283
+  ChildIds: 6359249614603958661
+  ChildIds: 14548622215665917209
+  ChildIds: 3204728909945935574
+  ChildIds: 7603183303562740800
+  ChildIds: 5456111976001283622
+  ChildIds: 12689321434471181095
+  ChildIds: 1171406099931608735
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -894,15 +894,15 @@ Objects {
   }
 }
 Objects {
-  Id: 13478713942911525545
+  Id: 1171406099931608735
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 200.190887
-      Y: -9.80421257
+      X: 384.279053
+      Y: 18.3953247
     }
     Rotation {
-      Pitch: 4.42814779
+      Pitch: 4.42814112
       Yaw: -87.3111267
       Roll: -82.3570251
     }
@@ -912,7 +912,7 @@ Objects {
       Z: 0.315937281
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -960,13 +960,13 @@ Objects {
   }
 }
 Objects {
-  Id: 597518426595023768
+  Id: 12689321434471181095
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 197.117279
-      Y: 256.345734
-      Z: 44.6573486
+      X: 381.205048
+      Y: 284.545197
+      Z: 44.6573334
     }
     Rotation {
       Pitch: -4.80291748
@@ -979,7 +979,7 @@ Objects {
       Z: 0.315939128
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1027,26 +1027,26 @@ Objects {
   }
 }
 Objects {
-  Id: 17852149959214965047
+  Id: 5456111976001283622
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 169.840118
-      Y: 232.920151
-      Z: 138.094711
+      X: 321.986328
+      Y: 265.403381
+      Z: 138.615387
     }
     Rotation {
       Pitch: -0.675933838
-      Yaw: -90
-      Roll: 0.00858763885
+      Yaw: -85.244873
+      Roll: 0.00858726539
     }
     Scale {
-      X: 0.733888268
-      Y: 0.822923779
+      X: 0.733888328
+      Y: 0.822923839
       Z: 0.315930158
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1094,26 +1094,26 @@ Objects {
   }
 }
 Objects {
-  Id: 1374656296736634396
+  Id: 7603183303562740800
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -52.6851616
-      Y: -266.865265
-      Z: 96.7283249
+      X: -52.6849327
+      Y: -266.865234
+      Z: 96.7283478
     }
     Rotation {
-      Pitch: -21.0812073
-      Yaw: 5.66135025
-      Roll: -91.7632751
+      Pitch: -6.70516968
+      Yaw: 5.22055864
+      Roll: -91.6564
     }
     Scale {
-      X: 0.338273942
-      Y: 0.702479124
-      Z: 0.315936446
+      X: 0.567927659
+      Y: 0.702479601
+      Z: 0.315926284
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1161,7 +1161,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5699492455201148784
+  Id: 3204728909945935574
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
@@ -1180,7 +1180,7 @@ Objects {
       Z: 0.315950543
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1228,7 +1228,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6718460429806013223
+  Id: 14548622215665917209
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
@@ -1247,7 +1247,7 @@ Objects {
       Z: 0.315938264
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1295,7 +1295,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16943106430478053436
+  Id: 6359249614603958661
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
@@ -1314,7 +1314,7 @@ Objects {
       Z: 0.31592983
     }
   }
-  ParentId: 7190988297087697870
+  ParentId: 4592747402660623340
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1362,7 +1362,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5494289459825484981
+  Id: 10945585001544460283
   Name: "Group"
   Transform {
     Location {
@@ -1378,20 +1378,20 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7190988297087697870
-  ChildIds: 3865737008076707294
-  ChildIds: 3673495184104803904
-  ChildIds: 81992039683458528
-  ChildIds: 82658361419339119
-  ChildIds: 12384923960850716207
-  ChildIds: 15796444071772800259
-  ChildIds: 11503419880078438593
-  ChildIds: 10757624310780396207
-  ChildIds: 5892282714636795606
-  ChildIds: 3275009874880101417
-  ChildIds: 1133903040963880793
-  ChildIds: 1644732841863584453
-  ChildIds: 16195796766836392325
+  ParentId: 4592747402660623340
+  ChildIds: 14585133129814702681
+  ChildIds: 12256550882053494754
+  ChildIds: 9611469883383807691
+  ChildIds: 15778084726077285229
+  ChildIds: 10617557563974983285
+  ChildIds: 10978895380217511441
+  ChildIds: 12255292437464106436
+  ChildIds: 15594693753054543159
+  ChildIds: 2808739577068762075
+  ChildIds: 5668189690309401848
+  ChildIds: 6349415216940435110
+  ChildIds: 16373520629955260949
+  ChildIds: 16806746900759116570
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1403,23 +1403,26 @@ Objects {
   }
 }
 Objects {
-  Id: 16195796766836392325
+  Id: 16806746900759116570
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -11.2567711
-      Y: -143.529587
+      X: -9.74790478
+      Y: -143.829987
+      Z: 0.915418386
     }
     Rotation {
-      Pitch: 3.99757981
+      Pitch: 2.31427288
+      Yaw: 2.70434761
+      Roll: 0.188544363
     }
     Scale {
-      X: 0.298703194
-      Y: 0.815068066
-      Z: 0.315929979
+      X: 0.54825449
+      Y: 0.81511122
+      Z: 0.315928161
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1467,23 +1470,26 @@ Objects {
   }
 }
 Objects {
-  Id: 1644732841863584453
+  Id: 16373520629955260949
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 11.862504
-      Y: -176.51564
-      Z: 12.1552191
+      X: 11.8624144
+      Y: -176.5159
+      Z: 12.1552219
     }
     Rotation {
+      Pitch: -0.389770508
+      Yaw: -3.05175781e-05
+      Roll: 6.9064788e-07
     }
     Scale {
-      X: 0.253600866
-      Y: 0.95541805
+      X: 0.515036702
+      Y: 0.955450952
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1530,24 +1536,24 @@ Objects {
   }
 }
 Objects {
-  Id: 1133903040963880793
+  Id: 6349415216940435110
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 3.25269318
-      Y: -215.531845
-      Z: 9.01643658
+      X: 3.25271416
+      Y: -215.53215
+      Z: 9.0164423
     }
     Rotation {
-      Yaw: -3.16803026
+      Yaw: 0.600805521
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
+      X: 0.542178631
+      Y: 0.955416739
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1595,24 +1601,26 @@ Objects {
   }
 }
 Objects {
-  Id: 3275009874880101417
+  Id: 5668189690309401848
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -4.12068892
-      Y: -111.629562
-      Z: 0.498734206
+      X: -4.12067509
+      Y: -111.629486
+      Z: 0.498737901
     }
     Rotation {
-      Pitch: 3.99757981
+      Pitch: 2.31427288
+      Yaw: 2.70434761
+      Roll: 0.188544363
     }
     Scale {
-      X: 0.26426053
-      Y: 0.821927845
-      Z: 0.315929979
+      X: 0.520094872
+      Y: 0.821934938
+      Z: 0.315928817
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1660,26 +1668,26 @@ Objects {
   }
 }
 Objects {
-  Id: 5892282714636795606
+  Id: 2808739577068762075
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -2.3878572
-      Y: -81.7549667
-      Z: 4.28124619
+      X: -2.32648754
+      Y: -81.6724548
+      Z: 3.53354764
     }
     Rotation {
-      Pitch: 2.06988883
-      Yaw: 3.24264812
-      Roll: 0.117246822
+      Pitch: 0.391158074
+      Yaw: 1.94398892
+      Roll: 0.139232069
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
-      Z: 0.315929979
+      X: 0.515874267
+      Y: 0.955430746
+      Z: 0.315929621
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1726,23 +1734,23 @@ Objects {
   }
 }
 Objects {
-  Id: 10757624310780396207
+  Id: 15594693753054543159
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 5.79064083
-      Y: -41.5178146
-      Z: 3.49591851
+      X: 5.79060507
+      Y: -41.5175362
+      Z: 3.49590898
     }
     Rotation {
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
+      X: 0.501575768
+      Y: 0.955451
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1790,13 +1798,13 @@ Objects {
   }
 }
 Objects {
-  Id: 11503419880078438593
+  Id: 12255292437464106436
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -2.63558531
-      Y: -2.34456801
-      Z: 6.74604464
+      X: -2.63538647
+      Y: -2.34432817
+      Z: 6.74603224
     }
     Rotation {
       Pitch: 0.222131401
@@ -1804,12 +1812,12 @@ Objects {
       Roll: 174.975113
     }
     Scale {
-      X: 0.298703194
-      Y: 0.95541805
-      Z: 0.315929979
+      X: 0.51693213
+      Y: 0.955430925
+      Z: 0.315930694
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1856,24 +1864,24 @@ Objects {
   }
 }
 Objects {
-  Id: 15796444071772800259
+  Id: 10978895380217511441
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 5.52995777
-      Y: 50.6458321
-      Z: 9.01643658
+      X: 5.53031
+      Y: 50.645977
+      Z: 9.0164423
     }
     Rotation {
-      Yaw: -6.03384399
+      Yaw: -2.77804565
     }
     Scale {
-      X: 0.26344049
-      Y: 0.798777521
+      X: 0.491648078
+      Y: 0.798787415
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1920,23 +1928,23 @@ Objects {
   }
 }
 Objects {
-  Id: 12384923960850716207
+  Id: 10617557563974983285
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -3.15473962
-      Y: 80.5059
-      Z: 12.1552191
+      X: 1.89200282
+      Y: 80.5058441
+      Z: 12.1552219
     }
     Rotation {
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
+      X: 0.495410621
+      Y: 0.955425441
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1984,23 +1992,23 @@ Objects {
   }
 }
 Objects {
-  Id: 82658361419339119
+  Id: 15778084726077285229
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -11.2744656
-      Y: 109.889153
-      Z: 6.00799513
+      X: 1.50736678
+      Y: 109.888443
+      Z: 6.00800514
     }
     Rotation {
     }
     Scale {
-      X: 0.298703194
-      Y: 0.69748807
+      X: 0.486027718
+      Y: 0.697493
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2047,24 +2055,24 @@ Objects {
   }
 }
 Objects {
-  Id: 81992039683458528
+  Id: 9611469883383807691
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 4.99287176
-      Y: 212.018051
-      Z: 4.41490555
+      X: 4.99265766
+      Y: 212.017761
+      Z: 4.41491079
     }
     Rotation {
-      Yaw: 4.28718662
+      Yaw: 4.28718805
     }
     Scale {
-      X: 0.298703194
-      Y: 0.95541805
+      X: 0.486027718
+      Y: 0.955424786
       Z: 0.315929979
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2111,23 +2119,26 @@ Objects {
   }
 }
 Objects {
-  Id: 3673495184104803904
+  Id: 12256550882053494754
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 5.79064083
-      Y: 180.0009
-      Z: 3.49591851
+      X: 5.79071283
+      Y: 180.001083
+      Z: 3.49590898
     }
     Rotation {
+      Pitch: 0.547344
+      Yaw: -9.15527344e-05
+      Roll: 2.17823739e-07
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
-      Z: 0.315929979
+      X: 0.498989254
+      Y: 0.955424488
+      Z: 0.31593
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2174,26 +2185,26 @@ Objects {
   }
 }
 Objects {
-  Id: 3865737008076707294
+  Id: 14585133129814702681
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -2.3878572
-      Y: 139.763748
-      Z: 7.97907543
+      X: -2.38813376
+      Y: 139.76358
+      Z: 7.97908497
     }
     Rotation {
-      Pitch: -1.73287964
-      Yaw: 3.24201965
-      Roll: -0.0981140137
+      Pitch: 0.81996417
+      Yaw: 3.23768616
+      Roll: -0.0980834961
     }
     Scale {
-      X: 0.271413356
-      Y: 0.95541805
-      Z: 0.315929979
+      X: 0.49996829
+      Y: 0.955411196
+      Z: 0.315930426
     }
   }
-  ParentId: 5494289459825484981
+  ParentId: 10945585001544460283
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
