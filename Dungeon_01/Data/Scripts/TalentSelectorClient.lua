@@ -1,5 +1,7 @@
 ﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -28,6 +30,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local tooltipTalentData = nil
 local talentTreesVisible = false
+local previousTalentStrings = {}				-- Local player only, string treeName -> string
 
 function ToggleTalentTrees()
 	if talentTreesVisible then
@@ -224,6 +227,47 @@ function BuildTalentTreeUI()
 end
 
 function Tick(deltaTime)
+	for treeName, treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
+		local treeHelper = UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName)
+
+		if treeHelper then
+			local talentString = treeHelper:GetCustomProperty("TalentString")
+			local previousString = previousTalentStrings[treeName]
+
+			if talentString ~= previousString then
+				for _, talentData in pairs(treeData) do
+					local index = talentData.index
+					local newHaveTalent = string.sub(talentString, index, index) == "1"
+					local previousHaveTalent = previousString and string.sub(previousString, index, index) == "1"
+
+					-- New talent
+					if newHaveTalent and not previousHaveTalent then
+						for _, abilityName in pairs(talentData.abilityNames) do
+							API_A.GivePlayerAbility(LOCAL_PLAYER, abilityName)
+						end
+
+						for _, passive in pairs(talentData.passives) do
+							API_PP.GivePlayerPassive(LOCAL_PLAYER, passive)
+						end
+					end
+
+					-- Removed talent
+					if not newHaveTalent and previousHaveTalent then
+						for _, abilityName in pairs(talentData.abilityNames) do
+							API_A.RemovePlayerAbility(LOCAL_PLAYER, abilityName)
+						end
+
+						for _, passive in pairs(talentData.passives) do
+							API_PP.RemovePlayerPassive(LOCAL_PLAYER, passive)
+						end
+					end
+				end
+
+				previousTalentStrings[treeName] = talentString
+			end
+		end
+	end
+
 	if not talentTreesVisible then
 		return
 	end

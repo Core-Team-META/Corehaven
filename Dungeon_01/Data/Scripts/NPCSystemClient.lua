@@ -72,7 +72,8 @@ function Tick(deltaTime)
 			local runStance = mesh:GetCustomProperty("RunStance") or "unarmed_run_forward"
 			local stareStance = mesh:GetCustomProperty("StareStance") or "unarmed_idle_ready"
 			local deathAnimation = mesh:GetCustomProperty("DeathAnimation") or "unarmed_death"
-			local stunnedAnimation = mesh:GetCustomProperty("StunnedAnimation") or "unarmed_stun_dizzy"
+			local stunnedAnimation = mesh:GetCustomProperty("StunnedAnimation")
+			local stunnedStance = mesh:GetCustomProperty("StunnedStance")
 			mesh.animationStance = idleStance
 			mesh:StopAnimations()
 
@@ -87,7 +88,11 @@ function Tick(deltaTime)
 			elseif currentTask == API_NPC.STATE_DEAD then
 				mesh:PlayAnimation(deathAnimation, {shouldLoop = true})
 			elseif currentTask == API_NPC.STATE_STUNNED then
-				mesh:PlayAnimation(stunnedAnimation, {shouldLoop = true})
+				if stunnedAnimation then
+					mesh:PlayAnimation(stunnedAnimation, {shouldLoop = true})
+				elseif stunnedStance then
+					mesh.animationStance = stunnedStance
+				end
 			else
 				mesh.animationStance = idleStance
 			end

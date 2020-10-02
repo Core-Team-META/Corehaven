@@ -23,14 +23,16 @@
         Float: 6
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Taunts all nearby enemies to attack you."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 5017032977863718353
-        }
+        Name: "cs:AnimationKey"
+        String: "Shout"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Taunts all nearby enemies to attack you."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

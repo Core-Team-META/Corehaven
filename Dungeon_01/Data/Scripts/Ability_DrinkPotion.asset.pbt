@@ -23,14 +23,16 @@
         Float: 20
       }
       Overrides {
-        Name: "cs:Description"
-        String: "You drink a helpful potion."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 2291837529778361503
-        }
+        Name: "cs:AnimationKey"
+        String: "Drink"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "You drink a helpful potion."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

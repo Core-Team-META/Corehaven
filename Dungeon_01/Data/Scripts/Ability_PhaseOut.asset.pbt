@@ -23,14 +23,16 @@
         Float: 35
       }
       Overrides {
-        Name: "cs:Description"
-        String: "You phase out of your corporeal form, avoiding the next few attacks entirely."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 9939368683614185057
-        }
+        Name: "cs:AnimationKey"
+        String: "Magic"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "You phase out of your corporeal form, avoiding the next few attacks entirely."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

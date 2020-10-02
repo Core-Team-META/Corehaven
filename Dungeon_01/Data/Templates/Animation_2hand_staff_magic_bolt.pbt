@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 14797941420419765639
+  Id: 4539543345637680619
   Name: "Animation_2hand_staff_magic_bolt"
   PlatformAssetType: 5
   TemplateAsset {
@@ -32,7 +32,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           ExecutePhaseSettings {
@@ -41,7 +41,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           RecoveryPhaseSettings {
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

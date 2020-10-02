@@ -97,8 +97,6 @@ local USER_FACING_BINDINGS =
 }
 
 local buttonData = {}			-- int -> table {abilityName = string, button = CoreObject}
-local invalidAbilityNames = {}	-- So we don't spam warnings
-
 local draggingIndex = 0
 local isDraggingEnabled = false	-- When true, the action bar icons can be re-arranged.
 local wasCursorVisible = false	-- Last frame, for change detection
@@ -156,27 +154,31 @@ function GetSocketIndexAtCursorPosition()
 end
 
 function SetupAbilityToolTip()
+	ABILITY_TOOLTIP.clientUserData.abilityName = ""
 	ABILITY_TOOLTIP.clientUserData.name = ABILITY_TOOLTIP:GetCustomProperty("AbilityNameText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.requirement = ABILITY_TOOLTIP:GetCustomProperty("AbilityRequirementText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.description = ABILITY_TOOLTIP:GetCustomProperty("AbilityDescriptionText"):WaitForObject()
 end
 
 function HideAbilityToolTip()
-	ABILITY_TOOLTIP.parent = ABILITY_TOOLTIP.clientUserData.defaultParent
+	ABILITY_TOOLTIP.parent = World.GetRootObject()
 	ABILITY_TOOLTIP.visibility = Visibility.FORCE_OFF
 end
 
 function DrawAbilityToolTip()
 	local socketIndex = GetSocketIndexAtCursorPosition()
 	local socketData = buttonData[socketIndex]
+
 	if socketData and socketData.button then
 		ABILITY_TOOLTIP.visibility = Visibility.INHERIT
 		ABILITY_TOOLTIP.parent = socketData.button
 		-- Update the ability(talent) information.
 		local abilityData = API_A.GetAbilityData(socketData.abilityName)
+		ABILITY_TOOLTIP.clientUserData.abilityName = socketData.abilityName
 		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
 		ABILITY_TOOLTIP.clientUserData.description.text = abilityData.description
 		ABILITY_TOOLTIP.clientUserData.requirement.text = ""
+
 		if abilityData.equippedItemConstraints then
 			ABILITY_TOOLTIP.clientUserData.requirement.text = string.format("requires:  %s", table.concat(abilityData.equippedItemConstraints, ", "))
 			local isDisabled = socketData.button.clientUserData.disabledIndicator.visibility ~= Visibility.FORCE_OFF
@@ -273,58 +275,41 @@ function OnBindingReleased(player, binding)
 	end
 end
 
-function Tick(deltaTime)
-	local playerAbilities = API_A.GetPlayerAbilities(LOCAL_PLAYER)
-	-- Looking for new abilities
-	for abilityName, ability in pairs(playerAbilities) do
-		-- We can't be sure the ability system has cleared out the reference clientside
-		if Object.IsValid(ability) then
-			local found = false
+function OnAbilityGained(player, abilityName)
+	assert(player == LOCAL_PLAYER)
+	local socketFound = false
 
-			for _, data in pairs(buttonData) do
-				if data.abilityName == abilityName then
-					found = true
-					break
-				end
-			end
-
-			for _, invalidAbilityNames in pairs(invalidAbilityNames) do
-				if invalidAbilityNames == abilityName then
-					found = true
-					break
-				end
-			end
-
-			if not found then
-				local socketFound = false
-
-				for i, data in pairs(buttonData) do
-					if not data.abilityName then
-						data.abilityName = abilityName
-						data.button = SpawnAbilityButton(abilityName, i)
-						socketFound = true
-						break
-					end
-				end
-
-				if not socketFound then
-					table.insert(invalidAbilityNames, abilityName)
-					warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
-				end
-			end
-		end
-	end
-
-	-- Look for removed abilities.
 	for i, data in pairs(buttonData) do
-		if data.abilityName then
-			if not playerAbilities[data.abilityName] or not Object.IsValid(playerAbilities[data.abilityName]) then
-				data.button:Destroy()
-				buttonData[i] = {}
-			end
+		if not data.abilityName then
+			data.abilityName = abilityName
+			data.button = SpawnAbilityButton(abilityName, i)
+			socketFound = true
+			break
 		end
 	end
 
+	if not socketFound then
+		warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
+	end
+end
+
+function OnAbilityRemoved(player, abilityName)
+	assert(player == LOCAL_PLAYER)
+
+	for i, data in pairs(buttonData) do
+		if data.abilityName == abilityName then
+			if ABILITY_TOOLTIP.clientUserData.abilityName == abilityName then
+				HideAbilityToolTip()
+			end
+
+			data.button:Destroy()
+			buttonData[i] = {}
+			return
+		end
+	end
+end
+
+function Tick(deltaTime)
 	-- Show the disabled indicator for any abilities whose equipment requirements are not met.
 	for _,data in pairs(buttonData) do
 		if data.button then
@@ -344,22 +329,9 @@ function Tick(deltaTime)
 		end
 	end
 
-	local i = 1
-	while i <= #invalidAbilityNames do
-		abilityName = invalidAbilityNames[i]
-
-		if not playerAbilities[abilityName] then
-			table.remove(invalidAbilityNames, i)
-		else
-			i = i + 1
-		end
-	end
-
 	-- Updating cooldown displays
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
-			local ability = playerAbilities[data.abilityName]
-			local currentPhase = ability:GetCurrentPhase()
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
 			local cooldownTimeText = data.button:GetCustomProperty("CooldownTimeText"):WaitForObject()
             local cooldownData = API_A.GetVisibleCooldownData(data.abilityName)
@@ -387,23 +359,6 @@ function Tick(deltaTime)
                     rightShadow.visibility = Visibility.FORCE_OFF
                 end
 	        end
-		end
-	end
-
-	-- Update enabled visual state
-	local hasAnyAbilities = false
-	for _, data in pairs(buttonData) do
-		if data.abilityName then
-			hasAnyAbilities = true
-			local ability = playerAbilities[data.abilityName]
-			local abilityData = API_A.GetAbilityData(data.abilityName)
-			local icon = data.button:GetCustomProperty("Icon"):WaitForObject()
-
-			if ability.isEnabled then
-				icon:SetColor(Color.WHITE)
-			else
-				icon:SetColor(Color.New(0.15, 0.15, 0.15))
-			end
 		end
 	end
 
@@ -458,3 +413,6 @@ SetupAbilityDragToggle()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
+Events.Connect("AbilityGained", OnAbilityGained)
+Events.Connect("AbilityRemoved", OnAbilityRemoved)
+

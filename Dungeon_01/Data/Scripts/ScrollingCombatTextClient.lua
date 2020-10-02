@@ -78,6 +78,11 @@ function ShowText(targetCharacter, amount, over, color, tags)
 
 		while t < FULL_ALPHA_TIME + FADE_TIME do
 			t = os.clock() - startTime
+			
+			if not Object.IsValid(targetCharacter) then
+				break
+			end
+
 			local worldPosition = targetCharacter:GetWorldPosition()
 
 			if targetCharacter:IsA("Player") then

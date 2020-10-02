@@ -23,14 +23,16 @@
         Float: 15
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Draw celestial bodies to the ground, causing large damage in an area."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 17982904600853192015
-        }
+        Name: "cs:AnimationKey"
+        String: "Magic"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Draw celestial bodies to the ground, causing large damage in an area."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

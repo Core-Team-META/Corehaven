@@ -23,14 +23,16 @@
         Float: 45
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Empower the caster, increasing your damage and speed for a short duration."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 13496631951148696514
-        }
+        Name: "cs:AnimationKey"
+        String: "Magic"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Empower the caster, increasing your damage and speed for a short duration."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

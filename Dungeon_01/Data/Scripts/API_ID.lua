@@ -17,7 +17,7 @@ function API.GetIdFromObject(character)
 end
 
 function API.GetObjectFromId(id)
-    if id and id ~= "" then
+    if id and type(id) == "string" and id ~= "" then
         for _, player in pairs(Game.GetPlayers()) do
             if player.id == id then
                 return player

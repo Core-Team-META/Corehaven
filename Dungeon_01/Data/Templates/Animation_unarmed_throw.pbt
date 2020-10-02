@@ -7,7 +7,7 @@
       RootId: 1395271830415331670
       Objects {
         Id: 1395271830415331670
-        Name: "Animation_unarmed_use"
+        Name: "Animation_unarmed_throw"
         Transform {
           Scale {
             X: 1
@@ -32,7 +32,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           ExecutePhaseSettings {
@@ -41,7 +41,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           RecoveryPhaseSettings {
@@ -62,7 +62,7 @@
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "unarmed_use"
+          Animation: "unarmed_throw"
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
           }
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

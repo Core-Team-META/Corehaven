@@ -35,15 +35,51 @@
         }
       }
       Overrides {
-        Name: "cs:Animation_2hand_staff_magic_bolt"
+        Name: "cs:Animation_2hand_melee_slash_right"
+        AssetReference {
+          Id: 1936606330922594575
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_melee_slash_vertical"
+        AssetReference {
+          Id: 6729502119070174657
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_staff_magic_bolt_start"
         AssetReference {
           Id: 14797941420419765639
         }
       }
       Overrides {
-        Name: "cs:Animation_2hand_staff_magic_up"
+        Name: "cs:Animation_2hand_staff_magic_bolt"
+        AssetReference {
+          Id: 4539543345637680619
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_staff_magic_up_start"
         AssetReference {
           Id: 17659744577182295066
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_staff_magic_up"
+        AssetReference {
+          Id: 3224052045163392939
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_sword_slash_left"
+        AssetReference {
+          Id: 9579426614021342198
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_sword_slash_right"
+        AssetReference {
+          Id: 2206360207465137412
         }
       }
       Overrides {
@@ -53,21 +89,81 @@
         }
       }
       Overrides {
+        Name: "cs:Animation_2hand_sword_slash_vertical"
+        AssetReference {
+          Id: 16300151835409000482
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_2hand_sword_thrust"
+        AssetReference {
+          Id: 8711788817788788764
+        }
+      }
+      Overrides {
         Name: "cs:Animation_unarmed_dance"
         AssetReference {
           Id: 9631841465419350688
         }
       }
       Overrides {
-        Name: "cs:Animation_unarmed_magic_bolt"
+        Name: "cs:Animation_unarmed_drink"
+        AssetReference {
+          Id: 12903367606850195956
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_magic_bolt_start"
         AssetReference {
           Id: 5786763895001670062
         }
       }
       Overrides {
-        Name: "cs:Animation_unarmed_magic_up"
+        Name: "cs:Animation_unarmed_magic_bolt"
+        AssetReference {
+          Id: 16585269223029215444
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_magic_up_start"
         AssetReference {
           Id: 11322068319754823461
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_magic_up"
+        AssetReference {
+          Id: 2356147457070574232
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_punch_left"
+        AssetReference {
+          Id: 13383596480420752369
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_punch_right"
+        AssetReference {
+          Id: 7707547154865833588
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_shout"
+        AssetReference {
+          Id: 1139198525019319357
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_shove"
+        AssetReference {
+          Id: 17300555149112272333
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_stomp"
+        AssetReference {
+          Id: 6397312753020793237
         }
       }
       Overrides {
@@ -96,5 +192,5 @@
       }
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

@@ -23,14 +23,16 @@
         Float: 18
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Throw a hammer at your target, stunning them."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 12661262948507566861
-        }
+        Name: "cs:AnimationKey"
+        String: "Throw"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Throw a hammer at your target, stunning them."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

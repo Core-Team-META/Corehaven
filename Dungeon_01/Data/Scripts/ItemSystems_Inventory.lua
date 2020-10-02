@@ -128,10 +128,12 @@ end
 -- Returns true if an item of the requested type is currently equipped and enabled.
 function Inventory:HasEquippedItemType(itemType)
     local itemConstraints = Item.SLOT_CONSTRAINTS[itemType]
-    assert(itemConstraints, "unrecognized item type")
-    local itemEquipSlot = self:ConvertEquipSlotIndex(itemConstraints.slotType)
-    local currentItem = self:IsSlotEnabled(itemEquipSlot) and self:GetItem(itemEquipSlot) or nil
-    return currentItem and currentItem:GetType() == itemType
+    
+    if itemConstraints then
+        local itemEquipSlot = self:ConvertEquipSlotIndex(itemConstraints.slotType)
+        local currentItem = self:IsSlotEnabled(itemEquipSlot) and self:GetItem(itemEquipSlot) or nil
+        return currentItem and currentItem:GetType() == itemType
+    end
 end
 
 -- Gets the first free backpack slot.
@@ -363,11 +365,12 @@ function Inventory:_SetSlotItem(slotIndex, item, doNotFireEvent)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
+        local previousType = self.equippedItems[slotIndex] and self.equippedItems[slotIndex]:GetType()
         self.equippedItems[slotIndex] = item
         self:_UpdateSlotStatus()
         self:_UpdateStatTotals()
         if not doNotFireEvent then
-            self:_FireEvent("itemEquippedEvent", slotIndex, item)
+            self:_FireEvent("itemEquippedEvent", slotIndex, previousType, item)
         end
     end
 end

@@ -3072,20 +3072,12 @@ Objects {
   ChildIds: 7859438335108661260
   UnregisteredParameters {
     Overrides {
-      Name: "cs:MinCastTime"
-      Float: 0.3
-    }
-    Overrides {
       Name: "cs:ShowName"
       Bool: true
     }
     Overrides {
       Name: "cs:ShowName:tooltip"
       String: "Whether to show the name of the ability that is currently casting"
-    }
-    Overrides {
-      Name: "cs:MinCastTime:tooltip"
-      String: "For cast times below this number, this element will not show"
     }
   }
   Collidable_v2 {

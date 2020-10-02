@@ -1,5 +1,7 @@
 ﻿local API = {}
 
+local IS_CLIENT = pcall(Game.GetLocalPlayer)
+
 local passiveDefinitions = {}
 
 for propertyName, script in pairs(script:GetCustomProperties()) do
@@ -44,7 +46,7 @@ function API.GivePlayerPassive(player, passive)
 
 	playerPassives[player][passive] = true
 
-	if passiveData[passive].onGain then
+	if not IS_CLIENT and passiveData[passive].onGain then
 		passiveData[passive].onGain(player)
 	end
 end
@@ -55,19 +57,9 @@ function API.RemovePlayerPassive(player, passive)
 
 	playerPassives[player][passive] = nil
 
-	if passiveData[passive].onLose then
+	if not IS_CLIENT and passiveData[passive].onLose then
 		passiveData[passive].onLose(player)
 	end
-end
-
-function API.ResetPlayerPassives(player)
-	for passive, _ in pairs(playerPassives[player]) do
-		if passiveData[passive].onLose then
-			passiveData[passive].onLose(player)
-		end
-	end
-
-	playerPassives[player] = {}
 end
 
 function API.DoesPlayerHavePassive(player, passive)

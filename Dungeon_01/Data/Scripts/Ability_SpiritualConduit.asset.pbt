@@ -23,14 +23,16 @@
         Float: 8
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Your target is empowered with spirits, lashing out repeatedly at nearby targets."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 3087943568374366425
-        }
+        Name: "cs:AnimationKey"
+        String: "Bolt"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Your target is empowered with spirits, lashing out repeatedly at nearby targets."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

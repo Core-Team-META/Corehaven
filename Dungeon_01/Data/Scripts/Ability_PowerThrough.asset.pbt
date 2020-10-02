@@ -23,14 +23,16 @@
         Float: 22
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Grit your teeth and take reduced damage temporarily."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 13895786195049779236
-        }
+        Name: "cs:AnimationKey"
+        String: "Shout"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Grit your teeth and take reduced damage temporarily."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

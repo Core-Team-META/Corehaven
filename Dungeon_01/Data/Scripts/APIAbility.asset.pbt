@@ -35,15 +35,9 @@
         }
       }
       Overrides {
-        Name: "cs:Ability_Fireball"
+        Name: "cs:APIAnimationSystem"
         AssetReference {
-          Id: 16064944062443818064
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_Combust"
-        AssetReference {
-          Id: 3639041783491094762
+          Id: 6080563755617504802
         }
       }
       Overrides {

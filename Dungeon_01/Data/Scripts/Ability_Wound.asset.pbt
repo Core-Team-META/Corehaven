@@ -23,14 +23,16 @@
         Float: 8
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Wound your target, causing them to take damage over time."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 4200389437305254305
-        }
+        Name: "cs:AnimationKey"
+        String: "Slam"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Wound your target, causing them to take damage over time."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

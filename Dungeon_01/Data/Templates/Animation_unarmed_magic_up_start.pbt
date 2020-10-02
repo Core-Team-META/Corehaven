@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 9939368683614185057
-  Name: "Ability_PhaseOut"
+  Id: 11322068319754823461
+  Name: "Animation_unarmed_magic_up_start"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13994712722476071660
+      RootId: 1395271830415331670
       Objects {
-        Id: 13994712722476071660
-        Name: "Ability_PhaseOut"
+        Id: 1395271830415331670
+        Name: "Animation_unarmed_magic_up_start"
         Transform {
           Scale {
             X: 1
@@ -16,8 +16,6 @@
           }
         }
         ParentId: 4781671109827199097
-        UnregisteredParameters {
-        }
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -27,9 +25,8 @@
         }
         Ability {
           IsEnabled: true
-          KeyBinding: "ability_primary"
           CastPhaseSettings {
-            Duration: 0.2
+            Duration: 20
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -39,7 +36,6 @@
             }
           }
           ExecutePhaseSettings {
-            Duration: 0.2
             CanMove: true
             CanJump: true
             CanRotate: true
@@ -61,11 +57,12 @@
             CanMove: true
             CanJump: true
             CanRotate: true
+            PreventOtherAbilities: true
             Facing_V2 {
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "unarmed_wave"
+          Animation: "unarmed_magic_up"
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
           }

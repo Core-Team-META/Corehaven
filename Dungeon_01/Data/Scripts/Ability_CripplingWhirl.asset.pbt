@@ -23,14 +23,16 @@
         Float: 8
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Spin around crippling all nearby foes, hurting them and reducing their speed and damage."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 2541224330033099660
-        }
+        Name: "cs:AnimationKey"
+        String: "Spin"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Spin around crippling all nearby foes, hurting them and reducing their speed and damage."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

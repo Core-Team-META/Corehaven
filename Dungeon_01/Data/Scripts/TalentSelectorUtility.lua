@@ -446,12 +446,11 @@ function UTILITY.ResetTalentTrees(player)
 	for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[currentTreeName]) do
 		if UTILITY.DoesPlayerHaveTalent(player, talentData) then
 			for _, abilityName in pairs(talentData.abilityNames) do
-				-- We can't use ResetPlayerAbilities() because trinkets may have given them some
 				API_A.RemovePlayerAbility(player, abilityName)
 			end
 
 			for _, passive in pairs(talentData.passives) do
-				API_PP.RemovePlayerPassive(player, passive)		-- Same as above
+				API_PP.RemovePlayerPassive(player, passive)
 			end
 
 			UTILITY.AddPlayerTalentPoints(player, talentData.cost)

@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 5786763895001670062
+  Id: 16585269223029215444
   Name: "Animation_unarmed_magic_bolt"
   PlatformAssetType: 5
   TemplateAsset {
@@ -32,7 +32,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           ExecutePhaseSettings {
@@ -41,7 +41,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           RecoveryPhaseSettings {
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

@@ -1,5 +1,5 @@
 ﻿--[[
-Copyright 2019 Manticore Games, Inc. 
+Copyright 2019-2020 Manticore Games, Inc. 
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
 documentation files (the "Software"), to deal in the Software without restriction, including without limitation the
@@ -24,19 +24,17 @@ local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
 local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
 
 -- User exposed properties
-local MIN_CAST_TIME = COMPONENT_ROOT:GetCustomProperty("MinCastTime")
 local SHOW_NAME = COMPONENT_ROOT:GetCustomProperty("ShowName")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local interruptTime = nil
-local onInterruptedListener = nil
 
-function OnInterrupted(ability)
-    TEXT_BOX.text = "Cast Interrupted"
-    PROGRESS_BAR:SetBackgroundColor(Color.RED)
-    interruptTime = os.clock()
-    onInterruptedListener:Disconnect()
-    onInterruptedListener = nil
+function OnAbilityInterrupted(player)
+    if player == LOCAL_PLAYER then
+        TEXT_BOX.text = "Cast Interrupted"
+        PROGRESS_BAR:SetBackgroundColor(Color.RED)
+        interruptTime = os.clock()
+    end
 end
 
 function Tick(deltaTime)
@@ -49,30 +47,18 @@ function Tick(deltaTime)
         else
             PANEL.visibility = Visibility.INHERIT
         end
-    end
+    else
+        local castData = API_A.GetPlayerCastData(LOCAL_PLAYER)
 
-    for _, ability in pairs(LOCAL_PLAYER:GetAbilities()) do
-        if ability:GetCurrentPhase() == AbilityPhase.CAST then
-            local remainingTime = ability:GetPhaseTimeRemaining()
-            local totalTime = ability.castPhaseSettings.duration
+        if castData then
+            local totalTime = API_A.GetAbilityCastDuration(LOCAL_PLAYER, castData.abilityName)
+            local remainingTime = castData.startTime + totalTime - os.clock()
+            PANEL.visibility = Visibility.INHERIT
+            PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
+            PROGRESS_BAR:SetFillColor(Color.YELLOW)
 
-            if totalTime >= MIN_CAST_TIME then
-                if onInterruptedListener then
-                    onInterruptedListener:Disconnect()
-                    onInterruptedListener = nil
-                end
-                
-                onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted)
-
-                PANEL.visibility = Visibility.INHERIT
-                PROGRESS_BAR.progress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
-                PROGRESS_BAR:SetFillColor(Color.YELLOW)
-
-                if SHOW_NAME and not interruptTime then
-                    TEXT_BOX.text = API_A.GetAbilityName(ability)
-                end
-
-                return
+            if SHOW_NAME and not interruptTime then
+                TEXT_BOX.text = castData.abilityName
             end
         end
     end
@@ -80,6 +66,7 @@ end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
+Events.Connect("AI", OnAbilityInterrupted)
 
 if not SHOW_NAME then
     TEXT_BOX.visibility = Visibility.FORCE_OFF

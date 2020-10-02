@@ -268,26 +268,14 @@ function RotateNameplate(nameplate)
 	nameplate.templateRoot:SetWorldRotation(Rotation.New(quat))
 end
 
--- nil OnInterrupted(Ability)
--- Handle interrupted abilities with propert ui
-function OnInterrupted(ability, nameplate)
+-- nil OnAbilityInterrupted(player)
+-- Handle interrupted abilities with proper ui
+function OnAbilityInterrupted(player)
+	local nameplate = nameplates[player]
 	nameplate.castBarGroup.visibility = Visibility.INHERIT
     nameplate.castProgressPiece:SetColor(Color.RED)
     nameplate.castNameText.text = "Cast Interrupted"
-    nameplate.interruptTime = time()
-	nameplate.onInterruptedListener:Disconnect()
-	nameplate.onInterruptedListener = nil
-	nameplate.onExecuteListener:Disconnect()
-	nameplate.onExecuteListener = nil
-end
-
--- nil OnExecute(ability)
--- Clear the interrupted handler
-function OnExecute(ability, nameplate)
-	nameplate.onInterruptedListener:Disconnect()
-	nameplate.onInterruptedListener = nil
-	nameplate.onExecuteListener:Disconnect()
-	nameplate.onExecuteListener = nil
+    nameplate.interruptTime = os.clock()
 end
 
 -- nil Tick(float)
@@ -315,31 +303,22 @@ function Tick(deltaTime)
 			    if nameplate.interruptTime then
 					nameplate.castBarGroup.visibility = Visibility.INHERIT
 
-			        if nameplate.interruptTime + 0.5 < time() then
+			        if nameplate.interruptTime + 0.5 < os.clock() then
 			            nameplate.interruptTime = nil
 			        end
 			    else
-			        for _, ability in pairs(character:GetAbilities()) do
-			            if ability:GetCurrentPhase() == AbilityPhase.CAST then
-			                local remainingTime = ability:GetPhaseTimeRemaining()
-			                local totalTime = ability.castPhaseSettings.duration
+	    			local castData = API_A.GetPlayerCastData(character)
 
-			                if totalTime >= 0.3 then
-			                	if not nameplate.onInterruptedListener then
-				                	nameplate.onInterruptedListener = ability.interruptedEvent:Connect(OnInterrupted, nameplate)
-				                	nameplate.onExecuteListener = ability.executeEvent:Connect(OnExecute, nameplate)
-				                end
-				                
-								nameplate.castBarGroup.visibility = Visibility.INHERIT
-			                    local castProgress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
-								local castProgressPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - castProgress)
-								nameplate.castProgressPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * castProgress, HEALTHBAR_HEIGHT))
-								nameplate.castProgressPiece:SetPosition(Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, castProgressPieceOffset, -100.0 * (HEALTHBAR_HEIGHT + BORDER_WIDTH)))
-			        			nameplate.castProgressPiece:SetColor(Color.YELLOW)
-		                        nameplate.castNameText.text = API_A.GetAbilityName(ability)
-			                    break
-			                end
-			            end
+				    if castData then
+				        local totalTime = API_A.GetAbilityCastDuration(LOCAL_PLAYER, castData.abilityName)
+				        local remainingTime = castData.startTime + totalTime - os.clock()
+						nameplate.castBarGroup.visibility = Visibility.INHERIT
+	                    local castProgress = CoreMath.Clamp(1.0 - remainingTime / totalTime, 0.0, 1.0)
+						local castProgressPieceOffset = 50.0 * HEALTHBAR_WIDTH * (1.0 - castProgress)
+						nameplate.castProgressPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * castProgress, HEALTHBAR_HEIGHT))
+						nameplate.castProgressPiece:SetPosition(Vector3.New(-1.0 * NAMEPLATE_LAYER_THICKNESS, castProgressPieceOffset, -100.0 * (HEALTHBAR_HEIGHT + BORDER_WIDTH)))
+	        			nameplate.castProgressPiece:SetColor(Color.YELLOW)
+	                    nameplate.castNameText.text = castData.abilityName
 			        end
 			    end
 		    end
@@ -426,7 +405,7 @@ function Tick(deltaTime)
 
 				-- Set size and position of change piece
 				if ANIMATE_CHANGES then
-					local timeSinceChange = CoreMath.Clamp(time() - nameplate.lastHealthTime, 0.0, CHANGE_ANIMATION_TIME)
+					local timeSinceChange = CoreMath.Clamp(os.clock() - nameplate.lastHealthTime, 0.0, CHANGE_ANIMATION_TIME)
 					local timeScale = 1.0 - timeSinceChange / CHANGE_ANIMATION_TIME
 					local changeFraction = timeScale * (nameplate.lastHealthFraction - healthFraction)
 					nameplate.changePiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH * math.abs(changeFraction), HEALTHBAR_HEIGHT))
@@ -455,7 +434,7 @@ function Tick(deltaTime)
 							nameplate.lastHealthTime = 0.0
 							nameplate.lastHealthFraction = healthFraction
 						else
-							nameplate.lastHealthTime = time()
+							nameplate.lastHealthTime = os.clock()
 							nameplate.lastHealthFraction = nameplate.lastFrameHealthFraction
 						end
 						
@@ -521,6 +500,7 @@ Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
 Events.Connect("NPC_Created", OnNPCCreated)
 Events.Connect("NPC_Destroyed", OnNPCDestroyed)
+Events.Connect("AI", OnAbilityInterrupted)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

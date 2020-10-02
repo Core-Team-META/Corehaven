@@ -23,14 +23,16 @@
         Float: 12
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Very quickly replenish yourself, healing a portion of your total health."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 4916300664397379492
-        }
+        Name: "cs:AnimationKey"
+        String: "Drink"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Very quickly replenish yourself, healing a portion of your total health."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

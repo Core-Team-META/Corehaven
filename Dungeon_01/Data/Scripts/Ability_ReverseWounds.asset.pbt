@@ -23,14 +23,16 @@
         Float: 15
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Go back in time, undoing all damage from the last few seconds."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 9901992834009575131
-        }
+        Name: "cs:AnimationKey"
+        String: "Magic"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Go back in time, undoing all damage from the last few seconds."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

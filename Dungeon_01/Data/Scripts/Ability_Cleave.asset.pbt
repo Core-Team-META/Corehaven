@@ -23,14 +23,16 @@
         Float: 0
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Swing at all targets in front of you, dealing medium damage."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 10723229477723618778
-        }
+        Name: "cs:AnimationKey"
+        String: "Melee"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Swing at all targets in front of you, dealing medium damage."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

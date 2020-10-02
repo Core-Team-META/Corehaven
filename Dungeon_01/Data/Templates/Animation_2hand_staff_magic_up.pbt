@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 17659744577182295066
+  Id: 3224052045163392939
   Name: "Animation_2hand_staff_magic_up"
   PlatformAssetType: 5
   TemplateAsset {
@@ -32,7 +32,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           ExecutePhaseSettings {
@@ -41,7 +41,7 @@
             CanRotate: true
             PreventOtherAbilities: true
             Facing_V2 {
-              Value: "mc:eabilitysetfacing:aim"
+              Value: "mc:eabilitysetfacing:none"
             }
           }
           RecoveryPhaseSettings {
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 64
+  SerializationVersion: 65
 }

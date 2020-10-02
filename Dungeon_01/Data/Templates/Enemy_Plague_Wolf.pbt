@@ -15,7 +15,7 @@
             Z: 1.6
           }
         }
-        ParentId: 2862615558091888578
+        ParentId: 4781671109827199097
         ChildIds: 3124532127187459655
         ChildIds: 12691739239962413603
         ChildIds: 2917564396888722306
@@ -10859,8 +10859,8 @@
             String: "unarmed_death"
           }
           Overrides {
-            Name: "cs:StunnedAnimation"
-            String: "unarmed_stun_dizzy"
+            Name: "cs:StunnedStance"
+            String: "unarmed_bind_pose"
           }
         }
         Collidable_v2 {
@@ -10879,7 +10879,6 @@
           }
           EnableCameraCollision: true
           AnimatedMesh {
-            AnimationStance: "unarmed_run_forward"
             AnimationStancePlaybackRate: 1
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1

@@ -23,14 +23,16 @@
         Float: 14
       }
       Overrides {
-        Name: "cs:Description"
-        String: "You tend to your wounds, healing a moderate amount."
+        Name: "cs:CastDuration"
+        Float: 2
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 10675129086321838991
-        }
+        Name: "cs:AnimationKey"
+        String: "Bandage"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "You tend to your wounds, healing a moderate amount."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

@@ -95,7 +95,7 @@ local function ServerInitInventory()
     -- Connect the stat sheet.
     inventory:ConnectToStatSheet(OWNER.serverUserData.statSheet)
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
-    inventory.itemEquippedEvent:Connect(function(equipIndex, equipItem)
+    inventory.itemEquippedEvent:Connect(function(equipIndex, previousType, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)

@@ -23,14 +23,16 @@
         Float: 22
       }
       Overrides {
-        Name: "cs:Description"
-        String: "Appear behind your target and strike for high damage."
+        Name: "cs:CastDuration"
+        Float: 0
       }
       Overrides {
-        Name: "cs:AbilityTemplate"
-        AssetReference {
-          Id: 5478913708981894126
-        }
+        Name: "cs:AnimationKey"
+        String: "Slam"
+      }
+      Overrides {
+        Name: "cs:Description"
+        String: "Appear behind your target and strike for high damage."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"
