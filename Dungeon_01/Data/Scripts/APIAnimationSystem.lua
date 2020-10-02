@@ -232,6 +232,7 @@ function API.FinishAnimation(castId)
 			local finishAnimationObject = nil
 
 			for _, candidateAnimationObject in pairs(player:GetAbilities()) do
+				print("A")
 				if candidateAnimationObject.name == finishAnimationName and candidateAnimationObject.animation == animationObject.animation then
 					finishAnimationObject = candidateAnimationObject
 					break

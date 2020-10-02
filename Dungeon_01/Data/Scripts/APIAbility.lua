@@ -779,6 +779,10 @@ function API.RemovePlayerAbility(player, abilityName)
 			playerCastData[LOCAL_PLAYER] = nil
 		end
 
+		if abilityName == groundTargetAbilityName then
+			CancelGroundTargeting()
+		end
+
 		if queuedAbilityName == abilityName then
 			queuedAbilityName = nil
 			queuedAbilityTarget = nil
