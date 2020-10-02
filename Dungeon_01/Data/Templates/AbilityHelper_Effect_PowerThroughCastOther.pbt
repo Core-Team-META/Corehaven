@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 14503970582048843829
-  Name: "AbilityHelper_Effect_EmpowerEnergiesCast"
+  Id: 3787795254244016820
+  Name: "AbilityHelper_Effect_PowerThroughCastOther"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 686847525287777781
+      RootId: 1647072266923517627
       Objects {
-        Id: 686847525287777781
-        Name: "AbilityHelper_Effect_EmpowerEnergiesCast"
+        Id: 1647072266923517627
+        Name: "AbilityHelper_Effect_PowerThroughCastOther"
         Transform {
           Scale {
             X: 1
@@ -16,9 +16,9 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 7814063696194037955
-        ChildIds: 930666849156219234
-        Lifespan: 3.5
+        ChildIds: 674258114023890907
+        ChildIds: 3038921190306858709
+        Lifespan: 2
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -29,8 +29,8 @@
         }
       }
       Objects {
-        Id: 7814063696194037955
-        Name: "Magic Dark Powerup 02 SFX"
+        Id: 674258114023890907
+        Name: "Creature Giant Monster Crunchy Footstep 01 SFX"
         Transform {
           Location {
           }
@@ -42,7 +42,7 @@
             Z: 1
           }
         }
-        ParentId: 686847525287777781
+        ParentId: 1647072266923517627
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -51,17 +51,17 @@
         }
         AudioInstance {
           AudioAsset {
-            Id: 4442186195856977060
+            Id: 15105951833432572277
           }
           AutoPlay: true
-          Volume: 0.5
-          Falloff: 1300
-          Radius: 3050
+          Volume: 0.1
+          Falloff: 1000
+          Radius: 3000
           IsAttenuationEnabled: true
         }
       }
       Objects {
-        Id: 930666849156219234
+        Id: 3038921190306858709
         Name: "Group"
         Transform {
           Location {
@@ -70,18 +70,18 @@
           Rotation {
           }
           Scale {
-            X: 0.486997813
-            Y: 0.486997813
-            Z: 0.486997813
+            X: 0.573043942
+            Y: 0.573043942
+            Z: 0.573043942
           }
         }
-        ParentId: 686847525287777781
-        ChildIds: 2278653301585590859
-        ChildIds: 13510807088074303936
-        ChildIds: 17542641991713318007
-        ChildIds: 14979981351891086670
-        ChildIds: 10238025459593278424
-        ChildIds: 7378797938532483323
+        ParentId: 1647072266923517627
+        ChildIds: 5585135060183957178
+        ChildIds: 17592946281036259421
+        ChildIds: 9176361788040062758
+        ChildIds: 7737423697468534672
+        ChildIds: 6208467802329065721
+        ChildIds: 14391193520073847864
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -93,46 +93,46 @@
         }
       }
       Objects {
-        Id: 2278653301585590859
-        Name: "Energy Shield Panel"
+        Id: 5585135060183957178
+        Name: "Fantasy Shield 02"
         Transform {
           Location {
+            X: -15
           }
           Rotation {
+            Yaw: 89.999939
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.05339432
+            Y: 2.05339432
+            Z: 2.05339432
           }
         }
-        ParentId: 930666849156219234
+        ParentId: 3038921190306858709
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Type"
-            Enum {
-              Value: "mc:evfxshieldpanels:11"
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8221347909026897831
             }
           }
           Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.259602755
-              B: 0.700000048
-              A: 1
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 8221347909026897831
             }
           }
           Overrides {
-            Name: "bp:Pattern Blend Amount"
-            Float: 1
+            Name: "ma:Shared_Trim2:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
           }
           Overrides {
-            Name: "bp:Pattern Opacity"
-            Float: 0.946284413
-          }
-          Overrides {
-            Name: "bp:Overall Opacity"
-            Float: 0.24919121
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
           }
         }
         Collidable_v2 {
@@ -141,59 +141,61 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3422899817721348945
+        CoreMesh {
+          MeshAsset {
+            Id: 675552238871189847
           }
-          TeamSettings {
+          Teams {
           }
-          Vfx {
-            AutoPlay: true
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
           }
         }
       }
       Objects {
-        Id: 13510807088074303936
-        Name: "Energy Shield Panel"
+        Id: 17592946281036259421
+        Name: "Fantasy Shield 02"
         Transform {
           Location {
+            X: 15
           }
           Rotation {
-            Yaw: -179.999985
+            Yaw: -90
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2.05339432
+            Y: 2.05339432
+            Z: 2.05339432
           }
         }
-        ParentId: 930666849156219234
+        ParentId: 3038921190306858709
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Type"
-            Enum {
-              Value: "mc:evfxshieldpanels:11"
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8221347909026897831
             }
           }
           Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.259602755
-              B: 0.700000048
-              A: 1
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 8221347909026897831
             }
           }
           Overrides {
-            Name: "bp:Pattern Blend Amount"
-            Float: 1
+            Name: "ma:Shared_Trim2:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
           }
           Overrides {
-            Name: "bp:Pattern Opacity"
-            Float: 0.946284413
-          }
-          Overrides {
-            Name: "bp:Overall Opacity"
-            Float: 0.24919121
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
           }
         }
         Collidable_v2 {
@@ -202,65 +204,22 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3422899817721348945
+        CoreMesh {
+          MeshAsset {
+            Id: 675552238871189847
           }
-          TeamSettings {
+          Teams {
           }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 17542641991713318007
-        Name: "Signal Flare"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 2.05339718
-            Y: 2.05339718
-            Z: 2.05339718
-          }
-        }
-        ParentId: 930666849156219234
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.0149008529
-              B: 0.450000048
-              A: 1
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
             }
           }
-          Overrides {
-            Name: "bp:Smoke"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3749675108062627523
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
         }
       }
       Objects {
-        Id: 14979981351891086670
+        Id: 9176361788040062758
         Name: "Object Mover Continuous"
         Transform {
           Location {
@@ -274,18 +233,18 @@
             Z: 2.05339718
           }
         }
-        ParentId: 930666849156219234
+        ParentId: 3038921190306858709
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 930666849156219234
+              SubObjectId: 3038921190306858709
             }
           }
           Overrides {
             Name: "cs:MoveVelocity"
             Vector {
-              Z: -200
+              Z: -230
             }
           }
           Overrides {
@@ -329,7 +288,7 @@
         }
       }
       Objects {
-        Id: 10238025459593278424
+        Id: 7737423697468534672
         Name: "Object Scaler"
         Transform {
           Location {
@@ -343,12 +302,12 @@
             Z: 2.05339718
           }
         }
-        ParentId: 930666849156219234
+        ParentId: 3038921190306858709
         UnregisteredParameters {
           Overrides {
             Name: "cs:Object"
             ObjectReference {
-              SubObjectId: 930666849156219234
+              SubObjectId: 3038921190306858709
             }
           }
           Overrides {
@@ -506,11 +465,11 @@
         }
       }
       Objects {
-        Id: 7378797938532483323
+        Id: 6208467802329065721
         Name: "Level Up VFX"
         Transform {
           Location {
-            Z: 0.578520596
+            Z: -87.4851074
           }
           Rotation {
           }
@@ -520,7 +479,7 @@
             Z: 1.4864887
           }
         }
-        ParentId: 930666849156219234
+        ParentId: 3038921190306858709
         UnregisteredParameters {
           Overrides {
             Name: "bp:Enable Spiral"
@@ -528,7 +487,7 @@
           }
           Overrides {
             Name: "bp:Enable Base Rays"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "bp:Enable Beam"
@@ -536,7 +495,7 @@
           }
           Overrides {
             Name: "bp:Enable Rings"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "bp:Ground Burst Lines"
@@ -561,26 +520,30 @@
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.0349669643
-              B: 0.480000019
+              R: 0.5
+              G: 0.29801333
               A: 1
             }
           }
           Overrides {
             Name: "bp:Spiral Color"
             Color {
-              R: 0.0149008529
-              B: 0.450000048
+              R: 0.6
+              G: 0.429139078
               A: 1
             }
           }
           Overrides {
             Name: "bp:Ground Element Color"
             Color {
-              G: 0.0238410197
-              B: 0.36
+              R: 0.429999948
+              G: 0.128145695
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 0.7
           }
         }
         Collidable_v2 {
@@ -600,32 +563,104 @@
           }
         }
       }
+      Objects {
+        Id: 14391193520073847864
+        Name: "Object Rotator Continuous"
+        Transform {
+          Scale {
+            X: 2.05339742
+            Y: 2.05339742
+            Z: 2.05339742
+          }
+        }
+        ParentId: 3038921190306858709
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Object"
+            ObjectReference {
+              SubObjectId: 3038921190306858709
+            }
+          }
+          Overrides {
+            Name: "cs:RotateVelocity"
+            Rotator {
+              Yaw: 30
+            }
+          }
+          Overrides {
+            Name: "cs:RotationMultiplier"
+            Float: 15
+          }
+          Overrides {
+            Name: "cs:LocalSpace"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:StartDelayRange"
+            Vector2 {
+              X: 0.15
+              Y: 0.15
+            }
+          }
+          Overrides {
+            Name: "cs:RotationMultiplier:tooltip"
+            String: "Optional multiplier for very fast rotations."
+          }
+          Overrides {
+            Name: "cs:StartDelayRange:tooltip"
+            String: "Random delay range for the object to take action at the start of the game."
+          }
+          Overrides {
+            Name: "cs:LocalSpace:tooltip"
+            String: "Whether RotateTo is in local space"
+          }
+          Overrides {
+            Name: "cs:Object:tooltip"
+            String: "Object to transform"
+          }
+          Overrides {
+            Name: "cs:RotateVelocity:tooltip"
+            String: "Smoothly rotates the object over time by the given angular velocity."
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 2331688389429807128
+          }
+        }
+      }
     }
     Assets {
-      Id: 4442186195856977060
-      Name: "Magic Dark Powerup 02 SFX"
+      Id: 15105951833432572277
+      Name: "Creature Giant Monster Crunchy Footstep 01 SFX"
       PlatformAssetType: 7
       PrimaryAsset {
         AssetType: "AudioAssetRef"
-        AssetId: "sfx_magic_dark_buff_powerup_02_Cue_ref"
+        AssetId: "sfx_monster_giant_creature_crunchy_footstep_01a_Cue_ref"
       }
     }
     Assets {
-      Id: 3422899817721348945
-      Name: "Energy Shield Panel"
-      PlatformAssetType: 8
+      Id: 675552238871189847
+      Name: "Fantasy Shield 02"
+      PlatformAssetType: 1
       PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_forceField"
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_002"
       }
     }
     Assets {
-      Id: 3749675108062627523
-      Name: "Signal Flare"
-      PlatformAssetType: 8
+      Id: 8221347909026897831
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_Signal_Flare"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
       }
     }
     Assets {

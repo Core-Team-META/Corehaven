@@ -65,7 +65,7 @@
               Value: "mc:eabilitysetfacing:none"
             }
           }
-          Animation: "unarmed_dance"
+          Animation: "unarmed_magic_up"
           KeyBinding_v2 {
             Value: "mc:egameaction:invalid"
           }
