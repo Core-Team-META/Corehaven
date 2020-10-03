@@ -1,5 +1,4 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
-local SHOULD_SHOW_POINTER = script:GetCustomProperty("ShouldShowPointer")
 local ROOT = script.parent
 
 local view = {}
@@ -18,7 +17,7 @@ function view:Init()
     self.statOffsetXBonus = ROOT:GetCustomProperty("StatOffsetXBonus")
     self.itemHoverStatEntries = {}
     -- Pointer visibility is controllable at script property level.
-    self.pointer.visibility = SHOULD_SHOW_POINTER and Visibility.INHERIT or Visibility.FORCE_OFF
+    self.pointer.visibility = ROOT:GetCustomProperty("ShouldShowPointer") and Visibility.INHERIT or Visibility.FORCE_OFF
 end
 
 -----------------------------------------------------------------------------------------------------------------

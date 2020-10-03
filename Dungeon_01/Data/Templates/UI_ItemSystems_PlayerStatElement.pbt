@@ -74,7 +74,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -40
+          Width: 290
           Height: 30
           UIX: 20
           RenderTransformPivot {
@@ -83,7 +83,6 @@
             }
           }
           AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
           Panel {
           }
           AnchorLayout {
@@ -266,8 +265,8 @@
               Id: 1285653368607626957
             }
             Color {
-              R: 0.669999957
-              G: 0.372715205
+              R: 0.830000043
+              G: 0.494702041
               A: 1
             }
             TeamSettings {
@@ -321,8 +320,8 @@
           Text {
             Label: "Health"
             Color {
-              R: 0.669999957
-              G: 0.372715205
+              R: 0.830000043
+              G: 0.494702041
               A: 1
             }
             Size: 14
@@ -379,8 +378,8 @@
           Text {
             Label: "1337"
             Color {
-              R: 0.669999957
-              G: 0.372715205
+              R: 0.830000043
+              G: 0.494702041
               A: 1
             }
             Size: 14
@@ -425,7 +424,7 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: 315
+          Width: 240
           Height: 30
           UIX: -10
           UIY: 3
@@ -437,13 +436,13 @@
           Text {
             Label: "What does this stat do?"
             Color {
-              R: 0.669999957
-              G: 0.372715205
+              R: 0.830000043
+              G: 0.494702041
               A: 1
             }
             Size: 12
             Justification {
-              Value: "mc:etextjustify:right"
+              Value: "mc:etextjustify:left"
             }
             ClipTextToSize: true
           }
@@ -483,9 +482,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 80
+          Width: 50
           Height: 30
-          UIX: 260
           UIY: 1
           RenderTransformPivot {
             Anchor {
@@ -494,8 +492,8 @@
           }
           Text {
             Color {
-              R: 0.669999957
-              G: 0.372715205
+              R: 0.830000043
+              G: 0.494702041
               A: 1
             }
             Size: 14
@@ -507,12 +505,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topright"
               }
             }
           }

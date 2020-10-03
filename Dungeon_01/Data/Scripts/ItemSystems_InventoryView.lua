@@ -161,31 +161,38 @@ function view:InitStats()
     self.statElements = {}
     for _,statElement in ipairs(PANEL_STATS:GetChildren()) do
         local statName = statElement.name
-        self.statElements[statName] = statElement
-        -- Store all the control references for later.
-        statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
-        statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statElement.name))
-        statElement.clientUserData.iconDefaultColor = statElement.clientUserData.icon:GetColor()
-        statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
-        statElement.clientUserData.previewDelta = statElement:GetCustomProperty("PreviewDelta"):WaitForObject()
-        statElement.clientUserData.name = statElement:GetCustomProperty("Name"):WaitForObject()
-        statElement.clientUserData.name.text = ItemThemes.GetPlayerStatDisplayName(statName)
-        statElement.clientUserData.defaultTextColor = statElement.clientUserData.name:GetColor()
-        -- Certain elements come and go with hover buttons.
-        local explanation = statElement:GetCustomProperty("Explanation"):WaitForObject()
-        explanation.text = ItemThemes.GetPlayerStatExplanation(statName)
-        local hoverHighlight = statElement:GetCustomProperty("HoverHighlight"):WaitForObject()
-        local hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
-        hoverButton.hoveredEvent:Connect(function()
-            hoverHighlight.visibility = Visibility.INHERIT
-            explanation.visibility = Visibility.INHERIT
-            statElement.clientUserData.previewDelta.visibility = Visibility.FORCE_OFF
-        end)
-        hoverButton.unhoveredEvent:Connect(function()
-            hoverHighlight.visibility = Visibility.FORCE_OFF
-            explanation.visibility = Visibility.FORCE_OFF
-            statElement.clientUserData.previewDelta.visibility = Visibility.INHERIT
-        end)
+        local isStatElement = ItemThemes.GetStatIcon(statName) ~= nil
+        if isStatElement then
+            self.statElements[statName] = statElement
+            -- Store all the control references for later.
+            statElement.clientUserData.icon = statElement:GetCustomProperty("Icon"):WaitForObject()
+            statElement.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statName))
+            statElement.clientUserData.iconDefaultColor = statElement.clientUserData.icon:GetColor()
+            statElement.clientUserData.value = statElement:GetCustomProperty("Value"):WaitForObject()
+            statElement.clientUserData.previewDelta = statElement:GetCustomProperty("PreviewDelta"):WaitForObject()
+            statElement.clientUserData.name = statElement:GetCustomProperty("Name"):WaitForObject()
+            statElement.clientUserData.name.text = ItemThemes.GetPlayerStatDisplayName(statName)
+            statElement.clientUserData.defaultTextColor = statElement.clientUserData.name:GetColor()
+            -- Certain elements come and go with hover buttons.
+            local explanation = statElement:GetCustomProperty("Explanation"):WaitForObject()
+            explanation.text = ItemThemes.GetPlayerStatExplanation(statName)
+            local hoverHighlight = statElement:GetCustomProperty("HoverHighlight"):WaitForObject()
+            local hoverButton = statElement:GetCustomProperty("HoverButton"):WaitForObject()
+            hoverButton.hoveredEvent:Connect(function()
+                hoverHighlight.visibility = Visibility.INHERIT
+                explanation.visibility = Visibility.INHERIT
+                statElement.clientUserData.name.visibility = Visibility.FORCE_OFF
+                statElement.clientUserData.value.visibility = Visibility.FORCE_OFF
+                statElement.clientUserData.previewDelta.visibility = Visibility.FORCE_OFF
+            end)
+            hoverButton.unhoveredEvent:Connect(function()
+                hoverHighlight.visibility = Visibility.FORCE_OFF
+                explanation.visibility = Visibility.FORCE_OFF
+                statElement.clientUserData.name.visibility = Visibility.INHERIT
+                statElement.clientUserData.value.visibility = Visibility.INHERIT
+                statElement.clientUserData.previewDelta.visibility = Visibility.INHERIT
+            end)
+        end
     end
 end
 
