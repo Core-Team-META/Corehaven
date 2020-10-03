@@ -158,6 +158,7 @@ function SetupAbilityToolTip()
 	ABILITY_TOOLTIP.clientUserData.name = ABILITY_TOOLTIP:GetCustomProperty("AbilityNameText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.requirement = ABILITY_TOOLTIP:GetCustomProperty("AbilityRequirementText"):WaitForObject()
 	ABILITY_TOOLTIP.clientUserData.description = ABILITY_TOOLTIP:GetCustomProperty("AbilityDescriptionText"):WaitForObject()
+	ABILITY_TOOLTIP.clientUserData.cooldown = ABILITY_TOOLTIP:GetCustomProperty("AbilityCooldownText"):WaitForObject()
 end
 
 function HideAbilityToolTip()
@@ -174,9 +175,11 @@ function DrawAbilityToolTip()
 		ABILITY_TOOLTIP.parent = socketData.button
 		-- Update the ability(talent) information.
 		local abilityData = API_A.GetAbilityData(socketData.abilityName)
+		local effectiveCooldown = API_A.GetEffectiveAbilityCooldown(socketData.abilityName)
 		ABILITY_TOOLTIP.clientUserData.abilityName = socketData.abilityName
 		ABILITY_TOOLTIP.clientUserData.name.text = socketData.abilityName
 		ABILITY_TOOLTIP.clientUserData.description.text = abilityData.description
+		ABILITY_TOOLTIP.clientUserData.cooldown.text = string.format("cooldown: %2.1fs", effectiveCooldown)
 		ABILITY_TOOLTIP.clientUserData.requirement.text = ""
 
 		if abilityData.equippedItemConstraints then
