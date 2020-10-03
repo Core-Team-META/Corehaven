@@ -153,7 +153,6 @@ function view:Init()
     self:InitStats()
     self:InitEquippedSlots()
     self:InitBackpackSlots()
-    self:InitItemHover()
     self:Close()
 end
 
@@ -222,21 +221,6 @@ function view:InitBackpackSlots()
 end
 
 -----------------------------------------------------------------------------------------------------------------
-function view:InitItemHover()
-    PANEL_ITEM_HOVER.clientUserData.inner = PANEL_ITEM_HOVER:GetCustomProperty("StatParent"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.innerBaseHeight = PANEL_ITEM_HOVER.clientUserData.inner.height
-    PANEL_ITEM_HOVER.clientUserData.pointer = PANEL_ITEM_HOVER:GetCustomProperty("Pointer"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.borderRoot = PANEL_ITEM_HOVER:GetCustomProperty("BorderRoot"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.title = PANEL_ITEM_HOVER:GetCustomProperty("Title"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.classification = PANEL_ITEM_HOVER:GetCustomProperty("Classification"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.description = PANEL_ITEM_HOVER:GetCustomProperty("Description"):WaitForObject()
-    PANEL_ITEM_HOVER.clientUserData.statOffsetY = PANEL_ITEM_HOVER:GetCustomProperty("StatOffsetY")
-    PANEL_ITEM_HOVER.clientUserData.statOffsetXBase = PANEL_ITEM_HOVER:GetCustomProperty("StatOffsetXBase")
-    PANEL_ITEM_HOVER.clientUserData.statOffsetXBonus = PANEL_ITEM_HOVER:GetCustomProperty("StatOffsetXBonus")
-    self.itemHoverStatEntries = {}
-end
-
------------------------------------------------------------------------------------------------------------------
 function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
     if inventory:CanMoveItem(fromSlotIndex, toSlotIndex) then
         inventory:MoveItem(fromSlotIndex, toSlotIndex)
@@ -249,21 +233,6 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
             end
         else
             PlaySound(SFX_DISCARD)
-        end
-    end
-end
-
------------------------------------------------------------------------------------------------------------------
-function view:EnsureSufficientHoverStatEntries(numRequired)
-    for i=1,numRequired do
-        if not self.itemHoverStatEntries[i] then
-            local entry = World.SpawnAsset(
-                PANEL_ITEM_HOVER:GetCustomProperty("TemplateItemHoverStat"),
-                { parent = PANEL_ITEM_HOVER.clientUserData.inner }
-            )
-            entry.clientUserData.icon = entry:GetCustomProperty("StatIcon"):WaitForObject()
-            entry.clientUserData.value = entry:GetCustomProperty("StatValue"):WaitForObject()
-            table.insert(self.itemHoverStatEntries, entry)
         end
     end
 end
@@ -508,50 +477,13 @@ function view:DrawHoverHighlight()
 end
 
 function view:DrawHoverInfo()
+    -- The hover info details are handled by a separate script. Here, we need only indicate what item is to be viewed.
     if self.itemUnderCursor and not self.isDragging then
-        -- UI properties.
-        PANEL_ITEM_HOVER.visibility = Visibility.INHERIT
-        PANEL_ITEM_HOVER.x = self.slotUnderCursor.clientUserData.xAbsolute
-        PANEL_ITEM_HOVER.y = self.slotUnderCursor.clientUserData.yAbsolute
-        -- Text
-        local item = self.itemUnderCursor
-        PANEL_ITEM_HOVER.clientUserData.title.text = item:GetName()
-        PANEL_ITEM_HOVER.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
-        PANEL_ITEM_HOVER.clientUserData.description.text = item:GetDescription()
-        -- Attributes.d
-        local stats = item:GetStats()
-        self:EnsureSufficientHoverStatEntries(#stats)
-        local offsetYBase = 0
-        local offsetYBonus = 0
-        for i,entry in ipairs(self.itemHoverStatEntries) do
-            local statInfo = stats[i]
-            if statInfo then
-                entry.visibility = Visibility.INHERIT
-                entry.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statInfo.name))
-                entry.clientUserData.value.text = ItemThemes.GetItemStatFormattedValue(statInfo.name, statInfo.value)
-                if statInfo.isBase then
-                    entry.x = PANEL_ITEM_HOVER.clientUserData.statOffsetXBase
-                    entry.y = PANEL_ITEM_HOVER.clientUserData.statOffsetY + offsetYBase
-                    offsetYBase = offsetYBase + entry.height
-                else
-                    entry.x = PANEL_ITEM_HOVER.clientUserData.statOffsetXBonus
-                    entry.y = PANEL_ITEM_HOVER.clientUserData.statOffsetY + offsetYBonus
-                    offsetYBonus = offsetYBonus + entry.height
-                end
-            else
-                entry.visibility = Visibility.FORCE_OFF
-            end
-        end
-        PANEL_ITEM_HOVER.clientUserData.inner.height = PANEL_ITEM_HOVER.clientUserData.innerBaseHeight + math.max(offsetYBase, offsetYBonus)
-        -- Colors.
-        local color = ItemThemes.GetRarityColor(item:GetRarity())
-        PANEL_ITEM_HOVER.clientUserData.pointer:SetColor(color)
-        PANEL_ITEM_HOVER.clientUserData.classification:SetColor(color)
-        for _,control in ipairs(PANEL_ITEM_HOVER.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
-            control:SetColor(color)
-        end
+        PANEL_ITEM_HOVER.clientUserData.itemToView = self.itemUnderCursor
+        PANEL_ITEM_HOVER.clientUserData.viewPositionX = self.slotUnderCursor.clientUserData.xAbsolute
+        PANEL_ITEM_HOVER.clientUserData.viewPositionY = self.slotUnderCursor.clientUserData.yAbsolute
     else
-        PANEL_ITEM_HOVER.visibility = Visibility.FORCE_OFF
+        PANEL_ITEM_HOVER.clientUserData.itemToView = nil
     end
 end
 
