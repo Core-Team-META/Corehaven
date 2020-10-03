@@ -4129,6 +4129,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -4182,6 +4186,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -4233,6 +4241,10 @@ Objects {
       AssetReference {
         Id: 10094985332226947399
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4294,6 +4306,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -4347,6 +4363,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -4398,6 +4418,10 @@ Objects {
       AssetReference {
         Id: 12747122845864831293
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4459,6 +4483,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -4510,6 +4538,10 @@ Objects {
       AssetReference {
         Id: 9530887160708419576
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4577,6 +4609,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -4628,6 +4664,10 @@ Objects {
       AssetReference {
         Id: 15830314128515121469
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4687,6 +4727,10 @@ Objects {
       AssetReference {
         Id: 10094985332226947399
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4754,6 +4798,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:ExplosionTemplate"
       AssetReference {
         Id: 16737756307884761739
@@ -4805,6 +4853,10 @@ Objects {
       AssetReference {
         Id: 7974945132844636755
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4866,6 +4918,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -4917,6 +4973,10 @@ Objects {
       AssetReference {
         Id: 10408352433735589465
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4972,6 +5032,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5025,6 +5089,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5076,6 +5144,10 @@ Objects {
       AssetReference {
         Id: 12781087704127034770
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5137,6 +5209,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -5190,6 +5266,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5241,6 +5321,10 @@ Objects {
       AssetReference {
         Id: 3078059190705841288
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5308,6 +5392,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 1066637007583221849
@@ -5359,6 +5447,10 @@ Objects {
       AssetReference {
         Id: 9646465928758980906
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5420,6 +5512,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5471,6 +5567,10 @@ Objects {
       AssetReference {
         Id: 18150175252654389294
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5526,6 +5626,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5577,6 +5681,10 @@ Objects {
       AssetReference {
         Id: 11826505342427441899
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5638,6 +5746,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -5689,6 +5801,10 @@ Objects {
       AssetReference {
         Id: 16884239609476660373
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5803,6 +5919,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5856,6 +5976,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -5907,6 +6031,10 @@ Objects {
       AssetReference {
         Id: 10094985332226947399
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5968,6 +6096,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -6021,6 +6153,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -6072,6 +6208,10 @@ Objects {
       AssetReference {
         Id: 12747122845864831293
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6133,6 +6273,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -6184,6 +6328,10 @@ Objects {
       AssetReference {
         Id: 9530887160708419576
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6251,6 +6399,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -6302,6 +6454,10 @@ Objects {
       AssetReference {
         Id: 15830314128515121469
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6361,6 +6517,10 @@ Objects {
       AssetReference {
         Id: 10094985332226947399
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6428,6 +6588,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:ExplosionTemplate"
       AssetReference {
         Id: 16737756307884761739
@@ -6479,6 +6643,10 @@ Objects {
       AssetReference {
         Id: 7974945132844636755
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6540,6 +6708,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -6591,6 +6763,10 @@ Objects {
       AssetReference {
         Id: 10408352433735589465
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6646,6 +6822,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -6699,6 +6879,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -6750,6 +6934,10 @@ Objects {
       AssetReference {
         Id: 12781087704127034770
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6811,6 +6999,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -6864,6 +7056,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -6915,6 +7111,10 @@ Objects {
       AssetReference {
         Id: 3078059190705841288
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6982,6 +7182,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 1066637007583221849
@@ -7033,6 +7237,10 @@ Objects {
       AssetReference {
         Id: 9646465928758980906
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7094,6 +7302,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -7145,6 +7357,10 @@ Objects {
       AssetReference {
         Id: 18150175252654389294
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7200,6 +7416,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 8508600544310168058
@@ -7251,6 +7471,10 @@ Objects {
       AssetReference {
         Id: 11826505342427441899
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7312,6 +7536,10 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 9529876109523918191
@@ -7363,6 +7591,10 @@ Objects {
       AssetReference {
         Id: 16884239609476660373
       }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
     }
     Overrides {
       Name: "cs:EffectTemplate"

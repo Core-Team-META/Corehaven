@@ -1,9 +1,6 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local ICON = script:GetCustomProperty("Icon")
-local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
-
 local BASE_HEAL_RATE = 4.0
 local HEAL_RATE_MULTIPLIER = 0.4
 
@@ -16,8 +13,9 @@ local data = {}
 
 data.name = "Mending Light"
 data.duration = 10.0
-data.icon = ICON
-data.effectTemplate = EFFECT_TEMPLATE
+data.icon = script:GetCustomProperty("Icon")
+data.description = script:GetCustomProperty("Description")
+data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.tickFunction = EffectTick
 
 API_SE.DefineStatusEffect(data)

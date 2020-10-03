@@ -1,8 +1,5 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
-local ICON = script:GetCustomProperty("Icon")
-local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
-
 local chargesRemaining = {}		-- character -> int
 
 function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
@@ -24,8 +21,9 @@ local data = {}
 
 data.name = "Phased Out"
 data.duration = 6.0
-data.icon = ICON
-data.effectTemplate = EFFECT_TEMPLATE
+data.icon = script:GetCustomProperty("Icon")
+data.description = script:GetCustomProperty("Description")
+data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.damageTakenMultiplier = 0.0
 
 function data.startFunction(sourceCharacter, character)

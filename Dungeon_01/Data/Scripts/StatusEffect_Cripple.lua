@@ -1,9 +1,6 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local ICON = script:GetCustomProperty("Icon")
-local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
-
 local BASE_DAMAGE_RATE = 2.0
 local DAMAGE_RATE_MULTIPLIER = 0.1
 
@@ -17,8 +14,9 @@ local data = {}
 
 data.name = "Cripple"
 data.duration = 5.0
-data.icon = ICON
-data.effectTemplate = EFFECT_TEMPLATE
+data.icon = script:GetCustomProperty("Icon")
+data.description = script:GetCustomProperty("Description")
+data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.tickFunction = EffectTick
 data.moveSpeedMultiplier = 0.6
 data.damageDealtMultiplier = 0.8

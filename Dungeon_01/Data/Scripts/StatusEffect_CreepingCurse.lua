@@ -2,9 +2,6 @@
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
-local ICON = script:GetCustomProperty("Icon")
-local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
-
 local BASE_DAMAGE = 30.0
 local DAMAGE_MULTIPLIER = 0.6
 local JUMP_RANGE = 1000.0
@@ -44,8 +41,9 @@ local data = {}
 
 data.name = "Creeping Curse"
 data.duration = 4.0
-data.icon = ICON
-data.effectTemplate = EFFECT_TEMPLATE
+data.icon = script:GetCustomProperty("Icon")
+data.description = script:GetCustomProperty("Description")
+data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.endFunction = EffectEnd
 
 API_SE.DefineStatusEffect(data)

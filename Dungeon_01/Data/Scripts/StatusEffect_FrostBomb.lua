@@ -1,8 +1,6 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local ICON = script:GetCustomProperty("Icon")
-local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local EXPLOSION_TEMPLATE = script:GetCustomProperty("ExplosionTemplate")
 
 local DAMAGE = 30.0
@@ -23,8 +21,9 @@ local data = {}
 
 data.name = "Frost Bomb"
 data.duration = 7.0
-data.icon = ICON
-data.effectTemplate = EFFECT_TEMPLATE
+data.icon = script:GetCustomProperty("Icon")
+data.description = script:GetCustomProperty("Description")
+data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.endFunction = EffectEnd
 
 API_SE.DefineStatusEffect(data)
