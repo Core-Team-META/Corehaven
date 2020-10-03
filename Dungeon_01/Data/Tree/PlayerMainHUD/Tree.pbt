@@ -2360,7 +2360,7 @@ Objects {
   }
   Control {
     Height: 20
-    UIY: -14
+    UIY: -10
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2420,7 +2420,7 @@ Objects {
   Control {
     Width: -30
     Height: -50
-    UIY: 50
+    UIY: 58
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -2538,7 +2538,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    UIY: 12
+    UIY: 8
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
