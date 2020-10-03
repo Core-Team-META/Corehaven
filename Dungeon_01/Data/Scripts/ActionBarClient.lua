@@ -330,8 +330,10 @@ function Tick(deltaTime)
 	end
 
 	-- Updating cooldown displays
+	local hasAnyAbilities = false
 	for _, data in pairs(buttonData) do
 		if data.abilityName then
+			hasAnyAbilities = true
 			local progressIndicator = data.button:GetCustomProperty("ProgressIndicator"):WaitForObject()
 			local cooldownTimeText = data.button:GetCustomProperty("CooldownTimeText"):WaitForObject()
             local cooldownData = API_A.GetVisibleCooldownData(data.abilityName)
