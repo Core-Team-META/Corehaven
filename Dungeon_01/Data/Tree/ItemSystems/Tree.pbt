@@ -4884,6 +4884,7 @@ Objects {
   ChildIds: 4367171715193905911
   ChildIds: 10757061219501401814
   ChildIds: 8098623273716594289
+  ChildIds: 2327209732744721247
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4910,6 +4911,63 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 2327209732744721247
+  Name: "TalentTreeType"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8618125357592173978
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 330
+    Height: 60
+    UIY: 5
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "MIGHT"
+      Color {
+        R: 0.840000033
+        G: 0.166887432
+        A: 1
+      }
+      Size: 24
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
         }
       }
     }
@@ -5375,6 +5433,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+    Overrides {
       Name: "cs:InventoryView"
       ObjectReference {
         SelfId: 6427885708988809054
@@ -5402,6 +5466,12 @@ Objects {
       Name: "cs:PlayerLevelProgress"
       ObjectReference {
         SelfId: 10757061219501401814
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerTalentTree"
+      ObjectReference {
+        SelfId: 2327209732744721247
       }
     }
     Overrides {

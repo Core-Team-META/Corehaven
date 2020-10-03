@@ -1,9 +1,11 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
+local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
 local PLAYER_LEVEL = script:GetCustomProperty("PlayerLevel"):WaitForObject()
 local PLAYER_LEVEL_PROGRESS = script:GetCustomProperty("PlayerLevelProgress"):WaitForObject()
+local PLAYER_TALENT_TREE = script:GetCustomProperty("PlayerTalentTree"):WaitForObject()
 local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
@@ -402,6 +404,13 @@ function view:UpdatePlayerInfo()
     local playerLevelProgress = statSheet:GetLevelProgress()
     PLAYER_LEVEL.text = tostring(playerLevel)
     PLAYER_LEVEL_PROGRESS.progress = playerLevelProgress
+    -- Attempt to also display the player's current talent selection.
+    local talentTreeName = TalentSelectorUtility.GetPlayerTreeName(LOCAL_PLAYER)
+    local talentTreeData = talentTreeName and TalentSelectorUtility.TALENT_TREE_DATA[talentTreeName]
+    PLAYER_TALENT_TREE.text = string.upper(talentTreeName or "")
+    if talentTreeData and talentTreeData.primaryColor then
+        PLAYER_TALENT_TREE:SetColor(talentTreeData.primaryColor)
+    end
 end
 
 function view:Draw()

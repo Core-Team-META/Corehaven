@@ -666,6 +666,15 @@ Objects {
       Vector2 {
       }
     }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 1
+        G: 0.87324512
+        B: 0.13
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1274,6 +1283,14 @@ Objects {
       Vector2 {
       }
     }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 0.228145853
+        B: 0.65
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1880,6 +1897,13 @@ Objects {
     Overrides {
       Name: "cs:BackgroundOffset"
       Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 0.470000029
+        A: 1
       }
     }
   }
@@ -2492,6 +2516,14 @@ Objects {
     Overrides {
       Name: "cs:BackgroundOffset"
       Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        G: 0.54158926
+        B: 0.87
+        A: 1
       }
     }
   }
