@@ -53,14 +53,14 @@ local PLAYER_STAT_DISPLAY_NAMES = {
 }
 
 local PLAYER_STAT_EXPLANATIONS = {
-    Health          = "amount of damage your character can survive",
-    Defense         = "reduces incoming damage",
-    Attack          = "increases damage with weapons",
-    Magic           = "increases damage with abilities",
-    CritChance      = "increases your chance to critically strike",
-    Haste           = "increases the speed of your actions",
-    CDR             = "makes abilities recharge faster",
-    Tenacity        = "makes crowd control durations shorter",
+    Health          = "increases hitpoints",
+    Defense         = "reduces damage taken",
+    Attack          = "increases physical damage dealt",
+    Magic           = "increases magical damage dealt",
+    CritChance      = "increases critical strike chance",
+    Haste           = "increases action speed",
+    CDR             = "reduces ability cooldown time",
+    Tenacity        = "reduces incoming stun duration",
 }
 
 local ITEM_SFX = {

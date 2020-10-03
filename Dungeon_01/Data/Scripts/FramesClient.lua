@@ -12,12 +12,13 @@ local NPC_ICON = script:GetCustomProperty("NPCIcon")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
-local TALENT_TREE_COLORS = {
-	Protection = Color.New(0.17, 0.02, 0.0),
-	Might = Color.New(0.6, 0.23, 0.0),
-	Magic = Color.New(0.24, 0.0, 0.55),
-	Divinity = Color.New(0.15, 0.65, 0.0)
-}
+-- These colors are unused, but will be kept for posterity's sake.
+-- local TALENT_TREE_COLORS = {
+-- 	Protection = Color.New(0.17, 0.02, 0.0),
+-- 	Might = Color.New(0.6, 0.23, 0.0),
+-- 	Magic = Color.New(0.24, 0.0, 0.55),
+-- 	Divinity = Color.New(0.15, 0.65, 0.0)
+-- }
 
 local MAX_RANGE = 3000.0
 
@@ -168,7 +169,8 @@ function UpdateFrame(data, character)
 			local talentTreeName = TSU.GetPlayerTreeName(character)
 
 			if talentTreeName and talentTreeName ~= "" then
-				fillColor = TALENT_TREE_COLORS[talentTreeName]
+				local talentTreeData = TSU.TALENT_TREE_DATA[talentTreeName]
+				fillColor = talentTreeData and talentTreeData.primaryColor or Color.SMOKE
 			else
 				fillColor = Color.GRAY
 			end

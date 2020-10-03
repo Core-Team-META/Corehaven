@@ -55,6 +55,7 @@ function ReadTalentTreeDefinition(root)
 		local treeData = {}
 		treeData.name = treeGroup.name
 		treeData.order = treeGroup:GetCustomProperty("Order")
+		treeData.primaryColor = treeGroup:GetCustomProperty("PrimaryColor")
 		treeData.backgroundImage = treeGroup:GetCustomProperty("BackgroundImage")
 		treeData.backgroundOffset = treeGroup:GetCustomProperty("BackgroundOffset")
 
@@ -83,6 +84,11 @@ function ReadTalentTreeDefinition(root)
 			warn(string.format("Order value on talent tree %s conflicts with tree %s", treeGroup.name, otherTreeName))
 			treeHasErrors = true
 			end
+		end
+
+		if treeData.primaryColor == nil then
+			warn(string.format("PrimaryColor missing on talent tree %s", treeGroup.name))
+			treeHasErrors = true
 		end
 
 		if treeData.backgroundImage == nil then
