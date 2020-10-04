@@ -45,6 +45,7 @@ local FRIENDLY_NAME_COLOR = COMPONENT_ROOT:GetCustomProperty("FriendlyNameColor"
 local ENEMY_NAME_ASLEEP_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameAsleepColor")
 local ENEMY_NAME_READY_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameReadyColor")
 local ENEMY_NAME_COMBAT_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameCombatColor")
+local ENEMY_NAME_AGGRO_COLOR = COMPONENT_ROOT:GetCustomProperty("EnemyNameAggroColor")
 local BORDER_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderColor")
 local BORDER_AGGRO_COLOR = COMPONENT_ROOT:GetCustomProperty("BorderAggroColor")
 local BACKGROUND_COLOR = COMPONENT_ROOT:GetCustomProperty("BackgroundColor")
@@ -469,15 +470,24 @@ function Tick(deltaTime)
 					nameColor = FRIENDLY_NAME_COLOR
 					healthColor = FRIENDLY_HEALTH_COLOR
 				else
-					if API_NPC.IsAsleep(character) then
+					if API_NPC.IsAsleep(character) then			-- Asleep
 						nameColor = ENEMY_NAME_ASLEEP_COLOR
 						healthColor = ENEMY_HEALTH_ASLEEP_COLOR
-					elseif API_NPC.GetTarget(character) then
-						nameColor = ENEMY_NAME_COMBAT_COLOR
-						healthColor = ENEMY_HEALTH_COMBAT_COLOR
 					else
-						nameColor = ENEMY_NAME_READY_COLOR
-						healthColor = ENEMY_HEALTH_READY_COLOR
+						local target = API_NPC.GetTarget(character)
+
+						if target then	-- Combat
+							if target == LOCAL_PLAYER then
+								nameColor = ENEMY_NAME_AGGRO_COLOR
+							else
+								nameColor = ENEMY_NAME_COMBAT_COLOR
+							end
+
+							healthColor = ENEMY_HEALTH_COMBAT_COLOR
+						else										-- Ready
+							nameColor = ENEMY_NAME_READY_COLOR
+							healthColor = ENEMY_HEALTH_READY_COLOR
+						end
 					end
 				end
 
