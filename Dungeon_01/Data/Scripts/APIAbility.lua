@@ -117,6 +117,7 @@ function GetAbilityCooldown(abilityName)
 	local data = abilityData[abilityName]
 	return data.cooldown * API_S.GetPlayerStatMultiplier(LOCAL_PLAYER, "CDR")
 end
+API.GetEffectiveAbilityCooldown = GetAbilityCooldown
 
 -- Any client
 function API.GetAbilityCastDuration(player, abilityName)
