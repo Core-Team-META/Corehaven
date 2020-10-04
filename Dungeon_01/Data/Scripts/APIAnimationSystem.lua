@@ -29,6 +29,10 @@ local ANIMATION_MAP = {
 		Warhammer = {"2hand_melee_slash_vertical"},
 		Default = {"unarmed_shove"},
 	},
+	Stab = {
+		Greatsword = {"2hand_sword_thrust"},
+		Default = {"1hand_melee_thrust"},
+	},
 	Bash = {
 		Shield = {"1hand_melee_shield_bash"},
 		Default = {"unarmed_punch_right"},
@@ -232,7 +236,6 @@ function API.FinishAnimation(castId)
 			local finishAnimationObject = nil
 
 			for _, candidateAnimationObject in pairs(player:GetAbilities()) do
-				print("A")
 				if candidateAnimationObject.name == finishAnimationName and candidateAnimationObject.animation == animationObject.animation then
 					finishAnimationObject = candidateAnimationObject
 					break

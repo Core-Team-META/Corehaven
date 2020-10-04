@@ -17,6 +17,14 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 	end
 end
 
+function EffectStart(sourceCharacter, character, index)
+	chargesRemaining[character] = 3
+end
+
+function EffectEnd(sourceCharacter, character, index)
+	chargesRemaining[character] = nil
+end
+
 local data = {}
 
 data.name = "Phased Out"
@@ -25,14 +33,8 @@ data.icon = script:GetCustomProperty("Icon")
 data.description = script:GetCustomProperty("Description")
 data.effectTemplate = script:GetCustomProperty("EffectTemplate")
 data.damageTakenMultiplier = 0.0
-
-function data.startFunction(sourceCharacter, character)
-	chargesRemaining[character] = 3
-end
-
-function data.endFunction(sourceCharacter, character)
-	chargesRemaining[character] = nil
-end
+data.startFunction = EffectStart
+data.endFunction = EffectEnd
 
 API_SE.DefineStatusEffect(data)
 

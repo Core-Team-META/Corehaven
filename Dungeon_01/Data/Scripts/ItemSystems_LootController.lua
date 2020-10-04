@@ -19,7 +19,7 @@ for _,player in ipairs(Game.GetPlayers()) do
 end
 
 -- Maybe a corner case where the owner is no longer in the game.
-if not OWNER:IsA("Player") then return end
+if not OWNER then return end
 
 ---------------------------------------------------------------------------------------------------------
 if script.isServerOnly then

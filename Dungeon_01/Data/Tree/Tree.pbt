@@ -28,6 +28,7 @@ Objects {
   ChildIds: 17888335466626026311
   ChildIds: 18109997350451454343
   ChildIds: 10625773096399959754
+  ChildIds: 17831385073121292977
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,41 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 17831385073121292977
+  Name: "TestTalentPointsAndLevel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 986680065809185792
+    }
   }
 }
 Objects {

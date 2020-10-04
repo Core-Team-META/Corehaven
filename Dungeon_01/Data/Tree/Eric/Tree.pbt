@@ -1,243 +1,6 @@
 ﻿Name: "Eric"
 RootId: 11176579868672163906
 Objects {
-  Id: 4985076143508798930
-  Name: "Test"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  ChildIds: 16933863079413983924
-  ChildIds: 11994119630219047533
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 11994119630219047533
-  Name: "Example Weapons"
-  Transform {
-    Location {
-      X: -8400
-      Y: -9725
-      Z: -925
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4985076143508798930
-  ChildIds: 1794869061672772321
-  ChildIds: 3062352257470646269
-  ChildIds: 14330806513262367431
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 14330806513262367431
-  Name: "Basic Staff"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11994119630219047533
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5081178629210994678
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Basic Staff"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: 500
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999542
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8087503863578717839
-      value {
-        Overrides {
-          Name: "InteractionLabel"
-          String: "Equip Basic Staff"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5174374985022455588
-    }
-  }
-}
-Objects {
-  Id: 3062352257470646269
-  Name: "Basic Dagger"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11994119630219047533
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11814773233387371849
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Basic Dagger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            Y: 250
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999542
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 12924051150070208515
-    }
-  }
-}
-Objects {
-  Id: 1794869061672772321
-  Name: "Basic Sword and Shield"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11994119630219047533
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 11855974286975611119
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Basic Sword and Shield"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: 89.9999542
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 7300386228413817757
-    }
-  }
-}
-Objects {
-  Id: 16933863079413983924
-  Name: "TestTalentPointsAndLevel"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4985076143508798930
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:TalentSelectorUtility"
-      AssetReference {
-        Id: 4644281046712195371
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 986680065809185792
-    }
-  }
-}
-Objects {
   Id: 16942605652795143332
   Name: "Targeting"
   Transform {
@@ -1902,7 +1665,8 @@ Objects {
     Overrides {
       Name: "cs:PrimaryColor"
       Color {
-        R: 0.470000029
+        R: 0.419999957
+        G: 0.133509919
         A: 1
       }
     }
@@ -4116,6 +3880,8 @@ Objects {
   ChildIds: 1138582270728062077
   ChildIds: 9193994729761399589
   ChildIds: 6720622700831334630
+  ChildIds: 17955763196997532518
+  ChildIds: 14122968408189617004
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4128,6 +3894,126 @@ Objects {
   InstanceHistory {
     SelfId: 12414977104385033478
     SubobjectId: 10104356363581192144
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 14122968408189617004
+  Name: "StatusEffect_WardingTalisman"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 2290469474439431706
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 1175970641155822959
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15982223733634048307
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 17955763196997532518
+  Name: "StatusEffect_LuckyBoneBand"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3866722323761546272
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13602192911998172131
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16044251667425626247
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -5907,6 +5793,8 @@ Objects {
   ChildIds: 17621126234971827803
   ChildIds: 16928204305121720765
   ChildIds: 8790160715953934400
+  ChildIds: 14592326945691027553
+  ChildIds: 12543256444662619106
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5918,6 +5806,126 @@ Objects {
   InstanceHistory {
     SelfId: 1827629710844690405
     SubobjectId: 4120286767298661683
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 12543256444662619106
+  Name: "StatusEffect_WardingTalisman"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 2290469474439431706
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 1175970641155822959
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15982223733634048307
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
+    InstanceId: 18324217616600873333
+    TemplateId: 16453451919311384
+  }
+}
+Objects {
+  Id: 14592326945691027553
+  Name: "StatusEffect_LuckyBoneBand"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 714567125969666523
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13602192911998172131
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: ""
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8508600544310168058
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16044251667425626247
+    }
+  }
+  InstanceHistory {
+    SelfId: 11035692137525163437
+    SubobjectId: 13354755034228623227
     InstanceId: 18324217616600873333
     TemplateId: 16453451919311384
   }
@@ -11514,6 +11522,7 @@ Objects {
   ChildIds: 14858975881740846511
   ChildIds: 8933039572493369492
   ChildIds: 9704916732227214379
+  ChildIds: 9744440883336539929
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11522,6 +11531,62 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 9744440883336539929
+  Name: "Plane"
+  Transform {
+    Location {
+      X: 4542.31445
+      Y: -202.056641
+      Z: 750.513
+    }
+    Rotation {
+    }
+    Scale {
+      X: 2.09666586
+      Y: 15.6170597
+      Z: 1.6277977e-06
+    }
+  }
+  ParentId: 1993578725776207079
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 10184847056121543272
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.063
+        G: 0.063
+        B: 0.063
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 14206563083884513420
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -14637,15 +14702,15 @@ Objects {
     Location {
       X: 2160.26416
       Y: 8754.79102
-      Z: -657.912964
+      Z: -668.369934
     }
     Rotation {
-      Roll: 15.361352
+      Roll: 15.3613882
     }
     Scale {
       X: 10.1360512
-      Y: 7.93912506
-      Z: 3.53514747e-06
+      Y: 9.09088
+      Z: 7.63531489e-07
     }
   }
   ParentId: 1993578725776207079
@@ -14865,7 +14930,7 @@ Objects {
     Location {
       X: 1887.09351
       Y: 8073.08398
-      Z: -578.727905
+      Z: -568.926453
     }
     Rotation {
     }
@@ -22764,14 +22829,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -157.061615
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

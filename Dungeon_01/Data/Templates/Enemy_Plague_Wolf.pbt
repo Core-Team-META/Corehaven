@@ -71,11 +71,27 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "BasicTrash"
+            String: "CommonTrash"
           }
           Overrides {
             Name: "cs:DropChance1"
             Float: 0.12
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "UncommonTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
+            Float: 0
+          }
+          Overrides {
+            Name: "cs:DropKey3"
+            String: "EpicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance3"
+            Float: 0
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

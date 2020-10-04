@@ -15,13 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 13915884840107103495
+        ParentId: 2833047303521512166
         ChildIds: 13959932632915410859
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:MinCastTime"
-            Float: 0.3
-          }
           Overrides {
             Name: "cs:ShowName"
             Bool: true
@@ -29,10 +25,6 @@
           Overrides {
             Name: "cs:ShowName:tooltip"
             String: "Whether to show the name of the ability that is currently casting"
-          }
-          Overrides {
-            Name: "cs:MinCastTime:tooltip"
-            String: "For cast times below this number, this element will not show"
           }
         }
         Collidable_v2 {
@@ -91,9 +83,9 @@
         ParentId: 13959932632915410859
         UnregisteredParameters {
           Overrides {
-            Name: "cs:API"
+            Name: "cs:APIAbility"
             AssetReference {
-              Id: 14633632985083390763
+              Id: 17706441704388140225
             }
           }
           Overrides {
@@ -208,7 +200,7 @@
         Control {
           Width: 400
           Height: 40
-          UIY: -150
+          UIY: -170
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

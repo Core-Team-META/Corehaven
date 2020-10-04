@@ -6,7 +6,7 @@ local BOLT_BASE_DAMAGE = 8.0
 local BOLT_DAMAGE_MULTIPLIER = 0.3
 local RADIUS = 500.0
 
-function EffectTick(sourceCharacter, character)
+function EffectTick(sourceCharacter, character, index)
 	assert(character:IsA("Player"))
 
 	local enemies = API_NPC.GetAwakeNPCsInSphere(character:GetWorldPosition(), RADIUS)

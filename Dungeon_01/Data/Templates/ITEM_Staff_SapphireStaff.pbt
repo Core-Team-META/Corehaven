@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 355695441012452148
-  Name: "ITEM_Staff_SaphireStaff"
+  Name: "ITEM_Staff_SapphireStaff"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "ITEM_Staff_SaphireStaff"
+        Name: "ITEM_Staff_SapphireStaff"
         Transform {
           Scale {
             X: 1

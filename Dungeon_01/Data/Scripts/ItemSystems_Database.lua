@@ -99,7 +99,11 @@ function Database:_LoadCatalog()
             assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))
             assert(Item.TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
             assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
-            assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
+
+            if row.StatKey ~= "" then       -- No stats at all is valid
+                assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
+            end
+
             local itemData = {
                 index = index,
                 name = row.Name,
@@ -108,6 +112,9 @@ function Database:_LoadCatalog()
                 muid = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
                 description = row.Lore,
                 _RollStats = function()
+                    if row.StatKey == "" then
+                        return {}
+                    end
                     local statRollInfos = self.itemStatRollInfos[row.StatKey]
                     local stats = {}
                     for _,rollInfo in ipairs(statRollInfos.base) do
@@ -176,6 +183,25 @@ function Database:_LoadAssetDerivedInformation()
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
         itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
         itemData.animationStance = tempObject:GetCustomProperty("AnimationStance")
+        itemData.abilityNames = {}
+        itemData.passives = {}
+
+        local i = 1
+        local continue = true
+
+        while continue do
+            itemData.abilityNames[i], continue = tempObject:GetCustomProperty(string.format("AbilityName%d", i))
+            i = i + 1
+        end
+
+        i = 1
+        continue = true
+
+        while continue do
+            itemData.passives[i], continue = tempObject:GetCustomProperty(string.format("Passive%d", i))
+            i = i + 1
+        end
+
         tempObject:Destroy()
     end
 end

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 13915884840107103495
+        ParentId: 2833047303521512166
         ChildIds: 10949033122195205957
         UnregisteredParameters {
           Overrides {
@@ -90,12 +90,6 @@
         }
         ParentId: 10949033122195205957
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:API"
-            AssetReference {
-              Id: 14633632985083390763
-            }
-          }
           Overrides {
             Name: "cs:ComponentRoot"
             ObjectReference {
@@ -202,7 +196,7 @@
         Control {
           Width: 400
           Height: 40
-          UIY: -105
+          UIY: -125
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

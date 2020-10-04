@@ -6,7 +6,7 @@ local BASE_DAMAGE = 30.0
 local DAMAGE_MULTIPLIER = 0.6
 local JUMP_RANGE = 1000.0
 
-function EffectEnd(sourceCharacter, character)
+function EffectEnd(sourceCharacter, character, index)
 	local magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
 	API_D.ApplyDamage(sourceCharacter, character, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 

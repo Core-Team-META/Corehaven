@@ -89,9 +89,14 @@ function Inventory:IsMainHandSlot(slotIndex)
     return slotIndex == 1
 end
 
--- Ture if the slot is the offhand weapons slot.
+-- True if the slot is the offhand weapons slot.
 function Inventory:IsOffHandSlot(slotIndex)
     return slotIndex == 2
+end 
+
+-- True if the slot is a trinket slot.
+function Inventory:IsTrinketSlot(slotIndex)
+    return slotIndex >= 6 and slotIndex <= 8
 end 
 
 -- True if the offhand slot is disabled.

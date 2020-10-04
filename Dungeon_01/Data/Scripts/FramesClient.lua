@@ -12,14 +12,6 @@ local NPC_ICON = script:GetCustomProperty("NPCIcon")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
--- These colors are unused, but will be kept for posterity's sake.
--- local TALENT_TREE_COLORS = {
--- 	Protection = Color.New(0.17, 0.02, 0.0),
--- 	Might = Color.New(0.6, 0.23, 0.0),
--- 	Magic = Color.New(0.24, 0.0, 0.55),
--- 	Divinity = Color.New(0.15, 0.65, 0.0)
--- }
-
 local MAX_RANGE = 3000.0
 
 local targetFrame = nil
@@ -151,7 +143,7 @@ function UpdateFrame(data, character)
 		data.frame.visibility = Visibility.FORCE_OFF
 	else
 		data.frame.visibility = Visibility.INHERIT
-		local fillColor = nil
+		local fillColor = Color.GRAY
 		local nameText = ""
 		local hitPoints = nil
 		local healthFraction = nil
@@ -170,9 +162,10 @@ function UpdateFrame(data, character)
 
 			if talentTreeName and talentTreeName ~= "" then
 				local talentTreeData = TSU.TALENT_TREE_DATA[talentTreeName]
-				fillColor = talentTreeData and talentTreeData.primaryColor or Color.SMOKE
-			else
-				fillColor = Color.GRAY
+				
+				if talentTreeData then
+					fillColor = talentTreeData.primaryColor
+				end
 			end
 		else
 			local npcData = API_NPC.GetAllNPCData()[character]
@@ -192,7 +185,7 @@ function UpdateFrame(data, character)
 		local progressBar = data.frame:GetCustomProperty("ProgressBar"):WaitForObject()
 
 		if distance > MAX_RANGE then
-			progressBar:SetFillColor(Color.Lerp(fillColor, Color.GRAY, 0.4))
+			progressBar:SetFillColor(Color.Lerp(fillColor, Color.GRAY, 0.25))
 			progressBar:SetBackgroundColor(Color.BLACK)
 		else
 			progressBar:SetFillColor(fillColor)

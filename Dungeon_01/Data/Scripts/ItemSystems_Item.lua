@@ -126,6 +126,14 @@ function Item:GetAnimationStance()
     return self.data.animationStance
 end
 
+function Item:GetAbilityNames()
+    return self.data.abilityNames
+end
+
+function Item:GetPassives()
+    return self.data.passives
+end
+
 function Item:GetDescription()
     return self.data.description
 end

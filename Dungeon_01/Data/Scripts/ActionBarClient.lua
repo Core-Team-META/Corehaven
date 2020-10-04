@@ -213,10 +213,6 @@ function DrawAbilityDragToggle()
 	ABILITY_DRAG_TOGGLE.clientUserData.status.text = isDraggingEnabled and "UNLOCKED" or "LOCKED"
 end
 
-function HideAbilityDragToggle()
-	ABILITY_DRAG_TOGGLE.visibility = Visibility.FORCE_OFF
-end
-
 function ReleaseDraggingButton()
 	if draggingIndex ~= 0 then
 		local dropIndex = GetSocketIndexAtCursorPosition()
@@ -311,7 +307,7 @@ end
 
 function Tick(deltaTime)
 	-- Show the disabled indicator for any abilities whose equipment requirements are not met.
-	for _,data in pairs(buttonData) do
+	for _, data in pairs(buttonData) do
 		if data.button then
 			if data.abilityName and not API_A.AreEquipmentConstraintsSatisfied(LOCAL_PLAYER, data.abilityName) then
 				data.button.clientUserData.disabledIndicator.visibility = Visibility.INHERIT
@@ -323,6 +319,7 @@ function Tick(deltaTime)
 
 	-- Update button interaction state.	When the action bar is locked, players can "click-to-activate" their abilities.
 	local canClickToActivate = not isDraggingEnabled
+
 	for i, data in pairs(buttonData) do
 		if data.abilityName and data.button then
 			data.button.clientUserData.activateButton.isEnabled = canClickToActivate
@@ -379,11 +376,7 @@ function Tick(deltaTime)
 	end
 
 	-- Update the drag toggle button visuals.
-	if hasAnyAbilities then
-		DrawAbilityDragToggle()
-	else
-		HideAbilityDragToggle()
-	end
+	DrawAbilityDragToggle()
 
 	-- Catch cursor changing visibility
 	local isCursorVisible = UI.IsCursorVisible()

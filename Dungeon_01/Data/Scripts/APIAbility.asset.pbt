@@ -41,6 +41,12 @@
         }
       }
       Overrides {
+        Name: "cs:APIStats"
+        AssetReference {
+          Id: 11452680377577311386
+        }
+      }
+      Overrides {
         Name: "cs:Ability_Cleave"
         AssetReference {
           Id: 16228603322221377071
@@ -182,6 +188,30 @@
         Name: "cs:Ability_SneakAttack"
         AssetReference {
           Id: 2993313201134032743
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_BlightBottle"
+        AssetReference {
+          Id: 6391126282906136629
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_LeechingBrooch"
+        AssetReference {
+          Id: 6385381462797035740
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_LuckyBoneBand"
+        AssetReference {
+          Id: 15104839253571838661
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_WardingTalisman"
+        AssetReference {
+          Id: 11408492965803338290
         }
       }
     }

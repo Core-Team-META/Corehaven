@@ -4,7 +4,7 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 local BASE_HEAL_RATE = 12.0
 local HEAL_RATE_MULTIPLIER = 1.0
 
-function EffectTick(sourceCharacter, character)
+function EffectTick(sourceCharacter, character, index)
 	local magicStat = character.serverUserData.statSheet:GetStatTotalValue("Magic")
 	API_D.ApplyHealing(sourceCharacter, character, BASE_HEAL_RATE + HEAL_RATE_MULTIPLIER * magicStat, API_D.TAG_PERIODIC)
 end

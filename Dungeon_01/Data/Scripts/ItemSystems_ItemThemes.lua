@@ -1,4 +1,6 @@
-﻿local RARITY_COLORS = {
+﻿local API_S = require(script:GetCustomProperty("APIStats"))
+
+local RARITY_COLORS = {
     Common      = script:GetCustomProperty("RarityCommon"),
     Uncommon    = script:GetCustomProperty("RarityUncommon"),
     Rare        = script:GetCustomProperty("RarityRare"),
@@ -25,14 +27,14 @@ local ITEM_STAT_FORMATS = {
     Attack          = "+%d",
     Magic           = "+%d",
     CritChance      = "+%d%%",
-    Haste           = "+%d%%",
-    CDR             = "+%d%%",
-    Tenacity        = "+%d%%",
+    Haste           = "+%d",
+    CDR             = "+%d",
+    Tenacity        = "+%d",
 }
 
 local PLAYER_STAT_FORMATS = {
     Health          = "%d",
-    Defense         = "%d",
+    Defense         = "%d%%",
     Attack          = "%d",
     Magic           = "%d",
     CritChance      = "%d%%",
@@ -60,7 +62,7 @@ local PLAYER_STAT_EXPLANATIONS = {
     CritChance      = "increases critical strike chance",
     Haste           = "increases action speed",
     CDR             = "reduces ability cooldown time",
-    Tenacity        = "reduces incoming stun duration",
+    Tenacity        = "reduces hostile status effect duration",
 }
 
 local ITEM_SFX = {
@@ -94,7 +96,14 @@ return {
     end,
 
     GetPlayerStatFormattedValue = function(statName, statValue)
-        return string.format(PLAYER_STAT_FORMATS[statName], statValue)
+        local multiplier = API_S.ConvertStatToMultiplier(statName, statValue)
+
+        if multiplier then
+            local percent = math.floor((1.0 - multiplier) * 100.0)
+            return string.format(PLAYER_STAT_FORMATS[statName], percent, statValue)
+        else
+            return string.format(PLAYER_STAT_FORMATS[statName], statValue)
+        end
     end,
     
     GetPlayerStatDisplayName = function(statName)

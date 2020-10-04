@@ -7,6 +7,8 @@
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -103,6 +105,15 @@ local function ServerInitInventory()
         if inventory:IsMainHandSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
         end
+        --[[if inventory:IsTrinketSlot(equipIndex) then
+            for _, abilityName in pairs(equipItem:GetAbilityNames()) do
+                API_A.GivePlayerAbility(OWNER, abilityName)
+            end
+
+            for _, passive in pairs(equipItem:GetPassives()) do
+                API_PP.GivePlayerPassive(OWNER, passive)
+            end
+        end]]
     end)
     -- Whenever a client rearranges their local inventory, update the server inventory and persist.
     Events.ConnectForPlayer("IIM", function(player, fromSlotIndex, toSlotIndex)

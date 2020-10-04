@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 1427829216143793458
-  Name: "EquipmentStanceServer"
+  Id: 15982223733634048307
+  Name: "StatusEffect_WardingTalisman"
   PlatformAssetType: 3
   TextAsset {
   }

@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 11665356817719102183
-  Name: "ITEM_Greatword_Bastard"
+  Name: "ITEM_Greatsword_Bastard"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

@@ -4,6 +4,7 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local API_AS = require(script:GetCustomProperty("APIAnimationSystem"))
+local API_S = require(script:GetCustomProperty("APIStats"))
 
 local abilityDefinitions = {}
 
@@ -105,34 +106,22 @@ function CancelGroundTargeting()
 end
 
 -- Local client
-function GetCooldownReductionMultiplier()
-	local cooldownReductionStat = LOCAL_PLAYER.clientUserData.statSheet:GetStatTotalValue("CDR")
-	return 1.0 / (1.0 + cooldownReductionStat / 200.0)
-end
-
--- Any client
-function GetHasteReductionMultiplier(player)
-	local hasteReductionStat = player.clientUserData.statSheet:GetStatTotalValue("Haste")
-	return 1.0 / (1.0 + hasteReductionStat / 200.0)
-end
-
--- Local client
 function GetGlobalCooldown()
 	-- This is intentionally haste and not CDR
-	return math.max(MIN_GLOBAL_COOLDOWN, BASE_GLOBAL_COOLDOWN * GetHasteReductionMultiplier(LOCAL_PLAYER))
+	return math.max(MIN_GLOBAL_COOLDOWN, BASE_GLOBAL_COOLDOWN * API_S.GetPlayerStatMultiplier(LOCAL_PLAYER, "Haste"))
 end
 
 -- Owning client
 function GetAbilityCooldown(abilityName)
 	assert(playerAbilities[LOCAL_PLAYER][abilityName])
 	local data = abilityData[abilityName]
-	return data.cooldown * GetCooldownReductionMultiplier()
+	return data.cooldown * API_S.GetPlayerStatMultiplier(LOCAL_PLAYER, "CDR")
 end
 
 -- Any client
 function API.GetAbilityCastDuration(player, abilityName)
 	local data = abilityData[abilityName]
-	return GetHasteReductionMultiplier(player) * data.castDuration
+	return data.castDuration * API_S.GetPlayerStatMultiplier(player, "Haste")
 end
 
 -- Client

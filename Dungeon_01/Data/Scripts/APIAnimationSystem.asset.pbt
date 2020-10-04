@@ -173,9 +173,21 @@
         }
       }
       Overrides {
+        Name: "cs:Animation_unarmed_use_start"
+        AssetReference {
+          Id: 7561782621439368731
+        }
+      }
+      Overrides {
         Name: "cs:Animation_unarmed_use"
         AssetReference {
           Id: 6370211262903147966
+        }
+      }
+      Overrides {
+        Name: "cs:Animation_unarmed_use_bandage_start"
+        AssetReference {
+          Id: 4224147215745166848
         }
       }
       Overrides {

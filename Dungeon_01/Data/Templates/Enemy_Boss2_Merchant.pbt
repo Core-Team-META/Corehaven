@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 2862615558091888578
+        ParentId: 4781671109827199097
         ChildIds: 11309518686197139877
         ChildIds: 16375430473012330958
         ChildIds: 13879121867550805143
@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Vincelli, the Esteemed"
+            String: "Varicelli, the Esteemed"
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
@@ -83,19 +83,11 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "Boss2Main"
+            String: "Boss2"
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.4
-          }
-          Overrides {
-            Name: "cs:DropKey2"
-            String: "Boss2Rare"
-          }
-          Overrides {
-            Name: "cs:DropChance2"
-            Float: 0.1
+            Float: 0.5
           }
           Overrides {
             Name: "cs:OnPulledEventName"

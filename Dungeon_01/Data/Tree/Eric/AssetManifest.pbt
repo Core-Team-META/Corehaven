@@ -152,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13602192911998172131
+  Name: "Fantasy Jewelry 017"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Jewelry_017"
+  }
+}
+Assets {
   Id: 13545083026230016674
   Name: "Fantasy Ability Blue 028"
   PlatformAssetType: 9
@@ -572,6 +581,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_012"
+  }
+}
+Assets {
+  Id: 2290469474439431706
+  Name: "Fantasy Jewelry 032"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Jewelry_032"
   }
 }
 Assets {

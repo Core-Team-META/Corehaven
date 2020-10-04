@@ -4,7 +4,7 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 local DAMAGE = 23.0
 local RADIUS = 400.0
 
-function EffectTick(sourceCharacter, character)
+function EffectTick(sourceCharacter, character, index)
 	assert(not character:IsA("Player"))
 
 	for _, player in pairs(Game.FindPlayersInSphere(character:GetWorldPosition(), RADIUS, {ignoreDead = true})) do

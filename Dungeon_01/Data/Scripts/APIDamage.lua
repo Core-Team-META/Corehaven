@@ -1,6 +1,7 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_S = require(script:GetCustomProperty("APIStats"))
 
 local CRIT_DAMAGE_MULTIPLIER = 2.0
 local CRIT_HEAL_MULTIPLIER = 2.0
@@ -15,6 +16,7 @@ API.TAG_HIDDEN = 16
 
 local systemFunctions = nil
 local preDamageHooks = {}
+local postDamageHooks = {}
 
 local godMode = false
 
@@ -65,8 +67,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
             targetMultiplier = targetMultiplier * _G.Passives.GetPlayerDamageTakenMultiplier(targetCharacter)
         end
 
-        local defenseStat = targetCharacter.serverUserData.statSheet:GetStatTotalValue("Defense")
-        local defenseMultiplier = 1.0 / (1.0 + defenseStat / 200.0)
+        local defenseMultiplier = API_S.GetPlayerStatMultiplier(targetCharacter, "Defense")
         targetMultiplier = targetMultiplier * defenseMultiplier
     end
     
@@ -75,6 +76,10 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
     local effectiveAmount = 0.0
         
     if adjustedAmount > 0.0 then
+        for _, hookFunction in pairs(postDamageHooks) do
+            adjustedAmount = hookFunction(sourceCharacter, targetCharacter, adjustedAmount, adjustedTags)
+        end
+
         if targetCharacter:IsA("Player") then
             effectiveAmount = math.min(adjustedAmount, targetCharacter.hitPoints)
             local damage = Damage.New(effectiveAmount)
@@ -166,6 +171,12 @@ end
 -- the crit tag, since that is applied during damage.
 function API.RegisterPreDamageHook(hookFunction)
     table.insert(preDamageHooks, hookFunction)
+end
+
+-- Same as above. Note that these aren't so much "Post" as they are juuust before damage happens, so it has been
+-- adjusted by all the other factors.
+function API.RegisterPostDamageHook(hookFunction)
+    table.insert(postDamageHooks, hookFunction)
 end
 
 function API.HasTag(tags, tag)

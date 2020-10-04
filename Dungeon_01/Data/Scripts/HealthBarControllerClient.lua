@@ -16,7 +16,6 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- Internal custom properties
-local AS = require(script:GetCustomProperty("API"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
 local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
@@ -26,30 +25,15 @@ local SHOW_NUMBER = COMPONENT_ROOT:GetCustomProperty("ShowNumber")
 local SHOW_MAXIMUM = COMPONENT_ROOT:GetCustomProperty("ShowMaximum")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
--- Player GetViewedPlayer()
--- Returns which player the local player is spectating (or themselves if not spectating)
-function GetViewedPlayer()
-    local specatatorTarget = AS.GetSpectatorTarget()
-
-    if AS.IsSpectating() and specatatorTarget then
-        return specatatorTarget
-    end
-
-    return LOCAL_PLAYER
-end
-
 function Tick(deltaTime)
-    local player = GetViewedPlayer()
-    if player then
-        local healthFraction = player.hitPoints / player.maxHitPoints
-        PROGRESS_BAR.progress = healthFraction
+    local healthFraction = LOCAL_PLAYER.hitPoints / LOCAL_PLAYER.maxHitPoints
+    PROGRESS_BAR.progress = healthFraction
 
-        if SHOW_NUMBER then
-            if SHOW_MAXIMUM then
-                TEXT_BOX.text = string.format("%.0f / %.0f", player.hitPoints, player.maxHitPoints)
-            else
-                TEXT_BOX.text = string.format("%.0f", player.hitPoints)
-            end
+    if SHOW_NUMBER then
+        if SHOW_MAXIMUM then
+            TEXT_BOX.text = string.format("%.0f / %.0f", LOCAL_PLAYER.hitPoints, LOCAL_PLAYER.maxHitPoints)
+        else
+            TEXT_BOX.text = string.format("%.0f", LOCAL_PLAYER.hitPoints)
         end
     end
 end

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 2862615558091888578
+        ParentId: 4781671109827199097
         ChildIds: 6828537196206741247
         ChildIds: 5696793840618649919
         ChildIds: 8070516662657326220
@@ -71,11 +71,27 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "BasicTrash"
+            String: "CommonTrash"
           }
           Overrides {
             Name: "cs:DropChance1"
             Float: 0.08
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "UncommonTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
+            Float: 0.08
+          }
+          Overrides {
+            Name: "cs:DropKey3"
+            String: "EpicTrash"
+          }
+          Overrides {
+            Name: "cs:DropChance3"
+            Float: 0.0008
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

@@ -22,7 +22,7 @@
       }
       Overrides {
         Name: "cs:PerLevelHealth"
-        Int: 20
+        Int: 25
       }
       Overrides {
         Name: "cs:PerLevelAttack"

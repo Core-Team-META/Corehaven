@@ -50,7 +50,6 @@
         Name: "Hammer"
         Transform {
           Location {
-            Z: -73.289978
           }
           Rotation {
           }

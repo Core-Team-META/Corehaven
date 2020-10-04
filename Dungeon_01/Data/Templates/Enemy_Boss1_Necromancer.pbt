@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 2862615558091888578
+        ParentId: 4781671109827199097
         ChildIds: 8268870251817362467
         ChildIds: 7113933153123958482
         ChildIds: 5752474580542176374
@@ -83,19 +83,11 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "Boss1Main"
+            String: "Boss1"
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.4
-          }
-          Overrides {
-            Name: "cs:DropKey2"
-            String: "Boss1Rare"
-          }
-          Overrides {
-            Name: "cs:DropChance2"
-            Float: 0.1
+            Float: 0.5
           }
           Overrides {
             Name: "cs:OnPulledEventName"

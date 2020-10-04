@@ -6,7 +6,7 @@ local EXPLOSION_TEMPLATE = script:GetCustomProperty("ExplosionTemplate")
 local DAMAGE = 30.0
 local EXPLOSION_RADIUS = 500.0
 
-function EffectEnd(sourceCharacter, character)
+function EffectEnd(sourceCharacter, character, index)
 	assert(character:IsA("Player"))
 
 	World.SpawnAsset(EXPLOSION_TEMPLATE, {position = character:GetWorldPosition()})

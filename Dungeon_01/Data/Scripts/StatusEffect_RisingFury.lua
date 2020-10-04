@@ -10,12 +10,12 @@ function OnPlayerLeft(player)
 	modifiers[player] = nil
 end
 
-function EffectStart(sourceCharacter, character)
+function EffectStart(sourceCharacter, character, index)
 	assert(character:IsA("Player"))
 	table.insert(modifiers[character], character.serverUserData.statSheet:NewStatModifierAdd("Attack", 3))
 end
 
-function EffectEnd(sourceCharacter, character)
+function EffectEnd(sourceCharacter, character, index)
 	character.serverUserData.statSheet:RemoveStatModifier(table.remove(modifiers[character]))
 end
 

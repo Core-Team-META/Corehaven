@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 3631325234750246348
-  Name: "ITEM_Boots_SteelSabatons"
+  Id: 13978058764286955732
+  Name: "ITEM_Armor_DragonboneBreastplate"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 14221847442462413670
       Objects {
         Id: 14221847442462413670
-        Name: "TEST_BOOTS_05"
+        Name: "ITEM_Armor_DragonboneBreastplate"
         Transform {
           Scale {
             X: 1
@@ -24,7 +24,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 4286856046924265701
+              Id: 12228370415659013890
             }
           }
         }
@@ -188,12 +188,12 @@
       }
     }
     Assets {
-      Id: 4286856046924265701
-      Name: "Fantasy Boot 017"
+      Id: 12228370415659013890
+      Name: "Fantasy Gear Top 004"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Gear_Boot_017"
+        AssetId: "UI_Fantasy_Gear_Top_004"
       }
     }
     Assets {

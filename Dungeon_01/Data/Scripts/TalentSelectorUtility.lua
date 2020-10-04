@@ -127,7 +127,7 @@ function ReadTalentTreeDefinition(root)
 				local i = 1
 				local continue = true
 
-				while continue do					
+				while continue do
 					talentData.abilityNames[i], continue = talentGroup:GetCustomProperty(string.format("AbilityName%d", i))
 					i = i + 1
 				end
@@ -135,7 +135,7 @@ function ReadTalentTreeDefinition(root)
 				i = 1
 				continue = true
 
-				while continue do					
+				while continue do
 					talentData.passives[i], continue = talentGroup:GetCustomProperty(string.format("Passive%d", i))
 					i = i + 1
 				end

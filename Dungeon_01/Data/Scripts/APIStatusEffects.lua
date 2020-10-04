@@ -17,9 +17,9 @@ name - player-facing name
 icon - to show on ui
 description - to show on ui
 <effectTemplate> - template to spawn and attach to character for effects
-<startFunction(sourceCharacter, character)> - called when applied
-<tickFunction(sourceCharacter, character)> - called exactly once per seconds (on average)
-<endFunction(sourceCharacter, character)> - called when expires or removed. Note this may have expired because they died.
+<startFunction(sourceCharacter, character, index)> - called when applied
+<tickFunction(sourceCharacter, character, index)> - called exactly once per second (on average)
+<endFunction(sourceCharacter, character, index)> - called when expires or removed. Note this may have expired because they died.
 <doesStun> - whether this status effect stuns the target
 <moveSpeedMultiplier> - how much to slow or speed up the characters's movement
 <damageDealtMultiplier> - how much more or less damage the characters deals
@@ -75,7 +75,9 @@ function GetCharacterById(id)
 		end
 	end
 
-	return World.FindObjectById(id)
+	if is_valid_muid(id) then
+		return World.FindObjectById(id)
+	end
 end
 
 function IsCharacterDead(character)
@@ -351,7 +353,7 @@ function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 			local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
 
 			if statusEffectData.startFunction then
-				statusEffectData.startFunction(sourceCharacter, targetCharacter)
+				statusEffectData.startFunction(sourceCharacter, targetCharacter, i)
 			end
 
 			UpdateCharacterEffectState(targetCharacter)
@@ -384,7 +386,7 @@ function API.RemoveStatusEffect(character, index)
 		local statusEffectData = STATUS_EFFECT_ID_TABLE[id]
 
 		if statusEffectData.endFunction then
-			statusEffectData.endFunction(sourceCharacter, character)
+			statusEffectData.endFunction(sourceCharacter, character, index)
 		end
 
 		UpdateCharacterEffectState(character, statusEffectData.type)
@@ -423,7 +425,7 @@ function UpdateCharacter(character)
 					
 					for j = tickCounts[character][i] + 1, ticksExpected do
 						tickCounts[character][i] = tickCounts[character][i] + 1
-						statusEffectData.tickFunction(sourceCharacter, character)
+						statusEffectData.tickFunction(sourceCharacter, character, i)
 
 						-- The tick might kill you, which removes all your status effects. The rest of this is then no longer valid.
 						if IsCharacterDead(character) then

@@ -28,7 +28,7 @@ for _,statName in ipairs(StatSheet.STATS) do
 end
 
 -- The maximum attainable level.
-StatSheet.MAX_LEVEL = 99
+StatSheet.MAX_LEVEL = 5
 
 -- Calculate the experience required to reach a given level.
 -- (courtesy of OSRS: https://oldschool.runescape.wiki/w/Experience)

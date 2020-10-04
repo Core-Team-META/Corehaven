@@ -5,6 +5,12 @@
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:APIStats"
+        AssetReference {
+          Id: 11452680377577311386
+        }
+      }
+      Overrides {
         Name: "cs:RarityCommon"
         Color {
           R: 1
