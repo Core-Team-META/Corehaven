@@ -242,7 +242,7 @@ function ExecuteAbility(skipBroadcast)
 		API_RE.BroadcastToServer("AES")
 	end
 
-	abilityCooldownEnds[castData.abilityName] = os.clock() + GetAbilityCooldown(castData.abilityName)
+	abilityCooldownEnds[castData.abilityName] = os.clock() + API.GetAbilityCooldown(castData.abilityName)
 	playerCastData[LOCAL_PLAYER] = nil
 
 	if data.onCastClient then
@@ -526,7 +526,7 @@ function GetTimeUntilReady(abilityName)
 		if castData.abilityName ~= abilityName then
 			t = math.max(t, 0.01, endTime - clock)
 		else
-			t = math.max(t, 0.01, endTime - clock + GetAbilityCooldown(abilityName))
+			t = math.max(t, 0.01, endTime - clock + API.GetAbilityCooldown(abilityName))
 		end
 	end
 
@@ -557,7 +557,7 @@ function API.GetVisibleCooldownData(abilityName)
 	end
 
 	if cooldownRemaining > globalCooldownRemaining then
-		return {remaining = cooldownRemaining, total = GetAbilityCooldown(abilityName)}
+		return {remaining = cooldownRemaining, total = API.GetAbilityCooldown(abilityName)}
 	elseif globalCooldownRemaining > 0.0 then
 		return {remaining = globalCooldownRemaining, total = GetGlobalCooldown()}
 	end

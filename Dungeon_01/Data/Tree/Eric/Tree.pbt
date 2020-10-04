@@ -26346,7 +26346,14 @@ Objects {
     Overrides {
       Name: "cs:EnemyNameCombatColor"
       Color {
-        R: 0.450000048
+        R: 0.45
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "cs:EnemyNameAggroColor"
+      Color {
+        R: 1
         A: 1
       }
     }
