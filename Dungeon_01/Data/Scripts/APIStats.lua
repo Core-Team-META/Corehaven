@@ -14,6 +14,14 @@ function API.ConvertStatToMultiplier(statName, value)
 	end
 end
 
+function API.ConvertStatToEffectivePercent(statName, value)
+	local multiplier = API.ConvertStatToMultiplier(statName, value)
+	if multiplier then
+		-- We truncate all values to a single decimal place.
+		return (1000 * (1.0 - multiplier)) // 10
+	end
+end
+
 function API.GetPlayerStatMultiplier(player, statName)
 	local isClient = pcall(Game.GetLocalPlayer)
 

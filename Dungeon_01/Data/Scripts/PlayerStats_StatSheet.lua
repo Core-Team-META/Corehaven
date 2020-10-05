@@ -105,6 +105,7 @@ function StatSheet:IsMaxLevel()
 end
 
 ---------------------------------------------------------------------------------------------------------
+
 function StatSheet:GetStatTotalValue(statName)
     return self.statTotals[statName]
 end

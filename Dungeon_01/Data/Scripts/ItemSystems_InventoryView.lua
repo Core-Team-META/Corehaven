@@ -1,5 +1,6 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
+local APIStats = require(script:GetCustomProperty("APIStats"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
@@ -434,7 +435,8 @@ function view:DrawStats()
         local statAmount = statSheet:GetStatTotalValue(statName)
         local statElement = self.statElements[statName]
         if statElement then
-            statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statAmount)
+            local effectiveStat = APIStats.ConvertStatToEffectivePercent(statName, statAmount) or statAmount
+            statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, effectiveStat)
             statElement.clientUserData.value:SetColor(statElement.clientUserData.defaultTextColor)
             statElement.clientUserData.icon:SetColor(statElement.clientUserData.defaultTextColor)
             statElement.clientUserData.name:SetColor(statElement.clientUserData.defaultTextColor)
@@ -524,12 +526,19 @@ function view:DrawHoverStatCompare()
         local quickCompareStatDeltas = inventory:GetQuickCompareStatDeltas(targetEquipSlotIndex, itemToTest)
         for statName,statElement in pairs(self.statElements) do
             local statDelta = quickCompareStatDeltas[statName]
-            if statDelta ~= 0 then
-                local compareColor = statDelta > 0 and Color.GREEN or Color.RED
-                local compareToken = statDelta > 0 and "+ " or "- "
-                statElement.clientUserData.previewDelta.text = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(statDelta))
+            -- Not all stats have linear scaling so we can't naively use the delta.
+            local beforeStatRaw = statSheet:GetStatTotalValue(statName)
+            local resultStatRaw = beforeStatRaw + statDelta
+            local beforeStatEffective = APIStats.ConvertStatToEffectivePercent(statName, beforeStatRaw) or beforeStatRaw
+            local resultStatEffective = APIStats.ConvertStatToEffectivePercent(statName, resultStatRaw) or resultStatRaw
+            local effectiveDelta = resultStatEffective - beforeStatEffective
+            if effectiveDelta ~= 0 then
+                local compareColor = effectiveDelta > 0 and Color.GREEN or Color.RED
+                local compareToken = effectiveDelta > 0 and "+ " or "- "
+                local previewDeltaString = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(effectiveDelta))
+                statElement.clientUserData.previewDelta.text = previewDeltaString:gsub("%%", "")
                 statElement.clientUserData.previewDelta:SetColor(compareColor)
-                statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, statSheet:GetStatTotalValue(statName) + statDelta)
+                statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, resultStatEffective)
                 statElement.clientUserData.value:SetColor(compareColor)
             end
         end

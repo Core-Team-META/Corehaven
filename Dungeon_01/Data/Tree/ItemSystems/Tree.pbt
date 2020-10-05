@@ -4421,7 +4421,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 355
+          Float: 340
         }
       }
     }
@@ -4477,7 +4477,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 355
+          Float: 340
         }
       }
     }
@@ -4533,7 +4533,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 355
+          Float: 340
         }
       }
     }
@@ -4589,7 +4589,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 355
+          Float: 340
         }
       }
     }
@@ -4645,7 +4645,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 20
+          Float: 15
         }
       }
     }
@@ -4701,7 +4701,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 20
+          Float: 15
         }
       }
     }
@@ -4757,7 +4757,7 @@ Objects {
         }
         Overrides {
           Name: "UIX"
-          Float: 20
+          Float: 15
         }
       }
     }
@@ -5436,6 +5436,12 @@ Objects {
       Name: "cs:TalentSelectorUtility"
       AssetReference {
         Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:APIStats"
+      AssetReference {
+        Id: 11452680377577311386
       }
     }
     Overrides {
