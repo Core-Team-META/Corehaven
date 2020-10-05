@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 5759845102102522155
+        ChildIds: 16872159909818395964
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
@@ -27,10 +27,36 @@
           Overrides {
             Name: "cs:SOCKET_left_arm_prop"
             ObjectReference {
-              SubObjectId: 5759845102102522155
+              SubObjectId: 16872159909818395964
             }
           }
         }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 16872159909818395964
+        Name: "Geo"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14221847442462413670
+        ChildIds: 5759845102102522155
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -55,7 +81,15 @@
             Z: 1
           }
         }
-        ParentId: 14221847442462413670
+        ParentId: 16872159909818395964
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 11337413471323694429
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -93,6 +127,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_shield_001"
+      }
+    }
+    Assets {
+      Id: 11337413471323694429
+      Name: "Metal Gold 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_gold_001"
       }
     }
     PrimaryAssetId {

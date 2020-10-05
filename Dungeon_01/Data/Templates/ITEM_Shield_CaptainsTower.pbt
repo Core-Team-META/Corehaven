@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 9929874123490819012
+        ChildIds: 16193503453040774933
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
@@ -27,7 +27,7 @@
           Overrides {
             Name: "cs:SOCKET_left_arm_prop"
             ObjectReference {
-              SubObjectId: 9929874123490819012
+              SubObjectId: 16193503453040774933
             }
           }
         }
@@ -42,8 +42,8 @@
         }
       }
       Objects {
-        Id: 9929874123490819012
-        Name: "Shield 01"
+        Id: 16193503453040774933
+        Name: "Geo"
         Transform {
           Location {
           }
@@ -56,6 +56,44 @@
           }
         }
         ParentId: 14221847442462413670
+        ChildIds: 3665274642211832825
+        ChildIds: 4576997746212075155
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 3665274642211832825
+        Name: "Fantasy Shield 03"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16193503453040774933
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 4
+              G: 3.9745698
+              B: 0.160000086
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,7 +102,43 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16674105615607424976
+            Id: 13015241044592811011
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4576997746212075155
+        Name: "Fantasy Shield Strap 01"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: 179.999954
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 16193503453040774933
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -87,12 +161,21 @@
       }
     }
     Assets {
-      Id: 16674105615607424976
-      Name: "Shield 01"
+      Id: 13015241044592811011
+      Name: "Fantasy Shield 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_shield_001"
+        AssetId: "sm_weap_fan_shield_003"
+      }
+    }
+    Assets {
+      Id: 5649559338683583195
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     PrimaryAssetId {
