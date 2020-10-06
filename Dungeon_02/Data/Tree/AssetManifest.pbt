@@ -44,6 +44,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18050882763401321185
+  Name: "Hill 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_004"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -998,6 +1007,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5626035503592688696
+  Name: "Rocky Ground 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "rocky_001"
+  }
+}
+Assets {
   Id: 5604237310652087622
   Name: "Rock Pile 002"
   PlatformAssetType: 1
@@ -1292,6 +1310,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_liana-vine_end_001_uv"
+  }
+}
+Assets {
+  Id: 1140660358987432411
+  Name: "Decal Soil Cracks Big 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_soil_cracks_001"
   }
 }
 Assets {
