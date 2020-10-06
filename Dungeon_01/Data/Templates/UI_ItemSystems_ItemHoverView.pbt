@@ -7,7 +7,7 @@
       RootId: 15693456971712313944
       Objects {
         Id: 15693456971712313944
-        Name: "ItemHoverView"
+        Name: "UI_ItemSystems_ItemHoverView"
         Transform {
           Scale {
             X: 1
@@ -87,6 +87,8 @@
         Control {
           Width: 266
           Height: 225
+          UIX: 1061.14099
+          UIY: 341.3013
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1183,7 +1185,6 @@
             Justification {
               Value: "mc:etextjustify:center"
             }
-            AutoWrapText: true
           }
           AnchorLayout {
             SelfAnchor {
@@ -1298,7 +1299,6 @@
             Justification {
               Value: "mc:etextjustify:center"
             }
-            AutoWrapText: true
           }
           AnchorLayout {
             SelfAnchor {

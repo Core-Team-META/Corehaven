@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 17994031529410391449
-  Name: "Enemy_Boss4_Plague_Dragon"
+  Name: "Enemy_Boss5_Plague_Dragon"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 637871214168381476
       Objects {
         Id: 637871214168381476
-        Name: "Enemy_Boss4_Plague_Dragon"
+        Name: "Enemy_Boss5_Plague_Dragon"
         Transform {
           Scale {
             X: 1.07335877

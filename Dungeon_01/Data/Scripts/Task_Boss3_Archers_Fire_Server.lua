@@ -25,7 +25,7 @@ function GetPriority(npc, taskHistory)
 		rockCount = rockCount + 1
 	end
 
-	if rockCount > 0 then
+	if rockCount > 1 then
 		return 0.3			-- Low priority for somewhat random timing
 	else
 		return 0.0

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17281702230288349281
+  Name: "Fantasy Ability Purple 009"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_009"
+  }
+}
+Assets {
   Id: 16884239609476660373
   Name: "Fantasy Ability Teal 023"
   PlatformAssetType: 9
@@ -260,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11555609066855197595
+  Name: "Fantasy Ability Purple 036"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_036"
+  }
+}
+Assets {
   Id: 11309381679699856108
   Name: "Fantasy Ability Yellow 029"
   PlatformAssetType: 9
@@ -284,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Red_011"
+  }
+}
+Assets {
+  Id: 10454836399902032085
+  Name: "Fantasy Ability Purple 025"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_025"
   }
 }
 Assets {
@@ -401,6 +428,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
+  }
+}
+Assets {
+  Id: 8073765531968625116
+  Name: "Fantasy Ability Purple 032"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Purple_032"
   }
 }
 Assets {

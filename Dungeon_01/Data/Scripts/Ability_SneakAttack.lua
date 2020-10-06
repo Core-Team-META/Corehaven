@@ -50,7 +50,7 @@ function data.onCastServer(caster, target)
 	-- If our Raycast failed, we don't teleport because we don't want to drop the player below the map.
 	if hitResult then
 		caster:SetWorldPosition(hitResult:GetImpactPosition() + Vector3.UP * 110.0 * caster:GetWorldScale().z)
-		caster:SetWorldRotation(target:GetWorldRotation())
+		caster:SetWorldRotation(Rotation.New(0.0, 0.0, target:GetWorldRotation().z))
 		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 		API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
 		API_RE.BroadcastToPlayer(caster, "SA", API_ID.GetIdFromObject(target))

@@ -655,6 +655,12 @@ Objects {
           Name: "Name"
           String: "ItemHoverView"
         }
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
       }
     }
     TemplateAsset {
