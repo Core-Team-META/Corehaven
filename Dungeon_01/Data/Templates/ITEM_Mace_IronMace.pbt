@@ -60,6 +60,8 @@
         ChildIds: 13153260784077814990
         ChildIds: 13843515995551019230
         ChildIds: 7330504506220007969
+        ChildIds: 2022574493432636272
+        ChildIds: 5163474402587198182
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -111,17 +113,25 @@
         Name: "Fantasy Mace Head 01"
         Transform {
           Location {
-            Z: 42
+            Z: 47.3378906
           }
           Rotation {
           }
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 0.962200165
           }
         }
         ParentId: 7981359996003013185
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -214,6 +224,94 @@
           }
         }
       }
+      Objects {
+        Id: 2022574493432636272
+        Name: "Fantasy Mace Head 01"
+        Transform {
+          Location {
+            Z: 35.673645
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.962200165
+          }
+        }
+        ParentId: 7981359996003013185
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5870959432051636656
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5163474402587198182
+        Name: "Fantasy Mace Head 01"
+        Transform {
+          Location {
+            Z: 23.9349976
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 0.962200165
+          }
+        }
+        ParentId: 7981359996003013185
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5870959432051636656
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 7315998350293375969
@@ -240,6 +338,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_head_mace_002"
+      }
+    }
+    Assets {
+      Id: 1100837394993556177
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
       }
     }
     Assets {

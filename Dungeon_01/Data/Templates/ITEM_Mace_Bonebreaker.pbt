@@ -60,6 +60,7 @@
           }
         }
         ParentId: 14221847442462413670
+        ChildIds: 9602243611640669887
         ChildIds: 6519338281580530600
         ChildIds: 18062541550710582744
         ChildIds: 14493828600927693255
@@ -72,6 +73,62 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9602243611640669887
+        Name: "Cube - Chamfered Large Polished"
+        Transform {
+          Location {
+            Z: 58.5159302
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.233960867
+            Y: 0.233960867
+            Z: 0.233960867
+          }
+        }
+        ParentId: 3328639427170539118
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.195968345
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.171274662
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 2670205319698482526
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -126,6 +183,14 @@
           }
         }
         ParentId: 3328639427170539118
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 8221347909026897831
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -226,6 +291,24 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Weapon_Club_005"
+      }
+    }
+    Assets {
+      Id: 2670205319698482526
+      Name: "Cube - Chamfered Large Polished"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_cube_hq_002"
+      }
+    }
+    Assets {
+      Id: 8221347909026897831
+      Name: "Metal Iron 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_001"
       }
     }
     Assets {
