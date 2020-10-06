@@ -74,9 +74,9 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 290
+          Width: 300
           Height: 30
-          UIX: 20
+          UIX: 15
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -482,7 +482,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 50
+          Width: 60
           Height: 30
           UIY: 1
           RenderTransformPivot {
@@ -498,7 +498,7 @@
             }
             Size: 14
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:right"
             }
             ClipTextToSize: true
           }

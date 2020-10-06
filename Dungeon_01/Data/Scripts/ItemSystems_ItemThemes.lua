@@ -34,13 +34,13 @@ local ITEM_STAT_FORMATS = {
 
 local PLAYER_STAT_FORMATS = {
     Health          = "%d",
-    Defense         = "%d%%",
+    Defense         = "%2.1f%%",
     Attack          = "%d",
     Magic           = "%d",
-    CritChance      = "%d%%",
-    Haste           = "%d%%",
-    CDR             = "%d%%",
-    Tenacity        = "%d%%",
+    CritChance      = "%2.1f%%",
+    Haste           = "%2.1f%%",
+    CDR             = "%2.1f%%",
+    Tenacity        = "%2.1f%%",
 }
 
 local PLAYER_STAT_DISPLAY_NAMES = {
@@ -96,14 +96,7 @@ return {
     end,
 
     GetPlayerStatFormattedValue = function(statName, statValue)
-        local multiplier = API_S.ConvertStatToMultiplier(statName, statValue)
-
-        if multiplier then
-            local percent = math.floor((1.0 - multiplier) * 100.0)
-            return string.format(PLAYER_STAT_FORMATS[statName], percent, statValue)
-        else
-            return string.format(PLAYER_STAT_FORMATS[statName], statValue)
-        end
+        return string.format(PLAYER_STAT_FORMATS[statName], statValue)
     end,
     
     GetPlayerStatDisplayName = function(statName)

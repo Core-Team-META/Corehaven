@@ -79,17 +79,25 @@
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            Z: -28
+            Z: -27.999939
           }
           Rotation {
           }
           Scale {
             X: 1
             Y: 1
-            Z: 1
+            Z: 1.15285408
           }
         }
         ParentId: 7382543591811905543
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 2664847478369185144
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -115,17 +123,25 @@
         Name: "Fantasy Mace Head 01"
         Transform {
           Location {
-            Z: 42
+            Z: 40.9776
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.836431682
+            Y: 0.836431682
+            Z: 0.415404856
           }
         }
         ParentId: 7382543591811905543
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -238,12 +254,30 @@
       }
     }
     Assets {
+      Id: 2664847478369185144
+      Name: "Wood Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_raw_001_uv"
+      }
+    }
+    Assets {
       Id: 5870959432051636656
       Name: "Fantasy Mace Head 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_head_mace_002"
+      }
+    }
+    Assets {
+      Id: 1100837394993556177
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
       }
     }
     Assets {

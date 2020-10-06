@@ -16,7 +16,7 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12641542977690929521
+        ChildIds: 3675610608532589480
         UnregisteredParameters {
           Overrides {
             Name: "cs:Icon"
@@ -27,7 +27,7 @@
           Overrides {
             Name: "cs:SOCKET_left_arm_prop"
             ObjectReference {
-              SubObjectId: 12641542977690929521
+              SubObjectId: 3675610608532589480
             }
           }
         }
@@ -42,8 +42,8 @@
         }
       }
       Objects {
-        Id: 12641542977690929521
-        Name: "Shield 01"
+        Id: 3675610608532589480
+        Name: "Geo"
         Transform {
           Location {
           }
@@ -56,6 +56,55 @@
           }
         }
         ParentId: 14221847442462413670
+        ChildIds: 9954486836960827748
+        ChildIds: 3720779690371193322
+        ChildIds: 9971708016022118983
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 9954486836960827748
+        Name: "Cube - Rounded"
+        Transform {
+          Location {
+            Y: 3.52832031
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.726321816
+            Y: 0.0719877332
+            Z: 0.726321816
+          }
+        }
+        ParentId: 3675610608532589480
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3605030238014728915
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 0.280651093
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 0.293538
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -64,7 +113,80 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16674105615607424976
+            Id: 2007256510569021566
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3720779690371193322
+        Name: "Urban Pipe Flange 02"
+        Transform {
+          Location {
+            Y: 3.37207031
+          }
+          Rotation {
+            Roll: 89.9999619
+          }
+          Scale {
+            X: 0.565544486
+            Y: 0.565544486
+            Z: 0.565544486
+          }
+        }
+        ParentId: 3675610608532589480
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 1527224994251334627
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9971708016022118983
+        Name: "Fantasy Shield Strap 01"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Roll: 179.999969
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 3675610608532589480
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -87,12 +209,39 @@
       }
     }
     Assets {
-      Id: 16674105615607424976
-      Name: "Shield 01"
+      Id: 2007256510569021566
+      Name: "Cube - Rounded"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_shield_001"
+        AssetId: "sm_cube_rounded_002"
+      }
+    }
+    Assets {
+      Id: 3605030238014728915
+      Name: "Wood Planks"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_wood_planks_001_uv"
+      }
+    }
+    Assets {
+      Id: 1527224994251334627
+      Name: "Urban Pipe Flange 02"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_prop_urb_pipes_acc_flange_002_ref"
+      }
+    }
+    Assets {
+      Id: 5649559338683583195
+      Name: "Fantasy Shield Strap 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_shield_strap_001"
       }
     }
     PrimaryAssetId {
