@@ -1,7 +1,7 @@
 ﻿return {
   {
     DropKey = 'CHEAT',
-    ItemName = 'Leeching Brooch',
+    ItemName = 'Basic Spellbook',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
