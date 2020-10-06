@@ -185,9 +185,11 @@
         ParentId: 3328639427170539118
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 8221347909026897831
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.0119203804
+              G: 0.9
+              A: 1
             }
           }
         }
