@@ -20,6 +20,8 @@ Inventory.EQUIP_SLOTS = {
     { slotType = "Accessory" },
 }
 
+Inventory.NUM_ACCESSORY_SLOTS = 3
+
 Inventory.BACKPACK_CAPACITY = 32
 
 Inventory.TOTAL_CAPACITY = #Inventory.EQUIP_SLOTS + Inventory.BACKPACK_CAPACITY

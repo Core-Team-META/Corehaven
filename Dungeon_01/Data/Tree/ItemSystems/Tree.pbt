@@ -5520,8 +5520,8 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:ClickCooldown"
-      Float: 0.5
+      Name: "cs:EquipSlotCooldown"
+      Float: 0.6
     }
     Overrides {
       Name: "cs:ClickTimeout"
@@ -5553,6 +5553,12 @@ Objects {
       Name: "cs:SFX_Move"
       AssetReference {
         Id: 17100161445438500121
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_MoveFail"
+      AssetReference {
+        Id: 5728830900617512321
       }
     }
     Overrides {
