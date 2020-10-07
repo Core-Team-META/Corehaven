@@ -22,7 +22,7 @@ local WAVES = {
 local RANGE = 0.0
 local COOLDOWN = 35.0
 
-local waveIndices = {}
+local nextWaveIndex = 1
 
 function GetPriority(npc, taskHistory)
 	if API_NPC.GetHealthFraction(npc) > 0.95 then
@@ -33,15 +33,11 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	if not waveIndices[npc] then
-		waveIndices[npc] = 1
-	end
-
-	local leftTemplate = SUMMON_TEMPLATES[WAVES[waveIndices[npc]]["Left"]]
-	local rightTemplate = SUMMON_TEMPLATES[WAVES[waveIndices[npc]]["Right"]]
+	local leftTemplate = SUMMON_TEMPLATES[WAVES[nextWaveIndex]["Left"]]
+	local rightTemplate = SUMMON_TEMPLATES[WAVES[nextWaveIndex]["Right"]]
 	API_NPC.SpawnNPC(leftTemplate, npc, SPAWN_POINTS["Left"]:GetWorldPosition(), SPAWN_POINTS["Left"]:GetWorldRotation())
 	API_NPC.SpawnNPC(rightTemplate, npc, SPAWN_POINTS["Right"]:GetWorldPosition(), SPAWN_POINTS["Right"]:GetWorldRotation())
-	waveIndices[npc] = waveIndices[npc] % #WAVES + 1
+	nextWaveIndex = nextWaveIndex % #WAVES + 1
 
 	Task.Spawn(function()
 		Task.Wait()	-- Need a frame for the new npcs to be registered
@@ -58,7 +54,13 @@ function OnTaskStart(npc, threatTable)
 	return 0.5
 end
 
+function OnBossReset()
+	nextWaveIndex = 1
+end
+
 function OnTaskEnd(npc, interrupted)
 end
+
+Events.Connect("Boss3Reset", OnBossReset)
 
 API_NPC.RegisterTaskServer("boss3_summon_reinforcements", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

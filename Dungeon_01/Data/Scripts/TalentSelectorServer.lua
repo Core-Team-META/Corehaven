@@ -1,4 +1,4 @@
-local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
@@ -6,6 +6,8 @@ local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
 local PLAYER_STATE_TREE_TEMPLATE = script:GetCustomProperty("PlayerStateTreeTemplate")
 
 local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
+
+local isStorageLoaded = {}		-- Player -> bool
 
 function OnBindingPressed(player, binding)
 	if binding == "ability_extra_37" then
@@ -77,6 +79,28 @@ function OnTryLearnTalent(player, treeOrder, treeX, treeY)
 
 	local warningFormatString = "Player %s tried to take talent in missing tree with order %d"
 	warn(string.format(warningFormatString, player.name, treeOrder))
+end
+
+function Tick(deltaTime)
+	for _, player in pairs(Game.GetPlayers()) do
+		local totalTalentPoints = player.serverUserData.statSheet:GetLevel()
+		local currentTalentCount = UTILITY.GetPlayerTalentCount(player)
+		UTILITY.SetPlayerTalentPoints(player, totalTalentPoints - currentTalentCount)
+
+		if not isStorageLoaded[player] then
+		    local playerData = Storage.GetPlayerData(player)
+
+			if playerData.talentTree and playerData.talentTree ~= "" then
+			    for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[playerData.talentTree]) do
+			    	if string.sub(playerData.talentString, talentData.index, talentData.index) == "1" then
+				    	UTILITY.TryAddPlayerTalent(player, talentData)
+				    end
+			    end
+			end
+
+			isStorageLoaded[player] = true
+		end
+	end
 end
 
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, false)

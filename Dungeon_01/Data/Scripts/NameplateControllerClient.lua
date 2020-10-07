@@ -149,10 +149,16 @@ function CreateNameplate(character, data)
 	if character:IsA("Player") then
 		nameplateRoot:AttachToPlayer(character, "nameplate")
 		nameplates[character].baseScale = character:GetWorldScale().z
-	elseif data and data.animatedMesh then
-		data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
-		nameplateRoot:SetPosition(Vector3.UP * data.capsuleHeight * 1.1)		-- Bigger enemies need a bigger gap before their nameplate
-		nameplates[character].baseScale = data.capsuleHeight / 200.0
+	elseif data then
+		if data.animatedMesh then
+			data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
+		else
+			nameplateRoot.parent = character
+		end
+
+		-- Bigger enemies need a bigger gap before their nameplate
+		nameplateRoot:SetPosition(Vector3.UP * data.capsuleHeight * 1.2 / data.animatedMesh:GetWorldScale().z)
+		nameplates[character].baseScale = math.max(1.0, data.capsuleHeight / 300.0)
 	end
 
 	-- Static properties on pieces
@@ -336,7 +342,7 @@ function Tick(deltaTime)
 			-- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
-			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 220.0
+			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 115.0 * scale
 			local screenPosition = UI.GetScreenPosition(statusEffectPosition)
 			local targetDistance = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD .. (nameplatePosition - LOCAL_PLAYER:GetViewWorldPosition())
 
@@ -361,8 +367,8 @@ function Tick(deltaTime)
 						iconTemplate.y = uiScale * -40.0
 						iconTemplate.width = math.floor(uiScale * 100.0)
 						iconTemplate.height = math.floor(uiScale * 100.0)
-						icon.width = math.floor(uiScale * -10.0)
-						icon.height = math.floor(uiScale * -10.0)
+--						icon.width = math.floor(uiScale * -10.0)		-- TEMP
+--						icon.height = math.floor(uiScale * -10.0)
 						timeText.height = math.floor(uiScale * 100.0)
 						timeText.fontSize = uiScale * 50.0
 

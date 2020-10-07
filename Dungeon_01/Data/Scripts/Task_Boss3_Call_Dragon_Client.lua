@@ -31,16 +31,15 @@ end
 function OnTaskEnd(npc, animatedMesh, interrupted)
 end
 
-function GetDragonPosition(peak, angle)
+function GetDragonTransform(peak, angle)
 	local radians = angle * math.pi / 180.0
 	local peakRotation = peak:GetWorldRotation()
 	local forward = peakRotation * Vector3.FORWARD
 	local up = peakRotation * Vector3.UP
 	local arcCenter = peak:GetWorldPosition() - up * DRAGON_PATH_RADIUS
 	local position = arcCenter + DRAGON_PATH_RADIUS * (math.cos(radians) * up + math.sin(radians) * forward)
-	--local rotation = Rotation.New(-math.sin(radians) * up + math.cos(radians) * forward, Vector3.UP)
-	return position
-	--return Transform.New(rotation, position, Vector3.ONE)
+	local rotation = Rotation.New(-math.sin(radians) * up + math.cos(radians) * forward, Vector3.UP)
+	return Transform.New(rotation, position, Vector3.ONE)
 end
 
 function OnCallDragon(seed)
@@ -66,12 +65,12 @@ function OnCallDragon(seed)
 
 		currentTasks[2] = Task.Spawn(function()
 			local angle = -DRAGON_ANGLE_LIMIT
-			dragon = World.SpawnAsset(DRAGON_TEMPLATE, {position = GetDragonPosition(pathPeak, angle)})
+			dragon = World.SpawnAsset(DRAGON_TEMPLATE, {transform = GetDragonTransform(pathPeak, angle)})
 			local spawnTime = os.clock()
 
 			while angle < DRAGON_ANGLE_LIMIT do
 				angle = -DRAGON_ANGLE_LIMIT + (os.clock() - spawnTime) * DRAGON_SPEED
-				dragon:SetWorldPosition(GetDragonPosition(pathPeak, angle))
+				dragon:SetWorldTransform(GetDragonTransform(pathPeak, angle))
 				Task.Wait()
 			end
 

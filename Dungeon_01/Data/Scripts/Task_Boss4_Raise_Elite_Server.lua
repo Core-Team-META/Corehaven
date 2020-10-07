@@ -4,7 +4,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local SUMMON_TEMPLATE = script:GetCustomProperty("SummonTemplate")
 
 local RANGE = 0.0
-local COOLDOWN = 9.0
+local COOLDOWN = 25.0
 
 function GetPriority(npc, taskHistory)
 	for _, data in pairs(API_SE.GetStatusEffectsOnCharacter(npc)) do

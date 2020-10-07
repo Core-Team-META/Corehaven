@@ -17,8 +17,9 @@ function IsAsleep(npc)
 end
 
 function OnNPCCreated(npc, data)
-	assert(data.animatedMesh)
-	data.animatedMesh:Follow(data.followRoot, data.speed * 1.5)
+	if data.animatedMesh then
+		data.animatedMesh:Follow(data.followRoot, data.speed * 1.5)
+	end
 end
 
 function Tick(deltaTime)
@@ -26,7 +27,6 @@ function Tick(deltaTime)
 		local previousTaskString = previousTaskStrings[npc]		-- May be nil
 		local currentTaskString = npc:GetCustomProperty("CurrentTask")
 		local mesh = npcData.animatedMesh
-		assert(mesh)
 
 		if currentTaskString ~= previousTaskString then
 			local previousTask, _, _ = API_NPC.DecodeTaskString(previousTaskString)
@@ -66,36 +66,39 @@ function Tick(deltaTime)
 				end
 			end
 
-			local taskData = API_NPC.GetAllTaskData()[currentTask]
-			local asleepStance = mesh:GetCustomProperty("AsleepStance") or "unarmed_idle_relaxed"
-			local idleStance = mesh:GetCustomProperty("IdleStance") or "unarmed_idle_relaxed"
-			local runStance = mesh:GetCustomProperty("RunStance") or "unarmed_run_forward"
-			local stareStance = mesh:GetCustomProperty("StareStance") or "unarmed_idle_ready"
-			local deathAnimation = mesh:GetCustomProperty("DeathAnimation") or "unarmed_death"
-			local stunnedAnimation = mesh:GetCustomProperty("StunnedAnimation")
-			local stunnedStance = mesh:GetCustomProperty("StunnedStance")
-			mesh.animationStance = idleStance
-			mesh:StopAnimations()
+			if mesh then
+				local asleepStance = mesh:GetCustomProperty("AsleepStance") or "unarmed_idle_relaxed"
+				local idleStance = mesh:GetCustomProperty("IdleStance") or "unarmed_idle_relaxed"
+				local runStance = mesh:GetCustomProperty("RunStance") or "unarmed_run_forward"
+				local stareStance = mesh:GetCustomProperty("StareStance") or "unarmed_idle_ready"
+				local deathAnimation = mesh:GetCustomProperty("DeathAnimation") or "unarmed_death"
+				local stunnedAnimation = mesh:GetCustomProperty("StunnedAnimation")
+				local stunnedStance = mesh:GetCustomProperty("StunnedStance")
+				mesh.animationStance = idleStance
+				mesh:StopAnimations()
 
-			if currentTask == API_NPC.STATE_ASLEEP then
-				mesh.animationStance = asleepStance
-			elseif currentTask == API_NPC.STATE_IDLE then
-				mesh.animationStance = idleStance
-			elseif currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_RESETTING then
-				mesh.animationStance = runStance
-			elseif currentTask == API_NPC.STATE_STARING then
-				mesh.animationStance = stareStance
-			elseif currentTask == API_NPC.STATE_DEAD then
-				mesh:PlayAnimation(deathAnimation, {shouldLoop = true})
-			elseif currentTask == API_NPC.STATE_STUNNED then
-				if stunnedAnimation then
-					mesh:PlayAnimation(stunnedAnimation, {shouldLoop = true})
-				elseif stunnedStance then
-					mesh.animationStance = stunnedStance
+				if currentTask == API_NPC.STATE_ASLEEP then
+					mesh.animationStance = asleepStance
+				elseif currentTask == API_NPC.STATE_IDLE then
+					mesh.animationStance = idleStance
+				elseif currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_RESETTING then
+					mesh.animationStance = runStance
+				elseif currentTask == API_NPC.STATE_STARING then
+					mesh.animationStance = stareStance
+				elseif currentTask == API_NPC.STATE_DEAD then
+					mesh:PlayAnimation(deathAnimation, {shouldLoop = true})
+				elseif currentTask == API_NPC.STATE_STUNNED then
+					if stunnedAnimation then
+						mesh:PlayAnimation(stunnedAnimation, {shouldLoop = true})
+					elseif stunnedStance then
+						mesh.animationStance = stunnedStance
+					end
+				else
+					mesh.animationStance = idleStance
 				end
-			else
-				mesh.animationStance = idleStance
 			end
+
+			local taskData = API_NPC.GetAllTaskData()[currentTask]
 
 			if taskData then
 				if taskData.effectTemplate then
@@ -130,11 +133,13 @@ function Tick(deltaTime)
 			previousTargets[npc] = currentTarget
 		end
 
-		if fixedTaskName == API_NPC.STATE_CHASING or fixedTaskName == API_NPC.STATE_RESETTING then
-			local moveSpeedMultiplier = API_SE.ComputeCharacterMoveSpeedMultiplier(npc)
-			mesh.animationStancePlaybackRate = moveSpeedMultiplier
-		else
-			mesh.animationStancePlaybackRate = 1.0
+		if mesh then
+			if fixedTaskName == API_NPC.STATE_CHASING or fixedTaskName == API_NPC.STATE_RESETTING then
+				local moveSpeedMultiplier = API_SE.ComputeCharacterMoveSpeedMultiplier(npc)
+				mesh.animationStancePlaybackRate = moveSpeedMultiplier
+			else
+				mesh.animationStancePlaybackRate = 1.0
+			end
 		end
 	end
 end

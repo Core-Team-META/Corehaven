@@ -58,6 +58,7 @@ function API.RegisterNPCFolder(npcFolder)
 		data.speed = npc:GetCustomProperty("MoveSpeed")
 		data.engageRange = npc:GetCustomProperty("EngageRange")
 		data.immuneToStun = npc:GetCustomProperty("ImmuneToStun")
+		data.immobile = npc:GetCustomProperty("Immobile")
 		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
 		data.experience = npc:GetCustomProperty("Experience")
@@ -106,7 +107,10 @@ function API.RegisterNPCFolder(npcFolder)
 		data.movementEffectTemplate = npc:GetCustomProperty("MovementEffectTemplate")
 		data.deathEffectTemplate = npc:GetCustomProperty("DeathEffectTemplate")
 		data.animatedMesh = npc:FindDescendantByType("AnimatedMesh")
-		data.followRoot = npc:GetCustomProperty("FollowRoot"):GetObject()		-- This will give nil on server
+
+		if npc:GetCustomProperty("FollowRoot") then
+			data.followRoot = npc:GetCustomProperty("FollowRoot"):GetObject()		-- This will give nil on server
+		end
 
 		npcs[npc] = data
 

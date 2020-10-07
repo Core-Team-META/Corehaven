@@ -85,18 +85,20 @@ function FindClickTarget()
 		local hitCurrentTarget = false
 
 		for npc, data in pairs(API_NPC.GetAllNPCData()) do
-			local capsuleCenter = npc:GetWorldPosition() + Vector3.UP * data.capsuleHeight / 2.0
-			-- Fudge the capsule size to make it easier to click
-			local capsuleHeight = data.capsuleHeight * 1.4
-			local capsuleWidth = data.capsuleWidth * 1.4
-			local distance = FindRayCapsuleCollisionDistance(viewPosition, cursorForward, capsuleCenter, capsuleHeight, capsuleWidth)
+			if not API_NPC.IsDead(npc) then
+				local capsuleCenter = npc:GetWorldPosition() + Vector3.UP * data.capsuleHeight / 2.0
+				-- Fudge the capsule size to make it easier to click
+				local capsuleHeight = data.capsuleHeight * 1.4
+				local capsuleWidth = data.capsuleWidth * 1.4
+				local distance = FindRayCapsuleCollisionDistance(viewPosition, cursorForward, capsuleCenter, capsuleHeight, capsuleWidth)
 
-			if distance then
-				if npc == currentTarget then
-					hitCurrentTarget = true
-				elseif distance < closestDistance then
-					closestDistance = distance
-					closestNPC = npc
+				if distance then
+					if npc == currentTarget then
+						hitCurrentTarget = true
+					elseif distance < closestDistance then
+						closestDistance = distance
+						closestNPC = npc
+					end
 				end
 			end
 		end
@@ -235,7 +237,7 @@ function Tick(deltaTime)
 		else
 			local data = API_NPC.GetAllNPCData()[currentTarget]
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition())
-			TARGET_MARKER:SetWorldScale(Vector3.New(data.capsuleWidth / 150.0))
+			TARGET_MARKER:SetWorldScale(Vector3.New(data.capsuleWidth / 256.0 + 0.5))	-- We want this to scale correctly, but be a bit big
 			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.7, 0.0))
 			local targetCenter = currentTarget:GetWorldPosition() + data.capsuleHeight * Vector3.UP * 0.5
 			local targetHat = (targetCenter - LOCAL_PLAYER:GetViewWorldPosition()):GetNormalized()

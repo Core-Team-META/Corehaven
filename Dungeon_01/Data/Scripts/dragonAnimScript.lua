@@ -3,7 +3,7 @@ local PLAYER = Game.GetLocalPlayer()
 
 -- set these bools from external scripts if you want to enable/disable the fish swimming or orienting to movement behaviors
 ROOT.clientUserData.isFishAnimationEnabled = true
-ROOT.clientUserData.isFishOrientationEnabled = true
+ROOT.clientUserData.isFishOrientationEnabled = false
 
 
 local timeSinceAnimationStatusChanged = time()

@@ -160,7 +160,7 @@ function OnBindingPressed(player, binding)
 			if CanActivate(groundTargetAbilityName) then
 				local target = groundTargetReticle:GetWorldPosition()
 
-				if CanCast(groundTargetAbilityName) then
+				if CanCast(groundTargetAbilityName, target) then
 					CastAbility(groundTargetAbilityName, target)
 				else
 					queuedAbilityName = groundTargetAbilityName
@@ -188,7 +188,7 @@ end
 
 -- Owning client
 function CastAbility(abilityName, target)
-	assert(CanCast(abilityName))
+	assert(CanCast(abilityName, target))
 	local data = abilityData[abilityName]
 
 	local targetOrId = target
@@ -402,7 +402,7 @@ function Tick()
 	-- Check queued ability
 	if queuedAbilityName then
 		if GetTimeUntilReady(queuedAbilityName) == 0.0 then
-			if CanCast(queuedAbilityName) then
+			if CanCast(queuedAbilityName, queuedAbilityTarget) then
 				CastAbility(queuedAbilityName, queuedAbilityTarget)
 			end
 
@@ -464,8 +464,18 @@ function IsTargetValid(player, target, abilityName)
 	end
 
 	-- Is the target out of range
-	if data.range and (targetPosition - player:GetWorldPosition()).size > data.range then
-		return false, "Target out of range"
+	if data.range then
+		local targetRadius = 0.0
+
+		if target:IsA("Player") then
+			targetRadius = target:GetWorldScale().x * 50.0
+		elseif target:IsA("CoreObject") then
+			targetRadius = API_NPC.GetAllNPCData()[target].capsuleWidth / 2.0
+		end
+
+		if (targetPosition - player:GetWorldPosition()).size > data.range + targetRadius then
+			return false, "Target out of range"
+		end
 	end
 
 	--[[ (Currently disabled) Does this ability require facing and the target is behind the caster
@@ -670,7 +680,7 @@ end
 
 -- Owning client
 -- Whether this ability can be cast right now.
-function CanCast(abilityName)
+function CanCast(abilityName, target)
 	local data = abilityData[abilityName]
 	assert(playerAbilities[LOCAL_PLAYER][abilityName])
 
@@ -679,7 +689,7 @@ function CanCast(abilityName)
 	end
 
 	if data.targets then
-		if not IsTargetValid(LOCAL_PLAYER, queuedAbilityTarget, abilityName) then
+		if not IsTargetValid(LOCAL_PLAYER, target, abilityName) then
 			return false
 		end
 	end
@@ -735,7 +745,7 @@ function API.Trigger(abilityName)
 			target = GetEffectiveTarget(abilityName)
 		end
 
-		if CanCast(abilityName) then
+		if CanCast(abilityName, target) then
 			CastAbility(abilityName, target)
 		else
 			queuedAbilityName = abilityName

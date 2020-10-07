@@ -29,7 +29,7 @@ function API.CreateProjectile(source, target, horizontalSpeed, gravityAmount, pr
 
 	local projectile = World.SpawnAsset(projectileTemplate, {position = GetCorrectPosition(source)})
 	local expectedTravelTime = API.GetTravelTime(source, target, horizontalSpeed)
-	local peakHeight = G * expectedTravelTime ^ 2 / 8.0		-- y = 1/2 at^2, but t = expectedTravelTime / 2
+	local peakHeight = G * gravityAmount * expectedTravelTime ^ 2 / 8.0		-- y = 1/2 at^2, but t = expectedTravelTime / 2
 
 	if peakHeight > MAX_LINEAR_HEIGHT then
 		peakHeight = (peakHeight - MAX_LINEAR_HEIGHT) ^ (0.5) + MAX_LINEAR_HEIGHT

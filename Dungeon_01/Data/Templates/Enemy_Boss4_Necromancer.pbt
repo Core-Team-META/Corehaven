@@ -55,11 +55,11 @@
           }
           Overrides {
             Name: "cs:CapsuleHeight"
-            Float: 315
+            Float: 525
           }
           Overrides {
             Name: "cs:CapsuleWidth"
-            Float: 150
+            Float: 250
           }
           Overrides {
             Name: "cs:Experience"
@@ -99,6 +99,14 @@
           }
           Overrides {
             Name: "cs:DropChance1"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "Boss5"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
             Float: 0.5
           }
           Overrides {
@@ -365,7 +373,7 @@
         Name: "FollowRoot"
         Transform {
           Location {
-            Z: 158
+            Z: 262.5
           }
           Rotation {
           }
@@ -391,14 +399,14 @@
         Name: "AnimatedMesh"
         Transform {
           Location {
-            Z: 158
+            Z: 262.5
           }
           Rotation {
           }
           Scale {
-            X: 1.5
-            Y: 1.5
-            Z: 1.5
+            X: 2.5
+            Y: 2.5
+            Z: 2.5
           }
         }
         ParentId: 2330649881682787815

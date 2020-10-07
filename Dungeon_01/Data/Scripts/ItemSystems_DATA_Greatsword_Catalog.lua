@@ -26,13 +26,4 @@
     Lore = '',
     ['Author Notes (will be ignored by script)'] = '',
   },
-  {
-    Name = 'Skullsplitter',
-    Type = 'Greatsword',
-    Rarity = 'Epic',
-    StatKey = 'EpicAttackGreatsword',
-    MUID = 'A1E3AC3852540AE7:ITEM_Greatsword_Bastard',
-    Lore = '',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
 }

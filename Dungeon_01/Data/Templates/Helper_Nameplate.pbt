@@ -160,6 +160,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -214,6 +215,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -268,6 +270,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -322,6 +325,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -484,6 +488,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -538,6 +543,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
@@ -592,6 +598,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableCastShadows: true
           DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {

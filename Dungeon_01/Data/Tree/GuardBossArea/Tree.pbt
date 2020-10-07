@@ -12197,6 +12197,7 @@ Objects {
   ChildIds: 404862872069805314
   ChildIds: 13544934196026051172
   ChildIds: 17089783488717544269
+  ChildIds: 8627799080071970556
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12205,6 +12206,46 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8627799080071970556
+  Name: "Collision"
+  Transform {
+    Location {
+      X: 84.2936935
+      Y: -125.258537
+      Z: -421.03949
+    }
+    Rotation {
+      Yaw: 39.5939369
+    }
+    Scale {
+      X: 10.8779039
+      Y: 13.0846815
+      Z: 10.625701
+    }
+  }
+  ParentId: 3803416987226999788
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {

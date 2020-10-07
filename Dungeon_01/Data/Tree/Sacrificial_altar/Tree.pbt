@@ -305,13 +305,6 @@ Objects {
   Folder {
     IsGroup: true
   }
-  InstanceHistory {
-    SelfId: 17487532043565973462
-    SubobjectId: 11634834654677743945
-    InstanceId: 16967881827446885828
-    TemplateId: 8199640815021246511
-    WasRoot: true
-  }
 }
 Objects {
   Id: 6885452940724524164
@@ -348,12 +341,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 6885452940724524164
-    SubobjectId: 885246759842337307
-    InstanceId: 16967881827446885828
-    TemplateId: 8199640815021246511
   }
 }
 Objects {
@@ -394,12 +381,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 3156952098866428254
-    SubobjectId: 8649359835787263937
-    InstanceId: 16967881827446885828
-    TemplateId: 8199640815021246511
-  }
 }
 Objects {
   Id: 17640400409850584607
@@ -439,12 +420,6 @@ Objects {
       }
     }
   }
-  InstanceHistory {
-    SelfId: 17640400409850584607
-    SubobjectId: 12035948556276111488
-    InstanceId: 16967881827446885828
-    TemplateId: 8199640815021246511
-  }
 }
 Objects {
   Id: 12291739965172163954
@@ -483,12 +458,6 @@ Objects {
       Physics {
       }
     }
-  }
-  InstanceHistory {
-    SelfId: 12291739965172163954
-    SubobjectId: 17965428028371969005
-    InstanceId: 16967881827446885828
-    TemplateId: 8199640815021246511
   }
 }
 Objects {

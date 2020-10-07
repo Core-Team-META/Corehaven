@@ -374,6 +374,24 @@ function UTILITY.DoesPlayerHaveTalent(player, talentData)
 end
 
 -- Client and Server
+function UTILITY.GetPlayerTalentCount(player)
+	local result = 0
+
+	for treeName, _ in pairs(UTILITY.TALENT_TREE_TABLE) do
+		local playerStateTreeHelper = UTILITY.GetPlayerStateTreeHelper(player, treeName)
+		local talentString = playerStateTreeHelper:GetCustomProperty("TalentString")
+
+		for i = 1, string.len(talentString) do
+			if string.sub(talentString, i, i) == "1" then
+				result = result + 1
+			end
+		end
+	end
+
+	return result
+end
+
+-- Client and Server
 function UTILITY.CanPlayerAcquireTalent(player, talentData)
 	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
 	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
@@ -438,6 +456,12 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	end
 
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)
+
+	-- This depends on the restriction that players can only spend points in one tree at a time
+	local playerData = Storage.GetPlayerData(player)
+	playerData.talentTree = talentData.treeName
+	playerData.talentString = newTalentString
+	Storage.SetPlayerData(player, playerData)
 end
 
 -- Server only
@@ -473,6 +497,12 @@ function UTILITY.ResetTalentTrees(player)
 	end
 
 	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
+
+	local playerData = Storage.GetPlayerData(player)
+	playerData.talentTree = ""
+	playerData.talentString = talentString
+	Storage.SetPlayerData(player, playerData)
+
 end
 
 -- Client and Server
@@ -489,6 +519,12 @@ function UTILITY.AddPlayerTalentPoints(player, addedPoints)
 	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
 	local currentPoints = playerStateHelper:GetCustomProperty("TalentPoints")
 	playerStateHelper:SetNetworkedCustomProperty("TalentPoints", currentPoints + addedPoints)
+end
+
+-- Server only
+function UTILITY.SetPlayerTalentPoints(player, newValue)
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+	playerStateHelper:SetNetworkedCustomProperty("TalentPoints", newValue)
 end
 
 -- Server only

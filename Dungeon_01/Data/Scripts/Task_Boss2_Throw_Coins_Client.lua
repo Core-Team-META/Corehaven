@@ -44,7 +44,7 @@ function OnThrowCoins(center, seed)
 			local impactDelay = INITIAL_DELAY + (i - 1) * INCREMENTAL_DELAY
 			local projectileSpeed = (target - center).size / impactDelay
 			-- Gravity scale has to be tiny since the times are so large
-			API_P.CreateProjectile(center, target, projectileSpeed, 0.01, PROJECTILE_TEMPLATE)
+			API_P.CreateProjectile(center, target, projectileSpeed, 1.0, PROJECTILE_TEMPLATE)
 			Task.Wait(impactDelay - TELEGRAPH_DURATION)
 			local telegraphObject = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = target, scale = Vector3.New(POOL_RADIUS / 100.0)})
 			Task.Wait(TELEGRAPH_DURATION)

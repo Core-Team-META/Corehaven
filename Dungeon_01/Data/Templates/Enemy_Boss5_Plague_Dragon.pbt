@@ -15,8 +15,115 @@
             Z: 1.07335877
           }
         }
-        ParentId: 4985076143508798930
+        ParentId: 17712650157994338287
         ChildIds: 18385059976885725657
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:HealthFraction"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:CurrentTask"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:TargetID"
+            String: ""
+          }
+          Overrides {
+            Name: "cs:Name"
+            String: "Scylla, the Arisen Blight"
+          }
+          Overrides {
+            Name: "cs:BaseMaxHitPoints"
+            Float: 6000
+          }
+          Overrides {
+            Name: "cs:MoveSpeed"
+            Float: 800
+          }
+          Overrides {
+            Name: "cs:EngageRange"
+            Float: 500
+          }
+          Overrides {
+            Name: "cs:ImmuneToStun"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:Immobile"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:CapsuleHeight"
+            Float: 450
+          }
+          Overrides {
+            Name: "cs:CapsuleWidth"
+            Float: 1250
+          }
+          Overrides {
+            Name: "cs:Experience"
+            Float: 40
+          }
+          Overrides {
+            Name: "cs:Task1"
+            String: "boss5_plague_orb"
+          }
+          Overrides {
+            Name: "cs:Task2"
+            String: "boss5_plague_volley"
+          }
+          Overrides {
+            Name: "cs:Task3"
+            String: "boss5_piercing_screech"
+          }
+          Overrides {
+            Name: "cs:DropKey1"
+            String: "Boss5"
+          }
+          Overrides {
+            Name: "cs:DropChance1"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "cs:OnPulledEventName"
+            String: "Boss5Pulled"
+          }
+          Overrides {
+            Name: "cs:OnResetEventName"
+            String: "Boss5Reset"
+          }
+          Overrides {
+            Name: "cs:OnDiedEventName"
+            String: "Boss5Died"
+          }
+          Overrides {
+            Name: "cs:MovementEffectTemplate"
+            AssetReference {
+              Id: 2191240521660447709
+            }
+          }
+          Overrides {
+            Name: "cs:DeathEffectTemplate"
+            AssetReference {
+              Id: 7305482317703142035
+            }
+          }
+          Overrides {
+            Name: "cs:HealthFraction:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:CurrentTask:isrep"
+            Bool: true
+          }
+          Overrides {
+            Name: "cs:TargetID:isrep"
+            Bool: true
+          }
+        }
+        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -31,8 +138,10 @@
         Name: "dragon_scale_adjustment"
         Transform {
           Location {
+            Z: 234.924881
           }
           Rotation {
+            Yaw: 90
           }
           Scale {
             X: 5

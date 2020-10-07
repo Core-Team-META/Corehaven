@@ -51,8 +51,10 @@ function UpdateEffectObjects(character, data)
 
 				if character:IsA("Player") then
 					effectObjects[character][i]:AttachToPlayer(character, "root")
-				else
+				elseif data.animatedMesh then
 					data.animatedMesh:AttachCoreObject(effectObjects[character][i], "root")
+				else
+					effectObjects[character][i].parent = character
 				end
 			end
 		elseif not effects[i] and effectObject then

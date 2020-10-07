@@ -51,6 +51,7 @@ function data.onCastServer(caster, target)
 	if hitResult then
 		caster:SetWorldPosition(hitResult:GetImpactPosition() + Vector3.UP * 110.0 * caster:GetWorldScale().z)
 		caster:SetWorldRotation(Rotation.New(0.0, 0.0, target:GetWorldRotation().z))
+		caster:ResetVelocity()
 		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 		API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat)
 		API_RE.BroadcastToPlayer(caster, "SA", API_ID.GetIdFromObject(target))

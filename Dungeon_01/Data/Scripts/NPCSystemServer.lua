@@ -136,7 +136,11 @@ function UpdateCurrentTask(npc)
 		local currentTask = npcState.taskHistory[1]
 
 		if currentTask ~= API_NPC.STATE_CHASING and currentTask ~= API_NPC.STATE_STARING then
-			SetCurrentTask(npc, API_NPC.STATE_CHASING, false)
+			if npcData.immobile then
+				SetCurrentTask(npc, API_NPC.STATE_STARING, false)
+			else
+				SetCurrentTask(npc, API_NPC.STATE_CHASING, false)
+			end
 		end
 	else
 		local r = math.random() * totalPriorty
@@ -538,7 +542,7 @@ function Tick(deltaTime)
 				currentTask = npcState.taskHistory[1]	-- We may have changed tasks since we last read this
 
 				if currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_STARING then
-					if time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate then
+					if not npcData.immobile and (time() >= npcState.nextMoveUpdateTime or npcState.shouldMoveUpdate) then
 						-- Movement
 						local targetPosition = API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0
 						local path = API_EP.GetPath(npcPosition, targetPosition)

@@ -8628,7 +8628,7 @@ Objects {
       FacingMode {
         Value: "mc:efacingmode:faceaimwhenactive"
       }
-      DefaultRotationRate: 1620
+      DefaultRotationRate: 720
       SlideRotationRate: 20
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
@@ -8776,7 +8776,7 @@ Objects {
       RagdollOnDeath: true
       EnablePlayerStorage: true
       ChatMode {
-        Value: "mc:echatmode:teamandall"
+        Value: "mc:echatmode:allonly"
       }
     }
   }
@@ -9229,6 +9229,351 @@ Objects {
   ChildIds: 16867338321283860326
   ChildIds: 16240463941102789285
   ChildIds: 4620567509811073979
+  ChildIds: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12204297333323042651
+  Name: "Boss5Targets"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15283256722166935863
+  ChildIds: 5603063302459482386
+  ChildIds: 3553724376372933224
+  ChildIds: 16601472455686722601
+  ChildIds: 1313570742302298945
+  ChildIds: 15370604392040070986
+  ChildIds: 6824107056281982072
+  ChildIds: 8574759190173194193
+  ChildIds: 2039213517346494897
+  ChildIds: 4307553650322591472
+  ChildIds: 18310957992350195716
+  ChildIds: 5842017263123445352
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5842017263123445352
+  Name: "Group"
+  Transform {
+    Location {
+      X: 28219.9863
+      Y: -18041.2715
+      Z: 7043.46875
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 18310957992350195716
+  Name: "Group"
+  Transform {
+    Location {
+      X: 25524.4746
+      Y: -17941.2168
+      Z: 7026.95361
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4307553650322591472
+  Name: "Group"
+  Transform {
+    Location {
+      X: 29032.5469
+      Y: -15648.7061
+      Z: 7085.57227
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2039213517346494897
+  Name: "Group"
+  Transform {
+    Location {
+      X: 28314.6211
+      Y: -14969.1699
+      Z: 7083.43213
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8574759190173194193
+  Name: "Group"
+  Transform {
+    Location {
+      X: 27925.6738
+      Y: -14536.3027
+      Z: 7087.51611
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6824107056281982072
+  Name: "Group"
+  Transform {
+    Location {
+      X: 28265.7773
+      Y: -11861.4063
+      Z: 6923.68262
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15370604392040070986
+  Name: "Group"
+  Transform {
+    Location {
+      X: 27725.4922
+      Y: -11512.3916
+      Z: 6917.90576
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1313570742302298945
+  Name: "Group"
+  Transform {
+    Location {
+      X: 27024.3496
+      Y: -11386.9951
+      Z: 6917.90576
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 16601472455686722601
+  Name: "Group"
+  Transform {
+    Location {
+      X: 26506.1309
+      Y: -11326.2334
+      Z: 6917.90576
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 3553724376372933224
+  Name: "Group"
+  Transform {
+    Location {
+      X: 26143.7344
+      Y: -14330.1445
+      Z: 7063.07764
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5603063302459482386
+  Name: "Group"
+  Transform {
+    Location {
+      X: 25317.1484
+      Y: -14743.4219
+      Z: 7068.82129
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12204297333323042651
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9241,7 +9586,7 @@ Objects {
 }
 Objects {
   Id: 4620567509811073979
-  Name: "ClientContext"
+  Name: "Boss4HandHelper"
   Transform {
     Location {
     }
@@ -9266,7 +9611,7 @@ Objects {
 }
 Objects {
   Id: 11285792379951504469
-  Name: "Boss4HandHelper"
+  Name: "HandHelper"
   Transform {
     Location {
     }
@@ -20752,7 +21097,7 @@ Objects {
     Overrides {
       Name: "cs:SummonTemplate"
       AssetReference {
-        Id: 11272925145965958020
+        Id: 14634173065214442235
       }
     }
   }
@@ -25457,6 +25802,12 @@ Objects {
   ParentId: 15214246396461168156
   ChildIds: 12964143400490911924
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 11818131731923366081
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -25480,6 +25831,12 @@ Objects {
   }
   ParentId: 17712650157994338287
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 2330649881682787815
@@ -25492,7 +25849,7 @@ Objects {
           Name: "Position"
           Vector {
             X: 26803.6055
-            Y: -17548.6387
+            Y: -16178.3525
             Z: 6797.8208
           }
         }
