@@ -12,7 +12,7 @@ local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObj
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
-local CLICK_COOLDOWN = script:GetCustomProperty("ClickCooldown")
+local EQUIP_SLOT_COOLDOWN = script:GetCustomProperty("EquipSlotCooldown")
 local CLICK_TIMEOUT = script:GetCustomProperty("ClickTimeout")
 local CLICK_DEADZONE_RADIUS = script:GetCustomProperty("ClickDeadzoneRadius")
 local TEMPLATE_SLOT_BACKPACK = script:GetCustomProperty("TemplateSlotBackpack")
@@ -20,6 +20,7 @@ local TEMPLATE_SLOT_EQUIPPED = script:GetCustomProperty("TemplateSlotEquipped")
 local CURSOR_HIGHLIGHT_BACKPACK = script:GetCustomProperty("CursorHighlightBackpack")
 local SFX_EQUIP = script:GetCustomProperty("SFX_Equip")
 local SFX_MOVE = script:GetCustomProperty("SFX_Move")
+local SFX_MOVE_FAIL = script:GetCustomProperty("SFX_MoveFail")
 local SFX_DISCARD = script:GetCustomProperty("SFX_Discard")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -116,6 +117,11 @@ local function SetupControl(control, processSlot)
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
         assert(control.clientUserData.icon and control.clientUserData.border)
+        if control:GetCustomProperty("CooldownWheel") then
+            control.clientUserData.cooldownWheel = control:GetCustomProperty("CooldownWheel"):WaitForObject()
+            control.clientUserData.cooldownWheelRight = control.clientUserData.cooldownWheel:GetCustomProperty("Right"):WaitForObject()
+            control.clientUserData.cooldownWheelLeft = control.clientUserData.cooldownWheel:GetCustomProperty("Left"):WaitForObject()
+        end
         if control:GetCustomProperty("Disabled") then
             control.clientUserData.disabled = control:GetCustomProperty("Disabled"):WaitForObject()
         end
@@ -203,6 +209,8 @@ end
 function view:InitEquippedSlots()
     self.allSlots = self.allSlots or {}
     self.equippedSlots = {}
+    self.equipSlotCooldowns = {}
+    self.accessoryEquipCycle = 0
     TraverseAndSetupSlots(PANEL_EQUIPPED, function(slot) table.insert(self.equippedSlots, slot) end)
     local accessoryOffset = 1
     for i,slot in ipairs(self.equippedSlots) do
@@ -231,9 +239,29 @@ function view:InitBackpackSlots()
 end
 
 -----------------------------------------------------------------------------------------------------------------
+function view:IsSlotOnCooldown(slotIndex)
+    return self.equipSlotCooldowns[slotIndex] and time() < self.equipSlotCooldowns[slotIndex]
+end
+
+function view:CommenceSlotCooldown(slotIndex)
+    -- Only equipment slots have a cooldown.
+    if slotIndex and inventory:IsEquipSlot(slotIndex) then
+        self.equipSlotCooldowns[slotIndex] = time() + EQUIP_SLOT_COOLDOWN
+    end
+end
+
+-----------------------------------------------------------------------------------------------------------------
 function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
+    -- If either slot is an equip slot on cooldown, do not perform action.
+    if self:IsSlotOnCooldown(fromSlotIndex) or self:IsSlotOnCooldown(toSlotIndex) then
+        PlaySound(SFX_MOVE_FAIL)
+        return
+    end
+    -- Attempt to move inventory items.
     if inventory:CanMoveItem(fromSlotIndex, toSlotIndex) then
         inventory:MoveItem(fromSlotIndex, toSlotIndex)
+        self:CommenceSlotCooldown(fromSlotIndex)
+        self:CommenceSlotCooldown(toSlotIndex)
         if toSlotIndex then
             if inventory:IsEquipSlot(toSlotIndex) or inventory:IsEquipSlot(fromSlotIndex) then
                 local newlyEquippedItem = inventory:GetItem(toSlotIndex)
@@ -244,6 +272,8 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
         else
             PlaySound(SFX_DISCARD)
         end
+    else
+        PlaySound(SFX_MOVE_FAIL)
     end
 end
 
@@ -287,6 +317,10 @@ end
 function view:SetHoverState(slotUnderCursor)
     self.slotUnderCursor = slotUnderCursor
     self.itemUnderCursor = inventory:GetItem(slotUnderCursor.clientUserData.slotIndex)
+    -- Clear the display suppression as soon as we have moved away from the last interaction.
+    if self.slotUnderCursor ~= self.suppressDisplayOverSlot then
+        self.suppressDisplayOverSlot = nil
+    end
 end
 
 function view:ClearHoverState()
@@ -296,11 +330,6 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:PerformClickAction()
-    -- We don't want super-fast subsequent clicking, so there is a mild cooldown implemented.
-    if self.clickCooldownStart and time() < self.clickCooldownStart + CLICK_COOLDOWN then
-        return
-    end
-    self.clickCooldownStart = time()
     -- Now go ahead an perform the appropriate action.
     local clickedItem = inventory:GetItem(self.clickSlotIndex)
     if inventory:IsEquipSlot(self.clickSlotIndex) then
@@ -309,7 +338,13 @@ function view:PerformClickAction()
             self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
         end
     else
-        local equipSlotIndex = inventory:ConvertEquipSlotIndex(clickedItem:GetEquipSlotType())
+        local equipSlotType = clickedItem:GetEquipSlotType()
+        local equipSlotOffset = nil
+        if equipSlotType == "Accessory" then
+            equipSlotOffset = self.accessoryEquipCycle + 1
+            self.accessoryEquipCycle = (self.accessoryEquipCycle + 1) % inventory.NUM_ACCESSORY_SLOTS 
+        end
+        local equipSlotIndex = inventory:GetFreeEquipSlot(equipSlotType) or inventory:ConvertEquipSlotIndex(equipSlotType, equipSlotOffset)
         if equipSlotIndex then
             self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
         end
@@ -337,7 +372,6 @@ function view:OnBindingReleased(binding)
     if binding == "ability_primary" then
         if self.isClick then
             self:PerformClickAction()
-
         elseif self.isDragging then
             self:PerformDragDropAction()
         end
@@ -465,9 +499,20 @@ function view:DrawSlots()
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
         end
 
-        -- An additional graphic shows when the slot is not enabled.
+        -- Equipment slots have a couple extra visual cues.
         if inventory:IsEquipSlot(slot.clientUserData.slotIndex) then
+            -- An additional graphic shows when the slot is not enabled.
             slot.clientUserData.disabled.visibility = inventory:IsSlotEnabled(slot.clientUserData.slotIndex) and Visibility.FORCE_OFF or Visibility.INHERIT
+            -- A cooldown wheel shows when the slot is on timeout.
+            if self:IsSlotOnCooldown(slot.clientUserData.slotIndex) then
+                slot.clientUserData.cooldownWheel.visibility = Visibility.INHERIT
+                local cooldownFractionRemaining = CoreMath.Clamp((self.equipSlotCooldowns[slot.clientUserData.slotIndex] - time()) / EQUIP_SLOT_COOLDOWN)
+                local cooldownFractionElapsed = 1.0 - cooldownFractionRemaining
+                slot.clientUserData.cooldownWheelRight.rotationAngle = CoreMath.Clamp(cooldownFractionElapsed / 0.5) * 180
+                slot.clientUserData.cooldownWheelLeft.rotationAngle = CoreMath.Clamp(-1.0 + cooldownFractionElapsed / 0.5) * 180
+            else
+                slot.clientUserData.cooldownWheel.visibility = Visibility.FORCE_OFF
+            end
         end
     end
 end
