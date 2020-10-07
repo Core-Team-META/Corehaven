@@ -30203,14 +30203,6 @@ Objects {
             Yaw: -128.269623
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -30627,15 +30619,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11860041625734473373
-      value {
-        Overrides {
-          Name: "PlayOnStartAnimation"
-          String: ""
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12555114022526006492
       value {
         Overrides {
@@ -30654,14 +30637,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -153.797501
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

@@ -43,7 +43,6 @@
           }
         }
         ParentId: 12796105609349268729
-        ChildIds: 9959975192656560398
         ChildIds: 501248268529072611
         ChildIds: 13381070179135996978
         Collidable_v2 {
@@ -53,181 +52,6 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         NetworkContext {
-        }
-      }
-      Objects {
-        Id: 9959975192656560398
-        Name: "Group"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 4833765052166738680
-        ChildIds: 8640257298941769382
-        ChildIds: 15158827688853186825
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 8640257298941769382
-        Name: "Magic Burst Hemicircle VFX"
-        Transform {
-          Location {
-            Z: -90
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9959975192656560398
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Local Space"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Sparks"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 25
-              G: 0.969000041
-              B: 0.999984145
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              R: 5
-              G: 0.749
-              B: 0.99999994
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Enable Lettering"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4657025066300167718
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 15158827688853186825
-        Name: "Magic Burst Hemicircle VFX"
-        Transform {
-          Location {
-            Z: -90
-          }
-          Rotation {
-            Yaw: 179.999802
-            Roll: 2.04904663e-05
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 9959975192656560398
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Local Space"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Sparks"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 25
-              G: 0.969000041
-              B: 0.999984145
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              R: 5
-              G: 0.749
-              B: 0.99999994
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Enable Lettering"
-            Bool: true
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 4657025066300167718
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
         }
       }
       Objects {
@@ -335,15 +159,6 @@
             AutoPlay: true
           }
         }
-      }
-    }
-    Assets {
-      Id: 4657025066300167718
-      Name: "Magic Burst Hemicircle VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_magic_burst_hemicircle"
       }
     }
     Assets {

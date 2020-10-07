@@ -14,7 +14,7 @@ function OnTaskEnd(npc, animatedMesh)
 end
 
 function OnMeteor(targetPosition)
-	local telegraphScale = Vector3.New(METEOR_RADIUS / 100.0)
+	local telegraphScale = Vector3.New(METEOR_RADIUS / 350.0)
 	local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = targetPosition, scale = telegraphScale})
 	Task.Wait(3.5)
 	telegraph:Destroy()

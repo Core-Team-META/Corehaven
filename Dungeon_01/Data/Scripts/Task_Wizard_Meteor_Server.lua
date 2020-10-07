@@ -27,7 +27,7 @@ function OnTaskStart(npc, threatTable)
 		end
 
 		API_RE.BroadcastToAllPlayers("WM", targetPosition)
-		Task.Wait(3.5)
+		Task.Wait(2.5)
 
 		for _, player in pairs(Game.FindPlayersInSphere(targetPosition + Vector3.UP * 100.0, METEOR_RADIUS, {ignoreDead = true})) do
 			local playerOffset = player:GetWorldPosition() - targetPosition
