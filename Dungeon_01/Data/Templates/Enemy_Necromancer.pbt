@@ -246,9 +246,9 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.9
+            Y: 0.9
+            Z: 0.9
           }
         }
         ParentId: 15939061312405223543
@@ -260,6 +260,14 @@
               B: 0.460000038
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.8
           }
         }
         Collidable_v2 {
@@ -315,9 +323,9 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.9
+            Y: 0.9
+            Z: 0.9
           }
         }
         ParentId: 9740147278317972489
@@ -329,6 +337,14 @@
               B: 0.460000038
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.8
           }
         }
         Collidable_v2 {

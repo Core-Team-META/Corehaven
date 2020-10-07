@@ -246,9 +246,9 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
         ParentId: 2991977800690752903
@@ -256,9 +256,18 @@
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.99
+              R: 0.799999952
+              G: 0.0635761693
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.8
           }
         }
         Collidable_v2 {
@@ -314,9 +323,9 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
         ParentId: 4393995068763251594
@@ -324,9 +333,18 @@
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.99
+              R: 0.799999952
+              G: 0.0635761693
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 3
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.8
           }
         }
         Collidable_v2 {
