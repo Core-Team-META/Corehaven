@@ -99,6 +99,7 @@ function Tick(deltaTime)
 			end
 
 			isStorageLoaded[player] = true
+			Events.Broadcast("TalentsLoaded", player)
 		end
 	end
 end

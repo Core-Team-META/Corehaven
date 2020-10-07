@@ -1,4 +1,5 @@
 ﻿local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
@@ -96,12 +97,17 @@ local USER_FACING_BINDINGS =
 	ability_extra_67 = "End"
 }
 
+local LAYOUT_SAVE_PERIOD = 1.0
+
 local buttonData = {}			-- int -> table {abilityName = string, button = CoreObject}
 local draggingIndex = 0
 local isDraggingEnabled = false	-- When true, the action bar icons can be re-arranged.
 local wasCursorVisible = false	-- Last frame, for change detection
+local layoutSaved = true		-- If we have sent the layout to the server to be persisted since it last changed
+local layoutLoaded = false
+local lastLayoutSaveTime = 0.0	-- Rate limit our updates. Users won't notice most of the time
 
-local function TryTriggerActionAtIndex(index)
+function TryTriggerActionAtIndex(index)
 	local abilityName = buttonData[index].abilityName
 
 	if abilityName and API_A.CanTrigger(abilityName) then
@@ -130,6 +136,85 @@ function SpawnAbilityButton(abilityName, socketIndex)
 	end)
 	return button
 end
+
+function SortCompare(a, b)
+	if a.abilityName and b.abilityName then
+		return a.abilityName < b.abilityName
+	else
+		return a.abilityName ~= nil
+	end
+end
+
+function UpdateLayoutString()
+	local abilityList = {}
+
+	for i, data in pairs(buttonData) do
+		abilityList[i] = {abilityName = data.abilityName, index = i}
+	end
+
+	table.sort(abilityList, SortCompare)
+
+	local layoutString = ""
+	local abilityCount = 0
+
+	for _, listEntry in ipairs(abilityList) do
+		if listEntry.abilityName then
+			abilityCount = abilityCount + 1
+		end
+
+		layoutString = layoutString .. tostring(listEntry.index)
+	end
+
+	layoutString = tostring(abilityCount) .. layoutString
+	API_RE.BroadcastToServer("SABL", layoutString)
+	layoutSaved = true
+	lastLayoutSaveTime = os.clock()
+end
+
+function OnLoadActionBarLayout(layoutString)
+	if not layoutString then
+		layoutLoaded = true
+		return
+	end
+
+	function GetAbilityCount()
+		local result = 0
+
+		for _, data in ipairs(buttonData) do
+			if data.abilityName then
+				result = result + 1
+			end
+		end
+
+		return result
+	end
+
+	-- We don't have all our abilities yet, or they were already changed
+	local expectedAbilitycount = tonumber(string.sub(layoutString, 1, 1))
+
+	while GetAbilityCount() ~= expectedAbilitycount do
+		Task.Wait()
+	end
+
+	layoutLoaded = true
+	local tempData = {}
+
+	for i, data in pairs(buttonData) do
+		tempData[i] = data
+	end
+
+	table.sort(tempData, SortCompare)
+
+	for i = 1, NUMBER_OF_SLOTS do
+		local newIndex = tonumber(string.sub(layoutString, i + 1, i + 1))
+		buttonData[newIndex] = tempData[i]
+
+		if buttonData[newIndex].button then
+			PlaceInSocket(buttonData[newIndex].button, newIndex)
+		end
+	end
+end
+
 
 function GetSocketIndexAtCursorPosition()
 	-- This depends on the panel being both anchored and docked at Bottom Center and the buttons being anchored and
@@ -239,6 +324,7 @@ function ReleaseDraggingButton()
 		end
 
 		draggingIndex = 0
+		layoutSaved = false
 	end
 end
 
@@ -248,7 +334,7 @@ function OnBindingPressed(player, binding)
 		local index = GetSocketIndexAtCursorPosition()
 
 		if index ~= 0 and buttonData[index].abilityName then
-			if isDraggingEnabled then
+			if layoutLoaded and isDraggingEnabled then
 				-- The action bar is unlocked, and a mouse-press indicates a desire to drag&drop.
 				draggingIndex = index
 				local button = buttonData[draggingIndex].button
@@ -290,6 +376,8 @@ function OnAbilityGained(player, abilityName)
 	if not socketFound then
 		warn(string.format("New ability %s on local player. Action bar is full.", abilityName))
 	end
+	
+	layoutSaved = false
 end
 
 function OnAbilityRemoved(player, abilityName)
@@ -306,6 +394,8 @@ function OnAbilityRemoved(player, abilityName)
 			return
 		end
 	end
+
+	layoutSaved = false
 end
 
 function Tick(deltaTime)
@@ -389,6 +479,11 @@ function Tick(deltaTime)
 	end
 
 	wasCursorVisible = isCursorVisible
+	local clock = os.clock()
+
+	if not layoutSaved and clock >= lastLayoutSaveTime + LAYOUT_SAVE_PERIOD then
+		UpdateLayoutString()
+	end
 end
 
 local socketTemplateWidth = nil
@@ -411,4 +506,5 @@ LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
 Events.Connect("AbilityGained", OnAbilityGained)
 Events.Connect("AbilityRemoved", OnAbilityRemoved)
+Events.Connect("LABL", OnLoadActionBarLayout)
 

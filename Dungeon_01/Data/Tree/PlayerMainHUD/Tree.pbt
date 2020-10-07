@@ -1,7 +1,7 @@
 ﻿Name: "PlayerMainHUD"
 RootId: 2833047303521512166
 Objects {
-  Id: 4722145824645845487
+  Id: 11219060422771276961
   Name: "Action Bar"
   Transform {
     Location {
@@ -15,8 +15,8 @@ Objects {
     }
   }
   ParentId: 2833047303521512166
-  ChildIds: 18198484372217638935
-  ChildIds: 18344726796775644403
+  ChildIds: 8463218587589422816
+  ChildIds: 11279536794025332870
   UnregisteredParameters {
     Overrides {
       Name: "cs:NumberOfSlots"
@@ -61,6 +61,33 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11279536794025332870
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11219060422771276961
+  ChildIds: 18198484372217638935
+  ChildIds: 18344726796775644403
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   NetworkContext {
   }
 }
@@ -78,7 +105,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4722145824645845487
+  ParentId: 11279536794025332870
   ChildIds: 9718378531628205791
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3807,7 +3834,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4722145824645845487
+  ParentId: 11279536794025332870
   UnregisteredParameters {
     Overrides {
       Name: "cs:APIAbility"
@@ -3816,9 +3843,15 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:Root"
       ObjectReference {
-        SelfId: 4722145824645845487
+        SelfId: 11219060422771276961
       }
     }
     Overrides {
@@ -3867,6 +3900,41 @@ Objects {
   Script {
     ScriptAsset {
       Id: 3491175576047648835
+    }
+  }
+}
+Objects {
+  Id: 8463218587589422816
+  Name: "ActionBarServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11219060422771276961
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17262060602003230115
     }
   }
 }

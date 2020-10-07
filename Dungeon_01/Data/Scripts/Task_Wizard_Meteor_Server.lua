@@ -30,16 +30,19 @@ function OnTaskStart(npc, threatTable)
 		Task.Wait(3.5)
 
 		for _, player in pairs(Game.FindPlayersInSphere(targetPosition + Vector3.UP * 100.0, METEOR_RADIUS, {ignoreDead = true})) do
-			local playerOffset = player:GetWorldPosition() - targetPosition
+			local playerOffset = player:GetWorldPosition() - targetPosition + Vector3.UP * 100.0
 			playerOffset.z = 0.0
 			local t = CoreMath.Clamp(playerOffset.size / METEOR_RADIUS)
+			local damageAmount = CoreMath.Lerp(MAX_DAMAGE, 0.0, t)
 
-			API_D.ApplyDamage(npc, player, CoreMath.Lerp(t, MAX_DAMAGE, 0.0), API_D.TAG_AOE)
+			if damageAmount >= 1.0 then	-- If we are doing less than 1 damage, don't bother with either part
+				API_D.ApplyDamage(npc, player, damageAmount, API_D.TAG_AOE)
 
-			if playerOffset.size > 0.1 then
-				API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))
-			else
-				API_K.ApplyImpulse(player, 150.0 * Vector3.UP)
+				if playerOffset.size > 0.1 then
+					API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))
+				else
+					API_K.ApplyImpulse(player, 150.0 * Vector3.UP)
+				end
 			end
 		end
 	end)
