@@ -128,6 +128,10 @@ local function SetupControl(control, processSlot)
         if control:GetCustomProperty("NotAllowed") then
             control.clientUserData.notAllowed = control:GetCustomProperty("NotAllowed"):WaitForObject()
         end
+        if control:GetCustomProperty("CounterRoot") then
+            control.clientUserData.counterRoot = control:GetCustomProperty("CounterRoot"):WaitForObject()
+            control.clientUserData.counterNumber = control:GetCustomProperty("CounterNumber"):WaitForObject()
+        end
         if processSlot then processSlot(control) end
     end
 end
@@ -332,22 +336,30 @@ end
 function view:PerformClickAction()
     -- Now go ahead an perform the appropriate action.
     local clickedItem = inventory:GetItem(self.clickSlotIndex)
-    if inventory:IsEquipSlot(self.clickSlotIndex) then
-        local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
-        if emptyBackpackSlotIndex then
-            self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+    if clickedItem:IsEquippable() then
+        -- Equippable item.
+        if inventory:IsEquipSlot(self.clickSlotIndex) then
+            local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
+            if emptyBackpackSlotIndex then
+                self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+            end
+        else
+            local equipSlotType = clickedItem:GetEquipSlotType()
+            local equipSlotOffset = nil
+            if equipSlotType == "Accessory" then
+                equipSlotOffset = self.accessoryEquipCycle + 1
+                self.accessoryEquipCycle = (self.accessoryEquipCycle + 1) % inventory.NUM_ACCESSORY_SLOTS 
+            end
+            local equipSlotIndex = inventory:GetFreeEquipSlot(equipSlotType) or inventory:ConvertEquipSlotIndex(equipSlotType, equipSlotOffset)
+            if equipSlotIndex then
+                self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
+            end
         end
+    elseif clickedItem:HasConsumptionEffect() then
+        inventory:ConsumeItem(self.clickSlotIndex)
     else
-        local equipSlotType = clickedItem:GetEquipSlotType()
-        local equipSlotOffset = nil
-        if equipSlotType == "Accessory" then
-            equipSlotOffset = self.accessoryEquipCycle + 1
-            self.accessoryEquipCycle = (self.accessoryEquipCycle + 1) % inventory.NUM_ACCESSORY_SLOTS 
-        end
-        local equipSlotIndex = inventory:GetFreeEquipSlot(equipSlotType) or inventory:ConvertEquipSlotIndex(equipSlotType, equipSlotOffset)
-        if equipSlotIndex then
-            self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
-        end
+        -- Non-equippable item.
+        PlaySound(SFX_MOVE_FAIL)
     end
 end
 
@@ -483,6 +495,8 @@ function view:DrawSlots()
     for _,slot in ipairs(self.allSlots) do
         local isHeldSlot = self.isDragging and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
+
+        -- Draw the items in their slots.
         if item and not isHeldSlot then
             local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
             slot.clientUserData.item = item
@@ -492,11 +506,26 @@ function view:DrawSlots()
             slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(rarityColor)
+
+            -- Backpacks have counter indicators.
+            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
+                if item:IsStackable() then
+                    slot.clientUserData.counterRoot.visibility = Visibility.INHERIT
+                    slot.clientUserData.counterNumber.text = tostring(item:GetStackSize())
+                else
+                    slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
+                end
+            end
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
+
+            -- Backpacks have counter indicators.
+            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
+                slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
+            end
         end
 
         -- Equipment slots have a couple extra visual cues.
@@ -553,6 +582,10 @@ end
 function view:DrawHoverStatCompare()
     for statName,statElement in pairs(self.statElements) do
         statElement.clientUserData.previewDelta.text = ""
+    end
+    -- Cannot do quick compare for non-equippable items.
+    if not self.itemUnderCursor or not self.itemUnderCursor:IsEquippable() then
+        return
     end
     -- Conditionally apply hypothetical modifiers to preview stat changes.
     if self.itemUnderCursor and not self.isDragging then
