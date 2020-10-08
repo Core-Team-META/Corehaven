@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 2802105411883767810
-  Name: "ITEM_Miscellaneous_FrogEye"
+  Id: 4811206833720034481
+  Name: "ITEM_NonEquippable_OakLog"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 3855428138253213719
+      RootId: 9761503684077770685
       Objects {
-        Id: 3855428138253213719
-        Name: "ITEM_FrogEye"
+        Id: 9761503684077770685
+        Name: "ITEM_OakLog"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 13006685339931786859
+              Id: 10020612744905930089
             }
           }
         }
@@ -36,12 +36,12 @@
       }
     }
     Assets {
-      Id: 13006685339931786859
-      Name: "Fantasy Spell Ingredient 023"
+      Id: 10020612744905930089
+      Name: "Fantasy Wood 005"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Ingredient_023"
+        AssetId: "UI_Fantasy_Equip_Wood_005"
       }
     }
     PrimaryAssetId {

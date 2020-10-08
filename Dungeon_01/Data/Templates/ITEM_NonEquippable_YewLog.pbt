@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4811206833720034481
-  Name: "ITEM_Miscellaneous_OakLog"
+  Id: 4022490449774864554
+  Name: "ITEM_NonEquippable_YewLog"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 9761503684077770685
+      RootId: 4668782750086326066
       Objects {
-        Id: 9761503684077770685
-        Name: "ITEM_OakLog"
+        Id: 4668782750086326066
+        Name: "ITEM_YewLog"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 10020612744905930089
+              Id: 11314365359335927721
             }
           }
         }
@@ -36,12 +36,12 @@
       }
     }
     Assets {
-      Id: 10020612744905930089
-      Name: "Fantasy Wood 005"
+      Id: 11314365359335927721
+      Name: "Fantasy Wood 006"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Wood_005"
+        AssetId: "UI_Fantasy_Equip_Wood_006"
       }
     }
     PrimaryAssetId {

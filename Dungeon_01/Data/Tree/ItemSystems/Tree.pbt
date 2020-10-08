@@ -15,6 +15,7 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  ChildIds: 2897454468015571326
   ChildIds: 12586167111700513532
   ChildIds: 5776161782523781617
   Collidable_v2 {
@@ -7867,6 +7868,31 @@ Objects {
   }
 }
 Objects {
+  Id: 2897454468015571326
+  Name: "___RUNTIME_CONTEXT_CLIENT"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3873329528123528015
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 3291337978348903876
   Name: "Server"
   Transform {
@@ -7881,6 +7907,7 @@ Objects {
     }
   }
   ParentId: 18109997350451454343
+  ChildIds: 9402631699193954947
   ChildIds: 2441683231896896007
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7917,6 +7944,31 @@ Objects {
     ScriptAsset {
       Id: 17283198374940582863
     }
+  }
+}
+Objects {
+  Id: 9402631699193954947
+  Name: "___RUNTIME_CONTEXT_SERVER"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3291337978348903876
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
   }
 }
 Objects {

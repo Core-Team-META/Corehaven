@@ -90,7 +90,7 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerInitInventory()
-    OWNER.serverUserData.inventory = Inventory.New(Database)
+    OWNER.serverUserData.inventory = Inventory.New(Database, OWNER)
     local inventory = OWNER.serverUserData.inventory
     -- Connect the stat sheet.
     inventory:ConnectToStatSheet(OWNER.serverUserData.statSheet)
@@ -111,6 +111,13 @@ local function ServerInitInventory()
             ServerSaveInventory(inventory)
         end
     end)
+    -- Whenever a client consumes an item, update the server inventory.
+    Events.ConnectForPlayer("IIC", function(player, slotIndex)
+        if player == OWNER then
+            inventory:ConsumeItem(slotIndex)
+            ServerSaveInventory(inventory)
+        end
+    end)
     -- Whenever a client claims a loot item, update the server inventory and persist.
     Events.ConnectForPlayer("ILC", function(player, lootIndex)
         if player == OWNER then
@@ -123,13 +130,17 @@ local function ServerInitInventory()
 end
 
 local function ClientInitInventoryLocal()
-    OWNER.clientUserData.inventory = Inventory.New(Database)
+    OWNER.clientUserData.inventory = Inventory.New(Database, OWNER)
     local inventory = OWNER.clientUserData.inventory
     -- Connect the stat sheet.
     inventory:ConnectToStatSheet(OWNER.clientUserData.statSheet)
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
         ReliableEvents.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)
+    end)
+    -- Whenever an item is consumed, broadcast to server.
+    inventory.itemConsumedEvent:Connect(function(slotIndex)
+        ReliableEvents.BroadcastToServer("IIC", slotIndex)
     end)
     -- Whenever a loot item is claimed, broadcast to server.
     inventory.lootClaimedEvent:Connect(function(lootIndex)

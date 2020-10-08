@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 6887338365434764106
-  Name: "ITEM_Miscellaneous_IronIngot"
+  Id: 13017101367765811587
+  Name: "ITEM_NonEquippable_GoldIngot"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 16375777848134752243
+      RootId: 2054945265596446672
       Objects {
-        Id: 16375777848134752243
-        Name: "ITEM_IronIngot"
+        Id: 2054945265596446672
+        Name: "ITEM_GoldIngot"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 17107067040470897965
+              Id: 18251452243233910405
             }
           }
         }
@@ -36,12 +36,12 @@
       }
     }
     Assets {
-      Id: 17107067040470897965
-      Name: "Fantasy Craft Bar 010"
+      Id: 18251452243233910405
+      Name: "Fantasy Craft Bar 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Bar_010"
+        AssetId: "UI_Fantasy_Crafting_Bar_001"
       }
     }
     PrimaryAssetId {

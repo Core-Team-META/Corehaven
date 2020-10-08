@@ -191,6 +191,13 @@ function Database:_LoadAssetDerivedInformation()
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
         itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
         itemData.animationStance = tempObject:GetCustomProperty("AnimationStance")
+
+        local consumptionEffectScript = tempObject:GetCustomProperty("ConsumptionEffectScript")
+        if consumptionEffectScript then
+            assert(itemData.type == "Consumable", string.format("cannot attach ConsumptionEffectScript to non-consumable item: %s", itemData.name))
+            itemData.consumptionEffect = require(consumptionEffectScript)
+        end
+        
         itemData.abilityNames = {}
         itemData.passives = {}
 

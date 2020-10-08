@@ -355,6 +355,8 @@ function view:PerformClickAction()
                 self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
             end
         end
+    elseif clickedItem:HasConsumptionEffect() then
+        inventory:ConsumeItem(self.clickSlotIndex)
     else
         -- Non-equippable item.
         PlaySound(SFX_MOVE_FAIL)

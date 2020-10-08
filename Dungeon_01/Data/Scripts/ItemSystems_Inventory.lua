@@ -30,13 +30,14 @@ assert(Inventory.TOTAL_CAPACITY <= 64, "inventory size limit is 64 for compressi
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Inventory.New(database)
+function Inventory.New(database, owner)
     local o = {}
     setmetatable(o, Inventory)
-    o:_Init(database)
+    o:_Init(database, owner)
     o:_DefineEvent("lootClaimedEvent")
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
+    o:_DefineEvent("itemConsumedEvent")
     return o
 end
 
@@ -248,6 +249,21 @@ function Inventory:GetLootInfos()
     return self.lootInfos
 end
 
+-- Consume one item at the specified index.
+function Inventory:ConsumeItem(slotIndex)
+    local item = self:GetItem(slotIndex)
+    if item and item:GetType() == "Consumable" then
+        item:ApplyConsumptionEffect(self.owner)
+        local itemAfterConsumption = nil
+        if item:IsStackable() and item:GetStackSize() > 1 then
+            item:SetStackSize(item:GetStackSize() - 1)
+            itemAfterConsumption = item
+        end
+        self:_SetSlotItem(slotIndex, itemAfterConsumption)
+        self:_FireEvent("itemConsumedEvent", slotIndex)
+    end
+end
+
 -- Hash suitable for runtime use. Indexes are preferred over full MUIDs for compactness.
 function Inventory:RuntimeHash()
     return self:_IntoHash(true)
@@ -304,8 +320,9 @@ end
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
-function Inventory:_Init(database)
+function Inventory:_Init(database, owner)
     self.database = database
+    self.owner = owner
     self.lootInfos = {}
     self:_ClearSlots()
     self:_UpdateSlotStatus()

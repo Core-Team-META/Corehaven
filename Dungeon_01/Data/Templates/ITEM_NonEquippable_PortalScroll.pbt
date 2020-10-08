@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4022490449774864554
-  Name: "ITEM_Miscellaneous_YewLog"
+  Id: 12937296365139807720
+  Name: "ITEM_NonEquippable_PortalScroll"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4668782750086326066
+      RootId: 8123379071497635818
       Objects {
-        Id: 4668782750086326066
-        Name: "ITEM_YewLog"
+        Id: 8123379071497635818
+        Name: "ITEM_Miscellaneous_PortalScroll"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,13 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 11314365359335927721
+              Id: 18322289545352141421
+            }
+          }
+          Overrides {
+            Name: "cs:ConsumptionEffectScript"
+            AssetReference {
+              Id: 2980251689156894572
             }
           }
         }
@@ -36,12 +42,12 @@
       }
     }
     Assets {
-      Id: 11314365359335927721
-      Name: "Fantasy Wood 006"
+      Id: 18322289545352141421
+      Name: "Fantasy Scroll 003"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Wood_006"
+        AssetId: "UI_Fantasy_Equip_Scroll_003"
       }
     }
     PrimaryAssetId {

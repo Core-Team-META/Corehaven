@@ -1,52 +1,7 @@
 ﻿return {
   {
     DropKey = 'CHEAT',
-    ItemName = 'Oak Log',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Yew Log',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Iron Ingot',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Gold Ingot',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Combat Medallion',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
     ItemName = 'Portal Scroll',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Frog Eye',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Blight Bottle',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Captain\'s Tower',
-    Likelihood = '1',
-  },
-  {
-    DropKey = 'CHEAT',
-    ItemName = 'Dull Greatsword',
     Likelihood = '1',
   },
   {

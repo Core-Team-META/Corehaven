@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 13017101367765811587
-  Name: "ITEM_Miscellaneous_GoldIngot"
+  Id: 4408181515115203937
+  Name: "ITEM_NonEquippable_CombatMedallion"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 2054945265596446672
+      RootId: 4967326948153067382
       Objects {
-        Id: 2054945265596446672
-        Name: "ITEM_GoldIngot"
+        Id: 4967326948153067382
+        Name: "ITEM_CombatMedallion"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 18251452243233910405
+              Id: 17212436696482667267
             }
           }
         }
@@ -36,12 +36,12 @@
       }
     }
     Assets {
-      Id: 18251452243233910405
-      Name: "Fantasy Craft Bar 001"
+      Id: 17212436696482667267
+      Name: "Fantasy Medal 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Bar_001"
+        AssetId: "UI_Fantasy_Equip_Medal_002"
       }
     }
     PrimaryAssetId {

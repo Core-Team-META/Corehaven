@@ -207,6 +207,17 @@ function Item:RollStats()
     self:_RecalculateStatTotals()
 end
 
+function Item:HasConsumptionEffect()
+    return self:GetType() == "Consumable" and self.data.consumptionEffect ~= nil
+end
+
+function Item:ApplyConsumptionEffect(player)
+    assert(self:GetType() == "Consumable")
+    if self.data.consumptionEffect then
+        self.data.consumptionEffect(player)
+    end
+end
+
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------

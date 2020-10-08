@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 4408181515115203937
-  Name: "ITEM_Miscellaneous_CombatMedallion"
+  Id: 2802105411883767810
+  Name: "ITEM_NonEquippable_FrogEye"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 4967326948153067382
+      RootId: 3855428138253213719
       Objects {
-        Id: 4967326948153067382
-        Name: "ITEM_CombatMedallion"
+        Id: 3855428138253213719
+        Name: "ITEM_FrogEye"
         Transform {
           Scale {
             X: 1
@@ -20,7 +20,7 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 17212436696482667267
+              Id: 13006685339931786859
             }
           }
         }
@@ -36,12 +36,12 @@
       }
     }
     Assets {
-      Id: 17212436696482667267
-      Name: "Fantasy Medal 002"
+      Id: 13006685339931786859
+      Name: "Fantasy Spell Ingredient 023"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Equip_Medal_002"
+        AssetId: "UI_Fantasy_Ingredient_023"
       }
     }
     PrimaryAssetId {
