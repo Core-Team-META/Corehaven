@@ -128,6 +128,10 @@ local function SetupControl(control, processSlot)
         if control:GetCustomProperty("NotAllowed") then
             control.clientUserData.notAllowed = control:GetCustomProperty("NotAllowed"):WaitForObject()
         end
+        if control:GetCustomProperty("CounterRoot") then
+            control.clientUserData.counterRoot = control:GetCustomProperty("CounterRoot"):WaitForObject()
+            control.clientUserData.counterNumber = control:GetCustomProperty("CounterNumber"):WaitForObject()
+        end
         if processSlot then processSlot(control) end
     end
 end
@@ -489,6 +493,8 @@ function view:DrawSlots()
     for _,slot in ipairs(self.allSlots) do
         local isHeldSlot = self.isDragging and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
+
+        -- Draw the items in their slots.
         if item and not isHeldSlot then
             local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
             slot.clientUserData.item = item
@@ -498,11 +504,26 @@ function view:DrawSlots()
             slot.clientUserData.gradientColored:SetColor(rarityColor)
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(rarityColor)
+
+            -- Backpacks have counter indicators.
+            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
+                if item:IsStackable() then
+                    slot.clientUserData.counterRoot.visibility = Visibility.INHERIT
+                    slot.clientUserData.counterNumber.text = tostring(item:GetStackSize())
+                else
+                    slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
+                end
+            end
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)
+
+            -- Backpacks have counter indicators.
+            if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
+                slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
+            end
         end
 
         -- Equipment slots have a couple extra visual cues.

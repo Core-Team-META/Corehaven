@@ -3146,10 +3146,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "UIY"
-          Float: 10
-        }
       }
     }
     TemplateAsset {

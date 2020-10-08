@@ -35,6 +35,21 @@
     Likelihood = '1',
   },
   {
+    DropKey = 'CHEAT',
+    ItemName = 'Blight Bottle',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Captain\'s Tower',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Dull Greatsword',
+    Likelihood = '1',
+  },
+  {
     DropKey = 'CommonTrash',
     ItemName = 'Pointy Stick',
     Likelihood = '1',

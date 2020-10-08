@@ -112,7 +112,7 @@ function Item:GetRarity()
 end
 
 function Item:IsEquippable()
-    return self.isEquippable
+    return self.data.isEquippable
 end
 
 function Item:GetEquipSlotType()
