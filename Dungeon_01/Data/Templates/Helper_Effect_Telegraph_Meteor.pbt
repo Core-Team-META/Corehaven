@@ -95,6 +95,14 @@
             Name: "bp:Blur"
             Float: 0
           }
+          Overrides {
+            Name: "bp:Fade Delay"
+            Float: 2.5
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 1
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

@@ -28,7 +28,7 @@ end
 function OnVolley(targetPosition)
 	local telegraphScale = Vector3.New(VOLLEY_RADIUS / 100.0)
 	local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = targetPosition, scale = telegraphScale})
-	Task.Wait(2.5)
+	Task.Wait(4.5)
 	telegraph:Destroy()
 end
 

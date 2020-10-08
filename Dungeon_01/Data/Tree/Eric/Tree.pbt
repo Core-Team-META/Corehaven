@@ -12072,7 +12072,7 @@ Objects {
   ChildIds: 12238945802532589735
   ChildIds: 3817437328394114214
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -12138,7 +12138,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Blueprint {
     BlueprintAsset {
@@ -12208,7 +12208,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Blueprint {
     BlueprintAsset {
@@ -12348,7 +12348,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:forceon"
   }
   Blueprint {
     BlueprintAsset {
@@ -24955,7 +24955,7 @@ Objects {
     Overrides {
       Name: "cs:ProjectileTemplate"
       AssetReference {
-        Id: 8577847030441975411
+        Id: 18070735097588345738
       }
     }
     Overrides {
