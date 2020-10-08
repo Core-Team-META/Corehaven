@@ -30,13 +30,14 @@ assert(Inventory.TOTAL_CAPACITY <= 64, "inventory size limit is 64 for compressi
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Inventory.New(database)
+function Inventory.New(database, owner)
     local o = {}
     setmetatable(o, Inventory)
-    o:_Init(database)
+    o:_Init(database, owner)
     o:_DefineEvent("lootClaimedEvent")
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
+    o:_DefineEvent("itemConsumedEvent")
     return o
 end
 
@@ -120,6 +121,21 @@ function Inventory:GetItem(slotIndex)
     return self.slotItems[slotIndex]
 end
 
+-- Get a table of all equipped trinkets
+function Inventory:GetTrinkets()
+    local result = {}
+
+    for slotIndex = 6, 8 do
+        local item = self:GetItem(slotIndex)
+
+        if item then
+            table.insert(result, item)
+        end
+    end
+
+    return result
+end
+
 -- Get a table of equipped items, indexed by equipment slot name.
 function Inventory:IterateEquipSlots()
     local function iter(_, slotIndex)
@@ -199,7 +215,11 @@ end
 function Inventory:CanClaimLoot(lootIndex)
     local lootInfo = self.lootInfos[lootIndex]
     if lootInfo and not lootInfo.isClaimed then
-        return self:GetFreeBackpackSlot() ~= nil
+        if lootInfo.item:IsStackable() then
+            return self:_CanAccommodateStackableItem(lootInfo.item)
+        else
+            return self:GetFreeBackpackSlot() ~= nil
+        end
     end
 end
 
@@ -208,8 +228,12 @@ function Inventory:ClaimLoot(lootIndex)
     local lootInfo = self.lootInfos[lootIndex]
     if lootInfo then
         lootInfo.isClaimed = true
-        local slotIndex = self:GetFreeBackpackSlot(lootInfo.item)
-        self:_SetSlotItem(slotIndex, lootInfo.item)
+        if lootInfo.item:IsStackable() then
+            self:_AddStackableItemToBackpack(lootInfo.item)
+        else
+            local slotIndex = self:GetFreeBackpackSlot()
+            self:_SetSlotItem(slotIndex, lootInfo.item)
+        end
         self:_FireEvent("lootClaimedEvent", lootIndex)
         if lootInfo.onLootClaimed then lootInfo.onLootClaimed() end
     end
@@ -223,6 +247,21 @@ end
 -- Get information for all loots registered to this inventory.
 function Inventory:GetLootInfos()
     return self.lootInfos
+end
+
+-- Consume one item at the specified index.
+function Inventory:ConsumeItem(slotIndex)
+    local item = self:GetItem(slotIndex)
+    if item and item:GetType() == "Consumable" then
+        item:ApplyConsumptionEffect(self.owner)
+        local itemAfterConsumption = nil
+        if item:IsStackable() and item:GetStackSize() > 1 then
+            item:SetStackSize(item:GetStackSize() - 1)
+            itemAfterConsumption = item
+        end
+        self:_SetSlotItem(slotIndex, itemAfterConsumption)
+        self:_FireEvent("itemConsumedEvent", slotIndex)
+    end
 end
 
 -- Hash suitable for runtime use. Indexes are preferred over full MUIDs for compactness.
@@ -281,8 +320,9 @@ end
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------
-function Inventory:_Init(database)
+function Inventory:_Init(database, owner)
     self.database = database
+    self.owner = owner
     self.lootInfos = {}
     self:_ClearSlots()
     self:_UpdateSlotStatus()
@@ -368,16 +408,55 @@ function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
     end
 end
 
+function Inventory:_CanAccommodateStackableItem(item)
+    assert(item:IsStackable())
+    local stackSpace = 0
+    for slotIndex = #Inventory.EQUIP_SLOTS+1,Inventory.TOTAL_CAPACITY do
+        assert(self:IsBackpackSlot(slotIndex))
+        if self:IsEmptySlot(slotIndex) then
+            stackSpace = stackSpace + item:GetMaxStackSize()
+        elseif item:WillStackWith(self:GetItem(slotIndex)) then
+            stackSpace = stackSpace + item:GetAvailableStackSpace()
+        end
+        -- Check if we have enough and exit early.
+        if stackSpace >= item:GetStackSize() then return true end
+    end
+end
+
+function Inventory:_AddStackableItemToBackpack(itemToAdd)
+    assert(itemToAdd:IsStackable())
+    -- First add to existing stacks where possible.
+    for slotIndex = #Inventory.EQUIP_SLOTS+1,Inventory.TOTAL_CAPACITY do
+        assert(self:IsBackpackSlot(slotIndex))
+        local itemInSlot = self:GetItem(slotIndex)
+        if itemToAdd:WillStackWith(itemInSlot) then
+            local amountToAdd = math.min(itemToAdd:GetStackSize(), itemInSlot:GetAvailableStackSpace())
+            itemInSlot:SetStackSize(itemInSlot:GetStackSize() + amountToAdd)
+            local newStackSize = itemToAdd:GetStackSize() - amountToAdd
+            if newStackSize > 0 then
+                itemToAdd:SetStackSize(newStackSize)
+            else
+                return
+            end
+        end
+    end
+    -- An empty slot is assumed to exist since this should have been checked already.
+    local emptySlotIndex = self:GetFreeBackpackSlot()
+    if emptySlotIndex then
+        self:_SetSlotItem(emptySlotIndex, itemToAdd)
+    end
+end
+
 function Inventory:_SetSlotItem(slotIndex, item, doNotFireEvent)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
-        local previousType = self.equippedItems[slotIndex] and self.equippedItems[slotIndex]:GetType()
+        local previousItem = self.equippedItems[slotIndex]
         self.equippedItems[slotIndex] = item
         self:_UpdateSlotStatus()
         self:_UpdateStatTotals()
         if not doNotFireEvent then
-            self:_FireEvent("itemEquippedEvent", slotIndex, previousType, item)
+            self:_FireEvent("itemEquippedEvent", slotIndex, previousItem, item)
         end
     end
 end
@@ -436,7 +515,10 @@ function Inventory:__tostring()
         if self:IsEquipSlot(slotIndex) then
             table.insert(parts, string.format("\t%-10s = %s\n", Inventory.EQUIP_SLOTS[slotIndex].slotType, item and item:GetName() or ""))
         elseif not self:IsEmptySlot(slotIndex) then
-            table.insert(parts, string.format("\tpack %02d    = %s\n", slotIndex - #Inventory.EQUIP_SLOTS, item and item:GetName() or ""))
+            table.insert(parts, string.format("\tpack %02d    = %4dx %s\n",
+                slotIndex - #Inventory.EQUIP_SLOTS,
+                item and item:GetStackSize(),
+                item and item:GetName() or ""))
         end
     end
     return table.concat(parts)

@@ -16,7 +16,9 @@ while not LOCAL_PLAYER.clientUserData.inventory do Task.Wait() end
 local inventory = LOCAL_PLAYER.clientUserData.inventory
 
 local function PlaySound(sfx)
-    World.SpawnAsset(sfx, { parent = script })
+    if sfx then
+        World.SpawnAsset(sfx, { parent = script })
+    end
 end
 
 -- The color of disabled buttons. We will read it from the template later.

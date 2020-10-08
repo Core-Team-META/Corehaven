@@ -7,8 +7,6 @@
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
-local API_A = require(script:GetCustomProperty("APIAbility"))
-local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -92,12 +90,12 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerInitInventory()
-    OWNER.serverUserData.inventory = Inventory.New(Database)
+    OWNER.serverUserData.inventory = Inventory.New(Database, OWNER)
     local inventory = OWNER.serverUserData.inventory
     -- Connect the stat sheet.
     inventory:ConnectToStatSheet(OWNER.serverUserData.statSheet)
     -- Whenever an item is equipped by the server inventory, replicate to all clients.
-    inventory.itemEquippedEvent:Connect(function(equipIndex, previousType, equipItem)
+    inventory.itemEquippedEvent:Connect(function(equipIndex, previousItem, equipItem)
         local itemHash = equipItem and equipItem:RuntimeHash() or ""
         local prop = string.format("E%d", equipIndex)
         COMPONENT:SetNetworkedCustomProperty(prop, itemHash)
@@ -105,20 +103,18 @@ local function ServerInitInventory()
         if inventory:IsMainHandSlot(equipIndex) then
             OWNER.animationStance = equipItem and equipItem:GetAnimationStance() or "unarmed_stance"
         end
-        --[[if inventory:IsTrinketSlot(equipIndex) then
-            for _, abilityName in pairs(equipItem:GetAbilityNames()) do
-                API_A.GivePlayerAbility(OWNER, abilityName)
-            end
-
-            for _, passive in pairs(equipItem:GetPassives()) do
-                API_PP.GivePlayerPassive(OWNER, passive)
-            end
-        end]]
     end)
     -- Whenever a client rearranges their local inventory, update the server inventory and persist.
     Events.ConnectForPlayer("IIM", function(player, fromSlotIndex, toSlotIndex)
         if player == OWNER then
             inventory:MoveItem(fromSlotIndex, toSlotIndex)
+            ServerSaveInventory(inventory)
+        end
+    end)
+    -- Whenever a client consumes an item, update the server inventory.
+    Events.ConnectForPlayer("IIC", function(player, slotIndex)
+        if player == OWNER then
+            inventory:ConsumeItem(slotIndex)
             ServerSaveInventory(inventory)
         end
     end)
@@ -134,13 +130,17 @@ local function ServerInitInventory()
 end
 
 local function ClientInitInventoryLocal()
-    OWNER.clientUserData.inventory = Inventory.New(Database)
+    OWNER.clientUserData.inventory = Inventory.New(Database, OWNER)
     local inventory = OWNER.clientUserData.inventory
     -- Connect the stat sheet.
     inventory:ConnectToStatSheet(OWNER.clientUserData.statSheet)
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
         ReliableEvents.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)
+    end)
+    -- Whenever an item is consumed, broadcast to server.
+    inventory.itemConsumedEvent:Connect(function(slotIndex)
+        ReliableEvents.BroadcastToServer("IIC", slotIndex)
     end)
     -- Whenever a loot item is claimed, broadcast to server.
     inventory.lootClaimedEvent:Connect(function(lootIndex)

@@ -12,8 +12,10 @@ local LOAD_FRAME_LIMIT = 10
 local DATA_CATALOGS = {}
 local DATA_STATS = {}
 for _,itemType in ipairs(Item.TYPES) do
-    table.insert(DATA_CATALOGS, require(script:GetCustomProperty(string.format("%s_Catalog", itemType))))
-    table.insert(DATA_STATS, require(script:GetCustomProperty(string.format("%s_Stats", itemType))))
+    local catalog = script:GetCustomProperty(string.format("%s_Catalog", itemType))
+    local stats = script:GetCustomProperty(string.format("%s_Stats", itemType))
+    if catalog then table.insert(DATA_CATALOGS, require(catalog)) end
+    if stats then table.insert(DATA_STATS, require(stats)) end
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -97,11 +99,15 @@ function Database:_LoadCatalog()
         for _,row in ipairs(data) do
             assert(not self.itemDatasByName[row.Name], string.format("duplicate item name is not allowed - %s", row.Name))
             assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))
-            assert(Item.TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
+            assert(Item.TYPES[row.Type] or Item.NONEQUIPPABLE_TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
             assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
 
-            if row.StatKey ~= "" then       -- No stats at all is valid
+            if row.StatKey then       -- No stats at all is valid
                 assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
+            end
+
+            if row.StackSize then
+                assert(tonumber(row.StackSize) <= 2^12, string.format("item stack size is too large - %s", row.Name))
             end
 
             local itemData = {
@@ -111,8 +117,10 @@ function Database:_LoadCatalog()
                 rarity = row.Rarity,
                 muid = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
                 description = row.Lore,
+                isEquippable = Item.NONEQUIPPABLE_TYPES[row.Type] == nil,
+                maxStackSize = tonumber(row.StackSize),
                 _RollStats = function()
-                    if row.StatKey == "" then
+                    if not row.StatKey then
                         return {}
                     end
                     local statRollInfos = self.itemStatRollInfos[row.StatKey]
@@ -183,6 +191,13 @@ function Database:_LoadAssetDerivedInformation()
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
         itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
         itemData.animationStance = tempObject:GetCustomProperty("AnimationStance")
+
+        local consumptionEffectScript = tempObject:GetCustomProperty("ConsumptionEffectScript")
+        if consumptionEffectScript then
+            assert(itemData.type == "Consumable", string.format("cannot attach ConsumptionEffectScript to non-consumable item: %s", itemData.name))
+            itemData.consumptionEffect = require(consumptionEffectScript)
+        end
+        
         itemData.abilityNames = {}
         itemData.passives = {}
 

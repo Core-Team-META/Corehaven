@@ -1,6 +1,6 @@
 ﻿Assets {
-  Id: 14301785103445679720
-  Name: "ItemSystems_DATA_Trinket_Stats"
+  Id: 3888898867443854385
+  Name: "TrinketsClient"
   PlatformAssetType: 3
   TextAsset {
   }

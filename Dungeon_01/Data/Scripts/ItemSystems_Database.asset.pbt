@@ -184,6 +184,12 @@
           Id: 10413657141531755001
         }
       }
+      Overrides {
+        Name: "cs:NonEquippable_Catalog"
+        AssetReference {
+          Id: 4334986054671816585
+        }
+      }
     }
   }
   SerializationVersion: 65
