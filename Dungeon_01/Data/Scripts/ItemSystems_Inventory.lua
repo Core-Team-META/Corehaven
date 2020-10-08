@@ -120,6 +120,21 @@ function Inventory:GetItem(slotIndex)
     return self.slotItems[slotIndex]
 end
 
+-- Get a table of all equipped trinkets
+function Inventory:GetTrinkets()
+    local result = {}
+
+    for slotIndex = 6, 8 do
+        local item = self:GetItem(slotIndex)
+
+        if item then
+            table.insert(result, item)
+        end
+    end
+
+    return result
+end
+
 -- Get a table of equipped items, indexed by equipment slot name.
 function Inventory:IterateEquipSlots()
     local function iter(_, slotIndex)
@@ -372,12 +387,12 @@ function Inventory:_SetSlotItem(slotIndex, item, doNotFireEvent)
     -- Assumes validation has been done already.
     self.slotItems[slotIndex] = item
     if self:IsEquipSlot(slotIndex) then
-        local previousType = self.equippedItems[slotIndex] and self.equippedItems[slotIndex]:GetType()
+        local previousItem = self.equippedItems[slotIndex]
         self.equippedItems[slotIndex] = item
         self:_UpdateSlotStatus()
         self:_UpdateStatTotals()
         if not doNotFireEvent then
-            self:_FireEvent("itemEquippedEvent", slotIndex, previousType, item)
+            self:_FireEvent("itemEquippedEvent", slotIndex, previousItem, item)
         end
     end
 end

@@ -279,7 +279,9 @@ function OnPlayerJoined(player)
 		Task.Wait()
 	end
 
-    inventory.itemEquippedEvent:Connect(function(slotIndex, previousType, newItem)
+    inventory.itemEquippedEvent:Connect(function(slotIndex, previousItem, newItem)
+    	local previousType = previousItem and previousItem:GetType()
+    	
 		for animationKey, data in pairs(playerAnimationKeys[player]) do
 			if (not previousType and data.itemType == "Default") or (data.itemType == previousType) then
 				playerAnimationKeys[player][animationKey].dirty = true
