@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17587880652047825598
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 17332468096773076319
   Name: "Fantasy Ability Yellow 027"
   PlatformAssetType: 9
@@ -539,6 +548,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4615604774453055920
+  Name: "Cone - Truncated Hollow Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_004"
+  }
+}
+Assets {
   Id: 4542959667302136808
   Name: "Portcullis"
   PlatformAssetType: 1
@@ -590,6 +608,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Red_018"
+  }
+}
+Assets {
+  Id: 3329183888595046075
+  Name: "Plane Ring - One Sided Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_ring_003"
   }
 }
 Assets {

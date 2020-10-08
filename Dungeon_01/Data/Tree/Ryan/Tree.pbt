@@ -1,6 +1,298 @@
 ﻿Name: "Ryan"
 RootId: 7218498012147464502
 Objects {
+  Id: 2431560318620196206
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 2249.75293
+      Y: 11065.8164
+      Z: -779.232422
+    }
+    Rotation {
+    }
+    Scale {
+      X: 60
+      Y: 60
+      Z: 15
+    }
+  }
+  ParentId: 7218498012147464502
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.6250332
+        B: 0.659999967
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 7436458805056544416
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 2249.75293
+      Y: 11065.8164
+      Z: -779.232422
+    }
+    Rotation {
+    }
+    Scale {
+      X: 30
+      Y: 30
+      Z: 15
+    }
+  }
+  ParentId: 7218498012147464502
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.33333
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.6250332
+        B: 0.659999967
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 5229482263531862699
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 2249.75293
+      Y: 11065.8164
+      Z: -779.232422
+    }
+    Rotation {
+    }
+    Scale {
+      X: 20
+      Y: 20
+      Z: 15
+    }
+  }
+  ParentId: 7218498012147464502
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.5
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.6250332
+        B: 0.659999967
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 13372757652167421298
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+      X: 2249.75293
+      Y: 11065.8164
+      Z: -779.232422
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10
+      Y: 10
+      Z: 15
+    }
+  }
+  ParentId: 7218498012147464502
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 2
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        R: 0.6250332
+        B: 0.659999967
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
   Id: 205278642074266682
   Name: "Trigger"
   Transform {
