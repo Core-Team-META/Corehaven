@@ -801,7 +801,6 @@ Objects {
   }
   ParentId: 2094553802815865713
   ChildIds: 7326909807112252575
-  ChildIds: 8293098959674472827
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -809,73 +808,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 8293098959674472827
-  Name: "Craftsman Roof 01 Beam"
-  Transform {
-    Location {
-      X: -52.6849327
-      Y: -266.865234
-      Z: 96.7283478
-    }
-    Rotation {
-      Pitch: -6.70516968
-      Yaw: 5.22055864
-      Roll: -91.6564
-    }
-    Scale {
-      X: 0.567927659
-      Y: 0.702479601
-      Z: 0.315926284
-    }
-  }
-  ParentId: 5083625563643243588
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17557104084763797115
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.291666657
-        G: 0.133085966
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6807357076135762555
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
   }
 }
 Objects {
@@ -912,14 +844,14 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -25.4160728
-      Y: -167.657166
-      Z: 0.313483566
+      X: -20.7671776
+      Y: -182.820313
+      Z: 26.0480709
     }
     Rotation {
-      Pitch: 2.3045125
-      Yaw: 5.06216431
-      Roll: 0.283565283
+      Pitch: 2.30781841
+      Yaw: 4.35427856
+      Roll: 0.255078375
     }
     Scale {
       X: 0.548244715
