@@ -332,22 +332,28 @@ end
 function view:PerformClickAction()
     -- Now go ahead an perform the appropriate action.
     local clickedItem = inventory:GetItem(self.clickSlotIndex)
-    if inventory:IsEquipSlot(self.clickSlotIndex) then
-        local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
-        if emptyBackpackSlotIndex then
-            self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+    if clickedItem:IsEquippable() then
+        -- Equippable item.
+        if inventory:IsEquipSlot(self.clickSlotIndex) then
+            local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
+            if emptyBackpackSlotIndex then
+                self:AttemptMoveItem(self.clickSlotIndex, emptyBackpackSlotIndex)
+            end
+        else
+            local equipSlotType = clickedItem:GetEquipSlotType()
+            local equipSlotOffset = nil
+            if equipSlotType == "Accessory" then
+                equipSlotOffset = self.accessoryEquipCycle + 1
+                self.accessoryEquipCycle = (self.accessoryEquipCycle + 1) % inventory.NUM_ACCESSORY_SLOTS 
+            end
+            local equipSlotIndex = inventory:GetFreeEquipSlot(equipSlotType) or inventory:ConvertEquipSlotIndex(equipSlotType, equipSlotOffset)
+            if equipSlotIndex then
+                self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
+            end
         end
     else
-        local equipSlotType = clickedItem:GetEquipSlotType()
-        local equipSlotOffset = nil
-        if equipSlotType == "Accessory" then
-            equipSlotOffset = self.accessoryEquipCycle + 1
-            self.accessoryEquipCycle = (self.accessoryEquipCycle + 1) % inventory.NUM_ACCESSORY_SLOTS 
-        end
-        local equipSlotIndex = inventory:GetFreeEquipSlot(equipSlotType) or inventory:ConvertEquipSlotIndex(equipSlotType, equipSlotOffset)
-        if equipSlotIndex then
-            self:AttemptMoveItem(self.clickSlotIndex, equipSlotIndex)
-        end
+        -- Non-equippable item.
+        PlaySound(SFX_MOVE_FAIL)
     end
 end
 
@@ -553,6 +559,10 @@ end
 function view:DrawHoverStatCompare()
     for statName,statElement in pairs(self.statElements) do
         statElement.clientUserData.previewDelta.text = ""
+    end
+    -- Cannot do quick compare for non-equippable items.
+    if not self.itemUnderCursor or not self.itemUnderCursor:IsEquippable() then
+        return
     end
     -- Conditionally apply hypothetical modifiers to preview stat changes.
     if self.itemUnderCursor and not self.isDragging then

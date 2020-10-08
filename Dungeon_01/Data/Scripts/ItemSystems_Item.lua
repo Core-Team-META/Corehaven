@@ -26,9 +26,18 @@ Item.TYPES = Enum{
     "Shield",
     "Staff",
     "Sword",
-    "Trinket",
     "Wand",
     "Warhammer",
+    -- Special types.
+    "Trinket",
+    "NonEquippable",
+}
+
+Item.NONEQUIPPABLE_TYPES = Enum{
+    "Material",
+    "Currency",
+    "Consumable",
+    "Junk",
 }
 
 Item.STATS = Enum{
@@ -98,17 +107,30 @@ function Item:GetType()
     return self.data.type
 end
 
-function Item:GetEquipSlotType()
-    self.slotType = self.slotType or self.SLOT_CONSTRAINTS[self:GetType()].slotType
-    return self.slotType
-end
-
 function Item:GetRarity()
     return self.data.rarity
 end
 
+function Item:IsEquippable()
+    return self.isEquippable
+end
+
+function Item:GetEquipSlotType()
+    if self:IsEquippable() then
+        return self.SLOT_CONSTRAINTS[self:GetType()].slotType
+    end
+end
+
 function Item:IsTwoHanded()
     return self.SLOT_CONSTRAINTS[self:GetType()].isTwoHanded
+end
+
+function Item:IsStackable()
+    return self.stackSize ~= nil
+end
+
+function Item:GetStackSize()
+    return self.stackSize
 end
 
 function Item:ApplyIconImageSettings(uiImage)
