@@ -106,6 +106,10 @@ function Database:_LoadCatalog()
                 assert(self.itemStatRollInfos[row.StatKey], string.format("unrecognized item stat key - %s", row.StatKey))
             end
 
+            if row.StackSize then
+                assert(tonumber(row.StackSize) <= 2^12, string.format("item stack size is too large - %s", row.Name))
+            end
+
             local itemData = {
                 index = index,
                 name = row.Name,
@@ -114,7 +118,7 @@ function Database:_LoadCatalog()
                 muid = row.MUID:match("^(.+):"), -- these MUIDs are used as keys; strip the irrelevant name part.
                 description = row.Lore,
                 isEquippable = Item.NONEQUIPPABLE_TYPES[row.Type] == nil,
-                stackSize = row.StackSize,
+                maxStackSize = tonumber(row.StackSize),
                 _RollStats = function()
                     if not row.StatKey then
                         return {}

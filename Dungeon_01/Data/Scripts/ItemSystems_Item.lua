@@ -80,10 +80,10 @@ Item.SLOT_CONSTRAINTS = {
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Item.New(itemData)
+function Item.New(itemData, stackSize, enhancementLevel)
     local o = {}
     setmetatable(o, Item)
-    o:_Init(itemData)
+    o:_Init(itemData, stackSize, enhancementLevel)
     return o
 end
 
@@ -126,11 +126,37 @@ function Item:IsTwoHanded()
 end
 
 function Item:IsStackable()
-    return self.stackSize ~= nil
+    return self.data.maxStackSize ~= nil
 end
 
 function Item:GetStackSize()
     return self.stackSize
+end
+
+function Item:SetStackSize(stackSize)
+    assert(self:IsStackable() and 1 <= stackSize and stackSize <= self:GetMaxStackSize())
+    self.stackSize = stackSize
+end
+
+function Item:GetMaxStackSize()
+    return self.data.maxStackSize
+end
+
+function Item:IsFullStack()
+    return self:GetStackSize() == self:GetMaxStackSize()
+end
+
+function Item:WillStackWith(otherItem)
+    return otherItem and self:GetMUID() == otherItem:GetMUID() and self:IsStackable()
+end
+
+function Item:GetAvailableStackSpace()
+    return self:GetMaxStackSize() - self:GetStackSize()
+end
+
+function Item:GetEnhancementLevel()
+    -- TODO not implemented.
+    return self.enhancementLevel
 end
 
 function Item:ApplyIconImageSettings(uiImage)
@@ -186,11 +212,11 @@ end
 ---------------------------------------------------------------------------------------------------------
 local HASH_RUNTIME = "R"
 local HASH_PERSISTENT = "P"
-local HASH_DELIM_ID_END = "|"
+local HASH_DELIM_INTRO = "|"
 local HASH_DELIM_STAT_BASE = "#"
 local HASH_DELIM_STAT_BONUS = "&"
 local HASH_DELIM_STAT_EQUALS = "="
-local HASH_PATTERN_FULL = "^(.*)|(.*)$"
+local HASH_PATTERN_FULL = "^(.*)|(.*)|(.*)|(.*)$"
 local HASH_PATTERN_STAT = "([#&])([^#&=]+)=(....)"
 
 function Item._StatInfo(statInfo)
@@ -200,8 +226,10 @@ function Item._StatInfo(statInfo)
     return statInfo
 end
 
-function Item:_Init(itemData)
+function Item:_Init(itemData, stackSize, enhancementLevel)
     self.data = itemData
+    self.stackSize = stackSize or 1
+    self.enhancementLevel = enhancementLevel or 0
     self.stats = {}
     self.statTotals = {}
 end
@@ -210,7 +238,11 @@ function Item:_IntoHash(isRuntime)
     local hashParts = {}
     table.insert(hashParts, isRuntime and HASH_RUNTIME or HASH_PERSISTENT)
     table.insert(hashParts, isRuntime and Base64.Encode24(self.data.index) or self.data.muid)
-    table.insert(hashParts, HASH_DELIM_ID_END)
+    table.insert(hashParts, HASH_DELIM_INTRO)
+    table.insert(hashParts, Base64.Encode12(self:GetStackSize()))
+    table.insert(hashParts, HASH_DELIM_INTRO)
+    table.insert(hashParts, Base64.Encode6(self:GetEnhancementLevel()))
+    table.insert(hashParts, HASH_DELIM_INTRO)
     for _,stat in ipairs(self.stats) do
         local statIndex = self.STATS[stat.name]
         local statDelimiter = stat.isBase and HASH_DELIM_STAT_BASE or HASH_DELIM_STAT_BONUS
@@ -228,7 +260,7 @@ function Item._FromHash(database, hash)
     local hashType = hash:sub(1, 1)
     local hashData = hash:sub(2)
     local isRuntime = hashType == HASH_RUNTIME
-    local hashItemId, hashItemStats = hashData:match(HASH_PATTERN_FULL)
+    local hashItemId, hashStackSize, hashEnhancementLevel, hashItemStats = hashData:match(HASH_PATTERN_FULL)
     local itemData = nil
     if isRuntime then
         itemData = database:FindItemDataByIndex(Base64.Decode24(hashItemId))
@@ -239,7 +271,9 @@ function Item._FromHash(database, hash)
         warn("unable to locate item data for hash: ", hashData)
         return
     end
-    local item = Item.New(itemData)
+    local stackSize = hashStackSize and Base64.Decode12(hashStackSize) or nil
+    local enhancementLevel = hashEnhancementLevel and Base64.Decode6(hashEnhancementLevel) or nil 
+    local item = Item.New(itemData, stackSize, enhancementLevel)
     for statDelimiter,statNameHash,statValueHash in hashItemStats:gmatch(HASH_PATTERN_STAT) do
         local statIsBase = statDelimiter == HASH_DELIM_STAT_BASE or nil
         local statName = isRuntime and Item.STATS[Base64.Decode6(statNameHash)] or statNameHash
