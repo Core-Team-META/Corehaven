@@ -33162,6 +33162,164 @@ Objects {
   }
 }
 Objects {
+  Id: 4267221329022229971
+  Name: "Frames"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 3941875156488324180
+  ChildIds: 1312387798904016726
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 1312387798904016726
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4267221329022229971
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3941875156488324180
+  Name: "FramesClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4267221329022229971
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIPlayerState"
+      AssetReference {
+        Id: 7188294788371852653
+      }
+    }
+    Overrides {
+      Name: "cs:API_ID"
+      AssetReference {
+        Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:Container"
+      ObjectReference {
+        SelfId: 1312387798904016726
+      }
+    }
+    Overrides {
+      Name: "cs:FrameTemplate"
+      AssetReference {
+        Id: 8555890741944014434
+      }
+    }
+    Overrides {
+      Name: "cs:StatusEffectTemplate"
+      AssetReference {
+        Id: 9055797448677108737
+      }
+    }
+    Overrides {
+      Name: "cs:NPCIcon"
+      AssetReference {
+        Id: 4295659846319462830
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7054716148702150409
+    }
+  }
+}
+Objects {
   Id: 3891430132890496653
   Name: "Doors and Portals"
   Transform {
@@ -39143,164 +39301,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 3858644722035098132
-    }
-  }
-}
-Objects {
-  Id: 4267221329022229971
-  Name: "Frames"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 11176579868672163906
-  ChildIds: 3941875156488324180
-  ChildIds: 1312387798904016726
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  NetworkContext {
-  }
-}
-Objects {
-  Id: 1312387798904016726
-  Name: "UI Container"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4267221329022229971
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 3941875156488324180
-  Name: "FramesClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4267221329022229971
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIPlayerState"
-      AssetReference {
-        Id: 7188294788371852653
-      }
-    }
-    Overrides {
-      Name: "cs:API_ID"
-      AssetReference {
-        Id: 8196531844027121028
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:TalentSelectorUtility"
-      AssetReference {
-        Id: 4644281046712195371
-      }
-    }
-    Overrides {
-      Name: "cs:Container"
-      ObjectReference {
-        SelfId: 1312387798904016726
-      }
-    }
-    Overrides {
-      Name: "cs:FrameTemplate"
-      AssetReference {
-        Id: 8555890741944014434
-      }
-    }
-    Overrides {
-      Name: "cs:StatusEffectTemplate"
-      AssetReference {
-        Id: 9055797448677108737
-      }
-    }
-    Overrides {
-      Name: "cs:NPCIcon"
-      AssetReference {
-        Id: 4295659846319462830
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7054716148702150409
     }
   }
 }
