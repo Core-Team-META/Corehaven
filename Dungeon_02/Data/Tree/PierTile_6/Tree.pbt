@@ -452,6 +452,31 @@ Objects {
   ChildIds: 3937881417859261386
   ChildIds: 937665862095278796
   ChildIds: 12804552956133069303
+  ChildIds: 10632688964902712056
+  ChildIds: 16390483705543366318
+  ChildIds: 11624637789863439631
+  ChildIds: 3953871855578561959
+  ChildIds: 4323819746247807932
+  ChildIds: 6790992939993910442
+  ChildIds: 14333361517519470587
+  ChildIds: 1884057257833191775
+  ChildIds: 3047481327219772203
+  ChildIds: 5474804198473051203
+  ChildIds: 16883756274231779452
+  ChildIds: 9635736883624348069
+  ChildIds: 9010973742795759956
+  ChildIds: 1800343557878054566
+  ChildIds: 15233726513430866496
+  ChildIds: 8230724904765969448
+  ChildIds: 17949514771231545100
+  ChildIds: 5472320117155274638
+  ChildIds: 17645960924242538462
+  ChildIds: 16825641110412942935
+  ChildIds: 15258590972563845985
+  ChildIds: 5578661221318289881
+  ChildIds: 17132383524962755404
+  ChildIds: 3832806116357367713
+  ChildIds: 3853349310071061709
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -462,6 +487,1881 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 3853349310071061709
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1666.60425
+      Y: 412.696777
+      Z: 276.065887
+    }
+    Rotation {
+      Pitch: 83.5786743
+      Yaw: -89.9983521
+      Roll: -173.76561
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3832806116357367713
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1615.20288
+      Y: 381.296387
+      Z: 290.660583
+    }
+    Rotation {
+      Pitch: 83.578125
+      Yaw: -89.9976196
+      Roll: -173.765488
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17132383524962755404
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1575.62683
+      Y: 350.559082
+      Z: 261.465179
+    }
+    Rotation {
+      Pitch: 83.5786057
+      Yaw: -89.9980774
+      Roll: -173.765533
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5578661221318289881
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1472.53418
+      Y: -711.82019
+      Z: -67.1061935
+    }
+    Rotation {
+      Pitch: 83.5791931
+      Yaw: -89.9993896
+      Roll: -159.652908
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15258590972563845985
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1534.50305
+      Y: -723.166443
+      Z: 15.8784456
+    }
+    Rotation {
+      Pitch: 83.5787354
+      Yaw: -90.0004883
+      Roll: -159.654221
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16825641110412942935
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1590.03296
+      Y: -724.792847
+      Z: -15.9959869
+    }
+    Rotation {
+      Pitch: 83.5787659
+      Yaw: -90.0028687
+      Roll: -159.657333
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17645960924242538462
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1707.98816
+      Y: -730.547058
+      Z: 23.6026115
+    }
+    Rotation {
+      Pitch: 83.5792847
+      Yaw: -90.0012207
+      Roll: -159.655899
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5472320117155274638
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1646.8811
+      Y: -732.140686
+      Z: 44.7640305
+    }
+    Rotation {
+      Pitch: 83.5787659
+      Yaw: -90.0006104
+      Roll: -159.654343
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17949514771231545100
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1249.91113
+      Y: 403.235016
+      Z: 229.236267
+    }
+    Rotation {
+      Pitch: 83.5785446
+      Yaw: -89.9983521
+      Roll: -173.766342
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8230724904765969448
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1219.53406
+      Y: 431.582397
+      Z: 268.642914
+    }
+    Rotation {
+      Pitch: 83.5789413
+      Yaw: -89.9995728
+      Roll: -164.032211
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15233726513430866496
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1182.64478
+      Y: 470.3367
+      Z: 255.957474
+    }
+    Rotation {
+      Pitch: 83.5793762
+      Yaw: -89.9989319
+      Roll: -164.031433
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1800343557878054566
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1144.36475
+      Y: 500.454132
+      Z: 290.751892
+    }
+    Rotation {
+      Pitch: 83.5788
+      Yaw: -89.9993591
+      Roll: -164.032272
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9010973742795759956
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 1098.94019
+      Y: 525.610962
+      Z: 261.365417
+    }
+    Rotation {
+      Pitch: 83.5794067
+      Yaw: -89.9990845
+      Roll: -164.031647
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9635736883624348069
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 984.874634
+      Y: 628.594849
+      Z: 265.61145
+    }
+    Rotation {
+      Pitch: 83.5795593
+      Yaw: -89.9977722
+      Roll: -164.029785
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16883756274231779452
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1270.78662
+      Y: -644.602966
+      Z: -182.264801
+    }
+    Rotation {
+      Pitch: 83.5795212
+      Yaw: -89.9976196
+      Roll: 163.913284
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5474804198473051203
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1211.58923
+      Y: -621.447937
+      Z: -165.887115
+    }
+    Rotation {
+      Pitch: 83.5800171
+      Yaw: -89.9977417
+      Roll: 163.914307
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3047481327219772203
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1168.80713
+      Y: -590.843811
+      Z: -217.380203
+    }
+    Rotation {
+      Pitch: 83.5795822
+      Yaw: -89.9977112
+      Roll: 163.913834
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 1884057257833191775
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1125.51794
+      Y: -560.046082
+      Z: -189.235565
+    }
+    Rotation {
+      Pitch: 83.5799789
+      Yaw: -89.9981079
+      Roll: 163.91391
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14333361517519470587
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: -1088.12061
+      Y: -511.405945
+      Z: -249.169937
+    }
+    Rotation {
+      Pitch: 83.5805664
+      Yaw: -89.9986
+      Roll: 163.914185
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6790992939993910442
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 906.049805
+      Y: 651.629211
+      Z: 266.805267
+    }
+    Rotation {
+      Pitch: 83.5804443
+      Yaw: -89.9984131
+      Roll: 163.914047
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4323819746247807932
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 948.587646
+      Y: 635.378235
+      Z: 302.434753
+    }
+    Rotation {
+      Pitch: 83.5803833
+      Yaw: -89.9983521
+      Roll: 163.914291
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3953871855578561959
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 826.249634
+      Y: 656.783203
+      Z: 270.684509
+    }
+    Rotation {
+      Pitch: 83.5811768
+      Yaw: -89.9992065
+      Roll: 163.914368
+    }
+    Scale {
+      X: 0.235623971
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11624637789863439631
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 865.738281
+      Y: 653.512817
+      Z: 301.143616
+    }
+    Rotation {
+      Pitch: 83.5809326
+      Yaw: -89.9987183
+      Roll: 163.914505
+    }
+    Scale {
+      X: 0.235623986
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16390483705543366318
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 787.451355
+      Y: 646.151733
+      Z: 313.468658
+    }
+    Rotation {
+      Pitch: 83.5811768
+      Yaw: -89.9992065
+      Roll: 163.914368
+    }
+    Scale {
+      X: 0.235623971
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10632688964902712056
+  Name: "Large Round Wood Beam 8m"
+  Transform {
+    Location {
+      X: 744.611755
+      Y: 634.928345
+      Z: 337.75238
+    }
+    Rotation {
+      Pitch: 83.5811768
+      Yaw: -89.9993286
+      Roll: 163.914185
+    }
+    Scale {
+      X: 0.235623956
+      Y: 0.562171698
+      Z: 0.562171042
+    }
+  }
+  ParentId: 12378860516972493157
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.619791687
+        G: 0.444870681
+        B: 0.310838789
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_Detail1:color"
+      Color {
+        R: 0.796875
+        G: 0.618408144
+        B: 0.618408144
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9740100601051791580
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -1184,6 +3084,12 @@ Objects {
   ChildIds: 17190359352343858330
   ChildIds: 2056018657010174648
   ChildIds: 11642133430491607909
+  ChildIds: 13909167123620219497
+  ChildIds: 9757528175720022606
+  ChildIds: 15090455421271490343
+  ChildIds: 18007679350715647118
+  ChildIds: 11025175899207588086
+  ChildIds: 16289661186950713578
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1191,6 +3097,408 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 16289661186950713578
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 384.585
+      Y: -672.179504
+      Z: 172.381638
+    }
+    Rotation {
+      Pitch: 0.955201924
+      Yaw: -92.3764648
+      Roll: -86.5729065
+    }
+    Scale {
+      X: 0.212741464
+      Y: 0.822923362
+      Z: 0.315959215
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11025175899207588086
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 387.10733
+      Y: -675.686
+      Z: 216.958389
+    }
+    Rotation {
+      Pitch: 0.955208719
+      Yaw: -92.3765259
+      Roll: -86.572937
+    }
+    Scale {
+      X: 0.165394753
+      Y: 0.822923303
+      Z: 0.315960288
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18007679350715647118
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -55.8601685
+      Y: -1201.53479
+      Z: 216.194168
+    }
+    Rotation {
+      Pitch: 0.303055465
+      Yaw: -94.2606201
+      Roll: -86.7488708
+    }
+    Scale {
+      X: 0.546855867
+      Y: 0.822921872
+      Z: 0.315961957
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 15090455421271490343
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -58.5530586
+      Y: -1202.91272
+      Z: 170.722443
+    }
+    Rotation {
+      Pitch: 1.97683418
+      Yaw: -94.1656494
+      Roll: -86.7470703
+    }
+    Scale {
+      X: 0.546855867
+      Y: 0.822921872
+      Z: 0.315961957
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9757528175720022606
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 372.652
+      Y: -1202.05994
+      Z: 219.147
+    }
+    Rotation {
+      Pitch: 0.955236077
+      Yaw: -92.3765869
+      Roll: -86.5729675
+    }
+    Scale {
+      X: 0.546855867
+      Y: 0.822921872
+      Z: 0.315961957
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13909167123620219497
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 374.947296
+      Y: -1199.09985
+      Z: 172.33371
+    }
+    Rotation {
+      Pitch: 1.87355494
+      Yaw: -92.3636169
+      Roll: -86.686676
+    }
+    Scale {
+      X: 0.546855867
+      Y: 0.822921872
+      Z: 0.315961957
+    }
+  }
+  ParentId: 6162525161496223054
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.291666657
+        G: 0.133085966
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 1
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -1466,18 +3774,19 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 384.279053
-      Y: 18.3953247
+      X: 372.207123
+      Y: 272.41568
+      Z: -20.7506447
     }
     Rotation {
-      Pitch: 4.42814112
-      Yaw: -87.3111267
-      Roll: -82.3570251
+      Pitch: 9.59153175
+      Yaw: -86.6093445
+      Roll: -82.2710876
     }
     Scale {
-      X: 0.308394819
-      Y: 0.702481329
-      Z: 0.315937281
+      X: 1.26764703
+      Y: 0.702483118
+      Z: 0.315925717
     }
   }
   ParentId: 6162525161496223054
@@ -1532,19 +3841,19 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 381.205048
-      Y: 284.545197
-      Z: 44.6573334
+      X: 394.634796
+      Y: 238.028503
+      Z: 130.049622
     }
     Rotation {
-      Pitch: -4.80291748
-      Yaw: -88.4422
-      Roll: -82.2213745
+      Pitch: -22.9362183
+      Yaw: -91.0886841
+      Roll: -81.578125
     }
     Scale {
       X: 0.600032866
       Y: 0.82292217
-      Z: 0.315939128
+      Z: 0.315939188
     }
   }
   ParentId: 6162525161496223054
@@ -1738,14 +4047,14 @@ Objects {
       Z: 111.341499
     }
     Rotation {
-      Pitch: -16.0027161
-      Yaw: -90.1034851
-      Roll: -93.8433228
+      Pitch: -8.0111084
+      Yaw: -90.6436768
+      Roll: -93.7305
     }
     Scale {
-      X: 2.65446591
-      Y: 0.702478886
-      Z: 0.315943
+      X: 2.65446639
+      Y: 0.702478945
+      Z: 0.315943062
     }
   }
   ParentId: 6162525161496223054
@@ -1984,6 +4293,24 @@ Objects {
   ChildIds: 12608521275923578862
   ChildIds: 15443835955395362108
   ChildIds: 11282480046754277725
+  ChildIds: 8869202640328383714
+  ChildIds: 7338184095440029494
+  ChildIds: 6891273404544661214
+  ChildIds: 3827074665641449410
+  ChildIds: 9461847868806827910
+  ChildIds: 4790016177976055954
+  ChildIds: 5639366526937383159
+  ChildIds: 7111289631820851290
+  ChildIds: 10185614683690178238
+  ChildIds: 4769994234918231254
+  ChildIds: 12249804924821433724
+  ChildIds: 5887578200386906371
+  ChildIds: 10455490007934469410
+  ChildIds: 18119202436883298729
+  ChildIds: 8008859060977036624
+  ChildIds: 4547648373780900639
+  ChildIds: 7739000761382872838
+  ChildIds: 9423002523593515234
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1992,6 +4319,1193 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 9423002523593515234
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 411.898132
+      Y: -762.928
+      Z: 4.40390825
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 13.7550592
+      Roll: 15.0800762
+    }
+    Scale {
+      X: 0.0755904764
+      Y: 1.07124019
+      Z: 0.250009269
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7739000761382872838
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -34.883709
+      Y: -1526.99963
+      Z: 0.218348086
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 1.34262407
+      Roll: 8.19676
+    }
+    Scale {
+      X: 0.389845878
+      Y: 1.49999487
+      Z: 0.250001132
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4547648373780900639
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -29.3979015
+      Y: -1476.95886
+      Z: 0.218113244
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -0.447601318
+      Roll: 0.877807617
+    }
+    Scale {
+      X: 0.275298059
+      Y: 1.49998
+      Z: 0.250010908
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8008859060977036624
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -26.5117893
+      Y: -1429.46655
+      Z: 0.218095526
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -9.31710815
+      Roll: -7.99090576
+    }
+    Scale {
+      X: 0.216220766
+      Y: 1.3545692
+      Z: 0.249977529
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 18119202436883298729
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -24.7190037
+      Y: -1387.76587
+      Z: 0.217950508
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 0.895173669
+      Roll: 2.21933031
+    }
+    Scale {
+      X: 0.166166782
+      Y: 1.06258321
+      Z: 0.249990866
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10455490007934469410
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 394.505249
+      Y: -1404.47583
+      Z: 4.40548658
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -90
+      Roll: -88.6748657
+    }
+    Scale {
+      X: 0.166166767
+      Y: 1.06258321
+      Z: 0.249990851
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5887578200386906371
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 394.40979
+      Y: -1446.21582
+      Z: 4.40571308
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 180
+      Roll: -178.672791
+    }
+    Scale {
+      X: 0.216220766
+      Y: 1.3545692
+      Z: 0.249977529
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12249804924821433724
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 391.705048
+      Y: -1493.71265
+      Z: 4.40567493
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -90
+      Roll: -88.6731873
+    }
+    Scale {
+      X: 0.275298059
+      Y: 1.49998
+      Z: 0.250010908
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4769994234918231254
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 388.987305
+      Y: -1543.4198
+      Z: 4.40581942
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 14.0362635
+      Roll: 9.74485779
+    }
+    Scale {
+      X: 0.389845878
+      Y: 1.49999487
+      Z: 0.250001132
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10185614683690178238
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 407.578918
+      Y: -1042.31653
+      Z: -7.32084036
+    }
+    Rotation {
+      Pitch: 86.0660629
+      Yaw: 88.6530533
+      Roll: 89.9735184
+    }
+    Scale {
+      X: 0.133090973
+      Y: 1.28189361
+      Z: 0.250010043
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7111289631820851290
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 388.767456
+      Y: -1227.33606
+      Z: -7.85335302
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 5.35582829
+      Roll: 6.67888832
+    }
+    Scale {
+      X: 0.133090958
+      Y: 1.28189349
+      Z: 0.250010043
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5639366526937383159
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: -2.37270451
+      Y: -1190.00635
+      Z: 4.41462088
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -12.9074402
+      Roll: -11.5823059
+    }
+    Scale {
+      X: 0.133091703
+      Y: 1.49999297
+      Z: 0.249994919
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 4790016177976055954
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 3.27489781
+      Y: -1144.32727
+      Z: -10.6924191
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -90
+      Roll: -88.6723633
+    }
+    Scale {
+      X: 0.216220662
+      Y: 1.49999428
+      Z: 0.249996454
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9461847868806827910
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 2.80650282
+      Y: -1046.4248
+      Z: -14.0355806
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 90
+      Roll: 91.3218079
+    }
+    Scale {
+      X: 0.128429547
+      Y: 1.49998295
+      Z: 0.250003427
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3827074665641449410
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 1.62516475
+      Y: -1097.63574
+      Z: 4.4144206
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 0.895173669
+      Roll: 2.21841288
+    }
+    Scale {
+      X: 0.133091703
+      Y: 1.49999297
+      Z: 0.249994919
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6891273404544661214
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 386.926788
+      Y: -1179.36987
+      Z: 4.40478754
+    }
+    Rotation {
+      Pitch: 90
+      Roll: 1.32415676
+    }
+    Scale {
+      X: 0.133091703
+      Y: 1.49999297
+      Z: 0.249994919
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7338184095440029494
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 398.663055
+      Y: -1087.17627
+      Z: 4.40437555
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: 90
+      Roll: 91.321991
+    }
+    Scale {
+      X: 0.133091703
+      Y: 1.49999297
+      Z: 0.249994919
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8869202640328383714
+  Name: "Craftsman Roof 01 Beam"
+  Transform {
+    Location {
+      X: 390.999359
+      Y: -1133.65576
+      Z: -11.1391296
+    }
+    Rotation {
+      Pitch: 90
+      Yaw: -8.88067627
+      Roll: -7.55337524
+    }
+    Scale {
+      X: 0.216220662
+      Y: 1.49999428
+      Z: 0.249996454
+    }
+  }
+  ParentId: 8540695942649927623
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17557104084763797115
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.401041657
+        G: 0.182993218
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:utile"
+      Float: 2.70041347
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:vtile"
+      Float: 1
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6807357076135762555
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -2664,14 +6178,14 @@ Objects {
       Z: 4.40372562
     }
     Rotation {
-      Pitch: 90
-      Yaw: 0.895173669
-      Roll: 2.21841288
+      Pitch: 86.5779343
+      Yaw: 88.6540527
+      Roll: 89.9761429
     }
     Scale {
-      X: 0.133091703
-      Y: 1.49999297
-      Z: 0.249994919
+      X: 0.133091033
+      Y: 1.30214405
+      Z: 0.250002027
     }
   }
   ParentId: 8540695942649927623
@@ -2791,19 +6305,19 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 414.940704
-      Y: -724.042786
-      Z: 4.40382242
+      X: 414.971802
+      Y: -722.692749
+      Z: 4.40381813
     }
     Rotation {
       Pitch: 90
-      Yaw: -90
-      Roll: -88.6748657
+      Yaw: -12.9074402
+      Roll: -11.5823059
     }
     Scale {
-      X: 0.133091703
-      Y: 1.49999297
-      Z: 0.249994919
+      X: 0.133091778
+      Y: 1.26331306
+      Z: 0.249985546
     }
   }
   ParentId: 8540695942649927623
@@ -2923,13 +6437,13 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 32.7623062
-      Y: -689.036621
-      Z: 4.4132061
+      X: 32.7623329
+      Y: -689.03656
+      Z: -21.3676682
     }
     Rotation {
       Pitch: 90
-      Roll: 1.32769704
+      Roll: 1.32769692
     }
     Scale {
       X: 0.216220662
