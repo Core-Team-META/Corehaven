@@ -5,7 +5,7 @@ local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local RANGE = 1000.0
 local COOLDOWN = 12.0
 local VOLLEY_RADIUS	= 140.0
-local DAMAGE = 45.0
+local DAMAGE = 29.0
 
 local currentTasks = {}
 

@@ -5,7 +5,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local RANGE = 700.0
 local COOLDOWN = 0.0
-local DAMAGE = 23.0
+local DAMAGE = 15.0
 local PROJECTILE_SPEED = 1200.0
 
 local targets = {}

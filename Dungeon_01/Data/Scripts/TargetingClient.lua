@@ -151,7 +151,10 @@ function FindAutoTarget()
 			end
 
 			if not inHistory then
-				table.insert(autoTargetHistory, candidateData.target)
+				if adjustHistory then
+					table.insert(autoTargetHistory, candidateData.target)
+				end
+
 				return candidateData.target
 			end
 		end
@@ -168,13 +171,41 @@ function FindAutoTarget()
 		end
 	end
 
-	if target then
+	if target and adjustHistory then
 		-- Move them to the front of the list
 		table.remove(autoTargetHistory, minRank)
 		table.insert(autoTargetHistory, target)
 	end
 
 	return target
+end
+
+function TrySetTarget(target, isAutoTarget)
+	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
+
+	if not target or target == currentTarget then
+		return
+	end
+
+	if isAutoTarget then
+		local index = nil
+
+		for i, previousTarget in pairs(autoTargetHistory) do
+			if target == previousTarget then
+				index = i
+				break
+			end
+		end
+
+		if index then
+			table.remove(autoTargetHistory, index)
+		end
+
+		table.insert(autoTargetHistory, target)
+	end
+
+	table.insert(targetChangeTimeHistory, t)
+	API_T.SetTarget_Direct(target)
 end
 
 function OnBindingPressed(player, binding)
@@ -188,20 +219,11 @@ function OnBindingPressed(player, binding)
 		return
 	end
 
-	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
-	local newTarget = currentTarget
-
 	if binding == "ability_primary" and UI.IsCursorVisible() then
 		autoTargetHistory = {}			-- Clear auto target history
-
-		newTarget = FindClickTarget()
+		TrySetTarget(FindClickTarget(), false)
 	elseif binding == AUTO_TARGET_BINDING or binding == "ability_extra_20" then		-- TEMP
-		newTarget = FindAutoTarget()
-	end
-
-	if newTarget and newTarget ~= currentTarget then
-		table.insert(targetChangeTimeHistory, t)
-		API_T.SetTarget(newTarget)
+		TrySetTarget(FindAutoTarget(), true)
 	end
 end
 
@@ -210,7 +232,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 
 	if targetCharacter == LOCAL_PLAYER and not currentTarget then
 		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
-			API_T.SetTarget(sourceCharacter)
+			API_T.SetTarget_Direct(sourceCharacter)
 		end
 	end
 end
@@ -250,6 +272,11 @@ function Tick(deltaTime)
 		TARGET_LIGHT.visibility = Visibility.FORCE_OFF
 	end
 end
+
+local functionTable = {}
+functionTable.FindAutoTarget = FindAutoTarget
+functionTable.TrySetTarget = TrySetTarget
+API_T.RegisterSystem(functionTable)
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 Events.Connect("DamageDone", OnDamageDone)

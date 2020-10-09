@@ -9,7 +9,7 @@ local COOLDOWN = 27.0
 local N_POOLS = 150
 local POOL_RADIUS = 500.0
 local MAX_DISTANCE = 3500.0
-local DAMAGE = 50.0
+local DAMAGE = 30.0
 local INITIAL_DELAY = 2.0
 local INCREMENTAL_DELAY = 0.1
 

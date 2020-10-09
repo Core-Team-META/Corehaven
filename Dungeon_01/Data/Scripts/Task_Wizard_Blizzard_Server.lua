@@ -5,7 +5,7 @@ local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 700.0
 local COOLDOWN = 20.0
-local DAMAGE_RATE = 10.0
+local DAMAGE_RATE = 6.0
 local MAX_OFFSET_RADIUS = 600.0
 local AREA_RADIUS = 600.0
 local DURATION = 12.0

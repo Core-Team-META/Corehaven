@@ -59,9 +59,27 @@
         }
       }
       Overrides {
+        Name: "cs:ProjectileTemplate"
+        AssetReference {
+          Id: 5333833631319763796
+        }
+      }
+      Overrides {
         Name: "cs:APIStatusEffects"
         AssetReference {
           Id: 1831660344620141067
+        }
+      }
+      Overrides {
+        Name: "cs:APIProjectile"
+        AssetReference {
+          Id: 17739477946418166285
+        }
+      }
+      Overrides {
+        Name: "cs:APIDamage"
+        AssetReference {
+          Id: 16915150100797142409
         }
       }
     }

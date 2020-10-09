@@ -4,7 +4,7 @@ local API_K = require(script:GetCustomProperty("APIKnockback"))
 
 local RANGE = 180.0
 local COOLDOWN = 12.0
-local DAMAGE = 40.0
+local DAMAGE = 25.0
 
 local currentTasks = {}
 

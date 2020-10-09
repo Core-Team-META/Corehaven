@@ -42,8 +42,8 @@
           Rotation {
           }
           Scale {
-            X: 2
-            Y: 2
+            X: 2.73
+            Y: 2.73
             Z: 5
           }
         }

@@ -574,7 +574,8 @@ function API.GetVisibleCooldownData(abilityName)
 end
 
 -- Owning client
--- This wraps behavior for things like alt to self cast, or (future) spells that auto target self
+-- This wraps behavior for things like alt to self cast, or (future) spells that auto target self.
+-- If this behavior ever depends on the current target, we may need to incorporate the auto-autoTarget stuff in here as well.
 function GetEffectiveTarget(abilityName)
 	local data = abilityData[abilityName]
 	assert(data.targets)
@@ -602,6 +603,14 @@ function API.CanTrigger(abilityName)
 			return true 
 		else
 			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, GetEffectiveTarget(abilityName), abilityName)
+
+			--[[if not targetValid then
+				local autoTarget = API_T.FindAutoTarget()
+
+				if autoTarget then
+					targetValid, errorMessage = IsTargetValid(autoTarget)
+				end
+			end]]
 
 			if not targetValid then
 				if errorMessage then

@@ -1,4 +1,12 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
+
+local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
+
+local BASE_DAMAGE = 35.0
+local DAMAGE_MULTIPLIER = 1.0
+local PROJECTILE_SPEED = 4000.0
 
 local data = {}
 
@@ -21,11 +29,15 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	return 0.0
+	API_P.CreateProjectile(caster, target, PROJECTILE_SPEED, 0.3, PROJECTILE_TEMPLATE)
+	return 0.0		-- We want the effects to play immediately because that is when the stun happens
 end
 
 function data.onCastServer(caster, target)
 	API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Righteous Hammer"].id)
+	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
+	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 end
 
 return data

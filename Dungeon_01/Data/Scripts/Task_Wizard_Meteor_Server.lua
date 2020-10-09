@@ -6,7 +6,7 @@ local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local RANGE = 1000.0
 local COOLDOWN = 12.0
 local METEOR_RADIUS	= 350.0
-local MAX_DAMAGE = 45.0
+local MAX_DAMAGE = 32.0
 
 function GetPriority(npc, taskHistory)
 	return 3.0

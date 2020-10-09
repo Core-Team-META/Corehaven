@@ -529,10 +529,10 @@ Objects {
   }
   ParentId: 6004305408932559212
   ChildIds: 11739659864115600922
-  ChildIds: 12766202776203964267
+  ChildIds: 3451560461803088695
   ChildIds: 8656554226348028838
   ChildIds: 2435950492341338217
-  ChildIds: 3451560461803088695
+  ChildIds: 12766202776203964267
   ChildIds: 9493492601717869297
   ChildIds: 5604193199934608457
   UnregisteredParameters {
@@ -736,8 +736,8 @@ Objects {
   }
 }
 Objects {
-  Id: 3451560461803088695
-  Name: "Righteous Hammer"
+  Id: 12766202776203964267
+  Name: "Mending Light"
   Transform {
     Location {
     }
@@ -765,16 +765,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Throw a hammer at your target, stunning them."
+      String: "Empowers your target with holy energy, healing them over time."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Righteous Hammer"
+      String: "Mending Light"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 15830314128515121469
+        Id: 3853565587853589068
       }
     }
     Overrides {
@@ -973,8 +973,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12766202776203964267
-  Name: "Mending Light"
+  Id: 3451560461803088695
+  Name: "Righteous Hammer"
   Transform {
     Location {
     }
@@ -1002,16 +1002,16 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Empowers your target with holy energy, healing them over time."
+      String: "Throw a hammer at your target, stunning them."
     }
     Overrides {
       Name: "cs:AbilityName1"
-      String: "Mending Light"
+      String: "Righteous Hammer"
     }
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 3853565587853589068
+        Id: 15830314128515121469
       }
     }
     Overrides {
@@ -33884,12 +33884,6 @@ Objects {
       Name: "cs:API_ID"
       AssetReference {
         Id: 8196531844027121028
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
       }
     }
     Overrides {

@@ -4,7 +4,7 @@ local API_P = require(script:GetCustomProperty("APIProjectile"))
 
 local RANGE = 700.0
 local COOLDOWN = 0.0
-local DAMAGE = 4.0
+local DAMAGE = 3.0
 local PROJECTILE_SPEED = 1500.0
 
 local currentTasks = {}
