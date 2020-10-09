@@ -5,6 +5,10 @@
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:SalvageItemName"
+        String: "Shards"
+      }
+      Overrides {
         Name: "cs:Item"
         AssetReference {
           Id: 13866541763018299709

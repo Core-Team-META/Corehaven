@@ -190,13 +190,18 @@ end
 -- Move an item. If there is an item in the destination slot, the items will swap. Acts as delete if destination slot is nil.
 function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     if not self:CanMoveItem(fromSlotIndex, toSlotIndex) then return end
+    local originalItem = self:GetItem(fromSlotIndex)
     local swapItem = nil
     if toSlotIndex then
-        swapItem = self.slotItems[toSlotIndex]
-        self:_SetSlotItem(toSlotIndex, self.slotItems[fromSlotIndex])
+        swapItem = self:GetItem(toSlotIndex)
+        self:_SetSlotItem(toSlotIndex, originalItem)
     end
     self:_SetSlotItem(fromSlotIndex, swapItem)
     self:_FireEvent("itemMovedEvent", fromSlotIndex, toSlotIndex)
+    -- If this was a salvage, perform the salvage transaction.
+    if not toSlotIndex then
+        self:_SalvageItem(originalItem)
+    end
 end
 
 -- Register a new loot object dropped for the owner of this inventory. Optionally provide a callback for when the loot is claimed.
@@ -444,6 +449,22 @@ function Inventory:_AddStackableItemToBackpack(itemToAdd)
     local emptySlotIndex = self:GetFreeBackpackSlot()
     if emptySlotIndex then
         self:_SetSlotItem(emptySlotIndex, itemToAdd)
+    end
+end
+
+function Inventory:_SalvageItem(itemToSalvage)
+    if itemToSalvage then
+        local salvageQuantity = itemToSalvage:GetSalvageQuantity()
+        if salvageQuantity then
+            local salvageItem = self.database:CreateItemSalvage()
+            -- It is not allowed for items to salvage into more than a single stack, otherwise there are some annoying edge cases to consider.
+            if salvageQuantity > salvageItem:GetMaxStackSize() then
+                warn("cannot salvage into quantity greater than salvage-item stack size. consider increasing the salvage item stack size.")
+            end
+            salvageQuantity = math.min(salvageQuantity, salvageItem:GetMaxStackSize())
+            salvageItem:SetStackSize(salvageQuantity)
+            self:_AddStackableItemToBackpack(salvageItem)
+        end
     end
 end
 

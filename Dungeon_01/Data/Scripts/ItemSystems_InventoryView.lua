@@ -22,6 +22,7 @@ local SFX_EQUIP = script:GetCustomProperty("SFX_Equip")
 local SFX_MOVE = script:GetCustomProperty("SFX_Move")
 local SFX_MOVE_FAIL = script:GetCustomProperty("SFX_MoveFail")
 local SFX_DISCARD = script:GetCustomProperty("SFX_Discard")
+local SFX_SALVAGE = script:GetCustomProperty("SFX_Salvage")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Hardcoded UI placement settings.
@@ -261,7 +262,10 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
         PlaySound(SFX_MOVE_FAIL)
         return
     end
-    -- Attempt to move inventory items.
+    -- We may make use of the items salvage quantity.
+    local itemToMove = inventory:GetItem(fromSlotIndex)
+    local salvageQuantity = itemToMove and itemToMove:GetSalvageQuantity() or 0
+    -- Attempt to move inventory items, this may result in an item being salvaged.
     if inventory:CanMoveItem(fromSlotIndex, toSlotIndex) then
         inventory:MoveItem(fromSlotIndex, toSlotIndex)
         self:CommenceSlotCooldown(fromSlotIndex)
@@ -273,6 +277,8 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
             else
                 PlaySound(SFX_MOVE)
             end
+        elseif salvageQuantity > 0 then
+            PlaySound(SFX_SALVAGE)
         else
             PlaySound(SFX_DISCARD)
         end

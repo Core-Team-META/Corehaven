@@ -77,6 +77,32 @@ Item.SLOT_CONSTRAINTS = {
     Wand        = { slotType = "MainHand" },
 }
 
+Item.SHARD_TYPE_QUANTITIES = {
+    Armor       = 1,
+    Axe         = 2,
+    Boots       = 1,
+    Dagger      = 2,
+    Greatsword  = 2,
+    Focus       = 1,
+    Helmet      = 1,
+    Mace        = 2,
+    Shield      = 1,
+    Staff       = 2,
+    Sword       = 2,
+    Trinket     = 2,
+    Warhammer   = 2,
+    Wand        = 2,
+}
+
+-- These are close to the geometric series 2^n, but are chosen to be prime numbers so that combinations look more "random".
+Item.SHARD_RARITY_MULTIPLIERS = {
+    Common      = 1,
+    Uncommon    = 5,
+    Rare        = 23,
+    Epic        = 79,
+    Legendary   = 251,
+}
+
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
@@ -205,6 +231,13 @@ end
 function Item:RollStats()
     self.stats = self.data:_RollStats()
     self:_RecalculateStatTotals()
+end
+
+-- How much salvage is generated from this item.
+function Item:GetSalvageQuantity()
+    local quantity = self.SHARD_TYPE_QUANTITIES[self:GetType()] or 0
+    local quantity = self.SHARD_RARITY_MULTIPLIERS[self:GetRarity()] * quantity
+    return quantity > 0 and quantity or nil
 end
 
 function Item:HasConsumptionEffect()

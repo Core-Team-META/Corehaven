@@ -5,6 +5,51 @@
     Likelihood = '1',
   },
   {
+    DropKey = 'CHEAT',
+    ItemName = 'Oak Log',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Yew Log',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Frog Eye',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Combat Medallion',
+    Likelihood = '1',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Backtwister',
+    Likelihood = '4',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Bandit Knife',
+    Likelihood = '4',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Obsidian Dagger',
+    Likelihood = '4',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Pointy Stick',
+    Likelihood = '4',
+  },
+  {
+    DropKey = 'CHEAT',
+    ItemName = 'Blight Bottle',
+    Likelihood = '4',
+  },
+  {
     DropKey = 'CommonTrash',
     ItemName = 'Pointy Stick',
     Likelihood = '1',

@@ -1,5 +1,13 @@
 ﻿return {
   {
+    Name = 'Shards',
+    Type = 'Material',
+    Rarity = 'Common',
+    StackSize = '500',
+    MUID = 'E52AE938DA21C986:ITEM_NonEquippable_Shards',
+    Lore = 'Obtained by equipment. Used to enhance weapons and armor.',
+  },
+  {
     Name = 'Oak Log',
     Type = 'Material',
     Rarity = 'Common',
