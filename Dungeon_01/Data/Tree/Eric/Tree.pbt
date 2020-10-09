@@ -12198,10 +12198,10 @@ Objects {
     }
   }
   ParentId: 15283256722166935863
-  ChildIds: 9952987739011115725
-  ChildIds: 11631115137856515025
-  ChildIds: 12238945802532589735
-  ChildIds: 3817437328394114214
+  ChildIds: 8022416202805441011
+  ChildIds: 3078669904998004210
+  ChildIds: 9547015536320988829
+  ChildIds: 11807488092396045133
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceon"
   }
@@ -12212,282 +12212,786 @@ Objects {
   }
 }
 Objects {
-  Id: 3817437328394114214
-  Name: "2D Basic Shapes Decal"
+  Id: 11807488092396045133
+  Name: "Boss1_ShadowEruptionsRing4"
   Transform {
     Location {
+      X: -5.80810547
+      Y: 28.0546875
+      Z: 79.772583
     }
     Rotation {
     }
     Scale {
-      X: 60
-      Y: 60
-      Z: 15
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 8744791227633529172
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:color"
-      Color {
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 0.6250332
-        B: 0.659999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Indent"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Corner Rounding"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0
-    }
-  }
+  ChildIds: 2420228214656152338
+  ChildIds: 14755260097422222793
+  ChildIds: 1195683356572111047
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceoff"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3965397322580208730
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1195683356572111047
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -160.925903
     }
-    TeamSettings {
+    Rotation {
     }
-    DecalBP {
+    Scale {
+      X: 31.6059227
+      Y: 31.6059227
+      Z: 100.398438
+    }
+  }
+  ParentId: 11807488092396045133
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
 Objects {
-  Id: 12238945802532589735
-  Name: "2D Basic Shapes Decal"
+  Id: 14755260097422222793
+  Name: "Plane Ring - One Sided Thick"
   Transform {
     Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: 703.154114
     }
     Rotation {
     }
     Scale {
-      X: 30
-      Y: 30
-      Z: 15
+      X: 152.823242
+      Y: 152.823242
+      Z: 152.823242
     }
   }
-  ParentId: 8744791227633529172
+  ParentId: 11807488092396045133
   UnregisteredParameters {
     Overrides {
-      Name: "bp:color"
-      Color {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4876042108172592054
       }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.33333
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 0.6250332
-        B: 0.659999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Indent"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Corner Rounding"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0
     }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3965397322580208730
+  CoreMesh {
+    MeshAsset {
+      Id: 3329183888595046075
     }
-    TeamSettings {
+    Teams {
     }
-    DecalBP {
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
 Objects {
-  Id: 11631115137856515025
-  Name: "2D Basic Shapes Decal"
+  Id: 2420228214656152338
+  Name: "Plane Ring - One Sided Thick"
   Transform {
     Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: 151.831665
     }
     Rotation {
     }
     Scale {
-      X: 20
-      Y: 20
-      Z: 15
+      X: 152.823242
+      Y: 152.823242
+      Z: 152.823242
     }
   }
-  ParentId: 8744791227633529172
+  ParentId: 11807488092396045133
   UnregisteredParameters {
     Overrides {
-      Name: "bp:color"
-      Color {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8331242443693338500
       }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 0.5
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 0.6250332
-        B: 0.659999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Indent"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Corner Rounding"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0
     }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3965397322580208730
+  CoreMesh {
+    MeshAsset {
+      Id: 3329183888595046075
     }
-    TeamSettings {
+    Teams {
     }
-    DecalBP {
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
 Objects {
-  Id: 9952987739011115725
-  Name: "2D Basic Shapes Decal"
+  Id: 9547015536320988829
+  Name: "Boss1_ShadowEruptionsRing3"
   Transform {
     Location {
+      X: -5.80810547
+      Y: 28.0546875
+      Z: 79.772583
     }
     Rotation {
     }
     Scale {
-      X: 10
-      Y: 10
-      Z: 15
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 8744791227633529172
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:color"
-      Color {
-      }
-    }
-    Overrides {
-      Name: "bp:Emissive Boost"
-      Float: 2
-    }
-    Overrides {
-      Name: "bp:Sides"
-      Int: 3
-    }
-    Overrides {
-      Name: "bp:Stroke Width"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Stroke Color"
-      Color {
-        R: 0.6250332
-        B: 0.659999967
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "bp:Indent"
-      Float: 0
-    }
-    Overrides {
-      Name: "bp:Corner Rounding"
-      Float: 1
-    }
-    Overrides {
-      Name: "bp:Blur"
-      Float: 0
-    }
-  }
+  ChildIds: 12077006806690041864
+  ChildIds: 16660433127330507027
+  ChildIds: 14343072439930907172
+  ChildIds: 9249261429875019176
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:forceoff"
   }
-  Blueprint {
-    BlueprintAsset {
-      Id: 3965397322580208730
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9249261429875019176
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -77.3790283
     }
-    TeamSettings {
+    Rotation {
     }
-    DecalBP {
+    Scale {
+      X: 23.2344341
+      Y: 23.2344341
+      Z: 73.805809
+    }
+  }
+  ParentId: 9547015536320988829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14343072439930907172
+  Name: "Plane Ring - One Sided Thick"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: 151.831665
+    }
+    Rotation {
+    }
+    Scale {
+      X: 83.7635193
+      Y: 83.7635193
+      Z: 83.7635193
+    }
+  }
+  ParentId: 9547015536320988829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4876042108172592054
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3329183888595046075
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16660433127330507027
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -192.560852
+    }
+    Rotation {
+    }
+    Scale {
+      X: 12.7155085
+      Y: 12.7155085
+      Z: 38.5876122
+    }
+  }
+  ParentId: 9547015536320988829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12077006806690041864
+  Name: "Plane Ring - One Sided Thick"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: 151.831665
+    }
+    Rotation {
+    }
+    Scale {
+      X: 83.7635193
+      Y: 83.7635193
+      Z: 83.7635193
+    }
+  }
+  ParentId: 9547015536320988829
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8331242443693338500
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3329183888595046075
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3078669904998004210
+  Name: "Boss1_ShadowEruptionsRing2"
+  Transform {
+    Location {
+      X: -5.80810547
+      Y: 28.0546875
+      Z: 79.772583
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8744791227633529172
+  ChildIds: 6891082085068049942
+  ChildIds: 472963079124209840
+  ChildIds: 7083990834681236612
+  ChildIds: 2352793027425772351
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2352793027425772351
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -195.686523
+    }
+    Rotation {
+    }
+    Scale {
+      X: 12.7155085
+      Y: 12.7155085
+      Z: 38.5876122
+    }
+  }
+  ParentId: 3078669904998004210
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 7083990834681236612
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -263.596375
+    }
+    Rotation {
+    }
+    Scale {
+      X: 6.47358561
+      Y: 6.47358561
+      Z: 24.8969383
+    }
+  }
+  ParentId: 3078669904998004210
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 472963079124209840
+  Name: "Cone - Truncated Hollow Wide"
+  Transform {
+    Location {
+      X: 0.00048828125
+      Y: 0.00390625
+      Z: 84.6818848
+    }
+    Rotation {
+    }
+    Scale {
+      X: 53.9981232
+      Y: 53.9981232
+      Z: -5.38077068
+    }
+  }
+  ParentId: 3078669904998004210
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8331242443693338500
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 4615604774453055920
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 6891082085068049942
+  Name: "Plane Ring - One Sided Thick"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+    }
+    Rotation {
+    }
+    Scale {
+      X: 44.6824226
+      Y: 44.6824226
+      Z: 44.6824226
+    }
+  }
+  ParentId: 3078669904998004210
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8331242443693338500
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3329183888595046075
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8022416202805441011
+  Name: "Boss1_ShadowEruptionsRing1"
+  Transform {
+    Location {
+      X: -5.80810547
+      Y: 28.0546875
+      Z: 79.772583
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8744791227633529172
+  ChildIds: 12269672655145385944
+  ChildIds: 13614658724186285156
+  ChildIds: 11975519071652232585
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11975519071652232585
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -229.03363
+    }
+    Rotation {
+      Yaw: -161.079056
+    }
+    Scale {
+      X: 24.8597584
+      Y: 24.8597584
+      Z: 1.65470815
+    }
+  }
+  ParentId: 8022416202805441011
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 4876042108172592054
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17587880652047825598
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 13614658724186285156
+  Name: "Ring"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -260.365234
+    }
+    Rotation {
+    }
+    Scale {
+      X: 6.47358561
+      Y: 6.47358561
+      Z: 24.8969383
+    }
+  }
+  ParentId: 8022416202805441011
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 18361728343062924957
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 6367527662954153739
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 12269672655145385944
+  Name: "Cylinder - Bottom-Aligned"
+  Transform {
+    Location {
+      X: -0.00048828125
+      Y: -0.00390625
+      Z: -172.262878
+    }
+    Rotation {
+    }
+    Scale {
+      X: 24.8597584
+      Y: 24.8597584
+      Z: 1.65470815
+    }
+  }
+  ParentId: 8022416202805441011
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 8331242443693338500
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17587880652047825598
+    }
+    Teams {
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
     }
   }
 }
@@ -24942,7 +25446,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4765246375454497163
+        Id: 9866510552120331472
       }
     }
     Overrides {
@@ -25032,7 +25536,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 11860202766747543346
+        Id: 2657968205759272785
       }
     }
   }
@@ -26000,10 +26504,10 @@ Objects {
     }
   }
   ParentId: 15214246396461168156
-  ChildIds: 14708240012107311676
   ChildIds: 4777662189096124437
   ChildIds: 359271243858643510
   ChildIds: 6784609373012118976
+  ChildIds: 7505939330667503030
   ChildIds: 4040608793879064777
   ChildIds: 15216734825845700181
   ChildIds: 1736260769926129178
@@ -26212,6 +26716,73 @@ Objects {
   }
 }
 Objects {
+  Id: 7505939330667503030
+  Name: "Enemy_Plague_Wolf"
+  Transform {
+    Location {
+      X: 24972.0039
+      Y: -2872.15601
+      Z: 5089.54053
+    }
+    Rotation {
+      Pitch: -5.71185446
+      Yaw: -84.7573853
+      Roll: -1.17257643
+    }
+    Scale {
+      X: 1.6
+      Y: 1.6
+      Z: 1.6
+    }
+  }
+  ParentId: 11818131731923366081
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5313871001125585813
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Plague_Wolf"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24706.5586
+            Y: -3046.54932
+            Z: 5089.54053
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.71185303
+            Yaw: -84.7573853
+            Roll: -1.1725769
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.6
+            Y: 1.6
+            Z: 1.6
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2634101557434808962
+    }
+  }
+}
+Objects {
   Id: 6784609373012118976
   Name: "Enemy_Plague_Wolf"
   Transform {
@@ -26349,20 +26920,10 @@ Objects {
   Id: 4777662189096124437
   Name: "Enemy_Plague_Wolf"
   Transform {
-    Location {
-      X: 23452.4414
-      Y: -4024.40942
-      Z: 4669.68213
-    }
-    Rotation {
-      Pitch: 11.0030928
-      Yaw: -17.4297905
-      Roll: -1.08720307e-07
-    }
     Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11818131731923366081
@@ -26395,70 +26956,6 @@ Objects {
             Pitch: -5.71185303
             Yaw: -84.7573853
             Roll: -1.1725769
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.6
-            Y: 1.6
-            Z: 1.6
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2634101557434808962
-    }
-  }
-}
-Objects {
-  Id: 14708240012107311676
-  Name: "Enemy_Plague_Wolf"
-  Transform {
-    Location {
-      X: -12800
-      Y: -7000
-      Z: -999.999939
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
-    }
-  }
-  ParentId: 11818131731923366081
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5313871001125585813
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Plague_Wolf"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 24748.2324
-            Y: -3095.50708
-            Z: 5064.09277
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.40884399
-            Yaw: -74.3686523
-            Roll: -0.375244141
           }
         }
       }

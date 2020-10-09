@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3965397322580208730
+  Name: "2D Basic Shapes Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_basicShapes"
+  }
+}
+Assets {
   Id: 1718566751991663362
   Name: "Crowd Tavern Small Loop 01 SFX"
   PlatformAssetType: 7

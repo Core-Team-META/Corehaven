@@ -45,8 +45,6 @@
         ParentId: 939316781448656709
         ChildIds: 10718070737924601785
         ChildIds: 6472555711411448590
-        ChildIds: 6357583112556388004
-        ChildIds: 6618115964989192632
         ChildIds: 2185274824741652497
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -149,123 +147,14 @@
           Overrides {
             Name: "bp:Secondary Color"
             Color {
-              G: 0.0619866922
-              B: 0.179999948
+              R: 0.120927252
+              B: 0.220000029
               A: 1
             }
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
             Float: 5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9919395327939304349
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 6357583112556388004
-        Name: "Magic Projectile VFX"
-        Transform {
-          Location {
-            X: 59.0366096
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10922320509428319251
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.111258261
-              B: 0.120000005
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.0619866922
-              B: 0.179999948
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 4
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 9919395327939304349
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 6618115964989192632
-        Name: "Magic Projectile VFX"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10922320509428319251
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.100000024
-              B: 0.0476821065
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.0619866922
-              B: 0.179999948
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 3
           }
         }
         Collidable_v2 {

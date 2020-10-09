@@ -65,6 +65,7 @@
         Name: "Cast Burst Ring VFX"
         Transform {
           Location {
+            Z: 111
           }
           Rotation {
           }
@@ -75,9 +76,6 @@
           }
         }
         ParentId: 3115913519535703581
-        ChildIds: 7820499244410815128
-        ChildIds: 2110743673577303136
-        ChildIds: 9818026770794312327
         ChildIds: 7296638292724270165
         UnregisteredParameters {
           Overrides {
@@ -102,7 +100,7 @@
           }
           Overrides {
             Name: "bp:Count"
-            Int: 4
+            Int: 3
           }
           Overrides {
             Name: "bp:Appearance"
@@ -112,7 +110,7 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 15
+            Float: 3
           }
           Overrides {
             Name: "bp:Life Min"
@@ -137,248 +135,6 @@
         }
       }
       Objects {
-        Id: 7820499244410815128
-        Name: "Cast Burst Ring VFX"
-        Transform {
-          Location {
-            Z: 10.3850098
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.773784637
-            Y: 0.773784637
-            Z: 0.773784637
-          }
-        }
-        ParentId: 9024017272366816740
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.0215231404
-              G: 0.65
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.580000043
-              G: 0.483973563
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Life Max"
-            Float: 1.2
-          }
-          Overrides {
-            Name: "bp:Count"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Appearance"
-            Enum {
-              Value: "mc:ecastringappearance:7"
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 12
-          }
-          Overrides {
-            Name: "bp:Life Min"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 1092850666123875983
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 2110743673577303136
-        Name: "Cast Burst Ring VFX"
-        Transform {
-          Location {
-            Z: -2.63342285
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.773784637
-            Y: 0.773784637
-            Z: 0.773784637
-          }
-        }
-        ParentId: 9024017272366816740
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.756556213
-              G: 0.960000038
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.580000043
-              G: 0.483973563
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Life Max"
-            Float: 1.2
-          }
-          Overrides {
-            Name: "bp:Count"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Appearance"
-            Enum {
-              Value: "mc:ecastringappearance:7"
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 12
-          }
-          Overrides {
-            Name: "bp:Life Min"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 1092850666123875983
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 9818026770794312327
-        Name: "Level Up VFX"
-        Transform {
-          Location {
-            Z: 55
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.588777
-            Y: 0.588779
-            Z: 0.6
-          }
-        }
-        ParentId: 9024017272366816740
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Ground Burst Lines"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Rings"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Outer Particle Swirls"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Ground Hot Spot"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Inner Spirals"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Base Rays"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Beam"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Ground Flare"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Spiral"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Local Space"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 3
-          }
-          Overrides {
-            Name: "bp:Upward Velocity"
-            Float: 25
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 3
-              G: 2
-              B: 0.00972104073
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3096700893524267361
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
         Id: 7296638292724270165
         Name: "Plasma Impact VFX"
         Transform {
@@ -387,9 +143,9 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.659288228
+            Y: 0.659288228
+            Z: 0.659288228
           }
         }
         ParentId: 9024017272366816740
@@ -421,15 +177,15 @@
           }
           Overrides {
             Name: "bp:Enable Impact Ring"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Flare"
             Bool: true
           }
           Overrides {
-            Name: "bp:Enable Plasma Radial"
+            Name: "bp:Enable Flare"
             Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Plasma Radial"
+            Bool: true
           }
         }
         Collidable_v2 {
@@ -466,15 +222,6 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_cast_circle_generic"
-      }
-    }
-    Assets {
-      Id: 3096700893524267361
-      Name: "Level Up VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_Level_Up"
       }
     }
     Assets {

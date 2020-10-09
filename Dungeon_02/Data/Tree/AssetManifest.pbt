@@ -251,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16071560384740977627
+  Name: "Bush Green 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bush_generic_001"
+  }
+}
+Assets {
   Id: 15797936178271056275
   Name: "Waterfall Large SFX"
   PlatformAssetType: 7
@@ -260,12 +269,30 @@ Assets {
   }
 }
 Assets {
+  Id: 15721523160428519859
+  Name: "Tree Oak Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_oak_002"
+  }
+}
+Assets {
   Id: 15663227477796206871
   Name: "Wall End Fancy 2m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_wall_end_fancy_2m_001"
+  }
+}
+Assets {
+  Id: 15600672674220494197
+  Name: "Ivy 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_003"
   }
 }
 Assets {
@@ -593,6 +620,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11834075949889103800
+  Name: "Hill 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_003"
+  }
+}
+Assets {
   Id: 11759045314390150964
   Name: "Terrain - Moss"
   PlatformAssetType: 2
@@ -617,6 +653,15 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "CORESKY_Skylight"
+  }
+}
+Assets {
+  Id: 11433692867640371962
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
   }
 }
 Assets {
@@ -707,6 +752,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
+  }
+}
+Assets {
+  Id: 9761007957948549337
+  Name: "Ivy 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_001"
   }
 }
 Assets {
@@ -1400,6 +1454,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_002"
+  }
+}
+Assets {
+  Id: 346569595489746007
+  Name: "Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
+  }
+}
+Assets {
+  Id: 287579388896659285
+  Name: "Jungle Vine (tileable)"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_liana-vine_001_uv"
   }
 }
 Assets {
