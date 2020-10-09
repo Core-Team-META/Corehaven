@@ -6,7 +6,7 @@ local ERUPTIONS_GROUP = script:GetCustomProperty("EruptionsGroup"):WaitForObject
 
 local RANGE = 0.0
 local COOLDOWN = 45.0
-local DAMAGE = 50.0
+local DAMAGE_RATE = 20.0
 local RADII = {1280.0, 2560.0, 3840.0, 7680.0}
 
 function GetPriority(npc, taskHistory)
@@ -37,20 +37,26 @@ function OnTaskEnd(npc, interrupted)
 
 		Task.Spawn(function()
 			for i = 1, #order do
-				Task.Wait(2.5)
-				local ringIndex = order[i]
+				Task.Spawn(function()
+					for j = 1, 6 do
+						Task.Wait(1.0)
+						local ringIndex = order[i]
 
-				for _, player in pairs(Game.GetPlayers()) do
-					local offset = player:GetWorldPosition() - ERUPTIONS_GROUP:GetWorldPosition()
-					offset.z = 0.0
-					local r = offset.size
+						for _, player in pairs(Game.GetPlayers()) do
+							local offset = player:GetWorldPosition() - ERUPTIONS_GROUP:GetWorldPosition()
+							offset.z = 0.0
+							local r = offset.size
 
-					if r < RADII[ringIndex] then
-						if ringIndex == 1 or r >= RADII[ringIndex - 1] then
-							API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
+							if r < RADII[ringIndex] then
+								if ringIndex == 1 or r >= RADII[ringIndex - 1] then
+									API_D.ApplyDamage(npc, player, DAMAGE_RATE, API_D.TAG_AOE)
+								end
+							end
 						end
 					end
-				end
+				end)
+
+				Task.Wait(6.0)
 			end
 		end)
 	end

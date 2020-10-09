@@ -1,6 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
-local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local TSU = require(script:GetCustomProperty("TalentSelectorUtility"))
@@ -45,11 +45,11 @@ function DestroyFrame(data)
 end
 
 function GetTargetTarget()
-	local target = API_PS.GetTarget(LOCAL_PLAYER)
+	local target = API_T.GetTarget(LOCAL_PLAYER)
 
 	if target then
 		if target:IsA("Player") then
-			return API_PS.GetTarget(target)
+			return API_T.GetTarget(target)
 		else
 			return API_NPC.GetTarget(target)
 		end
@@ -139,6 +139,10 @@ end
 
 -- if character is nil, we just hide the frame
 function UpdateFrame(data, character)
+	if not Object.IsValid(character) then
+		
+	end
+
 	if not character then
 		data.frame.visibility = Visibility.FORCE_OFF
 	else
@@ -220,7 +224,7 @@ function UpdateFrame(data, character)
 end
 
 function Tick(deltaTime)
-	UpdateFrame(targetFrame, API_PS.GetTarget(LOCAL_PLAYER))
+	UpdateFrame(targetFrame, API_T.GetTarget(LOCAL_PLAYER))
 	UpdateFrame(targetTargetFrame, GetTargetTarget())
 
 	for player, data in pairs(partyFrames) do

@@ -2,6 +2,8 @@
 
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
+
 print([[
 ------------------------------------------------------------------------------------
 !!! DEVELOPER CHEATS ENABLED !!!
@@ -55,9 +57,9 @@ local function OnBindingPressed(player, binding)
         Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
         print("CHEAT: DROP LOOT")
     elseif binding == BINDING_INVENTORY_CLEAR then
-        local playerData = Storage.GetPlayerData(player)
+        local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
         playerData.inventoryHash = nil
-        Storage.SetPlayerData(player, playerData)
+        Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
         print("CHEAT: CLEAR INVENTORY")
     elseif binding == BINDING_INVENTORY_PRINT then
         print(player.serverUserData.inventory)

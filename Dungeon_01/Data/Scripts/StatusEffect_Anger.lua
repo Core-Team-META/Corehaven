@@ -6,6 +6,6 @@ data.name = "Anger"
 data.icon = script:GetCustomProperty("Icon")
 data.description = script:GetCustomProperty("Description")
 data.effectTemplate = script:GetCustomProperty("EffectTemplate")
-data.damageDealtMultiplier = 1.4
+data.damageDealtMultiplier = 1.1
 
 API_SE.DefineStatusEffect(data)

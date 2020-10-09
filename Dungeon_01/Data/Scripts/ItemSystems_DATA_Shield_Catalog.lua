@@ -48,7 +48,7 @@
     Name = 'Crimson Barrier',
     Type = 'Shield',
     Rarity = 'Epic',
-    StatKey = 'RareTankShield',
+    StatKey = 'EpicTankShield',
     MUID = 'DDAD0082A01F792E:ITEM_Shield_CrimsonBarrier',
     Lore = '',
     ['Author Notes (will be ignored by script)'] = '',

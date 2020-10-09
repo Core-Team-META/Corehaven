@@ -18,7 +18,7 @@ function OnShadowEruptions(order)
 		local ringIndex = order[i]
 		local ringDecal = ERUPTIONS_GROUP:GetChildren()[ringIndex]
 		ringDecal.visibility = Visibility.INHERIT
-		Task.Wait(2.5)
+		Task.Wait(6.0)
 		ringDecal.visibility = Visibility.FORCE_OFF
 	end
 end

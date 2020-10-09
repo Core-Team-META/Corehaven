@@ -20,6 +20,7 @@
         ChildIds: 17172407019365388155
         ChildIds: 3208068907572485258
         ChildIds: 3487077980326565947
+        Lifespan: 10
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }

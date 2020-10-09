@@ -19,7 +19,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
-local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+local API_T = require(script:GetCustomProperty("APITargeting"))
 
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
@@ -333,7 +333,7 @@ function Tick(deltaTime)
 			-- Update scale for target
 			local scale = SCALE * nameplate.baseScale
 
-			if API_PS.GetTarget(LOCAL_PLAYER) == character then
+			if API_T.GetTarget(LOCAL_PLAYER) == character then
 				scale = scale * TARGET_SCALE_MULTIPLIER
 			end
 
@@ -498,7 +498,7 @@ function Tick(deltaTime)
 				end
 
 				-- Adjust slightly if it's our target
-				if API_PS.GetTarget(LOCAL_PLAYER) == character then
+				if API_T.GetTarget(LOCAL_PLAYER) == character then
 					nameplate.nameText:SetScale(Vector3.New(1.15))
 				else
 					nameplate.nameText:SetScale(Vector3.ONE)

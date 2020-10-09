@@ -1,6 +1,8 @@
 ﻿local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
+
 local UTILITY = {}
 
 UTILITY.TREE_WIDTH = nil
@@ -458,10 +460,10 @@ function UTILITY.TryAddPlayerTalent(player, talentData)
 	UTILITY.RemovePlayerTalentPoints(player, talentData.cost)
 
 	-- This depends on the restriction that players can only spend points in one tree at a time
-	local playerData = Storage.GetPlayerData(player)
+	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
 	playerData.talentTree = talentData.treeName
 	playerData.talentString = newTalentString
-	Storage.SetPlayerData(player, playerData)
+	Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
 end
 
 -- Server only
@@ -498,10 +500,10 @@ function UTILITY.ResetTalentTrees(player)
 
 	playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
 
-	local playerData = Storage.GetPlayerData(player)
+	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
 	playerData.talentTree = ""
 	playerData.talentString = talentString
-	Storage.SetPlayerData(player, playerData)
+	Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
 
 end
 

@@ -7,6 +7,8 @@
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
+
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -37,7 +39,7 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
-    local playerData = Storage.GetPlayerData(OWNER)
+    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
     print("Loading inventory: ", playerData.inventoryHash)
     OWNER.serverUserData.inventory:LoadHash(playerData.inventoryHash)
     COMPONENT:SetNetworkedCustomProperty("LOAD", OWNER.serverUserData.inventory:RuntimeHash())
@@ -83,9 +85,9 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerSaveInventory(inventory)
-    local playerData = Storage.GetPlayerData(OWNER)
+    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
     playerData.inventoryHash = inventory:PersistentHash()
-    Storage.SetPlayerData(OWNER, playerData)
+    Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
 end
 
 ---------------------------------------------------------------------------------------------------------

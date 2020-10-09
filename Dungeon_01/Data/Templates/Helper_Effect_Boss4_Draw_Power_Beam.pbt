@@ -7,7 +7,7 @@
       RootId: 13166094146178080929
       Objects {
         Id: 13166094146178080929
-        Name: "Laser Beam VFX"
+        Name: "Helper_Effect_Boss4_Draw_Power_Beam"
         Transform {
           Scale {
             X: 1
@@ -50,6 +50,7 @@
             }
           }
         }
+        Lifespan: 10
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

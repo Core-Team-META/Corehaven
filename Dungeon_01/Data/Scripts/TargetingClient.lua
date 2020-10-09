@@ -1,7 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
-local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
-local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
@@ -79,7 +78,7 @@ function FindClickTarget()
 
 	if cursorPoint then
 		local cursorForward = cursorPoint - viewPosition
-		local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+		local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 		local closestNPC = nil
 		local closestDistance = math.huge
 		local hitCurrentTarget = false
@@ -119,7 +118,7 @@ function FindAutoTarget()
 
 	lastAutoTargetTime = os.clock()
 
-	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 	local viewPosition = LOCAL_PLAYER:GetViewWorldPosition()
 	local viewForward = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD
 	local candidates = {}
@@ -189,7 +188,7 @@ function OnBindingPressed(player, binding)
 		return
 	end
 
-	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 	local newTarget = currentTarget
 
 	if binding == "ability_primary" and UI.IsCursorVisible() then
@@ -202,23 +201,23 @@ function OnBindingPressed(player, binding)
 
 	if newTarget and newTarget ~= currentTarget then
 		table.insert(targetChangeTimeHistory, t)
-		API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(newTarget))
+		API_T.SetTarget(newTarget)
 	end
 end
 
 function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
-	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 
 	if targetCharacter == LOCAL_PLAYER and not currentTarget then
 		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
-			API_RE.BroadcastToServer("SetTarget", API_ID.GetIdFromObject(sourceCharacter))
+			API_T.SetTarget(sourceCharacter)
 		end
 	end
 end
 
 function Tick(deltaTime)
 	-- We intentionally did not predict the target. We have since found a way around this, so it will be added.
-	local currentTarget = API_PS.GetTarget(LOCAL_PLAYER)
+	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 
 	if currentTarget then
 		TARGET_MARKER.visibility = Visibility.INHERIT

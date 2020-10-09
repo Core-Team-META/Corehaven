@@ -3925,6 +3925,15 @@ Objects {
         Id: 1680988108412715813
       }
     }
+    Overrides {
+      Name: "cs:StorageKey"
+      NetReference {
+        Key: "e9522ce128d3418995564bd8172aab5e"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

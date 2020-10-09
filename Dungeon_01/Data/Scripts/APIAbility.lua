@@ -1,4 +1,4 @@
-﻿local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+﻿local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
@@ -584,7 +584,7 @@ function GetEffectiveTarget(abilityName)
 		return LOCAL_PLAYER
 	end
 
-	return API_PS.GetTarget(LOCAL_PLAYER)
+	return API_T.GetTarget(LOCAL_PLAYER)
 end
 
 -- Owning client

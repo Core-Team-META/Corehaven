@@ -22,6 +22,7 @@
         ChildIds: 7043864296217534486
         ChildIds: 2496664395142758365
         ChildIds: 4731160020863610174
+        Lifespan: 15
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -528,7 +529,7 @@
           }
         }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"

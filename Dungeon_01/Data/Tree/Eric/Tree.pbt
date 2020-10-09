@@ -347,21 +347,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APIPlayerState"
+      Name: "cs:APITargeting"
       AssetReference {
-        Id: 7188294788371852653
+        Id: 13423993049695341165
       }
     }
     Overrides {
       Name: "cs:API_ID"
       AssetReference {
         Id: 8196531844027121028
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -415,12 +409,6 @@ Objects {
       Name: "cs:APIPlayerState"
       AssetReference {
         Id: 7188294788371852653
-      }
-    }
-    Overrides {
-      Name: "cs:API_ID"
-      AssetReference {
-        Id: 8196531844027121028
       }
     }
   }
@@ -3891,6 +3879,15 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:StorageKey"
+      NetReference {
+        Key: "e9522ce128d3418995564bd8172aab5e"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
       Name: "cs:TalentTrees"
       ObjectReference {
         SelfId: 6004305408932559212
@@ -4067,7 +4064,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables summoning an elite"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4124,7 +4121,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables summoning skeletons"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4181,7 +4178,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables casting volley of corruption"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4238,7 +4235,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage and slows movement significantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4295,7 +4292,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases critical strike chance"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4358,7 +4355,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Prevents incoming damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4415,7 +4412,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases attack significantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4472,7 +4469,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage taken signficantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4529,7 +4526,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4586,7 +4583,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4649,7 +4646,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4706,7 +4703,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Prevents all incoming damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4763,7 +4760,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4826,7 +4823,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Restores significant health over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4883,7 +4880,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases attack"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4952,7 +4949,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage to nearby enemies"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5009,7 +5006,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5072,7 +5069,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage to all nearby enemies"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5141,7 +5138,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "On expiration, deals damage to and slows all nearby players"
     }
     Overrides {
       Name: "cs:ExplosionTemplate"
@@ -5198,7 +5195,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5261,7 +5258,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Restores health over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5318,7 +5315,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Violet Circle"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5375,7 +5372,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Blue Triangle"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5432,7 +5429,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Red Square"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5489,7 +5486,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Yellow Star"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5552,7 +5549,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals significant damage over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5609,7 +5606,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5666,7 +5663,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage and move speed"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5735,7 +5732,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "On expiration, deals damage and leaps to a nearby target"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5792,7 +5789,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Avoids the next three attacks"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5855,7 +5852,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows, reduces damage dealt, and deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5912,7 +5909,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -5969,7 +5966,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6026,7 +6023,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage taken and slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6089,7 +6086,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6146,7 +6143,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken signficantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6269,7 +6266,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables summoning an elite"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6326,7 +6323,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables summoning skeletons"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6383,7 +6380,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Enables casting volley of corruption"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6440,7 +6437,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage and slows movement significantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6497,7 +6494,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases critical strike chance"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6560,7 +6557,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Prevents incoming damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6617,7 +6614,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases attack significantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6674,7 +6671,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage taken signficantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6731,7 +6728,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6788,7 +6785,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6851,7 +6848,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6908,7 +6905,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Prevents all incoming damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -6965,7 +6962,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7028,7 +7025,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Restores significant health over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7085,7 +7082,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases attack"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7154,7 +7151,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage to nearby enemies"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7211,7 +7208,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7274,7 +7271,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage to all nearby enemies"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7343,7 +7340,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "On expiration, deals damage to and slows all nearby players"
     }
     Overrides {
       Name: "cs:ExplosionTemplate"
@@ -7400,7 +7397,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7463,7 +7460,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Restores health over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7520,7 +7517,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Violet Circle"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7577,7 +7574,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Blue Triangle"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7634,7 +7631,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Red Square"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7691,7 +7688,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "You want to shop at the Yellow Star"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7754,7 +7751,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals significant damage over time"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7811,7 +7808,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7868,7 +7865,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage and move speed"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7937,7 +7934,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "On expiration, deals damage and leaps to a nearby target"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -7994,7 +7991,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Avoids the next three attacks"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8057,7 +8054,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Slows, reduces damage dealt, and deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8114,7 +8111,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Stuns"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8171,7 +8168,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8228,7 +8225,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Increases damage taken and slows movement"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8291,7 +8288,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Deals periodic damage"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -8348,7 +8345,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: ""
+      String: "Reduces damage taken signficantly"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -22818,12 +22815,6 @@ Objects {
         Id: 17739477946418166285
       }
     }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -24567,7 +24558,7 @@ Objects {
     Overrides {
       Name: "cs:TelegraphTemplate"
       AssetReference {
-        Id: 12953277490454437049
+        Id: 11428608906530713399
       }
     }
   }
@@ -25096,12 +25087,6 @@ Objects {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 473360950505549885
-      }
-    }
-    Overrides {
-      Name: "cs:TelegraphTemplate"
-      AssetReference {
-        Id: 12953277490454437049
       }
     }
   }
@@ -31771,9 +31756,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APIPlayerState"
+      Name: "cs:APITargeting"
       AssetReference {
-        Id: 7188294788371852653
+        Id: 13423993049695341165
       }
     }
     Overrides {
@@ -33393,9 +33378,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APIPlayerState"
+      Name: "cs:APITargeting"
       AssetReference {
-        Id: 7188294788371852653
+        Id: 13423993049695341165
       }
     }
     Overrides {

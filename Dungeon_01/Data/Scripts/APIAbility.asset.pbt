@@ -5,9 +5,9 @@
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:APIPlayerState"
+        Name: "cs:APITargeting"
         AssetReference {
-          Id: 7188294788371852653
+          Id: 13423993049695341165
         }
       }
       Overrides {

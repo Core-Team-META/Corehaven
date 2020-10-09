@@ -1,4 +1,6 @@
 ﻿local StatSheet = require(script:GetCustomProperty("StatSheet"))
+
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local COMPONENT = script:GetCustomProperty("COMPONENT"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -55,14 +57,14 @@ local function ServerReplicateStatSheet()
 end
 
 local function ServerSaveStatSheet()
-    local playerData = Storage.GetPlayerData(OWNER)
+    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
     playerData.STATS = playerData.STATS or {}
     playerData.STATS.experience = OWNER.serverUserData.statSheet:GetExperience()
-    Storage.SetPlayerData(OWNER, playerData)
+    Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
 end
 
 local function ServerLoadStatSheet()
-    local playerData = Storage.GetPlayerData(OWNER)
+    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
     OWNER.serverUserData.statSheet = StatSheet.New()
     OWNER.serverUserData.statSheet:SetExperience(playerData.STATS and playerData.STATS.experience or 0)
     -- Replicate the server-side statsheet to clients.

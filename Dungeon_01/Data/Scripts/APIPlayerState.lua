@@ -1,6 +1,4 @@
-﻿local API_ID = require(script:GetCustomProperty("API_ID"))
-
-local API = {}
+﻿local API = {}
 
 local playerStateHelperGroup = nil
 
@@ -26,11 +24,11 @@ function API.SetTargetId(player, targetId)
 	end
 end
 
-function API.GetTarget(player)
+function API.GetTargetId(player)
 	local helper = API.GetStateHelper(player)
 
 	if helper then
-		return API_ID.GetObjectFromId(helper:GetCustomProperty("TargetID"))
+		return helper:GetCustomProperty("TargetID")
 	end
 end
 

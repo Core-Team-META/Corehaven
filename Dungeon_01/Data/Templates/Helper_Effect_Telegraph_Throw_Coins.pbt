@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 12953277490454437049
-  Name: "Helper_Effect_Telegraph_Shadow_Worm"
+  Id: 11428608906530713399
+  Name: "Helper_Effect_Telegraph_Throw_Coins"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 18304474188253320742
+      RootId: 3415725561076952350
       Objects {
-        Id: 18304474188253320742
-        Name: "Helper_Effect_Telegraph_Shadow_Worm"
+        Id: 3415725561076952350
+        Name: "Helper_Effect_Telegraph_Volley"
         Transform {
           Scale {
             X: 1
@@ -16,7 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15164759833855291935
+        ChildIds: 5783544904641057488
+        Lifespan: 15
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -28,7 +29,7 @@
         }
       }
       Objects {
-        Id: 15164759833855291935
+        Id: 5783544904641057488
         Name: "2D Basic Shapes Decal"
         Transform {
           Location {
@@ -41,7 +42,7 @@
             Z: 5
           }
         }
-        ParentId: 18304474188253320742
+        ParentId: 3415725561076952350
         UnregisteredParameters {
           Overrides {
             Name: "bp:Sides"
@@ -89,6 +90,14 @@
           Overrides {
             Name: "bp:Blur"
             Float: 0
+          }
+          Overrides {
+            Name: "bp:Fade Delay"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 1
           }
         }
         Collidable_v2 {
