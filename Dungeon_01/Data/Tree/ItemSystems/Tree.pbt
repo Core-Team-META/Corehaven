@@ -5564,6 +5564,12 @@ Objects {
         Id: 1817346499606343559
       }
     }
+    Overrides {
+      Name: "cs:SFX_Salvage"
+      AssetReference {
+        Id: 17006817213445060
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

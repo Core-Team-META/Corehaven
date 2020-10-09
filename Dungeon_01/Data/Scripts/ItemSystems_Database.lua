@@ -5,6 +5,7 @@
     Reads and indexes the raw data scripts. Provides factory methods for creating items.
 ]]
 local Item = require(script:GetCustomProperty("Item"))
+local SALVAGE_ITEM_NAME = script:GetCustomProperty("SalvageItemName")
 
 -- Load the database over a fixed number of frames.
 local LOAD_FRAME_LIMIT = 10
@@ -27,6 +28,11 @@ function Database:WaitUntilLoaded()
     while not self.isLoaded do
         Task.Wait()
     end
+end
+
+function Database:CreateItemSalvage()
+    local salvageItemData = self:FindItemDataByName(SALVAGE_ITEM_NAME)
+    return Item.New(salvageItemData)
 end
 
 function Database:CreateItemFromDrop(dropKey)
@@ -157,6 +163,9 @@ function Database:_LoadCatalog()
             self.itemDatasByMUID[itemData.muid] = itemData
         end
     end
+
+    -- Ensure that after all catalog data is loaded, the expected salvage item is present.
+    assert(self.itemDatasByName[SALVAGE_ITEM_NAME], "salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_NAME)
 end
 
 function Database:_LoadDrops()
