@@ -1,6 +1,156 @@
 ﻿Name: "InvisibleCollisions"
 RootId: 2732470911758805994
 Objects {
+  Id: 15916721369401148730
+  Name: "ForestPath_InvisibleCollision"
+  Transform {
+    Location {
+      X: 23607.8652
+      Y: 5750.19727
+      Z: 508.164063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 10.365098
+      Y: 10.365098
+      Z: 29.2427368
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 9365601628918137425
+  Name: "ForestPath_InvisibleCollision"
+  Transform {
+    Location {
+      X: 23158.7051
+      Y: 6086.39355
+      Z: 508.164063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.74114704
+      Y: 8.74114704
+      Z: 24.6611271
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 86333637814798984
+  Name: "ForestPath_InvisibleCollision"
+  Transform {
+    Location {
+      X: 22662.5273
+      Y: 6238.84766
+      Z: 508.164063
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.74114704
+      Y: 8.74114704
+      Z: 24.6611271
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 2925258758812649780
   Name: "ForestPath_InvisibleCollision"
   Transform {
@@ -55,8 +205,8 @@ Objects {
   Name: "ForestPath_InvisibleCollision"
   Transform {
     Location {
-      X: 21098.75
-      Y: 6005.85742
+      X: 20878.1133
+      Y: 6081.20117
       Z: 192.024292
     }
     Rotation {
