@@ -94,13 +94,13 @@ Item.SHARD_TYPE_QUANTITIES = {
     Wand        = 2,
 }
 
--- These are close to the geometric series 2^n, but are chosen to be prime numbers so that combinations look more "random".
+-- These are close to the geometric series 4^n, but are chosen to be prime numbers so that combinations look more "random".
 Item.SHARD_RARITY_MULTIPLIERS = {
     Common      = 1,
     Uncommon    = 5,
     Rare        = 23,
     Epic        = 79,
-    Legendary   = 251,
+    Legendary   = 248,
 }
 
 ---------------------------------------------------------------------------------------------------------
