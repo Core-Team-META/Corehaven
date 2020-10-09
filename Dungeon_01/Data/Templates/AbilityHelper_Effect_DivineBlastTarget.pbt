@@ -64,6 +64,7 @@
         Name: "Cast Burst Ring VFX"
         Transform {
           Location {
+            Z: 111
           }
           Rotation {
           }
@@ -75,8 +76,6 @@
         }
         ParentId: 7757877819556137833
         ChildIds: 16385771337571911251
-        ChildIds: 15028902487833087968
-        ChildIds: 3248588439704909130
         ChildIds: 10990030268933399057
         UnregisteredParameters {
           Overrides {
@@ -111,7 +110,7 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 14
+            Float: 7
           }
           Overrides {
             Name: "bp:Life Min"
@@ -140,7 +139,7 @@
         Name: "Cast Burst Ring VFX"
         Transform {
           Location {
-            Z: 10.3850098
+            Z: 5
           }
           Rotation {
           }
@@ -163,8 +162,8 @@
           Overrides {
             Name: "bp:Edge Color"
             Color {
-              R: 0.580000043
-              G: 0.483973563
+              R: 0.185430393
+              G: 0.559999943
               A: 1
             }
           }
@@ -184,11 +183,11 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 12
+            Float: 6
           }
           Overrides {
             Name: "bp:Life Min"
-            Float: 0.7
+            Float: 0.8
           }
         }
         Collidable_v2 {
@@ -200,183 +199,6 @@
         Blueprint {
           BlueprintAsset {
             Id: 1092850666123875983
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 15028902487833087968
-        Name: "Cast Burst Ring VFX"
-        Transform {
-          Location {
-            Z: -2.63342285
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.773784637
-            Y: 0.773784637
-            Z: 0.773784637
-          }
-        }
-        ParentId: 8305295601691931928
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.756556213
-              G: 0.960000038
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Edge Color"
-            Color {
-              R: 0.580000043
-              G: 0.483973563
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Life Max"
-            Float: 1.2
-          }
-          Overrides {
-            Name: "bp:Count"
-            Int: 3
-          }
-          Overrides {
-            Name: "bp:Appearance"
-            Enum {
-              Value: "mc:ecastringappearance:7"
-            }
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 12
-          }
-          Overrides {
-            Name: "bp:Life Min"
-            Float: 0.7
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 1092850666123875983
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 3248588439704909130
-        Name: "Level Up VFX"
-        Transform {
-          Location {
-            Z: 55
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.588777
-            Y: 0.588779
-            Z: 0.6
-          }
-        }
-        ParentId: 8305295601691931928
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Ground Burst Lines"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Rings"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Outer Particle Swirls"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Ground Hot Spot"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Inner Spirals"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Base Rays"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Beam"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Enable Ground Flare"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Enable Spiral"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Local Space"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 4
-          }
-          Overrides {
-            Name: "bp:Upward Velocity"
-            Float: 25
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 3
-              G: 2
-              B: 0.00972104073
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Spiral Color"
-            Color {
-              G: 0.580000043
-              B: 0.0384106711
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 3096700893524267361
           }
           TeamSettings {
           }
@@ -390,6 +212,7 @@
         Name: "Plasma Impact VFX"
         Transform {
           Location {
+            Z: 5
           }
           Rotation {
           }
@@ -412,7 +235,7 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 0
+            Float: 0.6
           }
           Overrides {
             Name: "bp:Enable Lightning Arc"
@@ -428,15 +251,19 @@
           }
           Overrides {
             Name: "bp:Enable Impact Ring"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "bp:Enable Flare"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "bp:Enable Plasma Radial"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1.08458185
           }
         }
         Collidable_v2 {
@@ -473,15 +300,6 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_cast_circle_generic"
-      }
-    }
-    Assets {
-      Id: 3096700893524267361
-      Name: "Level Up VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_Level_Up"
       }
     }
     Assets {

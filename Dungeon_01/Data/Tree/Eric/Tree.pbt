@@ -8912,7 +8912,6 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:allonly"
       }
-      EnablePlayModeProfiler: true
     }
   }
 }
@@ -25456,7 +25455,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4765246375454497163
+        Id: 9866510552120331472
       }
     }
     Overrides {
@@ -25546,7 +25545,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 11860202766747543346
+        Id: 2657968205759272785
       }
     }
   }
@@ -26520,10 +26519,10 @@ Objects {
     }
   }
   ParentId: 15214246396461168156
-  ChildIds: 14708240012107311676
   ChildIds: 4777662189096124437
   ChildIds: 359271243858643510
   ChildIds: 6784609373012118976
+  ChildIds: 7505939330667503030
   ChildIds: 4040608793879064777
   ChildIds: 15216734825845700181
   ChildIds: 1736260769926129178
@@ -26732,6 +26731,73 @@ Objects {
   }
 }
 Objects {
+  Id: 7505939330667503030
+  Name: "Enemy_Plague_Wolf"
+  Transform {
+    Location {
+      X: 24972.0039
+      Y: -2872.15601
+      Z: 5089.54053
+    }
+    Rotation {
+      Pitch: -5.71185446
+      Yaw: -84.7573853
+      Roll: -1.17257643
+    }
+    Scale {
+      X: 1.6
+      Y: 1.6
+      Z: 1.6
+    }
+  }
+  ParentId: 11818131731923366081
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5313871001125585813
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Plague_Wolf"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24706.5586
+            Y: -3046.54932
+            Z: 5089.54053
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -5.71185303
+            Yaw: -84.7573853
+            Roll: -1.1725769
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.6
+            Y: 1.6
+            Z: 1.6
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2634101557434808962
+    }
+  }
+}
+Objects {
   Id: 6784609373012118976
   Name: "Enemy_Plague_Wolf"
   Transform {
@@ -26869,20 +26935,10 @@ Objects {
   Id: 4777662189096124437
   Name: "Enemy_Plague_Wolf"
   Transform {
-    Location {
-      X: 23452.4414
-      Y: -4024.40942
-      Z: 4669.68213
-    }
-    Rotation {
-      Pitch: 11.0030928
-      Yaw: -17.4297905
-      Roll: -1.08720307e-07
-    }
     Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
+      X: 1
+      Y: 1
+      Z: 1
     }
   }
   ParentId: 11818131731923366081
@@ -26915,70 +26971,6 @@ Objects {
             Pitch: -5.71185303
             Yaw: -84.7573853
             Roll: -1.1725769
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.6
-            Y: 1.6
-            Z: 1.6
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2634101557434808962
-    }
-  }
-}
-Objects {
-  Id: 14708240012107311676
-  Name: "Enemy_Plague_Wolf"
-  Transform {
-    Location {
-      X: -12800
-      Y: -7000
-      Z: -999.999939
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
-    }
-  }
-  ParentId: 11818131731923366081
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5313871001125585813
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Plague_Wolf"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 24748.2324
-            Y: -3095.50708
-            Z: 5064.09277
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -5.40884399
-            Yaw: -74.3686523
-            Roll: -0.375244141
           }
         }
       }
