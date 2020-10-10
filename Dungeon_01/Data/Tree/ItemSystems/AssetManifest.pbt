@@ -89,6 +89,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5632528163303928666
+  Name: "UI Basic Shape Triangle"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_Triangle"
+  }
+}
+Assets {
   Id: 3481758651789323561
   Name: "Frame Outline Thin 001"
   PlatformAssetType: 9

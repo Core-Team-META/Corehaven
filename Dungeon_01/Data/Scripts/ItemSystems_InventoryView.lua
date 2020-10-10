@@ -1,6 +1,7 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
 local APIStats = require(script:GetCustomProperty("APIStats"))
+local APIPlayerPassives = require(script:GetCustomProperty("APIPlayerPassives"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
 local PLAYER_ICON = script:GetCustomProperty("PlayerIcon"):WaitForObject()
@@ -12,6 +13,7 @@ local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObj
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
+local PASSIVE_ICONS_GROUP = script:GetCustomProperty("PassiveIconsGroup"):WaitForObject()
 local EQUIP_SLOT_COOLDOWN = script:GetCustomProperty("EquipSlotCooldown")
 local CLICK_TIMEOUT = script:GetCustomProperty("ClickTimeout")
 local CLICK_DEADZONE_RADIUS = script:GetCustomProperty("ClickDeadzoneRadius")
@@ -164,10 +166,28 @@ local view = {}
 
 -----------------------------------------------------------------------------------------------------------------
 function view:Init()
+    self:InitPassives()
     self:InitStats()
     self:InitEquippedSlots()
     self:InitBackpackSlots()
     self:Close()
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:InitPassives()
+    self.passiveElements = {}
+    for _,passiveElement in ipairs(PASSIVE_ICONS_GROUP:GetChildren()) do
+        table.insert(self.passiveElements, passiveElement)
+        passiveElement.visibility = Visibility.FORCE_OFF
+        passiveElement.clientUserData.icon = passiveElement:GetCustomProperty("Icon"):WaitForObject()
+        local hoverButton = passiveElement:GetCustomProperty("HoverButton"):WaitForObject()
+        hoverButton.hoveredEvent:Connect(function() passiveElement.clientUserData.isHovered = true end)
+        hoverButton.unhoveredEvent:Connect(function() passiveElement.clientUserData.isHovered = nil end)
+    end
+    self.passiveHoverTooltip = PASSIVE_ICONS_GROUP:GetCustomProperty("PassiveTooltip"):WaitForObject()
+    self.passiveHoverTooltip.clientUserData.name = self.passiveHoverTooltip:GetCustomProperty("PassiveNameText"):WaitForObject()
+    self.passiveHoverTooltip.clientUserData.description = self.passiveHoverTooltip:GetCustomProperty("PassiveDescriptionText"):WaitForObject()
+    self.passiveHoverTooltip.visibility = Visibility.FORCE_OFF
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -473,11 +493,47 @@ function view:Draw()
         self:Open()    
         self:UpdatePlayerInfo()
         self:UpdateCursorState()
+        self:DrawPassives()
         self:DrawStats()
         self:DrawSlots()
         self:DrawHoverHighlight()
         self:DrawHoverInfo()
         self:DrawHoverStatCompare()
+    end
+end
+
+function view:DrawPassives()
+    local passiveNames = APIPlayerPassives.GetPlayerPassives(LOCAL_PLAYER)
+    -- Sort passives so that the order doesn't jump like crazy as passives are added and removed.
+    local sortedPassiveNames = {}
+    for passiveName,_ in pairs(passiveNames) do
+        table.insert(sortedPassiveNames, passiveName)
+    end
+    table.sort(sortedPassiveNames)
+    -- Turn off the passive tooltip preemptively.
+    self.passiveHoverTooltip.visibility = Visibility.FORCE_OFF
+    -- Draw as many passives as we can using the available UI passive elements.
+    for i,passiveElement in ipairs(self.passiveElements) do
+        if sortedPassiveNames[i] then
+            local passiveData = APIPlayerPassives.GetPassiveData(sortedPassiveNames[i])
+            passiveElement.clientUserData.icon:SetImage(passiveData.icon)
+            if passiveElement.clientUserData.isHovered then
+                -- The hovered element gets the tooltip.
+                self.passiveHoverTooltip.visibility = Visibility.INHERIT
+                self.passiveHoverTooltip.x = passiveElement.x
+                self.passiveHoverTooltip.clientUserData.name.text = passiveData.name
+                self.passiveHoverTooltip.clientUserData.description.text = passiveData.description
+                -- TODO this is sort of experimental and pointless.
+                for _,control in ipairs(self.passiveHoverTooltip:FindDescendantsByType("UIControl")) do
+                    if control.name ~= "Background" and control.SetColor then
+                        control:SetColor(PLAYER_TALENT_TREE:GetColor())
+                    end
+                end
+            end
+            passiveElement.visibility = Visibility.INHERIT
+        else
+            passiveElement.visibility = Visibility.FORCE_OFF
+        end
     end
 end
 
