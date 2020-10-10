@@ -26,21 +26,21 @@ Assets {
   }
 }
 Assets {
+  Id: 11318679105601761064
+  Name: "Fantasy Chest 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Chest_003"
+  }
+}
+Assets {
   Id: 10536251484879582863
   Name: "Frame Beveled 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_022"
-  }
-}
-Assets {
-  Id: 8334953981554545297
-  Name: "Fantasy Package 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Equip_Package_001"
   }
 }
 Assets {
