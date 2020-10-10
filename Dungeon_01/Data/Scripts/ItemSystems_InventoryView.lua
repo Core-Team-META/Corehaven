@@ -11,7 +11,7 @@ local PLAYER_TALENT_TREE = script:GetCustomProperty("PlayerTalentTree"):WaitForO
 local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
-local PANEL_ITEM_HOVER = script:GetCustomProperty("ItemHoverPanel"):WaitForObject()
+local PANEL_ITEM_TOOLTIP = script:GetCustomProperty("ItemHoverTooltip"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
 local PASSIVE_ICONS_GROUP = script:GetCustomProperty("PassiveIconsGroup"):WaitForObject()
 local EQUIP_SLOT_COOLDOWN = script:GetCustomProperty("EquipSlotCooldown")
@@ -633,11 +633,11 @@ end
 function view:DrawHoverInfo()
     -- The hover info details are handled by a separate script. Here, we need only indicate what item is to be viewed.
     if self.itemUnderCursor and not self.isDragging then
-        PANEL_ITEM_HOVER.clientUserData.itemToView = self.itemUnderCursor
-        PANEL_ITEM_HOVER.clientUserData.viewPositionX = self.slotUnderCursor.clientUserData.xAbsolute
-        PANEL_ITEM_HOVER.clientUserData.viewPositionY = self.slotUnderCursor.clientUserData.yAbsolute
+        PANEL_ITEM_TOOLTIP.clientUserData.itemToView = self.itemUnderCursor
+        PANEL_ITEM_TOOLTIP.clientUserData.viewPositionX = self.slotUnderCursor.clientUserData.xAbsolute
+        PANEL_ITEM_TOOLTIP.clientUserData.viewPositionY = self.slotUnderCursor.clientUserData.yAbsolute
     else
-        PANEL_ITEM_HOVER.clientUserData.itemToView = nil
+        PANEL_ITEM_TOOLTIP.clientUserData.itemToView = nil
     end
 end
 
