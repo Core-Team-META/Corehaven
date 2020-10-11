@@ -178,6 +178,7 @@
           }
         }
         ParentId: 10371614274221601732
+        ChildIds: 15587094189355264774
         ChildIds: 14905751679996434772
         ChildIds: 1391710873345604425
         ChildIds: 9452902869790127592
@@ -192,6 +193,54 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15587094189355264774
+        Name: "Point Light"
+        Transform {
+          Location {
+            Z: 14.826416
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13543376309166153059
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            G: 0.97
+            B: 0.0256955065
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 216.707458
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
       }
       Objects {
@@ -230,7 +279,7 @@
           }
           Overrides {
             Name: "bp:Solid Behind Objects"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "bp:Dynamic Thickness"
@@ -280,7 +329,7 @@
         Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: 18.6798096
+            Z: 31.9745941
           }
           Rotation {
           }
@@ -468,12 +517,15 @@
         Id: 7676202978963741129
         Name: "Fantasy Chest Common 01 (Prop)"
         Transform {
+          Location {
+            Z: -7.54691696
+          }
           Rotation {
           }
           Scale {
-            X: 0.208515361
-            Y: 0.208515361
-            Z: 0.208515361
+            X: 0.552802801
+            Y: 0.552802801
+            Z: 0.552802801
           }
         }
         ParentId: 13543376309166153059

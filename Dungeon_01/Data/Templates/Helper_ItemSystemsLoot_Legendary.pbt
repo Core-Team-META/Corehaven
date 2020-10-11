@@ -178,6 +178,7 @@
           }
         }
         ParentId: 6381426145576581859
+        ChildIds: 11759813901911610628
         ChildIds: 1996282080943673069
         ChildIds: 16075113785061701282
         ChildIds: 14458351757162863302
@@ -192,6 +193,54 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 11759813901911610628
+        Name: "Point Light"
+        Transform {
+          Location {
+            Z: 15.2972412
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 5581091406227327619
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 96.0352707
+          Color {
+            R: 0.72
+            G: 0.41483444
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 259.370544
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
       }
       Objects {
@@ -230,7 +279,7 @@
           }
           Overrides {
             Name: "bp:Solid Behind Objects"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "bp:Dynamic Thickness"
@@ -280,12 +329,12 @@
         Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: 18.6798096
+            Z: 27.1892395
           }
           Rotation {
           }
           Scale {
-            X: 0.631195486
+            X: 0.906503499
             Y: 0.435121268
             Z: 0.39512372
           }
@@ -294,7 +343,7 @@
         UnregisteredParameters {
           Overrides {
             Name: "bp:Density"
-            Float: 0.809580624
+            Float: 1.55572522
           }
           Overrides {
             Name: "bp:Gravity"
@@ -458,10 +507,13 @@
         Id: 297320583967702788
         Name: "Fantasy Chest Epic 01 (Prop)"
         Transform {
+          Location {
+            Z: -8.32077408
+          }
           Scale {
-            X: 0.224710405
-            Y: 0.224710405
-            Z: 0.224710405
+            X: 0.365730762
+            Y: 0.365730762
+            Z: 0.365730762
           }
         }
         ParentId: 5581091406227327619

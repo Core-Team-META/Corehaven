@@ -178,6 +178,7 @@
           }
         }
         ParentId: 4492299105989402064
+        ChildIds: 8447829850778214432
         ChildIds: 1506490899656901662
         ChildIds: 3344991982245455539
         ChildIds: 1972916245119375682
@@ -192,6 +193,57 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8447829850778214432
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: -0.583007813
+            Y: -0.678222656
+            Z: 12.569458
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4429891438573507047
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 216.707458
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
         }
       }
       Objects {
@@ -219,9 +271,9 @@
           Overrides {
             Name: "bp:Color A"
             Color {
-              R: 10
-              G: 10
-              B: 10
+              R: 5
+              G: 5
+              B: 5
               A: 0.8
             }
           }
@@ -231,7 +283,7 @@
           }
           Overrides {
             Name: "bp:Solid Behind Objects"
-            Bool: true
+            Bool: false
           }
           Overrides {
             Name: "bp:Dynamic Thickness"
@@ -286,16 +338,16 @@
           Rotation {
           }
           Scale {
-            X: 0.255941421
-            Y: 0.255941421
-            Z: 0.255941421
+            X: 0.434843302
+            Y: 0.434843302
+            Z: 0.434843302
           }
         }
         ParentId: 4429891438573507047
         UnregisteredParameters {
           Overrides {
             Name: "bp:Density"
-            Float: 0.809580624
+            Float: 1.20257759
           }
           Overrides {
             Name: "bp:Gravity"
@@ -303,11 +355,11 @@
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 9.01098824
+            Float: 10
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 4.27409506
+            Float: 0.574566901
           }
           Overrides {
             Name: "bp:color"
@@ -470,13 +522,14 @@
         Name: "Simple Crate 150cm"
         Transform {
           Location {
+            Z: -9.12494278
           }
           Rotation {
           }
           Scale {
-            X: 0.137385741
-            Y: 0.137385741
-            Z: 0.137385741
+            X: 0.253741711
+            Y: 0.253741711
+            Z: 0.253741711
           }
         }
         ParentId: 4429891438573507047
