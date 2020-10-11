@@ -248,6 +248,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -15
           }
           Rotation {
           }
@@ -325,6 +326,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -15
           }
           Rotation {
           }

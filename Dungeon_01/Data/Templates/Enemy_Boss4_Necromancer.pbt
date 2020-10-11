@@ -228,6 +228,7 @@
         ParentId: 2330649881682787815
         ChildIds: 2471952423682822606
         ChildIds: 14724955049604045541
+        ChildIds: 18047732533215415924
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -254,6 +255,7 @@
         }
         ParentId: 17314454833251454489
         ChildIds: 618763963548904835
+        ChildIds: 11425884941741155336
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -270,6 +272,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -15
           }
           Rotation {
           }
@@ -308,6 +311,54 @@
         }
       }
       Objects {
+        Id: 11425884941741155336
+        Name: "Point Light"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2471952423682822606
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            R: 0.940993249
+            G: 0.19
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 149.612335
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+        }
+      }
+      Objects {
         Id: 14724955049604045541
         Name: "right_prop"
         Transform {
@@ -323,6 +374,7 @@
         }
         ParentId: 17314454833251454489
         ChildIds: 3820794939668578246
+        ChildIds: 8929534940120800186
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -339,6 +391,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -15
           }
           Rotation {
           }
@@ -374,6 +427,186 @@
           Vfx {
             AutoPlay: true
           }
+        }
+      }
+      Objects {
+        Id: 8929534940120800186
+        Name: "Point Light"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14724955049604045541
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 50
+          Color {
+            R: 0.940993249
+            G: 0.19
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 149.612335
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+        }
+      }
+      Objects {
+        Id: 18047732533215415924
+        Name: "upper_spine"
+        Transform {
+          Location {
+            X: -27.1211395
+            Y: -0.321430206
+            Z: 395.350098
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17314454833251454489
+        ChildIds: 8571762088642041552
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8571762088642041552
+        Name: "Rock 01"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.105400272
+            Y: 0.105400272
+            Z: 0.105400272
+          }
+        }
+        ParentId: 18047732533215415924
+        ChildIds: 17905393194037262617
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5351428073291024820
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 9.66887474
+              B: 10
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6143956280833607398
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17905393194037262617
+        Name: "Point Light"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 9.48764229
+            Y: 9.48764229
+            Z: 9.48764229
+          }
+        }
+        ParentId: 8571762088642041552
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 34.1181526
+          Color {
+            R: 0.940993249
+            G: 0.19
+            B: 1
+            A: 1
+          }
+          CastShadows: true
+          VolumetricIntensity: 400
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 590.532288
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 6.08837175
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
+          }
+          CastVolumetricShadows: true
         }
       }
       Objects {
@@ -443,6 +676,33 @@
             Name: "cs:StunnedAnimation"
             String: "unarmed_stun_dizzy"
           }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 1.28838444
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 1.28838444
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 0.31
+              B: 0.968012929
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 9030509924215157151
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -452,7 +712,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 18039984299850060191
+            Id: 14324126384198850775
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -481,12 +741,30 @@
       }
     }
     Assets {
-      Id: 18039984299850060191
-      Name: "Fantasy Human Guy"
+      Id: 6143956280833607398
+      Name: "Rock 01"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_rock_generic_001"
+      }
+    }
+    Assets {
+      Id: 5351428073291024820
+      Name: "Opaque Emissive"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 14324126384198850775
+      Name: "Skeleton Mob"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
-        AssetId: "npc_human_guy_fantasy_001_ref"
+        AssetId: "npc_human_guy_skelington_001_ref"
       }
     }
     PrimaryAssetId {

@@ -27445,6 +27445,35 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 11351736251354024306
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 13.8797417
+            Y: 3.92202377
+            Z: -51.2388916
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.91940308
+            Yaw: -78.0739441
+            Roll: 18.8311882
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 13903177348428368713
       value {
         Overrides {
@@ -27474,6 +27503,41 @@ Objects {
           Name: "ma:Shared_BaseMaterial:id"
           AssetReference {
             Id: 3471524411601394882
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:id"
+          AssetReference {
+            Id: 18434079688766523124
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16031142419032069477
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14.735363
+            Y: -1.25146437
+            Z: -51.688118
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: -93.4327698
+            Roll: 20.8520718
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
           }
         }
       }
@@ -30430,14 +30494,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -90
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

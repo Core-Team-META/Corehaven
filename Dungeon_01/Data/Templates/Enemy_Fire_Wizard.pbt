@@ -250,6 +250,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -12.9057655
           }
           Rotation {
           }
@@ -276,6 +277,12 @@
           Overrides {
             Name: "bp:Particle Scale Multiplier"
             Float: 0.8
+          }
+          Overrides {
+            Name: "bp:Initial Velocity"
+            Vector {
+              Z: 50
+            }
           }
         }
         Collidable_v2 {
@@ -327,6 +334,7 @@
         Name: "Torch Fire VFX"
         Transform {
           Location {
+            Z: -15.2500591
           }
           Rotation {
           }

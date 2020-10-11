@@ -462,7 +462,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Volumetric Fog"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "bp:color"
@@ -484,6 +484,23 @@ Objects {
     Overrides {
       Name: "bp:Layered Fog Offset Height"
       Float: 5.20092773
+    }
+    Overrides {
+      Name: "bp:Directional Inscattering Color"
+      Color {
+        R: 0.89
+        G: 1
+        B: 0.993443727
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Light Absorption Amount"
+      Float: 2.99106264
+    }
+    Overrides {
+      Name: "bp:Beam View Direction"
+      Float: 0.05
     }
   }
   Collidable_v2 {
