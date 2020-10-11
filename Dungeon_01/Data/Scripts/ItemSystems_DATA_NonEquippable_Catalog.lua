@@ -63,4 +63,12 @@
     MUID = '26E31406A2881802:ITEM_NonEquippable_FrogEye',
     Lore = 'Slimy and gross. Why did I take this again?',
   },
+   {
+    Name = 'Highrock Token',
+    Type = 'Currency',
+    Rarity = 'Rare',
+    StackSize = '500',
+    MUID = '80519D238D37F349:ITEM_NonEquippable_Highrock_Token',
+    Lore = 'A Token granted for defeating the final boss of Highrock',
+  },
 }

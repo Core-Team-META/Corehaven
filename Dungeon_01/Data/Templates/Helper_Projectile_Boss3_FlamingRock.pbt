@@ -18,6 +18,7 @@
         ParentId: 4781671109827199097
         ChildIds: 3293006148652433912
         ChildIds: 12198221953739243173
+        ChildIds: 4188643239983250860
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -34,14 +35,14 @@
         Name: "Rock 03"
         Transform {
           Location {
-            X: 92.0214844
-            Y: 48.2248154
-            Z: 58.3586426
+            X: -121.125305
+            Y: 48.2245293
+            Z: 54.0316772
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.0527563617
-            Roll: 0.0527868979
+            Yaw: 0.000136603776
+            Roll: 0.000167121354
           }
           Scale {
             X: 2.80177784
@@ -50,6 +51,14 @@
           }
         }
         ParentId: 13840291380342644900
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3694205089710775584
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -75,19 +84,18 @@
         Name: "Fire Volume VFX"
         Transform {
           Location {
-            X: -5.0995903
-            Y: 19.5482903
-            Z: 48.1596413
+            X: -268.388947
+            Y: 19.5487633
+            Z: 42.8162842
           }
           Rotation {
             Pitch: 90
-            Yaw: 0.0527563617
-            Roll: 0.0527868979
+            Roll: 7.75027547e-06
           }
           Scale {
-            X: 3
-            Y: 3
-            Z: 13
+            X: 5.46840096
+            Y: 5.46842909
+            Z: 13.9000607
           }
         }
         ParentId: 13840291380342644900
@@ -141,6 +149,61 @@
           }
           Vfx {
             AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 4188643239983250860
+        Name: "Point Light"
+        Transform {
+          Location {
+            X: -282.494049
+            Y: 68.1659164
+            Z: 67.9923096
+          }
+          Rotation {
+            Pitch: 85.2350616
+            Yaw: 3.87905084e-06
+            Roll: 6.12616069e-11
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 13840291380342644900
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Light {
+          Intensity: 100
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          VolumetricIntensity: 5
+          TeamSettings {
+          }
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 614.214233
+              PointLight {
+                SourceRadius: 246.551849
+                SoftSourceRadius: 114.280907
+                SourceLength: 375.746765
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
+            }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
           }
         }
       }

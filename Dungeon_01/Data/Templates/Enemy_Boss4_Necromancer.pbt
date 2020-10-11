@@ -110,6 +110,14 @@
             Float: 0.5
           }
           Overrides {
+            Name: "cs:DropKey3"
+            String: "Boss6"
+          }
+          Overrides {
+            Name: "cs:DropChance3"
+            Float: 1
+          }
+          Overrides {
             Name: "cs:OnPulledEventName"
             String: "Boss4Pulled"
           }
