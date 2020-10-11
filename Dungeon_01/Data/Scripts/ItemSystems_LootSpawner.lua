@@ -1,5 +1,9 @@
 ﻿local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local LOOT_TEMPLATE = script:GetCustomProperty("LootTemplate")
+local LOOT_TEMPLATE_UNCOMMON = script:GetCustomProperty("LootTemplate_Uncommon")
+local LOOT_TEMPLATE_RARE = script:GetCustomProperty("LootTemplate_Rare")
+local LOOT_TEMPLATE_EPIC = script:GetCustomProperty("LootTemplate_Epic")
+local LOOT_TEMPLATE_LEGENDARY = script:GetCustomProperty("LootTemplate_Legendary")
 
 -- Drops are assigned by lottery.
 local playerLotteryTickets = {}
@@ -55,7 +59,20 @@ local function OnDropLoot(dropKey, dropWorldPosition)
     Database:WaitUntilLoaded()
     local winner = ChoosePlayerByLottery()
     local item = Database:CreateItemFromDrop(dropKey)
-    local object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
+    local rarity = item:GetRarity()
+    local object
+    if rarity == "Common" then
+    	object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
+    elseif rarity == "Uncommon" then
+    	object = World.SpawnAsset(LOOT_TEMPLATE_UNCOMMON, { position = dropWorldPosition, parent = script })
+    elseif rarity == "Rare" then
+    	object = World.SpawnAsset(LOOT_TEMPLATE_RARE, { position = dropWorldPosition, parent = script })
+    elseif rarity == "Epic" then
+    	object = World.SpawnAsset(LOOT_TEMPLATE_EPIC, { position = dropWorldPosition, parent = script })
+    elseif rarity == "Legendary" then
+    	object = World.SpawnAsset(LOOT_TEMPLATE_LEGENDARY, { position = dropWorldPosition, parent = script })
+   	end
+    	
     -- Encode information into the objects loot property.
     local lootInfo = string.format("%s/%s", winner.id, item:RuntimeHash())
     object:SetNetworkedCustomProperty("INFO", lootInfo)

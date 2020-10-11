@@ -212,6 +212,10 @@ function Item:GetDescription()
     return self.data.description
 end
 
+function Item:HasStats()
+    return self.hasStats
+end
+
 function Item:GetStats()
     return self.stats
 end
@@ -335,8 +339,10 @@ function Item._FromHash(database, hash)
 end
 
 function Item:_RecalculateStatTotals()
+    self.hasStats = nil
     for _,statName in ipairs(Item.STATS) do self.statTotals[statName] = 0 end
     for i,stat in ipairs(self.stats) do
+        self.hasStats = true
         self.statTotals[stat.name] = self.statTotals[stat.name] + stat.value
     end 
 end

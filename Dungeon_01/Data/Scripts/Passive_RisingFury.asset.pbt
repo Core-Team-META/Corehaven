@@ -18,7 +18,7 @@
       }
       Overrides {
         Name: "cs:Description"
-        String: "Your attacks have a chance to anger you, giving you increased attack for a short duration. Also grants your basic attack Sweeping Slash."
+        String: "Your attacks have a chance to anger you, giving you increased attack for a short duration."
       }
       Overrides {
         Name: "cs:Icon"

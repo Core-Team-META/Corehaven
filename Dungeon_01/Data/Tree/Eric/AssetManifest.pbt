@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18434079688766523124
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
   Id: 18192159038187223433
   Name: "Fantasy Ability Red 030"
   PlatformAssetType: 9
@@ -14,6 +23,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Blue_051"
+  }
+}
+Assets {
+  Id: 18026198405272835864
+  Name: "Fantasy Spell Potion 008"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Potion_008"
   }
 }
 Assets {
@@ -599,15 +617,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Yellow_018"
-  }
-}
-Assets {
-  Id: 3748994048496907479
-  Name: "Fantasy Ability Red 018"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Ability_Red_018"
   }
 }
 Assets {

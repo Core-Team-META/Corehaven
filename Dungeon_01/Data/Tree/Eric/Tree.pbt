@@ -259,12 +259,14 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 1
-      Y: 1
-      Z: 5
+      X: 1.1561904
+      Y: 1.1561904
+      Z: 5.78095198
     }
   }
   ParentId: 3418556955307438825
+  ChildIds: 14837734865101694086
+  ChildIds: 18050238319230053430
   UnregisteredParameters {
     Overrides {
       Name: "bp:Corner Rounding"
@@ -277,17 +279,83 @@ Objects {
     Overrides {
       Name: "bp:color"
       Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 0.125
+        A: 0.0470000021
       }
     }
     Overrides {
       Name: "bp:Stroke Color"
       Color {
-        R: 0.840000033
-        G: 0.750993431
+        R: 0.470000029
+        G: 0.130728468
+        A: 0.274000019
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.154736161
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 6.21310282
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceon"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 18050238319230053430
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 0.850052178
+      Y: 0.850052178
+      Z: 0.850052297
+    }
+  }
+  ParentId: 3129409067651023909
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        A: 0.0470000021
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
         A: 1
       }
     }
@@ -297,7 +365,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Stroke Width"
-      Float: 0.07
+      Float: 0.0316934213
     }
     Overrides {
       Name: "bp:Blur"
@@ -305,14 +373,83 @@ Objects {
     }
     Overrides {
       Name: "bp:Emissive Boost"
-      Float: 3
+      Float: 6.21310282
     }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3965397322580208730
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 14837734865101694086
+  Name: "2D Basic Shapes Decal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.03109741
+      Y: 1.03109741
+      Z: 1.03109741
+    }
+  }
+  ParentId: 3129409067651023909
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Corner Rounding"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Sides"
+      Int: 3
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        A: 0.0470000021
+      }
+    }
+    Overrides {
+      Name: "bp:Stroke Color"
+      Color {
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Indent"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Stroke Width"
+      Float: 0.0316934213
+    }
+    Overrides {
+      Name: "bp:Blur"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 6.21310282
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Blueprint {
     BlueprintAsset {
@@ -2076,7 +2213,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "You drink a helpful potion."
+      String: "You drink a random helpful potion."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -2085,7 +2222,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 3748994048496907479
+        Id: 18026198405272835864
       }
     }
     Overrides {
@@ -27194,13 +27331,6 @@ Objects {
   Id: 13445983640886624748
   Name: "Enemy_Elemental_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -5400
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -27235,14 +27365,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 125.395699
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -27318,6 +27440,104 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 128.817307
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 11351736251354024306
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 13.8797417
+            Y: 3.92202377
+            Z: -51.2388916
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -2.91940308
+            Yaw: -78.0739441
+            Roll: 18.8311882
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13903177348428368713
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:id"
+          AssetReference {
+            Id: 18434079688766523124
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.99
+            G: 0.998609245
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:utile"
+          Float: 3.76837945
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:vtile"
+          Float: 3.76837945
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3471524411601394882
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail2:id"
+          AssetReference {
+            Id: 18434079688766523124
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16031142419032069477
+      value {
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 14.735363
+            Y: -1.25146437
+            Z: -51.688118
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -0.000122070313
+            Yaw: -93.4327698
+            Roll: 20.8520718
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
           }
         }
       }
@@ -28127,13 +28347,6 @@ Objects {
   Id: 10826731910696105202
   Name: "Enemy_Ice_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -5400
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -28142,12 +28355,13 @@ Objects {
   }
   ParentId: 15991219036664260330
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 11860041625734473373
-      value {
-      }
-    }
     ParameterOverrideMap {
       key: 12555114022526006492
       value {
@@ -28167,14 +28381,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -122.926163
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -28458,13 +28664,6 @@ Objects {
   Id: 15636285162546739188
   Name: "Enemy_Boss2_Merchant"
   Transform {
-    Location {
-      X: -12800
-      Y: -5600
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -30297,14 +30496,6 @@ Objects {
             Yaw: -90
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -30727,15 +30918,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11860041625734473373
-      value {
-        Overrides {
-          Name: "PlayOnStartAnimation"
-          String: ""
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12555114022526006492
       value {
         Overrides {
@@ -30756,14 +30938,6 @@ Objects {
             Yaw: -135.327484
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -30775,14 +30949,6 @@ Objects {
   Id: 10438431049322022386
   Name: "Enemy_Necromancer"
   Transform {
-    Location {
-      X: 756.101563
-      Y: 2354.04834
-      Z: 13.7415161
-    }
-    Rotation {
-      Yaw: -128.269775
-    }
     Scale {
       X: 1
       Y: 1
@@ -31210,15 +31376,8 @@ Objects {
 }
 Objects {
   Id: 4415891653820533152
-  Name: "Enemy_Wizard"
+  Name: "Enemy_Fire_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -7575
-      Z: -1036.98596
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -31679,14 +31838,6 @@ Objects {
             Yaw: -135.90477
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -31877,14 +32028,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -67.1095
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

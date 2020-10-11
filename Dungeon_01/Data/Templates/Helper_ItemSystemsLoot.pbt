@@ -4,9 +4,9 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 13938044465804070832
+      RootId: 3974485144522790657
       Objects {
-        Id: 13938044465804070832
+        Id: 3974485144522790657
         Name: "Helper_ItemSystemsLoot"
         Transform {
           Scale {
@@ -16,8 +16,8 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 12096153172627658431
-        ChildIds: 12909080179993159603
+        ChildIds: 13499307853709474358
+        ChildIds: 4492299105989402064
         UnregisteredParameters {
           Overrides {
             Name: "cs:INFO"
@@ -40,7 +40,7 @@
         }
       }
       Objects {
-        Id: 12096153172627658431
+        Id: 13499307853709474358
         Name: "Server"
         Transform {
           Location {
@@ -53,8 +53,8 @@
             Z: 1
           }
         }
-        ParentId: 13938044465804070832
-        ChildIds: 6379796884503232505
+        ParentId: 3974485144522790657
+        ChildIds: 6827845839356156968
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -67,7 +67,7 @@
         }
       }
       Objects {
-        Id: 6379796884503232505
+        Id: 6827845839356156968
         Name: "v2_ItemSystems_LootController"
         Transform {
           Location {
@@ -80,12 +80,12 @@
             Z: 1
           }
         }
-        ParentId: 12096153172627658431
+        ParentId: 13499307853709474358
         UnregisteredParameters {
           Overrides {
             Name: "cs:Loot"
             ObjectReference {
-              SubObjectId: 13938044465804070832
+              SubObjectId: 3974485144522790657
             }
           }
         }
@@ -102,7 +102,7 @@
         }
       }
       Objects {
-        Id: 12909080179993159603
+        Id: 4492299105989402064
         Name: "Client"
         Transform {
           Location {
@@ -115,9 +115,9 @@
             Z: 1
           }
         }
-        ParentId: 13938044465804070832
-        ChildIds: 11788056424733759797
-        ChildIds: 11177406314880341480
+        ParentId: 3974485144522790657
+        ChildIds: 13959591261811388393
+        ChildIds: 4429891438573507047
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -129,7 +129,7 @@
         }
       }
       Objects {
-        Id: 11788056424733759797
+        Id: 13959591261811388393
         Name: "v2_ItemSystems_LootController"
         Transform {
           Location {
@@ -142,12 +142,12 @@
             Z: 1
           }
         }
-        ParentId: 12909080179993159603
+        ParentId: 4492299105989402064
         UnregisteredParameters {
           Overrides {
             Name: "cs:Loot"
             ObjectReference {
-              SubObjectId: 13938044465804070832
+              SubObjectId: 3974485144522790657
             }
           }
         }
@@ -164,7 +164,7 @@
         }
       }
       Objects {
-        Id: 11177406314880341480
+        Id: 4429891438573507047
         Name: "Indicator"
         Transform {
           Location {
@@ -177,12 +177,14 @@
             Z: 1
           }
         }
-        ParentId: 12909080179993159603
-        ChildIds: 9889476390810852008
-        ChildIds: 2730010688871071614
-        ChildIds: 16761588910795450268
-        ChildIds: 9110346938526630151
-        ChildIds: 1428367281018295685
+        ParentId: 4492299105989402064
+        ChildIds: 8447829850778214432
+        ChildIds: 1506490899656901662
+        ChildIds: 3344991982245455539
+        ChildIds: 1972916245119375682
+        ChildIds: 2241185980672777980
+        ChildIds: 2718419995206423947
+        ChildIds: 82994703267230653
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -194,117 +196,122 @@
         }
       }
       Objects {
-        Id: 9889476390810852008
-        Name: "Sphere"
+        Id: 8447829850778214432
+        Name: "Point Light"
         Transform {
           Location {
-            Z: 20
+            X: -0.583007813
+            Y: -0.678222656
+            Z: 12.569458
           }
           Rotation {
           }
           Scale {
-            X: 0.2
-            Y: 0.2
-            Z: 0.2
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 11177406314880341480
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3600411780097559612
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 1
-              G: 0.995165646
-              B: 0.269999981
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-        }
+        ParentId: 4429891438573507047
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 5820043437166741895
+        Light {
+          Intensity: 50
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          VolumetricIntensity: 5
+          TeamSettings {
           }
-          DisableDistanceFieldLighting: true
-          DisableCastShadows: true
-          DisableReceiveDecals: true
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
+          Light {
+            Temperature: 6500
+            LocalLight {
+              AttenuationRadius: 216.707458
+              PointLight {
+                SourceRadius: 20
+                SoftSourceRadius: 20
+                FallOffExponent: 8
+                UseFallOffExponent: true
+              }
             }
+            MaxDrawDistance: 5000
+            MaxDistanceFadeRange: 1000
           }
         }
       }
       Objects {
-        Id: 2730010688871071614
-        Name: "Fairy Dot Volume VFX"
+        Id: 1506490899656901662
+        Name: "Outline Object"
         Transform {
           Location {
-            Z: 20
           }
           Rotation {
           }
           Scale {
-            X: 0.5
-            Y: 0.5
-            Z: 0.5
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
-        ParentId: 11177406314880341480
+        ParentId: 4429891438573507047
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Volume Type"
-            Enum {
-              Value: "mc:evfxvolumetype:1"
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 82994703267230653
             }
           }
           Overrides {
-            Name: "bp:Curl Variance"
-            Float: 0.807425916
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.589468122
-          }
-          Overrides {
-            Name: "bp:color"
+            Name: "bp:Color A"
             Color {
-              R: 1
-              G: 0.855364323
-              B: 0.220000029
-              A: 1
+              R: 5
+              G: 5
+              B: 5
+              A: 0.8
             }
           }
           Overrides {
-            Name: "bp:Secondary Color"
-            Color {
-              G: 0.371456653
-              B: 0.710000038
-              A: 1
-            }
+            Name: "bp:Show Behind Objects"
+            Bool: true
           }
           Overrides {
-            Name: "bp:Gravity"
+            Name: "bp:Solid Behind Objects"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 32
+          }
+          Overrides {
+            Name: "bp:Max Distance Thickness"
             Float: 0
+          }
+          Overrides {
+            Name: "bp:Min Distance"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Max Distance"
+            Float: 15.2405796
+          }
+          Overrides {
+            Name: "bp:Hierarchy Discovery Depth"
+            Int: 4
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 1.99496067
           }
         }
         Collidable_v2 {
@@ -315,7 +322,64 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 4305200088766574318
+            Id: 7898917390725303355
+          }
+          TeamSettings {
+          }
+        }
+      }
+      Objects {
+        Id: 3344991982245455539
+        Name: "Callout Sparkle"
+        Transform {
+          Location {
+            Z: 13.1977539
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.434843302
+            Y: 0.434843302
+            Z: 0.434843302
+          }
+        }
+        ParentId: 4429891438573507047
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Density"
+            Float: 1.20257759
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.574566901
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.46875
+              G: 0.46875
+              B: 0.46875
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 13697624696730172247
           }
           TeamSettings {
           }
@@ -325,7 +389,7 @@
         }
       }
       Objects {
-        Id: 16761588910795450268
+        Id: 1972916245119375682
         Name: "Resurrection VFX"
         Transform {
           Location {
@@ -338,7 +402,7 @@
             Z: 0.4
           }
         }
-        ParentId: 11177406314880341480
+        ParentId: 4429891438573507047
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
@@ -355,6 +419,15 @@
           Overrides {
             Name: "bp:Enable Rings"
             Bool: true
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
           }
         }
         Collidable_v2 {
@@ -375,7 +448,7 @@
         }
       }
       Objects {
-        Id: 9110346938526630151
+        Id: 2241185980672777980
         Name: "Meta Fantasy Revive Life Choir 02 SFX"
         Transform {
           Location {
@@ -388,7 +461,7 @@
             Z: 1
           }
         }
-        ParentId: 11177406314880341480
+        ParentId: 4429891438573507047
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -410,7 +483,7 @@
         }
       }
       Objects {
-        Id: 1428367281018295685
+        Id: 2718419995206423947
         Name: "Magic Sparkle Glitter Loop 02 SFX"
         Transform {
           Location {
@@ -423,7 +496,7 @@
             Z: 1
           }
         }
-        ParentId: 11177406314880341480
+        ParentId: 4429891438573507047
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -444,32 +517,60 @@
           IsAttenuationEnabled: true
         }
       }
-    }
-    Assets {
-      Id: 5820043437166741895
-      Name: "Sphere"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_sphere_002"
+      Objects {
+        Id: 82994703267230653
+        Name: "Simple Crate 150cm"
+        Transform {
+          Location {
+            Z: -9.12494278
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.253741711
+            Y: 0.253741711
+            Z: 0.253741711
+          }
+        }
+        ParentId: 4429891438573507047
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 15057977201205375036
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
       }
     }
     Assets {
-      Id: 3600411780097559612
-      Name: "Force Field"
-      PlatformAssetType: 2
+      Id: 7898917390725303355
+      Name: "Outline Object"
+      PlatformAssetType: 20
       PrimaryAsset {
-        AssetType: "MaterialAssetRef"
-        AssetId: "fxmi_forceField"
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     Assets {
-      Id: 4305200088766574318
-      Name: "Fairy Dot Volume VFX"
+      Id: 13697624696730172247
+      Name: "Callout Sparkle"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_Swirling_Magic_Column"
+        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     Assets {
@@ -497,6 +598,15 @@
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_magic_sparkle_glitter_loop_02_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 15057977201205375036
+      Name: "Simple Crate 150cm"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_crate_simple_150cm_001"
       }
     }
     PrimaryAssetId {

@@ -404,4 +404,9 @@
     ItemName = 'Wizard Hat',
     Likelihood = '2',
   },
+  {
+    DropKey = 'Boss6',
+    ItemName = 'Highrock Token',
+    Likelihood = '1',
+  },
 }

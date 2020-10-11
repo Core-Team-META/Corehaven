@@ -128,6 +128,7 @@
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Button {
             FontColor {
               A: 1
@@ -424,7 +425,7 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: 240
+          Width: 254
           Height: 30
           UIX: -10
           UIY: 3
