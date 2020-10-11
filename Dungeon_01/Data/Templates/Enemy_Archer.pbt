@@ -1562,6 +1562,18 @@
             Name: "cs:StunnedAnimation"
             String: "unarmed_stun_dizzy"
           }
+          Overrides {
+            Name: "ma:Shared_Detail3:id"
+            AssetReference {
+              Id: 17095405232326882518
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 4780916105325438871
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

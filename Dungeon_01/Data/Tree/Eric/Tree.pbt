@@ -2213,7 +2213,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "You drink a helpful potion."
+      String: "You drink a random helpful potion."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -2222,7 +2222,7 @@ Objects {
     Overrides {
       Name: "cs:Icon"
       AssetReference {
-        Id: 3748994048496907479
+        Id: 18026198405272835864
       }
     }
     Overrides {
@@ -27331,13 +27331,6 @@ Objects {
   Id: 13445983640886624748
   Name: "Enemy_Elemental_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -5400
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -27372,14 +27365,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 125.395699
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -27455,6 +27440,40 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: 128.817307
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 13903177348428368713
+      value {
+        Overrides {
+          Name: "ma:Shared_Detail1:id"
+          AssetReference {
+            Id: 18434079688766523124
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:color"
+          Color {
+            R: 0.99
+            G: 0.998609245
+            B: 1
+            A: 1
+          }
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:utile"
+          Float: 3.76837945
+        }
+        Overrides {
+          Name: "ma:Shared_Detail1:vtile"
+          Float: 3.76837945
+        }
+        Overrides {
+          Name: "ma:Shared_BaseMaterial:id"
+          AssetReference {
+            Id: 3471524411601394882
           }
         }
       }
@@ -28264,13 +28283,6 @@ Objects {
   Id: 10826731910696105202
   Name: "Enemy_Ice_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -5400
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -28279,12 +28291,13 @@ Objects {
   }
   ParentId: 15991219036664260330
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 11860041625734473373
-      value {
-      }
-    }
     ParameterOverrideMap {
       key: 12555114022526006492
       value {
@@ -28304,14 +28317,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -122.926163
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
@@ -28595,13 +28600,6 @@ Objects {
   Id: 15636285162546739188
   Name: "Enemy_Boss2_Merchant"
   Transform {
-    Location {
-      X: -12800
-      Y: -5600
-      Z: -1000
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -30864,15 +30862,6 @@ Objects {
   }
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11860041625734473373
-      value {
-        Overrides {
-          Name: "PlayOnStartAnimation"
-          String: ""
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12555114022526006492
       value {
         Overrides {
@@ -30893,14 +30882,6 @@ Objects {
             Yaw: -135.327484
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -30912,14 +30893,6 @@ Objects {
   Id: 10438431049322022386
   Name: "Enemy_Necromancer"
   Transform {
-    Location {
-      X: 756.101563
-      Y: 2354.04834
-      Z: 13.7415161
-    }
-    Rotation {
-      Yaw: -128.269775
-    }
     Scale {
       X: 1
       Y: 1
@@ -31347,15 +31320,8 @@ Objects {
 }
 Objects {
   Id: 4415891653820533152
-  Name: "Enemy_Wizard"
+  Name: "Enemy_Fire_Wizard"
   Transform {
-    Location {
-      X: -12800
-      Y: -7575
-      Z: -1036.98596
-    }
-    Rotation {
-    }
     Scale {
       X: 1
       Y: 1
@@ -31816,14 +31782,6 @@ Objects {
             Yaw: -135.90477
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -32014,14 +31972,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -67.1095
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }
