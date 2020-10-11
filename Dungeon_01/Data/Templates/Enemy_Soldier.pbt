@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 5944392588651457797
         ChildIds: 5828818409476629943
         ChildIds: 14846993980058340674
         ChildIds: 7136197101489531545
@@ -767,7 +767,7 @@
           }
         }
         ParentId: 14846993980058340674
-        ChildIds: 5761526011508001692
+        ChildIds: 16524479950965694994
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -780,18 +780,18 @@
         }
       }
       Objects {
-        Id: 5761526011508001692
-        Name: "Fantasy Shield 03"
+        Id: 16524479950965694994
+        Name: "Fantasy Shield 02"
         Transform {
           Location {
-            X: -2.9677248
-            Y: -8.3312149
+            X: -4.40348816
+            Y: -15.4077797
             Z: -18.1976051
           }
           Rotation {
-            Pitch: 79.2621841
-            Yaw: -174.518555
-            Roll: 5.49871492
+            Pitch: 79.2620697
+            Yaw: -174.518539
+            Roll: 5.49870443
           }
           Scale {
             X: 1
@@ -800,47 +800,6 @@
           }
         }
         ParentId: 4647561108298942640
-        ChildIds: 4536743569542035590
-        ChildIds: 860104683924645993
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Trim:utile"
-            Float: 1.99542022
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:vtile"
-            Float: 1.99542022
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 0.232530847
-              G: 0.242265716
-              B: 0.25
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 18434079688766523124
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 18434079688766523124
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              G: 0.0708782747
-              B: 0.427083343
-              A: 1
-            }
-          }
-        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -849,85 +808,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 13015241044592811011
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4536743569542035590
-        Name: "Fantasy Shield Strap 01"
-        Transform {
-          Location {
-            X: 14.7562046
-            Y: 5.25764
-          }
-          Rotation {
-            Yaw: -179.999939
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5761526011508001692
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5649559338683583195
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 860104683924645993
-        Name: "Fantasy Shield Strap 01"
-        Transform {
-          Location {
-            X: -15.3485928
-            Y: 5.06804848
-          }
-          Rotation {
-            Yaw: 180
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 5761526011508001692
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 5649559338683583195
+            Id: 675552238871189847
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1973,21 +1854,12 @@
       }
     }
     Assets {
-      Id: 13015241044592811011
-      Name: "Fantasy Shield 03"
+      Id: 675552238871189847
+      Name: "Fantasy Shield 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_shield_003"
-      }
-    }
-    Assets {
-      Id: 5649559338683583195
-      Name: "Fantasy Shield Strap 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_shield_strap_001"
+        AssetId: "sm_weap_fan_shield_002"
       }
     }
     Assets {

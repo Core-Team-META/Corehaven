@@ -28,6 +28,7 @@ Objects {
   ChildIds: 17888335466626026311
   ChildIds: 18109997350451454343
   ChildIds: 10625773096399959754
+  ChildIds: 14457459683637337674
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -37,6 +38,53 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 14457459683637337674
+  Name: "DnD Galleon"
+  Transform {
+    Location {
+      X: -5077.63525
+      Y: -117.315186
+      Z: -6840.98145
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8153798201366077481
+      value {
+        Overrides {
+          Name: "Name"
+          String: "DnD Galleon"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -8564.66895
+            Y: -13050
+            Z: -750
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -53.8342285
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9243457285138094618
+    }
   }
 }
 Objects {

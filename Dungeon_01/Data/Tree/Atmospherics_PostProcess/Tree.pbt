@@ -140,7 +140,24 @@ Objects {
     }
     Overrides {
       Name: "bp:Intensity"
-      Float: 3
+      Float: 4
+    }
+    Overrides {
+      Name: "bp:Indirect Intensity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Lower Hemisphere Color"
+      Color {
+      }
+    }
+    Overrides {
+      Name: "bp:Occlusion Exponent"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Use Captured Sky"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -197,15 +214,15 @@ Objects {
     }
     Overrides {
       Name: "bp:Light Shaft Bloom"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Scale"
-      Float: 2
+      Float: 1.52754056
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Threshold"
-      Float: 0.5
+      Float: 0
     }
     Overrides {
       Name: "bp:Light Shaft Bloom Tint"
@@ -223,9 +240,9 @@ Objects {
     Overrides {
       Name: "bp:Sun Disc Color"
       Color {
-        R: 0.103817165
-        G: 0.109375
-        B: 0.0894775763
+        R: 0.375
+        G: 0.375
+        B: 0.375
         A: 1
       }
     }
@@ -236,8 +253,28 @@ Objects {
     Overrides {
       Name: "bp:Shape"
       Enum {
-        Value: "mc:esundiscshapes:4"
+        Value: "mc:esundiscshapes:3"
       }
+    }
+    Overrides {
+      Name: "bp:Cast Volumetric Shadows"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Volumetric Intensity"
+      Float: 3
+    }
+    Overrides {
+      Name: "bp:Light Shaft Mask Darkness"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Indirect Lighting Intensity"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Draw Sun"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -370,7 +407,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Haze Falloff"
-      Float: 25
+      Float: 14.3691015
     }
     Overrides {
       Name: "bp:High Cloud Opacity"
@@ -397,6 +434,10 @@ Objects {
     Overrides {
       Name: "bp:Cloud Wisp Speed"
       Float: 1.5
+    }
+    Overrides {
+      Name: "bp:Horizon Falloff"
+      Float: 6
     }
   }
   Collidable_v2 {
@@ -496,7 +537,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Light Absorption Amount"
-      Float: 2.99106264
+      Float: 5
     }
     Overrides {
       Name: "bp:Beam View Direction"
