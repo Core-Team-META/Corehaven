@@ -249,7 +249,7 @@ function Tick(deltaTime)
 			local playerScale = currentTarget:GetWorldScale()
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition() - playerScale.z * 100.0 * Vector3.UP)
 			TARGET_MARKER:SetWorldScale(playerScale)
-			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(0.7, 2.0, 0.0))
+			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(0.0, 2.0, 0.0, 0.25))
 			local targetHat = (currentTarget:GetWorldPosition() - LOCAL_PLAYER:GetViewWorldPosition()):GetNormalized()
 			TARGET_LIGHT:SetWorldPosition(currentTarget:GetWorldPosition() - targetHat * playerScale.z * 200.0)
 			TARGET_LIGHT:SetWorldRotation(Rotation.New(targetHat, Vector3.UP))
@@ -259,7 +259,7 @@ function Tick(deltaTime)
 			local data = API_NPC.GetAllNPCData()[currentTarget]
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition())
 			TARGET_MARKER:SetWorldScale(Vector3.New(data.capsuleWidth / 256.0 + 0.5))	-- We want this to scale correctly, but be a bit big
-			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.7, 0.0))
+			TARGET_MARKER:SetSmartProperty("Stroke Color", Color.New(2.0, 0.0, 0.0, 0.25))
 			local targetCenter = currentTarget:GetWorldPosition() + data.capsuleHeight * Vector3.UP * 0.5
 			local targetHat = (targetCenter - LOCAL_PLAYER:GetViewWorldPosition()):GetNormalized()
 			TARGET_LIGHT:SetWorldPosition(targetCenter - targetHat * data.capsuleWidth * 2.0)
