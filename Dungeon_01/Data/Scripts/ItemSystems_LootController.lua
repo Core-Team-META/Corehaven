@@ -54,7 +54,7 @@ else
         -- Set up the trigger.
         local pickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
         pickupTrigger.isInteractable = true
-        pickupTrigger.interactedEvent:Connect(function() Events.Broadcast("RequestViewByName", "Loot") end)
+        pickupTrigger.interactedEvent:Connect(function() Events.Broadcast("ForceOpenViewByName", "Loot") end)
         -- Draw the correct visuals depending on rarity.
         World.SpawnAsset(INDICATORS[item:GetRarity()], { parent = LOOT })
     else

@@ -29,9 +29,16 @@ end
 -- This function manages all the views as they are requested from various client interactions. Here is
 -- where you will see which views can coexist, and which will replace all others when requested.
 -- TODO
-local function RequestViewByName(viewName)
+local function ForceOpenViewByName(viewName)
     local view = viewsByName[viewName]
     if view and not view.clientUserData.isVisible then
+        ToggleView(view)
+    end
+end
+
+local function ForceCloseViewByName(viewName)
+    local view = viewsByName[viewName]
+    if view and view.clientUserData.isVisible then
         ToggleView(view)
     end
 end
@@ -48,4 +55,5 @@ end)
 LOOT_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(LOOT_VIEW) end)
 INVENTORY_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(INVENTORY_VIEW) end)
 
-Events.Connect("RequestViewByName", RequestViewByName)
+Events.Connect("ForceOpenViewByName", ForceOpenViewByName)
+Events.Connect("ForceCloseViewByName", ForceCloseViewByName)

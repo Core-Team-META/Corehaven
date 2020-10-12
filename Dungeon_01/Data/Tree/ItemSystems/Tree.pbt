@@ -586,6 +586,7 @@ Objects {
   ParentId: 17155143211693072178
   ChildIds: 13899178932185190489
   ChildIds: 6082092189022891707
+  ChildIds: 12965460516371897588
   ChildIds: 8618125357592173978
   ChildIds: 18360545343579415337
   ChildIds: 16994852938321294114
@@ -7432,6 +7433,66 @@ Objects {
   }
 }
 Objects {
+  Id: 12965460516371897588
+  Name: "UI_ItemSystems_ForceCloseButton"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6427885708988809054
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10241432834000785313
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_ForceCloseButton"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:ViewName"
+          String: "Inventory"
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 8
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16083006011409388748
+    }
+  }
+}
+Objects {
   Id: 6082092189022891707
   Name: "UI_ItemSystems_Frame"
   Transform {
@@ -7664,6 +7725,7 @@ Objects {
   ParentId: 17155143211693072178
   ChildIds: 7210290309032103060
   ChildIds: 16777731965664047550
+  ChildIds: 14419343135262384269
   ChildIds: 4239841458936430252
   ChildIds: 15139464503578271811
   ChildIds: 7234787419622939464
@@ -11149,6 +11211,36 @@ Objects {
           Value: "mc:euianchor:topcenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 14419343135262384269
+  Name: "UI_ItemSystems_ForceCloseButton"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14941095892963387303
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10241432834000785313
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_ForceCloseButton"
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -8
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16083006011409388748
     }
   }
 }
