@@ -89,6 +89,7 @@
           }
         }
         ParentId: 14048503933732058079
+        ChildIds: 8690787293169206527
         ChildIds: 5385491135193130239
         ChildIds: 7274694707332401247
         ChildIds: 1992803970557353532
@@ -103,6 +104,61 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 8690787293169206527
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: 4.45789289
+            Y: 3.43522668
+            Z: 7.67224
+          }
+          Rotation {
+            Pitch: -1.02305984
+            Yaw: -89.2570801
+            Roll: 91.3692932
+          }
+          Scale {
+            X: 0.252638221
+            Y: 0.252638221
+            Z: 0.252638221
+          }
+        }
+        ParentId: 15130301541305601650
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Shape Index"
+            Int: 8
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              G: 0.97
+              B: 0.102781564
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14282934549800180925
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
         }
       }
       Objects {
@@ -539,6 +595,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Book_002"
+      }
+    }
+    Assets {
+      Id: 14282934549800180925
+      Name: "Decal Elven Symbols"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_elven_symbols_001"
       }
     }
     Assets {

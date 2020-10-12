@@ -60,12 +60,7 @@
           }
         }
         ParentId: 14221847442462413670
-        ChildIds: 12673143702556614185
-        ChildIds: 6235252377082372469
-        ChildIds: 11279822870952297076
-        ChildIds: 3185618210905832693
-        ChildIds: 9585428916995012869
-        ChildIds: 11359144513439133320
+        ChildIds: 2744140901867974808
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -77,11 +72,10 @@
         }
       }
       Objects {
-        Id: 12673143702556614185
-        Name: "Fantasy Sword Grip 01"
+        Id: 2744140901867974808
+        Name: "FrostBlade"
         Transform {
           Location {
-            Z: -15
           }
           Rotation {
           }
@@ -92,42 +86,65 @@
           }
         }
         ParentId: 14729845528653875123
+        ChildIds: 5339625672093757915
+        ChildIds: 18256329744060006194
+        ChildIds: 8926068413574545228
+        ChildIds: 3313921888488859671
+        ChildIds: 1564954190298284752
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 3682206342183528038
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
+        Folder {
+          IsGroup: true
         }
       }
       Objects {
-        Id: 6235252377082372469
-        Name: "Fantasy Staff Head 01"
+        Id: 5339625672093757915
+        Name: "Fantasy Staff Guard 02"
         Transform {
           Location {
-            Z: 15
+            Z: -26.2220459
           }
           Rotation {
+            Pitch: 5.46415104e-05
+            Yaw: 1.40513657e-05
+            Roll: 9.46161963e-05
           }
           Scale {
-            X: 1
-            Y: 1.5
-            Z: 1
+            X: 1.4130615
+            Y: 1.4130609
+            Z: 1.6065166
           }
         }
-        ParentId: 14729845528653875123
+        ParentId: 2744140901867974808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.0937165245
+              G: 0.09375
+              B: 0.0858767
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8541340586281732265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 45.8300743
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 36.94701
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -136,12 +153,11 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17237692812658431496
+            Id: 9854914266440959975
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -149,21 +165,106 @@
         }
       }
       Objects {
-        Id: 11279822870952297076
-        Name: "Fantasy Sword Guard 02"
+        Id: 18256329744060006194
+        Name: "Fantasy Pommel 04"
         Transform {
           Location {
-            Z: 11
+            Z: -25
           }
           Rotation {
+            Yaw: 89.9999619
           }
           Scale {
             X: 1.25
-            Y: 1
+            Y: 1.25
             Z: 1.25
           }
         }
-        ParentId: 14729845528653875123
+        ParentId: 2744140901867974808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8541340586281732265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 52.9092102
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 54.8436737
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4405588034365082590
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8926068413574545228
+        Name: "Fantasy Sword Guard 02"
+        Transform {
+          Location {
+            Z: 35.0521088
+          }
+          Rotation {
+            Pitch: -3.4150944e-05
+            Yaw: -179.999954
+            Roll: -179.999939
+          }
+          Scale {
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
+          }
+        }
+        ParentId: 2744140901867974808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 8541340586281732265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 41.1495361
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 61.0818443
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 8541340586281732265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 33.1736946
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 45.8300743
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -175,9 +276,8 @@
             Id: 9544913535066953067
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -185,21 +285,37 @@
         }
       }
       Objects {
-        Id: 3185618210905832693
+        Id: 3313921888488859671
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 20
+            Z: 55
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1.25
+            X: 1.5
+            Y: 1.5
+            Z: 1.5
           }
         }
-        ParentId: 14729845528653875123
+        ParentId: 2744140901867974808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.40221739
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3.40221739
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -211,9 +327,8 @@
             Id: 13888119501670323283
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -221,58 +336,74 @@
         }
       }
       Objects {
-        Id: 9585428916995012869
-        Name: "Fantasy Pommel 03"
+        Id: 1564954190298284752
+        Name: "Fantasy Sword Blade 01"
         Transform {
           Location {
-            Z: -13
+            Z: 30
           }
           Rotation {
-          }
-          Scale {
-            X: 1.25
-            Y: 1.25
-            Z: 1.25
-          }
-        }
-        ParentId: 14729845528653875123
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9675776263369201294
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11359144513439133320
-        Name: "Fantasy Pommel 04"
-        Transform {
-          Location {
-            Z: -23.9
-          }
-          Rotation {
-            Yaw: -89.999939
           }
           Scale {
             X: 1.5
             Y: 1.5
-            Z: 1.75
+            Z: 1.5
           }
         }
-        ParentId: 14729845528653875123
+        ParentId: 2744140901867974808
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 1100837394993556177
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 3.40221739
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 3.40221739
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 3077043113591575273
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 8541340586281732265
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 29.8791409
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 64
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 53.8360596
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 29.8791409
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.515625
+              G: 0.515625
+              B: 0.515625
+              A: 1
+            }
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -281,12 +412,11 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12510064410993333055
+            Id: 5605120965849612947
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -304,7 +434,7 @@
       }
     }
     Assets {
-      Id: 3682206342183528038
+      Id: 9854914266440959975
       Name: "Fantasy Sword Grip 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -313,12 +443,21 @@
       }
     }
     Assets {
-      Id: 17237692812658431496
-      Name: "Fantasy Staff Head 01"
+      Id: 8541340586281732265
+      Name: "Metal Iron Rusted 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_002"
+      }
+    }
+    Assets {
+      Id: 4405588034365082590
+      Name: "Fantasy Pommel 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_head_staff_001"
+        AssetId: "sm_weap_fan_pommel_004"
       }
     }
     Assets {
@@ -340,21 +479,30 @@
       }
     }
     Assets {
-      Id: 9675776263369201294
-      Name: "Fantasy Pommel 03"
-      PlatformAssetType: 1
+      Id: 1100837394993556177
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_003"
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
       }
     }
     Assets {
-      Id: 12510064410993333055
-      Name: "Fantasy Pommel 04"
+      Id: 5605120965849612947
+      Name: "Fantasy Sword Blade 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_004"
+        AssetId: "sm_weap_fan_blade_sword_001"
+      }
+    }
+    Assets {
+      Id: 3077043113591575273
+      Name: "Metal Iron Rusted 02"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_metal_iron_003"
       }
     }
     PrimaryAssetId {
