@@ -89,6 +89,7 @@
           }
         }
         ParentId: 2896953276199204214
+        ChildIds: 2434159993133896915
         ChildIds: 11196013537060571918
         ChildIds: 11968959341878842758
         ChildIds: 191913724121586600
@@ -103,6 +104,58 @@
         }
         Folder {
           IsGroup: true
+        }
+      }
+      Objects {
+        Id: 2434159993133896915
+        Name: "Decal Elven Symbols"
+        Transform {
+          Location {
+            X: 12.2860098
+            Y: 4.5428772
+            Z: -2.1999805
+          }
+          Rotation {
+            Pitch: -26.2093067
+            Yaw: -65.9618378
+            Roll: 90.0000076
+          }
+          Scale {
+            X: 0.295438141
+            Y: 0.295438141
+            Z: 0.295438141
+          }
+        }
+        ParentId: 6605233127160400520
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 10
+          }
+          Overrides {
+            Name: "bp:Color Emissive"
+            Color {
+              R: 0.209999979
+              G: 0.356489897
+              B: 1
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14282934549800180925
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
         }
       }
       Objects {
@@ -539,6 +592,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Equip_Book_011"
+      }
+    }
+    Assets {
+      Id: 14282934549800180925
+      Name: "Decal Elven Symbols"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "bp_decal_elven_symbols_001"
       }
     }
     Assets {
