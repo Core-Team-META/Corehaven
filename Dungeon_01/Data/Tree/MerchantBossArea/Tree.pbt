@@ -8804,8 +8804,8 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -32.2281647
-      Y: 49.1000977
+      X: -53.6065674
+      Y: 344.226074
       Z: 92.3893204
     }
     Rotation {
@@ -8831,7 +8831,8 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    CastShadows: true
+    VolumetricIntensity: 85.7307816
     TeamSettings {
     }
     Light {
@@ -8848,6 +8849,7 @@ Objects {
       MaxDrawDistance: 10000
       MaxDistanceFadeRange: 1000
     }
+    CastVolumetricShadows: true
   }
 }
 Objects {
@@ -9508,7 +9510,7 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    VolumetricIntensity: 24.287138
     TeamSettings {
     }
     Light {
@@ -15430,7 +15432,7 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    VolumetricIntensity: 14.4561558
     TeamSettings {
     }
     Light {
@@ -15605,8 +15607,8 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -12.8204441
-      Y: 48.1322708
+      X: 82.788208
+      Y: 330.262634
       Z: 0.000203450516
     }
     Rotation {
@@ -15632,7 +15634,8 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    CastShadows: true
+    VolumetricIntensity: 93.9232635
     TeamSettings {
     }
     Light {
@@ -15649,6 +15652,7 @@ Objects {
       MaxDrawDistance: 10000
       MaxDistanceFadeRange: 1000
     }
+    CastVolumetricShadows: true
   }
 }
 Objects {
@@ -22266,7 +22270,7 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    VolumetricIntensity: 20.190897
     TeamSettings {
     }
     Light {
@@ -22327,9 +22331,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -2741.72705
-      Y: -1309.7229
-      Z: -905.453491
+      X: -2811.0437
+      Y: -1128.35022
+      Z: -900.606873
     }
     Rotation {
       Yaw: -2.85568237
@@ -22354,13 +22358,13 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    VolumetricIntensity: 52.9608383
     TeamSettings {
     }
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 578.328552
+        AttenuationRadius: 835.487122
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -22371,6 +22375,7 @@ Objects {
       MaxDrawDistance: 10000
       MaxDistanceFadeRange: 1000
     }
+    CastVolumetricShadows: true
   }
 }
 Objects {
@@ -22378,9 +22383,9 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: -1997.74939
-      Y: -1036.17834
-      Z: -942.874939
+      X: -2076.58057
+      Y: -1006.30511
+      Z: -875.455688
     }
     Rotation {
       Yaw: -2.85568237
@@ -22405,13 +22410,14 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    CastShadows: true
+    VolumetricIntensity: 82.4537888
     TeamSettings {
     }
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 578.328552
+        AttenuationRadius: 1276.40674
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -22422,6 +22428,7 @@ Objects {
       MaxDrawDistance: 10000
       MaxDistanceFadeRange: 1000
     }
+    CastVolumetricShadows: true
   }
 }
 Objects {
@@ -22847,7 +22854,7 @@ Objects {
       G: 0.23642382
       A: 1
     }
-    VolumetricIntensity: 5
+    VolumetricIntensity: 30.0218792
     TeamSettings {
     }
     Light {

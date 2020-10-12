@@ -206,6 +206,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14324126384198850775
+  Name: "Skeleton Mob"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_skelington_001_ref"
+  }
+}
+Assets {
   Id: 14206563083884513420
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
@@ -584,6 +593,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6938880583474568810
+  Name: "Bone Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bone_raw_001_uv_ref"
+  }
+}
+Assets {
   Id: 6804582409165656232
   Name: "Star - Beveled"
   PlatformAssetType: 1
@@ -611,6 +629,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6378879557962707429
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
+  }
+}
+Assets {
   Id: 6367527662954153739
   Name: "Ring"
   PlatformAssetType: 1
@@ -626,6 +653,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_Square"
+  }
+}
+Assets {
+  Id: 6143956280833607398
+  Name: "Rock 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_001"
   }
 }
 Assets {
@@ -698,6 +734,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_004"
+  }
+}
+Assets {
+  Id: 4603537691901304316
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
   }
 }
 Assets {

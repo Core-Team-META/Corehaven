@@ -4,7 +4,7 @@
   PlatformAssetType: 13
   SerializationVersion: 65
   CustomMaterialAsset {
-    BaseMaterialId: 3256082723569577151
+    BaseMaterialId: 8361643690318007117
     ParameterOverrides {
       Overrides {
         Name: "color"
@@ -29,14 +29,6 @@
       Overrides {
         Name: "pattern_roughness"
         Float: 0.5
-      }
-      Overrides {
-        Name: "u_tiles"
-        Float: 0.220177278
-      }
-      Overrides {
-        Name: "v_tiles"
-        Float: 0.138462722
       }
       Overrides {
         Name: "color middle"
@@ -172,14 +164,62 @@
         Name: "v fade"
         Float: 0.470769942
       }
+      Overrides {
+        Name: "cmp:Material1"
+        AssetReference {
+          Id: 3221988264778154360
+        }
+      }
+      Overrides {
+        Name: "cmp:Material2"
+        AssetReference {
+          Id: 4904779893906915148
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material2"
+        Color {
+          R: 0.45
+          G: 1
+          B: 0.978145719
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cmpc:Material1"
+        Color {
+          R: 0.6
+          G: 1
+          B: 0.82516557
+          A: 1
+        }
+      }
     }
     Assets {
-      Id: 3256082723569577151
-      Name: "Additive Soft Edge"
+      Id: 8361643690318007117
+      Name: "Composite Mask Blend"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "fxma_additive_edgefade"
+        AssetId: "mi_composite_mask_blend_001_uv"
+      }
+    }
+    Assets {
+      Id: 3221988264778154360
+      Name: "Parchment 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_parchment_001_uv"
+      }
+    }
+    Assets {
+      Id: 4904779893906915148
+      Name: "Fabric Burlap Old 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_fabric_burlap_001_uv"
       }
     }
   }
