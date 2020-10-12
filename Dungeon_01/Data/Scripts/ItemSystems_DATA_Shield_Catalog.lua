@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonTankShield',
     MUID = '1490E6BD4CD08952:ITEM_Shield_SquareShield',
-    Lore = '',
+    Lore = 'I think this is actually a crate lid...',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicShield',
     MUID = '330AB98E021BA632:ITEM_Shield_WoodenShield',
-    Lore = '',
+    Lore = 'Standard issue shield to militias everywhere',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonTankShield',
     MUID = '3677E23A71B8FDE5:ITEM_Shield_IronShield',
-    Lore = '',
+    Lore = 'An iron shield, it offers more protection than wood',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -32,7 +32,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonMagicShield',
     MUID = '80D5F82484C0C943:ITEM_Shield_OrnateShield',
-    Lore = '',
+    Lore = 'A magical shield, finely crafted and enchanted',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -41,7 +41,7 @@
     Rarity = 'Rare',
     StatKey = 'RareTankShield',
     MUID = '09E325C06E432D5A:ITEM_Shield_CaptainsTower',
-    Lore = '',
+    Lore = 'The signature shield of Guard Captain Amira ',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -50,7 +50,7 @@
     Rarity = 'Epic',
     StatKey = 'EpicTankShield',
     MUID = 'DDAD0082A01F792E:ITEM_Shield_CrimsonBarrier',
-    Lore = '',
+    Lore = 'A shield of immense strength, can block even the mightiest blows',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

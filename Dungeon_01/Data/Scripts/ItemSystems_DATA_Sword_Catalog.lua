@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicSword',
     MUID = '1A64B3D661532D1A:ITEM_Sword_DullBlade',
-    Lore = '',
+    Lore = 'This sword barely counts as a sword.',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Common',
     StatKey = 'CommonTankSword',
     MUID = 'FAC5F2BC9C0427F6:ITEM_Sword_ShortSword',
-    Lore = '',
+    Lore = 'A common weapon issued to militias everywhere',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonMagicSword',
     MUID = '9D5F79A64800A146:ITEM_Sword_Katana',
-    Lore = '',
+    Lore = 'This katana is finely forged and glows with a faint magical hue',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -32,7 +32,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonTankSword',
     MUID = '1451BB78462E6C14:ITEM_Sword_JaggedSword',
-    Lore = '',
+    Lore = 'Designed to catch other blades in it\'s spines, this is an excellent defensive sword',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -41,7 +41,7 @@
     Rarity = 'Rare',
     StatKey = 'RareMagicSword',
     MUID = '69A9AE22371590DB:ITEM_Sword_TwistedKris',
-    Lore = '',
+    Lore = 'Magical alloys intertwined togetether to form this enchanted dagger',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -50,7 +50,7 @@
     Rarity = 'Rare',
     StatKey = 'RareTankSword',
     MUID = 'C1F5BED24AD23A07:ITEM_Sword_AncientSword',
-    Lore = '',
+    Lore = 'An ancient sword, great for blocking and parrying',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -59,7 +59,7 @@
     Rarity = 'Epic',
     StatKey = 'EpicMagicSword',
     MUID = 'E884024676C47343:ITEM_Sword_GoldSpike',
-    Lore = '',
+    Lore = 'Forged from the gold crown of an ancient lich, this sword possess strong magic.',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

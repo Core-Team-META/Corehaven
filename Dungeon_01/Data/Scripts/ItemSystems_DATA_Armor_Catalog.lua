@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonTankArmor',
     MUID = 'F1BF10231731A908:ITEM_Armor_LeatherArmor',
-    Lore = '',
+    Lore = 'Cured leather offers more protection, but it\'s still leather',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Common',
     StatKey = 'CommonAttackArmor',
     MUID = 'F1BF10231731A908:ITEM_Armor_LeatherArmor',
-    Lore = '',
+    Lore = 'Better than a shirt, but not by much',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicArmor',
     MUID = 'F1BF10231731A908:ITEM_Armor_LeatherArmor',
-    Lore = '',
+    Lore = 'Ordained with runic symbols, this armor enhances magical energies',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -32,7 +32,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonTankArmor',
     MUID = '529BCBBC653963C4:ITEM_Armor_RuggedArmor',
-    Lore = '',
+    Lore = 'This rugged leather armor is almost as strong as metal, but a lot lighter',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -41,7 +41,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonAttackArmor',
     MUID = '266F52F6DF758593:ITEM_Armor_ScaleArmor',
-    Lore = '',
+    Lore = 'Scale armor allows for the protection of metal but the flexability of leather',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -50,7 +50,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonMagicArmor',
     MUID = '3D08CB85F58532CE:ITEM_Armor_EnchantedRobes',
-    Lore = '',
+    Lore = 'Echewing all defenses, these robes enhance spellcasting',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -59,7 +59,7 @@
     Rarity = 'Rare',
     StatKey = 'RareMagicArmor',
     MUID = '59CC5DAED67637FF:ITEM_Armor_FiendraisersRobes',
-    Lore = '',
+    Lore = 'Robes of a dark necromancer',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -68,7 +68,7 @@
     Rarity = 'Rare',
     StatKey = 'RareAttackArmor',
     MUID = 'AE2CAF3BB11165E9:ITEM_Armor_MerchantsShirt',
-    Lore = '',
+    Lore = 'A finely crafted shirt that makes you look good while attacking',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -77,7 +77,7 @@
     Rarity = 'Rare',
     StatKey = 'RareTankArmor',
     MUID = 'C1FC0A631EDC10D4:ITEM_Armor_DragonboneBreastplate',
-    Lore = '',
+    Lore = 'A breastplate made from literal dragonbone. Badass. ',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonTankMace',
     MUID = 'FD1677F35CFFA9E3:ITEM_Mace_SpikedBludgeon',
-    Lore = '',
+    Lore = 'Really nothing more than a log with some nails in it',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicMace',
     MUID = '166B78569BD68E53:ITEM_Mace_SpikedClub',
-    Lore = '',
+    Lore = 'A wrecking ball. With spikes.',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonTankMace',
     MUID = 'B6851760453081A5:ITEM_Mace_IronMace',
-    Lore = '',
+    Lore = 'An iron mace - as good at blocking blows as it is for cracking heads',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -32,7 +32,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonMagicMace',
     MUID = 'FDACB1DB940F41EA:ITEM_Mace_RamsHeadClub',
-    Lore = '',
+    Lore = 'A mace with magical properties ',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -41,7 +41,7 @@
     Rarity = 'Rare',
     StatKey = 'RareTankMace',
     MUID = '6A3452033F73F1F5:ITEM_Mace_Bonebreaker',
-    Lore = '',
+    Lore = 'An excellent defensive weapon',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -50,7 +50,7 @@
     Rarity = 'Rare',
     StatKey = 'RareMagicMace',
     MUID = '894B84F7D4068803:ITEM_Mace_IronHammer',
-    Lore = '',
+    Lore = 'An iron hammer imbued with magical energies',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }
