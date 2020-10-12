@@ -508,3 +508,4 @@ Events.Connect("AbilityGained", OnAbilityGained)
 Events.Connect("AbilityRemoved", OnAbilityRemoved)
 Events.Connect("LABL", OnLoadActionBarLayout)
 
+API_RE.BroadcastToServer("RFABL")	-- Ready for action bar layout. This pattern is dumb, but will work.

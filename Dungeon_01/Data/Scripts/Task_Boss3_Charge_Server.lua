@@ -5,7 +5,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local RANGE = 3500.0
 local COOLDOWN = 10.0
-local DAMAGE = 30.0
+local DAMAGE = 20.0
 local SPEED = 2000.0
 
 local currentTasks = {}

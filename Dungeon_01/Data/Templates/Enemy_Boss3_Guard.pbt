@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 9531562083368661000
         ChildIds: 16942989088035155218
         ChildIds: 14384476818652914858
         ChildIds: 9428123518615673455
@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 4000
+            Float: 3300
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -251,14 +251,14 @@
         Name: "Fantasy Gauntlet Arm 01"
         Transform {
           Location {
-            X: 8.66684723
-            Y: 3.60744095
-            Z: -49.4348793
+            X: 13.8797417
+            Y: 3.92202377
+            Z: -51.2388916
           }
           Rotation {
-            Pitch: -0.000327849062
-            Yaw: -86.567215
-            Roll: 19.0480576
+            Pitch: -2.91940308
+            Yaw: -78.0739441
+            Roll: 18.8311882
           }
           Scale {
             X: 1.5
@@ -336,13 +336,13 @@
         Name: "Fantasy Gauntlet Arm 01"
         Transform {
           Location {
-            X: 8.72370052
-            Y: -2.66105175
-            Z: -49.4348526
+            X: 14.735363
+            Y: -1.25146437
+            Z: -51.688118
           }
           Rotation {
-            Pitch: -0.00011611321
-            Yaw: -93.4327774
+            Pitch: -0.000122070313
+            Yaw: -93.4327698
             Roll: 20.8520718
           }
           Scale {
@@ -1048,7 +1048,7 @@
           }
         }
         ParentId: 14384476818652914858
-        ChildIds: 12948025790797963459
+        ChildIds: 848069505309695093
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -1061,18 +1061,18 @@
         }
       }
       Objects {
-        Id: 12948025790797963459
+        Id: 848069505309695093
         Name: "Helmet"
         Transform {
           Location {
-            X: 2.53244448
-            Y: -9.29832458e-06
-            Z: 10.7861261
+            X: 2.53272533
+            Y: 0.000358819962
+            Z: 10.7861328
           }
           Rotation {
             Pitch: 8.92345
-            Yaw: 8.1955277e-06
-            Roll: 1.72316395e-05
+            Yaw: 8.18712488e-06
+            Roll: 1.71239371e-05
           }
           Scale {
             X: 1.5
@@ -1081,18 +1081,23 @@
           }
         }
         ParentId: 51581165413985648
-        ChildIds: 8683974032389954325
-        ChildIds: 7238032216576937023
-        ChildIds: 15254983927741951780
-        ChildIds: 6825335709990513155
-        ChildIds: 6610487678772950699
-        ChildIds: 781610481478592764
-        ChildIds: 10572441678533829431
-        ChildIds: 10216676366541502490
-        ChildIds: 6660269867558072940
-        ChildIds: 201715773251656604
-        ChildIds: 412050228476497982
-        ChildIds: 2114592972914324158
+        ChildIds: 10983900926914025324
+        ChildIds: 10932484420877120987
+        ChildIds: 7020083685484859689
+        ChildIds: 10525714007116290440
+        ChildIds: 3780173570724036894
+        ChildIds: 183397696430007778
+        ChildIds: 14958483025105878336
+        ChildIds: 9975167405453215097
+        ChildIds: 1843881802818702751
+        ChildIds: 10291323530551526897
+        ChildIds: 1453559259093246581
+        ChildIds: 7414765222756309095
+        ChildIds: 11923392681952567356
+        ChildIds: 6196181867434897899
+        ChildIds: 7659135196174204441
+        ChildIds: 18245607882679544951
+        ChildIds: 12480870509047471455
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1104,7 +1109,7 @@
         }
       }
       Objects {
-        Id: 8683974032389954325
+        Id: 10983900926914025324
         Name: "Lense"
         Transform {
           Location {
@@ -1121,12 +1126,12 @@
             Z: 0.231923699
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
@@ -1148,7 +1153,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1156,91 +1160,29 @@
         }
       }
       Objects {
-        Id: 7238032216576937023
-        Name: "Horn"
-        Transform {
-          Location {
-            X: 5.12561
-            Y: 9.81918335
-            Z: -3.18988109
-          }
-          Rotation {
-            Pitch: -3.68511963
-            Yaw: -144.382111
-            Roll: -42.6872559
-          }
-          Scale {
-            X: 0.0246712957
-            Y: 0.148772538
-            Z: 0.16936627
-          }
-        }
-        ParentId: 12948025790797963459
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3768007809154241805
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.541060269
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6378879557962707429
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15254983927741951780
+        Id: 10932484420877120987
         Name: "Pipe"
         Transform {
           Location {
-            X: -0.622436643
-            Y: 0.0298461933
-            Z: -0.808502138
+            X: -0.16229257
+            Y: 0.0298461914
+            Z: -0.808502197
           }
           Rotation {
             Roll: 1.95631593e-14
           }
           Scale {
-            X: 0.287840486
+            X: 0.27631706
             Y: 0.257101417
-            Z: 0.0291311573
+            Z: 0.0291311592
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
@@ -1270,7 +1212,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1278,69 +1219,7 @@
         }
       }
       Objects {
-        Id: 6825335709990513155
-        Name: "Horn"
-        Transform {
-          Location {
-            X: 5.12561
-            Y: -9.4225769
-            Z: -3.80696177
-          }
-          Rotation {
-            Pitch: 4.9064045
-            Yaw: -24.315033
-            Roll: -42.0001831
-          }
-          Scale {
-            X: 0.0246712957
-            Y: 0.148772538
-            Z: 0.16936627
-          }
-        }
-        ParentId: 12948025790797963459
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3768007809154241805
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.125
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.541060269
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 6378879557962707429
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6610487678772950699
+        Id: 7020083685484859689
         Name: "Fantasy Staff Head 01"
         Transform {
           Location {
@@ -1358,24 +1237,24 @@
             Z: 0.317349166
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1393,7 +1272,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1401,7 +1279,7 @@
         }
       }
       Objects {
-        Id: 781610481478592764
+        Id: 10525714007116290440
         Name: "Fantasy Gauntlet Arm 01"
         Transform {
           Location {
@@ -1420,24 +1298,24 @@
             Z: 0.438843101
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1455,7 +1333,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1463,7 +1340,7 @@
         }
       }
       Objects {
-        Id: 10572441678533829431
+        Id: 3780173570724036894
         Name: "Fantasy Gauntlet Arm 01"
         Transform {
           Location {
@@ -1482,24 +1359,24 @@
             Z: 0.438843101
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1517,7 +1394,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1525,11 +1401,11 @@
         }
       }
       Objects {
-        Id: 10216676366541502490
+        Id: 183397696430007778
         Name: "Pipe - Half Thin"
         Transform {
           Location {
-            X: -2.24048066
+            X: -1.3897115
             Y: 3.76916504
             Z: -17.2190552
           }
@@ -1539,12 +1415,12 @@
             Roll: 3.93158507
           }
           Scale {
-            X: 0.255921513
-            Y: 0.184219614
+            X: 0.244065285
+            Y: 0.184219822
             Z: 0.187667876
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -1553,7 +1429,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1571,7 +1447,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1579,25 +1454,25 @@
         }
       }
       Objects {
-        Id: 6660269867558072940
+        Id: 14958483025105878336
         Name: "Pipe - Half Thin"
         Transform {
           Location {
-            X: -2.63891816
+            X: -1.788149
             Y: -3.45849609
             Z: -17.030777
           }
           Rotation {
             Yaw: -20.1799622
-            Roll: 3.93165135
+            Roll: 3.93164873
           }
           Scale {
-            X: 0.251366943
-            Y: 0.186423853
+            X: 0.239721745
+            Y: 0.186424032
             Z: 0.18766664
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
@@ -1606,7 +1481,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1624,7 +1499,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1632,7 +1506,7 @@
         }
       }
       Objects {
-        Id: 201715773251656604
+        Id: 9975167405453215097
         Name: "Fantasy Gauntlet Hand 01"
         Transform {
           Location {
@@ -1650,18 +1524,18 @@
             Z: 0.352288514
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
         }
@@ -1679,7 +1553,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1687,7 +1560,7 @@
         }
       }
       Objects {
-        Id: 412050228476497982
+        Id: 1843881802818702751
         Name: "Fantasy Gauntlet Hand 01"
         Transform {
           Location {
@@ -1706,12 +1579,12 @@
             Z: 0.150590405
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
@@ -1741,7 +1614,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -1749,28 +1621,28 @@
         }
       }
       Objects {
-        Id: 2114592972914324158
+        Id: 10291323530551526897
         Name: "Thorn - Wide"
         Transform {
           Location {
-            X: -0.661254883
-            Y: 1.89398031e-09
-            Z: 0.0769043788
+            X: 9.16770571e-09
+            Y: 8.27180613e-25
+            Z: 0.0769043
           }
           Rotation {
           }
           Scale {
-            X: 0.278388619
+            X: 0.264907181
             Y: 0.24217014
             Z: 0.318572
           }
         }
-        ParentId: 12948025790797963459
+        ParentId: 848069505309695093
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 18434079688766523124
+              Id: 37736936843138452
             }
           }
           Overrides {
@@ -1792,7 +1664,461 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1453559259093246581
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: 0.284058303
+            Y: -0.0646972656
+            Z: 5.67610168
+          }
+          Rotation {
+            Pitch: -14.3909302
+            Yaw: 5.33393213e-05
+            Roll: -179.999954
+          }
+          Scale {
+            X: 3.23322701
+            Y: 2.57753325
+            Z: 3.23322606
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7414765222756309095
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: -0.0180657208
+            Y: -0.480773926
+            Z: 5.76870728
+          }
+          Rotation {
+            Pitch: 22.8090878
+            Yaw: 0.808583438
+            Roll: -178.226913
+          }
+          Scale {
+            X: 3.50665426
+            Y: 2.20796776
+            Z: 3.1330843
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11923392681952567356
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: -0.869262
+            Y: -0.207489014
+            Z: 6.14596558
+          }
+          Rotation {
+            Pitch: -1.10116577
+            Yaw: -1.1156311
+            Roll: -178.605331
+          }
+          Scale {
+            X: 3.48512864
+            Y: 2.20796776
+            Z: 3.00232434
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6196181867434897899
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: -1.35327077
+            Y: -0.480773926
+            Z: 5.76870728
+          }
+          Rotation {
+            Pitch: 38.2951851
+            Yaw: 1.41205215
+            Roll: -177.917328
+          }
+          Scale {
+            X: 3.50665522
+            Y: 2.20796752
+            Z: 2.92608523
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7659135196174204441
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: -1.35327077
+            Y: -0.480773926
+            Z: 5.76870728
+          }
+          Rotation {
+            Pitch: 53.206356
+            Yaw: 2.55049872
+            Roll: -177.36232
+          }
+          Scale {
+            X: 3.50665951
+            Y: 2.20796776
+            Z: 2.7086556
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 18245607882679544951
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: -0.697509408
+            Y: -0.480773926
+            Z: 3.07820129
+          }
+          Rotation {
+            Pitch: 74.9167404
+            Yaw: 5.87886238
+            Roll: -173.727402
+          }
+          Scale {
+            X: 3.50665951
+            Y: 2.20796776
+            Z: 2.7086556
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12480870509047471455
+        Name: "Fantasy Pommel 05"
+        Transform {
+          Location {
+            X: 0.284058303
+            Y: -0.0646972656
+            Z: 5.67610168
+          }
+          Rotation {
+            Pitch: -35.2042847
+            Yaw: 6.32605879e-05
+            Roll: -179.999954
+          }
+          Scale {
+            X: 3.23322821
+            Y: 2.5775342
+            Z: 3.45812535
+          }
+        }
+        ParentId: 848069505309695093
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 1493583996808442152
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              G: 0.0671521276
+              B: 0.78
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:utile"
+            Float: 2.66678238
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:vtile"
+            Float: 1.35549212
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 14405960884493885038
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
           StaticMesh {
             Physics {
             }
@@ -1865,6 +2191,41 @@
           Overrides {
             Name: "cs:StunnedAnimation"
             String: "unarmed_stun_dizzy"
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 18434079688766523124
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 0.99
+              G: 0.998609245
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:utile"
+            Float: 3.76837945
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:vtile"
+            Float: 3.76837945
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 3471524411601394882
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail2:id"
+            AssetReference {
+              Id: 18434079688766523124
+            }
           }
         }
         Collidable_v2 {
@@ -1984,21 +2345,12 @@
       }
     }
     Assets {
-      Id: 6378879557962707429
-      Name: "Horn"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_horn_001"
-      }
-    }
-    Assets {
-      Id: 3768007809154241805
-      Name: "Roof Metal 01"
+      Id: 37736936843138452
+      Name: "Metal Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_roof_metal_001_uv"
+        AssetId: "mi_metal_basic_001"
       }
     }
     Assets {
@@ -2053,6 +2405,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_hemisphere_001"
+      }
+    }
+    Assets {
+      Id: 14405960884493885038
+      Name: "Fantasy Pommel 05"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_weap_fan_pommel_005"
       }
     }
     Assets {
