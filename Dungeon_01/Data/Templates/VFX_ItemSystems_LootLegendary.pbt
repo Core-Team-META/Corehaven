@@ -1,13 +1,13 @@
 ﻿Assets {
-  Id: 5946993134509349849
-  Name: "Helper_ItemSystemsLoot_Epic"
+  Id: 11166371826263504188
+  Name: "VFX_ItemSystems_LootLegendary"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 7132337442531280957
+      RootId: 109193277164739579
       Objects {
-        Id: 7132337442531280957
-        Name: "Helper_ItemSystemsLoot_Epic"
+        Id: 109193277164739579
+        Name: "ItemSystems_LootLegendary"
         Transform {
           Scale {
             X: 1
@@ -16,19 +16,13 @@
           }
         }
         ParentId: 4781671109827199097
-        ChildIds: 15262458067620495214
-        ChildIds: 13989379240251299237
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:INFO"
-            String: ""
-          }
-          Overrides {
-            Name: "cs:INFO:isrep"
-            Bool: true
-          }
-        }
-        WantsNetworking: true
+        ChildIds: 7729484489188240924
+        ChildIds: 3798577073573163433
+        ChildIds: 347754176543306418
+        ChildIds: 5251178383647284726
+        ChildIds: 4415460360362254306
+        ChildIds: 15459396056351122578
+        ChildIds: 14998391378406034339
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -40,167 +34,11 @@
         }
       }
       Objects {
-        Id: 15262458067620495214
-        Name: "Server"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7132337442531280957
-        ChildIds: 7507994325275037334
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-          Type: Server
-        }
-      }
-      Objects {
-        Id: 7507994325275037334
-        Name: "v2_ItemSystems_LootController"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15262458067620495214
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Loot"
-            ObjectReference {
-              SubObjectId: 7132337442531280957
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 7596762883586147759
-          }
-        }
-      }
-      Objects {
-        Id: 13989379240251299237
-        Name: "Client"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7132337442531280957
-        ChildIds: 3468614791673158188
-        ChildIds: 12071939578089231032
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 3468614791673158188
-        Name: "v2_ItemSystems_LootController"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13989379240251299237
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Loot"
-            ObjectReference {
-              SubObjectId: 7132337442531280957
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 7596762883586147759
-          }
-        }
-      }
-      Objects {
-        Id: 12071939578089231032
-        Name: "Indicator"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13989379240251299237
-        ChildIds: 7954913953056729727
-        ChildIds: 5460387350609529953
-        ChildIds: 5979574506793544704
-        ChildIds: 562499989484358671
-        ChildIds: 6684960908602459238
-        ChildIds: 17380091324413134627
-        ChildIds: 10894083886163688866
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 7954913953056729727
+        Id: 7729484489188240924
         Name: "Point Light"
         Transform {
           Location {
-            Z: 19.6905518
+            Z: 15.2972412
           }
           Rotation {
           }
@@ -210,7 +48,7 @@
             Z: 1
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -218,10 +56,10 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 76.0592422
+          Intensity: 96.0352707
           Color {
-            R: 0.722119629
-            B: 0.940000057
+            R: 0.72
+            G: 0.41483444
             A: 1
           }
           VolumetricIntensity: 5
@@ -230,7 +68,7 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 216.707458
+              AttenuationRadius: 259.370544
               PointLight {
                 SourceRadius: 20
                 SoftSourceRadius: 20
@@ -244,7 +82,7 @@
         }
       }
       Objects {
-        Id: 5460387350609529953
+        Id: 3798577073573163433
         Name: "Outline Object"
         Transform {
           Location {
@@ -257,19 +95,19 @@
             Z: 1
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         UnregisteredParameters {
           Overrides {
             Name: "bp:Object To Outline"
             ObjectReference {
-              SubObjectId: 10894083886163688866
+              SubObjectId: 14998391378406034339
             }
           }
           Overrides {
             Name: "bp:Color A"
             Color {
               R: 100
-              B: 97.3509293
+              G: 47.6821175
               A: 0.8
             }
           }
@@ -325,25 +163,25 @@
         }
       }
       Objects {
-        Id: 5979574506793544704
+        Id: 347754176543306418
         Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: 29.8449936
+            Z: 27.1892395
           }
           Rotation {
           }
           Scale {
-            X: 0.713807881
+            X: 0.906503499
             Y: 0.435121268
-            Z: 0.435121268
+            Z: 0.39512372
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         UnregisteredParameters {
           Overrides {
             Name: "bp:Density"
-            Float: 0.920059502
+            Float: 1.55572522
           }
           Overrides {
             Name: "bp:Gravity"
@@ -360,8 +198,8 @@
           Overrides {
             Name: "bp:color"
             Color {
-              R: 0.94754976
-              B: 0.98
+              R: 0.919999957
+              G: 0.548344374
               A: 1
             }
           }
@@ -384,7 +222,7 @@
         }
       }
       Objects {
-        Id: 562499989484358671
+        Id: 5251178383647284726
         Name: "Resurrection VFX"
         Transform {
           Location {
@@ -397,7 +235,7 @@
             Z: 0.4
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         UnregisteredParameters {
           Overrides {
             Name: "bp:Life"
@@ -414,14 +252,6 @@
           Overrides {
             Name: "bp:Enable Rings"
             Bool: true
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.97
-              B: 0.944304049
-              A: 1
-            }
           }
         }
         Collidable_v2 {
@@ -442,7 +272,7 @@
         }
       }
       Objects {
-        Id: 6684960908602459238
+        Id: 4415460360362254306
         Name: "Meta Fantasy Revive Life Choir 02 SFX"
         Transform {
           Location {
@@ -455,7 +285,7 @@
             Z: 1
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -477,7 +307,7 @@
         }
       }
       Objects {
-        Id: 17380091324413134627
+        Id: 15459396056351122578
         Name: "Magic Sparkle Glitter Loop 02 SFX"
         Transform {
           Location {
@@ -490,7 +320,7 @@
             Z: 1
           }
         }
-        ParentId: 12071939578089231032
+        ParentId: 109193277164739579
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -512,22 +342,24 @@
         }
       }
       Objects {
-        Id: 10894083886163688866
-        Name: "Fantasy Chest Rare 01 (Prop)"
+        Id: 14998391378406034339
+        Name: "Fantasy Chest Epic 01 (Prop)"
         Transform {
           Location {
-            Z: -13.0471802
+            Z: -8.32077408
+          }
+          Rotation {
           }
           Scale {
-            X: 0.45429945
-            Y: 0.45429945
-            Z: 0.45429945
+            X: 0.365730762
+            Y: 0.365730762
+            Z: 0.365730762
           }
         }
-        ParentId: 12071939578089231032
-        ChildIds: 5704314787195694259
-        ChildIds: 15282910353530007165
-        ChildIds: 4730547556289987037
+        ParentId: 109193277164739579
+        ChildIds: 9433781174810341982
+        ChildIds: 11024463816597940463
+        ChildIds: 14968955032843050343
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -539,8 +371,8 @@
         }
       }
       Objects {
-        Id: 5704314787195694259
-        Name: "Fantasy Chest Base 02"
+        Id: 9433781174810341982
+        Name: "Fantasy Chest Base 03"
         Transform {
           Location {
           }
@@ -552,7 +384,7 @@
             Z: 1
           }
         }
-        ParentId: 10894083886163688866
+        ParentId: 14998391378406034339
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -561,7 +393,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 8452502681248844190
+            Id: 11493405264835290361
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -575,14 +407,15 @@
         }
       }
       Objects {
-        Id: 15282910353530007165
-        Name: "Fantasy Chest Lid 02"
+        Id: 11024463816597940463
+        Name: "Fantasy Chest Lid 03"
         Transform {
           Location {
-            Y: 45
-            Z: 65
+            Y: 50
+            Z: 80
           }
           Rotation {
+            Pitch: 4.09811328e-05
             Yaw: -179.999954
           }
           Scale {
@@ -591,14 +424,13 @@
             Z: 1
           }
         }
-        ParentId: 10894083886163688866
+        ParentId: 14998391378406034339
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 1
-              G: 0.0299999714
-              B: 0.993575871
+              R: 0.9
+              G: 0.447019905
               A: 1
             }
           }
@@ -611,7 +443,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6013290205953027442
+            Id: 9927175959700879828
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -625,36 +457,31 @@
         }
       }
       Objects {
-        Id: 4730547556289987037
+        Id: 14968955032843050343
         Name: "Fantasy Chest Treasure Pile 01"
         Transform {
           Location {
-            Z: 60
+            Z: 75
           }
           Rotation {
-            Pitch: -9.15527344e-05
-            Yaw: -179.999939
-            Roll: -179.999954
           }
           Scale {
-            X: 1.56327534
+            X: 2.5
             Y: 1.25
-            Z: 1.2
+            Z: 1.5
           }
         }
-        ParentId: 10894083886163688866
+        ParentId: 14998391378406034339
         UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 15153963755059509736
+            }
+          }
           Overrides {
             Name: "ma:Shared_BaseMaterial:smart"
             Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1.25
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1.5
           }
         }
         Collidable_v2 {
@@ -725,21 +552,21 @@
       }
     }
     Assets {
-      Id: 8452502681248844190
-      Name: "Fantasy Chest Base 02"
+      Id: 11493405264835290361
+      Name: "Fantasy Chest Base 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_002_ref"
+        AssetId: "sm_fantasy_chest_003_ref"
       }
     }
     Assets {
-      Id: 6013290205953027442
-      Name: "Fantasy Chest Lid 02"
+      Id: 9927175959700879828
+      Name: "Fantasy Chest Lid 03"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_lid_002_ref"
+        AssetId: "sm_fantasy_chest_lid_003_ref"
       }
     }
     Assets {

@@ -48,14 +48,12 @@ function view:DrawPanelWithStats()
     panel.clientUserData.description.text = item:GetDescription()
     -- Attributes.
     local stats = item:GetStats()
-    print("viewing item with stats:", #stats)
     self:EnsureSufficientHoverStatEntries(#stats)
     local offsetYBase = 0
     local offsetYBonus = 0
     for i,entry in ipairs(self.itemHoverStatEntries) do
         local statInfo = stats[i]
         if statInfo then
-            print(statInfo.name, statInfo.value)
             entry.visibility = Visibility.INHERIT
             entry.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statInfo.name))
             entry.clientUserData.value.text = ItemThemes.GetItemStatFormattedValue(statInfo.name, statInfo.value)
