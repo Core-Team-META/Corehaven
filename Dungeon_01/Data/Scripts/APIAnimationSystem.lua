@@ -86,41 +86,50 @@ local API = {}
 
 -- Server
 function API.AddAnimationReference(player, animationKey)
-	if playerAnimationKeys[player][animationKey] then
-		playerAnimationKeys[player][animationKey].referenceCount = playerAnimationKeys[player][animationKey].referenceCount + 1
-	else
-		local inventory = player.serverUserData.inventory
-		local equippedItemType = "Default"
-		local data = {animationObjects = {}}
+	-- This function's order is super important. If the wait is in the middle, you can get multiple tasks on startup
+	-- that then create double objects without the reference count being correct. We are depending on the fact that a
+	-- user can't realistically get rid of their talents before the inventory is loaded.
+	Task.Spawn(function()
+		local inventory = nil
 
-		if inventory then
+		while not inventory do
+			inventory = player.serverUserData.inventory
+			Task.Wait()
+		end
+
+		if playerAnimationKeys[player][animationKey] then
+			playerAnimationKeys[player][animationKey].referenceCount = playerAnimationKeys[player][animationKey].referenceCount + 1
+		else
+			local equippedItemType = "Default"
+			local data = {animationObjects = {}}
+
 			for itemType, _ in pairs(ANIMATION_MAP[animationKey]) do
 				if inventory:HasEquippedItemType(itemType) then
 					equippedItemType = itemType
 					break
 				end
 			end
-		end
 
-		for _, animation in pairs(ANIMATION_MAP[animationKey][equippedItemType]) do
-			local animationObject = World.SpawnAsset(ANIMATION_TEMPLATES[animation])
-			animationObject.owner = player
-			animationObject.name = animationKey
-			table.insert(data.animationObjects, animationObject)
-			local startAnimation = animation .. "_start"
+			for _, animation in pairs(ANIMATION_MAP[animationKey][equippedItemType]) do
+				local animationObject = World.SpawnAsset(ANIMATION_TEMPLATES[animation])
+				animationObject.owner = player
+				animationObject.name = animationKey
+				table.insert(data.animationObjects, animationObject)
+				local startAnimation = animation .. "_start"
 
-			if ANIMATION_TEMPLATES[startAnimation] then	-- Spawn the start animation too if we have it
-				local startAnimationObject = World.SpawnAsset(ANIMATION_TEMPLATES[startAnimation])
-				startAnimationObject.owner = player
-				startAnimationObject.name = animationKey .. "Start"
-				table.insert(data.animationObjects, startAnimationObject)
+				if ANIMATION_TEMPLATES[startAnimation] then	-- Spawn the start animation too if we have it
+					local startAnimationObject = World.SpawnAsset(ANIMATION_TEMPLATES[startAnimation])
+					startAnimationObject.owner = player
+					startAnimationObject.name = animationKey .. "Start"
+					table.insert(data.animationObjects, startAnimationObject)
+				end
 			end
-		end
 
-		data.itemType = equippedItemType
-		data.referenceCount = 1
-		playerAnimationKeys[player][animationKey] = data
-	end
+			data.itemType = equippedItemType
+			data.referenceCount = 1
+			playerAnimationKeys[player][animationKey] = data
+		end
+	end)
 end
 
 -- Server
@@ -135,15 +144,14 @@ function RecreateAnimation(player, animationKey)
 	end
 
 	local inventory = player.serverUserData.inventory
+	assert(inventory)
 	local equippedItemType = "Default"
 	local data = {animationObjects = {}}
 
-	if inventory then
-		for itemType, _ in pairs(ANIMATION_MAP[animationKey]) do
-			if inventory:HasEquippedItemType(itemType) then
-				equippedItemType = itemType
-				break
-			end
+	for itemType, _ in pairs(ANIMATION_MAP[animationKey]) do
+		if inventory:HasEquippedItemType(itemType) then
+			equippedItemType = itemType
+			break
 		end
 	end
 
@@ -169,6 +177,7 @@ end
 
 -- Server
 function API.RemoveAnimationReference(player, animationKey)
+	print(string.format("Remove %s", animationKey))
 	assert(playerAnimationKeys[player][animationKey])
 
 	if playerAnimationKeys[player][animationKey].referenceCount > 1 then
@@ -269,6 +278,7 @@ function API.InterruptAnimation(player, castId)
 	end
 end
 
+-- Server
 function OnPlayerJoined(player)
 	local inventory = nil
 	playerAnimationKeys[player] = {}
@@ -282,17 +292,21 @@ function OnPlayerJoined(player)
     	local previousType = previousItem and previousItem:GetType()
     	
 		for animationKey, data in pairs(playerAnimationKeys[player]) do
-			if (not previousType and data.itemType == "Default") or (data.itemType == previousType) then
+			local defaulted = (data.itemType == "Default" and (not previousType or not ANIMATION_MAP[animationKey][previousType]))
+
+			if defaulted or data.itemType == previousType then
 				playerAnimationKeys[player][animationKey].dirty = true
 			end
 		end
 	end)
 end
 
+-- Server
 function OnPlayerLeft(player)
 	playerAnimationKeys[player] = nil
 end
 
+-- Server
 function Tick()
 	for player, animationData in pairs(playerAnimationKeys) do
 		for animationKey, data in pairs(animationData) do

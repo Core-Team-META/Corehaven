@@ -193,6 +193,7 @@ Objects {
   ChildIds: 10576877606614635057
   ChildIds: 3129409067651023909
   ChildIds: 12927714216026463826
+  ChildIds: 11965319505362647052
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -200,6 +201,40 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 11965319505362647052
+  Name: "Button Click Press Core 01 SFX"
+  Transform {
+    Location {
+      X: -9049.60449
+      Y: -9217.54785
+      Z: -991.62738
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3418556955307438825
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  AudioInstance {
+    AudioAsset {
+      Id: 3193982394305217901
+    }
+    Pitch: -1120.02759
+    Volume: 1
+    Falloff: -1
+    Radius: -1
   }
 }
 Objects {
@@ -511,6 +546,12 @@ Objects {
       Name: "cs:TargetLight"
       ObjectReference {
         SelfId: 12927714216026463826
+      }
+    }
+    Overrides {
+      Name: "cs:TargetChangeSound"
+      ObjectReference {
+        SelfId: 11965319505362647052
       }
     }
   }

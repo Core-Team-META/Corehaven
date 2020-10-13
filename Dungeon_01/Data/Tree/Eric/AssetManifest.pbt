@@ -620,6 +620,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3193982394305217901
+  Name: "Button Click Press Core 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfxui_click_press_core_01_Cue_ref"
+  }
+}
+Assets {
   Id: 3111334347525175861
   Name: "Fantasy Ability Yellow 005"
   PlatformAssetType: 9
