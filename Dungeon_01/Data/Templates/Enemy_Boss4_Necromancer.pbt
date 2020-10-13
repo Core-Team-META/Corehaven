@@ -615,7 +615,9 @@
         Name: "head"
         Transform {
           Location {
-            Z: 502.179199
+            X: -23.5579128
+            Y: -0.2791996
+            Z: 470.115234
           }
           Rotation {
           }
@@ -642,9 +644,9 @@
         Name: "Group"
         Transform {
           Location {
-            X: 15.8607044
-            Y: 31.7898026
-            Z: -9.61816406
+            X: 33.8125687
+            Y: 32.0025597
+            Z: 19.3266602
           }
           Rotation {
             Pitch: -23.5157471
@@ -728,6 +730,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -791,6 +794,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -854,6 +858,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -917,6 +922,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1033,6 +1039,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
             AnimationStance: "unarmed_idle_relaxed"

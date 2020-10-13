@@ -161,7 +161,7 @@
           Overrides {
             Name: "cs:CostumeFolder"
             ObjectReference {
-              SelfId: 4542007504880360699
+              SubObjectId: 13724218315738038597
             }
           }
           Overrides {
@@ -253,7 +253,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -299,6 +299,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
             AnimationStance: "2hand_staff"
@@ -332,7 +333,6 @@
         ChildIds: 10198116475777200041
         ChildIds: 12183791587225654553
         ChildIds: 3043138986587778448
-        ChildIds: 14129475167977287683
         ChildIds: 5104490188020889043
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -567,7 +567,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -597,6 +597,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -629,7 +630,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -651,6 +652,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -683,7 +685,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -705,6 +707,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -737,7 +740,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -759,6 +762,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -791,7 +795,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -813,6 +817,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -845,7 +850,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -867,6 +872,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -899,7 +905,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -921,6 +927,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -953,7 +960,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -975,6 +982,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1007,7 +1015,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1029,6 +1037,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1061,7 +1070,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1083,6 +1092,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1148,7 +1158,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1170,6 +1180,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1235,7 +1246,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1261,6 +1272,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1326,7 +1338,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1352,91 +1364,11 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 14129475167977287683
-        Name: "right_wrist"
-        Transform {
-          Location {
-            X: 2.79534531
-            Y: 46.5853043
-            Z: 119.070206
-          }
-          Rotation {
-            Pitch: 13.9379702
-            Yaw: -10.1970558
-            Roll: -27.324892
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 13724218315738038597
-        ChildIds: 12744048536032197963
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 12744048536032197963
-        Name: "Decal Fantasy Carved 01"
-        Transform {
-          Location {
-            X: -0.89103967
-            Y: 1.54187441
-            Z: -2.72456455
-          }
-          Rotation {
-            Pitch: -7.5059948
-            Yaw: -15.4350519
-            Roll: 96.841423
-          }
-          Scale {
-            X: 0.0669213608
-            Y: 0.0669213608
-            Z: 0.0669213608
-          }
-        }
-        ParentId: 14129475167977287683
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 9.0742836
-          }
-          Overrides {
-            Name: "bp:Color Emissive"
-            Color {
-              R: 0.78
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 12092325470987481879
-          }
-          DecalBP {
           }
         }
       }
@@ -1507,7 +1439,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1537,6 +1469,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1569,7 +1502,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1599,6 +1532,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1631,7 +1565,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1653,6 +1587,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1685,7 +1620,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1707,6 +1642,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1739,7 +1675,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1761,6 +1697,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1793,7 +1730,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1815,6 +1752,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1847,7 +1785,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1869,6 +1807,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1901,7 +1840,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1923,6 +1862,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1955,7 +1895,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -1977,6 +1917,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -2009,7 +1950,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2650526325338107284
+              Id: 6360514069944077527
             }
           }
           Overrides {
@@ -2031,6 +1972,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -2091,15 +2033,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone_truncated_hollow_006"
-      }
-    }
-    Assets {
-      Id: 12092325470987481879
-      Name: "Decal Fantasy Carved 01"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_fantasy_carved_001"
       }
     }
     Assets {
