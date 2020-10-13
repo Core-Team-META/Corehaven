@@ -7472,7 +7472,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 9529876109523918191
+        Id: 14946645032480843313
       }
     }
     Overrides {
@@ -24911,7 +24911,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4765246375454497163
+        Id: 17214326792927864641
       }
     }
     Overrides {
@@ -24959,7 +24959,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 15333547231327706912
+        Id: 3039088995494687038
       }
     }
   }
@@ -25007,13 +25007,13 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 13540390578621358507
+        Id: 11382246683436895798
       }
     }
     Overrides {
       Name: "cs:ProjectileTemplate"
       AssetReference {
-        Id: 5333833631319763796
+        Id: 2702694216452215772
       }
     }
   }

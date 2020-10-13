@@ -283,6 +283,14 @@
             Name: "bp:Velocity Max"
             Float: 2
           }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.7
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -366,6 +374,14 @@
           Overrides {
             Name: "bp:Velocity Max"
             Float: 2
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 0.7
           }
         }
         Collidable_v2 {
