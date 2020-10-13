@@ -58783,7 +58783,7 @@ Objects {
   Transform {
     Location {
       X: 607.701172
-      Y: 394.78125
+      Y: 509.78125
       Z: 789.225647
     }
     Rotation {
@@ -100534,6 +100534,7 @@ Objects {
   ChildIds: 7017278740219204471
   ChildIds: 18360140037731407204
   ChildIds: 7724010224893723544
+  ChildIds: 17141319281190085201
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -100542,6 +100543,76 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17141319281190085201
+  Name: "Fire Volume VFX"
+  Transform {
+    Location {
+      X: -4.15395916e-05
+      Y: 4.15395916e-05
+      Z: 77.9892578
+    }
+    Rotation {
+      Pitch: -9.15527344e-05
+      Yaw: 7.00094606e-05
+      Roll: -9.15527344e-05
+    }
+    Scale {
+      X: 0.372678459
+      Y: 0.372678459
+      Z: 0.372678459
+    }
+  }
+  ParentId: 2584723845459114718
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Volume Type"
+      Enum {
+        Value: "mc:evfxvolumetype:3"
+      }
+    }
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.396240056
+    }
+    Overrides {
+      Name: "bp:Life"
+      Float: 0.732482493
+    }
+    Overrides {
+      Name: "bp:Gravity"
+      Float: 0.101675987
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 7.8102932
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 0.87821269
+        B: 0.89
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 12918556334648073243
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
   }
 }
 Objects {
@@ -100609,8 +100680,9 @@ Objects {
   Light {
     Intensity: 50
     Color {
-      R: 0.820000052
-      G: 0.293245047
+      R: 1
+      G: 0.0600000024
+      B: 0.956423402
       A: 1
     }
     VolumetricIntensity: 5
