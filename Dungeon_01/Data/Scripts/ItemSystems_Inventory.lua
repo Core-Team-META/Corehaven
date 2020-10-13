@@ -194,6 +194,19 @@ function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     local swapItem = nil
     if toSlotIndex then
         swapItem = self:GetItem(toSlotIndex)
+        -- Special case when both items are stackable and match.
+        if originalItem:WillStackWith(swapItem) and not swapItem:IsFullStack() then
+            local combinedStackSize = originalItem:GetStackSize() + swapItem:GetStackSize()
+            local stackSize1 = math.min(originalItem:GetMaxStackSize(), combinedStackSize)
+            local stackSize2 = combinedStackSize - stackSize1
+            originalItem:SetStackSize(stackSize1)
+            if stackSize2 > 0 then
+                swapItem:SetStackSize(stackSize2)
+            else
+                swapItem = nil
+            end
+        end
+        -- Start moving items.
         self:_SetSlotItem(toSlotIndex, originalItem)
     end
     self:_SetSlotItem(fromSlotIndex, swapItem)
@@ -421,7 +434,7 @@ function Inventory:_CanAccommodateStackableItem(item)
         if self:IsEmptySlot(slotIndex) then
             stackSpace = stackSpace + item:GetMaxStackSize()
         elseif item:WillStackWith(self:GetItem(slotIndex)) then
-            stackSpace = stackSpace + item:GetAvailableStackSpace()
+            stackSpace = stackSpace + self:GetItem(slotIndex):GetAvailableStackSpace()
         end
         -- Check if we have enough and exit early.
         if stackSpace >= item:GetStackSize() then return true end
