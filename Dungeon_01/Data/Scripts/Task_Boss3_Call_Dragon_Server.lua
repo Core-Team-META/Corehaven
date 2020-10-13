@@ -12,7 +12,7 @@ local ROCK_TEMPLATE = script:GetCustomProperty("RockTemplate")
 local RANGE = 0.0
 local COOLDOWN = 25.0					-- This must be higher than DRAGON_ANGLE_LIMIT / DRAGON_SPEED because this isn't written to handle two dragons
 local DRAGON_ANGLE_LIMIT = 45.0
-local DRAGON_SPEED = 4.0	-- Degrees/second
+local DRAGON_SPEED = 4.0				-- Degrees/second
 local DAMAGE = 70.0
 local ROCK_SPEED = 2000.0
 local IMPACT_RADIUS = 500.0
@@ -26,11 +26,7 @@ _G.boss3Rocks = {}	-- int -> CoreObject
 local currentTask = nil					-- Not using a table because we don't always have the npc, and it really shouldn't matter
 
 function GetPriority(npc, taskHistory)
-	if API_NPC.GetHealthFraction(npc) > 0.95 then
-		return 0.0
-	else
-		return 2.0
-	end
+	return 2.0
 end
 
 function OnTaskStart(npc, threatTable)

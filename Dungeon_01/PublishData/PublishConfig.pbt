@@ -2,7 +2,7 @@
 ClientVersion: "1.32927.716-dev-d"
 Name: "Highrock"
 Description: "The first dungeon in the boss fight game, on easy difficulty."
-MaxPlayers: 6
+MaxPlayers: 8
 IsPrivate: true
 Tags: "RPG"
 ScreenshotPaths: "C:/core_Dev/Platform/Saved/Maps/Content_07-Boss_Fight/Dungeon_01/Screenshots/Screenshot0003.png"

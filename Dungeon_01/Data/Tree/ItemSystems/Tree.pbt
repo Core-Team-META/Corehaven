@@ -2553,10 +2553,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "UIX"
-          Float: 100
-        }
       }
     }
     TemplateAsset {

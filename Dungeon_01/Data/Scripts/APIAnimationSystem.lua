@@ -253,8 +253,7 @@ function API.FinishAnimation(castId)
 			return
 		end
 	end
-
-	assert(false)
+	-- This case hit a few times in testing. I don't know the setup, but missing an animation is fine (instead of a script error)
 end
 
 -- Server

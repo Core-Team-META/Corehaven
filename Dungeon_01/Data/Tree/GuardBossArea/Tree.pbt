@@ -1,6 +1,46 @@
 ﻿Name: "GuardBossArea"
 RootId: 3795342459197005188
 Objects {
+  Id: 14505331912202154360
+  Name: "Cube"
+  Transform {
+    Location {
+      X: 1407.02148
+      Y: -751.063721
+      Z: 131.331543
+    }
+    Rotation {
+      Yaw: 38.0960541
+    }
+    Scale {
+      X: 7.22886372
+      Y: 0.999994636
+      Z: 1
+    }
+  }
+  ParentId: 3795342459197005188
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 12095835209017042614
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 12275656729515534508
   Name: "Bush 02"
   Transform {

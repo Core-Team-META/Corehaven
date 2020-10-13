@@ -261,7 +261,7 @@ Objects {
     Scale {
       X: 1.1561904
       Y: 1.1561904
-      Z: 5.78095198
+      Z: 6
     }
   }
   ParentId: 3418556955307438825
@@ -274,7 +274,7 @@ Objects {
     }
     Overrides {
       Name: "bp:Sides"
-      Int: 3
+      Int: 9
     }
     Overrides {
       Name: "bp:color"
@@ -334,7 +334,7 @@ Objects {
     Scale {
       X: 0.850052178
       Y: 0.850052178
-      Z: 0.850052297
+      Z: 1
     }
   }
   ParentId: 3129409067651023909
@@ -403,7 +403,7 @@ Objects {
     Scale {
       X: 1.03109741
       Y: 1.03109741
-      Z: 1.03109741
+      Z: 1
     }
   }
   ParentId: 3129409067651023909
@@ -27383,6 +27383,12 @@ Objects {
   ParentId: 15214246396461168156
   ChildIds: 17679103421882220244
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 6369888360469827306
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
