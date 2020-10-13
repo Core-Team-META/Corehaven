@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicStaff',
     MUID = '8A545631F32835C6:ITEM_Staff_NatureStaff',
-    Lore = '',
+    Lore = 'A magical staff of life... just kidding, it\'s a branch',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -14,7 +14,7 @@
     Rarity = 'Uncommon',
     StatKey = 'UncommonMagicStaff',
     MUID = '04EFAF1E79C5EB34:ITEM_Staff_SapphireStaff',
-    Lore = '',
+    Lore = 'A staff with a magical sapphire',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
@@ -23,7 +23,7 @@
     Rarity = 'Rare',
     StatKey = 'RareMagicStaff',
     MUID = '3265AFB0B4A80207:ITEM_Staff_EvilEye',
-    Lore = '',
+    Lore = 'A spooky staff, it definitely has magical properties',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

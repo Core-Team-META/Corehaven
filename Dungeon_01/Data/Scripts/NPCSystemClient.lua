@@ -26,11 +26,11 @@ function Tick(deltaTime)
 	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
 		local previousTaskString = previousTaskStrings[npc]		-- May be nil
 		local currentTaskString = npc:GetCustomProperty("CurrentTask")
+		local currentTask, interrupted, _ = API_NPC.DecodeTaskString(currentTaskString)
 		local mesh = npcData.animatedMesh
 
 		if currentTaskString ~= previousTaskString then
 			local previousTask, _, _ = API_NPC.DecodeTaskString(previousTaskString)
-			local currentTask, interrupted, _ = API_NPC.DecodeTaskString(currentTaskString)
 			assert(currentTask)
 
 			-- Fade out previous effect
@@ -134,9 +134,10 @@ function Tick(deltaTime)
 		end
 
 		if mesh then
-			if fixedTaskName == API_NPC.STATE_CHASING or fixedTaskName == API_NPC.STATE_RESETTING then
-				local moveSpeedMultiplier = API_SE.ComputeCharacterMoveSpeedMultiplier(npc)
-				mesh.animationStancePlaybackRate = moveSpeedMultiplier
+			if currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_RESETTING then
+				local moveSpeedMultiplier = npcData.speed * API_SE.ComputeCharacterMoveSpeedMultiplier(npc) / 640.0
+				local heightMultiplier = 210.0 / npcData.capsuleHeight
+				mesh.animationStancePlaybackRate = moveSpeedMultiplier * heightMultiplier
 			else
 				mesh.animationStancePlaybackRate = 1.0
 			end

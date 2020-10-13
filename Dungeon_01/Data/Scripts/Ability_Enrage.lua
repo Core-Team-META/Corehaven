@@ -5,7 +5,11 @@ local RADIUS = 400.0
 local data = {}
 
 data.name = script:GetCustomProperty("Name")
-data.targets = false
+data.targets = true
+data.friendlyTargetValid = false
+data.enemyTargetValid = true
+data.requiresFacing = true
+data.groundTargets = false
 data.canMove = true
 data.icon = script:GetCustomProperty("Icon")
 data.range = script:GetCustomProperty("Range")
@@ -23,7 +27,7 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
-	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(caster:GetWorldPosition(), RADIUS)) do
+	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(target:GetWorldPosition(), RADIUS)) do
 		local threatTable = API_NPC.GetThreatTable(npc)
 		local highestThreat = 0.0
 

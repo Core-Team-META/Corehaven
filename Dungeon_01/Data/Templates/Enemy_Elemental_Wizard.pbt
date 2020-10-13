@@ -217,7 +217,6 @@
         ChildIds: 13962702207488314506
         ChildIds: 8228779299280538639
         ChildIds: 9349073767183045854
-        ChildIds: 689947849301506844
         ChildIds: 8549980044723042574
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1112,6 +1111,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1174,6 +1174,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1236,6 +1237,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1298,6 +1300,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1352,6 +1355,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1406,6 +1410,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1460,6 +1465,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1514,6 +1520,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1568,6 +1575,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1655,6 +1663,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1746,6 +1755,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
@@ -1837,93 +1847,11 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 689947849301506844
-        Name: "right_wrist"
-        Transform {
-          Location {
-            X: 2.79506683
-            Y: 46.585041
-            Z: 119.070313
-          }
-          Rotation {
-            Pitch: 13.9379635
-            Yaw: -10.1970549
-            Roll: -27.3248882
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15258255637776816989
-        ChildIds: 17380957965862651930
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 17380957965862651930
-        Name: "Decal Fantasy Carved 01"
-        Transform {
-          Location {
-            X: -0.89103967
-            Y: 1.54187441
-            Z: -2.72456455
-          }
-          Rotation {
-            Pitch: -7.5059948
-            Yaw: -15.4350519
-            Roll: 96.841423
-          }
-          Scale {
-            X: 0.0669213608
-            Y: 0.0669213608
-            Z: 0.0669213608
-          }
-        }
-        ParentId: 689947849301506844
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 9.0742836
-          }
-          Overrides {
-            Name: "bp:Color Emissive"
-            Color {
-              R: 1
-              G: 0.0699999928
-              B: 0.975363672
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 12092325470987481879
-          }
-          DecalBP {
           }
         }
       }
@@ -2644,6 +2572,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
             AnimationStance: "2hand_staff"
@@ -2700,15 +2629,6 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_cone_truncated_hollow_006"
-      }
-    }
-    Assets {
-      Id: 12092325470987481879
-      Name: "Decal Fantasy Carved 01"
-      PlatformAssetType: 14
-      PrimaryAsset {
-        AssetType: "DecalBlueprintAssetRef"
-        AssetId: "bp_decal_fantasy_carved_001"
       }
     }
     Assets {

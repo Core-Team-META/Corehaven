@@ -23,7 +23,7 @@ function OnTaskStart(npc, threatTable)
 			local launchDirection = npc:GetWorldRotation() * Vector3.FORWARD + Vector3.UP
 
 			for _, player in pairs(Game.FindPlayersInSphere(target:GetWorldPosition(), RANGE, {ignoreDead = true, ignorePlayers = target})) do
-				local dot = (player:GetWorldPosition() - npc):GetNormalized() .. (npc:GetWorldRotation() * Vector3.FORWARD)
+				local dot = (player:GetWorldPosition() - npc:GetWorldPosition()):GetNormalized() .. (npc:GetWorldRotation() * Vector3.FORWARD)
 
 				if dot > 0.0 then
 					API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)

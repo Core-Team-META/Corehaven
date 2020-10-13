@@ -5,6 +5,7 @@ local API_ID = require(script:GetCustomProperty("API_ID"))
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
 local TARGET_LIGHT = script:GetCustomProperty("TargetLight"):WaitForObject()
+local TARGET_CHANGE_SOUND = script:GetCustomProperty("TargetChangeSound"):WaitForObject()
 
 local AUTO_TARGET_BINDING = ROOT:GetCustomProperty("AutoTargetBinding")
 local AUTO_TARGET_HISTORY_DURATION = ROOT:GetCustomProperty("AutoTargetHistoryDuration")
@@ -205,6 +206,7 @@ function TrySetTarget(target, isAutoTarget)
 	end
 
 	table.insert(targetChangeTimeHistory, t)
+	TARGET_CHANGE_SOUND:Play()
 	API_T.SetTarget_Direct(target)
 end
 
@@ -232,6 +234,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 
 	if targetCharacter == LOCAL_PLAYER and not currentTarget then
 		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
+			TARGET_CHANGE_SOUND:Play()
 			API_T.SetTarget_Direct(sourceCharacter)
 		end
 	end

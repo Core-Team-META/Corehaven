@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18434079688766523124
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
-  }
-}
-Assets {
   Id: 18192159038187223433
   Name: "Fantasy Ability Red 030"
   PlatformAssetType: 9
@@ -68,24 +59,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_009"
-  }
-}
-Assets {
-  Id: 17237692812658431496
-  Name: "Fantasy Staff Head 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_head_staff_001"
-  }
-}
-Assets {
-  Id: 17168562580236810812
-  Name: "Fantasy Gauntlet Arm 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_gauntlet_arm_001"
   }
 }
 Assets {
@@ -188,33 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14468628775652644931
-  Name: "Fantasy Human Gal 2"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_fantasy_001_ref"
-  }
-}
-Assets {
-  Id: 14405960884493885038
-  Name: "Fantasy Pommel 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_005"
-  }
-}
-Assets {
-  Id: 14324126384198850775
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
-  }
-}
-Assets {
   Id: 14206563083884513420
   Name: "Plane 1m - Two Sided"
   PlatformAssetType: 1
@@ -248,15 +194,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Blue_028"
-  }
-}
-Assets {
-  Id: 13015241044592811011
-  Name: "Fantasy Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_003"
   }
 }
 Assets {
@@ -314,15 +251,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12510064410993333055
-  Name: "Fantasy Pommel 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_004"
-  }
-}
-Assets {
   Id: 12068935913973994294
   Name: "Fantasy Ability Teal 001"
   PlatformAssetType: 9
@@ -365,15 +293,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_036"
-  }
-}
-Assets {
-  Id: 11353538719389873434
-  Name: "Lens"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_lense_001"
   }
 }
 Assets {
@@ -449,15 +368,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9675776263369201294
-  Name: "Fantasy Pommel 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_pommel_003"
-  }
-}
-Assets {
   Id: 9646465928758980906
   Name: "Fantasy Ability Teal 026"
   PlatformAssetType: 9
@@ -485,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9507970697836095688
-  Name: "Thorn"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tooth_002"
-  }
-}
-Assets {
   Id: 9153911445835367319
   Name: "Fantasy Ability Red 005"
   PlatformAssetType: 9
@@ -509,15 +410,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Food_Ale_002"
-  }
-}
-Assets {
-  Id: 8920166470127210509
-  Name: "Fantasy Gauntlet Hand 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_gauntlet_hand_001"
   }
 }
 Assets {
@@ -593,15 +485,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6938880583474568810
-  Name: "Bone Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bone_raw_001_uv_ref"
-  }
-}
-Assets {
   Id: 6804582409165656232
   Name: "Star - Beveled"
   PlatformAssetType: 1
@@ -629,15 +512,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6378879557962707429
-  Name: "Horn"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_horn_001"
-  }
-}
-Assets {
   Id: 6367527662954153739
   Name: "Ring"
   PlatformAssetType: 1
@@ -656,48 +530,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6143956280833607398
-  Name: "Rock 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
-  }
-}
-Assets {
   Id: 5632528163303928666
   Name: "UI Basic Shape Triangle"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_Triangle"
-  }
-}
-Assets {
-  Id: 5494802673623321671
-  Name: "Pipe"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_001"
-  }
-}
-Assets {
-  Id: 5489775416547967874
-  Name: "Hemisphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_001"
   }
 }
 Assets {
@@ -719,30 +557,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4801985963367974663
-  Name: "Fantasy Sword Blade 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_blade_sword_003"
-  }
-}
-Assets {
   Id: 4615604774453055920
   Name: "Cone - Truncated Hollow Wide"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_004"
-  }
-}
-Assets {
-  Id: 4603537691901304316
-  Name: "Torch Fire VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_torch_fire"
   }
 }
 Assets {
@@ -791,30 +611,21 @@ Assets {
   }
 }
 Assets {
-  Id: 3682206342183528038
-  Name: "Fantasy Sword Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_sword_001"
-  }
-}
-Assets {
-  Id: 3628562346697706059
-  Name: "Pipe - Half Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half-pipe_002"
-  }
-}
-Assets {
   Id: 3329183888595046075
   Name: "Plane Ring - One Sided Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_ring_003"
+  }
+}
+Assets {
+  Id: 3193982394305217901
+  Name: "Button Click Press Core 01 SFX"
+  PlatformAssetType: 7
+  PrimaryAsset {
+    AssetType: "AudioAssetRef"
+    AssetId: "sfxui_click_press_core_01_Cue_ref"
   }
 }
 Assets {
@@ -872,29 +683,11 @@ Assets {
   }
 }
 Assets {
-  Id: 1920010878601219178
-  Name: "Fantasy Sword Guard 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_guard_sword_001"
-  }
-}
-Assets {
   Id: 946231543756952257
   Name: "Prism - 3-Sided Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_hq_001"
-  }
-}
-Assets {
-  Id: 37736936843138452
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
   }
 }

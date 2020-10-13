@@ -251,6 +251,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12918556334648073243
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
   Id: 12494784180091766806
   Name: "Prism - 8-Sided Polished"
   PlatformAssetType: 1

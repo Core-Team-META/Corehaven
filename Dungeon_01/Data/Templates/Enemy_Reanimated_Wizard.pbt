@@ -420,6 +420,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
             AnimationStance: "2hand_staff"

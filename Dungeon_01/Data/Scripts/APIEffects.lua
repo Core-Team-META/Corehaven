@@ -7,6 +7,10 @@ local EFFECT_DESTROY_DELAY = 3.0
 -- Fades out this effect object as best as it can, using the provided or default fade out time
 function API.FadeOutEffect(effectObject, fadeOutTime)
 	Task.Spawn(function()
+		if not Object.IsValid(effectObject) then
+			return
+		end
+		
 		for _, object in pairs(effectObject:FindDescendantsByType("Audio")) do
 			object:FadeOut(EFFECT_FADE_OUT_TIME)
 		end

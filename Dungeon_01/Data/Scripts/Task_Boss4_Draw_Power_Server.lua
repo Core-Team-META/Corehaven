@@ -34,8 +34,11 @@ function OnTaskStart(npc, threatTable)
 end
 
 function OnTaskEnd(npc, interrupted)
-	local statusEffectId = API_SE.STATUS_EFFECT_DEFINITIONS[STATUS_EFFECTS[pillarIndex]].id
-	API_SE.ApplyStatusEffect(npc, npc, statusEffectId)
+	if not interrupted then
+		local statusEffectId = API_SE.STATUS_EFFECT_DEFINITIONS[STATUS_EFFECTS[pillarIndex]].id
+		API_SE.ApplyStatusEffect(npc, npc, statusEffectId)
+	end
+	
 	pillarIndex = nil
 end
 

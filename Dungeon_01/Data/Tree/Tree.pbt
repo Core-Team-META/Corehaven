@@ -98,15 +98,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -8564.66895
-            Y: -13050
-            Z: -750
+            X: -11100
+            Y: -16250
+            Z: -749.999878
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -53.8342285
+            Yaw: -98.8342285
           }
         }
       }

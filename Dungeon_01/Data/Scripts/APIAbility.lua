@@ -51,7 +51,7 @@ float castDuration								Length of cast for this ability
 <function> onCastServer(caster, target)			Server function called on cast
 ]]
 local abilityData = {}						--	string -> table (above)
-local playerAbilities = {}					--	Player -> table (string -> true)
+local playerAbilities = {}					--	Player -> table (string -> int) This is a reference count. nil for 0
 local abilityCooldownEnds = {}				--	string -> float | Client Only
 -- castId is not present on the client for other players
 local playerCastData = {}					--	Player -> table
@@ -765,50 +765,58 @@ end
 
 -- Onwing Client and Server
 function API.GivePlayerAbility(player, abilityName)
-	local data = abilityData[abilityName]
-	assert(data)
-	assert(not playerAbilities[player][abilityName])
-	playerAbilities[player][abilityName] = true
-	Events.Broadcast("AbilityGained", player, abilityName)
+	if playerAbilities[player][abilityName] then
+		playerAbilities[player][abilityName] = playerAbilities[player][abilityName] + 1
+	else
+		local data = abilityData[abilityName]
+		assert(data)
+		playerAbilities[player][abilityName] = 1
+		Events.Broadcast("AbilityGained", player, abilityName)
 
-	if not IS_CLIENT and data.animationKey then
-		API_AS.AddAnimationReference(player, data.animationKey)
+		if not IS_CLIENT and data.animationKey then
+			API_AS.AddAnimationReference(player, data.animationKey)
+		end
 	end
 end
 
 -- Onwing Client and Server
 function API.RemovePlayerAbility(player, abilityName)
-	local data = abilityData[abilityName]
-	assert(data)
 	assert(playerAbilities[player][abilityName])
 
-	if IS_CLIENT then
-		if playerCastData[player] and playerCastData[player].abilityName == abilityName then
-			playerCastData[LOCAL_PLAYER] = nil
-		end
-
-		if abilityName == groundTargetAbilityName then
-			CancelGroundTargeting()
-		end
-
-		if queuedAbilityName == abilityName then
-			queuedAbilityName = nil
-			queuedAbilityTarget = nil
-		end
+	if playerAbilities[player][abilityName] > 1 then
+		playerAbilities[player][abilityName] = playerAbilities[player][abilityName] - 1
 	else
-		local castData = playerCastData[player]
+		local data = abilityData[abilityName]
+		assert(data)
 
-		if castData and castData.abilityName == abilityName then
-			API_AS.InterruptAnimation(player, castData.castId)
-			playerCastData[player] = nil
+		if IS_CLIENT then
+			if playerCastData[player] and playerCastData[player].abilityName == abilityName then
+				playerCastData[LOCAL_PLAYER] = nil
+			end
+
+			if abilityName == groundTargetAbilityName then
+				CancelGroundTargeting()
+			end
+
+			if queuedAbilityName == abilityName then
+				queuedAbilityName = nil
+				queuedAbilityTarget = nil
+			end
+		else
+			local castData = playerCastData[player]
+
+			if castData and castData.abilityName == abilityName then
+				API_AS.InterruptAnimation(player, castData.castId)
+				playerCastData[player] = nil
+			end
 		end
-	end
 
-	playerAbilities[player][abilityName] = nil
-	Events.Broadcast("AbilityRemoved", player, abilityName)
+		playerAbilities[player][abilityName] = nil
+		Events.Broadcast("AbilityRemoved", player, abilityName)
 
-	if not IS_CLIENT and data.animationKey then
-		API_AS.RemoveAnimationReference(player, data.animationKey)
+		if not IS_CLIENT and data.animationKey then
+			API_AS.RemoveAnimationReference(player, data.animationKey)
+		end
 	end
 end
 

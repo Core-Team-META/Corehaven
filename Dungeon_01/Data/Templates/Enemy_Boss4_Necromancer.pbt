@@ -35,7 +35,7 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Zetalan, Vindicated"
+            String: "Zetalan, Arisen"
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
@@ -229,6 +229,7 @@
         ChildIds: 2471952423682822606
         ChildIds: 14724955049604045541
         ChildIds: 18047732533215415924
+        ChildIds: 18391463851825250138
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -581,7 +582,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 34.1181526
+          Intensity: 66.8880615
           Color {
             R: 0.940993249
             G: 0.19
@@ -607,6 +608,326 @@
             MaxDistanceFadeRange: 1000
           }
           CastVolumetricShadows: true
+        }
+      }
+      Objects {
+        Id: 18391463851825250138
+        Name: "head"
+        Transform {
+          Location {
+            X: -23.5579128
+            Y: -0.2791996
+            Z: 470.115234
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17314454833251454489
+        ChildIds: 17424357286344577807
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 17424357286344577807
+        Name: "Group"
+        Transform {
+          Location {
+            X: 33.8125687
+            Y: 32.0025597
+            Z: 19.3266602
+          }
+          Rotation {
+            Pitch: -23.5157471
+            Yaw: 1.03270213e-05
+            Roll: 1.27289013e-06
+          }
+          Scale {
+            X: 1.38458991
+            Y: 1.38458991
+            Z: 1.38458991
+          }
+        }
+        ParentId: 18391463851825250138
+        ChildIds: 505855342437880195
+        ChildIds: 15847906535439911169
+        ChildIds: 1619167729825931233
+        ChildIds: 13923245154943403542
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 505855342437880195
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -6.98909569
+            Y: -15.3149128
+            Z: 6.17672968
+          }
+          Rotation {
+            Pitch: -49.3981323
+            Yaw: 116.556076
+            Roll: -14.8114319
+          }
+          Scale {
+            X: 0.0749397725
+            Y: 0.0749319121
+            Z: 0.160453141
+          }
+        }
+        ParentId: 17424357286344577807
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15847906535439911169
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -7.63910484
+            Y: -31.4872704
+            Z: 6.234375
+          }
+          Rotation {
+            Pitch: 34.0297394
+            Yaw: 105.322334
+            Roll: 4.77997541
+          }
+          Scale {
+            X: 0.0749358758
+            Y: 0.0749337301
+            Z: 0.136328429
+          }
+        }
+        ParentId: 17424357286344577807
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1619167729825931233
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -5.79821396
+            Y: -28.1038895
+            Z: 7.86425781
+          }
+          Rotation {
+            Pitch: 12.2515898
+            Yaw: 107.577888
+            Roll: 9.09677887
+          }
+          Scale {
+            X: 0.0602634475
+            Y: 0.0602634475
+            Z: 0.0602634475
+          }
+        }
+        ParentId: 17424357286344577807
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13923245154943403542
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -5.3896184
+            Y: -18.4133911
+            Z: 7.75498343
+          }
+          Rotation {
+            Pitch: -13.2767029
+            Yaw: 82.7365723
+            Roll: 8.71888733
+          }
+          Scale {
+            X: 0.0602634475
+            Y: 0.0602634475
+            Z: 0.0602634475
+          }
+        }
+        ParentId: 17424357286344577807
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
         }
       }
       Objects {
@@ -718,6 +1039,7 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
+          DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
             AnimationStance: "unarmed_idle_relaxed"
@@ -756,6 +1078,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 6378879557962707429
+      Name: "Horn"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_horn_001"
+      }
+    }
+    Assets {
+      Id: 6938880583474568810
+      Name: "Bone Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
     Assets {

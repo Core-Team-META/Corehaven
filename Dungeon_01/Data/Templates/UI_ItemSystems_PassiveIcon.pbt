@@ -43,7 +43,7 @@
         Control {
           Width: 38
           Height: 38
-          UIX: 85
+          UIX: 100
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -153,7 +153,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 7168578839709653695
+              Id: 6752543000205984158
             }
             Color {
               R: 1
@@ -326,12 +326,12 @@
       }
     }
     Assets {
-      Id: 7168578839709653695
-      Name: "Test Fantasy Skill 013"
+      Id: 6752543000205984158
+      Name: "Fantasy Ability Green 010"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Test_Fantasy_Skill_013"
+        AssetId: "UI_Fantasy_Ability_Green_010"
       }
     }
     Assets {
