@@ -421,7 +421,7 @@ function Inventory:_CanAccommodateStackableItem(item)
         if self:IsEmptySlot(slotIndex) then
             stackSpace = stackSpace + item:GetMaxStackSize()
         elseif item:WillStackWith(self:GetItem(slotIndex)) then
-            stackSpace = stackSpace + item:GetAvailableStackSpace()
+            stackSpace = stackSpace + self:GetItem(slotIndex):GetAvailableStackSpace()
         end
         -- Check if we have enough and exit early.
         if stackSpace >= item:GetStackSize() then return true end
