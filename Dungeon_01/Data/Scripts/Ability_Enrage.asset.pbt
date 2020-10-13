@@ -16,7 +16,7 @@
       }
       Overrides {
         Name: "cs:Range"
-        Float: 0
+        Float: 3000
       }
       Overrides {
         Name: "cs:Cooldown"
@@ -32,7 +32,7 @@
       }
       Overrides {
         Name: "cs:Description"
-        String: "Taunts all nearby enemies to attack you."
+        String: "Taunts a target and all enemies near them to attack you."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

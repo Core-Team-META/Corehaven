@@ -250,6 +250,10 @@ function SetThreat(npc, player, threat)
 	local npcState = npcStates[npc]
 	local target = API_NPC.GetTarget(npc)
 
+	if not npcState.threatTable[player] then
+		AddPlayerToThreatTable(npc, player)
+	end
+
 	npcState.threatTable[player] = threat
 
 	-- Pulling aggro
