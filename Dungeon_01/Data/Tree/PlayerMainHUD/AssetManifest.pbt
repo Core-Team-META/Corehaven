@@ -107,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14574994426789494010
+  Name: "Fantasy Tool 005"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Tool_005"
+  }
+}
+Assets {
   Id: 13778967266379385506
   Name: "BG Flat 001"
   PlatformAssetType: 9
