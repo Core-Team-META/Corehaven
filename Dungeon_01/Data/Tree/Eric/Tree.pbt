@@ -8832,6 +8832,14 @@ Objects {
     }
   }
   ParentId: 724324913679364851
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Camera"
+      ObjectReference {
+        SelfId: 3567959178173361743
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
