@@ -3604,12 +3604,13 @@ Objects {
   Name: "Bridge_InvisibleCollision"
   Transform {
     Location {
-      X: 2208.01367
-      Y: 1632.68555
+      X: 2185.37305
+      Y: 1615.19336
+      Z: -110.098755
     }
     Rotation {
-      Yaw: -52.3088875
-      Roll: 3.51160932
+      Yaw: -52.3092346
+      Roll: 13.2109747
     }
     Scale {
       X: 9.54572868
