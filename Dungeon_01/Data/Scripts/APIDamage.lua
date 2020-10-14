@@ -13,6 +13,7 @@ API.TAG_PERIODIC = 2
 API.TAG_MINOR = 4
 API.TAG_AOE = 8
 API.TAG_HIDDEN = 16
+API.TAG_CANNOT_CRIT = 32
 
 local systemFunctions = nil
 local preDamageHooks = {}
@@ -46,7 +47,9 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
     if sourceCharacter then
         sourceMultiplier = API_SE.GetCharacterDamageDealtMultiplier(sourceCharacter)
 
-        if sourceCharacter:IsA("Player") then
+        local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
+
+        if sourceCharacter:IsA("Player") and canCrit then
             if _G.Passives then
                 sourceMultiplier = sourceMultiplier * _G.Passives.GetPlayerDamageDealtMultiplier(sourceCharacter)
             end
@@ -105,7 +108,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
 
     local overkill = adjustedAmount - effectiveAmount
     systemFunctions.ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill, adjustedTags)
-    return effectiveAmount, overkill
+    return effectiveAmount, adjustedTags
 end
 
 -- This looks at the type of sourceCharacter, and only damages things they could damage. It either deals full damage to
@@ -139,7 +142,9 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
     local adjustedAmount = amount
     local adjustedTags = tags or 0
 
-    if sourceCharacter and sourceCharacter:IsA("Player") then
+    local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
+    
+    if sourceCharacter and canCrit then
         local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
 
         if math.random() < critChance then
@@ -161,7 +166,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
 
     local overheal = adjustedAmount - effectiveAmount
     systemFunctions.ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal, adjustedTags)
-    return effectiveAmount, overheal
+    return effectiveAmount, adjustedTags
 end
 
 -- This takes a function of the form:

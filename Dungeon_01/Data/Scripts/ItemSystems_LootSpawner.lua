@@ -50,10 +50,14 @@ local function ChoosePlayerByLottery()
     return winner
 end
 
-local function OnDropLoot(dropKey, dropWorldPosition)
-    -- If for some crazy reason the database has yet to load and loot is already dropping, ignore it.
+local function OnDropLoot(dropKey, dropWorldPosition, player)
     Database:WaitUntilLoaded()
-    local winner = ChoosePlayerByLottery()
+    local winner = player
+
+    if not winner then
+        winner = ChoosePlayerByLottery()
+    end
+
     local item = Database:CreateItemFromDrop(dropKey)
     local object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
     -- Encode information into the objects loot property.

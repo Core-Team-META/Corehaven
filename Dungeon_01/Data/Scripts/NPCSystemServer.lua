@@ -386,16 +386,14 @@ function KillNPC(npc)
 	if npcData.spawnParent then
 		npcState.currentTaskEndTime = time() + SUMMON_DESPAWN_TIME
 	else
-		for i = 1, #Game.GetPlayers() do		-- We roll this many times
+		for _, player in pairs(Game.GetPlayers()) do
 			for _, dropInfo in pairs(npcData.dropData) do
 				if math.random() <= dropInfo.chance then
-					Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0)
+					Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
 				end
 
-				for _, player in pairs(Game.GetPlayers()) do
-					if player.serverUserData.statSheet then
-						player.serverUserData.statSheet:AddExperience(npcData.experience)
-					end
+				if player.serverUserData.statSheet then
+					player.serverUserData.statSheet:AddExperience(npcData.experience)
 				end
 			end
 		end

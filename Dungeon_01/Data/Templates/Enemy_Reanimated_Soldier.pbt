@@ -71,7 +71,7 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "CommonTrash"
+            String: "HRCommonTrash"
           }
           Overrides {
             Name: "cs:DropChance1"
@@ -79,7 +79,7 @@
           }
           Overrides {
             Name: "cs:DropKey2"
-            String: "UncommonTrash"
+            String: "HRUncommonTrash"
           }
           Overrides {
             Name: "cs:DropChance2"
@@ -87,7 +87,7 @@
           }
           Overrides {
             Name: "cs:DropKey3"
-            String: "EpicTrash"
+            String: "HREpicTrash"
           }
           Overrides {
             Name: "cs:DropChance3"

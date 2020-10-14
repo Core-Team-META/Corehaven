@@ -1022,7 +1022,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Lights up an area, healing friends and hurting enemies for a short duration."
+      String: "Lights up an area, healing friends for a short duration."
     }
     Overrides {
       Name: "cs:AbilityName1"
@@ -32089,14 +32089,6 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -135.90477
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
           }
         }
       }

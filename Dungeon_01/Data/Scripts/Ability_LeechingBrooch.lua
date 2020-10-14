@@ -25,8 +25,14 @@ end
 
 function data.onCastServer(caster, target)
 	local damageAmount = caster.maxHitPoints * 0.4
-	local healAmount = API_D.ApplyDamage(caster, target, damageAmount)
-	API_D.ApplyHealing(caster, caster, healAmount)
+	local leechAmount, tags = API_D.ApplyDamage(caster, target, damageAmount)
+	local healingTags = API_D.TAG_CANNOT_CRIT
+	
+	if API_D.HasTag(tags, API_D.TAG_CRIT) then
+		healingTags = healingTags | API_D.TAG_CRIT
+	end
+
+	API_D.ApplyHealing(caster, caster, leechAmount, healingTags)
 end
 
 return data

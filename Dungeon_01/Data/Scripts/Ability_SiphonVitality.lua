@@ -33,9 +33,15 @@ end
 
 function data.onCastServer(caster, target)
 	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
-	local siphonAmount = API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
+	local siphonAmount, tags = API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 	Task.Wait(API_P.GetTravelTime(target, caster, PROJECTILE_SPEED))
-	API_D.ApplyHealing(caster, caster, siphonAmount)
+	local healingTags = API_D.TAG_CANNOT_CRIT
+	
+	if API_D.HasTag(tags, API_D.TAG_CRIT) then
+		healingTags = healingTags | API_D.TAG_CRIT
+	end
+
+	API_D.ApplyHealing(caster, caster, siphonAmount, healingTags)
 end
 
 return data

@@ -95,26 +95,18 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "Boss4"
+            String: "HRBoss4"
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.5
+            Float: 1
           }
           Overrides {
             Name: "cs:DropKey2"
-            String: "Boss5"
+            String: "HRToken"
           }
           Overrides {
             Name: "cs:DropChance2"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "cs:DropKey3"
-            String: "Boss6"
-          }
-          Overrides {
-            Name: "cs:DropChance3"
             Float: 1
           }
           Overrides {

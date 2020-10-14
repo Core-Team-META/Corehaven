@@ -83,7 +83,7 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "Boss2"
+            String: "HRBoss2"
           }
           Overrides {
             Name: "cs:DropChance1"
