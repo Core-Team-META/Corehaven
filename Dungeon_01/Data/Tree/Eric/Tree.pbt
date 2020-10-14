@@ -9245,6 +9245,59 @@ Objects {
   }
 }
 Objects {
+  Id: 1154981044848714745
+  Name: "ResetSystem"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 493380343428263703
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 493380343428263703
+  Name: "ResetSystemServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1154981044848714745
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15083497776393524205
+    }
+  }
+}
+Objects {
   Id: 16850574512810482299
   Name: "Receive Damage Effects"
   Transform {
@@ -24356,15 +24409,6 @@ Objects {
       Name: "cs:BeamTemplate"
       AssetReference {
         Id: 1063698984721441989
-      }
-    }
-    Overrides {
-      Name: "cs:AnimatedMesh"
-      ObjectReference {
-        SelfId: 16647357078301050280
-        SubObjectId: 13581453203476702740
-        InstanceId: 12964143400490911924
-        TemplateId: 13144345348964660244
       }
     }
     Overrides {

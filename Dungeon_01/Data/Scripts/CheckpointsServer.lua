@@ -10,6 +10,8 @@ for _, group in pairs(script:GetCustomProperty("CheckpointGroups"):WaitForObject
 	GROUP_STATES[group] = GROUP_STATE_UNTRIGGERED
 end
 
+local INITIAL_GROUP = nil
+
 local activeGroup = nil
 
 function SetGroupEnabled(group, isEnabled)
@@ -31,6 +33,20 @@ function OnBeginOverlap(trigger, other, group)
 	end
 end
 
+function OnResetDungeon()
+	activeGroup = INITIAL_GROUP
+
+	for _, group in pairs(script:GetCustomProperty("CheckpointGroups"):WaitForObject():GetChildren()) do
+		if group == INITIAL_GROUP then
+			GROUP_STATES[group] = GROUP_STATE_ACTIVE
+			SetGroupEnabled(group, true)
+		else
+			GROUP_STATES[group] = GROUP_STATE_UNTRIGGERED
+			SetGroupEnabled(group, false)
+		end
+	end
+end
+
 for group, _ in pairs(GROUP_STATES) do
 	local triggerReference = group:GetCustomProperty("Trigger")
 
@@ -38,7 +54,10 @@ for group, _ in pairs(GROUP_STATES) do
 		triggerReference:WaitForObject().beginOverlapEvent:Connect(OnBeginOverlap, group)
 		SetGroupEnabled(group, false)
 	else
+		GROUP_STATES[group] = GROUP_STATE_ACTIVE
+		INITIAL_GROUP = group
 		activeGroup = group
 	end
 end
 
+Events.Connect("ResetDungeon", OnResetDungeon)

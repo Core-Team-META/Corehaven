@@ -54,13 +54,14 @@ function OnTaskStart(npc, threatTable)
 	return 0.5
 end
 
-function OnBossReset()
+function ResetNextWave()
 	nextWaveIndex = 1
 end
 
 function OnTaskEnd(npc, interrupted)
 end
 
-Events.Connect("Boss3Reset", OnBossReset)
+Events.Connect("Boss3Reset", ResetNextWave)
+Events.Connect("Boss3Died", ResetNextWave)
 
 API_NPC.RegisterTaskServer("boss3_summon_reinforcements", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

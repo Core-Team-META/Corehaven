@@ -3,15 +3,15 @@
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local HAND_HELPER = script:GetCustomProperty("HandHelper"):WaitForObject()
 local BEAM_TEMPLATE = script:GetCustomProperty("BeamTemplate")
--- Bit of a hack to directly access the animated mesh (won't work if we copied the boss).
-local ANIMATED_MESH = script:GetCustomProperty("AnimatedMesh"):WaitForObject()
 local PILLARS_GROUP = script:GetCustomProperty("PillarsGroup"):WaitForObject()
 
 local beam = nil
 local currentTask = nil
 local isBrawn = false
+local currentAnimatedMesh = nil
 
 function OnTaskStart(npc, animatedMesh)
+	currentAnimatedMesh = animatedMesh
 	animatedMesh:PlayAnimation("1hand_melee_thrust")
 	currentTask = Task.Spawn(function()
 		Task.Wait(0.38)
@@ -43,7 +43,7 @@ end
 
 function OnDrawPower(pillarIndex)
 	isBrawn = (pillarIndex == 1)
-	ANIMATED_MESH:AttachCoreObject(HAND_HELPER, "right_prop")
+	currentAnimatedMesh:AttachCoreObject(HAND_HELPER, "right_prop")
 
 	currentTask = Task.Spawn(function()
 		Task.Wait(0.45)
