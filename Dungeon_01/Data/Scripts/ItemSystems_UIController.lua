@@ -23,6 +23,20 @@ local viewExclusions = {
     [CRAFTING_VIEW]     = { LOOT_VIEW },
 }
 
+local viewDependencies = {
+    [INVENTORY_VIEW]    = {},
+    [LOOT_VIEW]         = {},
+    [CRAFTING_VIEW]     = { INVENTORY_VIEW },
+}
+
+local viewDependents = {}
+for view,deps in pairs(viewDependencies) do
+    for _,dep in ipairs(deps) do
+        viewDependents[dep] = viewDependents[dep] or {}
+        viewDependents[dep][view] = true
+    end
+end
+
 local function PlaySound(sfx)
     World.SpawnAsset(sfx, { parent = script })
 end
@@ -31,11 +45,22 @@ local function ToggleView(view)
     view.clientUserData.isVisible = not view.clientUserData.isVisible
     if view.clientUserData.isVisible then
         PlaySound(SFX_OPEN)
+        -- When opening a view, any conflicting views must be closed.
         for _,otherView in ipairs(viewExclusions[view]) do
             otherView.clientUserData.isVisible = false
         end
+        -- When opening a view, any additional view dependencies must also be opened.
+        for _,otherView in ipairs(viewDependencies[view]) do
+            otherView.clientUserData.isVisible = true
+        end
     else
         PlaySound(SFX_CLOSE)
+        -- When closing a view, any views dependent on this view should also be closed.
+        if viewDependents[view] then
+            for otherView,_ in pairs(viewDependents[view]) do
+                otherView.clientUserData.isVisible = false
+            end
+        end
     end
 end
 
