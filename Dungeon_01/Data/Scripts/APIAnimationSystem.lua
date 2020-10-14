@@ -177,7 +177,6 @@ end
 
 -- Server
 function API.RemoveAnimationReference(player, animationKey)
-	print(string.format("Remove %s", animationKey))
 	assert(playerAnimationKeys[player][animationKey])
 
 	if playerAnimationKeys[player][animationKey].referenceCount > 1 then

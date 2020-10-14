@@ -89,6 +89,10 @@ function SetCurrentTask(npc, task, interrupted)
 	npc:SetNetworkedCustomProperty("CurrentTask", newTaskString)
 end
 
+function ResetPulls()
+	activePulls = {}
+end
+
 function ResetNPC(npc)
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
@@ -410,6 +414,13 @@ function KillNPC(npc)
 	Events.Broadcast("NPC_Died", npc)
 end
 
+function DespawnNPC(npc)
+	SetCurrentTask(npc, API_NPC.STATE_DEAD, true)
+	Events.Broadcast("NPC_Died", npc)
+	npcStates[npc] = nil
+	npc:Destroy()
+end
+
 function IsPullCleared(pull)
 	for _, npc in pairs(GetNPCsInPull(pull)) do
 		if not API_NPC.IsDead(npc) then
@@ -587,6 +598,8 @@ functionTable.SetThreat = SetThreat
 functionTable.AddThreat = AddThreat
 functionTable.IsPullCleared = IsPullCleared
 functionTable.GetNPCsInPull = GetNPCsInPull
+functionTable.DespawnNPC = DespawnNPC
+functionTable.ResetPulls = ResetPulls
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)

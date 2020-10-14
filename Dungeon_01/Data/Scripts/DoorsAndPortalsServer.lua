@@ -15,6 +15,17 @@ local BOSS3_GATE1 = ROOT:GetCustomProperty("Boss3Gate1"):WaitForObject()
 local BOSS3_GATE2 = ROOT:GetCustomProperty("Boss3Gate2"):WaitForObject()
 local BOSS3_PORTAL = ROOT:GetCustomProperty("Boss3Portal"):WaitForObject()
 
+local INITIAL_GATE_POSITIONS = {}
+INITIAL_GATE_POSITIONS[BOSS1_GATE] = BOSS1_GATE:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS2_GATE1] = BOSS2_GATE1:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS2_GATE2] = BOSS2_GATE2:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS2_GATE3] = BOSS2_GATE3:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS3_GATE1] = BOSS3_GATE1:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS3_GATE2] = BOSS3_GATE2:GetPosition()
+
+local TELEPORTERS = {BOSS1_PORTAL1, BOSS1_PORTAL2, BOSS2_PORTAL, BOSS3_PORTAL}
+
+
 function OpenGate(gate)
 	gate:MoveTo(Vector3.ZERO, 2.0, true)
 end
@@ -83,6 +94,16 @@ function OnBossDied(bossNumber)
 	end
 end
 
+function OnResetDungeon()
+	for gate, position in pairs(INITIAL_GATE_POSITIONS) do
+		gate:SetPosition(position)
+	end
+
+	for _, teleporter in pairs(TELEPORTERS) do
+		DisableTeleporter(teleporter)
+	end
+end
+
 Events.Connect("Boss1Pulled", OnBossPulled, 1)
 Events.Connect("Boss1Reset", OnBossReset, 1)
 Events.Connect("Boss1Died", OnBossDied, 1)
@@ -97,3 +118,5 @@ BOSS1_PORTAL1.interactedEvent:Connect(OnInteracted)
 BOSS1_PORTAL2.interactedEvent:Connect(OnInteracted)
 BOSS2_PORTAL.interactedEvent:Connect(OnInteracted)
 BOSS3_PORTAL.interactedEvent:Connect(OnInteracted)
+
+Events.Connect("ResetDungeon", OnResetDungeon)

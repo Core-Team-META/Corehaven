@@ -13,6 +13,7 @@ local IS_CLIENT = nil
 
 local tasks = {}		-- string -> table
 local npcs = {}			-- CoreObject -> table
+local npcSpawnData = {}	-- array of tables (templateId, position, rotation, parent)
 local systemFunctions = nil
 
 -- nil RegisterTaskClient(string, <string>, <function>, <function>) [Client]
@@ -67,6 +68,17 @@ function API.RegisterNPCFolder(npcFolder)
 		data.spawnRotation = npc:GetWorldRotation()
 
 		if not IS_CLIENT then
+			if not npc.serverUserData.spawned then
+				local spawnData = {}
+				spawnData.templateId = npc.sourceTemplateId
+				spawnData.position = data.spawnPosition
+				spawnData.rotation = data.spawnRotation
+				spawnData.parent = npc.parent
+				table.insert(npcSpawnData, spawnData)
+			end
+
+			npc.serverUserData.spawned = nil
+
 			data.spawnParent = npc.serverUserData.spawnParent
 			npc.serverUserData.spawnParent = nil
 		end
@@ -150,6 +162,22 @@ function API.RegisterNPCFolder(npcFolder)
 end
 
 -- Server only
+function OnResetDungeon()
+	for npc, _ in pairs(npcs) do
+		systemFunctions.DespawnNPC(npc)
+	end
+
+	systemFunctions.ResetPulls()
+
+	for _, spawnData in pairs(npcSpawnData) do
+		local npc = World.SpawnAsset(spawnData.templateId, {parent = spawnData.parent})
+		npc:SetWorldPosition(spawnData.position)
+		npc:SetWorldRotation(spawnData.rotation)
+		npc.serverUserData.spawned = true
+	end
+end
+
+-- Server only
 function API.SpawnNPC(templateId, spawnParent, position, rotation)
 	local npc = World.SpawnAsset(templateId, {parent = spawnParent.parent})
 	-- We do these separately so they are world coordinates
@@ -157,11 +185,16 @@ function API.SpawnNPC(templateId, spawnParent, position, rotation)
 	npc:SetWorldRotation(rotation)
 	-- Pass this value to descendantAddedEvent just above
 	npc.serverUserData.spawnParent = spawnParent
+	npc.serverUserData.spawned = true
 end
 
 function API.RegisterSystem(functionTable, isClient)
 	systemFunctions = functionTable
 	IS_CLIENT = isClient
+
+	if not IS_CLIENT then
+		Events.Connect("ResetDungeon", OnResetDungeon)
+	end
 end
 
 -- table GetAllTaskData() [Client, Server]
@@ -215,6 +248,7 @@ end
 
 function API.SetTarget(npc, target)
 	assert(not systemFunctions.IsAsleep(npc))
+
 	if target then
 		npc:SetNetworkedCustomProperty("TargetID", target.id)
 	else

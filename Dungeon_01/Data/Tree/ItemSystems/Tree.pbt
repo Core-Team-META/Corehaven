@@ -11136,8 +11136,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: -10
+    Width: -20
     Height: -70
+    UIX: 10
     UIY: 40
     RenderTransformPivot {
       Anchor {
