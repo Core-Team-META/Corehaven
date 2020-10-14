@@ -7729,7 +7729,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:forceoff"
+    Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
     Width: 300
@@ -11136,8 +11136,9 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: -10
+    Width: -20
     Height: -70
+    UIX: 10
     UIY: 40
     RenderTransformPivot {
       Anchor {
