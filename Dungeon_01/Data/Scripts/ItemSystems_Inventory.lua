@@ -184,12 +184,14 @@ end
 
 -- True if the move operation is valid.
 function Inventory:CanMoveItem(fromSlotIndex, toSlotIndex)
+    if fromSlotIndex == toSlotIndex then return true end
     return self:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex) and self:_CanMoveItemOneWay(toSlotIndex, fromSlotIndex)
 end
 
 -- Move an item. If there is an item in the destination slot, the items will swap. Acts as delete if destination slot is nil.
 function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     if not self:CanMoveItem(fromSlotIndex, toSlotIndex) then return end
+    if fromSlotIndex == toSlotIndex then return end
     local originalItem = self:GetItem(fromSlotIndex)
     local swapItem = nil
     if toSlotIndex then
