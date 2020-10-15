@@ -35,9 +35,10 @@ local function AwaitInventory(userData)
 end
 
 ---------------------------------------------------------------------------------------------------------
+local item = nil
 if script.isServerOnly then
     AwaitInventory(OWNER.serverUserData)
-    local item = Item.FromHash(OWNER.serverUserData.inventory.database, ITEM_HASH)
+    item = Item.FromHash(OWNER.serverUserData.inventory.database, ITEM_HASH)
     -- Delete networked root object when claimed.
     local function OnLootClaimed() LOOT:Destroy() end
     OWNER.serverUserData.inventory:RegisterLootItem(item, LOOT, OnLootClaimed)
@@ -49,7 +50,7 @@ else
     if OWNER == Game.GetLocalPlayer() then
         -- Client only needs to update inventory for loot which belongs to the local player.
         AwaitInventory(OWNER.clientUserData)
-        local item = Item.FromHash(OWNER.clientUserData.inventory.database, ITEM_HASH)
+        item = Item.FromHash(OWNER.clientUserData.inventory.database, ITEM_HASH)
         OWNER.clientUserData.inventory:RegisterLootItem(item, LOOT)
         -- Set up the trigger.
         local pickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
@@ -62,4 +63,7 @@ else
         World.SpawnAsset(INDICATORS.NotForMe, { parent = LOOT })
     end
 end
+
+---------------------------------------------------------------------------------------------------------
+Events.Broadcast("LootDroppedForPlayer", OWNER, item)
 

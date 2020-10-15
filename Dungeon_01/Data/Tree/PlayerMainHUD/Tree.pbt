@@ -3753,8 +3753,10 @@ Objects {
     }
   }
   ParentId: 5072428032102384757
+  ChildIds: 109682830599663095
   ChildIds: 5233136720388310078
   ChildIds: 14629018378811567592
+  ChildIds: 16841874321504077938
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3764,7 +3766,7 @@ Objects {
   Control {
     Width: 60
     Height: 60
-    UIX: 165
+    UIX: 195
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3783,12 +3785,70 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16841874321504077938
+  Name: "ColorOverlay"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3287857291652451629
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 3
+    Height: 3
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 6980104993132211032
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -3874,13 +3934,16 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 60
-    Height: 60
+    Width: -5
+    Height: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Button {
       Label: "L"
       FontColor {
@@ -3933,6 +3996,68 @@ Objects {
   }
 }
 Objects {
+  Id: 109682830599663095
+  Name: "ItemSystems_LootButtonController"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3287857291652451629
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 3287857291652451629
+      }
+    }
+    Overrides {
+      Name: "cs:BounceScale"
+      Float: 1.3
+    }
+    Overrides {
+      Name: "cs:BounceDuration"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "cs:BlinkElement"
+      ObjectReference {
+        SelfId: 16841874321504077938
+      }
+    }
+    Overrides {
+      Name: "cs:BlinkColor"
+      Color {
+        R: 0.43
+        G: 0.943377435
+        B: 1
+        A: 0.3
+      }
+    }
+    Overrides {
+      Name: "cs:BlinkPeriod"
+      Float: 0.6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15207688985718189381
+    }
+  }
+}
+Objects {
   Id: 103743669950856610
   Name: "InventoryViewer"
   Transform {
@@ -3958,7 +4083,7 @@ Objects {
   Control {
     Width: 60
     Height: 60
-    UIX: 90
+    UIX: 120
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -3977,7 +4102,7 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
@@ -4068,13 +4193,16 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 60
-    Height: 60
+    Width: -5
+    Height: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Button {
       Label: "I"
       FontColor {
@@ -4152,7 +4280,7 @@ Objects {
   Control {
     Width: 60
     Height: 60
-    UIX: 15
+    UIX: 45
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -4171,7 +4299,7 @@ Objects {
     AnchorLayout {
       SelfAnchor {
         Anchor {
-          Value: "mc:euianchor:middleleft"
+          Value: "mc:euianchor:middlecenter"
         }
       }
       TargetAnchor {
@@ -4262,13 +4390,16 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 60
-    Height: 60
+    Width: -5
+    Height: -5
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
       }
     }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
     Button {
       Label: "N"
       FontColor {
