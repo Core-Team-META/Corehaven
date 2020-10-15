@@ -7,7 +7,7 @@
       RootId: 109193277164739579
       Objects {
         Id: 109193277164739579
-        Name: "ItemSystems_LootLegendary"
+        Name: "VFX_ItemSystems_LootLegendary"
         Transform {
           Scale {
             X: 1
@@ -17,12 +17,13 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 7729484489188240924
-        ChildIds: 3798577073573163433
-        ChildIds: 347754176543306418
         ChildIds: 5251178383647284726
         ChildIds: 4415460360362254306
         ChildIds: 15459396056351122578
-        ChildIds: 14998391378406034339
+        ChildIds: 7901641538182242739
+        ChildIds: 4919406624456171751
+        ChildIds: 4195179047918969281
+        ChildIds: 14491813253422345180
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -78,146 +79,6 @@
             }
             MaxDrawDistance: 5000
             MaxDistanceFadeRange: 1000
-          }
-        }
-      }
-      Objects {
-        Id: 3798577073573163433
-        Name: "Outline Object"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 109193277164739579
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Object To Outline"
-            ObjectReference {
-              SubObjectId: 14998391378406034339
-            }
-          }
-          Overrides {
-            Name: "bp:Color A"
-            Color {
-              R: 100
-              G: 47.6821175
-              A: 0.8
-            }
-          }
-          Overrides {
-            Name: "bp:Show Behind Objects"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Solid Behind Objects"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Dynamic Thickness"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Outline Channel"
-            Int: 32
-          }
-          Overrides {
-            Name: "bp:Max Distance Thickness"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Min Distance"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Max Distance"
-            Float: 15.2405796
-          }
-          Overrides {
-            Name: "bp:Hierarchy Discovery Depth"
-            Int: 4
-          }
-          Overrides {
-            Name: "bp:Thickness"
-            Float: 1.99496067
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 7898917390725303355
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
-        Id: 347754176543306418
-        Name: "Callout Sparkle"
-        Transform {
-          Location {
-            Z: 27.1892395
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.906503499
-            Y: 0.435121268
-            Z: 0.39512372
-          }
-        }
-        ParentId: 109193277164739579
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Density"
-            Float: 1.55572522
-          }
-          Overrides {
-            Name: "bp:Gravity"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 9.01098824
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 4.27409506
-          }
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.919999957
-              G: 0.548344374
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13697624696730172247
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
           }
         }
       }
@@ -342,98 +203,51 @@
         }
       }
       Objects {
-        Id: 14998391378406034339
-        Name: "Fantasy Chest Epic 01 (Prop)"
+        Id: 7901641538182242739
+        Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: -8.32077408
+            Z: 11.7436523
           }
           Rotation {
           }
           Scale {
-            X: 0.365730762
-            Y: 0.365730762
-            Z: 0.365730762
+            X: 0.462158889
+            Y: 0.462158889
+            Z: 0.462158889
           }
         }
         ParentId: 109193277164739579
-        ChildIds: 9433781174810341982
-        ChildIds: 11024463816597940463
-        ChildIds: 14968955032843050343
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 9433781174810341982
-        Name: "Fantasy Chest Base 03"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14998391378406034339
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11493405264835290361
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11024463816597940463
-        Name: "Fantasy Chest Lid 03"
-        Transform {
-          Location {
-            Y: 50
-            Z: 80
-          }
-          Rotation {
-            Pitch: 4.09811328e-05
-            Yaw: -179.999954
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 14998391378406034339
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_Detail1:color"
+            Name: "bp:Density"
+            Float: 0.536200345
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0.5
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 25
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 4.27409506
+          }
+          Overrides {
+            Name: "bp:color"
             Color {
-              R: 0.9
-              G: 0.447019905
+              R: 1
+              G: 0.48728478
+              B: 0.0199999809
               A: 1
             }
           }
+          Overrides {
+            Name: "bp:Life"
+            Float: 3
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -441,47 +255,92 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 9927175959700879828
+        Blueprint {
+          BlueprintAsset {
+            Id: 13697624696730172247
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
       Objects {
-        Id: 14968955032843050343
-        Name: "Fantasy Chest Treasure Pile 01"
+        Id: 4919406624456171751
+        Name: "Flare Ray VFX"
         Transform {
           Location {
-            Z: 75
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
-            X: 2.5
-            Y: 1.25
-            Z: 1.5
+            X: 3
+            Y: 3
+            Z: 3
           }
         }
-        ParentId: 14998391378406034339
+        ParentId: 109193277164739579
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 15153963755059509736
+            Name: "bp:color"
+            Color {
+              R: 0.929999948
+              G: 0.314105958
+              A: 1
             }
           }
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Name: "bp:Color B"
+            Color {
+              R: 1
+              G: 0.531059623
+              B: 0.0299999714
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              R: 0.419999957
+              G: 0.27536425
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Brightness"
+            Float: 2.60707617
+          }
+          Overrides {
+            Name: "bp:Ray Density"
+            Float: 6.36109877
+          }
+          Overrides {
+            Name: "bp:Ray Width"
+            Float: 16.3281517
+          }
+          Overrides {
+            Name: "bp:Ray Height"
+            Float: 16.3281517
+          }
+          Overrides {
+            Name: "bp:Ray Color Method"
+            Enum {
+              Value: "mc:eraycoloringoptions:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Depth Fade"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Offset"
+            Float: 0.238393068
+          }
+          Overrides {
+            Name: "bp:Ray Speed"
+            Float: 2.59045243
           }
         }
         Collidable_v2 {
@@ -490,38 +349,182 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533190463953898497
+        Blueprint {
+          BlueprintAsset {
+            Id: 16326751618554059893
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
-    }
-    Assets {
-      Id: 7898917390725303355
-      Name: "Outline Object"
-      PlatformAssetType: 20
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "fxbp_local_outline"
+      Objects {
+        Id: 4195179047918969281
+        Name: "Flare Billboard"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 109193277164739579
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.86
+              G: 0.205033109
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              R: 0.62
+              G: 0.394172221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              R: 0.940000057
+              G: 0.448211938
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Flare Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Auto Rotate"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Rotate Texture"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 30.9862461
+          }
+          Overrides {
+            Name: "bp:Width"
+            Float: 4.53745794
+          }
+          Overrides {
+            Name: "bp:Height"
+            Float: 1.75340903
+          }
+          Overrides {
+            Name: "bp:Rotation Rate"
+            Float: 21.3175659
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4488444258523261897
+          }
+          TeamSettings {
+          }
+        }
       }
-    }
-    Assets {
-      Id: 13697624696730172247
-      Name: "Callout Sparkle"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_sparkles_volume_vfx"
+      Objects {
+        Id: 14491813253422345180
+        Name: "Flare Billboard"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 109193277164739579
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 0.86
+              G: 0.205033109
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              R: 0.62
+              G: 0.394172221
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              R: 0.940000057
+              G: 0.448211938
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Flare Shape"
+            Int: 2
+          }
+          Overrides {
+            Name: "bp:Auto Rotate"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Rotate Texture"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 30.9862461
+          }
+          Overrides {
+            Name: "bp:Width"
+            Float: 4.53745794
+          }
+          Overrides {
+            Name: "bp:Height"
+            Float: 1.75340903
+          }
+          Overrides {
+            Name: "bp:Rotation Rate"
+            Float: -25.8710938
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 4488444258523261897
+          }
+          TeamSettings {
+          }
+        }
       }
     }
     Assets {
@@ -552,30 +555,30 @@
       }
     }
     Assets {
-      Id: 11493405264835290361
-      Name: "Fantasy Chest Base 03"
-      PlatformAssetType: 1
+      Id: 13697624696730172247
+      Name: "Callout Sparkle"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_003_ref"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_sparkles_volume_vfx"
       }
     }
     Assets {
-      Id: 9927175959700879828
-      Name: "Fantasy Chest Lid 03"
-      PlatformAssetType: 1
+      Id: 16326751618554059893
+      Name: "Flare Ray VFX"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_lid_003_ref"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ray_system"
       }
     }
     Assets {
-      Id: 3533190463953898497
-      Name: "Fantasy Chest Treasure Pile 01"
-      PlatformAssetType: 1
+      Id: 4488444258523261897
+      Name: "Flare Billboard"
+      PlatformAssetType: 6
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_flare_object"
       }
     }
     PrimaryAssetId {

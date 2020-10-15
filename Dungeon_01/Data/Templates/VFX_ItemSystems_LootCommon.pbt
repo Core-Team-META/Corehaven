@@ -7,7 +7,7 @@
       RootId: 8470799149713502337
       Objects {
         Id: 8470799149713502337
-        Name: "ItemSystems_LootCommon"
+        Name: "VFX_ItemSystems_LootCommon"
         Transform {
           Scale {
             X: 1
@@ -17,12 +17,11 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 2494252855849906272
-        ChildIds: 11749901057971481841
         ChildIds: 5180415566068555805
         ChildIds: 1650877023170220790
         ChildIds: 7774308082972136046
         ChildIds: 3323355192318572045
-        ChildIds: 4522456199034545581
+        ChildIds: 8764007741195466338
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -85,100 +84,18 @@
         }
       }
       Objects {
-        Id: 11749901057971481841
-        Name: "Outline Object"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8470799149713502337
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Object To Outline"
-            ObjectReference {
-              SubObjectId: 4522456199034545581
-            }
-          }
-          Overrides {
-            Name: "bp:Color A"
-            Color {
-              R: 5
-              G: 5
-              B: 5
-              A: 0.8
-            }
-          }
-          Overrides {
-            Name: "bp:Show Behind Objects"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Solid Behind Objects"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Dynamic Thickness"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Outline Channel"
-            Int: 32
-          }
-          Overrides {
-            Name: "bp:Max Distance Thickness"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Min Distance"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Max Distance"
-            Float: 15.2405796
-          }
-          Overrides {
-            Name: "bp:Hierarchy Discovery Depth"
-            Int: 4
-          }
-          Overrides {
-            Name: "bp:Thickness"
-            Float: 1.99496067
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 7898917390725303355
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
         Id: 5180415566068555805
         Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: 13.1977539
+            Z: 26.512085
           }
           Rotation {
           }
           Scale {
-            X: 0.434843302
-            Y: 0.434843302
-            Z: 0.434843302
+            X: 0.227712408
+            Y: 0.227712408
+            Z: 0.227712408
           }
         }
         ParentId: 8470799149713502337
@@ -193,7 +110,7 @@
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 10
+            Float: 15
           }
           Overrides {
             Name: "bp:Emissive Boost"
@@ -207,6 +124,10 @@
               B: 0.46875
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 3
           }
         }
         Collidable_v2 {
@@ -356,50 +277,101 @@
         }
       }
       Objects {
-        Id: 4522456199034545581
-        Name: "Simple Crate 150cm"
+        Id: 8764007741195466338
+        Name: "Flare Ray VFX"
         Transform {
           Location {
-            Z: -9.12494278
+            Z: 22.3568115
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
-            X: 0.253741711
-            Y: 0.253741711
-            Z: 0.253741711
+            X: 3
+            Y: 3
+            Z: 3
           }
         }
         ParentId: 8470799149713502337
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Brightness"
+            Float: 0.722806931
+          }
+          Overrides {
+            Name: "bp:Ray Density"
+            Float: 5.37800217
+          }
+          Overrides {
+            Name: "bp:Ray Width"
+            Float: 13.0593548
+          }
+          Overrides {
+            Name: "bp:Ray Height"
+            Float: 10.406
+          }
+          Overrides {
+            Name: "bp:Ray Color Method"
+            Enum {
+              Value: "mc:eraycoloringoptions:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Depth Fade"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Offset"
+            Float: 0.238393068
+          }
+          Overrides {
+            Name: "bp:Ray Speed"
+            Float: 2.59045243
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 15057977201205375036
+        Blueprint {
+          BlueprintAsset {
+            Id: 16326751618554059893
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
-      }
-    }
-    Assets {
-      Id: 7898917390725303355
-      Name: "Outline Object"
-      PlatformAssetType: 20
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "fxbp_local_outline"
       }
     }
     Assets {
@@ -439,12 +411,12 @@
       }
     }
     Assets {
-      Id: 15057977201205375036
-      Name: "Simple Crate 150cm"
-      PlatformAssetType: 1
+      Id: 16326751618554059893
+      Name: "Flare Ray VFX"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_crate_simple_150cm_001"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ray_system"
       }
     }
     PrimaryAssetId {
