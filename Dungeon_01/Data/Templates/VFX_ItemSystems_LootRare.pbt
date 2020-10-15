@@ -7,7 +7,7 @@
       RootId: 12500966596954832450
       Objects {
         Id: 12500966596954832450
-        Name: "ItemSystems_LootRare"
+        Name: "VFX_ItemSystems_LootRare"
         Transform {
           Scale {
             X: 1
@@ -17,12 +17,11 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 8480516398010855749
-        ChildIds: 11159139386722884463
         ChildIds: 27021758902939264
         ChildIds: 16576351870542932304
         ChildIds: 15655111998316615155
         ChildIds: 3856462845461824755
-        ChildIds: 8584904579072248654
+        ChildIds: 8051269414353397025
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -83,100 +82,18 @@
         }
       }
       Objects {
-        Id: 11159139386722884463
-        Name: "Outline Object"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12500966596954832450
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Object To Outline"
-            ObjectReference {
-              SubObjectId: 8584904579072248654
-            }
-          }
-          Overrides {
-            Name: "bp:Color A"
-            Color {
-              R: 0.999999046
-              G: 19.3575974
-              B: 100
-              A: 0.8
-            }
-          }
-          Overrides {
-            Name: "bp:Show Behind Objects"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Solid Behind Objects"
-            Bool: false
-          }
-          Overrides {
-            Name: "bp:Dynamic Thickness"
-            Bool: true
-          }
-          Overrides {
-            Name: "bp:Outline Channel"
-            Int: 32
-          }
-          Overrides {
-            Name: "bp:Max Distance Thickness"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Min Distance"
-            Float: 0
-          }
-          Overrides {
-            Name: "bp:Max Distance"
-            Float: 15.2405796
-          }
-          Overrides {
-            Name: "bp:Hierarchy Discovery Depth"
-            Int: 4
-          }
-          Overrides {
-            Name: "bp:Thickness"
-            Float: 1.99496067
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 7898917390725303355
-          }
-          TeamSettings {
-          }
-        }
-      }
-      Objects {
         Id: 27021758902939264
         Name: "Callout Sparkle"
         Transform {
           Location {
-            Z: 35.1250534
+            Z: 26.512085
           }
           Rotation {
           }
           Scale {
-            X: 0.435121268
-            Y: 0.435121268
-            Z: 0.435121268
+            X: 0.227857992
+            Y: 0.227857992
+            Z: 0.227857992
           }
         }
         ParentId: 12500966596954832450
@@ -191,7 +108,7 @@
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 9.01098824
+            Float: 15
           }
           Overrides {
             Name: "bp:Emissive Boost"
@@ -204,6 +121,10 @@
               B: 0.98
               A: 1
             }
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 3
           }
         }
         Collidable_v2 {
@@ -353,130 +274,79 @@
         }
       }
       Objects {
-        Id: 8584904579072248654
-        Name: "Fantasy Chest Common 01 (Prop)"
+        Id: 8051269414353397025
+        Name: "Flare Ray VFX"
         Transform {
           Location {
-            Z: -5.26528358
           }
           Rotation {
+            Pitch: 90
           }
           Scale {
-            X: 0.563824296
-            Y: 0.563824296
-            Z: 0.563824296
+            X: 3
+            Y: 3
+            Z: 3
           }
         }
         ParentId: 12500966596954832450
-        ChildIds: 3229052944178831525
-        ChildIds: 8576186626235090766
-        ChildIds: 11110399349733108919
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 3229052944178831525
-        Name: "Fantasy Chest Base 01"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8584904579072248654
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 3753434009625901326
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8576186626235090766
-        Name: "Fantasy Chest Lid 01"
-        Transform {
-          Location {
-            Y: 36.5996704
-            Z: 45
-          }
-          Rotation {
-            Pitch: 2.73207552e-05
-            Yaw: -179.999939
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8584904579072248654
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9188351867310556903
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11110399349733108919
-        Name: "Fantasy Chest Treasure Pile 01"
-        Transform {
-          Location {
-            Z: 40
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 8584904579072248654
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
+            Name: "bp:color"
+            Color {
+              G: 0.124569274
+              B: 0.99
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Color B"
+            Color {
+              G: 0.0476820394
+              B: 0.72
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:color c"
+            Color {
+              G: 0.192979857
+              B: 0.940000057
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Brightness"
+            Float: 1.00954354
+          }
+          Overrides {
+            Name: "bp:Ray Density"
+            Float: 5.37800217
+          }
+          Overrides {
+            Name: "bp:Ray Width"
+            Float: 13.0593548
+          }
+          Overrides {
+            Name: "bp:Ray Height"
+            Float: 12.4055948
+          }
+          Overrides {
+            Name: "bp:Ray Color Method"
+            Enum {
+              Value: "mc:eraycoloringoptions:newenumerator0"
+            }
+          }
+          Overrides {
+            Name: "bp:Depth Fade"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Camera Depth Fade Offset"
+            Float: 0.238393068
+          }
+          Overrides {
+            Name: "bp:Ray Speed"
+            Float: 2.59045243
           }
         }
         Collidable_v2 {
@@ -485,29 +355,16 @@
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        CoreMesh {
-          MeshAsset {
-            Id: 3533190463953898497
+        Blueprint {
+          BlueprintAsset {
+            Id: 16326751618554059893
           }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          TeamSettings {
           }
-          EnableCameraCollision: true
-          StaticMesh {
-            Physics {
-            }
+          Vfx {
+            AutoPlay: true
           }
         }
-      }
-    }
-    Assets {
-      Id: 7898917390725303355
-      Name: "Outline Object"
-      PlatformAssetType: 20
-      PrimaryAsset {
-        AssetType: "BlueprintAssetRef"
-        AssetId: "fxbp_local_outline"
       }
     }
     Assets {
@@ -547,30 +404,12 @@
       }
     }
     Assets {
-      Id: 3753434009625901326
-      Name: "Fantasy Chest Base 01"
-      PlatformAssetType: 1
+      Id: 16326751618554059893
+      Name: "Flare Ray VFX"
+      PlatformAssetType: 8
       PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_001_ref"
-      }
-    }
-    Assets {
-      Id: 9188351867310556903
-      Name: "Fantasy Chest Lid 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_lid_001_ref"
-      }
-    }
-    Assets {
-      Id: 3533190463953898497
-      Name: "Fantasy Chest Treasure Pile 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_fantasy_chest_treasure_pile_001_ref"
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ray_system"
       }
     }
     PrimaryAssetId {
