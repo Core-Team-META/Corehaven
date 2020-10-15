@@ -95,6 +95,8 @@ function OnBossDied(bossNumber)
 end
 
 function OnResetDungeon()
+	Task.Wait(10.0)	-- We need to wait for the died events to do stuff just above
+
 	for gate, position in pairs(INITIAL_GATE_POSITIONS) do
 		gate:SetPosition(position)
 	end

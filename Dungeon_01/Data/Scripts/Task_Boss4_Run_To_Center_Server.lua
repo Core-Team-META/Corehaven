@@ -4,7 +4,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local CENTER = script:GetCustomProperty("Center"):WaitForObject()
 
 local RANGE = 00.0
-local COOLDOWN = 30.0
+local COOLDOWN = 12.0
 local SPEED = 1200.0
 
 local currentTasks = {}

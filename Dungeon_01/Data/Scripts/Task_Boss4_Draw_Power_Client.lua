@@ -1,17 +1,16 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
-local HAND_HELPER = script:GetCustomProperty("HandHelper"):WaitForObject()
+local HAND_HELPER_TEMPLATE = script:GetCustomProperty("HandHelperTemplate")
 local BEAM_TEMPLATE = script:GetCustomProperty("BeamTemplate")
 local PILLARS_GROUP = script:GetCustomProperty("PillarsGroup"):WaitForObject()
 
 local beam = nil
 local currentTask = nil
 local isBrawn = false
-local currentAnimatedMesh = nil
 
 function OnTaskStart(npc, animatedMesh)
-	currentAnimatedMesh = animatedMesh
 	animatedMesh:PlayAnimation("1hand_melee_thrust")
 	currentTask = Task.Spawn(function()
 		Task.Wait(0.38)
@@ -41,15 +40,18 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	end
 end
 
-function OnDrawPower(pillarIndex)
+function OnDrawPower(npcId, pillarIndex)
+	local npc = API_ID.GetObjectFromId(npcId)
+	local animatedMesh = npc:FindDescendantByType("AnimatedMesh")
 	isBrawn = (pillarIndex == 1)
-	currentAnimatedMesh:AttachCoreObject(HAND_HELPER, "right_prop")
+	local handHelper = World.SpawnAsset(HAND_HELPER_TEMPLATE)
+	animatedMesh:AttachCoreObject(handHelper, "right_prop")
 
 	currentTask = Task.Spawn(function()
 		Task.Wait(0.45)
 		local pillarPosition = PILLARS_GROUP:GetChildren()[pillarIndex]:GetWorldPosition()
-		local handPosition = HAND_HELPER:GetWorldPosition()
-		local rotation = Rotation.New(HAND_HELPER:GetWorldPosition() - pillarPosition, Vector3.UP) * Rotation.New(0.0, -90.0, 0.0)
+		local handPosition = handHelper:GetWorldPosition()
+		local rotation = Rotation.New(handHelper:GetWorldPosition() - pillarPosition, Vector3.UP) * Rotation.New(0.0, -90.0, 0.0)
 		beam = World.SpawnAsset(BEAM_TEMPLATE, {position = pillarPosition, rotation = rotation})
 		beam:SetSmartProperty("Beam Length", (handPosition - pillarPosition).size / 500.0)
 	end)

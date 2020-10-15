@@ -163,18 +163,23 @@ end
 
 -- Server only
 function OnResetDungeon()
+	systemFunctions.SetTickPaused(true)
+	-- Waits are added to avoid spiking the server
 	for npc, _ in pairs(npcs) do
 		systemFunctions.DespawnNPC(npc)
+		Task.Wait()
 	end
-
-	systemFunctions.ResetPulls()
 
 	for _, spawnData in pairs(npcSpawnData) do
 		local npc = World.SpawnAsset(spawnData.templateId, {parent = spawnData.parent})
 		npc:SetWorldPosition(spawnData.position)
 		npc:SetWorldRotation(spawnData.rotation)
 		npc.serverUserData.spawned = true
+		Task.Wait()
 	end
+
+	systemFunctions.ResetPulls()
+	systemFunctions.SetTickPaused(false)
 end
 
 -- Server only

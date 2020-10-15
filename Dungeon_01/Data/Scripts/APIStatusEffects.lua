@@ -449,7 +449,9 @@ function API.Tick(deltaTime)
 	end
 
 	for npc, _ in pairs(API_NPC.GetAllNPCData()) do
-		UpdateCharacter(npc)
+		if not API_NPC.IsAsleep(npc) then
+			UpdateCharacter(npc)
+		end
 	end
 end
 

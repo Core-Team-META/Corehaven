@@ -24,8 +24,9 @@ CoreObject -> table:
 	bool shouldMoveUpdate		-- Should we do a move update next frame?
 ]]
 local npcStates = {}
-
 local activePulls = {}			-- CoreObject -> true
+
+local tickPaused = false
 
 function IsTableEmpty(table)
 	for _, _ in pairs(table) do
@@ -36,6 +37,11 @@ function IsTableEmpty(table)
 end
 
 function IsAsleep(npc)
+	-- NPC hasn't been set up yet
+	if not npcStates[npc] then
+		return true
+	end
+
 	return npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP
 end
 
@@ -379,7 +385,7 @@ function IsPlayerInCombat(player)
 	return false
 end
 
-function KillNPC(npc)
+function KillNPC(npc, skipLoot)
 	local npcState = npcStates[npc]
 	local npcData = API_NPC.GetAllNPCData()[npc]
 
@@ -390,14 +396,16 @@ function KillNPC(npc)
 	if npcData.spawnParent then
 		npcState.currentTaskEndTime = time() + SUMMON_DESPAWN_TIME
 	else
-		for _, player in pairs(Game.GetPlayers()) do
-			for _, dropInfo in pairs(npcData.dropData) do
-				if math.random() <= dropInfo.chance then
-					Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
-				end
+		if not skipLoot then
+			for _, player in pairs(Game.GetPlayers()) do
+				for _, dropInfo in pairs(npcData.dropData) do
+					if math.random() <= dropInfo.chance then
+						Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
+					end
 
-				if player.serverUserData.statSheet then
-					player.serverUserData.statSheet:AddExperience(npcData.experience)
+					if player.serverUserData.statSheet then
+						player.serverUserData.statSheet:AddExperience(npcData.experience)
+					end
 				end
 			end
 		end
@@ -415,10 +423,13 @@ function KillNPC(npc)
 end
 
 function DespawnNPC(npc)
-	SetCurrentTask(npc, API_NPC.STATE_DEAD, true)
-	Events.Broadcast("NPC_Died", npc)
-	npcStates[npc] = nil
-	npc:Destroy()
+	KillNPC(npc, true)
+
+	Task.Spawn(function()
+		Task.Wait()			-- Need one frame for ticks to clear status effects and such
+		npcStates[npc] = nil
+		npc:Destroy()
+	end)
 end
 
 function IsPullCleared(pull)
@@ -431,7 +442,15 @@ function IsPullCleared(pull)
 	return true
 end
 
+function SetTickPaused(isPaused)
+	tickPaused = isPaused
+end
+
 function Tick(deltaTime)
+	if tickPaused then
+		return
+	end
+
 	-- Update Pulls
 	for _, pull in pairs(NPC_FOLDER:GetChildren()) do
 		if not activePulls[pull] then
@@ -600,6 +619,7 @@ functionTable.IsPullCleared = IsPullCleared
 functionTable.GetNPCsInPull = GetNPCsInPull
 functionTable.DespawnNPC = DespawnNPC
 functionTable.ResetPulls = ResetPulls
+functionTable.SetTickPaused = SetTickPaused
 API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)

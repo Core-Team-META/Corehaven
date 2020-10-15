@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_ID = require(script:GetCustomProperty("API_ID"))
 
 local PILLARS_GROUP = script:GetCustomProperty("PillarsGroup"):WaitForObject()
 
@@ -27,10 +28,10 @@ function OnTaskStart(npc, threatTable)
 	local pillars = PILLARS_GROUP:GetChildren()
 	pillarIndex = math.random(#pillars)
 	local pillar = pillars[pillarIndex]
-	API_RE.BroadcastToAllPlayers("DP", pillarIndex)
+	API_RE.BroadcastToAllPlayers("DP", API_ID.GetIdFromObject(npc), pillarIndex)
 	API_NPC.LookAtTargetWithoutPitch(npc, pillar:GetWorldPosition())
 
-	return 2.0
+	return 1.5
 end
 
 function OnTaskEnd(npc, interrupted)
