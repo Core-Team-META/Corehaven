@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 1696477829384149622
+        ParentId: 15324477555143483109
         ChildIds: 1978558241356278971
         UnregisteredParameters {
           Overrides {
@@ -40,6 +40,18 @@
             Name: "cs:TreeNameText"
             ObjectReference {
               SubObjectId: 6322301701594032219
+            }
+          }
+          Overrides {
+            Name: "cs:RemainingPointsText"
+            ObjectReference {
+              SubObjectId: 11508214304672132271
+            }
+          }
+          Overrides {
+            Name: "cs:CloseButton"
+            ObjectReference {
+              SubObjectId: 7587009513749351088
             }
           }
         }
@@ -93,6 +105,7 @@
         ChildIds: 1713236920295882849
         ChildIds: 6420076522289348308
         ChildIds: 6322301701594032219
+        ChildIds: 7587009513749351088
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -255,6 +268,7 @@
           }
         }
         ParentId: 1978558241356278971
+        ChildIds: 11508214304672132271
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -272,7 +286,7 @@
           }
           UseParentWidth: true
           Text {
-            Label: "Talent Tree Name"
+            Label: "Tree Name"
             Color {
               R: 1
               G: 1
@@ -299,6 +313,273 @@
           }
         }
       }
+      Objects {
+        Id: 11508214304672132271
+        Name: "UI Text Box"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 6322301701594032219
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 125
+          Height: 28
+          UIY: -18
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "Remaining points:"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 13
+            Justification {
+              Value: "mc:etextjustify:left"
+            }
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7587009513749351088
+        Name: "CloseButton"
+        Transform {
+          Location {
+            X: -5528.01074
+            Y: -12167.6758
+            Z: 1168.63965
+          }
+          Rotation {
+            Pitch: 90
+            Yaw: -14.0362635
+            Roll: 78.5058
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1978558241356278971
+        ChildIds: 9039872950454917664
+        ChildIds: 1461584802914720396
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:ViewName"
+            String: "Loot"
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 28
+          Height: 28
+          UIX: -26
+          UIY: 16.5
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.5
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.7
+            }
+            DisabledColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Brush {
+              Id: 841534158063459245
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topright"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9039872950454917664
+        Name: "X"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7587009513749351088
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -10
+          Height: -10
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 3697591994187435780
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1461584802914720396
+        Name: "Border"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7587009513749351088
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 5635343760568520525
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 6294033131084533737
@@ -316,6 +597,24 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Frame_007"
+      }
+    }
+    Assets {
+      Id: 3697591994187435780
+      Name: "Icon Close"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Close"
+      }
+    }
+    Assets {
+      Id: 5635343760568520525
+      Name: "Frame Outlined Thick 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameFlat_019"
       }
     }
     PrimaryAssetId {

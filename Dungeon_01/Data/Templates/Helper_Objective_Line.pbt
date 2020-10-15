@@ -111,8 +111,9 @@
               Id: 15688582493787673908
             }
             Color {
-              R: 0.995000064
-              G: 0.995000064
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             TeamSettings {
@@ -234,8 +235,9 @@
           Text {
             Label: "Defeat the enemies!"
             Color {
-              R: 0.995000064
-              G: 0.995000064
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             Size: 15

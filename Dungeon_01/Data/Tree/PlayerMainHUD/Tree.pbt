@@ -1,6 +1,3512 @@
 ﻿Name: "PlayerMainHUD"
 RootId: 2833047303521512166
 Objects {
+  Id: 13653382731491750667
+  Name: "Talent Selector"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2833047303521512166
+  ChildIds: 15455047430509318690
+  ChildIds: 15315120758282498123
+  ChildIds: 6503201800919598133
+  ChildIds: 6004305408932559212
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 17098633192116938630
+    SubobjectId: 9802293826147744607
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 6004305408932559212
+  Name: "TalentTrees"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13653382731491750667
+  ChildIds: 1371762416235142949
+  ChildIds: 343842076446698092
+  ChildIds: 14385941321693623248
+  ChildIds: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:NUsableTrees"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:TreeWidth"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeHeight"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:NUsableTrees:tooltip"
+      String: "Each player gets access to this many trees at random"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 250039235746734385
+    SubobjectId: 7366309384517271016
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6858076160098670492
+  Name: "Divinity"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 11739659864115600922
+  ChildIds: 3451560461803088695
+  ChildIds: 8656554226348028838
+  ChildIds: 2435950492341338217
+  ChildIds: 12766202776203964267
+  ChildIds: 9493492601717869297
+  ChildIds: 5604193199934608457
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 4
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 17332468096773076319
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 1
+        G: 0.87324512
+        B: 0.13
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 5604193199934608457
+  Name: "Spiritual Conduit"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Your target is empowered with spirits, lashing out repeatedly at nearby targets."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Spirital Conduit"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 13887755575610655442
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9493492601717869297
+  Name: "Holy Presence"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You and your allies take reduced damage."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Holy Presence"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15930323680083439980
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 12766202776203964267
+  Name: "Mending Light"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Empowers your target with holy energy, healing them over time."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Mending Light"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3853565587853589068
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 2435950492341338217
+  Name: "Illuminate"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Lights up an area, healing friends for a short duration."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Illuminate"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 2037116453720966790
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 8656554226348028838
+  Name: "Heal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Heals your target."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Heal"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3111334347525175861
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 3451560461803088695
+  Name: "Righteous Hammer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Throw a hammer at your target, stunning them."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Righteous Hammer"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15830314128515121469
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11739659864115600922
+  Name: "Divine Blast"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6858076160098670492
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Attacks single target, sending a wave out from the target healing all nearby party members."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Divine Blast"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11309381679699856108
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 14385941321693623248
+  Name: "Magic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 18090954595178628674
+  ChildIds: 6269920636709688557
+  ChildIds: 11445867908990253238
+  ChildIds: 5851381824001695082
+  ChildIds: 8701836073468113419
+  ChildIds: 11649629773917677399
+  ChildIds: 16208921014815592880
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 9543125629159503556
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 0.228145853
+        B: 0.65
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 16208921014815592880
+  Name: "Empower Energies"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Empower the caster, increasing your damage and speed for a short duration."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Empower Energies"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 3078059190705841288
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11649629773917677399
+  Name: "Cosmic Blast"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Draw celestial bodies to the ground, causing large damage in an area."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Cosmic Blast"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12689850831228166194
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 8701836073468113419
+  Name: "Creeping Curse"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Curse your target. When the curse expires, it deals moderate damage to the target and leaps to another nearby target."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Creeping Curse"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15612050688073808511
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 5851381824001695082
+  Name: "Phase Out"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You phase out of your corporeal form, avoiding the next few attacks entirely."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Phase Out"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9646465928758980906
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 11445867908990253238
+  Name: "Siphon Vitality"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Drains the life force of your target, dealing damage and healing you."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Siphon Vitality"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12559015832711781866
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6269920636709688557
+  Name: "Reverse Wounds"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Go back in time, undoing all damage from the last few seconds."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Reverse Wounds"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 2617890565520931984
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 18090954595178628674
+  Name: "Energy Bolt"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14385941321693623248
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Unleashes a bolt of magic at the target."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Energy Bolt"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 8251184018033354750
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 343842076446698092
+  Name: "Might"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 4599952072255057778
+  ChildIds: 17827227578715175317
+  ChildIds: 15818881886946101256
+  ChildIds: 6140842715723550464
+  ChildIds: 10637771026153913134
+  ChildIds: 9909220555032041133
+  ChildIds: 7129815457093020938
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 17298839733138424596
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        R: 0.419999957
+        G: 0.133509919
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 7129815457093020938
+  Name: "Sneak Attack"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Appear behind your target and strike for high damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Sneak Attack"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 7256816805999550841
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9909220555032041133
+  Name: "Wound"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Wound your target, causing them to take damage over time."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Wound"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12558162289108193643
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 10637771026153913134
+  Name: "Execution"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Your attacks deal increased damage from behind the target and also if the target has low health."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Execution"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9153911445835367319
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6140842715723550464
+  Name: "Drink Potion"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You drink a random helpful potion."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Drink Potion"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18026198405272835864
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 15818881886946101256
+  Name: "First Aid"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You tend to your wounds, healing a moderate amount."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "First Aid"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15785925261575531730
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 17827227578715175317
+  Name: "Evasive"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You have a chance to avoid attacks."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Evasive"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 12068935913973994294
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 4599952072255057778
+  Name: "Rising Fury"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 343842076446698092
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Your attacks have a chance to anger you, giving you increased attack for a short duration. Also grants your basic attack Sweeping Slash."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Sweeping Slash"
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Rising Fury"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 9530887160708419576
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 1371762416235142949
+  Name: "Protection"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6004305408932559212
+  ChildIds: 17901531123941060381
+  ChildIds: 18232739182728710361
+  ChildIds: 8802180108852620436
+  ChildIds: 6692680696126703812
+  ChildIds: 2167866083139725003
+  ChildIds: 4418391808158998545
+  ChildIds: 570315840505543400
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Order"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:BackgroundImage"
+      AssetReference {
+        Id: 14809824387673401113
+      }
+    }
+    Overrides {
+      Name: "cs:BackgroundOffset"
+      Vector2 {
+      }
+    }
+    Overrides {
+      Name: "cs:PrimaryColor"
+      Color {
+        G: 0.54158926
+        B: 0.87
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 16340714578511042047
+    SubobjectId: 9766006668254873894
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 570315840505543400
+  Name: "Spiked Armor"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "You now return damage everytime to take damage from a nearby foe."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Spiked Armor"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 15541642479332885797
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 4418391808158998545
+  Name: "Crippling Whirl"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Spin around crippling all nearby foes, hurting them and reducing their speed and damage."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Crippling Whirl"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 4950921733684647490
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 2167866083139725003
+  Name: "Shield Bash"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Smash your target with your shield, dealing high damage and stunning them briefly. Damage scales with defense."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Shield Bash"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 18150175252654389294
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6692680696126703812
+  Name: "Power Through"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Grit your teeth and take reduced damage temporarily."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Power Through"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11819073848126166701
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 8802180108852620436
+  Name: "Taste for Blood"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Your attacks now heal you for a fraction of the damage they deal."
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Taste for Blood"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 11152365331067406223
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 18232739182728710361
+  Name: "Refresh"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Very quickly replenish yourself, healing a portion of your total health."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Refresh"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 8988782777998787278
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 17901531123941060381
+  Name: "Enrage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1371762416235142949
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:TreeX"
+      Int: 2
+    }
+    Overrides {
+      Name: "cs:TreeY"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Taunts all nearby enemies to attack you. Also grants your basic attack Cleave."
+    }
+    Overrides {
+      Name: "cs:AbilityName1"
+      String: "Cleave"
+    }
+    Overrides {
+      Name: "cs:AbilityName2"
+      String: "Enrage"
+    }
+    Overrides {
+      Name: "cs:Passive1"
+      String: "Threatening"
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 6534868485720375971
+      }
+    }
+    Overrides {
+      Name: "cs:Cost"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:IsPassive"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAbove"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveLeft"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:RequiresAboveRight"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 1974824892024524627
+    SubobjectId: 9089898754964165514
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6503201800919598133
+  Name: "PlayerStateHelpers"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13653382731491750667
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 8761932585628569695
+    SubobjectId: 2079133903440874630
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 15315120758282498123
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13653382731491750667
+  ChildIds: 1852459486053078611
+  ChildIds: 15948141050935968323
+  ChildIds: 9165315858490005349
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 16910410242021044683
+    SubobjectId: 10371766312846601490
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9165315858490005349
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15315120758282498123
+  ChildIds: 4830519546625545965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11139831683696485753
+    SubobjectId: 18436210625463056800
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 4830519546625545965
+  Name: "TooltipPanel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9165315858490005349
+  ChildIds: 6581359791143029730
+  ChildIds: 9616996435621557756
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 350
+    UIX: 1190
+    UIY: 430
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 2931655481317200040
+    SubobjectId: 5615257730905410673
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9616996435621557756
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4830519546625545965
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 500
+    Height: 500
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 12017046880637070245
+      }
+      Color {
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 14406011028243421323
+    SubobjectId: 11722408805497046098
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 6581359791143029730
+  Name: "UI Image"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4830519546625545965
+  ChildIds: 17108249899591574091
+  ChildIds: 3882941325985353757
+  ChildIds: 9801883656650714611
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 16532880832873788683
+      }
+      Color {
+        R: 0.59800005
+        G: 0.59800005
+        B: 0.59800005
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15240221944964349952
+    SubobjectId: 13169113668151516377
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 9801883656650714611
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6581359791143029730
+  ChildIds: 12735487185941758122
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -30
+    Height: 30
+    UIY: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Talent state"
+      Color {
+        A: 1
+      }
+      Size: 14
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 18160103025403059956
+    SubobjectId: 11044963167078335021
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 12735487185941758122
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9801883656650714611
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 190
+    UIY: -10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    Text {
+      Label: "This is my talent description"
+      Color {
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      AutoWrapText: true
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 1966233477370413892
+    SubobjectId: 9082428843045298077
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 3882941325985353757
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6581359791143029730
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -30
+    Height: 40
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Passive"
+      Color {
+        G: 0.11576134
+        B: 0.919999957
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9243410859392508508
+    SubobjectId: 16502599933997301381
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 17108249899591574091
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6581359791143029730
+  ChildIds: 13784036632545536198
+  ChildIds: 1027682857085051214
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -30
+    Height: 40
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    Text {
+      Label: "Spell Name"
+      Color {
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9243410859392508508
+    SubobjectId: 16502599933997301381
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 1027682857085051214
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17108249899591574091
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 40
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Required Level: 1"
+      Color {
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9775965619747730738
+    SubobjectId: 16350607519911094763
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 13784036632545536198
+  Name: "UI Text Box"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17108249899591574091
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 40
+    UIY: 10
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Cost: 1"
+      Color {
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:left"
+      }
+      ClipTextToSize: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 17188641960726206706
+    SubobjectId: 10072406996627915819
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 15948141050935968323
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15315120758282498123
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 9520335789420096849
+    SubobjectId: 16239194048803221896
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 1852459486053078611
+  Name: "TalentSelectorClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15315120758282498123
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:APIAbility"
+      AssetReference {
+        Id: 17706441704388140225
+      }
+    }
+    Overrides {
+      Name: "cs:APIPlayerPassives"
+      AssetReference {
+        Id: 2536345701790434189
+      }
+    }
+    Overrides {
+      Name: "cs:TalentTrees"
+      ObjectReference {
+        SelfId: 6004305408932559212
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerStateGroup"
+      ObjectReference {
+        SelfId: 6503201800919598133
+      }
+    }
+    Overrides {
+      Name: "cs:UIContainer"
+      ObjectReference {
+        SelfId: 15948141050935968323
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipPanel"
+      ObjectReference {
+        SelfId: 4830519546625545965
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipNameText"
+      ObjectReference {
+        SelfId: 17108249899591574091
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipPassiveText"
+      ObjectReference {
+        SelfId: 3882941325985353757
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipDescriptionText"
+      ObjectReference {
+        SelfId: 12735487185941758122
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipCostText"
+      ObjectReference {
+        SelfId: 13784036632545536198
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipRequiredLevelText"
+      ObjectReference {
+        SelfId: 1027682857085051214
+      }
+    }
+    Overrides {
+      Name: "cs:TooltipStateText"
+      ObjectReference {
+        SelfId: 9801883656650714611
+      }
+    }
+    Overrides {
+      Name: "cs:ToggleButton"
+      ObjectReference {
+        SelfId: 8605711382147935800
+      }
+    }
+    Overrides {
+      Name: "cs:TalentTreePanelTemplate"
+      AssetReference {
+        Id: 8048948782845642683
+      }
+    }
+    Overrides {
+      Name: "cs:TalentButtonTemplate"
+      AssetReference {
+        Id: 11865704065348770277
+      }
+    }
+    Overrides {
+      Name: "cs:TalentRequirementArrowTemplate"
+      AssetReference {
+        Id: 11459244901332248434
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14889589882725147598
+    }
+  }
+  InstanceHistory {
+    SelfId: 7403250759623720765
+    SubobjectId: 288110873348416484
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
+  Id: 15455047430509318690
+  Name: "TalentSelectorServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13653382731491750667
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:StorageKey"
+      NetReference {
+        Key: "e9522ce128d3418995564bd8172aab5e"
+        Type {
+          Value: "mc:enetreferencetype:sharedpersistence"
+        }
+      }
+    }
+    Overrides {
+      Name: "cs:TalentTrees"
+      ObjectReference {
+        SelfId: 6004305408932559212
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerStateGroup"
+      ObjectReference {
+        SelfId: 6503201800919598133
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerStateTemplate"
+      AssetReference {
+        Id: 1325877988347473078
+      }
+    }
+    Overrides {
+      Name: "cs:PlayerStateTreeTemplate"
+      AssetReference {
+        Id: 847677184966527912
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3450293560425107770
+    }
+  }
+  InstanceHistory {
+    SelfId: 11211669617006096730
+    SubobjectId: 18362838254978280835
+    InstanceId: 7736934404878119431
+    TemplateId: 15499716775352985803
+  }
+}
+Objects {
   Id: 11219060422771276961
   Name: "Action Bar"
   Transform {
