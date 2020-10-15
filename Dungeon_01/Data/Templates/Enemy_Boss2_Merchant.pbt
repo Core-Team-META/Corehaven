@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 10844456368183575790
+        ParentId: 4781671109827199097
         ChildIds: 11309518686197139877
         ChildIds: 16375430473012330958
         ChildIds: 13879121867550805143
@@ -198,26 +198,14 @@
           }
         }
         ParentId: 7409618946245289721
-        ChildIds: 7607211974738753560
-        ChildIds: 16571719640496300551
         ChildIds: 16852284585635545617
-        ChildIds: 12719319459564610574
         ChildIds: 1425788844668645841
         ChildIds: 1221968278279075962
         ChildIds: 12001296232194310700
-        ChildIds: 13723045470677304361
         ChildIds: 2414365051048019456
         ChildIds: 3201072418949278982
         ChildIds: 3478894190971669151
         ChildIds: 12457316888811441237
-        ChildIds: 2478262093291743848
-        ChildIds: 14816956469237165481
-        ChildIds: 7693956315425209093
-        ChildIds: 14448956342591409132
-        ChildIds: 13741796339459806293
-        ChildIds: 11692933475937365323
-        ChildIds: 1011158478559899395
-        ChildIds: 8537374697913213795
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -226,64 +214,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 7607211974738753560
-        Name: "root"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 16571719640496300551
-        Name: "head"
-        Transform {
-          Location {
-            X: -4.5644207
-            Y: 0.074242115
-            Z: 228.184814
-          }
-          Rotation {
-            Pitch: -9.93500137
-            Yaw: 0.000119991579
-            Roll: -1.45416124e-07
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -383,37 +313,6 @@
             Physics {
             }
           }
-        }
-      }
-      Objects {
-        Id: 12719319459564610574
-        Name: "left_clavicle"
-        Transform {
-          Location {
-            X: -3.74747634
-            Y: -5.66774845
-            Z: 206.799622
-          }
-          Rotation {
-            Yaw: -8.82602
-            Roll: 79.6859512
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -811,37 +710,6 @@
             Physics {
             }
           }
-        }
-      }
-      Objects {
-        Id: 13723045470677304361
-        Name: "right_clavicle"
-        Transform {
-          Location {
-            X: -3.74762106
-            Y: 5.66755581
-            Z: 206.799622
-          }
-          Rotation {
-            Yaw: 8.82602215
-            Roll: -79.6859665
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -5343,262 +5211,6 @@
             Physics {
             }
           }
-        }
-      }
-      Objects {
-        Id: 2478262093291743848
-        Name: "lower_spine"
-        Transform {
-          Location {
-            X: -0.61190629
-            Y: -0.000110030174
-            Z: 160.47467
-          }
-          Rotation {
-            Pitch: 7.51320767e-05
-            Yaw: 7.17169823e-05
-            Roll: -2.03564813e-13
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14816956469237165481
-        Name: "pelvis"
-        Transform {
-          Location {
-            X: -0.61190629
-            Y: -0.000110030174
-            Z: 144.321594
-          }
-          Rotation {
-            Pitch: 7.51320767e-05
-            Yaw: 7.17169751e-05
-            Roll: -7.43053079e-06
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 7693956315425209093
-        Name: "left_hip"
-        Transform {
-          Location {
-            X: -2.27495241
-            Y: -12.5893345
-            Z: 131.562012
-          }
-          Rotation {
-            Pitch: 3.17944598
-            Yaw: 0.349481344
-            Roll: 4.47926569
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 14448956342591409132
-        Name: "left_knee"
-        Transform {
-          Location {
-            X: -1.81391621
-            Y: -20.2572632
-            Z: 71.6375732
-          }
-          Rotation {
-            Pitch: -3.90987325
-            Yaw: -3.62918448
-            Roll: 4.28336334
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 13741796339459806293
-        Name: "left_ankle"
-        Transform {
-          Location {
-            X: -9.73898888
-            Y: -27.6654091
-            Z: 13.7471924
-          }
-          Rotation {
-            Pitch: -7.46754789
-            Yaw: 0.615757
-            Roll: 1.07542026
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 11692933475937365323
-        Name: "right_hip"
-        Transform {
-          Location {
-            X: -2.27534676
-            Y: 12.5892038
-            Z: 131.562012
-          }
-          Rotation {
-            Pitch: 3.17958951
-            Yaw: -0.349425435
-            Roll: -4.47895956
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 1011158478559899395
-        Name: "right_knee"
-        Transform {
-          Location {
-            X: -1.81384468
-            Y: 20.2570724
-            Z: 71.6375732
-          }
-          Rotation {
-            Pitch: -3.90996885
-            Yaw: 3.62911701
-            Roll: -4.28349066
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
-        }
-      }
-      Objects {
-        Id: 8537374697913213795
-        Name: "right_ankle"
-        Transform {
-          Location {
-            X: -9.73885727
-            Y: 27.6650887
-            Z: 13.7471924
-          }
-          Rotation {
-            Pitch: -7.46794415
-            Yaw: -0.616063714
-            Roll: -1.07538474
-          }
-          Scale {
-            X: 1.2
-            Y: 1.2
-            Z: 1.2
-          }
-        }
-        ParentId: 16375430473012330958
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {

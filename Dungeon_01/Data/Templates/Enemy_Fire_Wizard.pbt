@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 7752362828668574199
+        ParentId: 4781671109827199097
         ChildIds: 9552928976720207289
         ChildIds: 15258255637776816989
         ChildIds: 9698445035616721956
@@ -200,7 +200,6 @@
         ParentId: 12555114022526006492
         ChildIds: 2991977800690752903
         ChildIds: 4393995068763251594
-        ChildIds: 792392424116281431
         ChildIds: 8073428758921020420
         ChildIds: 7242349614009457789
         ChildIds: 3134989201704340745
@@ -377,32 +376,6 @@
           Vfx {
             AutoPlay: true
           }
-        }
-      }
-      Objects {
-        Id: 792392424116281431
-        Name: "root"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15258255637776816989
-        UnregisteredParameters {
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {

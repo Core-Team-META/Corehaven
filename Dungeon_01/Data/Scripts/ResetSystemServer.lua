@@ -1,4 +1,10 @@
-﻿local END_DUNGEON_RESET_DELAY = 30.0
+﻿--[[
+This system has a general issue where the reset causes it to remove all of the NPCs. Because of other complications this
+kills all of the current npcs, which triggers a bunch of things, like opening doors and finished objectives. Because of
+performance, that is done over a few seconds. Therefore each system may have to wait 5-10 seconds before reseting so
+the work doesn't get undone.
+]]
+local END_DUNGEON_RESET_DELAY = 30.0
 
 local bindingPressTimes = {}
 

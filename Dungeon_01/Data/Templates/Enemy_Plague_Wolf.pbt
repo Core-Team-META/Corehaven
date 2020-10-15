@@ -15,7 +15,7 @@
             Z: 1.6
           }
         }
-        ParentId: 11818131731923366081
+        ParentId: 4781671109827199097
         ChildIds: 3124532127187459655
         ChildIds: 12691739239962413603
         ChildIds: 2917564396888722306
@@ -190,11 +190,9 @@
           }
         }
         ParentId: 5313871001125585813
-        ChildIds: 2231206102776390536
         ChildIds: 15009056231743796449
         ChildIds: 14259334958327464595
         ChildIds: 17824437734351304843
-        ChildIds: 16260475984953483338
         ChildIds: 9762851602077010040
         ChildIds: 6411058933992854588
         ChildIds: 5396776209146739799
@@ -343,45 +341,6 @@
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Folder {
-          IsGroup: true
-        }
-      }
-      Objects {
-        Id: 2231206102776390536
-        Name: "root"
-        Transform {
-          Location {
-            X: 0.916719437
-            Y: 7.79668236
-            Z: 3.40253472
-          }
-          Rotation {
-            Pitch: -19.3174267
-            Yaw: -91.9893
-            Roll: -7.36979675
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12691739239962413603
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 6208308131230218331
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
         }
         Folder {
           IsGroup: true
@@ -3168,45 +3127,6 @@
           Vfx {
             AutoPlay: true
           }
-        }
-      }
-      Objects {
-        Id: 16260475984953483338
-        Name: "pelvis"
-        Transform {
-          Location {
-            X: -5.67737198
-            Y: 10.3791409
-            Z: 58.9438324
-          }
-          Rotation {
-            Pitch: -69.9469604
-            Yaw: 64.1656723
-            Roll: -157.567795
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12691739239962413603
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 384618377963534844
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
-        }
-        Folder {
-          IsGroup: true
         }
       }
       Objects {

@@ -2,13 +2,25 @@
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TIMER_TEXT = script:GetCustomProperty("TimerText"):WaitForObject()
 
-function Tick(deltaTime)
-	local t = time()
-	local resetTime = SERVER_SCRIPT:GetCustomProperty("ResetTime")
-	PANEL.visibility = Visibility.FORCE_OFF
+local resetTime = nil
 
-	if resetTime > t then
-		PANEL.visibility = Visibility.INHERIT
-		TIMER_TEXT.text = tostring(math.ceil(resetTime - t))
+function Tick(deltaTime)
+	if resetTime then
+		local t = time()
+
+		if resetTime > t then
+			TIMER_TEXT.text = tostring(math.ceil(resetTime - t))
+		else
+			Events.Broadcast("ResetDungeon")
+			resetTime = nil
+			PANEL.visibility = Visibility.FORCE_OFF
+		end
 	end
 end
+
+function OnNetworkedPropertyChanged(object, propertyName)
+	resetTime = SERVER_SCRIPT:GetCustomProperty("ResetTime")
+	PANEL.visibility = Visibility.INHERIT
+end
+
+SERVER_SCRIPT.networkedPropertyChangedEvent:Connect(OnNetworkedPropertyChanged)

@@ -14,7 +14,7 @@ local STATUS_EFFECTS = {
 	"Power of One"
 }
 
-local pillarIndex = nil
+local pillarIndex = nil		-- Used both to carry from OnTaskStart to OnTaskEnd as well as to remember for the next time
 
 function GetPriority(npc, taskHistory)
 	if taskHistory[1] == "boss4_run_to_center" then
@@ -26,7 +26,12 @@ end
 
 function OnTaskStart(npc, threatTable)
 	local pillars = PILLARS_GROUP:GetChildren()
-	pillarIndex = math.random(#pillars)
+	local lastPillarIndex = pillarIndex
+
+	while pillarIndex == lastPillarIndex do
+		pillarIndex = math.random(#pillars)
+	end
+	
 	local pillar = pillars[pillarIndex]
 	API_RE.BroadcastToAllPlayers("DP", API_ID.GetIdFromObject(npc), pillarIndex)
 	API_NPC.LookAtTargetWithoutPitch(npc, pillar:GetWorldPosition())
@@ -39,8 +44,6 @@ function OnTaskEnd(npc, interrupted)
 		local statusEffectId = API_SE.STATUS_EFFECT_DEFINITIONS[STATUS_EFFECTS[pillarIndex]].id
 		API_SE.ApplyStatusEffect(npc, npc, statusEffectId)
 	end
-	
-	pillarIndex = nil
 end
 
 API_NPC.RegisterTaskServer("boss4_draw_power", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

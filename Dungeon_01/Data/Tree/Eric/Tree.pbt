@@ -9894,6 +9894,578 @@ Objects {
   }
 }
 Objects {
+  Id: 6183944799922762756
+  Name: "Objectives"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 3744570264132190313
+  ChildIds: 9417119145819146354
+  ChildIds: 16049066111372402879
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ObjectiveDescription1"
+      String: "Make your way to town"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent1"
+      String: "EnteredTown"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription2"
+      String: "Head to the graveyard"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent2"
+      String: "EnteredGraveyard"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription3"
+      String: "Defeat Arokai"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent3"
+      String: "Boss1Died"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription4"
+      String: "Head to the market"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent4"
+      String: "EnteredMarket"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription5"
+      String: "Defeat Varicelli"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent5"
+      String: "Boss2Died"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription6"
+      String: "Ascend to the fort"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent6"
+      String: "EnteredFort"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription7"
+      String: "Defeat Almira"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent7"
+      String: "Boss3Died"
+    }
+    Overrides {
+      Name: "cs:ObjectiveDescription8"
+      String: "Defeat Zetalan"
+    }
+    Overrides {
+      Name: "cs:FinishedEvent8"
+      String: "Boss4Died"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16049066111372402879
+  Name: "Triggers"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6183944799922762756
+  ChildIds: 17255480373293148423
+  ChildIds: 13141827285114009178
+  ChildIds: 1701214721832536188
+  ChildIds: 4515491540967422505
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4515491540967422505
+  Name: "ObjectiveTrigger"
+  Transform {
+    Location {
+      X: 4873.37891
+      Y: -67.7419739
+      Z: 933.124146
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16049066111372402879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8385575677714981676
+      value {
+        Overrides {
+          Name: "cs:EventName"
+          String: "EnteredFort"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15833680949857925268
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 7.37907314
+            Y: 13.038847
+            Z: 4.48658371
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.00048828125
+            Y: -178.008957
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16790383636897094868
+      value {
+        Overrides {
+          Name: "Name"
+          String: "ObjectiveTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 16731.2227
+            Y: 7885.05176
+            Z: 3176.93115
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -51.8540039
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9605212164442329033
+    }
+  }
+}
+Objects {
+  Id: 1701214721832536188
+  Name: "ObjectiveTrigger"
+  Transform {
+    Location {
+      X: 2134.78467
+      Y: 7553.59473
+      Z: -359.177
+    }
+    Rotation {
+      Yaw: 89.5090485
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16049066111372402879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8385575677714981676
+      value {
+        Overrides {
+          Name: "cs:EventName"
+          String: "EnteredMarket"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15833680949857925268
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 7.37905693
+            Y: 20.1355152
+            Z: 4.48658371
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.000381469727
+            Y: -178.008957
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16790383636897094868
+      value {
+        Overrides {
+          Name: "Name"
+          String: "ObjectiveTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4873.37891
+            Y: -67.7419739
+            Z: 933.124146
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9605212164442329033
+    }
+  }
+}
+Objects {
+  Id: 13141827285114009178
+  Name: "ObjectiveTrigger"
+  Transform {
+    Location {
+      X: -2074.77539
+      Y: -1432.4469
+      Z: 197.328232
+    }
+    Rotation {
+      Yaw: 28.3395748
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16049066111372402879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 8385575677714981676
+      value {
+        Overrides {
+          Name: "cs:EventName"
+          String: "EnteredGraveyard"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15833680949857925268
+      value {
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 7.37905693
+            Y: 13.1916103
+            Z: 4.48658371
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.000381469727
+            Y: -178.008957
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16790383636897094868
+      value {
+        Overrides {
+          Name: "Name"
+          String: "ObjectiveTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 2134.78467
+            Y: 7553.59473
+            Z: -359.177
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 89.5090561
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9605212164442329033
+    }
+  }
+}
+Objects {
+  Id: 17255480373293148423
+  Name: "ObjectiveTrigger"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16049066111372402879
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 16790383636897094868
+      value {
+        Overrides {
+          Name: "Name"
+          String: "ObjectiveTrigger"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -2074.77539
+            Y: -1432.4469
+            Z: 197.328232
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 28.3395824
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 9605212164442329033
+    }
+  }
+}
+Objects {
+  Id: 9417119145819146354
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6183944799922762756
+  ChildIds: 15925476400905474821
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15925476400905474821
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9417119145819146354
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 300
+    UIX: -20
+    UIY: -100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3744570264132190313
+  Name: "ObjectivesClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6183944799922762756
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 6183944799922762756
+      }
+    }
+    Overrides {
+      Name: "cs:Panel"
+      ObjectReference {
+        SelfId: 15925476400905474821
+      }
+    }
+    Overrides {
+      Name: "cs:ObjectiveLineTemplate"
+      AssetReference {
+        Id: 6917522942167372582
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8696199610869518947
+    }
+  }
+}
+Objects {
   Id: 9585485467565999811
   Name: "NPC System"
   Transform {
