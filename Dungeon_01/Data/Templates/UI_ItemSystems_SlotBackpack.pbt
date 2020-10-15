@@ -20,7 +20,6 @@
         ChildIds: 13460644710938549566
         ChildIds: 5666818559770970619
         ChildIds: 14506340810009850959
-        ChildIds: 3527010223576184713
         UnregisteredParameters {
           Overrides {
             Name: "cs:Anchor"
@@ -64,18 +63,6 @@
             Name: "cs:CounterNumber"
             ObjectReference {
               SubObjectId: 7657509039922316326
-            }
-          }
-          Overrides {
-            Name: "cs:SalvageButton"
-            ObjectReference {
-              SubObjectId: 3527010223576184713
-            }
-          }
-          Overrides {
-            Name: "cs:SalvageIcon"
-            ObjectReference {
-              SubObjectId: 14224050134064354162
             }
           }
         }
@@ -501,199 +488,6 @@
           }
         }
       }
-      Objects {
-        Id: 3527010223576184713
-        Name: "SalvageButton"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17887133009286436725
-        ChildIds: 14224050134064354162
-        ChildIds: 7998741449622336590
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 30
-          Height: 30
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Button {
-            FontColor {
-              A: 1
-            }
-            FontSize: 20
-            ButtonColor {
-              A: 1
-            }
-            HoveredColor {
-              R: 0.081
-              G: 0.081
-              B: 0.081
-              A: 1
-            }
-            PressedColor {
-              R: 0.321
-              G: 0.321
-              B: 0.321
-              A: 1
-            }
-            DisabledColor {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-            Brush {
-              Id: 841534158063459245
-            }
-            IsButtonEnabled: true
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomright"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:bottomright"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 14224050134064354162
-        Name: "SalvageIcon"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3527010223576184713
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: -8
-          Height: -8
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          AddSizeToParentIfUsingParentSize: true
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 1552344655172495631
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.8
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:middlecenter"
-              }
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7998741449622336590
-        Name: "Border"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 3527010223576184713
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 12017046880637070245
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.8
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
     }
     Assets {
       Id: 16532880832873788683
@@ -720,15 +514,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameSolid4px_019"
-      }
-    }
-    Assets {
-      Id: 1552344655172495631
-      Name: "Icon Trash Can"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Trash"
       }
     }
     PrimaryAssetId {

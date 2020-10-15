@@ -44,9 +44,6 @@ PLAYER_NAME.text = LOCAL_PLAYER.name
 PLAYER_ICON:SetImage(LOCAL_PLAYER)
 
 -----------------------------------------------------------------------------------------------------------------
-local MOCK_SALVAGE_ITEM = inventory.database:CreateItemSalvage()
-
------------------------------------------------------------------------------------------------------------------
 local function PlaySound(sfx)
     World.SpawnAsset(sfx, { parent = script })
 end
@@ -138,11 +135,6 @@ local function SetupControl(control, processSlot)
             control.clientUserData.counterRoot = control:GetCustomProperty("CounterRoot"):WaitForObject()
             control.clientUserData.counterNumber = control:GetCustomProperty("CounterNumber"):WaitForObject()
         end
-        if control:GetCustomProperty("SalvageButton") then 
-            control.clientUserData.salvageButton = control:GetCustomProperty("SalvageButton"):WaitForObject()
-            control.clientUserData.salvageIcon = control:GetCustomProperty("SalvageIcon"):WaitForObject()
-            control.clientUserData.salvageIconDefaultImage = control.clientUserData.salvageIcon:GetImage()
-        end
         if processSlot then processSlot(control) end
     end
 end
@@ -178,7 +170,6 @@ function view:Init()
     self:InitStats()
     self:InitEquippedSlots()
     self:InitBackpackSlots()
-    self:InitSalvageButtons()
     self:Close()
 end
 
@@ -269,19 +260,6 @@ function view:InitBackpackSlots()
         slot.clientUserData.isBackpack = true
         slot.clientUserData.slotIndex = inventory:ConvertBackpackSlotIndex(i)
         table.insert(self.allSlots, slot)
-    end
-end
-
------------------------------------------------------------------------------------------------------------------
-function view:InitSalvageButtons()
-    for _,slot in ipairs(self.allSlots) do
-        if slot.clientUserData.salvageButton then
-            slot.clientUserData.salvageButton.visibility = Visibility.FORCE_OFF
-            slot.clientUserData.salvageButton.clickedEvent:Connect(function()
-                -- This needs to be equivalent to the "move-to-salvage" interaction so that the networking is done properly.
-                self:AttemptMoveItem(slot.clientUserData.slotIndex, nil)
-            end)
-        end
     end
 end
 
@@ -600,21 +578,6 @@ function view:DrawSlots()
                     slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
                 end
             end
-
-            -- Salvageable items need to update the salvage icon.
-            if slot.clientUserData.salvageButton then
-                if slot == self.slotUnderCursor then
-                    if item:GetSalvageQuantity() then
-                        MOCK_SALVAGE_ITEM:ApplyIconImageSettings(slot.clientUserData.salvageIcon)
-                    else
-                        slot.clientUserData.salvageIcon.rotationAngle = 0
-                        slot.clientUserData.salvageIcon:SetImage(slot.clientUserData.salvageIconDefaultImage)
-                    end
-                    slot.clientUserData.salvageButton.visibility = Visibility.INHERIT
-                else
-                    slot.clientUserData.salvageButton.visibility = Visibility.FORCE_OFF
-                end
-            end
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
@@ -624,11 +587,6 @@ function view:DrawSlots()
             -- Backpacks have counter indicators.
             if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
                 slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
-            end
-
-            -- Salvageable items need to update the salvage icon.
-            if slot.clientUserData.salvageButton then
-                slot.clientUserData.salvageButton.visibility = Visibility.FORCE_OFF
             end
         end
 
