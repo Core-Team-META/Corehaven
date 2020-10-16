@@ -1859,14 +1859,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -1472.53418
-      Y: -711.82019
-      Z: -67.1061935
+      X: -1440.953
+      Y: -765.259399
+      Z: -30.4727879
     }
     Rotation {
-      Pitch: 83.5791931
-      Yaw: -89.9993896
-      Roll: -159.652908
+      Pitch: 83.577446
+      Yaw: -89.9961548
+      Roll: -177.786621
     }
     Scale {
       X: 0.235623986
@@ -1934,14 +1934,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -1534.50305
-      Y: -723.166443
-      Z: 15.8784456
+      X: -1498.92493
+      Y: -797.694397
+      Z: 49.7935448
     }
     Rotation {
-      Pitch: 83.5787354
-      Yaw: -90.0004883
-      Roll: -159.654221
+      Pitch: 83.575676
+      Yaw: -89.9975586
+      Roll: -177.785782
     }
     Scale {
       X: 0.235623986
@@ -2009,14 +2009,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -1590.03296
-      Y: -724.792847
-      Z: -15.9959869
+      X: -1550.2301
+      Y: -815.346436
+      Z: 15.7551403
     }
     Rotation {
-      Pitch: 83.5787659
-      Yaw: -90.0028687
-      Roll: -159.657333
+      Pitch: 83.5759506
+      Yaw: -89.9976196
+      Roll: -177.789871
     }
     Scale {
       X: 0.235623986
@@ -2084,14 +2084,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -1707.98816
-      Y: -730.547058
-      Z: 23.6026115
+      X: -1661.80981
+      Y: -858.355103
+      Z: 50.608532
     }
     Rotation {
-      Pitch: 83.5792847
-      Yaw: -90.0012207
-      Roll: -159.655899
+      Pitch: 83.5763474
+      Yaw: -89.9981079
+      Roll: -177.789673
     }
     Scale {
       X: 0.235623986
@@ -2159,14 +2159,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -1646.8811
-      Y: -732.140686
-      Z: 44.7640305
+      X: -1603.87976
+      Y: -841.715515
+      Z: 74.0970688
     }
     Rotation {
-      Pitch: 83.5787659
-      Yaw: -90.0006104
-      Roll: -159.654343
+      Pitch: 83.5758667
+      Yaw: -89.9978943
+      Roll: -177.786392
     }
     Scale {
       X: 0.235623986
