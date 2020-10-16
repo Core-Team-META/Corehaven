@@ -3705,6 +3705,7 @@ Objects {
     }
   }
   ParentId: 9718378531628205791
+  ChildIds: 109682830599663095
   ChildIds: 10076306894763800213
   ChildIds: 103743669950856610
   ChildIds: 3287857291652451629
@@ -3753,10 +3754,17 @@ Objects {
     }
   }
   ParentId: 5072428032102384757
-  ChildIds: 109682830599663095
   ChildIds: 5233136720388310078
   ChildIds: 14629018378811567592
   ChildIds: 16841874321504077938
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BlinkElement"
+      ObjectReference {
+        SelfId: 16841874321504077938
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3996,68 +4004,6 @@ Objects {
   }
 }
 Objects {
-  Id: 109682830599663095
-  Name: "ItemSystems_LootButtonController"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 3287857291652451629
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:Root"
-      ObjectReference {
-        SelfId: 3287857291652451629
-      }
-    }
-    Overrides {
-      Name: "cs:BounceScale"
-      Float: 1.3
-    }
-    Overrides {
-      Name: "cs:BounceDuration"
-      Float: 0.3
-    }
-    Overrides {
-      Name: "cs:BlinkElement"
-      ObjectReference {
-        SelfId: 16841874321504077938
-      }
-    }
-    Overrides {
-      Name: "cs:BlinkColor"
-      Color {
-        R: 0.43
-        G: 0.943377435
-        B: 1
-        A: 0.3
-      }
-    }
-    Overrides {
-      Name: "cs:BlinkPeriod"
-      Float: 0.6
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15207688985718189381
-    }
-  }
-}
-Objects {
   Id: 103743669950856610
   Name: "InventoryViewer"
   Transform {
@@ -4271,6 +4217,15 @@ Objects {
   ParentId: 5072428032102384757
   ChildIds: 8605711382147935800
   ChildIds: 5144512486617859991
+  ChildIds: 17232092851554192454
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:BlinkElement"
+      ObjectReference {
+        SelfId: 17232092851554192454
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4305,6 +4260,64 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:middleleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 17232092851554192454
+  Name: "ColorOverlay"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10076306894763800213
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 3
+    Height: 3
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 6980104993132211032
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
@@ -4448,6 +4461,74 @@ Objects {
           Value: "mc:euianchor:middlecenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 109682830599663095
+  Name: "PlayerMainHUD_MetaButtonController"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5072428032102384757
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:TalentSelectorUtility"
+      AssetReference {
+        Id: 4644281046712195371
+      }
+    }
+    Overrides {
+      Name: "cs:ButtonLoot"
+      ObjectReference {
+        SelfId: 3287857291652451629
+      }
+    }
+    Overrides {
+      Name: "cs:ButtonTalents"
+      ObjectReference {
+        SelfId: 10076306894763800213
+      }
+    }
+    Overrides {
+      Name: "cs:BounceScale"
+      Float: 1.3
+    }
+    Overrides {
+      Name: "cs:BounceDuration"
+      Float: 0.3
+    }
+    Overrides {
+      Name: "cs:BlinkColor"
+      Color {
+        R: 0.43
+        G: 0.943377435
+        B: 1
+        A: 0.3
+      }
+    }
+    Overrides {
+      Name: "cs:BlinkPeriod"
+      Float: 0.6
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15262113590438435920
     }
   }
 }
