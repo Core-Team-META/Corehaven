@@ -38,6 +38,10 @@
             String: "Highrock Market Security"
           }
           Overrides {
+            Name: "cs:Level"
+            Int: 2
+          }
+          Overrides {
             Name: "cs:BaseMaxHitPoints"
             Float: 160
           }

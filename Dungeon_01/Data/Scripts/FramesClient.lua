@@ -199,6 +199,16 @@ function UpdateFrame(data, character)
 		data.frame:GetCustomProperty("HitPoints"):WaitForObject().text = string.format("%d", math.floor(hitPoints))
 		data.frame:GetCustomProperty("ProgressBar"):WaitForObject().progress = healthFraction
 
+		-- Level
+		if character:IsA("Player") then
+			local levelstring = tostring(character.clientUserData.statSheet:GetLevel())
+			data.frame:GetCustomProperty("LevelText"):WaitForObject().text = levelstring
+		else
+			local npcData = API_NPC.GetAllNPCData()[character]
+			local levelstring = tostring(npcData.level)
+			data.frame:GetCustomProperty("LevelText"):WaitForObject().text = levelstring
+		end
+
 		-- Status Effects
 		for i = 1, API_SE.MAX_STATUS_EFFECTS do
 			data.statusEffects[i].visibility = Visibility.FORCE_OFF

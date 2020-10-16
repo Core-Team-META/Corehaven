@@ -38,6 +38,10 @@
             String: "Reanimated Wizard"
           }
           Overrides {
+            Name: "cs:Level"
+            Int: 1
+          }
+          Overrides {
             Name: "cs:BaseMaxHitPoints"
             Float: 50
           }

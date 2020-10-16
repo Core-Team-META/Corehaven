@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 9531562083368661000
+        ParentId: 4781671109827199097
         ChildIds: 16942989088035155218
         ChildIds: 14384476818652914858
         ChildIds: 9428123518615673455
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Guard Captain Almira"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 4
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 18059288982893007538
+        ParentId: 4781671109827199097
         ChildIds: 9552928976720207289
         ChildIds: 15258255637776816989
         ChildIds: 9698445035616721956
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Highrock Wizard"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 4
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

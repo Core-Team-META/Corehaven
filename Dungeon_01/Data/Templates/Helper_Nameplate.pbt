@@ -20,8 +20,10 @@
         ChildIds: 18018371900924901114
         ChildIds: 6811297547396028375
         ChildIds: 12659138779276424675
+        ChildIds: 12007792176335792631
         ChildIds: 2946694147826181439
         ChildIds: 4157377331132105699
+        ChildIds: 5345864602822775418
         ChildIds: 513552746433014806
         ChildIds: 557857559820608310
         UnregisteredParameters {
@@ -50,6 +52,12 @@
             }
           }
           Overrides {
+            Name: "cs:LevelBackgroundPiece"
+            ObjectReference {
+              SubObjectId: 12007792176335792631
+            }
+          }
+          Overrides {
             Name: "cs:HealthText"
             ObjectReference {
               SubObjectId: 2946694147826181439
@@ -59,6 +67,12 @@
             Name: "cs:NameText"
             ObjectReference {
               SubObjectId: 4157377331132105699
+            }
+          }
+          Overrides {
+            Name: "cs:LevelText"
+            ObjectReference {
+              SubObjectId: 5345864602822775418
             }
           }
           Overrides {
@@ -335,6 +349,61 @@
         }
       }
       Objects {
+        Id: 12007792176335792631
+        Name: "LevelBackgroundPiece"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 822988238011075349
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 5351428073291024820
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12095835209017042614
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          DisableCastShadows: true
+          DisableReceiveDecals: true
+          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
         Id: 2946694147826181439
         Name: "HealthText"
         Transform {
@@ -343,9 +412,9 @@
           Rotation {
           }
           Scale {
-            X: 0.3
-            Y: 0.3
-            Z: 0.3
+            X: 0.55
+            Y: 0.55
+            Z: 0.55
           }
         }
         ParentId: 822988238011075349
@@ -386,6 +455,45 @@
             X: 1
             Y: 1
             Z: 1
+          }
+        }
+        ParentId: 822988238011075349
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Text {
+          Text: "HELLO WORLD"
+          Color {
+            R: 1
+            G: 1
+            B: 1
+            A: 1
+          }
+          HorizontalAlignment {
+            Value: "mc:ecoretexthorizontalalign:center"
+          }
+          VerticalAlignment {
+            Value: "mc:ecoretextverticalalign:center"
+          }
+        }
+      }
+      Objects {
+        Id: 5345864602822775418
+        Name: "LevelText"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.8
+            Y: 0.8
+            Z: 0.8
           }
         }
         ParentId: 822988238011075349

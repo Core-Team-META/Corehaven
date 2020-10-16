@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 5944392588651457797
+        ParentId: 4781671109827199097
         ChildIds: 5828818409476629943
         ChildIds: 14846993980058340674
         ChildIds: 7136197101489531545
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Highrock Guard"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 1
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

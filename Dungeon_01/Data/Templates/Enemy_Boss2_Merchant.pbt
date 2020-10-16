@@ -38,6 +38,10 @@
             String: "Varicelli, the Esteemed"
           }
           Overrides {
+            Name: "cs:Level"
+            Int: 3
+          }
+          Overrides {
             Name: "cs:BaseMaxHitPoints"
             Float: 2500
           }

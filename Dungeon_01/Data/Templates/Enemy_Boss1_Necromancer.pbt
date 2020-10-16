@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 13835231596194112360
+        ParentId: 4781671109827199097
         ChildIds: 8268870251817362467
         ChildIds: 5752474580542176374
         ChildIds: 11860041625734473373
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Arokai, the Fiendraiser"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 3
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

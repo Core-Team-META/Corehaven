@@ -83,7 +83,7 @@ end
 local BORDER_WIDTH = 0.02
 local NAMEPLATE_LAYER_THICKNESS = 0.01			-- To force draw order
 local HEALTHBAR_WIDTH = 1.5
-local HEALTHBAR_HEIGHT = 0.08
+local HEALTHBAR_HEIGHT = 0.14
 local STATUS_EFFECT_X_STEP = nil		-- Defined when we spawn a panel and see its size
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -102,8 +102,10 @@ function CreateNameplate(character, data)
 	nameplates[character].backgroundPiece = nameplateRoot:GetCustomProperty("BackgroundPiece"):WaitForObject()
 	nameplates[character].healthPiece = nameplateRoot:GetCustomProperty("HealthPiece"):WaitForObject()
 	nameplates[character].changePiece = nameplateRoot:GetCustomProperty("ChangePiece"):WaitForObject()
+	nameplates[character].levelBackgroundPiece = nameplateRoot:GetCustomProperty("LevelBackgroundPiece"):WaitForObject()
 	nameplates[character].healthText = nameplateRoot:GetCustomProperty("HealthText"):WaitForObject()
 	nameplates[character].nameText = nameplateRoot:GetCustomProperty("NameText"):WaitForObject()
+	nameplates[character].levelText = nameplateRoot:GetCustomProperty("LevelText"):WaitForObject()
 
 	-- Cast Bar
 	nameplates[character].castBarGroup = nameplateRoot:GetCustomProperty("CastBarGroup"):WaitForObject()
@@ -148,17 +150,16 @@ function CreateNameplate(character, data)
 	-- Setup static properties
 	if character:IsA("Player") then
 		nameplateRoot:AttachToPlayer(character, "nameplate")
-		nameplates[character].baseScale = character:GetWorldScale().z
 	elseif data then
 		if data.animatedMesh then
 			data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
+			nameplates[character].animatedMesh = data.animatedMesh
 		else
 			nameplateRoot.parent = character
 		end
 
 		-- Bigger enemies need a bigger gap before their nameplate
-		nameplateRoot:SetPosition(Vector3.UP * data.capsuleHeight * 1.2 / data.animatedMesh:GetWorldScale().z)
-		nameplates[character].baseScale = math.max(1.0, data.capsuleHeight / 300.0)
+		nameplateRoot:SetPosition(Vector3.UP * (data.capsuleHeight * 1.1 / data.animatedMesh:GetWorldScale().z + 20.0))
 	end
 
 	-- Static properties on pieces
@@ -168,8 +169,12 @@ function CreateNameplate(character, data)
 	nameplates[character].backgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_WIDTH, HEALTHBAR_HEIGHT))
 	nameplates[character].backgroundPiece:SetPosition(Vector3.New(-2.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))
 	nameplates[character].backgroundPiece:SetColor(BACKGROUND_COLOR)
+	nameplates[character].levelBackgroundPiece:SetScale(Vector3.New(NAMEPLATE_LAYER_THICKNESS, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH, HEALTHBAR_HEIGHT + 2.0 * BORDER_WIDTH))
+	nameplates[character].levelBackgroundPiece:SetPosition(Vector3.New(-3.0 * NAMEPLATE_LAYER_THICKNESS, 50.0 * (HEALTHBAR_WIDTH + HEALTHBAR_HEIGHT + 4.0 * BORDER_WIDTH), 0.0))
+	nameplates[character].levelBackgroundPiece:SetColor(BORDER_COLOR)
 	nameplates[character].healthText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 0.0, 0.0))		-- Text must be 50 units ahead as it doesn't have thickness
 	nameplates[character].healthText:SetColor(HEALTH_NUMBER_COLOR)
+	nameplates[character].levelText:SetPosition(Vector3.New(50.0 * NAMEPLATE_LAYER_THICKNESS, 50.0 * (HEALTHBAR_WIDTH + HEALTHBAR_HEIGHT + 4.0 * BORDER_WIDTH), 0.0))
 
 	if character:IsA("Player") then
 		nameplates[character].nameText.text = character.name
@@ -331,7 +336,7 @@ function Tick(deltaTime)
 		    end
 
 			-- Update scale for target
-			local scale = SCALE * nameplate.baseScale
+			local scale = SCALE
 
 			if API_T.GetTarget(LOCAL_PLAYER) == character then
 				scale = scale * TARGET_SCALE_MULTIPLIER
@@ -342,7 +347,13 @@ function Tick(deltaTime)
 			-- Update status effects
 			local nameplatePosition = nameplate.templateRoot:GetWorldPosition()
 			local nameplateUp = nameplate.templateRoot:GetWorldRotation() * Vector3.UP
-			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 115.0 * scale
+			local characterScale = character:GetWorldScale().z
+
+			if nameplate.animatedMesh then
+				characterScale = nameplate.animatedMesh:GetWorldScale().z
+			end
+
+			local statusEffectPosition = nameplatePosition + nameplateUp * (BORDER_WIDTH + HEALTHBAR_HEIGHT) * 115.0 * scale * characterScale
 			local screenPosition = UI.GetScreenPosition(statusEffectPosition)
 			local targetDistance = LOCAL_PLAYER:GetViewWorldRotation() * Vector3.FORWARD .. (nameplatePosition - LOCAL_PLAYER:GetViewWorldPosition())
 
@@ -352,7 +363,7 @@ function Tick(deltaTime)
 				nameplate.panel.visibility = Visibility.INHERIT
 				nameplate.panel.x = screenPosition.x
 				nameplate.panel.y = screenPosition.y
-				local uiScale = math.min(10.0, 250.0 / targetDistance) * scale
+				local uiScale = math.min(10.0, 250.0 / targetDistance) * scale * characterScale
 
 				for i = 1, API_SE.MAX_STATUS_EFFECTS do
 					local data = statusEffects[i]
@@ -364,11 +375,9 @@ function Tick(deltaTime)
 
 						-- Apply scale
 						iconTemplate.x = uiScale * STATUS_EFFECT_X_STEP * (i - (API_SE.MAX_STATUS_EFFECTS + 1) / 2) * 1.5
-						iconTemplate.y = uiScale * -40.0
-						iconTemplate.width = math.floor(uiScale * 100.0)
-						iconTemplate.height = math.floor(uiScale * 100.0)
---						icon.width = math.floor(uiScale * -10.0)		-- TEMP
---						icon.height = math.floor(uiScale * -10.0)
+						iconTemplate.y = uiScale * -20.0
+						iconTemplate.width = math.floor(uiScale * 80.0)
+						iconTemplate.height = math.floor(uiScale * 80.0)
 						timeText.height = math.floor(uiScale * 100.0)
 						timeText.fontSize = uiScale * 50.0
 
@@ -457,6 +466,13 @@ function Tick(deltaTime)
 				-- Update hit point number
 				if SHOW_NUMBERS then
 					nameplate.healthText.text = string.format("%.0f / %.0f", hitPoints, maxHitPoints)
+				end
+
+				-- Update Level
+				if character:IsA("Player") then
+					nameplate.levelText.text = tostring(character.clientUserData.statSheet:GetLevel())
+				else
+					nameplate.levelText.text = tostring(API_NPC.GetAllNPCData()[character].level)
 				end
 
 				nameplate.borderPiece:SetColor(BORDER_COLOR)

@@ -32,7 +32,7 @@
       }
       Overrides {
         Name: "cs:Description"
-        String: "Throw a hammer at your target, stunning them."
+        String: "Throw a hammer at your target, damaging and stunning them."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

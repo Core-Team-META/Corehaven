@@ -38,6 +38,10 @@
             String: "Reanimated Elite"
           }
           Overrides {
+            Name: "cs:Level"
+            Int: 3
+          }
+          Overrides {
             Name: "cs:BaseMaxHitPoints"
             Float: 250
           }
@@ -47,7 +51,7 @@
           }
           Overrides {
             Name: "cs:EngageRange"
-            Float: 1400
+            Float: 800
           }
           Overrides {
             Name: "cs:ImmuneToStun"

@@ -55,6 +55,7 @@ function API.RegisterNPCFolder(npcFolder)
 
 		local data = {}
 		data.name = npc:GetCustomProperty("Name")
+		data.level = npc:GetCustomProperty("Level")
 		data.baseMaxHitPoints = npc:GetCustomProperty("BaseMaxHitPoints")
 		data.speed = npc:GetCustomProperty("MoveSpeed")
 		data.engageRange = npc:GetCustomProperty("EngageRange")

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 17712650157994338287
+        ParentId: 4781671109827199097
         ChildIds: 17052920739777898312
         ChildIds: 17314454833251454489
         ChildIds: 7669210589873785186
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Zetalan, Arisen"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 4
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

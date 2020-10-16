@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 17237219385868355196
+        ParentId: 4781671109827199097
         ChildIds: 16773701333920112244
         ChildIds: 3773207492193256547
         ChildIds: 16093174325542899916
@@ -36,6 +36,10 @@
           Overrides {
             Name: "cs:Name"
             String: "Highrock Necromancer"
+          }
+          Overrides {
+            Name: "cs:Level"
+            Int: 2
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

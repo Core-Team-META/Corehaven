@@ -38,6 +38,10 @@
             String: "Reanimated Elite"
           }
           Overrides {
+            Name: "cs:Level"
+            Int: 3
+          }
+          Overrides {
             Name: "cs:BaseMaxHitPoints"
             Float: 150
           }
