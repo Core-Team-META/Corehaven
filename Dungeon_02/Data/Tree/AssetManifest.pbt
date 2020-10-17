@@ -287,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15614259856505195515
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 15600672674220494197
   Name: "Ivy 03"
   PlatformAssetType: 1
