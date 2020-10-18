@@ -43,7 +43,14 @@ function ShowText(targetCharacter, amount, over, color, tags)
 
 		local isCrit = API_D.HasTag(tags, API_D.TAG_CRIT)
 		local isSmall = API_D.HasTag(tags, API_D.TAG_MINOR) or API_D.HasTag(tags, API_D.TAG_PERIODIC)
-
+		local animationRight
+		
+		if math.random() > 0.5 then
+			animationRight = 1
+		else 
+		    animationRight = -1
+		end
+		
 		if isSmall then
 			element.fontSize = 22
 		end
@@ -66,7 +73,7 @@ function ShowText(targetCharacter, amount, over, color, tags)
 			while lastStickySpawnTimes[targetCharacter][columnIndex] and lastStickySpawnTimes[targetCharacter][columnIndex] + STICKY_OVERLAP_DELAY > startTime do
 				columnIndex = columnIndex + 1
 			end
-			
+		
 			lastStickySpawnTimes[targetCharacter][columnIndex] = startTime
 		else
 			while lastSlidingSpawnTimes[targetCharacter][columnIndex] and lastSlidingSpawnTimes[targetCharacter][columnIndex] + SLIDING_OVERLAP_DELAY > startTime do
@@ -102,11 +109,18 @@ function ShowText(targetCharacter, amount, over, color, tags)
 			local position = UI.GetScreenPosition(worldPosition)
 
 			if position then
-				position = position - Vector2.New(0.0, 60.0)
+			
+				if targetCharacter == LOCAL_PLAYER then
+					position = position + Vector2.New(0.0, 90.0)
+				else
+					position = position - Vector2.New(0.0, 60.0)
+					end
+				
 				element.x = position.x + GetColumnOffset(columnIndex)
 
 				-- Some hardcoded animations
 				if isCrit then
+					color = Color.ORANGE
 					if t < 0.15 then
 						element.y = position.y - math.sin(t / 0.15 * math.pi / 2) * 50.0
 						element.fontSize = 18.0 + t * 240.0
@@ -116,8 +130,8 @@ function ShowText(targetCharacter, amount, over, color, tags)
 						else
 							element.fontSize = 36.0
 						end
-
 						element.y = position.y - 50.0
+						
 					end
 
 					if isSmall then
@@ -126,11 +140,17 @@ function ShowText(targetCharacter, amount, over, color, tags)
 
 					element.height = element.fontSize * 2.0
 				else
-					element.y = position.y - t * 100.0
+					if targetCharacter == LOCAL_PLAYER then
+						element.y = position.y + t * (-150.0+t*200)
+						element.x = position.x + t * 50 * animationRight
+					else
+						element.y = position.y - t * 100.0
+					end
 				end
 
 				element.visibility = Visibility.INHERIT
 
+				
 				local alpha = CoreMath.Clamp(1.0 - (t - FULL_ALPHA_TIME) / FADE_TIME)
 				local fadeColor = color
 				fadeColor.a = alpha
