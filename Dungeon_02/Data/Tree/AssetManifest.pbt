@@ -404,6 +404,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14376159281276324488
+  Name: "Forest Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "forest-floor_002"
+  }
+}
+Assets {
   Id: 13981696299924831856
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -914,6 +923,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
+  }
+}
+Assets {
+  Id: 8086153610909795251
+  Name: "Lense - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
   }
 }
 Assets {
