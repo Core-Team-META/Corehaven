@@ -98,21 +98,21 @@ Assets {
   }
 }
 Assets {
-  Id: 13887755575610655442
-  Name: "Fantasy Ability Yellow 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Ability_Yellow_003"
-  }
-}
-Assets {
   Id: 14574994426789494010
   Name: "Fantasy Tool 005"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Tool_005"
+  }
+}
+Assets {
+  Id: 13887755575610655442
+  Name: "Fantasy Ability Yellow 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_003"
   }
 }
 Assets {

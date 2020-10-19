@@ -613,7 +613,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 660
@@ -7726,11 +7726,12 @@ Objects {
   ChildIds: 3932647975050423577
   ChildIds: 1265847317374947032
   ChildIds: 7326806217562285300
+  ChildIds: 5740032403413884154
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 440
@@ -7753,6 +7754,64 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5740032403413884154
+  Name: "CraftingTitle"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16136876061829772934
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 93
+    UIY: 161.767014
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "WIP"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.5
+      }
+      Size: 40
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
         }
       }
     }
@@ -13992,6 +14051,22 @@ Objects {
     Overrides {
       Name: "cs:CraftingViewHotkey"
       String: "ability_extra_45"
+    }
+    Overrides {
+      Name: "cs:TalentsView"
+      ObjectReference {
+        SelfId: 9165315858490005349
+      }
+    }
+    Overrides {
+      Name: "cs:TalentsViewButton"
+      ObjectReference {
+        SelfId: 8605711382147935800
+      }
+    }
+    Overrides {
+      Name: "cs:TalentsViewHotkey"
+      String: "ability_extra_44"
     }
     Overrides {
       Name: "cs:SFX_InventoryOpen"
