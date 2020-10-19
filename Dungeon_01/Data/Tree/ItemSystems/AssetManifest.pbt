@@ -44,6 +44,24 @@ Assets {
   }
 }
 Assets {
+  Id: 13778967266379385506
+  Name: "BG Flat 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 12742840507315945572
+  Name: "Icon Tools"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tools"
+  }
+}
+Assets {
   Id: 12017046880637070245
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
