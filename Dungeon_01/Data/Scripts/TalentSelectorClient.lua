@@ -154,7 +154,6 @@ function BuildTalentTreeUI()
 			rootViewPanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
 
 			-- Update extent.
-			print(treePanel.x, treePanel.y, treePanel.width, rootViewPanel.height)
 			extent.x0 = math.min(extent.x0, treePanel.x - treePanel.width / 2)
 			extent.x1 = math.max(extent.x1, treePanel.x + treePanel.width / 2)
 			extent.y0 = math.min(extent.y0, treePanel.y - treePanel.height / 2)

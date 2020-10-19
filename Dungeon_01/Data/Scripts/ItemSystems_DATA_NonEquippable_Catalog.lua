@@ -3,7 +3,7 @@
     Name = 'Shards',
     Type = 'Material',
     Rarity = 'Common',
-    StackSize = '4000',
+    StackSize = '1500',
     MUID = 'E52AE938DA21C986:ITEM_NonEquippable_Shards',
     Lore = 'Obtained by salvaging equipment. Used to enhance weapons and armor.',
     ['Author Notes (will be ignored by script)'] = '',

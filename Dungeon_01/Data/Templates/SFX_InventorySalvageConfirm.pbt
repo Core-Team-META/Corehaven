@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 17006817213445060
-  Name: "SFX_InventorySalvage"
+  Name: "SFX_InventorySalvageConfirm"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

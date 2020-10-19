@@ -614,7 +614,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 660
@@ -658,6 +658,7 @@ Objects {
   }
   ParentId: 6427885708988809054
   ChildIds: 11598959675833484198
+  ChildIds: 309706777911246559
   ChildIds: 7016069605015888967
   ChildIds: 13751448285271073599
   ChildIds: 9014179306601260361
@@ -671,6 +672,48 @@ Objects {
       Name: "cs:Dock"
       String: "BottomCenter"
     }
+    Overrides {
+      Name: "cs:BackgroundHighlight"
+      ObjectReference {
+        SelfId: 309706777911246559
+      }
+    }
+    Overrides {
+      Name: "cs:Instructions"
+      ObjectReference {
+        SelfId: 9014179306601260361
+      }
+    }
+    Overrides {
+      Name: "cs:ConfirmationDialog"
+      ObjectReference {
+        SelfId: 16527566606892658871
+      }
+    }
+    Overrides {
+      Name: "cs:ConfirmationMessageBack"
+      ObjectReference {
+        SelfId: 12712428597455493447
+      }
+    }
+    Overrides {
+      Name: "cs:ConfirmationMessageFront"
+      ObjectReference {
+        SelfId: 11117809653386391019
+      }
+    }
+    Overrides {
+      Name: "cs:ConfirmationButtonOK"
+      ObjectReference {
+        SelfId: 7284810936952421353
+      }
+    }
+    Overrides {
+      Name: "cs:ConfirmationButtonCancel"
+      ObjectReference {
+        SelfId: 1428291507908514315
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -679,7 +722,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: -12
+    Width: 648
     Height: 50
     UIY: -8
     RenderTransformPivot {
@@ -688,7 +731,6 @@ Objects {
       }
     }
     AddSizeToParentIfUsingParentSize: true
-    UseParentWidth: true
     Panel {
     }
     AnchorLayout {
@@ -728,7 +770,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Width: 100
@@ -771,6 +813,7 @@ Objects {
     }
   }
   ParentId: 16527566606892658871
+  ChildIds: 15160421633907258163
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -799,17 +842,17 @@ Objects {
       ButtonColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.2
       }
       HoveredColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.4
       }
       PressedColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       DisabledColor {
         R: 1
@@ -837,6 +880,65 @@ Objects {
   }
 }
 Objects {
+  Id: 15160421633907258163
+  Name: "Text"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1428291507908514315
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIY: 1
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "CANCEL"
+      Color {
+        R: 0.99
+        G: 0.688410759
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 7284810936952421353
   Name: "SalvageConfirmationOK"
   Transform {
@@ -851,6 +953,7 @@ Objects {
     }
   }
   ParentId: 16527566606892658871
+  ChildIds: 17037806349336045164
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -879,17 +982,17 @@ Objects {
       ButtonColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.2
       }
       HoveredColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.4
       }
       PressedColor {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       DisabledColor {
         R: 1
@@ -917,8 +1020,67 @@ Objects {
   }
 }
 Objects {
+  Id: 17037806349336045164
+  Name: "Text"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7284810936952421353
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    UIY: 1
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Text {
+      Label: "OK"
+      Color {
+        R: 0.99
+        G: 0.688410759
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 11117809653386391019
-  Name: "SalvageConfirmationMessage2"
+  Name: "SalvageConfirmationMessageFront"
   Transform {
     Location {
     }
@@ -978,7 +1140,7 @@ Objects {
 }
 Objects {
   Id: 12712428597455493447
-  Name: "SalvageConfirmationMessage1"
+  Name: "SalvageConfirmationMessageBack"
   Transform {
     Location {
     }
@@ -1014,7 +1176,7 @@ Objects {
       Color {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       Size: 16
       Justification {
@@ -1073,7 +1235,7 @@ Objects {
       Color {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       Size: 18
       Justification {
@@ -1132,7 +1294,7 @@ Objects {
       Color {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       TeamSettings {
       }
@@ -1188,7 +1350,7 @@ Objects {
       Color {
         R: 0.99
         G: 0.688410759
-        A: 0.5
+        A: 0.6
       }
       TeamSettings {
       }
@@ -1208,8 +1370,65 @@ Objects {
   }
 }
 Objects {
+  Id: 309706777911246559
+  Name: "SalvageBackgroundHighlight"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11713995366832997439
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 200
+    Height: 200
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Image {
+      Brush {
+        Id: 13778967266379385506
+      }
+      Color {
+        R: 0.99
+        G: 0.688410759
+        A: 0.1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 11598959675833484198
-  Name: "SalvageBackground"
+  Name: "SalvageBackgroundPlain"
   Transform {
     Location {
     }
@@ -1243,10 +1462,9 @@ Objects {
         Id: 13778967266379385506
       }
       Color {
-        R: 0.0100000007
-        G: 0.0100000007
-        B: 0.0100000007
-        A: 0.995000064
+        R: 0.99
+        G: 0.688410759
+        A: 0.05
       }
       TeamSettings {
       }
@@ -8243,6 +8461,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:SalvageTrayPanel"
+      ObjectReference {
+        SelfId: 11713995366832997439
+      }
+    }
+    Overrides {
       Name: "cs:ItemHoverTooltip"
       ObjectReference {
         SelfId: 10127897260439271571
@@ -8312,9 +8536,15 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:SFX_Salvage"
+      Name: "cs:SFX_SalvageConfirm"
       AssetReference {
         Id: 17006817213445060
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_SalvageBegin"
+      AssetReference {
+        Id: 9285568076995410658
       }
     }
   }
