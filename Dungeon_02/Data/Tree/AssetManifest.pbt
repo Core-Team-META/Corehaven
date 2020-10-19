@@ -287,15 +287,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15614259856505195515
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
-  }
-}
-Assets {
   Id: 15600672674220494197
   Name: "Ivy 03"
   PlatformAssetType: 1
@@ -1256,6 +1247,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 2386449820373438262
+  Name: "Kelp Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tile_01"
   }
 }
 Assets {

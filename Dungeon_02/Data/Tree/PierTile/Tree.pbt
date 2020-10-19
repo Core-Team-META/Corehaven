@@ -67,14 +67,14 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: 0.529581666
-      Y: -0.00952813122
-      Z: 10.5821075
+      X: 9.92943478
+      Y: -1371.26672
+      Z: 98.2163239
     }
     Rotation {
-      Pitch: -6.60150051
+      Pitch: -6.60150146
       Yaw: 126.153969
-      Roll: -6.69260263
+      Roll: -6.69259644
     }
     Scale {
       X: 0.390394747
@@ -139,12 +139,12 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: -0.529581666
-      Y: 0.00950039178
-      Z: 2.60986944e-05
+      X: 8.86913395
+      Y: -1371.24841
+      Z: 87.6343307
     }
     Rotation {
-      Pitch: -2.83605838
+      Pitch: -2.83605957
       Yaw: 129.177475
       Roll: 5.29525423
     }
@@ -211,13 +211,13 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 4.4396534
-      Y: -6.04068565
-      Z: -2149.82397
+      X: 13.8395386
+      Y: -1377.29919
+      Z: -2062.18896
     }
     Rotation {
       Pitch: 90
-      Roll: -106.087234
+      Roll: -106.08728
     }
     Scale {
       X: 2.35390234
@@ -322,14 +322,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 4.43913746
-      Y: 1.09261835
-      Z: -344.7854
+      X: 13.8391714
+      Y: -1371.36755
+      Z: -410.985474
     }
     Rotation {
       Pitch: 90
-      Yaw: -90
-      Roll: -28.2975464
+      Yaw: 180
+      Roll: -118.297363
     }
     Scale {
       X: 0.800011933
@@ -397,14 +397,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 240.290314
-      Y: 71.1748581
-      Z: -341.140228
+      X: 249.689606
+      Y: -1301.28577
+      Z: -407.340027
     }
     Rotation {
-      Pitch: 83.581604
-      Yaw: -89.999939
-      Roll: 163.914337
+      Pitch: 83.5818176
+      Yaw: -90.0001831
+      Roll: 163.914322
     }
     Scale {
       X: 0.800011933
@@ -472,14 +472,13 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: -2.05416322
-      Y: -480.654
-      Z: -1046.45947
+      X: 7.34674406
+      Y: -1853.11853
+      Z: -1112.65747
     }
     Rotation {
       Pitch: 90
-      Yaw: 159.443954
-      Roll: -138.85112
+      Roll: 61.705265
     }
     Scale {
       X: 0.858222604
@@ -547,14 +546,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 233.796432
-      Y: -339.865204
-      Z: -992.86676
+      X: 243.198242
+      Y: -1712.32886
+      Z: -1059.06641
     }
     Rotation {
-      Pitch: 83.5825195
-      Yaw: -90.0007935
-      Roll: 163.914566
+      Pitch: 83.5827
+      Yaw: -90.0009766
+      Roll: 163.914612
     }
     Scale {
       X: 0.800011933
@@ -651,11 +650,12 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      Y: 2.56119984e-05
-      Z: 10.72258
+      X: 9.40012836
+      Y: -1372.46191
+      Z: -55.4776917
     }
     Rotation {
-      Roll: -25.4427
+      Roll: -25.442688
     }
     Scale {
       X: 0.390394747
@@ -720,6 +720,9 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
+      X: 9.3999815
+      Y: -1372.46069
+      Z: -66.2002411
     }
     Rotation {
       Roll: 11.2606745
@@ -787,13 +790,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 4.44061184
-      Y: 1.0884937
-      Z: -1472.56238
+      X: 13.8405657
+      Y: -1371.37195
+      Z: -1538.7616
     }
     Rotation {
       Pitch: 90
-      Roll: 61.7036171
+      Yaw: 90
+      Roll: 151.704102
     }
     Scale {
       X: 1.72988594
@@ -890,12 +894,12 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -52.6851616
-      Y: -266.865265
-      Z: 96.7283249
+      X: -43.2842674
+      Y: -1640.92212
+      Z: 96.7284622
     }
     Rotation {
-      Pitch: -21.0812
+      Pitch: -21.0812073
       Yaw: 5.66135025
       Roll: -91.7632751
     }
@@ -987,9 +991,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 11.862504
-      Y: -176.51564
-      Z: 12.1552191
+      X: 21.2618656
+      Y: -1550.57214
+      Z: 12.1553411
     }
     Rotation {
     }
@@ -1050,12 +1054,12 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 3.25269318
-      Y: -215.531845
-      Z: 9.01643658
+      X: 12.6516991
+      Y: -1589.58752
+      Z: 9.01655865
     }
     Rotation {
-      Yaw: -3.16803026
+      Yaw: -3.16802979
     }
     Scale {
       X: 0.271413356
