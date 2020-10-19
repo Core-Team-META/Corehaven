@@ -98,6 +98,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8665791828559964251
+  Name: "UI Gradient Rectangular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_002"
+  }
+}
+Assets {
   Id: 8125907229295996063
   Name: "Ring"
   PlatformAssetType: 9

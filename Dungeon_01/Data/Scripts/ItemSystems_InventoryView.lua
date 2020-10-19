@@ -272,6 +272,7 @@ function view:InitSalvageTray()
     TraverseAndSetupSlots(PANEL_SALVAGE_TRAY)
     PANEL_SALVAGE_TRAY.clientUserData.backgroundHighlight = PANEL_SALVAGE_TRAY:GetCustomProperty("BackgroundHighlight"):WaitForObject()
     PANEL_SALVAGE_TRAY.clientUserData.instructions = PANEL_SALVAGE_TRAY:GetCustomProperty("Instructions"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.animationGradient = PANEL_SALVAGE_TRAY:GetCustomProperty("AnimationGradient"):WaitForObject()
     PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationDialog"):WaitForObject()
     PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationMessageBack"):WaitForObject()
     PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationMessageFront"):WaitForObject()
@@ -345,6 +346,7 @@ function view:ConfirmSalvageAttempt()
     if self.attemptedSalvageSlot then
         local salvageItem = inventory:GetItem(self.attemptedSalvageSlot)
         self:AttemptMoveItem(self.attemptedSalvageSlot, nil)
+        self.salvageAnimationStartTime = time()
     end
     self.attemptedSalvageSlot = nil
 end
@@ -690,6 +692,21 @@ function view:DrawSalvageTray()
     else
         PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.INHERIT
         PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.FORCE_OFF
+    end
+    -- Play minor animation when salvage occurs. Parameters are all hard-coded here since this is not anticipated to change often.
+    if self.salvageAnimationStartTime then
+        PANEL_SALVAGE_TRAY.clientUserData.animationGradient.visibility = Visibility.INHERIT
+        local elapsed = time() - self.salvageAnimationStartTime
+        local DURATION = 0.4
+        local TOTAL_DISTANCE = PANEL_SALVAGE_TRAY.width + PANEL_SALVAGE_TRAY.clientUserData.animationGradient.width
+        if elapsed < DURATION then
+            local fraction = elapsed / DURATION
+            PANEL_SALVAGE_TRAY.clientUserData.animationGradient.x = (fraction - 0.5) * TOTAL_DISTANCE
+        else
+            self.salvageAnimationStartTime = nil
+        end
+    else
+        PANEL_SALVAGE_TRAY.clientUserData.animationGradient.visibility = Visibility.FORCE_OFF
     end
 end
 

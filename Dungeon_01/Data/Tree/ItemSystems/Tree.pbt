@@ -663,6 +663,7 @@ Objects {
   ChildIds: 13751448285271073599
   ChildIds: 9014179306601260361
   ChildIds: 16527566606892658871
+  ChildIds: 11128499232409828192
   UnregisteredParameters {
     Overrides {
       Name: "cs:Anchor"
@@ -714,6 +715,12 @@ Objects {
         SelfId: 1428291507908514315
       }
     }
+    Overrides {
+      Name: "cs:AnimationGradient"
+      ObjectReference {
+        SelfId: 11128499232409828192
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -732,6 +739,7 @@ Objects {
     }
     AddSizeToParentIfUsingParentSize: true
     Panel {
+      IsClipping: true
     }
     AnchorLayout {
       SelfAnchor {
@@ -742,6 +750,62 @@ Objects {
       TargetAnchor {
         Anchor {
           Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11128499232409828192
+  Name: "AnimationGradient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11713995366832997439
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 300
+    Height: 1000
+    RotationAngle: 300
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 8665791828559964251
+      }
+      Color {
+        R: 0.99
+        G: 0.688410759
+        A: 0.2
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
         }
       }
     }
