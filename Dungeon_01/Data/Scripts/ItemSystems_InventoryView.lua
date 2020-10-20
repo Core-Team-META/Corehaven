@@ -12,6 +12,7 @@ local PANEL_STATS = script:GetCustomProperty("StatsPanel"):WaitForObject()
 local PANEL_EQUIPPED = script:GetCustomProperty("EquippedSlotsPanel"):WaitForObject()
 local PANEL_BACKPACK = script:GetCustomProperty("BackpackSlotsPanel"):WaitForObject()
 local PANEL_ITEM_TOOLTIP = script:GetCustomProperty("ItemHoverTooltip"):WaitForObject()
+local PANEL_SALVAGE_TRAY = script:GetCustomProperty("SalvageTrayPanel"):WaitForObject()
 local HOLDING_ICON = script:GetCustomProperty("HeldIcon"):WaitForObject()
 local PASSIVE_ICONS_GROUP = script:GetCustomProperty("PassiveIconsGroup"):WaitForObject()
 local EQUIP_SLOT_COOLDOWN = script:GetCustomProperty("EquipSlotCooldown")
@@ -24,7 +25,8 @@ local SFX_EQUIP = script:GetCustomProperty("SFX_Equip")
 local SFX_MOVE = script:GetCustomProperty("SFX_Move")
 local SFX_MOVE_FAIL = script:GetCustomProperty("SFX_MoveFail")
 local SFX_DISCARD = script:GetCustomProperty("SFX_Discard")
-local SFX_SALVAGE = script:GetCustomProperty("SFX_Salvage")
+local SFX_SALVAGE_CONFIRM = script:GetCustomProperty("SFX_SalvageConfirm")
+local SFX_SALVAGE_BEGIN = script:GetCustomProperty("SFX_SalvageBegin")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 -- Hardcoded UI placement settings.
@@ -64,6 +66,7 @@ local function ShouldConsiderControl(control)
     return control == INVENTORY_VIEW or
            control == PANEL_EQUIPPED or
            control == PANEL_BACKPACK or
+           control == PANEL_SALVAGE_TRAY or
            IsSlotControl(control)
 end
 
@@ -170,6 +173,7 @@ function view:Init()
     self:InitStats()
     self:InitEquippedSlots()
     self:InitBackpackSlots()
+    self:InitSalvageTray()
     self:Close()
 end
 
@@ -264,6 +268,24 @@ function view:InitBackpackSlots()
 end
 
 -----------------------------------------------------------------------------------------------------------------
+function view:InitSalvageTray()
+    TraverseAndSetupSlots(PANEL_SALVAGE_TRAY)
+    PANEL_SALVAGE_TRAY.clientUserData.backgroundHighlight = PANEL_SALVAGE_TRAY:GetCustomProperty("BackgroundHighlight"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.instructions = PANEL_SALVAGE_TRAY:GetCustomProperty("Instructions"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.animationGradient = PANEL_SALVAGE_TRAY:GetCustomProperty("AnimationGradient"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationDialog"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationMessageBack"):WaitForObject()
+    PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationMessageFront"):WaitForObject()
+    local confirmationButtonOK = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationButtonOK"):WaitForObject()
+    local confirmationButtonCancel = PANEL_SALVAGE_TRAY:GetCustomProperty("ConfirmationButtonCancel"):WaitForObject()
+    confirmationButtonOK.clickedEvent:Connect(function() self:ConfirmSalvageAttempt() end)
+    confirmationButtonCancel.clickedEvent:Connect(function()
+        PlaySound(SFX_MOVE) 
+        self:CancelSalvageAttempt()
+    end)
+end
+
+-----------------------------------------------------------------------------------------------------------------
 function view:IsSlotOnCooldown(slotIndex)
     return self.equipSlotCooldowns[slotIndex] and time() < self.equipSlotCooldowns[slotIndex]
 end
@@ -298,13 +320,40 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
                 PlaySound(SFX_MOVE)
             end
         elseif salvageQuantity > 0 then
-            PlaySound(SFX_SALVAGE)
+            PlaySound(SFX_SALVAGE_CONFIRM)
         else
             PlaySound(SFX_DISCARD)
         end
     else
         PlaySound(SFX_MOVE_FAIL)
     end
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:AttemptSalvageItem(slotIndex)
+    self.attemptedSalvageSlot = slotIndex
+    PlaySound(SFX_SALVAGE_BEGIN)
+    -- Some high value items require user confirmation. TODO
+    local item = inventory:GetItem(self.attemptedSalvageSlot)
+    -- Automatic confirmation for low value items.
+    if not item:IsHighValue() then
+        self:ConfirmSalvageAttempt()
+    end
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:ConfirmSalvageAttempt()
+    if self.attemptedSalvageSlot then
+        local salvageItem = inventory:GetItem(self.attemptedSalvageSlot)
+        self:AttemptMoveItem(self.attemptedSalvageSlot, nil)
+        self.salvageAnimationStartTime = time()
+    end
+    self.attemptedSalvageSlot = nil
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:CancelSalvageAttempt()
+    self.attemptedSalvageSlot = nil
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -390,9 +439,13 @@ function view:PerformClickAction()
 end
 
 function view:PerformDragDropAction()
-    if self.slotUnderCursor or not self.isCursorInBounds then
+    if self.slotUnderCursor then
         local toSlotIndex = self.slotUnderCursor and self.slotUnderCursor.clientUserData.slotIndex or nil
         self:AttemptMoveItem(self.fromSlotIndex, toSlotIndex)
+    elseif self.isHoveringSalvageTray then
+        self:AttemptSalvageItem(self.fromSlotIndex)
+    else
+        PlaySound(SFX_MOVE_FAIL)
     end
 end
 
@@ -402,6 +455,8 @@ function view:OnBindingPressed(binding)
     if binding == "ability_primary" then
         if self.itemUnderCursor then
             self:SetClickState(self.slotUnderCursor)
+            -- Any ongoing salvage attempts are canceled as soon as a new interaction starts.
+            self:CancelSalvageAttempt()
         end
     end
 end
@@ -426,6 +481,7 @@ function view:Open()
     self:ClearHoverState()
     self:ClearClickState()
     self:ClearDragState()
+    self:CancelSalvageAttempt()
 end
 
 function view:Close()
@@ -435,6 +491,7 @@ function view:Close()
     self:ClearHoverState()
     self:ClearClickState()
     self:ClearDragState()
+    self:CancelSalvageAttempt()
 end
 
 function view:UpdateCursorState()
@@ -444,6 +501,7 @@ function view:UpdateCursorState()
     local cursorPosition = UI.GetCursorPosition()
     local screenSize = UI.GetScreenSize()
     local xRef, yRef = GetTopLeftPositionInParent(INVENTORY_VIEW, screenSize.x, screenSize.y)
+    self.isHoveringSalvageTray = nil
     self.isCursorInBounds = IsInsideHitbox(INVENTORY_VIEW, cursorPosition, xRef, yRef)
     if self.isCursorInBounds then
         for _,slot in ipairs(self.allSlots) do
@@ -451,6 +509,9 @@ function view:UpdateCursorState()
                 self:SetHoverState(slot)
                 break
             end
+        end
+        if IsInsideHitbox(PANEL_SALVAGE_TRAY, cursorPosition, xRef, yRef) then
+            self.isHoveringSalvageTray = true
         end
     end
     -- Click logic.
@@ -496,6 +557,7 @@ function view:Draw()
         self:DrawPassives()
         self:DrawStats()
         self:DrawSlots()
+        self:DrawSalvageTray()
         self:DrawHoverHighlight()
         self:DrawHoverInfo()
         self:DrawHoverStatCompare()
@@ -605,6 +667,46 @@ function view:DrawSlots()
                 slot.clientUserData.cooldownWheel.visibility = Visibility.FORCE_OFF
             end
         end
+    end
+end
+
+function view:DrawSalvageTray()
+    -- Highlight when drag&drop is available.
+    if self.isDragging and self.isHoveringSalvageTray then
+        PANEL_SALVAGE_TRAY.clientUserData.backgroundHighlight.visibility = Visibility.INHERIT 
+    else
+        PANEL_SALVAGE_TRAY.clientUserData.backgroundHighlight.visibility = Visibility.FORCE_OFF
+    end
+    -- Draw the appropriate dialog during salvage flow.
+    if self.attemptedSalvageSlot then
+        local salvageItem = inventory:GetItem(self.attemptedSalvageSlot)
+        local salvageItemText = salvageItem:GetName()
+        if salvageItem:IsStackable() then
+            salvageItemText = string.format("%s (%d)", salvageItemText, salvageItem:GetStackSize())
+        end
+        PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.FORCE_OFF
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.INHERIT
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will be destroyed..."
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront.text = salvageItemText
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront:SetColor(ItemThemes.GetRarityColor(salvageItem:GetRarity()))
+    else
+        PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.INHERIT
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.FORCE_OFF
+    end
+    -- Play minor animation when salvage occurs. Parameters are all hard-coded here since this is not anticipated to change often.
+    if self.salvageAnimationStartTime then
+        PANEL_SALVAGE_TRAY.clientUserData.animationGradient.visibility = Visibility.INHERIT
+        local elapsed = time() - self.salvageAnimationStartTime
+        local DURATION = 0.4
+        local TOTAL_DISTANCE = PANEL_SALVAGE_TRAY.width + PANEL_SALVAGE_TRAY.clientUserData.animationGradient.width
+        if elapsed < DURATION then
+            local fraction = elapsed / DURATION
+            PANEL_SALVAGE_TRAY.clientUserData.animationGradient.x = (fraction - 0.5) * TOTAL_DISTANCE
+        else
+            self.salvageAnimationStartTime = nil
+        end
+    else
+        PANEL_SALVAGE_TRAY.clientUserData.animationGradient.visibility = Visibility.FORCE_OFF
     end
 end
 

@@ -255,6 +255,20 @@ function Item:ApplyConsumptionEffect(player)
     end
 end
 
+-- A highly subjective boolean assessment of an item's worth. Used as a criteria for which items require delete confirmation.
+function Item:IsHighValue()
+    -- Anything "Rare" or better is considered high-value.
+    local rarityNumber = self.RARITIES[self:GetRarity()]
+    local rarityCutoff = self.RARITIES["Rare"]
+    if rarityNumber >= rarityCutoff then
+        return true
+    end
+    -- Any stackable which is more than 50% complete is considered high-value.
+    if self:IsStackable() and self:GetStackSize() >= (self:GetMaxStackSize() / 2) then
+        return true
+    end
+end
+
 ---------------------------------------------------------------------------------------------------------
 -- PRIVATE
 ---------------------------------------------------------------------------------------------------------

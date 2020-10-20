@@ -395,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14376159281276324488
+  Name: "Forest Floor 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "forest-floor_002"
+  }
+}
+Assets {
   Id: 13981696299924831856
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -455,15 +464,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_020"
-  }
-}
-Assets {
-  Id: 13052543436554470422
-  Name: "Decal Vines Tile 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_liane_001"
   }
 }
 Assets {
@@ -836,6 +836,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8772778959370683656
+  Name: "Gravel Raked 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gravel_001_uv"
+  }
+}
+Assets {
   Id: 8734943726223906287
   Name: "Ivy 04"
   PlatformAssetType: 1
@@ -905,6 +914,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
+  }
+}
+Assets {
+  Id: 8086153610909795251
+  Name: "Lense - Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_lense_001"
   }
 }
 Assets {
@@ -1229,6 +1247,15 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fog_volume_vfx"
+  }
+}
+Assets {
+  Id: 2386449820373438262
+  Name: "Kelp Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tile_01"
   }
 }
 Assets {

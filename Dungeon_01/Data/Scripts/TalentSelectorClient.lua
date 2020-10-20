@@ -5,7 +5,8 @@ local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
-local UI_CONTAINER = script:GetCustomProperty("UIContainer"):WaitForObject()
+local TALENTS_VIEW_ROOT = script:GetCustomProperty("TalentsViewRoot"):WaitForObject()
+local TALENTS_PANEL = script:GetCustomProperty("TalentsPanel"):WaitForObject()
 local TOOLTIP_PANEL = script:GetCustomProperty("TooltipPanel"):WaitForObject()
 local TOOLTIP_NAME_TEXT = script:GetCustomProperty("TooltipNameText"):WaitForObject()
 local TOOLTIP_PASSIVE_TEXT = script:GetCustomProperty("TooltipPassiveText"):WaitForObject()
@@ -13,7 +14,7 @@ local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionTex
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
 local TOOLTIP_STATE_TEXT = script:GetCustomProperty("TooltipStateText"):WaitForObject()
-local TOGGLE_BUTTON = script:GetCustomProperty("ToggleButton"):WaitForObject()
+local BACKGROUND_PANEL = script:GetCustomProperty("BackgroundPanel"):WaitForObject()
 local TALENT_TREE_PANEL_TEMPLATE = script:GetCustomProperty("TalentTreePanelTemplate")
 local TALENT_BUTTON_TEMPLATE = script:GetCustomProperty("TalentButtonTemplate")
 local TALENT_REQUIREMENT_ARROW_TEMPLATE = script:GetCustomProperty("TalentRequirementArrowTemplate")
@@ -32,21 +33,15 @@ local tooltipTalentData = nil
 local talentTreesVisible = false
 local previousTalentStrings = {}				-- Local player only, string treeName -> string
 
-function ToggleTalentTrees()
-	if talentTreesVisible then
-		HideTalentTrees()
-	else
-		ShowTalentTrees()
-	end
-end
-
 function ShowTalentTrees()
-	UI_CONTAINER.visibility = Visibility.INHERIT
+	TALENTS_VIEW_ROOT.visibility = Visibility.INHERIT
+	TALENTS_PANEL.visibility = Visibility.INHERIT
 	talentTreesVisible = true
 end
 
 function HideTalentTrees()
-	UI_CONTAINER.visibility = Visibility.FORCE_OFF
+	TALENTS_VIEW_ROOT.visibility = Visibility.FORCE_OFF
+	TALENTS_PANEL.visibility = Visibility.FORCE_OFF
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
 	talentTreesVisible = false
@@ -57,10 +52,6 @@ function OnButtonClicked(button, talentData)
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
 		API_RE.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
 	end
-end
-
-function OnToggleButtonClicked(button)
-	ToggleTalentTrees()
 end
 
 function OnButtonHovered(button, talentData)
@@ -94,12 +85,6 @@ function OnButtonUnhovered(button, talentData)
 	local buttonTemplate = talentData.buttonTemplate
 	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
 	highLight.visibility = Visibility.FORCE_OFF
-end
-
-function OnBindingPressed(player, binding)
-	if binding == "ability_extra_44" then
-		ToggleTalentTrees()
-	end
 end
 
 function BuildTalentTreeUI()
@@ -144,10 +129,13 @@ function BuildTalentTreeUI()
 		treePositionIndexes[treeData.name] = i
 	end
 
+	-- The complete extent of entire talent tree UI. Used to size the background frame properly.
+	local extent = { x0 = math.huge, x1 = -math.huge, y0 = math.huge, y1 = -math.huge }
+
 	for treeName, treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
 		if UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName) then
 			-- Tree panels
-			local treePanel = World.SpawnAsset(TALENT_TREE_PANEL_TEMPLATE, {parent = UI_CONTAINER})
+			local treePanel = World.SpawnAsset(TALENT_TREE_PANEL_TEMPLATE, {parent = TALENTS_PANEL})
 			treePanel.width = math.floor(treeScale * maxTreeWidth)
 			treePanel.height = TREE_HEIGHT
 			local index = treePositionIndexes[treeName]
@@ -162,12 +150,18 @@ function BuildTalentTreeUI()
 			local backgroundOffset = UTILITY.TALENT_TREE_DATA[treeName].backgroundOffset
 			treeBackgroundImage.x = backgroundOffset.x
 			treeBackgroundImage.y = backgroundOffset.y
-			local treePanel = treePanel:GetCustomProperty("Panel"):WaitForObject()
-			treePanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
+			local rootViewPanel = treePanel:GetCustomProperty("Panel"):WaitForObject()
+			rootViewPanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
+
+			-- Update extent.
+			extent.x0 = math.min(extent.x0, treePanel.x - treePanel.width / 2)
+			extent.x1 = math.max(extent.x1, treePanel.x + treePanel.width / 2)
+			extent.y0 = math.min(extent.y0, treePanel.y - treePanel.height / 2)
+			extent.y1 = math.max(extent.y1, treePanel.y + treePanel.height / 2)
 
 			for talentName, talentData in pairs(treeData) do
 				-- Talent buttons
-				local buttonTemplate = World.SpawnAsset(TALENT_BUTTON_TEMPLATE, {parent = treePanel})
+				local buttonTemplate = World.SpawnAsset(TALENT_BUTTON_TEMPLATE, {parent = rootViewPanel})
 				local panel = buttonTemplate:GetCustomProperty("Panel"):WaitForObject()
 				panel.width = math.floor(treeScale * MAX_BUTTON_SIZE)
 				panel.height = math.floor(treeScale * MAX_BUTTON_SIZE)
@@ -224,9 +218,23 @@ function BuildTalentTreeUI()
 			end
 		end
 	end
+
+	-- Size the background according to extent.
+	local backgroundPadding = 2 * MIN_TREE_PADDING
+	BACKGROUND_PANEL.width = math.ceil(backgroundPadding + extent.x1 - extent.x0)
+	BACKGROUND_PANEL.height = math.ceil(backgroundPadding + extent.y1 - extent.y0)
 end
 
 function Tick(deltaTime)
+	-- The visibility of talent trees is controlled by the high-level UI controller.
+	-- All prior visibility logic is preserved.
+	if TALENTS_VIEW_ROOT.clientUserData.isVisible then
+		ShowTalentTrees()
+	else
+		HideTalentTrees()
+	end
+
+	-- Begin populating tree information.
 	for treeName, treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
 		local treeHelper = UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName)
 
@@ -321,7 +329,4 @@ end
 
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, true)
 BuildTalentTreeUI()
-
-LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-TOGGLE_BUTTON.clickedEvent:Connect(OnToggleButtonClicked)
 HideTalentTrees()
