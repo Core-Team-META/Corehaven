@@ -138,11 +138,7 @@ end
 
 -- if character is nil, we just hide the frame
 function UpdateFrame(data, character)
-	if not Object.IsValid(character) then
-		
-	end
-
-	if not character then
+	if not character or Object.IsValid(character) then
 		data.frame.visibility = Visibility.FORCE_OFF
 	else
 		data.frame.visibility = Visibility.INHERIT

@@ -26,12 +26,39 @@ Assets {
   }
 }
 Assets {
+  Id: 10065240024233336575
+  Name: "Frame Outline Thin 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_022"
+  }
+}
+Assets {
   Id: 8363385752180729983
   Name: "Leafy Patch 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_groundcover_002"
+  }
+}
+Assets {
+  Id: 7886354570700610852
+  Name: "Fantasy Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_001"
+  }
+}
+Assets {
+  Id: 6980104993132211032
+  Name: "BG Flat 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {
