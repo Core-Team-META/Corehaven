@@ -467,15 +467,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13052543436554470422
-  Name: "Decal Vines Tile 01"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_liane_001"
-  }
-}
-Assets {
   Id: 13043745889660256134
   Name: "Stone Block Big Broken"
   PlatformAssetType: 1
@@ -842,6 +833,15 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_lines_001"
+  }
+}
+Assets {
+  Id: 8772778959370683656
+  Name: "Gravel Raked 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_gravel_001_uv"
   }
 }
 Assets {
