@@ -3811,14 +3811,13 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 405.513947
-      Y: -152.961517
-      Z: 4.40576696
+      X: 400.709656
+      Y: -152.84996
+      Z: 4.40591478
     }
     Rotation {
       Pitch: 90
-      Yaw: 180
-      Roll: -178.672791
+      Roll: 1.32720947
     }
     Scale {
       X: 0.216220662

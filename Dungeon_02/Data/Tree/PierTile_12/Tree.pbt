@@ -67,14 +67,14 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: 0.529581666
-      Y: -0.00952813122
-      Z: 10.5821075
+      X: -315.609497
+      Y: 1.22991514
+      Z: 29.9862347
     }
     Rotation {
-      Pitch: -6.60150051
+      Pitch: -6.60150146
       Yaw: 126.153969
-      Roll: -6.69260263
+      Roll: -6.69259644
     }
     Scale {
       X: 0.390394747
@@ -139,12 +139,12 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      X: -0.529581666
-      Y: 0.00950039178
-      Z: 2.60986944e-05
+      X: -316.669037
+      Y: 1.24976051
+      Z: 19.4049625
     }
     Rotation {
-      Pitch: -2.83605838
+      Pitch: -2.83605957
       Yaw: 129.177475
       Roll: 5.29525423
     }
@@ -323,14 +323,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 4.43913746
-      Y: 1.09261835
-      Z: -344.7854
+      X: -311.697693
+      Y: 0.155309096
+      Z: -325.365051
     }
     Rotation {
       Pitch: 90
-      Yaw: -90
-      Roll: -28.2975464
+      Yaw: -10.6196594
+      Roll: 51.0829
     }
     Scale {
       X: 0.800011933
@@ -398,14 +398,14 @@ Objects {
   Name: "Large Round Wood Beam 8m"
   Transform {
     Location {
-      X: 240.290314
-      Y: 71.1748581
-      Z: -341.140228
+      X: -75.8545685
+      Y: 70.2372665
+      Z: -321.717407
     }
     Rotation {
-      Pitch: 83.581604
-      Yaw: -89.999939
-      Roll: 163.914337
+      Pitch: 83.5665588
+      Yaw: -89.9848
+      Roll: 163.909531
     }
     Scale {
       X: 0.800011933
@@ -636,7 +636,6 @@ Objects {
     }
   }
   ParentId: 15225261858525113823
-  ChildIds: 10825037033928730922
   ChildIds: 10430795752715227081
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -652,78 +651,12 @@ Objects {
   Name: "Ring - Thick"
   Transform {
     Location {
-      Y: 2.56119984e-05
-      Z: 10.72258
+      X: -316.135773
+      Y: -0.937151849
+      Z: 30.1438046
     }
     Rotation {
-      Roll: -25.4427
-    }
-    Scale {
-      X: 0.390394747
-      Y: 0.390394747
-      Z: 0.390394747
-    }
-  }
-  ParentId: 2114813451518107054
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 12629436541872600207
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 1
-        G: 1
-        B: 1
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 8936463881719161671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 10825037033928730922
-  Name: "Ring - Thick"
-  Transform {
-    Location {
-    }
-    Rotation {
-      Roll: 11.2606745
+      Roll: -25.442688
     }
     Scale {
       X: 0.390394747
@@ -898,9 +831,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -1.98249435
-      Y: -17.2019234
-      Z: 27.0649014
+      X: -318.120667
+      Y: -17.2019844
+      Z: 46.5088882
     }
     Rotation {
       Pitch: 4.42814112
@@ -965,9 +898,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 33.9089661
-      Y: 192.659332
-      Z: 62.2838669
+      X: -282.229553
+      Y: 192.659149
+      Z: 81.7284
     }
     Rotation {
       Pitch: -7.07727051
@@ -1032,9 +965,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 170.235397
-      Y: 271.332428
-      Z: 136.066635
+      X: -145.905029
+      Y: 271.332733
+      Z: 155.511765
     }
     Rotation {
       Pitch: -0.675933838
@@ -1099,12 +1032,12 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -52.6851616
-      Y: -266.865265
-      Z: 96.7283249
+      X: -368.821503
+      Y: -266.864349
+      Z: 116.173012
     }
     Rotation {
-      Pitch: -21.0812
+      Pitch: -21.0812073
       Yaw: 5.66135025
       Roll: -91.7632751
     }
@@ -1166,9 +1099,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -57.4245148
-      Y: 6.7721324
-      Z: 63.780468
+      X: -373.561127
+      Y: 6.77310085
+      Z: 83.22509
     }
     Rotation {
       Pitch: -16.0027161
@@ -1233,9 +1166,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -54.3590889
-      Y: 147.817291
-      Z: 50.8301659
+      X: -370.494019
+      Y: 147.81752
+      Z: 70.2742462
     }
     Rotation {
       Pitch: 10.4177389
@@ -1300,9 +1233,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -13.1710739
-      Y: 177.727463
-      Z: 137.984711
+      X: -329.308258
+      Y: 177.728119
+      Z: 157.428772
     }
     Rotation {
       Pitch: -0.675933838
@@ -1367,9 +1300,9 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: -37.7275467
-      Y: -62.7747307
-      Z: 135.493805
+      X: -353.863983
+      Y: -62.7752724
+      Z: 154.938141
     }
     Rotation {
     }
@@ -1476,9 +1409,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -576.174194
-      Y: -330.718048
-      Z: 189.473358
+      X: -81.4721146
+      Y: -330.717957
+      Z: 159.047256
     }
     Rotation {
       Pitch: -47.090332
@@ -1606,9 +1539,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 3.25294638
-      Y: -215.529831
-      Z: 9.01606846
+      X: 141.014175
+      Y: -215.529861
+      Z: 0.542277
     }
     Rotation {
       Pitch: 20.6117477
@@ -1673,9 +1606,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -413.237183
-      Y: -111.630264
-      Z: 135.970245
+      X: -156.463226
+      Y: -111.63002
+      Z: 120.177505
     }
     Rotation {
       Pitch: 20.821394
@@ -1740,9 +1673,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -2.3860743
-      Y: -81.7532654
-      Z: 4.2820797
+      X: 135.376617
+      Y: -81.7532959
+      Z: -4.19125843
     }
     Rotation {
       Pitch: 9.64579773
@@ -1936,9 +1869,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: 5.53104305
-      Y: 50.648
-      Z: 9.01733875
+      X: 143.293793
+      Y: 50.6479492
+      Z: 0.54444176
     }
     Rotation {
       Pitch: 49.9143906

@@ -152,15 +152,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17301655015638582259
-  Name: "Fantasy Human Guy"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_fantasy_001_ref"
-  }
-}
-Assets {
   Id: 17292395287131781575
   Name: "Depth of Field Post Process"
   PlatformAssetType: 20
@@ -572,15 +563,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_glass_stained_manticore_001"
-  }
-}
-Assets {
-  Id: 12006478966369795824
-  Name: "Human Gal"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_003_ref"
   }
 }
 Assets {
