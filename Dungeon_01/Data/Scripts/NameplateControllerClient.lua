@@ -470,7 +470,9 @@ function Tick(deltaTime)
 
 				-- Update Level
 				if character:IsA("Player") then
-					nameplate.levelText.text = tostring(character.clientUserData.statSheet:GetLevel())
+					if character.clientUserData.statSheet then	-- If stats aren't ready, they will be soon
+						nameplate.levelText.text = tostring(character.clientUserData.statSheet:GetLevel())
+					end
 				else
 					nameplate.levelText.text = tostring(API_NPC.GetAllNPCData()[character].level)
 				end

@@ -1,22 +1,4 @@
 ﻿Assets {
-  Id: 14365328187376915905
-  Name: "Underwater Post Process"
-  PlatformAssetType: 20
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_post_process_water"
-  }
-}
-Assets {
-  Id: 13350819167120802023
-  Name: "Plane 1m - Two Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_1m_002"
-  }
-}
-Assets {
   Id: 10161356557666659885
   Name: "Bush Leafy Low 01"
   PlatformAssetType: 1
@@ -26,39 +8,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10065240024233336575
-  Name: "Frame Outline Thin 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_022"
-  }
-}
-Assets {
   Id: 8363385752180729983
   Name: "Leafy Patch 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_groundcover_002"
-  }
-}
-Assets {
-  Id: 7886354570700610852
-  Name: "Fantasy Frame 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Frame_001"
-  }
-}
-Assets {
-  Id: 6980104993132211032
-  Name: "BG Flat 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "BackgroundNoOutline_22"
   }
 }
 Assets {

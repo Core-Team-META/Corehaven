@@ -138,7 +138,7 @@ end
 
 -- if character is nil, we just hide the frame
 function UpdateFrame(data, character)
-	if not character or Object.IsValid(character) then
+	if not character or not Object.IsValid(character) then
 		data.frame.visibility = Visibility.FORCE_OFF
 	else
 		data.frame.visibility = Visibility.INHERIT
@@ -197,8 +197,10 @@ function UpdateFrame(data, character)
 
 		-- Level
 		if character:IsA("Player") then
-			local levelstring = tostring(character.clientUserData.statSheet:GetLevel())
-			data.frame:GetCustomProperty("LevelText"):WaitForObject().text = levelstring
+			if character.clientUserData.statSheet then	-- If stats aren't ready, they will be soon
+				local levelstring = tostring(character.clientUserData.statSheet:GetLevel())
+				data.frame:GetCustomProperty("LevelText"):WaitForObject().text = levelstring
+			end
 		else
 			local npcData = API_NPC.GetAllNPCData()[character]
 			local levelstring = tostring(npcData.level)
