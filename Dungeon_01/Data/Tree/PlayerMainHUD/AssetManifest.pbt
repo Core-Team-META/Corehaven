@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10065240024233336575
+  Name: "Frame Outline Thin 004"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_022"
+  }
+}
+Assets {
   Id: 9646465928758980906
   Name: "Fantasy Ability Teal 026"
   PlatformAssetType: 9
@@ -275,6 +284,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_022"
+  }
+}
+Assets {
+  Id: 7886354570700610852
+  Name: "Fantasy Frame 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Frame_001"
   }
 }
 Assets {
@@ -365,6 +383,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Yellow_018"
+  }
+}
+Assets {
+  Id: 3697591994187435780
+  Name: "Icon Close"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Close"
   }
 }
 Assets {

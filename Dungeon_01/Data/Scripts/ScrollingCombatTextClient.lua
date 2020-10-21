@@ -109,18 +109,18 @@ function ShowText(targetCharacter, amount, over, color, tags)
 			local position = UI.GetScreenPosition(worldPosition)
 
 			if position then
-			
 				if targetCharacter == LOCAL_PLAYER then
 					position = position + Vector2.New(0.0, 90.0)
 				else
 					position = position - Vector2.New(0.0, 60.0)
-					end
-				
+				end
+
 				element.x = position.x + GetColumnOffset(columnIndex)
 
 				-- Some hardcoded animations
 				if isCrit then
 					color = Color.ORANGE
+
 					if t < 0.15 then
 						element.y = position.y - math.sin(t / 0.15 * math.pi / 2) * 50.0
 						element.fontSize = 18.0 + t * 240.0
@@ -141,8 +141,8 @@ function ShowText(targetCharacter, amount, over, color, tags)
 					element.height = element.fontSize * 2.0
 				else
 					if targetCharacter == LOCAL_PLAYER then
-						element.y = position.y + t * (-150.0+t*200)
 						element.x = position.x + t * 50 * animationRight
+						element.y = position.y - 150.0 * t + 200.0 * t ^ 2
 					else
 						element.y = position.y - t * 100.0
 					end

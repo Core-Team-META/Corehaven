@@ -15,14 +15,14 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 6887084206468653247
         ChildIds: 18249758742828902761
         ChildIds: 10834093218909394523
         ChildIds: 4356911059069811636
         ChildIds: 10877125436723388424
-        ChildIds: 17986691541647418747
-        ChildIds: 8003660828689833400
-        ChildIds: 11483238119307736639
+        ChildIds: 3695842284224036609
+        ChildIds: 11170298541214424153
+        ChildIds: 13892255403687658829
         UnregisteredParameters {
         }
         Collidable_v2 {
@@ -16243,7 +16243,7 @@
         }
       }
       Objects {
-        Id: 17986691541647418747
+        Id: 3695842284224036609
         Name: "MastMain"
         Transform {
           Location {
@@ -16252,14 +16252,11 @@
             Z: 64.9209
           }
           Rotation {
-            Pitch: -0.109556228
-            Yaw: 1.41565697e-05
-            Roll: 3.10513792e-06
           }
           Scale {
-            X: 2.32688046
-            Y: 2.32688046
-            Z: 2.32688046
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 8153798201366077481
@@ -16267,17 +16264,14 @@
         ChildIds: 10921322604151353054
         ChildIds: 5696788675091109842
         ChildIds: 3169236415994447197
-        UnregisteredParameters {
-        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Folder {
-          IsFilePartition: true
-          FilePartitionName: "MastMain_1"
+          IsGroup: true
         }
       }
       Objects {
@@ -16285,22 +16279,22 @@
         Name: "Mast Tall Sail"
         Transform {
           Location {
-            X: -28.8849945
-            Y: 442.569031
-            Z: 230.413605
+            X: -66.1866455
+            Y: 1029.80298
+            Z: 536.272339
           }
           Rotation {
-            Pitch: -4.82080889
-            Yaw: 0.551895201
-            Roll: -12.4637747
+            Pitch: -4.93035793
+            Yaw: 0.552001119
+            Roll: -12.4648476
           }
           Scale {
-            X: 0.51086086
-            Y: 0.51086086
-            Z: 0.51086086
+            X: 1.18871212
+            Y: 1.18871212
+            Z: 1.18871212
           }
         }
-        ParentId: 17986691541647418747
+        ParentId: 3695842284224036609
         ChildIds: 11407856564555018216
         ChildIds: 18409668763281333995
         ChildIds: 3309614550155609910
@@ -22266,22 +22260,22 @@
         Name: "Tree"
         Transform {
           Location {
-            X: 0.0146372849
-            Y: 4.14855066e-07
-            Z: -7.65487528
+            X: 0.000299953623
+            Y: -0.00192995463
+            Z: -17.8120117
           }
           Rotation {
-            Pitch: 0.209044755
-            Yaw: -179.237762
-            Roll: -23.8309631
+            Pitch: 0.318587333
+            Yaw: -179.237732
+            Roll: -23.8294888
           }
           Scale {
-            X: 0.317849129
-            Y: 0.317847133
-            Z: 12.9723606
+            X: 0.739596903
+            Y: 0.739592254
+            Z: 30.185133
           }
         }
-        ParentId: 17986691541647418747
+        ParentId: 3695842284224036609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22335,21 +22329,22 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: 0.00048828125
-            Y: -0.0302124023
-            Z: -30.1495819
+            X: -0.133087873
+            Y: -0.0720754415
+            Z: -70.1543579
           }
           Rotation {
-            Yaw: -179.181198
-            Roll: 8.30105364e-07
+            Pitch: 0.109542571
+            Yaw: -179.181183
+            Roll: 0.00156332843
           }
           Scale {
-            X: 0.628030539
-            Y: 0.628030539
-            Z: 0.614272892
+            X: 1.46135199
+            Y: 1.46135199
+            Z: 1.42933953
           }
         }
-        ParentId: 17986691541647418747
+        ParentId: 3695842284224036609
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -22394,22 +22389,22 @@
         Name: "Decal Fantasy Painted 01"
         Transform {
           Location {
-            X: 0.686160266
-            Y: 60.0932083
-            Z: 435.837921
+            X: 3.53645325
+            Y: 139.827896
+            Z: 1014.13782
           }
           Rotation {
-            Pitch: 0.277722299
-            Yaw: 91.7652283
-            Roll: 87.0552368
+            Pitch: -0.281075925
+            Yaw: -88.235321
+            Roll: 93.0542068
           }
           Scale {
-            X: 3.18839049
-            Y: 3.47975254
-            Z: 0.468920797
+            X: 7.41900349
+            Y: 8.09696865
+            Z: 1.09112263
           }
         }
-        ParentId: 17986691541647418747
+        ParentId: 3695842284224036609
         UnregisteredParameters {
           Overrides {
             Name: "bp:Shape Index"
@@ -22442,7 +22437,7 @@
         }
       }
       Objects {
-        Id: 8003660828689833400
+        Id: 11170298541214424153
         Name: "MastFront"
         Transform {
           Location {
@@ -22451,31 +22446,25 @@
             Z: 18.6107788
           }
           Rotation {
-            Pitch: -0.109556228
-            Yaw: 1.41565697e-05
-            Roll: 3.10513792e-06
           }
           Scale {
-            X: 2.32688046
-            Y: 2.32688046
-            Z: 2.32688046
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 8153798201366077481
         ChildIds: 891968255742360091
         ChildIds: 17775956307281868102
         ChildIds: 8470178419145567221
-        UnregisteredParameters {
-        }
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
+          Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Folder {
-          IsFilePartition: true
-          FilePartitionName: "MastFront_2"
+          IsGroup: true
         }
       }
       Objects {
@@ -22483,22 +22472,22 @@
         Name: "Mast Front Sail"
         Transform {
           Location {
-            X: -8.82248878
-            Y: 685.631104
-            Z: 178.141968
+            X: -19.7362061
+            Y: 1595.38159
+            Z: 414.553497
           }
           Rotation {
-            Pitch: -5.01473808
-            Yaw: 0.394661516
-            Roll: -15.3826542
+            Pitch: -5.12429428
+            Yaw: 0.394741833
+            Roll: -15.3834295
           }
           Scale {
-            X: 0.51086086
-            Y: 0.51086086
-            Z: 0.51086086
+            X: 1.18871212
+            Y: 1.18871212
+            Z: 1.18871212
           }
         }
-        ParentId: 8003660828689833400
+        ParentId: 11170298541214424153
         ChildIds: 12901417975781349943
         ChildIds: 4365664421730830797
         ChildIds: 8339309494342435799
@@ -28246,21 +28235,22 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -0.0396563224
-            Y: 270.149719
-            Z: 11.7202835
+            X: -0.0404663086
+            Y: 628.606323
+            Z: 27.2717896
           }
           Rotation {
-            Yaw: -179.181198
-            Roll: 8.30104511e-07
+            Pitch: 0.109542571
+            Yaw: -179.181183
+            Roll: 0.00156332843
           }
           Scale {
-            X: 0.628030539
-            Y: 0.628030539
-            Z: 0.614272892
+            X: 1.46135199
+            Y: 1.46135199
+            Z: 1.42933953
           }
         }
-        ParentId: 8003660828689833400
+        ParentId: 11170298541214424153
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28306,22 +28296,22 @@
         Name: "Tree"
         Transform {
           Location {
-            X: -0.024758786
-            Y: 267.964722
-            Z: 33.0107574
+            X: 0.0895385742
+            Y: 623.522034
+            Z: 76.8120117
           }
           Rotation {
-            Pitch: 0.209044755
-            Yaw: -179.237762
-            Roll: -23.8307495
+            Pitch: 0.318594158
+            Yaw: -179.237732
+            Roll: -23.8292732
           }
           Scale {
-            X: 0.317851782
-            Y: 0.317848325
-            Z: 10.5245142
+            X: 0.739603102
+            Y: 0.739595056
+            Z: 24.4892864
           }
         }
-        ParentId: 8003660828689833400
+        ParentId: 11170298541214424153
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -28373,7 +28363,7 @@
         }
       }
       Objects {
-        Id: 11483238119307736639
+        Id: 13892255403687658829
         Name: "MastBack"
         Transform {
           Location {
@@ -28382,22 +28372,17 @@
             Z: 447.002258
           }
           Rotation {
-            Pitch: -0.109556228
-            Yaw: 1.41565697e-05
-            Roll: 3.10513792e-06
           }
           Scale {
-            X: 2.32688046
-            Y: 2.32688046
-            Z: 2.32688046
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
         ParentId: 8153798201366077481
         ChildIds: 3958145946046085269
         ChildIds: 14633491862281499163
         ChildIds: 13619156454143404355
-        UnregisteredParameters {
-        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -28405,7 +28390,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Folder {
-          IsFilePartition: true
+          IsGroup: true
         }
       }
       Objects {
@@ -28413,22 +28398,22 @@
         Name: "Mast Front Sail"
         Transform {
           Location {
-            X: -8.82248878
-            Y: 685.631104
-            Z: 178.141968
+            X: -19.7362061
+            Y: 1595.38159
+            Z: 414.553
           }
           Rotation {
-            Pitch: -5.01473808
-            Yaw: 0.394661516
-            Roll: -15.3826542
+            Pitch: -5.12429428
+            Yaw: 0.394741833
+            Roll: -15.3834295
           }
           Scale {
-            X: 0.51086086
-            Y: 0.51086086
-            Z: 0.51086086
+            X: 1.18871212
+            Y: 1.18871212
+            Z: 1.18871212
           }
         }
-        ParentId: 11483238119307736639
+        ParentId: 13892255403687658829
         ChildIds: 9083196287224034595
         ChildIds: 10097752723309268429
         ChildIds: 5677427832616816282
@@ -34035,21 +34020,22 @@
         Name: "Cube - Bottom-Aligned"
         Transform {
           Location {
-            X: -0.0376507156
-            Y: 270.149719
-            Z: 10.6714077
+            X: -0.0404663086
+            Y: 628.606323
+            Z: 24.8306885
           }
           Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -89.1810913
+            Pitch: -0.0015504529
+            Yaw: -89.1810684
+            Roll: 0.109545067
           }
           Scale {
-            X: 0.469585121
-            Y: 0.469585389
-            Z: 0.609933615
+            X: 1.09266841
+            Y: 1.09266901
+            Z: 1.41924262
           }
         }
-        ParentId: 11483238119307736639
+        ParentId: 13892255403687658829
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -34096,22 +34082,22 @@
         Name: "Tree"
         Transform {
           Location {
-            X: -0.024758786
-            Y: 267.964722
-            Z: 33.0107574
+            X: 0.0895385742
+            Y: 623.522034
+            Z: 76.8115234
           }
           Rotation {
-            Pitch: 0.209044755
-            Yaw: -179.237762
-            Roll: -23.8307495
+            Pitch: 0.318594158
+            Yaw: -179.237732
+            Roll: -23.8292732
           }
           Scale {
-            X: 0.317851782
-            Y: 0.317848325
-            Z: 10.5245142
+            X: 0.739603102
+            Y: 0.739595056
+            Z: 24.4892864
           }
         }
-        ParentId: 11483238119307736639
+        ParentId: 13892255403687658829
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"

@@ -14,22 +14,14 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 11788695356358832208
-  ChildIds: 1503052918030638976
-  ChildIds: 15438413245421916821
-  ChildIds: 17698585101755452380
-  ChildIds: 5161179683843583964
+  ChildIds: 6887084206468653247
   ChildIds: 429612536842654522
   ChildIds: 492636135236824593
   ChildIds: 11176579868672163906
   ChildIds: 2833047303521512166
-  ChildIds: 15088711163151659875
-  ChildIds: 7218498012147464502
   ChildIds: 17888335466626026311
   ChildIds: 18109997350451454343
   ChildIds: 10625773096399959754
-  ChildIds: 14457459683637337674
-  ChildIds: 17661590497969405123
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -39,127 +31,6 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
-  }
-}
-Objects {
-  Id: 17661590497969405123
-  Name: "Helper_Nameplate"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 822988238011075349
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Helper_Nameplate"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -5933.67578
-            Y: -8440.5957
-            Z: -1019.56519
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 5049470299132475441
-    }
-  }
-}
-Objects {
-  Id: 14457459683637337674
-  Name: "DnD Galleon"
-  Transform {
-    Location {
-      X: -5077.63525
-      Y: -117.315186
-      Z: -6840.98145
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 3169236415994447197
-      value {
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 0.686182439
-            Y: 60.0930519
-            Z: 435.837921
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -0.277709961
-            Yaw: -88.2348
-            Roll: 92.9447
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 3.18839049
-            Y: 3.47975278
-            Z: 0.468920797
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 8153798201366077481
-      value {
-        Overrides {
-          Name: "Name"
-          String: "DnD Galleon"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -11100
-            Y: -16250
-            Z: -749.999878
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Yaw: -98.8342285
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 9243457285138094618
-    }
   }
 }
 Objects {
@@ -238,60 +109,6 @@ Objects {
   Folder {
     IsFilePartition: true
     FilePartitionName: "DeveloperCheats"
-  }
-}
-Objects {
-  Id: 7218498012147464502
-  Name: "Ryan"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Ryan"
-  }
-}
-Objects {
-  Id: 15088711163151659875
-  Name: "Jordan"
-  Transform {
-    Location {
-      X: -71.7070313
-      Y: -57.2109375
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Jordan"
   }
 }
 Objects {
@@ -696,102 +513,13 @@ Objects {
   }
 }
 Objects {
-  Id: 5161179683843583964
-  Name: "Sea"
+  Id: 6887084206468653247
+  Name: "Map"
   Transform {
     Location {
-      X: 27236.707
-      Y: -16091.6787
-      Z: -1019.56519
-    }
-    Rotation {
-    }
-    Scale {
-      X: 4493.57666
-      Y: 4493.57666
-      Z: 4493.57666
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 11701420284830861422
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.184951365
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.203310728
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13350819167120802023
-    }
-    Teams {
-    }
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 17698585101755452380
-  Name: "Underwater Post Process"
-  Transform {
-    Location {
-      X: -4337.1123
-      Y: -9852.52
-      Z: -1008.49493
-    }
-    Rotation {
-    }
-    Scale {
-      X: 155.234589
-      Y: 119.607391
-      Z: 23.0722427
-    }
-  }
-  ParentId: 4781671109827199097
-  UnregisteredParameters {
-    Overrides {
-      Name: "bp:Blend Radius"
-      Float: 0
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Blueprint {
-    BlueprintAsset {
-      Id: 14365328187376915905
-    }
-    TeamSettings {
-    }
-  }
-}
-Objects {
-  Id: 15438413245421916821
-  Name: "KillZones"
-  Transform {
-    Location {
-      X: 152.488281
-      Y: 94.9223633
+      X: -5077.63525
+      Y: -117.315186
+      Z: -6840.98145
     }
     Rotation {
     }
@@ -810,64 +538,6 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "KillZones"
-  }
-}
-Objects {
-  Id: 1503052918030638976
-  Name: "InvisibleCollisions"
-  Transform {
-    Location {
-      X: -3567.89893
-      Y: -10233.6621
-      Z: -993.3125
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "InvisibleCollisions"
-  }
-}
-Objects {
-  Id: 11788695356358832208
-  Name: "Emma"
-  Transform {
-    Location {
-      X: -23900
-      Y: -10100
-      Z: -800
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Emma"
+    FilePartitionName: "Map"
   }
 }

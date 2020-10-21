@@ -53,6 +53,7 @@
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Panel {
           }
           AnchorLayout {
@@ -225,13 +226,15 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 170
+          Width: -30
           Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
           Text {
             Label: "Defeat the enemies!"
             Color {
