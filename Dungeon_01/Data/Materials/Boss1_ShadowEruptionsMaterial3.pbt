@@ -2,7 +2,7 @@
   Id: 6516030982984340022
   Name: "Boss1_ShadowEruptionsMaterial3"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 1037306248604763187
     ParameterOverrides {

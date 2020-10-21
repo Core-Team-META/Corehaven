@@ -15,6 +15,12 @@
         }
       }
       Overrides {
+        Name: "cs:CraftingRecipeMethods"
+        AssetReference {
+          Id: 5627101658453984331
+        }
+      }
+      Overrides {
         Name: "cs:Drops"
         AssetReference {
           Id: 6261641378857855418
@@ -194,7 +200,13 @@
           Id: 4334986054671816585
         }
       }
+      Overrides {
+        Name: "cs:CraftingRecipe_Catalog"
+        AssetReference {
+          Id: 15606542790842922668
+        }
+      }
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 66
 }
