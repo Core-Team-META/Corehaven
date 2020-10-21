@@ -29,6 +29,10 @@ local SFX_SALVAGE_CONFIRM = script:GetCustomProperty("SFX_SalvageConfirm")
 local SFX_SALVAGE_BEGIN = script:GetCustomProperty("SFX_SalvageBegin")
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
+-- Hardcoded animation parameters.
+local STACKABLE_ITEM_BOUNCE_DURATION = 0.25
+local STACKABLE_ITEM_BOUNCE_SCALE = -0.5    -- Scale is a bit weird here since icons are set to inherit parent width/height, which they then subtract from.
+
 -- Hardcoded UI placement settings.
 local SLOT_ANCHOR = "TopCenter"
 local SLOT_DOCK = "TopCenter"
@@ -117,6 +121,8 @@ local function SetupControl(control, processSlot)
     control.clientUserData.yAbsolute = control.parent.clientUserData.yAbsolute + y
     if IsSlotControl(control) then
         control.clientUserData.icon = control:GetCustomProperty("Icon"):WaitForObject()
+        control.clientUserData.iconOriginalWidth = control.clientUserData.icon.width
+        control.clientUserData.iconOriginalHeight = control.clientUserData.icon.height
         control.clientUserData.border = control:GetCustomProperty("Border"):WaitForObject()
         control.clientUserData.gradient = control:GetCustomProperty("Gradient"):WaitForObject()
         control.clientUserData.gradientColored = control:GetCustomProperty("GradientColored"):WaitForObject()
@@ -561,6 +567,7 @@ function view:Draw()
         self:DrawHoverHighlight()
         self:DrawHoverInfo()
         self:DrawHoverStatCompare()
+        self:UpdateStackableAnimations()
     end
 end
 
@@ -783,6 +790,43 @@ function view:DrawHoverStatCompare()
                 statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, resultStatEffective)
                 statElement.clientUserData.value:SetColor(compareColor)
             end
+        end
+    end
+end
+
+function view:UpdateStackableAnimations()
+    local now = time()
+    for _,slot in ipairs(self.backpackSlots) do
+        local item = inventory:GetItem(slot.clientUserData.slotIndex)
+        if item and item:IsStackable() then
+            -- Cue animations whenever the stack size changes (and item does not).
+            if slot.clientUserData.oldStackItem and
+               slot.clientUserData.oldStackItem == item and
+               slot.clientUserData.oldStackSize ~= item:GetStackSize() then
+                slot.clientUserData.animationStartTime = now
+            end
+            slot.clientUserData.oldStackItem = item
+            slot.clientUserData.oldStackSize = item:GetStackSize()
+            -- Update any ongoing animations.
+            if slot.clientUserData.animationStartTime then
+                local elapsed = now - slot.clientUserData.animationStartTime
+                if elapsed >= STACKABLE_ITEM_BOUNCE_DURATION then
+                    -- Animation complete.
+                    slot.clientUserData.animationStartTime = nil
+                else
+                    -- Animation ongoing.
+                    local fraction = elapsed / STACKABLE_ITEM_BOUNCE_DURATION
+                    local scale = 1 + STACKABLE_ITEM_BOUNCE_SCALE * math.sin(math.pi * fraction)
+                    slot.clientUserData.icon.width = math.floor(scale * slot.clientUserData.iconOriginalWidth)
+                    slot.clientUserData.icon.height = math.floor(scale * slot.clientUserData.iconOriginalHeight)
+                end
+            else
+                slot.clientUserData.icon.width = slot.clientUserData.iconOriginalWidth
+                slot.clientUserData.icon.height = slot.clientUserData.iconOriginalHeight
+            end
+        else
+            slot.clientUserData.oldStackItem = nil
+            slot.clientUserData.oldStackSize = nil
         end
     end
 end
