@@ -26,6 +26,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9536141319314062468
+  Name: "Craftsman Porch Fence Railing 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_porch_001_rail"
+  }
+}
+Assets {
   Id: 8936463881719161671
   Name: "Ring - Thick"
   PlatformAssetType: 1

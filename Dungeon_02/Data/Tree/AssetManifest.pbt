@@ -1034,6 +1034,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6000681835192046231
+  Name: "Pipe (thick)"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_004"
+  }
+}
+Assets {
   Id: 5997899144091735683
   Name: "Flower Wild Lily 01"
   PlatformAssetType: 1

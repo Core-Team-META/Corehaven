@@ -887,7 +887,7 @@ Objects {
     }
   }
   Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
+    Value: "mc:ecollisionsetting:forceon"
   }
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
@@ -901,7 +901,6 @@ Objects {
       IsEnemyCollisionEnabled: true
     }
     DisableReceiveDecals: true
-    EnableCameraCollision: true
     StaticMesh {
       Physics {
       }
