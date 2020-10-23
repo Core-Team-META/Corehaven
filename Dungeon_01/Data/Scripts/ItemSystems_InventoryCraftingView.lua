@@ -329,7 +329,8 @@ function view:GOTO_AwaitingRecipeSelection()
         self.executionPanelWidgets.defaultInstructions:SetColor(blinkColor)
     end
     if self.currentSfx then
-        self.currentSfx:FadeOut(0.1)
+        self.currentSfx:Destroy()
+        self.currentSfx = nil
     end
 end
 
