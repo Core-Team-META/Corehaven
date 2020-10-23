@@ -4599,27 +4599,27 @@ Objects {
     }
     Overrides {
       Name: "cs:Binding1"
-      String: "ability_extra_1"
+      String: "ability_primary"
     }
     Overrides {
       Name: "cs:Binding2"
-      String: "ability_extra_2"
+      String: "ability_extra_1"
     }
     Overrides {
       Name: "cs:Binding3"
-      String: "ability_extra_3"
+      String: "ability_extra_2"
     }
     Overrides {
       Name: "cs:Binding4"
-      String: "ability_extra_4"
+      String: "ability_extra_3"
     }
     Overrides {
       Name: "cs:Binding5"
-      String: "ability_extra_5"
+      String: "ability_extra_4"
     }
     Overrides {
       Name: "cs:Binding6"
-      String: "ability_extra_6"
+      String: "ability_extra_5"
     }
     Overrides {
       Name: "cs:Binding7"

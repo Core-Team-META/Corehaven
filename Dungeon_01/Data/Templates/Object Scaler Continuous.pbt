@@ -75,5 +75,5 @@
       AssetId: "Object_Scaler_Continuous"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 66
 }

@@ -119,16 +119,14 @@ function ShowText(targetCharacter, amount, over, color, tags)
 
 				-- Some hardcoded animations
 				if isCrit then
-					color = Color.ORANGE
-
 					if t < 0.15 then
 						element.y = position.y - math.sin(t / 0.15 * math.pi / 2) * 50.0
-						element.fontSize = 18.0 + t * 240.0
+						element.fontSize = 22.0 + t * 480.0
 					else
 						if t < 0.35 then
-							element.fontSize = 36.0 + (0.35 - t) * 90.0
+							element.fontSize = 40.0 + (0.35 - t) * 180.0
 						else
-							element.fontSize = 36.0
+							element.fontSize = 40.0
 						end
 						element.y = position.y - 50.0
 						
@@ -172,7 +170,11 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 		ShowText(targetCharacter, amount + overkill, 0.0, Color.RED, tags)
 	elseif sourceCharacter == LOCAL_PLAYER then
 		-- For damage you deal, we don't even bother showing overkill
-		ShowText(targetCharacter, amount + overkill, 0.0, Color.WHITE, tags)
+		if API_D.HasTag(tags, API_D.TAG_CRIT) then
+			ShowText(targetCharacter, amount + overkill, 0.0, Color.ORANGE, tags)
+		else
+			ShowText(targetCharacter, amount + overkill, 0.0, Color.WHITE, tags)
+		end
 	end
 end
 

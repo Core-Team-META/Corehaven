@@ -85,7 +85,7 @@ function OnBindingPressed(player, binding)
 	-- One frame wait so this happens after we target an enemy if they are behind the frame
 	Task.Wait()
 
-	if binding == "ability_primary" then
+	if binding == "ability_primary" and UI.IsCursorVisible() then
 		for player, data in pairs(partyFrames) do
 			if IsCursorOverFrame(data) then
 				API_T.TrySetTarget(player, false)

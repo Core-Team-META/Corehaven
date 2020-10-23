@@ -18,7 +18,7 @@ local autoTargetHistory = {}
 local lastAutoTargetTime = 0.0
 local targetChangeTimeHistory = {}
 
--- Clicking in world or using auto targetting only targets enemies. Players can use their party frames to target allies
+-- Clicking in world or using auto targeting only targets enemies. Players can use their party frames to target allies
 -- or themselves
 
 function FindRayCapsuleCollisionDistance(rayStart, rayDirection, capsuleCenter, capsuleHeight, capsuleWidth)
@@ -129,7 +129,7 @@ function FindAutoTarget()
 		local distance = (npc:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 		local dot = (npc:GetWorldPosition() - viewPosition):GetNormalized() .. viewForward
 
-		if not API_NPC.IsDead(npc) and dot > 0.7 and distance <= AUTO_TARGET_MAX_RANGE then
+		if not API_NPC.IsDead(npc) and not API_NPC.IsAsleep(npc) and dot > 0.7 and distance <= AUTO_TARGET_MAX_RANGE then
 			local priority = (dot - 0.55) / distance
 			table.insert(candidates, {target = npc, priority = priority})
 		end
@@ -152,16 +152,12 @@ function FindAutoTarget()
 			end
 
 			if not inHistory then
-				if adjustHistory then
-					table.insert(autoTargetHistory, candidateData.target)
-				end
-
 				return candidateData.target
 			end
 		end
 	end
 
-	-- All candidates have been targetted before, find the least recently targetted one
+	-- All candidates have been targeted before, find the least recently targeted one
 	local minRank = #autoTargetHistory + 1
 	local target = nil
 
@@ -170,12 +166,6 @@ function FindAutoTarget()
 			minRank = candidateData.rank
 			target = candidateData.target
 		end
-	end
-
-	if target and adjustHistory then
-		-- Move them to the front of the list
-		table.remove(autoTargetHistory, minRank)
-		table.insert(autoTargetHistory, target)
 	end
 
 	return target
@@ -241,7 +231,6 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 end
 
 function Tick(deltaTime)
-	-- We intentionally did not predict the target. We have since found a way around this, so it will be added.
 	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 
 	if currentTarget then

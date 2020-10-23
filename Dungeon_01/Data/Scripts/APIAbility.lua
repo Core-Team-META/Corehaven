@@ -604,13 +604,13 @@ function API.CanTrigger(abilityName)
 		else
 			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, GetEffectiveTarget(abilityName), abilityName)
 
-			--[[if not targetValid then
+			if not targetValid then
 				local autoTarget = API_T.FindAutoTarget()
 
 				if autoTarget then
-					targetValid, errorMessage = IsTargetValid(autoTarget)
+					targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, autoTarget, abilityName)
 				end
-			end]]
+			end
 
 			if not targetValid then
 				if errorMessage then
@@ -660,6 +660,14 @@ function CanActivate(abilityName)
 		end
 
 		local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, target, abilityName)
+
+		if not targetValid then
+			local autoTarget = API_T.FindAutoTarget()
+
+			if autoTarget then
+				targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, autoTarget, abilityName)
+			end
+		end
 
 		if not targetValid then
 			if errorMessage then
@@ -752,6 +760,11 @@ function API.Trigger(abilityName)
 
 		if data.targets then
 			target = GetEffectiveTarget(abilityName)
+
+			if not IsTargetValid(LOCAL_PLAYER, target, abilityName) then
+				target = API_T.FindAutoTarget()
+				API_T.TrySetTarget(target, true)
+			end
 		end
 
 		if CanCast(abilityName, target) then
