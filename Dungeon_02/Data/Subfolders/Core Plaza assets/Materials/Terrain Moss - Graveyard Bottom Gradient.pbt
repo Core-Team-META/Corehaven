@@ -2,7 +2,7 @@
   Id: 13330881700409385205
   Name: "Terrain Moss - Graveyard Bottom Gradient"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 3233298230221723918
     ParameterOverrides {

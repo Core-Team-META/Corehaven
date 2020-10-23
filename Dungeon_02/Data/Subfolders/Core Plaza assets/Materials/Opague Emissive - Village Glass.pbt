@@ -2,7 +2,7 @@
   Id: 7786654799816705820
   Name: "Opague Emissive - Village Glass"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 5351428073291024820
     ParameterOverrides {

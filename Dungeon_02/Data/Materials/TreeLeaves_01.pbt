@@ -2,7 +2,7 @@
   Id: 4405239051873314738
   Name: "TreeLeaves_01"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 8870440354414589934
     ParameterOverrides {

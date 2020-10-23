@@ -2,7 +2,7 @@
   Id: 598176741829763936
   Name: "Metal Steel Matte"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 7703635848589930528
     ParameterOverrides {

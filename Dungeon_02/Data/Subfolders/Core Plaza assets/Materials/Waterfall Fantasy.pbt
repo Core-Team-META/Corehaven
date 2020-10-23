@@ -2,7 +2,7 @@
   Id: 6972680412549297304
   Name: "Waterfall Fantasy"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 10435070743170200332
     ParameterOverrides {

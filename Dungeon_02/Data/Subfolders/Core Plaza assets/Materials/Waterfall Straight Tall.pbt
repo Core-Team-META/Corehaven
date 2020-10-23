@@ -2,7 +2,7 @@
   Id: 7233527951524951784
   Name: "Waterfall Straight Tall"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 15348530013722131390
     ParameterOverrides {

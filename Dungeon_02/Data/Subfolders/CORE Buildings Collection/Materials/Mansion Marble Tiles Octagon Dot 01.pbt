@@ -2,7 +2,7 @@
   Id: 15617330665548508781
   Name: "Mansion Marble Tiles Octagon Dot 01"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 9473864492472762108
     ParameterOverrides {

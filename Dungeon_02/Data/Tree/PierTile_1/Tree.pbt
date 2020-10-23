@@ -682,24 +682,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.291666657
-        G: 0.133085966
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -749,24 +754,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.291666657
-        G: 0.133085966
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -816,24 +826,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.291666657
-        G: 0.133085966
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -877,7 +892,6 @@ Objects {
   }
   ParentId: 16271086061255354300
   ChildIds: 2650935887926490584
-  ChildIds: 13864031761207080228
   ChildIds: 7062932951446621854
   ChildIds: 15835067192562840138
   ChildIds: 2018421402025872187
@@ -924,25 +938,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8993497451337368216
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -991,24 +1009,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.607
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1056,25 +1079,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.74070275
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1123,25 +1150,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8993497451337368216
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2.07494664
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1190,24 +1221,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1253,25 +1289,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1.90049076
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1320,24 +1360,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.8
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1384,24 +1429,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1447,25 +1497,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.60678
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1511,24 +1565,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 8993497451337368216
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1557,9 +1616,9 @@ Objects {
   Name: "Craftsman Roof 01 Beam"
   Transform {
     Location {
-      X: -41.7973099
-      Y: 240.384125
-      Z: 4.41487598
+      X: -40.4410248
+      Y: 222.288818
+      Z: 4.41488791
     }
     Rotation {
       Yaw: 4.28719378
@@ -1575,90 +1634,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.401041657
-        G: 0.182993218
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 2.70041347
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 6807357076135762555
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13864031761207080228
-  Name: "Craftsman Roof 01 Beam"
-  Transform {
-    Location {
-      X: -39.2118301
-      Y: 195.324203
-      Z: 3.06598687
-    }
-    Rotation {
-      Pitch: 0.546449244
-      Yaw: 3.26238513
-      Roll: 0.0311381165
-    }
-    Scale {
-      X: 0.541974306
-      Y: 1.53149378
-      Z: 0.315930158
-    }
-  }
-  ParentId: 14826695882904177139
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17557104084763797115
-      }
+      Float: 0.175452769
     }
     Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.401041657
-        G: 0.182993218
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.755760193
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {
@@ -1707,25 +1705,29 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 17557104084763797115
+        Id: 18033297229984528543
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.364583343
-        G: 0.18598184
-        B: 0.0360937193
+        R: 0.730461
+        G: 0.590619
+        B: 0.577580631
         A: 1
       }
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.8188436
+      Float: 0.328239411
     }
     Overrides {
       Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 1
+      Float: 0.175452769
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:smart"
+      Bool: false
     }
   }
   Collidable_v2 {

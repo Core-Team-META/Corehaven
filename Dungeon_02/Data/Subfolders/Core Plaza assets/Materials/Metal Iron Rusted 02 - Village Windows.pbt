@@ -2,7 +2,7 @@
   Id: 15847409373389112459
   Name: "Metal Iron Rusted 02 - Village Windows"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 1666647335710381413
     ParameterOverrides {
