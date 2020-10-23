@@ -2,7 +2,7 @@
   Id: 6360514069944077527
   Name: "Necromancer Robe - Copy"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 4904779893906915148
     ParameterOverrides {

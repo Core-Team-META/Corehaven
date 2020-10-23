@@ -38,16 +38,26 @@ PRINT STAT SHEET
 [F7]
 Prints a human-readable synopsis of the player's stat sheet to the console.
 
+UNLOCK ALL CRAFTING RECIPES
+[page-up]
+Discover all crafting recipes for this account.
+
+RESET CRAFTING RECIPES
+[page-down]
+Un-discover all crafting recipes for this account.
+
 ------------------------------------------------------------------------------------
 ]])
 
-local BINDING_DROP_LOOT         = "ability_extra_47"    -- [down-arrow]
-local BINDING_INVENTORY_CLEAR   = "ability_extra_66"    -- [delete]
-local BINDING_INVENTORY_PRINT   = "ability_extra_57"    -- [F8]
-local BINDING_EXPERIENCE_ADD    = "ability_extra_49"    -- [right-arrow]
-local BINDING_LEVEL_ADD         = "ability_extra_46"    -- [up-arrow]
-local BINDING_LEVEL_RESET       = "ability_extra_63"    -- [home]
-local BINDING_STATSHEET_PRINT   = "ability_extra_56"    -- [F7]
+local BINDING_DROP_LOOT             = "ability_extra_47"    -- [down-arrow]
+local BINDING_INVENTORY_CLEAR       = "ability_extra_66"    -- [delete]
+local BINDING_INVENTORY_PRINT       = "ability_extra_57"    -- [F8]
+local BINDING_EXPERIENCE_ADD        = "ability_extra_49"    -- [right-arrow]
+local BINDING_LEVEL_ADD             = "ability_extra_46"    -- [up-arrow]
+local BINDING_LEVEL_RESET           = "ability_extra_63"    -- [home]
+local BINDING_STATSHEET_PRINT       = "ability_extra_56"    -- [F7]
+local BINDING_CRAFTING_UNLOCK_ALL   = "ability_extra_64"    -- [page-up]
+local BINDING_CRAFTING_LOCK_ALL     = "ability_extra_65"    -- [page-down]
 
 local function OnBindingPressed(player, binding)
     if binding == BINDING_DROP_LOOT then
@@ -79,6 +89,15 @@ local function OnBindingPressed(player, binding)
         print("CHEAT: RESET LEVEL")
     elseif binding == BINDING_STATSHEET_PRINT then
         print(player.serverUserData.statSheet)
+    elseif binding == BINDING_CRAFTING_UNLOCK_ALL then
+        Database:WaitUntilLoaded()
+        for _,recipeItemData in ipairs(Database:GetCraftingRecipeItemDatas()) do
+            player.serverUserData.craftingRecipeManager:UnlockCraftingRecipe(recipeItemData.index)
+        end
+        print("CHEAT: UNLOCK ALL CRAFTING RECIPES")
+    elseif binding == BINDING_CRAFTING_LOCK_ALL then
+        player.serverUserData.craftingRecipeManager:ResetUnlockedCraftingRecipes()
+        print("CHEAT: RESET CRAFTING RECIPES")
     end
 end
 

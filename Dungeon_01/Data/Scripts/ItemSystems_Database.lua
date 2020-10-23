@@ -5,6 +5,7 @@
     Reads and indexes the raw data scripts. Provides factory methods for creating items.
 ]]
 local Item = require(script:GetCustomProperty("Item"))
+local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local SALVAGE_ITEM_NAME = script:GetCustomProperty("SalvageItemName")
 
 -- Load the database over a fixed number of frames.
@@ -42,6 +43,10 @@ function Database:CreateItemFromDrop(dropKey)
     return item 
 end
 
+function Database:CreateItemFromData(itemData)
+    return Item.New(itemData)
+end
+
 function Database:CreateItemFromHash(itemHash)
     return Item.FromHash(self, itemHash)
 end
@@ -56,6 +61,10 @@ end
 
 function Database:FindItemDataByMUID(itemMUID)
     return self.itemDatasByMUID[itemMUID]
+end
+
+function Database:GetCraftingRecipeItemDatas()
+    return self.craftingRecipeItemDatas
 end
 
 function Database:RandomDropKey()
@@ -100,6 +109,7 @@ function Database:_LoadCatalog()
     self.itemDatasByIndex = {}
     self.itemDatasByName = {}
     self.itemDatasByMUID = {}
+    self.craftingRecipeItemDatas = {}
     local index = 1
     for _,data in ipairs(DATA_CATALOGS) do
         for _,row in ipairs(data) do
@@ -161,11 +171,70 @@ function Database:_LoadCatalog()
             self.itemDatasByIndex[itemData.index] = itemData
             self.itemDatasByName[itemData.name] = itemData
             self.itemDatasByMUID[itemData.muid] = itemData
+
+            -- Some items double as recipes and need to be treated as such.
+            if itemData.type == "CraftingRecipe" then
+                itemData.crafting = {
+                    recipeBookPage = tonumber(row.RecipeBookPage),
+                    method = row.Method,
+                    yieldItemName = row.YieldItemName ~= "" and row.YieldItemName or nil,
+                    ingredients = {
+                        { name = row.IngredientName1, amount = tonumber(row.IngredientAmount1) },
+                        { name = row.IngredientName2, amount = tonumber(row.IngredientAmount2) },
+                        { name = row.IngredientName3, amount = tonumber(row.IngredientAmount3) },
+                    }
+                }
+                table.insert(self.craftingRecipeItemDatas, itemData)
+            end
         end
     end
 
     -- Ensure that after all catalog data is loaded, the expected salvage item is present.
-    assert(self.itemDatasByName[SALVAGE_ITEM_NAME], "salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_NAME)
+    assert(self.itemDatasByName[SALVAGE_ITEM_NAME], string.format("salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_NAME))
+
+    -- Ensure that after all catalog data is loaded, all recipes reference valid items.
+    local recipeBookPageCounts = {}
+    for _,itemData in ipairs(self.craftingRecipeItemDatas) do
+        -- Check for valid name.
+        assert(itemData.name:match("^Recipe: (.+)$"), string.format("crafting recipe name must have format <Recipe: blahblahblah> -- %s", itemData.name))
+        -- Check for valid method (and set it up).
+        assert(itemData.crafting.method and CraftingRecipeMethods[itemData.crafting.method], string.format("crafting recipe has unrecognized method: %s", itemData.name))
+        itemData.crafting.method = CraftingRecipeMethods[itemData.crafting.method]
+        -- Check for valid page number.
+        assert(itemData.crafting.recipeBookPage, string.format("crafting recipe missing RecipeBookPage: %s", itemData.name))
+        recipeBookPageCounts[itemData.crafting.recipeBookPage] = recipeBookPageCounts[itemData.crafting.recipeBookPage] or 0
+        recipeBookPageCounts[itemData.crafting.recipeBookPage] = recipeBookPageCounts[itemData.crafting.recipeBookPage] + 1
+        assert(recipeBookPageCounts[itemData.crafting.recipeBookPage] <= 8, string.format("crafting recipe book page count limit (8) exceeded: %s", itemData.name))
+        -- Check for valid item yield. Each yield must be either a meta-yield, or a valid item.
+        if itemData.crafting.yieldItemName and not CraftingRecipeMethods.META_YIELD_ITEMS[itemData.crafting.yieldItemName] then
+            assert(self:FindItemDataByName(itemData.crafting.yieldItemName), string.format("crafting recipe yield item not recognized: %s", itemData.name))
+        end
+        -- Check for valid ingredients. Each ingredient must be either a meta-ingredient, or a valid item.
+        local nonEmptyIngredients = {}
+        for i,ingredient in pairs(itemData.crafting.ingredients) do
+            if ingredient.name ~= "" then
+                if not CraftingRecipeMethods.META_INGREDIENTS[ingredient.name] then
+                    local ingredientItemData = self:FindItemDataByName(ingredient.name)
+                    assert(ingredientItemData, string.format("crafting recipe ingredient not found: %s in recipe %s", ingredient.name, itemData.name))
+                    if ingredient.amount then
+                        assert(ingredient.amount > 0, string.format("crafting recipe ingredient amount must be > 0: %s in recipe %s", ingredient.name, itemData.name))
+                        assert(ingredientItemData.maxStackSize, string.format("crafting recipe cannot require amount of non-stackable item: %s in recipe %s", ingredient.name, itemData.name))
+                    end
+                    -- For convenience, we also stuff in an item because this is the easiest way for users of the recipe to work with it.
+                    ingredient.item = Item.New(ingredientItemData)
+                end
+                table.insert(nonEmptyIngredients, ingredient)
+            end
+        end
+        itemData.crafting.ingredients = nonEmptyIngredients
+    end
+    -- Also check that page numbers form a consecutive sequence starting at 1.
+    local recipeBookPageNumbers = {}
+    for recipeBookPage,_ in pairs(recipeBookPageCounts) do table.insert(recipeBookPageNumbers, recipeBookPage) end
+    table.sort(recipeBookPageNumbers)
+    for n,p in ipairs(recipeBookPageNumbers) do
+        assert(recipeBookPageNumbers[n] == p, string.format("crafting recipe page numbers must form a consecutive sequence starting at 1. Page #%d is missing.", n))
+    end
 end
 
 function Database:_LoadDrops()
@@ -199,6 +268,9 @@ function Database:_LoadAssetDerivedInformation()
         assert(itemData.iconMUID, string.format("item template %s missing icon property", itemData.muid))
         itemData.iconRotation = tempObject:GetCustomProperty("IconRotation")
         itemData.iconColorTint = tempObject:GetCustomProperty("IconColorTint")
+        itemData.interiorIconMUID = tempObject:GetCustomProperty("InteriorIcon")
+        itemData.interiorIconRotation = tempObject:GetCustomProperty("InteriorIconRotation")
+        itemData.interiorIconColorTint = tempObject:GetCustomProperty("InteriorIconColorTint")
         itemData.animationStance = tempObject:GetCustomProperty("AnimationStance")
 
         local consumptionEffectScript = tempObject:GetCustomProperty("ConsumptionEffectScript")

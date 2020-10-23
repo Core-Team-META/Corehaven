@@ -31,6 +31,7 @@ Item.TYPES = Enum{
     -- Special types.
     "Trinket",
     "NonEquippable",
+    "CraftingRecipe",
 }
 
 Item.NONEQUIPPABLE_TYPES = Enum{
@@ -38,6 +39,7 @@ Item.NONEQUIPPABLE_TYPES = Enum{
     "Currency",
     "Consumable",
     "Junk",
+    "CraftingRecipe",
 }
 
 Item.STATS = Enum{
@@ -129,6 +131,11 @@ function Item:GetName()
     return self.data.name
 end
 
+function Item:GetCraftingRecipeSubName()
+    assert(self.data.type == "CraftingRecipe")
+    return self.data.name:match("^Recipe: (.+)$")
+end
+
 function Item:GetType()
     return self.data.type
 end
@@ -185,11 +192,20 @@ function Item:GetEnhancementLevel()
     return self.enhancementLevel
 end
 
-function Item:ApplyIconImageSettings(uiImage)
+function Item:ApplyIconImageSettings(uiImage, uiImageInterior)
     uiImage:SetImage(self.data.iconMUID)
     uiImage:SetColor(self.data.iconColorTint or Color.WHITE)
     uiImage.rotationAngle = self.data.iconRotation or 0
-    return self.data.iconMUID
+    -- Deal with interior icon as well.
+    if uiImageInterior and self.data.interiorIconMUID then
+        uiImageInterior:SetImage(self.data.interiorIconMUID)
+        uiImageInterior:SetColor(self.data.interiorIconColorTint or Color.WHITE)
+        uiImageInterior.rotationAngle = self.data.interiorIconRotationAngle or 0
+    end
+end
+
+function Item:GetIndex()
+    return self.data.index
 end
 
 function Item:GetMUID()
@@ -267,6 +283,10 @@ function Item:IsHighValue()
     if self:IsStackable() and self:GetStackSize() >= (self:GetMaxStackSize() / 2) then
         return true
     end
+end
+
+function Item:GetCraftingRecipeData()
+    return self.data.crafting
 end
 
 ---------------------------------------------------------------------------------------------------------

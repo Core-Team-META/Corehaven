@@ -129,6 +129,17 @@ local function ServerInitInventory()
             end
         end
     end)
+    -- Whenever a client executes a craft, update the server inventory and persist.
+    Events.ConnectForPlayer("ICE", function(player, recipeItemIndex, primaryItemSlotIndex)
+        if player == OWNER then
+            local recipeItemData = Database:FindItemDataByIndex(recipeItemIndex)
+            if recipeItemData then
+                local recipeItem = Database:CreateItemFromData(recipeItemData)
+                inventory:ExecutePrimaryItemCraft(recipeItem, primaryItemSlotIndex)
+                ServerSaveInventory(inventory)
+            end
+        end
+    end)
 end
 
 local function ClientInitInventoryLocal()
@@ -147,6 +158,10 @@ local function ClientInitInventoryLocal()
     -- Whenever a loot item is claimed, broadcast to server.
     inventory.lootClaimedEvent:Connect(function(lootIndex)
         ReliableEvents.BroadcastToServer("ILC", lootIndex)
+    end)
+    -- Whenever a craft is performed, broadcast to server.
+    inventory.craftExecutedEvent:Connect(function(recipeItem, primaryItemSlotIndex)
+        ReliableEvents.BroadcastToServer("ICE", recipeItem:GetIndex(), primaryItemSlotIndex)
     end)
 end
 
