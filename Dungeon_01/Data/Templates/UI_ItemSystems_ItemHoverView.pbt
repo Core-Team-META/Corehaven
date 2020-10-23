@@ -29,7 +29,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 266
@@ -127,6 +127,8 @@
         ChildIds: 2958159584200621809
         ChildIds: 8134910548589255627
         ChildIds: 2692524949218444987
+        ChildIds: 18440193885409355065
+        ChildIds: 10039489459048352721
         UnregisteredParameters {
           Overrides {
             Name: "cs:Pointer"
@@ -177,6 +179,12 @@
             Float: 25
           }
           Overrides {
+            Name: "cs:StatsRoot"
+            ObjectReference {
+              SubObjectId: 18440193885409355065
+            }
+          }
+          Overrides {
             Name: "cs:EnhancementStar"
             ObjectReference {
               SubObjectId: 5969132730021877541
@@ -186,6 +194,12 @@
             Name: "cs:EnhancementAmount"
             ObjectReference {
               SubObjectId: 7333619355998468323
+            }
+          }
+          Overrides {
+            Name: "cs:GrayOut"
+            ObjectReference {
+              SubObjectId: 10039489459048352721
             }
           }
         }
@@ -1638,6 +1652,107 @@
         }
       }
       Objects {
+        Id: 18440193885409355065
+        Name: "StatsRoot"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10039489459048352721
+        Name: "GrayOut"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 14792434693933273901
         Name: "SansStats"
         Transform {
@@ -1659,6 +1774,7 @@
         ChildIds: 11411173877474483170
         ChildIds: 6881595661274502755
         ChildIds: 15629453047088928985
+        ChildIds: 8219351012132740045
         UnregisteredParameters {
           Overrides {
             Name: "cs:Pointer"
@@ -1688,6 +1804,12 @@
             Name: "cs:Description"
             ObjectReference {
               SubObjectId: 15629453047088928985
+            }
+          }
+          Overrides {
+            Name: "cs:GrayOut"
+            ObjectReference {
+              SubObjectId: 8219351012132740045
             }
           }
         }
@@ -2959,6 +3081,60 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8219351012132740045
+        Name: "GrayOut"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14792434693933273901
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }

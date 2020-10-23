@@ -268,7 +268,7 @@ end
 function Item:CopyStats(other)
     self.stats = {}
     for i,stat in ipairs(other.stats) do
-        self.stats[i] = { name = other.stats[i].name, value = other.stats[i].value }
+        self.stats[i] = { name = other.stats[i].name, value = other.stats[i].value, isBase = other.stats[i].isBase }
     end
     self:_RecalculateStatTotals()
 end

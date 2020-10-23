@@ -13,6 +13,8 @@ local RECIPE_BROWSER_CONTROL_DOT_TEMPLATE = script:GetCustomProperty("RecipeBrow
 local SFX_RECIPE_HOVER = script:GetCustomProperty("SFX_RecipeHover")
 local SFX_RECIPE_SWIPE = script:GetCustomProperty("SFX_RecipeSwipe")
 local SFX_RECIPE_SELECT = script:GetCustomProperty("SFX_RecipeSelect")
+local SFX_CRAFTING_IN_PROGRESS = script:GetCustomProperty("SFX_CraftingUI_InProgress")
+local SFX_CRAFTING_COMPLETE = script:GetCustomProperty("SFX_CraftingUI_Complete")
 
 local COLOR_BRIGHTNESS_LOCKED = script:GetCustomProperty("IconColorBrightnessLocked")
 local COLOR_BRIGHTNESS_HOVERED = script:GetCustomProperty("IconColorBrightnessHovered")
@@ -62,7 +64,7 @@ local LOWER_HALF_VIEWS = {}
 
 -----------------------------------------------------------------------------------------------------------------
 local function PlaySound(sfx)
-    World.SpawnAsset(sfx, { parent = script })
+    return World.SpawnAsset(sfx, { parent = script })
 end
 
 local function ApplyColorBrightness(uiImage, coefficient)
@@ -152,6 +154,7 @@ function view:SetupRecipeExecutionFlow()
         recipeHeaderDescription     = RECIPE_EXECUTION_PANEL:GetCustomProperty("RecipeHeaderDescription"):WaitForObject(),
         ingredientPanelRoot         = RECIPE_EXECUTION_PANEL:GetCustomProperty("IngredientPanelRoot"):WaitForObject(),
         primaryItemPanel            = RECIPE_EXECUTION_PANEL:GetCustomProperty("PrimaryItemPanel"):WaitForObject(),
+        craftItemResultStatsPanel  = RECIPE_EXECUTION_PANEL:GetCustomProperty("CraftItemResultStatsPanel"):WaitForObject(),
     }
     self.ingredientWidgets = {
         [1] = RECIPE_EXECUTION_PANEL:GetCustomProperty("IngredientPanel1"):WaitForObject(),
@@ -182,6 +185,10 @@ function view:SetupRecipeExecutionFlow()
         indicator.clientUserData.baseY = indicator.y
     end
     self.primaryItemCraftButton.clickedEvent:Connect(function() self:GOTO_ExecutePrimaryItemCraft() end)
+    -- Results view.
+    self.resultStatsTooltipBefore = self.executionPanelWidgets.craftItemResultStatsPanel:GetCustomProperty("ItemTooltipBefore"):WaitForObject()
+    self.resultStatsTooltipAfter = self.executionPanelWidgets.craftItemResultStatsPanel:GetCustomProperty("ItemTooltipAfter"):WaitForObject()
+    self.resultStatsProgressBar = self.executionPanelWidgets.craftItemResultStatsPanel:GetCustomProperty("ProgressBar"):WaitForObject()
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -321,6 +328,9 @@ function view:GOTO_AwaitingRecipeSelection()
         blinkColor.a = 0.4 + 0.2 * math.sin(2 * math.pi * time() / 5)
         self.executionPanelWidgets.defaultInstructions:SetColor(blinkColor)
     end
+    if self.currentSfx then
+        self.currentSfx:FadeOut(0.1)
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -328,6 +338,7 @@ end
 -- fill in missing ingredients from their inventory.
 function view:GOTO_AwaitingPrimaryItemSelection()
     self.phase = "AwaitingPrimaryItemSelection"
+    self:HideAllExecutionPanelWidgets()
     local recipeItem = self.selectedRecipeWidget.clientUserData.recipeItem
     self.executionPanelWidgets.defaultInstructions.visibility = Visibility.FORCE_OFF
     -- Header info.
@@ -439,9 +450,44 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:GOTO_ExecutePrimaryItemCraft()
-    warn("Executing craft. This part of the interaction is WIP.")
-    inventory:ExecutePrimaryItemCraft(self.selectedRecipeWidget.clientUserData.recipeItem, self.primaryItemInventorySlotIndex)
-    self:GOTO_AwaitingRecipeSelection()
+    self.executionPanelWidgets.recipeHeaderPanel.visibility = Visibility.FORCE_OFF
+    self.executionPanelWidgets.ingredientPanelRoot.visibility = Visibility.FORCE_OFF
+    self.executionPanelWidgets.craftItemResultStatsPanel.visibility = Visibility.INHERIT
+    self.resultStatsTooltipBefore.visibility = Visibility.INHERIT
+    self.resultStatsTooltipAfter.visibility = Visibility.FORCE_OFF
+    self.resultStatsProgressBar.visibility = Visibility.INHERIT
+    local beforeItem = Item.New(self.primaryItem.data, self.primaryItem:GetStackSize(), self.primaryItem:GetEnhancementLevel())
+    beforeItem:CopyStats(self.primaryItem)
+    self.resultStatsTooltipAfter.clientUserData.itemToCompareWith = beforeItem
+    self.resultStatsTooltipBefore.clientUserData.itemToView = beforeItem
+    self.resultStatsTooltipBefore.clientUserData.shouldGrayOut = nil
+
+    self.updateElapsed = 0
+    self.updateMethod = function(dt) self:UPDATE_ExecutePrimaryItemCraft(dt) end
+    self.currentSfx = PlaySound(SFX_CRAFTING_IN_PROGRESS)
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:UPDATE_ExecutePrimaryItemCraft(dt)
+    if self.updateElapsed then
+        self.updateElapsed = self.updateElapsed + dt
+        if self.updateElapsed < 1.4 then
+            self.resultStatsProgressBar.progress = (self.updateElapsed / 1.4)
+        else
+            PlaySound(SFX_CRAFTING_COMPLETE)
+            self.updateElapsed = nil
+            inventory:ExecutePrimaryItemCraft(self.selectedRecipeWidget.clientUserData.recipeItem, self.primaryItemInventorySlotIndex)
+            self.resultStatsProgressBar.visibility = Visibility.FORCE_OFF
+            self.resultStatsTooltipAfter.visibility = Visibility.INHERIT
+            self.resultStatsTooltipAfter.clientUserData.itemToView = self.primaryItem
+            self.resultStatsTooltipAfter.clientUserData.forceUpdate = true
+            self.resultStatsTooltipBefore.clientUserData.shouldGrayOut = true
+            self.resultStatsTooltipBefore.clientUserData.forceUpdate = true
+            self.resultStatsTooltipAfter.clientUserData.itemToCompareWith = self.beforeItem
+            self.selectedRecipeWidget = nil
+            self:EndInventoryExternalInteraction()
+        end
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------------

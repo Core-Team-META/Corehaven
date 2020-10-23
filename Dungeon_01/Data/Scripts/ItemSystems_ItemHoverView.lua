@@ -25,17 +25,21 @@ function view:InitPanel(panel)
     panel.clientUserData.statOffsetXBase = panel:GetCustomProperty("StatOffsetXBase")
     panel.clientUserData.statOffsetXBonus = panel:GetCustomProperty("StatOffsetXBonus")
     panel.clientUserData.pointer.visibility = ROOT:GetCustomProperty("ShouldShowPointer") and Visibility.INHERIT or Visibility.FORCE_OFF
+    if panel:GetCustomProperty("StatsRoot") then
+        panel.clientUserData.statsRoot = panel:GetCustomProperty("StatsRoot"):WaitForObject()
+    end
     if panel:GetCustomProperty("EnhancementStar") then
         panel.clientUserData.enhancementStar = panel:GetCustomProperty("EnhancementStar"):WaitForObject()
         panel.clientUserData.enhancementAmount = panel:GetCustomProperty("EnhancementAmount"):WaitForObject()
     end
+    panel.clientUserData.grayOut = panel:GetCustomProperty("GrayOut"):WaitForObject()
 end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:EnsureSufficientHoverStatEntries(numRequired)
     for i=1,numRequired do
         if not self.itemHoverStatEntries[i] then
-            local entry = World.SpawnAsset(TEMPLATE_ITEM_STAT, { parent = PANEL_WITH_STATS })
+            local entry = World.SpawnAsset(TEMPLATE_ITEM_STAT, { parent = PANEL_WITH_STATS.clientUserData.statsRoot })
             entry.clientUserData.icon = entry:GetCustomProperty("StatIcon"):WaitForObject()
             entry.clientUserData.value = entry:GetCustomProperty("StatValue"):WaitForObject()
             entry.clientUserData.enhancementBonus = entry:GetCustomProperty("StatEnhancementBonus"):WaitForObject()
@@ -92,8 +96,10 @@ function view:DrawPanelWithStats()
     for _,control in ipairs(panel.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
         control:SetColor(color)
     end
-    -- Show enhancement start and level if applicable.
+    -- Show enhancement star and level if applicable.
     panel.clientUserData.enhancementAmount.text = string.format("%d | %d", item:GetEnhancementLevel(), item:GetMaxEnhancementLevel())
+    -- Draw the gray out if requested.
+    panel.clientUserData.grayOut.visibility = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
 end
 
 -------------------------------------------------------------------------------
@@ -110,11 +116,14 @@ function view:DrawPanelSansStats()
     for _,control in ipairs(panel.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
         control:SetColor(color)
     end
+    -- Draw the gray out if requested.
+    panel.clientUserData.grayOut = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
 end
 
 -------------------------------------------------------------------------------
 function view:Update()
-    if self.itemToView ~= ROOT.clientUserData.itemToView then
+    if ROOT.clientUserData.forceUpdate or self.itemToView ~= ROOT.clientUserData.itemToView then
+        ROOT.clientUserData.forceUpdate = nil
         self.itemToView = ROOT.clientUserData.itemToView
         if self.itemToView then
             -- UI properties.

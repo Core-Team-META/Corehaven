@@ -3542,7 +3542,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   TemplateInstance {
     ParameterOverrideMap {
@@ -3560,12 +3560,6 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-          }
-        }
-        Overrides {
-          Name: "Visible"
-          Enum {
-            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }
@@ -8823,6 +8817,7 @@ Objects {
   ChildIds: 16660565422122860272
   ChildIds: 1103225675852242939
   ChildIds: 7318516323767600956
+  ChildIds: 12233152625894493408
   UnregisteredParameters {
     Overrides {
       Name: "cs:DefaultInstructions"
@@ -8893,6 +8888,12 @@ Objects {
         SelfId: 4635169021175123065
       }
     }
+    Overrides {
+      Name: "cs:CraftItemResultStatsPanel"
+      ObjectReference {
+        SelfId: 12233152625894493408
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -8922,6 +8923,370 @@ Objects {
           Value: "mc:euianchor:bottomcenter"
         }
       }
+    }
+  }
+}
+Objects {
+  Id: 12233152625894493408
+  Name: "CraftItemResultStats"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1637617044735192071
+  ChildIds: 4575503464496723213
+  ChildIds: 8717698894850353114
+  ChildIds: 5844928966026925107
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ItemTooltipBefore"
+      ObjectReference {
+        SelfId: 8371961887334944368
+        SubObjectId: 15693456971712313944
+        InstanceId: 4575503464496723213
+        TemplateId: 12272661979447068555
+      }
+    }
+    Overrides {
+      Name: "cs:ItemTooltipAfter"
+      ObjectReference {
+        SelfId: 546268358831589036
+        SubObjectId: 15693456971712313944
+        InstanceId: 8717698894850353114
+        TemplateId: 12272661979447068555
+      }
+    }
+    Overrides {
+      Name: "cs:ProgressBar"
+      ObjectReference {
+        SelfId: 5844928966026925107
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 100
+    Height: 260
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5844928966026925107
+  Name: "CraftItemResultsStatsProgress"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12233152625894493408
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 30
+    UIX: 140
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    StatBar {
+      Color {
+        R: 1
+        G: 0.602384329
+        B: 0.24000001
+        A: 1
+      }
+      BackgroundColor {
+        R: 0.697
+        G: 0.536136091
+        B: 0.411230028
+        A: 1
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 8717698894850353114
+  Name: "UI_ItemSystems_ItemHoverView"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12233152625894493408
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14792434693933273901
+      value {
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15693456971712313944
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_ItemHoverView"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 140
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "cs:ShouldShowPointer"
+          Bool: false
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17972168532587766368
+      value {
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12272661979447068555
+    }
+  }
+}
+Objects {
+  Id: 4575503464496723213
+  Name: "UI_ItemSystems_ItemHoverView"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12233152625894493408
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 14792434693933273901
+      value {
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15693456971712313944
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_ItemHoverView"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -140
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "cs:ShouldShowPointer"
+          Bool: false
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 17972168532587766368
+      value {
+        Overrides {
+          Name: "Anchor"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "Dock"
+          Enum {
+            Value: "mc:euianchor:middlecenter"
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12272661979447068555
     }
   }
 }
@@ -11362,6 +11727,18 @@ Objects {
       Name: "cs:RecipeExecutionFlowPanel"
       ObjectReference {
         SelfId: 1637617044735192071
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_CraftingUI_InProgress"
+      AssetReference {
+        Id: 16739996958513679473
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_CraftingUI_Complete"
+      AssetReference {
+        Id: 760467605671424487
       }
     }
   }
