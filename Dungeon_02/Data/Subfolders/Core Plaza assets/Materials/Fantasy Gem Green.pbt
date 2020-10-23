@@ -2,7 +2,7 @@
   Id: 251468455081318876
   Name: "Fantasy Gem Green"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {

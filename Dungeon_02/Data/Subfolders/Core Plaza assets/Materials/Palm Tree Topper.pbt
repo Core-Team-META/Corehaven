@@ -2,7 +2,7 @@
   Id: 16760444235680391913
   Name: "Palm Tree Topper"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 13036740217369066563
     ParameterOverrides {

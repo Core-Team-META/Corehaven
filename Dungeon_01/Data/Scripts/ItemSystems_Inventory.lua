@@ -38,6 +38,7 @@ function Inventory.New(database, owner)
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
     o:_DefineEvent("itemConsumedEvent")
+    o:_DefineEvent("craftExecutedEvent")
     return o
 end
 
@@ -335,6 +336,80 @@ function Inventory:GetQuickCompareStatDeltas(equipSlotIndex, itemToTest)
     for _,statName in ipairs(self.connectedStatSheet.STATS) do statDeltas[statName] = statDeltas[statName] + self.connectedStatSheet:GetStatTotalValue(statName) end
     self:_SetSlotItem(equipSlotIndex, itemAlreadyEquipped, doNotFireEvent)
     return statDeltas
+end
+
+-- Returns a table of the "in-inventory" quantities of each of the required items.
+-- Stackable items have their cumulative stack size considered, while non-stackable items simply count the
+-- number of separate instances. Any META ingredients will be ignored. All inventory slots are considered.
+function Inventory:ComputeCraftingRecipeIngredientCounts(craftingRecipeItem)
+    local ingredientCounts = {}
+    local craftingData = craftingRecipeItem:GetCraftingRecipeData()
+    for _,ingredient in ipairs(craftingData.ingredients) do
+        if ingredient.item then
+            ingredientCounts[ingredient.item:GetIndex()] = 0
+        end
+    end
+    for i=1,self.TOTAL_CAPACITY do
+        local item = self:GetItem(i)
+        if item then
+            local index = item:GetIndex()
+            local count = ingredientCounts[index]
+            if count then
+                local addend = 1
+                if item:IsStackable() then
+                    addend = item:GetStackSize()
+                end
+                ingredientCounts[index] = count + addend
+            end
+        end
+    end
+    -- Convert into useful output format.
+    local countsArray = {}
+    for _,ingredient in ipairs(craftingData.ingredients) do
+        if ingredient.item then
+            table.insert(countsArray, ingredientCounts[ingredient.item:GetIndex()])
+        end
+    end
+    return countsArray
+end
+
+-- Executes a primary item craft, removing the ingredients from the inventory and modifying the primary item in place.
+function Inventory:ExecutePrimaryItemCraft(recipeItem, primaryItemSlotIndex)
+    local ingredientRequiredAmounts = {}
+    local craftingData = recipeItem:GetCraftingRecipeData()
+    for _,ingredient in ipairs(craftingData.ingredients) do
+        if ingredient.item then
+            ingredientRequiredAmounts[ingredient.item:GetIndex()] = ingredient.amount or 1
+        end
+    end
+    -- Subtract the ingredients. While it would be nice to take from the smallest stack first, it is far easier to just
+    -- remove in the order we encounter them in the inventory.
+    for i=1,self.TOTAL_CAPACITY do
+        local item = self:GetItem(i)
+        if item then
+            local index = item:GetIndex()
+            local requiredAmount = ingredientRequiredAmounts[index]
+            if requiredAmount and requiredAmount > 0 then
+                if item:IsStackable() then
+                    local amountToRemove = math.min(requiredAmount, item:GetStackSize())
+                    if amountToRemove == item:GetStackSize() then
+                        self:_SetSlotItem(i, nil)
+                    else
+                        item:SetStackSize(item:GetStackSize() - amountToRemove)
+                    end
+                    ingredientRequiredAmounts[index] = requiredAmount - amountToRemove
+                else
+                    self:_SetSlotItem(i, nil)
+                    ingredientRequiredAmounts[index] = requiredAmount - 1
+                end
+            end
+        end
+    end
+    -- Perform the modification.
+    local primaryItem = self:GetItem(primaryItemSlotIndex)
+    craftingData.method:Execute(recipeItem, primaryItem)
+    -- Fire event so that this operation is replicated.
+    self:_FireEvent("craftExecutedEvent", recipeItem, primaryItemSlotIndex)
 end
 
 ---------------------------------------------------------------------------------------------------------

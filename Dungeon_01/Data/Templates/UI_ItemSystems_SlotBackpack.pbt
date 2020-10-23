@@ -20,6 +20,7 @@
         ChildIds: 13460644710938549566
         ChildIds: 5666818559770970619
         ChildIds: 14506340810009850959
+        ChildIds: 9036072047401494329
         UnregisteredParameters {
           Overrides {
             Name: "cs:Anchor"
@@ -63,6 +64,12 @@
             Name: "cs:CounterNumber"
             ObjectReference {
               SubObjectId: 7657509039922316326
+            }
+          }
+          Overrides {
+            Name: "cs:Locked"
+            ObjectReference {
+              SubObjectId: 9036072047401494329
             }
           }
         }
@@ -488,6 +495,122 @@
           }
         }
       }
+      Objects {
+        Id: 9036072047401494329
+        Name: "Locked"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17887133009286436725
+        ChildIds: 15044492490649903259
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 7
+          Height: 7
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 16532880832873788683
+            }
+            Color {
+              A: 0.8
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15044492490649903259
+        Name: "Locked"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9036072047401494329
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -45
+          Height: -45
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 2152939902224710703
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.4
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 16532880832873788683
@@ -514,6 +637,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameSolid4px_019"
+      }
+    }
+    Assets {
+      Id: 2152939902224710703
+      Name: "Icon Lock"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Lock"
       }
     }
     PrimaryAssetId {

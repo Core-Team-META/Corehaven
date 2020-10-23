@@ -2,7 +2,7 @@
   Id: 1635521226023043424
   Name: "Bricks Mismatched Stone 01 - Village"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 7959546782718511054
     ParameterOverrides {

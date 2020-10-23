@@ -2,7 +2,7 @@
   Id: 3553354711700053445
   Name: "red fabric"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 3009572309331366111
     ParameterOverrides {

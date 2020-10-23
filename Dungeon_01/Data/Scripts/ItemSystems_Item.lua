@@ -31,6 +31,7 @@ Item.TYPES = Enum{
     -- Special types.
     "Trinket",
     "NonEquippable",
+    "CraftingRecipe",
 }
 
 Item.NONEQUIPPABLE_TYPES = Enum{
@@ -38,6 +39,7 @@ Item.NONEQUIPPABLE_TYPES = Enum{
     "Currency",
     "Consumable",
     "Junk",
+    "CraftingRecipe",
 }
 
 Item.STATS = Enum{
@@ -103,6 +105,10 @@ Item.SHARD_RARITY_MULTIPLIERS = {
     Legendary   = 248,
 }
 
+-- Enhancement cap.
+Item.ENHANCEMENT_CAP = 10
+Item.ENHANCEMENT_STAT_PERCENT_INCREASE = 10
+
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
@@ -127,6 +133,11 @@ end
 
 function Item:GetName()
     return self.data.name
+end
+
+function Item:GetCraftingRecipeSubName()
+    assert(self.data.type == "CraftingRecipe")
+    return self.data.name:match("^Recipe: (.+)$")
 end
 
 function Item:GetType()
@@ -181,15 +192,37 @@ function Item:GetAvailableStackSpace()
 end
 
 function Item:GetEnhancementLevel()
-    -- TODO not implemented.
     return self.enhancementLevel
 end
 
-function Item:ApplyIconImageSettings(uiImage)
+function Item:GetMaxEnhancementLevel()
+    return self.ENHANCEMENT_CAP
+end
+
+function Item:SetEnhancementLevel(enhancementLevel)
+    assert(0 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
+    self.enhancementLevel = enhancementLevel
+    self:_RecalculateStatTotals()
+end
+
+function Item:IsFullyEnhanced()
+    return self.enhancementLevel == self:GetMaxEnhancementLevel()
+end
+
+function Item:ApplyIconImageSettings(uiImage, uiImageInterior)
     uiImage:SetImage(self.data.iconMUID)
     uiImage:SetColor(self.data.iconColorTint or Color.WHITE)
     uiImage.rotationAngle = self.data.iconRotation or 0
-    return self.data.iconMUID
+    -- Deal with interior icon as well.
+    if uiImageInterior and self.data.interiorIconMUID then
+        uiImageInterior:SetImage(self.data.interiorIconMUID)
+        uiImageInterior:SetColor(self.data.interiorIconColorTint or Color.WHITE)
+        uiImageInterior.rotationAngle = self.data.interiorIconRotationAngle or 0
+    end
+end
+
+function Item:GetIndex()
+    return self.data.index
 end
 
 function Item:GetMUID()
@@ -216,18 +249,26 @@ function Item:HasStats()
     return self.hasStats
 end
 
-function Item:GetStats()
+-- Returns a table of the item's base stats.
+function Item:GetStatsBase()
     return self.stats
 end
 
+-- Returns a table of the item's enhanced stats.
+function Item:GetStatsEnhanced()
+    return self.statsEnhanced
+end
+
+-- Returns the effective total stat (accounting for summed affixes and enhancements).
 function Item:GetStatTotal(statName)
     return self.statTotals[statName] or 0
 end
 
+
 function Item:CopyStats(other)
     self.stats = {}
     for i,stat in ipairs(other.stats) do
-        self.stats[i] = { name = other.stats[i].name, value = other.stats[i].value }
+        self.stats[i] = { name = other.stats[i].name, value = other.stats[i].value, isBase = other.stats[i].isBase }
     end
     self:_RecalculateStatTotals()
 end
@@ -267,6 +308,10 @@ function Item:IsHighValue()
     if self:IsStackable() and self:GetStackSize() >= (self:GetMaxStackSize() / 2) then
         return true
     end
+end
+
+function Item:GetCraftingRecipeData()
+    return self.data.crafting
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -353,12 +398,30 @@ function Item._FromHash(database, hash)
 end
 
 function Item:_RecalculateStatTotals()
-    self.hasStats = nil
-    for _,statName in ipairs(Item.STATS) do self.statTotals[statName] = 0 end
+    -- Clear old values.
+    for _,statName in ipairs(Item.STATS) do
+        self.statTotals[statName] = 0
+    end
+    -- First compute enhanced stats.
+    local enhancementMultiplier = self:_GetEnhancementMultiplier()
+    self.statsEnhanced = {}
     for i,stat in ipairs(self.stats) do
+        self.statsEnhanced[i] = {
+            name = stat.name,
+            isBase = stat.isBase,
+            value = math.floor(0.5 + stat.value * enhancementMultiplier),
+        }
+    end
+    -- Sum stats to get stat totals (effective and base).
+    self.hasStats = nil
+    for i,stat in ipairs(self.statsEnhanced) do
         self.hasStats = true
         self.statTotals[stat.name] = self.statTotals[stat.name] + stat.value
-    end 
+    end
+end
+
+function Item:_GetEnhancementMultiplier()
+    return 1 + (self.enhancementLevel * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
 end
 
 function Item:__tostring()

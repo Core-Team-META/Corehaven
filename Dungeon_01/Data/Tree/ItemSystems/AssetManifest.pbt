@@ -8,12 +8,30 @@
   }
 }
 Assets {
+  Id: 16532880832873788683
+  Name: "BG Flat 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_019"
+  }
+}
+Assets {
   Id: 16477742065922762353
   Name: "UI Gradient Circular 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Basic_Shape_001"
+  }
+}
+Assets {
+  Id: 16472544452721371060
+  Name: "Center Arrow 008 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_008Wedge"
   }
 }
 Assets {
@@ -26,12 +44,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16209862849404151889
-  Name: "Icon Arrow Up"
+  Id: 14921027051656134984
+  Name: "Center Arrow 004 Wedge"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_ArrowUp"
+    AssetId: "CenterArrow_004Wedge"
   }
 }
 Assets {
@@ -134,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6562583637742123870
+  Name: "Fantasy Ability Yellow 011"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_011"
+  }
+}
+Assets {
   Id: 6496470667387325629
   Name: "Coin Purse"
   PlatformAssetType: 9
@@ -179,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3004310277751773851
-  Name: "Fantasy Shape 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Shape_003"
-  }
-}
-Assets {
   Id: 2677338353219506855
   Name: "Fantasy Frame 007"
   PlatformAssetType: 9
@@ -212,5 +230,14 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSciFi_001e"
+  }
+}
+Assets {
+  Id: 26221742095601585
+  Name: "Fantasy Crate 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Crate_001"
   }
 }

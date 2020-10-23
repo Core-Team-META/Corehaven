@@ -4808,6 +4808,6 @@
   Marketplace {
     Description: "Note: needs player storage enabled in Game Settings to work!\r\n\r\nCollectibles for the Dust Souls game, which appear in the Collectibles Display Template (also on CC) once the player collects them"
   }
-  SerializationVersion: 65
+  SerializationVersion: 66
   DirectlyPublished: true
 }

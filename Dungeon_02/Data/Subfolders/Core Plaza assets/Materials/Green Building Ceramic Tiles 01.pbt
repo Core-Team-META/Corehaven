@@ -2,7 +2,7 @@
   Id: 5625701332717185710
   Name: "Green Building Ceramic Tiles 01"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 623120185523710141
     ParameterOverrides {

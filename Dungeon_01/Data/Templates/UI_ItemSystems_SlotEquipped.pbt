@@ -7,7 +7,7 @@
       RootId: 12787936571800940537
       Objects {
         Id: 12787936571800940537
-        Name: "UI_ItemSystems_SlotEquipped"
+        Name: "MainHand"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 6007599505303159785
         ChildIds: 7371804287230856144
         ChildIds: 16577243887167407429
         ChildIds: 6649207122798874075
@@ -24,6 +24,7 @@
         ChildIds: 14735673224064154605
         ChildIds: 5175028734503181600
         ChildIds: 598107552338339180
+        ChildIds: 18334209262565674157
         UnregisteredParameters {
           Overrides {
             Name: "cs:Anchor"
@@ -73,6 +74,12 @@
             Name: "cs:CooldownWheel"
             ObjectReference {
               SubObjectId: 16310133585715927768
+            }
+          }
+          Overrides {
+            Name: "cs:Locked"
+            ObjectReference {
+              SubObjectId: 18334209262565674157
             }
           }
         }
@@ -963,6 +970,122 @@
           }
         }
       }
+      Objects {
+        Id: 18334209262565674157
+        Name: "Locked"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12787936571800940537
+        ChildIds: 8826075966403995227
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 7
+          Height: 7
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 16532880832873788683
+            }
+            Color {
+              A: 0.8
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8826075966403995227
+        Name: "Locked"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 18334209262565674157
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -45
+          Height: -45
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 2152939902224710703
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.4
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 10386822047949910996
@@ -1034,6 +1157,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "BackgroundNoOutline_020"
+      }
+    }
+    Assets {
+      Id: 2152939902224710703
+      Name: "Icon Lock"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "Icon_Lock"
       }
     }
     PrimaryAssetId {

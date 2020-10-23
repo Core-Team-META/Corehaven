@@ -128,6 +128,7 @@ local function SetupControl(control, processSlot)
         control.clientUserData.gradientColored = control:GetCustomProperty("GradientColored"):WaitForObject()
         control.clientUserData.borderDefaultColor = control.clientUserData.border:GetColor()
         control.clientUserData.borderDefaultImage = control.clientUserData.border:GetImage()
+        control.clientUserData.locked = control:GetCustomProperty("Locked"):WaitForObject()
         assert(control.clientUserData.icon and control.clientUserData.border)
         if control:GetCustomProperty("CooldownWheel") then
             control.clientUserData.cooldownWheel = control:GetCustomProperty("CooldownWheel"):WaitForObject()
@@ -310,6 +311,11 @@ function view:AttemptMoveItem(fromSlotIndex, toSlotIndex)
         PlaySound(SFX_MOVE_FAIL)
         return
     end
+    -- If either slot is usurped, do not perform action.
+    if self:IsSlotUsurped(fromSlotIndex) or self:IsSlotUsurped(toSlotIndex) then
+        PlaySound(SFX_MOVE_FAIL)
+        return
+    end
     -- We may make use of the items salvage quantity.
     local itemToMove = inventory:GetItem(fromSlotIndex)
     local salvageQuantity = itemToMove and itemToMove:GetSalvageQuantity() or 0
@@ -339,7 +345,7 @@ end
 function view:AttemptSalvageItem(slotIndex)
     self.attemptedSalvageSlot = slotIndex
     PlaySound(SFX_SALVAGE_BEGIN)
-    -- Some high value items require user confirmation. TODO
+    -- Some high value items require user confirmation.
     local item = inventory:GetItem(self.attemptedSalvageSlot)
     -- Automatic confirmation for low value items.
     if not item:IsHighValue() then
@@ -368,6 +374,11 @@ function view:IsVisible()
 end
 
 -----------------------------------------------------------------------------------------------------------------
+function view:IsSlotUsurped(slotIndex)
+    return self.externalInteractionTarget and self.externalInteractionTarget:HasUsurpedInventorySlotItem(slotIndex)
+end
+
+-----------------------------------------------------------------------------------------------------------------
 function view:SetClickState(clickSlot)
     self.isClick = true
     self.clickTime = time()
@@ -391,12 +402,18 @@ function view:SetDragState(originSlot)
     HOLDING_ICON:SetImage(originSlot.clientUserData.icon:GetImage())
     HOLDING_ICON:SetColor(originSlot.clientUserData.icon:GetColor())
     HOLDING_ICON.rotationAngle = originSlot.clientUserData.icon.rotationAngle
+    if self.externalInteractionTarget then
+        self.externalInteractionTarget:SetDraggingSlotOrigin(self.fromSlotIndex)
+    end
 end
 
 function view:ClearDragState()
     self.isDragging = nil
     self.fromSlotIndex = nil
     HOLDING_ICON.visibility = Visibility.FORCE_OFF
+    if self.externalInteractionTarget then
+        self.externalInteractionTarget:SetDraggingSlotOrigin(nil)
+    end
 end
 
 function view:SetHoverState(slotUnderCursor)
@@ -405,6 +422,10 @@ function view:SetHoverState(slotUnderCursor)
     -- Clear the display suppression as soon as we have moved away from the last interaction.
     if self.slotUnderCursor ~= self.suppressDisplayOverSlot then
         self.suppressDisplayOverSlot = nil
+    end
+    -- Check in case this slot has actually been usurped.
+    if self.externalInteractionTarget and self.externalInteractionTarget:HasUsurpedInventorySlotItem(slotUnderCursor.clientUserData.slotIndex) then
+        self:ClearHoverState()
     end
 end
 
@@ -415,9 +436,11 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:PerformClickAction()
-    -- Now go ahead an perform the appropriate action.
     local clickedItem = inventory:GetItem(self.clickSlotIndex)
-    if clickedItem:IsEquippable() then
+    if self.externalInteractionTarget then
+        -- When interacting with an external window, allow that to have control over what happens.
+        if not self.externalInteractionTarget:PerformClickAction(self.clickSlotIndex) then PlaySound(SFX_MOVE_FAIL) end
+    elseif clickedItem:IsEquippable() then
         -- Equippable item.
         if inventory:IsEquipSlot(self.clickSlotIndex) then
             local emptyBackpackSlotIndex = inventory:GetFreeBackpackSlot()
@@ -450,6 +473,9 @@ function view:PerformDragDropAction()
         self:AttemptMoveItem(self.fromSlotIndex, toSlotIndex)
     elseif self.isHoveringSalvageTray then
         self:AttemptSalvageItem(self.fromSlotIndex)
+    elseif self.externalInteractionTarget then
+        -- When interacting with an external window, see if that window has a drop target.
+        if not self.externalInteractionTarget:PerformDragDropAction(self.fromSlotIndex) then PlaySound(SFX_MOVE_FAIL) end
     else
         PlaySound(SFX_MOVE_FAIL)
     end
@@ -553,11 +579,16 @@ function view:UpdatePlayerInfo()
     end
 end
 
+function view:UpdateExternalInteractionTarget()
+    self.externalInteractionTarget = INVENTORY_VIEW.clientUserData.externalInteractionTarget 
+end
+
 function view:Draw()
     if not self:IsVisible() then
         self:Close()
     else
-        self:Open()    
+        self:Open()
+        self:UpdateExternalInteractionTarget() 
         self:UpdatePlayerInfo()
         self:UpdateCursorState()
         self:DrawPassives()
@@ -624,9 +655,8 @@ end
 
 function view:DrawSlots()
     for _,slot in ipairs(self.allSlots) do
-        local isHeldSlot = self.isDragging and slot.clientUserData.slotIndex == self.fromSlotIndex
         local item = inventory:GetItem(slot.clientUserData.slotIndex)
-
+        local isHeldSlot = self.isDragging and slot.clientUserData.slotIndex == self.fromSlotIndex
         -- Draw the items in their slots.
         if item and not isHeldSlot then
             local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
@@ -647,9 +677,17 @@ function view:DrawSlots()
                     slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
                 end
             end
+
+            -- Slot may be usurped by external interaction target.
+            if self:IsSlotUsurped(slot.clientUserData.slotIndex) then
+                slot.clientUserData.locked.visibility = Visibility.INHERIT
+            else
+                slot.clientUserData.locked.visibility = Visibility.FORCE_OFF
+            end
         else
             slot.clientUserData.icon.visibility = Visibility.FORCE_OFF
             slot.clientUserData.gradient.visibility = Visibility.FORCE_OFF
+            slot.clientUserData.locked.visibility = Visibility.FORCE_OFF
             slot.clientUserData.border:SetImage(slot.clientUserData.borderDefaultImage)
             slot.clientUserData.border:SetColor(slot.clientUserData.borderDefaultColor)            
 
@@ -782,7 +820,7 @@ function view:DrawHoverStatCompare()
             local resultStatEffective = APIStats.ConvertStatToEffectivePercent(statName, resultStatRaw) or resultStatRaw
             local effectiveDelta = resultStatEffective - beforeStatEffective
             if effectiveDelta ~= 0 then
-                local compareColor = effectiveDelta > 0 and Color.GREEN or Color.RED
+                local compareColor = effectiveDelta > 0 and ItemThemes.COLOR_GOOD or ItemThemes.COLOR_BAD
                 local compareToken = effectiveDelta > 0 and "+ " or "- "
                 local previewDeltaString = compareToken .. ItemThemes.GetPlayerStatFormattedValue(statName, math.abs(effectiveDelta))
                 statElement.clientUserData.previewDelta.text = previewDeltaString:gsub("%%", "")

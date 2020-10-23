@@ -183,6 +183,22 @@
           Id: 3961394470878237143
         }
       }
+      Overrides {
+        Name: "cs:ColorGenericGood"
+        Color {
+          G: 0.49
+          B: 0.178476751
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "cs:ColorGenericBad"
+        Color {
+          R: 0.78
+          G: 0.0464900881
+          A: 1
+        }
+      }
     }
     Assets {
       Id: 1285653368607626957

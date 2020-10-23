@@ -110,4 +110,7 @@ return {
     GetItemSFX = function(itemType)
         return ITEM_SFX[itemType]
     end,
+
+    COLOR_GOOD = script:GetCustomProperty("ColorGenericGood"),
+    COLOR_BAD  = script:GetCustomProperty("ColorGenericBad"),
 }

@@ -590,5 +590,5 @@
       AssetId: "Sky_SciFi_02"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 66
 }

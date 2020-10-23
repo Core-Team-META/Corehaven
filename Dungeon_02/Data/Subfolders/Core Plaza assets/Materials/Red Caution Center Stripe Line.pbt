@@ -2,7 +2,7 @@
   Id: 3658568754091159584
   Name: "Red Caution Center Stripe Line"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 2892029841718241415
     ParameterOverrides {

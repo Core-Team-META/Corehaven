@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18033297229984528543
+  Name: "Wood Planks Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_dark_001_uv"
+  }
+}
+Assets {
   Id: 17557104084763797115
   Name: "Wood Planks Beveled Painted 01"
   PlatformAssetType: 2

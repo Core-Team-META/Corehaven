@@ -122,9 +122,13 @@
         ChildIds: 7384431678586517271
         ChildIds: 15341775218338443136
         ChildIds: 3983402750360509683
+        ChildIds: 5969132730021877541
+        ChildIds: 7333619355998468323
         ChildIds: 2958159584200621809
         ChildIds: 8134910548589255627
         ChildIds: 2692524949218444987
+        ChildIds: 18440193885409355065
+        ChildIds: 10039489459048352721
         UnregisteredParameters {
           Overrides {
             Name: "cs:Pointer"
@@ -173,6 +177,30 @@
           Overrides {
             Name: "cs:StatOffsetXBonus"
             Float: 25
+          }
+          Overrides {
+            Name: "cs:StatsRoot"
+            ObjectReference {
+              SubObjectId: 18440193885409355065
+            }
+          }
+          Overrides {
+            Name: "cs:EnhancementStar"
+            ObjectReference {
+              SubObjectId: 5969132730021877541
+            }
+          }
+          Overrides {
+            Name: "cs:EnhancementAmount"
+            ObjectReference {
+              SubObjectId: 7333619355998468323
+            }
+          }
+          Overrides {
+            Name: "cs:GrayOut"
+            ObjectReference {
+              SubObjectId: 10039489459048352721
+            }
           }
         }
         Collidable_v2 {
@@ -1330,6 +1358,123 @@
         }
       }
       Objects {
+        Id: 5969132730021877541
+        Name: "EnhancementStar"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 24
+          Height: 24
+          UIX: 6
+          UIY: 43
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 4877455313696611303
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.6
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7333619355998468323
+        Name: "EnhancementAmount"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          UIX: 32
+          UIY: 43
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "5 | 5"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.6
+            }
+            Size: 12
+            Justification {
+              Value: "mc:etextjustify:left"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 2958159584200621809
         Name: "Divider"
         Transform {
@@ -1507,6 +1652,107 @@
         }
       }
       Objects {
+        Id: 18440193885409355065
+        Name: "StatsRoot"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10039489459048352721
+        Name: "GrayOut"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 14792434693933273901
         Name: "SansStats"
         Transform {
@@ -1528,6 +1774,7 @@
         ChildIds: 11411173877474483170
         ChildIds: 6881595661274502755
         ChildIds: 15629453047088928985
+        ChildIds: 8219351012132740045
         UnregisteredParameters {
           Overrides {
             Name: "cs:Pointer"
@@ -1557,6 +1804,12 @@
             Name: "cs:Description"
             ObjectReference {
               SubObjectId: 15629453047088928985
+            }
+          }
+          Overrides {
+            Name: "cs:GrayOut"
+            ObjectReference {
+              SubObjectId: 8219351012132740045
             }
           }
         }
@@ -2833,6 +3086,60 @@
           }
         }
       }
+      Objects {
+        Id: 8219351012132740045
+        Name: "GrayOut"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14792434693933273901
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 2677338353219506855
@@ -2850,6 +3157,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Shape_003"
+      }
+    }
+    Assets {
+      Id: 4877455313696611303
+      Name: "Emblem Star"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Military_Icon_059"
       }
     }
     PrimaryAssetId {

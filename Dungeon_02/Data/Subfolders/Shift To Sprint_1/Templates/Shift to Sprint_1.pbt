@@ -173,6 +173,6 @@
   Marketplace {
     Description: "Shift to sprint, ctrl to slow walk. Crouch variants available. Customizable speeds via properties."
   }
-  SerializationVersion: 65
+  SerializationVersion: 66
   DirectlyPublished: true
 }

@@ -2,7 +2,7 @@
   Id: 15384088820269478879
   Name: "Cobblestone Floor Arches 180"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 12992569750887796502
     ParameterOverrides {

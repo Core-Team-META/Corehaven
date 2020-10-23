@@ -2,7 +2,7 @@
   Id: 7019955883980267513
   Name: "WaffleLight"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 66
   CustomMaterialAsset {
     BaseMaterialId: 16872281456320893949
     ParameterOverrides {
