@@ -393,7 +393,7 @@ function Inventory:ExecutePrimaryItemCraft(recipeItem, primaryItemSlotIndex)
                 if item:IsStackable() then
                     local amountToRemove = math.min(requiredAmount, item:GetStackSize())
                     if amountToRemove == item:GetStackSize() then
-                        self:SetSlotItem(i, nil)
+                        self:_SetSlotItem(i, nil)
                     else
                         item:SetStackSize(item:GetStackSize() - amountToRemove)
                     end
@@ -405,8 +405,9 @@ function Inventory:ExecutePrimaryItemCraft(recipeItem, primaryItemSlotIndex)
             end
         end
     end
-    -- Modify the item. WOMP WOMP not implemented yet.
-
+    -- Perform the modification.
+    local primaryItem = self:GetItem(primaryItemSlotIndex)
+    craftingData.method:Execute(recipeItem, primaryItem)
     -- Fire event so that this operation is replicated.
     self:_FireEvent("craftExecutedEvent", recipeItem, primaryItemSlotIndex)
 end

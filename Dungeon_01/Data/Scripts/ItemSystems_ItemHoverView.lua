@@ -76,7 +76,7 @@ function view:DrawPanelWithStats()
             -- Show stat enhancement bonus if present.
             local enhancementBonus = statInfoBase and (statInfo.value - statInfoBase.value) or 0
             if enhancementBonus > 0 then
-                entry.clientUserData.enhancementBonus.text = string.format("(%+%d)", enhancementBonus)
+                entry.clientUserData.enhancementBonus.text = string.format("(+%d)", enhancementBonus)
             else
                 entry.clientUserData.enhancementBonus.text = ""
             end

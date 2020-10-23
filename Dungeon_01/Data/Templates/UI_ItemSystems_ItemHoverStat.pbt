@@ -226,7 +226,7 @@
               R: 1
               G: 1
               B: 1
-              A: 0.9
+              A: 0.6
             }
             Size: 12
             Justification {

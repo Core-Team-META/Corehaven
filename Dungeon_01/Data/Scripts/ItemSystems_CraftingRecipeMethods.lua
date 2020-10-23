@@ -18,13 +18,17 @@ CraftingRecipeMethods.META_INGREDIENTS = {}
 CraftingRecipeMethods.PrimaryItemEnhance = {
     type = "MODIFY",
 
-    CanRecipeAcceptPrimaryItem = function(_, recipeItem, primaryItem)
+    CanRecipeAcceptPrimaryItem = function(self, recipeItem, primaryItem)
         assert(recipeItem)
-        return primaryItem and primaryItem:HasStats() and primaryItem:GetRarity() == recipeItem:GetRarity()
+        return primaryItem
+                and primaryItem:HasStats()
+                and primaryItem:GetRarity() == recipeItem:GetRarity()
+                and not primaryItem:IsFullyEnhanced()
     end,
 
-    Execute = function(_, database, randomSeed, recipeItem, ingredients, primaryItem)
-
+    Execute = function(self, recipeItem, primaryItem)
+        assert(self:CanRecipeAcceptPrimaryItem(recipeItem, primaryItem))
+        primaryItem:SetEnhancementLevel(primaryItem:GetEnhancementLevel() + 1)
         return primaryItem
     end
 }

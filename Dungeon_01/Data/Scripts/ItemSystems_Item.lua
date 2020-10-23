@@ -200,8 +200,9 @@ function Item:GetMaxEnhancementLevel()
 end
 
 function Item:SetEnhancementLevel(enhancementLevel)
-    assert(0 <= level and level <= self.ENHANCEMENT_CAP)
+    assert(0 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
     self.enhancementLevel = enhancementLevel
+    self:_RecalculateStatTotals()
 end
 
 function Item:IsFullyEnhanced()
