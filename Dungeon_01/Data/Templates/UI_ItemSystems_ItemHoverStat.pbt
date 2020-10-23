@@ -15,9 +15,10 @@
             Z: 1
           }
         }
-        ParentId: 14633352423860655653
+        ParentId: 7037986809205311395
         ChildIds: 13161550397148729063
         ChildIds: 11769004792839517008
+        ChildIds: 9372660187017796507
         UnregisteredParameters {
           Overrides {
             Name: "cs:StatIcon"
@@ -31,6 +32,12 @@
               SubObjectId: 11769004792839517008
             }
           }
+          Overrides {
+            Name: "cs:StatEnhancementBonus"
+            ObjectReference {
+              SubObjectId: 9372660187017796507
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -41,7 +48,7 @@
         Control {
           Width: 70
           Height: 30
-          UIX: -110
+          UIX: -433.510925
           UIY: 75
           RenderTransformPivot {
             Anchor {
@@ -144,7 +151,7 @@
         Control {
           Width: 200
           Height: 60
-          UIX: 23.6453247
+          UIX: 24
           UIY: -3
           RenderTransformPivot {
             Anchor {
@@ -154,7 +161,7 @@
           UseParentWidth: true
           UseParentHeight: true
           Text {
-            Label: "+10%"
+            Label: "10"
             Color {
               R: 1
               G: 1
@@ -171,6 +178,66 @@
             SelfAnchor {
               Anchor {
                 Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9372660187017796507
+        Name: "StatEnhancementBonus"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4951318487531106263
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 40
+          Height: 60
+          UIX: -6
+          UIY: -3
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Text {
+            Label: "(+6)"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.9
+            }
+            Size: 12
+            Justification {
+              Value: "mc:etextjustify:right"
+            }
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topright"
               }
             }
             TargetAnchor {

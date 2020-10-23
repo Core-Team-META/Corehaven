@@ -25,6 +25,10 @@ function view:InitPanel(panel)
     panel.clientUserData.statOffsetXBase = panel:GetCustomProperty("StatOffsetXBase")
     panel.clientUserData.statOffsetXBonus = panel:GetCustomProperty("StatOffsetXBonus")
     panel.clientUserData.pointer.visibility = ROOT:GetCustomProperty("ShouldShowPointer") and Visibility.INHERIT or Visibility.FORCE_OFF
+    if panel:GetCustomProperty("EnhancementStar") then
+        panel.clientUserData.enhancementStar = panel:GetCustomProperty("EnhancementStar"):WaitForObject()
+        panel.clientUserData.enhancementAmount = panel:GetCustomProperty("EnhancementAmount"):WaitForObject()
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -34,6 +38,7 @@ function view:EnsureSufficientHoverStatEntries(numRequired)
             local entry = World.SpawnAsset(TEMPLATE_ITEM_STAT, { parent = PANEL_WITH_STATS })
             entry.clientUserData.icon = entry:GetCustomProperty("StatIcon"):WaitForObject()
             entry.clientUserData.value = entry:GetCustomProperty("StatValue"):WaitForObject()
+            entry.clientUserData.enhancementBonus = entry:GetCustomProperty("StatEnhancementBonus"):WaitForObject()
             table.insert(self.itemHoverStatEntries, entry)
         end
     end
@@ -47,12 +52,14 @@ function view:DrawPanelWithStats()
     panel.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
     panel.clientUserData.description.text = item:GetDescription()
     -- Attributes.
-    local stats = item:GetStats()
+    local stats = item:GetStatsEnhanced()
+    local statsBase = item:GetStatsBase()
     self:EnsureSufficientHoverStatEntries(#stats)
     local offsetYBase = 0
     local offsetYBonus = 0
     for i,entry in ipairs(self.itemHoverStatEntries) do
         local statInfo = stats[i]
+        local statInfoBase = statsBase[i]
         if statInfo then
             entry.visibility = Visibility.INHERIT
             entry.clientUserData.icon:SetImage(ItemThemes.GetStatIcon(statInfo.name))
@@ -66,6 +73,13 @@ function view:DrawPanelWithStats()
                 entry.y = panel.clientUserData.statOffsetY + offsetYBonus
                 offsetYBonus = offsetYBonus + entry.height
             end
+            -- Show stat enhancement bonus if present.
+            local enhancementBonus = statInfoBase and (statInfo.value - statInfoBase.value) or 0
+            if enhancementBonus > 0 then
+                entry.clientUserData.enhancementBonus.text = string.format("(%+%d)", enhancementBonus)
+            else
+                entry.clientUserData.enhancementBonus.text = ""
+            end
         else
             entry.visibility = Visibility.FORCE_OFF
         end
@@ -78,6 +92,8 @@ function view:DrawPanelWithStats()
     for _,control in ipairs(panel.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
         control:SetColor(color)
     end
+    -- Show enhancement start and level if applicable.
+    panel.clientUserData.enhancementAmount.text = string.format("%d | %d", item:GetEnhancementLevel(), item:GetMaxEnhancementLevel())
 end
 
 -------------------------------------------------------------------------------

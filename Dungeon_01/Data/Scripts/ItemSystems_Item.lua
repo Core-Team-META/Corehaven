@@ -105,6 +105,10 @@ Item.SHARD_RARITY_MULTIPLIERS = {
     Legendary   = 248,
 }
 
+-- Enhancement cap.
+Item.ENHANCEMENT_CAP = 10
+Item.ENHANCEMENT_STAT_PERCENT_INCREASE = 10
+
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
@@ -188,8 +192,20 @@ function Item:GetAvailableStackSpace()
 end
 
 function Item:GetEnhancementLevel()
-    -- TODO not implemented.
     return self.enhancementLevel
+end
+
+function Item:GetMaxEnhancementLevel()
+    return self.ENHANCEMENT_CAP
+end
+
+function Item:SetEnhancementLevel(enhancementLevel)
+    assert(0 <= level and level <= self.ENHANCEMENT_CAP)
+    self.enhancementLevel = enhancementLevel
+end
+
+function Item:IsFullyEnhanced()
+    return self.enhancementLevel == self:GetMaxEnhancementLevel()
 end
 
 function Item:ApplyIconImageSettings(uiImage, uiImageInterior)
@@ -232,13 +248,21 @@ function Item:HasStats()
     return self.hasStats
 end
 
-function Item:GetStats()
+-- Returns a table of the item's base stats.
+function Item:GetStatsBase()
     return self.stats
 end
 
+-- Returns a table of the item's enhanced stats.
+function Item:GetStatsEnhanced()
+    return self.statsEnhanced
+end
+
+-- Returns the effective total stat (accounting for summed affixes and enhancements).
 function Item:GetStatTotal(statName)
     return self.statTotals[statName] or 0
 end
+
 
 function Item:CopyStats(other)
     self.stats = {}
@@ -373,12 +397,30 @@ function Item._FromHash(database, hash)
 end
 
 function Item:_RecalculateStatTotals()
-    self.hasStats = nil
-    for _,statName in ipairs(Item.STATS) do self.statTotals[statName] = 0 end
+    -- Clear old values.
+    for _,statName in ipairs(Item.STATS) do
+        self.statTotals[statName] = 0
+    end
+    -- First compute enhanced stats.
+    local enhancementMultiplier = self:_GetEnhancementMultiplier()
+    self.statsEnhanced = {}
     for i,stat in ipairs(self.stats) do
+        self.statsEnhanced[i] = {
+            name = stat.name,
+            isBase = stat.isBase,
+            value = math.floor(0.5 + stat.value * enhancementMultiplier),
+        }
+    end
+    -- Sum stats to get stat totals (effective and base).
+    self.hasStats = nil
+    for i,stat in ipairs(self.statsEnhanced) do
         self.hasStats = true
         self.statTotals[stat.name] = self.statTotals[stat.name] + stat.value
-    end 
+    end
+end
+
+function Item:_GetEnhancementMultiplier()
+    return 1 + (self.enhancementLevel * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
 end
 
 function Item:__tostring()

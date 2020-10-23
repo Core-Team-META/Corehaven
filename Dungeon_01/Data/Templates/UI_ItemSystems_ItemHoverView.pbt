@@ -29,7 +29,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
           Width: 266
@@ -122,6 +122,8 @@
         ChildIds: 7384431678586517271
         ChildIds: 15341775218338443136
         ChildIds: 3983402750360509683
+        ChildIds: 5969132730021877541
+        ChildIds: 7333619355998468323
         ChildIds: 2958159584200621809
         ChildIds: 8134910548589255627
         ChildIds: 2692524949218444987
@@ -173,6 +175,18 @@
           Overrides {
             Name: "cs:StatOffsetXBonus"
             Float: 25
+          }
+          Overrides {
+            Name: "cs:EnhancementStar"
+            ObjectReference {
+              SubObjectId: 5969132730021877541
+            }
+          }
+          Overrides {
+            Name: "cs:EnhancementAmount"
+            ObjectReference {
+              SubObjectId: 7333619355998468323
+            }
           }
         }
         Collidable_v2 {
@@ -1324,6 +1338,123 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5969132730021877541
+        Name: "EnhancementStar"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 24
+          Height: 24
+          UIX: 6
+          UIY: 43
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 4877455313696611303
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.6
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7333619355998468323
+        Name: "EnhancementAmount"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 60
+          UIX: 32
+          UIY: 43
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "5 | 5"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.6
+            }
+            Size: 12
+            Justification {
+              Value: "mc:etextjustify:left"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
@@ -2850,6 +2981,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Shape_003"
+      }
+    }
+    Assets {
+      Id: 4877455313696611303
+      Name: "Emblem Star"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Military_Icon_059"
       }
     }
     PrimaryAssetId {
