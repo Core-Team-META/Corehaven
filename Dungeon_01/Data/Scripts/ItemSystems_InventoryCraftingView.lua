@@ -328,7 +328,7 @@ function view:GOTO_AwaitingRecipeSelection()
         blinkColor.a = 0.4 + 0.2 * math.sin(2 * math.pi * time() / 5)
         self.executionPanelWidgets.defaultInstructions:SetColor(blinkColor)
     end
-    if self.currentSfx then
+    if self.currentSfx and Object.IsValid(self.currentSfx) then
         self.currentSfx:Destroy()
         self.currentSfx = nil
     end
