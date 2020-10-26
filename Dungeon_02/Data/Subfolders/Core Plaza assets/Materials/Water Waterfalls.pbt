@@ -2,7 +2,7 @@
   Id: 18145193809791149815
   Name: "Water Waterfalls"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 11321696832878405883
     ParameterOverrides {

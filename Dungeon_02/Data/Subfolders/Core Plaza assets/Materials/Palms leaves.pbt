@@ -2,7 +2,7 @@
   Id: 16331303870165385662
   Name: "Palms leaves"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 5930088322555106484
     ParameterOverrides {

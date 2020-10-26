@@ -2,7 +2,7 @@
   Id: 5486195827509321272
   Name: "Custom Carpet 02"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 18179054897423298547
     ParameterOverrides {

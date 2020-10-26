@@ -2,7 +2,7 @@
   Id: 18043917237221393368
   Name: "Advanced Material Vinyl Logo"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 2258330122587909962
     ParameterOverrides {

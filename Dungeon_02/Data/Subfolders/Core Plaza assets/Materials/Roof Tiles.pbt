@@ -2,7 +2,7 @@
   Id: 8028609769016422892
   Name: "Roof Tiles"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 623120185523710141
     ParameterOverrides {

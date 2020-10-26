@@ -2,7 +2,7 @@
   Id: 10203781933027147648
   Name: "Mansion Fountain Water"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 16652813710343007973
     ParameterOverrides {

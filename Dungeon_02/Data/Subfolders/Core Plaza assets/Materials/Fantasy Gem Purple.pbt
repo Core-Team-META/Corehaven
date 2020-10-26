@@ -2,7 +2,7 @@
   Id: 6462613828155863899
   Name: "Fantasy Gem Purple"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {

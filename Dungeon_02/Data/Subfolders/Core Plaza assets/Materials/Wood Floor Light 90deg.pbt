@@ -2,7 +2,7 @@
   Id: 15996243238944645247
   Name: "Wood Floor Light 90deg"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 4303012738782523103
     ParameterOverrides {

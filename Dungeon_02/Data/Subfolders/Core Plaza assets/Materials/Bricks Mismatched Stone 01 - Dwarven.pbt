@@ -2,7 +2,7 @@
   Id: 7567963334503111015
   Name: "Bricks Mismatched Stone 01 - Dwarven"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 7959546782718511054
     ParameterOverrides {

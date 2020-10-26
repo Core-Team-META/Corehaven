@@ -2,7 +2,7 @@
   Id: 17038328673137343074
   Name: "Urban Pond Water"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 11321696832878405883
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 16943146184823794974
   Name: "Village Window Frosted Glass"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 16630259605395466384
     ParameterOverrides {

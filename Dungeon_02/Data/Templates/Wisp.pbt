@@ -281,6 +281,6 @@
   Marketplace {
     Description: "Wispy creature with a trail! Spins in a circle. Point Light and script attatched"
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
   DirectlyPublished: true
 }

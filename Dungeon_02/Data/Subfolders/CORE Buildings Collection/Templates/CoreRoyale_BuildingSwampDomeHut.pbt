@@ -13596,6 +13596,6 @@
   Marketplace {
     Description: "A large collection of various buildings for creating cities! Includes multiple residential houses, a large sawmill, mansion, stores, bridge, various ruins, and other assets for quickly creating city."
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
   DirectlyPublished: true
 }
