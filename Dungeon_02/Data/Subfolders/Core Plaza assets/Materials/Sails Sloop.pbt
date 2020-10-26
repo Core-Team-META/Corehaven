@@ -2,7 +2,7 @@
   Id: 17267701745356104009
   Name: "Sails Sloop"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 14722796561991146384
     ParameterOverrides {

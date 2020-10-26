@@ -2,7 +2,7 @@
   Id: 4871378650125357518
   Name: "Custom Marble Tiles Rectangle 01"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 12920801430284920811
     ParameterOverrides {

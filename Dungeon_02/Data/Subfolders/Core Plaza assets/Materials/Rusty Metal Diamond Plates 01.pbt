@@ -2,7 +2,7 @@
   Id: 11225833257022452366
   Name: "Rusty Metal Diamond Plates 01"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 11159381378020818034
     ParameterOverrides {

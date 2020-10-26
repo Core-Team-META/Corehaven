@@ -2,7 +2,7 @@
   Id: 12637397553105789256
   Name: "Water"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 11366038998560429186
     ParameterOverrides {

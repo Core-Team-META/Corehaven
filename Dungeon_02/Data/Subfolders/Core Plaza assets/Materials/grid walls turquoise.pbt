@@ -2,7 +2,7 @@
   Id: 15536362080013392884
   Name: "grid walls turquoise"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 16872281456320893949
     ParameterOverrides {

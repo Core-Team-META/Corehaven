@@ -2,7 +2,7 @@
   Id: 15302679554868552211
   Name: "Red Metal Frame 03"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 4679924433031865767
     ParameterOverrides {

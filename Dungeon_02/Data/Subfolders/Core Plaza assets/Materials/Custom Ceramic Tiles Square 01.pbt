@@ -2,7 +2,7 @@
   Id: 11846725560243908373
   Name: "Custom Ceramic Tiles Square 01"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 623120185523710141
     ParameterOverrides {

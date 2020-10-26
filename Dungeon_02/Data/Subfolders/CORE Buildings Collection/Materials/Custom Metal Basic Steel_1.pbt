@@ -2,7 +2,7 @@
   Id: 14304345541318967040
   Name: "Custom Metal Basic Steel"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 9879633121196264389
     ParameterOverrides {

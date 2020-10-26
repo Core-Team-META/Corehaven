@@ -296,6 +296,6 @@
   Marketplace {
     Description: "Moves you up the ladder using an invisible block, Made by Gabe Santos."
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
   DirectlyPublished: true
 }

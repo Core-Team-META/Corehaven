@@ -2,7 +2,7 @@
   Id: 6332857510808352603
   Name: "Rope90"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 12629436541872600207
     ParameterOverrides {

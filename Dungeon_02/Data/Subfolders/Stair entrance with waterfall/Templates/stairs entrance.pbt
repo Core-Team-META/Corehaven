@@ -8920,6 +8920,6 @@
   Marketplace {
     Description: "A big Stair Entrance, with a waterfall."
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
   DirectlyPublished: true
 }

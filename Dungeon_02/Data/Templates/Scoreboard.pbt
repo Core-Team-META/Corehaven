@@ -233,5 +233,5 @@
       AssetId: "Scoreboard"
     }
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
 }

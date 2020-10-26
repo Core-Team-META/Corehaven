@@ -2,7 +2,7 @@
   Id: 15857254711100023090
   Name: "Green Ceramic Tiles Square 45"
   PlatformAssetType: 13
-  SerializationVersion: 66
+  SerializationVersion: 67
   CustomMaterialAsset {
     BaseMaterialId: 623120185523710141
     ParameterOverrides {
