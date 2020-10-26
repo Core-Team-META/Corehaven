@@ -106,5 +106,3 @@ LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
 
 UI.SetCursorVisible(true)
 UI.SetCanCursorInteractWithUI(true)
-
-StartActiveLook()

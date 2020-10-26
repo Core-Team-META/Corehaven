@@ -1,17 +1,4 @@
 ﻿Assets {
-  Id: 10520627360194577842
-  Name: "KevinDevelopmentSharedKey"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "e7b8a78c0f5b4cc6a00ec3f38603bf87"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 10161356557666659885
   Name: "Bush Leafy Low 01"
   PlatformAssetType: 1

@@ -7,7 +7,7 @@
       RootId: 57893604339843732
       Objects {
         Id: 57893604339843732
-        Name: "Helper_ItemSystemsRecipeManager"
+        Name: "Helper_ItemSystemsCraftingRecipeManager"
         Transform {
           Scale {
             X: 1
@@ -93,7 +93,7 @@
           Overrides {
             Name: "cs:StorageKey"
             NetReference {
-              Key: "e7b8a78c0f5b4cc6a00ec3f38603bf87"
+              Key: "e9522ce128d3418995564bd8172aab5e"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }
@@ -163,7 +163,7 @@
           Overrides {
             Name: "cs:StorageKey"
             NetReference {
-              Key: "e7b8a78c0f5b4cc6a00ec3f38603bf87"
+              Key: "e9522ce128d3418995564bd8172aab5e"
               Type {
                 Value: "mc:enetreferencetype:sharedpersistence"
               }
@@ -194,5 +194,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
 }

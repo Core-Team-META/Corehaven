@@ -3,7 +3,7 @@
 API.CONTROL_MODE_CLASSIC = 1
 API.CONTROL_MODE_ACTION = 2
 
-local controlMode = API.CONTROL_MODE_ACTION
+local controlMode = API.CONTROL_MODE_CLASSIC
 
 function API.SetControlMode(newControlMode)
 	controlMode = newControlMode

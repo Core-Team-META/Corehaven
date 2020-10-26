@@ -153,5 +153,5 @@
       AssetId: "Lerp_Float_Smart_Property"
     }
   }
-  SerializationVersion: 66
+  SerializationVersion: 67
 }

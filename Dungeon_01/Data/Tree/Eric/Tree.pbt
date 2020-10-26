@@ -7139,6 +7139,7 @@ Objects {
       FlipOnMultiJump: true
       CanMoveUp: true
       CanMoveDown: true
+      IsMountEnabled: true
     }
   }
 }
@@ -8067,7 +8068,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6183944799922762756
+  Id: 17684790330826009858
   Name: "Objectives"
   Transform {
     Location {
@@ -8081,9 +8082,9 @@ Objects {
     }
   }
   ParentId: 11176579868672163906
-  ChildIds: 3744570264132190313
-  ChildIds: 9417119145819146354
+  ChildIds: 1358079189602042632
   ChildIds: 16049066111372402879
+  ChildIds: 6183944799922762756
   UnregisteredParameters {
     Overrides {
       Name: "cs:ObjectiveDescription1"
@@ -8156,7 +8157,180 @@ Objects {
   Visible_v2 {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6183944799922762756
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17684790330826009858
+  ChildIds: 3744570264132190313
+  ChildIds: 9417119145819146354
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 9417119145819146354
+  Name: "UI Container"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6183944799922762756
+  ChildIds: 15925476400905474821
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Canvas {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 15925476400905474821
+  Name: "UI Panel"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 9417119145819146354
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 220
+    Height: 300
+    UIX: -20
+    UIY: -100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middleright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 3744570264132190313
+  Name: "ObjectivesClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6183944799922762756
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 17684790330826009858
+      }
+    }
+    Overrides {
+      Name: "cs:Panel"
+      ObjectReference {
+        SelfId: 15925476400905474821
+      }
+    }
+    Overrides {
+      Name: "cs:ServerScript"
+      ObjectReference {
+        SelfId: 1358079189602042632
+      }
+    }
+    Overrides {
+      Name: "cs:ObjectiveLineTemplate"
+      AssetReference {
+        Id: 6917522942167372582
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8696199610869518947
+    }
   }
 }
 Objects {
@@ -8173,7 +8347,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6183944799922762756
+  ParentId: 17684790330826009858
   ChildIds: 17255480373293148423
   ChildIds: 13141827285114009178
   ChildIds: 1701214721832536188
@@ -8501,8 +8675,8 @@ Objects {
   }
 }
 Objects {
-  Id: 9417119145819146354
-  Name: "UI Container"
+  Id: 1358079189602042632
+  Name: "ObjectivesServer"
   Transform {
     Location {
     }
@@ -8514,118 +8688,24 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6183944799922762756
-  ChildIds: 15925476400905474821
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Canvas {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:topleft"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 15925476400905474821
-  Name: "UI Panel"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 9417119145819146354
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Control {
-    Width: 220
-    Height: 300
-    UIX: -20
-    UIY: -100
-    RenderTransformPivot {
-      Anchor {
-        Value: "mc:euianchor:middlecenter"
-      }
-    }
-    Panel {
-    }
-    AnchorLayout {
-      SelfAnchor {
-        Anchor {
-          Value: "mc:euianchor:middleright"
-        }
-      }
-      TargetAnchor {
-        Anchor {
-          Value: "mc:euianchor:middleright"
-        }
-      }
-    }
-  }
-}
-Objects {
-  Id: 3744570264132190313
-  Name: "ObjectivesClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6183944799922762756
+  ParentId: 17684790330826009858
   UnregisteredParameters {
     Overrides {
       Name: "cs:Root"
       ObjectReference {
-        SelfId: 6183944799922762756
+        SelfId: 17684790330826009858
       }
     }
     Overrides {
-      Name: "cs:Panel"
-      ObjectReference {
-        SelfId: 15925476400905474821
-      }
+      Name: "cs:CurrentProgress"
+      Int: 0
     }
     Overrides {
-      Name: "cs:ObjectiveLineTemplate"
-      AssetReference {
-        Id: 6917522942167372582
-      }
+      Name: "cs:CurrentProgress:isrep"
+      Bool: true
     }
   }
+  WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8634,7 +8714,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 8696199610869518947
+      Id: 1043547597749427043
     }
   }
 }

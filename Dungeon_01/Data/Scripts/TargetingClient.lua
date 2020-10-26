@@ -232,12 +232,16 @@ end
 
 function Tick(deltaTime)
 	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
+	TARGET_MARKER.visibility = Visibility.FORCE_OFF
+	TARGET_LIGHT.visibility = Visibility.FORCE_OFF
 
 	if currentTarget then
-		TARGET_MARKER.visibility = Visibility.INHERIT
-		TARGET_LIGHT.visibility = Visibility.INHERIT
-
 		if currentTarget:IsA("Player") then
+			if currentTarget.isDead then
+				API_T.SetTarget_Direct(nil)
+				return
+			end
+
 			local playerScale = currentTarget:GetWorldScale()
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition() - playerScale.z * 100.0 * Vector3.UP)
 			TARGET_MARKER:SetWorldScale(playerScale)
@@ -248,6 +252,11 @@ function Tick(deltaTime)
 			TARGET_LIGHT:SetWorldScale(playerScale)
 			TARGET_LIGHT:SetColor(Color.New(0.7, 2.0, 0.0))
 		else
+			if API_NPC.IsDead(currentTarget) then
+				API_T.SetTarget_Direct(nil)
+				return
+			end
+
 			local data = API_NPC.GetAllNPCData()[currentTarget]
 			TARGET_MARKER:SetWorldPosition(currentTarget:GetWorldPosition())
 			TARGET_MARKER:SetWorldScale(Vector3.New(data.capsuleWidth / 256.0 + 0.5))	-- We want this to scale correctly, but be a bit big
@@ -259,9 +268,9 @@ function Tick(deltaTime)
 			TARGET_LIGHT:SetWorldScale(Vector3.New(data.capsuleWidth / 150.0))
 			TARGET_LIGHT:SetColor(Color.New(2.0, 0.7, 0.0))
 		end
-	else
-		TARGET_MARKER.visibility = Visibility.FORCE_OFF
-		TARGET_LIGHT.visibility = Visibility.FORCE_OFF
+
+		TARGET_MARKER.visibility = Visibility.INHERIT
+		TARGET_LIGHT.visibility = Visibility.INHERIT
 	end
 end
 

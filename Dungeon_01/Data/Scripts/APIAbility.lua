@@ -575,8 +575,7 @@ end
 
 -- Owning client
 -- This wraps behavior for things like alt to self cast, or (future) spells that auto target self.
--- If this behavior ever depends on the current target, we may need to incorporate the auto-autoTarget stuff in here as well.
-function GetEffectiveTarget(abilityName)
+function GetEffectiveTarget(abilityName, setTargetIfAutotarget)
 	local data = abilityData[abilityName]
 	assert(data.targets)
 	assert(not data.groundTargets)
@@ -585,7 +584,19 @@ function GetEffectiveTarget(abilityName)
 		return LOCAL_PLAYER
 	end
 
-	return API_T.GetTarget(LOCAL_PLAYER)
+	local target = API_T.GetTarget(LOCAL_PLAYER)
+
+	if target then
+		return target
+	else
+		local autoTarget = API_T.FindAutoTarget()
+
+		if setTargetIfAutotarget then
+			API_T.TrySetTarget(autoTarget, true)
+		end
+
+		return autoTarget
+	end
 end
 
 -- Owning client
@@ -602,15 +613,7 @@ function API.CanTrigger(abilityName)
 		if data.groundTargets then
 			return true 
 		else
-			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, GetEffectiveTarget(abilityName), abilityName)
-
-			if not targetValid then
-				local autoTarget = API_T.FindAutoTarget()
-
-				if autoTarget then
-					targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, autoTarget, abilityName)
-				end
-			end
+			local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, GetEffectiveTarget(abilityName, false), abilityName)
 
 			if not targetValid then
 				if errorMessage then
@@ -656,18 +659,10 @@ function CanActivate(abilityName)
 		if data.groundTargets then
 			target = groundTargetReticle:GetWorldPosition()
 		else
-			target = GetEffectiveTarget(abilityName)
+			target = GetEffectiveTarget(abilityName, false)
 		end
 
 		local targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, target, abilityName)
-
-		if not targetValid then
-			local autoTarget = API_T.FindAutoTarget()
-
-			if autoTarget then
-				targetValid, errorMessage = IsTargetValid(LOCAL_PLAYER, autoTarget, abilityName)
-			end
-		end
 
 		if not targetValid then
 			if errorMessage then
@@ -759,12 +754,7 @@ function API.Trigger(abilityName)
 		local target = nil
 
 		if data.targets then
-			target = GetEffectiveTarget(abilityName)
-
-			if not IsTargetValid(LOCAL_PLAYER, target, abilityName) then
-				target = API_T.FindAutoTarget()
-				API_T.TrySetTarget(target, true)
-			end
+			target = GetEffectiveTarget(abilityName, true)
 		end
 
 		if CanCast(abilityName, target) then
