@@ -692,13 +692,13 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 64.6368866
+          Intensity: 30.0141125
           Color {
             R: 0.61
             G: 0.133311272
             A: 1
           }
-          VolumetricIntensity: 5
+          VolumetricIntensity: 3
           TeamSettings {
           }
           Light {

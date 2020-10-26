@@ -751,7 +751,7 @@
             B: 0.845033169
             A: 1
           }
-          VolumetricIntensity: 5
+          VolumetricIntensity: 3
           TeamSettings {
           }
           Light {
