@@ -14,16 +14,6 @@ function view:Init()
 end
 
 -----------------------------------------------------------------------------------------------------------------
-function view:Open()
-    UPGRADES_VIEW.visibility = Visibility.INHERIT
-end
-
------------------------------------------------------------------------------------------------------------------
-function view:Close()
-    UPGRADES_VIEW.visibility = Visibility.FORCE_OFF
-end
-
------------------------------------------------------------------------------------------------------------------
 function view:BeginInventoryExternalInteraction()
     INVENTORY_VIEW.clientUserData.externalInteractionTarget = self
 end
@@ -35,13 +25,48 @@ function view:EndInventoryExternalInteraction()
     end
 end
 
+-----------------------------------------------------------------------------------------------------------------
+function view:Open()
+    UPGRADES_VIEW.visibility = Visibility.INHERIT
+    self:BeginInventoryExternalInteraction()
+    self.currentState = "AwaitingPrimaryItem"
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:Close()
+    UPGRADES_VIEW.visibility = Visibility.FORCE_OFF
+    self:EndInventoryExternalInteraction()
+end
+
 ------------------------------------------------------------------------------------------------
 function view:Update(dt)
     if not UPGRADES_VIEW.clientUserData.isVisible then
         view:Close()
     else
         view:Open()
+        local updateMethod = "UPDATE_" .. self.currentState
+        if self[updateMethod] then self[updateMethod](self, dt) end
     end
+end
+
+------------------------------------------------------------------------------------------------
+function view:UPDATE_AwaitingPrimaryItem(dt)
+
+end
+
+------------------------------------------------------------------------------------------------
+function view:UPDATE_AwaitingUpgradeConfirmation(dt)
+
+end
+
+------------------------------------------------------------------------------------------------
+function view:UPDATE_PerformingUpgrade(dt)
+
+end
+
+------------------------------------------------------------------------------------------------
+function view:UPDATE_AwaitingPostUpgradeNavigation(dt)
+
 end
 
 ------------------------------------------------------------------------------------------------
