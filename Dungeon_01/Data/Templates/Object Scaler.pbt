@@ -181,5 +181,5 @@
       AssetId: "Object_Scaler"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

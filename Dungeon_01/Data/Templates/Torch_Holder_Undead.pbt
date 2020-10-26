@@ -751,7 +751,7 @@
             B: 0.845033169
             A: 1
           }
-          VolumetricIntensity: 3
+          VolumetricIntensity: 5
           TeamSettings {
           }
           Light {
@@ -848,5 +848,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

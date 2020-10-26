@@ -522,5 +522,5 @@
       AssetId: "Sky_Whimsical_Sunny_Saturation"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }
