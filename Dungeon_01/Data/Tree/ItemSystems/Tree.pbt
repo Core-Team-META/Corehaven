@@ -2900,6 +2900,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -2955,6 +2975,26 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 550
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
         }
       }
     }
@@ -3016,6 +3056,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -3071,6 +3131,26 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 450
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
         }
       }
     }
@@ -3132,6 +3212,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -3187,6 +3287,26 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 350
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
         }
       }
     }
@@ -3248,6 +3368,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -3303,6 +3443,26 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 250
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
         }
       }
     }
@@ -3364,6 +3524,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -3422,6 +3602,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 9878752877710532527
     }
@@ -3460,6 +3660,26 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 15866560314277406725
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
           }
         }
       }
@@ -6695,6 +6915,26 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -6746,6 +6986,26 @@ Objects {
   }
   ParentId: 6007599505303159785
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 12787936571800940537
       value {
@@ -6799,6 +7059,26 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -6850,6 +7130,26 @@ Objects {
   }
   ParentId: 6007599505303159785
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 12787936571800940537
       value {
@@ -6903,6 +7203,26 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -6955,6 +7275,26 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7006,6 +7346,26 @@ Objects {
   }
   ParentId: 6007599505303159785
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 12787936571800940537
       value {
@@ -7082,6 +7442,26 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
+    ParameterOverrideMap {
+      key: 11450314268423252432
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 6995298797145953704
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     ParameterOverrideMap {
       key: 12787936571800940537
       value {
@@ -8433,6 +8813,26 @@ Objects {
           Name: "Color"
           Color {
             A: 0.8
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12360867929932744375
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
           }
         }
       }
@@ -10087,7 +10487,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 382436319866788354
+        Id: 7421522848273574478
       }
       Color {
         A: 0.5
@@ -10202,7 +10602,7 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 382436319866788354
+        Id: 7421522848273574478
       }
       Color {
         R: 1
@@ -11505,6 +11905,26 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 12360867929932744375
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 7474894078038683405
     }
@@ -12286,6 +12706,26 @@ Objects {
         Overrides {
           Name: "Name"
           String: "UI_ItemSystems_Frame"
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12360867929932744375
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
         }
       }
     }

@@ -1,5 +1,5 @@
 ﻿local ENEMY_HEALTH_MULTIPLIERS = {1.0, 1.6, 2.5, 4.0}
-local ENEMY_DAMAGE_MULTIPLIERS = {0.8, 1.4, 4.0, 6.0}
+local ENEMY_DAMAGE_MULTIPLIERS = {0.8, 1.4, 3.0, 5.0}
 
 local level = 1
 

@@ -290,12 +290,12 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 382436319866788354
+              Id: 3481758651789323561
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.3
+              G: 0.3
+              B: 0.3
               A: 1
             }
             TeamSettings {
@@ -335,12 +335,12 @@
       }
     }
     Assets {
-      Id: 382436319866788354
-      Name: "Frame SciFi Empty 001"
+      Id: 3481758651789323561
+      Name: "Frame Outline Thin 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSciFi_001e"
+        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {

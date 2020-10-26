@@ -278,6 +278,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8482043111688441912
+  Name: "Frame Outlined Thick 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_020"
+  }
+}
+Assets {
   Id: 8251184018033354750
   Name: "Fantasy Ability Purple 022"
   PlatformAssetType: 9
@@ -332,15 +341,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5691032217809589253
-  Name: "Fame Metal Empty 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameMetal_003e"
-  }
-}
-Assets {
   Id: 5635343760568520525
   Name: "Frame Outlined Thick 002"
   PlatformAssetType: 9
@@ -392,6 +392,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "Icon_Close"
+  }
+}
+Assets {
+  Id: 3481758651789323561
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
   }
 }
 Assets {

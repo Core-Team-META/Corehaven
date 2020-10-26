@@ -126,8 +126,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -10
-          Height: -10
+          Width: -4
+          Height: -4
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -207,8 +207,6 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: -10
-          Height: -5
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -219,13 +217,13 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 6072604091791075315
+              Id: 3269312035317341629
             }
             Color {
               R: 1
               G: 1
               B: 1
-              A: 1
+              A: 0.3
             }
             TeamSettings {
             }
@@ -275,12 +273,12 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 6372050267507288416
+              Id: 16471580195087108593
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.3
+              G: 0.3
+              B: 0.3
               A: 1
             }
             TeamSettings {
@@ -370,21 +368,21 @@
       }
     }
     Assets {
-      Id: 6072604091791075315
-      Name: "Gradient Corners"
+      Id: 3269312035317341629
+      Name: "UI Basic Corners 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Gradient_Corners"
+        AssetId: "UI_Basic_Corners_002"
       }
     }
     Assets {
-      Id: 6372050267507288416
-      Name: "Frame SciFi Empty 001"
+      Id: 16471580195087108593
+      Name: "Frame Outlined 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSciFi_001e"
+        AssetId: "FrameSolid4px_020"
       }
     }
     Assets {
