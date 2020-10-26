@@ -161,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6995298797145953704
-  Name: "Frame Outlined 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_021"
-  }
-}
-Assets {
   Id: 6980104993132211032
   Name: "BG Flat 004"
   PlatformAssetType: 9

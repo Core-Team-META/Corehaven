@@ -836,7 +836,7 @@ Objects {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   Control {
     Height: -30
@@ -6916,26 +6916,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -6955,14 +6935,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 280
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -6988,26 +6960,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7027,14 +6979,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 200
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -7060,26 +7004,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7099,14 +7023,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 120
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -7132,26 +7048,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7171,14 +7067,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: 40
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -7204,26 +7092,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7243,14 +7111,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: -40
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -7276,26 +7136,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7315,14 +7155,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: -120
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
         }
       }
     }
@@ -7348,26 +7180,6 @@ Objects {
   ParentId: 6007599505303159785
   TemplateInstance {
     ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
       key: 12787936571800940537
       value {
         Overrides {
@@ -7387,36 +7199,6 @@ Objects {
         Overrides {
           Name: "UIX"
           Float: -200
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 14735673224064154605
-      value {
-        Overrides {
-          Name: "Width"
-          Int: -12
-        }
-        Overrides {
-          Name: "Height"
-          Int: -12
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 1
-            G: 1
-            B: 1
-            A: 0.4
-          }
         }
       }
     }
@@ -7443,26 +7225,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   TemplateInstance {
-    ParameterOverrideMap {
-      key: 11450314268423252432
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 6995298797145953704
-          }
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
-          }
-        }
-      }
-    }
     ParameterOverrideMap {
       key: 12787936571800940537
       value {
@@ -8798,42 +8560,13 @@ Objects {
           String: "UI_ItemSystems_Frame"
         }
         Overrides {
-          Name: "Scale"
+          Name: "Position"
           Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12079097343166185964
-      value {
-        Overrides {
-          Name: "Color"
-          Color {
-            A: 0.8
-          }
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 12360867929932744375
-      value {
-        Overrides {
-          Name: "Image"
-          AssetReference {
-            Id: 3481758651789323561
           }
         }
         Overrides {
-          Name: "Color"
-          Color {
-            R: 0.3
-            G: 0.3
-            B: 0.3
-            A: 1
+          Name: "Rotation"
+          Rotator {
           }
         }
       }
@@ -8914,8 +8647,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 800
-    Height: 800
+    Width: 830
+    Height: 830
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -10110,8 +9843,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 800
-    Height: 800
+    Width: 830
+    Height: 830
     RotationAngle: 90
     RenderTransformPivot {
       Anchor {
@@ -13058,8 +12791,8 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 800
-    Height: 800
+    Width: 830
+    Height: 830
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
