@@ -35,8 +35,8 @@ function CreateFrame()
 end
 
 function SetFramePosition(data, x, y)
-	data.frame.x = 20 + (x - 1) * 320
-	data.frame.y = 20 + (y - 1) * 80
+	data.frame.x = 20 + (x - 1) * 285
+	data.frame.y = 20 + (y - 1) * 45
 end
 
 function DestroyFrame(data)

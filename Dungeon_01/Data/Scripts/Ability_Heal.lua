@@ -1,7 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local BASE_HEAL = 25.0
-local HEAL_MULTIPLIER = 0.7
+local BASE_HEAL = 45.0
+local HEAL_MULTIPLIER = 1.2
 
 local data = {}
 

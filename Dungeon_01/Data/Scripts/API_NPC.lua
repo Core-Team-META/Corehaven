@@ -1,4 +1,6 @@
-﻿local API = {}
+﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+
+local API = {}
 
 -- Predefined Tasks:
 API.STATE_ASLEEP = "asleep"			-- Functionally disabled, cannot be interacted with
@@ -154,10 +156,12 @@ function API.RegisterNPCFolder(npcFolder)
 	npcFolder.descendantAddedEvent:Connect(function(ancestor, newChild)
 		Task.Wait()		-- Networked custom properties are not available for a frame
 		-- We assume anything with a "HealthFraction" custom property is an npc
-		_, isNPC = newChild:GetCustomProperty("HealthFraction")
+		if Object.IsValid(newChild) then		-- Children can be destroyed immediately in some cases
+			_, isNPC = newChild:GetCustomProperty("HealthFraction")
 
-		if isNPC then
-			AddNPC(newChild)
+			if isNPC then
+				AddNPC(newChild)
+			end
 		end
 	end)
 end
@@ -216,7 +220,7 @@ function API.GetAllNPCData()
 end
 
 function API.GetMaxHitPoints(npc)
-	return math.max(1, #Game.GetPlayers()) * npcs[npc].baseMaxHitPoints
+	return math.max(1, #Game.GetPlayers()) * npcs[npc].baseMaxHitPoints * API_DS.GetEnemyHealthMultiplier()
 end
 
 function API.GetHitPoints(npc)
@@ -316,7 +320,7 @@ function API.GetAwakeNPCsInSphere(center, radius)
 	local result = {}
 
 	for npc, _ in pairs(npcs) do
-		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) then
+		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) and not systemFunctions.IsResetting(npc) then
 			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
 				table.insert(result, npc)
 			end

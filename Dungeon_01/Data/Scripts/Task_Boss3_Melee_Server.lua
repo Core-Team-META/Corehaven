@@ -1,7 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
-local RANGE = 180.0
+local RANGE = 300.0
 local COOLDOWN = 0.0
 local DAMAGE = 6.0
 

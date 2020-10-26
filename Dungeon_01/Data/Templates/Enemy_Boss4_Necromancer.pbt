@@ -43,7 +43,7 @@
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 3500
+            Float: 5000
           }
           Overrides {
             Name: "cs:MoveSpeed"

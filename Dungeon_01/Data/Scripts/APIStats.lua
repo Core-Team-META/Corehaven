@@ -29,7 +29,9 @@ function API.GetPlayerStatMultiplier(player, statName)
 		local value = 0.0
 
 		if isClient then
-			value = player.clientUserData.statSheet:GetStatTotalValue(statName)
+			if player.clientUserData.statSheet then
+				value = player.clientUserData.statSheet:GetStatTotalValue(statName)
+			end
 		else
 			value = player.serverUserData.statSheet:GetStatTotalValue(statName)
 		end

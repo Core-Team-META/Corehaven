@@ -2,6 +2,7 @@
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_S = require(script:GetCustomProperty("APIStats"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local CRIT_DAMAGE_MULTIPLIER = 2.0
 local CRIT_HEAL_MULTIPLIER = 2.0
@@ -60,6 +61,11 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
                 sourceMultiplier = sourceMultiplier * CRIT_DAMAGE_MULTIPLIER
                 adjustedTags = adjustedTags | API.TAG_CRIT
             end
+        end
+
+        -- Enemy difficulty
+        if not sourceCharacter:IsA("Player") then
+            adjustedAmount = adjustedAmount * API_DS.GetEnemyDamageMultiplier()
         end
     end
 
