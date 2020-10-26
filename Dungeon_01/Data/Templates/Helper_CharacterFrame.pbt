@@ -63,8 +63,8 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
-          Width: 300
-          Height: 60
+          Width: 280
+          Height: 40
           UIX: 40
           UIY: 40
           RenderTransformPivot {
@@ -113,7 +113,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -60
+          Width: -40
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -174,6 +174,7 @@
         Control {
           Width: -20
           Height: 35
+          UIY: -2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -189,7 +190,7 @@
               B: 1
               A: 1
             }
-            Size: 14
+            Size: 13
             Justification {
               Value: "mc:etextjustify:left"
             }
@@ -234,6 +235,7 @@
         Control {
           Width: -20
           Height: 35
+          UIY: -2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -249,7 +251,7 @@
               B: 1
               A: 1
             }
-            Size: 14
+            Size: 13
             Justification {
               Value: "mc:etextjustify:right"
             }
@@ -570,7 +572,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 60
+          Width: 40
           Height: 100
           RenderTransformPivot {
             Anchor {
@@ -735,8 +737,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 28
-          Height: 28
+          Width: 24
+          Height: 24
           UIX: -3
           UIY: 3
           RenderTransformPivot {
@@ -862,7 +864,7 @@
               B: 1
               A: 1
             }
-            Size: 13
+            Size: 12
             Justification {
               Value: "mc:etextjustify:center"
             }

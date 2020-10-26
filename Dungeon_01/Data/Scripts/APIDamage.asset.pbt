@@ -28,6 +28,12 @@
           Id: 11452680377577311386
         }
       }
+      Overrides {
+        Name: "cs:APIDifficultySystem"
+        AssetReference {
+          Id: 767597043529123543
+        }
+      }
     }
   }
   SerializationVersion: 67

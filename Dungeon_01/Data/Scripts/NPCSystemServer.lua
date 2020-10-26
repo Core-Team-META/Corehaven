@@ -45,6 +45,15 @@ function IsAsleep(npc)
 	return npcStates[npc].taskHistory[1] == API_NPC.STATE_ASLEEP
 end
 
+function IsResetting(npc)
+	-- NPC hasn't been set up yet
+	if not npcStates[npc] then
+		return false
+	end
+
+	return npcStates[npc].taskHistory[1] == API_NPC.STATE_RESETTING
+end
+
 function SetCurrentTask(npc, task, interrupted)
 	local npcData = API_NPC.GetAllNPCData()[npc]
 	local npcState = npcStates[npc]
@@ -611,6 +620,7 @@ functionTable.OnHealed = OnHealed
 functionTable.SetStunnedFlag = SetStunnedFlag
 functionTable.SuggestMoveUpdate = SuggestMoveUpdate
 functionTable.IsAsleep = IsAsleep
+functionTable.IsResetting = IsResetting
 functionTable.IsPlayerInCombat = IsPlayerInCombat
 functionTable.GetThreatTable = GetThreatTable
 functionTable.SetThreat = SetThreat

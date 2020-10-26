@@ -39494,6 +39494,146 @@ Objects {
   }
 }
 Objects {
+  Id: 5260270669778650402
+  Name: "DifficultySystem"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 7714009849394432203
+  ChildIds: 17918956590682169555
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:DifficultyLevel"
+      Int: 3
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 17918956590682169555
+  Name: "ClientContext"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5260270669778650402
+  ChildIds: 16561389573598348290
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16561389573598348290
+  Name: "DifficultySystemClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17918956590682169555
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 5260270669778650402
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 1871329788882146581
+    }
+  }
+}
+Objects {
+  Id: 7714009849394432203
+  Name: "DifficultySystemServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5260270669778650402
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 5260270669778650402
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18250716128285106749
+    }
+  }
+}
+Objects {
   Id: 1294630298578069914
   Name: "Damage"
   Transform {

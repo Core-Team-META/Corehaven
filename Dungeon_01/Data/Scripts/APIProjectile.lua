@@ -7,6 +7,8 @@ local G = 980.0			-- This is little g, as a constant
 function GetCorrectPosition(characterOrPosition)
 	if characterOrPosition:IsA("Vector3") then
 		return characterOrPosition
+	elseif not Object.IsValid(characterOrPosition) then
+		return Vector3.ZERO		-- Edge case, probably from join in progress
 	elseif characterOrPosition:IsA("Player") then
 		return characterOrPosition:GetWorldPosition()
 	else

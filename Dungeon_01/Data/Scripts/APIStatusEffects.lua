@@ -205,7 +205,7 @@ end
 
 -- Client and Server
 function API.GetStateTracker(character)
-	if not trackerCache[character] then
+	if STATE_TRACKER_GROUP and not trackerCache[character] then
 		trackerCache[character] = STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
 	end
 
