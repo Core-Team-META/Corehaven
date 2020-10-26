@@ -117,7 +117,7 @@ function view:DrawPanelSansStats()
         control:SetColor(color)
     end
     -- Draw the gray out if requested.
-    panel.clientUserData.grayOut = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
+    panel.clientUserData.grayOut.visibility = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
 end
 
 -------------------------------------------------------------------------------

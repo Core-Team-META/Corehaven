@@ -90,6 +90,7 @@ Objects {
   ChildIds: 13057162835889280687
   ChildIds: 14941095892963387303
   ChildIds: 16136876061829772934
+  ChildIds: 17246140728705876905
   ChildIds: 6427885708988809054
   ChildIds: 6535155843678156604
   ChildIds: 11157859161409338975
@@ -9142,6 +9143,411 @@ Objects {
   }
 }
 Objects {
+  Id: 17246140728705876905
+  Name: "UpgradesView"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17155143211693072178
+  ChildIds: 18276465983685424548
+  ChildIds: 5264906776939628478
+  ChildIds: 13000595301055819545
+  ChildIds: 16539455018631016059
+  ChildIds: 5839244134075002934
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 660
+    Height: 800
+    UIX: -810
+    UIY: -220
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5839244134075002934
+  Name: "UpgradeTitle"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 200
+    Height: 60
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Upgrades"
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.5
+      }
+      Size: 20
+      Justification {
+        Value: "mc:etextjustify:center"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 16539455018631016059
+  Name: "UI_ItemSystems_ForceCloseButton"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 10241432834000785313
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_ForceCloseButton"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "cs:ViewName"
+          String: "Upgrades"
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 8
+        }
+        Overrides {
+          Name: "UIX"
+          Float: -10
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 16083006011409388748
+    }
+  }
+}
+Objects {
+  Id: 13000595301055819545
+  Name: "UI_ItemSystems_Frame"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 5543434910862719726
+      value {
+        Overrides {
+          Name: "Name"
+          String: "UI_ItemSystems_Frame"
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 12079097343166185964
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            A: 0.8
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Width"
+          Int: 343
+        }
+        Overrides {
+          Name: "Height"
+          Int: 200
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 7474894078038683405
+    }
+  }
+}
+Objects {
+  Id: 5264906776939628478
+  Name: "BackgroundImageClip"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  ChildIds: 6345929069207106706
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 6345929069207106706
+  Name: "BackgroundImage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5264906776939628478
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 800
+    Height: 800
+    RotationAngle: 90
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 12499173300342200877
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 18276465983685424548
+  Name: "ItemSystems_InventoryUpgradesView"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Item"
+      AssetReference {
+        Id: 13866541763018299709
+      }
+    }
+    Overrides {
+      Name: "cs:ItemThemes"
+      AssetReference {
+        Id: 3464750411501585367
+      }
+    }
+    Overrides {
+      Name: "cs:UpgradesView"
+      ObjectReference {
+        SelfId: 17246140728705876905
+      }
+    }
+    Overrides {
+      Name: "cs:InventoryView"
+      ObjectReference {
+        SelfId: 6427885708988809054
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2607656087352742706
+    }
+  }
+}
+Objects {
   Id: 16136876061829772934
   Name: "CraftingView"
   Transform {
@@ -12923,20 +13329,20 @@ Objects {
       String: "ability_extra_27"
     }
     Overrides {
-      Name: "cs:CraftingView"
+      Name: "cs:UpgradesView"
       ObjectReference {
-        SelfId: 16136876061829772934
+        SelfId: 17246140728705876905
       }
     }
     Overrides {
-      Name: "cs:CraftingViewButton"
+      Name: "cs:UpgradesViewButton"
       ObjectReference {
         SelfId: 9529667340839858435
       }
     }
     Overrides {
-      Name: "cs:CraftingViewHotkey"
-      String: "ability_extra_45"
+      Name: "cs:UpgradesViewHotkey"
+      String: "ability_extra_26"
     }
     Overrides {
       Name: "cs:TalentsView"
