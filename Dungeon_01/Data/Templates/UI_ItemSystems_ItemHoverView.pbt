@@ -122,9 +122,9 @@
         ChildIds: 7384431678586517271
         ChildIds: 15341775218338443136
         ChildIds: 3983402750360509683
-        ChildIds: 5969132730021877541
         ChildIds: 7333619355998468323
-        ChildIds: 2958159584200621809
+        ChildIds: 4765968673755060751
+        ChildIds: 12901804969531040832
         ChildIds: 8134910548589255627
         ChildIds: 2692524949218444987
         ChildIds: 18440193885409355065
@@ -168,7 +168,7 @@
           }
           Overrides {
             Name: "cs:StatOffsetY"
-            Float: 85
+            Float: 125
           }
           Overrides {
             Name: "cs:StatOffsetXBase"
@@ -185,13 +185,7 @@
             }
           }
           Overrides {
-            Name: "cs:EnhancementStar"
-            ObjectReference {
-              SubObjectId: 5969132730021877541
-            }
-          }
-          Overrides {
-            Name: "cs:EnhancementAmount"
+            Name: "cs:EnhancementLevel"
             ObjectReference {
               SubObjectId: 7333619355998468323
             }
@@ -200,6 +194,25 @@
             Name: "cs:GrayOut"
             ObjectReference {
               SubObjectId: 10039489459048352721
+            }
+          }
+          Overrides {
+            Name: "cs:StarSpacing"
+            Int: 24
+          }
+          Overrides {
+            Name: "cs:StarsRoot"
+            ObjectReference {
+              SubObjectId: 4765968673755060751
+            }
+          }
+          Overrides {
+            Name: "cs:StarUnfilledColor"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.2
             }
           }
         }
@@ -211,7 +224,7 @@
         }
         Control {
           Width: 266
-          Height: 145
+          Height: 180
           UIX: -30
           UIY: -25
           RenderTransformPivot {
@@ -278,7 +291,7 @@
             Brush {
             }
             Color {
-              A: 0.9
+              A: 0.95
             }
             TeamSettings {
             }
@@ -991,7 +1004,7 @@
         }
         Control {
           Width: 80
-          Height: 300
+          Height: 500
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1096,7 +1109,7 @@
         }
         Control {
           Width: 80
-          Height: 300
+          Height: 500
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1324,15 +1337,16 @@
         }
         Control {
           Width: 244
-          Height: 26
+          Height: 30
           UIY: 42
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Text {
-            Label: "Legendary Helmet"
+            Label: "Legendary Warhammer"
             Color {
               R: 0.48827824
               B: 0.73
@@ -1358,66 +1372,8 @@
         }
       }
       Objects {
-        Id: 5969132730021877541
-        Name: "EnhancementStar"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 17972168532587766368
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 24
-          Height: 24
-          UIX: 6
-          UIY: 43
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          Image {
-            Brush {
-              Id: 4877455313696611303
-            }
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 0.6
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 7333619355998468323
-        Name: "EnhancementAmount"
+        Name: "EnhancementLevel"
         Transform {
           Location {
           }
@@ -1437,17 +1393,17 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          Height: 60
-          UIX: 32
-          UIY: 43
+          Width: 133
+          Height: 30
+          UIY: 64
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Text {
-            Label: "5 | 5"
+            Label: "Level 10"
             Color {
               R: 1
               G: 1
@@ -1456,26 +1412,353 @@
             }
             Size: 12
             Justification {
-              Value: "mc:etextjustify:left"
+              Value: "mc:etextjustify:center"
             }
             AutoWrapText: true
           }
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:topcenter"
               }
             }
           }
         }
       }
       Objects {
-        Id: 2958159584200621809
+        Id: 4765968673755060751
+        Name: "LimitBreakStars"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        ChildIds: 14103814310823313487
+        ChildIds: 3440886548688833279
+        ChildIds: 9723725272361872756
+        ChildIds: 6142759066202662591
+        ChildIds: 11349660950091065469
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 133
+          Height: 30
+          UIY: 84
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14103814310823313487
+        Name: "LimitBreakStar1"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4765968673755060751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 20
+          Height: 20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 12781087704127034770
+            }
+            Color {
+              R: 0.352666974
+              B: 0.919999957
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3440886548688833279
+        Name: "LimitBreakStar2"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4765968673755060751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 20
+          Height: 20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 12781087704127034770
+            }
+            Color {
+              R: 0.352666974
+              B: 0.919999957
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9723725272361872756
+        Name: "LimitBreakStar3"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4765968673755060751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 20
+          Height: 20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 12781087704127034770
+            }
+            Color {
+              R: 0.352666974
+              B: 0.919999957
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6142759066202662591
+        Name: "LimitBreakStar4"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4765968673755060751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 20
+          Height: 20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 12781087704127034770
+            }
+            Color {
+              R: 0.352666974
+              B: 0.919999957
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11349660950091065469
+        Name: "LimitBreakStar4"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4765968673755060751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 20
+          Height: 20
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 12781087704127034770
+            }
+            Color {
+              R: 0.352666974
+              B: 0.919999957
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12901804969531040832
         Name: "Divider"
         Transform {
           Location {
@@ -1498,7 +1781,7 @@
         Control {
           Width: -20
           Height: 2
-          UIY: 70
+          UIY: 115
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1717,7 +2000,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 200
@@ -1817,7 +2100,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 266
@@ -1888,7 +2171,7 @@
             Brush {
             }
             Color {
-              A: 0.9
+              A: 0.95
             }
             TeamSettings {
             }
@@ -3105,7 +3388,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 200
@@ -3160,12 +3443,12 @@
       }
     }
     Assets {
-      Id: 4877455313696611303
-      Name: "Emblem Star"
+      Id: 12781087704127034770
+      Name: "Icon Star"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Military_Icon_059"
+        AssetId: "Icon_Star"
       }
     }
     PrimaryAssetId {
@@ -3173,5 +3456,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

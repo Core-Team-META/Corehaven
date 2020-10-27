@@ -28,9 +28,16 @@ function view:InitPanel(panel)
     if panel:GetCustomProperty("StatsRoot") then
         panel.clientUserData.statsRoot = panel:GetCustomProperty("StatsRoot"):WaitForObject()
     end
-    if panel:GetCustomProperty("EnhancementStar") then
-        panel.clientUserData.enhancementStar = panel:GetCustomProperty("EnhancementStar"):WaitForObject()
-        panel.clientUserData.enhancementAmount = panel:GetCustomProperty("EnhancementAmount"):WaitForObject()
+    -- The stats panel has a couple extra elements.
+    if panel:GetCustomProperty("EnhancementLevel") then
+        panel.clientUserData.enhancementLevel = panel:GetCustomProperty("EnhancementLevel"):WaitForObject()
+        panel.clientUserData.limitBreakStars = {}
+        for _,star in ipairs(panel:GetCustomProperty("StarsRoot"):WaitForObject():GetChildren()) do
+            table.insert(panel.clientUserData.limitBreakStars, star)
+        end
+        panel.clientUserData.limitBreakStarBaseColor = panel:GetCustomProperty("StarUnfilledColor")
+        panel.clientUserData.starSpacing = panel:GetCustomProperty("StarSpacing")
+        panel.clientUserData.starsRoot = panel:GetCustomProperty("StarsRoot"):WaitForObject()
     end
     panel.clientUserData.grayOut = panel:GetCustomProperty("GrayOut"):WaitForObject()
 end
@@ -90,14 +97,27 @@ function view:DrawPanelWithStats()
     end
     panel.height = panel.clientUserData.baseHeight + math.max(offsetYBase, offsetYBonus)
     -- Colors.
-    local color = ItemThemes.GetRarityColor(item:GetRarity())
-    panel.clientUserData.pointer:SetColor(color)
-    panel.clientUserData.classification:SetColor(color)
+    local rarityColor = ItemThemes.GetRarityColor(item:GetRarity())
+    panel.clientUserData.pointer:SetColor(rarityColor)
+    panel.clientUserData.classification:SetColor(rarityColor)
     for _,control in ipairs(panel.clientUserData.borderRoot:FindDescendantsByType("UIImage")) do
-        control:SetColor(color)
+        control:SetColor(rarityColor)
     end
-    -- Show enhancement star and level if applicable.
-    panel.clientUserData.enhancementAmount.text = string.format("%d | %d", item:GetEnhancementLevel(), item:GetMaxEnhancementLevel())
+    -- Show enhancement level and stars if applicable.
+    local enhancementSuffix = item:IsFullyEnhanced() and " (MAX)" or ""
+    panel.clientUserData.enhancementLevel.text = "Level " .. tostring(item:GetEnhancementLevel()) .. enhancementSuffix
+    local numStars = item:GetLimitBreakLevel()
+    local numStarsMax = item:GetMaxLimitBreakLevel()
+    local starsMidpoint = (numStarsMax + 1) / 2
+    for i,star in ipairs(panel.clientUserData.limitBreakStars) do
+        if i <= numStarsMax then
+            star.visibility = Visibility.INHERIT
+            star.x = (i - starsMidpoint) * panel.clientUserData.starSpacing
+            star:SetColor(i <= numStars and rarityColor or panel.clientUserData.limitBreakStarBaseColor)
+        else
+            star.visibility = Visibility.FORCE_OFF
+        end
+    end
     -- Draw the gray out if requested.
     panel.clientUserData.grayOut.visibility = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
 end
@@ -117,7 +137,7 @@ function view:DrawPanelSansStats()
         control:SetColor(color)
     end
     -- Draw the gray out if requested.
-    panel.clientUserData.grayOut = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
+    panel.clientUserData.grayOut.visibility = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF
 end
 
 -------------------------------------------------------------------------------
@@ -147,8 +167,7 @@ function view:Update()
 end
 
 -------------------------------------------------------------------------------
+view:Init()
 function Tick(dt)
     view:Update()
 end
-
-view:Init()

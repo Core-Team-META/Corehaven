@@ -7,7 +7,7 @@
       RootId: 5543434910862719726
       Objects {
         Id: 5543434910862719726
-        Name: "Frame"
+        Name: "UI_ItemSystems_Frame"
         Transform {
           Scale {
             X: 1
@@ -85,7 +85,7 @@
             Brush {
             }
             Color {
-              A: 0.9
+              A: 0.8
             }
             TeamSettings {
             }
@@ -126,8 +126,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 5
-          Height: 5
+          Width: 6
+          Height: 6
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -138,12 +138,12 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 17712336256563670159
+              Id: 3481758651789323561
             }
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.3
+              G: 0.3
+              B: 0.3
               A: 1
             }
             TeamSettings {
@@ -165,12 +165,12 @@
       }
     }
     Assets {
-      Id: 17712336256563670159
-      Name: "Frame SciFi Empty 001"
+      Id: 3481758651789323561
+      Name: "Frame Outline Thin 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSciFi_001e"
+        AssetId: "FrameOutline_020"
       }
     }
     PrimaryAssetId {
@@ -178,5 +178,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

@@ -2,7 +2,7 @@
   Id: 115444195155040475
   Name: "Ship Deck Planks"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 18033297229984528543
     ParameterOverrides {

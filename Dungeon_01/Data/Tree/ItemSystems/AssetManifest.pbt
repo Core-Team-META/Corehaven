@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12499173300342200877
+  Name: "Fantasy Ability Yellow 042"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_042"
+  }
+}
+Assets {
   Id: 12017046880637070245
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
@@ -140,6 +149,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_icon_ChestPiece"
+  }
+}
+Assets {
+  Id: 7421522848273574478
+  Name: "Frame Outline Thin 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_019"
   }
 }
 Assets {
@@ -221,15 +239,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_icon_Sword"
-  }
-}
-Assets {
-  Id: 382436319866788354
-  Name: "Frame SciFi Empty 001"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSciFi_001e"
   }
 }
 Assets {

@@ -179,5 +179,5 @@
       AssetId: "Object_Mover"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

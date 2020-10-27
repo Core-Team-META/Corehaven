@@ -181,5 +181,5 @@
       AssetId: "Fantasy_Chest_Common_01__Prop_"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

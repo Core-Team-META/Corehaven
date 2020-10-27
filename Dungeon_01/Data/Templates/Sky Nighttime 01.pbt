@@ -471,5 +471,5 @@
       AssetId: "Sky_Nighttime_01"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

@@ -4347,6 +4347,34 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 12360867929932744375
+      value {
+        Overrides {
+          Name: "Image"
+          AssetReference {
+            Id: 3481758651789323561
+          }
+        }
+        Overrides {
+          Name: "UIX"
+          Float: 0
+        }
+        Overrides {
+          Name: "UIY"
+          Float: 0
+        }
+        Overrides {
+          Name: "Color"
+          Color {
+            R: 0.3
+            G: 0.3
+            B: 0.3
+            A: 1
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 7474894078038683405
     }
@@ -4811,7 +4839,7 @@ Objects {
 }
 Objects {
   Id: 7636043929480334663
-  Name: "CraftingViewer"
+  Name: "UpgradesViewer"
   Transform {
     Location {
     }
@@ -4925,7 +4953,7 @@ Objects {
 }
 Objects {
   Id: 9529667340839858435
-  Name: "CraftingViewerButton"
+  Name: "UpgradesViewerButton"
   Transform {
     Location {
     }
@@ -4953,7 +4981,7 @@ Objects {
       }
     }
     Button {
-      Label: "M"
+      Label: "U"
       FontColor {
         R: 1
         G: 1
@@ -4985,7 +5013,7 @@ Objects {
         A: 1
       }
       Brush {
-        Id: 14574994426789494010
+        Id: 2269020591851145584
       }
       IsButtonEnabled: true
     }
@@ -7056,12 +7084,12 @@ Objects {
     UseParentHeight: true
     Image {
       Brush {
-        Id: 5691032217809589253
+        Id: 8482043111688441912
       }
       Color {
-        R: 1
-        G: 1
-        B: 1
+        R: 0.209
+        G: 0.209
+        B: 0.209
         A: 1
       }
       TeamSettings {

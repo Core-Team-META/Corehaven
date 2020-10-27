@@ -5243,7 +5243,7 @@ Objects {
   ChildIds: 4822027138064384699
   ChildIds: 6460519318533235292
   ChildIds: 2109137965535185410
-  ChildIds: 4226120016796708080
+  ChildIds: 9846306751193598972
   ChildIds: 17831873287093224029
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -7069,8 +7069,8 @@ Objects {
   }
 }
 Objects {
-  Id: 4226120016796708080
-  Name: "Default Player Settings"
+  Id: 9846306751193598972
+  Name: "Player Settings"
   Transform {
     Location {
     }
@@ -7083,8 +7083,6 @@ Objects {
     }
   }
   ParentId: 14414506327562387432
-  UnregisteredParameters {
-  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7120,6 +7118,9 @@ Objects {
       LookAtCursorProjectionPlane {
         Value: "mc:eprojectionplane:xy"
       }
+      LookAtCursorProjectionPlaneAnchor {
+        Value: "mc:eprojectionplaneanchor:playerposition"
+      }
       MountedMaxAcceleration: 5000
       MountedWalkSpeed: 1280
       MountedJumpMaxCount: 1
@@ -7137,9 +7138,6 @@ Objects {
       }
       AppearanceChannelingTime: 2
       FlipOnMultiJump: true
-      CanMoveUp: true
-      CanMoveDown: true
-      IsMountEnabled: true
     }
   }
 }
@@ -39513,7 +39511,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 3
+      Int: 1
     }
   }
   Collidable_v2 {

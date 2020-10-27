@@ -272,5 +272,5 @@
       AssetId: "Message_Banner"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

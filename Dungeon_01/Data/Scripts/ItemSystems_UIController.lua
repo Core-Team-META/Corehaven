@@ -4,9 +4,9 @@ local LOOT_VIEW_HOTKEY = script:GetCustomProperty("LootViewHotkey")
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local INVENTORY_VIEW_BUTTON = script:GetCustomProperty("InventoryViewButton"):WaitForObject()
 local INVENTORY_VIEW_HOTKEY = script:GetCustomProperty("InventoryViewHotkey")
-local CRAFTING_VIEW = script:GetCustomProperty("CraftingView"):WaitForObject()
-local CRAFTING_VIEW_BUTTON = script:GetCustomProperty("CraftingViewButton"):WaitForObject()
-local CRAFTING_VIEW_HOTKEY = script:GetCustomProperty("CraftingViewHotkey")
+local UPGRADES_VIEW = script:GetCustomProperty("UpgradesView"):WaitForObject()
+local UPGRADES_VIEW_BUTTON = script:GetCustomProperty("UpgradesViewButton"):WaitForObject()
+local UPGRADES_VIEW_HOTKEY = script:GetCustomProperty("UpgradesViewHotkey")
 local TALENTS_VIEW = script:GetCustomProperty("TalentsView"):WaitForObject()
 local TALENTS_VIEW_BUTTON = script:GetCustomProperty("TalentsViewButton"):WaitForObject()
 local TALENTS_VIEW_HOTKEY = script:GetCustomProperty("TalentsViewHotkey")
@@ -16,28 +16,28 @@ local SFX_CLOSE = script:GetCustomProperty("SFX_InventoryClose")
 local viewsByHotkey = {
     [INVENTORY_VIEW_HOTKEY] = INVENTORY_VIEW,
     [LOOT_VIEW_HOTKEY]      = LOOT_VIEW,
-    [CRAFTING_VIEW_HOTKEY]  = CRAFTING_VIEW,
+    [UPGRADES_VIEW_HOTKEY]  = UPGRADES_VIEW,
     [TALENTS_VIEW_HOTKEY]   = TALENTS_VIEW,
 }
 
 local viewsByName = {
     Inventory   = INVENTORY_VIEW,
     Loot        = LOOT_VIEW,
-    Crafting    = CRAFTING_VIEW,
+    Upgrades    = UPGRADES_VIEW,
     Talents     = TALENTS_VIEW,
 }
 
 local viewExclusions = {
     [INVENTORY_VIEW]    = { TALENTS_VIEW },
-    [LOOT_VIEW]         = { TALENTS_VIEW, CRAFTING_VIEW },
-    [CRAFTING_VIEW]     = { TALENTS_VIEW, LOOT_VIEW },
-    [TALENTS_VIEW]      = { INVENTORY_VIEW, LOOT_VIEW, CRAFTING_VIEW },
+    [LOOT_VIEW]         = { TALENTS_VIEW, UPGRADES_VIEW },
+    [UPGRADES_VIEW]     = { TALENTS_VIEW, LOOT_VIEW },
+    [TALENTS_VIEW]      = { INVENTORY_VIEW, LOOT_VIEW, UPGRADES_VIEW },
 }
 
 local viewDependencies = {
     [INVENTORY_VIEW]    = {},
     [LOOT_VIEW]         = {},
-    [CRAFTING_VIEW]     = { INVENTORY_VIEW },
+    [UPGRADES_VIEW]     = { INVENTORY_VIEW },
     [TALENTS_VIEW]      = {},
 }
 
@@ -100,7 +100,7 @@ end)
 
 LOOT_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(LOOT_VIEW) end)
 INVENTORY_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(INVENTORY_VIEW) end)
-CRAFTING_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(CRAFTING_VIEW) end)
+UPGRADES_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(UPGRADES_VIEW) end)
 TALENTS_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(TALENTS_VIEW) end)
 
 Events.Connect("ForceOpenViewByName", ForceOpenViewByName)

@@ -105,5 +105,5 @@
       AssetId: "Kill_Zone"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

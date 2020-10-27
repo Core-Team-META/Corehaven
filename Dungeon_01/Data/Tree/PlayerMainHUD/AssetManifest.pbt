@@ -98,15 +98,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14574994426789494010
-  Name: "Fantasy Tool 005"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "UI_Fantasy_Equip_Tool_005"
-  }
-}
-Assets {
   Id: 13887755575610655442
   Name: "Fantasy Ability Yellow 003"
   PlatformAssetType: 9
@@ -278,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8482043111688441912
+  Name: "Frame Outlined Thick 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameFlat_020"
+  }
+}
+Assets {
   Id: 8251184018033354750
   Name: "Fantasy Ability Purple 022"
   PlatformAssetType: 9
@@ -329,15 +329,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Equip_Pack_006"
-  }
-}
-Assets {
-  Id: 5691032217809589253
-  Name: "Fame Metal Empty 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameMetal_003e"
   }
 }
 Assets {
@@ -395,6 +386,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3481758651789323561
+  Name: "Frame Outline Thin 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_020"
+  }
+}
+Assets {
   Id: 3253118148106198509
   Name: "Fantasy Book 001"
   PlatformAssetType: 9
@@ -437,6 +437,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Purple_012"
+  }
+}
+Assets {
+  Id: 2269020591851145584
+  Name: "Fantasy Anvil 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Anvil_001"
   }
 }
 Assets {
