@@ -19,7 +19,7 @@
       Overrides {
         Name: "cs:LimitBreakCurrency"
         AssetReference {
-          Id: 9246344285987009353
+          Id: 11852799625917719299
         }
       }
     }
