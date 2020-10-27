@@ -4839,7 +4839,7 @@ Objects {
 }
 Objects {
   Id: 7636043929480334663
-  Name: "CraftingViewer"
+  Name: "UpgradesViewer"
   Transform {
     Location {
     }
@@ -4953,7 +4953,7 @@ Objects {
 }
 Objects {
   Id: 9529667340839858435
-  Name: "CraftingViewerButton"
+  Name: "UpgradesViewerButton"
   Transform {
     Location {
     }
@@ -4981,7 +4981,7 @@ Objects {
       }
     }
     Button {
-      Label: "M"
+      Label: "U"
       FontColor {
         R: 1
         G: 1
@@ -5013,7 +5013,7 @@ Objects {
         A: 1
       }
       Brush {
-        Id: 14574994426789494010
+        Id: 2269020591851145584
       }
       IsButtonEnabled: true
     }

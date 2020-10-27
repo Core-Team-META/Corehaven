@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12499173300342200877
+  Name: "Fantasy Ability Yellow 042"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_042"
+  }
+}
+Assets {
   Id: 12017046880637070245
   Name: "Frame Outlined 002"
   PlatformAssetType: 9
@@ -149,15 +158,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameOutline_019"
-  }
-}
-Assets {
-  Id: 6995298797145953704
-  Name: "Frame Outlined 003"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_021"
   }
 }
 Assets {

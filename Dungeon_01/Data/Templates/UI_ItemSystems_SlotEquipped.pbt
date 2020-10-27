@@ -7,7 +7,7 @@
       RootId: 12787936571800940537
       Objects {
         Id: 12787936571800940537
-        Name: "UI_ItemSystems_SlotEquipped"
+        Name: "MainHand"
         Transform {
           Scale {
             X: 1
@@ -20,8 +20,9 @@
         ChildIds: 16577243887167407429
         ChildIds: 6649207122798874075
         ChildIds: 16310133585715927768
-        ChildIds: 11450314268423252432
         ChildIds: 14735673224064154605
+        ChildIds: 11450314268423252432
+        ChildIds: 14544183020000916205
         ChildIds: 5175028734503181600
         ChildIds: 598107552338339180
         ChildIds: 18334209262565674157
@@ -625,64 +626,6 @@
         }
       }
       Objects {
-        Id: 11450314268423252432
-        Name: "Frame"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 12787936571800940537
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Control {
-          Width: 200
-          Height: 200
-          RenderTransformPivot {
-            Anchor {
-              Value: "mc:euianchor:middlecenter"
-            }
-          }
-          UseParentWidth: true
-          UseParentHeight: true
-          Image {
-            Brush {
-              Id: 3481758651789323561
-            }
-            Color {
-              R: 0.3
-              G: 0.3
-              B: 0.3
-              A: 1
-            }
-            TeamSettings {
-            }
-          }
-          AnchorLayout {
-            SelfAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-            TargetAnchor {
-              Anchor {
-                Value: "mc:euianchor:topleft"
-              }
-            }
-          }
-        }
-      }
-      Objects {
         Id: 14735673224064154605
         Name: "Border"
         Transform {
@@ -724,6 +667,125 @@
               G: 1
               B: 1
               A: 0.4
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11450314268423252432
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12787936571800940537
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          UIX: 0.5
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 3088287233265355832
+            }
+            Color {
+              R: 0.3
+              G: 0.3
+              B: 0.3
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 14544183020000916205
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 12787936571800940537
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          UIX: 0.5
+          RotationAngle: 90
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 3088287233265355832
+            }
+            Color {
+              R: 0.3
+              G: 0.3
+              B: 0.3
+              A: 1
             }
             TeamSettings {
             }
@@ -1115,21 +1177,21 @@
       }
     }
     Assets {
-      Id: 3481758651789323561
-      Name: "Frame Outline Thin 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameOutline_020"
-      }
-    }
-    Assets {
       Id: 12017046880637070245
       Name: "Frame Outlined 002"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "FrameSolid4px_019"
+      }
+    }
+    Assets {
+      Id: 3088287233265355832
+      Name: "Sci-fi Frame 002"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_SciFi_Frame_002"
       }
     }
     Assets {

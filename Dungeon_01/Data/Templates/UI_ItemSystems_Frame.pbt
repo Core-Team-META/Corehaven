@@ -85,7 +85,7 @@
             Brush {
             }
             Color {
-              A: 0.9
+              A: 0.8
             }
             TeamSettings {
             }
@@ -126,8 +126,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 5
-          Height: 5
+          Width: 6
+          Height: 6
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"

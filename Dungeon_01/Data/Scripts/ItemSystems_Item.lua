@@ -109,13 +109,22 @@ Item.SHARD_RARITY_MULTIPLIERS = {
 Item.ENHANCEMENT_CAP = 10
 Item.ENHANCEMENT_STAT_PERCENT_INCREASE = 10
 
+-- Limit break caps by rarity.
+Item.LIMIT_BREAK_CAPS = {
+    Common    = 1,
+    Uncommon  = 2,
+    Rare      = 3,
+    Epic      = 4,
+    Legendary = 5,
+}
+
 ---------------------------------------------------------------------------------------------------------
 -- PUBLIC
 ---------------------------------------------------------------------------------------------------------
-function Item.New(itemData, stackSize, enhancementLevel)
+function Item.New(itemData, stackSize, enhancementLevel, limitBreakLevel)
     local o = {}
     setmetatable(o, Item)
-    o:_Init(itemData, stackSize, enhancementLevel)
+    o:_Init(itemData, stackSize, enhancementLevel, limitBreakLevel)
     return o
 end
 
@@ -162,6 +171,8 @@ function Item:IsTwoHanded()
     return self.SLOT_CONSTRAINTS[self:GetType()].isTwoHanded
 end
 
+---------------------------------------------------------------------------------------------------------------
+-- Stackable API Methods
 function Item:IsStackable()
     return self.data.maxStackSize ~= nil
 end
@@ -191,12 +202,14 @@ function Item:GetAvailableStackSpace()
     return self:GetMaxStackSize() - self:GetStackSize()
 end
 
+---------------------------------------------------------------------------------------------------------------
+-- Enhancement API Methods
 function Item:GetEnhancementLevel()
     return self.enhancementLevel
 end
 
 function Item:GetMaxEnhancementLevel()
-    return self.ENHANCEMENT_CAP
+    return self.ENHANCEMENT_CAP * (self:GetLimitBreakLevel() + 1)
 end
 
 function Item:SetEnhancementLevel(enhancementLevel)
@@ -209,6 +222,26 @@ function Item:IsFullyEnhanced()
     return self.enhancementLevel == self:GetMaxEnhancementLevel()
 end
 
+---------------------------------------------------------------------------------------------------------------
+-- Limit-Break API Methods
+function Item:GetLimitBreakLevel()
+    return self.limitBreakLevel
+end
+
+function Item:GetMaxLimitBreakLevel()
+    return self.LIMIT_BREAK_CAPS[self:GetRarity()]
+end
+
+function Item:SetLimitBreakLevel(limitBreakLevel)
+    assert(1 <= limitBreakLevel and limitBreakLevel <= self:GetMaxLimitBreakLevel())
+    self.limitBreakLevel = limitBreakLevel
+end
+
+function Item:IsFullyLimitBroken()
+    return self.limitBreakLevel == self:GetMaxLimitBreakLevel()
+end
+
+---------------------------------------------------------------------------------------------------------------
 function Item:ApplyIconImageSettings(uiImage, uiImageInterior)
     uiImage:SetImage(self.data.iconMUID)
     uiImage:SetColor(self.data.iconColorTint or Color.WHITE)
@@ -323,7 +356,7 @@ local HASH_DELIM_INTRO = "|"
 local HASH_DELIM_STAT_BASE = "#"
 local HASH_DELIM_STAT_BONUS = "&"
 local HASH_DELIM_STAT_EQUALS = "="
-local HASH_PATTERN_FULL = "^(.*)|(.*)|(.*)|(.*)$"
+local HASH_PATTERN_FULL = "^(.*)|(.*)|(.*)|(.*)|(.*)$"
 local HASH_PATTERN_STAT = "([#&])([^#&=]+)=(....)"
 
 function Item._StatInfo(statInfo)
@@ -333,10 +366,11 @@ function Item._StatInfo(statInfo)
     return statInfo
 end
 
-function Item:_Init(itemData, stackSize, enhancementLevel)
+function Item:_Init(itemData, stackSize, enhancementLevel, limitBreakLevel)
     self.data = itemData
     self.stackSize = stackSize or 1
     self.enhancementLevel = enhancementLevel or 0
+    self.limitBreakLevel = limitBreakLevel or 1
     self.stats = {}
     self.statTotals = {}
 end
@@ -349,6 +383,8 @@ function Item:_IntoHash(isRuntime)
     table.insert(hashParts, Base64.Encode12(self:GetStackSize()))
     table.insert(hashParts, HASH_DELIM_INTRO)
     table.insert(hashParts, Base64.Encode6(self:GetEnhancementLevel()))
+    table.insert(hashParts, HASH_DELIM_INTRO)
+    table.insert(hashParts, Base64.Encode6(self:GetLimitBreakLevel()))
     table.insert(hashParts, HASH_DELIM_INTRO)
     for _,stat in ipairs(self.stats) do
         local statIndex = self.STATS[stat.name]
@@ -367,7 +403,7 @@ function Item._FromHash(database, hash)
     local hashType = hash:sub(1, 1)
     local hashData = hash:sub(2)
     local isRuntime = hashType == HASH_RUNTIME
-    local hashItemId, hashStackSize, hashEnhancementLevel, hashItemStats = hashData:match(HASH_PATTERN_FULL)
+    local hashItemId, hashStackSize, hashEnhancementLevel, hashLimitBreakLevel, hashItemStats = hashData:match(HASH_PATTERN_FULL)
     local itemData = nil
     if isRuntime then
         itemData = database:FindItemDataByIndex(Base64.Decode24(hashItemId))
@@ -379,8 +415,9 @@ function Item._FromHash(database, hash)
         return
     end
     local stackSize = hashStackSize and Base64.Decode12(hashStackSize) or nil
-    local enhancementLevel = hashEnhancementLevel and Base64.Decode6(hashEnhancementLevel) or nil 
-    local item = Item.New(itemData, stackSize, enhancementLevel)
+    local enhancementLevel = hashEnhancementLevel and Base64.Decode6(hashEnhancementLevel) or nil
+    local limitBreakLevel = hashLimitBreakLevel and Base64.Decode6(hashLimitBreakLevel) or nil
+    local item = Item.New(itemData, stackSize, enhancementLevel, limitBreakLevel)
     for statDelimiter,statNameHash,statValueHash in hashItemStats:gmatch(HASH_PATTERN_STAT) do
         local statIsBase = statDelimiter == HASH_DELIM_STAT_BASE or nil
         local statName = isRuntime and Item.STATS[Base64.Decode6(statNameHash)] or statNameHash
@@ -421,14 +458,16 @@ function Item:_RecalculateStatTotals()
 end
 
 function Item:_GetEnhancementMultiplier()
-    return 1 + (self.enhancementLevel * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
+    return 1 + (self:GetEnhancementLevel() * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
 end
 
 function Item:__tostring()
     local s = {}
     table.insert(s, "ITEM:\n")
-    table.insert(s, string.format("\tname:   %s\n", self.data.name))
-    table.insert(s, string.format("\trarity: %s\n", self.data.rarity))
+    table.insert(s, string.format("\tname:        %s\n", self:GetName()))
+    table.insert(s, string.format("\trarity:      %s\n", self:GetRarity()))
+    table.insert(s, string.format("\tenhancement: %s\n", self:GetEnhancementLevel()))
+    table.insert(s, string.format("\tlimitBreaks: %s\n", self:GetLimitBreakLevel()))
     for _,stat in ipairs(self.stats) do
         local statType = stat.isBase and "BASE" or "BONUS"
         table.insert(s, string.format("\tstat:   %-5s %-9s %d\n", statType, stat.name, stat.value))
