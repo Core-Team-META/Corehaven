@@ -294,9 +294,8 @@ function view:UPDATE_AwaitingUpgradeConfirmation(dt)
         sheenColor.a = FULL_PANEL_SHEEN:GetColor().a
         FULL_PANEL_SHEEN:SetColor(sheenColor)
     end
-    -- Only show buttons when the upgrade can be bought.
-    if inventory:CanExecuteItemUpgrade(self.selectedPrimaryItemSlotIndex) then
-        -- Confirmation elements depend on whether this is an enhancement or a limit break.
+    -- Confirmation elements depend on whether this is an enhancement or a limit break.
+    if self.selectedPrimaryItem:CanUpgrade() then
         if self.selectedPrimaryItem:IsNextUpgradeEnhancement() then
             self.confirmationEnhanceRoot.visibility = Visibility.INHERIT
             self.confirmationLimitBreakRoot.visibility = Visibility.FORCE_OFF
@@ -304,10 +303,14 @@ function view:UPDATE_AwaitingUpgradeConfirmation(dt)
             self.confirmationEnhanceRoot.visibility = Visibility.FORCE_OFF
             self.confirmationLimitBreakRoot.visibility = Visibility.INHERIT
         end
+    end
+    -- Buttons don't work when it can't be afforded.
+    if inventory:CanExecuteItemUpgrade(self.selectedPrimaryItemSlotIndex) then
+        self.confirmationEnhanceButton.isInteractable = true
+        self.confirmationLimitBreakButton.isInteractable = true
     else
-        -- Display an error message if this item upgrade is unaffordable.
-        self.confirmationEnhanceRoot.visibility = Visibility.FORCE_OFF
-        self.confirmationLimitBreakRoot.visibility = Visibility.FORCE_OFF
+        self.confirmationEnhanceButton.isInteractable = false
+        self.confirmationLimitBreakButton.isInteractable = false
     end
     -- Animate sheen on item selection.
     self:_AnimateSheen(1.0)
