@@ -26,6 +26,26 @@ function view:EndInventoryExternalInteraction()
 end
 
 -----------------------------------------------------------------------------------------------------------------
+function view:PerformDragDropAction(inventorySlotIndex)
+
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:PerformClickAction(inventorySlotIndex)
+
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:SetDraggingSlotOrigin(inventorySlotIndex)
+
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:HasUsurpedInventorySlotItem(inventorySlotIndex)
+    return false
+end
+
+-----------------------------------------------------------------------------------------------------------------
 function view:Open()
     UPGRADES_VIEW.visibility = Visibility.INHERIT
     self:BeginInventoryExternalInteraction()
