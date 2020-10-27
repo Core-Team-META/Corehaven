@@ -49,7 +49,7 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
     elseif item:IsNextUpgradeLimitBreak() then
 
         -- Compute the cost to limit break an item to the next star-level.
-        local cost = LIMIT_BREAK_BASE_COST * rarityNumber
+        local cost = LIMIT_BREAK_BASE_COST * (rarityNumber-1)^2
 
         -- Return example cost item and cost.
         return mockItemLimitBreak, cost
