@@ -46,7 +46,7 @@ function API.AddText(dialogId, text, animation, rewardTable)
     end
 end
 
-function API.AddOption(dialogId, optionName, targetDialogId)
+function API.AddOption(dialogId, optionName, targetDialogId, eventName)
 
     if not _G.APIDialogsLibrary or not _G.APIDialogsLibrary[dialogId] then
         warn("No registered "..dialogId.." found.")
@@ -59,7 +59,8 @@ function API.AddOption(dialogId, optionName, targetDialogId)
 
     table.insert(_G.APIDialogsLibrary[dialogId].options, {
         optionName = optionName,
-        dialogId = targetDialogId
+        dialogId = targetDialogId,
+        eventName = eventName
     })
 end
 

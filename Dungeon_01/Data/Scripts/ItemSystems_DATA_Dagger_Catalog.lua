@@ -50,7 +50,7 @@
     Rarity = 'Rare',
     StatKey = 'RareAttackDagger',
     MUID = '5B6E526EFD89398C:ITEM_Dagger_FineCarver',
-    Lore = 'The craftsman ship of this dagger is obvious',
+    Lore = 'The craftsmanship of this dagger is obvious',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {

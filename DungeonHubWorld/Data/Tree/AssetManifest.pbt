@@ -53,6 +53,19 @@ Assets {
   }
 }
 Assets {
+  Id: 4443971518906599818
+  Name: "BossFight"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "6129058b377d4cb98732ee8f3993e0ee"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 276992632015541839
   Name: "Grass Short"
   PlatformAssetType: 1

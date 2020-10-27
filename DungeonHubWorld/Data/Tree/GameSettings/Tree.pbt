@@ -734,7 +734,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 240
+    Width: 300
     Height: 100
     UIX: -125
     UIY: -20

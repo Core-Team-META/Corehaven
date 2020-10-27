@@ -70,6 +70,12 @@
           Id: 1831660344620141067
         }
       }
+      Overrides {
+        Name: "cs:APIDamage"
+        AssetReference {
+          Id: 16915150100797142409
+        }
+      }
     }
     Assets {
       Id: 4950921733684647490

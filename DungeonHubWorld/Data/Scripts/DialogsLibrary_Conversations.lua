@@ -68,6 +68,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
@@ -83,8 +84,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
-    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
 
     id = "WecomeDialog4"
     API.RegisterDialogueId(id)
@@ -93,8 +95,9 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
-    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
 
     id = "WecomeDialog5"
     API.RegisterDialogueId(id)
@@ -110,6 +113,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
 
@@ -123,7 +127,19 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Would... Would you like to know about anything else?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Map", "WecomeDialog2")
+
+    id = "WelcomeDialog8"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "A merchant ship has just returned from our sister outpost, Highrock, with reports of disturbing happenings...", EXCITEMENT_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, head to the docks to hear the tale yourself and see what can be done!", YES_ANIMATION)
+    API.AddText(id, "What else would you like to know?")
+
+    API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
 
     --Character Conversations
@@ -281,21 +297,32 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, 'We lost our magical energy we once have...')
     API.AddText(id, 'If that person returns back home, we might get our powers back.', TALK_ANIMATION)
 
-    -- Other dialogs
+        -- Other dialogs
     id = "Sign"
     API.RegisterDialogueId(id)
     API.AddText(id, "There is an announcement on the board...")
-    API.AddText(id, '"To all the visitors of Corehaven:"')
-    API.AddText(id, '"We finally opened the Portal Area for you to go on adventures!"')
-    API.AddText(id, '"Gather your fellow warriors from all around the world to take on the challenges in the dungeons!"')
-    API.AddText(id, '"Good luck to all of you!"')
-    API.AddText(id, '"~ Manticore Guild ~"')
+    API.AddText(id, '"Seeking all adventurers! The outpost of Highrock is in need of help."')
+    API.AddText(id, '"Meet me by the docks for more information."')
 
     id = "Sleep"
     API.RegisterDialogueId(id)
     API.AddText(id, '"ZzzZzz"')
     API.AddText(id, 'This man snores really loud...')
 
+    -- Ship to highrock
+    id = "Highrock1"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "I swear on my fortune, the dead have risen at Highrock! The citizenry and guards alike seem as if possessed.", TALK_ANIMATION)
+    API.AddText(id, "I fear a necromancer's cult have taken over the town and have unleashed the ancient evil known as Zetalan.", EXCITEMENT_ANIMATION)
+    API.AddText(id, "I can give you passage to Highrock, though for the saftey of my ship and crew we will anchor off-shore to await your return.", TALK_ANIMATION)
+
+    API.AddOption(id, "Travel to Highrock (Hard)", "End", "HighrockHard")
+    API.AddOption(id, "Travel to Highrock (Normal)", "End", "HighrockNormal")
+    API.AddOption(id, "Travel to Highrock (Easy)", "End", "HighrockEasy")
+    API.AddOption(id, "No thanks", "End")
+
+    id = "End"
+    API.RegisterDialogueId(id)
 end
 
 return Dialogs

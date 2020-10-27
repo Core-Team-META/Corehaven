@@ -4,6 +4,8 @@
 
     Reads and indexes the raw data scripts. Provides factory methods for creating items.
 ]]
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+
 local Item = require(script:GetCustomProperty("Item"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local SALVAGE_ITEM_NAME = script:GetCustomProperty("SalvageItemName")
@@ -139,12 +141,13 @@ function Database:_LoadCatalog()
                     if not row.StatKey then
                         return {}
                     end
+                    local difficultyMultiplier = API_DS.GetLootStatMultiplier()
                     local statRollInfos = self.itemStatRollInfos[row.StatKey]
                     local stats = {}
                     for _,rollInfo in ipairs(statRollInfos.base) do
                         local statInfo = Item._StatInfo{
                             name = rollInfo.statName,
-                            value = math.random(rollInfo.rollMin, rollInfo.rollMax),
+                            value = math.random(math.ceil(rollInfo.rollMin * difficultyMultiplier), math.ceil(rollInfo.rollMax * difficultyMultiplier)),
                             isBase = true,
                         }
                         table.insert(stats, statInfo)
@@ -155,7 +158,7 @@ function Database:_LoadCatalog()
                             if roll <= rollInfo.likelihood then
                                 local statInfo = Item._StatInfo{
                                     name = rollInfo.statName,
-                                    value = math.random(rollInfo.rollMin, rollInfo.rollMax),
+                                    value = math.random(math.ceil(rollInfo.rollMin * difficultyMultiplier), math.ceil(rollInfo.rollMax * difficultyMultiplier)),
                                     isBonus = true
                                 }
                                 table.insert(stats, statInfo)

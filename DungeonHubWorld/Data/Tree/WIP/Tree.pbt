@@ -494,13 +494,13 @@ Objects {
         Overrides {
           Name: "Collidable"
           Enum {
-            Value: "mc:ecollisionsetting:forceoff"
+            Value: "mc:ecollisionsetting:inheritfromparent"
           }
         }
         Overrides {
           Name: "Visible"
           Enum {
-            Value: "mc:evisibilitysetting:forceoff"
+            Value: "mc:evisibilitysetting:inheritfromparent"
           }
         }
       }

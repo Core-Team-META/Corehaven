@@ -2511,12 +2511,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
       Name: "cs:Icon"
       AssetReference {
         Id: 18192159038187223433
@@ -4710,12 +4704,6 @@ Objects {
       Name: "cs:APIStatusEffects"
       AssetReference {
         Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
       }
     }
     Overrides {
@@ -39504,7 +39492,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 1
+      Int: 4
     }
   }
   Collidable_v2 {

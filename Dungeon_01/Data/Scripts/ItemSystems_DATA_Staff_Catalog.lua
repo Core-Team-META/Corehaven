@@ -5,7 +5,7 @@
     Rarity = 'Common',
     StatKey = 'CommonMagicStaff',
     MUID = '8A545631F32835C6:ITEM_Staff_NatureStaff',
-    Lore = 'A magical staff of life... just kidding, it\'s a branch',
+    Lore = 'A magical staff of life',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {

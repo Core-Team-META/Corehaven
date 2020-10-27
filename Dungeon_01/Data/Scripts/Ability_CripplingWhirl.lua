@@ -1,8 +1,11 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local EFFECT_RANGE = 350.0
 local EFFECT_DELAY = 0.2
+local BASE_DAMAGE = 40.0
+local DAMAGE_MULTIPLIER = 1.1
 
 local data = {}
 
@@ -27,9 +30,11 @@ end
 function data.onCastServer(caster, target)
 	Task.Wait(EFFECT_DELAY)
 	local casterPosition = caster:GetWorldPosition()
+	local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 
 	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, EFFECT_RANGE)) do
 		API_SE.ApplyStatusEffect(caster, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Cripple"].id)
+		API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
 	end
 end
 

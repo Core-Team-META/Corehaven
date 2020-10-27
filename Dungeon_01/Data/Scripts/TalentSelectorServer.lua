@@ -85,8 +85,8 @@ end
 function Tick(deltaTime)
 	for _, player in pairs(Game.GetPlayers()) do
 		local totalTalentPoints = player.serverUserData.statSheet:GetLevel()
-		local currentTalentCount = UTILITY.GetPlayerTalentCount(player)
-		UTILITY.SetPlayerTalentPoints(player, totalTalentPoints - currentTalentCount)
+		local usedTalentPointCount = UTILITY.GetPlayerUsedTalentPointCount(player)
+		UTILITY.SetPlayerTalentPoints(player, totalTalentPoints - usedTalentPointCount)
 
 		if not isStorageLoaded[player] then
 		    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)

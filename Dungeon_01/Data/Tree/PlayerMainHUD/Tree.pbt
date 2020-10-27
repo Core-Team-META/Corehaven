@@ -1132,7 +1132,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1211,7 +1211,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1290,7 +1290,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1369,7 +1369,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1448,7 +1448,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1527,7 +1527,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1748,7 +1748,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1827,7 +1827,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1906,7 +1906,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -1985,7 +1985,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2064,7 +2064,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2143,7 +2143,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2364,7 +2364,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2443,7 +2443,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2522,7 +2522,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2601,7 +2601,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2680,7 +2680,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2759,7 +2759,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -2984,7 +2984,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -3063,7 +3063,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -3142,7 +3142,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 4
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -3221,7 +3221,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -3300,7 +3300,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"
@@ -3379,7 +3379,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Cost"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:IsPassive"

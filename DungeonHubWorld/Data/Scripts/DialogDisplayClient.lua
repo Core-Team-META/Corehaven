@@ -175,6 +175,7 @@ function ProcessDialog(dialogTable, id)
             local instance = World.SpawnAsset(HELPER, {parent = OPTIONS_PANEL})
             instance.clientUserData.optionName = optionTable.optionName
             instance.clientUserData.dialogId = optionTable.dialogId
+            instance.clientUserData.eventName = optionTable.eventName
             if i == 1 then
                 instance.y = 0
             else

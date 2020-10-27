@@ -1,15 +1,10 @@
-﻿GameId: "a912182b02d04191ba724c6e90cb84f3"
-ClientVersion: "1.0.145-prod-s"
-Name: "Corehaven"
-Description: "Welcome to Corehaven!\r\n\r\nCorehaven is the destination for those who seek to embark on adventures and challenges in the dungeon worlds!\r\n\r\nJoin forces, prepare your weapons and uncover mysteries behind the mythical dungeons!"
-MaxPlayers: 16
-IsOpenForEdit: true
-Tags: "Adventure"
-Tags: "Fantasy"
-Tags: "SocialHub"
-ScreenshotPaths: "C:\\Users\\Tung Vu\\Documents\\My Games\\Core\\Saved\\Maps\\BossFight\\DungeonHubWorld\\Screenshots\\Corehaven_Thumb.png"
-ScreenshotPaths: "C:\\Users\\Tung Vu\\Documents\\My Games\\Core\\Saved\\Maps\\BossFight\\DungeonHubWorld\\Screenshots\\Screenshot0004.png"
-ScreenshotPaths: "C:\\Users\\Tung Vu\\Documents\\My Games\\Core\\Saved\\Maps\\BossFight\\DungeonHubWorld\\Screenshots\\Screenshot0012-2.png"
-ScreenshotPaths: "C:\\Users\\Tung Vu\\Documents\\My Games\\Core\\Saved\\Maps\\BossFight\\DungeonHubWorld\\Screenshots\\Screenshot0019-2.png"
-ScreenshotPaths: "C:\\Users\\Tung Vu\\Documents\\My Games\\Core\\Saved\\Maps\\BossFight\\DungeonHubWorld\\Screenshots\\Screenshot0013.png"
-ReleaseNotes: "Initial Release"
+﻿GameId: "2e9f5851185a46d1924b674045fa40da"
+ClientVersion: "1.0.163-prod-s"
+Name: "Corehaven (Hidden)"
+Description: "Corehaven for testing"
+MaxPlayers: 8
+IsPrivate: true
+Tags: "RPG"
+Tags: "Multiplayer"
+ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\DungeonHubWorld\\Screenshots\\Corehaven_Thumb.png"
+OwnerId: "37edf67a267b45bd8b93be513218b428"

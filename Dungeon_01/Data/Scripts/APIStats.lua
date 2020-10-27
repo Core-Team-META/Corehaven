@@ -1,9 +1,9 @@
 ﻿local STAT_COEFFICIENTS =
 {
-	Defense = 100.0,
-	CDR = 60.0,
-	Haste = 60.0,
-	Tenacity = 40.0,
+	Defense = 140.0,
+	CDR = 100.0,
+	Haste = 100.0,
+	Tenacity = 70.0,
 }
 
 local API = {}

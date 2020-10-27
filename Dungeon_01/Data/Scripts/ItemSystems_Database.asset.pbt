@@ -5,6 +5,12 @@
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:APIDifficultySystem"
+        AssetReference {
+          Id: 767597043529123543
+        }
+      }
+      Overrides {
         Name: "cs:SalvageItemName"
         String: "Shards"
       }

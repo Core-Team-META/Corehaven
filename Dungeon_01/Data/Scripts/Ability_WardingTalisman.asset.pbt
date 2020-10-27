@@ -20,7 +20,7 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 12
+        Float: 20
       }
       Overrides {
         Name: "cs:CastDuration"
@@ -32,7 +32,7 @@
       }
       Overrides {
         Name: "cs:Description"
-        String: "Your talisman protects your target from harm."
+        String: "Your talisman protects your friendly target from harm."
       }
       Overrides {
         Name: "cs:SelfCasterEffectTemplate"

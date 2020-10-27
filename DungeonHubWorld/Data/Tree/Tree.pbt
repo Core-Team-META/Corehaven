@@ -21,6 +21,7 @@ Objects {
   ChildIds: 15440326544402457957
   ChildIds: 16816246272091159722
   ChildIds: 13588444122091554519
+  ChildIds: 8528347562997322264
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +31,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8528347562997322264
+  Name: "Logic"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Logic"
   }
 }
 Objects {

@@ -28,7 +28,7 @@ for _,statName in ipairs(StatSheet.STATS) do
 end
 
 -- The maximum attainable level.
-StatSheet.MAX_LEVEL = 5
+StatSheet.MAX_LEVEL = 15
 
 -- Calculate the experience required to reach a given level.
 -- (courtesy of OSRS: https://oldschool.runescape.wiki/w/Experience)
@@ -37,7 +37,7 @@ setmetatable(StatSheet.EXPERIENCE_CURVE, {
     __index = function(self, level)
         local sum = 0
         for x=1,level-1 do
-            sum = sum + math.floor(x + 600 * 2^(x/4))
+            sum = sum + math.floor(x + 400 * 2^(x/5))
         end
         self[level] = math.floor(0.25 * sum)
         return self[level]

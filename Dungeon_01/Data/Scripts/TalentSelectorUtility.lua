@@ -376,7 +376,7 @@ function UTILITY.DoesPlayerHaveTalent(player, talentData)
 end
 
 -- Client and Server
-function UTILITY.GetPlayerTalentCount(player)
+function UTILITY.GetPlayerUsedTalentPointCount(player)
 	local result = 0
 
 	for treeName, _ in pairs(UTILITY.TALENT_TREE_TABLE) do
@@ -385,7 +385,13 @@ function UTILITY.GetPlayerTalentCount(player)
 
 		for i = 1, string.len(talentString) do
 			if string.sub(talentString, i, i) == "1" then
-				result = result + 1
+				for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[treeName]) do
+					if talentData.index == i then
+						result = result + talentData.cost
+						break
+					end
+				end
+
 			end
 		end
 	end

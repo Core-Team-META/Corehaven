@@ -24,7 +24,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 			healingTags = healingTags | API_D.TAG_CRIT
 		end
 
-		API_D.ApplyHealing(sourceCharacter, sourceCharacter, effectiveAmount * 0.1, healingTags)
+		API_D.ApplyHealing(sourceCharacter, sourceCharacter, effectiveAmount * 0.04, healingTags)
 	end
 end
 
