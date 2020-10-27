@@ -1,4 +1,5 @@
 ﻿local Item = require(script:GetCustomProperty("ItemSystems_Item"))
+local UpgradesCostBasis = require(script:GetCustomProperty("ItemSystems_UpgradesCostBasis"))
 local Base64 = require(script:GetCustomProperty("Base64"))
 
 local Inventory = {}
@@ -38,6 +39,7 @@ function Inventory.New(database, owner)
     o:_DefineEvent("itemEquippedEvent")
     o:_DefineEvent("itemMovedEvent")
     o:_DefineEvent("itemConsumedEvent")
+    o:_DefineEvent("itemUpgradedEvent")
     o:_DefineEvent("craftExecutedEvent")
     return o
 end
@@ -410,6 +412,74 @@ function Inventory:ExecutePrimaryItemCraft(recipeItem, primaryItemSlotIndex)
     craftingData.method:Execute(recipeItem, primaryItem)
     -- Fire event so that this operation is replicated.
     self:_FireEvent("craftExecutedEvent", recipeItem, primaryItemSlotIndex)
+end
+
+-- Count up the number of available ingredients.
+function Inventory:CountStackableTotal(stackableItem)
+    if not (stackableItem and stackableItem:IsStackable()) then return end
+    local count = 0
+    for i=1,self.TOTAL_CAPACITY do
+        local item = self:GetItem(i)
+        if item and item:WillStackWith(stackableItem) then
+            count = count + item:GetStackSize()
+        end
+    end
+    return count
+end
+
+-- Determine if we can foot the bill for this upgrade.
+function Inventory:CanExecuteItemUpgrade(slotIndex)
+    local itemToUpgrade = self:GetItem(slotIndex)
+    if itemToUpgrade and itemToUpgrade:CanUpgrade() then
+        local itemToSpend, costRemaining = UpgradesCostBasis.AppraiseItemUpgrade(itemToUpgrade)
+        for i=1,self.TOTAL_CAPACITY do
+            local item = self:GetItem(i)
+            if item and item:WillStackWith(itemToSpend) then
+                costRemaining = costRemaining - item:GetStackSize()
+                if costRemaining <= 0 then return true end
+            end
+        end
+    end
+end
+
+-- Expend the required amount of resources and upgrade the item.
+function Inventory:ExecuteItemUpgrade(slotIndex)
+    local itemToUpgrade = slotIndex and self:GetItem(slotIndex) or nil
+    if itemToUpgrade and itemToUpgrade:CanUpgrade() then
+        local itemToSpend, costRemaining = UpgradesCostBasis.AppraiseItemUpgrade(itemToUpgrade)
+        local slotsWithSpendableStack = {}
+        for i=1,self.TOTAL_CAPACITY do
+            local item = self:GetItem(i)
+            if item and item:WillStackWith(itemToSpend) then
+                table.insert(slotsWithSpendableStack, i)
+            end
+        end
+        -- Sort them by increasing stack size so that we spend through smaller stacks first.
+        table.sort(slotsWithSpendableStack, function(a, b)
+            local itemA = self:GetItem(a)
+            local itemB = self:GetItem(b)
+            return itemA:GetStackSize() < itemB:GetStackSize()
+        end)
+        -- Spend down the full cost.
+        for _,spendableSlotIndex in ipairs(slotsWithSpendableStack) do
+            local item = self:GetItem(spendableSlotIndex)
+            local amountToSpend = math.min(costRemaining, item:GetStackSize())
+            local newStackSize = item:GetStackSize() - amountToSpend
+            if newStackSize == 0 then
+                self:_SetSlotItem(spendableSlotIndex, nil)
+            else
+                item:SetStackSize(newStackSize)
+            end
+            costRemaining = costRemaining - amountToSpend
+            if costRemaining == 0 then break end
+        end
+        if costRemaining ~= 0 then
+            warn("Something went wrong when executing item upgrade!")
+        else
+            itemToUpgrade:Upgrade()
+        end
+        self:_FireEvent("itemUpgradedEvent", slotIndex)
+    end
 end
 
 ---------------------------------------------------------------------------------------------------------

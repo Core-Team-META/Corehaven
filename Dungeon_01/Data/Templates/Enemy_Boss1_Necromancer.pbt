@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 13835231596194112360
         ChildIds: 8268870251817362467
         ChildIds: 5752474580542176374
         ChildIds: 11860041625734473373
@@ -92,6 +92,14 @@
           Overrides {
             Name: "cs:DropChance1"
             Float: 0.5
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "EssencePearl"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
+            Float: 1
           }
           Overrides {
             Name: "cs:OnPulledEventName"

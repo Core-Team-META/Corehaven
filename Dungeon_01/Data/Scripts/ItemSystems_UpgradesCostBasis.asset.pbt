@@ -1,25 +1,25 @@
 ﻿Assets {
-  Id: 6513217196136689638
-  Name: "ItemSystems_Inventory"
+  Id: 2756777450435570348
+  Name: "ItemSystems_UpgradesCostBasis"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:ItemSystems_Item"
+        Name: "cs:Database"
         AssetReference {
-          Id: 13866541763018299709
+          Id: 4685988691808682848
         }
       }
       Overrides {
-        Name: "cs:ItemSystems_UpgradesCostBasis"
+        Name: "cs:EnhancementCurrency"
         AssetReference {
-          Id: 2756777450435570348
+          Id: 16513267414094432646
         }
       }
       Overrides {
-        Name: "cs:Base64"
+        Name: "cs:LimitBreakCurrency"
         AssetReference {
-          Id: 10470424565904250692
+          Id: 11852799625917719299
         }
       }
     }

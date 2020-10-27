@@ -249,15 +249,15 @@
         UnregisteredParameters {
           Overrides {
             Name: "cs:AsleepStance"
-            String: "unarmed_idle_relaxed"
+            String: "zombie_unarmed_idle_relaxed"
           }
           Overrides {
             Name: "cs:IdleStance"
-            String: "unarmed_idle_ready"
+            String: "zombie_unarmed_idle_ready"
           }
           Overrides {
             Name: "cs:RunStance"
-            String: "unarmed_run_forward"
+            String: "zombie_unarmed_run_forward"
           }
           Overrides {
             Name: "cs:StareStance"
@@ -270,6 +270,21 @@
           Overrides {
             Name: "cs:StunnedAnimation"
             String: "unarmed_stun_dizzy"
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.120000005
+              G: 1
+              B: 0.160794735
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 4904779893906915148
+            }
           }
         }
         Collidable_v2 {
@@ -289,6 +304,7 @@
           DisableReceiveDecals: true
           EnableCameraCollision: true
           AnimatedMesh {
+            AnimationStance: "zombie_unarmed_idle_relaxed"
             AnimationStancePlaybackRate: 1
             AnimationStanceShouldLoop: true
             AnimationPlaybackRateMultiplier: 1
@@ -306,6 +322,15 @@
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
         AssetId: "npc_human_guy_fantasy_001_ref"
+      }
+    }
+    Assets {
+      Id: 4904779893906915148
+      Name: "Fabric Burlap Old 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_fan_fabric_burlap_001_uv"
       }
     }
     PrimaryAssetId {

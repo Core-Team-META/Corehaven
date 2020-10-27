@@ -129,6 +129,13 @@ local function ServerInitInventory()
             end
         end
     end)
+    -- Whenever a client upgrades an item, update the server ivnentory and persist.
+    Events.ConnectForPlayer("IUE", function(player, upgradeSlotIndex)
+        if player == OWNER then
+            inventory:ExecuteItemUpgrade(upgradeSlotIndex)
+            ServerSaveInventory(inventory)
+        end
+    end)
     -- Whenever a client executes a craft, update the server inventory and persist.
     Events.ConnectForPlayer("ICE", function(player, recipeItemIndex, primaryItemSlotIndex)
         if player == OWNER then
@@ -158,6 +165,10 @@ local function ClientInitInventoryLocal()
     -- Whenever a loot item is claimed, broadcast to server.
     inventory.lootClaimedEvent:Connect(function(lootIndex)
         ReliableEvents.BroadcastToServer("ILC", lootIndex)
+    end)
+    -- Whenever an upgrade is performed, broadcast to server.
+    inventory.itemUpgradedEvent:Connect(function(upgradeSlotIndex)
+        ReliableEvents.BroadcastToServer("IUE", upgradeSlotIndex)
     end)
     -- Whenever a craft is performed, broadcast to server.
     inventory.craftExecutedEvent:Connect(function(recipeItem, primaryItemSlotIndex)
