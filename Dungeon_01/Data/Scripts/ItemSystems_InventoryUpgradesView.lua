@@ -45,6 +45,7 @@ function view:SetupPrimaryItemRoot()
     self.primaryItemGlow = PRIMARY_ITEM_ROOT:GetCustomProperty("Gradient"):WaitForObject()
     self.primaryItemIcon = PRIMARY_ITEM_ROOT:GetCustomProperty("Icon"):WaitForObject()
     self.primaryItemNotAllowed = PRIMARY_ITEM_ROOT:GetCustomProperty("NotAllowed"):WaitForObject()
+    self.primaryItemButton = PRIMARY_ITEM_ROOT:GetCustomProperty("Button"):WaitForObject()
     self.primaryItemInstructions = PRIMARY_ITEM_ROOT:GetCustomProperty("Instructions"):WaitForObject()
     self.primaryItemInstructionsBaseColor = self.primaryItemInstructions:GetColor()
     self.primaryItemInstructionsBaseText = self.primaryItemInstructions.text
@@ -58,6 +59,11 @@ function view:SetupPrimaryItemRoot()
         indicator.clientUserData.baseX = indicator.x
         indicator.clientUserData.baseY = indicator.y
     end
+    self.primaryItemButton.hoveredEvent:Connect(function() PlaySound(SFX_ButtonHover) end)
+    self.primaryItemButton.clickedEvent:Connect(function()
+        PlaySound(SFX_ButtonClick)
+        self:MakePrimaryItemSelection(nil)
+    end)
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -218,6 +224,7 @@ function view:UPDATE_AwaitingPrimaryItem(dt)
         PREVIEW_ITEM_ROOT.visibility = Visibility.FORCE_OFF
         CONFIRMATION_ROOT.visibility = Visibility.FORCE_OFF
         CONTINUE_BUTTON.visibility = Visibility.FORCE_OFF
+        self.primaryItemButton.visibility = Visibility.FORCE_OFF
     end
     -- Appearance depends on whether the currently dragged item can be upgraded or not.
     if not self.inventoryDraggingItem or self.inventoryDraggingItem:CanUpgrade() then
@@ -263,6 +270,8 @@ function view:UPDATE_AwaitingUpgradeConfirmation(dt)
         PREVIEW_ITEM_ROOT.visibility = Visibility.INHERIT
         CONFIRMATION_ROOT.visibility = Visibility.INHERIT
         CONTINUE_BUTTON.visibility = Visibility.FORCE_OFF
+        -- Primary slot can now be clicked to remove the item.
+        self.primaryItemButton.visibility = Visibility.INHERIT
         -- Primary slot appearance no longer needs instructions or indicators.
         self.primaryItemInstructions.visibility = Visibility.FORCE_OFF
         for _,indicator in ipairs(self.primaryItemIndicators) do indicator.visibility = Visibility.FORCE_OFF end
@@ -314,6 +323,8 @@ function view:UPDATE_CompletingUpgrade(dt)
         PREVIEW_ITEM_ROOT.visibility = Visibility.INHERIT
         CONFIRMATION_ROOT.visibility = Visibility.FORCE_OFF
         CONTINUE_BUTTON.visibility = Visibility.INHERIT
+        -- Primary slot can now be clicked to remove the item.
+        self.primaryItemButton.visibility = Visibility.INHERIT
         -- Disable most of the preview elements.
         self.previewItemBefore.visibility = Visibility.FORCE_OFF
         self.previewItemArrow.visibility = Visibility.FORCE_OFF

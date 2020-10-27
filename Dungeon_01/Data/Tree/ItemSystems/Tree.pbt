@@ -9757,6 +9757,12 @@ Objects {
         SelfId: 2946754281425028116
       }
     }
+    Overrides {
+      Name: "cs:Button"
+      ObjectReference {
+        SelfId: 14791264756890994681
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -10092,6 +10098,7 @@ Objects {
   ChildIds: 11759845280890005046
   ChildIds: 1836295608458882728
   ChildIds: 9890695601857075358
+  ChildIds: 14791264756890994681
   ChildIds: 15842220583607978659
   ChildIds: 10153997457555296670
   ChildIds: 5580391084950504991
@@ -10135,21 +10142,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:Disabled"
+      Name: "cs:Button"
       ObjectReference {
-        SelfId: 210555039685672531
-      }
-    }
-    Overrides {
-      Name: "cs:CooldownWheel"
-      ObjectReference {
-        SelfId: 12061857591008278955
-      }
-    }
-    Overrides {
-      Name: "cs:Locked"
-      ObjectReference {
-        SelfId: 13496546639674273758
+        SelfId: 14791264756890994681
       }
     }
   }
@@ -10381,6 +10376,84 @@ Objects {
     SubobjectId: 11450314268423252432
     InstanceId: 4945413581307735942
     TemplateId: 2004628425292049853
+  }
+}
+Objects {
+  Id: 14791264756890994681
+  Name: "Button"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17603039363435482250
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: -12
+    Height: -12
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    AddSizeToParentIfUsingParentSize: true
+    UseParentWidth: true
+    UseParentHeight: true
+    Button {
+      FontColor {
+        A: 1
+      }
+      FontSize: 20
+      ButtonColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      HoveredColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.1
+      }
+      PressedColor {
+        R: 1
+        G: 1
+        B: 1
+        A: 0.3
+      }
+      DisabledColor {
+        R: 1
+        G: 1
+        B: 1
+      }
+      Brush {
+        Id: 13778967266379385506
+      }
+      IsButtonEnabled: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+    }
   }
 }
 Objects {
