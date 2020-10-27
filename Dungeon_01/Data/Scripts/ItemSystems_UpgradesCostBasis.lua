@@ -30,17 +30,28 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
     if not item then return end
     LazyInit()
 
+    -- USEFUL QUANTITIES FOR COMPUTING COST...
+    -- Enhancement can be anything from 0-50.
+    local enhancementNumber = item:GetEnhancementLevel()
+    -- Limit break can be anything from 1-5.
+    local limitBreakNumber = item:GetLimitBreakLevel()
+    -- Rarity can be 1-5 (common, uncommon, rare, epic, legendary).
     local rarityNumber = item.RARITIES[item:GetRarity()]
+
     if item:IsNextUpgradeEnhancement() then
 
         -- Compute the cost to enhance an item by one.
         local cost = ENHANCEMENT_BASE_COST * rarityNumber
+
+        -- Return example cost item and cost.
         return mockItemEnhancement, cost
 
     elseif item:IsNextUpgradeLimitBreak() then
 
         -- Compute the cost to limit break an item to the next star-level.
-        local cost = LIMIT_BREAK_BASE_COST
+        local cost = LIMIT_BREAK_BASE_COST * rarityNumber
+
+        -- Return example cost item and cost.
         return mockItemLimitBreak, cost
 
     end
