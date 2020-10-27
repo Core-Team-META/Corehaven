@@ -15,16 +15,24 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	return 4.0
+	return 3.0
 end
 
 function OnTaskEnd(npc, interrupted)
 	if not interrupted  then
 		local spawns = SPAWNS_GROUP:GetChildren()
 
-		for _, spawn in pairs(spawns) do
-			API_NPC.SpawnNPC(SUMMON_TEMPLATE, npc, spawn:GetWorldPosition(), spawn:GetWorldRotation())
+		-- Scramble order
+		for i = 1, #spawns - 1 do
+			local j = math.random(i, #spawns)
+			local temp = spawns[j]
+			spawns[j] = spawns[i]
+			spawns[i] = temp
 		end
+
+		-- Spawn two random wolves
+		API_NPC.SpawnNPC(SUMMON_TEMPLATE, npc, spawns[1]:GetWorldPosition(), spawns[1]:GetWorldRotation())
+		API_NPC.SpawnNPC(SUMMON_TEMPLATE, npc, spawns[2]:GetWorldPosition(), spawns[2]:GetWorldRotation())
 	end
 end
 

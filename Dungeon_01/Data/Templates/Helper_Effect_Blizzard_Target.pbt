@@ -20,7 +20,6 @@
         ChildIds: 1331100878062413805
         ChildIds: 16561240277256370797
         ChildIds: 5005741651005475873
-        ChildIds: 5116235114820809848
         Lifespan: 13
         WantsNetworking: true
         Collidable_v2 {
@@ -764,70 +763,6 @@
           }
         }
       }
-      Objects {
-        Id: 5116235114820809848
-        Name: "Explosion Kit Fire Ring VFX"
-        Transform {
-          Location {
-            Z: 10.9740448
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 10826823000555098511
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:color"
-            Color {
-              R: 0.269999981
-              G: 0.782450318
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 3
-          }
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 1
-          }
-          Overrides {
-            Name: "bp:Density"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:Initial Start Delay"
-            Float: 0.5
-          }
-          Overrides {
-            Name: "bp:Particle Scale"
-            Float: 1.5
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 10793561149155811016
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
     }
     Assets {
       Id: 9377227685447941950
@@ -854,15 +789,6 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_base_curl"
-      }
-    }
-    Assets {
-      Id: 10793561149155811016
-      Name: "Explosion Kit Fire Ring VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_mil_explokit_fireRing"
       }
     }
     PrimaryAssetId {

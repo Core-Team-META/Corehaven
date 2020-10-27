@@ -139,7 +139,7 @@ Objects {
 }
 Objects {
   Id: 11176579868672163906
-  Name: "Eric"
+  Name: "Logic"
   Transform {
     Location {
     }
@@ -160,7 +160,7 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Eric"
+    FilePartitionName: "Logic"
   }
 }
 Objects {

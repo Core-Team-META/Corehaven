@@ -6,26 +6,7 @@ the work doesn't get undone.
 ]]
 local END_DUNGEON_RESET_DELAY = 30.0
 
-local bindingPressTimes = {}
-
 local resetTime = nil
-
-function OnBindingPressed(player, binding)
-	if binding == "ability_extra_23" then
-		local t = time()
-
-		if not bindingPressTimes[player] or bindingPressTimes[player] + 0.5 < t then
-			bindingPressTimes[player] = t
-		else
-			bindingPressTimes[player] = nil
-			ResetDungeon(0.0)
-		end
-	end
-end
-
-function OnPlayerJoined(player)
-	player.bindingPressedEvent:Connect(OnBindingPressed)
-end
 
 function ResetDungeon(delay)
 	if not resetTime then
@@ -55,4 +36,3 @@ function OnBoss4Died()
 end
 
 Events.Connect("Boss4Died", OnBoss4Died)
-Game.playerJoinedEvent:Connect(OnPlayerJoined)

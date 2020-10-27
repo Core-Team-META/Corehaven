@@ -7,11 +7,21 @@ local RANGE = 1000.0
 local COOLDOWN = 16.0
 local DAMAGE = 10.0
 local PROJECTILE_SPEED = 1200.0
+local INITIAL_DELAY = 2.0
 
 local currentTasks = {}
+local pullTimes = {}
 
 function GetPriority(npc, taskHistory)
-	return 1.0
+	if not pullTimes[npc] then
+		pullTimes[npc] = time()
+	end
+
+	if pullTimes[npc] + INITIAL_DELAY > time() then
+		return 0.0
+	else
+		return 0.5
+	end
 end
 
 function OnTaskStart(npc, threatTable)
@@ -19,7 +29,7 @@ function OnTaskStart(npc, threatTable)
 	API_NPC.LookAtTargetWithoutPitch(npc, target:GetWorldPosition())
 
 	currentTasks[npc] = Task.Spawn(function()
-		Task.Wait(0.1)
+		Task.Wait(0.3)
 
 		Task.Spawn(function()
 			if Object.IsValid(target) then

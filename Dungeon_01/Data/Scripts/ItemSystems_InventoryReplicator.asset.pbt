@@ -25,7 +25,7 @@
       Overrides {
         Name: "cs:StorageKey"
         NetReference {
-          Key: "e9522ce128d3418995564bd8172aab5e"
+          Key: "6129058b377d4cb98732ee8f3993e0ee"
           Type {
             Value: "mc:enetreferencetype:sharedpersistence"
           }

@@ -20,7 +20,7 @@ function OnTaskStart(npc, threatTable)
 		Task.Wait(0.2)
 		
 		if Object.IsValid(target) then
-			local launchDirection = npc:GetWorldRotation() * Vector3.FORWARD + Vector3.UP
+			local launchDirection = npc:GetWorldRotation() * Vector3.FORWARD + Vector3.UP * 0.2
 
 			for _, player in pairs(Game.FindPlayersInSphere(target:GetWorldPosition(), RANGE, {ignoreDead = true, ignorePlayers = target})) do
 				local dot = (player:GetWorldPosition() - npc:GetWorldPosition()):GetNormalized() .. (npc:GetWorldRotation() * Vector3.FORWARD)

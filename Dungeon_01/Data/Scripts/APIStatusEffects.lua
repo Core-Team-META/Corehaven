@@ -326,7 +326,6 @@ end
 -- Server only
 function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
 	if IsCharacterDead(targetCharacter) then
-		warn(string.format("Trying to apply status effect id: %d to character %s who is dead", id, targetCharacter.name))
 		return
 	end
 

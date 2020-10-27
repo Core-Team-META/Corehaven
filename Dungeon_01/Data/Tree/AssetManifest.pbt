@@ -26,25 +26,25 @@ Assets {
   }
 }
 Assets {
-  Id: 6100601647125267039
-  Name: "Shared BossFight"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "e9522ce128d3418995564bd8172aab5e"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
-  }
-}
-Assets {
   Id: 5730932473120038342
   Name: "Stone Block Big Broken"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_04"
+  }
+}
+Assets {
+  Id: 5699326227047601811
+  Name: "BossFight"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "6129058b377d4cb98732ee8f3993e0ee"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
   }
 }
 Assets {

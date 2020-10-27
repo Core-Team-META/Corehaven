@@ -56,6 +56,7 @@ local BINDING_EXPERIENCE_ADD        = "ability_extra_49"    -- [right-arrow]
 local BINDING_LEVEL_ADD             = "ability_extra_46"    -- [up-arrow]
 local BINDING_LEVEL_RESET           = "ability_extra_63"    -- [home]
 local BINDING_STATSHEET_PRINT       = "ability_extra_56"    -- [F7]
+local BINDING_GOD_MODE              = "ability_extra_59"    -- [F10]
 local BINDING_CRAFTING_UNLOCK_ALL   = "ability_extra_64"    -- [page-up]
 local BINDING_CRAFTING_LOCK_ALL     = "ability_extra_65"    -- [page-down]
 
@@ -87,6 +88,9 @@ local function OnBindingPressed(player, binding)
         if not player.serverUserData.statSheet then return end
         player.serverUserData.statSheet:SetExperience(0)
         print("CHEAT: RESET LEVEL")
+    elseif binding == BINDING_GOD_MODE then
+        player.serverUserData.godMode = not player.serverUserData.godMode
+        print("CHEAT: GOD MODE")
     elseif binding == BINDING_STATSHEET_PRINT then
         print(player.serverUserData.statSheet)
     elseif binding == BINDING_CRAFTING_UNLOCK_ALL then

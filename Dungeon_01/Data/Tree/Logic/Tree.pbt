@@ -1,4 +1,4 @@
-﻿Name: "Eric"
+﻿Name: "Logic"
 RootId: 11176579868672163906
 Objects {
   Id: 11060689029094008412
@@ -7230,7 +7230,7 @@ Objects {
   Settings {
     IsDefault: true
     RespawnSettings {
-      RespawnDelay: 1
+      RespawnDelay: 3
       RespawnMode_v2 {
         Value: "mc:erespawnmode:random"
       }
@@ -8576,16 +8576,17 @@ Objects {
         Overrides {
           Name: "Scale"
           Vector {
-            X: 7.37905693
-            Y: 13.1916103
-            Z: 4.48658371
+            X: 26.9
+            Y: 21.8000011
+            Z: 9.30000114
           }
         }
         Overrides {
           Name: "Position"
           Vector {
-            X: 0.000381469727
-            Y: -178.008957
+            X: 1247.88464
+            Y: -167.315918
+            Z: -140.823
           }
         }
       }
@@ -25921,12 +25922,12 @@ Objects {
   }
   ParentId: 15214246396461168156
   ChildIds: 4777662189096124437
-  ChildIds: 359271243858643510
-  ChildIds: 6784609373012118976
   ChildIds: 7505939330667503030
   ChildIds: 4040608793879064777
   ChildIds: 15216734825845700181
   ChildIds: 1736260769926129178
+  ChildIds: 14758313709871222019
+  ChildIds: 17953890339837456024
   UnregisteredParameters {
     Overrides {
       Name: "cs:Prerequisite"
@@ -25943,6 +25944,132 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 17953890339837456024
+  Name: "Enemy_Reanimated_Wizard"
+  Transform {
+    Location {
+      X: 24700
+      Y: -4100
+      Z: 4667.94775
+    }
+    Rotation {
+      Yaw: 9.60993481
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11818131731923366081
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12555114022526006492
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Reanimated_Wizard"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24831.5762
+            Y: -4657.08887
+            Z: 4729.44
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 9.6099472
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1668551620018358286
+    }
+  }
+}
+Objects {
+  Id: 14758313709871222019
+  Name: "Enemy_Reanimated_Wizard"
+  Transform {
+    Location {
+      X: 25079.6973
+      Y: -4077.98779
+      Z: 4662.82178
+    }
+    Rotation {
+      Yaw: 9.60991
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11818131731923366081
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 12555114022526006492
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Reanimated_Wizard"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 24700
+            Y: -4100
+            Z: 4667.94775
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 9.60992241
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1668551620018358286
+    }
   }
 }
 Objects {
@@ -26181,140 +26308,6 @@ Objects {
             Pitch: -5.71185303
             Yaw: -84.7573853
             Roll: -1.1725769
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.6
-            Y: 1.6
-            Z: 1.6
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2634101557434808962
-    }
-  }
-}
-Objects {
-  Id: 6784609373012118976
-  Name: "Enemy_Plague_Wolf"
-  Transform {
-    Location {
-      X: 23586.7441
-      Y: -3763.32
-      Z: 4679.39
-    }
-    Rotation {
-      Pitch: 11.0030928
-      Yaw: -17.4297905
-      Roll: -1.08720307e-07
-    }
-    Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
-    }
-  }
-  ParentId: 11818131731923366081
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5313871001125585813
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Plague_Wolf"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 25288.123
-            Y: -2970.61719
-            Z: 5062.98486
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -2.35806274
-            Yaw: -90.800293
-            Roll: -1.60614014
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.6
-            Y: 1.6
-            Z: 1.6
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 2634101557434808962
-    }
-  }
-}
-Objects {
-  Id: 359271243858643510
-  Name: "Enemy_Plague_Wolf"
-  Transform {
-    Location {
-      X: 22967.5488
-      Y: -3656.98926
-      Z: 4558.33105
-    }
-    Rotation {
-      Pitch: 11.0030928
-      Yaw: -17.4297905
-      Roll: -1.08720307e-07
-    }
-    Scale {
-      X: 1.6
-      Y: 1.6
-      Z: 1.6
-    }
-  }
-  ParentId: 11818131731923366081
-  WantsNetworking: true
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:forceoff"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 5313871001125585813
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Enemy_Plague_Wolf"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 25040.3574
-            Y: -3099.75781
-            Z: 5030.09961
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -20.1838989
-            Yaw: -84.4450073
-            Roll: -1.24313354
           }
         }
         Overrides {

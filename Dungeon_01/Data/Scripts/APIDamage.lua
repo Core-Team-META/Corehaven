@@ -20,20 +20,6 @@ local systemFunctions = nil
 local preDamageHooks = {}
 local postDamageHooks = {}
 
-local godMode = false
-
-function OnBindingPressed(player, binding)
-    if binding == "ability_extra_56" then
-        godMode = not godMode
-    end
-end
-
-function OnPlayerJoined(player)
-    player.bindingPressedEvent:Connect(OnBindingPressed)
-end
-
-Game.playerJoinedEvent:Connect(OnPlayerJoined)
-
 -- sourceCharacter may be nil
 function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
     local adjustedAmount = amount
@@ -103,7 +89,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
                 damage.reason = DamageReason.MAP
             end
 
-            if not godMode then
+            if not targetCharacter.serverUserData.godMode then
                 targetCharacter:ApplyDamage(damage)
             end
         else

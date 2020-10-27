@@ -14,7 +14,7 @@ function OnTaskStart(npc, animatedMesh)
 	local target = API_NPC.GetTarget(npc)
 
 	currentTasks[npc] = Task.Spawn(function()
-		Task.Wait(0.1)
+		Task.Wait(0.3)
 		
 		if Object.IsValid(target) then
 			API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, 1.0, PROJECTILE_TEMPLATE)

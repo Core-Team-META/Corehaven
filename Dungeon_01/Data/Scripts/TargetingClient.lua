@@ -214,7 +214,7 @@ function OnBindingPressed(player, binding)
 	if binding == "ability_primary" and UI.IsCursorVisible() then
 		autoTargetHistory = {}			-- Clear auto target history
 		TrySetTarget(FindClickTarget(), false)
-	elseif binding == AUTO_TARGET_BINDING or binding == "ability_extra_20" then		-- TEMP
+	elseif binding == AUTO_TARGET_BINDING then
 		TrySetTarget(FindAutoTarget(), true)
 	end
 end
@@ -222,7 +222,7 @@ end
 function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 
-	if targetCharacter == LOCAL_PLAYER and not currentTarget then
+	if sourceCharacter and targetCharacter == LOCAL_PLAYER and not currentTarget then
 		if not sourceCharacter:IsA("Player") and not API_NPC.IsDead(sourceCharacter) then
 			TARGET_CHANGE_SOUND:Play()
 			API_T.SetTarget_Direct(sourceCharacter)

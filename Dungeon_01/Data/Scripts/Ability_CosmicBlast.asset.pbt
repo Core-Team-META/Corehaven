@@ -20,7 +20,7 @@
       }
       Overrides {
         Name: "cs:Cooldown"
-        Float: 15
+        Float: 6
       }
       Overrides {
         Name: "cs:CastDuration"
