@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 9531562083368661000
         ChildIds: 16942989088035155218
         ChildIds: 14384476818652914858
         ChildIds: 9428123518615673455
@@ -126,6 +126,14 @@
             ObjectReference {
               SubObjectId: 9428123518615673455
             }
+          }
+          Overrides {
+            Name: "cs:DropKey2"
+            String: "EssencePearl"
+          }
+          Overrides {
+            Name: "cs:DropChance2"
+            Float: 1
           }
           Overrides {
             Name: "cs:HealthFraction:isrep"

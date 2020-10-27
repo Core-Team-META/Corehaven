@@ -80,4 +80,13 @@
     Lore = 'A Token granted for defeating the final boss of Highrock',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Essence Pearl',
+    Type = 'Material',
+    Rarity = 'Rare',
+    StackSize = '500',
+    MUID = 'A47D9A7600B56303:ITEM_NonEquippable_Essence_Pearl',
+    Lore = 'Used to upgrade the Star Rating of Uncommon or higher gear.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
