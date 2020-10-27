@@ -260,6 +260,7 @@ function Item:Upgrade()
         self:SetEnhancementLevel(self:GetEnhancementLevel() + 1)
     elseif self:IsNextUpgradeLimitBreak() then
         self:SetLimitBreakLevel(self:GetLimitBreakLevel() + 1)
+        self:SetEnhancementLevel(self:GetEnhancementLevel() + 1)
     end
     self:_RecalculateStatTotals()
 end

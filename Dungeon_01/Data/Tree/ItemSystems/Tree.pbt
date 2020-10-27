@@ -9353,7 +9353,7 @@ Objects {
       Brush {
         Id: 14971912434748437073
       }
-      OnlyUseMainColor: true
+      IsButtonEnabled: true
     }
     AnchorLayout {
       SelfAnchor {
