@@ -209,7 +209,7 @@ function Item:GetEnhancementLevel()
 end
 
 function Item:GetMaxEnhancementLevel()
-    return self.ENHANCEMENT_CAP * (self:GetLimitBreakLevel() + 1)
+    return self.ENHANCEMENT_CAP * self:GetLimitBreakLevel()
 end
 
 function Item:SetEnhancementLevel(enhancementLevel)
@@ -239,6 +239,29 @@ end
 
 function Item:IsFullyLimitBroken()
     return self.limitBreakLevel == self:GetMaxLimitBreakLevel()
+end
+
+---------------------------------------------------------------------------------------------------------------
+-- Upgrade is a combination of enhancement and limit-break.
+function Item:IsNextUpgradeEnhancement()
+    return not self:IsFullyEnhanced()
+end
+
+function Item:IsNextUpgradeLimitBreak()
+    return self:IsFullyEnhanced() and not self:IsFullyLimitBroken()
+end
+
+function Item:CanUpgrade()
+    return self:HasStats() and not (self:IsFullyEnhanced() and self:IsFullyLimitBroken())
+end
+
+function Item:Upgrade()
+    if self:IsNextUpgradeEnhancement() then
+        self:SetEnhancementLevel(self:GetEnhancementLevel() + 1)
+    elseif self:IsNextUpgradeLimitBreak() then
+        self:SetLimitBreakLevel(self:GetLimitBreakLevel() + 1)
+    end
+    self:_RecalculateStatTotals()
 end
 
 ---------------------------------------------------------------------------------------------------------------
@@ -297,6 +320,11 @@ function Item:GetStatTotal(statName)
     return self.statTotals[statName] or 0
 end
 
+function Item:Clone()
+    local clone = Item.New(self.data, self:GetStackSize(), self:GetEnhancementLevel(), self:GetLimitBreakLevel())
+    clone:CopyStats(self)
+    return clone
+end
 
 function Item:CopyStats(other)
     self.stats = {}

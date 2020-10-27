@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17037872946126429604
+  Name: "Fantasy Ability Teal 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Teal_002"
+  }
+}
+Assets {
   Id: 16532880832873788683
   Name: "BG Flat 002"
   PlatformAssetType: 9

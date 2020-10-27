@@ -31,6 +31,7 @@ function view:InitPanel(panel)
     -- The stats panel has a couple extra elements.
     if panel:GetCustomProperty("EnhancementLevel") then
         panel.clientUserData.enhancementLevel = panel:GetCustomProperty("EnhancementLevel"):WaitForObject()
+        panel.clientUserData.enhancementLevelBaseColor = panel.clientUserData.enhancementLevel:GetColor()
         panel.clientUserData.limitBreakStars = {}
         for _,star in ipairs(panel:GetCustomProperty("StarsRoot"):WaitForObject():GetChildren()) do
             table.insert(panel.clientUserData.limitBreakStars, star)
@@ -50,6 +51,7 @@ function view:EnsureSufficientHoverStatEntries(numRequired)
             entry.clientUserData.icon = entry:GetCustomProperty("StatIcon"):WaitForObject()
             entry.clientUserData.value = entry:GetCustomProperty("StatValue"):WaitForObject()
             entry.clientUserData.enhancementBonus = entry:GetCustomProperty("StatEnhancementBonus"):WaitForObject()
+            entry.clientUserData.bonusBaseColor = entry.clientUserData.enhancementBonus:GetColor()
             table.insert(self.itemHoverStatEntries, entry)
         end
     end
@@ -62,6 +64,10 @@ function view:DrawPanelWithStats()
     panel.clientUserData.title.text = item:GetName()
     panel.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
     panel.clientUserData.description.text = item:GetDescription()
+    -- Sometimes the external client wants us to highlight changes from a comparison.
+    local compareStats = ROOT.clientUserData.itemToCompare and ROOT.clientUserData.itemToCompare:GetStatsEnhanced()
+    local compareEnhancementLevel = ROOT.clientUserData.itemToCompare and ROOT.clientUserData.itemToCompare:GetEnhancementLevel()
+    local compareLimitBreakLevel = ROOT.clientUserData.itemToCompare and ROOT.clientUserData.itemToCompare:GetLimitBreakLevel()
     -- Attributes.
     local stats = item:GetStatsEnhanced()
     local statsBase = item:GetStatsBase()
@@ -69,6 +75,8 @@ function view:DrawPanelWithStats()
     local offsetYBase = 0
     local offsetYBonus = 0
     for i,entry in ipairs(self.itemHoverStatEntries) do
+        -- It is expected that the comparison item has matching stat structure.
+        local compareStatInfo = compareStats and compareStats[i]
         local statInfo = stats[i]
         local statInfoBase = statsBase[i]
         if statInfo then
@@ -91,6 +99,12 @@ function view:DrawPanelWithStats()
             else
                 entry.clientUserData.enhancementBonus.text = ""
             end
+            -- Show color based on comparison.
+            if compareStatInfo and compareStatInfo.value < statInfo.value then
+                entry.clientUserData.enhancementBonus:SetColor(ItemThemes.COLOR_GOOD)
+            else
+                entry.clientUserData.enhancementBonus:SetColor(entry.clientUserData.bonusBaseColor)
+            end
         else
             entry.visibility = Visibility.FORCE_OFF
         end
@@ -109,14 +123,23 @@ function view:DrawPanelWithStats()
     local numStars = item:GetLimitBreakLevel()
     local numStarsMax = item:GetMaxLimitBreakLevel()
     local starsMidpoint = (numStarsMax + 1) / 2
+    -- If the star level has changed use special coloring.
+    local starFillColor = rarityColor
+    if compareLimitBreakLevel and compareLimitBreakLevel < numStars then starFillColor = ItemThemes.COLOR_GOOD end
     for i,star in ipairs(panel.clientUserData.limitBreakStars) do
         if i <= numStarsMax then
             star.visibility = Visibility.INHERIT
             star.x = (i - starsMidpoint) * panel.clientUserData.starSpacing
-            star:SetColor(i <= numStars and rarityColor or panel.clientUserData.limitBreakStarBaseColor)
+            star:SetColor(i <= numStars and starFillColor or panel.clientUserData.limitBreakStarBaseColor)
         else
             star.visibility = Visibility.FORCE_OFF
         end
+    end
+    -- See if the enhancement level has changed.
+    if compareEnhancementLevel and compareEnhancementLevel < item:GetEnhancementLevel() then
+        panel.clientUserData.enhancementLevel:SetColor(ItemThemes.COLOR_GOOD)
+    else
+        panel.clientUserData.enhancementLevel:SetColor(panel.clientUserData.enhancementLevelBaseColor)
     end
     -- Draw the gray out if requested.
     panel.clientUserData.grayOut.visibility = ROOT.clientUserData.shouldGrayOut and Visibility.INHERIT or Visibility.FORCE_OFF

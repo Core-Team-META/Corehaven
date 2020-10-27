@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18338770843981066359
+  Name: "Icon Arrow Up"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_ArrowUp"
+  }
+}
+Assets {
   Id: 16634052309904547918
   Name: "Helm"
   PlatformAssetType: 9
@@ -41,6 +50,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid4px_020"
+  }
+}
+Assets {
+  Id: 14971912434748437073
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
   }
 }
 Assets {
@@ -224,12 +242,30 @@ Assets {
   }
 }
 Assets {
+  Id: 3088287233265355832
+  Name: "Sci-fi Frame 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFi_Frame_002"
+  }
+}
+Assets {
   Id: 2677338353219506855
   Name: "Fantasy Frame 007"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Frame_007"
+  }
+}
+Assets {
+  Id: 2269020591851145584
+  Name: "Fantasy Anvil 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Anvil_001"
   }
 }
 Assets {
