@@ -11588,6 +11588,18 @@ Objects {
         Id: 1528801185490889567
       }
     }
+    Overrides {
+      Name: "cs:SFX_ButtonHover"
+      AssetReference {
+        Id: 14003929445359204655
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_ButtonClick"
+      AssetReference {
+        Id: 7088002662191847642
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

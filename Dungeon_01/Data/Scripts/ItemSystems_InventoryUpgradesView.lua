@@ -12,6 +12,8 @@ local CONTINUE_BUTTON = script:GetCustomProperty("ButtonContinue"):WaitForObject
 local SFX_ItemSelected = script:GetCustomProperty("SFX_ItemSelected")
 local SFX_UpgradeEnhanced = script:GetCustomProperty("SFX_UpgradeEnhanced")
 local SFX_UpgradeLimitBroken = script:GetCustomProperty("SFX_UpgradeLimitBroken")
+local SFX_ButtonHover = script:GetCustomProperty("SFX_ButtonHover")
+local SFX_ButtonClick = script:GetCustomProperty("SFX_ButtonClick")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -80,11 +82,18 @@ function view:SetupConfirmationRoot()
 
     self.confirmationEnhanceButton.clickedEvent:Connect(function() self:PerformUpgrade() end)
     self.confirmationLimitBreakButton.clickedEvent:Connect(function() self:PerformUpgrade() end)
+
+    self.confirmationEnhanceButton.hoveredEvent:Connect(function() PlaySound(SFX_ButtonHover) end)
+    self.confirmationLimitBreakButton.hoveredEvent:Connect(function() PlaySound(SFX_ButtonClick) end)
 end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:SetupContinueButton()
-    CONTINUE_BUTTON.clickedEvent:Connect(function() self:ContinueUpgrading() end)
+    CONTINUE_BUTTON.hoveredEvent:Connect(function() PlaySound(SFX_ButtonHover) end)
+    CONTINUE_BUTTON.clickedEvent:Connect(function() 
+        PlaySound(SFX_ButtonClick)
+        self:ContinueUpgrading()
+    end)
 end
 
 -----------------------------------------------------------------------------------------------------------------
