@@ -152,15 +152,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12017046880637070245
-  Name: "Frame Outlined 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_019"
-  }
-}
-Assets {
   Id: 11819073848126166701
   Name: "Fantasy Ability Yellow 026"
   PlatformAssetType: 9

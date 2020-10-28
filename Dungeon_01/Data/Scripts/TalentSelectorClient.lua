@@ -14,6 +14,7 @@ local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionTex
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
 local TOOLTIP_STATE_TEXT = script:GetCustomProperty("TooltipStateText"):WaitForObject()
+local TOOLTIP_BORDER_ROOT = script:GetCustomProperty("TooltipBorderRoot"):WaitForObject()
 local BACKGROUND_PANEL = script:GetCustomProperty("BackgroundPanel"):WaitForObject()
 local TALENT_TREE_PANEL_TEMPLATE = script:GetCustomProperty("TalentTreePanelTemplate")
 local TALENT_BUTTON_TEMPLATE = script:GetCustomProperty("TalentButtonTemplate")
@@ -47,14 +48,14 @@ function HideTalentTrees()
 	talentTreesVisible = false
 end
 
-function OnButtonClicked(button, talentData)
+function OnButtonClicked(button, talentData, treeMetaData)
 	if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
 		API_RE.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
 	end
 end
 
-function OnButtonHovered(button, talentData)
+function OnButtonHovered(button, talentData, treeMetaData)
 	local cursorPosition = UI.GetCursorPosition()
 	local screenSize = UI.GetScreenSize()
 	cursorPosition.x = math.min(cursorPosition.x, screenSize.x - TOOLTIP_PANEL.width)
@@ -67,7 +68,7 @@ function OnButtonHovered(button, talentData)
 	if talentData.isPassive then
 		TOOLTIP_PASSIVE_TEXT.text = "Passive"
 	else
-		TOOLTIP_PASSIVE_TEXT.text = ""
+		TOOLTIP_PASSIVE_TEXT.text = "Ability"
 	end
 
 	TOOLTIP_DESCRIPTION_TEXT.text = talentData.description
@@ -77,9 +78,15 @@ function OnButtonHovered(button, talentData)
 	local buttonTemplate = talentData.buttonTemplate
 	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
 	highLight.visibility = Visibility.INHERIT
+
+	-- Set the color appropriately.
+	TOOLTIP_NAME_TEXT:SetColor(treeMetaData.primaryColor)
+	for _,uiImage in ipairs(TOOLTIP_BORDER_ROOT:FindDescendantsByType("UIImage")) do
+		uiImage:SetColor(treeMetaData.primaryColor)
+	end
 end
 
-function OnButtonUnhovered(button, talentData)
+function OnButtonUnhovered(button, talentData, treeMetaData)
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
 	local buttonTemplate = talentData.buttonTemplate
@@ -162,6 +169,8 @@ function BuildTalentTreeUI()
 			extent.y0 = math.min(extent.y0, treePanel.y - treePanel.height / 2)
 			extent.y1 = math.max(extent.y1, treePanel.y + treePanel.height / 2)
 
+			local treeMetaData = UTILITY.TALENT_TREE_DATA[treeName]
+
 			for talentName, talentData in pairs(treeData) do
 				-- Talent buttons
 				local buttonTemplate = World.SpawnAsset(TALENT_BUTTON_TEMPLATE, {parent = rootViewPanel})
@@ -173,9 +182,9 @@ function BuildTalentTreeUI()
 				panel.y = math.floor(treeNameText.height + treeDescriptionText.height + treeScale * unadjustedY)
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				button:SetImage(talentData.icon)
-				button.clickedEvent:Connect(OnButtonClicked, talentData)
-				button.hoveredEvent:Connect(OnButtonHovered, talentData)
-				button.unhoveredEvent:Connect(OnButtonUnhovered, talentData)
+				button.clickedEvent:Connect(OnButtonClicked, talentData, treeMetaData)
+				button.hoveredEvent:Connect(OnButtonHovered, talentData, treeMetaData)
+				button.unhoveredEvent:Connect(OnButtonUnhovered, talentData, treeMetaData)
 				talentData.buttonTemplate = buttonTemplate
 
 				-- Requirement arrows
