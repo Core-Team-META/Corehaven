@@ -139,7 +139,7 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:HasUsurpedInventorySlotItem(inventorySlotIndex)
-    return self.selectedPrimaryItemSlotIndex == inventorySlotIndex
+    return inventorySlotIndex and self.selectedPrimaryItemSlotIndex == inventorySlotIndex
 end
 
 -----------------------------------------------------------------------------------------------------------------
