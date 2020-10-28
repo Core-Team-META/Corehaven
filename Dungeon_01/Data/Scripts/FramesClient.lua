@@ -27,7 +27,7 @@ function CreateFrame()
 	for i = 1, API_SE.MAX_STATUS_EFFECTS do
 		data.statusEffects[i] = World.SpawnAsset(STATUS_EFFECT_TEMPLATE, {parent = data.frame})
 		data.statusEffects[i].visibility = Visibility.FORCE_OFF
-		data.statusEffects[i].x = -242 + 30 * i
+		data.statusEffects[i].x = 67 + 20 * i
 		data.statusEffects[i].y = -2
 	end
 
@@ -35,7 +35,7 @@ function CreateFrame()
 end
 
 function SetFramePosition(data, x, y)
-	data.frame.x = 20 + (x - 1) * 285
+	data.frame.x = 20 + (x - 1) * 305
 	data.frame.y = 20 + (y - 1) * 45
 end
 

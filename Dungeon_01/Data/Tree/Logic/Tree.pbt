@@ -7254,7 +7254,6 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:allonly"
       }
-      EnablePlayModeProfiler: true
     }
   }
 }
@@ -39492,7 +39491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 1
+      Int: 3
     }
   }
   Collidable_v2 {

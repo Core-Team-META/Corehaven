@@ -80,7 +80,7 @@ function FindClickTarget()
 	if cursorPoint then
 		local cursorForward = cursorPoint - viewPosition
 		local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
-		local closestNPC = nil
+		local closestTarget = nil
 		local closestDistance = math.huge
 		local hitCurrentTarget = false
 
@@ -97,14 +97,33 @@ function FindClickTarget()
 						hitCurrentTarget = true
 					elseif distance < closestDistance then
 						closestDistance = distance
-						closestNPC = npc
+						closestTarget = npc
 					end
 				end
 			end
 		end
 
-		if closestNPC then
-			return closestNPC
+		for _, player in pairs(Game.GetPlayers()) do
+			if not player.isDead then
+				local capsuleCenter = player:GetWorldPosition()
+				-- Fudge the capsule size to make it easier to click (a bit less than enemies)
+				local capsuleHeight = player:GetWorldScale().z * 240.0
+				local capsuleWidth = capsuleHeight * 0.5
+				local distance = FindRayCapsuleCollisionDistance(viewPosition, cursorForward, capsuleCenter, capsuleHeight, capsuleWidth)
+
+				if distance then
+					if player == currentTarget then
+						hitCurrentTarget = true
+					elseif distance < closestDistance then
+						closestDistance = distance
+						closestTarget = player
+					end
+				end
+			end
+		end
+
+		if closestTarget then
+			return closestTarget
 		elseif hitCurrentTarget then
 			return currentTarget
 		end

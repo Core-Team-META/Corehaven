@@ -17,6 +17,7 @@ for i = 1, NUMBER_OF_SLOTS do
 end
 
 local SOCKET_WIDTH = 95.0
+local LAYOUT_TIMOUT = 5.0
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
 local USER_FACING_BINDINGS =
@@ -191,26 +192,31 @@ function OnLoadActionBarLayout(layoutString)
 
 	-- We don't have all our abilities yet, or they were already changed
 	local expectedAbilitycount = tonumber(string.sub(layoutString, 1, 1))
+	local timeOutStart = os.clock()
 
-	while GetAbilityCount() ~= expectedAbilitycount do
+	while os.clock() < timeOutStart + LAYOUT_TIMOUT and GetAbilityCount() ~= expectedAbilitycount do
 		Task.Wait()
 	end
 
 	layoutLoaded = true
-	local tempData = {}
 
-	for i, data in pairs(buttonData) do
-		tempData[i] = data
-	end
+	-- Did we give up? If we don't have the right number, the string is meaningless so we do nothing
+	if os.clock() < timeOutStart + LAYOUT_TIMOUT then
+		local tempData = {}
 
-	table.sort(tempData, SortCompare)
+		for i, data in pairs(buttonData) do
+			tempData[i] = data
+		end
 
-	for i = 1, NUMBER_OF_SLOTS do
-		local newIndex = tonumber(string.sub(layoutString, i + 1, i + 1))
-		buttonData[newIndex] = tempData[i]
+		table.sort(tempData, SortCompare)
 
-		if buttonData[newIndex].button then
-			PlaceInSocket(buttonData[newIndex].button, newIndex)
+		for i = 1, NUMBER_OF_SLOTS do
+			local newIndex = tonumber(string.sub(layoutString, i + 1, i + 1))
+			buttonData[newIndex] = tempData[i]
+
+			if buttonData[newIndex].button then
+				PlaceInSocket(buttonData[newIndex].button, newIndex)
+			end
 		end
 	end
 end

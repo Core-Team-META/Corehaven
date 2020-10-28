@@ -33,8 +33,10 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 26
-          Height: 26
+          Width: 18
+          Height: 18
+          UIX: 75
+          UIY: -2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -45,12 +47,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:bottomleft"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:bottomleft"
               }
             }
           }

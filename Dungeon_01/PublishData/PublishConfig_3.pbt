@@ -2,7 +2,7 @@
 ClientVersion: "1.0.162-prod-s"
 Name: "Bossfight - Highrock (Hard)"
 Description: "The Highrock dungeon for the bossfight RPG, in hard difficulty."
-MaxPlayers: 6
+MaxPlayers: 8
 IsPrivate: true
 Tags: "RPG"
 Tags: "Multiplayer"

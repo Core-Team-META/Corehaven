@@ -1,11 +1,14 @@
 ﻿local API_P = require(script:GetCustomProperty("APIProjectile"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 
 local BASE_DAMAGE = 35.0
-local DAMAGE_MULTIPLIER = 1.0
+local DAMAGE_MULTIPLIER = 0.9
 local PROJECTILE_SPEED = 6400.0
+local SPLASH_RADIUS = 350.0
+local SPLASH_DAMAGE_MULTIPLIER = 0.4
 
 local data = {}
 
@@ -35,6 +38,12 @@ function data.onCastServer(caster, target)
 	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
 	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 	API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
+
+	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(target:GetWorldPosition(), SPLASH_RADIUS)) do
+		if npc ~= target then
+			API_D.ApplyDamage(caster, npc, (BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat) * SPLASH_DAMAGE_MULTIPLIER, API_D.TAG_AOE)
+		end
+	end
 end
 
 return data
