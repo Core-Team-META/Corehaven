@@ -2141,15 +2141,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6702189381052600733
-  Name: "Stone Window"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_stone_window_001"
-  }
-}
-Assets {
   Id: 6585207450897081622
   Name: "Sphere"
   PlatformAssetType: 1
@@ -2858,15 +2849,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_001"
-  }
-}
-Assets {
-  Id: 2721411165435899975
-  Name: "Additive Edgeline Top Fade"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_add_edgeline_sharpline_topfade"
   }
 }
 Assets {

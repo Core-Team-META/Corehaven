@@ -222,9 +222,11 @@ function Inventory:MoveItem(fromSlotIndex, toSlotIndex)
     end
 end
 
--- Returns the next open loot index.
-function Inventory:GetNextOpenLootIndex()
-    return self.nextLootIndex or 1
+-- Returns the next open loot index and advances the opening forward.
+function Inventory:TakeNextOpenLootIndex()
+    self.nextOpenLootIndex = self.nextOpenLootIndex or 0
+    self.nextOpenLootIndex = self.nextOpenLootIndex + 1
+    return self.nextOpenLootIndex
 end
 
 -- Register a new loot object dropped for the owner of this inventory. Optionally provide a callback for when the loot is claimed.
@@ -239,7 +241,6 @@ function Inventory:RegisterLootItemAtIndex(lootIndex, lootItem, lootWorldObject,
     }
     assert(not self.lootInfos[lootIndex], "Loot already exists at this index.")
     self.lootInfos[lootIndex] = lootInfo
-    self.nextLootIndex = lootIndex + 1
 end
 
 -- True if the claim operation is valid.
