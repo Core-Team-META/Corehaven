@@ -9,13 +9,13 @@
       Overrides {
         Name: "cmp:Sides"
         AssetReference {
-          Id: 1892362005922537256
+          Id: 14672413409033496457
         }
       }
       Overrides {
         Name: "cmp:Top"
         AssetReference {
-          Id: 15568444917883140804
+          Id: 10923474690862482182
         }
       }
     }
@@ -29,21 +29,21 @@
       }
     }
     Assets {
-      Id: 1892362005922537256
-      Name: "Bricks Large Foundation 01"
+      Id: 14672413409033496457
+      Name: "Cliff 02"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_large_foundation_001"
+        AssetId: "cliff_002"
       }
     }
     Assets {
-      Id: 15568444917883140804
-      Name: "Moss 01"
+      Id: 10923474690862482182
+      Name: "Sand 01"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_moss_001_uv"
+        AssetId: "mi_sand_001_uv"
       }
     }
   }
