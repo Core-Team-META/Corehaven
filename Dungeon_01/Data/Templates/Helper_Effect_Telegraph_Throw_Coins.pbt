@@ -74,6 +74,14 @@
             Name: "bp:Enable Ground Spikes"
             Bool: false
           }
+          Overrides {
+            Name: "bp:Enable Flash"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Light Brightness Multiplier"
+            Float: 0.5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
