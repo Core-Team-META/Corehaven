@@ -305,6 +305,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16372496464315477095
+  Name: "Ring Beveled (thick)"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
   Id: 16346219242794769146
   Name: "Fern 04"
   PlatformAssetType: 1
