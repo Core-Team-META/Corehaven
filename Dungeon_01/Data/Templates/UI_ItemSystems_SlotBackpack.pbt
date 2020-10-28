@@ -349,16 +349,16 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 200
-          Height: 24
+          Width: 50
+          Height: 30
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
-          UseParentWidth: true
           Image {
             Brush {
+              Id: 16477742065922762353
             }
             Color {
               A: 0.6
@@ -369,12 +369,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:topleft"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -402,8 +402,10 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 40
+          Width: 51
           Height: 24
+          UIX: 7.6550293
+          UIY: 48
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -419,7 +421,7 @@
             }
             Size: 14
             Justification {
-              Value: "mc:etextjustify:center"
+              Value: "mc:etextjustify:right"
             }
             AutoWrapText: true
           }

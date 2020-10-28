@@ -131,19 +131,21 @@ function view:Update()
     -- Get all loots for the local player.
     local lootInfos = inventory:GetLootInfos()
     self.isBackpackFull = inventory:IsBackpackFull()
-    -- Set the warning if backpack is full.
-    if #lootInfos > 0 then
-        PANEL_CLAIM_INSTRUCTIONS.visibility = self.isBackpackFull and Visibility.FORCE_OFF or Visibility.INHERIT
-        PANEL_CLAIM_WARNING.visibility = self.isBackpackFull and Visibility.INHERIT or Visibility.FORCE_OFF
-    end
     -- Attach to the view all loots which are still unclaimed.
-    for lootIndex,lootInfo in ipairs(lootInfos) do
+    local unclaimedLootCount = 0
+    for lootIndex,lootInfo in pairs(lootInfos) do
         if not lootInfo.isClaimed then
-            local entry = self:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
+            unclaimedLootCount = unclaimedLootCount + 1
+            local entry = self:PrepareLootEntry(lootIndex, lootInfo, self.isBackpackFull)
             view:DrawEntry(entry)
         end
     end
     view:FinalizeHeight()
+    -- Set the warning if backpack is full.
+    if unclaimedLootCount > 0 then
+        PANEL_CLAIM_INSTRUCTIONS.visibility = self.isBackpackFull and Visibility.FORCE_OFF or Visibility.INHERIT
+        PANEL_CLAIM_WARNING.visibility = self.isBackpackFull and Visibility.INHERIT or Visibility.FORCE_OFF
+    end
 end
 
 function view:OnClick(button)

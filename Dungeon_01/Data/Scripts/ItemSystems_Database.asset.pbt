@@ -11,8 +11,10 @@
         }
       }
       Overrides {
-        Name: "cs:SalvageItemName"
-        String: "Shards"
+        Name: "cs:SalvageItem"
+        AssetReference {
+          Id: 16513267414094432646
+        }
       }
       Overrides {
         Name: "cs:Item"

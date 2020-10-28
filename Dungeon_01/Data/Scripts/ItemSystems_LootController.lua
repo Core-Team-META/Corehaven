@@ -15,8 +15,9 @@ local ITEM_HASH = nil
 while not OWNER do
     Task.Wait()
     local info = LOOT:GetCustomProperty("INFO")
-    OWNER,ITEM_HASH = info:match("^(.+)/(.+)$")
+    OWNER,LOOT_INDEX,ITEM_HASH = info:match("^(.+)/(.+)/(.+)$")
 end
+LOOT_INDEX = tonumber(LOOT_INDEX)
 
 -- Get the actual owning player.
 for _,player in ipairs(Game.GetPlayers()) do
@@ -41,7 +42,7 @@ if script.isServerOnly then
     item = Item.FromHash(OWNER.serverUserData.inventory.database, ITEM_HASH)
     -- Delete networked root object when claimed.
     local function OnLootClaimed() LOOT:Destroy() end
-    OWNER.serverUserData.inventory:RegisterLootItem(item, LOOT, OnLootClaimed)
+    OWNER.serverUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, item, LOOT, OnLootClaimed)
     -- Delete networked root object if owner leaves game.
     Game.playerLeftEvent:Connect(function(player)
         if player == OWNER and Object.IsValid(LOOT) then LOOT:Destroy() end
@@ -51,7 +52,7 @@ else
         -- Client only needs to update inventory for loot which belongs to the local player.
         AwaitInventory(OWNER.clientUserData)
         item = Item.FromHash(OWNER.clientUserData.inventory.database, ITEM_HASH)
-        OWNER.clientUserData.inventory:RegisterLootItem(item, LOOT)
+        OWNER.clientUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, item, LOOT)
         -- Set up the trigger.
         local pickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
         pickupTrigger.isInteractable = true

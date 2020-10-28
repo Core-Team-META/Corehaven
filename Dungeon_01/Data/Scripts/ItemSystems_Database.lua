@@ -8,7 +8,7 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local Item = require(script:GetCustomProperty("Item"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
-local SALVAGE_ITEM_NAME = script:GetCustomProperty("SalvageItemName")
+local SALVAGE_ITEM_MUID = script:GetCustomProperty("SalvageItem"):match("(.+):")
 
 -- Load the database over a fixed number of frames.
 local LOAD_FRAME_LIMIT = 10
@@ -34,7 +34,7 @@ function Database:WaitUntilLoaded()
 end
 
 function Database:CreateItemSalvage()
-    local salvageItemData = self:FindItemDataByName(SALVAGE_ITEM_NAME)
+    local salvageItemData = self:FindItemDataByMUID(SALVAGE_ITEM_MUID)
     return Item.New(salvageItemData)
 end
 
@@ -193,7 +193,7 @@ function Database:_LoadCatalog()
     end
 
     -- Ensure that after all catalog data is loaded, the expected salvage item is present.
-    assert(self.itemDatasByName[SALVAGE_ITEM_NAME], string.format("salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_NAME))
+    assert(self.itemDatasByMUID[SALVAGE_ITEM_MUID], string.format("salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_MUID))
 
     -- Ensure that after all catalog data is loaded, all recipes reference valid items.
     local recipeBookPageCounts = {}
