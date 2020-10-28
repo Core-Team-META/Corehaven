@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 14266851654513390389
+        ParentId: 6829138982913755604
         ChildIds: 785947515750534923
         UnregisteredParameters {
           Overrides {
@@ -40,6 +40,12 @@
             Name: "cs:Check"
             ObjectReference {
               SubObjectId: 3656169833460823615
+            }
+          }
+          Overrides {
+            Name: "cs:CheckCorners"
+            ObjectReference {
+              SubObjectId: 9566688098915570145
             }
           }
         }

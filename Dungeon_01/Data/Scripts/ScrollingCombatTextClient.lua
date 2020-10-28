@@ -27,7 +27,7 @@ function GetColumnOffset(columnIndex)
 	end
 end
 
-function ShowText(targetCharacter, amount, over, color, tags)
+function ShowText(targetCharacter, amount, over, color, tags, extraText)
 	if API_D.HasTag(tags, API_D.TAG_HIDDEN) then
 		return
 	end
@@ -36,9 +36,9 @@ function ShowText(targetCharacter, amount, over, color, tags)
 		local element = World.SpawnAsset(ELEMENT_TEMPLATE, {parent = CONTAINER})
 
 		if over > 0.0 then
-			element.text = string.format("%.0f (%.0f)", amount, over)
+			element.text = string.format("%.0f (%.0f)%s", amount, over, extraText)
 		else
-			element.text = string.format("%.0f", amount)
+			element.text = string.format("%.0f%s", amount, extraText)
 		end
 
 		local isCrit = API_D.HasTag(tags, API_D.TAG_CRIT)
@@ -167,20 +167,24 @@ end
 -- In general the main number should show the total, including overkill and heal
 function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	if targetCharacter == LOCAL_PLAYER then
-		ShowText(targetCharacter, amount + overkill, 0.0, Color.RED, tags)
+		ShowText(targetCharacter, amount + overkill, 0.0, Color.RED, tags, "")
 	elseif sourceCharacter == LOCAL_PLAYER then
 		-- For damage you deal, we don't even bother showing overkill
 		if API_D.HasTag(tags, API_D.TAG_CRIT) then
-			ShowText(targetCharacter, amount + overkill, 0.0, Color.ORANGE, tags)
+			ShowText(targetCharacter, amount + overkill, 0.0, Color.ORANGE, tags, "")
 		else
-			ShowText(targetCharacter, amount + overkill, 0.0, Color.WHITE, tags)
+			ShowText(targetCharacter, amount + overkill, 0.0, Color.WHITE, tags, "")
 		end
 	end
 end
 
 function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal, tags)
 	if sourceCharacter == LOCAL_PLAYER or targetCharacter == LOCAL_PLAYER then
-		ShowText(targetCharacter, amount + overheal, overheal, Color.GREEN, tags)
+		if sourceCharacter and sourceCharacter ~= LOCAL_PLAYER and sourceCharacter:IsA("Player") then
+			ShowText(targetCharacter, amount + overheal, 0.0, Color.GREEN, tags, string.format(" (%s)", sourceCharacter.name))
+		else
+			ShowText(targetCharacter, amount + overheal, overheal, Color.GREEN, tags, "")
+		end
 	end
 end
 
