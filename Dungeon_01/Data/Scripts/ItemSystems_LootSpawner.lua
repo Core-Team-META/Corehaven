@@ -58,10 +58,13 @@ local function OnDropLoot(dropKey, dropWorldPosition, player)
         winner = ChoosePlayerByLottery()
     end
 
+    while not winner.serverUserData.inventory do Task.Wait() end
+    
     local item = Database:CreateItemFromDrop(dropKey)
     local object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
+    local lootIndex = winner.serverUserData.inventory:GetNextOpenLootIndex()
     -- Encode information into the objects loot property.
-    local lootInfo = string.format("%s/%s", winner.id, item:RuntimeHash())
+    local lootInfo = string.format("%s/%d/%s", winner.id, lootIndex, item:RuntimeHash())
     object:SetNetworkedCustomProperty("INFO", lootInfo)
 end
 

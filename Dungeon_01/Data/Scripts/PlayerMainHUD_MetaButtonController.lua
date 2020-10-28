@@ -76,7 +76,7 @@ Events.Connect("LootDroppedForPlayer", OnLootDroppedForPlayer)
 
 local function UpdateLootButtonAnimationState()
     local hasUnclaimedLoot = nil
-    for _,lootInfo in ipairs(inventory:GetLootInfos()) do
+    for _,lootInfo in pairs(inventory:GetLootInfos()) do
         if not lootInfo.isClaimed then
             hasUnclaimedLoot = true
             break
