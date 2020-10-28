@@ -1746,7 +1746,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 8508600544310168058
+        Id: 6064769285546901697
       }
     }
   }
@@ -3942,7 +3942,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 8508600544310168058
+        Id: 6064769285546901697
       }
     }
   }
@@ -24053,7 +24053,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4867422383464068521
+        Id: 841534158063459245
       }
     }
   }
@@ -39492,7 +39492,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 4
+      Int: 1
     }
   }
   Collidable_v2 {

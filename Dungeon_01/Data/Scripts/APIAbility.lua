@@ -99,7 +99,11 @@ end
 -- Owning client
 function CancelGroundTargeting()
 	if groundTargetReticle then
-		groundTargetReticle:Destroy()
+		-- This check is being extra careful, but means if we get into a bad state we aren't stuck there forever
+		if Object.IsValid(groundTargetReticle) then
+			groundTargetReticle:Destroy()
+		end
+
 		groundTargetAbilityName = nil
 		groundTargetReticle = nil
 	end
@@ -452,12 +456,12 @@ function IsTargetValid(player, target, abilityName)
 
 		-- Is this a hostile ability with a friendly target
 		if not data.friendlyTargetValid and target:IsA("Player") then
-			return false, "Invalid target"
+			return false, "Enemy target required"
 		end
 
 		-- Is this a friendly ability with a hostile target
 		if not data.enemyTargetValid and not target:IsA("Player") then
-			return false, "Invalid target"
+			return false, "Friendly target required"
 		end
 
 		targetPosition = target:GetWorldPosition()

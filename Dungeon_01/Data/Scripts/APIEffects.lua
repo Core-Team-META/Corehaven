@@ -10,6 +10,9 @@ function API.FadeOutEffect(effectObject, fadeOutTime)
 		if not Object.IsValid(effectObject) then
 			return
 		end
+
+		-- For a few effects that have custom scripts
+		effectObject.clientUserData.isFading = true
 		
 		for _, object in pairs(effectObject:FindDescendantsByType("Audio")) do
 			object:FadeOut(EFFECT_FADE_OUT_TIME)

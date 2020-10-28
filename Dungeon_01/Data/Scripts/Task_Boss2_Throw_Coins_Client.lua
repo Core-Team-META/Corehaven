@@ -48,7 +48,6 @@ function OnThrowCoins(center, seed)
 			Task.Wait(impactDelay - TELEGRAPH_DURATION)
 			local telegraphObject = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = target, scale = Vector3.New(POOL_RADIUS / 100.0)})
 			Task.Wait(TELEGRAPH_DURATION)
-			telegraphObject:Destroy()
 		end)
 	end
 end

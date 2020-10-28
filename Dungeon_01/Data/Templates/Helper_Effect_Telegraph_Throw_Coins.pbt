@@ -18,7 +18,7 @@
         ParentId: 4781671109827199097
         ChildIds: 13329288956278863165
         ChildIds: 5783544904641057488
-        Lifespan: 15
+        Lifespan: 6
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -61,6 +61,18 @@
               B: 0.225000009
               A: 0.305
             }
+          }
+          Overrides {
+            Name: "bp:Enable Ground Shockwave"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Ground Dust"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Ground Spikes"
+            Bool: false
           }
         }
         Collidable_v2 {
@@ -152,6 +164,7 @@
             Float: 1
           }
         }
+        Lifespan: 2
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }

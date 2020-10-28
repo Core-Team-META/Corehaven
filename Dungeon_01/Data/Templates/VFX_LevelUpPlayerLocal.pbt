@@ -39,12 +39,22 @@
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 2
+            Y: 2
+            Z: 2
           }
         }
         ParentId: 8944633060855021950
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Life"
+            Float: 1.8
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
+        }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -90,7 +100,7 @@
           }
           AutoPlay: true
           Transient: true
-          Volume: 1
+          Volume: 3
           Falloff: -1
           Radius: -1
           IsSpatializationEnabled: true
@@ -125,7 +135,7 @@
           }
           AutoPlay: true
           Transient: true
-          Volume: 1
+          Volume: 3
           Falloff: -1
           Radius: -1
           IsSpatializationEnabled: true

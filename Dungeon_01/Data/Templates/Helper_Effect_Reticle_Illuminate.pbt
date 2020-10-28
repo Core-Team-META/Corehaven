@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 7930055332507536354
-  Name: "Helper_Effect_Illuminate_Target"
+  Name: "Helper_Effect_Reticle_Illuminate"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 10826823000555098511
       Objects {
         Id: 10826823000555098511
-        Name: "Helper_Effect_Illuminate_Target"
+        Name: "Helper_Effect_Reticle_Illuminate"
         Transform {
           Scale {
             X: 1
@@ -17,7 +17,6 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 9716432895203116529
-        Lifespan: 5
         WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"

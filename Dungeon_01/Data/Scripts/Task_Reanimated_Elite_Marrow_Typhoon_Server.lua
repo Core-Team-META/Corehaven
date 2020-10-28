@@ -18,7 +18,7 @@ function OnTaskStart(npc, threatTable)
 	statusEffectIndices[npc] = API_SE.ApplyStatusEffect(npc, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Marrow Typhoon"].id)
 	npc:RotateContinuous(Vector3.UP * 25.0)
 
-	return 7.0
+	return 5.0
 end
 
 function OnTaskEnd(npc, interrupted)

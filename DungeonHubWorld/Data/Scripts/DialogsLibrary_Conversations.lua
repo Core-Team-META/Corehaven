@@ -119,7 +119,7 @@ function Dialogs.RegisterDialogue()
 
     id = "WecomeDialog7"
     API.RegisterDialogueId(id)
-    API.AddText(id, "Training Field will help you practive your skills to prepare for encountering dangerous enemies!", EXCITEMENT_ANIMATION)
+    API.AddText(id, "Training Field will help you practice your skills to prepare for encountering dangerous enemies!", EXCITEMENT_ANIMATION)
     API.AddText(id, "...", CRY_ANIMATION)
     API.AddText(id, "Unfortunately, my friend, the owner of that place has not returned to Corehaven yet.", CRY_ANIMATION)
     API.AddText(id, "He set sail on a Galleon to embark on an adventure to defeat monsters...", CRY_ANIMATION)
@@ -302,7 +302,7 @@ function Dialogs.RegisterDialogue()
     API.RegisterDialogueId(id)
     API.AddText(id, "There is an announcement on the board...")
     API.AddText(id, '"Seeking all adventurers! The outpost of Highrock is in need of help."')
-    API.AddText(id, '"Meet me by the docks for more information."')
+    API.AddText(id, '"Meet me on the docks for more information."')
 
     id = "Sleep"
     API.RegisterDialogueId(id)
@@ -314,7 +314,7 @@ function Dialogs.RegisterDialogue()
     API.RegisterDialogueId(id)
     API.AddText(id, "I swear on my fortune, the dead have risen at Highrock! The citizenry and guards alike seem as if possessed.", TALK_ANIMATION)
     API.AddText(id, "I fear a necromancer's cult have taken over the town and have unleashed the ancient evil known as Zetalan.", EXCITEMENT_ANIMATION)
-    API.AddText(id, "I can give you passage to Highrock, though for the saftey of my ship and crew we will anchor off-shore to await your return.", TALK_ANIMATION)
+    API.AddText(id, "I can give you passage to Highrock, though for the safety of my ship and crew we will anchor off-shore to await your return.", TALK_ANIMATION)
 
     API.AddOption(id, "Travel to Highrock (Hard)", "End", "HighrockHard")
     API.AddOption(id, "Travel to Highrock (Normal)", "End", "HighrockNormal")

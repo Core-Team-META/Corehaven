@@ -28,7 +28,7 @@
     Type = 'Trinket',
     Rarity = 'Rare',
     MUID = '7BC66566CAE382AE:ITEM_Trinket_LuckyBoneBand',
-    Lore = 'Can be activately to greatly increase combat skill temporarily.',
+    Lore = 'Can be activated to greatly increase combat skill temporarily.',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

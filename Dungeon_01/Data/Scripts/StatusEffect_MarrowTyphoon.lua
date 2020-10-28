@@ -15,7 +15,7 @@ end
 local data = {}
 
 data.name = "Marrow Typhoon"
-data.duration = 7.0
+data.duration = 5.0
 data.icon = script:GetCustomProperty("Icon")
 data.description = script:GetCustomProperty("Description")
 data.effectTemplate = script:GetCustomProperty("EffectTemplate")
