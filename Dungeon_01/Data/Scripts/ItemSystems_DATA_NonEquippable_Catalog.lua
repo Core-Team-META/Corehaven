@@ -1,6 +1,6 @@
 ﻿return {
   {
-    Name = 'Shards',
+    Name = 'Dull Shard',
     Type = 'Material',
     Rarity = 'Common',
     StackSize = '4000',
