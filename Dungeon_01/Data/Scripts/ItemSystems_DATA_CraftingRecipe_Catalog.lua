@@ -1,4 +1,5 @@
-﻿return {
+﻿return { } 
+--[[
   {
     Name = 'Recipe: Enhance I',
     Type = 'CraftingRecipe',
@@ -80,3 +81,4 @@
     Lore = 'Enhance the stats of a legendary item.',
   },
 }
+--]]
