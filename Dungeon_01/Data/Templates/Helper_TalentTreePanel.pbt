@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 13537105301934663252
+        ParentId: 14266851654513390389
         ChildIds: 1978558241356278971
         UnregisteredParameters {
           Overrides {
@@ -40,6 +40,12 @@
             Name: "cs:TreeNameText"
             ObjectReference {
               SubObjectId: 6322301701594032219
+            }
+          }
+          Overrides {
+            Name: "cs:TreeDescText"
+            ObjectReference {
+              SubObjectId: 18394625495307788546
             }
           }
         }
@@ -91,8 +97,10 @@
         }
         ParentId: 11472111549531879496
         ChildIds: 1713236920295882849
+        ChildIds: 9744302326781297520
         ChildIds: 6420076522289348308
         ChildIds: 6322301701594032219
+        ChildIds: 18394625495307788546
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -160,10 +168,68 @@
               Id: 6294033131084533737
             }
             Color {
-              R: 0.546875
-              G: 0.546875
-              B: 0.546875
+              R: 0.223958328
+              G: 0.223958328
+              B: 0.223958328
               A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9744302326781297520
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -5.9764152e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1978558241356278971
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 443
+          Height: 306
+          UIY: -267.935303
+          RotationAngle: 90
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 8665791828559964251
+            }
+            Color {
+              A: 0.59800005
             }
             TeamSettings {
             }
@@ -263,7 +329,7 @@
         }
         Control {
           Width: 200
-          Height: 58
+          Height: 44
           UIY: 10
           RenderTransformPivot {
             Anchor {
@@ -299,6 +365,66 @@
           }
         }
       }
+      Objects {
+        Id: 18394625495307788546
+        Name: "UI Text Box"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -5.9764152e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 1978558241356278971
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 308
+          Height: 76
+          UIY: 64.1728
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "Tree Name"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 18
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 6294033131084533737
@@ -307,6 +433,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Ability_Blue_015"
+      }
+    }
+    Assets {
+      Id: 8665791828559964251
+      Name: "UI Gradient Rectangular 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Basic_Shape_002"
       }
     }
     Assets {

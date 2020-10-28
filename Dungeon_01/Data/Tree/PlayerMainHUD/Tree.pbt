@@ -1071,6 +1071,10 @@ Objects {
         A: 1
       }
     }
+    Overrides {
+      Name: "cs:TreeDescription"
+      String: "Support your allies with healing and protective spells"
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -1671,7 +1675,7 @@ Objects {
     Overrides {
       Name: "cs:BackgroundImage"
       AssetReference {
-        Id: 9543125629159503556
+        Id: 4692251476766397038
       }
     }
     Overrides {
@@ -1682,10 +1686,14 @@ Objects {
     Overrides {
       Name: "cs:PrimaryColor"
       Color {
-        R: 0.228145853
-        B: 0.65
+        R: 0.573642492
+        B: 0.710000038
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:TreeDescription"
+      String: "Wield arcane energies to blast and curse your enemies"
     }
   }
   Collidable_v2 {
@@ -2287,7 +2295,7 @@ Objects {
     Overrides {
       Name: "cs:BackgroundImage"
       AssetReference {
-        Id: 17298839733138424596
+        Id: 9638963670323448151
       }
     }
     Overrides {
@@ -2302,6 +2310,10 @@ Objects {
         G: 0.133509919
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:TreeDescription"
+      String: "Wield weapons with fury and very little regard for your own safety"
     }
   }
   Collidable_v2 {
@@ -2907,7 +2919,7 @@ Objects {
     Overrides {
       Name: "cs:BackgroundImage"
       AssetReference {
-        Id: 14809824387673401113
+        Id: 16884239609476660373
       }
     }
     Overrides {
@@ -2922,6 +2934,10 @@ Objects {
         B: 0.87
         A: 1
       }
+    }
+    Overrides {
+      Name: "cs:TreeDescription"
+      String: "Draw the attention of foes and soak damage for your allies"
     }
   }
   Collidable_v2 {

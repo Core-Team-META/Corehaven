@@ -60,6 +60,7 @@ function ReadTalentTreeDefinition(root)
 		treeData.primaryColor = treeGroup:GetCustomProperty("PrimaryColor")
 		treeData.backgroundImage = treeGroup:GetCustomProperty("BackgroundImage")
 		treeData.backgroundOffset = treeGroup:GetCustomProperty("BackgroundOffset")
+		treeData.treeDescText = treeGroup:GetCustomProperty("TreeDescription")
 
 		if UTILITY.TALENT_TREE_TABLE[treeGroup.name] then
 			warn(string.format("Talent tree (%s) has duplicate name", treeGroup.name))

@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 379056897218762481
+        ParentId: 14266851654513390389
         ChildIds: 785947515750534923
         UnregisteredParameters {
           Overrides {
@@ -39,7 +39,7 @@
           Overrides {
             Name: "cs:Check"
             ObjectReference {
-              SubObjectId: 9566688098915570145
+              SubObjectId: 3656169833460823615
             }
           }
         }
@@ -71,7 +71,7 @@
         ChildIds: 2113276658621038071
         ChildIds: 14813150703085048943
         ChildIds: 1059229685843091345
-        ChildIds: 9566688098915570145
+        ChildIds: 3656169833460823615
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -126,8 +126,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: -4
-          Height: -4
+          Width: -8
+          Height: -8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -207,6 +207,8 @@
           Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
+          Width: -8
+          Height: -8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -264,6 +266,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
+          Width: -8
+          Height: -8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -299,6 +303,65 @@
         }
       }
       Objects {
+        Id: 3656169833460823615
+        Name: "UI Image"
+        Transform {
+          Location {
+          }
+          Rotation {
+            Yaw: -5.9764152e-06
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 785947515750534923
+        ChildIds: 9566688098915570145
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 275713616181555507
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
         Id: 9566688098915570145
         Name: "UI Image"
         Transform {
@@ -313,26 +376,27 @@
             Z: 1
           }
         }
-        ParentId: 785947515750534923
+        ParentId: 3656169833460823615
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 30
-          Height: 30
-          UIX: -15
-          UIY: -15
+          Width: 14
+          Height: 14
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
           Image {
             Brush {
-              Id: 15002233724434219397
+              Id: 2192303782432417436
             }
             Color {
               R: 1
@@ -346,12 +410,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomright"
+                Value: "mc:euianchor:middlecenter"
               }
             }
           }
@@ -386,12 +450,21 @@
       }
     }
     Assets {
-      Id: 15002233724434219397
-      Name: "Icon Checkmark"
+      Id: 275713616181555507
+      Name: "Frame Beveled 001"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "Icon_Checkmark"
+        AssetId: "FrameSolid8px_020"
+      }
+    }
+    Assets {
+      Id: 2192303782432417436
+      Name: "Fantasy Corners 005"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "UI_Fantasy_Corners_005"
       }
     }
     PrimaryAssetId {
