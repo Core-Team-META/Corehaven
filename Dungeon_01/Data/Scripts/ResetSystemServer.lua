@@ -7,6 +7,7 @@ the work doesn't get undone.
 local END_DUNGEON_RESET_DELAY = 30.0
 
 local resetTime = nil
+local hasResetWhenEmpty = false
 
 function ResetDungeon(delay)
 	if not resetTime then
@@ -33,6 +34,20 @@ end
 
 function OnBoss4Died()
 	ResetDungeon(END_DUNGEON_RESET_DELAY)
+end
+
+function Tick(deltaTime)
+	local hasPlayers = #Game.GetPlayers() ~= 0
+
+	if hasPlayers then
+		-- Reset for next time its empty
+		hasResetWhenEmpty = false
+	else
+		if not hasResetWhenEmpty then
+			ResetDungeon(0.0)
+			hasResetWhenEmpty = true
+		end
+	end
 end
 
 Events.Connect("Boss4Died", OnBoss4Died)

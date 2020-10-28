@@ -142,10 +142,10 @@ function BuildTalentTreeUI()
 			treePanel.x = math.floor((index - (N_USABLE_TREES + 1) / 2) * treeScale * (maxTreeWidth + MIN_TREE_PADDING))
 			treePanel.y = 0
 			local treeNameText = treePanel:GetCustomProperty("TreeNameText"):WaitForObject()
-			local treeDescText = treePanel:GetCustomProperty("TreeDescText"):WaitForObject()
+			local treeDescriptionText = treePanel:GetCustomProperty("TreeDescriptionText"):WaitForObject()
 			treeNameText.text = treeName
 			treeNameText:SetColor(UTILITY.TALENT_TREE_DATA[treeName].primaryColor)
-			treeDescText.text = UTILITY.TALENT_TREE_DATA[treeName].treeDescText
+			treeDescriptionText.text = UTILITY.TALENT_TREE_DATA[treeName].treeDescription
 			local unadjustedTreeHeight = UTILITY.TREE_HEIGHT * MAX_BUTTON_SIZE + (UTILITY.TREE_HEIGHT + 1) * BUTTON_PADDING
 			local minTreeHeight = treeScale * unadjustedTreeHeight + treeNameText.height
 			local treeBackgroundImage = treePanel:GetCustomProperty("BackgroundImage"):WaitForObject()
@@ -170,7 +170,7 @@ function BuildTalentTreeUI()
 				panel.height = math.floor(treeScale * MAX_BUTTON_SIZE)
 				panel.x = math.floor(treeScale * (talentData.treeX * (MAX_BUTTON_SIZE + BUTTON_PADDING) - MAX_BUTTON_SIZE))
 				local unadjustedY = talentData.treeY * (MAX_BUTTON_SIZE + BUTTON_PADDING) - MAX_BUTTON_SIZE
-				panel.y = math.floor(treeNameText.height + treeDescText.height + treeScale * unadjustedY)
+				panel.y = math.floor(treeNameText.height + treeDescriptionText.height + treeScale * unadjustedY)
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				button:SetImage(talentData.icon)
 				button.clickedEvent:Connect(OnButtonClicked, talentData)
@@ -292,12 +292,14 @@ function Tick(deltaTime)
 				local buttonTemplate = talentData.buttonTemplate
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				local check = buttonTemplate:GetCustomProperty("Check"):WaitForObject()
+				local checkCorners = buttonTemplate:GetCustomProperty("CheckCorners"):WaitForObject()
 				
 				if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
-					local c = Color.Lerp(Color.WHITE, Color.New(0.15, 0.15, 0.15),(1+math.sin(5*time()))/2)
-					button:SetButtonColor(c)
-					button:SetHoveredColor(c)
-					button:SetPressedColor(c)
+					local t = (1.0 + math.sin(5.0 * os.clock())) / 2.0
+					local color = Color.Lerp(Color.WHITE, Color.New(0.15, 0.15, 0.15), t)
+					button:SetButtonColor(color)
+					button:SetHoveredColor(color)
+					button:SetPressedColor(color)
 				elseif UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, talentData) then
 					button:SetButtonColor(Color.WHITE)
 					button:SetHoveredColor(Color.WHITE)
@@ -310,7 +312,7 @@ function Tick(deltaTime)
 
 				if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, talentData) then
 				    check:SetColor(UTILITY.TALENT_TREE_DATA[treeName].primaryColor) 
-				    check:GetChildren()[1]:SetColor(UTILITY.TALENT_TREE_DATA[treeName].primaryColor) 
+				    checkCorners:SetColor(UTILITY.TALENT_TREE_DATA[treeName].primaryColor) 
 					check.visibility = Visibility.INHERIT
 				else
 					check.visibility = Visibility.FORCE_OFF
