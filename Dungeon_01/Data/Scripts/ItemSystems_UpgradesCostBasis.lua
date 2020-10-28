@@ -45,7 +45,7 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
         local cost = math.floor((ENHANCEMENT_BASE_COST * rarityNumber) + (rarityNumber+enhancementNumber)^ENHANCEMENT_POWER_COST) 
 
         -- Return example cost item and cost.
-        return mockItemEnhancement, cost
+        return mockItemEnhancement, math.floor(cost)
 
     elseif item:IsNextUpgradeLimitBreak() then
 
@@ -53,7 +53,7 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
         local cost = LIMIT_BREAK_BASE_COST * (rarityNumber-1 + limitBreakNumber)^2
 
         -- Return example cost item and cost.
-        return mockItemLimitBreak, cost
+        return mockItemLimitBreak, math.floor(cost)
 
     end
 end

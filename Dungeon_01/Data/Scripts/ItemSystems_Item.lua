@@ -183,7 +183,7 @@ end
 
 function Item:SetStackSize(stackSize)
     assert(self:IsStackable() and 1 <= stackSize and stackSize <= self:GetMaxStackSize())
-    self.stackSize = stackSize
+    self.stackSize = stackSize // 1
 end
 
 function Item:GetMaxStackSize()

@@ -672,7 +672,7 @@ function view:DrawSlots()
             if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
                 if item:IsStackable() then
                     slot.clientUserData.counterRoot.visibility = Visibility.INHERIT
-                    slot.clientUserData.counterNumber.text = tostring(item:GetStackSize())
+                    slot.clientUserData.counterNumber.text = string.format("%d", item:GetStackSize() // 1)
                 else
                     slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
                 end
