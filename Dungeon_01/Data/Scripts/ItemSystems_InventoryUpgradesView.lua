@@ -8,6 +8,7 @@ local PRIMARY_ITEM_ROOT = script:GetCustomProperty("PrimaryItemRoot"):WaitForObj
 local PREVIEW_ITEM_ROOT = script:GetCustomProperty("ItemPreviewRoot"):WaitForObject()
 local CONFIRMATION_ROOT = script:GetCustomProperty("ConfirmationRoot"):WaitForObject()
 local CONTINUE_BUTTON = script:GetCustomProperty("ButtonContinue"):WaitForObject()
+local DRAG_DROP_HITBOX = script:GetCustomProperty("DragDropHitbox"):WaitForObject()
 
 local SFX_ItemSelected = script:GetCustomProperty("SFX_ItemSelected")
 local SFX_UpgradeEnhanced = script:GetCustomProperty("SFX_UpgradeEnhanced")
@@ -33,10 +34,27 @@ local view = {}
 
 ------------------------------------------------------------------------------------------------
 function view:Init()
+    self:SetupDragDropHitbox()
     self:SetupPrimaryItemRoot()
     self:SetupPreviewItemRoot()
     self:SetupConfirmationRoot()
     self:SetupContinueButton()
+end
+
+-----------------------------------------------------------------------------------------------------------------
+function view:SetupDragDropHitbox()
+    -- ATTENTION: If the UI is changed, the hitbox must also be moved. This one is coded much more inflexibly than
+    -- those in the inventory. All anchors are assumed to be bottom-right.
+    local hitboxBRX1 = DRAG_DROP_HITBOX.x + UPGRADES_VIEW.x
+    local hitboxBRX2 = hitboxBRX1 - DRAG_DROP_HITBOX.width
+    local hitboxBRY1 = DRAG_DROP_HITBOX.y + UPGRADES_VIEW.y
+    local hitboxBRY2 = hitboxBRY1 - DRAG_DROP_HITBOX.height
+    function self:IsCursorOverHitbox()
+        local cursorPositionTL = UI.GetCursorPosition()                -- TopLeft position
+        local cursorPositionBR = cursorPositionTL - UI.GetScreenSize() -- BotRight position
+        return hitboxBRX1 >= cursorPositionBR.x and cursorPositionBR.x >= hitboxBRX2 and
+               hitboxBRY1 >= cursorPositionBR.y and cursorPositionBR.y >= hitboxBRY2
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -116,7 +134,11 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:PerformDragDropAction(inventorySlotIndex)
-
+    local draggedItem = inventory:GetItem(inventorySlotIndex)
+    if draggedItem:CanUpgrade() and self:IsCursorOverHitbox() then
+        self:MakePrimaryItemSelection(inventorySlotIndex)
+        return true
+    end
 end
 
 -----------------------------------------------------------------------------------------------------------------
@@ -178,6 +200,7 @@ function view:MakePrimaryItemSelection(inventorySlotIndex)
     if item then
         self.selectedPrimaryItemSlotIndex = inventorySlotIndex
         self.selectedPrimaryItem = item
+        self.isContinuationUpgrade = nil
         self:GOTO("AwaitingUpgradeConfirmation")
         -- Some nice sfx.
         PlaySound(SFX_ItemSelected)
@@ -201,6 +224,7 @@ end
 ------------------------------------------------------------------------------------------------
 function view:ContinueUpgrading()
     if self.selectedPrimaryItem:CanUpgrade() then
+        self.isContinuationUpgrade = true
         self:GOTO("AwaitingUpgradeConfirmation")
     else
         self:MakePrimaryItemSelection(nil)
@@ -313,7 +337,9 @@ function view:UPDATE_AwaitingUpgradeConfirmation(dt)
         self.confirmationLimitBreakButton.isInteractable = false
     end
     -- Animate sheen on item selection.
-    self:_AnimateSheen(1.0)
+    if not self.isContinuationUpgrade then
+        self:_AnimateSheen(1.0)
+    end
 end
 
 ------------------------------------------------------------------------------------------------
@@ -337,9 +363,6 @@ function view:UPDATE_CompletingUpgrade(dt)
     if self.elapsed < DURATION then
         self.previewItemAfter.x = CoreMath.Lerp(self.previewItemAfterBaseX, 0, self.elapsed / DURATION)
         self:_AnimateSheen(DURATION)
-    else
-        self.previewItemAfter.x = 0
-        self:_AnimateSheen(DURATION, DURATION)
     end
 end
 

@@ -8567,6 +8567,7 @@ Objects {
   ChildIds: 1650640040311692714
   ChildIds: 13112485502178309431
   ChildIds: 7689450955763600633
+  ChildIds: 12547235966234606762
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -8580,6 +8581,53 @@ Objects {
     Height: 830
     UIX: -810
     UIY: -180
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Panel {
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:bottomright"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 12547235966234606762
+  Name: "DragDropHitbox"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17246140728705876905
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  Control {
+    Width: 90
+    Height: 90
+    UIX: -285
+    UIY: -625
     RenderTransformPivot {
       Anchor {
         Value: "mc:euianchor:middlecenter"
@@ -11635,6 +11683,12 @@ Objects {
       Name: "cs:ButtonContinue"
       ObjectReference {
         SelfId: 7689450955763600633
+      }
+    }
+    Overrides {
+      Name: "cs:DragDropHitbox"
+      ObjectReference {
+        SelfId: 12547235966234606762
       }
     }
     Overrides {
