@@ -340,6 +340,11 @@ function Item:RollStats()
     self:_RecalculateStatTotals()
 end
 
+-- True if the item can be salvaged.
+function Item:IsSalvageable()
+    return self:GetSalvageQuantity() ~= nil
+end
+
 -- How much salvage is generated from this item.
 function Item:GetSalvageQuantity()
     local quantity = self.SHARD_TYPE_QUANTITIES[self:GetType()] or 0
