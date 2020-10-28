@@ -213,7 +213,7 @@ function Item:GetMaxEnhancementLevel()
 end
 
 function Item:SetEnhancementLevel(enhancementLevel)
-    assert(0 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
+    assert(1 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
     self.enhancementLevel = enhancementLevel
     self:_RecalculateStatTotals()
 end
@@ -403,7 +403,7 @@ end
 function Item:_Init(itemData, stackSize, enhancementLevel, limitBreakLevel)
     self.data = itemData
     self.stackSize = stackSize or 1
-    self.enhancementLevel = enhancementLevel or 0
+    self.enhancementLevel = enhancementLevel or 1
     self.limitBreakLevel = limitBreakLevel or 1
     self.stats = {}
     self.statTotals = {}
