@@ -2,7 +2,8 @@
 local ENHANCEMENT_CURRENCY_MUID = script:GetCustomProperty("EnhancementCurrency"):match("(.*):")
 local LIMIT_BREAK_CURRENCY_MUID = script:GetCustomProperty("LimitBreakCurrency"):match("(.*):")
 
-local ENHANCEMENT_BASE_COST = 10
+local ENHANCEMENT_BASE_COST = 3
+local ENHANCEMENT_POWER_COST = 1.6
 local LIMIT_BREAK_BASE_COST = 1
 
 local mockItemEnhancement = nil
@@ -41,18 +42,18 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
     if item:IsNextUpgradeEnhancement() then
 
         -- Compute the cost to enhance an item by one.
-        local cost = ENHANCEMENT_BASE_COST * rarityNumber
+        local cost = math.floor((ENHANCEMENT_BASE_COST * rarityNumber) + (rarityNumber+enhancementNumber)^ENHANCEMENT_POWER_COST) 
 
         -- Return example cost item and cost.
-        return mockItemEnhancement, cost
+        return mockItemEnhancement, math.floor(cost)
 
     elseif item:IsNextUpgradeLimitBreak() then
 
         -- Compute the cost to limit break an item to the next star-level.
-        local cost = LIMIT_BREAK_BASE_COST * (rarityNumber-1)^2
+        local cost = LIMIT_BREAK_BASE_COST * (rarityNumber-1 + limitBreakNumber)^2
 
         -- Return example cost item and cost.
-        return mockItemLimitBreak, cost
+        return mockItemLimitBreak, math.floor(cost)
 
     end
 end

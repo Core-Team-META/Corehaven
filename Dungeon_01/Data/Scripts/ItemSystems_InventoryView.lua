@@ -343,13 +343,16 @@ end
 
 -----------------------------------------------------------------------------------------------------------------
 function view:AttemptSalvageItem(slotIndex)
-    self.attemptedSalvageSlot = slotIndex
-    PlaySound(SFX_SALVAGE_BEGIN)
-    -- Some high value items require user confirmation.
-    local item = inventory:GetItem(self.attemptedSalvageSlot)
-    -- Automatic confirmation for low value items.
-    if not item:IsHighValue() then
-        self:ConfirmSalvageAttempt()
+    local item = inventory:GetItem(slotIndex)
+    if item and item:IsSalvageable() then
+        PlaySound(SFX_SALVAGE_BEGIN)
+        self.attemptedSalvageSlot = slotIndex
+        -- Automatic confirmation for low value items.
+        if not item:IsHighValue() then
+            self:ConfirmSalvageAttempt()
+        end
+    else
+        PlaySound(SFX_MOVE_FAIL)
     end
 end
 
@@ -672,7 +675,7 @@ function view:DrawSlots()
             if inventory:IsBackpackSlot(slot.clientUserData.slotIndex) then
                 if item:IsStackable() then
                     slot.clientUserData.counterRoot.visibility = Visibility.INHERIT
-                    slot.clientUserData.counterNumber.text = tostring(item:GetStackSize())
+                    slot.clientUserData.counterNumber.text = string.format("%d", item:GetStackSize() // 1)
                 else
                     slot.clientUserData.counterRoot.visibility = Visibility.FORCE_OFF
                 end
@@ -731,7 +734,7 @@ function view:DrawSalvageTray()
         end
         PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.FORCE_OFF
         PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.INHERIT
-        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will be destroyed..."
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will be salvaged..."
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront.text = salvageItemText
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront:SetColor(ItemThemes.GetRarityColor(salvageItem:GetRarity()))
     else

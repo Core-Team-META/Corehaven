@@ -86,6 +86,10 @@
             Name: "bp:Enable Burst Spikes"
             Bool: false
           }
+          Overrides {
+            Name: "bp:Light Brightness Multiplier"
+            Float: 0.5
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

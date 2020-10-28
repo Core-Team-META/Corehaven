@@ -24454,13 +24454,13 @@ Objects {
     Overrides {
       Name: "cs:ProjectileTemplate"
       AssetReference {
-        Id: 8577847030441975411
+        Id: 4521826613839747758
       }
     }
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 473360950505549885
+        Id: 9146027151900378455
       }
     }
     Overrides {

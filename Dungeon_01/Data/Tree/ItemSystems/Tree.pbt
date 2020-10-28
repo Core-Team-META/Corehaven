@@ -3148,7 +3148,7 @@ Objects {
     UseParentWidth: true
     UseParentHeight: true
     Text {
-      Label: "Drop items here to salvage."
+      Label: "Drop equipment here to salvage."
       Color {
         R: 0.99
         G: 0.688410759

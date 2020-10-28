@@ -183,7 +183,7 @@ end
 
 function Item:SetStackSize(stackSize)
     assert(self:IsStackable() and 1 <= stackSize and stackSize <= self:GetMaxStackSize())
-    self.stackSize = stackSize
+    self.stackSize = stackSize // 1
 end
 
 function Item:GetMaxStackSize()
@@ -213,7 +213,7 @@ function Item:GetMaxEnhancementLevel()
 end
 
 function Item:SetEnhancementLevel(enhancementLevel)
-    assert(0 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
+    assert(1 <= enhancementLevel and enhancementLevel <= self:GetMaxEnhancementLevel())
     self.enhancementLevel = enhancementLevel
     self:_RecalculateStatTotals()
 end
@@ -340,6 +340,11 @@ function Item:RollStats()
     self:_RecalculateStatTotals()
 end
 
+-- True if the item can be salvaged.
+function Item:IsSalvageable()
+    return self:GetSalvageQuantity() ~= nil
+end
+
 -- How much salvage is generated from this item.
 function Item:GetSalvageQuantity()
     local quantity = self.SHARD_TYPE_QUANTITIES[self:GetType()] or 0
@@ -398,7 +403,7 @@ end
 function Item:_Init(itemData, stackSize, enhancementLevel, limitBreakLevel)
     self.data = itemData
     self.stackSize = stackSize or 1
-    self.enhancementLevel = enhancementLevel or 0
+    self.enhancementLevel = enhancementLevel or 1
     self.limitBreakLevel = limitBreakLevel or 1
     self.stats = {}
     self.statTotals = {}

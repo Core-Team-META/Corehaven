@@ -567,16 +567,19 @@ function Inventory:_DefineEvent(eventName)
 end
 
 function Inventory:_CanMoveItemOneWay(fromSlotIndex, toSlotIndex)
-    if not toSlotIndex then
-        return true
-    end
     local item = self:GetItem(fromSlotIndex)
     if not item then
         return true
     end
+    -- Only salvageable items may be deleted.
+    if not toSlotIndex and item:IsSalvageable() then
+        return true
+    end
+    -- Any item can move to an open backpack slot.
     if self:IsBackpackSlot(toSlotIndex) then
         return true
     end
+    -- Any item can move into an appropriately typed equip slot.
     if self:IsEquipSlotType(toSlotIndex, item:GetEquipSlotType()) then
         return true
     end
