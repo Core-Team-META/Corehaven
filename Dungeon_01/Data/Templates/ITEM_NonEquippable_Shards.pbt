@@ -20,12 +20,12 @@
           Overrides {
             Name: "cs:Icon"
             AssetReference {
-              Id: 18037952966375320550
+              Id: 13861388018615005014
             }
           }
           Overrides {
             Name: "cs:IconRotation"
-            Float: 180
+            Float: 0
           }
         }
         Collidable_v2 {
@@ -40,12 +40,12 @@
       }
     }
     Assets {
-      Id: 18037952966375320550
-      Name: "Fantasy Craft Crystal 001"
+      Id: 13861388018615005014
+      Name: "Fantasy Craft Crystal 031"
       PlatformAssetType: 9
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
-        AssetId: "UI_Fantasy_Crafting_Crystal_001"
+        AssetId: "UI_Fantasy_Crafting_Crystal_031"
       }
     }
     PrimaryAssetId {
