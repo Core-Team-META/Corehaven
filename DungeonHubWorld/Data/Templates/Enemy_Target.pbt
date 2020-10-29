@@ -57,7 +57,7 @@
           }
           Overrides {
             Name: "cs:CapsuleHeight"
-            Float: 210
+            Float: 310
           }
           Overrides {
             Name: "cs:CapsuleWidth"

@@ -17,15 +17,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17587880652047825598
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 17361666871864470786
   Name: "Line Full 008"
   PlatformAssetType: 9
@@ -206,15 +197,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12531876463208577149
-  Name: "Ring 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_002"
-  }
-}
-Assets {
   Id: 11826505342427441899
   Name: "Fantasy Ability Green 007"
   PlatformAssetType: 9
@@ -248,15 +230,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Blue_048"
-  }
-}
-Assets {
-  Id: 11001967573859652020
-  Name: "Cone - Truncated Hollow Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_hollow_004"
   }
 }
 Assets {
@@ -350,24 +323,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7115413583786975077
-  Name: "Cylinder - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
-  Id: 6804582409165656232
-  Name: "Star - Beveled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_star_beveled_001"
-  }
-}
-Assets {
   Id: 6711511664970626831
   Name: "Fantasy Ability Yellow 041"
   PlatformAssetType: 9
@@ -440,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5351428073291024820
-  Name: "Opaque Emissive"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxma_opaque_emissive"
-  }
-}
-Assets {
   Id: 5175556392310842599
   Name: "UI Gradient Rectangular 001"
   PlatformAssetType: 9
@@ -512,15 +458,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3329183888595046075
-  Name: "Plane Ring - One Sided Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_plane_ring_003"
-  }
-}
-Assets {
   Id: 3193982394305217901
   Name: "Button Click Press Core 01 SFX"
   PlatformAssetType: 7
@@ -557,30 +494,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2190343034748802179
-  Name: "Prism - 3-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_hq_001"
-  }
-}
-Assets {
   Id: 1535835570629998324
   Name: "BG Gradient 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
-  }
-}
-Assets {
-  Id: 1465738295828150913
-  Name: "Cube - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_hq_test_001"
   }
 }
 Assets {
