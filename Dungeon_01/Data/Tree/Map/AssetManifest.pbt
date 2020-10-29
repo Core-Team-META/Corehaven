@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18039984299850060191
+  Name: "Fantasy Human Guy"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 18033297229984528543
   Name: "Wood Planks Dark"
   PlatformAssetType: 2
@@ -329,6 +338,15 @@ Assets {
   PrimaryAsset {
     AssetType: "AudioAssetRef"
     AssetId: "sfx_ambience_nature_wind_01_Cue_ref"
+  }
+}
+Assets {
+  Id: 16132958878921067135
+  Name: "Sign Bracket - Square"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_square_001"
   }
 }
 Assets {
@@ -1817,6 +1835,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8232283764625892297
+  Name: "Human Gal"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_003_ref"
+  }
+}
+Assets {
   Id: 8221347909026897831
   Name: "Metal Iron 01"
   PlatformAssetType: 2
@@ -2741,6 +2768,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fantasy_bottle_005"
+  }
+}
+Assets {
+  Id: 3345942036635779138
+  Name: "Ring - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_002"
   }
 }
 Assets {

@@ -1,17 +1,17 @@
 ﻿function OnHighrock_Normal(player)
-	player:TransferToGame("df37e0/bossfight-highrock-normal")
+	player:TransferToGame("06acec/highrock-normal")
 end
 
 function OnHighrock_Hard(player)
-	player:TransferToGame("24d81c/bossfight-highrock-hard")
+	player:TransferToGame("e81f7b/highrock-hard")
 end
 
 function OnHighrock_Nightmare(player)
-	--player:TransferToGame("24d81c/bossfight-highrock-hard")
+	player:TransferToGame("bf5916/highrock-nightmare")
 end
 
 function OnHighrock_Infinite(player)
-	--player:TransferToGame("24d81c/bossfight-highrock-hard")
+	player:TransferToGame("d520cc/highrock-infinite")
 end
 
 Events.ConnectForPlayer("HighrockNormal", OnHighrock_Normal)

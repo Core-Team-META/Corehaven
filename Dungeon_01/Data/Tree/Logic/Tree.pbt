@@ -39491,7 +39491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 1
+      Int: 4
     }
   }
   Collidable_v2 {
@@ -39807,6 +39807,148 @@ Objects {
   Script {
     ScriptAsset {
       Id: 4490227092754756963
+    }
+  }
+}
+Objects {
+  Id: 5833149960075616685
+  Name: "CorehavenPortal"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11176579868672163906
+  ChildIds: 4046365573669094754
+  ChildIds: 11249042703904549576
+  ChildIds: 4579291495836714172
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4579291495836714172
+  Name: "CorehavenPortalServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 5833149960075616685
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger1"
+      ObjectReference {
+        SelfId: 11249042703904549576
+      }
+    }
+    Overrides {
+      Name: "cs:Trigger2"
+      ObjectReference {
+        SelfId: 4046365573669094754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5255428113101926435
+    }
+  }
+}
+Objects {
+  Id: 11249042703904549576
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -5473.45166
+      Y: -8414.32422
+      Z: -896.981689
+    }
+    Rotation {
+      Yaw: 17.880003
+    }
+    Scale {
+      X: 8.40662289
+      Y: 2.46458983
+      Z: 2.77849865
+    }
+  }
+  ParentId: 5833149960075616685
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Return to Corehaven"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 4046365573669094754
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: -8763.12402
+      Y: -10082.7852
+      Z: -896.981689
+    }
+    Rotation {
+    }
+    Scale {
+      X: 8.40662289
+      Y: 2.46458983
+      Z: 2.77849865
+    }
+  }
+  ParentId: 5833149960075616685
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Return to Corehaven"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
     }
   }
 }
