@@ -46,7 +46,7 @@ function Dialogs.RegisterDialogue()
     API.RegisterDialogueId(id)
     API.AddText(id, "Welcome back, {name}!", WAVE_ANIMATION)
     API.AddText(id, "It seems like you have already have the Corehaven map...", YES_ANIMATION)
-    API.AddText(id, "Hold [TAB] to access your map.", YES_ANIMATION)
+    API.AddText(id, "Hold [M] to access your map.", YES_ANIMATION)
     API.AddText(id, "Use it to navigate and explore Corehaven!", EXCITEMENT_ANIMATION)
 
     id = "MapRequest3"
@@ -55,7 +55,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Oh? You don't have the map of Corehaven?")
     API.AddText(id, "Here is your map!", YES_ANIMATION, {
         resource = "Map",
-        text = "You obtained a Map. Hold [TAB] to see the map."
+        text = "You obtained a Map. Hold [M] to see the map."
     })
     API.AddText(id, "Use it to navigate and explore Corehaven!")
     API.AddText(id, "Enjoy your day!", YES_ANIMATION)

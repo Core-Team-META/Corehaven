@@ -30,33 +30,20 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 -- nil OnBindingPressed(Player, string)
 -- Trigger the map when the map binding is pressed
 function OnBindingPressed(player, binding)
-	-- Only activate this spectator map on local player
-	if player ~= LOCAL_PLAYER then
-		return
-	end
-
-	if not LOCAL_PLAYER.isDead and binding == MAP_BINDING and not LOCAL_PLAYER:GetOverrideCamera() then
+	if binding == MAP_BINDING then
 		if CHECK_RESOURCE ~= "" and LOCAL_PLAYER:GetResource(CHECK_RESOURCE) == 0 then
 			return
 		end
-		LOCAL_PLAYER:SetOverrideCamera(CAMERA)
-		AS.SetIsSpectating(true)
-	end
-end
 
-function OnBindingReleased(player, binding)
-
-	-- Only activate this spectator map on local player
-	if player ~= LOCAL_PLAYER then
-		return
-	end
-
-	if binding == MAP_BINDING and LOCAL_PLAYER:GetOverrideCamera() == CAMERA then
-		LOCAL_PLAYER:ClearOverrideCamera()
-		AS.SetIsSpectating(false)
+		if AS.IsSpectating() then
+			LOCAL_PLAYER:ClearOverrideCamera()
+			AS.SetIsSpectating(false)
+		else
+			LOCAL_PLAYER:SetOverrideCamera(CAMERA)
+			AS.SetIsSpectating(true)
+		end
 	end
 end
 
 -- Initialize
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)

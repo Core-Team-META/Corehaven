@@ -49442,7 +49442,7 @@ Objects {
     }
     Overrides {
       Name: "cs:MapBinding"
-      String: "ability_extra_19"
+      String: "ability_extra_45"
     }
     Overrides {
       Name: "cs:SelfColor"
