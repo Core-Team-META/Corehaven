@@ -6,7 +6,7 @@ local ERUPTIONS_GROUP = script:GetCustomProperty("EruptionsGroup"):WaitForObject
 
 local RANGE = 0.0
 local COOLDOWN = 45.0
-local DAMAGE_RATE = 20.0
+local DAMAGE_RATE = 9.0
 local RADII = {1280.0, 2560.0, 3840.0, 7680.0}
 
 function GetPriority(npc, taskHistory)

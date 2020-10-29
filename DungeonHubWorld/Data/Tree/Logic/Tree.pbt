@@ -15536,7 +15536,10 @@ Objects {
     Overrides {
       Name: "cs:ItemHoverView"
       ObjectReference {
-        SelfId: 7234787419622939464
+        SelfId: 13346581817454862359
+        SubObjectId: 15693456971712313944
+        InstanceId: 14114169422922043012
+        TemplateId: 12272661979447068555
       }
     }
     Overrides {

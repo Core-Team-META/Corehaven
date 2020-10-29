@@ -5,7 +5,7 @@ local SUMMON_TEMPLATE2 = script:GetCustomProperty("SummonTemplate2")
 
 local RANGE = 0.0
 local COOLDOWN = 30.0
-local ARMY_SIZE = {2, 3, 4, 5, 6, 7, 8, 9}		-- Based on the number of players
+local ARMY_SIZE = {2, 2, 2, 3, 3, 3}			-- Based on the number of players
 
 local currentTasks = {}
 
