@@ -91,8 +91,8 @@ end
 local prevUnspentTalentPoints = nil
 local function UpdateTalentsButtonAnimationState()
     local unspentTalentPoints = TalentSelectorUtility.GetPlayerTalentPoints(LOCAL_PLAYER)
-    if unspentTalentPoints > 0 then
-        if unspentTalentPoints ~= prevUnspentTalentPoints then
+    if unspentTalentPoints > 0 and TalentSelectorUtility.DoesPlayerHaveUnlockableTalents(LOCAL_PLAYER) then
+        if unspentTalentPoints ~= prevUnspentTalentPoints  then
             CueButtonAnimation("Talents")
         end
     else
