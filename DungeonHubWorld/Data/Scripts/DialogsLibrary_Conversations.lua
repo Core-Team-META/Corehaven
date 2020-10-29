@@ -139,6 +139,14 @@ function Dialogs.RegisterDialogue()
     API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
 
+
+	-- Highrock welcome
+	id = "HighrockWelcome1"
+	API.RegisterDialogueId(id)
+    API.AddText(id, "{name}, a merchant ship has just returned from the imperial island outpost of Highrock with reports of disturbing happenings...", EXCITEMENT_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, head to the docks to hear the tale for yourself and see what can be done!", YES_ANIMATION)
+    
+	
     --Character Conversations
     id = "MerchantDialog"
     API.RegisterDialogueId(id)

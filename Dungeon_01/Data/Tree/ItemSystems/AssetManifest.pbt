@@ -125,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11318679105601761064
+  Name: "Fantasy Chest 003"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Chest_003"
+  }
+}
+Assets {
   Id: 10386822047949910996
   Name: "Fantasy Frame 006"
   PlatformAssetType: 9
