@@ -62,8 +62,9 @@ function CreateFrame()
 	data.frame.visibility = Visibility.FORCE_OFF
 	data.statusEffects = {}
 
+	local statusEffectsRoot = data.frame:GetCustomProperty("StatusEffectsRoot"):WaitForObject()
 	for i = 1, API_SE.MAX_STATUS_EFFECTS do
-		data.statusEffects[i] = World.SpawnAsset(STATUS_EFFECT_TEMPLATE, {parent = data.frame})
+		data.statusEffects[i] = World.SpawnAsset(STATUS_EFFECT_TEMPLATE, { parent = statusEffectsRoot })
 		data.statusEffects[i].visibility = Visibility.FORCE_OFF
 		data.statusEffects[i].x = 67 + 20 * i
 		data.statusEffects[i].y = -2
