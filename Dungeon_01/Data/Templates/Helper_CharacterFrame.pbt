@@ -18,6 +18,7 @@
         ParentId: 1312387798904016726
         ChildIds: 7240165554611634208
         ChildIds: 9798136144219531888
+        ChildIds: 4656527209423350475
         ChildIds: 13868316217705893989
         ChildIds: 9567290038585254143
         UnregisteredParameters {
@@ -55,6 +56,12 @@
             Name: "cs:LevelText"
             ObjectReference {
               SubObjectId: 756799231083354153
+            }
+          }
+          Overrides {
+            Name: "cs:StatusEffectsRoot"
+            ObjectReference {
+              SubObjectId: 4656527209423350475
             }
           }
           Overrides {
@@ -888,6 +895,53 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4656527209423350475
+        Name: "StatusEffectsRoot"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14107807894902521705
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 100
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
               }
             }
           }
