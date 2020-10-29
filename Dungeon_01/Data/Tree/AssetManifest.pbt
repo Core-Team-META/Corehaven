@@ -1,4 +1,17 @@
 ﻿Assets {
+  Id: 17289562316517180594
+  Name: "Corehaven Chronicles"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f2bdd2a7a062442dbe0644309d04835e"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 10161356557666659885
   Name: "Bush Leafy Low 01"
   PlatformAssetType: 1
@@ -32,19 +45,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_block_broken_04"
-  }
-}
-Assets {
-  Id: 5699326227047601811
-  Name: "BossFight"
-  PlatformAssetType: 23
-  NetReferenceAsset {
-    NetReference {
-      Key: "6129058b377d4cb98732ee8f3993e0ee"
-      Type {
-        Value: "mc:enetreferencetype:sharedpersistence"
-      }
-    }
   }
 }
 Assets {

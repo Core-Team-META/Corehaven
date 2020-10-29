@@ -45,7 +45,7 @@ local function ServerLoadInventory()
     if not playerData.inventoryHash then
         -- First time user.
         OWNER.serverUserData.inventory:LoadHash(nil)
-        OWNER.serverUserData.inventory:AddStarterItem(Database:CreateItemStarter())
+        OWNER.serverUserData.inventory:AddStarterItems(Database:CreateStarterItems())
         playerData.inventoryHash = OWNER.serverUserData.inventory:PersistentHash()
         Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
         startupMessageFmt = "Initializing inventory with beginner items: %s"

@@ -6879,7 +6879,7 @@ Objects {
   Camera {
     UseAsDefault: true
     AttachToLocalPlayer: true
-    InitialDistance: 800
+    InitialDistance: 1100
     IsDistanceAdjustable: true
     MinDistance: 200
     MaxDistance: 1400
@@ -33473,6 +33473,14 @@ Objects {
         Id: 4295659846319462830
       }
     }
+    Overrides {
+      Name: "cs:EnemyHealthBarColor"
+      Color {
+        R: 0.78
+        G: 0.0464900881
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -39491,7 +39499,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 4
+      Int: 1
     }
   }
   Collidable_v2 {

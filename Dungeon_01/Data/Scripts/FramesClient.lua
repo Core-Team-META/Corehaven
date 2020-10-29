@@ -8,6 +8,7 @@ local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 local FRAME_TEMPLATE = script:GetCustomProperty("FrameTemplate")
 local STATUS_EFFECT_TEMPLATE = script:GetCustomProperty("StatusEffectTemplate")
 local NPC_ICON = script:GetCustomProperty("NPCIcon")
+local ENEMY_HEALTH_BAR_COLOR = script:GetCustomProperty("EnemyHealthBarColor")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -17,6 +18,40 @@ local targetFrame = nil
 local targetTargetFrame = nil
 local partyFrames = {}		-- player -> frame
 local partyArray = {}		-- index -> player, for positioning
+
+function GetTargetTarget()
+	local target = API_T.GetTarget(LOCAL_PLAYER)
+
+	if target then
+		if target:IsA("Player") then
+			return API_T.GetTarget(target)
+		else
+			return API_NPC.GetTarget(target)
+		end
+	end
+end
+
+function OnFrameClick(frameData)
+	local target = API_T.GetTarget(LOCAL_PLAYER)
+	local targetTarget = GetTargetTarget()
+
+	-- One frame wait so this happens after we target an enemy if they are behind the frame
+	Task.Wait()
+
+	-- We have to set it back, because we just clicked in space and it got cleared
+	if frameData = targetFrame then
+		API_T.TrySetTarget(target, false)
+	elseif frameData == targetTargetFrame then
+		API_T.TrySetTarget(targetTarget, false)
+	else
+		for player, data in pairs(partyFrames) do
+			if frameData == data then
+				API_T.TrySetTarget(player, false)
+				return
+			end
+		end
+	end
+end
 
 function CreateFrame()
 	local data = {}
@@ -31,6 +66,9 @@ function CreateFrame()
 		data.statusEffects[i].y = -2
 	end
 
+	local hitButton = data.frame:GetCustomProperty("HitButton"):WaitForObject()
+	hitButton.clickedEvent:Connect(function() OnFrameClick(data) end)
+
 	return data
 end
 
@@ -41,62 +79,6 @@ end
 
 function DestroyFrame(data)
 	data.frame:Destroy()
-end
-
-function GetTargetTarget()
-	local target = API_T.GetTarget(LOCAL_PLAYER)
-
-	if target then
-		if target:IsA("Player") then
-			return API_T.GetTarget(target)
-		else
-			return API_NPC.GetTarget(target)
-		end
-	end
-end
-
-function IsCursorOverFrame(data)
-	if data.frame.visibility == Visibility.FORCE_OFF then
-		return false
-	end
-
-	local cursorPosition = UI.GetCursorPosition()
-
-	if cursorPosition.x < data.frame.x then
-		return false
-	end
-
-	if cursorPosition.y < data.frame.y then
-		return false
-	end
-
-	if cursorPosition.x > data.frame.x + data.frame.width then
-		return false
-	end
-
-	if cursorPosition.y > data.frame.y + data.frame.height then
-		return false
-	end
-
-	return true
-end
-
-function OnBindingPressed(player, binding)
-	-- One frame wait so this happens after we target an enemy if they are behind the frame
-	Task.Wait()
-
-	if binding == "ability_primary" and UI.IsCursorVisible() then
-		for player, data in pairs(partyFrames) do
-			if IsCursorOverFrame(data) then
-				API_T.TrySetTarget(player, false)
-				return
-			end
-		end
-
-		if IsCursorOverFrame(targetTargetFrame) then
-			API_T.TrySetTarget(GetTargetTarget(), false)
-		end
-	end
 end
 
 function OnPlayerJoined(player)
@@ -177,18 +159,30 @@ function UpdateFrame(data, character)
 			hitPoints = API_NPC.GetHitPoints(character)
 			healthFraction = hitPoints / API_NPC.GetMaxHitPoints(character)
 			data.frame:GetCustomProperty("Icon"):WaitForObject():SetImage(NPC_ICON)
-			fillColor = Color.RED
+			fillColor = ENEMY_HEALTH_BAR_COLOR
 		end
 
 		local distance = (character:GetWorldPosition() - LOCAL_PLAYER:GetWorldPosition()).size
 		local progressBar = data.frame:GetCustomProperty("ProgressBar"):WaitForObject()
+		local hitButton = data.frame:GetCustomProperty("HitButton"):WaitForObject()
+		local outOfRange = data.frame:GetCustomProperty("OutOfRange"):WaitForObject()
 
-		if distance > MAX_RANGE then
-			progressBar:SetFillColor(Color.Lerp(fillColor, Color.GRAY, 0.25))
-			progressBar:SetBackgroundColor(Color.BLACK)
+		fillColor = Color.New(fillColor)
+		fillColor.a = 0.9
+		progressBar:SetFillColor(fillColor)
+
+		-- The frame is unclickable when out of range, or if it is already targeted.
+		if distance > MAX_RANGE or data == targetData or API_T.GetTarget(LOCAL_PLAYER) == character then
+			hitButton.isInteractable = false
 		else
-			progressBar:SetFillColor(fillColor)
-			progressBar:SetBackgroundColor(Color.GRAY)
+			hitButton.isInteractable = true
+		end
+
+		-- Show the out-of-range indicator when appropriate.
+		if distance > MAX_RANGE then
+			outOfRange.visibility = Visibility.INHERIT
+		else
+			outOfRange.visibility = Visibility.FORCE_OFF
 		end
 
 		data.frame:GetCustomProperty("Name"):WaitForObject().text = nameText
@@ -241,7 +235,6 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 
 partyFrames[LOCAL_PLAYER] = CreateFrame()
 targetFrame = CreateFrame()

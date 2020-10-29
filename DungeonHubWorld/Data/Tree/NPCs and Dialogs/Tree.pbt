@@ -42,7 +42,6 @@ Objects {
   ChildIds: 16767020233002569981
   ChildIds: 16752543726214201114
   ChildIds: 6982920949181791987
-  ChildIds: 2896887305045938015
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -50,94 +49,6 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
-  }
-}
-Objects {
-  Id: 2896887305045938015
-  Name: "ShipPortalToHighrock"
-  Transform {
-    Location {
-      X: 10853.3779
-      Y: -267.104
-      Z: 55.2548828
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8355496857395536503
-  ChildIds: 6123949241654937218
-  ChildIds: 6431150580067901038
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 6431150580067901038
-  Name: "Trigger"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 5.79716778
-      Y: 11.7131214
-      Z: 4.63592911
-    }
-  }
-  ParentId: 2896887305045938015
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Trigger {
-    TeamSettings {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    TriggerShape_v2 {
-      Value: "mc:etriggershape:box"
-    }
-  }
-}
-Objects {
-  Id: 6123949241654937218
-  Name: "HighrockTriggerClient"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 2896887305045938015
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12546374921422237378
-    }
   }
 }
 Objects {

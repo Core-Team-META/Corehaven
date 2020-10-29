@@ -2,7 +2,7 @@
 local TRIGGER_2 = script:GetCustomProperty("Trigger2"):WaitForObject()
 
 function OnInteracted(trigger, player)
-	player:TransferToGame("2e9f58/corehaven-hidden")
+	player:TransferToGame("a91218/corehaven")
 end
 
 TRIGGER_1.interactedEvent:Connect(OnInteracted)
