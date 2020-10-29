@@ -39,13 +39,16 @@ function OnFrameClick(frameData)
 	Task.Wait()
 
 	-- We have to set it back, because we just clicked in space and it got cleared
-	if frameData = targetFrame then
+	if frameData == targetFrame then
+		print("A")
 		API_T.TrySetTarget(target, false)
 	elseif frameData == targetTargetFrame then
+		print("B")
 		API_T.TrySetTarget(targetTarget, false)
 	else
 		for player, data in pairs(partyFrames) do
 			if frameData == data then
+				print("C")
 				API_T.TrySetTarget(player, false)
 				return
 			end
@@ -170,13 +173,6 @@ function UpdateFrame(data, character)
 		fillColor = Color.New(fillColor)
 		fillColor.a = 0.9
 		progressBar:SetFillColor(fillColor)
-
-		-- The frame is unclickable when out of range, or if it is already targeted.
-		if distance > MAX_RANGE or data == targetData or API_T.GetTarget(LOCAL_PLAYER) == character then
-			hitButton.isInteractable = false
-		else
-			hitButton.isInteractable = true
-		end
 
 		-- Show the out-of-range indicator when appropriate.
 		if distance > MAX_RANGE then
