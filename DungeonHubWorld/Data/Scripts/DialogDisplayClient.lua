@@ -58,12 +58,12 @@ end
 function ToggleUIInteraction(toggle)
     if toggle then
         PANEL.visibility = Visibility.INHERIT
-        UI.SetCursorVisible(true)
-        UI.SetCanCursorInteractWithUI(true)
+        --UI.SetCursorVisible(true)
+        --UI.SetCanCursorInteractWithUI(true)
     else
         PANEL.visibility = Visibility.FORCE_OFF
-        UI.SetCursorVisible(false)
-        UI.SetCanCursorInteractWithUI(false)
+        --UI.SetCursorVisible(false)
+        --UI.SetCanCursorInteractWithUI(false)
     end
 end
 

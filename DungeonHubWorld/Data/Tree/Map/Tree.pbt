@@ -1,6 +1,182 @@
 ﻿Name: "Map"
 RootId: 13588444122091554519
 Objects {
+  Id: 14400538138442847348
+  Name: "Spawns"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13588444122091554519
+  ChildIds: 10007746671391953719
+  ChildIds: 9190879599892950805
+  ChildIds: 10438442740271180503
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10438442740271180503
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -9395.23828
+      Y: 711.805664
+      Z: -6241.98
+    }
+    Rotation {
+      Pitch: 5.91147375
+      Yaw: 26.6214771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14400538138442847348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 9190879599892950805
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -9596.95703
+      Y: 473.504028
+      Z: -6241.98
+    }
+    Rotation {
+      Pitch: 5.91147375
+      Yaw: 26.6215115
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14400538138442847348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 10007746671391953719
+  Name: "Spawn Point"
+  Transform {
+    Location {
+      X: -9631.76855
+      Y: 809.148254
+      Z: -6241.98
+    }
+    Rotation {
+      Pitch: 5.91146708
+      Yaw: 26.6215439
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14400538138442847348
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  PlayerSpawnPoint {
+    TeamInt: 1
+    PlayerScaleMultiplier: 1
+  }
+}
+Objects {
+  Id: 15440326544402457957
+  Name: "Atmospherics"
+  Transform {
+    Location {
+      X: 166.703064
+      Y: 1983.6123
+      Z: -7264.35205
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13588444122091554519
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Atmospherics"
+  }
+}
+Objects {
+  Id: 16816246272091159722
+  Name: "Audio"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 13588444122091554519
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Audio"
+  }
+}
+Objects {
   Id: 9171899922935109293
   Name: "WIP"
   Transform {

@@ -1900,7 +1900,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "Curse your target. When the curse expires, it deals moderate damage to the target and leaps to another nearby target."
+      String: "Curse your target. When the curse expires, it deals moderate damage to the target and may leap to another nearby target."
     }
     Overrides {
       Name: "cs:AbilityName1"

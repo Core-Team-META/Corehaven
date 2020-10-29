@@ -1,7 +1,7 @@
 ﻿Name: "Map Post Processing"
-RootId: 2557295767956159509
+RootId: 17801647813682353850
 Objects {
-  Id: 16300268363664765680
+  Id: 6763572587931382628
   Name: "Skylight Adjustment Volume"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 50
     }
   }
-  ParentId: 2557295767956159509
+  ParentId: 17801647813682353850
   UnregisteredParameters {
     Overrides {
       Name: "bp:Skylight Object"
@@ -44,7 +44,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11882263396852332907
+  Id: 17441433289376019402
   Name: "Sun Adjustment Volume"
   Transform {
     Location {
@@ -57,7 +57,7 @@ Objects {
       Z: 50
     }
   }
-  ParentId: 2557295767956159509
+  ParentId: 17801647813682353850
   UnregisteredParameters {
     Overrides {
       Name: "bp:Sun Object"
@@ -93,7 +93,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6644813094747958605
+  Id: 18210439346095562060
   Name: "Fog Adjustment Volume"
   Transform {
     Location {
@@ -106,7 +106,7 @@ Objects {
       Z: 50
     }
   }
-  ParentId: 2557295767956159509
+  ParentId: 17801647813682353850
   UnregisteredParameters {
     Overrides {
       Name: "bp:Fog Object"

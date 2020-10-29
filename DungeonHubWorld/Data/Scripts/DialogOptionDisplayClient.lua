@@ -8,7 +8,7 @@ function OnClicked(whichButton)
     end
     -- For other scripts
     if ROOT.clientUserData.eventName then
-    	Events.BroadcastToServer(ROOT.clientUserData.eventName)
+    	Events.Broadcast(ROOT.clientUserData.eventName)
     end
 end
 

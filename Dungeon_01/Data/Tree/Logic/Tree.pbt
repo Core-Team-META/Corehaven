@@ -2404,7 +2404,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "On expiration, deals damage and leaps to a nearby target"
+      String: "On expiration, deals damage and may leap to a nearby target"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -4600,7 +4600,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Description"
-      String: "On expiration, deals damage and leaps to a nearby target"
+      String: "On expiration, deals damage and may leap to a nearby target"
     }
     Overrides {
       Name: "cs:EffectTemplate"
@@ -31300,7 +31300,7 @@ Objects {
           Vector {
             X: -7620.37305
             Y: -4871.9375
-            Z: -299.18457
+            Z: -328.391296
           }
         }
         Overrides {
@@ -39491,7 +39491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 3
+      Int: 1
     }
   }
   Collidable_v2 {

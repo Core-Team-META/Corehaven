@@ -26,15 +26,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18139326084152140628
-  Name: "Pyramid - 4-Sided Hollow Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_4_sided_hollow_thin_001"
-  }
-}
-Assets {
   Id: 18097083884483661581
   Name: "Crescent - 02"
   PlatformAssetType: 1
@@ -509,15 +500,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_pillar_001_top"
-  }
-}
-Assets {
-  Id: 12817510901257393900
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
   }
 }
 Assets {
@@ -1034,15 +1016,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7115413583786975077
-  Name: "Cylinder - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
   Id: 7036641726562825986
   Name: "Arch Fancy Peaked 6m"
   PlatformAssetType: 1
@@ -1085,15 +1058,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fire_volume_vfx"
-  }
-}
-Assets {
-  Id: 6151916990070556227
-  Name: "2D Basic Shapes Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "dcl_basicShapes"
   }
 }
 Assets {
@@ -1241,15 +1205,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4565526659431827540
-  Name: "Large Wood Board 8m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_large_board_6m"
-  }
-}
-Assets {
   Id: 4554675689535610447
   Name: "Text 03: T"
   PlatformAssetType: 1
@@ -1319,15 +1274,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_sword_001"
-  }
-}
-Assets {
-  Id: 3575013281856575933
-  Name: "Ring - Quarter Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_torus_003"
   }
 }
 Assets {

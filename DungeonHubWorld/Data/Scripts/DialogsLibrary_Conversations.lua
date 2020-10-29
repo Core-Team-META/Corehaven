@@ -120,10 +120,7 @@ function Dialogs.RegisterDialogue()
     id = "WecomeDialog7"
     API.RegisterDialogueId(id)
     API.AddText(id, "Training Field will help you practice your skills to prepare for encountering dangerous enemies!", EXCITEMENT_ANIMATION)
-    API.AddText(id, "...", CRY_ANIMATION)
-    API.AddText(id, "Unfortunately, my friend, the owner of that place has not returned to Corehaven yet.", CRY_ANIMATION)
-    API.AddText(id, "He set sail on a Galleon to embark on an adventure to defeat monsters...", CRY_ANIMATION)
-    API.AddText(id, "Once he returns, the Training Field will be available as usual... Hopefully.", TALK_ANIMATION)
+    API.AddText(id, "Head over and test your skills against the training dummies or targets in the area.", TALK_ANIMATION)
     API.AddText(id, "Would... Would you like to know about anything else?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
@@ -285,8 +282,7 @@ function Dialogs.RegisterDialogue()
 
     id = "Stranger2"
     API.RegisterDialogueId(id)
-    API.AddText(id, 'We used to have someone here who teaches us the way of fighting...')
-    API.AddText(id, 'But that person left Corehaven and set sail on a Galleon to far away islands.', TALK_ANIMATION)
+    API.AddText(id, 'You are free to use our training dummies and targets to practice your skills.', TALK_ANIMATION)
 
     id = "Stranger3"
     API.RegisterDialogueId(id)
@@ -316,9 +312,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "I fear a necromancer's cult have taken over the town and have unleashed the ancient evil known as Zetalan.", EXCITEMENT_ANIMATION)
     API.AddText(id, "I can give you passage to Highrock, though for the safety of my ship and crew we will anchor off-shore to await your return.", TALK_ANIMATION)
 
-    API.AddOption(id, "Travel to Highrock (Hard)", "End", "HighrockHard")
-    API.AddOption(id, "Travel to Highrock (Normal)", "End", "HighrockNormal")
-    API.AddOption(id, "Travel to Highrock (Easy)", "End", "HighrockEasy")
+    API.AddOption(id, "Travel to Highrock", "End", "HighrockPortal")
     API.AddOption(id, "No thanks", "End")
 
     id = "End"
