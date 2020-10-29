@@ -316,7 +316,7 @@ function Dialogs.RegisterDialogue()
     -- Ship to highrock
     id = "Highrock1"
     API.RegisterDialogueId(id)
-    API.AddText(id, "I swear on my fortune, the dead have risen at Highrock! The citizenry and guards alike seem as if possessed.", TALK_ANIMATION)
+    API.AddText(id, "I swear on my fortune, the dead have risen at Highrock! The citizenry and guards seem as if possessed.", TALK_ANIMATION)
     API.AddText(id, "I fear a necromancer's cult have taken over the town and have unleashed the ancient evil known as Zetalan.", EXCITEMENT_ANIMATION)
     API.AddText(id, "I can give you passage to Highrock, though for the safety of my ship and crew we will anchor off-shore to await your return.", TALK_ANIMATION)
 

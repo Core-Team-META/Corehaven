@@ -2495,12 +2495,12 @@ Objects {
   Name: "Map"
   Transform {
     Location {
-      X: -7584.25391
-      Y: -6101.62
-      Z: 3836.34766
+      X: 863.072388
+      Y: -3408.35938
+      Z: 3197.66553
     }
     Rotation {
-      Yaw: 26.4806595
+      Yaw: 107.574448
     }
     Scale {
       X: 0.672988772
@@ -2701,12 +2701,12 @@ Objects {
   Name: "Map"
   Transform {
     Location {
-      X: -7692.51416
-      Y: -6146.96777
-      Z: 3836.34766
+      X: 891.113159
+      Y: -3522.33496
+      Z: 3197.66553
     }
     Rotation {
-      Yaw: 45.4300461
+      Yaw: 126.523834
     }
     Scale {
       X: 0.672988772
@@ -2907,11 +2907,12 @@ Objects {
   Name: "Map"
   Transform {
     Location {
-      X: -7806.74707
-      Y: -6166.74609
-      Z: 3836.34766
+      X: 892.967407
+      Y: -3638.25342
+      Z: 3197.66553
     }
     Rotation {
+      Yaw: 81.0922394
     }
     Scale {
       X: 0.672988772
@@ -4781,12 +4782,12 @@ Objects {
   Name: "Table Assembled"
   Transform {
     Location {
-      X: -7275
-      Y: -1600
-      Z: -6207.48633
+      X: 1292.56641
+      Y: 1030.23523
+      Z: -6846.16846
     }
     Rotation {
-      Yaw: 16.2319736
+      Yaw: 97.3256607
     }
     Scale {
       X: 0.810434

@@ -42,6 +42,7 @@ Objects {
   ChildIds: 16767020233002569981
   ChildIds: 16752543726214201114
   ChildIds: 6982920949181791987
+  ChildIds: 2896887305045938015
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -49,6 +50,94 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 2896887305045938015
+  Name: "ShipPortalToHighrock"
+  Transform {
+    Location {
+      X: 10853.3779
+      Y: -267.104
+      Z: 55.2548828
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8355496857395536503
+  ChildIds: 6123949241654937218
+  ChildIds: 6431150580067901038
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 6431150580067901038
+  Name: "Trigger"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.79716778
+      Y: 11.7131214
+      Z: 4.63592911
+    }
+  }
+  ParentId: 2896887305045938015
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+}
+Objects {
+  Id: 6123949241654937218
+  Name: "HighrockTriggerClient"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2896887305045938015
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12546374921422237378
+    }
   }
 }
 Objects {
@@ -5724,7 +5813,7 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Ship Merchant"
+          String: "Merchant Prince"
         }
         Overrides {
           Name: "cs:AnimatedMesh"
@@ -8534,6 +8623,15 @@ Objects {
   ParentId: 1419593537304911339
   TemplateInstance {
     ParameterOverrideMap {
+      key: 3484906034933022225
+      value {
+        Overrides {
+          Name: "PlayOnStartAnimation"
+          String: "unarmed_wave"
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 7488979656780450769
       value {
         Overrides {
@@ -8543,7 +8641,7 @@ Objects {
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -153.997131
+            Yaw: 169.89006
           }
         }
         Overrides {
@@ -8557,9 +8655,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3633.80273
-            Y: 124.930542
-            Z: 1501.06934
+            X: 6526.10059
+            Y: -557.527771
+            Z: 995.215332
           }
         }
       }
@@ -8597,15 +8695,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3673.57813
-            Y: 106.923706
-            Z: 1530
+            X: 6517.31
+            Y: -561.725342
+            Z: 1024.146
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -58.7746277
+            Yaw: -77.6147461
           }
         }
         Overrides {
@@ -8675,12 +8773,12 @@ Objects {
   Name: "Human Gal"
   Transform {
     Location {
-      X: 1490
-      Y: -1960
-      Z: 8060
+      X: 10173.0898
+      Y: 871.502686
+      Z: 7418.35449
     }
     Rotation {
-      Yaw: 89.9999542
+      Yaw: -177.157288
     }
     Scale {
       X: 1
@@ -8773,15 +8871,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 1430
-            Y: -1765
-            Z: 7985
+            X: 9981.30664
+            Y: 801.904541
+            Z: 7343.35449
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: 15.0001259
+            Yaw: 107.843094
           }
         }
         Overrides {
@@ -8790,7 +8888,7 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Elora"
+          String: "Map Maker"
         }
       }
     }

@@ -12625,7 +12625,7 @@ Objects {
     AddSizeToParentIfUsingParentSize: true
     UseParentHeight: true
     Text {
-      Label: "Ship Merchant"
+      Label: "Merchant Prince"
       Color {
         R: 1
         G: 0.993791401
