@@ -21,15 +21,15 @@ local STAT_ICONS = {
 }
 
 local ITEM_STAT_FORMATS = {
-    Health          = "+%d",
-    HealthPercent   = "+%d%%",
-    Defense         = "+%d",
-    Attack          = "+%d",
-    Magic           = "+%d",
-    CritChance      = "+%d%%",
-    Haste           = "+%d",
-    CDR             = "+%d",
-    Tenacity        = "+%d",
+    Health          = "%d",
+    HealthPercent   = "%d%%",
+    Defense         = "%d",
+    Attack          = "%d",
+    Magic           = "%d",
+    CritChance      = "%d%%",
+    Haste           = "%d",
+    CDR             = "%d",
+    Tenacity        = "%d",
 }
 
 local PLAYER_STAT_FORMATS = {

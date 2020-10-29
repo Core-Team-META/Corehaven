@@ -413,7 +413,8 @@ function KillNPC(npc, skipLoot)
 					end
 
 					if player.serverUserData.statSheet then
-						player.serverUserData.statSheet:AddExperience(npcData.experience)
+						local multiplier = API_DS.GetExperienceMultiplier()
+						player.serverUserData.statSheet:AddExperience(npcData.experience * multiplier)
 					end
 				end
 			end

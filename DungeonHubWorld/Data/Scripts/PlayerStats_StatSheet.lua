@@ -37,9 +37,9 @@ setmetatable(StatSheet.EXPERIENCE_CURVE, {
     __index = function(self, level)
         local sum = 0
         for x=1,level-1 do
-            local levelCost = math.floor(x + 1600 * 2^(x/3))
+            local levelCost = math.floor(x + 1200 * 2^(x/2))
             if x < 5 then
-                levelCost = levelCost / 2.0
+                levelCost = levelCost / 1.5
             end
             sum = sum + levelCost
         end
