@@ -161,12 +161,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11880653727403929441
+  Name: "Fantasy Scroll 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Equip_Scroll_001"
+  }
+}
+Assets {
   Id: 11819073848126166701
   Name: "Fantasy Ability Yellow 026"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Yellow_026"
+  }
+}
+Assets {
+  Id: 11636672077374519341
+  Name: "BG Flat 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundNoOutline_015"
   }
 }
 Assets {
@@ -206,21 +224,21 @@ Assets {
   }
 }
 Assets {
+  Id: 10839785698037129403
+  Name: "Frame Outline Thin 006"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameOutline_015"
+  }
+}
+Assets {
   Id: 10536251484879582863
   Name: "Frame Beveled 004"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_022"
-  }
-}
-Assets {
-  Id: 10065240024233336575
-  Name: "Frame Outline Thin 004"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameOutline_022"
   }
 }
 Assets {
@@ -401,15 +419,6 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Yellow_018"
-  }
-}
-Assets {
-  Id: 3697591994187435780
-  Name: "Icon Close"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "Icon_Close"
   }
 }
 Assets {

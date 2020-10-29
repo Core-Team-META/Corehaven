@@ -8238,6 +8238,17 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 12079097343166185964
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            A: 0.9
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 7474894078038683405
     }
@@ -11483,7 +11494,7 @@ Objects {
         Overrides {
           Name: "Color"
           Color {
-            A: 0.8
+            A: 0.9
           }
         }
         Overrides {
@@ -14783,6 +14794,7 @@ Objects {
   }
   ParentId: 17155143211693072178
   ChildIds: 7210290309032103060
+  ChildIds: 8199524007086249997
   ChildIds: 16777731965664047550
   ChildIds: 14419343135262384269
   ChildIds: 4239841458936430252
@@ -15303,6 +15315,17 @@ Objects {
       }
     }
     ParameterOverrideMap {
+      key: 12079097343166185964
+      value {
+        Overrides {
+          Name: "Color"
+          Color {
+            A: 0.9
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
       key: 12360867929932744375
       value {
         Overrides {
@@ -15324,6 +15347,111 @@ Objects {
     }
     TemplateAsset {
       Id: 7474894078038683405
+    }
+  }
+}
+Objects {
+  Id: 8199524007086249997
+  Name: "BackgroundImageClip"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14941095892963387303
+  ChildIds: 5509545445089105986
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 100
+    Height: 100
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    UseParentWidth: true
+    UseParentHeight: true
+    Panel {
+      IsClipping: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topleft"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5509545445089105986
+  Name: "BackgroundImage"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 8199524007086249997
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 600
+    Height: 600
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Image {
+      Brush {
+        Id: 11318679105601761064
+      }
+      Color {
+        R: 1
+        G: 1
+        B: 1
+        A: 1
+      }
+      TeamSettings {
+      }
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:middlecenter"
+        }
+      }
     }
   }
 }
@@ -15499,6 +15627,22 @@ Objects {
     Overrides {
       Name: "cs:TalentsViewHotkey"
       String: "ability_extra_44"
+    }
+    Overrides {
+      Name: "cs:HelpView"
+      ObjectReference {
+        SelfId: 18166665255006619493
+      }
+    }
+    Overrides {
+      Name: "cs:HelpViewButton"
+      ObjectReference {
+        SelfId: 15926942192229669917
+      }
+    }
+    Overrides {
+      Name: "cs:HelpViewHotkey"
+      String: "ability_extra_50"
     }
     Overrides {
       Name: "cs:SFX_InventoryOpen"
