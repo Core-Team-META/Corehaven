@@ -15,9 +15,11 @@
             Z: 1
           }
         }
-        ParentId: 5128502007375239643
+        ParentId: 1312387798904016726
         ChildIds: 7240165554611634208
         ChildIds: 9798136144219531888
+        ChildIds: 13868316217705893989
+        ChildIds: 9567290038585254143
         UnregisteredParameters {
           Overrides {
             Name: "cs:Name"
@@ -53,6 +55,18 @@
             Name: "cs:LevelText"
             ObjectReference {
               SubObjectId: 756799231083354153
+            }
+          }
+          Overrides {
+            Name: "cs:HitButton"
+            ObjectReference {
+              SubObjectId: 13868316217705893989
+            }
+          }
+          Overrides {
+            Name: "cs:OutOfRange"
+            ObjectReference {
+              SubObjectId: 9567290038585254143
             }
           }
         }
@@ -684,6 +698,7 @@
         Control {
           Width: 45
           Height: 45
+          UIY: 2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -876,6 +891,196 @@
             TargetAnchor {
               Anchor {
                 Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13868316217705893989
+        Name: "HitButton"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14107807894902521705
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.2
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.2
+            }
+            DisabledColor {
+            }
+            Brush {
+              Id: 841534158063459245
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9567290038585254143
+        Name: "OutOfRange"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14107807894902521705
+        ChildIds: 15983883221410570054
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 200
+          Height: 200
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.7
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15983883221410570054
+        Name: "Message"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 9567290038585254143
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 225
+          Height: 60
+          UIX: 1
+          UIY: -1
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Text {
+            Label: "out of range"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.7
+            }
+            Size: 18
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topright"
               }
             }
           }
