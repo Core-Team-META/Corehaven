@@ -7,7 +7,7 @@
       RootId: 11497261407930304372
       Objects {
         Id: 11497261407930304372
-        Name: "PortLantern"
+        Name: "PortLantern_spherical_single"
         Transform {
           Scale {
             X: 1
@@ -47,34 +47,15 @@
         ParentId: 11497261407930304372
         ChildIds: 10968202955083895819
         ChildIds: 8293512620066237289
-        ChildIds: 1385000087401267679
-        ChildIds: 13271672602630603615
-        ChildIds: 8407576524398639270
-        ChildIds: 7433805353827278433
         ChildIds: 12398987303668073952
         ChildIds: 1838239529982398962
-        ChildIds: 9200037077789014764
-        ChildIds: 6547556938886633371
         ChildIds: 11625927710863295768
-        ChildIds: 15181265548827738055
-        ChildIds: 8269947425706726388
-        ChildIds: 11264080302281353667
-        ChildIds: 9389696908446070136
-        ChildIds: 7820108812405444103
-        ChildIds: 17470127252936011500
-        ChildIds: 3253570023718904936
-        ChildIds: 15539924397628083972
         ChildIds: 10519581298435651293
         ChildIds: 3172729227655209224
-        ChildIds: 5388701919471908711
         ChildIds: 17519943254108031210
-        ChildIds: 15441199446576118963
         ChildIds: 11866806177078836831
         ChildIds: 6926380490004545578
         ChildIds: 4255516843896448032
-        ChildIds: 10686770278380438601
-        ChildIds: 4456686130723015945
-        ChildIds: 11024319572215379608
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -164,234 +145,6 @@
         CoreMesh {
           MeshAsset {
             Id: 7602223482704169180
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 1385000087401267679
-        Name: "rope"
-        Transform {
-          Location {
-            X: 12.9672852
-            Y: -4.14489746
-            Z: 577.429199
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 13271672602630603615
-        Name: "rope"
-        Transform {
-          Location {
-            X: 10.6118164
-            Y: -4.14489746
-            Z: 577.591797
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8407576524398639270
-        Name: "rope"
-        Transform {
-          Location {
-            X: 15.8388672
-            Y: -4.14489746
-            Z: 577.232422
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7433805353827278433
-        Name: "rope"
-        Transform {
-          Location {
-            X: 6.71875
-            Y: -4.14489746
-            Z: 577.858398
-          }
-          Rotation {
-            Pitch: -79.5356
-            Yaw: 179.999908
-            Roll: -179.999802
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -518,118 +271,6 @@
         }
       }
       Objects {
-        Id: 9200037077789014764
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 574.963867
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 6547556938886633371
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 578.532227
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 11625927710863295768
         Name: "rope"
         Transform {
@@ -646,461 +287,6 @@
             X: 0.220040575
             Y: 0.220040515
             Z: 0.273529291
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15181265548827738055
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 570.868164
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 8269947425706726388
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 587.644531
-          }
-          Rotation {
-            Pitch: 8.32783699
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11264080302281353667
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 565.649902
-          }
-          Rotation {
-            Pitch: 17.0163975
-            Yaw: -179.999939
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9389696908446070136
-        Name: "rope"
-        Transform {
-          Location {
-            X: 37.7158203
-            Y: -4.14489746
-            Z: 575.730957
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7820108812405444103
-        Name: "rope"
-        Transform {
-          Location {
-            X: 40.7524414
-            Y: -4.14489746
-            Z: 575.522461
-          }
-          Rotation {
-            Pitch: -74.0678329
-            Yaw: 179.999954
-            Roll: -179.999893
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 17470127252936011500
-        Name: "rope"
-        Transform {
-          Location {
-            X: -123.815918
-            Y: -4.1449585
-            Z: 586.820313
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 3253570023718904936
-        Name: "rope"
-        Transform {
-          Location {
-            X: -120.944824
-            Y: -4.1449585
-            Z: 586.62207
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15539924397628083972
-        Name: "rope"
-        Transform {
-          Location {
-            X: -127.321289
-            Y: -4.1449585
-            Z: 585.292
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.189890653
-            Y: 0.189890653
-            Z: 0.189890653
           }
         }
         ParentId: 6156279244924452981
@@ -1239,63 +425,6 @@
         }
       }
       Objects {
-        Id: 5388701919471908711
-        Name: "rope"
-        Transform {
-          Location {
-            X: -44.0844727
-            Y: -4.1449585
-            Z: 580.59668
-          }
-          Rotation {
-            Pitch: -86.0711899
-            Yaw: 179.99971
-            Roll: -179.99971
-          }
-          Scale {
-            X: 0.228553712
-            Y: 0.228553712
-            Z: 0.228553712
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 17519943254108031210
         Name: "rope"
         Transform {
@@ -1308,63 +437,6 @@
             Pitch: -86.0711899
             Yaw: 179.99971
             Roll: -179.99971
-          }
-          Scale {
-            X: 0.250235707
-            Y: 0.236537933
-            Z: 0.236538708
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15441199446576118963
-        Name: "rope"
-        Transform {
-          Location {
-            X: -36.3330078
-            Y: -4.1449585
-            Z: 578.3125
-          }
-          Rotation {
-            Pitch: -79.6708908
-            Yaw: 179.999878
-            Roll: -179.999878
           }
           Scale {
             X: 0.250235707
@@ -1580,174 +652,6 @@
         }
       }
       Objects {
-        Id: 10686770278380438601
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 529.52832
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.235995397
-            Y: 0.235995397
-            Z: 0.235995397
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 4456686130723015945
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 525.432617
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 11024319572215379608
-        Name: "rope"
-        Transform {
-          Location {
-            X: 27.140625
-            Y: 6.92230225
-            Z: 537.055176
-          }
-          Rotation {
-            Yaw: -179.999954
-            Roll: -172.757446
-          }
-          Scale {
-            X: 0.220040575
-            Y: 0.220040575
-            Z: 0.220040575
-          }
-        }
-        ParentId: 6156279244924452981
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 3090596827184957478
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 6.39587927
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 9650630088804471075
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 8545045838586853368
         Name: "Sphere_Lantern"
         Transform {
@@ -1777,17 +681,13 @@
         ChildIds: 739596417379945109
         ChildIds: 7584669403271880736
         ChildIds: 6793847038575432498
-        ChildIds: 16545412253637256899
         ChildIds: 13712982377469910906
         ChildIds: 12272870908979771823
         ChildIds: 12693823324418941865
         ChildIds: 17369565716019055350
-        ChildIds: 4769216918712373080
         ChildIds: 9582315153931122590
         ChildIds: 690646469470278381
-        ChildIds: 15437561079869418272
         ChildIds: 14283644460314504817
-        ChildIds: 9489963681089763612
         ChildIds: 1926104227774863822
         ChildIds: 2565921291171830177
         ChildIds: 11208648509225689961
@@ -1943,17 +843,17 @@
         Name: "Cube - Polished"
         Transform {
           Location {
-            X: 0.0109404158
-            Y: -0.578762889
-            Z: 126.342834
+            X: -0.00613189489
+            Y: -0.599778593
+            Z: 123.55468
           }
           Rotation {
             Yaw: 90.0000153
           }
           Scale {
-            X: 0.230653569
-            Y: 0.230653211
-            Z: 0.0560910366
+            X: 0.230648786
+            Y: 0.23065713
+            Z: 0.0742950886
           }
         }
         ParentId: 8545045838586853368
@@ -2249,9 +1149,9 @@
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0112073375
-            Y: 1.32361722
-            Z: 36.7879257
+            X: 0.0337859914
+            Y: 1.35151362
+            Z: 40.4753494
           }
           Rotation {
           }
@@ -2372,75 +1272,13 @@
         }
       }
       Objects {
-        Id: 16545412253637256899
-        Name: "Cylinder - Chamfered"
-        Transform {
-          Location {
-            X: 0.0107421875
-            Y: -0.578704834
-            Z: 138.98584
-          }
-          Rotation {
-            Pitch: 4.09811328e-05
-            Yaw: 2.7320717e-05
-            Roll: -6.10351563e-05
-          }
-          Scale {
-            X: 0.18511638
-            Y: 0.185116336
-            Z: 0.129779741
-          }
-        }
-        ParentId: 8545045838586853368
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.276041657
-              G: 0.276041657
-              B: 0.276041657
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11285278799348334020
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 13712982377469910906
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0107421875
-            Y: -0.578704834
-            Z: 136.128906
+            X: 0.0106871864
+            Y: -0.578414
+            Z: 136.128983
           }
           Rotation {
             Pitch: 4.09811328e-05
@@ -2448,9 +1286,9 @@
             Roll: 179.999939
           }
           Scale {
-            X: 0.18511638
-            Y: 0.185116336
-            Z: 0.129779741
+            X: 0.185108542
+            Y: 0.185116157
+            Z: 0.161861256
           }
         }
         ParentId: 8545045838586853368
@@ -2500,9 +1338,9 @@
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0107421875
-            Y: -0.578735352
-            Z: 141.693848
+            X: -0.00906633213
+            Y: -0.603082597
+            Z: 138.458527
           }
           Rotation {
             Pitch: 4.09811328e-05
@@ -2618,9 +1456,9 @@
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0111704646
-            Y: -0.578729033
-            Z: 27.126194
+            X: 0.0116178533
+            Y: -0.579081297
+            Z: 28.9146309
           }
           Rotation {
             Pitch: 1.36603776e-05
@@ -2676,75 +1514,13 @@
         }
       }
       Objects {
-        Id: 4769216918712373080
-        Name: "Cylinder - Chamfered"
-        Transform {
-          Location {
-            X: 0.0109223966
-            Y: -0.578630507
-            Z: 27.7902908
-          }
-          Rotation {
-            Pitch: 5.46415104e-05
-            Yaw: 2.72139987e-05
-            Roll: -6.10351563e-05
-          }
-          Scale {
-            X: 0.18511638
-            Y: 0.185116336
-            Z: 0.129779741
-          }
-        }
-        ParentId: 8545045838586853368
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.276041657
-              G: 0.276041657
-              B: 0.276041657
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11285278799348334020
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 9582315153931122590
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0106771393
-            Y: -0.578820169
-            Z: 24.9332943
+            X: 0.0593283847
+            Y: -0.5185467
+            Z: 35.9922142
           }
           Rotation {
             Pitch: 5.46415104e-05
@@ -2752,9 +1528,9 @@
             Roll: 179.999939
           }
           Scale {
-            X: 0.18511638
-            Y: 0.185116336
-            Z: 0.129779741
+            X: 0.185114041
+            Y: 0.185112581
+            Z: 0.308772504
           }
         }
         ParentId: 8545045838586853368
@@ -2804,9 +1580,9 @@
         Name: "Cylinder - Chamfered"
         Transform {
           Location {
-            X: 0.0112242261
-            Y: -0.578749418
-            Z: 26.3669033
+            X: 0.0108224303
+            Y: -0.578426838
+            Z: 28.6427364
           }
           Rotation {
             Pitch: 1.36603776e-05
@@ -2850,75 +1626,6 @@
         CoreMesh {
           MeshAsset {
             Id: 2934774279078928789
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 15437561079869418272
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: 0.011294662
-            Y: -0.578567445
-            Z: 128.008759
-          }
-          Rotation {
-            Yaw: 89.9999542
-            Roll: 2.73261037e-07
-          }
-          Scale {
-            X: 0.243295968
-            Y: 0.24329567
-            Z: 0.0239947345
-          }
-        }
-        ParentId: 8545045838586853368
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.344751447
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.373470783
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.729166687
-              G: 0.729166687
-              B: 0.729166687
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11746322889879506085
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2976,76 +1683,6 @@
               R: 0.729166687
               G: 0.729166687
               B: 0.729166687
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 11746322889879506085
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9489963681089763612
-        Name: "Cube - Polished"
-        Transform {
-          Location {
-            X: 0.0105416812
-            Y: -0.578442276
-            Z: 41.2722969
-          }
-          Rotation {
-            Pitch: 6.83018879e-06
-            Yaw: 89.9999619
-            Roll: 2.27570155e-07
-          }
-          Scale {
-            X: 0.374432653
-            Y: 0.374429762
-            Z: 0.0271327626
-          }
-        }
-        ParentId: 8545045838586853368
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 18168149806092884960
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: true
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 0.344751447
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 0.373470783
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.276041657
-              G: 0.276041657
-              B: 0.276041657
               A: 1
             }
           }
