@@ -9,7 +9,11 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local Item = require(script:GetCustomProperty("Item"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local SALVAGE_ITEM_MUID = script:GetCustomProperty("SalvageItem"):match("(.+):")
-local STARTER_ITEM_MUID = script:GetCustomProperty("StarterItem"):match("(.+):")
+
+local STARTER_ITEM_MUIDS = {
+    script:GetCustomProperty("StarterItem1"):match("(.+):"),
+    script:GetCustomProperty("StarterItem2"):match("(.+):"),
+}
 
 -- Load the database over a fixed number of frames.
 local LOAD_FRAME_LIMIT = 10
@@ -34,11 +38,15 @@ function Database:WaitUntilLoaded()
     end
 end
 
-function Database:CreateItemStarter()
-    local starterItemData = self:FindItemDataByMUID(STARTER_ITEM_MUID)
-    local item = Item.New(starterItemData)
-    item:RollStats()
-    return item
+function Database:CreateStarterItems()
+    local starterItems = {}
+    for _,starterItemMUID in ipairs(STARTER_ITEM_MUIDS) do
+        local starterItemData = self:FindItemDataByMUID(starterItemMUID)
+        local item = Item.New(starterItemData)
+        item:RollStats()
+        table.insert(starterItems, item)
+    end
+    return starterItems
 end
 
 function Database:CreateItemSalvage()
@@ -202,7 +210,9 @@ function Database:_LoadCatalog()
 
     -- Ensure that after all catalog data is loaded, the expected salvage item is present.
     assert(self.itemDatasByMUID[SALVAGE_ITEM_MUID], string.format("salvage item missing from catalog, expected to find definition for \"%s\"", SALVAGE_ITEM_MUID))
-    assert(self.itemDatasByMUID[STARTER_ITEM_MUID], string.format("starter item missing from catalog, expected to find definition for \"%s\"", STARTER_ITEM_MUID))
+    for _,starterItemMUID in ipairs(STARTER_ITEM_MUIDS) do
+        assert(self.itemDatasByMUID[starterItemMUID], string.format("starter item missing from catalog, expected to find definition for \"%s\"", starterItemMUID))
+    end
 
     -- Ensure that after all catalog data is loaded, all recipes reference valid items.
     local recipeBookPageCounts = {}
