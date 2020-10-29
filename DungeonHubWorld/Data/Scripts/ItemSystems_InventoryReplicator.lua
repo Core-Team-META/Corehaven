@@ -40,7 +40,17 @@ end
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
     local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
-    print("Loading inventory: ", playerData.inventoryHash)
+    local startupMessageFmt = "Loading inventory: %s"
+    -- Check for first time user and populate inventory with starter item.
+    if not playerData.inventoryHash then
+        -- First time user.
+        OWNER.serverUserData.inventory:LoadHash(nil)
+        OWNER.serverUserData.inventory:AddStarterItems(Database:CreateStarterItems())
+        playerData.inventoryHash = OWNER.serverUserData.inventory:PersistentHash()
+        Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+        startupMessageFmt = "Initializing inventory with beginner items: %s"
+    end
+    print(string.format(startupMessageFmt, playerData.inventoryHash))
     OWNER.serverUserData.inventory:LoadHash(playerData.inventoryHash)
     COMPONENT:SetNetworkedCustomProperty("LOAD", OWNER.serverUserData.inventory:RuntimeHash())
 end

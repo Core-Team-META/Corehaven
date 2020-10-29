@@ -8,6 +8,19 @@
   }
 }
 Assets {
+  Id: 15496440007848341463
+  Name: "Corehaven Chronicles"
+  PlatformAssetType: 23
+  NetReferenceAsset {
+    NetReference {
+      Key: "f2bdd2a7a062442dbe0644309d04835e"
+      Type {
+        Value: "mc:enetreferencetype:sharedpersistence"
+      }
+    }
+  }
+}
+Assets {
   Id: 12901371766173778172
   Name: "Leafy Patch 02"
   PlatformAssetType: 1

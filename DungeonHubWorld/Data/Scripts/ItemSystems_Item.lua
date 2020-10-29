@@ -492,7 +492,7 @@ function Item:_RecalculateStatTotals()
 end
 
 function Item:_GetEnhancementMultiplier()
-    return 1 + (self:GetEnhancementLevel() * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
+    return 1 + (math.max(0, self:GetEnhancementLevel() - 1) * self.ENHANCEMENT_STAT_PERCENT_INCREASE / 100)
 end
 
 function Item:__tostring()

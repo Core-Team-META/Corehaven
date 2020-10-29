@@ -54,15 +54,6 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    Name = 'Portal Scroll',
-    Type = 'Consumable',
-    Rarity = 'Common',
-    StackSize = '10',
-    MUID = 'B38A827FD61C4DE8:ITEM_NonEquippable_PortalScroll',
-    Lore = 'Instantly return to CoreHaven.',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
-  {
     Name = 'Frog Eye',
     Type = 'Junk',
     Rarity = 'Common',

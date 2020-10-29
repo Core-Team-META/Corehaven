@@ -537,8 +537,8 @@ function Tick(deltaTime)
 					local removedTarget = false
 
 					for player, _ in pairs(npcState.threatTable) do
-						-- In corehaven, things reset if far away too
-						if not Object.IsValid(player) or player.isDead or (player:GetWorldPosition() - npc:GetWorldPosition()).size > 4000.0 then
+						-- In Corehaven, dummies reset when you run away
+						if not Object.IsValid(player) or player.isDead or (npc:GetWorldPosition() - player:GetWorldPosition()).size > 4000.0 then
 							if player == API_NPC.GetTarget(npc) then
 								API_NPC.SetTarget(npc, nil)
 								removedTarget = true

@@ -1763,13 +1763,13 @@
           Overrides {
             Name: "ma:Shared_Detail2:id"
             AssetReference {
-              Id: 9941736315097733363
+              Id: 9349186561689120562
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11429609362427302143
+              Id: 3978089662953605007
             }
           }
         }

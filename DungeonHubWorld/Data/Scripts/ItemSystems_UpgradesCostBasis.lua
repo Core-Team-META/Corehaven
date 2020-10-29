@@ -43,7 +43,10 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
 
         -- Compute the cost to enhance an item by one.
         local cost = math.floor((ENHANCEMENT_BASE_COST * rarityNumber) + (rarityNumber+enhancementNumber)^ENHANCEMENT_POWER_COST) 
-
+		
+		if item:IsTwoHanded() then
+			cost = cost*2
+		end
         -- Return example cost item and cost.
         return mockItemEnhancement, math.floor(cost)
 
@@ -51,7 +54,11 @@ function UpgradesCostBasis.AppraiseItemUpgrade(item)
 
         -- Compute the cost to limit break an item to the next star-level.
         local cost = LIMIT_BREAK_BASE_COST * (rarityNumber-1 + limitBreakNumber)^2
-
+		
+		if item:IsTwoHanded() then
+			cost = cost*2
+		end
+		
         -- Return example cost item and cost.
         return mockItemLimitBreak, math.floor(cost)
 

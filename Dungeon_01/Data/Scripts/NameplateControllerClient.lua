@@ -154,12 +154,13 @@ function CreateNameplate(character, data)
 		if data.animatedMesh then
 			data.animatedMesh:AttachCoreObject(nameplateRoot, "root")
 			nameplates[character].animatedMesh = data.animatedMesh
+
+			-- Bigger enemies need a bigger gap before their nameplate
+			nameplateRoot:SetPosition(Vector3.UP * (data.capsuleHeight * 1.1 / data.animatedMesh:GetWorldScale().z + 20.0))
 		else
 			nameplateRoot.parent = character
+			nameplateRoot:SetPosition(Vector3.UP * (data.capsuleHeight * 1.1 + 20.0))
 		end
-
-		-- Bigger enemies need a bigger gap before their nameplate
-		nameplateRoot:SetPosition(Vector3.UP * (data.capsuleHeight * 1.1 / data.animatedMesh:GetWorldScale().z + 20.0))
 	end
 
 	-- Static properties on pieces

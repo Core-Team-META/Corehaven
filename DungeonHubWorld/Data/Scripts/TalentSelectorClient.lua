@@ -14,6 +14,7 @@ local TOOLTIP_DESCRIPTION_TEXT = script:GetCustomProperty("TooltipDescriptionTex
 local TOOLTIP_COST_TEXT = script:GetCustomProperty("TooltipCostText"):WaitForObject()
 local TOOLTIP_REQUIRED_LEVEL_TEXT = script:GetCustomProperty("TooltipRequiredLevelText"):WaitForObject()
 local TOOLTIP_STATE_TEXT = script:GetCustomProperty("TooltipStateText"):WaitForObject()
+local TOOLTIP_BORDER_ROOT = script:GetCustomProperty("TooltipBorderRoot"):WaitForObject()
 local BACKGROUND_PANEL = script:GetCustomProperty("BackgroundPanel"):WaitForObject()
 local TALENT_TREE_PANEL_TEMPLATE = script:GetCustomProperty("TalentTreePanelTemplate")
 local TALENT_BUTTON_TEMPLATE = script:GetCustomProperty("TalentButtonTemplate")
@@ -21,9 +22,13 @@ local TALENT_REQUIREMENT_ARROW_TEMPLATE = script:GetCustomProperty("TalentRequir
 
 local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
+local SFX_ButtonClick = script:GetCustomProperty("SFX_ButtonClick")
+local SFX_ButtonFail = script:GetCustomProperty("SFX_ButtonFail")
+local SFX_ButtonHover = script:GetCustomProperty("SFX_ButtonHover")
+
 local MAX_TOTAL_WIDTH = 1920.0
 local TREE_HEIGHT = 700
-local MAX_BUTTON_SIZE = 100.0
+local MAX_BUTTON_SIZE = 80.0
 local BUTTON_PADDING = 0.5 * MAX_BUTTON_SIZE
 local MIN_TREE_PADDING = 0.5 * MAX_BUTTON_SIZE	-- If at maximum button size, can be scaled down proportionally
 
@@ -32,6 +37,11 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 local tooltipTalentData = nil
 local talentTreesVisible = false
 local previousTalentStrings = {}				-- Local player only, string treeName -> string
+local talentTreePanels = {}
+
+local function PlaySound(sfx)
+	World.SpawnAsset(sfx, { parent = script })
+end
 
 function ShowTalentTrees()
 	TALENTS_VIEW_ROOT.visibility = Visibility.INHERIT
@@ -47,14 +57,18 @@ function HideTalentTrees()
 	talentTreesVisible = false
 end
 
-function OnButtonClicked(button, talentData)
+function OnButtonClicked(button, talentData, treeMetaData)
 	if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
+		PlaySound(SFX_ButtonClick)
 		local treeOrder = UTILITY.TALENT_TREE_DATA[talentData.treeName].order
 		API_RE.BroadcastToServer("TryLearnTalent", treeOrder, talentData.treeX, talentData.treeY)
+	else
+		PlaySound(SFX_ButtonFail)
 	end
 end
 
-function OnButtonHovered(button, talentData)
+function OnButtonHovered(button, talentData, treeMetaData)
+	PlaySound(SFX_ButtonHover)
 	local cursorPosition = UI.GetCursorPosition()
 	local screenSize = UI.GetScreenSize()
 	cursorPosition.x = math.min(cursorPosition.x, screenSize.x - TOOLTIP_PANEL.width)
@@ -67,7 +81,7 @@ function OnButtonHovered(button, talentData)
 	if talentData.isPassive then
 		TOOLTIP_PASSIVE_TEXT.text = "Passive"
 	else
-		TOOLTIP_PASSIVE_TEXT.text = ""
+		TOOLTIP_PASSIVE_TEXT.text = "Ability"
 	end
 
 	TOOLTIP_DESCRIPTION_TEXT.text = talentData.description
@@ -77,9 +91,15 @@ function OnButtonHovered(button, talentData)
 	local buttonTemplate = talentData.buttonTemplate
 	local highLight = buttonTemplate:GetCustomProperty("Highlight"):WaitForObject()
 	highLight.visibility = Visibility.INHERIT
+
+	-- Set the color appropriately.
+	TOOLTIP_NAME_TEXT:SetColor(treeMetaData.primaryColor)
+	for _,uiImage in ipairs(TOOLTIP_BORDER_ROOT:FindDescendantsByType("UIImage")) do
+		uiImage:SetColor(treeMetaData.primaryColor)
+	end
 end
 
-function OnButtonUnhovered(button, talentData)
+function OnButtonUnhovered(button, talentData, treeMetaData)
 	TOOLTIP_PANEL.visibility = Visibility.FORCE_OFF
 	tooltipTalentData = nil
 	local buttonTemplate = talentData.buttonTemplate
@@ -156,11 +176,26 @@ function BuildTalentTreeUI()
 			local rootViewPanel = treePanel:GetCustomProperty("Panel"):WaitForObject()
 			rootViewPanel.height = math.floor(math.max(minTreeHeight, TREE_HEIGHT))
 
+			-- Save some components on the tree data.
+			talentTreePanels[treeName] = treePanel
+
+			-- The reset buttons are connected to respec functionality.
+			local respecButton = treePanel:GetCustomProperty("RespecButton"):WaitForObject()
+			respecButton.clickedEvent:Connect(function()
+				PlaySound(SFX_ButtonClick)
+				API_RE.BroadcastToServer("RequestTalentTreeRespec")
+			end)
+			respecButton.hoveredEvent:Connect(function()
+				PlaySound(SFX_ButtonHover)
+			end)
+
 			-- Update extent.
 			extent.x0 = math.min(extent.x0, treePanel.x - treePanel.width / 2)
 			extent.x1 = math.max(extent.x1, treePanel.x + treePanel.width / 2)
 			extent.y0 = math.min(extent.y0, treePanel.y - treePanel.height / 2)
 			extent.y1 = math.max(extent.y1, treePanel.y + treePanel.height / 2)
+
+			local treeMetaData = UTILITY.TALENT_TREE_DATA[treeName]
 
 			for talentName, talentData in pairs(treeData) do
 				-- Talent buttons
@@ -173,9 +208,9 @@ function BuildTalentTreeUI()
 				panel.y = math.floor(treeNameText.height + treeDescriptionText.height + treeScale * unadjustedY)
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				button:SetImage(talentData.icon)
-				button.clickedEvent:Connect(OnButtonClicked, talentData)
-				button.hoveredEvent:Connect(OnButtonHovered, talentData)
-				button.unhoveredEvent:Connect(OnButtonUnhovered, talentData)
+				button.clickedEvent:Connect(OnButtonClicked, talentData, treeMetaData)
+				button.hoveredEvent:Connect(OnButtonHovered, talentData, treeMetaData)
+				button.unhoveredEvent:Connect(OnButtonUnhovered, talentData, treeMetaData)
 				talentData.buttonTemplate = buttonTemplate
 
 				-- Requirement arrows
@@ -223,9 +258,14 @@ function BuildTalentTreeUI()
 	end
 
 	-- Size the background according to extent.
-	local backgroundPadding = 2 * MIN_TREE_PADDING
+	local backgroundPadding =  2 * MIN_TREE_PADDING
 	BACKGROUND_PANEL.width = math.ceil(backgroundPadding + extent.x1 - extent.x0)
 	BACKGROUND_PANEL.height = math.ceil(backgroundPadding + extent.y1 - extent.y0)
+end
+
+-- Return true if a tree should be grayed out.
+local function ShouldGrayOutTree(currentTreeName, treeName)
+	return currentTreeName ~= "" and currentTreeName ~= treeName
 end
 
 function Tick(deltaTime)
@@ -285,7 +325,27 @@ function Tick(deltaTime)
 	
 	local playerStateHelper = UTILITY.GetPlayerStateHelper(LOCAL_PLAYER)
 	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
+	local numUnspentTalentPoints = UTILITY.GetPlayerTalentPoints(LOCAL_PLAYER)
 
+	-- Draw various panel-specific elements.
+	for treeName,treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
+		local treePanel = talentTreePanels[treeName]
+		local treeUnspentPoints = treePanel:GetCustomProperty("UnspentPointsText"):WaitForObject()
+		local treeRespecButton = treePanel:GetCustomProperty("RespecButton"):WaitForObject()
+		local treeGrayOut = treePanel:GetCustomProperty("GrayOut"):WaitForObject()
+		if treeName == currentTreeName then
+			treeUnspentPoints.text = string.format("unspent: %d", numUnspentTalentPoints)
+			treeUnspentPoints.visibility = Visibility.INHERIT
+			treeRespecButton.visibility = Visibility.INHERIT
+		else
+			treeUnspentPoints.visibility = Visibility.FORCE_OFF
+			treeRespecButton.visibility = Visibility.FORCE_OFF
+		end
+		-- Gray out needs to additionally *not* occur when no tree is selected.
+		treeGrayOut.visibility = ShouldGrayOutTree(currentTreeName, treeName) and Visibility.INHERIT or Visibility.FORCE_OFF
+	end
+
+	-- Draw items on each tree.
 	for treeName, treeData in pairs(UTILITY.TALENT_TREE_TABLE) do
 		if UTILITY.GetPlayerStateTreeHelper(LOCAL_PLAYER, treeName) then
 			for _, talentData in pairs(treeData) do
@@ -293,6 +353,9 @@ function Tick(deltaTime)
 				local button = buttonTemplate:GetCustomProperty("Button"):WaitForObject()
 				local check = buttonTemplate:GetCustomProperty("Check"):WaitForObject()
 				local checkCorners = buttonTemplate:GetCustomProperty("CheckCorners"):WaitForObject()
+
+				-- If the tree is grayed out, none of the buttons should be interactable.
+				button.isInteractable = not ShouldGrayOutTree(currentTreeName, treeName)
 				
 				if UTILITY.CanPlayerAcquireTalent(LOCAL_PLAYER, talentData) then
 					local t = (1.0 + math.sin(5.0 * os.clock())) / 2.0
@@ -321,7 +384,8 @@ function Tick(deltaTime)
 		end
 	end
 
-	if tooltipTalentData then
+	-- Tooltip is suppressed on grayed out trees.
+	if tooltipTalentData and not ShouldGrayOutTree(currentTreeName, treeName) then
 		if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, tooltipTalentData) then
 			TOOLTIP_STATE_TEXT:SetColor(Color.SAPPHIRE)
 			TOOLTIP_STATE_TEXT.text = "Talent known"

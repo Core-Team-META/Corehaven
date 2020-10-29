@@ -10,11 +10,10 @@ local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
 local isStorageLoaded = {}		-- Player -> bool
 
-function OnBindingPressed(player, binding)
-	if binding == "ability_extra_37" then
-		UTILITY.ResetTalentTrees(player)
-	end
-end
+-- Setup talent respec request event handling.
+Events.ConnectForPlayer("RequestTalentTreeRespec", function(player)
+	UTILITY.ResetTalentTrees(player)
+end)
 
 function OnPlayerJoined(player)
 	local talentTreeTable = UTILITY.TALENT_TREE_TABLE
@@ -46,8 +45,6 @@ function OnPlayerJoined(player)
 
 		playerStateTreeHelper:SetNetworkedCustomProperty("TalentString", talentString)
 	end
-
-	player.bindingPressedEvent:Connect(OnBindingPressed)
 end
 
 function OnPlayerLeft(player)

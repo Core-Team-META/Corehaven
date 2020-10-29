@@ -10,6 +10,9 @@ local UPGRADES_VIEW_HOTKEY = script:GetCustomProperty("UpgradesViewHotkey")
 local TALENTS_VIEW = script:GetCustomProperty("TalentsView"):WaitForObject()
 local TALENTS_VIEW_BUTTON = script:GetCustomProperty("TalentsViewButton"):WaitForObject()
 local TALENTS_VIEW_HOTKEY = script:GetCustomProperty("TalentsViewHotkey")
+local HELP_VIEW = script:GetCustomProperty("HelpView"):WaitForObject()
+local HELP_VIEW_BUTTON = script:GetCustomProperty("HelpViewButton"):WaitForObject()
+local HELP_VIEW_HOTKEY = script:GetCustomProperty("HelpViewHotkey")
 local SFX_OPEN = script:GetCustomProperty("SFX_InventoryOpen")
 local SFX_CLOSE = script:GetCustomProperty("SFX_InventoryClose")
 
@@ -18,6 +21,7 @@ local viewsByHotkey = {
     [LOOT_VIEW_HOTKEY]      = LOOT_VIEW,
     [UPGRADES_VIEW_HOTKEY]  = UPGRADES_VIEW,
     [TALENTS_VIEW_HOTKEY]   = TALENTS_VIEW,
+    [HELP_VIEW_HOTKEY]      = HELP_VIEW,
 }
 
 local viewsByName = {
@@ -25,13 +29,15 @@ local viewsByName = {
     Loot        = LOOT_VIEW,
     Upgrades    = UPGRADES_VIEW,
     Talents     = TALENTS_VIEW,
+    Help        = HELP_VIEW,
 }
 
 local viewExclusions = {
-    [INVENTORY_VIEW]    = { TALENTS_VIEW },
-    [LOOT_VIEW]         = { TALENTS_VIEW, UPGRADES_VIEW },
-    [UPGRADES_VIEW]     = { TALENTS_VIEW, LOOT_VIEW },
-    [TALENTS_VIEW]      = { INVENTORY_VIEW, LOOT_VIEW, UPGRADES_VIEW },
+    [INVENTORY_VIEW]    = { TALENTS_VIEW, HELP_VIEW },
+    [LOOT_VIEW]         = { TALENTS_VIEW, UPGRADES_VIEW, HELP_VIEW },
+    [UPGRADES_VIEW]     = { TALENTS_VIEW, LOOT_VIEW, HELP_VIEW },
+    [TALENTS_VIEW]      = { INVENTORY_VIEW, LOOT_VIEW, UPGRADES_VIEW, HELP_VIEW },
+    [HELP_VIEW]         = { INVENTORY_VIEW, LOOT_VIEW, UPGRADES_VIEW },
 }
 
 local viewDependencies = {
@@ -39,6 +45,7 @@ local viewDependencies = {
     [LOOT_VIEW]         = {},
     [UPGRADES_VIEW]     = { INVENTORY_VIEW },
     [TALENTS_VIEW]      = {},
+    [HELP_VIEW]         = {},
 }
 
 local viewDependents = {}
@@ -102,6 +109,7 @@ LOOT_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(LOOT_VIEW) end)
 INVENTORY_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(INVENTORY_VIEW) end)
 UPGRADES_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(UPGRADES_VIEW) end)
 TALENTS_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(TALENTS_VIEW) end)
+HELP_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(HELP_VIEW) end)
 
 Events.Connect("ForceOpenViewByName", ForceOpenViewByName)
 Events.Connect("ForceCloseViewByName", ForceCloseViewByName)
