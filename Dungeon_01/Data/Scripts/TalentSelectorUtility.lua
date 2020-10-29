@@ -440,6 +440,23 @@ function UTILITY.CanPlayerAcquireTalent(player, talentData)
 	return true
 end
 
+-- Client and Server
+function UTILITY.DoesPlayerHaveUnlockableTalents(player)
+	local playerStateHelper = UTILITY.GetPlayerStateHelper(player)
+	local currentTreeName = playerStateHelper:GetCustomProperty("TreeName")
+	-- If no talent tree is selected, then there is certainly something that can be unlocked.
+	if currentTreeName == "" then return true end
+	-- Look for any unlockable talents.
+	local talents = UTILITY.TALENT_TREE_TABLE[currentTreeName]
+	if talents then
+		for _,talentData in pairs(talents) do
+			if UTILITY.CanPlayerAcquireTalent(player, talentData) then
+				return true
+			end
+		end
+	end
+end
+
 -- Server only
 function UTILITY.TryAddPlayerTalent(player, talentData)
 	if not UTILITY.CanPlayerAcquireTalent(player, talentData) then
