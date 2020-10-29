@@ -500,6 +500,7 @@ function Inventory:ExecuteItemUpgrade(slotIndex)
         else
             itemToUpgrade:Upgrade()
         end
+        self:_UpdateStatTotals()
         self:_FireEvent("itemUpgradedEvent", slotIndex)
     end
 end
