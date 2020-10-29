@@ -136,7 +136,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
 
     local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
     
-    if sourceCharacter and canCrit then
+    if sourceCharacter and sourceCharacter:IsA("Player") and canCrit then
         local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
 
         if math.random() < critChance then
