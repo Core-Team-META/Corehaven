@@ -4166,7 +4166,7 @@ Objects {
     Overrides {
       Name: "cs:TalentTreePanelTemplate"
       AssetReference {
-        Id: 8048948782845642683
+        Id: 16993655150590768021
       }
     }
     Overrides {
@@ -4179,6 +4179,24 @@ Objects {
       Name: "cs:TalentRequirementArrowTemplate"
       AssetReference {
         Id: 11459244901332248434
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_ButtonClick"
+      AssetReference {
+        Id: 14816389802180612507
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_ButtonFail"
+      AssetReference {
+        Id: 6314437439768431026
+      }
+    }
+    Overrides {
+      Name: "cs:SFX_ButtonHover"
+      AssetReference {
+        Id: 6244285448419846811
       }
     }
   }

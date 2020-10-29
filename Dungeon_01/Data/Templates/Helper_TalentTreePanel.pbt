@@ -1,12 +1,12 @@
 ﻿Assets {
-  Id: 8048948782845642683
+  Id: 16993655150590768021
   Name: "Helper_TalentTreePanel"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 11472111549531879496
+      RootId: 10834412293062636751
       Objects {
-        Id: 11472111549531879496
+        Id: 10834412293062636751
         Name: "Helper_TalentTreePanel"
         Transform {
           Scale {
@@ -15,37 +15,56 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
-        ChildIds: 1978558241356278971
+        ParentId: 17711105305411388877
+        ChildIds: 16391804930530228220
+        ChildIds: 10602390682455328448
         UnregisteredParameters {
           Overrides {
             Name: "cs:Panel"
             ObjectReference {
-              SubObjectId: 1978558241356278971
+              SubObjectId: 14348759509235355199
             }
           }
           Overrides {
             Name: "cs:BackgroundImage"
             ObjectReference {
-              SubObjectId: 1713236920295882849
+              SubObjectId: 9318796336977859402
             }
           }
           Overrides {
             Name: "cs:BorderImage"
             ObjectReference {
-              SubObjectId: 6420076522289348308
+              SubObjectId: 1660084921692679115
             }
           }
           Overrides {
             Name: "cs:TreeNameText"
             ObjectReference {
-              SubObjectId: 6322301701594032219
+              SubObjectId: 14279698589616329100
             }
           }
           Overrides {
             Name: "cs:TreeDescriptionText"
             ObjectReference {
-              SubObjectId: 18394625495307788546
+              SubObjectId: 8521054888879448872
+            }
+          }
+          Overrides {
+            Name: "cs:RespecButton"
+            ObjectReference {
+              SubObjectId: 11407521784013855634
+            }
+          }
+          Overrides {
+            Name: "cs:UnspentPointsText"
+            ObjectReference {
+              SubObjectId: 6544934060620111422
+            }
+          }
+          Overrides {
+            Name: "cs:GrayOut"
+            ObjectReference {
+              SubObjectId: 10602390682455328448
             }
           }
         }
@@ -58,13 +77,57 @@
         Control {
           Width: 375
           Height: 695
-          UIX: -9.51898193
-          UIY: -88.0831
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16391804930530228220
+        Name: "TalentTreeScroller"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10834412293062636751
+        ChildIds: 14348759509235355199
+        UnregisteredParameters {
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 375
+          Height: 695
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
           ScrollPanel {
           }
           AnchorLayout {
@@ -82,8 +145,8 @@
         }
       }
       Objects {
-        Id: 1978558241356278971
-        Name: "UI Panel"
+        Id: 14348759509235355199
+        Name: "TalentTreePanel"
         Transform {
           Location {
           }
@@ -95,12 +158,14 @@
             Z: 1
           }
         }
-        ParentId: 11472111549531879496
-        ChildIds: 1713236920295882849
-        ChildIds: 9744302326781297520
-        ChildIds: 6420076522289348308
-        ChildIds: 6322301701594032219
-        ChildIds: 18394625495307788546
+        ParentId: 16391804930530228220
+        ChildIds: 9318796336977859402
+        ChildIds: 17394868222047035290
+        ChildIds: 1660084921692679115
+        ChildIds: 14279698589616329100
+        ChildIds: 8521054888879448872
+        ChildIds: 6544934060620111422
+        ChildIds: 11407521784013855634
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -134,8 +199,8 @@
         }
       }
       Objects {
-        Id: 1713236920295882849
-        Name: "UI Image"
+        Id: 9318796336977859402
+        Name: "TalenTreeBackgroundImage"
         Transform {
           Location {
           }
@@ -147,7 +212,7 @@
             Z: 1
           }
         }
-        ParentId: 1978558241356278971
+        ParentId: 14348759509235355199
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -191,8 +256,8 @@
         }
       }
       Objects {
-        Id: 9744302326781297520
-        Name: "UI Image"
+        Id: 17394868222047035290
+        Name: "TalentTreeTopGradient"
         Transform {
           Location {
           }
@@ -205,7 +270,7 @@
             Z: 1
           }
         }
-        ParentId: 1978558241356278971
+        ParentId: 14348759509235355199
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -249,8 +314,8 @@
         }
       }
       Objects {
-        Id: 6420076522289348308
-        Name: "UI Image"
+        Id: 1660084921692679115
+        Name: "TalentTreeBorder"
         Transform {
           Location {
           }
@@ -262,7 +327,7 @@
             Z: 1
           }
         }
-        ParentId: 1978558241356278971
+        ParentId: 14348759509235355199
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -307,8 +372,8 @@
         }
       }
       Objects {
-        Id: 6322301701594032219
-        Name: "UI Text Box"
+        Id: 14279698589616329100
+        Name: "TalentTreeName"
         Transform {
           Location {
           }
@@ -320,7 +385,7 @@
             Z: 1
           }
         }
-        ParentId: 1978558241356278971
+        ParentId: 14348759509235355199
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -366,8 +431,8 @@
         }
       }
       Objects {
-        Id: 18394625495307788546
-        Name: "UI Text Box"
+        Id: 8521054888879448872
+        Name: "TalentTreeDescription"
         Transform {
           Location {
           }
@@ -380,7 +445,7 @@
             Z: 1
           }
         }
-        ParentId: 1978558241356278971
+        ParentId: 14348759509235355199
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -425,6 +490,312 @@
           }
         }
       }
+      Objects {
+        Id: 6544934060620111422
+        Name: "TalentTreeUnspentPoints"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14348759509235355199
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 120
+          Height: 50
+          UIY: -4
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "points: 0"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 18
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11407521784013855634
+        Name: "TalentTreeRespecButton"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14348759509235355199
+        ChildIds: 475913100123693350
+        ChildIds: 1509650515907892943
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 64
+          Height: 34
+          UIX: 18
+          UIY: -18
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Button {
+            FontColor {
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.1
+            }
+            HoveredColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.3
+            }
+            PressedColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.4
+            }
+            DisabledColor {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Brush {
+              Id: 841534158063459245
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 475913100123693350
+        Name: "Text"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11407521784013855634
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 60
+          Height: 50
+          UIY: 4
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Text {
+            Label: "reset"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            Size: 18
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 1509650515907892943
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11407521784013855634
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 64
+          Height: 34
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          Image {
+            Brush {
+              Id: 16471580195087108593
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middlecenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10602390682455328448
+        Name: "TalentTreeGrayOut"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 10834412293062636751
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:forceoff"
+        }
+        Control {
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          UseParentHeight: true
+          Image {
+            Brush {
+            }
+            Color {
+              A: 0.8
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
     }
     Assets {
       Id: 6294033131084533737
@@ -451,6 +822,15 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Frame_007"
+      }
+    }
+    Assets {
+      Id: 16471580195087108593
+      Name: "Frame Outlined 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "FrameSolid4px_020"
       }
     }
     PrimaryAssetId {
