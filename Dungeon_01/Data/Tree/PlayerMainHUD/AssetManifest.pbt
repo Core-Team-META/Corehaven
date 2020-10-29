@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16472544452721371060
+  Name: "Center Arrow 008 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_008Wedge"
+  }
+}
+Assets {
   Id: 15930323680083439980
   Name: "Fantasy Ability Yellow 002"
   PlatformAssetType: 9
@@ -152,15 +161,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12017046880637070245
-  Name: "Frame Outlined 002"
-  PlatformAssetType: 9
-  PrimaryAsset {
-    AssetType: "PlatformBrushAssetRef"
-    AssetId: "FrameSolid4px_019"
-  }
-}
-Assets {
   Id: 11819073848126166701
   Name: "Fantasy Ability Yellow 026"
   PlatformAssetType: 9
@@ -224,6 +224,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9754425409466746277
+  Name: "Fantasy Ability Yellow 031"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Yellow_031"
+  }
+}
+Assets {
   Id: 9646465928758980906
   Name: "Fantasy Ability Teal 026"
   PlatformAssetType: 9
@@ -266,6 +275,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Food_Ale_002"
+  }
+}
+Assets {
+  Id: 8665791828559964251
+  Name: "UI Gradient Rectangular 001"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Basic_Shape_002"
   }
 }
 Assets {
