@@ -143,10 +143,7 @@
               A: 1
             }
             BackgroundColor {
-              R: 0.307
-              G: 0.307
-              B: 0.307
-              A: 1
+              A: 0.8
             }
             Percent: 0.535579681
           }
