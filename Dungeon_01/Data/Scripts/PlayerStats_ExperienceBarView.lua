@@ -51,17 +51,18 @@ local function UpdateToolTipText()
 end
 
 local function UpdateProgressTargets()
-    local currentProgress = statSheet:GetLevel() + statSheet:GetLevelProgress()
-    if currentProgress ~= progressLerpStop then
+    local currentLevelProgress = statSheet:IsMaxLevel() and 0. or statSheet:GetLevelProgress()
+    local currentProgressSum = statSheet:GetLevel() + currentLevelProgress
+    if currentProgressSum ~= progressLerpStop then
         if hasBeenInitialized then
             -- Once the xp bar has been initialized, any further changes represent organic xp gains, which we want to animate.
             progressLerpStart = progressLerpStop
-            progressLerpStop = currentProgress
+            progressLerpStop = currentProgressSum
             progressLerpTimer = 0
         else
             -- If the xp bar has not yet been initialized, we want to just quietly update it to the correct value.
-            progressLerpStart = currentProgress
-            progressLerpStop = currentProgress
+            progressLerpStart = currentProgressSum
+            progressLerpStop = currentProgressSum
             progressLerpTimer = math.huge
             currentLevel = statSheet:GetLevel()
             hasBeenInitialized = true
