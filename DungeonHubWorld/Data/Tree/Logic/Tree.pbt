@@ -44293,6 +44293,10 @@ Objects {
   ChildIds: 100738386447769816
   ChildIds: 12094923672449862562
   ChildIds: 12866674295592064741
+  ChildIds: 10062872422055684611
+  ChildIds: 11758707465664336827
+  ChildIds: 5552305056450814926
+  ChildIds: 4716218093953347052
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -44324,6 +44328,236 @@ Objects {
   }
 }
 Objects {
+  Id: 4716218093953347052
+  Name: "InfiniteDescription"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6459534931867134588
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 220
+    Height: 50
+    UIX: -245
+    UIY: 330
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Very Difficult"
+      Color {
+        R: 1
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 5552305056450814926
+  Name: "NightmareDescription"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6459534931867134588
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 220
+    Height: 50
+    UIX: -245
+    UIY: 275
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Difficult"
+      Color {
+        R: 1
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 11758707465664336827
+  Name: "HardDescription"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6459534931867134588
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 220
+    Height: 50
+    UIX: -245
+    UIY: 220
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "Some Challenge"
+      Color {
+        R: 1
+        G: 1
+        B: 0.00500000035
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
+  Id: 10062872422055684611
+  Name: "NormalDescription"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6459534931867134588
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Control {
+    Width: 220
+    Height: 50
+    UIX: -245
+    UIY: 165
+    RenderTransformPivot {
+      Anchor {
+        Value: "mc:euianchor:middlecenter"
+      }
+    }
+    Text {
+      Label: "For Everyone"
+      Color {
+        G: 1
+        A: 1
+      }
+      Size: 18
+      Justification {
+        Value: "mc:etextjustify:right"
+      }
+      AutoWrapText: true
+    }
+    AnchorLayout {
+      SelfAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+      TargetAnchor {
+        Anchor {
+          Value: "mc:euianchor:topcenter"
+        }
+      }
+    }
+  }
+}
+Objects {
   Id: 12866674295592064741
   Name: "InfiniteError"
   Transform {
@@ -44347,7 +44581,7 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: 130
+    UIX: 245
     UIY: 330
     RenderTransformPivot {
       Anchor {
@@ -44362,7 +44596,7 @@ Objects {
       }
       Size: 18
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
@@ -44404,7 +44638,7 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: 130
+    UIX: 245
     UIY: 275
     RenderTransformPivot {
       Anchor {
@@ -44412,14 +44646,14 @@ Objects {
       }
     }
     Text {
-      Label: "Level 15 Required"
+      Label: "Level 10 Required"
       Color {
         R: 1
         A: 1
       }
       Size: 18
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
@@ -44461,7 +44695,7 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: 130
+    UIX: 245
     UIY: 220
     RenderTransformPivot {
       Anchor {
@@ -44476,7 +44710,7 @@ Objects {
       }
       Size: 18
       Justification {
-        Value: "mc:etextjustify:center"
+        Value: "mc:etextjustify:left"
       }
       AutoWrapText: true
     }
@@ -44518,7 +44752,6 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: -130
     UIY: 320
     RenderTransformPivot {
       Anchor {
@@ -44601,7 +44834,6 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: -130
     UIY: 265
     RenderTransformPivot {
       Anchor {
@@ -44684,7 +44916,6 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: -130
     UIY: 210
     RenderTransformPivot {
       Anchor {
@@ -44767,7 +44998,6 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: -130
     UIY: 155
     RenderTransformPivot {
       Anchor {
@@ -44850,7 +45080,6 @@ Objects {
   Control {
     Width: 220
     Height: 50
-    UIX: -130
     UIY: 100
     RenderTransformPivot {
       Anchor {

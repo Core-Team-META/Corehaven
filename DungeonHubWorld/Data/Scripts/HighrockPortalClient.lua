@@ -34,15 +34,19 @@ function OnHighrockPortal()
 		HARD_BUTTON.isInteractable = true
 	end
 
-	if level < 15 then
+	if level < 10 then
 		NIGHTMARE_ERROR.visibility = Visibility.INHERIT
-		INFINITE_ERROR.visibility = Visibility.INHERIT
 		NIGHTMARE_BUTTON.isInteractable = false
-		INFINITE_BUTTON.isInteractable = false
 	else
 		NIGHTMARE_ERROR.visibility = Visibility.FORCE_OFF
-		INFINITE_ERROR.visibility = Visibility.FORCE_OFF
 		NIGHTMARE_BUTTON.isInteractable = true
+	end
+
+	if level < 15 then
+		INFINITE_ERROR.visibility = Visibility.INHERIT
+		INFINITE_BUTTON.isInteractable = false
+	else
+		INFINITE_ERROR.visibility = Visibility.FORCE_OFF
 		INFINITE_BUTTON.isInteractable = true
 	end
 end
