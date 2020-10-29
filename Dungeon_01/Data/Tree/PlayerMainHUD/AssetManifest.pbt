@@ -107,6 +107,33 @@ Assets {
   }
 }
 Assets {
+  Id: 15497429916740703806
+  Name: "Eye"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_SciFI_Icon_042"
+  }
+}
+Assets {
+  Id: 14971912434748437073
+  Name: "BG Gradient 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "BackgroundFlat_019"
+  }
+}
+Assets {
+  Id: 14921027051656134984
+  Name: "Center Arrow 004 Wedge"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "CenterArrow_004Wedge"
+  }
+}
+Assets {
   Id: 13887755575610655442
   Name: "Fantasy Ability Yellow 003"
   PlatformAssetType: 9
@@ -116,12 +143,39 @@ Assets {
   }
 }
 Assets {
+  Id: 13861388018615005014
+  Name: "Fantasy Craft Crystal 031"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Crystal_031"
+  }
+}
+Assets {
   Id: 13778967266379385506
   Name: "BG Flat 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_020"
+  }
+}
+Assets {
+  Id: 12781087704127034770
+  Name: "Icon Star"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Star"
+  }
+}
+Assets {
+  Id: 12742840507315945572
+  Name: "Icon Tools"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Tools"
   }
 }
 Assets {
@@ -152,12 +206,30 @@ Assets {
   }
 }
 Assets {
+  Id: 12476471842872346186
+  Name: "Icon Skull"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Skull"
+  }
+}
+Assets {
   Id: 12068935913973994294
   Name: "Fantasy Ability Teal 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Ability_Teal_001"
+  }
+}
+Assets {
+  Id: 12032844931720799017
+  Name: "Icon Target"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "Icon_Target"
   }
 }
 Assets {
@@ -239,6 +311,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "FrameSolid8px_022"
+  }
+}
+Assets {
+  Id: 10518316656212319223
+  Name: "Fantasy Craft Stone 028"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Crafting_Stone_028"
   }
 }
 Assets {
@@ -347,6 +428,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundNoOutline_22"
+  }
+}
+Assets {
+  Id: 6575571976855747693
+  Name: "Frame Beveled 002"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "FrameSolid8px__019"
   }
 }
 Assets {
