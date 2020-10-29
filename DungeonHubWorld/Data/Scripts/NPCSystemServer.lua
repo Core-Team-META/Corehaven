@@ -2,6 +2,7 @@
 local API_EP = require(script:GetCustomProperty("APIEnemyPathing"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()

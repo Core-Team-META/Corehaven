@@ -58609,6 +58609,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
       Name: "cs:NavMeshFolder"
       ObjectReference {
         SelfId: 1993578725776207079
