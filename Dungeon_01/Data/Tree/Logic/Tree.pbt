@@ -33473,6 +33473,14 @@ Objects {
         Id: 4295659846319462830
       }
     }
+    Overrides {
+      Name: "cs:EnemyHealthBarColor"
+      Color {
+        R: 0.78
+        G: 0.0464900881
+        A: 1
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

@@ -282,10 +282,11 @@ function Inventory:GetLootInfos()
 end
 
 -- Add a an item into the first slot which will accept it (including equipment slots).
-function Inventory:AddStarterItem(item)
-    if item then
+function Inventory:AddStarterItems(starterItems)
+    for _,item in ipairs(starterItems) do
         for slotIndex=1,self.TOTAL_CAPACITY do
-            if self:IsEquipSlotType(slotIndex, item:GetEquipSlotType()) or self:IsBackpackSlot(slotIndex) then
+            if self:IsBackpackSlot(slotIndex) or
+               self:IsEquipSlotType(slotIndex, item:GetEquipSlotType()) and self:GetItem(slotIndex) == nil then
                 self:_SetSlotItem(slotIndex, item)
                 break
             end
