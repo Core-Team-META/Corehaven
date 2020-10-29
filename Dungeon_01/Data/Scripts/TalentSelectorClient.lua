@@ -24,7 +24,7 @@ local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
 local MAX_TOTAL_WIDTH = 1920.0
 local TREE_HEIGHT = 700
-local MAX_BUTTON_SIZE = 100.0
+local MAX_BUTTON_SIZE = 80.0
 local BUTTON_PADDING = 0.5 * MAX_BUTTON_SIZE
 local MIN_TREE_PADDING = 0.5 * MAX_BUTTON_SIZE	-- If at maximum button size, can be scaled down proportionally
 
@@ -232,7 +232,7 @@ function BuildTalentTreeUI()
 	end
 
 	-- Size the background according to extent.
-	local backgroundPadding = 2 * MIN_TREE_PADDING
+	local backgroundPadding =  2 * MIN_TREE_PADDING
 	BACKGROUND_PANEL.width = math.ceil(backgroundPadding + extent.x1 - extent.x0)
 	BACKGROUND_PANEL.height = math.ceil(backgroundPadding + extent.y1 - extent.y0)
 end

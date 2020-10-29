@@ -72,7 +72,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 200
+          Width: 343
           Height: 200
           RenderTransformPivot {
             Anchor {
@@ -126,8 +126,8 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 6
-          Height: 6
+          Width: 8
+          Height: 8
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
