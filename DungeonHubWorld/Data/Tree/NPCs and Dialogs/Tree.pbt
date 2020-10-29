@@ -8503,7 +8503,7 @@ Objects {
   }
   ParentId: 8355496857395536503
   ChildIds: 17564830376044451792
-  ChildIds: 4419743400125764879
+  ChildIds: 1826610782436100664
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8515,16 +8515,15 @@ Objects {
   }
 }
 Objects {
-  Id: 4419743400125764879
-  Name: "Fantasy Human Guy"
+  Id: 1826610782436100664
+  Name: "Bard"
   Transform {
     Location {
-      X: -3635.86719
-      Y: 118.48291
-      Z: 1605.61768
+      X: 3430
+      Y: -1170
+      Z: -7710
     }
     Rotation {
-      Yaw: -127.529625
     }
     Scale {
       X: 1
@@ -8533,29 +8532,40 @@ Objects {
     }
   }
   ParentId: 1419593537304911339
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 18039984299850060191
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableReceiveDecals: true
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_relaxed"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        PlaybackRate: 1
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7488979656780450769
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Bard"
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -153.997131
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3633.80273
+            Y: 124.930542
+            Z: 1501.06934
+          }
+        }
       }
+    }
+    TemplateAsset {
+      Id: 2222293508240886553
     }
   }
 }
@@ -8587,21 +8597,24 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: -3660
-            Y: 90
+            X: -3673.57813
+            Y: 106.923706
             Z: 1530
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -29.9998169
+            Yaw: -58.7746277
           }
         }
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 4419743400125764879
+            SelfId: 2187717712838742725
+            SubObjectId: 3484906034933022225
+            InstanceId: 1826610782436100664
+            TemplateId: 2222293508240886553
           }
         }
         Overrides {
@@ -8614,11 +8627,11 @@ Objects {
         }
         Overrides {
           Name: "cs:Name"
-          String: "Greeter"
+          String: "Town Crier"
         }
         Overrides {
           Name: "cs:StartDialogId"
-          String: "WecomeDialog1"
+          String: "HighrockWelcome1"
         }
       }
     }
