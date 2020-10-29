@@ -281,6 +281,18 @@ function Inventory:GetLootInfos()
     return self.lootInfos
 end
 
+-- Add a an item into the first slot which will accept it (including equipment slots).
+function Inventory:AddStarterItem(item)
+    if item then
+        for slotIndex=1,self.TOTAL_CAPACITY do
+            if self:IsEquipSlotType(slotIndex, item:GetEquipSlotType()) or self:IsBackpackSlot(slotIndex) then
+                self:_SetSlotItem(slotIndex, item)
+                break
+            end
+        end
+    end
+end
+
 -- Consume one item at the specified index.
 function Inventory:ConsumeItem(slotIndex)
     local item = self:GetItem(slotIndex)

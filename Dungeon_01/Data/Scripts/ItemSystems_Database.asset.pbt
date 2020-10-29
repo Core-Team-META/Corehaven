@@ -17,6 +17,12 @@
         }
       }
       Overrides {
+        Name: "cs:StarterItem"
+        AssetReference {
+          Id: 1901842675994406170
+        }
+      }
+      Overrides {
         Name: "cs:Item"
         AssetReference {
           Id: 13866541763018299709
