@@ -8,6 +8,7 @@ local HARD_ERROR = script:GetCustomProperty("HardError"):WaitForObject()
 local NIGHTMARE_ERROR = script:GetCustomProperty("NightmareError"):WaitForObject()
 local INFINITE_ERROR = script:GetCustomProperty("InfiniteError"):WaitForObject()
 local NPC_TRIGGER = script:GetCustomProperty("NPCTrigger"):WaitForObject()
+local SHIP_TRIGGER = script:GetCustomProperty("ShipTrigger"):WaitForObject()
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
 
@@ -70,9 +71,23 @@ function OnInfiniteButtonClicked(button)
 	Events.BroadcastToServer("HighrockInfinite")
 end
 
+function OnBeginShipTriggerOverlap(trigger, other)
+	if other == LOCAL_PLAYER then
+		OpenDialog()
+	end
+end
+
+function OnEndShipTriggerOverlap(trigger, other)
+	if other == LOCAL_PLAYER then
+		CloseDialog()
+	end
+end
+
 Events.Connect("HighrockPortal", OnHighrockPortal)
 DECLINE_BUTTON.clickedEvent:Connect(OnDeclineButtonClicked)
 NORMAL_BUTTON.clickedEvent:Connect(OnNormalButtonClicked)
 HARD_BUTTON.clickedEvent:Connect(OnHardButtonClicked)
 NIGHTMARE_BUTTON.clickedEvent:Connect(OnNightmareButtonClicked)
 INFINITE_BUTTON.clickedEvent:Connect(OnInfiniteButtonClicked)
+SHIP_TRIGGER.beginOverlapEvent:Connect(OnBeginShipTriggerOverlap)
+SHIP_TRIGGER.endOverlapEvent:Connect(OnEndShipTriggerOverlap)

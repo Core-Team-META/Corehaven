@@ -193,7 +193,7 @@ end
 function TrySetTarget(target, isAutoTarget)
 	local currentTarget = API_T.GetTarget(LOCAL_PLAYER)
 
-	if not target or target == currentTarget then
+	if target == currentTarget then
 		return
 	end
 

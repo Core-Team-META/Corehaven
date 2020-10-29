@@ -6879,7 +6879,7 @@ Objects {
   Camera {
     UseAsDefault: true
     AttachToLocalPlayer: true
-    InitialDistance: 800
+    InitialDistance: 1100
     IsDistanceAdjustable: true
     MinDistance: 200
     MaxDistance: 1400
@@ -39491,7 +39491,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 4
+      Int: 1
     }
   }
   Collidable_v2 {

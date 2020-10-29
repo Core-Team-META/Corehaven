@@ -82,6 +82,9 @@ function IsCursorOverFrame(data)
 end
 
 function OnBindingPressed(player, binding)
+	local target = API_T.GetTarget(LOCAL_PLAYER)
+	local targetTarget = GetTargetTarget()
+
 	-- One frame wait so this happens after we target an enemy if they are behind the frame
 	Task.Wait()
 
@@ -93,8 +96,13 @@ function OnBindingPressed(player, binding)
 			end
 		end
 
+		-- We have to set it back, because we just clicked in space and it got cleared
+		if IsCursorOverFrame(targetFrame) then
+			API_T.TrySetTarget(target, false)
+		end
+
 		if IsCursorOverFrame(targetTargetFrame) then
-			API_T.TrySetTarget(GetTargetTarget(), false)
+			API_T.TrySetTarget(targetTarget, false)
 		end
 	end
 end

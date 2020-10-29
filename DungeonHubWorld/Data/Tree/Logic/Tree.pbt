@@ -11392,6 +11392,7 @@ Objects {
   }
   ParentId: 13074551347648616021
   ChildIds: 888946611011418136
+  ChildIds: 14315459413614627151
   ChildIds: 619334090824511687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13772,6 +13773,12 @@ Objects {
         TemplateId: 4839589651670793246
       }
     }
+    Overrides {
+      Name: "cs:ShipTrigger"
+      ObjectReference {
+        SelfId: 14315459413614627151
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13782,6 +13789,40 @@ Objects {
   Script {
     ScriptAsset {
       Id: 12724085525263498762
+    }
+  }
+}
+Objects {
+  Id: 14315459413614627151
+  Name: "Trigger"
+  Transform {
+    Location {
+      X: 9364.12793
+      Y: 692.896
+      Z: -7784.74512
+    }
+    Rotation {
+    }
+    Scale {
+      X: 5.79716778
+      Y: 11.7131214
+      Z: 4.63592911
+    }
+  }
+  ParentId: 10235156614403652406
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
     }
   }
 }
