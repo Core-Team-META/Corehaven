@@ -28,6 +28,7 @@ Objects {
   ChildIds: 6510254116098850982
   ChildIds: 4245824140765784048
   ChildIds: 16504893050134301516
+  ChildIds: 12824977280530442627
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -35,6 +36,81 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 12824977280530442627
+  Name: "Portal VFX"
+  Transform {
+    Location {
+      X: 4805.49707
+      Y: 353.619202
+      Z: 126.347656
+    }
+    Rotation {
+      Yaw: -0.594390869
+    }
+    Scale {
+      X: 0.49999997
+      Y: 0.336621106
+      Z: 0.5
+    }
+  }
+  ParentId: 1864869116977628757
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Background Texture"
+      Enum {
+        Value: "mc:eportalbackground:10"
+      }
+    }
+    Overrides {
+      Name: "bp:Color A"
+      Color {
+        R: 0.209999979
+        G: 0.905827641
+        B: 1
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        G: 0.261986762
+        B: 0.86
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color c"
+      Color {
+        G: 0.291390687
+        B: 0.440000057
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Scene Tint Color"
+      Color {
+        R: 0.35989213
+        G: 0.385455698
+        B: 0.4375
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 6677237403455816226
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
