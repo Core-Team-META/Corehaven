@@ -46,9 +46,9 @@
         Name: "Book11"
         Transform {
           Location {
+            Y: 16.8603516
           }
           Rotation {
-            Pitch: 90
           }
           Scale {
             X: 0.680864573
@@ -73,25 +73,26 @@
         Name: "Group"
         Transform {
           Location {
-            X: -33.5977936
-            Y: 10.7342844
-            Z: 21.0454464
+            X: -55.8314743
+            Y: -3.24438167
+            Z: -26.5298481
           }
           Rotation {
-            Pitch: 47.9580536
-            Yaw: -63.5810852
-            Roll: 139.583328
+            Pitch: -11.4702759
+            Yaw: 81.9190903
+            Roll: -54.4740906
           }
           Scale {
-            X: 0.726551533
-            Y: 0.726551533
-            Z: 0.726551533
+            X: 0.5
+            Y: 0.5
+            Z: 0.5
           }
         }
         ParentId: 7576124662876333454
         ChildIds: 18068917855928886724
         ChildIds: 6301874267803333122
         ChildIds: 211552292191320416
+        ChildIds: 10760084768908889012
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -143,7 +144,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -201,7 +201,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
@@ -259,7 +258,284 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 10760084768908889012
+        Name: "Group"
+        Transform {
+          Location {
+            X: -56.8867416
+            Y: 38.0886078
+            Z: 8.18675423
+          }
+          Rotation {
+            Pitch: -43.9598083
+            Yaw: 90
+          }
+          Scale {
+            X: 2.40306735
+            Y: 2.40306735
+            Z: 2.40306735
+          }
+        }
+        ParentId: 12852409667714284248
+        ChildIds: 15941482685197909347
+        ChildIds: 7967601100119602484
+        ChildIds: 4521293666697828623
+        ChildIds: 3755643460173717724
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
+        Id: 15941482685197909347
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -6.98909569
+            Y: -15.3149128
+            Z: 6.17672968
+          }
+          Rotation {
+            Pitch: -49.3981323
+            Yaw: 116.556076
+            Roll: -14.8114319
+          }
+          Scale {
+            X: 0.0749397725
+            Y: 0.0749319121
+            Z: 0.160453141
+          }
+        }
+        ParentId: 10760084768908889012
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 7967601100119602484
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -7.63910484
+            Y: -31.4872704
+            Z: 6.234375
+          }
+          Rotation {
+            Pitch: 34.0297394
+            Yaw: 105.322334
+            Roll: 4.77997541
+          }
+          Scale {
+            X: 0.0749358758
+            Y: 0.0749337301
+            Z: 0.136328429
+          }
+        }
+        ParentId: 10760084768908889012
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4521293666697828623
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -5.79821396
+            Y: -28.1038895
+            Z: 7.86425781
+          }
+          Rotation {
+            Pitch: 12.2515898
+            Yaw: 107.577888
+            Roll: 9.09677887
+          }
+          Scale {
+            X: 0.0602634475
+            Y: 0.0602634475
+            Z: 0.0602634475
+          }
+        }
+        ParentId: 10760084768908889012
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 3755643460173717724
+        Name: "Bone Human Skull 01"
+        Transform {
+          Location {
+            X: -5.3896184
+            Y: -18.4133911
+            Z: 7.75498343
+          }
+          Rotation {
+            Pitch: -13.2767029
+            Yaw: 82.7365723
+            Roll: 8.71888733
+          }
+          Scale {
+            X: 0.0602634475
+            Y: 0.0602634475
+            Z: 0.0602634475
+          }
+        }
+        ParentId: 10760084768908889012
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 6938880583474568810
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:smart"
+            Bool: false
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 2.85476899
+              G: 1.71
+              B: 3
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6378879557962707429
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
           StaticMesh {
             Physics {
             }
@@ -301,6 +577,24 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
+      Id: 6378879557962707429
+      Name: "Horn"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_horn_001"
+      }
+    }
+    Assets {
+      Id: 6938880583474568810
+      Name: "Bone Raw"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_bone_raw_001_uv_ref"
       }
     }
     PrimaryAssetId {

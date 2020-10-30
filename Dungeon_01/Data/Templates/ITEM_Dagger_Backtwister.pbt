@@ -62,9 +62,11 @@
         ParentId: 14221847442462413670
         ChildIds: 11527184425841715004
         ChildIds: 9272687909282299361
-        ChildIds: 13545949256429233863
-        ChildIds: 5183237045566618231
-        ChildIds: 17239376530143741984
+        ChildIds: 10903983389352934782
+        ChildIds: 12801375485623117831
+        ChildIds: 5078977652474258502
+        ChildIds: 223825015084152453
+        ChildIds: 9964870095660884074
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -102,8 +104,6 @@
             Id: 3682206342183528038
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           StaticMesh {
             Physics {
@@ -132,13 +132,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11337413471323694429
+              Id: 2819717477027926411
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 11337413471323694429
+              Id: 2819717477027926411
             }
           }
         }
@@ -153,8 +153,6 @@
             Id: 9544913535066953067
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           StaticMesh {
             Physics {
@@ -163,18 +161,19 @@
         }
       }
       Objects {
-        Id: 13545949256429233863
-        Name: "Fantasy Pommel 01"
+        Id: 10903983389352934782
+        Name: "Pipe - Spiral"
         Transform {
           Location {
-            Z: -12.6728745
+            Y: 1.08886719
+            Z: 14.9038696
           }
           Rotation {
           }
           Scale {
-            X: 1
-            Y: 1
-            Z: 1
+            X: 0.20887287
+            Y: 0.100317508
+            Z: 0.20887287
           }
         }
         ParentId: 9416462997540856755
@@ -182,7 +181,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11337413471323694429
+              Id: 2819717477027926411
             }
           }
         }
@@ -194,11 +193,9 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1383772742094820961
+            Id: 11186078670455541833
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           StaticMesh {
             Physics {
@@ -207,43 +204,27 @@
         }
       }
       Objects {
-        Id: 5183237045566618231
-        Name: "Text 05: ~"
+        Id: 12801375485623117831
+        Name: "Pipe - Spiral"
         Transform {
           Location {
-            X: 78.5419922
-            Y: 0.09375
-            Z: 68.1472778
+            Y: 1.08886719
+            Z: 35.8146973
           }
           Rotation {
-            Pitch: -74.4052734
-            Yaw: 1.8172493e-11
-            Roll: -179.999939
           }
           Scale {
-            X: 0.465340436
-            Y: 0.0487125516
-            Z: 1.086797
+            X: 0.20887287
+            Y: 0.100317508
+            Z: 0.20887287
           }
         }
         ParentId: 9416462997540856755
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Font.Bevel:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11337413471323694429
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:id"
-            AssetReference {
-              Id: 16089504577365745032
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:id"
-            AssetReference {
-              Id: 11337413471323694429
+              Id: 2819717477027926411
             }
           }
         }
@@ -255,11 +236,9 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 14540343280271626203
+            Id: 11186078670455541833
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
           }
           StaticMesh {
             Physics {
@@ -268,42 +247,26 @@
         }
       }
       Objects {
-        Id: 17239376530143741984
-        Name: "Text 05: ~"
+        Id: 5078977652474258502
+        Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            X: -88.4921875
-            Y: -1.66796875
-            Z: 58.975769
+            Z: 14.0542603
           }
           Rotation {
-            Pitch: -90
-            Roll: 3.20353975e-05
           }
           Scale {
-            X: 0.652358353
-            Y: 0.082404092
-            Z: 1.086797
+            X: 0.435819119
+            Y: 0.983621955
+            Z: 0.654936433
           }
         }
         ParentId: 9416462997540856755
         UnregisteredParameters {
           Overrides {
-            Name: "ma:Font.Bevel:id"
+            Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11337413471323694429
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Faces:id"
-            AssetReference {
-              Id: 16089504577365745032
-            }
-          }
-          Overrides {
-            Name: "ma:Font.Sides:id"
-            AssetReference {
-              Id: 11337413471323694429
+              Id: 2819717477027926411
             }
           }
         }
@@ -315,11 +278,93 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 14540343280271626203
+            Id: 13888119501670323283
           }
           Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 223825015084152453
+        Name: "Sphere"
+        Transform {
+          Location {
+            Z: -19.1654053
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.174208462
+            Y: 0.174208462
+            Z: 0.174208462
+          }
+        }
+        ParentId: 9416462997540856755
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 13786852880729742002
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6585207450897081622
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 9964870095660884074
+        Name: "Sphere"
+        Transform {
+          Location {
+            Z: -19.1654053
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.174208462
+            Y: 0.174208462
+            Z: 0.174208462
+          }
+        }
+        ParentId: 9416462997540856755
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 10766975867019021707
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 6585207450897081622
+          }
+          Teams {
           }
           StaticMesh {
             Physics {
@@ -356,39 +401,48 @@
       }
     }
     Assets {
-      Id: 11337413471323694429
-      Name: "Metal Gold 01"
+      Id: 2819717477027926411
+      Name: "Metal Basic Steel"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_gold_001"
+        AssetId: "steel_001"
       }
     }
     Assets {
-      Id: 1383772742094820961
-      Name: "Fantasy Pommel 01"
+      Id: 11186078670455541833
+      Name: "Pipe - Spiral"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_pommel_001"
+        AssetId: "sm_pipe_spiral_001"
       }
     }
     Assets {
-      Id: 14540343280271626203
-      Name: "Text 05: ~"
+      Id: 13888119501670323283
+      Name: "Fantasy Sword Blade 04"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
-        AssetId: "F6_Text_036"
+        AssetId: "sm_weap_fan_blade_sword_004_ref"
       }
     }
     Assets {
-      Id: 16089504577365745032
-      Name: "Metal Old Beaten Gold 02"
+      Id: 6585207450897081622
+      Name: "Sphere"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "sm_sphere_002"
+      }
+    }
+    Assets {
+      Id: 10766975867019021707
+      Name: "Glass 01 (no distortion)"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_metal_gold_002"
+        AssetId: "mi_basic_glass_001"
       }
     }
     PrimaryAssetId {
