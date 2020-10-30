@@ -547,7 +547,7 @@ function Tick(deltaTime)
 							local targetId = API_NPC.GetTargetId(npc)
 
 							for _, otherPlayer in pairs(Game.GetPlayers()) do
-								if otherPlayer.id == targetId then
+								if otherPlayer ~= player and otherPlayer.id == targetId then
 									removedTarget = false
 									break
 								end
