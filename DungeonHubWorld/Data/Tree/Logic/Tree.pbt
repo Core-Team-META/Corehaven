@@ -45642,7 +45642,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 180
+    Width: 231
     Height: -20
     UIX: -3.70239258
     UIY: -6.10351563e-05
@@ -48162,7 +48162,7 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Control {
-    Width: 180
+    Width: 229
     Height: -20
     UIX: -3.70239258
     UIY: -6.10351563e-05

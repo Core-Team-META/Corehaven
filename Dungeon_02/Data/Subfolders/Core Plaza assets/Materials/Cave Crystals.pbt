@@ -2,7 +2,7 @@
   Id: 18001300954479451576
   Name: "Cave Crystals"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {

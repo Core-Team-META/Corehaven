@@ -10129,7 +10129,6 @@ Objects {
   ChildIds: 16298531428994835674
   ChildIds: 9065014502837803782
   ChildIds: 7916507105487458652
-  ChildIds: 73359343347011477
   ChildIds: 12691328346089462298
   ChildIds: 970938678307617803
   ChildIds: 12017747308833894003
@@ -10734,9 +10733,9 @@ Objects {
   Name: "Cylinder - Chamfered"
   Transform {
     Location {
-      X: 0.0110341646
-      Y: -0.578748405
-      Z: 13.0452337
+      X: 0.0110157682
+      Y: -0.578957856
+      Z: 19.2150478
     }
     Rotation {
       Pitch: 1.36603776e-05
@@ -10797,9 +10796,9 @@ Objects {
   Name: "Cylinder - Chamfered"
   Transform {
     Location {
-      X: 0.0105010569
-      Y: -0.578766167
-      Z: 11.6116238
+      X: 0.0106522478
+      Y: -0.578860521
+      Z: 17.7814789
     }
     Rotation {
       Pitch: 5.46415104e-05
@@ -10856,76 +10855,13 @@ Objects {
   }
 }
 Objects {
-  Id: 73359343347011477
-  Name: "Cylinder - Chamfered"
-  Transform {
-    Location {
-      X: 0.0107171992
-      Y: -0.578726768
-      Z: 14.4686193
-    }
-    Rotation {
-      Pitch: 5.46415104e-05
-      Yaw: 2.7214e-05
-      Roll: -6.10351563e-05
-    }
-    Scale {
-      X: 0.18511638
-      Y: 0.185116336
-      Z: 0.129779741
-    }
-  }
-  ParentId: 1621736693938192351
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 18168149806092884960
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: true
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.276041657
-        G: 0.276041657
-        B: 0.276041657
-        A: 1
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 11285278799348334020
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 7916507105487458652
   Name: "Cylinder - Chamfered"
   Transform {
     Location {
-      X: 0.0109752547
-      Y: -0.578615069
-      Z: 13.8045273
+      X: 0.0110473698
+      Y: -0.578857243
+      Z: 19.9741592
     }
     Rotation {
       Pitch: 1.36603776e-05

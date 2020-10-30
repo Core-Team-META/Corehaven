@@ -131,7 +131,7 @@ function Dialogs.RegisterDialogue()
     id = "WelcomeDialog8"
     API.RegisterDialogueId(id)
     API.AddText(id, "A merchant ship has just returned from our sister outpost, Highrock, with reports of disturbing happenings...", EXCITEMENT_ANIMATION)
-    API.AddText(id, "If you are the adventuring sort, head to the docks to hear the tale yourself and see what can be done!", YES_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, HEAD TO THE DOCKS to hear the tale yourself and see what can be done!", YES_ANIMATION)
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
@@ -144,7 +144,7 @@ function Dialogs.RegisterDialogue()
 	id = "HighrockWelcome1"
 	API.RegisterDialogueId(id)
     API.AddText(id, "{name}, a merchant ship has just returned from the imperial island outpost of Highrock with reports of disturbing happenings...", EXCITEMENT_ANIMATION)
-    API.AddText(id, "If you are the adventuring sort, head to the docks to hear the tale for yourself and see what can be done!", YES_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, HEAD TO THE DOCKS to hear the tale for yourself and see what can be done!", YES_ANIMATION)
     
 	
     --Character Conversations

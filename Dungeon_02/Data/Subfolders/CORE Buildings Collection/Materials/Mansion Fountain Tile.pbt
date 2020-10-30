@@ -2,7 +2,7 @@
   Id: 13305199675862931432
   Name: "Mansion Fountain Tile"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 17033856097141245795
     ParameterOverrides {

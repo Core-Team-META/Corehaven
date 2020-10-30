@@ -2,7 +2,7 @@
   Id: 5813693527722069332
   Name: "Ruddy Bricks Wall Flat Smaller"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 12950991110711675075
     ParameterOverrides {

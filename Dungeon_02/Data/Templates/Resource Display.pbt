@@ -515,5 +515,5 @@
       AssetId: "Resource_Display"
     }
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

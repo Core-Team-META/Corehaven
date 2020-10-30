@@ -53,4 +53,13 @@
     Lore = 'An iron hammer imbued with magical energies',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Brimstone',
+    Type = 'Mace',
+    Rarity = 'Epic',
+    StatKey = 'EpicTankMace',
+    MUID = 'C32EA2F63A19AD7F:ITEM_Mace_Brimstone',
+    Lore = 'A huge mace forged in eternal flame, it is hot to the touch',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

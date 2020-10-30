@@ -63,6 +63,7 @@
         ChildIds: 3859540167532600274
         ChildIds: 17492209672732786322
         ChildIds: 18342004807111294488
+        ChildIds: 126605861372178118
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -256,7 +257,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 2819717477027926411
+              Id: 16031644660221449007
             }
           }
           Overrides {
@@ -282,9 +283,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.919999957
+              G: 0.658013225
               A: 1
             }
           }
@@ -481,7 +481,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 11337413471323694429
+              Id: 7307801632734736223
             }
           }
           Overrides {
@@ -495,7 +495,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 11337413471323694429
+              Id: 7307801632734736223
             }
           }
           Overrides {
@@ -507,9 +507,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.690000057
+              G: 0.191920534
               A: 1
             }
           }
@@ -525,9 +524,8 @@
           Overrides {
             Name: "ma:Shared_Trim:color"
             Color {
-              R: 1
-              G: 1
-              B: 1
+              R: 0.690000057
+              G: 0.191920534
               A: 1
             }
           }
@@ -639,6 +637,91 @@
           }
         }
       }
+      Objects {
+        Id: 126605861372178118
+        Name: "Fairy Dot Volume VFX"
+        Transform {
+          Location {
+            Z: 64.8598
+          }
+          Rotation {
+            Roll: -90
+          }
+          Scale {
+            X: 0.110996127
+            Y: 0.684337199
+            Z: 0.99999994
+          }
+        }
+        ParentId: 14879081315461711297
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Volume Type"
+            Enum {
+              Value: "mc:evfxvolumetype:3"
+            }
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 3.65846872
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1.9084667
+          }
+          Overrides {
+            Name: "bp:Curl Offset"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Speed"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 1
+              G: 0.576225162
+              B: 0.19
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Secondary Color"
+            Color {
+              R: 0.38
+              G: 0.196291402
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.0665088519
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 0.74625814
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 2817427650841863151
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
     }
     Assets {
       Id: 14828962383590629290
@@ -719,6 +802,15 @@
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_weap_fan_pommel_001"
+      }
+    }
+    Assets {
+      Id: 2817427650841863151
+      Name: "Fairy Dot Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_Swirling_Magic_Column"
       }
     }
     PrimaryAssetId {

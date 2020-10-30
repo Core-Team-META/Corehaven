@@ -2,7 +2,7 @@
   Id: 17536502420165734434
   Name: "Foundation Warm Color"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 11145535881489788070
     ParameterOverrides {

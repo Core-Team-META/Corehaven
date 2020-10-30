@@ -461,4 +461,28 @@
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    DropKey = 'HRBoss1Epic',
+    ItemName = 'Brimstone',
+    Likelihood = '1',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'HRBoss2Epic',
+    ItemName = 'Firestarter',
+    Likelihood = '1',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'HRBoss3Epic',
+    ItemName = 'Vile Soulkeeper',
+    Likelihood = '1',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    DropKey = 'HRBoss4Epic',
+    ItemName = 'Zetalan\'s Skull',
+    Likelihood = '1',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

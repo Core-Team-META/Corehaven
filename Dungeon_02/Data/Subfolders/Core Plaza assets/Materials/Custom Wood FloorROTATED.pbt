@@ -2,7 +2,7 @@
   Id: 16689707185539597963
   Name: "Custom Wood FloorROTATED"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4303012738782523103
     ParameterOverrides {

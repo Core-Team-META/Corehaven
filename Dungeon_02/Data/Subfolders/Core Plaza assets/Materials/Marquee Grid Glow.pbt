@@ -2,7 +2,7 @@
   Id: 2387889244470147582
   Name: "Marquee Grid Glow"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 16872281456320893949
     ParameterOverrides {

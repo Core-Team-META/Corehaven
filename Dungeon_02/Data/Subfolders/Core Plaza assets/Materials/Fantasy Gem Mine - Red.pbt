@@ -2,7 +2,7 @@
   Id: 7822070275499466343
   Name: "Fantasy Gem Mine - Red"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {
