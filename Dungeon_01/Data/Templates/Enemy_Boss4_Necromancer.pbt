@@ -114,6 +114,34 @@
             Float: 1
           }
           Overrides {
+            Name: "cs:DropKey3"
+            String: "EssencePearl"
+          }
+          Overrides {
+            Name: "cs:DropChance3"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:DropKey4"
+            String: "EssencePearl"
+          }
+          Overrides {
+            Name: "cs:DropChance4"
+            Float: 1
+          }
+          Overrides {
+            Name: "cs:DropKey5"
+            String: "HRBoss4Epic"
+          }
+          Overrides {
+            Name: "cs:DropChance5"
+            Float: 0.02
+          }
+          Overrides {
+            Name: "cs:DropMinDifficulty5"
+            Int: 3
+          }
+          Overrides {
             Name: "cs:OnPulledEventName"
             String: "Boss4Pulled"
           }
@@ -142,22 +170,6 @@
             ObjectReference {
               SubObjectId: 7669210589873785186
             }
-          }
-          Overrides {
-            Name: "cs:DropKey3"
-            String: "EssencePearl"
-          }
-          Overrides {
-            Name: "cs:DropChance3"
-            Float: 1
-          }
-          Overrides {
-            Name: "cs:DropKey4"
-            String: "EssencePearl"
-          }
-          Overrides {
-            Name: "cs:DropChance4"
-            Float: 1
           }
           Overrides {
             Name: "cs:HealthFraction:isrep"

@@ -24,7 +24,10 @@ local movementSounds = {}
 
 function MoveGate(gate)
 	if currentTasks[gate] then
-		movementSounds[gate]:Destroy()
+		if movementSounds[gate] then
+			movementSounds[gate]:Destroy()
+		end
+		
 		currentTasks[gate]:Cancel()
 	end
 

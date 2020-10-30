@@ -98,6 +98,10 @@
             Float: 0.0008
           }
           Overrides {
+            Name: "cs:DropMinDifficulty3"
+            Int: 3
+          }
+          Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
               Id: 17793633192632098619
