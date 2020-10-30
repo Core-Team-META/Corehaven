@@ -33,7 +33,10 @@ function Tick(deltaTime)
 
 		for character, index in pairs(currentStatusEffects) do
 			if not activeCharacters[character] then
-				API_SE.RemoveStatusEffect(character, index)
+				if Object.IsValid(character) then
+					API_SE.RemoveStatusEffect(character, index)
+				end
+				
 				currentStatusEffects[character] = nil
 			end
 		end

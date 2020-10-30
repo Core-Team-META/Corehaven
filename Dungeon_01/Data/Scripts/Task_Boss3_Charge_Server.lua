@@ -20,12 +20,14 @@ function OnTaskStart(npc, threatTable)
 	local targetThreat = 0.0
 	local hasMultipleTargets = false
 
-	-- Find the player with the most threat who we aren't currently targeting
+	-- Find the player in range with the most threat who we aren't currently targeting
 	for player, threat in pairs(threatTable) do
 		if player ~= API_NPC.GetTarget(npc) and threat > targetThreat then
-			target = player
-			targetThreat = threat
-			hasMultipleTargets = true
+			if (player:GetWorldPosition() - npc:GetWorldPosition()).size <= RANGE then
+				target = player
+				targetThreat = threat
+				hasMultipleTargets = true
+			end
 		end
 	end
 

@@ -15,15 +15,7 @@ local LOCAL_PLAYER = Game.GetLocalPlayer()
 function OpenDialog()
 	PANEL.visibility = Visibility.INHERIT
 	NPC_TRIGGER.collision = Collision.FORCE_OFF
-end
 
-function CloseDialog()
-	PANEL.visibility = Visibility.FORCE_OFF
-	NPC_TRIGGER.collision = Collision.INHERIT
-end
-
-function OnHighrockPortal()
-	OpenDialog()
 	local level = LOCAL_PLAYER.clientUserData.statSheet:GetLevel()
 
 	if level < 5 then
@@ -49,6 +41,15 @@ function OnHighrockPortal()
 		INFINITE_ERROR.visibility = Visibility.FORCE_OFF
 		INFINITE_BUTTON.isInteractable = true
 	end
+end
+
+function CloseDialog()
+	PANEL.visibility = Visibility.FORCE_OFF
+	NPC_TRIGGER.collision = Collision.INHERIT
+end
+
+function OnHighrockPortal()
+	OpenDialog()
 end
 
 function OnDeclineButtonClicked(button)

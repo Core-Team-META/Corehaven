@@ -5,7 +5,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 local RANGE = 3000.0
 local COOLDOWN = 2.0
-local DAMAGE = 17.0
+local DAMAGE = 12.0
 local PROJECTILE_SPEED = 2000.0
 
 function GetPriority(npc, taskHistory)

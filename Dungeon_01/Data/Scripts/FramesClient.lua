@@ -40,15 +40,12 @@ function OnFrameClick(frameData)
 
 	-- We have to set it back, because we just clicked in space and it got cleared
 	if frameData == targetFrame then
-		print("A")
 		API_T.TrySetTarget(target, false)
 	elseif frameData == targetTargetFrame then
-		print("B")
 		API_T.TrySetTarget(targetTarget, false)
 	else
 		for player, data in pairs(partyFrames) do
 			if frameData == data then
-				print("C")
 				API_T.TrySetTarget(player, false)
 				return
 			end

@@ -106,10 +106,11 @@ function API.RegisterNPCFolder(npcFolder)
 		while true do
 			local key = npc:GetCustomProperty(string.format("DropKey%d", i))
 			local chance = npc:GetCustomProperty(string.format("DropChance%d", i))
+			local minDifficulty = npc:GetCustomProperty(string.format("DropMinDifficulty%d", i))
 
 			if key then
 				assert(chance)
-				data.dropData[i] = {key = key, chance = chance}
+				data.dropData[i] = {key = key, chance = chance, minDifficulty = minDifficulty}
 				i = i + 1
 			else
 				break
@@ -275,7 +276,15 @@ function API.GetTarget(npc)
 				return player
 			end
 		end
+
+		-- This means the player left, and whatever we are doing with this call is probably going to be incorrect
+		-- On client this is just visual (and could just be timing), so that's okay
+		assert(IS_CLIENT)
 	end
+end
+
+function API.GetTargetId(npc)
+	return npc:GetCustomProperty("TargetID")
 end
 
 function API.IsDead(npc)
