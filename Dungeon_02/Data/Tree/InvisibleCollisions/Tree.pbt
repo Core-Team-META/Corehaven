@@ -1,6 +1,306 @@
 ﻿Name: "InvisibleCollisions"
 RootId: 2732470911758805994
 Objects {
+  Id: 7227264926261729300
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 42352.9531
+      Y: -1299.20313
+      Z: 192.025146
+    }
+    Rotation {
+    }
+    Scale {
+      X: 32.4699593
+      Y: 32.4699593
+      Z: 39.2592621
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 8046841700325424418
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 43671.625
+      Y: -1395.59766
+      Z: 192.025146
+    }
+    Rotation {
+    }
+    Scale {
+      X: 32.4699593
+      Y: 32.4699593
+      Z: 39.2592621
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 11269053819455586111
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 41505.6641
+      Y: 3432.07617
+      Z: 192.025269
+    }
+    Rotation {
+    }
+    Scale {
+      X: 27.5519142
+      Y: 27.5519142
+      Z: 39.4897
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 17953369919971053375
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 43386.3242
+      Y: 3405.48828
+      Z: 192.025269
+    }
+    Rotation {
+    }
+    Scale {
+      X: 27.5519142
+      Y: 27.5519142
+      Z: 39.4897
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 10677800141162366338
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 45395.5703
+      Y: -444.860352
+      Z: 192.024902
+    }
+    Rotation {
+    }
+    Scale {
+      X: 27.5519142
+      Y: 27.5519142
+      Z: 39.4897
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 3117075645302487955
+  Name: "StartingArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 45140.8672
+      Y: 3021.3916
+      Z: 192.025024
+    }
+    Rotation {
+    }
+    Scale {
+      X: 27.5519142
+      Y: 27.5519142
+      Z: 39.4897
+    }
+  }
+  ParentId: 2732470911758805994
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 1848963245568864173
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10602013473409766249
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 16374799404205584945
   Name: "ForestPath_InvisibleCollision"
   Transform {

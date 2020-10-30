@@ -2,7 +2,7 @@
   Id: 17713580169348342612
   Name: "Daisy Yellow"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4141399624389939046
     ParameterOverrides {

@@ -42,9 +42,9 @@
   Marketplace {
     Id: "fbc933a64afe40e786528e83f86ca0ba"
     OwnerAccountId: "a7fa1014cab64595bee90b0049070c8e"
-    OwnerName: "AphrimCreates"
+    OwnerName: "Aphrim"
     Version: "1.0.0"
     Description: "You can use these assets in your map if you want. Not made by me, made by manticore games"
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

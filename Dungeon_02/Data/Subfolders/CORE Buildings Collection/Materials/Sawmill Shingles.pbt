@@ -2,7 +2,7 @@
   Id: 8866898932415071465
   Name: "Sawmill Shingles"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 3761894084669061933
     ParameterOverrides {

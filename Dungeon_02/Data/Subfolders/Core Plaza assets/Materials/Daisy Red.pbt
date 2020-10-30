@@ -2,7 +2,7 @@
   Id: 355456999554528880
   Name: "Daisy Red"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4141399624389939046
     ParameterOverrides {

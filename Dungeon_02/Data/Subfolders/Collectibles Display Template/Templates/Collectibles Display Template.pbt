@@ -46,5 +46,5 @@
     Version: "1.0.0"
     Description: "Note: needs player storage enabled in Game Settings to function!\r\n\r\nDisplays the Collectibles that the player has found from the Collectibles Template (also on CC)"
   }
-  SerializationVersion: 67
+  SerializationVersion: 65
 }

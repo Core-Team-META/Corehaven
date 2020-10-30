@@ -2,7 +2,7 @@
   Id: 12004507392754821448
   Name: "Daisy Blue"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 4141399624389939046
     ParameterOverrides {

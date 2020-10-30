@@ -2,7 +2,7 @@
   Id: 18051584670475849648
   Name: "Entrance Letters Steel"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 5861223425148352605
     ParameterOverrides {

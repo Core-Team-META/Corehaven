@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14252695843363782250
-  Name: "Spiral"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_helix_001"
-  }
-}
-Assets {
   Id: 13606802925569237401
   Name: "Rock Pile 001"
   PlatformAssetType: 1
@@ -71,12 +62,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12629436541872600207
-  Name: "Rope"
-  PlatformAssetType: 2
+  Id: 12837011313870552923
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
   PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_rope_001"
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
   }
 }
 Assets {
@@ -134,15 +125,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7525691272519125347
-  Name: "Ring 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_002"
-  }
-}
-Assets {
   Id: 6382662502274878333
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -194,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
+  Id: 1848963245568864173
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
   }
 }
 Assets {

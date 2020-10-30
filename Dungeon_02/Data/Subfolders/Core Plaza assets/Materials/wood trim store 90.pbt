@@ -2,7 +2,7 @@
   Id: 6367967049875015660
   Name: "wood trim store 90"
   PlatformAssetType: 13
-  SerializationVersion: 67
+  SerializationVersion: 65
   CustomMaterialAsset {
     BaseMaterialId: 14231809728886464860
     ParameterOverrides {
