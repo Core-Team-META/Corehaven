@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 11319738698393174318
-  Name: "ITEM_Focus_Zetalans_Skull"
+  Name: "ITEM_Focus_ZetalansSkull"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
@@ -138,7 +138,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 14240132263400153354
+            Id: 174270924982814207
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -323,7 +323,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6938880583474568810
+              Id: 853087330042215159
             }
           }
           Overrides {
@@ -348,7 +348,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6378879557962707429
+            Id: 10413465125058823580
           }
           Teams {
           }
@@ -384,7 +384,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6938880583474568810
+              Id: 853087330042215159
             }
           }
           Overrides {
@@ -409,7 +409,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6378879557962707429
+            Id: 10413465125058823580
           }
           Teams {
           }
@@ -445,7 +445,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6938880583474568810
+              Id: 853087330042215159
             }
           }
           Overrides {
@@ -470,7 +470,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6378879557962707429
+            Id: 10413465125058823580
           }
           Teams {
           }
@@ -506,7 +506,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6938880583474568810
+              Id: 853087330042215159
             }
           }
           Overrides {
@@ -531,7 +531,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6378879557962707429
+            Id: 10413465125058823580
           }
           Teams {
           }
@@ -553,7 +553,7 @@
       }
     }
     Assets {
-      Id: 14240132263400153354
+      Id: 174270924982814207
       Name: "Bone Human Skull 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -580,7 +580,7 @@
       }
     }
     Assets {
-      Id: 6378879557962707429
+      Id: 10413465125058823580
       Name: "Horn"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -589,7 +589,7 @@
       }
     }
     Assets {
-      Id: 6938880583474568810
+      Id: 853087330042215159
       Name: "Bone Raw"
       PlatformAssetType: 2
       PrimaryAsset {

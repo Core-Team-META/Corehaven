@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 12399291006964216830
-  Name: "ITEM_Staff_Vile_Soulkeeper"
+  Name: "ITEM_Staff_VileSoulkeeper"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {

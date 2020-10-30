@@ -51,7 +51,9 @@ function view:EnsureSufficientHoverStatEntries(numRequired)
             entry.clientUserData.icon = entry:GetCustomProperty("StatIcon"):WaitForObject()
             entry.clientUserData.value = entry:GetCustomProperty("StatValue"):WaitForObject()
             entry.clientUserData.enhancementBonus = entry:GetCustomProperty("StatEnhancementBonus"):WaitForObject()
+            entry.clientUserData.valueBaseColor = entry.clientUserData.value:GetColor()
             entry.clientUserData.bonusBaseColor = entry.clientUserData.enhancementBonus:GetColor()
+            entry.clientUserData.iconBaseColor = entry.clientUserData.icon:GetColor()
             table.insert(self.itemHoverStatEntries, entry)
         end
     end
@@ -101,9 +103,11 @@ function view:DrawPanelWithStats()
             end
             -- Show color based on comparison.
             if compareStatInfo and compareStatInfo.value < statInfo.value then
-                entry.clientUserData.enhancementBonus:SetColor(ItemThemes.COLOR_GOOD)
+                entry.clientUserData.value:SetColor(ItemThemes.COLOR_GOOD)
+                entry.clientUserData.icon:SetColor(ItemThemes.COLOR_GOOD)
             else
-                entry.clientUserData.enhancementBonus:SetColor(entry.clientUserData.bonusBaseColor)
+                entry.clientUserData.value:SetColor(entry.clientUserData.valueBaseColor)
+                entry.clientUserData.icon:SetColor(entry.clientUserData.iconBaseColor)
             end
         else
             entry.visibility = Visibility.FORCE_OFF

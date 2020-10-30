@@ -106,10 +106,11 @@ function API.RegisterNPCFolder(npcFolder)
 		while true do
 			local key = npc:GetCustomProperty(string.format("DropKey%d", i))
 			local chance = npc:GetCustomProperty(string.format("DropChance%d", i))
+			local minDifficulty = npc:GetCustomProperty(string.format("DropMinDifficulty%d", i))
 
 			if key then
 				assert(chance)
-				data.dropData[i] = {key = key, chance = chance}
+				data.dropData[i] = {key = key, chance = chance, minDifficulty = minDifficulty}
 				i = i + 1
 			else
 				break

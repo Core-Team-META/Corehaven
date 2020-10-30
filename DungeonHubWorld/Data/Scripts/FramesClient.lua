@@ -40,15 +40,12 @@ function OnFrameClick(frameData)
 
 	-- We have to set it back, because we just clicked in space and it got cleared
 	if frameData == targetFrame then
-		print("A")
 		API_T.TrySetTarget(target, false)
 	elseif frameData == targetTargetFrame then
-		print("B")
 		API_T.TrySetTarget(targetTarget, false)
 	else
 		for player, data in pairs(partyFrames) do
 			if frameData == data then
-				print("C")
 				API_T.TrySetTarget(player, false)
 				return
 			end
@@ -62,8 +59,9 @@ function CreateFrame()
 	data.frame.visibility = Visibility.FORCE_OFF
 	data.statusEffects = {}
 
+	local statusEffectsRoot = data.frame:GetCustomProperty("StatusEffectsRoot"):WaitForObject()
 	for i = 1, API_SE.MAX_STATUS_EFFECTS do
-		data.statusEffects[i] = World.SpawnAsset(STATUS_EFFECT_TEMPLATE, {parent = data.frame})
+		data.statusEffects[i] = World.SpawnAsset(STATUS_EFFECT_TEMPLATE, { parent = statusEffectsRoot })
 		data.statusEffects[i].visibility = Visibility.FORCE_OFF
 		data.statusEffects[i].x = 67 + 20 * i
 		data.statusEffects[i].y = -2

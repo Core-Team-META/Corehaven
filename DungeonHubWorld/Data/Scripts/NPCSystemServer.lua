@@ -409,13 +409,15 @@ function KillNPC(npc, skipLoot)
 		if not skipLoot then
 			for _, player in pairs(Game.GetPlayers()) do
 				for _, dropInfo in pairs(npcData.dropData) do
-					if math.random() <= dropInfo.chance then
-						Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
-					end
+					if not dropInfo.minDifficulty or dropInfo.minDifficulty <= API_DS.GetDifficultyLevel() then
+						if math.random() <= dropInfo.chance then
+							Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
+						end
 
-					if player.serverUserData.statSheet then
-						local multiplier = API_DS.GetExperienceMultiplier()
-						player.serverUserData.statSheet:AddExperience(npcData.experience * multiplier)
+						if player.serverUserData.statSheet then
+							local multiplier = API_DS.GetExperienceMultiplier()
+							player.serverUserData.statSheet:AddExperience(npcData.experience * multiplier)
+						end
 					end
 				end
 			end

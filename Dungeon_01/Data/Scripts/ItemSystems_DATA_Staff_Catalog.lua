@@ -31,7 +31,7 @@
     Type = 'Staff',
     Rarity = 'Epic',
     StatKey = 'EpicMagicStaff',
-    MUID = 'AC13217A00CC33FE:ITEM_Staff_Vile_Soulkeeper',
+    MUID = 'AC13217A00CC33FE:ITEM_Staff_VileSoulkeeper',
     Lore = 'An epically vile staff. You think you can faintly hear the cries of the damned...',
     ['Author Notes (will be ignored by script)'] = '',
   },

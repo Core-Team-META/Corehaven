@@ -23,7 +23,16 @@
     Rarity = 'Rare',
     StatKey = 'RareMagicStaff',
     MUID = '3265AFB0B4A80207:ITEM_Staff_EvilEye',
-    Lore = 'A spooky staff, it definitely has magical properties',
+    Lore = 'A spooky staff, it really does seem to be watching you',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Vile Soulkeeper',
+    Type = 'Staff',
+    Rarity = 'Epic',
+    StatKey = 'EpicMagicStaff',
+    MUID = 'AC13217A00CC33FE:ITEM_Staff_VileSoulkeeper',
+    Lore = 'An epically vile staff. You think you can faintly hear the cries of the damned...',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

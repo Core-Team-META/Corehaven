@@ -7,7 +7,7 @@
       RootId: 7967938139851610988
       Objects {
         Id: 7967938139851610988
-        Name: "ITEM_Greatsword_AlmirasClaymore"
+        Name: "ITEM_Greatsword_Firestarter"
         Transform {
           Scale {
             X: 1
@@ -95,11 +95,14 @@
         ChildIds: 17841110581179571628
         ChildIds: 6297482248104395834
         ChildIds: 14910574251195313030
-        ChildIds: 2312071951827232403
         ChildIds: 2541765257265297482
         ChildIds: 13377794567865019207
         ChildIds: 2502416236691580769
         ChildIds: 18091501824075957729
+        ChildIds: 2079895154319275220
+        ChildIds: 12571598848431373371
+        ChildIds: 6267937446043227071
+        ChildIds: 11159587340899287882
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -442,7 +445,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15317385495420651569
+              Id: 17526400651633856459
             }
           }
           Overrides {
@@ -452,8 +455,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 3
-              G: 0.997119069
+              R: 10
+              G: 3.32373023
               A: 1
             }
           }
@@ -503,7 +506,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15317385495420651569
+              Id: 17526400651633856459
             }
           }
           Overrides {
@@ -513,8 +516,8 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 3
-              G: 0.997119069
+              R: 10
+              G: 3.32373023
               A: 1
             }
           }
@@ -535,57 +538,6 @@
           StaticMesh {
             Physics {
             }
-          }
-        }
-      }
-      Objects {
-        Id: 2312071951827232403
-        Name: "Torch Fire VFX"
-        Transform {
-          Location {
-            Z: 74.3595734
-          }
-          Rotation {
-            Yaw: 90.0000153
-            Roll: -6.10351563e-05
-          }
-          Scale {
-            X: 0.722008288
-            Y: 0.580799282
-            Z: 9.77385521
-          }
-        }
-        ParentId: 4108318087009889265
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 17.7514858
-          }
-          Overrides {
-            Name: "bp:Life"
-            Float: 2.28171468
-          }
-          Overrides {
-            Name: "bp:Wind Speed"
-            Vector {
-              Z: 400
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 13983442170571298872
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
           }
         }
       }
@@ -641,7 +593,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -699,21 +651,21 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 17526400651633856459
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.940000057
-              G: 0.336158961
+              R: 10
+              G: 3.57615709
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -771,21 +723,21 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.940000057
-              G: 0.336158961
+              R: 10
+              G: 3.57615709
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 17526400651633856459
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -860,7 +812,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -918,21 +870,21 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.940000057
-              G: 0.336158961
+              R: 10
+              G: 3.57615709
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 17526400651633856459
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -990,21 +942,21 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:color"
             Color {
-              R: 0.940000057
-              G: 0.336158961
+              R: 10
+              G: 3.57615709
               A: 1
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 17526400651633856459
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 4808236381090719999
             }
           }
         }
@@ -1044,9 +996,7 @@
         }
         ParentId: 4108318087009889265
         ChildIds: 3754712224403029321
-        ChildIds: 7857732506813065267
         ChildIds: 104791630914891749
-        ChildIds: 9445003820796151235
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -1086,7 +1036,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 5351428073291024820
             }
           }
           Overrides {
@@ -1119,89 +1069,8 @@
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 1
-              G: 0.332373023
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 170793496707065939
-          }
-          Teams {
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 7857732506813065267
-        Name: "Fantasy Pommel 04"
-        Transform {
-          Location {
-            Z: -8.90981865
-          }
-          Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: 89.9995956
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.480905712
-            Y: 0.480905712
-            Z: 0.480905712
-          }
-        }
-        ParentId: 2502416236691580769
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2334612471939404507
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 9049285641785345315
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.145833
-              G: 0.129013
-              B: 0.096462
+              R: 20
+              G: 6.64746046
               A: 1
             }
           }
@@ -1256,7 +1125,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 9049285641785345315
+              Id: 5351428073291024820
             }
           }
           Overrides {
@@ -1289,89 +1158,8 @@
           Overrides {
             Name: "ma:Shared_Detail1:color"
             Color {
-              R: 1
-              G: 0.332373023
-              A: 1
-            }
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 170793496707065939
-          }
-          Teams {
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-              Mass: 100
-              LinearDamping: 0.01
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 9445003820796151235
-        Name: "Fantasy Pommel 04"
-        Transform {
-          Location {
-            Z: -8.90981865
-          }
-          Rotation {
-            Pitch: 1.36603776e-05
-            Yaw: -0.000457763672
-            Roll: -179.999954
-          }
-          Scale {
-            X: 0.480905712
-            Y: 0.480905712
-            Z: 0.480905712
-          }
-        }
-        ParentId: 2502416236691580769
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 2334612471939404507
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 9049285641785345315
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:smart"
-            Bool: false
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 1
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 841534158063459245
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.145833
-              G: 0.129013
-              B: 0.096462
+              R: 20
+              G: 6.64746046
               A: 1
             }
           }
@@ -1453,7 +1241,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 15317385495420651569
+              Id: 435045081974966637
             }
           }
         }
@@ -1473,6 +1261,257 @@
           StaticMesh {
             Physics {
             }
+          }
+        }
+      }
+      Objects {
+        Id: 2079895154319275220
+        Name: "Candle Flame VFX"
+        Transform {
+          Location {
+            Y: -0.591308594
+            Z: 78.0939941
+          }
+          Rotation {
+          }
+          Scale {
+            X: 5.75
+            Y: 1.75
+            Z: 18.75
+          }
+        }
+        ParentId: 4108318087009889265
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Flame_A:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_B:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 12571598848431373371
+        Name: "Candle Flame VFX"
+        Transform {
+          Location {
+            X: 27.4257813
+            Y: 0.317871094
+            Z: 36.5561523
+          }
+          Rotation {
+            Pitch: -68.5885315
+          }
+          Scale {
+            X: 2.09005499
+            Y: 0.522513211
+            Z: 6.30454063
+          }
+        }
+        ParentId: 4108318087009889265
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Flame_A:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_B:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_A:color"
+            Color {
+              R: 1
+              G: 0.0799999833
+              B: 0.0799999833
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_B:color"
+            Color {
+              R: 1
+              G: 0.19
+              B: 0.19
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6267937446043227071
+        Name: "Candle Flame VFX"
+        Transform {
+          Location {
+            X: -27.6162109
+            Y: -0.515136719
+            Z: 37.1995239
+          }
+          Rotation {
+            Pitch: -68.5884705
+            Yaw: 180
+          }
+          Scale {
+            X: 2.09005499
+            Y: 0.522513211
+            Z: 6.30454063
+          }
+        }
+        ParentId: 4108318087009889265
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Flame_A:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_B:id"
+            AssetReference {
+              Id: 9161145500600929117
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_A:color"
+            Color {
+              R: 1
+              G: 0.0799999833
+              B: 0.0799999833
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Flame_B:color"
+            Color {
+              R: 1
+              G: 0.19
+              B: 0.19
+              A: 1
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 9199751096616988864
+          }
+          Teams {
+            IsTeamCollisionEnabled: true
+            IsEnemyCollisionEnabled: true
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 11159587340899287882
+        Name: "Ember Volume VFX"
+        Transform {
+          Location {
+            Z: 131.056274
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.146640643
+            Y: 0.0389258
+            Z: 1
+          }
+        }
+        ParentId: 4108318087009889265
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Density"
+            Float: 1.12611163
+          }
+          Overrides {
+            Name: "bp:Life"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Curl Offset"
+            Vector {
+            }
+          }
+          Overrides {
+            Name: "bp:Wind Speed"
+            Vector {
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 3226864937840488192
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
           }
         }
       }
@@ -1568,15 +1607,6 @@
       }
     }
     Assets {
-      Id: 13983442170571298872
-      Name: "Torch Fire VFX"
-      PlatformAssetType: 8
-      PrimaryAsset {
-        AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_torch_fire"
-      }
-    }
-    Assets {
       Id: 174270924982814207
       Name: "Bone Human Skull 01"
       PlatformAssetType: 1
@@ -1604,12 +1634,39 @@
       }
     }
     Assets {
+      Id: 5351428073291024820
+      Name: "Opaque Emissive"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "fxma_opaque_emissive"
+      }
+    }
+    Assets {
       Id: 7328789832105909984
       Name: "Gem - Diamond 6-Sided Polished"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
         AssetId: "sm_diamond_6_sided_polished_001"
+      }
+    }
+    Assets {
+      Id: 9199751096616988864
+      Name: "Candle Flame VFX"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "fxsm_candleflame"
+      }
+    }
+    Assets {
+      Id: 3226864937840488192
+      Name: "Ember Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ember_volume_vfx"
       }
     }
     PrimaryAssetId {

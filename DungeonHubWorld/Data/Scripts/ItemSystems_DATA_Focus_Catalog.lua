@@ -31,7 +31,7 @@
     Type = 'Focus',
     Rarity = 'Epic',
     StatKey = 'EpicMagicFocus',
-    MUID = '9D17CA5F23F7C12E:ITEM_Focus_Zetalans_Skull',
+    MUID = '9D17CA5F23F7C12E:ITEM_Focus_ZetalansSkull',
     Lore = 'Yup, that\'s a skull alright. You sure do look edgy carrying that around. ',
     ['Author Notes (will be ignored by script)'] = '',
   },
