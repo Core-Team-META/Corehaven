@@ -704,6 +704,10 @@
             Name: "bp:Density"
             Float: 0.74625814
           }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

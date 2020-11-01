@@ -62,4 +62,13 @@
     Lore = 'Forged from the gold crown of an ancient lich, this sword possess strong magic.',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Goblin King\'s Razor',
+    Type = 'Sword',
+    Rarity = 'Epic',
+    StatKey = 'RareTankSword',
+    MUID = '4D10D4B7582250DA:ITEM_Sword_GoblinKingsRazor',
+    Lore = 'A crude but effective blade. It was pried from his cold, dead hands',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

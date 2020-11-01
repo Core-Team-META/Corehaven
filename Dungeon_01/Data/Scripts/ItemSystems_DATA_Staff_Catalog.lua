@@ -35,4 +35,13 @@
     Lore = 'An epically vile staff. You think you can faintly hear the cries of the damned...',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Spark of Life',
+    Type = 'Staff',
+    Rarity = 'Epic',
+    StatKey = 'EpicMagicStaff',
+    MUID = '1D38C8D84A2BACD5:ITEM_Staff_SparkofLife',
+    Lore = 'Intracitely carved from solid marble found deep in the Valley of Gaia',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

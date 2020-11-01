@@ -7,19 +7,19 @@
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Backtwister',
+    ItemName = 'Goblin King\'s Razor',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Curved Knife',
+    ItemName = 'Goblin King\'s Crown',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Dull Blade',
+    ItemName = 'Spark of Life',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
