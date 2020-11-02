@@ -71,4 +71,13 @@
     Lore = 'A crude but effective blade. It was pried from his cold, dead hands',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Reason',
+    Type = 'Sword',
+    Rarity = 'Epic',
+    StatKey = 'RareTankSword',
+    MUID = '2DD20B12A6CD47C5:ITEM_Sword_Reason',
+    Lore = 'If they won\'t listen to logic, maybe they\'ll listen to Reason',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

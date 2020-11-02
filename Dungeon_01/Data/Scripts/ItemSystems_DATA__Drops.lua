@@ -1,7 +1,7 @@
 ﻿return {
   {
     DropKey = 'CHEAT',
-    ItemName = 'Almira\'s Claymore',
+    ItemName = 'Wings of Hope',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
@@ -20,6 +20,12 @@
   {
     DropKey = 'CHEAT',
     ItemName = 'Spark of Life',
+    Likelihood = '1',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+   {
+    DropKey = 'CHEAT',
+    ItemName = 'Shattered Dreams',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },

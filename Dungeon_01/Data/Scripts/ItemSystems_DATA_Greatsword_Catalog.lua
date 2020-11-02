@@ -35,4 +35,13 @@
     Lore = 'I understand the blade, but why fire on the crossguard?',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Shattered Dreams',
+    Type = 'Greatsword',
+    Rarity = 'Epic',
+    StatKey = 'EpicAttackGreatsword',
+    MUID = 'E6452BC6BCE0761C:ITEM_Greatsword_ShatteredDream',
+    Lore = 'So much for your promises...',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

@@ -38,10 +38,19 @@
   {
     Name = 'Spark of Life',
     Type = 'Staff',
-    Rarity = 'Epic',
-    StatKey = 'EpicMagicStaff',
+    Rarity = 'Rare',
+    StatKey = 'RareMagicStaff',
     MUID = '1D38C8D84A2BACD5:ITEM_Staff_SparkofLife',
     Lore = 'Intracitely carved from solid marble found deep in the Valley of Gaia',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Crystaline Scepter',
+    Type = 'Staff',
+    Rarity = 'Epic',
+    StatKey = 'EpicMagicStaff',
+    MUID = '5B6E61BF3977C4F2:ITEM_Staff_CrystalineScepter',
+    Lore = 'Forged from the cave of Crystalis.',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

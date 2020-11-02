@@ -80,4 +80,13 @@
     Lore = 'A breastplate made from literal dragonbone. Badass. ',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Wings of Hope',
+    Type = 'Armor',
+    Rarity = 'Epic',
+    StatKey = 'RareTankArmor',
+    MUID = 'AA7F3DFC6BA73FF8:ITEM_Helmet_WingsOfHope',
+    Lore = 'These are wings',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
