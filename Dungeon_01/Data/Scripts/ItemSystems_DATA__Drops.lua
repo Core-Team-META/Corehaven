@@ -1,7 +1,7 @@
 ﻿return {
   {
     DropKey = 'CHEAT',
-    ItemName = 'Wings of Hope',
+    ItemName = 'Jade Sun Staff',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },

@@ -53,4 +53,13 @@
     Lore = 'Forged from the cave of Crystalis.',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Jade Sun Staff',
+    Type = 'Staff',
+    Rarity = 'Epic',
+    StatKey = 'EpicMagicStaff',
+    MUID = '0229131C88B08F14:ITEM_Staff_JadeSunStaff',
+    Lore = 'A Jade Sun Staff',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

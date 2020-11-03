@@ -89,4 +89,13 @@
     Lore = 'These are wings',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Wings of Despair',
+    Type = 'Armor',
+    Rarity = 'Epic',
+    StatKey = 'RareTankArmor',
+    MUID = 'BEBC0BE065229605:ITEM_Armor_WingsOfDespair',
+    Lore = 'These are also wings',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }
