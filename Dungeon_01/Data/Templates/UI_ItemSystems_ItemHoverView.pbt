@@ -29,7 +29,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceoff"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Control {
           Width: 266
@@ -127,6 +127,8 @@
         ChildIds: 12901804969531040832
         ChildIds: 8134910548589255627
         ChildIds: 2692524949218444987
+        ChildIds: 15142151871673674510
+        ChildIds: 5694363485321735247
         ChildIds: 18440193885409355065
         ChildIds: 10039489459048352721
         UnregisteredParameters {
@@ -215,16 +217,22 @@
               A: 0.2
             }
           }
+          Overrides {
+            Name: "cs:SellPrice"
+            ObjectReference {
+              SubObjectId: 15142151871673674510
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Control {
           Width: 266
-          Height: 180
+          Height: 210
           UIX: -30
           UIY: -25
           RenderTransformPivot {
@@ -1839,7 +1847,7 @@
         Control {
           Width: -20
           Height: 2
-          UIY: -55
+          UIY: -83.4730453
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1896,8 +1904,8 @@
         }
         Control {
           Width: -30
-          Height: 60
-          UIY: 5
+          Height: 49
+          UIY: -35.4346466
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -1906,7 +1914,7 @@
           AddSizeToParentIfUsingParentSize: true
           UseParentWidth: true
           Text {
-            Label: "This is a description of the item. It is quite long and goes for a while."
+            Label: "This is a description of the item. It is quite long and goes for a while. "
             Color {
               R: 1
               G: 1
@@ -1919,6 +1927,126 @@
             }
             AutoWrapText: true
             ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 15142151871673674510
+        Name: "ItemSellPrice"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -30
+          Height: 60
+          UIX: 0.000244140625
+          UIY: 28.2276
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Text {
+            Label: "Sells for: XXXX"
+            Color {
+              R: 0.182291672
+              G: 0.182291672
+              B: 0.182291672
+              A: 0.9
+            }
+            Size: 12
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 5694363485321735247
+        Name: "Divider"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17972168532587766368
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -20
+          Height: 2
+          UIY: -30.9350281
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Image {
+            Brush {
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 0.1
+            }
+            TeamSettings {
+            }
           }
           AnchorLayout {
             SelfAnchor {
@@ -2057,6 +2185,7 @@
         ChildIds: 11411173877474483170
         ChildIds: 6881595661274502755
         ChildIds: 15629453047088928985
+        ChildIds: 17033354591083807841
         ChildIds: 8219351012132740045
         UnregisteredParameters {
           Overrides {
@@ -2095,6 +2224,12 @@
               SubObjectId: 8219351012132740045
             }
           }
+          Overrides {
+            Name: "cs:SellPrice"
+            ObjectReference {
+              SubObjectId: 17033354591083807841
+            }
+          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2104,7 +2239,7 @@
         }
         Control {
           Width: 266
-          Height: 130
+          Height: 157
           UIX: -30
           UIY: -25
           RenderTransformPivot {
@@ -3332,7 +3467,7 @@
         Control {
           Width: -30
           Height: 60
-          UIY: 5
+          UIY: -23.2050095
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -3346,6 +3481,67 @@
               R: 1
               G: 1
               B: 1
+              A: 0.9
+            }
+            Size: 12
+            Justification {
+              Value: "mc:etextjustify:center"
+            }
+            AutoWrapText: true
+            ClipTextToSize: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17033354591083807841
+        Name: "ItemSellPrice"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14792434693933273901
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: -30
+          Height: 60
+          UIY: 24.9094
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          AddSizeToParentIfUsingParentSize: true
+          UseParentWidth: true
+          Text {
+            Label: "Sells for: XXX"
+            Color {
+              R: 0.223958328
+              G: 0.223958328
+              B: 0.223958328
               A: 0.9
             }
             Size: 12

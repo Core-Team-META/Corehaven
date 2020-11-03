@@ -59,7 +59,7 @@
     Rarity = 'Epic',
     StatKey = 'EpicMagicSword',
     MUID = 'E884024676C47343:ITEM_Sword_GoldSpike',
-    Lore = 'Forged from the gold crown of an ancient lich, this sword possess strong magic.',
+    Lore = 'A sword forged from the gold crown of an ancient lich.',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
