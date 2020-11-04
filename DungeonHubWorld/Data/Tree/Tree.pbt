@@ -350,7 +350,7 @@ Objects {
       Scaling {
         ScaleX {
           Min: 1
-          Max: 1.2
+          Max: 1
         }
         ScaleY {
           Min: 1
@@ -389,7 +389,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: 2500
+        Min: 2800
         Max: 102400
       }
     }
@@ -527,7 +527,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -547,6 +546,54 @@ Objects {
         Max: 1000
       }
       HeightFalloff: 500
+    }
+    Foliage {
+      Asset {
+        Id: 11054502242900949297
+      }
+      DistanceBetweenInstances: 150
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1.2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Flower"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 1000
+      }
     }
   }
 }
