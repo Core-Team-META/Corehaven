@@ -18,6 +18,7 @@ Objects {
   ChildIds: 3661421621534174169
   ChildIds: 13588444122091554519
   ChildIds: 8528347562997322264
+  ChildIds: 6787590626079583879
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -27,6 +28,35 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 6787590626079583879
+  Name: "OpenArea_Emma"
+  Transform {
+    Location {
+      X: -15163.4063
+      Y: 870.473511
+      Z: -5844.40918
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "OpenArea_Emma"
   }
 }
 Objects {
@@ -320,7 +350,7 @@ Objects {
       Scaling {
         ScaleX {
           Min: 1
-          Max: 1.2
+          Max: 1
         }
         ScaleY {
           Min: 1
@@ -359,7 +389,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: 2500
+        Min: 2800
         Max: 102400
       }
     }
@@ -467,6 +497,102 @@ Objects {
       Height {
         Min: 1000
         Max: 102400
+      }
+    }
+    Foliage {
+      Asset {
+        Id: 18039765282018436536
+      }
+      DistanceBetweenInstances: 100
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Grass"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 1000
+      }
+      HeightFalloff: 500
+    }
+    Foliage {
+      Asset {
+        Id: 11054502242900949297
+      }
+      DistanceBetweenInstances: 150
+      SpawnDistance: 22400
+      CullDistance {
+        Min: 10000
+        Max: 20000
+      }
+      ReceivesDecals: true
+      GroundSlopeAngle {
+        Max: 90
+      }
+      Scaling {
+        ScaleX {
+          Min: 1
+          Max: 1.2
+        }
+        ScaleY {
+          Min: 1
+          Max: 1
+        }
+        ScaleZ {
+          Min: 1
+          Max: 1
+        }
+      }
+      RotationAlignment: AlignToWorldUp
+      RandomYaw: true
+      RandomPitchAngle: 6
+      Materials {
+        key: "Nature_Flower"
+        value {
+          Id: 841534158063459245
+        }
+      }
+      LocalPositionOffset {
+      }
+      LocalRotationOffset {
+      }
+      GlobalPositionOffset {
+      }
+      Height {
+        Min: -102400
+        Max: 1000
       }
     }
   }

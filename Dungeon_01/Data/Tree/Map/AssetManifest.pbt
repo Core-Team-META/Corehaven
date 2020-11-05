@@ -2033,6 +2033,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7232357757758255272
+  Name: "Burning Wood"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "fxmi_burning_erode"
+  }
+}
+Assets {
   Id: 7129977268232526794
   Name: "Bricks Rough Stone Floor 02"
   PlatformAssetType: 2
@@ -2300,15 +2309,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_femur_01_ref"
-  }
-}
-Assets {
-  Id: 5701878895838151563
-  Name: "Chest Small Closed"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_chest_001"
   }
 }
 Assets {

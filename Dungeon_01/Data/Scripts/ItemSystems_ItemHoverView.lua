@@ -21,6 +21,7 @@ function view:InitPanel(panel)
     panel.clientUserData.title = panel:GetCustomProperty("Title"):WaitForObject()
     panel.clientUserData.classification = panel:GetCustomProperty("Classification"):WaitForObject()
     panel.clientUserData.description = panel:GetCustomProperty("Description"):WaitForObject()
+    panel.clientUserData.sellPrice = panel:GetCustomProperty("SellPrice"):WaitForObject()
     panel.clientUserData.statOffsetY = panel:GetCustomProperty("StatOffsetY")
     panel.clientUserData.statOffsetXBase = panel:GetCustomProperty("StatOffsetXBase")
     panel.clientUserData.statOffsetXBonus = panel:GetCustomProperty("StatOffsetXBonus")
@@ -66,6 +67,7 @@ function view:DrawPanelWithStats()
     panel.clientUserData.title.text = item:GetName()
     panel.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
     panel.clientUserData.description.text = item:GetDescription()
+    panel.clientUserData.sellPrice.text = "Salvage value: " .. item:GetSalvageQuantity() .. " shards"
     -- Sometimes the external client wants us to highlight changes from a comparison.
     local compareStats = ROOT.clientUserData.itemToCompare and ROOT.clientUserData.itemToCompare:GetStatsEnhanced()
     local compareEnhancementLevel = ROOT.clientUserData.itemToCompare and ROOT.clientUserData.itemToCompare:GetEnhancementLevel()
@@ -156,6 +158,11 @@ function view:DrawPanelSansStats()
     panel.clientUserData.title.text = item:GetName()
     panel.clientUserData.classification.text = string.format("%s %s", item:GetRarity(), item:GetType())
     panel.clientUserData.description.text = item:GetDescription()
+    if item:GetSalvageQuantity() then
+    	panel.clientUserData.sellPrice.text = "Salvage value: " .. item:GetSalvageQuantity() .. " shards"
+    else 
+    	panel.clientUserData.sellPrice.text = ""
+    end
     -- Colors.
     local color = ItemThemes.GetRarityColor(item:GetRarity())
     panel.clientUserData.pointer:SetColor(color)

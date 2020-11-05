@@ -1,4 +1,13 @@
 ﻿Assets {
+  Id: 18039765282018436536
+  Name: "Grass Tall"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_grass_generic_001"
+  }
+}
+Assets {
   Id: 17983886762090769352
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
