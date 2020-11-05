@@ -16,8 +16,9 @@ local activeGroup = nil
 
 function SetGroupEnabled(group, isEnabled)
 	for _, child in pairs(group:GetChildren()) do
-		assert(child:IsA("PlayerStart"))
-		child.isEnabled = isEnabled
+		if child:IsA("PlayerStart") then
+			child.isEnabled = isEnabled
+		end
 	end
 end
 

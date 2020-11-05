@@ -1,6 +1,6 @@
-﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
 local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
@@ -86,7 +86,7 @@ function Tick(deltaTime)
 		UTILITY.SetPlayerTalentPoints(player, totalTalentPoints - usedTalentPointCount)
 
 		if not isStorageLoaded[player] then
-		    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
+		    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
 
 			if playerData.talentTree and playerData.talentTree ~= "" then
 			    for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[playerData.talentTree]) do

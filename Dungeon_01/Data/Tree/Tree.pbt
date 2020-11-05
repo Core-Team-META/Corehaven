@@ -14,10 +14,11 @@ Objects {
       Z: 1
     }
   }
-  ChildIds: 6887084206468653247
   ChildIds: 429612536842654522
   ChildIds: 492636135236824593
-  ChildIds: 11176579868672163906
+  ChildIds: 6887084206468653247
+  ChildIds: 17998119936475930974
+  ChildIds: 11675404267983164951
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,8 +31,8 @@ Objects {
   }
 }
 Objects {
-  Id: 11176579868672163906
-  Name: "Logic"
+  Id: 11675404267983164951
+  Name: "System"
   Transform {
     Location {
     }
@@ -52,7 +53,62 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Logic"
+    FilePartitionName: "System"
+  }
+}
+Objects {
+  Id: 17998119936475930974
+  Name: "Data"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Data"
+  }
+}
+Objects {
+  Id: 6887084206468653247
+  Name: "Map"
+  Transform {
+    Location {
+      X: -5077.63525
+      Y: -117.315186
+      Z: -6840.98145
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Map"
   }
 }
 Objects {
@@ -402,34 +458,5 @@ Objects {
         Max: 6500
       }
     }
-  }
-}
-Objects {
-  Id: 6887084206468653247
-  Name: "Map"
-  Transform {
-    Location {
-      X: -5077.63525
-      Y: -117.315186
-      Z: -6840.98145
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 4781671109827199097
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsFilePartition: true
-    FilePartitionName: "Map"
   }
 }

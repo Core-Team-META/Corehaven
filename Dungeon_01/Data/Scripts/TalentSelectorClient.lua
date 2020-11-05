@@ -385,7 +385,7 @@ function Tick(deltaTime)
 	end
 
 	-- Tooltip is suppressed on grayed out trees.
-	if tooltipTalentData and not ShouldGrayOutTree(currentTreeName, treeName) then
+	if tooltipTalentData and not ShouldGrayOutTree(currentTreeName, tooltipTalentData.treeName) then
 		if UTILITY.DoesPlayerHaveTalent(LOCAL_PLAYER, tooltipTalentData) then
 			TOOLTIP_STATE_TEXT:SetColor(Color.SAPPHIRE)
 			TOOLTIP_STATE_TEXT.text = "Talent known"

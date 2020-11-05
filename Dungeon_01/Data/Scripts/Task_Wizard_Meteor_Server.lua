@@ -39,9 +39,9 @@ function OnTaskStart(npc, threatTable)
 				API_D.ApplyDamage(npc, player, damageAmount, API_D.TAG_AOE)
 
 				if playerOffset.size > 0.1 then
-					API_K.ApplyImpulse(player, 150.0 * (playerOffset:GetNormalized() + Vector3.UP))
+					API_K.ApplyImpulse(player, 200.0 * (playerOffset:GetNormalized() + Vector3.UP * 0.5))
 				else
-					API_K.ApplyImpulse(player, 150.0 * Vector3.UP)
+					API_K.ApplyImpulse(player, 75.0 * Vector3.UP)
 				end
 			end
 		end

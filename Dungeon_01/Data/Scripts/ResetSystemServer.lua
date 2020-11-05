@@ -4,6 +4,8 @@ kills all of the current npcs, which triggers a bunch of things, like opening do
 performance, that is done over a few seconds. Therefore each system may have to wait 5-10 seconds before reseting so
 the work doesn't get undone.
 ]]
+local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
+
 local END_DUNGEON_RESET_DELAY = 30.0
 
 local resetTime = nil
@@ -32,7 +34,7 @@ function ResetDungeon(delay)
 	end
 end
 
-function OnBoss4Died()
+function OnDungeonEnd()
 	ResetDungeon(END_DUNGEON_RESET_DELAY)
 end
 
@@ -50,4 +52,4 @@ function Tick(deltaTime)
 	end
 end
 
-Events.Connect("Boss4Died", OnBoss4Died)
+Events.Connect(DATA_GROUP:GetCustomProperty("DungeonEndEventName"), OnDungeonEnd)

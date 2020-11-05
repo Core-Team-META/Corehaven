@@ -1,8 +1,7 @@
 ﻿if not script:GetCustomProperty("Enable") then return end
 
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
-
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 
 print([[
 ------------------------------------------------------------------------------------
@@ -38,6 +37,10 @@ PRINT STAT SHEET
 [F7]
 Prints a human-readable synopsis of the player's stat sheet to the console.
 
+TOGGLE GOD MODE
+[F10]
+Makes the player invulnerable to all damage (or turns it back off)
+
 UNLOCK ALL CRAFTING RECIPES
 [page-up]
 Discover all crafting recipes for this account.
@@ -68,9 +71,9 @@ local function OnBindingPressed(player, binding)
         Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
         print("CHEAT: DROP LOOT")
     elseif binding == BINDING_INVENTORY_CLEAR then
-        local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
+        local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
         playerData.inventoryHash = nil
-        Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
+        Storage.SetSharedPlayerData(API_SK.GetStorageKey(), player, playerData)
         print("CHEAT: CLEAR INVENTORY")
     elseif binding == BINDING_INVENTORY_PRINT then
         print(player.serverUserData.inventory)

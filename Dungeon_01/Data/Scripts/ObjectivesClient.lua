@@ -1,4 +1,4 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+﻿local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 local OBJECTIVE_LINE_TEMPLATE = script:GetCustomProperty("ObjectiveLineTemplate")
@@ -9,7 +9,7 @@ local i = 1
 
 while true do
 	OBJECTIVES[i] = {}
-	OBJECTIVES[i].description = ROOT:GetCustomProperty(string.format("ObjectiveDescription%d", i))
+	OBJECTIVES[i].description = DATA_GROUP:GetCustomProperty(string.format("ObjectiveDescription%d", i))
 
 	if not OBJECTIVES[i].description then
 		OBJECTIVES[i] = nil

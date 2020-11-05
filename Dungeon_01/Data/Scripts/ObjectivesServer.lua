@@ -1,4 +1,4 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+﻿local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 
 local OBJECTIVE_EVENT_NAMES = {}
 
@@ -6,7 +6,7 @@ local resettingDungeon = false
 local i = 1
 
 while true do
-	OBJECTIVE_EVENT_NAMES[i] = ROOT:GetCustomProperty(string.format("FinishedEvent%d", i))
+	OBJECTIVE_EVENT_NAMES[i] = DATA_GROUP:GetCustomProperty(string.format("FinishedEvent%d", i))
 
 	if not OBJECTIVE_EVENT_NAMES[i] then
 		break
