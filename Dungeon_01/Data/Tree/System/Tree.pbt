@@ -28624,6 +28624,34 @@ Objects {
   ChildIds: 15403956564174367901
   ChildIds: 3291337978348903876
   ChildIds: 3873329528123528015
+  ChildIds: 13919965666559352452
+  UnregisteredParameters {
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13919965666559352452
+  Name: "References"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3067416989574862537
   UnregisteredParameters {
     Overrides {
       Name: "cs:ITEM_Armor_DragonboneBreastplate"
@@ -28665,6 +28693,18 @@ Objects {
       Name: "cs:ITEM_Armor_ScaleArmor"
       AssetReference {
         Id: 2769523516120597907
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Armor_WingsOfDespair"
+      AssetReference {
+        Id: 13743873221225256453
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Armor_WingsOfHope"
+      AssetReference {
+        Id: 12285606462837178360
       }
     }
     Overrides {
@@ -28818,9 +28858,21 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ITEM_Greatsword_ShatteredDreams"
+      AssetReference {
+        Id: 16592716534688806428
+      }
+    }
+    Overrides {
       Name: "cs:ITEM_Helmet_EnchantedHood"
       AssetReference {
         Id: 10329690887521538313
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Helmet_GoblinKingsCrown"
+      AssetReference {
+        Id: 16634542329966443224
       }
     }
     Overrides {
@@ -28890,6 +28942,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ITEM_Mace_SilverHammer"
+      AssetReference {
+        Id: 9398179654413895320
+      }
+    }
+    Overrides {
       Name: "cs:ITEM_Mace_SpikedBludgeon"
       AssetReference {
         Id: 18236895628204419555
@@ -28899,6 +28957,12 @@ Objects {
       Name: "cs:ITEM_Mace_SpikedClub"
       AssetReference {
         Id: 1615517204719504979
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Mace_TheFurnace"
+      AssetReference {
+        Id: 1187993825745345522
       }
     }
     Overrides {
@@ -28980,6 +29044,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ITEM_Shield_Logic"
+      AssetReference {
+        Id: 15594462993751756355
+      }
+    }
+    Overrides {
       Name: "cs:ITEM_Shield_OrnateShield"
       AssetReference {
         Id: 9283599042623883587
@@ -28998,9 +29068,21 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ITEM_Staff_CrystalineScepter"
+      AssetReference {
+        Id: 6588310778820412658
+      }
+    }
+    Overrides {
       Name: "cs:ITEM_Staff_EvilEye"
       AssetReference {
         Id: 3631501848024187399
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Staff_JadeSunStaff"
+      AssetReference {
+        Id: 155676675394277140
       }
     }
     Overrides {
@@ -29013,6 +29095,12 @@ Objects {
       Name: "cs:ITEM_Staff_SapphireStaff"
       AssetReference {
         Id: 355695441012452148
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Staff_SparkofLife"
+      AssetReference {
+        Id: 2105653657078574293
       }
     }
     Overrides {
@@ -29034,6 +29122,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:ITEM_Sword_GoblinKingsRazor"
+      AssetReference {
+        Id: 5553172224470569178
+      }
+    }
+    Overrides {
       Name: "cs:ITEM_Sword_GoldSpike"
       AssetReference {
         Id: 16754519015388640067
@@ -29049,6 +29143,12 @@ Objects {
       Name: "cs:ITEM_Sword_Katana"
       AssetReference {
         Id: 11339916141821731142
+      }
+    }
+    Overrides {
+      Name: "cs:ITEM_Sword_Reason"
+      AssetReference {
+        Id: 3301713651551782853
       }
     }
     Overrides {
