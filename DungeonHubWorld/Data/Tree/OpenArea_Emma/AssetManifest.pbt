@@ -35,6 +35,24 @@ Assets {
   }
 }
 Assets {
+  Id: 15323934987652877270
+  Name: "Scorch Mark Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_scorchmark"
+  }
+}
+Assets {
+  Id: 13983442170571298872
+  Name: "Torch Fire VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_torch_fire"
+  }
+}
+Assets {
   Id: 13580305553839462086
   Name: "Arch"
   PlatformAssetType: 1
@@ -62,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8363666404921040082
+  Name: "Prism - 8-Sided Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_octagon_001"
+  }
+}
+Assets {
   Id: 7780123930110458414
   Name: "Additive Soft Edge"
   PlatformAssetType: 2
@@ -77,6 +104,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_plane_1m_002"
+  }
+}
+Assets {
+  Id: 7404377866344635684
+  Name: "Prism - 8-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_octagon_hq_001"
+  }
+}
+Assets {
+  Id: 5318852982404395572
+  Name: "Bark Redwood 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_redwood_001_uv"
   }
 }
 Assets {
