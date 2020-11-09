@@ -1,6 +1,54 @@
 ﻿Name: "TheSquare"
 RootId: 3277514622402591831
 Objects {
+  Id: 17395905286591878447
+  Name: "Tree Birch 02"
+  Transform {
+    Location {
+      X: -27166.8887
+      Y: 1959.80896
+      Z: 717.912109
+    }
+    Rotation {
+      Yaw: -134.167465
+    }
+    Scale {
+      X: 3.63332653
+      Y: 3.63332653
+      Z: 3.63332653
+    }
+  }
+  ParentId: 3277514622402591831
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Trunk:id"
+      AssetReference {
+        Id: 5318852982404395572
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 16349565198339375491
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 13982216728391206663
   Name: "Tree Oak 01"
   Transform {
@@ -130865,18 +130913,26 @@ Objects {
     Location {
       X: -13821.3818
       Y: -2153.02832
-      Z: 589.255371
+      Z: 489.029785
     }
     Rotation {
       Yaw: 11.9477053
     }
     Scale {
-      X: 1.68336022
-      Y: 1.68336022
-      Z: 1.68336022
+      X: 2.19505382
+      Y: 2.19505382
+      Z: 2.19505382
     }
   }
   ParentId: 3277514622402591831
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Nature_Trunk:id"
+      AssetReference {
+        Id: 5318852982404395572
+      }
+    }
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
