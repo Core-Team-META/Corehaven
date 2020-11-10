@@ -7203,7 +7203,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 70
       }
       Scaling {
         ScaleX {
@@ -7299,7 +7299,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 70
       }
       Scaling {
         ScaleX {
@@ -7346,7 +7346,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 70
       }
       Scaling {
         ScaleX {
@@ -7399,7 +7399,7 @@ Objects {
       Scaling {
         ScaleX {
           Min: 1
-          Max: 1
+          Max: 1.2
         }
         ScaleY {
           Min: 1
@@ -7410,7 +7410,6 @@ Objects {
           Max: 1
         }
       }
-      RotationAlignment: AlignToWorldUp
       RandomYaw: true
       RandomPitchAngle: 6
       Materials {
@@ -7560,7 +7559,7 @@ Objects {
       }
       ReceivesDecals: true
       GroundSlopeAngle {
-        Max: 90
+        Max: 80
       }
       Scaling {
         ScaleX {

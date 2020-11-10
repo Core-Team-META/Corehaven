@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 17016052731400103309
-  Name: "Custom Composite Triplanar Blend"
+  Name: "Forest_TriPlanar"
   PlatformAssetType: 13
   SerializationVersion: 68
   CustomMaterialAsset {
@@ -9,8 +9,26 @@
       Overrides {
         Name: "cmp:Sides"
         AssetReference {
-          Id: 7814966837604519694
+          Id: 15494749898036415293
         }
+      }
+      Overrides {
+        Name: "cmp:Top"
+        AssetReference {
+          Id: 9225772212614530763
+        }
+      }
+      Overrides {
+        Name: "cmpc:Top"
+        Color {
+          R: 0.316231847
+          G: 0.5625
+          A: 1
+        }
+      }
+      Overrides {
+        Name: "side_scale"
+        Float: 0.5
       }
     }
     Assets {
@@ -23,12 +41,21 @@
       }
     }
     Assets {
-      Id: 7814966837604519694
-      Name: "Bricks Rough Stone Floor 01"
+      Id: 15494749898036415293
+      Name: "Cliff 03"
       PlatformAssetType: 2
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
-        AssetId: "mi_brick_stone_floor_rough_001"
+        AssetId: "cliff_003"
+      }
+    }
+    Assets {
+      Id: 9225772212614530763
+      Name: "Moss 01"
+      PlatformAssetType: 2
+      PrimaryAsset {
+        AssetType: "MaterialAssetRef"
+        AssetId: "mi_moss_001_uv"
       }
     }
   }
