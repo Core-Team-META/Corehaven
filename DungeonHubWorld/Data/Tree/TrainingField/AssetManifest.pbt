@@ -89,15 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17587880652047825598
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 17577877207538173747
   Name: "Pyramid - 4-Sided Truncated Polished"
   PlatformAssetType: 1
@@ -113,6 +104,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 17303459849100639072
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
+  }
+}
+Assets {
+  Id: 17247896461110156834
+  Name: "Fantasy Shield Strap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_strap_001"
   }
 }
 Assets {
@@ -158,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_roof_001_beam"
+  }
+}
+Assets {
+  Id: 16930051067443970507
+  Name: "Fantasy Sword Blade 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_003"
   }
 }
 Assets {
@@ -638,15 +656,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11535495265175524988
-  Name: "Ring - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_003"
-  }
-}
-Assets {
   Id: 11285278799348334020
   Name: "Sphere - Half Thin"
   PlatformAssetType: 1
@@ -1043,6 +1052,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 6528381076757568107
   Name: "Bush Leafy Tall 01"
   PlatformAssetType: 1
@@ -1085,15 +1103,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_leaves_001"
-  }
-}
-Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
   }
 }
 Assets {
@@ -1178,15 +1187,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4801985963367974663
-  Name: "Fantasy Sword Blade 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_blade_sword_003"
-  }
-}
-Assets {
   Id: 4793433194361754592
   Name: "Short Banner Fleur-de-lis"
   PlatformAssetType: 1
@@ -1259,15 +1259,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3982193030776093519
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
-  }
-}
-Assets {
   Id: 3682206342183528038
   Name: "Fantasy Sword Grip 01"
   PlatformAssetType: 1
@@ -1301,6 +1292,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter_torus_002"
+  }
+}
+Assets {
+  Id: 3190252363319773843
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {
@@ -1484,15 +1484,6 @@ Assets {
   }
 }
 Assets {
-  Id: 1100837394993556177
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
-  }
-}
-Assets {
   Id: 957550643538039269
   Name: "Stone Arch (doorway) 001"
   PlatformAssetType: 1
@@ -1526,6 +1517,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_001"
+  }
+}
+Assets {
+  Id: 199153926015106134
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {

@@ -818,7 +818,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14781323992507639982
+              Id: 6484258332314574972
             }
             Color {
               R: 1
@@ -1139,7 +1139,7 @@
       }
     }
     Assets {
-      Id: 14781323992507639982
+      Id: 6484258332314574972
       Name: "Icon Profile"
       PlatformAssetType: 9
       PrimaryAsset {

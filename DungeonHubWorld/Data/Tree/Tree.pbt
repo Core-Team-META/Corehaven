@@ -16,9 +16,10 @@ Objects {
   }
   ChildIds: 14430764027136311552
   ChildIds: 3661421621534174169
-  ChildIds: 13588444122091554519
-  ChildIds: 8528347562997322264
-  ChildIds: 6787590626079583879
+  ChildIds: 3832437480605038461
+  ChildIds: 18001923811929442698
+  ChildIds: 1702409337267176599
+  ChildIds: 18091490850981628124
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -31,7 +32,33 @@ Objects {
   }
 }
 Objects {
-  Id: 6787590626079583879
+  Id: 18091490850981628124
+  Name: "System"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "System"
+  }
+}
+Objects {
+  Id: 1702409337267176599
   Name: "OpenArea_Emma"
   Transform {
     Location {
@@ -60,8 +87,8 @@ Objects {
   }
 }
 Objects {
-  Id: 8528347562997322264
-  Name: "Logic"
+  Id: 18001923811929442698
+  Name: "Data"
   Transform {
     Location {
     }
@@ -74,6 +101,1009 @@ Objects {
     }
   }
   ParentId: 4781671109827199097
+  ChildIds: 4369640595759924487
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4369640595759924487
+  Name: "NPC System"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18001923811929442698
+  ChildIds: 3551309610289940302
+  ChildIds: 16179984628650332530
+  ChildIds: 4700276015566917361
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 4700276015566917361
+  Name: "NavMesh"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369640595759924487
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:forceoff"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 16179984628650332530
+  Name: "Tasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369640595759924487
+  ChildIds: 6615526868787914162
+  ChildIds: 2038786004660754724
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 2038786004660754724
+  Name: "ServerTasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16179984628650332530
+  ChildIds: 1106281183508798291
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+    Type: Server
+  }
+}
+Objects {
+  Id: 1106281183508798291
+  Name: "Task_Dummy_Heal_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2038786004660754724
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 2677594612280678857
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 15583631668858138722
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4645419102710342499
+    }
+  }
+}
+Objects {
+  Id: 6615526868787914162
+  Name: "ClientTasks"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16179984628650332530
+  ChildIds: 16878871156458770420
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+}
+Objects {
+  Id: 16878871156458770420
+  Name: "Task_Dummy_Heal_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6615526868787914162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 2677594612280678857
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2718822431015554999
+    }
+  }
+}
+Objects {
+  Id: 3551309610289940302
+  Name: "NPCs"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4369640595759924487
+  ChildIds: 6572542977682951500
+  ChildIds: 14145635048882570517
+  ChildIds: 12609414098853607769
+  ChildIds: 12303495159139166607
+  ChildIds: 17786338236575779770
+  ChildIds: 11531486133291115178
+  ChildIds: 4677811907491289687
+  ChildIds: 7622165006019114689
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7622165006019114689
+  Name: "Target"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 14182467863465173413
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 14182467863465173413
+  Name: "Enemy_Target"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7622165006019114689
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Target"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3500
+            Y: -7559.86084
+            Z: -6799.48633
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1271273818983499322
+    }
+  }
+}
+Objects {
+  Id: 4677811907491289687
+  Name: "Target"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 10261076346108520742
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10261076346108520742
+  Name: "Enemy_Target"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4677811907491289687
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Target"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3500
+            Y: -8334.71094
+            Z: -6799.48633
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1271273818983499322
+    }
+  }
+}
+Objects {
+  Id: 11531486133291115178
+  Name: "Target"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 8842649886219337310
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 8842649886219337310
+  Name: "Enemy_Target"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11531486133291115178
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Target"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3500
+            Y: -9128.00293
+            Z: -6799.48633
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1271273818983499322
+    }
+  }
+}
+Objects {
+  Id: 17786338236575779770
+  Name: "Target"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 13090347639529488104
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13090347639529488104
+  Name: "Enemy_Target"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17786338236575779770
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Target"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -3500
+            Y: -9900
+            Z: -6799.48633
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 180
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 1271273818983499322
+    }
+  }
+}
+Objects {
+  Id: 12303495159139166607
+  Name: "DummySet"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 6396959872354954459
+  ChildIds: 8009370937213783970
+  ChildIds: 11210411125700085993
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11210411125700085993
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Location {
+      X: 1650.92
+      Y: -9807.94238
+      Z: -6825.47559
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12303495159139166607
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1649.19031
+            Y: -10106.7734
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 8009370937213783970
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Location {
+      X: 1630.99951
+      Y: -9954.72363
+      Z: -6825.47559
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12303495159139166607
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1650.92
+            Y: -9807.94238
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 6396959872354954459
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Location {
+      X: 484.013397
+      Y: -10056.2695
+      Z: -6825.47559
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12303495159139166607
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1630.99951
+            Y: -9954.72363
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 12609414098853607769
+  Name: "DummyPair"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 14380243350964365540
+  ChildIds: 12440368187154523957
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 12440368187154523957
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Location {
+      X: 1614.28674
+      Y: -11470.8789
+      Z: -6825.47559
+    }
+    Rotation {
+      Yaw: -87.582634
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12609414098853607769
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 588.072144
+            Y: -11490.1123
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -40.231636
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 14380243350964365540
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Location {
+      X: 484.013397
+      Y: -10056.2695
+      Z: -6825.47559
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12609414098853607769
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 742.771118
+            Y: -11419.6064
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 14145635048882570517
+  Name: "Dummy"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
+  ChildIds: 7944978251466947798
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7944978251466947798
+  Name: "Enemy_TrainingDummy"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14145635048882570517
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 191125463511178831
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_TrainingDummy"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 1614.28674
+            Y: -11470.8789
+            Z: -6825.47559
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -87.5826416
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 2506503432659139454
+    }
+  }
+}
+Objects {
+  Id: 6572542977682951500
+  Name: "Dummy"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 3551309610289940302
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -82,11 +1112,11 @@ Objects {
   }
   Folder {
     IsFilePartition: true
-    FilePartitionName: "Logic"
+    FilePartitionName: "Dummy"
   }
 }
 Objects {
-  Id: 13588444122091554519
+  Id: 3832437480605038461
   Name: "Map"
   Transform {
     Location {

@@ -1,7 +1,7 @@
 ﻿Name: "Map"
-RootId: 13588444122091554519
+RootId: 3832437480605038461
 Objects {
-  Id: 1864869116977628757
+  Id: 2992593344053513728
   Name: "Highrock Guide"
   Transform {
     Location {
@@ -17,18 +17,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
-  ChildIds: 10592419160462253786
-  ChildIds: 8841458404591867632
-  ChildIds: 4977910284534889470
-  ChildIds: 3467033928130453229
-  ChildIds: 11534726874905053044
-  ChildIds: 11409076231109709844
-  ChildIds: 696425198992693095
-  ChildIds: 6510254116098850982
-  ChildIds: 4245824140765784048
-  ChildIds: 16504893050134301516
-  ChildIds: 12824977280530442627
+  ParentId: 3832437480605038461
+  ChildIds: 235713631966965694
+  ChildIds: 15946742393563328240
+  ChildIds: 8898529416346494605
+  ChildIds: 13767820695042128073
+  ChildIds: 4812077149551642420
+  ChildIds: 13777851339126528526
+  ChildIds: 9212532390285983947
+  ChildIds: 11075428070306863571
+  ChildIds: 10821194104292984859
+  ChildIds: 7542357618581826676
+  ChildIds: 1488598889358699362
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -39,7 +39,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12824977280530442627
+  Id: 1488598889358699362
   Name: "Portal VFX"
   Transform {
     Location {
@@ -56,7 +56,7 @@ Objects {
       Z: 0.5
     }
   }
-  ParentId: 1864869116977628757
+  ParentId: 2992593344053513728
   UnregisteredParameters {
     Overrides {
       Name: "bp:Background Texture"
@@ -114,7 +114,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16504893050134301516
+  Id: 7542357618581826676
   Name: "Spotlight"
   Transform {
     Location {
@@ -132,7 +132,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
+  ParentId: 2992593344053513728
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -171,7 +171,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4245824140765784048
+  Id: 10821194104292984859
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -187,7 +187,7 @@ Objects {
       Z: 37.0328255
     }
   }
-  ParentId: 1864869116977628757
+  ParentId: 2992593344053513728
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -204,7 +204,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17587880652047825598
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -217,7 +217,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6510254116098850982
+  Id: 11075428070306863571
   Name: "Spotlight"
   Transform {
     Location {
@@ -234,7 +234,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
+  ParentId: 2992593344053513728
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -273,7 +273,7 @@ Objects {
   }
 }
 Objects {
-  Id: 696425198992693095
+  Id: 9212532390285983947
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -289,7 +289,7 @@ Objects {
       Z: 37.0328255
     }
   }
-  ParentId: 1864869116977628757
+  ParentId: 2992593344053513728
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -306,7 +306,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 17587880652047825598
+      Id: 6747614045051753376
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -319,7 +319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11409076231109709844
+  Id: 13777851339126528526
   Name: "Arrow"
   Transform {
     Location {
@@ -335,9 +335,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 8355319937956109599
-  ChildIds: 5555955732036756805
+  ParentId: 2992593344053513728
+  ChildIds: 8305633701833676292
+  ChildIds: 10837036331556131422
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -349,7 +349,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5555955732036756805
+  Id: 10837036331556131422
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -365,7 +365,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 11409076231109709844
+  ParentId: 13777851339126528526
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -400,7 +400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8355319937956109599
+  Id: 8305633701833676292
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -416,7 +416,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11409076231109709844
+  ParentId: 13777851339126528526
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -451,7 +451,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11534726874905053044
+  Id: 4812077149551642420
   Name: "Arrow"
   Transform {
     Location {
@@ -468,9 +468,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 5311302117755347186
-  ChildIds: 3478572651722796165
+  ParentId: 2992593344053513728
+  ChildIds: 18373072052624790345
+  ChildIds: 10458398349987594571
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -482,7 +482,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3478572651722796165
+  Id: 10458398349987594571
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -498,7 +498,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 11534726874905053044
+  ParentId: 4812077149551642420
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -533,7 +533,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5311302117755347186
+  Id: 18373072052624790345
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -549,7 +549,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11534726874905053044
+  ParentId: 4812077149551642420
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -584,7 +584,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3467033928130453229
+  Id: 13767820695042128073
   Name: "Arrow"
   Transform {
     Location {
@@ -599,9 +599,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 15524252993087575740
-  ChildIds: 8927739359501339339
+  ParentId: 2992593344053513728
+  ChildIds: 11568756755562388539
+  ChildIds: 938152883895182995
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -613,7 +613,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8927739359501339339
+  Id: 938152883895182995
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -629,7 +629,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 3467033928130453229
+  ParentId: 13767820695042128073
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -664,7 +664,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15524252993087575740
+  Id: 11568756755562388539
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -680,7 +680,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3467033928130453229
+  ParentId: 13767820695042128073
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -715,7 +715,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4977910284534889470
+  Id: 8898529416346494605
   Name: "Arrow"
   Transform {
     Location {
@@ -731,9 +731,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 10805145677275569533
-  ChildIds: 16360736378433112431
+  ParentId: 2992593344053513728
+  ChildIds: 10972895993643848013
+  ChildIds: 17944216965321421470
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -745,7 +745,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16360736378433112431
+  Id: 17944216965321421470
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -761,7 +761,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 4977910284534889470
+  ParentId: 8898529416346494605
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -796,7 +796,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10805145677275569533
+  Id: 10972895993643848013
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -812,7 +812,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4977910284534889470
+  ParentId: 8898529416346494605
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -847,7 +847,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8841458404591867632
+  Id: 15946742393563328240
   Name: "Arrow"
   Transform {
     Location {
@@ -866,9 +866,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 11161213177239339840
-  ChildIds: 10311769067274281900
+  ParentId: 2992593344053513728
+  ChildIds: 16045485668873921312
+  ChildIds: 1615233215589484365
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -880,7 +880,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10311769067274281900
+  Id: 1615233215589484365
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -896,7 +896,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 8841458404591867632
+  ParentId: 15946742393563328240
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -931,7 +931,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11161213177239339840
+  Id: 16045485668873921312
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -947,7 +947,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8841458404591867632
+  ParentId: 15946742393563328240
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -982,7 +982,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10592419160462253786
+  Id: 235713631966965694
   Name: "Arrow"
   Transform {
     Location {
@@ -999,9 +999,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1864869116977628757
-  ChildIds: 16836762672651125287
-  ChildIds: 185049036997588849
+  ParentId: 2992593344053513728
+  ChildIds: 3674067378745631511
+  ChildIds: 4297814745114928070
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1013,7 +1013,7 @@ Objects {
   }
 }
 Objects {
-  Id: 185049036997588849
+  Id: 4297814745114928070
   Name: "Plane Triangle - One Sided Isosceles"
   Transform {
     Location {
@@ -1029,7 +1029,7 @@ Objects {
       Z: 2.17510152
     }
   }
-  ParentId: 10592419160462253786
+  ParentId: 235713631966965694
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1064,7 +1064,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16836762672651125287
+  Id: 3674067378745631511
   Name: "Plane 1m - One Sided"
   Transform {
     Location {
@@ -1080,7 +1080,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10592419160462253786
+  ParentId: 235713631966965694
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1115,7 +1115,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14400538138442847348
+  Id: 4527962064905930660
   Name: "Spawns"
   Transform {
     Location {
@@ -1128,10 +1128,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
-  ChildIds: 10007746671391953719
-  ChildIds: 9190879599892950805
-  ChildIds: 10438442740271180503
+  ParentId: 3832437480605038461
+  ChildIds: 7468485425117266172
+  ChildIds: 10820452759103740480
+  ChildIds: 13843684636177580443
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1143,7 +1143,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10438442740271180503
+  Id: 13843684636177580443
   Name: "Spawn Point"
   Transform {
     Location {
@@ -1160,7 +1160,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14400538138442847348
+  ParentId: 4527962064905930660
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1173,7 +1173,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9190879599892950805
+  Id: 10820452759103740480
   Name: "Spawn Point"
   Transform {
     Location {
@@ -1190,7 +1190,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14400538138442847348
+  ParentId: 4527962064905930660
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1203,7 +1203,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10007746671391953719
+  Id: 7468485425117266172
   Name: "Spawn Point"
   Transform {
     Location {
@@ -1220,7 +1220,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14400538138442847348
+  ParentId: 4527962064905930660
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1233,7 +1233,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15440326544402457957
+  Id: 8662497512099265412
   Name: "Atmospherics"
   Transform {
     Location {
@@ -1249,7 +1249,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1262,7 +1262,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16816246272091159722
+  Id: 10542281037468369403
   Name: "Audio"
   Transform {
     Location {
@@ -1275,7 +1275,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1288,7 +1288,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9171899922935109293
+  Id: 10382464955774187970
   Name: "WIP"
   Transform {
     Location {
@@ -1301,7 +1301,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1314,7 +1314,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14390202350554631985
+  Id: 16117093513415826600
   Name: "Smugglers Den"
   Transform {
     Location {
@@ -1327,7 +1327,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1340,7 +1340,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4445322596964842448
+  Id: 7523293212332612516
   Name: "Nature Assets"
   Transform {
     Location {
@@ -1356,7 +1356,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1369,7 +1369,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8666821601116918477
+  Id: 14863917198700507379
   Name: "Tavern Interior"
   Transform {
     Location {
@@ -1385,7 +1385,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1398,7 +1398,7 @@ Objects {
   }
 }
 Objects {
-  Id: 305055846383683164
+  Id: 230581138583197942
   Name: "Training Field"
   Transform {
     Location {
@@ -1414,7 +1414,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1427,7 +1427,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14769292999516845280
+  Id: 16140247421243854105
   Name: "Port Area"
   Transform {
     Location {
@@ -1443,7 +1443,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1456,7 +1456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1079375006114686061
+  Id: 14993837946768447435
   Name: "PortalArea"
   Transform {
     Location {
@@ -1473,7 +1473,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1486,7 +1486,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3277514622402591831
+  Id: 8378841365241319088
   Name: "The Square"
   Transform {
     Location {
@@ -1502,7 +1502,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1515,7 +1515,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2936107264752505179
+  Id: 7811352373053574465
   Name: "Sea"
   Transform {
     Location {
@@ -1531,7 +1531,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1544,7 +1544,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4958045848858137993
+  Id: 1217504594399711897
   Name: "Map Locations"
   Transform {
     Location {
@@ -1557,7 +1557,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1570,7 +1570,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2734733877656755987
+  Id: 14259893880566974612
   Name: "Lights"
   Transform {
     Location {
@@ -1587,7 +1587,7 @@ Objects {
       Z: 0.328281492
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1600,7 +1600,7 @@ Objects {
   }
 }
 Objects {
-  Id: 453904204925054689
+  Id: 3820398212541188177
   Name: "NPCs and Dialogs"
   Transform {
     Location {
@@ -1613,7 +1613,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1626,7 +1626,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5190124483811056971
+  Id: 10344994014280708577
   Name: "InvisibleCollision"
   Transform {
     Location {
@@ -1642,7 +1642,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13588444122091554519
+  ParentId: 3832437480605038461
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

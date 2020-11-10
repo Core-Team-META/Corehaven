@@ -211,19 +211,19 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 5042457167177808820
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 5042457167177808820
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 5042457167177808820
             }
           }
         }
@@ -277,7 +277,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4808236381090719999
+              Id: 3618871926670087939
             }
           }
         }
@@ -289,7 +289,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
           }
@@ -331,7 +331,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4808236381090719999
+              Id: 3618871926670087939
             }
           }
         }
@@ -343,7 +343,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
           }
@@ -382,7 +382,7 @@
       }
     }
     Assets {
-      Id: 5649559338683583195
+      Id: 17247896461110156834
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {

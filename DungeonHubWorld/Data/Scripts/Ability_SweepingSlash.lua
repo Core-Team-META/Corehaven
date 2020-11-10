@@ -3,7 +3,6 @@ local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local BASE_DAMAGE = 24.0
 local DAMAGE_MULTIPLIER = 0.8
-local DAMAGE_DELAY = 0.1
 local SWING_RANGE = 400.0
 
 local data = {}
@@ -23,23 +22,20 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	return DAMAGE_DELAY
+	return 0.0
 end
 
 function data.onCastServer(caster, target)
-	Task.Spawn(function()
-		Task.Wait(DAMAGE_DELAY)
-		local casterPosition = caster:GetWorldPosition()
-		local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
+	local casterPosition = caster:GetWorldPosition()
+	local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 
-		for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
-			local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
+	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, SWING_RANGE)) do
+		local dot = (npc:GetWorldPosition() - casterPosition):GetNormalized() .. (caster:GetWorldRotation() * Vector3.FORWARD)
 
-			if dot > 0.0 then
-				API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
-			end
+		if dot > 0.0 then
+			API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
 		end
-	end)
+	end
 end
 
 return data

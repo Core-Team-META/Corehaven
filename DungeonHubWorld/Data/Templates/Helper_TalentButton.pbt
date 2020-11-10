@@ -342,7 +342,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 14184234900815611965
+              Id: 275713616181555507
             }
             Color {
               R: 1
@@ -456,7 +456,7 @@
       }
     }
     Assets {
-      Id: 14184234900815611965
+      Id: 275713616181555507
       Name: "Frame Beveled 001"
       PlatformAssetType: 9
       PrimaryAsset {

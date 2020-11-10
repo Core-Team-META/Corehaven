@@ -135,7 +135,7 @@
               A: 0.2
             }
             Brush {
-              Id: 6373296629710202021
+              Id: 13778967266379385506
             }
             IsButtonEnabled: true
           }
@@ -248,7 +248,7 @@
           }
           Image {
             Brush {
-              Id: 6373296629710202021
+              Id: 13778967266379385506
             }
             Color {
               A: 1
@@ -359,7 +359,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 13206449335842547921
+              Id: 16477742065922762353
             }
             Color {
               R: 1
@@ -503,7 +503,7 @@
       }
     }
     Assets {
-      Id: 6373296629710202021
+      Id: 13778967266379385506
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -521,7 +521,7 @@
       }
     }
     Assets {
-      Id: 13206449335842547921
+      Id: 16477742065922762353
       Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {

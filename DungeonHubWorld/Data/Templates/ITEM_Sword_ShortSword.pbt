@@ -112,7 +112,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -164,7 +164,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -218,7 +218,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -232,7 +232,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -283,7 +283,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -346,7 +346,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
           Overrides {
@@ -397,7 +397,7 @@
       }
     }
     Assets {
-      Id: 1100837394993556177
+      Id: 199153926015106134
       Name: "Metal Iron Rusted 02"
       PlatformAssetType: 2
       PrimaryAsset {

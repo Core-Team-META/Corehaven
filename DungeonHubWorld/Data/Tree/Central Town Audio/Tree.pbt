@@ -1,7 +1,7 @@
 ﻿Name: "Central Town Audio"
-RootId: 14664823471903355022
+RootId: 14863816361725782435
 Objects {
-  Id: 7627804051954587174
+  Id: 10018863690926555773
   Name: "Ambience"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14664823471903355022
+  ParentId: 14863816361725782435
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -27,7 +27,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11335461541940653449
+  Id: 13803212590785797925
   Name: "BGM Triggered Audio Day"
   Transform {
     Location {
@@ -40,7 +40,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14664823471903355022
+  ParentId: 14863816361725782435
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -53,7 +53,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7129043972238910259
+  Id: 11661104391308635828
   Name: "BGM  Triggered Audio Night"
   Transform {
     Location {
@@ -66,7 +66,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14664823471903355022
+  ParentId: 14863816361725782435
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +79,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10328829715971452615
+  Id: 12836938163034223319
   Name: "Music_DayNight"
   Transform {
     Location {
@@ -95,18 +95,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14664823471903355022
+  ParentId: 14863816361725782435
   UnregisteredParameters {
     Overrides {
       Name: "cs:DayMusic"
       ObjectReference {
-        SelfId: 11335461541940653449
+        SelfId: 13803212590785797925
       }
     }
     Overrides {
       Name: "cs:NightMusic"
       ObjectReference {
-        SelfId: 7129043972238910259
+        SelfId: 11661104391308635828
       }
     }
   }

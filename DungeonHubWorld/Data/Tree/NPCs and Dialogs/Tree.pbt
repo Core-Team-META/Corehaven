@@ -1,7 +1,7 @@
 ﻿Name: "NPCs and Dialogs"
-RootId: 453904204925054689
+RootId: 3820398212541188177
 Objects {
-  Id: 8355496857395536503
+  Id: 9579493126288743687
   Name: "Client Context"
   Transform {
     Location {
@@ -17,31 +17,31 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 453904204925054689
-  ChildIds: 1278821643071827315
-  ChildIds: 1419593537304911339
-  ChildIds: 14968665523187605009
-  ChildIds: 7017379868943944389
-  ChildIds: 13741373586418428718
-  ChildIds: 12442177819710447885
-  ChildIds: 15727773866949023891
-  ChildIds: 2473197472606153660
-  ChildIds: 1707775896635128585
-  ChildIds: 10468232154757843446
-  ChildIds: 3299933945099914928
-  ChildIds: 1924168955277639462
-  ChildIds: 11170132355414705905
-  ChildIds: 10480283390017259191
-  ChildIds: 924223727289080656
-  ChildIds: 866783569642170081
-  ChildIds: 6485487148835751902
-  ChildIds: 5242014823355942180
-  ChildIds: 12714735733483420931
-  ChildIds: 10340055090183174356
-  ChildIds: 5159309234536383154
-  ChildIds: 16767020233002569981
-  ChildIds: 16752543726214201114
-  ChildIds: 6982920949181791987
+  ParentId: 3820398212541188177
+  ChildIds: 14905043789751412266
+  ChildIds: 15797450561806420691
+  ChildIds: 11238933786073851433
+  ChildIds: 272985458154963421
+  ChildIds: 14983663644688021654
+  ChildIds: 7337995304315325622
+  ChildIds: 4399706595955899755
+  ChildIds: 13368295998485163298
+  ChildIds: 1459426902557923466
+  ChildIds: 9751549737418545389
+  ChildIds: 8310978651000603071
+  ChildIds: 6280537918513429360
+  ChildIds: 17494725379420934349
+  ChildIds: 13125875223905560031
+  ChildIds: 675417235236819078
+  ChildIds: 15695102111887026463
+  ChildIds: 17061869381742183234
+  ChildIds: 13671729075543251871
+  ChildIds: 10082543187428856139
+  ChildIds: 2155633420259772069
+  ChildIds: 9256017093323592746
+  ChildIds: 11643375161812685093
+  ChildIds: 14764661511633829579
+  ChildIds: 4776226479058903783
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -52,7 +52,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6982920949181791987
+  Id: 4776226479058903783
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -69,9 +69,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 705062859051806672
-  ChildIds: 16677014583761140952
+  ParentId: 9579493126288743687
+  ChildIds: 14886886810181927525
+  ChildIds: 6210080085335882436
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -83,7 +83,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16677014583761140952
+  Id: 6210080085335882436
   Name: "WealthyMerchant"
   Transform {
     Location {
@@ -96,9 +96,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6982920949181791987
-  ChildIds: 5338875206903215341
-  ChildIds: 17855285230437693478
+  ParentId: 4776226479058903783
+  ChildIds: 12910803743701828081
+  ChildIds: 17517922229780217610
   UnregisteredParameters {
     Overrides {
       Name: "cs:AttackRange"
@@ -116,7 +116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17855285230437693478
+  Id: 17517922229780217610
   Name: "Group"
   Transform {
     Location {
@@ -129,8 +129,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16677014583761140952
-  ChildIds: 5335453988053692841
+  ParentId: 6210080085335882436
+  ChildIds: 6292452381306264299
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -142,7 +142,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5335453988053692841
+  Id: 6292452381306264299
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -157,7 +157,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17855285230437693478
+  ParentId: 17517922229780217610
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:id"
@@ -195,7 +195,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18039984299850060191
+      Id: 3198403501401616712
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -214,7 +214,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5338875206903215341
+  Id: 12910803743701828081
   Name: "Costumes"
   Transform {
     Location {
@@ -227,8 +227,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16677014583761140952
-  ChildIds: 15445950013159224793
+  ParentId: 6210080085335882436
+  ChildIds: 4006390413040264453
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -240,7 +240,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15445950013159224793
+  Id: 4006390413040264453
   Name: "ClientContext"
   Transform {
     Location {
@@ -253,8 +253,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5338875206903215341
-  ChildIds: 16266676580583215816
+  ParentId: 12910803743701828081
+  ChildIds: 9623000058367966309
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -265,7 +265,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16266676580583215816
+  Id: 9623000058367966309
   Name: "WealthuMerchantCostume"
   Transform {
     Location {
@@ -278,8 +278,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15445950013159224793
-  ChildIds: 14691775953017456345
+  ParentId: 4006390413040264453
+  ChildIds: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -293,7 +293,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14691775953017456345
+  Id: 7676022575000502416
   Name: "attach_costume_script"
   Transform {
     Location {
@@ -306,32 +306,32 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16266676580583215816
-  ChildIds: 5930680679551066780
-  ChildIds: 4899878934903178188
-  ChildIds: 10907523172787390427
-  ChildIds: 12342270487014321650
-  ChildIds: 3939122517355815300
-  ChildIds: 3925414688058857110
-  ChildIds: 14032343839958161571
-  ChildIds: 8772036680592867378
-  ChildIds: 8586330501118142613
-  ChildIds: 16257337932920989954
-  ChildIds: 10378209144176539924
-  ChildIds: 1937607233306993227
-  ChildIds: 16895152897597219331
-  ChildIds: 6237651525142069368
-  ChildIds: 5145928126611808398
-  ChildIds: 1169941145804586253
-  ChildIds: 6177259157593690982
-  ChildIds: 7197418169149202660
-  ChildIds: 9538706284836487914
-  ChildIds: 16850536311010196136
+  ParentId: 9623000058367966309
+  ChildIds: 2684841502088592151
+  ChildIds: 9103933176823280302
+  ChildIds: 2028718537493364153
+  ChildIds: 13634153427386232261
+  ChildIds: 15437775338907585816
+  ChildIds: 7134452065787304100
+  ChildIds: 6203881929263217096
+  ChildIds: 15375152992519365613
+  ChildIds: 16696010936267548620
+  ChildIds: 17797331992043318192
+  ChildIds: 6438374216313993821
+  ChildIds: 4592476238231001204
+  ChildIds: 16948785754377975625
+  ChildIds: 10136777045869747468
+  ChildIds: 6215924448560371202
+  ChildIds: 13590480866604485652
+  ChildIds: 7745548327290703
+  ChildIds: 13554962190080798893
+  ChildIds: 10247993182558404954
+  ChildIds: 6350649879144061173
   UnregisteredParameters {
     Overrides {
       Name: "cs:FantasyHumanGuy"
       ObjectReference {
-        SelfId: 5335453988053692841
+        SelfId: 6292452381306264299
       }
     }
   }
@@ -348,7 +348,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16850536311010196136
+  Id: 6350649879144061173
   Name: "right_ankle"
   Transform {
     Location {
@@ -367,7 +367,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -380,7 +380,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9538706284836487914
+  Id: 10247993182558404954
   Name: "right_knee"
   Transform {
     Location {
@@ -399,7 +399,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -412,7 +412,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7197418169149202660
+  Id: 13554962190080798893
   Name: "right_hip"
   Transform {
     Location {
@@ -431,7 +431,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -444,7 +444,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6177259157593690982
+  Id: 7745548327290703
   Name: "left_ankle"
   Transform {
     Location {
@@ -463,7 +463,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -476,7 +476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1169941145804586253
+  Id: 13590480866604485652
   Name: "left_knee"
   Transform {
     Location {
@@ -495,7 +495,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -508,7 +508,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5145928126611808398
+  Id: 6215924448560371202
   Name: "left_hip"
   Transform {
     Location {
@@ -527,7 +527,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -540,7 +540,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6237651525142069368
+  Id: 10136777045869747468
   Name: "pelvis"
   Transform {
     Location {
@@ -559,7 +559,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -572,7 +572,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16895152897597219331
+  Id: 16948785754377975625
   Name: "lower_spine"
   Transform {
     Location {
@@ -590,7 +590,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -603,7 +603,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1937607233306993227
+  Id: 4592476238231001204
   Name: "upper_spine"
   Transform {
     Location {
@@ -621,10 +621,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 14834814423633797431
-  ChildIds: 11968110943673310015
-  ChildIds: 8770121027215892439
+  ParentId: 7676022575000502416
+  ChildIds: 17526182999778110798
+  ChildIds: 14510743346064376255
+  ChildIds: 1403260510468562934
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -637,7 +637,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8770121027215892439
+  Id: 1403260510468562934
   Name: "Satchel"
   Transform {
     Location {
@@ -656,9 +656,9 @@ Objects {
       Z: 0.884456515
     }
   }
-  ParentId: 1937607233306993227
-  ChildIds: 11935321232239951306
-  ChildIds: 14788423943581045620
+  ParentId: 4592476238231001204
+  ChildIds: 7973414424946759350
+  ChildIds: 4267190071122925839
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -670,7 +670,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14788423943581045620
+  Id: 4267190071122925839
   Name: "Bag"
   Transform {
     Location {
@@ -689,13 +689,13 @@ Objects {
       Z: 1.13395274
     }
   }
-  ParentId: 8770121027215892439
-  ChildIds: 15863007112082150489
-  ChildIds: 6887989082552538633
-  ChildIds: 2092686360768506228
-  ChildIds: 18350403058830340787
-  ChildIds: 8716278972542404987
-  ChildIds: 15314655629186414978
+  ParentId: 1403260510468562934
+  ChildIds: 16942102677339858195
+  ChildIds: 4632485234916075059
+  ChildIds: 5313847357864416993
+  ChildIds: 16060554854727481501
+  ChildIds: 15204304150744317681
+  ChildIds: 7603665744827790304
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -707,7 +707,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15314655629186414978
+  Id: 7603665744827790304
   Name: "Cube - Rounded"
   Transform {
     Location {
@@ -725,7 +725,7 @@ Objects {
       Z: 0.148558781
     }
   }
-  ParentId: 14788423943581045620
+  ParentId: 4267190071122925839
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -777,7 +777,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8716278972542404987
+  Id: 15204304150744317681
   Name: "Closure"
   Transform {
     Location {
@@ -793,12 +793,12 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14788423943581045620
-  ChildIds: 14647169388501691129
-  ChildIds: 15896897156068757034
-  ChildIds: 5941848428560689142
-  ChildIds: 16903739034316745694
-  ChildIds: 12668961303533043942
+  ParentId: 4267190071122925839
+  ChildIds: 16169886109874905686
+  ChildIds: 3151833505123957637
+  ChildIds: 15241833397901481444
+  ChildIds: 11180615233053533302
+  ChildIds: 17197003216219186285
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -810,7 +810,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12668961303533043942
+  Id: 17197003216219186285
   Name: "Ring - Quarter Thick"
   Transform {
     Location {
@@ -828,7 +828,7 @@ Objects {
       Z: 0.195843965
     }
   }
-  ParentId: 8716278972542404987
+  ParentId: 15204304150744317681
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -871,7 +871,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16903739034316745694
+  Id: 11180615233053533302
   Name: "Horn"
   Transform {
     Location {
@@ -887,7 +887,7 @@ Objects {
       Z: 0.0524475425
     }
   }
-  ParentId: 8716278972542404987
+  ParentId: 15204304150744317681
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -916,7 +916,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -930,7 +930,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5941848428560689142
+  Id: 15241833397901481444
   Name: "Horn"
   Transform {
     Location {
@@ -945,7 +945,7 @@ Objects {
       Z: 0.0524475425
     }
   }
-  ParentId: 8716278972542404987
+  ParentId: 15204304150744317681
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -974,7 +974,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -988,7 +988,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15896897156068757034
+  Id: 3151833505123957637
   Name: "Ring - Extra Thick"
   Transform {
     Location {
@@ -1006,7 +1006,7 @@ Objects {
       Z: 0.0900007933
     }
   }
-  ParentId: 8716278972542404987
+  ParentId: 15204304150744317681
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1035,7 +1035,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1049,7 +1049,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14647169388501691129
+  Id: 16169886109874905686
   Name: "Ring - Quarter Thick"
   Transform {
     Location {
@@ -1067,7 +1067,7 @@ Objects {
       Z: 0.195843965
     }
   }
-  ParentId: 8716278972542404987
+  ParentId: 15204304150744317681
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1110,7 +1110,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18350403058830340787
+  Id: 16060554854727481501
   Name: "Sign Bracket - Round"
   Transform {
     Location {
@@ -1129,7 +1129,7 @@ Objects {
       Z: 0.386877775
     }
   }
-  ParentId: 14788423943581045620
+  ParentId: 4267190071122925839
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1164,7 +1164,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2092686360768506228
+  Id: 5313847357864416993
   Name: "Lid"
   Transform {
     Location {
@@ -1180,9 +1180,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14788423943581045620
-  ChildIds: 3767287601141140426
-  ChildIds: 11036234349402704393
+  ParentId: 4267190071122925839
+  ChildIds: 9615228272569537437
+  ChildIds: 981858362911875321
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1194,7 +1194,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11036234349402704393
+  Id: 981858362911875321
   Name: "Pipe - Quarter Thin"
   Transform {
     Location {
@@ -1213,7 +1213,7 @@ Objects {
       Z: 0.410476297
     }
   }
-  ParentId: 2092686360768506228
+  ParentId: 5313847357864416993
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1256,7 +1256,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3767287601141140426
+  Id: 9615228272569537437
   Name: "Pipe - Quarter Thin"
   Transform {
     Location {
@@ -1274,7 +1274,7 @@ Objects {
       Z: 0.410476893
     }
   }
-  ParentId: 2092686360768506228
+  ParentId: 5313847357864416993
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1326,7 +1326,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6887989082552538633
+  Id: 4632485234916075059
   Name: "Fantasy Shield Strap 01"
   Transform {
     Location {
@@ -1345,7 +1345,7 @@ Objects {
       Z: 0.597104609
     }
   }
-  ParentId: 14788423943581045620
+  ParentId: 4267190071122925839
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1362,7 +1362,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5649559338683583195
+      Id: 17247896461110156834
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1376,7 +1376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15863007112082150489
+  Id: 16942102677339858195
   Name: "Cube - Rounded"
   Transform {
     Location {
@@ -1393,7 +1393,7 @@ Objects {
       Z: 0.289946496
     }
   }
-  ParentId: 14788423943581045620
+  ParentId: 4267190071122925839
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1436,7 +1436,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11935321232239951306
+  Id: 7973414424946759350
   Name: "Strap"
   Transform {
     Location {
@@ -1454,11 +1454,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8770121027215892439
-  ChildIds: 4270994715900862195
-  ChildIds: 9427172832963743338
-  ChildIds: 6961472649555931161
-  ChildIds: 102545933236621420
+  ParentId: 1403260510468562934
+  ChildIds: 4935341352048884573
+  ChildIds: 4094569883836820732
+  ChildIds: 14559980460556950623
+  ChildIds: 17498704952983593581
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1470,7 +1470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 102545933236621420
+  Id: 17498704952983593581
   Name: "Fantasy Shield Strap 01"
   Transform {
     Location {
@@ -1489,7 +1489,7 @@ Objects {
       Z: 2.4813633
     }
   }
-  ParentId: 11935321232239951306
+  ParentId: 7973414424946759350
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1521,7 +1521,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5649559338683583195
+      Id: 17247896461110156834
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1535,7 +1535,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6961472649555931161
+  Id: 14559980460556950623
   Name: "Fantasy Shield Strap 01"
   Transform {
     Location {
@@ -1554,7 +1554,7 @@ Objects {
       Z: 2.4813633
     }
   }
-  ParentId: 11935321232239951306
+  ParentId: 7973414424946759350
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1585,7 +1585,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5649559338683583195
+      Id: 17247896461110156834
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1599,7 +1599,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9427172832963743338
+  Id: 4094569883836820732
   Name: "Strap"
   Transform {
     Location {
@@ -1618,7 +1618,7 @@ Objects {
       Z: 0.0649893805
     }
   }
-  ParentId: 11935321232239951306
+  ParentId: 7973414424946759350
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1661,7 +1661,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4270994715900862195
+  Id: 4935341352048884573
   Name: "Manticore Logo"
   Transform {
     Location {
@@ -1680,7 +1680,7 @@ Objects {
       Z: 0.284457743
     }
   }
-  ParentId: 11935321232239951306
+  ParentId: 7973414424946759350
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1689,7 +1689,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6608637607352009288
+      Id: 9747128882648294447
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1703,7 +1703,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11968110943673310015
+  Id: 14510743346064376255
   Name: "Cape"
   Transform {
     Location {
@@ -1722,22 +1722,22 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1937607233306993227
-  ChildIds: 9245425081994580590
-  ChildIds: 3044809436920271031
-  ChildIds: 16246841227991143109
-  ChildIds: 8969497298787773638
-  ChildIds: 11911865599309116126
-  ChildIds: 6229553523588578142
-  ChildIds: 78238409058809229
-  ChildIds: 15421552204283762714
-  ChildIds: 9224532255514080078
-  ChildIds: 551860006576054499
-  ChildIds: 18387683448403484880
-  ChildIds: 6055285628816977004
-  ChildIds: 1633035232933818419
-  ChildIds: 3641179266424710352
-  ChildIds: 12395236031782449824
+  ParentId: 4592476238231001204
+  ChildIds: 8730469815750635224
+  ChildIds: 16970393877970078420
+  ChildIds: 17870149694246164013
+  ChildIds: 6440147107426314938
+  ChildIds: 12027201732940931145
+  ChildIds: 2591262354807140574
+  ChildIds: 3545385181219310939
+  ChildIds: 13332035128958829788
+  ChildIds: 12299882958353411244
+  ChildIds: 15759171421261896659
+  ChildIds: 5567160936915240463
+  ChildIds: 3225032063858496446
+  ChildIds: 3959629700849577103
+  ChildIds: 1248049930383392338
+  ChildIds: 3057760356651594964
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1749,7 +1749,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12395236031782449824
+  Id: 3057760356651594964
   Name: "Ring - Quarter"
   Transform {
     Location {
@@ -1768,12 +1768,12 @@ Objects {
       Z: 0.406360865
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -1820,7 +1820,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3641179266424710352
+  Id: 1248049930383392338
   Name: "Ring - Quarter"
   Transform {
     Location {
@@ -1839,12 +1839,12 @@ Objects {
       Z: 0.489696503
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -1891,7 +1891,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1633035232933818419
+  Id: 3959629700849577103
   Name: "Ring - Quarter"
   Transform {
     Location {
@@ -1910,12 +1910,12 @@ Objects {
       Z: 0.286701232
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -1962,7 +1962,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6055285628816977004
+  Id: 3225032063858496446
   Name: "Ring - Extra Thick"
   Transform {
     Location {
@@ -1981,12 +1981,12 @@ Objects {
       Z: 0.203783602
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2019,7 +2019,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2033,7 +2033,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18387683448403484880
+  Id: 5567160936915240463
   Name: "Ring - Extra Thick"
   Transform {
     Location {
@@ -2052,12 +2052,12 @@ Objects {
       Z: 0.163794383
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2090,7 +2090,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2104,7 +2104,7 @@ Objects {
   }
 }
 Objects {
-  Id: 551860006576054499
+  Id: 15759171421261896659
   Name: "Curtains Straight"
   Transform {
     Location {
@@ -2121,12 +2121,12 @@ Objects {
       Z: 0.124942094
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2155,7 +2155,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6977568964552625050
+      Id: 17012531204564930561
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2169,7 +2169,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9224532255514080078
+  Id: 12299882958353411244
   Name: "Ring - Extra Thick"
   Transform {
     Location {
@@ -2188,12 +2188,12 @@ Objects {
       Z: 0.2229525
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2226,7 +2226,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2240,7 +2240,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15421552204283762714
+  Id: 13332035128958829788
   Name: "Ring - Extra Thick"
   Transform {
     Location {
@@ -2259,12 +2259,12 @@ Objects {
       Z: 0.163794518
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2297,7 +2297,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2311,7 +2311,7 @@ Objects {
   }
 }
 Objects {
-  Id: 78238409058809229
+  Id: 3545385181219310939
   Name: "Ring - Quarter"
   Transform {
     Location {
@@ -2330,12 +2330,12 @@ Objects {
       Z: 0.416233629
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2382,7 +2382,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6229553523588578142
+  Id: 2591262354807140574
   Name: "Ring - Quarter"
   Transform {
     Location {
@@ -2398,12 +2398,12 @@ Objects {
       Z: 0.368246198
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2450,7 +2450,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11911865599309116126
+  Id: 12027201732940931145
   Name: "Horn"
   Transform {
     Location {
@@ -2469,12 +2469,12 @@ Objects {
       Z: 0.108165935
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2507,7 +2507,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2521,7 +2521,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8969497298787773638
+  Id: 6440147107426314938
   Name: "Horn"
   Transform {
     Location {
@@ -2540,12 +2540,12 @@ Objects {
       Z: 0.111070603
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2578,7 +2578,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2592,7 +2592,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16246841227991143109
+  Id: 17870149694246164013
   Name: "Horn"
   Transform {
     Location {
@@ -2611,12 +2611,12 @@ Objects {
       Z: 0.111070603
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2649,7 +2649,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2663,7 +2663,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3044809436920271031
+  Id: 16970393877970078420
   Name: "Curtains Straight"
   Transform {
     Location {
@@ -2680,12 +2680,12 @@ Objects {
       Z: 0.124942094
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2714,7 +2714,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6977568964552625050
+      Id: 17012531204564930561
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2728,7 +2728,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9245425081994580590
+  Id: 8730469815750635224
   Name: "Horn"
   Transform {
     Location {
@@ -2747,12 +2747,12 @@ Objects {
       Z: 0.108165935
     }
   }
-  ParentId: 11968110943673310015
+  ParentId: 14510743346064376255
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
-        Id: 9225772212614530763
+        Id: 14908011933205182591
       }
     }
     Overrides {
@@ -2785,7 +2785,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2799,7 +2799,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14834814423633797431
+  Id: 17526182999778110798
   Name: "Jewel Necklace"
   Transform {
     Location {
@@ -2818,20 +2818,20 @@ Objects {
       Z: 0.0621946119
     }
   }
-  ParentId: 1937607233306993227
-  ChildIds: 6687281044199465263
-  ChildIds: 4072062911351624963
-  ChildIds: 1521489737764327166
-  ChildIds: 14471722454170555186
-  ChildIds: 7275598959077855383
-  ChildIds: 2374760339554667506
-  ChildIds: 17816981495858228081
-  ChildIds: 275423753408772616
-  ChildIds: 14002333515031671841
-  ChildIds: 15056588391853994065
-  ChildIds: 8699923433451432007
-  ChildIds: 5160703589438252448
-  ChildIds: 16183051748139547862
+  ParentId: 4592476238231001204
+  ChildIds: 257119807099927037
+  ChildIds: 2537292073471106814
+  ChildIds: 11109044936691587115
+  ChildIds: 17337193106489284223
+  ChildIds: 465287626202135596
+  ChildIds: 13466014613240210783
+  ChildIds: 17812679946722902764
+  ChildIds: 3733202038100908077
+  ChildIds: 14905962307184392253
+  ChildIds: 2537213574419027977
+  ChildIds: 13582932117681944676
+  ChildIds: 4500087958969278528
+  ChildIds: 5762603558074805495
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2843,7 +2843,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16183051748139547862
+  Id: 5762603558074805495
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -2862,7 +2862,7 @@ Objects {
       Z: 0.304755121
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2883,7 +2883,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2897,7 +2897,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5160703589438252448
+  Id: 4500087958969278528
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -2916,7 +2916,7 @@ Objects {
       Z: 0.476720959
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2937,7 +2937,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -2951,7 +2951,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8699923433451432007
+  Id: 13582932117681944676
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -2970,7 +2970,7 @@ Objects {
       Z: 0.476720721
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2991,7 +2991,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3005,7 +3005,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15056588391853994065
+  Id: 2537213574419027977
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -3024,7 +3024,7 @@ Objects {
       Z: 0.304754972
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3045,7 +3045,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3059,7 +3059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14002333515031671841
+  Id: 14905962307184392253
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -3078,7 +3078,7 @@ Objects {
       Z: 0.304754972
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3099,7 +3099,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3113,7 +3113,7 @@ Objects {
   }
 }
 Objects {
-  Id: 275423753408772616
+  Id: 3733202038100908077
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -3132,7 +3132,7 @@ Objects {
       Z: 0.304754972
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3153,7 +3153,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3167,7 +3167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17816981495858228081
+  Id: 17812679946722902764
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -3183,7 +3183,7 @@ Objects {
       Z: 0.304755121
     }
   }
-  ParentId: 14834814423633797431
+  ParentId: 17526182999778110798
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3204,7 +3204,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -3218,7 +3218,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2374760339554667506
+  Id: 13466014613240210783
   Name: "Medallion"
   Transform {
     Location {
@@ -3237,11 +3237,11 @@ Objects {
       Z: 0.999998689
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 5521750056610771399
-  ChildIds: 7336866312194681262
-  ChildIds: 1849413992925963103
-  ChildIds: 1551060553398242056
+  ParentId: 17526182999778110798
+  ChildIds: 17673153947386821029
+  ChildIds: 2020133685691685819
+  ChildIds: 15071976644283834425
+  ChildIds: 7817985758525226954
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3253,7 +3253,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1551060553398242056
+  Id: 7817985758525226954
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3268,7 +3268,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 2374760339554667506
+  ParentId: 13466014613240210783
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3303,7 +3303,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1849413992925963103
+  Id: 15071976644283834425
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3317,7 +3317,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 2374760339554667506
+  ParentId: 13466014613240210783
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3352,7 +3352,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7336866312194681262
+  Id: 2020133685691685819
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -3365,7 +3365,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 2374760339554667506
+  ParentId: 13466014613240210783
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3400,7 +3400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5521750056610771399
+  Id: 17673153947386821029
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -3414,7 +3414,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 2374760339554667506
+  ParentId: 13466014613240210783
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3445,7 +3445,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7275598959077855383
+  Id: 465287626202135596
   Name: "Medallion"
   Transform {
     Location {
@@ -3464,11 +3464,11 @@ Objects {
       Z: 0.999998271
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 17049733516090866519
-  ChildIds: 14287089846479855493
-  ChildIds: 5089192234782316028
-  ChildIds: 4794261417660228857
+  ParentId: 17526182999778110798
+  ChildIds: 12335005366722058545
+  ChildIds: 596711030978810890
+  ChildIds: 3898877194359913724
+  ChildIds: 7473352089071853648
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3480,7 +3480,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4794261417660228857
+  Id: 7473352089071853648
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3495,7 +3495,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 7275598959077855383
+  ParentId: 465287626202135596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3538,7 +3538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5089192234782316028
+  Id: 3898877194359913724
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3552,7 +3552,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 7275598959077855383
+  ParentId: 465287626202135596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3595,7 +3595,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14287089846479855493
+  Id: 596711030978810890
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -3608,7 +3608,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 7275598959077855383
+  ParentId: 465287626202135596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3643,7 +3643,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17049733516090866519
+  Id: 12335005366722058545
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -3657,7 +3657,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 7275598959077855383
+  ParentId: 465287626202135596
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3688,7 +3688,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14471722454170555186
+  Id: 17337193106489284223
   Name: "Medallion"
   Transform {
     Location {
@@ -3707,11 +3707,11 @@ Objects {
       Z: 0.999996781
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 9163654501031440562
-  ChildIds: 1229499022844002303
-  ChildIds: 10186940603621424560
-  ChildIds: 17509405216121780091
+  ParentId: 17526182999778110798
+  ChildIds: 5114888658023798287
+  ChildIds: 6826130125707865681
+  ChildIds: 13400312570142132595
+  ChildIds: 3820335028153846302
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3723,7 +3723,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17509405216121780091
+  Id: 3820335028153846302
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3738,7 +3738,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 14471722454170555186
+  ParentId: 17337193106489284223
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3781,7 +3781,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10186940603621424560
+  Id: 13400312570142132595
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3795,7 +3795,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 14471722454170555186
+  ParentId: 17337193106489284223
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3838,7 +3838,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1229499022844002303
+  Id: 6826130125707865681
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -3851,7 +3851,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 14471722454170555186
+  ParentId: 17337193106489284223
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3886,7 +3886,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9163654501031440562
+  Id: 5114888658023798287
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -3900,7 +3900,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 14471722454170555186
+  ParentId: 17337193106489284223
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -3931,7 +3931,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1521489737764327166
+  Id: 11109044936691587115
   Name: "Medallion"
   Transform {
     Location {
@@ -3950,11 +3950,11 @@ Objects {
       Z: 0.999998927
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 7448530779054949337
-  ChildIds: 7621355850459936070
-  ChildIds: 12713588073789661863
-  ChildIds: 9058568179339198488
+  ParentId: 17526182999778110798
+  ChildIds: 5904022305960103351
+  ChildIds: 1215883147359705586
+  ChildIds: 9410500040435385201
+  ChildIds: 14342922962567372270
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3966,7 +3966,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9058568179339198488
+  Id: 14342922962567372270
   Name: "Star - Outline"
   Transform {
     Location {
@@ -3981,7 +3981,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 1521489737764327166
+  ParentId: 11109044936691587115
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4024,7 +4024,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12713588073789661863
+  Id: 9410500040435385201
   Name: "Star - Outline"
   Transform {
     Location {
@@ -4038,7 +4038,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 1521489737764327166
+  ParentId: 11109044936691587115
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4081,7 +4081,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7621355850459936070
+  Id: 1215883147359705586
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -4094,7 +4094,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 1521489737764327166
+  ParentId: 11109044936691587115
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4129,7 +4129,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7448530779054949337
+  Id: 5904022305960103351
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -4143,7 +4143,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 1521489737764327166
+  ParentId: 11109044936691587115
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4174,7 +4174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4072062911351624963
+  Id: 2537292073471106814
   Name: "Medallion"
   Transform {
     Location {
@@ -4193,11 +4193,11 @@ Objects {
       Z: 0.999997
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 18379535128604793657
-  ChildIds: 487403998024747283
-  ChildIds: 6279626333590717424
-  ChildIds: 8622360209003415510
+  ParentId: 17526182999778110798
+  ChildIds: 14744493857190928548
+  ChildIds: 14406096518681984854
+  ChildIds: 3504044492752142903
+  ChildIds: 2356247849676718516
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4209,7 +4209,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8622360209003415510
+  Id: 2356247849676718516
   Name: "Star - Outline"
   Transform {
     Location {
@@ -4224,7 +4224,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 4072062911351624963
+  ParentId: 2537292073471106814
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4267,7 +4267,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6279626333590717424
+  Id: 3504044492752142903
   Name: "Star - Outline"
   Transform {
     Location {
@@ -4281,7 +4281,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 4072062911351624963
+  ParentId: 2537292073471106814
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4324,7 +4324,7 @@ Objects {
   }
 }
 Objects {
-  Id: 487403998024747283
+  Id: 14406096518681984854
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -4337,7 +4337,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 4072062911351624963
+  ParentId: 2537292073471106814
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4372,7 +4372,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18379535128604793657
+  Id: 14744493857190928548
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -4386,7 +4386,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 4072062911351624963
+  ParentId: 2537292073471106814
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4417,7 +4417,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6687281044199465263
+  Id: 257119807099927037
   Name: "Medallion"
   Transform {
     Location {
@@ -4436,11 +4436,11 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14834814423633797431
-  ChildIds: 13886288611108268792
-  ChildIds: 5749335236600621780
-  ChildIds: 14428668122307924351
-  ChildIds: 1403775650199638131
+  ParentId: 17526182999778110798
+  ChildIds: 12557055833450710618
+  ChildIds: 7602424582260231014
+  ChildIds: 6603121605733141
+  ChildIds: 9633531469717935692
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4452,7 +4452,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1403775650199638131
+  Id: 9633531469717935692
   Name: "Star - Outline"
   Transform {
     Location {
@@ -4467,7 +4467,7 @@ Objects {
       Z: 0.697206616
     }
   }
-  ParentId: 6687281044199465263
+  ParentId: 257119807099927037
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4510,7 +4510,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14428668122307924351
+  Id: 6603121605733141
   Name: "Star - Outline"
   Transform {
     Location {
@@ -4524,7 +4524,7 @@ Objects {
       Z: 0.50811106
     }
   }
-  ParentId: 6687281044199465263
+  ParentId: 257119807099927037
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4567,7 +4567,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5749335236600621780
+  Id: 7602424582260231014
   Name: "Ring - Beveled"
   Transform {
     Location {
@@ -4580,7 +4580,7 @@ Objects {
       Z: 1.27896225
     }
   }
-  ParentId: 6687281044199465263
+  ParentId: 257119807099927037
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4615,7 +4615,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13886288611108268792
+  Id: 12557055833450710618
   Name: "Gem - Diamond 6-Sided Polished"
   Transform {
     Location {
@@ -4629,7 +4629,7 @@ Objects {
       Z: 0.289087087
     }
   }
-  ParentId: 6687281044199465263
+  ParentId: 257119807099927037
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4660,7 +4660,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10378209144176539924
+  Id: 6438374216313993821
   Name: "right_wrist"
   Transform {
     Location {
@@ -4679,9 +4679,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 13951504841314814882
-  ChildIds: 7154706114412535290
+  ParentId: 7676022575000502416
+  ChildIds: 17980861274889105603
+  ChildIds: 10037276347713027865
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4694,7 +4694,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7154706114412535290
+  Id: 10037276347713027865
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -4713,7 +4713,7 @@ Objects {
       Z: 0.21596396
     }
   }
-  ParentId: 10378209144176539924
+  ParentId: 6438374216313993821
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4747,7 +4747,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -4761,7 +4761,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13951504841314814882
+  Id: 17980861274889105603
   Name: "Ring"
   Transform {
     Location {
@@ -4780,7 +4780,7 @@ Objects {
       Z: 0.333868802
     }
   }
-  ParentId: 10378209144176539924
+  ParentId: 6438374216313993821
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -4809,7 +4809,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 990344647068844639
+      Id: 13372972268553014344
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -4823,7 +4823,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16257337932920989954
+  Id: 17797331992043318192
   Name: "right_elbow"
   Transform {
     Location {
@@ -4842,9 +4842,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 10940356415354140933
-  ChildIds: 5908609794128280743
+  ParentId: 7676022575000502416
+  ChildIds: 4610061946796722177
+  ChildIds: 14202404959846728911
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -4857,7 +4857,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5908609794128280743
+  Id: 14202404959846728911
   Name: "Star - Rounded"
   Transform {
     Location {
@@ -4876,7 +4876,7 @@ Objects {
       Z: 1.32295907
     }
   }
-  ParentId: 16257337932920989954
+  ParentId: 17797331992043318192
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4915,7 +4915,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10940356415354140933
+  Id: 4610061946796722177
   Name: "Ring"
   Transform {
     Location {
@@ -4934,7 +4934,7 @@ Objects {
       Z: 0.585499108
     }
   }
-  ParentId: 16257337932920989954
+  ParentId: 17797331992043318192
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -4963,7 +4963,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 990344647068844639
+      Id: 13372972268553014344
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -4977,7 +4977,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8586330501118142613
+  Id: 16696010936267548620
   Name: "right_shoulder"
   Transform {
     Location {
@@ -4996,8 +4996,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 748678877303874948
+  ParentId: 7676022575000502416
+  ChildIds: 12709459148392810599
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5010,7 +5010,7 @@ Objects {
   }
 }
 Objects {
-  Id: 748678877303874948
+  Id: 12709459148392810599
   Name: "Star - Rounded"
   Transform {
     Location {
@@ -5029,7 +5029,7 @@ Objects {
       Z: 1.52933371
     }
   }
-  ParentId: 8586330501118142613
+  ParentId: 16696010936267548620
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5068,7 +5068,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8772036680592867378
+  Id: 15375152992519365613
   Name: "right_clavicle"
   Transform {
     Location {
@@ -5086,7 +5086,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5099,7 +5099,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14032343839958161571
+  Id: 6203881929263217096
   Name: "left_wrist"
   Transform {
     Location {
@@ -5118,9 +5118,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 4045269091569490476
-  ChildIds: 2340643371291083318
+  ParentId: 7676022575000502416
+  ChildIds: 2141412437748753188
+  ChildIds: 6839677463049173259
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5133,7 +5133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2340643371291083318
+  Id: 6839677463049173259
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -5152,7 +5152,7 @@ Objects {
       Z: 0.21596396
     }
   }
-  ParentId: 14032343839958161571
+  ParentId: 6203881929263217096
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5186,7 +5186,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -5200,7 +5200,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4045269091569490476
+  Id: 2141412437748753188
   Name: "Ring"
   Transform {
     Location {
@@ -5219,7 +5219,7 @@ Objects {
       Z: 0.333868802
     }
   }
-  ParentId: 14032343839958161571
+  ParentId: 6203881929263217096
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -5248,7 +5248,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 990344647068844639
+      Id: 13372972268553014344
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -5262,7 +5262,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3925414688058857110
+  Id: 7134452065787304100
   Name: "left_elbow"
   Transform {
     Location {
@@ -5281,9 +5281,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 5283602254128815807
-  ChildIds: 711519979893421698
+  ParentId: 7676022575000502416
+  ChildIds: 712560696936413969
+  ChildIds: 2019283293491216050
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5296,7 +5296,7 @@ Objects {
   }
 }
 Objects {
-  Id: 711519979893421698
+  Id: 2019283293491216050
   Name: "Star - Rounded"
   Transform {
     Location {
@@ -5315,7 +5315,7 @@ Objects {
       Z: 1.32295907
     }
   }
-  ParentId: 3925414688058857110
+  ParentId: 7134452065787304100
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5354,7 +5354,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5283602254128815807
+  Id: 712560696936413969
   Name: "Ring"
   Transform {
     Location {
@@ -5373,7 +5373,7 @@ Objects {
       Z: 0.585499108
     }
   }
-  ParentId: 3925414688058857110
+  ParentId: 7134452065787304100
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:smart"
@@ -5402,7 +5402,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 990344647068844639
+      Id: 13372972268553014344
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -5416,7 +5416,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3939122517355815300
+  Id: 15437775338907585816
   Name: "left_shoulder"
   Transform {
     Location {
@@ -5435,8 +5435,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 1306311701386204609
+  ParentId: 7676022575000502416
+  ChildIds: 1070761715302014217
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5449,7 +5449,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1306311701386204609
+  Id: 1070761715302014217
   Name: "Star - Rounded"
   Transform {
     Location {
@@ -5468,7 +5468,7 @@ Objects {
       Z: 1.52933371
     }
   }
-  ParentId: 3939122517355815300
+  ParentId: 15437775338907585816
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5507,7 +5507,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12342270487014321650
+  Id: 13634153427386232261
   Name: "left_clavicle"
   Transform {
     Location {
@@ -5525,7 +5525,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5538,7 +5538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10907523172787390427
+  Id: 2028718537493364153
   Name: "neck"
   Transform {
     Location {
@@ -5555,8 +5555,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
-  ChildIds: 5436152452182266510
+  ParentId: 7676022575000502416
+  ChildIds: 1187412684253955289
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5569,7 +5569,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5436152452182266510
+  Id: 1187412684253955289
   Name: "Ring Beveled (thick)"
   Transform {
     Location {
@@ -5588,7 +5588,7 @@ Objects {
       Z: 0.459784269
     }
   }
-  ParentId: 10907523172787390427
+  ParentId: 2028718537493364153
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5622,7 +5622,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6643656927040904919
+      Id: 16372496464315477095
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -5636,7 +5636,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4899878934903178188
+  Id: 9103933176823280302
   Name: "head"
   Transform {
     Location {
@@ -5654,7 +5654,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5667,7 +5667,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5930680679551066780
+  Id: 2684841502088592151
   Name: "root"
   Transform {
     Location {
@@ -5681,7 +5681,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14691775953017456345
+  ParentId: 7676022575000502416
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -5694,7 +5694,7 @@ Objects {
   }
 }
 Objects {
-  Id: 705062859051806672
+  Id: 14886886810181927525
   Name: "NPC Dialogue Trigger"
   Transform {
     Scale {
@@ -5703,7 +5703,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6982920949181791987
+  ParentId: 4776226479058903783
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5729,7 +5729,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 5335453988053692841
+            SelfId: 6292452381306264299
           }
         }
         Overrides {
@@ -5756,7 +5756,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16752543726214201114
+  Id: 14764661511633829579
   Name: "Group"
   Transform {
     Location {
@@ -5769,9 +5769,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 18010771305414530573
-  ChildIds: 9959083287818062245
+  ParentId: 9579493126288743687
+  ChildIds: 13535718357438640712
+  ChildIds: 15196689307053976703
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5783,7 +5783,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9959083287818062245
+  Id: 15196689307053976703
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -5792,7 +5792,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16752543726214201114
+  ParentId: 14764661511633829579
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -5851,7 +5851,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18010771305414530573
+  Id: 13535718357438640712
   Name: "Commoner_M_01"
   Transform {
     Scale {
@@ -5860,7 +5860,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16752543726214201114
+  ParentId: 14764661511633829579
   TemplateInstance {
     ParameterOverrideMap {
       key: 6153812158312227725
@@ -5915,7 +5915,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16767020233002569981
+  Id: 11643375161812685093
   Name: "Fantasy Human Gal 1"
   Transform {
     Location {
@@ -5931,7 +5931,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5960,7 +5960,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5159309234536383154
+  Id: 9256017093323592746
   Name: "Group"
   Transform {
     Location {
@@ -5973,9 +5973,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 13350371305715147618
-  ChildIds: 9550736470107417917
+  ParentId: 9579493126288743687
+  ChildIds: 10936482796325019956
+  ChildIds: 9652813235160541232
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5987,7 +5987,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9550736470107417917
+  Id: 9652813235160541232
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -5996,7 +5996,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5159309234536383154
+  ParentId: 9256017093323592746
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -6029,9 +6029,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 11942801310544410455
+            SelfId: 4763357952429100423
             SubObjectId: 9585201413149408431
-            InstanceId: 13350371305715147618
+            InstanceId: 10936482796325019956
             TemplateId: 999399356414642350
           }
         }
@@ -6059,7 +6059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13350371305715147618
+  Id: 10936482796325019956
   Name: "Priestess"
   Transform {
     Scale {
@@ -6068,7 +6068,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5159309234536383154
+  ParentId: 9256017093323592746
   TemplateInstance {
     ParameterOverrideMap {
       key: 15932366417693831876
@@ -6107,7 +6107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10340055090183174356
+  Id: 2155633420259772069
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -6124,7 +6124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6133,7 +6133,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18039984299850060191
+      Id: 3198403501401616712
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -6153,7 +6153,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12714735733483420931
+  Id: 10082543187428856139
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -6170,7 +6170,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6199,7 +6199,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5242014823355942180
+  Id: 13671729075543251871
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -6216,7 +6216,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6245,7 +6245,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6485487148835751902
+  Id: 17061869381742183234
   Name: "Group"
   Transform {
     Location {
@@ -6261,10 +6261,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 11254139885197496211
-  ChildIds: 13492454561738277994
-  ChildIds: 8858571126252782383
+  ParentId: 9579493126288743687
+  ChildIds: 11594389016690280914
+  ChildIds: 8622609242836001614
+  ChildIds: 4493240950543982735
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6276,7 +6276,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8858571126252782383
+  Id: 4493240950543982735
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -6285,7 +6285,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6485487148835751902
+  ParentId: 17061869381742183234
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -6310,7 +6310,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 11254139885197496211
+            SelfId: 11594389016690280914
           }
         }
         Overrides {
@@ -6345,7 +6345,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13492454561738277994
+  Id: 8622609242836001614
   Name: "Fox Mob"
   Transform {
     Location {
@@ -6361,7 +6361,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6485487148835751902
+  ParentId: 17061869381742183234
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6388,7 +6388,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11254139885197496211
+  Id: 11594389016690280914
   Name: "Human Guy 1"
   Transform {
     Location {
@@ -6405,7 +6405,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6485487148835751902
+  ParentId: 17061869381742183234
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail1:color"
@@ -6449,7 +6449,7 @@ Objects {
   }
 }
 Objects {
-  Id: 866783569642170081
+  Id: 15695102111887026463
   Name: "Group"
   Transform {
     Location {
@@ -6462,9 +6462,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 17380347573135731853
-  ChildIds: 9648739632739741137
+  ParentId: 9579493126288743687
+  ChildIds: 1440844745024047773
+  ChildIds: 18393717164047701948
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6476,7 +6476,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9648739632739741137
+  Id: 18393717164047701948
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -6485,7 +6485,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 866783569642170081
+  ParentId: 15695102111887026463
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -6535,9 +6535,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 3816051918113686917
+            SelfId: 3946051646203677476
             SubObjectId: 6153812158312227725
-            InstanceId: 17380347573135731853
+            InstanceId: 1440844745024047773
             TemplateId: 14260632711062808493
           }
         }
@@ -6549,7 +6549,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17380347573135731853
+  Id: 1440844745024047773
   Name: "Commoner_M_01"
   Transform {
     Scale {
@@ -6558,7 +6558,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 866783569642170081
+  ParentId: 15695102111887026463
   TemplateInstance {
     ParameterOverrideMap {
       key: 6153812158312227725
@@ -6614,7 +6614,7 @@ Objects {
   }
 }
 Objects {
-  Id: 924223727289080656
+  Id: 675417235236819078
   Name: "Group"
   Transform {
     Location {
@@ -6630,9 +6630,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 7446452585190222613
-  ChildIds: 6550914287740128038
+  ParentId: 9579493126288743687
+  ChildIds: 18336283004165658741
+  ChildIds: 9232332253185824193
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6644,7 +6644,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6550914287740128038
+  Id: 9232332253185824193
   Name: "Commoner_M_02"
   Transform {
     Scale {
@@ -6653,7 +6653,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 924223727289080656
+  ParentId: 675417235236819078
   TemplateInstance {
     ParameterOverrideMap {
       key: 9134226063112657249
@@ -6713,7 +6713,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7446452585190222613
+  Id: 18336283004165658741
   Name: "NPC Dialog Trigger"
   Transform {
     Location {
@@ -6730,7 +6730,7 @@ Objects {
       Z: 1.19999993
     }
   }
-  ParentId: 924223727289080656
+  ParentId: 675417235236819078
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -6764,9 +6764,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 6632466429702069431
+            SelfId: 10468230254423837733
             SubObjectId: 9134226063112657249
-            InstanceId: 6550914287740128038
+            InstanceId: 9232332253185824193
             TemplateId: 15822903472387647849
           }
         }
@@ -6790,7 +6790,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10480283390017259191
+  Id: 13125875223905560031
   Name: "Group"
   Transform {
     Location {
@@ -6804,9 +6804,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 13018072672210964841
-  ChildIds: 2191118465141730672
+  ParentId: 9579493126288743687
+  ChildIds: 1001544169456341406
+  ChildIds: 10064860933178454929
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6818,7 +6818,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2191118465141730672
+  Id: 10064860933178454929
   Name: "Smuggler_F_Spikes"
   Transform {
     Scale {
@@ -6827,7 +6827,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10480283390017259191
+  ParentId: 13125875223905560031
   TemplateInstance {
     ParameterOverrideMap {
       key: 2167809833102398991
@@ -6883,7 +6883,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13018072672210964841
+  Id: 1001544169456341406
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -6892,7 +6892,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10480283390017259191
+  ParentId: 13125875223905560031
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -6938,9 +6938,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 2530718004771452460
+            SelfId: 17816931153380347199
             SubObjectId: 12433462127191006350
-            InstanceId: 2191118465141730672
+            InstanceId: 10064860933178454929
             TemplateId: 5307007529979800550
           }
         }
@@ -6952,7 +6952,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11170132355414705905
+  Id: 17494725379420934349
   Name: "Group"
   Transform {
     Location {
@@ -6965,10 +6965,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 6328857406631412163
-  ChildIds: 9509892764580073178
-  ChildIds: 8040658191015629833
+  ParentId: 9579493126288743687
+  ChildIds: 1148025464707415144
+  ChildIds: 8871421618844460207
+  ChildIds: 14973677981189578249
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6980,7 +6980,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8040658191015629833
+  Id: 14973677981189578249
   Name: "Fantasy Human Gal 2"
   Transform {
     Location {
@@ -6996,7 +6996,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11170132355414705905
+  ParentId: 17494725379420934349
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -7023,7 +7023,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9509892764580073178
+  Id: 8871421618844460207
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7032,7 +7032,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11170132355414705905
+  ParentId: 17494725379420934349
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -7082,7 +7082,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 8040658191015629833
+            SelfId: 14973677981189578249
           }
         }
       }
@@ -7106,7 +7106,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6328857406631412163
+  Id: 1148025464707415144
   Name: "Smuggler_F_Leather"
   Transform {
     Scale {
@@ -7115,7 +7115,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11170132355414705905
+  ParentId: 17494725379420934349
   TemplateInstance {
     ParameterOverrideMap {
       key: 15361399326142505981
@@ -7183,7 +7183,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1924168955277639462
+  Id: 6280537918513429360
   Name: "Smuggler_M_Leather"
   Transform {
     Scale {
@@ -7192,7 +7192,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   TemplateInstance {
     ParameterOverrideMap {
       key: 10969610875299600666
@@ -7248,7 +7248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3299933945099914928
+  Id: 8310978651000603071
   Name: "Group"
   Transform {
     Location {
@@ -7261,9 +7261,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 10350129578426132156
-  ChildIds: 15506098958930599244
+  ParentId: 9579493126288743687
+  ChildIds: 17452296043468719042
+  ChildIds: 14492416336791622395
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7275,7 +7275,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15506098958930599244
+  Id: 14492416336791622395
   Name: "Smuggler_M_Bone"
   Transform {
     Scale {
@@ -7284,7 +7284,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3299933945099914928
+  ParentId: 8310978651000603071
   TemplateInstance {
     ParameterOverrideMap {
       key: 4236865575566450643
@@ -7352,7 +7352,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10350129578426132156
+  Id: 17452296043468719042
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7361,7 +7361,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3299933945099914928
+  ParentId: 8310978651000603071
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -7395,9 +7395,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 18036900806741061129
+            SelfId: 1935279068931830543
             SubObjectId: 15083449005858968784
-            InstanceId: 15506098958930599244
+            InstanceId: 14492416336791622395
             TemplateId: 8557428141749016492
           }
         }
@@ -7421,7 +7421,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10468232154757843446
+  Id: 9751549737418545389
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7430,7 +7430,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
+  ParentId: 9579493126288743687
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -7490,7 +7490,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1707775896635128585
+  Id: 1459426902557923466
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -7505,9 +7505,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 1608562017609693656
-  ChildIds: 1596750819935365494
+  ParentId: 9579493126288743687
+  ChildIds: 16671089540226885529
+  ChildIds: 1952334291371959339
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7519,7 +7519,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1596750819935365494
+  Id: 1952334291371959339
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -7536,7 +7536,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1707775896635128585
+  ParentId: 1459426902557923466
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7545,7 +7545,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18039984299850060191
+      Id: 3198403501401616712
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -7564,7 +7564,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1608562017609693656
+  Id: 16671089540226885529
   Name: "NPC Dialogue Trigger"
   Transform {
     Scale {
@@ -7573,7 +7573,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1707775896635128585
+  ParentId: 1459426902557923466
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7613,7 +7613,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 1596750819935365494
+            SelfId: 1952334291371959339
           }
         }
         Overrides {
@@ -7632,7 +7632,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2473197472606153660
+  Id: 13368295998485163298
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -7647,9 +7647,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 17961001323692135586
-  ChildIds: 4829781133835515423
+  ParentId: 9579493126288743687
+  ChildIds: 9466578627114811095
+  ChildIds: 8645865537222832698
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7661,7 +7661,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4829781133835515423
+  Id: 8645865537222832698
   Name: "Fantasy Human Gal"
   Transform {
     Location {
@@ -7678,7 +7678,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2473197472606153660
+  ParentId: 13368295998485163298
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7706,7 +7706,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17961001323692135586
+  Id: 9466578627114811095
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7715,7 +7715,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2473197472606153660
+  ParentId: 13368295998485163298
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -7749,7 +7749,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 4829781133835515423
+            SelfId: 8645865537222832698
           }
         }
         Overrides {
@@ -7768,7 +7768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15727773866949023891
+  Id: 4399706595955899755
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -7783,9 +7783,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 17257963855795044315
-  ChildIds: 7075018509036230757
+  ParentId: 9579493126288743687
+  ChildIds: 9271439055129776007
+  ChildIds: 15839070811724394244
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7797,7 +7797,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7075018509036230757
+  Id: 15839070811724394244
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -7813,7 +7813,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15727773866949023891
+  ParentId: 4399706595955899755
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7843,7 +7843,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17257963855795044315
+  Id: 9271439055129776007
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7852,7 +7852,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15727773866949023891
+  ParentId: 4399706595955899755
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -7901,7 +7901,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 7075018509036230757
+            SelfId: 15839070811724394244
           }
         }
       }
@@ -7912,7 +7912,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12442177819710447885
+  Id: 7337995304315325622
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -7925,9 +7925,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 16120382111003606616
-  ChildIds: 16070347843346029380
+  ParentId: 9579493126288743687
+  ChildIds: 5810378116306644075
+  ChildIds: 14630511198443254472
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7939,7 +7939,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16070347843346029380
+  Id: 14630511198443254472
   Name: "Bard"
   Transform {
     Scale {
@@ -7948,7 +7948,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12442177819710447885
+  ParentId: 7337995304315325622
   TemplateInstance {
     ParameterOverrideMap {
       key: 7488979656780450769
@@ -7986,7 +7986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16120382111003606616
+  Id: 5810378116306644075
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -7995,7 +7995,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12442177819710447885
+  ParentId: 7337995304315325622
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -8029,9 +8029,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 3154213914523821609
+            SelfId: 7046283333445499514
             SubObjectId: 3484906034933022225
-            InstanceId: 16070347843346029380
+            InstanceId: 14630511198443254472
             TemplateId: 2222293508240886553
           }
         }
@@ -8059,7 +8059,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13741373586418428718
+  Id: 14983663644688021654
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -8074,9 +8074,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 12452905228365354844
-  ChildIds: 4908789842241329468
+  ParentId: 9579493126288743687
+  ChildIds: 1236256126529161693
+  ChildIds: 8246834792233947730
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8088,7 +8088,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4908789842241329468
+  Id: 8246834792233947730
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -8104,7 +8104,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13741373586418428718
+  ParentId: 14983663644688021654
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8134,7 +8134,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12452905228365354844
+  Id: 1236256126529161693
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -8143,7 +8143,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13741373586418428718
+  ParentId: 14983663644688021654
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -8176,7 +8176,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 4908789842241329468
+            SelfId: 8246834792233947730
           }
         }
         Overrides {
@@ -8203,7 +8203,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7017379868943944389
+  Id: 272985458154963421
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -8216,9 +8216,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 10890053460261192917
-  ChildIds: 6079398449275683100
+  ParentId: 9579493126288743687
+  ChildIds: 4588594874085715536
+  ChildIds: 15370038255781007309
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8230,7 +8230,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6079398449275683100
+  Id: 15370038255781007309
   Name: "WealthyMerchant"
   Transform {
     Scale {
@@ -8239,7 +8239,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7017379868943944389
+  ParentId: 272985458154963421
   TemplateInstance {
     ParameterOverrideMap {
       key: 4599170597089375205
@@ -8278,7 +8278,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10890053460261192917
+  Id: 4588594874085715536
   Name: "NPC Dialog Trigger"
   Transform {
     Scale {
@@ -8287,7 +8287,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7017379868943944389
+  ParentId: 272985458154963421
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -8320,9 +8320,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 7749348141966975545
+            SelfId: 9319559248060180168
             SubObjectId: 10567826335082233492
-            InstanceId: 6079398449275683100
+            InstanceId: 15370038255781007309
             TemplateId: 17338438655186234114
           }
         }
@@ -8350,7 +8350,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14968665523187605009
+  Id: 11238933786073851433
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -8365,9 +8365,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 9282720430495336913
-  ChildIds: 223363433282504518
+  ParentId: 9579493126288743687
+  ChildIds: 3422212299241736311
+  ChildIds: 2772835348203312518
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8379,7 +8379,7 @@ Objects {
   }
 }
 Objects {
-  Id: 223363433282504518
+  Id: 2772835348203312518
   Name: "Fantasy Human Guy"
   Transform {
     Location {
@@ -8396,7 +8396,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14968665523187605009
+  ParentId: 11238933786073851433
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8405,7 +8405,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 18039984299850060191
+      Id: 3198403501401616712
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -8424,7 +8424,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9282720430495336913
+  Id: 3422212299241736311
   Name: "NPC Dialogue Trigger"
   Transform {
     Scale {
@@ -8433,7 +8433,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14968665523187605009
+  ParentId: 11238933786073851433
   TemplateInstance {
     ParameterOverrideMap {
       key: 8616549876975302597
@@ -8467,7 +8467,7 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 223363433282504518
+            SelfId: 2772835348203312518
           }
         }
         Overrides {
@@ -8486,7 +8486,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1419593537304911339
+  Id: 15797450561806420691
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -8501,9 +8501,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 17564830376044451792
-  ChildIds: 1826610782436100664
+  ParentId: 9579493126288743687
+  ChildIds: 7078638423492601724
+  ChildIds: 14248538919962186055
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8515,7 +8515,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1826610782436100664
+  Id: 14248538919962186055
   Name: "Bard"
   Transform {
     Location {
@@ -8531,7 +8531,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1419593537304911339
+  ParentId: 15797450561806420691
   TemplateInstance {
     ParameterOverrideMap {
       key: 3484906034933022225
@@ -8579,7 +8579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17564830376044451792
+  Id: 7078638423492601724
   Name: "NPC Dialogue Trigger"
   Transform {
     Scale {
@@ -8588,7 +8588,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1419593537304911339
+  ParentId: 15797450561806420691
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8620,9 +8620,9 @@ Objects {
         Overrides {
           Name: "cs:AnimatedMesh"
           ObjectReference {
-            SelfId: 2187717712838742725
+            SelfId: 17073232863734842550
             SubObjectId: 3484906034933022225
-            InstanceId: 1826610782436100664
+            InstanceId: 14248538919962186055
             TemplateId: 2222293508240886553
           }
         }
@@ -8650,7 +8650,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1278821643071827315
+  Id: 14905043789751412266
   Name: "NPC Dialog Group"
   Transform {
     Location {
@@ -8666,9 +8666,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8355496857395536503
-  ChildIds: 201138097852338842
-  ChildIds: 2810867449452373016
+  ParentId: 9579493126288743687
+  ChildIds: 5435480168337293552
+  ChildIds: 9975261482534146826
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8680,7 +8680,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2810867449452373016
+  Id: 9975261482534146826
   Name: "Human Gal"
   Transform {
     Location {
@@ -8697,7 +8697,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1278821643071827315
+  ParentId: 14905043789751412266
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_Detail3:color"
@@ -8755,7 +8755,7 @@ Objects {
   }
 }
 Objects {
-  Id: 201138097852338842
+  Id: 5435480168337293552
   Name: "NPC Dialogue Trigger"
   Transform {
     Scale {
@@ -8764,7 +8764,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1278821643071827315
+  ParentId: 14905043789751412266
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

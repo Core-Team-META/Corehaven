@@ -3,7 +3,7 @@
 local RADIUS = 500.0
 local BASE_DAMAGE = 40.0
 local DAMAGE_MULTIPLIER = 1.3
-local IMPACT_DELAY = 1.0
+local IMPACT_DELAY = 1.2
 
 local data = {}
 
@@ -30,8 +30,11 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(IMPACT_DELAY)
-	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
-	API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat, false, API_D.TAG_AOE)
+	
+	if Object.IsValid(caster) then
+		local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
+		API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat, false, API_D.TAG_AOE)
+	end
 end
 
 return data

@@ -175,7 +175,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5351428073291024820
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -232,7 +232,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5351428073291024820
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -348,7 +348,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 10413465125058823580
+            Id: 15932821756277556196
           }
           Teams {
           }
@@ -409,7 +409,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 10413465125058823580
+            Id: 15932821756277556196
           }
           Teams {
           }
@@ -470,7 +470,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 10413465125058823580
+            Id: 15932821756277556196
           }
           Teams {
           }
@@ -531,7 +531,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 10413465125058823580
+            Id: 15932821756277556196
           }
           Teams {
           }
@@ -571,7 +571,7 @@
       }
     }
     Assets {
-      Id: 5351428073291024820
+      Id: 12827530473249900764
       Name: "Opaque Emissive"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -580,7 +580,7 @@
       }
     }
     Assets {
-      Id: 10413465125058823580
+      Id: 15932821756277556196
       Name: "Horn"
       PlatformAssetType: 1
       PrimaryAsset {

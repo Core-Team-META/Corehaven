@@ -516,7 +516,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1421130721009981852
+            Id: 7602223482704169180
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -550,7 +550,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -608,7 +608,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -670,7 +670,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -1483,7 +1483,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 10510697877722768305
+              Id: 5387557948481930750
             }
           }
           Overrides {
@@ -1548,7 +1548,7 @@
       }
     }
     Assets {
-      Id: 1421130721009981852
+      Id: 7602223482704169180
       Name: "Large Round Wood Beam 8m"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -1566,7 +1566,7 @@
       }
     }
     Assets {
-      Id: 4855960652393685277
+      Id: 18434079688766523124
       Name: "Metal Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -1614,9 +1614,6 @@
       AssetType: "None"
       AssetId: "None"
     }
-  }
-  Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 65
   DirectlyPublished: true

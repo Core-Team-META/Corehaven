@@ -2,7 +2,7 @@
   Id: 6204166226615550387
   Name: "WornWalls01"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 8361643690318007117
     ParameterOverrides {

@@ -19,7 +19,7 @@ local API = {}
 -- This system assumes abilities never change owners after being spawned. For ground target abilities, "activate" is
 -- when we create the reticle, but the Core ability only casts when the user actually clicks.
 
--- Time before the previous ability cast or cooldown is finished thata player can activate another ability and it is
+-- Time before the previous ability cast or cooldown is finished that a player can activate another ability and it is
 -- queued to cast when available. Must be less than MIN_GLOBAL_COOLDOWN since we assume only one thing can be queued.
 local QUEUE_TIME = 0.4
 local BASE_GLOBAL_COOLDOWN = 1.0			--	Time after activating a spell where no other spell can be activated

@@ -115,8 +115,8 @@
       }
     }
     PrimaryAssetId {
-      AssetType: "TemplateAssetRef"
-      AssetId: "Game_Portal"
+      AssetType: "None"
+      AssetId: "None"
     }
   }
   SerializationVersion: 65

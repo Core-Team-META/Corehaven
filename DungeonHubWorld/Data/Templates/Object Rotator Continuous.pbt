@@ -77,8 +77,8 @@
       }
     }
     PrimaryAssetId {
-      AssetType: "TemplateAssetRef"
-      AssetId: "Object_Rotator_Continuous"
+      AssetType: "None"
+      AssetId: "None"
     }
   }
   SerializationVersion: 65

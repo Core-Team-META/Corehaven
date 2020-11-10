@@ -1,7 +1,7 @@
 ﻿Name: "Above Water Trigger 2"
-RootId: 1942555496709667414
+RootId: 12604198490870407279
 Objects {
-  Id: 8044708354599196489
+  Id: 4048218225435454254
   Name: "Nature Water Splash Small 01 SFX"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1942555496709667414
+  ParentId: 12604198490870407279
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -32,7 +32,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14751261615535562542
+  Id: 9507323533879038743
   Name: "Nature Beach Large Waves Loop 01 SFX"
   Transform {
     Location {
@@ -48,7 +48,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1942555496709667414
+  ParentId: 12604198490870407279
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -77,7 +77,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16581221956486371981
+  Id: 11276213305943237962
   Name: "Nature Beach Large Waves Loop 01 SFX"
   Transform {
     Location {
@@ -92,7 +92,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1942555496709667414
+  ParentId: 12604198490870407279
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -121,7 +121,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11060510492515078925
+  Id: 14096673838369505001
   Name: "Nature Beach Large Waves Loop 01 SFX"
   Transform {
     Location {
@@ -136,7 +136,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1942555496709667414
+  ParentId: 12604198490870407279
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -165,7 +165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17209844111563332039
+  Id: 12738177747080487241
   Name: "Nature Birds Seagulls Ambience Loop 01 SFX"
   Transform {
     Location {
@@ -180,7 +180,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 1942555496709667414
+  ParentId: 12604198490870407279
   UnregisteredParameters {
   }
   Collidable_v2 {

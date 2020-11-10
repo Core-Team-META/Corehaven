@@ -216,5 +216,5 @@
       AssetId: "Fantasy_Weapon_-_Staff_02__Prop_"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

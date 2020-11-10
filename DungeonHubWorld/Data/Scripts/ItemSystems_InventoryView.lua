@@ -734,7 +734,7 @@ function view:DrawSalvageTray()
         end
         PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.FORCE_OFF
         PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.INHERIT
-        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will be salvaged..."
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will yield " .. salvageItem:GetSalvageQuantity() .. " shards."
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront.text = salvageItemText
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront:SetColor(ItemThemes.GetRarityColor(salvageItem:GetRarity()))
     else

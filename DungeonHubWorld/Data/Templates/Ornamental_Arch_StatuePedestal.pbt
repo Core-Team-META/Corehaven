@@ -2617,7 +2617,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9225772212614530763
+              Id: 14908011933205182591
             }
           }
         }
@@ -3866,7 +3866,7 @@
       }
     }
     Assets {
-      Id: 9225772212614530763
+      Id: 14908011933205182591
       Name: "Moss 01"
       PlatformAssetType: 2
       PrimaryAsset {

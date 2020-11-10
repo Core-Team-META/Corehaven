@@ -1,7 +1,7 @@
 ﻿Name: "Cove Music"
-RootId: 14533952387107224965
+RootId: 12176257876303775183
 Objects {
-  Id: 5062519655670511880
+  Id: 9532156444971416108
   Name: "\"Epic Tides Battle\" Music Construction Kit (Layers) 01"
   Transform {
     Location {
@@ -14,7 +14,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14533952387107224965
+  ParentId: 12176257876303775183
   UnregisteredParameters {
     Overrides {
       Name: "bp:Low Notes Hit Brass Volume"

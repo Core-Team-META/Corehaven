@@ -29,7 +29,7 @@
           Overrides {
             Name: "cs:AnimatedMesh"
             ObjectReference {
-              SelfId: 2810867449452373016
+              SelfId: 9975261482534146826
             }
           }
           Overrides {

@@ -1,7 +1,7 @@
 ﻿Name: "Atmospherics"
-RootId: 15440326544402457957
+RootId: 8662497512099265412
 Objects {
-  Id: 2743861704089313634
+  Id: 11909890888987167870
   Name: "DayCycleController"
   Transform {
     Location {
@@ -18,9 +18,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15440326544402457957
-  ChildIds: 15111078455711008426
-  ChildIds: 6902822919988349614
+  ParentId: 8662497512099265412
+  ChildIds: 12271190118780541234
+  ChildIds: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "cs:DayLengthMinutes"
@@ -57,7 +57,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6902822919988349614
+  Id: 13218630378494818078
   Name: "ClientContext"
   Transform {
     Location {
@@ -71,19 +71,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2743861704089313634
-  ChildIds: 1839478137443030705
-  ChildIds: 2941653217997588955
-  ChildIds: 6353773131064433251
-  ChildIds: 1066212617262298684
-  ChildIds: 6709666098471831552
-  ChildIds: 7441046265826516375
-  ChildIds: 14620959045912450528
-  ChildIds: 14442721963295628635
-  ChildIds: 2050379427736762783
-  ChildIds: 18129872369301078294
-  ChildIds: 15138106234040772773
-  ChildIds: 12196723082961294526
+  ParentId: 11909890888987167870
+  ChildIds: 12394151907915722357
+  ChildIds: 13314906699946462639
+  ChildIds: 12442002490432924327
+  ChildIds: 8841177553057721214
+  ChildIds: 14905210997421920528
+  ChildIds: 17673258500696746978
+  ChildIds: 3225373620016983241
+  ChildIds: 7252104545395420185
+  ChildIds: 1033976776742462079
+  ChildIds: 382090193000492786
+  ChildIds: 4254068016993506622
+  ChildIds: 7768470232952782085
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -102,7 +102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12196723082961294526
+  Id: 7768470232952782085
   Name: "Advanced Color Grading Post Process"
   Transform {
     Location {
@@ -119,7 +119,7 @@ Objects {
       Z: 200
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Color Contrast"
@@ -159,7 +159,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15138106234040772773
+  Id: 4254068016993506622
   Name: "Environment Fog Default VFX"
   Transform {
     Location {
@@ -176,7 +176,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:color"
@@ -215,7 +215,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18129872369301078294
+  Id: 382090193000492786
   Name: "Advanced Bloom Post Process"
   Transform {
     Location {
@@ -232,7 +232,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
@@ -258,7 +258,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2050379427736762783
+  Id: 1033976776742462079
   Name: "Depth of Field Post Process"
   Transform {
     Location {
@@ -275,7 +275,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Depth Blur Radius"
@@ -297,7 +297,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14442721963295628635
+  Id: 7252104545395420185
   Name: "Ambient Occlusion Post Process"
   Transform {
     Location {
@@ -314,7 +314,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Intensity"
@@ -336,7 +336,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14620959045912450528
+  Id: 3225373620016983241
   Name: "Simple Exposure Post Process"
   Transform {
     Location {
@@ -353,7 +353,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Exposure"
@@ -375,7 +375,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7441046265826516375
+  Id: 17673258500696746978
   Name: "Sky Dome"
   Transform {
     Location {
@@ -390,7 +390,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Zenith Color"
@@ -549,7 +549,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6709666098471831552
+  Id: 14905210997421920528
   Name: "Sun Light"
   Transform {
     Location {
@@ -565,9 +565,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
-  ChildIds: 4551202284864661619
-  ChildIds: 15803731802287924338
+  ParentId: 13218630378494818078
+  ChildIds: 4684900217226967630
+  ChildIds: 15379605349963478967
   UnregisteredParameters {
     Overrides {
       Name: "bp:Use Temperature"
@@ -658,7 +658,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15803731802287924338
+  Id: 15379605349963478967
   Name: "Sun Halo"
   Transform {
     Location {
@@ -677,7 +677,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 6709666098471831552
+  ParentId: 14905210997421920528
   UnregisteredParameters {
     Overrides {
       Name: "bp:Face Camera"
@@ -735,7 +735,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4551202284864661619
+  Id: 4684900217226967630
   Name: "Sun Halo"
   Transform {
     Location {
@@ -751,7 +751,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 6709666098471831552
+  ParentId: 14905210997421920528
   UnregisteredParameters {
     Overrides {
       Name: "bp:Face Camera"
@@ -805,7 +805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1066212617262298684
+  Id: 8841177553057721214
   Name: "Star Dome"
   Transform {
     Location {
@@ -818,7 +818,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Star Brightness "
@@ -876,7 +876,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6353773131064433251
+  Id: 12442002490432924327
   Name: "Skylight"
   Transform {
     Location {
@@ -889,7 +889,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Index"
@@ -965,7 +965,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2941653217997588955
+  Id: 13314906699946462639
   Name: "Moon"
   Transform {
     Location {
@@ -978,7 +978,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "bp:Moon Appearance"
@@ -1056,7 +1056,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1839478137443030705
+  Id: 12394151907915722357
   Name: "DayCycleControllerClient"
   Transform {
     Location {
@@ -1069,54 +1069,54 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6902822919988349614
+  ParentId: 13218630378494818078
   UnregisteredParameters {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 2743861704089313634
+        SelfId: 11909890888987167870
       }
     }
     Overrides {
       Name: "cs:EnvironmentFog"
       ObjectReference {
-        SelfId: 15138106234040772773
+        SelfId: 4254068016993506622
       }
     }
     Overrides {
       Name: "cs:Moon"
       ObjectReference {
-        SelfId: 2941653217997588955
+        SelfId: 13314906699946462639
       }
     }
     Overrides {
       Name: "cs:SkyDome"
       ObjectReference {
-        SelfId: 7441046265826516375
+        SelfId: 17673258500696746978
       }
     }
     Overrides {
       Name: "cs:Skylight"
       ObjectReference {
-        SelfId: 6353773131064433251
+        SelfId: 12442002490432924327
       }
     }
     Overrides {
       Name: "cs:StarDome"
       ObjectReference {
-        SelfId: 1066212617262298684
+        SelfId: 8841177553057721214
       }
     }
     Overrides {
       Name: "cs:SunLight"
       ObjectReference {
-        SelfId: 6709666098471831552
+        SelfId: 14905210997421920528
       }
     }
     Overrides {
       Name: "cs:ServerScript"
       ObjectReference {
-        SelfId: 15111078455711008426
+        SelfId: 12271190118780541234
       }
     }
     Overrides {
@@ -1151,7 +1151,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15111078455711008426
+  Id: 12271190118780541234
   Name: "DayCycleControllerServer"
   Transform {
     Location {
@@ -1164,7 +1164,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2743861704089313634
+  ParentId: 11909890888987167870
   UnregisteredParameters {
     Overrides {
       Name: "cs:ServerStartOSTime"
@@ -1179,7 +1179,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 2743861704089313634
+        SelfId: 11909890888987167870
       }
     }
     Overrides {

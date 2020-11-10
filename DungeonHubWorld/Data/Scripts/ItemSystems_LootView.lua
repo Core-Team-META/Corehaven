@@ -67,16 +67,16 @@ function view:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
     -- Set the icon and name according to the item.
     entry.clientUserData.buttonText.text = lootInfo.item:GetName()
     lootInfo.item:ApplyIconImageSettings(entry.clientUserData.icon)
+    -- Set the colors according to rarity.
+    local color = ItemThemes.GetRarityColor(lootInfo.item:GetRarity())
+    entry.clientUserData.iconBorder:SetColor(color)
+    entry.clientUserData.iconGradient:SetColor(color)
+    entry.clientUserData.buttonText:SetColor(color)
     -- Button appearance depends on whether items can be claimed or not.
     local canLootBeClaimed = nil
     canLootBeClaimed = canLootBeClaimed or (lootInfo.item:IsStackable() and inventory:CanClaimLoot(lootIndex))
     canLootBeClaimed = canLootBeClaimed or (not self.isBackpackFull)
     if canLootBeClaimed then
-        -- Set the colors according to rarity.
-        local color = ItemThemes.GetRarityColor(lootInfo.item:GetRarity())
-        entry.clientUserData.iconBorder:SetColor(color)
-        entry.clientUserData.iconGradient:SetColor(color)
-        entry.clientUserData.buttonText:SetColor(color)
         color.a = 0.2
         entry.clientUserData.button:SetButtonColor(color)
         color.a = 0.5

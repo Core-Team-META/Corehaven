@@ -4,11 +4,11 @@
 
     Manages the replication of inventories across client/server.
 ]]
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     local startupMessageFmt = "Loading inventory: %s"
     -- Check for first time user and populate inventory with starter item.
     if not playerData.inventoryHash then
@@ -47,7 +47,7 @@ local function ServerLoadInventory()
         OWNER.serverUserData.inventory:LoadHash(nil)
         OWNER.serverUserData.inventory:AddStarterItems(Database:CreateStarterItems())
         playerData.inventoryHash = OWNER.serverUserData.inventory:PersistentHash()
-        Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+        Storage.SetSharedPlayerData(API_SK.GetStorageKey(), OWNER, playerData)
         startupMessageFmt = "Initializing inventory with beginner items: %s"
     end
     print(string.format(startupMessageFmt, playerData.inventoryHash))
@@ -95,9 +95,9 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerSaveInventory(inventory)
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     playerData.inventoryHash = inventory:PersistentHash()
-    Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+    Storage.SetSharedPlayerData(API_SK.GetStorageKey(), OWNER, playerData)
 end
 
 ---------------------------------------------------------------------------------------------------------

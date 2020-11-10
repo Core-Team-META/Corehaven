@@ -128,7 +128,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
         }
@@ -244,7 +244,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
         }
@@ -288,7 +288,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1100837394993556177
+              Id: 199153926015106134
             }
           }
         }
@@ -341,7 +341,7 @@
       }
     }
     Assets {
-      Id: 1100837394993556177
+      Id: 199153926015106134
       Name: "Metal Iron Rusted 02"
       PlatformAssetType: 2
       PrimaryAsset {

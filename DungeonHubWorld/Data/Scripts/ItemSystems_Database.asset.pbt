@@ -226,6 +226,12 @@
           Id: 15606542790842922668
         }
       }
+      Overrides {
+        Name: "cs:ReferenceGroup"
+        ObjectReference {
+          SelfId: 1854689008857637884
+        }
+      }
     }
   }
   SerializationVersion: 65

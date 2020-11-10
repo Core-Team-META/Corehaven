@@ -1,7 +1,7 @@
 ﻿Name: "InvisibleCollision"
-RootId: 5190124483811056971
+RootId: 10344994014280708577
 Objects {
-  Id: 5313182795518221386
+  Id: 834377376692490362
   Name: "Square"
   Transform {
     Location {
@@ -17,29 +17,29 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5190124483811056971
-  ChildIds: 11005913948127118802
-  ChildIds: 15253080616990291150
-  ChildIds: 3146127460212478023
-  ChildIds: 11687158172948031288
-  ChildIds: 14394536562472699457
-  ChildIds: 14311383494392255797
-  ChildIds: 7530069703584076948
-  ChildIds: 800044045789561868
-  ChildIds: 13711006817297328750
-  ChildIds: 6720197388997049440
-  ChildIds: 5252730921915018138
-  ChildIds: 10606386737770280980
-  ChildIds: 7828276750793190043
-  ChildIds: 8967851177178065311
-  ChildIds: 15202180637853152203
-  ChildIds: 17686924365174084352
-  ChildIds: 6326431537164828028
-  ChildIds: 16717898762038840768
-  ChildIds: 2219382383480307611
-  ChildIds: 9443388461308884332
-  ChildIds: 17482415168148038624
-  ChildIds: 17276415153558759000
+  ParentId: 10344994014280708577
+  ChildIds: 17204425966622976716
+  ChildIds: 13699541500110406523
+  ChildIds: 18198181345364638816
+  ChildIds: 9005887896391181884
+  ChildIds: 1454197845783356756
+  ChildIds: 13639739054298824733
+  ChildIds: 16458165216714823185
+  ChildIds: 2285391867396174514
+  ChildIds: 9636925759182533916
+  ChildIds: 12478094362637299328
+  ChildIds: 12159083164367109791
+  ChildIds: 16976513271730336890
+  ChildIds: 15423480657874301832
+  ChildIds: 18424339404823454492
+  ChildIds: 9682177501621544727
+  ChildIds: 8984662860595294814
+  ChildIds: 3816419586255233565
+  ChildIds: 16693162964988376172
+  ChildIds: 5457988137173424324
+  ChildIds: 13593448457978170941
+  ChildIds: 17986120250922406557
+  ChildIds: 4591840590562581861
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -51,7 +51,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17276415153558759000
+  Id: 4591840590562581861
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -68,7 +68,7 @@ Objects {
       Z: 15.0939608
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -99,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17482415168148038624
+  Id: 17986120250922406557
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -116,7 +116,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -147,7 +147,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9443388461308884332
+  Id: 13593448457978170941
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -164,7 +164,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -195,7 +195,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2219382383480307611
+  Id: 5457988137173424324
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -212,7 +212,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -243,7 +243,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16717898762038840768
+  Id: 16693162964988376172
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -260,7 +260,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -291,7 +291,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6326431537164828028
+  Id: 3816419586255233565
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -308,7 +308,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -339,7 +339,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17686924365174084352
+  Id: 8984662860595294814
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -356,7 +356,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -387,7 +387,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15202180637853152203
+  Id: 9682177501621544727
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -404,7 +404,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -435,7 +435,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8967851177178065311
+  Id: 18424339404823454492
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -452,7 +452,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -483,7 +483,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7828276750793190043
+  Id: 15423480657874301832
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -500,7 +500,7 @@ Objects {
       Z: 14.9392872
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -531,7 +531,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10606386737770280980
+  Id: 16976513271730336890
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -548,7 +548,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -579,7 +579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5252730921915018138
+  Id: 12159083164367109791
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -596,7 +596,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -627,7 +627,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6720197388997049440
+  Id: 12478094362637299328
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -643,7 +643,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -674,7 +674,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13711006817297328750
+  Id: 9636925759182533916
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -690,7 +690,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -721,7 +721,7 @@ Objects {
   }
 }
 Objects {
-  Id: 800044045789561868
+  Id: 2285391867396174514
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -737,7 +737,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -768,7 +768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7530069703584076948
+  Id: 16458165216714823185
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -784,7 +784,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -815,7 +815,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14311383494392255797
+  Id: 13639739054298824733
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -832,7 +832,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -863,7 +863,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14394536562472699457
+  Id: 1454197845783356756
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -880,7 +880,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -911,7 +911,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11687158172948031288
+  Id: 9005887896391181884
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -928,7 +928,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -959,7 +959,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3146127460212478023
+  Id: 18198181345364638816
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -976,7 +976,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1007,7 +1007,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15253080616990291150
+  Id: 13699541500110406523
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -1024,7 +1024,7 @@ Objects {
       Z: 19.258791
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1055,7 +1055,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11005913948127118802
+  Id: 17204425966622976716
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
@@ -1071,7 +1071,7 @@ Objects {
       Z: 23.3753281
     }
   }
-  ParentId: 5313182795518221386
+  ParentId: 834377376692490362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1102,7 +1102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12985283296800961326
+  Id: 2053553550195638905
   Name: "Port"
   Transform {
     Location {
@@ -1115,13 +1115,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5190124483811056971
-  ChildIds: 3516696048921559060
-  ChildIds: 15888162850810304804
-  ChildIds: 12135649818042617832
-  ChildIds: 3752638660508929962
-  ChildIds: 4606287032008221937
-  ChildIds: 11276706205851045453
+  ParentId: 10344994014280708577
+  ChildIds: 14637883566546178397
+  ChildIds: 7933623975905131925
+  ChildIds: 8635352382680030226
+  ChildIds: 13979668369796448692
+  ChildIds: 5475304865380895763
+  ChildIds: 14274433418373201426
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1133,7 +1133,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11276706205851045453
+  Id: 14274433418373201426
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1150,7 +1150,7 @@ Objects {
       Z: 33.161644
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1181,7 +1181,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4606287032008221937
+  Id: 5475304865380895763
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1198,7 +1198,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1229,7 +1229,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3752638660508929962
+  Id: 13979668369796448692
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1246,7 +1246,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1277,7 +1277,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12135649818042617832
+  Id: 8635352382680030226
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1294,7 +1294,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1325,7 +1325,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15888162850810304804
+  Id: 7933623975905131925
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1342,7 +1342,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1373,7 +1373,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3516696048921559060
+  Id: 14637883566546178397
   Name: "Port_Invisible_Collision"
   Transform {
     Location {
@@ -1390,7 +1390,7 @@ Objects {
       Z: 100
     }
   }
-  ParentId: 12985283296800961326
+  ParentId: 2053553550195638905
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"

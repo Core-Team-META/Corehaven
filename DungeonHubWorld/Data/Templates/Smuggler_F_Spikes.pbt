@@ -704,7 +704,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5271639852184247581
+            Id: 16099460833972194012
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2665,7 +2665,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2715,7 +2715,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2799,7 +2799,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2849,7 +2849,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2891,7 +2891,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 6608637607352009288
+            Id: 9747128882648294447
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3694,7 +3694,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3744,7 +3744,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 5649559338683583195
+            Id: 17247896461110156834
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4285,7 +4285,7 @@
       }
     }
     Assets {
-      Id: 5271639852184247581
+      Id: 16099460833972194012
       Name: "Ring - Extra Thick"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -4366,7 +4366,7 @@
       }
     }
     Assets {
-      Id: 5649559338683583195
+      Id: 17247896461110156834
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -4384,7 +4384,7 @@
       }
     }
     Assets {
-      Id: 6608637607352009288
+      Id: 9747128882648294447
       Name: "Manticore Logo"
       PlatformAssetType: 1
       PrimaryAsset {

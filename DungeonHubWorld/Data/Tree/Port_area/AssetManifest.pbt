@@ -80,15 +80,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17587880652047825598
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 17429523740942577057
   Name: "Pipe - Quarter"
   PlatformAssetType: 1
@@ -104,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 17303459849100639072
+  Name: "Ring - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_003"
   }
 }
 Assets {
@@ -629,15 +629,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11535495265175524988
-  Name: "Ring - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_003"
-  }
-}
-Assets {
   Id: 11493405264835290361
   Name: "Fantasy Chest Base 03"
   PlatformAssetType: 1
@@ -752,6 +743,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fantasy_chest_lid_003_ref"
+  }
+}
+Assets {
+  Id: 9747128882648294447
+  Name: "Manticore Logo"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_logo_manticore_01"
   }
 }
 Assets {
@@ -1079,12 +1079,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6608637607352009288
-  Name: "Manticore Logo"
+  Id: 6747614045051753376
+  Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
+    AssetId: "sm_cylinder_001"
   }
 }
 Assets {
@@ -1277,15 +1277,6 @@ Assets {
   }
 }
 Assets {
-  Id: 3982193030776093519
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
-  }
-}
-Assets {
   Id: 3839491489764586199
   Name: "Trim Top 8m 02"
   PlatformAssetType: 1
@@ -1328,6 +1319,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_door_rounded_2m_001"
+  }
+}
+Assets {
+  Id: 3190252363319773843
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
   }
 }
 Assets {

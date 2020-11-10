@@ -80,4 +80,13 @@
     Lore = 'It\'s pointy and magical, what else is there to say? ',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Goblin King\'s Crown',
+    Type = 'Helmet',
+    Rarity = 'Epic',
+    StatKey = 'RareMagicHelmet',
+    MUID = 'E6D9C41D92D93AD8:ITEM_Helmet_GoblinKingsCrown',
+    Lore = 'It keeps falling down',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

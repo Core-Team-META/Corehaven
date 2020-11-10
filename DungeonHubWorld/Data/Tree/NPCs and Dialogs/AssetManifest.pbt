@@ -1,19 +1,19 @@
 ﻿Assets {
-  Id: 18039984299850060191
-  Name: "Fantasy Human Guy"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_fantasy_001_ref"
-  }
-}
-Assets {
   Id: 17429523740942577057
   Name: "Pipe - Quarter"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_quarter-pipe_001"
+  }
+}
+Assets {
+  Id: 17247896461110156834
+  Name: "Fantasy Shield Strap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_strap_001"
   }
 }
 Assets {
@@ -26,12 +26,57 @@ Assets {
   }
 }
 Assets {
+  Id: 17012531204564930561
+  Name: "Curtains Straight"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_02"
+  }
+}
+Assets {
+  Id: 16372496464315477095
+  Name: "Ring Beveled (thick)"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
+  Id: 16099460833972194012
+  Name: "Ring - Extra Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_006"
+  }
+}
+Assets {
+  Id: 15932821756277556196
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
+  }
+}
+Assets {
   Id: 14914706139505143474
   Name: "Fantasy Human Gal 1"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
     AssetId: "npc_human_gal_fantasy_003_ref"
+  }
+}
+Assets {
+  Id: 14908011933205182591
+  Name: "Moss 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -59,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 13372972268553014344
+  Name: "Ring - Beveled"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_001"
   }
 }
 Assets {
@@ -116,12 +170,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10413465125058823580
-  Name: "Horn"
+  Id: 9747128882648294447
+  Name: "Manticore Logo"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_horn_001"
+    AssetId: "sm_logo_manticore_01"
   }
 }
 Assets {
@@ -131,15 +185,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_005"
-  }
-}
-Assets {
-  Id: 9225772212614530763
-  Name: "Moss 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -188,24 +233,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6977568964552625050
-  Name: "Curtains Straight"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_curtain_02"
-  }
-}
-Assets {
-  Id: 6643656927040904919
-  Name: "Ring - Beveled Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_003"
-  }
-}
-Assets {
   Id: 6621828543054646629
   Name: "Sign Bracket - Round"
   PlatformAssetType: 1
@@ -215,39 +242,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6608637607352009288
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
-  }
-}
-Assets {
   Id: 5318852982404395572
   Name: "Bark Redwood 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_redwood_001_uv"
-  }
-}
-Assets {
-  Id: 5271639852184247581
-  Name: "Ring - Extra Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_006"
   }
 }
 Assets {
@@ -269,21 +269,21 @@ Assets {
   }
 }
 Assets {
+  Id: 3198403501401616712
+  Name: "Fantasy Human Guy"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 3090596827184957478
   Name: "Rope"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
-  }
-}
-Assets {
-  Id: 990344647068844639
-  Name: "Ring - Beveled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_001"
   }
 }
 Assets {

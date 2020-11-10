@@ -67,6 +67,8 @@
         ChildIds: 5078977652474258502
         ChildIds: 223825015084152453
         ChildIds: 9964870095660884074
+        ChildIds: 4759594842181494777
+        ChildIds: 17977885793807838139
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -132,13 +134,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 7485615248896983752
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 7485615248896983752
             }
           }
         }
@@ -171,9 +173,9 @@
           Rotation {
           }
           Scale {
-            X: 0.20887287
-            Y: 0.100317508
-            Z: 0.20887287
+            X: 0.134765118
+            Y: 0.12804459
+            Z: 0.185921624
           }
         }
         ParentId: 9416462997540856755
@@ -181,7 +183,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 7485615248896983752
             }
           }
         }
@@ -209,14 +211,14 @@
         Transform {
           Location {
             Y: 1.08886719
-            Z: 35.8146973
+            Z: 33.4799805
           }
           Rotation {
           }
           Scale {
-            X: 0.20887287
-            Y: 0.100317508
-            Z: 0.20887287
+            X: 0.134765118
+            Y: 0.12804459
+            Z: 0.185921624
           }
         }
         ParentId: 9416462997540856755
@@ -224,7 +226,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 7485615248896983752
             }
           }
         }
@@ -256,7 +258,7 @@
           Rotation {
           }
           Scale {
-            X: 0.435819119
+            X: 0.502635658
             Y: 0.983621955
             Z: 0.654936433
           }
@@ -266,7 +268,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14212988502358508072
+              Id: 7485615248896983752
             }
           }
         }
@@ -320,7 +322,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3982193030776093519
+            Id: 3190252363319773843
           }
           Teams {
           }
@@ -362,7 +364,125 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3982193030776093519
+            Id: 3190252363319773843
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 4759594842181494777
+        Name: "Text 05: 7"
+        Transform {
+          Location {
+            X: -0.16015625
+            Y: -2.45703125
+            Z: 18.0697632
+          }
+          Rotation {
+            Pitch: 72.2407761
+            Yaw: 180
+            Roll: 180
+          }
+          Scale {
+            X: 0.181526378
+            Y: 0.181526378
+            Z: 0.181526378
+          }
+        }
+        ParentId: 9416462997540856755
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12963047230107301757
+          }
+          Teams {
+          }
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17977885793807838139
+        Name: "Text 05: 7"
+        Transform {
+          Location {
+            X: -0.16015625
+            Y: 2.25292969
+            Z: 18.0697632
+          }
+          Rotation {
+            Pitch: 72.2406082
+            Yaw: 1.3660363e-05
+            Roll: -180
+          }
+          Scale {
+            X: 0.181526378
+            Y: 0.181526378
+            Z: 0.181526378
+          }
+        }
+        ParentId: 9416462997540856755
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Font.Faces:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Sides:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+          Overrides {
+            Name: "ma:Font.Bevel:id"
+            AssetReference {
+              Id: 7485615248896983752
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 12963047230107301757
           }
           Teams {
           }
@@ -401,7 +521,7 @@
       }
     }
     Assets {
-      Id: 14212988502358508072
+      Id: 7485615248896983752
       Name: "Metal Basic Steel"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -428,7 +548,7 @@
       }
     }
     Assets {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -443,6 +563,15 @@
       PrimaryAsset {
         AssetType: "MaterialAssetRef"
         AssetId: "mi_basic_glass_001"
+      }
+    }
+    Assets {
+      Id: 12963047230107301757
+      Name: "Text 05: 7"
+      PlatformAssetType: 1
+      PrimaryAsset {
+        AssetType: "StaticMeshAssetRef"
+        AssetId: "F6_Text_033"
       }
     }
     PrimaryAssetId {

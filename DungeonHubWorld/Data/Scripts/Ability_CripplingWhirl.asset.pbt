@@ -61,19 +61,19 @@
       Overrides {
         Name: "cs:API_NPC"
         AssetReference {
-          Id: 1793953622129874134
+          Id: 2677594612280678857
         }
       }
       Overrides {
         Name: "cs:APIStatusEffects"
         AssetReference {
-          Id: 1831660344620141067
+          Id: 13318730044962744636
         }
       }
       Overrides {
         Name: "cs:APIDamage"
         AssetReference {
-          Id: 16915150100797142409
+          Id: 15583631668858138722
         }
       }
     }

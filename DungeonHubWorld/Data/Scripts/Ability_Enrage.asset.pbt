@@ -61,7 +61,7 @@
       Overrides {
         Name: "cs:API_NPC"
         AssetReference {
-          Id: 1793953622129874134
+          Id: 2677594612280678857
         }
       }
     }

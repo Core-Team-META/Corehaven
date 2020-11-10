@@ -1,7 +1,7 @@
 ﻿Name: "Map Locations"
-RootId: 4958045848858137993
+RootId: 1217504594399711897
 Objects {
-  Id: 5134333649887401686
+  Id: 4431730075576606614
   Name: "Map Location"
   Transform {
     Location {
@@ -17,9 +17,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 12160251338064976798
-  ChildIds: 15930434285736040554
+  ParentId: 1217504594399711897
+  ChildIds: 8863051746894102936
+  ChildIds: 10292232905120269551
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -37,7 +37,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15930434285736040554
+  Id: 10292232905120269551
   Name: "ServerContext"
   Transform {
     Location {
@@ -50,8 +50,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5134333649887401686
-  ChildIds: 13412676555113888499
+  ParentId: 4431730075576606614
+  ChildIds: 2990057154115837832
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -63,7 +63,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13412676555113888499
+  Id: 2990057154115837832
   Name: "Sphere"
   Transform {
     Location {
@@ -77,7 +77,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 15930434285736040554
+  ParentId: 10292232905120269551
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -97,7 +97,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -112,7 +112,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12160251338064976798
+  Id: 8863051746894102936
   Name: "ClientContext"
   Transform {
     Location {
@@ -125,8 +125,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5134333649887401686
-  ChildIds: 12078917003620621281
+  ParentId: 4431730075576606614
+  ChildIds: 16844960693451778259
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -139,7 +139,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12078917003620621281
+  Id: 16844960693451778259
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -152,7 +152,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12160251338064976798
+  ParentId: 8863051746894102936
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -163,7 +163,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 5134333649887401686
+        SelfId: 4431730075576606614
       }
     }
   }
@@ -180,7 +180,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8847375285817499328
+  Id: 4017534750021093653
   Name: "Map Location"
   Transform {
     Location {
@@ -196,9 +196,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 5836443962512324776
-  ChildIds: 9988191806714182146
+  ParentId: 1217504594399711897
+  ChildIds: 17486938763529996627
+  ChildIds: 13413402657039754200
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -216,7 +216,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9988191806714182146
+  Id: 13413402657039754200
   Name: "ServerContext"
   Transform {
     Location {
@@ -229,8 +229,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8847375285817499328
-  ChildIds: 7348704993928027719
+  ParentId: 4017534750021093653
+  ChildIds: 3674254672747593023
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -242,7 +242,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7348704993928027719
+  Id: 3674254672747593023
   Name: "Sphere"
   Transform {
     Location {
@@ -256,7 +256,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 9988191806714182146
+  ParentId: 13413402657039754200
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -276,7 +276,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -291,7 +291,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5836443962512324776
+  Id: 17486938763529996627
   Name: "ClientContext"
   Transform {
     Location {
@@ -304,8 +304,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8847375285817499328
-  ChildIds: 10663047179143403204
+  ParentId: 4017534750021093653
+  ChildIds: 10670594749478968611
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -318,7 +318,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10663047179143403204
+  Id: 10670594749478968611
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -331,7 +331,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5836443962512324776
+  ParentId: 17486938763529996627
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -342,7 +342,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 8847375285817499328
+        SelfId: 4017534750021093653
       }
     }
   }
@@ -359,7 +359,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11821588511398067879
+  Id: 12208314808679198067
   Name: "Map Location"
   Transform {
     Location {
@@ -375,9 +375,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 5261725074668604395
-  ChildIds: 6782478530111092947
+  ParentId: 1217504594399711897
+  ChildIds: 8662662705881282100
+  ChildIds: 8116327267091146216
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -395,7 +395,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6782478530111092947
+  Id: 8116327267091146216
   Name: "ServerContext"
   Transform {
     Location {
@@ -408,8 +408,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11821588511398067879
-  ChildIds: 4084085273420641483
+  ParentId: 12208314808679198067
+  ChildIds: 16854730531965489982
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -421,7 +421,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4084085273420641483
+  Id: 16854730531965489982
   Name: "Sphere"
   Transform {
     Location {
@@ -435,7 +435,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 6782478530111092947
+  ParentId: 8116327267091146216
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -455,7 +455,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -470,7 +470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5261725074668604395
+  Id: 8662662705881282100
   Name: "ClientContext"
   Transform {
     Location {
@@ -483,8 +483,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11821588511398067879
-  ChildIds: 6467682063002133455
+  ParentId: 12208314808679198067
+  ChildIds: 6800169475959265393
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -497,7 +497,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6467682063002133455
+  Id: 6800169475959265393
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -510,7 +510,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5261725074668604395
+  ParentId: 8662662705881282100
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -521,7 +521,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 11821588511398067879
+        SelfId: 12208314808679198067
       }
     }
   }
@@ -538,7 +538,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15513122311461343891
+  Id: 747222106281215382
   Name: "Map Location"
   Transform {
     Location {
@@ -554,9 +554,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 14370180061168643514
-  ChildIds: 7032313791555193580
+  ParentId: 1217504594399711897
+  ChildIds: 14189812266931504832
+  ChildIds: 2693768805556825661
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -574,7 +574,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7032313791555193580
+  Id: 2693768805556825661
   Name: "ServerContext"
   Transform {
     Location {
@@ -587,8 +587,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15513122311461343891
-  ChildIds: 5778966638170021694
+  ParentId: 747222106281215382
+  ChildIds: 9353311654447355320
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -600,7 +600,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5778966638170021694
+  Id: 9353311654447355320
   Name: "Sphere"
   Transform {
     Location {
@@ -614,7 +614,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 7032313791555193580
+  ParentId: 2693768805556825661
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -634,7 +634,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -649,7 +649,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14370180061168643514
+  Id: 14189812266931504832
   Name: "ClientContext"
   Transform {
     Location {
@@ -662,8 +662,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15513122311461343891
-  ChildIds: 1538059773161902087
+  ParentId: 747222106281215382
+  ChildIds: 10491644221692751557
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -676,7 +676,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1538059773161902087
+  Id: 10491644221692751557
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -689,7 +689,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14370180061168643514
+  ParentId: 14189812266931504832
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -700,7 +700,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 15513122311461343891
+        SelfId: 747222106281215382
       }
     }
   }
@@ -717,7 +717,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6292808538487200396
+  Id: 1939770578605101841
   Name: "Map Location"
   Transform {
     Location {
@@ -733,9 +733,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 10709619243459614396
-  ChildIds: 10990378963872233799
+  ParentId: 1217504594399711897
+  ChildIds: 10078092541406474928
+  ChildIds: 1448793304180364285
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -753,7 +753,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10990378963872233799
+  Id: 1448793304180364285
   Name: "ServerContext"
   Transform {
     Location {
@@ -766,8 +766,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6292808538487200396
-  ChildIds: 8110359269266235271
+  ParentId: 1939770578605101841
+  ChildIds: 17408783027796249019
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -779,7 +779,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8110359269266235271
+  Id: 17408783027796249019
   Name: "Sphere"
   Transform {
     Location {
@@ -793,7 +793,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 10990378963872233799
+  ParentId: 1448793304180364285
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -813,7 +813,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -828,7 +828,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10709619243459614396
+  Id: 10078092541406474928
   Name: "ClientContext"
   Transform {
     Location {
@@ -841,8 +841,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6292808538487200396
-  ChildIds: 18002106882068416228
+  ParentId: 1939770578605101841
+  ChildIds: 2179447866870102008
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -855,7 +855,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18002106882068416228
+  Id: 2179447866870102008
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -868,7 +868,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10709619243459614396
+  ParentId: 10078092541406474928
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -879,7 +879,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 6292808538487200396
+        SelfId: 1939770578605101841
       }
     }
   }
@@ -896,7 +896,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13408136064825533982
+  Id: 9465210939088111553
   Name: "Map Location"
   Transform {
     Location {
@@ -912,9 +912,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 5818967540866211116
-  ChildIds: 7623874599730063643
+  ParentId: 1217504594399711897
+  ChildIds: 4390012949885223231
+  ChildIds: 6985084714063964874
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -932,7 +932,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7623874599730063643
+  Id: 6985084714063964874
   Name: "ServerContext"
   Transform {
     Location {
@@ -945,8 +945,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13408136064825533982
-  ChildIds: 7933280988323672371
+  ParentId: 9465210939088111553
+  ChildIds: 4111852025838292277
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -958,7 +958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7933280988323672371
+  Id: 4111852025838292277
   Name: "Sphere"
   Transform {
     Location {
@@ -972,7 +972,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 7623874599730063643
+  ParentId: 6985084714063964874
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -992,7 +992,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1007,7 +1007,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5818967540866211116
+  Id: 4390012949885223231
   Name: "ClientContext"
   Transform {
     Location {
@@ -1020,8 +1020,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13408136064825533982
-  ChildIds: 12478309790562392492
+  ParentId: 9465210939088111553
+  ChildIds: 10106773336656847333
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -1034,7 +1034,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12478309790562392492
+  Id: 10106773336656847333
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -1047,7 +1047,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5818967540866211116
+  ParentId: 4390012949885223231
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -1058,7 +1058,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 13408136064825533982
+        SelfId: 9465210939088111553
       }
     }
   }
@@ -1075,7 +1075,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12973562359625239718
+  Id: 2874394351128837395
   Name: "Map Location"
   Transform {
     Location {
@@ -1091,9 +1091,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4958045848858137993
-  ChildIds: 5170873666449694550
-  ChildIds: 12342335380124212049
+  ParentId: 1217504594399711897
+  ChildIds: 16256247064457061943
+  ChildIds: 13416402305316231523
   UnregisteredParameters {
     Overrides {
       Name: "cs:Name"
@@ -1111,7 +1111,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12342335380124212049
+  Id: 13416402305316231523
   Name: "ServerContext"
   Transform {
     Location {
@@ -1124,8 +1124,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12973562359625239718
-  ChildIds: 2711064981227673683
+  ParentId: 2874394351128837395
+  ChildIds: 2313527970547707859
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1137,7 +1137,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2711064981227673683
+  Id: 2313527970547707859
   Name: "Sphere"
   Transform {
     Location {
@@ -1151,7 +1151,7 @@ Objects {
       Z: 0.1
     }
   }
-  ParentId: 12342335380124212049
+  ParentId: 13416402305316231523
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
@@ -1171,7 +1171,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 3982193030776093519
+      Id: 3190252363319773843
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1186,7 +1186,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5170873666449694550
+  Id: 16256247064457061943
   Name: "ClientContext"
   Transform {
     Location {
@@ -1199,8 +1199,8 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12973562359625239718
-  ChildIds: 6383662818777207945
+  ParentId: 2874394351128837395
+  ChildIds: 5101446636072973372
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -1213,7 +1213,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6383662818777207945
+  Id: 5101446636072973372
   Name: "MapLocationNameClient"
   Transform {
     Location {
@@ -1226,7 +1226,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5170873666449694550
+  ParentId: 16256247064457061943
   UnregisteredParameters {
     Overrides {
       Name: "cs:API"
@@ -1237,7 +1237,7 @@ Objects {
     Overrides {
       Name: "cs:ComponentRoot"
       ObjectReference {
-        SelfId: 12973562359625239718
+        SelfId: 2874394351128837395
       }
     }
   }

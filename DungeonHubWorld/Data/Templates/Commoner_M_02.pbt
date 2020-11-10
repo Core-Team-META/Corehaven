@@ -450,7 +450,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17507382434338660309
+              Id: 13539907544900533754
             }
           }
         }
@@ -500,7 +500,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 17507382434338660309
+              Id: 13539907544900533754
             }
           }
         }
@@ -702,7 +702,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 1421130721009981852
+            Id: 7602223482704169180
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -736,7 +736,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -794,7 +794,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -856,7 +856,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4855960652393685277
+              Id: 18434079688766523124
             }
           }
           Overrides {
@@ -1111,7 +1111,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1182,7 +1182,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1253,7 +1253,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1486,7 +1486,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1557,7 +1557,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1628,7 +1628,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6307371810581530536
+              Id: 7715152830417178651
             }
           }
           Overrides {
@@ -1840,13 +1840,13 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 1553061262893641395
+              Id: 14625113951500064133
             }
           }
           Overrides {
             Name: "ma:Shared_Detail2:id"
             AssetReference {
-              Id: 2095021850904328457
+              Id: 14484982553833266205
             }
           }
         }
@@ -1887,7 +1887,7 @@
       }
     }
     Assets {
-      Id: 17507382434338660309
+      Id: 13539907544900533754
       Name: "Invisible"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -1923,7 +1923,7 @@
       }
     }
     Assets {
-      Id: 1421130721009981852
+      Id: 7602223482704169180
       Name: "Large Round Wood Beam 8m"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -1941,7 +1941,7 @@
       }
     }
     Assets {
-      Id: 4855960652393685277
+      Id: 18434079688766523124
       Name: "Metal Basic 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -1959,7 +1959,7 @@
       }
     }
     Assets {
-      Id: 6307371810581530536
+      Id: 7715152830417178651
       Name: "Fabric Burlap New 01"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -1980,9 +1980,6 @@
       AssetType: "None"
       AssetId: "None"
     }
-  }
-  Marketplace {
-    Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
   SerializationVersion: 65
   DirectlyPublished: true

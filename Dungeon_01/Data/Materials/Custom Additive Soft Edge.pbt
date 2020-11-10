@@ -2,7 +2,7 @@
   Id: 13542085962543085223
   Name: "Custom Additive Soft Edge"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 3256082723569577151
     ParameterOverrides {

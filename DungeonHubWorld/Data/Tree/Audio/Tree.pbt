@@ -1,7 +1,7 @@
 ﻿Name: "Audio"
-RootId: 16816246272091159722
+RootId: 10542281037468369403
 Objects {
-  Id: 17646804855349459136
+  Id: 10881235657566316652
   Name: "ClientContext"
   Transform {
     Location {
@@ -15,19 +15,19 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16816246272091159722
-  ChildIds: 14664823471903355022
-  ChildIds: 13567950407992685600
-  ChildIds: 12466583247107377849
-  ChildIds: 559866666904587842
-  ChildIds: 16998547501729419787
-  ChildIds: 11188168495048710640
-  ChildIds: 13055747170863140833
-  ChildIds: 7933604656628401909
-  ChildIds: 4709921911163071863
-  ChildIds: 17536180878966129797
-  ChildIds: 1942555496709667414
-  ChildIds: 8695524661514775327
+  ParentId: 10542281037468369403
+  ChildIds: 14863816361725782435
+  ChildIds: 16341976898434033066
+  ChildIds: 11284692059148081393
+  ChildIds: 7783238674012382361
+  ChildIds: 2055050587439720402
+  ChildIds: 13504140720551351910
+  ChildIds: 14668555477942482726
+  ChildIds: 8114578818172360835
+  ChildIds: 16858576655537519731
+  ChildIds: 12819120069617777735
+  ChildIds: 12604198490870407279
+  ChildIds: 10322008713793941313
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -38,7 +38,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8695524661514775327
+  Id: 10322008713793941313
   Name: "Underwater Trigger 2"
   Transform {
     Location {
@@ -54,9 +54,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
-  ChildIds: 4380571036103168857
-  ChildIds: 10972137557918255636
+  ParentId: 10881235657566316652
+  ChildIds: 5674942714629902439
+  ChildIds: 2923930815099713891
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -68,7 +68,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10972137557918255636
+  Id: 2923930815099713891
   Name: "Nature Water Splash Large 01 SFX"
   Transform {
     Location {
@@ -81,7 +81,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8695524661514775327
+  ParentId: 10322008713793941313
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -99,7 +99,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4380571036103168857
+  Id: 5674942714629902439
   Name: "Ambience Underwater Designed 01 SFX"
   Transform {
     Location {
@@ -115,7 +115,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8695524661514775327
+  ParentId: 10322008713793941313
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -135,7 +135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1942555496709667414
+  Id: 12604198490870407279
   Name: "Above Water Trigger 2"
   Transform {
     Location {
@@ -151,7 +151,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -173,7 +173,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17536180878966129797
+  Id: 12819120069617777735
   Name: "Underwater Trigger 2"
   Transform {
     Location {
@@ -190,19 +190,19 @@ Objects {
       Z: 26.7500076
     }
   }
-  ParentId: 17646804855349459136
-  ChildIds: 8034901888965966189
+  ParentId: 10881235657566316652
+  ChildIds: 14813830317303031463
   UnregisteredParameters {
     Overrides {
       Name: "cs:AudioFolderStart"
       ObjectReference {
-        SelfId: 8695524661514775327
+        SelfId: 10322008713793941313
       }
     }
     Overrides {
       Name: "cs:AudioFolderStop"
       ObjectReference {
-        SelfId: 1942555496709667414
+        SelfId: 12604198490870407279
       }
     }
   }
@@ -223,7 +223,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8034901888965966189
+  Id: 14813830317303031463
   Name: "AudioTriggerZone"
   Transform {
     Location {
@@ -237,7 +237,7 @@ Objects {
       Z: 0.0373831652
     }
   }
-  ParentId: 17536180878966129797
+  ParentId: 12819120069617777735
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -251,7 +251,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4709921911163071863
+  Id: 16858576655537519731
   Name: "Above Water Trigger 1"
   Transform {
     Location {
@@ -267,7 +267,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -289,7 +289,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7933604656628401909
+  Id: 8114578818172360835
   Name: "Underwater Trigger 1"
   Transform {
     Location {
@@ -305,9 +305,9 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
-  ChildIds: 56705730514041083
-  ChildIds: 6761998506790467600
+  ParentId: 10881235657566316652
+  ChildIds: 5615196852303155881
+  ChildIds: 6367002072938680670
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -319,7 +319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6761998506790467600
+  Id: 6367002072938680670
   Name: "Nature Water Splash Large 01 SFX"
   Transform {
     Location {
@@ -332,7 +332,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7933604656628401909
+  ParentId: 8114578818172360835
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -350,7 +350,7 @@ Objects {
   }
 }
 Objects {
-  Id: 56705730514041083
+  Id: 5615196852303155881
   Name: "Ambience Underwater Designed 01 SFX"
   Transform {
     Location {
@@ -366,7 +366,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7933604656628401909
+  ParentId: 8114578818172360835
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -386,7 +386,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13055747170863140833
+  Id: 14668555477942482726
   Name: "Underwater Trigger 1"
   Transform {
     Location {
@@ -403,19 +403,19 @@ Objects {
       Z: 26.7500076
     }
   }
-  ParentId: 17646804855349459136
-  ChildIds: 13256037670595844330
+  ParentId: 10881235657566316652
+  ChildIds: 9200246063318840735
   UnregisteredParameters {
     Overrides {
       Name: "cs:AudioFolderStart"
       ObjectReference {
-        SelfId: 7933604656628401909
+        SelfId: 8114578818172360835
       }
     }
     Overrides {
       Name: "cs:AudioFolderStop"
       ObjectReference {
-        SelfId: 4709921911163071863
+        SelfId: 16858576655537519731
       }
     }
   }
@@ -436,7 +436,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13256037670595844330
+  Id: 9200246063318840735
   Name: "AudioTriggerZone"
   Transform {
     Location {
@@ -450,7 +450,7 @@ Objects {
       Z: 0.0373831652
     }
   }
-  ParentId: 13055747170863140833
+  ParentId: 14668555477942482726
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -464,7 +464,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11188168495048710640
+  Id: 13504140720551351910
   Name: "Hidden Cove Area"
   Transform {
     Location {
@@ -477,7 +477,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -490,7 +490,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16998547501729419787
+  Id: 2055050587439720402
   Name: "Fire and Flame Burning Loop Set 01 SFX"
   Transform {
     Location {
@@ -506,7 +506,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -539,7 +539,7 @@ Objects {
   }
 }
 Objects {
-  Id: 559866666904587842
+  Id: 7783238674012382361
   Name: "Fantasy Music Score Set 01"
   Transform {
     Location {
@@ -555,7 +555,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -587,7 +587,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12466583247107377849
+  Id: 11284692059148081393
   Name: "Classical Music Score Set 01"
   Transform {
     Location {
@@ -603,7 +603,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"
@@ -636,7 +636,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13567950407992685600
+  Id: 16341976898434033066
   Name: "Ambience Nature Calm Forest Set 01 SFX"
   Transform {
     Location {
@@ -652,10 +652,10 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
-  ChildIds: 11950478008829710868
-  ChildIds: 7584597787472140844
-  ChildIds: 8072330448384371308
+  ParentId: 10881235657566316652
+  ChildIds: 1152552021127138512
+  ChildIds: 5986468331820091649
+  ChildIds: 13969185302810629398
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -676,7 +676,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8072330448384371308
+  Id: 13969185302810629398
   Name: "Ambience Nature Wind and Trees Set 01 SFX"
   Transform {
     Location {
@@ -692,7 +692,7 @@ Objects {
       Z: 2.18810344
     }
   }
-  ParentId: 13567950407992685600
+  ParentId: 16341976898434033066
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -722,7 +722,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7584597787472140844
+  Id: 5986468331820091649
   Name: "Ambience Nature Cicadas Set 01 SFX"
   Transform {
     Location {
@@ -738,7 +738,7 @@ Objects {
       Z: 2.18810344
     }
   }
-  ParentId: 13567950407992685600
+  ParentId: 16341976898434033066
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -768,7 +768,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11950478008829710868
+  Id: 1152552021127138512
   Name: "Ambience Nature Forest Birds Set 01 SFX"
   Transform {
     Location {
@@ -784,7 +784,7 @@ Objects {
       Z: 2.18810344
     }
   }
-  ParentId: 13567950407992685600
+  ParentId: 16341976898434033066
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -814,7 +814,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14664823471903355022
+  Id: 14863816361725782435
   Name: "Central Town Audio"
   Transform {
     Location {
@@ -827,7 +827,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17646804855349459136
+  ParentId: 10881235657566316652
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

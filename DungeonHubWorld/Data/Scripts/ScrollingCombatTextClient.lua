@@ -102,8 +102,13 @@ function ShowText(targetCharacter, amount, over, color, tags, extraText)
 					worldPosition = worldPosition + Vector3.UP * playerScale * 170.0
 				end
 			else
-				local npcScale = API_NPC.GetAllNPCData()[targetCharacter].capsuleHeight
-				worldPosition = worldPosition + Vector3.UP * npcScale * 1.25
+				local capsuleHeight = API_NPC.GetAllNPCData()[targetCharacter].capsuleHeight
+				
+				if capsuleHeight > 400.0 then
+					worldPosition = worldPosition + Vector3.UP * 250.0
+				else
+					worldPosition = worldPosition + Vector3.UP * capsuleHeight * 1.25
+				end
 			end
 
 			local position = UI.GetScreenPosition(worldPosition)
