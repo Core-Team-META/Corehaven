@@ -19,7 +19,7 @@ end
 
 function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 	if players[targetCharacter] and sourceCharacter ~= targetCharacter and not API_D.HasTag(tags, API_D.TAG_MINOR) then
-		if not API_NPC.IsDead(sourceCharacter) then
+		if sourceCharacter and Object.IsValid(sourceCharacter) and not API_NPC.IsDead(sourceCharacter) then
 			API_D.ApplyDamage(targetCharacter, sourceCharacter, amount * 0.2, API_D.TAG_MINOR)
 		end
 	end

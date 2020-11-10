@@ -87,9 +87,6 @@ Objects {
   Name: "Map"
   Transform {
     Location {
-      X: -5077.63525
-      Y: -117.315186
-      Z: -6840.98145
     }
     Rotation {
     }

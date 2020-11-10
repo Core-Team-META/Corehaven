@@ -7,7 +7,7 @@
       RootId: 15693456971712313944
       Objects {
         Id: 15693456971712313944
-        Name: "ItemHoverTooltip"
+        Name: "UI_ItemSystems_ItemHoverView"
         Transform {
           Scale {
             X: 1
@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 6427885708988809054
+        ParentId: 6013256600818589589
         ChildIds: 9553517247522246109
         ChildIds: 17972168532587766368
         ChildIds: 14792434693933273901
@@ -29,11 +29,13 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Control {
           Width: 266
           Height: 225
+          UIX: 1210
+          UIY: 425
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -218,7 +220,7 @@
             }
           }
           Overrides {
-            Name: "cs:SellPrice"
+            Name: "cs:SalvageValue"
             ObjectReference {
               SubObjectId: 15142151871673674510
             }
@@ -228,7 +230,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:forceon"
+          Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
           Width: 266
@@ -1944,7 +1946,7 @@
       }
       Objects {
         Id: 15142151871673674510
-        Name: "ItemSellPrice"
+        Name: "ItemSalvageValue"
         Transform {
           Location {
           }
@@ -2225,7 +2227,7 @@
             }
           }
           Overrides {
-            Name: "cs:SellPrice"
+            Name: "cs:SalvageValue"
             ObjectReference {
               SubObjectId: 17033354591083807841
             }
@@ -3506,7 +3508,7 @@
       }
       Objects {
         Id: 17033354591083807841
-        Name: "ItemSellPrice"
+        Name: "ItemSalvageValue"
         Transform {
           Location {
           }

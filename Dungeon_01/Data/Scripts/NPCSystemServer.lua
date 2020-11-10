@@ -7,7 +7,7 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 
-local DESPAWN_TIME = 120.0
+local DESPAWN_TIME = 1.0
 local SUMMON_DESPAWN_TIME = 30.0
 local TASK_HISTORY_LENGTH = 8
 
