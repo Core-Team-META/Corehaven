@@ -1,0 +1,191 @@
+﻿Assets {
+  Id: 5702907119253073669
+  Name: "Helper_DialogOptionPanel"
+  PlatformAssetType: 5
+  TemplateAsset {
+    ObjectBlock {
+      RootId: 17915977419925898009
+      Objects {
+        Id: 17915977419925898009
+        Name: "Helper_DialogOptionPanel"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4781671109827199097
+        ChildIds: 13285001699807447940
+        ChildIds: 7808093126569634813
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 50
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Panel {
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 13285001699807447940
+        Name: "DialogOptionDisplayClient"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17915977419925898009
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Root"
+            ObjectReference {
+              SubObjectId: 17915977419925898009
+            }
+          }
+          Overrides {
+            Name: "cs:Button"
+            ObjectReference {
+              SubObjectId: 7808093126569634813
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 157077703428238351
+          }
+        }
+      }
+      Objects {
+        Id: 7808093126569634813
+        Name: "UI Button"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17915977419925898009
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 100
+          Height: 50
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          UseParentHeight: true
+          Button {
+            FontColor {
+              R: 1
+              G: 0.993791401
+              B: 0.90625
+              A: 1
+            }
+            FontSize: 20
+            ButtonColor {
+              R: 0.109375
+              G: 0.0921116173
+              B: 0.0797526
+              A: 1
+            }
+            HoveredColor {
+              R: 0.296875
+              G: 0.22651954
+              B: 0.140706375
+              A: 1
+            }
+            PressedColor {
+              R: 0.536458313
+              G: 0.392442167
+              B: 0.189995661
+              A: 1
+            }
+            DisabledColor {
+              R: 0.130208328
+              G: 0.102937877
+              B: 0.0834147111
+              A: 1
+            }
+            Brush {
+              Id: 11587615929808300503
+            }
+            IsButtonEnabled: true
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:topleft"
+              }
+            }
+          }
+        }
+      }
+    }
+    Assets {
+      Id: 11587615929808300503
+      Name: "BG Gradient 001"
+      PlatformAssetType: 9
+      PrimaryAsset {
+        AssetType: "PlatformBrushAssetRef"
+        AssetId: "BackgroundFlat_020"
+      }
+    }
+    PrimaryAssetId {
+      AssetType: "None"
+      AssetId: "None"
+    }
+  }
+  SerializationVersion: 68
+}

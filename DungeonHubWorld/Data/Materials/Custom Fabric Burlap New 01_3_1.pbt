@@ -2,7 +2,7 @@
   Id: 3475106789987947422
   Name: "Custom Fabric Burlap New 01_3"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 7715152830417178651
     ParameterOverrides {

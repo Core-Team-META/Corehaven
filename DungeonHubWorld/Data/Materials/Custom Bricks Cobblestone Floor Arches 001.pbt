@@ -2,7 +2,7 @@
   Id: 17678176516239900516
   Name: "Custom Bricks Cobblestone Floor Arches 001"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 10567573856586224296
     ParameterOverrides {

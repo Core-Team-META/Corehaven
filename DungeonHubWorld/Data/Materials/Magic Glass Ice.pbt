@@ -2,7 +2,7 @@
   Id: 17777965235899846507
   Name: "Magic Glass Ice"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 14065635217134112544
     ParameterOverrides {

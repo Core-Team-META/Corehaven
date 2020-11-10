@@ -41736,6 +41736,9 @@ Objects {
       }
       AppearanceChannelingTime: 2
       FlipOnMultiJump: true
+      CanMoveUp: true
+      CanMoveDown: true
+      IsMountEnabled: true
     }
   }
 }
@@ -41863,6 +41866,23 @@ Objects {
       EnablePlayerStorage: true
       ChatMode {
         Value: "mc:echatmode:allonly"
+      }
+      ChatSettings {
+        ChatMode {
+        }
+        ChatPosition {
+          X: 40
+        }
+        ChatSize {
+          X: 450
+          Y: 400
+        }
+        ChatHorizontalAlignment {
+          Value: "mc:ecorehorizontalalign:left"
+        }
+        ChatVerticalAlignment {
+          Value: "mc:ecorehorizontalalign:center"
+        }
       }
     }
   }

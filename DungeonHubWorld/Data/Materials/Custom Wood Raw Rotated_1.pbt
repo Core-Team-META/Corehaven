@@ -2,7 +2,7 @@
   Id: 12669426880719060888
   Name: "Custom Wood Raw Rotated"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 2664847478369185144
     ParameterOverrides {
