@@ -1,13 +1,13 @@
-﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+﻿local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 
 function OnPlayerJoined(player)
-	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
+	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
 
 	-- These bools intentionally are opposite so that both default values (not existing) do what we want
 	if not playerData.isReturningPlayer then
 		player:SetResource("NewPlayer", 1)
 		playerData.isReturningPlayer = true
-		Storage.SetSharedPlayerData(API_SK.GetStorageKey(), player, playerData)
+		Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
 	end
 end
 

@@ -1,12 +1,13 @@
 ﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
-local API_SK = require(script:GetCustomProperty("APISharedKey"))
+
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 
 local readyPlayers = {}
 
 function OnSetActionBarLayout(player, layoutString)
-	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
+	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
 	playerData.actionBarLayout = layoutString
-	Storage.SetSharedPlayerData(API_SK.GetStorageKey(), player, playerData)
+	Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
 end
 
 function OnTalentsLoaded(player)
@@ -14,7 +15,7 @@ function OnTalentsLoaded(player)
 		Task.Wait()
 	end
 
-	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
+	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
 	API_RE.BroadcastToPlayer(player, "LABL", playerData.actionBarLayout)
 end
 

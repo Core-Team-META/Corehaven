@@ -84,22 +84,22 @@ Item.SHARD_TYPE_QUANTITIES = {
     Axe         = 2,
     Boots       = 1,
     Dagger      = 2,
-    Greatsword  = 3,
+    Greatsword  = 2,
     Focus       = 1,
     Helmet      = 1,
     Mace        = 2,
     Shield      = 1,
-    Staff       = 3,
+    Staff       = 2,
     Sword       = 2,
     Trinket     = 2,
-    Warhammer   = 3,
+    Warhammer   = 2,
     Wand        = 2,
 }
 
 -- These are close to the geometric series 4^n, but are chosen to be prime numbers so that combinations look more "random".
 Item.SHARD_RARITY_MULTIPLIERS = {
-    Common      = 3,
-    Uncommon    = 7,
+    Common      = 1,
+    Uncommon    = 5,
     Rare        = 23,
     Epic        = 79,
     Legendary   = 248,

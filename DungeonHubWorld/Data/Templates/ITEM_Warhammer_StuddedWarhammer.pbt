@@ -63,7 +63,6 @@
         ChildIds: 10224275105862172556
         ChildIds: 8080979995544271733
         ChildIds: 8305595850113415839
-        ChildIds: 12135145744353701904
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -79,7 +78,7 @@
         Name: "Fantasy Axe Grip 01"
         Transform {
           Location {
-            Z: -57.4970703
+            Z: -50.150692
           }
           Rotation {
           }
@@ -170,7 +169,7 @@
         Name: "Head"
         Transform {
           Location {
-            Z: 31.8912773
+            Z: 39.2376556
           }
           Rotation {
           }
@@ -340,7 +339,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -354,7 +353,7 @@
           Overrides {
             Name: "ma:Shared_Trim2:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -442,7 +441,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -456,7 +455,7 @@
           Overrides {
             Name: "ma:Shared_Trim2:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -544,7 +543,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -558,7 +557,7 @@
           Overrides {
             Name: "ma:Shared_Trim2:id"
             AssetReference {
-              Id: 199153926015106134
+              Id: 1100837394993556177
             }
           }
           Overrides {
@@ -601,14 +600,14 @@
         Name: "Fantasy Mace Guard 01"
         Transform {
           Location {
-            Z: -64.8230209
+            Z: 13.5231123
           }
           Rotation {
           }
           Scale {
             X: 1.21024168
             Y: 1.21024168
-            Z: 2.00543261
+            Z: 1.21024168
           }
         }
         ParentId: 17121006160913565418
@@ -629,73 +628,6 @@
         CoreMesh {
           MeshAsset {
             Id: 273448105943087596
-          }
-          Teams {
-            IsTeamCollisionEnabled: true
-            IsEnemyCollisionEnabled: true
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
-        Id: 12135145744353701904
-        Name: "Fantasy Hammer Guard 01"
-        Transform {
-          Location {
-            Z: -80.0057373
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1.42071259
-            Y: 1.42071259
-            Z: 1.42071259
-          }
-        }
-        ParentId: 17121006160913565418
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 4998701643265443986
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 4998701643265443986
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 31.4870071
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 40.6288223
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:utile"
-            Float: 25.5597343
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:vtile"
-            Float: 52.4248199
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 1863549408108808768
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -782,7 +714,7 @@
       }
     }
     Assets {
-      Id: 199153926015106134
+      Id: 1100837394993556177
       Name: "Metal Iron Rusted 02"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -817,19 +749,10 @@
         AssetId: "sm_weap_fan_guard_mace_001"
       }
     }
-    Assets {
-      Id: 1863549408108808768
-      Name: "Fantasy Hammer Guard 01"
-      PlatformAssetType: 1
-      PrimaryAsset {
-        AssetType: "StaticMeshAssetRef"
-        AssetId: "sm_weap_fan_guard_hammer_001"
-      }
-    }
     PrimaryAssetId {
       AssetType: "None"
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13588168874842906464
-  Name: "Cone - Truncated Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
@@ -113,6 +104,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_pipe_eightsided_003"
+  }
+}
+Assets {
+  Id: 9049573211634404578
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
   }
 }
 Assets {

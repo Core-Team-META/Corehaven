@@ -1734,7 +1734,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3190252363319773843
+            Id: 3982193030776093519
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3178,7 +3178,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3190252363319773843
+            Id: 3982193030776093519
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -4254,7 +4254,7 @@
       }
     }
     Assets {
-      Id: 3190252363319773843
+      Id: 3982193030776093519
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -4312,5 +4312,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

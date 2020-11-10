@@ -593,7 +593,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -665,7 +665,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -737,7 +737,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -812,7 +812,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -884,7 +884,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -956,7 +956,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 3618871926670087939
+              Id: 4808236381090719999
             }
           }
         }
@@ -1036,7 +1036,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12827530473249900764
+              Id: 5351428073291024820
             }
           }
           Overrides {
@@ -1125,7 +1125,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12827530473249900764
+              Id: 5351428073291024820
             }
           }
           Overrides {
@@ -1241,7 +1241,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 3627989845324114236
+              Id: 435045081974966637
             }
           }
         }
@@ -1285,13 +1285,13 @@
           Overrides {
             Name: "ma:Flame_A:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
           Overrides {
             Name: "ma:Flame_B:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
         }
@@ -1338,13 +1338,13 @@
           Overrides {
             Name: "ma:Flame_A:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
           Overrides {
             Name: "ma:Flame_B:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
           Overrides {
@@ -1410,13 +1410,13 @@
           Overrides {
             Name: "ma:Flame_A:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
           Overrides {
             Name: "ma:Flame_B:id"
             AssetReference {
-              Id: 6753583220054769327
+              Id: 9161145500600929117
             }
           }
           Overrides {
@@ -1634,7 +1634,7 @@
       }
     }
     Assets {
-      Id: 12827530473249900764
+      Id: 5351428073291024820
       Name: "Opaque Emissive"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -1674,5 +1674,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

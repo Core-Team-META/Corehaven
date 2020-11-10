@@ -13,7 +13,7 @@
       Overrides {
         Name: "cs:APIStatusEffects"
         AssetReference {
-          Id: 13318730044962744636
+          Id: 1831660344620141067
         }
       }
       Overrides {
@@ -25,7 +25,7 @@
       Overrides {
         Name: "cs:API_NPC"
         AssetReference {
-          Id: 2677594612280678857
+          Id: 1793953622129874134
         }
       }
       Overrides {
@@ -216,5 +216,5 @@
       }
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

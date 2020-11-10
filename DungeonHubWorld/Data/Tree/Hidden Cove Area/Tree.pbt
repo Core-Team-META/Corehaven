@@ -1,7 +1,7 @@
 ﻿Name: "Hidden Cove Area"
-RootId: 13504140720551351910
+RootId: 11188168495048710640
 Objects {
-  Id: 8170269166412667535
+  Id: 16838376227202368287
   Name: "Cove Trigger"
   Transform {
     Location {
@@ -18,19 +18,19 @@ Objects {
       Z: 124.636681
     }
   }
-  ParentId: 13504140720551351910
-  ChildIds: 780385315853733241
+  ParentId: 11188168495048710640
+  ChildIds: 7883317171378952517
   UnregisteredParameters {
     Overrides {
       Name: "cs:AudioFolderStart"
       ObjectReference {
-        SelfId: 12176257876303775183
+        SelfId: 14533952387107224965
       }
     }
     Overrides {
       Name: "cs:AudioFolderStop"
       ObjectReference {
-        SelfId: 16858576655537519731
+        SelfId: 4709921911163071863
       }
     }
   }
@@ -51,7 +51,7 @@ Objects {
   }
 }
 Objects {
-  Id: 780385315853733241
+  Id: 7883317171378952517
   Name: "AudioTriggerZone"
   Transform {
     Location {
@@ -65,7 +65,7 @@ Objects {
       Z: 0.0373831652
     }
   }
-  ParentId: 8170269166412667535
+  ParentId: 16838376227202368287
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -79,7 +79,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1076376901578208562
+  Id: 8174261039832125556
   Name: "Cove Music Stop"
   Transform {
     Location {
@@ -95,7 +95,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -108,7 +108,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12176257876303775183
+  Id: 14533952387107224965
   Name: "Cove Music"
   Transform {
     Location {
@@ -124,7 +124,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -137,7 +137,7 @@ Objects {
   }
 }
 Objects {
-  Id: 733814919187948462
+  Id: 4488228039964410561
   Name: "Nature Pond Birds Ambience Loop 01 SFX"
   Transform {
     Location {
@@ -153,7 +153,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -174,7 +174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16655948433752207655
+  Id: 15205192345193261383
   Name: "Rain Light SFX"
   Transform {
     Location {
@@ -190,7 +190,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -211,7 +211,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7499843813360372837
+  Id: 12114063769496398284
   Name: "Reverb Zone"
   Transform {
     Location {
@@ -228,7 +228,7 @@ Objects {
       Z: 23.5551109
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -244,7 +244,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14263409100255004093
+  Id: 13475030639326816964
   Name: "Ambience Nature Waterflow Set 01 SFX"
   Transform {
     Location {
@@ -260,7 +260,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13504140720551351910
+  ParentId: 11188168495048710640
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

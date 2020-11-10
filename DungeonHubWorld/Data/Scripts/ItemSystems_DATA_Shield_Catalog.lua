@@ -53,13 +53,4 @@
     Lore = 'A shield of immense strength, can block even the mightiest blows',
     ['Author Notes (will be ignored by script)'] = '',
   },
-  {
-    Name = 'Logic',
-    Type = 'Shield',
-    Rarity = 'Epic',
-    StatKey = 'EpicTankShield',
-    MUID = 'D86AA978458C4E43:ITEM_Shield_Logic',
-    Lore = 'Logic forms the basis of any solid defense',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
 }

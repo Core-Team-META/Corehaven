@@ -35,13 +35,9 @@ end
 
 function data.onCastServer(caster, target)
 	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 	
 	for i = 1, TICK_COUNT do
-		if not Object.IsValid(caster) then
-			return
-		end
-		
-		local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 		API_D.ApplyAreaDamage(caster, target, RADIUS, BASE_DAMAGE_RATE + DAMAGE_RATE_MULTIPLIER * magicStat, false, API_D.TAG_AOE | API_D.TAG_PERIODIC)
 		Task.Wait(1.0)
 	end

@@ -29,7 +29,7 @@
           Overrides {
             Name: "cs:AnimatedMesh"
             ObjectReference {
-              SelfId: 9975261482534146826
+              SelfId: 2810867449452373016
             }
           }
           Overrides {
@@ -163,5 +163,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

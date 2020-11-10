@@ -3,6 +3,7 @@ local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local EFFECT_RANGE = 350.0
+local EFFECT_DELAY = 0.2
 local BASE_DAMAGE = 40.0
 local DAMAGE_MULTIPLIER = 1.1
 
@@ -23,10 +24,11 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.onCastClient(caster, target)
-	return 0.0
+	return EFFECT_DELAY
 end
 
 function data.onCastServer(caster, target)
+	Task.Wait(EFFECT_DELAY)
 	local casterPosition = caster:GetWorldPosition()
 	local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 

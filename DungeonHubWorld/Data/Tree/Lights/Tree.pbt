@@ -1,7 +1,7 @@
 ﻿Name: "Lights"
-RootId: 14259893880566974612
+RootId: 2734733877656755987
 Objects {
-  Id: 9902919406591832325
+  Id: 18163243891788255767
   Name: "pier_light"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -108,7 +108,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7008733257142876911
+  Id: 1311443057133178042
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -125,10 +125,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 12619683453312982857
-  ChildIds: 8124218387194022506
-  ChildIds: 16070445020116576634
+  ParentId: 2734733877656755987
+  ChildIds: 863925571905124087
+  ChildIds: 9461181616621929172
+  ChildIds: 5278387577948411537
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -139,7 +139,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16070445020116576634
+  Id: 5278387577948411537
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -158,7 +158,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 7008733257142876911
+  ParentId: 1311443057133178042
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -197,7 +197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8124218387194022506
+  Id: 9461181616621929172
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -211,18 +211,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7008733257142876911
+  ParentId: 1311443057133178042
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 12619683453312982857
+        SelfId: 863925571905124087
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 16070445020116576634
+        SelfId: 5278387577948411537
       }
     }
   }
@@ -239,7 +239,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12619683453312982857
+  Id: 863925571905124087
   Name: "Point Light"
   Transform {
     Location {
@@ -255,7 +255,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7008733257142876911
+  ParentId: 1311443057133178042
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -289,7 +289,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16724738690509138662
+  Id: 14780892821411757137
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -306,10 +306,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9590197926435171071
-  ChildIds: 17550238995910575902
-  ChildIds: 17994634304800815676
+  ParentId: 2734733877656755987
+  ChildIds: 5829139395106019645
+  ChildIds: 6805921900621925827
+  ChildIds: 9608685789808557097
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -320,7 +320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17994634304800815676
+  Id: 9608685789808557097
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -339,7 +339,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 16724738690509138662
+  ParentId: 14780892821411757137
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -378,7 +378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17550238995910575902
+  Id: 6805921900621925827
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -392,18 +392,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16724738690509138662
+  ParentId: 14780892821411757137
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 9590197926435171071
+        SelfId: 5829139395106019645
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17994634304800815676
+        SelfId: 9608685789808557097
       }
     }
   }
@@ -420,7 +420,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9590197926435171071
+  Id: 5829139395106019645
   Name: "Point Light"
   Transform {
     Location {
@@ -436,7 +436,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16724738690509138662
+  ParentId: 14780892821411757137
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -470,7 +470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5530701256772874147
+  Id: 2635308515695551189
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -487,10 +487,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 8663870562208490334
-  ChildIds: 13228067437366632448
-  ChildIds: 6418018383161582019
+  ParentId: 2734733877656755987
+  ChildIds: 17178469593400289477
+  ChildIds: 6081337298417232332
+  ChildIds: 17670568253787614760
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -501,7 +501,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6418018383161582019
+  Id: 17670568253787614760
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -520,7 +520,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 5530701256772874147
+  ParentId: 2635308515695551189
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -559,7 +559,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13228067437366632448
+  Id: 6081337298417232332
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -573,18 +573,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5530701256772874147
+  ParentId: 2635308515695551189
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 8663870562208490334
+        SelfId: 17178469593400289477
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 6418018383161582019
+        SelfId: 17670568253787614760
       }
     }
   }
@@ -601,7 +601,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8663870562208490334
+  Id: 17178469593400289477
   Name: "Point Light"
   Transform {
     Location {
@@ -617,7 +617,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5530701256772874147
+  ParentId: 2635308515695551189
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -651,7 +651,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4187597958806217343
+  Id: 5678626041386075014
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -668,10 +668,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9871801689052322546
-  ChildIds: 13241127626440443046
-  ChildIds: 18311791705903062341
+  ParentId: 2734733877656755987
+  ChildIds: 7273310357554925462
+  ChildIds: 15127814655612519042
+  ChildIds: 9917366179789516663
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -682,7 +682,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18311791705903062341
+  Id: 9917366179789516663
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -701,7 +701,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 4187597958806217343
+  ParentId: 5678626041386075014
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -740,7 +740,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13241127626440443046
+  Id: 15127814655612519042
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -754,18 +754,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4187597958806217343
+  ParentId: 5678626041386075014
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 9871801689052322546
+        SelfId: 7273310357554925462
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 18311791705903062341
+        SelfId: 9917366179789516663
       }
     }
   }
@@ -782,7 +782,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9871801689052322546
+  Id: 7273310357554925462
   Name: "Point Light"
   Transform {
     Location {
@@ -798,7 +798,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4187597958806217343
+  ParentId: 5678626041386075014
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -832,7 +832,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2002948218222426785
+  Id: 10428417086734366698
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -849,10 +849,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 8291729182632710852
-  ChildIds: 2220696437737187111
-  ChildIds: 7370329662345494508
+  ParentId: 2734733877656755987
+  ChildIds: 17384199202472244026
+  ChildIds: 4941030678050959738
+  ChildIds: 12703602522660295521
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -863,7 +863,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7370329662345494508
+  Id: 12703602522660295521
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -882,7 +882,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 2002948218222426785
+  ParentId: 10428417086734366698
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -921,7 +921,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2220696437737187111
+  Id: 4941030678050959738
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -935,18 +935,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2002948218222426785
+  ParentId: 10428417086734366698
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 8291729182632710852
+        SelfId: 17384199202472244026
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 7370329662345494508
+        SelfId: 12703602522660295521
       }
     }
   }
@@ -963,7 +963,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8291729182632710852
+  Id: 17384199202472244026
   Name: "Point Light"
   Transform {
     Location {
@@ -979,7 +979,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2002948218222426785
+  ParentId: 10428417086734366698
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1013,7 +1013,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12013055222627834349
+  Id: 3497861780968096190
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -1030,10 +1030,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9195085668125322078
-  ChildIds: 4113302449910590726
-  ChildIds: 2452541204585425965
+  ParentId: 2734733877656755987
+  ChildIds: 8767587043158001905
+  ChildIds: 3769712770187709058
+  ChildIds: 11758386578106950005
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1044,7 +1044,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2452541204585425965
+  Id: 11758386578106950005
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1063,7 +1063,7 @@ Objects {
       Z: 0.0311398376
     }
   }
-  ParentId: 12013055222627834349
+  ParentId: 3497861780968096190
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1102,7 +1102,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4113302449910590726
+  Id: 3769712770187709058
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1116,18 +1116,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12013055222627834349
+  ParentId: 3497861780968096190
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 9195085668125322078
+        SelfId: 8767587043158001905
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 2452541204585425965
+        SelfId: 11758386578106950005
       }
     }
   }
@@ -1144,7 +1144,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9195085668125322078
+  Id: 8767587043158001905
   Name: "Point Light"
   Transform {
     Location {
@@ -1160,7 +1160,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 12013055222627834349
+  ParentId: 3497861780968096190
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1194,7 +1194,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16292564423304642628
+  Id: 5012239844599503769
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -1211,10 +1211,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 15630860301166121016
-  ChildIds: 10723731492520499557
-  ChildIds: 5331328706571789163
+  ParentId: 2734733877656755987
+  ChildIds: 14904577625927623363
+  ChildIds: 8934899226954783315
+  ChildIds: 14336109993521079591
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1225,7 +1225,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5331328706571789163
+  Id: 14336109993521079591
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1244,7 +1244,7 @@ Objects {
       Z: 0.0311400145
     }
   }
-  ParentId: 16292564423304642628
+  ParentId: 5012239844599503769
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1283,7 +1283,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10723731492520499557
+  Id: 8934899226954783315
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1297,18 +1297,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16292564423304642628
+  ParentId: 5012239844599503769
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 15630860301166121016
+        SelfId: 14904577625927623363
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 5331328706571789163
+        SelfId: 14336109993521079591
       }
     }
   }
@@ -1325,7 +1325,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15630860301166121016
+  Id: 14904577625927623363
   Name: "Point Light"
   Transform {
     Location {
@@ -1341,7 +1341,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16292564423304642628
+  ParentId: 5012239844599503769
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1375,7 +1375,7 @@ Objects {
   }
 }
 Objects {
-  Id: 367991902955168543
+  Id: 17678073975000352231
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -1392,10 +1392,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 2752093022193171404
-  ChildIds: 7287303548293220166
-  ChildIds: 7479606649604805094
+  ParentId: 2734733877656755987
+  ChildIds: 7409940343048822324
+  ChildIds: 13941523973178433601
+  ChildIds: 18351148160870740521
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1406,7 +1406,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7479606649604805094
+  Id: 18351148160870740521
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1425,7 +1425,7 @@ Objects {
       Z: 0.0311398357
     }
   }
-  ParentId: 367991902955168543
+  ParentId: 17678073975000352231
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1464,7 +1464,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7287303548293220166
+  Id: 13941523973178433601
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1478,18 +1478,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 367991902955168543
+  ParentId: 17678073975000352231
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 2752093022193171404
+        SelfId: 7409940343048822324
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 7479606649604805094
+        SelfId: 18351148160870740521
       }
     }
   }
@@ -1506,7 +1506,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2752093022193171404
+  Id: 7409940343048822324
   Name: "Point Light"
   Transform {
     Location {
@@ -1522,7 +1522,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 367991902955168543
+  ParentId: 17678073975000352231
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1556,7 +1556,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6430548120212102745
+  Id: 2202440008853313008
   Name: "DayNight_Torchfire"
   Transform {
     Location {
@@ -1573,10 +1573,10 @@ Objects {
       Z: 6.40308571
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 8018706518486273286
-  ChildIds: 15503817960882380203
-  ChildIds: 17377767450472608734
+  ParentId: 2734733877656755987
+  ChildIds: 14554519785026429913
+  ChildIds: 12105297416450461986
+  ChildIds: 6734445187637943524
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1587,7 +1587,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17377767450472608734
+  Id: 6734445187637943524
   Name: "Torch Fire VFX"
   Transform {
     Location {
@@ -1601,7 +1601,7 @@ Objects {
       Z: 0.609474063
     }
   }
-  ParentId: 6430548120212102745
+  ParentId: 2202440008853313008
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -1622,7 +1622,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15503817960882380203
+  Id: 12105297416450461986
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1636,18 +1636,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6430548120212102745
+  ParentId: 2202440008853313008
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 8018706518486273286
+        SelfId: 14554519785026429913
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17377767450472608734
+        SelfId: 6734445187637943524
       }
     }
   }
@@ -1664,7 +1664,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8018706518486273286
+  Id: 14554519785026429913
   Name: "Point Light"
   Transform {
     Location {
@@ -1680,7 +1680,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6430548120212102745
+  ParentId: 2202440008853313008
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1715,7 +1715,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11228156185542491349
+  Id: 1131656596683668412
   Name: "DayNight_Torchfire"
   Transform {
     Location {
@@ -1732,10 +1732,10 @@ Objects {
       Z: 6.40308571
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 15890570149546414128
-  ChildIds: 8668043472645523725
-  ChildIds: 4449237746946956160
+  ParentId: 2734733877656755987
+  ChildIds: 8740607821521445603
+  ChildIds: 12095129352266851359
+  ChildIds: 17531790208653469751
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1746,7 +1746,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4449237746946956160
+  Id: 17531790208653469751
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1764,7 +1764,7 @@ Objects {
       Z: 0.0311397258
     }
   }
-  ParentId: 11228156185542491349
+  ParentId: 1131656596683668412
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1789,7 +1789,7 @@ Objects {
   }
   CoreMesh {
     MeshAsset {
-      Id: 6747614045051753376
+      Id: 17587880652047825598
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -1803,7 +1803,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8668043472645523725
+  Id: 12095129352266851359
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1817,18 +1817,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11228156185542491349
+  ParentId: 1131656596683668412
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 15890570149546414128
+        SelfId: 8740607821521445603
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 4449237746946956160
+        SelfId: 17531790208653469751
       }
     }
   }
@@ -1845,7 +1845,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15890570149546414128
+  Id: 8740607821521445603
   Name: "Point Light"
   Transform {
     Location {
@@ -1861,7 +1861,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11228156185542491349
+  ParentId: 1131656596683668412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1895,7 +1895,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14515727769564940967
+  Id: 5460854584704652771
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -1912,10 +1912,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 3410087736688839085
-  ChildIds: 2846896484593989382
-  ChildIds: 18095675346085621315
+  ParentId: 2734733877656755987
+  ChildIds: 12766271919403104387
+  ChildIds: 9172054184127433314
+  ChildIds: 6012002519025529537
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -1926,7 +1926,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18095675346085621315
+  Id: 6012002519025529537
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -1945,7 +1945,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 14515727769564940967
+  ParentId: 5460854584704652771
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -1984,7 +1984,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2846896484593989382
+  Id: 9172054184127433314
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -1998,18 +1998,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14515727769564940967
+  ParentId: 5460854584704652771
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 3410087736688839085
+        SelfId: 12766271919403104387
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 18095675346085621315
+        SelfId: 6012002519025529537
       }
     }
   }
@@ -2026,7 +2026,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3410087736688839085
+  Id: 12766271919403104387
   Name: "Point Light"
   Transform {
     Location {
@@ -2042,7 +2042,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14515727769564940967
+  ParentId: 5460854584704652771
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2076,7 +2076,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16185393283494376860
+  Id: 13555245205933396756
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -2093,10 +2093,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 268879941962348842
-  ChildIds: 13492273831822132650
-  ChildIds: 17819192903144863115
+  ParentId: 2734733877656755987
+  ChildIds: 11856621342777646922
+  ChildIds: 6679357647660759412
+  ChildIds: 12898288370511310717
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2107,7 +2107,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17819192903144863115
+  Id: 12898288370511310717
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -2126,7 +2126,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 16185393283494376860
+  ParentId: 13555245205933396756
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -2165,7 +2165,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13492273831822132650
+  Id: 6679357647660759412
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -2179,18 +2179,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16185393283494376860
+  ParentId: 13555245205933396756
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 268879941962348842
+        SelfId: 11856621342777646922
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17819192903144863115
+        SelfId: 12898288370511310717
       }
     }
   }
@@ -2207,7 +2207,7 @@ Objects {
   }
 }
 Objects {
-  Id: 268879941962348842
+  Id: 11856621342777646922
   Name: "Point Light"
   Transform {
     Location {
@@ -2223,7 +2223,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16185393283494376860
+  ParentId: 13555245205933396756
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2257,7 +2257,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11566326152066145065
+  Id: 500395980902397114
   Name: "pier_light"
   Transform {
     Location {
@@ -2276,7 +2276,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -2355,7 +2355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13263138792251023392
+  Id: 3235561142485716901
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Scale {
@@ -2364,7 +2364,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 4079025086750496989
@@ -2412,7 +2412,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5593200732853125722
+  Id: 11418424891652391154
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -2429,7 +2429,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 9287064100231657554
@@ -2485,7 +2485,7 @@ Objects {
   }
 }
 Objects {
-  Id: 357145722857089894
+  Id: 12026484375490488786
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -2502,7 +2502,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 9287064100231657554
@@ -2558,7 +2558,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14054967602260886585
+  Id: 16725777999534690323
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -2575,7 +2575,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 536702862551055072
@@ -2644,7 +2644,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17194085467544642437
+  Id: 11910425334004271101
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Scale {
@@ -2653,7 +2653,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 9287064100231657554
@@ -2709,7 +2709,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9297369304530535792
+  Id: 16295044637041298092
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Location {
@@ -2726,7 +2726,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 9287064100231657554
@@ -2786,7 +2786,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14079053477639773138
+  Id: 1439375762755064817
   Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
   Transform {
     Scale {
@@ -2795,7 +2795,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 9287064100231657554
@@ -2855,7 +2855,7 @@ Objects {
   }
 }
 Objects {
-  Id: 903681564575255814
+  Id: 473179302028762068
   Name: "Fantasy Candle Lit - Group 01(Prop)"
   Transform {
     Location {
@@ -2872,9 +2872,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 10302862336215608894
-  ChildIds: 11960092912595499251
+  ParentId: 2734733877656755987
+  ChildIds: 12221648153810606156
+  ChildIds: 4249235475962378793
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2893,7 +2893,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11960092912595499251
+  Id: 4249235475962378793
   Name: "Candle Group 01"
   Transform {
     Location {
@@ -2906,7 +2906,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 903681564575255814
+  ParentId: 473179302028762068
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2935,7 +2935,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10302862336215608894
+  Id: 12221648153810606156
   Name: "ClientContext"
   Transform {
     Location {
@@ -2949,13 +2949,13 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 903681564575255814
-  ChildIds: 6179855953089669206
-  ChildIds: 681357479766442796
-  ChildIds: 15748036764357377582
-  ChildIds: 12033478304609017503
-  ChildIds: 18101142630330239628
-  ChildIds: 1892234392521732661
+  ParentId: 473179302028762068
+  ChildIds: 35852570656081652
+  ChildIds: 896415625418251091
+  ChildIds: 7941739056305856248
+  ChildIds: 11817181144535305736
+  ChildIds: 5662455045861331138
+  ChildIds: 8195549064510126458
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -2972,7 +2972,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1892234392521732661
+  Id: 8195549064510126458
   Name: "Point Light"
   Transform {
     Location {
@@ -2988,7 +2988,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3029,7 +3029,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18101142630330239628
+  Id: 5662455045861331138
   Name: "Point Light"
   Transform {
     Location {
@@ -3045,7 +3045,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3080,7 +3080,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12033478304609017503
+  Id: 11817181144535305736
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -3097,7 +3097,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3126,7 +3126,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15748036764357377582
+  Id: 7941739056305856248
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -3143,7 +3143,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3172,7 +3172,7 @@ Objects {
   }
 }
 Objects {
-  Id: 681357479766442796
+  Id: 896415625418251091
   Name: "Point Light"
   Transform {
     Location {
@@ -3188,7 +3188,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3229,7 +3229,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6179855953089669206
+  Id: 35852570656081652
   Name: "Candle Flame VFX"
   Transform {
     Location {
@@ -3244,7 +3244,7 @@ Objects {
       Z: 3
     }
   }
-  ParentId: 10302862336215608894
+  ParentId: 12221648153810606156
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3273,7 +3273,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16580289810502629556
+  Id: 4981464200046193260
   Name: "TeleportLight"
   Transform {
     Location {
@@ -3290,9 +3290,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 10805070673922897747
-  ChildIds: 4564026034367341205
+  ParentId: 2734733877656755987
+  ChildIds: 6321174180504198737
+  ChildIds: 14055866748850901769
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3304,7 +3304,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4564026034367341205
+  Id: 14055866748850901769
   Name: "Area Light"
   Transform {
     Location {
@@ -3320,7 +3320,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16580289810502629556
+  ParentId: 4981464200046193260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3355,7 +3355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10805070673922897747
+  Id: 6321174180504198737
   Name: "Teleport_light"
   Transform {
     Location {
@@ -3371,7 +3371,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16580289810502629556
+  ParentId: 4981464200046193260
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3406,7 +3406,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15661582227077359231
+  Id: 11960409695315655715
   Name: "TeleportLight"
   Transform {
     Location {
@@ -3423,9 +3423,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 16102039941072986820
-  ChildIds: 5467816501472567008
+  ParentId: 2734733877656755987
+  ChildIds: 7357134615198397387
+  ChildIds: 13529532805809054708
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3437,7 +3437,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5467816501472567008
+  Id: 13529532805809054708
   Name: "Area Light"
   Transform {
     Location {
@@ -3453,7 +3453,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15661582227077359231
+  ParentId: 11960409695315655715
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3488,7 +3488,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16102039941072986820
+  Id: 7357134615198397387
   Name: "Teleport_light"
   Transform {
     Location {
@@ -3504,7 +3504,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15661582227077359231
+  ParentId: 11960409695315655715
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3539,7 +3539,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7140024796439491033
+  Id: 515431515035023220
   Name: "TeleportLight"
   Transform {
     Location {
@@ -3556,9 +3556,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 14265415893504230705
-  ChildIds: 1126157950429890593
+  ParentId: 2734733877656755987
+  ChildIds: 3384172119033556824
+  ChildIds: 15441543382833073246
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3570,7 +3570,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1126157950429890593
+  Id: 15441543382833073246
   Name: "Area Light"
   Transform {
     Location {
@@ -3586,7 +3586,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7140024796439491033
+  ParentId: 515431515035023220
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3621,7 +3621,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14265415893504230705
+  Id: 3384172119033556824
   Name: "Teleport_light"
   Transform {
     Location {
@@ -3637,7 +3637,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7140024796439491033
+  ParentId: 515431515035023220
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3672,7 +3672,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4637561816725637779
+  Id: 5133048287742494843
   Name: "TeleportLight"
   Transform {
     Location {
@@ -3689,9 +3689,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 11045210372072071635
-  ChildIds: 1833269042991318776
+  ParentId: 2734733877656755987
+  ChildIds: 164905052933143916
+  ChildIds: 1152338149819916796
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3703,7 +3703,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1833269042991318776
+  Id: 1152338149819916796
   Name: "Area Light"
   Transform {
     Location {
@@ -3719,7 +3719,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4637561816725637779
+  ParentId: 5133048287742494843
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3754,7 +3754,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11045210372072071635
+  Id: 164905052933143916
   Name: "Teleport_light"
   Transform {
     Location {
@@ -3770,7 +3770,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4637561816725637779
+  ParentId: 5133048287742494843
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3805,7 +3805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8639090157919695789
+  Id: 10832697668525936182
   Name: "TeleportLight"
   Transform {
     Location {
@@ -3822,9 +3822,9 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 2903938008154140257
-  ChildIds: 14137070269572303641
+  ParentId: 2734733877656755987
+  ChildIds: 2015617270827531736
+  ChildIds: 14153471601552370009
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3836,7 +3836,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14137070269572303641
+  Id: 14153471601552370009
   Name: "Area Light"
   Transform {
     Location {
@@ -3852,7 +3852,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8639090157919695789
+  ParentId: 10832697668525936182
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3887,7 +3887,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2903938008154140257
+  Id: 2015617270827531736
   Name: "Teleport_light"
   Transform {
     Location {
@@ -3903,7 +3903,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8639090157919695789
+  ParentId: 10832697668525936182
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -3938,7 +3938,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1404697363325754764
+  Id: 8833835710995548905
   Name: "Fantasy Candle Lit - Sconce 01 (Prop)"
   Transform {
     Location {
@@ -3955,7 +3955,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 4079025086750496989
@@ -4003,7 +4003,7 @@ Objects {
   }
 }
 Objects {
-  Id: 465672812637217433
+  Id: 8444885802111751181
   Name: "pier_light"
   Transform {
     Location {
@@ -4022,7 +4022,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -4085,7 +4085,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2150716195646454021
+  Id: 14987572659049577708
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -4102,10 +4102,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 7276521990920705289
-  ChildIds: 16200293452676436048
-  ChildIds: 6131308715389044656
+  ParentId: 2734733877656755987
+  ChildIds: 8933636062007330886
+  ChildIds: 4059537975769125088
+  ChildIds: 17214111141229973781
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4116,7 +4116,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6131308715389044656
+  Id: 17214111141229973781
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -4135,7 +4135,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 2150716195646454021
+  ParentId: 14987572659049577708
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4174,7 +4174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16200293452676436048
+  Id: 4059537975769125088
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -4188,18 +4188,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2150716195646454021
+  ParentId: 14987572659049577708
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 7276521990920705289
+        SelfId: 8933636062007330886
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 6131308715389044656
+        SelfId: 17214111141229973781
       }
     }
   }
@@ -4216,7 +4216,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7276521990920705289
+  Id: 8933636062007330886
   Name: "Point Light"
   Transform {
     Location {
@@ -4232,7 +4232,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2150716195646454021
+  ParentId: 14987572659049577708
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4266,7 +4266,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4360276317981655362
+  Id: 15327464610126681847
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -4283,10 +4283,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 15891172030859683948
-  ChildIds: 10718767967087828755
-  ChildIds: 4469783856241882633
+  ParentId: 2734733877656755987
+  ChildIds: 6605435299699145737
+  ChildIds: 16126725977322600758
+  ChildIds: 8434366078034877170
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4297,7 +4297,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4469783856241882633
+  Id: 8434366078034877170
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -4316,7 +4316,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 4360276317981655362
+  ParentId: 15327464610126681847
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4355,7 +4355,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10718767967087828755
+  Id: 16126725977322600758
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -4369,18 +4369,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4360276317981655362
+  ParentId: 15327464610126681847
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 15891172030859683948
+        SelfId: 6605435299699145737
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 4469783856241882633
+        SelfId: 8434366078034877170
       }
     }
   }
@@ -4397,7 +4397,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15891172030859683948
+  Id: 6605435299699145737
   Name: "Point Light"
   Transform {
     Location {
@@ -4413,7 +4413,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4360276317981655362
+  ParentId: 15327464610126681847
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4447,7 +4447,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8776532127287461807
+  Id: 14606484275082661376
   Name: "pier_light"
   Transform {
     Location {
@@ -4466,7 +4466,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -4561,7 +4561,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7937871635366399114
+  Id: 9583699320498286392
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -4580,10 +4580,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 16677225412140321277
-  ChildIds: 17364869224975102852
-  ChildIds: 17784794086280120614
+  ParentId: 2734733877656755987
+  ChildIds: 1729247999073439769
+  ChildIds: 17008577827429082334
+  ChildIds: 5343806308544982735
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4594,7 +4594,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17784794086280120614
+  Id: 5343806308544982735
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -4613,7 +4613,7 @@ Objects {
       Z: 0.0311396681
     }
   }
-  ParentId: 7937871635366399114
+  ParentId: 9583699320498286392
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4652,7 +4652,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17364869224975102852
+  Id: 17008577827429082334
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -4666,18 +4666,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7937871635366399114
+  ParentId: 9583699320498286392
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 16677225412140321277
+        SelfId: 1729247999073439769
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17784794086280120614
+        SelfId: 5343806308544982735
       }
     }
   }
@@ -4694,7 +4694,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16677225412140321277
+  Id: 1729247999073439769
   Name: "Point Light"
   Transform {
     Location {
@@ -4710,7 +4710,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 7937871635366399114
+  ParentId: 9583699320498286392
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4744,7 +4744,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5487201040079513020
+  Id: 18318013194174612303
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -4763,10 +4763,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 17629358941245988200
-  ChildIds: 5221604173753716556
-  ChildIds: 3868561713515391379
+  ParentId: 2734733877656755987
+  ChildIds: 12042776192780715502
+  ChildIds: 2391225641617504447
+  ChildIds: 12688595280678737850
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4777,7 +4777,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3868561713515391379
+  Id: 12688595280678737850
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -4796,7 +4796,7 @@ Objects {
       Z: 0.0311396681
     }
   }
-  ParentId: 5487201040079513020
+  ParentId: 18318013194174612303
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -4835,7 +4835,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5221604173753716556
+  Id: 2391225641617504447
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -4849,18 +4849,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5487201040079513020
+  ParentId: 18318013194174612303
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 17629358941245988200
+        SelfId: 12042776192780715502
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 3868561713515391379
+        SelfId: 12688595280678737850
       }
     }
   }
@@ -4877,7 +4877,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17629358941245988200
+  Id: 12042776192780715502
   Name: "Point Light"
   Transform {
     Location {
@@ -4893,7 +4893,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 5487201040079513020
+  ParentId: 18318013194174612303
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4927,7 +4927,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17475261160404037570
+  Id: 14467243953897147299
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -4944,10 +4944,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9477536082917104668
-  ChildIds: 12934813840435537292
-  ChildIds: 16128180750245917448
+  ParentId: 2734733877656755987
+  ChildIds: 15247336703286895079
+  ChildIds: 2890258488496911451
+  ChildIds: 1345347798519177004
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -4958,7 +4958,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16128180750245917448
+  Id: 1345347798519177004
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -4977,7 +4977,7 @@ Objects {
       Z: 0.0311398115
     }
   }
-  ParentId: 17475261160404037570
+  ParentId: 14467243953897147299
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5016,7 +5016,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12934813840435537292
+  Id: 2890258488496911451
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -5030,18 +5030,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17475261160404037570
+  ParentId: 14467243953897147299
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 9477536082917104668
+        SelfId: 15247336703286895079
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 16128180750245917448
+        SelfId: 1345347798519177004
       }
     }
   }
@@ -5058,7 +5058,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9477536082917104668
+  Id: 15247336703286895079
   Name: "Point Light"
   Transform {
     Location {
@@ -5074,7 +5074,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17475261160404037570
+  ParentId: 14467243953897147299
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5108,7 +5108,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8224382434897227402
+  Id: 12237896082799424943
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -5125,10 +5125,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 6963941619607722911
-  ChildIds: 4088717026733510689
-  ChildIds: 12861148080214573079
+  ParentId: 2734733877656755987
+  ChildIds: 5182644179560022812
+  ChildIds: 7010291099833841333
+  ChildIds: 10519376055214636662
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5139,7 +5139,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12861148080214573079
+  Id: 10519376055214636662
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -5158,7 +5158,7 @@ Objects {
       Z: 0.0311397519
     }
   }
-  ParentId: 8224382434897227402
+  ParentId: 12237896082799424943
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5197,7 +5197,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4088717026733510689
+  Id: 7010291099833841333
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -5211,18 +5211,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8224382434897227402
+  ParentId: 12237896082799424943
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 6963941619607722911
+        SelfId: 5182644179560022812
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 12861148080214573079
+        SelfId: 10519376055214636662
       }
     }
   }
@@ -5239,7 +5239,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6963941619607722911
+  Id: 5182644179560022812
   Name: "Point Light"
   Transform {
     Location {
@@ -5255,7 +5255,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 8224382434897227402
+  ParentId: 12237896082799424943
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5289,7 +5289,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4127016980239637785
+  Id: 7251081226455847762
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -5306,10 +5306,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9618107830585403758
-  ChildIds: 7829379237042307392
-  ChildIds: 8541264470709127046
+  ParentId: 2734733877656755987
+  ChildIds: 18300014799899758059
+  ChildIds: 5708774576480165769
+  ChildIds: 8897017819459372220
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5320,7 +5320,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8541264470709127046
+  Id: 8897017819459372220
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -5339,7 +5339,7 @@ Objects {
       Z: 0.0311397035
     }
   }
-  ParentId: 4127016980239637785
+  ParentId: 7251081226455847762
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5378,7 +5378,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7829379237042307392
+  Id: 5708774576480165769
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -5392,18 +5392,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4127016980239637785
+  ParentId: 7251081226455847762
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 9618107830585403758
+        SelfId: 18300014799899758059
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 8541264470709127046
+        SelfId: 8897017819459372220
       }
     }
   }
@@ -5420,7 +5420,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9618107830585403758
+  Id: 18300014799899758059
   Name: "Point Light"
   Transform {
     Location {
@@ -5436,7 +5436,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4127016980239637785
+  ParentId: 7251081226455847762
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5470,7 +5470,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12865779136994455269
+  Id: 13517040231253063898
   Name: "pier_light"
   Transform {
     Location {
@@ -5489,7 +5489,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -5584,7 +5584,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10972437497591693547
+  Id: 2712048491180004181
   Name: "pier_light"
   Transform {
     Location {
@@ -5603,7 +5603,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -5698,7 +5698,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17402021658111535889
+  Id: 12210342543765116064
   Name: "pier_light"
   Transform {
     Location {
@@ -5717,7 +5717,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -5805,7 +5805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17282797893999681781
+  Id: 699497348031840774
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -5822,10 +5822,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 13759485263282118223
-  ChildIds: 12226149656212511248
-  ChildIds: 6001587500315808054
+  ParentId: 2734733877656755987
+  ChildIds: 4497850273340445768
+  ChildIds: 5670590257966026981
+  ChildIds: 15656377730784068686
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5836,7 +5836,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6001587500315808054
+  Id: 15656377730784068686
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -5855,7 +5855,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 17282797893999681781
+  ParentId: 699497348031840774
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -5894,7 +5894,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12226149656212511248
+  Id: 5670590257966026981
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -5908,18 +5908,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17282797893999681781
+  ParentId: 699497348031840774
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 13759485263282118223
+        SelfId: 4497850273340445768
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 6001587500315808054
+        SelfId: 15656377730784068686
       }
     }
   }
@@ -5936,7 +5936,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13759485263282118223
+  Id: 4497850273340445768
   Name: "Point Light"
   Transform {
     Location {
@@ -5952,7 +5952,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17282797893999681781
+  ParentId: 699497348031840774
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -5986,7 +5986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2661499761696408898
+  Id: 8451059102782739692
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6003,10 +6003,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 2529296078949286290
-  ChildIds: 7542915192248280682
-  ChildIds: 1609939877908148119
+  ParentId: 2734733877656755987
+  ChildIds: 12720207555206010207
+  ChildIds: 14036615016897057153
+  ChildIds: 18118771004188444485
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6017,7 +6017,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1609939877908148119
+  Id: 18118771004188444485
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -6032,7 +6032,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2661499761696408898
+  ParentId: 8451059102782739692
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6066,7 +6066,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7542915192248280682
+  Id: 14036615016897057153
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -6085,7 +6085,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 2661499761696408898
+  ParentId: 8451059102782739692
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6134,7 +6134,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2529296078949286290
+  Id: 12720207555206010207
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -6153,18 +6153,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 2661499761696408898
+  ParentId: 8451059102782739692
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 1609939877908148119
+        SelfId: 18118771004188444485
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 7542915192248280682
+        SelfId: 14036615016897057153
       }
     }
   }
@@ -6181,7 +6181,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16398360887031342798
+  Id: 16897094889702491112
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6198,10 +6198,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 2264333704813877774
-  ChildIds: 14745696599702311639
-  ChildIds: 12663203900388872654
+  ParentId: 2734733877656755987
+  ChildIds: 13262545949158729461
+  ChildIds: 9229796705667187361
+  ChildIds: 6271455800530494977
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6212,7 +6212,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12663203900388872654
+  Id: 6271455800530494977
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -6227,7 +6227,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 16398360887031342798
+  ParentId: 16897094889702491112
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6261,7 +6261,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14745696599702311639
+  Id: 9229796705667187361
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -6280,7 +6280,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 16398360887031342798
+  ParentId: 16897094889702491112
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6329,7 +6329,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2264333704813877774
+  Id: 13262545949158729461
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -6348,18 +6348,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 16398360887031342798
+  ParentId: 16897094889702491112
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 12663203900388872654
+        SelfId: 6271455800530494977
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 14745696599702311639
+        SelfId: 9229796705667187361
       }
     }
   }
@@ -6376,7 +6376,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13896280336392087764
+  Id: 2750814469133713487
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6393,10 +6393,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 2774090677621704774
-  ChildIds: 5469066915613298948
-  ChildIds: 2046253361829326229
+  ParentId: 2734733877656755987
+  ChildIds: 15859181912534764488
+  ChildIds: 17244917444527850706
+  ChildIds: 16346659895388910684
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6407,7 +6407,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2046253361829326229
+  Id: 16346659895388910684
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -6422,7 +6422,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13896280336392087764
+  ParentId: 2750814469133713487
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6456,7 +6456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5469066915613298948
+  Id: 17244917444527850706
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -6474,7 +6474,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 13896280336392087764
+  ParentId: 2750814469133713487
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6523,7 +6523,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2774090677621704774
+  Id: 15859181912534764488
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -6542,18 +6542,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 13896280336392087764
+  ParentId: 2750814469133713487
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 2046253361829326229
+        SelfId: 16346659895388910684
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 5469066915613298948
+        SelfId: 17244917444527850706
       }
     }
   }
@@ -6570,7 +6570,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4375980191452214702
+  Id: 12073950921091012111
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6587,10 +6587,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 15561063587488684156
-  ChildIds: 5371779791535775332
-  ChildIds: 16255592214277914839
+  ParentId: 2734733877656755987
+  ChildIds: 15724941598647703250
+  ChildIds: 15242121782397797038
+  ChildIds: 18259531249159158658
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6601,7 +6601,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16255592214277914839
+  Id: 18259531249159158658
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -6616,7 +6616,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 4375980191452214702
+  ParentId: 12073950921091012111
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6650,7 +6650,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5371779791535775332
+  Id: 15242121782397797038
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -6669,7 +6669,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 4375980191452214702
+  ParentId: 12073950921091012111
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6718,7 +6718,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15561063587488684156
+  Id: 15724941598647703250
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -6737,18 +6737,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 4375980191452214702
+  ParentId: 12073950921091012111
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 16255592214277914839
+        SelfId: 18259531249159158658
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 5371779791535775332
+        SelfId: 15242121782397797038
       }
     }
   }
@@ -6765,7 +6765,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11427283589489784747
+  Id: 12060605365665241362
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6782,10 +6782,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 9604357597430120081
-  ChildIds: 1724703220316669580
-  ChildIds: 4608328720359777944
+  ParentId: 2734733877656755987
+  ChildIds: 13136728648078090927
+  ChildIds: 4603443046554035755
+  ChildIds: 6223275278946242504
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6796,7 +6796,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4608328720359777944
+  Id: 6223275278946242504
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -6811,7 +6811,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 11427283589489784747
+  ParentId: 12060605365665241362
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6845,7 +6845,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1724703220316669580
+  Id: 4603443046554035755
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -6864,7 +6864,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 11427283589489784747
+  ParentId: 12060605365665241362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -6913,7 +6913,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9604357597430120081
+  Id: 13136728648078090927
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -6932,18 +6932,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 11427283589489784747
+  ParentId: 12060605365665241362
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 4608328720359777944
+        SelfId: 6223275278946242504
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 1724703220316669580
+        SelfId: 4603443046554035755
       }
     }
   }
@@ -6960,7 +6960,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15956014667708018194
+  Id: 18085874458671316420
   Name: "Portal_area_Amethyst"
   Transform {
     Location {
@@ -6977,10 +6977,10 @@ Objects {
       Z: 3.04616618
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 18276069832621606405
-  ChildIds: 5514622993291045981
-  ChildIds: 8945675835659558926
+  ParentId: 2734733877656755987
+  ChildIds: 10081546786573290244
+  ChildIds: 8928841458750114446
+  ChildIds: 5493620541956129803
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -6991,7 +6991,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8945675835659558926
+  Id: 5493620541956129803
   Name: "Amethyst_light"
   Transform {
     Location {
@@ -7006,7 +7006,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15956014667708018194
+  ParentId: 18085874458671316420
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -7040,7 +7040,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5514622993291045981
+  Id: 8928841458750114446
   Name: "Amethyst01_e"
   Transform {
     Location {
@@ -7059,7 +7059,7 @@ Objects {
       Z: 3.55635905
     }
   }
-  ParentId: 15956014667708018194
+  ParentId: 18085874458671316420
   UnregisteredParameters {
     Overrides {
       Name: "ma:Font.Faces:id"
@@ -7108,7 +7108,7 @@ Objects {
   }
 }
 Objects {
-  Id: 18276069832621606405
+  Id: 10081546786573290244
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -7127,18 +7127,18 @@ Objects {
       Z: 2.10201406
     }
   }
-  ParentId: 15956014667708018194
+  ParentId: 18085874458671316420
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 8945675835659558926
+        SelfId: 5493620541956129803
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 5514622993291045981
+        SelfId: 8928841458750114446
       }
     }
   }
@@ -7155,7 +7155,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13433994598407619432
+  Id: 8808659135353013750
   Name: "pier_light"
   Transform {
     Location {
@@ -7174,7 +7174,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7237,7 +7237,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6668127406521232194
+  Id: 6684284633689431870
   Name: "pier_light"
   Transform {
     Location {
@@ -7256,7 +7256,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7319,7 +7319,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3896705224109575555
+  Id: 15528540288938406926
   Name: "pier_light"
   Transform {
     Location {
@@ -7338,7 +7338,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7401,7 +7401,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11334806765438295509
+  Id: 7890953868869010945
   Name: "pier_light"
   Transform {
     Location {
@@ -7420,7 +7420,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7483,7 +7483,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11365163215000777830
+  Id: 15113086340858534746
   Name: "pier_light"
   Transform {
     Location {
@@ -7502,7 +7502,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7565,7 +7565,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9408859879673475031
+  Id: 11361370156344537827
   Name: "pier_light"
   Transform {
     Location {
@@ -7584,7 +7584,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7647,7 +7647,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17967686865525116951
+  Id: 268802483736772439
   Name: "pier_light"
   Transform {
     Location {
@@ -7666,7 +7666,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7729,7 +7729,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10809722673786922423
+  Id: 2998406430066090465
   Name: "pier_light"
   Transform {
     Location {
@@ -7748,7 +7748,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7811,7 +7811,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11998056054490270728
+  Id: 11579465441436510571
   Name: "pier_light"
   Transform {
     Location {
@@ -7830,7 +7830,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7893,7 +7893,7 @@ Objects {
   }
 }
 Objects {
-  Id: 58706929121812912
+  Id: 2196125264700642311
   Name: "pier_light"
   Transform {
     Location {
@@ -7912,7 +7912,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -7975,7 +7975,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1363103021517766070
+  Id: 11411580986241876100
   Name: "pier_light"
   Transform {
     Location {
@@ -7994,7 +7994,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 7886655707835920875
@@ -8057,7 +8057,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12315076119667887947
+  Id: 4413209428057068185
   Name: "pier_light"
   Transform {
     Scale {
@@ -8066,7 +8066,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8135,7 +8135,7 @@ Objects {
   }
 }
 Objects {
-  Id: 352636678265443834
+  Id: 15994500576364434363
   Name: "pier_light"
   Transform {
     Location {
@@ -8154,7 +8154,7 @@ Objects {
       Z: 3.91012931
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -8233,7 +8233,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7360735255179322204
+  Id: 16146366421378195823
   Name: "pier_light"
   Transform {
     Location {
@@ -8252,7 +8252,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -8340,7 +8340,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9657843246615846283
+  Id: 11414483199453843651
   Name: "pier_light"
   Transform {
     Location {
@@ -8359,7 +8359,7 @@ Objects {
       Z: 3.91012955
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -8447,7 +8447,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1915380931494687656
+  Id: 13370144577486350718
   Name: "pier_light"
   Transform {
     Location {
@@ -8466,7 +8466,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8522,7 +8522,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11773022085513232127
+  Id: 14394466445233171413
   Name: "pier_light"
   Transform {
     Location {
@@ -8541,7 +8541,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8597,7 +8597,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12989106112342540020
+  Id: 12842086346022580382
   Name: "pier_light"
   Transform {
     Location {
@@ -8616,7 +8616,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8685,7 +8685,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7448712587899693591
+  Id: 1070349304217062868
   Name: "pier_light"
   Transform {
     Location {
@@ -8704,7 +8704,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8773,7 +8773,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1803347609793172713
+  Id: 15733527552377199356
   Name: "pier_light"
   Transform {
     Location {
@@ -8792,7 +8792,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8831,7 +8831,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14248460945698758063
+  Id: 7107127509559463491
   Name: "pier_light"
   Transform {
     Location {
@@ -8850,7 +8850,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -8919,7 +8919,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17911952608486624194
+  Id: 2435501860766401901
   Name: "pier_light"
   Transform {
     Location {
@@ -8938,7 +8938,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9007,7 +9007,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3114761256709412839
+  Id: 15489259775106399200
   Name: "pier_light"
   Transform {
     Location {
@@ -9026,7 +9026,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9095,7 +9095,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14692653228414136302
+  Id: 15057708288406206794
   Name: "pier_light"
   Transform {
     Location {
@@ -9114,7 +9114,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9222,7 +9222,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2824721140200672262
+  Id: 15841055232997478733
   Name: "pier_light"
   Transform {
     Location {
@@ -9241,7 +9241,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9317,7 +9317,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17922286060703393138
+  Id: 12370153381677600351
   Name: "pier_light"
   Transform {
     Location {
@@ -9336,7 +9336,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9405,7 +9405,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4110505459214736049
+  Id: 16891912284351776202
   Name: "pier_light"
   Transform {
     Location {
@@ -9424,7 +9424,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9493,7 +9493,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13538140291135848790
+  Id: 1894184566532885536
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -9510,10 +9510,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 11976832924652192334
-  ChildIds: 10011311488015583814
-  ChildIds: 16014263618754069938
+  ParentId: 2734733877656755987
+  ChildIds: 12409113244076692034
+  ChildIds: 786231415270683613
+  ChildIds: 3313557302154568929
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9524,7 +9524,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16014263618754069938
+  Id: 3313557302154568929
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -9543,7 +9543,7 @@ Objects {
       Z: 0.0311396979
     }
   }
-  ParentId: 13538140291135848790
+  ParentId: 1894184566532885536
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9582,7 +9582,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10011311488015583814
+  Id: 786231415270683613
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -9596,18 +9596,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13538140291135848790
+  ParentId: 1894184566532885536
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 11976832924652192334
+        SelfId: 12409113244076692034
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 16014263618754069938
+        SelfId: 3313557302154568929
       }
     }
   }
@@ -9624,7 +9624,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11976832924652192334
+  Id: 12409113244076692034
   Name: "Point Light"
   Transform {
     Location {
@@ -9640,7 +9640,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13538140291135848790
+  ParentId: 1894184566532885536
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9674,7 +9674,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2308022666871632407
+  Id: 11310353870972205969
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -9691,10 +9691,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 6862629647716377396
-  ChildIds: 8007018504253974913
-  ChildIds: 9720826011449120861
+  ParentId: 2734733877656755987
+  ChildIds: 4681361140541591071
+  ChildIds: 18399301324552850920
+  ChildIds: 16784428380377654195
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9705,7 +9705,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9720826011449120861
+  Id: 16784428380377654195
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -9724,7 +9724,7 @@ Objects {
       Z: 0.0311396979
     }
   }
-  ParentId: 2308022666871632407
+  ParentId: 11310353870972205969
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9763,7 +9763,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8007018504253974913
+  Id: 18399301324552850920
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -9777,18 +9777,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2308022666871632407
+  ParentId: 11310353870972205969
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 6862629647716377396
+        SelfId: 4681361140541591071
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 9720826011449120861
+        SelfId: 16784428380377654195
       }
     }
   }
@@ -9805,7 +9805,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6862629647716377396
+  Id: 4681361140541591071
   Name: "Point Light"
   Transform {
     Location {
@@ -9821,7 +9821,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2308022666871632407
+  ParentId: 11310353870972205969
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9855,7 +9855,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14032844747699646498
+  Id: 14665211706492018077
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -9872,10 +9872,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 16184073648368129561
-  ChildIds: 11173663253592497857
-  ChildIds: 17226283391679717317
+  ParentId: 2734733877656755987
+  ChildIds: 3651128603191947484
+  ChildIds: 8020891769222221145
+  ChildIds: 14822553236276224667
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -9886,7 +9886,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17226283391679717317
+  Id: 14822553236276224667
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -9905,7 +9905,7 @@ Objects {
       Z: 0.0311394669
     }
   }
-  ParentId: 14032844747699646498
+  ParentId: 14665211706492018077
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -9944,7 +9944,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11173663253592497857
+  Id: 8020891769222221145
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -9958,18 +9958,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14032844747699646498
+  ParentId: 14665211706492018077
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 16184073648368129561
+        SelfId: 3651128603191947484
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17226283391679717317
+        SelfId: 14822553236276224667
       }
     }
   }
@@ -9986,7 +9986,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16184073648368129561
+  Id: 3651128603191947484
   Name: "Point Light"
   Transform {
     Location {
@@ -10002,7 +10002,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14032844747699646498
+  ParentId: 14665211706492018077
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10036,7 +10036,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3159959226056911491
+  Id: 12842222597143132451
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10053,10 +10053,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 8688931396478579869
-  ChildIds: 763403882607637411
-  ChildIds: 11356962194939065226
+  ParentId: 2734733877656755987
+  ChildIds: 1474186964780102616
+  ChildIds: 1611644868802240290
+  ChildIds: 16626854772684732212
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10067,7 +10067,7 @@ Objects {
   }
 }
 Objects {
-  Id: 11356962194939065226
+  Id: 16626854772684732212
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10086,7 +10086,7 @@ Objects {
       Z: 0.0311397258
     }
   }
-  ParentId: 3159959226056911491
+  ParentId: 12842222597143132451
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10125,7 +10125,7 @@ Objects {
   }
 }
 Objects {
-  Id: 763403882607637411
+  Id: 1611644868802240290
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -10139,18 +10139,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3159959226056911491
+  ParentId: 12842222597143132451
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 8688931396478579869
+        SelfId: 1474186964780102616
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 11356962194939065226
+        SelfId: 16626854772684732212
       }
     }
   }
@@ -10167,7 +10167,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8688931396478579869
+  Id: 1474186964780102616
   Name: "Point Light"
   Transform {
     Location {
@@ -10183,7 +10183,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 3159959226056911491
+  ParentId: 12842222597143132451
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10217,7 +10217,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9026832340290964757
+  Id: 20307190376054241
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10234,10 +10234,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 7756062318836334883
-  ChildIds: 16433616108805180000
-  ChildIds: 13480121446679143100
+  ParentId: 2734733877656755987
+  ChildIds: 14009818967276692471
+  ChildIds: 9548678841306507175
+  ChildIds: 11930542681777789841
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10248,7 +10248,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13480121446679143100
+  Id: 11930542681777789841
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10267,7 +10267,7 @@ Objects {
       Z: 0.0311396681
     }
   }
-  ParentId: 9026832340290964757
+  ParentId: 20307190376054241
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10306,7 +10306,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16433616108805180000
+  Id: 9548678841306507175
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -10320,18 +10320,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9026832340290964757
+  ParentId: 20307190376054241
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 7756062318836334883
+        SelfId: 14009818967276692471
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 13480121446679143100
+        SelfId: 11930542681777789841
       }
     }
   }
@@ -10348,7 +10348,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7756062318836334883
+  Id: 14009818967276692471
   Name: "Point Light"
   Transform {
     Location {
@@ -10364,7 +10364,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 9026832340290964757
+  ParentId: 20307190376054241
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10398,7 +10398,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17093580916975704648
+  Id: 4471481913042348714
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10415,10 +10415,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 16083375726991477605
-  ChildIds: 5329226380711245466
-  ChildIds: 7553594746606414712
+  ParentId: 2734733877656755987
+  ChildIds: 4479417163981272924
+  ChildIds: 15222616638981109035
+  ChildIds: 896862737480698100
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10429,7 +10429,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7553594746606414712
+  Id: 896862737480698100
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10448,7 +10448,7 @@ Objects {
       Z: 0.0311396662
     }
   }
-  ParentId: 17093580916975704648
+  ParentId: 4471481913042348714
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10487,7 +10487,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5329226380711245466
+  Id: 15222616638981109035
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -10501,18 +10501,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17093580916975704648
+  ParentId: 4471481913042348714
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 16083375726991477605
+        SelfId: 4479417163981272924
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 7553594746606414712
+        SelfId: 896862737480698100
       }
     }
   }
@@ -10529,7 +10529,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16083375726991477605
+  Id: 4479417163981272924
   Name: "Point Light"
   Transform {
     Location {
@@ -10545,7 +10545,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 17093580916975704648
+  ParentId: 4471481913042348714
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10579,7 +10579,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6489103501675572844
+  Id: 18278681998773189956
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10596,10 +10596,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 14451802226832528039
-  ChildIds: 13500063967194007378
-  ChildIds: 5684892714720817784
+  ParentId: 2734733877656755987
+  ChildIds: 1173799682446382533
+  ChildIds: 7293077876560062755
+  ChildIds: 14499523248629254855
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10610,7 +10610,7 @@ Objects {
   }
 }
 Objects {
-  Id: 5684892714720817784
+  Id: 14499523248629254855
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10629,7 +10629,7 @@ Objects {
       Z: 0.0311396755
     }
   }
-  ParentId: 6489103501675572844
+  ParentId: 18278681998773189956
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10668,7 +10668,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13500063967194007378
+  Id: 7293077876560062755
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -10682,18 +10682,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6489103501675572844
+  ParentId: 18278681998773189956
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 14451802226832528039
+        SelfId: 1173799682446382533
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 5684892714720817784
+        SelfId: 14499523248629254855
       }
     }
   }
@@ -10710,7 +10710,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14451802226832528039
+  Id: 1173799682446382533
   Name: "Point Light"
   Transform {
     Location {
@@ -10726,7 +10726,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6489103501675572844
+  ParentId: 18278681998773189956
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10760,7 +10760,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2799761177195545118
+  Id: 10573372912657711362
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10777,10 +10777,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 7482891418480780104
-  ChildIds: 319793460514256689
-  ChildIds: 17890654015506636845
+  ParentId: 2734733877656755987
+  ChildIds: 14180224805550198027
+  ChildIds: 12722091182404614223
+  ChildIds: 8525235306182895807
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10791,7 +10791,7 @@ Objects {
   }
 }
 Objects {
-  Id: 17890654015506636845
+  Id: 8525235306182895807
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10810,7 +10810,7 @@ Objects {
       Z: 0.0311397295
     }
   }
-  ParentId: 2799761177195545118
+  ParentId: 10573372912657711362
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -10849,7 +10849,7 @@ Objects {
   }
 }
 Objects {
-  Id: 319793460514256689
+  Id: 12722091182404614223
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -10863,18 +10863,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2799761177195545118
+  ParentId: 10573372912657711362
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 7482891418480780104
+        SelfId: 14180224805550198027
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 17890654015506636845
+        SelfId: 8525235306182895807
       }
     }
   }
@@ -10891,7 +10891,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7482891418480780104
+  Id: 14180224805550198027
   Name: "Point Light"
   Transform {
     Location {
@@ -10907,7 +10907,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 2799761177195545118
+  ParentId: 10573372912657711362
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10941,7 +10941,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14245301753964360022
+  Id: 8244839711361755796
   Name: "DayNight_Window"
   Transform {
     Location {
@@ -10958,10 +10958,10 @@ Objects {
       Z: 14.1547508
     }
   }
-  ParentId: 14259893880566974612
-  ChildIds: 784151027058885910
-  ChildIds: 12128300699583060605
-  ChildIds: 4087259731907623762
+  ParentId: 2734733877656755987
+  ChildIds: 6271175820301601891
+  ChildIds: 16586303377872454503
+  ChildIds: 18134134997851872209
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -10972,7 +10972,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4087259731907623762
+  Id: 18134134997851872209
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
@@ -10991,7 +10991,7 @@ Objects {
       Z: 0.0311396979
     }
   }
-  ParentId: 14245301753964360022
+  ParentId: 8244839711361755796
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:id"
@@ -11030,7 +11030,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12128300699583060605
+  Id: 16586303377872454503
   Name: "Lantern_DayNight"
   Transform {
     Location {
@@ -11044,18 +11044,18 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14245301753964360022
+  ParentId: 8244839711361755796
   UnregisteredParameters {
     Overrides {
       Name: "cs:Light"
       ObjectReference {
-        SelfId: 784151027058885910
+        SelfId: 6271175820301601891
       }
     }
     Overrides {
       Name: "cs:Flame"
       ObjectReference {
-        SelfId: 4087259731907623762
+        SelfId: 18134134997851872209
       }
     }
   }
@@ -11072,7 +11072,7 @@ Objects {
   }
 }
 Objects {
-  Id: 784151027058885910
+  Id: 6271175820301601891
   Name: "Point Light"
   Transform {
     Location {
@@ -11088,7 +11088,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 14245301753964360022
+  ParentId: 8244839711361755796
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -11122,7 +11122,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13745433771474729281
+  Id: 2372960081080157016
   Name: "pier_light"
   Transform {
     Location {
@@ -11141,7 +11141,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -11220,7 +11220,7 @@ Objects {
   }
 }
 Objects {
-  Id: 13833050372502527800
+  Id: 16313289657971224970
   Name: "pier_light"
   Transform {
     Location {
@@ -11239,7 +11239,7 @@ Objects {
       Z: 4.27713823
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569
@@ -11318,7 +11318,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16415225926143670563
+  Id: 4870027877899825574
   Name: "pier_light"
   Transform {
     Location {
@@ -11337,7 +11337,7 @@ Objects {
       Z: 2.10210586
     }
   }
-  ParentId: 14259893880566974612
+  ParentId: 2734733877656755987
   TemplateInstance {
     ParameterOverrideMap {
       key: 2527360909484214569

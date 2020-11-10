@@ -245,7 +245,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5138524305110115923
+              Id: 12294639203711226302
             }
           }
           Overrides {
@@ -381,5 +381,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

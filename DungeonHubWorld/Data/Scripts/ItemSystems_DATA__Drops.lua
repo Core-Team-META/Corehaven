@@ -1,31 +1,25 @@
 ﻿return {
   {
     DropKey = 'CHEAT',
-    ItemName = 'Jade Sun Staff',
+    ItemName = 'Almira\'s Claymore',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Goblin King\'s Razor',
+    ItemName = 'Backtwister',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Goblin King\'s Crown',
+    ItemName = 'Curved Knife',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
     DropKey = 'CHEAT',
-    ItemName = 'Spark of Life',
-    Likelihood = '1',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
-   {
-    DropKey = 'CHEAT',
-    ItemName = 'Shattered Dreams',
+    ItemName = 'Dull Blade',
     Likelihood = '1',
     ['Author Notes (will be ignored by script)'] = '',
   },

@@ -12,4 +12,5 @@ ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Conte
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_011.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_012.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_018.png"
+ReleaseNotes: "- Fixed a few script errors and incorrect visuals\r\n- Added some new epics, look for them in Nightmare and Infinite difficulty"
 OwnerId: "37edf67a267b45bd8b93be513218b428"

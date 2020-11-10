@@ -7,7 +7,7 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 
-local DESPAWN_TIME = 1.0
+local DESPAWN_TIME = 120.0
 local SUMMON_DESPAWN_TIME = 30.0
 local TASK_HISTORY_LENGTH = 8
 
@@ -541,20 +541,11 @@ function Tick(deltaTime)
 					local removedTarget = false
 
 					for player, _ in pairs(npcState.threatTable) do
-						if not Object.IsValid(player) or player.isDead then
-							-- Our target might have left, and we can't access that player, so we use  process of elimination
-							removedTarget = true
-							local targetId = API_NPC.GetTargetId(npc)
-
-							for _, otherPlayer in pairs(Game.GetPlayers()) do
-								if otherPlayer ~= player and otherPlayer.id == targetId then
-									removedTarget = false
-									break
-								end
-							end
-
-							if removedTarget then
+						-- In Corehaven, dummies reset when you run away
+						if not Object.IsValid(player) or player.isDead or (npc:GetWorldPosition() - player:GetWorldPosition()).size > 4000.0 then
+							if player == API_NPC.GetTarget(npc) then
 								API_NPC.SetTarget(npc, nil)
+								removedTarget = true
 							end
 
 							npcState.threatTable[player] = nil

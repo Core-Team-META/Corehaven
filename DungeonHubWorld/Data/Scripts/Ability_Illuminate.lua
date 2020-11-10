@@ -28,15 +28,11 @@ function data.onCastClient(caster, target)
 end
 
 function data.onCastServer(caster, target)
+	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
+
 	Task.Spawn(function()
 		for i = 1, N_TICKS do
 			Task.Wait(1.0)
-
-			if not Object.IsValid(caster) then
-				return
-			end
-
-			local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 
 			for _, player in pairs(Game.GetPlayers()) do
 				local distance = (player:GetWorldPosition() - target).size

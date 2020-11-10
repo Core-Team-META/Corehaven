@@ -9,7 +9,6 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local Item = require(script:GetCustomProperty("Item"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local SALVAGE_ITEM_MUID = script:GetCustomProperty("SalvageItem"):match("(.+):")
-local REFERENCE_GROUP = script:GetCustomProperty("ReferenceGroup"):WaitForObject()
 
 local STARTER_ITEM_MUIDS = {
     script:GetCustomProperty("StarterItem1"):match("(.+):"),
@@ -133,7 +132,7 @@ function Database:_LoadCatalog()
     for _,data in ipairs(DATA_CATALOGS) do
         for _,row in ipairs(data) do
             assert(not self.itemDatasByName[row.Name], string.format("duplicate item name is not allowed - %s", row.Name))
-            --assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))    This doesn't work since one has the name suffix
+            assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))
             assert(Item.TYPES[row.Type] or Item.NONEQUIPPABLE_TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
             assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
 
@@ -257,17 +256,6 @@ function Database:_LoadCatalog()
     table.sort(recipeBookPageNumbers)
     for n,p in ipairs(recipeBookPageNumbers) do
         assert(recipeBookPageNumbers[n] == p, string.format("crafting recipe page numbers must form a consecutive sequence starting at 1. Page #%d is missing.", n))
-    end
-
-    -- Check that we have references to all objects
-    local references = {}
-
-    for _, muid in pairs(REFERENCE_GROUP:GetCustomProperties()) do
-        references[muid:match("^(.+):")] = true
-    end
-
-    for muid, itemData in pairs(self.itemDatasByMUID) do
-        assert(references[muid], string.format("Reference to object (%s | %s) missing", itemData.name, muid))
     end
 end
 

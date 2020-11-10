@@ -17,12 +17,15 @@
         }
       }
       Overrides {
-        Name: "cs:APISharedKey"
-        AssetReference {
-          Id: 1715755657077344107
+        Name: "cs:StorageKey"
+        NetReference {
+          Key: "f2bdd2a7a062442dbe0644309d04835e"
+          Type {
+            Value: "mc:enetreferencetype:sharedpersistence"
+          }
         }
       }
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

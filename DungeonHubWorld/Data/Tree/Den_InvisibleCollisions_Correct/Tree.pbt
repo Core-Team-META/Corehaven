@@ -1,7 +1,7 @@
 ﻿Name: "Den_InvisibleCollisions_Correct"
-RootId: 17005439191888912740
+RootId: 9211091772664071522
 Objects {
-  Id: 11077042516851517018
+  Id: 5920660954095464953
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -20,7 +20,7 @@ Objects {
       Z: 0.580622733
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -59,7 +59,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10460076041302503811
+  Id: 2668399629174846923
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -78,7 +78,7 @@ Objects {
       Z: 0.580625415
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -117,7 +117,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2986932152052931967
+  Id: 14986261346071021963
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -135,7 +135,7 @@ Objects {
       Z: 0.580623806
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -174,7 +174,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7366857481122154824
+  Id: 1437102343533569494
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -191,7 +191,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -230,7 +230,7 @@ Objects {
   }
 }
 Objects {
-  Id: 16955296696785981768
+  Id: 17791643529757513118
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -247,7 +247,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -286,7 +286,7 @@ Objects {
   }
 }
 Objects {
-  Id: 7802005528823093152
+  Id: 3726502839803710467
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -303,7 +303,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -342,7 +342,7 @@ Objects {
   }
 }
 Objects {
-  Id: 2389143544412514276
+  Id: 4801582602849848436
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -361,7 +361,7 @@ Objects {
       Z: 0.580631256
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -400,7 +400,7 @@ Objects {
   }
 }
 Objects {
-  Id: 1168744729181535955
+  Id: 6383409687476762403
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -417,7 +417,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -456,7 +456,7 @@ Objects {
   }
 }
 Objects {
-  Id: 4440472765672351338
+  Id: 1171224921823210990
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -475,7 +475,7 @@ Objects {
       Z: 0.580628335
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"
@@ -514,7 +514,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6869867073004437966
+  Id: 9022017657150600554
   Name: "Stairs_Collision"
   Transform {
     Location {
@@ -533,7 +533,7 @@ Objects {
       Z: 0.580630243
     }
   }
-  ParentId: 17005439191888912740
+  ParentId: 9211091772664071522
   UnregisteredParameters {
     Overrides {
       Name: "ma:Shared_BaseMaterial:utile"

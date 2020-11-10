@@ -195,7 +195,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -254,7 +254,7 @@
       }
     }
     Assets {
-      Id: 17247896461110156834
+      Id: 5649559338683583195
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -267,5 +267,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

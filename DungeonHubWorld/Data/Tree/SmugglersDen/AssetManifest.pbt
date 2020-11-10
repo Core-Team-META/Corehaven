@@ -8,6 +8,15 @@
   }
 }
 Assets {
+  Id: 17587880652047825598
+  Name: "Cylinder - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_001"
+  }
+}
+Assets {
   Id: 17406869057951057684
   Name: "Ceramic Terracotta Pots Old 01"
   PlatformAssetType: 2
@@ -206,15 +215,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13588168874842906464
-  Name: "Cone - Truncated Wide"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_003"
-  }
-}
-Assets {
   Id: 13540258823282010952
   Name: "Reinforced Crate 150cm"
   PlatformAssetType: 1
@@ -302,6 +302,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_005"
+  }
+}
+Assets {
+  Id: 9049573211634404578
+  Name: "Cone - Truncated Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_003"
   }
 }
 Assets {
@@ -422,15 +431,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6747614045051753376
-  Name: "Cylinder - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_001"
-  }
-}
-Assets {
   Id: 6448135304331344928
   Name: "Chain Ceiling Anchor"
   PlatformAssetType: 1
@@ -494,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3982193030776093519
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 3613314652151165874
   Name: "Decal Sand Patch"
   PlatformAssetType: 14
@@ -527,15 +536,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_tree_oak_002"
-  }
-}
-Assets {
-  Id: 3190252363319773843
-  Name: "Sphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_sphere_002"
   }
 }
 Assets {

@@ -122,7 +122,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 16477742065922762353
+              Id: 13206449335842547921
             }
             Color {
               R: 1
@@ -403,7 +403,7 @@
       }
     }
     Assets {
-      Id: 16477742065922762353
+      Id: 13206449335842547921
       Name: "UI Gradient Circular 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -443,5 +443,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

@@ -1,7 +1,7 @@
 ﻿Name: "Ambience"
-RootId: 10018863690926555773
+RootId: 7627804051954587174
 Objects {
-  Id: 606801068493878766
+  Id: 16723521050681207453
   Name: "\"Colossal Boss Fight\" Music Construction Kit (Layers) 01"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   UnregisteredParameters {
     Overrides {
       Name: "bp:Bass Hit Volume"
@@ -93,7 +93,7 @@ Objects {
   }
 }
 Objects {
-  Id: 3774515095068486761
+  Id: 14758886592556245180
   Name: "\"Colossal Boss Fight\" Music Construction Kit (Layers) 01"
   Transform {
     Location {
@@ -109,7 +109,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   UnregisteredParameters {
     Overrides {
       Name: "bp:Bass Hit Volume"
@@ -185,7 +185,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14240832410796017082
+  Id: 6357111383552273138
   Name: "\"Epic Tides Battle\" Music Construction Kit (Layers) 01"
   Transform {
     Location {
@@ -201,7 +201,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   UnregisteredParameters {
     Overrides {
       Name: "bp:Hand Percussion Volume"
@@ -277,7 +277,7 @@ Objects {
   }
 }
 Objects {
-  Id: 15671460061161008163
+  Id: 2707741276848699640
   Name: "Crowd Restaurant Cutlery Tables Loop 01 SFX"
   Transform {
     Location {
@@ -293,7 +293,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -315,7 +315,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8059885381250936775
+  Id: 5351719679028909636
   Name: "Crowd Tavern Small Loop 01 SFX"
   Transform {
     Location {
@@ -331,7 +331,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -353,7 +353,7 @@ Objects {
   }
 }
 Objects {
-  Id: 12426398981356824438
+  Id: 6883077274801680464
   Name: "Crowd Tavern Small Loop 01 SFX"
   Transform {
     Location {
@@ -369,7 +369,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -390,7 +390,7 @@ Objects {
   }
 }
 Objects {
-  Id: 14606410321769144930
+  Id: 280483760258201032
   Name: "Fire and Flame Burning Loop Set 01 SFX"
   Transform {
     Location {
@@ -406,7 +406,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -432,7 +432,7 @@ Objects {
   }
 }
 Objects {
-  Id: 6822293508741397003
+  Id: 7992221934250895309
   Name: "Fire and Flame Burning Loop Set 01 SFX"
   Transform {
     Location {
@@ -448,7 +448,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 10018863690926555773
+  ParentId: 7627804051954587174
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

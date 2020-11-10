@@ -493,7 +493,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 6787131228221938650
+              Id: 8700548731784444270
             }
           }
         }
@@ -597,7 +597,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3190252363319773843
+            Id: 3982193030776093519
           }
           Teams {
           }
@@ -909,7 +909,7 @@
       }
     }
     Assets {
-      Id: 3190252363319773843
+      Id: 3982193030776093519
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -931,5 +931,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

@@ -7,13 +7,13 @@
       Overrides {
         Name: "cs:APIDamage"
         AssetReference {
-          Id: 15583631668858138722
+          Id: 16915150100797142409
         }
       }
       Overrides {
         Name: "cs:API_NPC"
         AssetReference {
-          Id: 2677594612280678857
+          Id: 1793953622129874134
         }
       }
       Overrides {
@@ -37,5 +37,5 @@
       }
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

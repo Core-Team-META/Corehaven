@@ -629,7 +629,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15932821756277556196
+            Id: 10413465125058823580
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -700,7 +700,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15932821756277556196
+            Id: 10413465125058823580
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -771,7 +771,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16099460833972194012
+            Id: 5271639852184247581
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1204,7 +1204,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1246,7 +1246,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1338,7 +1338,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1388,7 +1388,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1430,7 +1430,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1513,7 +1513,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1563,7 +1563,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 17247896461110156834
+            Id: 5649559338683583195
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1901,7 +1901,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15932821756277556196
+            Id: 10413465125058823580
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -1972,7 +1972,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 15932821756277556196
+            Id: 10413465125058823580
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -2043,7 +2043,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16099460833972194012
+            Id: 5271639852184247581
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3081,7 +3081,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16099460833972194012
+            Id: 5271639852184247581
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3180,7 +3180,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3198403501401616712
+            Id: 18039984299850060191
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -3209,7 +3209,7 @@
       }
     }
     Assets {
-      Id: 15932821756277556196
+      Id: 10413465125058823580
       Name: "Horn"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -3218,7 +3218,7 @@
       }
     }
     Assets {
-      Id: 16099460833972194012
+      Id: 5271639852184247581
       Name: "Ring - Extra Thick"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -3254,7 +3254,7 @@
       }
     }
     Assets {
-      Id: 17247896461110156834
+      Id: 5649559338683583195
       Name: "Fantasy Shield Strap 01"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -3308,7 +3308,7 @@
       }
     }
     Assets {
-      Id: 3198403501401616712
+      Id: 18039984299850060191
       Name: "Fantasy Human Guy"
       PlatformAssetType: 17
       PrimaryAsset {
@@ -3321,5 +3321,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

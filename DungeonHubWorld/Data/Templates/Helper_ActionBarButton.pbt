@@ -137,7 +137,7 @@
           }
           Image {
             Brush {
-              Id: 13778967266379385506
+              Id: 6373296629710202021
             }
             Color {
               A: 1
@@ -739,7 +739,7 @@
           AddSizeToParentIfUsingParentSize: true
           Image {
             Brush {
-              Id: 13778967266379385506
+              Id: 6373296629710202021
             }
             Color {
               R: 0.399999976
@@ -953,7 +953,7 @@
       }
     }
     Assets {
-      Id: 13778967266379385506
+      Id: 6373296629710202021
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -1002,5 +1002,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

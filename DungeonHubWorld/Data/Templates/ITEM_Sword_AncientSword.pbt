@@ -151,13 +151,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5042457167177808820
+              Id: 6060097613564872733
             }
           }
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 5042457167177808820
+              Id: 6060097613564872733
             }
           }
         }
@@ -1186,7 +1186,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12827530473249900764
+              Id: 5351428073291024820
             }
           }
         }
@@ -1274,7 +1274,7 @@
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 12827530473249900764
+              Id: 5351428073291024820
             }
           }
         }
@@ -2003,7 +2003,7 @@
       }
     }
     Assets {
-      Id: 12827530473249900764
+      Id: 5351428073291024820
       Name: "Opaque Emissive"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -2034,5 +2034,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

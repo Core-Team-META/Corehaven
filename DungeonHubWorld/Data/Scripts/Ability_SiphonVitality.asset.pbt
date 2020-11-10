@@ -73,7 +73,7 @@
       Overrides {
         Name: "cs:APIDamage"
         AssetReference {
-          Id: 15583631668858138722
+          Id: 16915150100797142409
         }
       }
     }
@@ -87,5 +87,5 @@
       }
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

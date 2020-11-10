@@ -291,7 +291,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 8665791828559964251
+              Id: 5175556392310842599
             }
             Color {
               A: 0.59800005
@@ -807,7 +807,7 @@
       }
     }
     Assets {
-      Id: 8665791828559964251
+      Id: 5175556392310842599
       Name: "UI Gradient Rectangular 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -838,5 +838,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

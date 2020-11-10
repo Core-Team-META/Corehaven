@@ -1,7 +1,7 @@
 ﻿Name: "Game Portals"
-RootId: 15313564688140546146
+RootId: 9922386037024802545
 Objects {
-  Id: 4855179270739432841
+  Id: 9770257155877221918
   Name: "Game Portal"
   Transform {
     Location {
@@ -18,7 +18,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15313564688140546146
+  ParentId: 9922386037024802545
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -76,7 +76,7 @@ Objects {
   }
 }
 Objects {
-  Id: 10450075106196309004
+  Id: 9965649951832274794
   Name: "Game Portal"
   Transform {
     Location {
@@ -93,7 +93,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15313564688140546146
+  ParentId: 9922386037024802545
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -151,7 +151,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8295191059063632619
+  Id: 13776731358291331324
   Name: "Game Portal"
   Transform {
     Location {
@@ -168,7 +168,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15313564688140546146
+  ParentId: 9922386037024802545
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -226,7 +226,7 @@ Objects {
   }
 }
 Objects {
-  Id: 8527428221672395155
+  Id: 5288017603084697168
   Name: "Game Portal"
   Transform {
     Location {
@@ -243,7 +243,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15313564688140546146
+  ParentId: 9922386037024802545
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -301,7 +301,7 @@ Objects {
   }
 }
 Objects {
-  Id: 9228285119127905753
+  Id: 10089788966098516886
   Name: "Game Portal"
   Transform {
     Scale {
@@ -310,7 +310,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 15313564688140546146
+  ParentId: 9922386037024802545
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }

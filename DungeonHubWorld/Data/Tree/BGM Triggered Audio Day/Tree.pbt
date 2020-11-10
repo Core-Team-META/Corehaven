@@ -1,7 +1,7 @@
 ﻿Name: "BGM Triggered Audio Day"
-RootId: 13803212590785797925
+RootId: 11335461541940653449
 Objects {
-  Id: 9332814554763786759
+  Id: 9050488380945938276
   Name: "Fantasy Music Town Day 1"
   Transform {
     Location {
@@ -17,7 +17,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 13803212590785797925
+  ParentId: 11335461541940653449
   UnregisteredParameters {
     Overrides {
       Name: "bp:Type"

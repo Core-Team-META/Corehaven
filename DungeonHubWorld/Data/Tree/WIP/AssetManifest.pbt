@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18434079688766523124
-  Name: "Metal Basic 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_basic_001"
-  }
-}
-Assets {
   Id: 18115707384703342405
   Name: "Rock Flat 02"
   PlatformAssetType: 1
@@ -197,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7778047351996227055
+  Name: "Wood Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
   Id: 7668059435165025856
   Name: "Parchment 01"
   PlatformAssetType: 2
@@ -269,6 +269,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4855960652393685277
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
   Id: 4488444258523261897
   Name: "Flare Billboard"
   PlatformAssetType: 6
@@ -320,15 +329,6 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_waterfall_top"
-  }
-}
-Assets {
-  Id: 2664847478369185144
-  Name: "Wood Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
   }
 }
 Assets {

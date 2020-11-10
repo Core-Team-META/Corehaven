@@ -245,9 +245,9 @@
       }
     }
     PrimaryAssetId {
-      AssetType: "None"
-      AssetId: "None"
+      AssetType: "TemplateAssetRef"
+      AssetId: "tm_fan_candle_holder_004_lit_01"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

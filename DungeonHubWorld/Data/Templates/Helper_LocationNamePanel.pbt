@@ -93,7 +93,7 @@
           UseParentHeight: true
           Image {
             Brush {
-              Id: 13778967266379385506
+              Id: 6373296629710202021
             }
             Color {
               A: 0.7
@@ -147,7 +147,7 @@
           }
           Image {
             Brush {
-              Id: 3004310277751773851
+              Id: 3483798833601977176
             }
             Color {
               R: 1
@@ -205,7 +205,7 @@
           }
           Image {
             Brush {
-              Id: 3004310277751773851
+              Id: 3483798833601977176
             }
             Color {
               R: 1
@@ -291,7 +291,7 @@
       }
     }
     Assets {
-      Id: 13778967266379385506
+      Id: 6373296629710202021
       Name: "BG Flat 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -300,7 +300,7 @@
       }
     }
     Assets {
-      Id: 3004310277751773851
+      Id: 3483798833601977176
       Name: "Fantasy Shape 003"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -313,5 +313,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

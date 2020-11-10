@@ -1,7 +1,7 @@
 ﻿Name: "Dummy"
-RootId: 6572542977682951500
+RootId: 14490153374126108326
 Objects {
-  Id: 6907960146733519114
+  Id: 16340580365601402050
   Name: "Enemy_TrainingDummy"
   Transform {
     Scale {
@@ -10,7 +10,7 @@ Objects {
       Z: 1
     }
   }
-  ParentId: 6572542977682951500
+  ParentId: 14490153374126108326
   WantsNetworking: true
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"

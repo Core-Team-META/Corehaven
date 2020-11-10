@@ -150,7 +150,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 14282934549800180925
+            Id: 15842229762232305139
           }
           TeamSettings {
           }
@@ -595,7 +595,7 @@
       }
     }
     Assets {
-      Id: 14282934549800180925
+      Id: 15842229762232305139
       Name: "Decal Elven Symbols"
       PlatformAssetType: 14
       PrimaryAsset {
@@ -644,5 +644,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

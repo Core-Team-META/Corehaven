@@ -61,13 +61,13 @@
       Overrides {
         Name: "cs:APIStatusEffects"
         AssetReference {
-          Id: 13318730044962744636
+          Id: 1831660344620141067
         }
       }
       Overrides {
         Name: "cs:APIDamage"
         AssetReference {
-          Id: 15583631668858138722
+          Id: 16915150100797142409
         }
       }
     }
@@ -81,5 +81,5 @@
       }
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

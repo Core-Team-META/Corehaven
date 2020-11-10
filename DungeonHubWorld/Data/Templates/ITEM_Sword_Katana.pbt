@@ -123,7 +123,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7485615248896983752
+              Id: 14212988502358508072
             }
           }
         }
@@ -135,7 +135,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 3190252363319773843
+            Id: 3982193030776093519
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -338,7 +338,7 @@
       }
     }
     Assets {
-      Id: 3190252363319773843
+      Id: 3982193030776093519
       Name: "Sphere"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -347,7 +347,7 @@
       }
     }
     Assets {
-      Id: 7485615248896983752
+      Id: 14212988502358508072
       Name: "Metal Basic Steel"
       PlatformAssetType: 2
       PrimaryAsset {
@@ -387,5 +387,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

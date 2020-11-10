@@ -37,10 +37,6 @@ function data.onCastServer(caster, target)
 	Task.Wait(API_P.GetTravelTime(target, caster, PROJECTILE_SPEED))
 	local healingTags = API_D.TAG_CANNOT_CRIT
 	
-	if not Object.IsValid(caster) then
-		return
-	end
-
 	if API_D.HasTag(tags, API_D.TAG_CRIT) then
 		healingTags = healingTags | API_D.TAG_CRIT
 	end

@@ -208,7 +208,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 16099460833972194012
+            Id: 5271639852184247581
           }
           Teams {
             IsTeamCollisionEnabled: true
@@ -311,7 +311,7 @@
       }
     }
     Assets {
-      Id: 16099460833972194012
+      Id: 5271639852184247581
       Name: "Ring - Extra Thick"
       PlatformAssetType: 1
       PrimaryAsset {
@@ -333,5 +333,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

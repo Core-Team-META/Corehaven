@@ -62,22 +62,4 @@
     Lore = 'A huge mace forged in eternal flame, it is hot to the touch',
     ['Author Notes (will be ignored by script)'] = '',
   },
-  {
-    Name = 'The Furnace',
-    Type = 'Mace',
-    Rarity = 'Epic',
-    StatKey = 'EpicTankMace',
-    MUID = '107C9A171AE89BF2:ITEM_Mace_TheFurnace',
-    Lore = 'That\'s one way to do it, bolt a furnace to a handle and put some spikes on it',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
-  {
-    Name = 'Silver Hammer',
-    Type = 'Mace',
-    Rarity = 'Rare',
-    StatKey = 'RareTankMace',
-    MUID = '826D0A9A1CA4C698:ITEM_Mace_SilverHammer',
-    Lore = 'This hammer looks oddly... famoljnir. ',
-    ['Author Notes (will be ignored by script)'] = '',
-  },
 }

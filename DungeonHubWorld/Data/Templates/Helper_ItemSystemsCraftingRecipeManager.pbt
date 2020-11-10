@@ -91,6 +91,15 @@
         ParentId: 9592191196238533239
         UnregisteredParameters {
           Overrides {
+            Name: "cs:StorageKey"
+            NetReference {
+              Key: "f2bdd2a7a062442dbe0644309d04835e"
+              Type {
+                Value: "mc:enetreferencetype:sharedpersistence"
+              }
+            }
+          }
+          Overrides {
             Name: "cs:Component"
             ObjectReference {
               SubObjectId: 57893604339843732
@@ -152,6 +161,15 @@
         ParentId: 9764830393891941331
         UnregisteredParameters {
           Overrides {
+            Name: "cs:StorageKey"
+            NetReference {
+              Key: "f2bdd2a7a062442dbe0644309d04835e"
+              Type {
+                Value: "mc:enetreferencetype:sharedpersistence"
+              }
+            }
+          }
+          Overrides {
             Name: "cs:Component"
             ObjectReference {
               SubObjectId: 57893604339843732
@@ -176,5 +194,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }

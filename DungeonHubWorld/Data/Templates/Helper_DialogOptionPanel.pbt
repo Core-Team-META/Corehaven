@@ -154,7 +154,7 @@
               A: 1
             }
             Brush {
-              Id: 11587615929808300503
+              Id: 1535835570629998324
             }
             IsButtonEnabled: true
           }
@@ -174,7 +174,7 @@
       }
     }
     Assets {
-      Id: 11587615929808300503
+      Id: 1535835570629998324
       Name: "BG Gradient 001"
       PlatformAssetType: 9
       PrimaryAsset {
@@ -187,5 +187,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 65
 }
