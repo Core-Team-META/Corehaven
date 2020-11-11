@@ -2,7 +2,7 @@
   Id: 9892672878406537269
   Name: "PortalArea_Water"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 16532662947784276478
     ParameterOverrides {

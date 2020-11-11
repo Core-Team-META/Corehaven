@@ -2,7 +2,7 @@
   Id: 17016052731400103309
   Name: "Forest_TriPlanar"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 9033279760284283201
     ParameterOverrides {

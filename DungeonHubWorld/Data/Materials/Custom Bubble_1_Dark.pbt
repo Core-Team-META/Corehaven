@@ -2,7 +2,7 @@
   Id: 3425712571416498753
   Name: "Custom Bubble_1_Dark"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 6280656875981483467
     ParameterOverrides {

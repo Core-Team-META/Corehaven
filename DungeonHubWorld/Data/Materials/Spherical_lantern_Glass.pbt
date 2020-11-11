@@ -2,7 +2,7 @@
   Id: 5223635568051815421
   Name: "Spherical_lantern_Glass"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 15034387179733310598
     ParameterOverrides {

@@ -39,5 +39,5 @@
     OwnerName: "Anna"
     Description: "V. 1.0: Contains NPCs and custom outfits for D&D even hub"
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }
