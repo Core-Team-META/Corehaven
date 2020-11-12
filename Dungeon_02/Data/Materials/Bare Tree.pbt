@@ -2,7 +2,7 @@
   Id: 4243548363080256941
   Name: "Bare Tree"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 11514421019034202674
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 13509426613517115190
   Name: "MansionBricks"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 9916718737619976901
     ParameterOverrides {

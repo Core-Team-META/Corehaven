@@ -2,7 +2,7 @@
   Id: 13043373487897014155
   Name: "Mansion Moroccan Wallpaper"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 17981767541114089179
     ParameterOverrides {

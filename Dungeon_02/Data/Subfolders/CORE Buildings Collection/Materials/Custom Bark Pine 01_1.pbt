@@ -2,7 +2,7 @@
   Id: 5732259406029520333
   Name: "Custom Bark Pine 01_1"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 7979690483262642494
     ParameterOverrides {

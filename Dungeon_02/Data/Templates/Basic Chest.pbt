@@ -559,5 +559,5 @@
       AssetId: "Basic_Chest"
     }
   }
-  SerializationVersion: 65
+  SerializationVersion: 68
 }

@@ -2,7 +2,7 @@
   Id: 15168951579674574620
   Name: "Custom Center Stripe from Road Ramp Top Center"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 16944746383006331113
     ParameterOverrides {

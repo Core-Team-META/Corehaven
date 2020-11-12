@@ -2,7 +2,7 @@
   Id: 13525736078857430361
   Name: "Custom Terrain - Moss and Rocks"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 11759045314390150964
     ParameterOverrides {
