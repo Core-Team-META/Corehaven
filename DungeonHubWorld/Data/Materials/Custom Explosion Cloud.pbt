@@ -2,7 +2,7 @@
   Id: 17526400651633856459
   Name: "Custom Explosion Cloud"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 4231462585584143049
     ParameterOverrides {

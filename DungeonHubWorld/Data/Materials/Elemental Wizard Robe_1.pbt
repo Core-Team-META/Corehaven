@@ -2,7 +2,7 @@
   Id: 1192678440732149909
   Name: "Elemental Wizard Robe"
   PlatformAssetType: 13
-  SerializationVersion: 65
+  SerializationVersion: 68
   CustomMaterialAsset {
     BaseMaterialId: 8361643690318007117
     ParameterOverrides {

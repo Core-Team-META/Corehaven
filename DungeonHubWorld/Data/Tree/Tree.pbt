@@ -185,7 +185,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -6144
+        Min: 200
         Max: 3048
       }
     }
@@ -234,7 +234,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 200
         Max: 3000
       }
     }
@@ -281,7 +281,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 200
         Max: 2000
       }
     }
@@ -328,7 +328,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 200
         Max: 3000
       }
     }
@@ -541,7 +541,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 200
         Max: 1000
       }
       HeightFalloff: 500
@@ -590,7 +590,7 @@ Objects {
       GlobalPositionOffset {
       }
       Height {
-        Min: -102400
+        Min: 200
         Max: 1000
       }
     }
