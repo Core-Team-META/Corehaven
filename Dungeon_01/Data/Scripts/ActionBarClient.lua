@@ -155,18 +155,20 @@ function UpdateLayoutString()
 
 	table.sort(abilityList, SortCompare)
 
-	local layoutString = ""
 	local abilityCount = 0
 
 	for _, listEntry in ipairs(abilityList) do
 		if listEntry.abilityName then
 			abilityCount = abilityCount + 1
 		end
-
-		layoutString = layoutString .. tostring(listEntry.index)
 	end
 
-	layoutString = tostring(abilityCount) .. layoutString
+	local layoutString = string.format("v2|%d|", abilityCount)
+
+	for _, listEntry in ipairs(abilityList) do
+		layoutString = layoutString .. string.char(listEntry.index + string.byte("a") - 1)
+	end
+
 	API_RE.BroadcastToServer("SABL", layoutString)
 	layoutSaved = true
 	lastLayoutSaveTime = os.clock()
@@ -190,34 +192,86 @@ function OnLoadActionBarLayout(layoutString)
 		return result
 	end
 
-	-- We don't have all our abilities yet, or they were already changed
-	local expectedAbilitycount = tonumber(string.sub(layoutString, 1, 1))
-	local timeOutStart = os.clock()
+	local version = 1
 
-	while os.clock() < timeOutStart + LAYOUT_TIMOUT and GetAbilityCount() ~= expectedAbilitycount do
-		Task.Wait()
+	if string.sub(layoutString, 1, 1) == "v" then
+		local delimiterIndex = string.find(layoutString, "|", 1, true)
+		version = tonumber(string.sub(layoutString, 2, delimiterIndex - 1))
 	end
 
-	layoutLoaded = true
+	if version == 1 then
+		-- We don't have all our abilities yet, or they were already changed
+		local expectedAbilitycount = tonumber(string.sub(layoutString, 1, 1))
+		local timeOutStart = os.clock()
 
-	-- Did we give up? If we don't have the right number, the string is meaningless so we do nothing
-	if os.clock() < timeOutStart + LAYOUT_TIMOUT then
-		local tempData = {}
-
-		for i, data in pairs(buttonData) do
-			tempData[i] = data
+		while os.clock() < timeOutStart + LAYOUT_TIMOUT and GetAbilityCount() ~= expectedAbilitycount do
+			Task.Wait()
 		end
 
-		table.sort(tempData, SortCompare)
+		layoutLoaded = true
 
-		for i = 1, NUMBER_OF_SLOTS do
-			local newIndex = tonumber(string.sub(layoutString, i + 1, i + 1))
-			buttonData[newIndex] = tempData[i]
+		-- Did we give up? If we don't have the right number, the string is meaningless so we do nothing
+		if os.clock() < timeOutStart + LAYOUT_TIMOUT then
+			local tempData = {}
 
-			if buttonData[newIndex].button then
-				PlaceInSocket(buttonData[newIndex].button, newIndex)
+			for i, data in pairs(buttonData) do
+				tempData[i] = data
+			end
+
+			table.sort(tempData, SortCompare)
+
+			for i = 1, NUMBER_OF_SLOTS do
+				local newIndex = tonumber(string.sub(layoutString, i + 1, i + 1))
+
+				if not newIndex then
+					newIndex = i
+				end
+
+				buttonData[newIndex] = tempData[i]
+
+				if buttonData[newIndex].button then
+					PlaceInSocket(buttonData[newIndex].button, newIndex)
+				end
 			end
 		end
+	elseif version == 2 then
+		-- We don't have all our abilities yet, or they were already changed
+		local matchStart, matchEnd, countString = string.find(layoutString, "|(%d+)|")
+		local expectedAbilitycount = tonumber(countString)
+		local timeOutStart = os.clock()
+
+		while os.clock() < timeOutStart + LAYOUT_TIMOUT and GetAbilityCount() ~= expectedAbilitycount do
+			Task.Wait()
+		end
+
+		layoutLoaded = true
+
+		-- Did we give up? If we don't have the right number, the string is meaningless so we do nothing
+		if os.clock() < timeOutStart + LAYOUT_TIMOUT then
+			local tempData = {}
+
+			for i, data in pairs(buttonData) do
+				tempData[i] = data
+			end
+
+			table.sort(tempData, SortCompare)
+
+			for i = 1, NUMBER_OF_SLOTS do
+				local newIndex = string.byte(string.sub(layoutString, i + matchEnd, i + matchEnd)) - string.byte("a") + 1
+
+				if not newIndex then
+					newIndex = i
+				end
+
+				buttonData[newIndex] = tempData[i]
+
+				if buttonData[newIndex].button then
+					PlaceInSocket(buttonData[newIndex].button, newIndex)
+				end
+			end
+		end
+	else
+		error("Unknown layout string version")
 	end
 end
 

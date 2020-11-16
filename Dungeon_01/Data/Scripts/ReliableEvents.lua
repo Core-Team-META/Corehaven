@@ -7,7 +7,8 @@ local function Retry()
         local method = txQueue:Front().method
         local broadcast = Events[method]
         local result = broadcast(table.unpack(txQueue:Front()))
-        if result == BroadcastEventResultCode.SUCCESS then
+        -- EXCEEDED_RATE_LIMIT is the only case that didn't work but can work in the future
+        if result ~= BroadcastEventResultCode.EXCEEDED_RATE_LIMIT then
             txQueue:PopFront()
         end
     end

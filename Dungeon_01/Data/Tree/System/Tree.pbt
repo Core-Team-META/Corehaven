@@ -26528,7 +26528,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:NumberOfSlots"
-      Int: 8
+      Int: 10
     }
     Overrides {
       Name: "cs:Binding1"
@@ -26561,6 +26561,14 @@ Objects {
     Overrides {
       Name: "cs:Binding8"
       String: "ability_extra_22"
+    }
+    Overrides {
+      Name: "cs:Binding9"
+      String: "ability_extra_23"
+    }
+    Overrides {
+      Name: "cs:Binding10"
+      String: "ability_extra_33"
     }
   }
   Collidable_v2 {
@@ -41883,7 +41891,8 @@ Objects {
         ChatMode {
         }
         ChatPosition {
-          X: 40
+          X: 20
+          Y: -20
         }
         ChatSize {
           X: 450
@@ -41893,7 +41902,7 @@ Objects {
           Value: "mc:ecorehorizontalalign:left"
         }
         ChatVerticalAlignment {
-          Value: "mc:ecorehorizontalalign:center"
+          Value: "mc:ecoreverticalalign:bottom"
         }
       }
     }
@@ -45499,7 +45508,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enable"
-      Bool: false
+      Bool: true
     }
   }
   Collidable_v2 {

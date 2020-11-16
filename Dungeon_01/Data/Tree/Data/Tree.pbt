@@ -22733,14 +22733,6 @@ Objects {
   Id: 15199776073160027248
   Name: "Enemy_Soldier"
   Transform {
-    Location {
-      X: -8675
-      Y: -6750
-      Z: -950.000183
-    }
-    Rotation {
-      Yaw: -75.9047318
-    }
     Scale {
       X: 1
       Y: 1
@@ -22749,6 +22741,12 @@ Objects {
   }
   ParentId: 3038033862842891513
   WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
   TemplateInstance {
     ParameterOverrideMap {
       key: 191125463511178831

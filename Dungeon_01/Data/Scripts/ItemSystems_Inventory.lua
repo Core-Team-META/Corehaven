@@ -230,10 +230,11 @@ function Inventory:TakeNextOpenLootIndex()
 end
 
 -- Register a new loot object dropped for the owner of this inventory. Optionally provide a callback for when the loot is claimed.
-function Inventory:RegisterLootItemAtIndex(lootIndex, lootItem, lootWorldObject, onLootClaimed)
+function Inventory:RegisterLootItemAtIndex(lootIndex, stackSize, lootItem, lootWorldObject, onLootClaimed)
     if not lootItem then return end
     local lootInfo = {
         lootIndex = lootIndex,
+        stackSize = stackSize,
         isClaimed = false,
         item = lootItem,
         worldObject = lootWorldObject,

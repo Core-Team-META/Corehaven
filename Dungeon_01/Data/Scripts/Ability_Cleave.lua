@@ -21,6 +21,10 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
+function data.getEffectiveTarget(caster, target)
+
+end
+
 function data.onCastClient(caster, target)
 	return 0.0
 end

@@ -56,10 +56,10 @@ function Database:CreateItemSalvage()
 end
 
 function Database:CreateItemFromDrop(dropKey)
-    local itemData = self:_RollDrop(dropKey)
-    local item = Item.New(itemData)
+    local itemData, stackSize = self:_RollDrop(dropKey)
+    local item = Item.New(itemData, stackSize)
     item:RollStats()
-    return item 
+    return item
 end
 
 function Database:CreateItemFromData(itemData)
@@ -284,7 +284,12 @@ function Database:_LoadDrops()
             table.insert(self.itemDropKeys, row.DropKey)
         end
         local dropTable = self.itemDropTables[row.DropKey]
-        local dropInfo = { itemName = row.ItemName, likelihood = tonumber(row.Likelihood) }
+        local dropInfo = {
+            itemName = row.ItemName,
+            likelihood = tonumber(row.Likelihood), 
+            minStack = tonumber(row.MinStack),
+            maxStack = tonumber(row.MaxStack)
+        }
         table.insert(dropTable, dropInfo)
         dropTable.cumulativeLikelihood = dropTable.cumulativeLikelihood + dropInfo.likelihood
     end
@@ -342,7 +347,11 @@ function Database:_RollDrop(dropKey)
         local roll = math.random() * dropTable.cumulativeLikelihood
         for _,dropInfo in ipairs(dropTable) do
             if roll <= dropInfo.likelihood then
-                return self:FindItemDataByName(dropInfo.itemName)
+                local stackSize = 1
+                if dropInfo.minStack and dropInfo.maxStack then
+                    stackSize = math.random(dropInfo.minStack, dropInfo.maxStack)
+                end
+                return self:FindItemDataByName(dropInfo.itemName), stackSize
             end
             roll = roll - dropInfo.likelihood
         end

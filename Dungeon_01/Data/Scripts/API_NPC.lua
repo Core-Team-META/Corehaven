@@ -66,6 +66,7 @@ function API.RegisterNPCFolder(npcFolder)
 		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
 		data.experience = npc:GetCustomProperty("Experience")
+		data.dropCombatDistance = npc:GetCustomProperty("DropCombatDistance")
 
 		data.spawnPosition = npc:GetWorldPosition()
 		data.spawnRotation = npc:GetWorldRotation()

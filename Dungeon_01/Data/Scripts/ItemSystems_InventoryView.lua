@@ -489,10 +489,16 @@ function view:OnBindingPressed(binding)
     if self.isClosed then return end
     if binding == "ability_primary" then
         if self.itemUnderCursor then
-            self:SetClickState(self.slotUnderCursor)
             -- Any ongoing salvage attempts are canceled as soon as a new interaction starts.
             self:CancelSalvageAttempt()
+            if self.shiftDown then
+                self:AttemptSalvageItem(self.slotUnderCursor.clientUserData.slotIndex)
+            else
+                self:SetClickState(self.slotUnderCursor)
+            end
         end
+    elseif binding =="ability_extra_12" then
+        self.shiftDown = true
     end
 end
 
@@ -505,6 +511,8 @@ function view:OnBindingReleased(binding)
         end
         self:ClearClickState()
         self:ClearDragState()
+    elseif binding =="ability_extra_12" then
+        self.shiftDown = false
     end
 end
 

@@ -494,7 +494,7 @@ function Tick(deltaTime)
 			end
 		elseif currentTask ~= API_NPC.STATE_ASLEEP then
 			-- Are we dead?
-			if API_NPC.IsDead(npc) then
+			if API_NPC.IsDead(npc) or (npcData.spawnParent and API_NPC.IsDead(npcData.spawnParent)) then
 				KillNPC(npc)
 			else
 				if currentTask == API_NPC.STATE_RESETTING then
@@ -541,8 +541,20 @@ function Tick(deltaTime)
 					local removedTarget = false
 
 					for player, _ in pairs(npcState.threatTable) do
-						if not Object.IsValid(player) or player.isDead then
-							-- Our target might have left, and we can't access that player, so we use  process of elimination
+						local removePlayer = true
+
+						if Object.IsValid(player) then
+							local distance = (npc:GetWorldPosition() - player:GetWorldPosition()).size
+
+							if not player.isDead then
+								if not npcData.dropCombatDistance or npcData.dropCombatDistance > distance then
+									removePlayer = false
+								end
+							end
+						end
+
+						if removePlayer then
+							-- player may not be valid, so we can't access its members
 							removedTarget = true
 							local targetId = API_NPC.GetTargetId(npc)
 

@@ -65,7 +65,12 @@ function view:PrepareLootEntry(lootIndex, lootInfo, isBackpackFull)
     -- Set the loot index so the button callback can act accordingly.
     entry.clientUserData.lootIndex = lootIndex
     -- Set the icon and name according to the item.
-    entry.clientUserData.buttonText.text = lootInfo.item:GetName()
+    local stackSize = lootInfo.stackSize
+    if stackSize == 1 then
+        entry.clientUserData.buttonText.text = lootInfo.item:GetName()
+    else
+        entry.clientUserData.buttonText.text = string.format("%s (%d)", lootInfo.item:GetName(), stackSize)
+    end
     lootInfo.item:ApplyIconImageSettings(entry.clientUserData.icon)
     -- Set the colors according to rarity.
     local color = ItemThemes.GetRarityColor(lootInfo.item:GetRarity())

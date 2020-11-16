@@ -47,7 +47,7 @@ script error, it usually results in all enemies no longer responding at all.
 
 Adding Loot:
 Loot is defined by a bunch of scripts with 'DATA' in the name. These were created by a spreadsheet, but they can also be
-edited directly. They should be fairly straightforward to understand
+edited directly. They should be fairly straightforward to understand.
 
 Adding Enemies:
 Enemies are found in Data->NPC System->NPCs->[Foldername]. This is one of the few systems that requires specific
