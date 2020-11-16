@@ -87,7 +87,7 @@
           }
           Overrides {
             Name: "cs:DropChance2"
-            Float: 0
+            Float: 0.12
           }
           Overrides {
             Name: "cs:DropKey3"
@@ -100,6 +100,14 @@
           Overrides {
             Name: "cs:DropMinDifficulty3"
             Int: 3
+          }
+          Overrides {
+            Name: "cs:DropKey4"
+            String: "Shards"
+          }
+          Overrides {
+            Name: "cs:DropChance4"
+            Float: 0.12
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"

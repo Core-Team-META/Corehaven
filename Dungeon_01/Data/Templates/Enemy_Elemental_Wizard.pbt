@@ -122,6 +122,14 @@
             Int: 3
           }
           Overrides {
+            Name: "cs:DropKey4"
+            String: "Shards"
+          }
+          Overrides {
+            Name: "cs:DropChance4"
+            Float: 0.28
+          }
+          Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
               Id: 10106175966705151247

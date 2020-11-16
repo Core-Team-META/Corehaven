@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 3038033862842891513
+        ParentId: 4781671109827199097
         ChildIds: 5828818409476629943
         ChildIds: 14846993980058340674
         ChildIds: 7136197101489531545
@@ -107,11 +107,11 @@
           }
           Overrides {
             Name: "cs:DropKey4"
-            String: "ShardPile"
+            String: "Shards"
           }
           Overrides {
             Name: "cs:DropChance4"
-            Float: 1
+            Float: 0.08
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
