@@ -5,12 +5,14 @@ Objects {
   Name: "Cove Trigger"
   Transform {
     Location {
-      X: -317.893066
-      Y: -20134.9922
-      Z: -6966.3
+      X: 1096.60352
+      Y: -19087.2656
+      Z: -3638.37305
     }
     Rotation {
-      Yaw: -0.390075684
+      Pitch: 3.50485
+      Yaw: 1.8202585
+      Roll: 1.89707112
     }
     Scale {
       X: 745.349426
