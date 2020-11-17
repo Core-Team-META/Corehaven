@@ -30,6 +30,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13640660252163807355
+  Name: "Kelp Tall Bush 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_tall_bush_01"
+  }
+}
+Assets {
   Id: 12901371766173778172
   Name: "Leafy Patch 02"
   PlatformAssetType: 1
