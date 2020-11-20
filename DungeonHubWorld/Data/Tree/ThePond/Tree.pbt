@@ -136,6 +136,7 @@ Objects {
   ParentId: 6690434962317707584
   ChildIds: 13184929987954270873
   ChildIds: 575797677685673331
+  ChildIds: 17149986084526784447
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -143,6 +144,45 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 17149986084526784447
+  Name: "Underwater Post Process"
+  Transform {
+    Location {
+      X: 11500.4717
+      Y: -759.460938
+      Z: -830.78125
+    }
+    Rotation {
+      Yaw: 45.4708595
+    }
+    Scale {
+      X: 72.2616882
+      Y: 33.1712074
+      Z: 7.53258753
+    }
+  }
+  ParentId: 14359867072523243768
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Blend Weight"
+      Float: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 5637733567374295665
+    }
+    TeamSettings {
+    }
   }
 }
 Objects {
