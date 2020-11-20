@@ -331,7 +331,17 @@ function API.GetAwakeNPCsInSphere(center, radius)
 
 	for npc, _ in pairs(npcs) do
 		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) and not systemFunctions.IsResetting(npc) then
-			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
+			local npcData = npcs[npc]
+			local npcPosition = nil
+
+			if npcData.animatedMesh then
+				-- This is client only, intended to be as accurate as possible. We can never expect it to match anyway
+				npcPosition = npcData.animatedMesh:GetWorldPosition()
+			else
+				npcPosition = npc:GetWorldPosition()
+			end
+
+			if FindSphereToCapsuleDistance(center, radius, npcPosition, npcData.capsuleHeight, npcData.capsuleWidth) == 0.0 then
 				table.insert(result, npc)
 			end
 		end

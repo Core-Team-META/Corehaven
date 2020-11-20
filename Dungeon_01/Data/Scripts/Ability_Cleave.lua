@@ -22,7 +22,7 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
 function data.getEffectiveTarget(caster, target)
-
+	return target
 end
 
 function data.onCastClient(caster, target)

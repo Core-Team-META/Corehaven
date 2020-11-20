@@ -40,13 +40,20 @@ function OnFrameClick(frameData)
 
 	-- We have to set it back, because we just clicked in space and it got cleared
 	if frameData == targetFrame then
-		API_T.TrySetTarget(target, false)
+		if Object.IsValid(target) and not target.isDead then
+			API_T.TrySetTarget(target, false)
+		end
 	elseif frameData == targetTargetFrame then
-		API_T.TrySetTarget(targetTarget, false)
+		if Object.IsValid(targetTarget) and not targetTarget.isDead then
+			API_T.TrySetTarget(targetTarget, false)
+		end
 	else
 		for player, data in pairs(partyFrames) do
 			if frameData == data then
-				API_T.TrySetTarget(player, false)
+				if Object.IsValid(player) and not player.isDead then
+					API_T.TrySetTarget(player, false)
+				end
+				
 				return
 			end
 		end

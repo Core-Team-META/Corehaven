@@ -16,8 +16,12 @@ end
 
 local API = {}
 
--- This system assumes abilities never change owners after being spawned. For ground target abilities, "activate" is
--- when we create the reticle, but the Core ability only casts when the user actually clicks.
+-- The core ability name convention has "cast" when something is started, and "execute" when it finishes. In some cases
+-- here we are inconsistent, and use "cast" for when the ability finishes (executes). For ground target abilities,
+-- "activate" is when we create the reticle, but the Core ability only casts when the user actually clicks.
+-- We also use the word "target" in some places to represent a set of targets an ability is being applied to. Ability
+-- targets are not always the same as the caster's target, and are carried throughout the duration of an ability
+-- activation.
 
 -- Time before the previous ability cast or cooldown is finished that a player can activate another ability and it is
 -- queued to cast when available. Must be less than MIN_GLOBAL_COOLDOWN since we assume only one thing can be queued.
@@ -47,8 +51,9 @@ float castDuration								Length of cast for this ability
 <AssetReference> selfTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to the caster
 <AssetReference> otherTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to others
 <AssetReference> reticleTemplate				Reticle for ground target ability
-<function> onCastClient(caster, target)			Client function called on cast, returns the time to impact
-<function> onCastServer(caster, target)			Server function called on cast
+<function> getEffectiveTarget(caster, target)	Client function called on 'cast', returns the target or array of targets (Local player only)
+<function> onCastClient(caster, target)			Client function called on 'execute', returns the time to impact
+<function> onCastServer(caster, target)			Server function called on 'execute'
 ]]
 local abilityData = {}						--	string -> table (above)
 local playerAbilities = {}					--	Player -> table (string -> int) This is a reference count. nil for 0
@@ -195,20 +200,20 @@ function CastAbility(abilityName, target)
 	assert(CanCast(abilityName, target))
 	local data = abilityData[abilityName]
 
-	local targetOrId = target
+	local effectiveTarget = target
 
-	if target and target:IsA("Object") then
-		targetOrId = API_ID.GetIdFromObject(target)
+	if data.getEffectiveTarget then
+		effectiveTarget = data.getEffectiveTarget(LOCAL_PLAYER, target)
 	end
-
+	
 	local castData = {}
 	castData.abilityName = abilityName
-	castData.target = target
+	castData.target = effectiveTarget
 	castData.castId = nextCastId
 	castData.startTime = os.clock()
 	playerCastData[LOCAL_PLAYER] = castData
 	local isInstantCast = (API.GetAbilityCastDuration(LOCAL_PLAYER, castData.abilityName) == 0.0)
-	API_RE.BroadcastToServer("ACS", abilityName, targetOrId, nextCastId, isInstantCast)
+	API_RE.BroadcastToServer("ACS", abilityName, effectiveTarget, nextCastId, isInstantCast)
 
 	if data.animationKey then
 		API_AS.PlayAnimation(data.animationKey, nextCastId, not isInstantCast)
@@ -596,6 +601,7 @@ function GetEffectiveTarget(abilityName, setTargetIfAutotarget)
 		local autoTarget = API_T.FindAutoTarget()
 
 		if setTargetIfAutotarget then
+			assert(autoTarget)
 			API_T.TrySetTarget(autoTarget, true)
 		end
 

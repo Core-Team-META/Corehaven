@@ -234,7 +234,11 @@ function OnBindingPressed(player, binding)
 		autoTargetHistory = {}			-- Clear auto target history
 		TrySetTarget(FindClickTarget(), false)
 	elseif binding == AUTO_TARGET_BINDING then
-		TrySetTarget(FindAutoTarget(), true)
+		local autoTarget = FindAutoTarget()
+		
+		if autoTarget then
+			TrySetTarget(FindAutoTarget(), true)
+		end
 	end
 end
 

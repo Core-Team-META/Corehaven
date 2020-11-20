@@ -45784,6 +45784,89 @@ Objects {
   }
 }
 Objects {
+  Id: 16961130202466638963
+  Name: "Chests"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 11675404267983164951
+  ChildIds: 1951957640931675764
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ChestCount"
+      Int: 2
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1951957640931675764
+  Name: "ChestsServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16961130202466638963
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 16961130202466638963
+      }
+    }
+    Overrides {
+      Name: "cs:ChestLocationsGroup"
+      ObjectReference {
+        SelfId: 15340518961261883331
+      }
+    }
+    Overrides {
+      Name: "cs:ChestTemplate"
+      AssetReference {
+        Id: 6113325261809187088
+      }
+    }
+    Overrides {
+      Name: "cs:DropKey"
+      String: "Chest"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18276965785090226094
+    }
+  }
+}
+Objects {
   Id: 8669524701085532208
   Name: "Checkpoints"
   Transform {

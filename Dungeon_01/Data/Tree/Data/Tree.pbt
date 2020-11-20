@@ -28862,6 +28862,393 @@ Objects {
   }
 }
 Objects {
+  Id: 18098648729401301453
+  Name: "Chests"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 17998119936475930974
+  ChildIds: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15340518961261883331
+  Name: "Locations"
+  Transform {
+    Location {
+      X: 4834.47
+      Y: -244.488251
+      Z: -971.66748
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18098648729401301453
+  ChildIds: 9479418916720387400
+  ChildIds: 13622325085665904008
+  ChildIds: 7086108184468527089
+  ChildIds: 870574078195004606
+  ChildIds: 5159835881948850390
+  ChildIds: 11912230712870260227
+  ChildIds: 10206797129617285758
+  ChildIds: 1392195058442620622
+  ChildIds: 309455862744872122
+  ChildIds: 7224869551599016211
+  ChildIds: 15146569894466062428
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 15146569894466062428
+  Name: "Chest_10"
+  Transform {
+    Location {
+      X: 17061.2832
+      Y: -5207.00684
+      Z: 6013.23975
+    }
+    Rotation {
+      Yaw: 148.089142
+      Roll: 6.74363327
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7224869551599016211
+  Name: "Chest_09"
+  Transform {
+    Location {
+      X: 15967.2676
+      Y: -1879.5376
+      Z: 4517.25732
+    }
+    Rotation {
+      Yaw: -47.1204872
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 309455862744872122
+  Name: "Chest_08"
+  Transform {
+    Location {
+      X: 7320.96533
+      Y: 5222.4834
+      Z: 2832.34131
+    }
+    Rotation {
+      Yaw: -168.61438
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 1392195058442620622
+  Name: "Chest_07"
+  Transform {
+    Location {
+      X: 3240.5293
+      Y: -4680.51172
+      Z: 2054.71338
+    }
+    Rotation {
+      Pitch: 5.42959
+      Yaw: -179.999954
+      Roll: -2.04472927e-13
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 10206797129617285758
+  Name: "Chest_06"
+  Transform {
+    Location {
+      X: -2559.47021
+      Y: 15394.4883
+      Z: 612.806641
+    }
+    Rotation {
+      Pitch: -8.72113323
+      Yaw: 0.792832494
+      Roll: -5.21484852
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 11912230712870260227
+  Name: "Chest_05"
+  Transform {
+    Location {
+      X: -3859.47021
+      Y: 1569.48828
+      Z: 1546.66748
+    }
+    Rotation {
+      Yaw: 89.9999771
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 5159835881948850390
+  Name: "Chest_04"
+  Transform {
+    Location {
+      X: -2734.47021
+      Y: -2380.51172
+      Z: 1614.17188
+    }
+    Rotation {
+      Yaw: -89.9999847
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 870574078195004606
+  Name: "Chest_03"
+  Transform {
+    Location {
+      X: -6514.47
+      Y: -3465.51172
+      Z: 972.120605
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 7086108184468527089
+  Name: "Chest_02"
+  Transform {
+    Location {
+      X: -6640.12891
+      Y: 1037.40613
+      Z: 972.120605
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 13622325085665904008
+  Name: "Chest_01"
+  Transform {
+    Location {
+      X: -11420.0488
+      Y: -306.209747
+      Z: 928.466309
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
+  Id: 9479418916720387400
+  Name: "Chest_00"
+  Transform {
+    Location {
+      X: -9861.98926
+      Y: -5304.57617
+    }
+    Rotation {
+      Pitch: -11.4093313
+      Yaw: 75.5288849
+      Roll: 7.17246914
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15340518961261883331
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+}
+Objects {
   Id: 6338596526403113820
   Name: "Checkpoints"
   Transform {
