@@ -1,4 +1,6 @@
-﻿local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local AUDIO = script:GetCustomProperty("Audio"):WaitForObject()
 local AUDIO_BOSS = script:GetCustomProperty("AudioBoss"):WaitForObject()
 local BOSS_NUMBER = script:GetCustomProperty("BossNumber")
 
@@ -12,6 +14,6 @@ function EndBoss()
 	AUDIO_BOSS:Stop()
 end
 
-Events.Connect("Boss" .. BOSS_NUMBER .. "Pulled", StartBoss)
-Events.Connect("Boss" .. BOSS_NUMBER .. "Reset", EndBoss)
-Events.Connect("Boss" .. BOSS_NUMBER .. "Died", EndBoss)
+API_RE.Connect("Boss" .. BOSS_NUMBER .. "Pulled", StartBoss)
+API_RE.Connect("Boss" .. BOSS_NUMBER .. "Reset", EndBoss)
+API_RE.Connect("Boss" .. BOSS_NUMBER .. "Died", EndBoss)

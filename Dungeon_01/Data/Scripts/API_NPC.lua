@@ -1,4 +1,5 @@
 ﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local API = {}
 
@@ -131,12 +132,12 @@ function API.RegisterNPCFolder(npcFolder)
 
 		npcs[npc] = data
 
-		Events.Broadcast("NPC_Created", npc, data)
+		API_RE.Broadcast("NPC_Created", npc, data)
 
 		npc.destroyEvent:Connect(function(npc)
 			npcs[npc] = nil
 
-			Events.Broadcast("NPC_Destroyed", npc)
+			API_RE.Broadcast("NPC_Destroyed", npc)
 		end)
 	end
 
@@ -205,7 +206,7 @@ function API.RegisterSystem(functionTable, isClient)
 	IS_CLIENT = isClient
 
 	if not IS_CLIENT then
-		Events.Connect("ResetDungeon", OnResetDungeon)
+		API_RE.Connect("ResetDungeon", OnResetDungeon)
 	end
 end
 

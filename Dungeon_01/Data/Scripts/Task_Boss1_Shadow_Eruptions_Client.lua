@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local ERUPTIONS_GROUP = script:GetCustomProperty("EruptionsGroup"):WaitForObject()
@@ -23,6 +24,6 @@ function OnShadowEruptions(order)
 	end
 end
 
-Events.Connect("SE", OnShadowEruptions)
+API_RE.Connect("SE", OnShadowEruptions)
 
 API_NPC.RegisterTaskClient("boss1_shadow_eruptions", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

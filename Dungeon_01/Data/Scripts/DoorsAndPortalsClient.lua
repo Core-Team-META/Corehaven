@@ -2,6 +2,7 @@
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local DOOR_MOVEMENT_SOUND_TEMPLATE = script:GetCustomProperty("DoorMovementSoundTemplate")
 local DOOR_CLANG_SOUND_TEMPLATE = script:GetCustomProperty("DoorClangSoundTemplate")
@@ -107,14 +108,14 @@ function OnBossDied(bossNumber)
 	end
 end
 
-Events.Connect("PT", OnPlayerTeleport)
+API_RE.Connect("PT", OnPlayerTeleport)
 
-Events.Connect("Boss1Pulled", OnBossPulled, 1)
-Events.Connect("Boss1Reset", OnBossReset, 1)
-Events.Connect("Boss1Died", OnBossDied, 1)
-Events.Connect("Boss2Pulled", OnBossPulled, 2)
-Events.Connect("Boss2Reset", OnBossReset, 2)
-Events.Connect("Boss2Died", OnBossDied, 2)
-Events.Connect("Boss3Pulled", OnBossPulled, 3)
-Events.Connect("Boss3Reset", OnBossReset, 3)
-Events.Connect("Boss3Died", OnBossDied, 3)
+API_RE.Connect("Boss1Pulled", OnBossPulled, 1)
+API_RE.Connect("Boss1Reset", OnBossReset, 1)
+API_RE.Connect("Boss1Died", OnBossDied, 1)
+API_RE.Connect("Boss2Pulled", OnBossPulled, 2)
+API_RE.Connect("Boss2Reset", OnBossReset, 2)
+API_RE.Connect("Boss2Died", OnBossDied, 2)
+API_RE.Connect("Boss3Pulled", OnBossPulled, 3)
+API_RE.Connect("Boss3Reset", OnBossReset, 3)
+API_RE.Connect("Boss3Died", OnBossDied, 3)

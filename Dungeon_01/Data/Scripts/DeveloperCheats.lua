@@ -1,6 +1,7 @@
 ﻿if not script:GetCustomProperty("Enable") then return end
 
 local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 
 print([[
@@ -68,7 +69,7 @@ local function OnBindingPressed(player, binding)
         Database:WaitUntilLoaded()
         local dropKey = "CHEAT"
         local playerPosition = player:GetWorldPosition()
-        Events.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
+        API_RE.Broadcast("DropLoot", dropKey, playerPosition - 100 * Vector3.UP)
         print("CHEAT: DROP LOOT")
     elseif binding == BINDING_INVENTORY_CLEAR then
         local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)

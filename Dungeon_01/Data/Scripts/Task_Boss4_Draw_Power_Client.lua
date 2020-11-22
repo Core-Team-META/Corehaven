@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local HAND_HELPER_TEMPLATE = script:GetCustomProperty("HandHelperTemplate")
@@ -57,6 +58,6 @@ function OnDrawPower(npcId, pillarIndex)
 	end)
 end
 
-Events.Connect("DP", OnDrawPower)
+API_RE.Connect("DP", OnDrawPower)
 
 API_NPC.RegisterTaskClient("boss4_draw_power", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

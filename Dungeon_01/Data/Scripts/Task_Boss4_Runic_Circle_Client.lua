@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local TARGET_TEMPLATE = script:GetCustomProperty("TargetTemplate")
@@ -17,6 +18,6 @@ function OnRunicCircle(target)
 	World.SpawnAsset(TARGET_TEMPLATE, {position = target})
 end
 
-Events.Connect("RC", OnRunicCircle)
+API_RE.Connect("RC", OnRunicCircle)
 
 API_NPC.RegisterTaskClient("boss4_runic_circle", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

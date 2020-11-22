@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
@@ -52,6 +53,6 @@ function OnThrowCoins(center, seed)
 	end
 end
 
-Events.Connect("TC", OnThrowCoins)
+API_RE.Connect("TC", OnThrowCoins)
 
 API_NPC.RegisterTaskClient("boss2_throw_coins", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

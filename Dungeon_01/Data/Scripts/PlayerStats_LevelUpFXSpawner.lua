@@ -1,4 +1,6 @@
-﻿local VFX_LOCAL = script:GetCustomProperty("VFX_LocalPlayer")
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local VFX_LOCAL = script:GetCustomProperty("VFX_LocalPlayer")
 local VFX_OTHER = script:GetCustomProperty("VFX_OtherPlayer")
 
 local LOCAL_PLAYER = Game.GetLocalPlayer()
@@ -24,5 +26,5 @@ local function OnStatSheetLevelChanged(statSheet, newLevel, oldLevel)
     end
 end
 
-Events.Connect("DisplayLocalPlayerLevelUp", OnLocalPlayerLevelUp)
-Events.Connect("StatSheet_LevelChanged", OnStatSheetLevelChanged)
+API_RE.Connect("DisplayLocalPlayerLevelUp", OnLocalPlayerLevelUp)
+API_RE.Connect("StatSheet_LevelChanged", OnStatSheetLevelChanged)

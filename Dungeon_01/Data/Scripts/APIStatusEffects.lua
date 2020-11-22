@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local API = {}
 
@@ -456,8 +457,8 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("NPC_Created", OnNPCCreated)
-Events.Connect("NPC_Destroyed", OnNPCDestroyed)
+API_RE.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Destroyed", OnNPCDestroyed)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

@@ -564,8 +564,8 @@ SetupAbilityDragToggle()
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingReleased)
-Events.Connect("AbilityGained", OnAbilityGained)
-Events.Connect("AbilityRemoved", OnAbilityRemoved)
-Events.Connect("LABL", OnLoadActionBarLayout)
+API_RE.Connect("AbilityGained", OnAbilityGained)
+API_RE.Connect("AbilityRemoved", OnAbilityRemoved)
+API_RE.Connect("LABL", OnLoadActionBarLayout)
 
 API_RE.BroadcastToServer("RFABL")	-- Ready for action bar layout. This pattern is dumb, but will work.

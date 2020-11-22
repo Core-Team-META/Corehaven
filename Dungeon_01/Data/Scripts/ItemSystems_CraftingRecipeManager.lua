@@ -1,4 +1,5 @@
 ﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 
 local COMPONENT = script:GetCustomProperty("Component"):WaitForObject()
@@ -109,7 +110,7 @@ local function ClientUpdateCraftingRecipes()
                 local shouldSendEvent = not isInitialUpdate and not RecipeManager:IsCraftingRecipeUnlocked(craftingRecipeIndex)
                 RecipeManager:UnlockCraftingRecipe(craftingRecipeIndex)
                 if shouldSendEvent then
-                    Events.Broadcast("RecipeManager_NewRecipeUnlocked", craftingRecipeIndex)
+                    API_RE.Broadcast("RecipeManager_NewRecipeUnlocked", craftingRecipeIndex)
                 end
             end
         end

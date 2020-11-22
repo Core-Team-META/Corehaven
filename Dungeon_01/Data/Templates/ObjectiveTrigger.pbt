@@ -49,6 +49,12 @@
         ParentId: 16790383636897094868
         UnregisteredParameters {
           Overrides {
+            Name: "cs:APIReliableEvents"
+            AssetReference {
+              Id: 1680988108412715813
+            }
+          }
+          Overrides {
             Name: "cs:Trigger"
             ObjectReference {
               SubObjectId: 15833680949857925268

@@ -62,6 +62,12 @@
           Id: 16915150100797142409
         }
       }
+      Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
     }
     Assets {
       Id: 2617890565520931984

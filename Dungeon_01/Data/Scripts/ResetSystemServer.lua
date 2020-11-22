@@ -4,6 +4,8 @@ kills all of the current npcs, which triggers a bunch of things, like opening do
 performance, that is done over a few seconds. Therefore each system may have to wait 5-10 seconds before reseting so
 the work doesn't get undone.
 ]]
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
 local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 
 local END_DUNGEON_RESET_DELAY = 30.0
@@ -21,7 +23,7 @@ function ResetDungeon(delay)
 				Task.Wait()
 			end
 
-			Events.Broadcast("ResetDungeon")
+			API_RE.Broadcast("ResetDungeon")
 			Task.Wait()		-- We need the checkpoint system to update the spawn points before we respawn players
 
 			for _, player in pairs(Game.GetPlayers()) do
@@ -52,4 +54,4 @@ function Tick(deltaTime)
 	end
 end
 
-Events.Connect(DATA_GROUP:GetCustomProperty("DungeonEndEventName"), OnDungeonEnd)
+API_RE.Connect(DATA_GROUP:GetCustomProperty("DungeonEndEventName"), OnDungeonEnd)

@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local SUMMON_TEMPLATES = {
 	script:GetCustomProperty("SummonTemplate1"),		-- Guard
@@ -61,7 +62,7 @@ end
 function OnTaskEnd(npc, interrupted)
 end
 
-Events.Connect("Boss3Reset", ResetNextWave)
-Events.Connect("Boss3Died", ResetNextWave)
+API_RE.Connect("Boss3Reset", ResetNextWave)
+API_RE.Connect("Boss3Died", ResetNextWave)
 
 API_NPC.RegisterTaskServer("boss3_summon_reinforcements", RANGE, COOLDOWN, GetPriority, OnTaskStart, OnTaskEnd)

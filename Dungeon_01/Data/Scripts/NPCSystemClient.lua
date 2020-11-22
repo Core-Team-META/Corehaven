@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_E = require(script:GetCustomProperty("APIEffects"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 local AGGRO_TEMPLATE = script:GetCustomProperty("AggroTemplate")
@@ -50,19 +51,19 @@ function Tick(deltaTime)
 
 			if previousTask == API_NPC.STATE_IDLE and currentTask ~= API_NPC.STATE_IDLE then
 				if npcData.onPulledEventName then
-					Events.Broadcast(npcData.onPulledEventName)
+					API_RE.Broadcast(npcData.onPulledEventName)
 				end
 			end
 
 			if previousTask ~= API_NPC.STATE_RESETTING and currentTask == API_NPC.STATE_RESETTING then
 				if npcData.onResetEventName then
-					Events.Broadcast(npcData.onResetEventName)
+					API_RE.Broadcast(npcData.onResetEventName)
 				end
 			end
 
 			if previousTask ~= API_NPC.STATE_DEAD and currentTask == API_NPC.STATE_DEAD then
 				if npcData.onDiedEventName then
-					Events.Broadcast(npcData.onDiedEventName)
+					API_RE.Broadcast(npcData.onDiedEventName)
 				end
 			end
 
@@ -148,7 +149,7 @@ end
 API_NPC.RegisterSystem({IsAsleep = IsAsleep}, true)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 Task.Wait()		-- Work around networked property backing data issue
-Events.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Created", OnNPCCreated)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

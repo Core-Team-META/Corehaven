@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
@@ -113,8 +114,8 @@ function ResetRocks()
 	_G.boss3Rocks = {}
 end
 
-Events.Connect("CD", OnCallDragon)
-Events.Connect("Boss3Reset", ResetRocks)		-- This is kind of a hack, in that it will break if we give this task to another NPC
-Events.Connect("Boss3Died", ResetRocks)
+API_RE.Connect("CD", OnCallDragon)
+API_RE.Connect("Boss3Reset", ResetRocks)		-- This is kind of a hack, in that it will break if we give this task to another NPC
+API_RE.Connect("Boss3Died", ResetRocks)
 
 API_NPC.RegisterTaskClient("boss3_call_dragon", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

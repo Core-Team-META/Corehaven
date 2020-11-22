@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
@@ -303,4 +304,4 @@ functionTable.TrySetTarget = TrySetTarget
 API_T.RegisterSystem(functionTable)
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)

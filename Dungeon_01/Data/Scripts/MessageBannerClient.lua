@@ -23,6 +23,8 @@ BannerMessage(String message, float duration)
 --]]
 
 -- Internal custom properties
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TEXT_BOX = script:GetCustomProperty("TextBox"):WaitForObject()
@@ -62,4 +64,4 @@ end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
-Events.Connect("BannerMessage", OnBannerMessageEvent)
+API_RE.Connect("BannerMessage", OnBannerMessageEvent)

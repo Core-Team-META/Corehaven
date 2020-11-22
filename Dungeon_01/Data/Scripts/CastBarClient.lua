@@ -17,6 +17,7 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 
 -- Internal custom properties
 local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
@@ -66,7 +67,7 @@ end
 
 -- Initialize
 PANEL.visibility = Visibility.FORCE_OFF
-Events.Connect("AI", OnAbilityInterrupted)
+API_RE.Connect("AI", OnAbilityInterrupted)
 
 if not SHOW_NAME then
     TEXT_BOX.visibility = Visibility.FORCE_OFF

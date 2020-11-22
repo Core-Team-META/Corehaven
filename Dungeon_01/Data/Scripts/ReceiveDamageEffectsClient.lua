@@ -1,5 +1,6 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
@@ -14,4 +15,4 @@ function OnDamageDone(sourceCharacter, targetCharacter, amount, overkill, tags)
 	end
 end
 
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)

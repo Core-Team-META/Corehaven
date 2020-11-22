@@ -1,4 +1,6 @@
-﻿local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 
 local OBJECTIVE_EVENT_NAMES = {}
 
@@ -22,10 +24,10 @@ function OnResetDungeon()
 	resettingDungeon = false
 end
 
-Events.Connect("ResetDungeon", OnResetDungeon)
+API_RE.Connect("ResetDungeon", OnResetDungeon)
 
 for i, objectiveName in pairs(OBJECTIVE_EVENT_NAMES) do
-	Events.Connect(objectiveName, function()
+	API_RE.Connect(objectiveName, function()
 		if not resettingDungeon then
 			local currentProgress = script:GetCustomProperty("CurrentProgress")
 			script:SetNetworkedCustomProperty("CurrentProgress", math.max(currentProgress, i))

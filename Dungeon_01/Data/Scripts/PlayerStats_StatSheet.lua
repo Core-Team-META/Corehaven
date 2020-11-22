@@ -1,4 +1,6 @@
-﻿local StatSheet = {}
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local StatSheet = {}
 StatSheet.__index = StatSheet
 
 ---------------------------------------------------------------------------------------------------------
@@ -220,7 +222,7 @@ function StatSheet:_UpdateLevel()
     end
     local newLevel = self.level
     if newLevel ~= oldLevel then
-        Events.Broadcast("StatSheet_LevelChanged", self, newLevel, oldLevel)
+        API_RE.Broadcast("StatSheet_LevelChanged", self, newLevel, oldLevel)
     end
 end
 

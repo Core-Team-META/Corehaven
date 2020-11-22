@@ -13251,6 +13251,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:SummonTemplate1"
       AssetReference {
         Id: 8115993960793536338
@@ -15336,6 +15342,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 4135686357839385894
@@ -15435,6 +15447,12 @@ Objects {
       Name: "cs:API_NPC"
       AssetReference {
         Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -15576,6 +15594,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:ProjectileTemplate"
       AssetReference {
         Id: 3856561635738925817
@@ -15645,6 +15669,12 @@ Objects {
       Name: "cs:APIProjectile"
       AssetReference {
         Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -15936,6 +15966,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 17214326792927864641
@@ -16209,6 +16245,12 @@ Objects {
       Name: "cs:APIProjectile"
       AssetReference {
         Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -16605,6 +16647,12 @@ Objects {
       Name: "cs:API_NPC"
       AssetReference {
         Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -17070,6 +17118,12 @@ Objects {
       }
     }
     Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
         Id: 13540390578621358507
@@ -17211,6 +17265,12 @@ Objects {
       Name: "cs:API_NPC"
       AssetReference {
         Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {
@@ -28687,6 +28747,12 @@ Objects {
       Name: "cs:API_ID"
       AssetReference {
         Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
     Overrides {

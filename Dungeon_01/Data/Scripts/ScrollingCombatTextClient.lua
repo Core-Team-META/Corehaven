@@ -1,6 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 local ELEMENT_TEMPLATE = script:GetCustomProperty("ElementTemplate")
@@ -193,5 +194,5 @@ function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal, tags)
 	end
 end
 
-Events.Connect("DamageDone", OnDamageDone)
-Events.Connect("HealingDone", OnHealingDone)
+API_RE.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("HealingDone", OnHealingDone)

@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local GROUP_STATES = {}
 
@@ -61,4 +62,4 @@ for group, _ in pairs(GROUP_STATES) do
 	end
 end
 
-Events.Connect("ResetDungeon", OnResetDungeon)
+API_RE.Connect("ResetDungeon", OnResetDungeon)

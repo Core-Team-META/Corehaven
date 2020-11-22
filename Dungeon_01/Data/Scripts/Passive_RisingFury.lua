@@ -1,5 +1,6 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local data = {}
 
@@ -33,6 +34,6 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 	end
 end
 
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)
 
 return data

@@ -5,6 +5,12 @@
   TextAsset {
     CustomParameters {
       Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
+      Overrides {
         Name: "cs:ItemSystems_Database"
         AssetReference {
           Id: 4685988691808682848

@@ -280,7 +280,7 @@ end
 
 -- Owning client
 function InterruptAbility()
-	Events.Broadcast("AI", LOCAL_PLAYER)		-- For cast bars
+	API_RE.Broadcast("AI", LOCAL_PLAYER)		-- For cast bars
 	API_RE.BroadcastToServer("AIS")
 	queuedAbilityName = nil
 	queuedAbilityTarget = nil
@@ -392,7 +392,7 @@ end
 -- Other clients
 function OnAbilityInterruptClient(player)
 	if player ~= LOCAL_PLAYER then
-		Events.Broadcast("AI", player)		-- For cast bars
+		API_RE.Broadcast("AI", player)		-- For cast bars
 		playerCastData[player] = nil
 	end
 end
@@ -627,7 +627,7 @@ function API.CanTrigger(abilityName)
 
 			if not targetValid then
 				if errorMessage then
-					Events.Broadcast("BannerMessage", errorMessage)
+					API_RE.Broadcast("BannerMessage", errorMessage)
 				end
 
 				return false
@@ -639,7 +639,7 @@ function API.CanTrigger(abilityName)
 
 	if not canCast then
 		if errorMessage then
-			Events.Broadcast("BannerMessage", errorMessage)
+			API_RE.Broadcast("BannerMessage", errorMessage)
 		end
 
 		return false
@@ -676,7 +676,7 @@ function CanActivate(abilityName)
 
 		if not targetValid then
 			if errorMessage then
-				Events.Broadcast("BannerMessage", errorMessage)
+				API_RE.Broadcast("BannerMessage", errorMessage)
 			end
 
 			return false
@@ -687,7 +687,7 @@ function CanActivate(abilityName)
 
 	if not canCast then
 		if errorMessage then
-			Events.Broadcast("BannerMessage", errorMessage)
+			API_RE.Broadcast("BannerMessage", errorMessage)
 		end
 
 		return false
@@ -784,7 +784,7 @@ function API.GivePlayerAbility(player, abilityName)
 		local data = abilityData[abilityName]
 		assert(data)
 		playerAbilities[player][abilityName] = 1
-		Events.Broadcast("AbilityGained", player, abilityName)
+		API_RE.Broadcast("AbilityGained", player, abilityName)
 
 		if not IS_CLIENT and data.animationKey then
 			API_AS.AddAnimationReference(player, data.animationKey)
@@ -825,7 +825,7 @@ function API.RemovePlayerAbility(player, abilityName)
 		end
 
 		playerAbilities[player][abilityName] = nil
-		Events.Broadcast("AbilityRemoved", player, abilityName)
+		API_RE.Broadcast("AbilityRemoved", player, abilityName)
 
 		if not IS_CLIENT and data.animationKey then
 			API_AS.RemoveAnimationReference(player, data.animationKey)
@@ -846,16 +846,16 @@ function API.Initialize(isClient)
 		LOCAL_PLAYER = Game.GetLocalPlayer()
 		LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
 		LOCAL_PLAYER.bindingReleasedEvent:Connect(OnBindingRelease)
-		Events.Connect("ACC", OnAbilityCastClient)
-		Events.Connect("AEC", OnAbilityExecuteClient)
-		Events.Connect("AIC", OnAbilityInterruptClient)
+		API_RE.Connect("ACC", OnAbilityCastClient)
+		API_RE.Connect("AEC", OnAbilityExecuteClient)
+		API_RE.Connect("AIC", OnAbilityInterruptClient)
 
 		local tick = Task.Spawn(Tick)
 		tick.repeatCount = -1
 	else
-		Events.ConnectForPlayer("ACS", OnAbilityCastServer)
-		Events.ConnectForPlayer("AES", OnAbilityExecuteServer)
-		Events.ConnectForPlayer("AIS", OnAbilityInterruptServer)
+		API_RE.ConnectForPlayer("ACS", OnAbilityCastServer)
+		API_RE.ConnectForPlayer("AES", OnAbilityExecuteServer)
+		API_RE.ConnectForPlayer("AIS", OnAbilityInterruptServer)
 	end
 end
 

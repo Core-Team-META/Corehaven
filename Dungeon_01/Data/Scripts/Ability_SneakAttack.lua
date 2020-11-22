@@ -58,6 +58,6 @@ function data.onCastServer(caster, target)
 	end
 end
 
-Events.Connect("SA", OnSneakAttack)
+API_RE.Connect("SA", OnSneakAttack)
 
 return data

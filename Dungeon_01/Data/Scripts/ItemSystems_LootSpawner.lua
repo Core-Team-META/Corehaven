@@ -1,4 +1,6 @@
-﻿local Database = require(script:GetCustomProperty("ItemSystems_Database"))
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local LOOT_TEMPLATE = script:GetCustomProperty("LootTemplate")
 
 -- Drops are assigned by lottery.
@@ -70,4 +72,4 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("DropLoot", OnDropLoot)
+API_RE.Connect("DropLoot", OnDropLoot)

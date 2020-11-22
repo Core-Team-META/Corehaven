@@ -1,4 +1,6 @@
-﻿local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
 local LEVELUP_BLINKER = script:GetCustomProperty("LevelUpBlinker"):WaitForObject()
 local HOVER_BUTTON = script:GetCustomProperty("HoverButton"):WaitForObject()
 local SEGMENTS_ROOT = script:GetCustomProperty("SegmentsRoot"):WaitForObject()
@@ -79,7 +81,7 @@ local function UpdateProgressAnimation(dt)
         if level > currentLevel then
             blinkTimer = 0
             SFX_LEVELUP:Play()
-            Events.Broadcast("DisplayLocalPlayerLevelUp")
+            API_RE.Broadcast("DisplayLocalPlayerLevelUp")
         end
         -- Update.
         currentLevel = level

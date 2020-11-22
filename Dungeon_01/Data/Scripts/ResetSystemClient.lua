@@ -1,4 +1,6 @@
-﻿local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local TIMER_TEXT = script:GetCustomProperty("TimerText"):WaitForObject()
 
@@ -11,7 +13,7 @@ function Tick(deltaTime)
 		if resetTime > t then
 			TIMER_TEXT.text = tostring(math.ceil(resetTime - t))
 		else
-			Events.Broadcast("ResetDungeon")
+			API_RE.Broadcast("ResetDungeon")
 			resetTime = nil
 			PANEL.visibility = Visibility.FORCE_OFF
 		end

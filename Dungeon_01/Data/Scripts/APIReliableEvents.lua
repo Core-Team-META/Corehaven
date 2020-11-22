@@ -2,9 +2,7 @@
 This system replaces all the 'Events' namespace functions and provides added functionality.
 
 First, it enables passing core objects as parameters or in tables. The receiver does not wait for the object, so a
-server event passing a networked object, for example, may be received as nil instead on the client. Note that this is
-also done for non-networked events, because a single 'Connect' can be used for both networked and non-networked events
-(although thats probably not a great pattern).
+server event passing a networked object, for example, may be received as nil instead on the client.
 
 Additionally, this adds a queue layer so the event limit no longer results in failed events, just delays. Mixed use of
 this API with the built in 'Events' namespace functions is not recommended and probably won't work.
@@ -16,7 +14,7 @@ Note that core object references are no longer supported as argument types.
 function ObjectToReference_R(table)
     for k, v in pairs(table) do
         if type(v) == "table" then
-            ReplaceCoreObjects_R(v)
+            ObjectToReference_R(v)
         elseif type(v) == "userdata" then
             if v:IsA("CoreObject") then
                 table[k] = v:GetReference()
@@ -33,12 +31,8 @@ function ReferenceToObject_R(table)
     for k, v in pairs(table) do
         if type(v) == "table" then
             ReferenceToObject_R(v)
-        elseif type(v) == "userdata" then
-            if v:IsA("CoreObjectReference") then
-                table[k] = v:GetObject()
-            else
-                assert(not v:IsA("CoreObject"))
-            end
+        elseif type(v) == "userdata" and v:IsA("CoreObjectReference") then
+            table[k] = v:GetObject()
         end
     end
 
@@ -65,7 +59,12 @@ function API.Connect(eventName, listener, ...)
 
     return Events.Connect(eventName, function(...)
         local args = ReferenceToObject_R({...})
-        listener(table.unpack(args), table.unpack(extraArgs))
+
+        for _, extraArg in pairs(extraArgs) do
+            table.insert(args, extraArg)
+        end
+
+        listener(table.unpack(args))
     end)
 end
 
@@ -74,13 +73,17 @@ function API.ConnectForPlayer(eventName, listener, ...)
 
     return Events.ConnectForPlayer(eventName, function(player, ...)
         local args = ReferenceToObject_R({...})
-        listener(player, table.unpack(args), table.unpack(extraArgs))
+
+        for _, extraArg in pairs(extraArgs) do
+            table.insert(args, extraArg)
+        end
+        
+        listener(player, table.unpack(args))
     end)
 end
 
 function API.Broadcast(eventName, ...)
-    local args = ObjectToReference_R({...})
-    Events.Broadcast(eventName, table.unpack(args))
+    Events.Broadcast(eventName, ...)
 end
 
 function API.BroadcastToServer(eventName, ...)
@@ -90,7 +93,7 @@ end
 
 function API.BroadcastToPlayer(player, eventName, ...)
     local args = ObjectToReference_R({...})
-    Events.BroadcastToPlayer(eventName, table.unpack(args))
+    Events.BroadcastToPlayer(player, eventName, table.unpack(args))
 end
 
 function API.BroadcastToAllPlayers(eventName, ...)
@@ -98,7 +101,7 @@ function API.BroadcastToAllPlayers(eventName, ...)
     Events.BroadcastToAllPlayers(eventName, table.unpack(args))
 end
 
-local task = Task.Spawn(function() ProcessQueue() end)
-task.repeatCount = -1
+--local task = Task.Spawn(function() ProcessQueue() end)
+--task.repeatCount = -1
 
 return API

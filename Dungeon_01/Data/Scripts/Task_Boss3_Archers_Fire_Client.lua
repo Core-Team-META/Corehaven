@@ -1,5 +1,6 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
@@ -88,6 +89,6 @@ function OnArchersFire(seed)
 	end)
 end
 
-Events.Connect("AF", OnArchersFire)
+API_RE.Connect("AF", OnArchersFire)
 
 API_NPC.RegisterTaskClient("boss3_archers_fire", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

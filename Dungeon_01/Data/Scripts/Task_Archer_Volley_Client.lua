@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
@@ -32,6 +33,6 @@ function OnVolley(targetPosition)
 	telegraph:Destroy()
 end
 
-Events.Connect("AV", OnVolley)
+API_RE.Connect("AV", OnVolley)
 
 API_NPC.RegisterTaskClient("archer_volley", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

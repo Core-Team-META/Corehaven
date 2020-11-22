@@ -1,4 +1,6 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CHEST_TEMPLATE = script:GetCustomProperty("ChestTemplate")
 local DROP_KEY = script:GetCustomProperty("DropKey")
 
@@ -16,7 +18,7 @@ function OnOpenChest(trigger, triggerPlayer, index)
 	local chest = chests[index]
 
 	for _, player in pairs(Game.GetPlayers()) do
-		Events.Broadcast("DropLoot", DROP_KEY, chest:GetWorldPosition() + Vector3.UP * 20.0, player)
+		API_RE.Broadcast("DropLoot", DROP_KEY, chest:GetWorldPosition() + Vector3.UP * 20.0, player)
 	end
 
 	-- We are leaving a sparse array, but that's fine. We can't change indices without breaking things
@@ -51,4 +53,4 @@ end
 
 SpawnChests()
 
-Events.Connect("ResetDungeon", OnResetDungeon)
+API_RE.Connect("ResetDungeon", OnResetDungeon)

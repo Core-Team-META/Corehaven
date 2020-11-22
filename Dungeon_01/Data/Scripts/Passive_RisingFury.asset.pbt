@@ -17,6 +17,12 @@
         }
       }
       Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
+      Overrides {
         Name: "cs:Description"
         String: "Your attacks have a chance to anger you, giving you increased attack for a short duration."
       }

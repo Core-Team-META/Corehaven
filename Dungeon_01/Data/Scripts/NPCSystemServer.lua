@@ -3,6 +3,7 @@ local API_EP = require(script:GetCustomProperty("APIEnemyPathing"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
@@ -79,19 +80,19 @@ function SetCurrentTask(npc, task, interrupted)
 
 	if previousTask == API_NPC.STATE_IDLE and task ~= API_NPC.STATE_IDLE then
 		if npcData.onPulledEventName then
-			Events.Broadcast(npcData.onPulledEventName)
+			API_RE.Broadcast(npcData.onPulledEventName)
 		end
 	end
 
 	if previousTask ~= API_NPC.STATE_RESETTING and task == API_NPC.STATE_RESETTING then
 		if npcData.onResetEventName then
-			Events.Broadcast(npcData.onResetEventName)
+			API_RE.Broadcast(npcData.onResetEventName)
 		end
 	end
 
 	if previousTask ~= API_NPC.STATE_DEAD and task == API_NPC.STATE_DEAD then
 		if npcData.onDiedEventName then
-			Events.Broadcast(npcData.onDiedEventName)
+			API_RE.Broadcast(npcData.onDiedEventName)
 		end
 	end
 
@@ -411,7 +412,7 @@ function KillNPC(npc, skipLoot)
 				for _, dropInfo in pairs(npcData.dropData) do
 					if not dropInfo.minDifficulty or dropInfo.minDifficulty <= API_DS.GetDifficultyLevel() then
 						if math.random() <= dropInfo.chance then
-							Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
+							API_RE.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
 						end
 
 						if player.serverUserData.statSheet then
@@ -432,7 +433,7 @@ function KillNPC(npc, skipLoot)
 	npc:StopMove()
 	npc:StopRotate()
 
-	Events.Broadcast("NPC_Died", npc)
+	API_RE.Broadcast("NPC_Died", npc)
 end
 
 function DespawnNPC(npc)
@@ -660,7 +661,7 @@ API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)
 Task.Wait()		-- Work around networked property backing data issue
-Events.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Created", OnNPCCreated)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

@@ -1,4 +1,6 @@
-﻿local Item = require(script:GetCustomProperty("ItemSystems_Item"))
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local Item = require(script:GetCustomProperty("ItemSystems_Item"))
 local LOOT = script:GetCustomProperty("Loot"):WaitForObject()
 local INDICATORS = {
     NotForMe    = script:GetCustomProperty("IndicatorNotForMe"),
@@ -57,7 +59,7 @@ else
         -- Set up the trigger.
         local pickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
         pickupTrigger.isInteractable = true
-        pickupTrigger.interactedEvent:Connect(function() Events.Broadcast("ForceOpenViewByName", "Loot") end)
+        pickupTrigger.interactedEvent:Connect(function() API_RE.Broadcast("ForceOpenViewByName", "Loot") end)
         -- Draw the correct visuals depending on rarity.
         World.SpawnAsset(INDICATORS[item:GetRarity()], { parent = LOOT })
     else
@@ -67,5 +69,5 @@ else
 end
 
 ---------------------------------------------------------------------------------------------------------
-Events.Broadcast("LootDroppedForPlayer", OWNER, item)
+API_RE.Broadcast("LootDroppedForPlayer", OWNER, item)
 

@@ -1,4 +1,5 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local REWIND_DURATION = 5.0
 
@@ -63,7 +64,7 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)
 
 local pruneTask = Task.Spawn(PruneHistories)
 pruneTask.repeatCount = -1

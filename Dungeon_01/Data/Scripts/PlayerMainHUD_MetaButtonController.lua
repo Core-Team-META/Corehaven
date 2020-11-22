@@ -1,4 +1,6 @@
-﻿local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
 local BUTTON_LOOT = script:GetCustomProperty("ButtonLoot"):WaitForObject()
 local BUTTON_TALENTS = script:GetCustomProperty("ButtonTalents"):WaitForObject()
 local BOUNCE_SCALE = script:GetCustomProperty("BounceScale")
@@ -72,7 +74,7 @@ local function OnLootDroppedForPlayer(player, item)
         CueButtonAnimation("Loot")
     end
 end
-Events.Connect("LootDroppedForPlayer", OnLootDroppedForPlayer)
+API_RE.Connect("LootDroppedForPlayer", OnLootDroppedForPlayer)
 
 local function UpdateLootButtonAnimationState()
     local hasUnclaimedLoot = nil

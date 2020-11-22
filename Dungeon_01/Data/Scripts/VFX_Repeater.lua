@@ -1,4 +1,6 @@
-﻿local propVFX = script:GetCustomProperty("VFX"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local propVFX = script:GetCustomProperty("VFX"):WaitForObject()
 local autoStart = script:GetCustomProperty("AutoStart")
 local propStartDelay = script:GetCustomProperty("StartDelay")
 local repeatCount = script:GetCustomProperty("RepeatCount")
@@ -8,6 +10,7 @@ local canStart = autoStart
 local delayTime = propStartDelay
 local currentInterval = intervalRange.x
 local currentCount = 0
+
 function Tick(deltaTime)
     if not canStart then return end
     if not Object.IsValid(propVFX) then return end
@@ -18,7 +21,7 @@ function Tick(deltaTime)
     t = t + deltaTime
     if t > currentInterval then
         propVFX:Play()
-        Events.Broadcast("TriggerVFXFeedback", propVFX)
+        API_RE.Broadcast("TriggerVFXFeedback", propVFX)
         if repeatCount > -1 then
             currentCount = currentCount + 1
         end
@@ -26,11 +29,13 @@ function Tick(deltaTime)
         t = 0
     end
 end
+
 function TriggerVFX(vfx)
     if vfx ~= propVFX then return end
     ResetVFX(vfx)
     canStart = true
 end
+
 function ResetVFX(vfx)
     if vfx ~= propVFX then return end
     vfx:Stop()
@@ -39,8 +44,10 @@ function ResetVFX(vfx)
     currentCount = 0
     currentInterval = RandomFloat(intervalRange.x, intervalRange.y)
 end
+
 function RandomFloat(lower, greater)
     return lower + math.random()  * (greater - lower);
 end
-Events.Connect("TriggerVFX", TriggerVFX)
-Events.Connect("ResetTriggerVFX", ResetVFX)
+
+API_RE.Connect("TriggerVFX", TriggerVFX)
+API_RE.Connect("ResetTriggerVFX", ResetVFX)

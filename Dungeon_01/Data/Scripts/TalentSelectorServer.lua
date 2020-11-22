@@ -1,4 +1,5 @@
 ﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
@@ -11,7 +12,7 @@ local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 local isStorageLoaded = {}		-- Player -> bool
 
 -- Setup talent respec request event handling.
-Events.ConnectForPlayer("RequestTalentTreeRespec", function(player)
+API_RE.ConnectForPlayer("RequestTalentTreeRespec", function(player)
 	UTILITY.ResetTalentTrees(player)
 end)
 
@@ -97,7 +98,7 @@ function Tick(deltaTime)
 			end
 
 			isStorageLoaded[player] = true
-			Events.Broadcast("TalentsLoaded", player)
+			API_RE.Broadcast("TalentsLoaded", player)
 		end
 	end
 end
@@ -105,4 +106,4 @@ end
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, false)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.ConnectForPlayer("TryLearnTalent", OnTryLearnTalent)
+API_RE.ConnectForPlayer("TryLearnTalent", OnTryLearnTalent)

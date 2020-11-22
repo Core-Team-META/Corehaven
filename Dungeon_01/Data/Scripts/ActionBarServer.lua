@@ -26,7 +26,7 @@ function OnPlayerLeft(player)
 	readyPlayers[player] = nil
 end
 
-Events.ConnectForPlayer("SABL", OnSetActionBarLayout)
-Events.Connect("TalentsLoaded", OnTalentsLoaded)
-Events.ConnectForPlayer("RFABL", OnReadyForActionBarLayout)
+API_RE.ConnectForPlayer("SABL", OnSetActionBarLayout)
+API_RE.Connect("TalentsLoaded", OnTalentsLoaded)
+API_RE.ConnectForPlayer("RFABL", OnReadyForActionBarLayout)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
