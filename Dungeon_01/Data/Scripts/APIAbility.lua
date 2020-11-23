@@ -51,7 +51,7 @@ float castDuration								Length of cast for this ability
 <AssetReference> selfTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to the caster
 <AssetReference> otherTargetEffectTemplate		Template spawned at the target at impact or cast end time, visible to others
 <AssetReference> reticleTemplate				Reticle for ground target ability
-<function> getEffectiveTarget(caster, target)	Client function called on 'cast', returns the target or array of targets (Local player only)
+<function> getTargetSet(caster, target)			Client function called on 'cast', returns the target or array of targets (Local player only)
 <function> onCastClient(caster, target)			Client function called on 'execute', returns the time to impact
 <function> onCastServer(caster, target)			Server function called on 'execute'
 ]]
@@ -200,20 +200,27 @@ function CastAbility(abilityName, target)
 	assert(CanCast(abilityName, target))
 	local data = abilityData[abilityName]
 
-	local effectiveTarget = target
+	local targetSet = {target}
 
-	if data.getEffectiveTarget then
-		effectiveTarget = data.getEffectiveTarget(LOCAL_PLAYER, target)
+	if data.getTargetSet then
+		targetSet = data.getTargetSet(LOCAL_PLAYER, target)
+
+		-- We just shrink the set instead of making every ability handle this limit
+		if #targetSet > 8 then
+			for i = 8, #targetSet do
+				targetSet[i] = nil
+			end
+		end
 	end
 	
 	local castData = {}
 	castData.abilityName = abilityName
-	castData.target = effectiveTarget
+	castData.targetSet = targetSet
 	castData.castId = nextCastId
 	castData.startTime = os.clock()
 	playerCastData[LOCAL_PLAYER] = castData
 	local isInstantCast = (API.GetAbilityCastDuration(LOCAL_PLAYER, castData.abilityName) == 0.0)
-	API_RE.BroadcastToServer("ACS", abilityName, effectiveTarget, nextCastId, isInstantCast)
+	API_RE.BroadcastToServer("ACS", abilityName, targetSet, nextCastId, isInstantCast)
 
 	if data.animationKey then
 		API_AS.PlayAnimation(data.animationKey, nextCastId, not isInstantCast)
@@ -239,7 +246,7 @@ function ExecuteAbility(skipBroadcast)
 	local castData = playerCastData[LOCAL_PLAYER]
 	assert(castData)
 	local data = abilityData[castData.abilityName]
-	local target = castData.target	-- May need this after a Task.Wait() below, after we've cleared out data
+	local targetSet = castData.targetSet	-- May need this after a Task.Wait() below, after we've cleared out data
 	local impactDelay = 0.0
 	local isInstantCast = (API.GetAbilityCastDuration(LOCAL_PLAYER, castData.abilityName) == 0.0)
 
@@ -255,22 +262,24 @@ function ExecuteAbility(skipBroadcast)
 	playerCastData[LOCAL_PLAYER] = nil
 
 	if data.onCastClient then
-		impactDelay = data.onCastClient(LOCAL_PLAYER, target)
+		impactDelay = data.onCastClient(LOCAL_PLAYER, targetSet)
 	end
 
-	if target then
+	if targetSet then
 		Task.Spawn(function()
 			Task.Wait(impactDelay)
 
 			if data.selfTargetEffectTemplate then
-				if data.groundTargets then
-					World.SpawnAsset(data.selfTargetEffectTemplate, {position = target})
-				else
-					if target:IsA("Player") then
-						local effect = World.SpawnAsset(data.selfTargetEffectTemplate)
-						effect:AttachToPlayer(target, "root")
+				for _, target in pairs(targetSet) do
+					if data.groundTargets then
+						World.SpawnAsset(data.selfTargetEffectTemplate, {position = target})
 					else
-						World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
+						if target:IsA("Player") then
+							local effect = World.SpawnAsset(data.selfTargetEffectTemplate)
+							effect:AttachToPlayer(target, "root")
+						else
+							World.SpawnAsset(data.selfTargetEffectTemplate, {parent = target})
+						end
 					end
 				end
 			end
@@ -288,18 +297,18 @@ function InterruptAbility()
 end
 
 -- Server
-function OnAbilityCastServer(player, abilityName, targetOrId, castId, isInstantCast)
+function OnAbilityCastServer(player, abilityName, targetSet, castId, isInstantCast)
 	assert(not playerCastData[player])
 	local castData = {
 		abilityName = abilityName,
-		target = API_ID.GetObjectFromId(targetOrId) or targetOrId,
+		targetSet = targetSet,
 		castId = castId,
 		startTime = os.clock(),
 	}
 	playerCastData[player] = castData
 
 	-- Bounce it back to other clients
-	API_RE.BroadcastToAllPlayers("ACC", player, abilityName, targetOrId, isInstantCast)
+	API_RE.BroadcastToAllPlayers("ACC", player, abilityName, targetSet, isInstantCast)
 
 	if isInstantCast then	-- Instant casts only send one broadcast
 		OnAbilityExecuteServer(player, true)
@@ -320,7 +329,7 @@ function OnAbilityExecuteServer(player, skipBroadcast)
 	end
 
 	if data.onCastServer then		-- This can have a Task.Wait() in it, so it has to be last
-		data.onCastServer(player, castData.target)
+		data.onCastServer(player, castData.targetSet)
 	end
 end
 
@@ -334,12 +343,12 @@ function OnAbilityInterruptServer(player)
 end
 
 -- Other clients
-function OnAbilityCastClient(player, abilityName, targetOrId, isInstantCast)
+function OnAbilityCastClient(player, abilityName, targetSet, isInstantCast)
 	if player ~= LOCAL_PLAYER then
 		local data = abilityData[abilityName]
 		local castData = {}
 		castData.abilityName = abilityName
-		castData.target = API_ID.GetObjectFromId(targetOrId) or targetOrId
+		castData.targetSet = targetSet
 		castData.startTime = os.clock()
 		playerCastData[player] = castData
 
@@ -360,27 +369,29 @@ function OnAbilityExecuteClient(player)
 
 	if castData and player ~= LOCAL_PLAYER then
 		local data = abilityData[castData.abilityName]
-		local target = castData.target	-- May need this after a Task.Wait() below, after we've cleared out data
+		local targetSet = castData.targetSet	-- May need this after a Task.Wait() below, after we've cleared out data
 		local impactDelay = 0.0
 		playerCastData[player] = nil
 
 		if data.onCastClient then
-			impactDelay = data.onCastClient(player, target)
+			impactDelay = data.onCastClient(player, targetSet)
 		end
 
-		if target then
+		if targetSet then
 			Task.Spawn(function()
 				Task.Wait(impactDelay)
 
 				if data.otherTargetEffectTemplate then
-					if data.groundTargets then
-						World.SpawnAsset(data.otherTargetEffectTemplate, {position = target})
-					else
-						if target:IsA("Player") then
-							local effect = World.SpawnAsset(data.otherTargetEffectTemplate)
-							effect:AttachToPlayer(target, "root")
+					for _, target in pairs(targetSet) do
+						if data.groundTargets then
+							World.SpawnAsset(data.otherTargetEffectTemplate, {position = target})
 						else
-							World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
+							if target:IsA("Player") then
+								local effect = World.SpawnAsset(data.otherTargetEffectTemplate)
+								effect:AttachToPlayer(target, "root")
+							else
+								World.SpawnAsset(data.otherTargetEffectTemplate, {parent = target})
+							end
 						end
 					end
 				end
@@ -736,8 +747,18 @@ function CanContinue(player, castData)
 		return false
 	end
 
+	-- We only need one target to be valid to continue.
 	if data.targets then
-		if not IsTargetValid(player, castData.target, castData.abilityName) then
+		local hasValidTarget = false
+
+		for _, target in pairs(castData.targetSet) do
+			if IsTargetValid(player, target, castData.abilityName) then
+				hasValidTarget = true
+				break
+			end
+		end
+
+		if not hasValidTarget then
 			return false
 		end
 	end

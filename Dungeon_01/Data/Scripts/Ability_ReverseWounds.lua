@@ -48,11 +48,11 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
 	local totalDamage = 0.0
 
 	for _, amount in pairs(playerDamageHistories[caster]) do

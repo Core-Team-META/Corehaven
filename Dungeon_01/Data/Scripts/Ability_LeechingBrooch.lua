@@ -20,11 +20,12 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	local damageAmount = caster.maxHitPoints * 0.4
 	local leechAmount, tags = API_D.ApplyDamage(caster, target, damageAmount)
 	local healingTags = API_D.TAG_CANNOT_CRIT

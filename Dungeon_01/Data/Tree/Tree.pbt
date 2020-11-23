@@ -20,6 +20,7 @@ Objects {
   ChildIds: 17998119936475930974
   ChildIds: 11675404267983164951
   ChildIds: 2725103705033698131
+  ChildIds: 11951997742249350862
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -29,6 +30,49 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 11951997742249350862
+  Name: "Helper_TreasureChest"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9455165996919588474
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Helper_TreasureChest"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6113325261809187088
+    }
   }
 }
 Objects {

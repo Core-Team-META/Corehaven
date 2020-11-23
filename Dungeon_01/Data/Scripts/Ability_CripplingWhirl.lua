@@ -22,17 +22,22 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.getTargetSet(caster, target)
+	return API_NPC.GetAwakeNPCsInSphere(caster:GetWorldPosition(), EFFECT_RANGE)
+end
+
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
-	local casterPosition = caster:GetWorldPosition()
+function data.onCastServer(caster, targetSet)
 	local attackStat = caster.serverUserData.statSheet:GetStatTotalValue("Attack")
 
-	for _, npc in pairs(API_NPC.GetAwakeNPCsInSphere(casterPosition, EFFECT_RANGE)) do
-		API_SE.ApplyStatusEffect(caster, npc, API_SE.STATUS_EFFECT_DEFINITIONS["Cripple"].id)
-		API_D.ApplyDamage(caster, npc, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
+	for _, target in pairs(targetSet) do
+		if not API_NPC.IsDead(target) and not API_NPC.IsAsleep(target) then
+			API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Cripple"].id)
+			API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
+		end
 	end
 end
 

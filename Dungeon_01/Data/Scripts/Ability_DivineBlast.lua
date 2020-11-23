@@ -30,12 +30,14 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
+	local target = targetSet[1]
 	API_P.CreateProjectile(caster, target, PROJECTILE_SPEED, 0.2, PROJECTILE_TEMPLATE)
 	return API_P.GetTravelTime(caster, target, PROJECTILE_SPEED)
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	Task.Wait(API_P.GetTravelTime(caster, target, PROJECTILE_SPEED))
 
 	if not Object.IsValid(caster) then

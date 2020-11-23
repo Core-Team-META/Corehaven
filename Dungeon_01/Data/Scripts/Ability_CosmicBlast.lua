@@ -24,11 +24,12 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 data.reticleTemplate = script:GetCustomProperty("ReticleTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return IMPACT_DELAY
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	Task.Wait(IMPACT_DELAY)
 	
 	if Object.IsValid(caster) then

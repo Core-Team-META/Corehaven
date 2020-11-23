@@ -26,12 +26,14 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
+	local target = targetSet[1]
 	API_P.CreateProjectile(target, caster, PROJECTILE_SPEED, 0.5, PROJECTILE_TEMPLATE)
 	return API_P.GetTravelTime(target, caster, PROJECTILE_SPEED)
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 	local siphonAmount, tags = API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 	Task.Wait(API_P.GetTravelTime(target, caster, PROJECTILE_SPEED))

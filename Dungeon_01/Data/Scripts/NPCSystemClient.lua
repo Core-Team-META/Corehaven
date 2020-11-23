@@ -17,6 +17,11 @@ function IsAsleep(npc)
 	return currentTask == API_NPC.STATE_ASLEEP
 end
 
+function IsResetting(npc)
+	local currentTask, _, _ = API_NPC.DecodeTaskString(npc:GetCustomProperty("CurrentTask"))
+	return currentTask == API_NPC.STATE_RESETTING
+end
+
 function OnNPCCreated(npc, data)
 	if data.animatedMesh then
 		data.animatedMesh:Follow(data.followRoot, data.speed * 1.5)
@@ -146,7 +151,7 @@ function Tick(deltaTime)
 	end
 end
 
-API_NPC.RegisterSystem({IsAsleep = IsAsleep}, true)
+API_NPC.RegisterSystem({IsAsleep = IsAsleep, IsResetting = IsResetting}, true)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 Task.Wait()		-- Work around networked property backing data issue
 API_RE.Connect("NPC_Created", OnNPCCreated)

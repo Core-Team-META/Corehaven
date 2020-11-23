@@ -17,13 +17,18 @@ end
 function OnOpenChest(trigger, triggerPlayer, index)
 	local chest = chests[index]
 
-	for _, player in pairs(Game.GetPlayers()) do
-		API_RE.Broadcast("DropLoot", DROP_KEY, chest:GetWorldPosition() + Vector3.UP * 20.0, player)
-	end
+	API_RE.BroadcastToAllPlayers("OC", chest)
 
-	-- We are leaving a sparse array, but that's fine. We can't change indices without breaking things
-	chest:Destroy()
-	chests[index] = nil
+	if not chest.serverUserData.open then
+		for _, player in pairs(Game.GetPlayers()) do
+			API_RE.Broadcast("DropLoot", DROP_KEY, chest:GetWorldPosition() + Vector3.UP * 20.0, player)
+		end
+
+		-- It's possible there are edge cases where someone could spam or multiple people could interact and get
+		-- duplicate loot, so we prevent that.
+		chest.serverUserData.open = true
+		chest:GetCustomProperty("Trigger"):WaitForObject().collision = Collision.FORCE_OFF
+	end
 end
 
 function SpawnChests()
