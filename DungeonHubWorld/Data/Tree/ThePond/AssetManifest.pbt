@@ -34,3 +34,12 @@ Assets {
     AssetId: "fxbp_post_process_water"
   }
 }
+Assets {
+  Id: 3034586586424274416
+  Name: "Waterfall Top Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_waterfall_top"
+  }
+}
