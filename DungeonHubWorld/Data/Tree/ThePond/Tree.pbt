@@ -137,6 +137,8 @@ Objects {
   ChildIds: 13184929987954270873
   ChildIds: 575797677685673331
   ChildIds: 17149986084526784447
+  ChildIds: 15612398670870092721
+  ChildIds: 17127226000657232786
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -144,6 +146,88 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 17127226000657232786
+  Name: "Waterfall Top Volume VFX"
+  Transform {
+    Location {
+      X: 9244.94141
+      Y: -3938.04688
+      Z: -104.394531
+    }
+    Rotation {
+      Yaw: -44.5290909
+    }
+    Scale {
+      X: 13.6222448
+      Y: 3.67439675
+      Z: 2.81738234
+    }
+  }
+  ParentId: 14359867072523243768
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 3034586586424274416
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 15612398670870092721
+  Name: "Waterfall Base Volume VFX"
+  Transform {
+    Location {
+      X: 9504.16406
+      Y: -3650.49414
+      Z: -764.786621
+    }
+    Rotation {
+      Yaw: -44.5947876
+    }
+    Scale {
+      X: 12.5607615
+      Y: 9.02568436
+      Z: 4.95301723
+    }
+  }
+  ParentId: 14359867072523243768
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 8
+    }
+    Overrides {
+      Name: "bp:Density"
+      Float: 6.78929567
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 17999095934034705962
+    }
+    TeamSettings {
+    }
+    Vfx {
+      AutoPlay: true
+    }
   }
 }
 Objects {

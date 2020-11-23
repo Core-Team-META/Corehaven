@@ -27,6 +27,10 @@
           A: 1
         }
       }
+      Overrides {
+        Name: "material2_scale"
+        Float: 0.5
+      }
     }
     Assets {
       Id: 8361643690318007117
