@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18257460502441294512
-  Name: "Prism - 3-Sided Convex"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_triangle_convex_001"
-  }
-}
-Assets {
   Id: 18200200076012147990
   Name: "Fantasy Castle Pillar 02 - Top"
   PlatformAssetType: 1
@@ -59,15 +50,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_planks_dark_001_uv"
-  }
-}
-Assets {
-  Id: 18010942990198143229
-  Name: "Amethyst"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_amethyst"
   }
 }
 Assets {
@@ -152,6 +134,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16414328049407947312
+  Name: "Tree Redwood Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_001"
+  }
+}
+Assets {
   Id: 16372496464315477095
   Name: "Ring Beveled (thick)"
   PlatformAssetType: 1
@@ -176,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
+  }
+}
+Assets {
+  Id: 15935752075050755961
+  Name: "Tree Redwood Bare Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_004"
   }
 }
 Assets {
@@ -359,15 +359,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14267747156564835807
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
-  }
-}
-Assets {
   Id: 14252695843363782250
   Name: "Spiral"
   PlatformAssetType: 1
@@ -383,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_white_001_uv"
-  }
-}
-Assets {
-  Id: 14200381599681868577
-  Name: "Bricks Large Foundation 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_large_foundation_001"
   }
 }
 Assets {
@@ -518,6 +500,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_acc_roof_001"
+  }
+}
+Assets {
+  Id: 12630484151658591057
+  Name: "Decal Moss Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_moss_patch_001"
   }
 }
 Assets {
@@ -1301,6 +1292,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 3054822984243159922
+  Name: "Falling Leaves Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_leaves_volume_vfx"
   }
 }
 Assets {

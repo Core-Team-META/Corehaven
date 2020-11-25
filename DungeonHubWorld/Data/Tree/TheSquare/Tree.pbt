@@ -110205,8 +110205,8 @@ Objects {
   Name: "Tree Redwood Big"
   Transform {
     Location {
-      X: -4572.99365
-      Y: 5851.35498
+      X: -3664.62744
+      Y: 5406.56104
       Z: 1780.56543
     }
     Rotation {
