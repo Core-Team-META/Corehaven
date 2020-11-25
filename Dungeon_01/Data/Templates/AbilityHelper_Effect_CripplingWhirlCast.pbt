@@ -20,6 +20,8 @@
         ChildIds: 4933470917397020966
         ChildIds: 17221849975372217560
         ChildIds: 1483861667115793739
+        ChildIds: 17262213786598278945
+        ChildIds: 2186425057597558400
         Lifespan: 10
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -298,6 +300,124 @@
           IsAttenuationEnabled: true
         }
       }
+      Objects {
+        Id: 17262213786598278945
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2.73
+            Y: 2.73
+            Z: 6
+          }
+        }
+        ParentId: 2194364488321063815
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Slice Offset"
+            Float: 360
+          }
+          Overrides {
+            Name: "bp:Slice Size"
+            Float: 360
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 1.3
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.8
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "bp:Indent"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1.3
+              A: 0.5
+            }
+          }
+        }
+        Lifespan: 0.4
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 3965397322580208730
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 2186425057597558400
+        Name: "DisconnectFromHierarchy"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 2194364488321063815
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Object"
+            ObjectReference {
+              SubObjectId: 17262213786598278945
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6805623665871080371
+          }
+        }
+      }
     }
     Assets {
       Id: 9021586111181035330
@@ -342,6 +462,15 @@
       PrimaryAsset {
         AssetType: "AudioAssetRef"
         AssetId: "sfx_car_crash_heavy_metal_impact_02a_Cue_ref"
+      }
+    }
+    Assets {
+      Id: 3965397322580208730
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
       }
     }
     PrimaryAssetId {

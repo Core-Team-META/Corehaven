@@ -46,8 +46,10 @@ of use of Tasks, but players can leave or enemies despawn in the middle of a tas
 script error, it usually results in all enemies no longer responding at all.
 
 Adding Loot:
-Loot is defined by a bunch of scripts with 'DATA' in the name. These were created by a spreadsheet, but they can also be
-edited directly. They should be fairly straightforward to understand.
+Loot is defined by a bunch of scripts with 'DATA' in the name. These were created by the  spreadsheet below, but they
+can also be edited directly. This should be fairly straightforward to understand.
+
+https://docs.google.com/spreadsheets/d/12KBbew9zlaZre2ByMuCX4WBBaH20W1PXt242qcoHrKw/edit?usp=sharing
 
 Adding Enemies:
 Enemies are found in Data->NPC System->NPCs->[Foldername]. This is one of the few systems that requires specific
@@ -58,5 +60,18 @@ expensive, so if you have more than ~8 active at a time, it may perform poorly.
 NPCs are controlled almost entirely through their custom properties. Many are self-explanatory. Capsule size is used for
 nameplate positioning, click targeting, and a few other things. They can drop from as many drop keys as you'd like, and
 have as many tasks as you'd like as well. The FollowRoot is used so that client-side movement is smooth.
+
+Controls:
+We investigated changing the control scheme some, and may still down the road. We specifically looked to more action RPG
+control styles where your cursor is hidden by default and your mouse controls your camera. Here are some of the major
+issues we hit:
+- The 'classic' MMO control scheme informs certain ability and enemy designs, and having a different control scheme
+would probably be better with different abilities and enemies.
+- An 'action' RPG control scheme is fairly incompatible with a targeting system entirely. That could be removed with
+certain design choices.
+- We did not make a robust system to control cursor visibility and interaction, and the 'action' RPG control scheme ran
+into MANY issues here. You need the cursor visible whenever inventory/help, etc. are open. You need a way to show the
+cursor so a player can rearrange their action bar, or click on UI buttons. This is definitely something that can be
+written, but does not currently exist.
 
 ]]

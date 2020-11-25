@@ -28,6 +28,7 @@ local API = {}
 local QUEUE_TIME = 0.4
 local BASE_GLOBAL_COOLDOWN = 1.0			--	Time after activating a spell where no other spell can be activated
 local MIN_GLOBAL_COOLDOWN = 0.5
+local TARGET_SET_LIMIT = 3					--	Until we can optimize the events a bit
 
 -- These are set in Initialize()
 local IS_CLIENT = nil
@@ -72,6 +73,9 @@ local queuedAbilityName = nil
 local queuedAbilityTarget = nil
 local groundTargetAbilityName = nil
 local groundTargetReticle = nil
+-- This is a separate variable because it persists one frame after the above. This is needed so inputs to this system
+-- don't interact with other systems in undesirable ways.
+local groundTargetActive = true
 local altDown = false
 local nextCastId = 1
 
@@ -206,8 +210,8 @@ function CastAbility(abilityName, target)
 		targetSet = data.getTargetSet(LOCAL_PLAYER, target)
 
 		-- We just shrink the set instead of making every ability handle this limit
-		if #targetSet > 8 then
-			for i = 8, #targetSet do
+		if #targetSet > TARGET_SET_LIMIT then
+			for i = TARGET_SET_LIMIT + 1, #targetSet do
 				targetSet[i] = nil
 			end
 		end
@@ -408,6 +412,10 @@ function OnAbilityInterruptClient(player)
 	end
 end
 
+function API.IsGroundTargetActive()
+	return groundTargetActive
+end
+
 -- Client
 function Tick()
 	-- Update ground targeting
@@ -417,6 +425,8 @@ function Tick()
 		if hitResult then
 			groundTargetReticle:SetWorldPosition(hitResult:GetImpactPosition())
 		end
+	else
+		groundTargetActive = false
 	end
 
 	-- Check queued ability
@@ -781,6 +791,7 @@ function API.Trigger(abilityName)
 	if data.targets and data.groundTargets then
 		groundTargetReticle = World.SpawnAsset(data.reticleTemplate)
 		groundTargetAbilityName = abilityName
+		groundTargetActive = true
 	else
 		local target = nil
 

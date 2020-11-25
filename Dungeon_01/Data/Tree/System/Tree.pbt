@@ -41969,11 +41969,11 @@ Objects {
         ChatMode {
         }
         ChatPosition {
-          X: 20
-          Y: -20
+          X: 10
+          Y: -10
         }
         ChatSize {
-          X: 450
+          X: 1
           Y: 400
         }
         ChatHorizontalAlignment {
@@ -45470,7 +45470,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 1
+      Int: 4
     }
   }
   Collidable_v2 {

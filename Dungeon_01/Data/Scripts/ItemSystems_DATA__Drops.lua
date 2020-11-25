@@ -658,8 +658,8 @@
   {
     DropKey = 'Chest',
     ItemName = 'Dull Shard',
-    MinStack = '34',
-    MaxStack = '65',
+    MinStack = '89',
+    MaxStack = '265',
     Likelihood = '200',
     ['Author Notes (will be ignored by script)'] = '',
   },

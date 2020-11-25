@@ -74,7 +74,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription4"
-      String: "Head to the market"
+      String: "Enter the market"
     }
     Overrides {
       Name: "cs:FinishedEvent4"
@@ -12806,51 +12806,51 @@ Objects {
     }
   }
   ParentId: 4929075629999108888
-  ChildIds: 11633033470722181711
-  ChildIds: 10772789848556128784
   ChildIds: 4638643816412674975
   ChildIds: 10737987569193308044
-  ChildIds: 6623092757254317820
-  ChildIds: 8649011528644163659
-  ChildIds: 10335226801843912781
-  ChildIds: 8952331224505552146
-  ChildIds: 10696482895786287774
-  ChildIds: 13058405627272628013
-  ChildIds: 6173992626131076242
-  ChildIds: 11118866826497177268
-  ChildIds: 11472889556569795549
-  ChildIds: 15832958529013752683
   ChildIds: 911873837834379264
   ChildIds: 11717187977221348043
   ChildIds: 5646387279078241973
+  ChildIds: 15832958529013752683
+  ChildIds: 12146745319191100168
+  ChildIds: 10549845196540575347
+  ChildIds: 5998233454787548811
+  ChildIds: 3526389196081740922
+  ChildIds: 18107941912098900432
+  ChildIds: 13384850293809446694
+  ChildIds: 4274122719019873111
+  ChildIds: 6523987415908906376
+  ChildIds: 10473887403686568575
+  ChildIds: 963066714164884471
+  ChildIds: 5784032257045510451
+  ChildIds: 366587615034804059
+  ChildIds: 17265730640195061157
+  ChildIds: 4587652214681095714
+  ChildIds: 7186269390291188373
+  ChildIds: 12190449363229097069
+  ChildIds: 9797938732383260055
   ChildIds: 1127825816940719693
   ChildIds: 13564066849654714208
-  ChildIds: 9797938732383260055
   ChildIds: 13493818778051895137
   ChildIds: 11390249800228364156
   ChildIds: 10329578844992929256
-  ChildIds: 5998233454787548811
-  ChildIds: 3526389196081740922
-  ChildIds: 10549845196540575347
-  ChildIds: 12146745319191100168
-  ChildIds: 1908401700080311683
-  ChildIds: 8185398114067083005
-  ChildIds: 8609054296344231542
-  ChildIds: 9149697407154963142
-  ChildIds: 2928273549584974583
+  ChildIds: 13058405627272628013
+  ChildIds: 10696482895786287774
+  ChildIds: 8952331224505552146
+  ChildIds: 11472889556569795549
   ChildIds: 17941878121270273225
-  ChildIds: 6523987415908906376
-  ChildIds: 4274122719019873111
-  ChildIds: 13384850293809446694
-  ChildIds: 18107941912098900432
-  ChildIds: 10473887403686568575
-  ChildIds: 5784032257045510451
-  ChildIds: 7186269390291188373
-  ChildIds: 4587652214681095714
-  ChildIds: 963066714164884471
-  ChildIds: 12190449363229097069
-  ChildIds: 17265730640195061157
-  ChildIds: 366587615034804059
+  ChildIds: 2928273549584974583
+  ChildIds: 9149697407154963142
+  ChildIds: 6173992626131076242
+  ChildIds: 11118866826497177268
+  ChildIds: 10772789848556128784
+  ChildIds: 11633033470722181711
+  ChildIds: 8609054296344231542
+  ChildIds: 6623092757254317820
+  ChildIds: 8649011528644163659
+  ChildIds: 8185398114067083005
+  ChildIds: 1908401700080311683
+  ChildIds: 10335226801843912781
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -12862,110 +12862,8 @@ Objects {
   }
 }
 Objects {
-  Id: 366587615034804059
-  Name: "Task_Boss4_Raise_Elite_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate"
-      AssetReference {
-        Id: 14634173065214442235
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8472211206917706499
-    }
-  }
-}
-Objects {
-  Id: 17265730640195061157
-  Name: "Task_Boss4_Raise_Skeleton_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate1"
-      AssetReference {
-        Id: 3829230591249549958
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate2"
-      AssetReference {
-        Id: 1668551620018358286
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3214467220713276090
-    }
-  }
-}
-Objects {
-  Id: 12190449363229097069
-  Name: "Task_Boss4_Volley_Of_Corruption_Server"
+  Id: 10335226801843912781
+  Name: "Task_Wizard_Meteor_Server"
   Transform {
     Location {
       Z: -74.1032715
@@ -12990,396 +12888,6 @@ Objects {
       Name: "cs:APIDamage"
       AssetReference {
         Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16832983554182782686
-    }
-  }
-}
-Objects {
-  Id: 963066714164884471
-  Name: "Task_Boss4_Draw_Power_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:API_ID"
-      AssetReference {
-        Id: 8196531844027121028
-      }
-    }
-    Overrides {
-      Name: "cs:PillarsGroup"
-      ObjectReference {
-        SelfId: 16240463941102789285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2056864871223869981
-    }
-  }
-}
-Objects {
-  Id: 4587652214681095714
-  Name: "Task_Boss4_Run_To_Center_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:Center"
-      ObjectReference {
-        SelfId: 16867338321283860326
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3733617034542923758
-    }
-  }
-}
-Objects {
-  Id: 7186269390291188373
-  Name: "Task_Boss4_Runic_Circle_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3373461313850236532
-    }
-  }
-}
-Objects {
-  Id: 5784032257045510451
-  Name: "Task_Boss4_Punch_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15285473577315570405
-    }
-  }
-}
-Objects {
-  Id: 10473887403686568575
-  Name: "Task_Boss3_Summon_Reinforcements_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate1"
-      AssetReference {
-        Id: 8115993960793536338
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate2"
-      AssetReference {
-        Id: 3623646279232181788
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate3"
-      AssetReference {
-        Id: 2758621404721179988
-      }
-    }
-    Overrides {
-      Name: "cs:SpawnGroup"
-      ObjectReference {
-        SelfId: 16420498887497098049
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16451464391415739551
-    }
-  }
-}
-Objects {
-  Id: 18107941912098900432
-  Name: "Task_Boss3_Archers_Fire_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:GridCorners"
-      ObjectReference {
-        SelfId: 11265498226201707404
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9106583325068632600
-    }
-  }
-}
-Objects {
-  Id: 13384850293809446694
-  Name: "Task_Boss3_Call_Dragon_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
       }
     }
     Overrides {
@@ -13389,312 +12897,6 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:DragonPaths"
-      ObjectReference {
-        SelfId: 7718251544956309882
-      }
-    }
-    Overrides {
-      Name: "cs:GridCorners"
-      ObjectReference {
-        SelfId: 11265498226201707404
-      }
-    }
-    Overrides {
-      Name: "cs:RockTemplate"
-      AssetReference {
-        Id: 18277210773624985737
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5529503676007918676
-    }
-  }
-}
-Objects {
-  Id: 4274122719019873111
-  Name: "Task_Boss3_Charge_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIKnockback"
-      AssetReference {
-        Id: 13949068266456080686
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2762304705390893649
-    }
-  }
-}
-Objects {
-  Id: 6523987415908906376
-  Name: "Task_Boss3_Melee_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9225366915160644297
-    }
-  }
-}
-Objects {
-  Id: 17941878121270273225
-  Name: "Task_Reanimated_Elite_Marrow_Typhoon_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9825523479148318249
-    }
-  }
-}
-Objects {
-  Id: 2928273549584974583
-  Name: "Task_Reanimated_Elite_Smash_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIKnockback"
-      AssetReference {
-        Id: 13949068266456080686
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6868145823480714292
-    }
-  }
-}
-Objects {
-  Id: 9149697407154963142
-  Name: "Task_Reanimated_Elite_Strike_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4223727881345818112
-    }
-  }
-}
-Objects {
-  Id: 8609054296344231542
-  Name: "Task_Wizard_Blizzard_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
       Name: "cs:APIReliableEvents"
       AssetReference {
         Id: 1680988108412715813
@@ -13709,49 +12911,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 3066973933380490448
-    }
-  }
-}
-Objects {
-  Id: 8185398114067083005
-  Name: "Task_Wizard_Frost_Bomb_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11810202674949969751
+      Id: 6981915963613025786
     }
   }
 }
@@ -13810,8 +12970,8 @@ Objects {
   }
 }
 Objects {
-  Id: 12146745319191100168
-  Name: "Task_Boss2_Command_Undead_Server"
+  Id: 8185398114067083005
+  Name: "Task_Wizard_Frost_Bomb_Server"
   Transform {
     Location {
       Z: -74.1032715
@@ -13833,15 +12993,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:SummonTemplate"
+      Name: "cs:APIStatusEffects"
       AssetReference {
-        Id: 11272925145965958020
-      }
-    }
-    Overrides {
-      Name: "cs:SpawnGroup"
-      ObjectReference {
-        SelfId: 4728072393872474344
+        Id: 1831660344620141067
       }
     }
   }
@@ -13853,13 +13007,103 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 6684943738313825538
+      Id: 11810202674949969751
     }
   }
 }
 Objects {
-  Id: 10549845196540575347
-  Name: "Task_Boss2_Encourage_Commerce_Server"
+  Id: 8649011528644163659
+  Name: "Task_Wizard_Firestorm_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 768425741068379291
+    }
+  }
+}
+Objects {
+  Id: 6623092757254317820
+  Name: "Task_Wizard_Fireball_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18171682418699117348
+    }
+  }
+}
+Objects {
+  Id: 8609054296344231542
+  Name: "Task_Wizard_Blizzard_Server"
   Transform {
     Location {
       Z: -74.1032715
@@ -13893,27 +13137,9 @@ Objects {
       }
     }
     Overrides {
-      Name: "cs:YellowStar"
-      ObjectReference {
-        SelfId: 10575076042725409515
-      }
-    }
-    Overrides {
-      Name: "cs:RedSquare"
-      ObjectReference {
-        SelfId: 2053532078687058979
-      }
-    }
-    Overrides {
-      Name: "cs:BlueTriangle"
-      ObjectReference {
-        SelfId: 10181258915578142595
-      }
-    }
-    Overrides {
-      Name: "cs:VioletCircle"
-      ObjectReference {
-        SelfId: 10968369562466392664
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
       }
     }
   }
@@ -13925,13 +13151,97 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 8117351819053196839
+      Id: 3066973933380490448
     }
   }
 }
 Objects {
-  Id: 3526389196081740922
-  Name: "Task_Boss2_Throw_Coins_Server"
+  Id: 11633033470722181711
+  Name: "Task_Soldier_Melee_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12045651630870729876
+    }
+  }
+}
+Objects {
+  Id: 10772789848556128784
+  Name: "Task_Soldier_Block_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8098333507544539576
+    }
+  }
+}
+Objects {
+  Id: 11118866826497177268
+  Name: "Task_Reanimated_Wizard_Fireball_Server"
   Transform {
     Location {
       Z: -74.1032715
@@ -13964,12 +13274,6 @@ Objects {
         Id: 17739477946418166285
       }
     }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -13979,13 +13283,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 12147068816663488419
+      Id: 7074756468508226416
     }
   }
 }
 Objects {
-  Id: 5998233454787548811
-  Name: "Task_Boss2_Punch_Server"
+  Id: 6173992626131076242
+  Name: "Task_Reanimated_Skeleton_Slash_Server"
   Transform {
     Location {
       Z: -74.1032715
@@ -14021,7 +13325,325 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 5561573923018794755
+      Id: 8066604852336089837
+    }
+  }
+}
+Objects {
+  Id: 9149697407154963142
+  Name: "Task_Reanimated_Elite_Strike_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4223727881345818112
+    }
+  }
+}
+Objects {
+  Id: 2928273549584974583
+  Name: "Task_Reanimated_Elite_Smash_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIKnockback"
+      AssetReference {
+        Id: 13949068266456080686
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6868145823480714292
+    }
+  }
+}
+Objects {
+  Id: 17941878121270273225
+  Name: "Task_Reanimated_Elite_Marrow_Typhoon_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9825523479148318249
+    }
+  }
+}
+Objects {
+  Id: 11472889556569795549
+  Name: "Task_Plague_Wolf_Bite_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14633580989760768564
+    }
+  }
+}
+Objects {
+  Id: 8952331224505552146
+  Name: "Task_Necromancer_Shadow_Blast_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15999476487592182823
+    }
+  }
+}
+Objects {
+  Id: 10696482895786287774
+  Name: "Task_Necromancer_Raise_Skeleton_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate1"
+      AssetReference {
+        Id: 3829230591249549958
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate2"
+      AssetReference {
+        Id: 1668551620018358286
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6204005442787544260
+    }
+  }
+}
+Objects {
+  Id: 13058405627272628013
+  Name: "Task_Necromancer_Decay_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4535243921133641972
     }
   }
 }
@@ -14170,48 +13792,6 @@ Objects {
   }
 }
 Objects {
-  Id: 9797938732383260055
-  Name: "Task_Market_Security_Impale_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14507829302702524350
-    }
-  }
-}
-Objects {
   Id: 13564066849654714208
   Name: "Task_Market_Security_Throw_Net_Server"
   Transform {
@@ -14304,6 +13884,978 @@ Objects {
   Script {
     ScriptAsset {
       Id: 13621934068905924218
+    }
+  }
+}
+Objects {
+  Id: 9797938732383260055
+  Name: "Task_Market_Security_Impale_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14507829302702524350
+    }
+  }
+}
+Objects {
+  Id: 12190449363229097069
+  Name: "Task_Boss4_Volley_Of_Corruption_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16832983554182782686
+    }
+  }
+}
+Objects {
+  Id: 7186269390291188373
+  Name: "Task_Boss4_Runic_Circle_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3373461313850236532
+    }
+  }
+}
+Objects {
+  Id: 4587652214681095714
+  Name: "Task_Boss4_Run_To_Center_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Center"
+      ObjectReference {
+        SelfId: 16867338321283860326
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3733617034542923758
+    }
+  }
+}
+Objects {
+  Id: 17265730640195061157
+  Name: "Task_Boss4_Raise_Skeleton_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate1"
+      AssetReference {
+        Id: 3829230591249549958
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate2"
+      AssetReference {
+        Id: 1668551620018358286
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3214467220713276090
+    }
+  }
+}
+Objects {
+  Id: 366587615034804059
+  Name: "Task_Boss4_Raise_Elite_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate"
+      AssetReference {
+        Id: 14634173065214442235
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8472211206917706499
+    }
+  }
+}
+Objects {
+  Id: 5784032257045510451
+  Name: "Task_Boss4_Punch_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 15285473577315570405
+    }
+  }
+}
+Objects {
+  Id: 963066714164884471
+  Name: "Task_Boss4_Draw_Power_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:API_ID"
+      AssetReference {
+        Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:PillarsGroup"
+      ObjectReference {
+        SelfId: 16240463941102789285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2056864871223869981
+    }
+  }
+}
+Objects {
+  Id: 10473887403686568575
+  Name: "Task_Boss3_Summon_Reinforcements_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate1"
+      AssetReference {
+        Id: 8115993960793536338
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate2"
+      AssetReference {
+        Id: 3623646279232181788
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate3"
+      AssetReference {
+        Id: 2758621404721179988
+      }
+    }
+    Overrides {
+      Name: "cs:SpawnGroup"
+      ObjectReference {
+        SelfId: 16420498887497098049
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16451464391415739551
+    }
+  }
+}
+Objects {
+  Id: 6523987415908906376
+  Name: "Task_Boss3_Melee_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9225366915160644297
+    }
+  }
+}
+Objects {
+  Id: 4274122719019873111
+  Name: "Task_Boss3_Charge_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIKnockback"
+      AssetReference {
+        Id: 13949068266456080686
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2762304705390893649
+    }
+  }
+}
+Objects {
+  Id: 13384850293809446694
+  Name: "Task_Boss3_Call_Dragon_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIKnockback"
+      AssetReference {
+        Id: 13949068266456080686
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:DragonPaths"
+      ObjectReference {
+        SelfId: 7718251544956309882
+      }
+    }
+    Overrides {
+      Name: "cs:GridCorners"
+      ObjectReference {
+        SelfId: 11265498226201707404
+      }
+    }
+    Overrides {
+      Name: "cs:RockTemplate"
+      AssetReference {
+        Id: 18277210773624985737
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5529503676007918676
+    }
+  }
+}
+Objects {
+  Id: 18107941912098900432
+  Name: "Task_Boss3_Archers_Fire_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:GridCorners"
+      ObjectReference {
+        SelfId: 11265498226201707404
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9106583325068632600
+    }
+  }
+}
+Objects {
+  Id: 3526389196081740922
+  Name: "Task_Boss2_Throw_Coins_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12147068816663488419
+    }
+  }
+}
+Objects {
+  Id: 5998233454787548811
+  Name: "Task_Boss2_Punch_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5561573923018794755
+    }
+  }
+}
+Objects {
+  Id: 10549845196540575347
+  Name: "Task_Boss2_Encourage_Commerce_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:YellowStar"
+      ObjectReference {
+        SelfId: 10575076042725409515
+      }
+    }
+    Overrides {
+      Name: "cs:RedSquare"
+      ObjectReference {
+        SelfId: 2053532078687058979
+      }
+    }
+    Overrides {
+      Name: "cs:BlueTriangle"
+      ObjectReference {
+        SelfId: 10181258915578142595
+      }
+    }
+    Overrides {
+      Name: "cs:VioletCircle"
+      ObjectReference {
+        SelfId: 10968369562466392664
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8117351819053196839
+    }
+  }
+}
+Objects {
+  Id: 12146745319191100168
+  Name: "Task_Boss2_Command_Undead_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:SummonTemplate"
+      AssetReference {
+        Id: 11272925145965958020
+      }
+    }
+    Overrides {
+      Name: "cs:SpawnGroup"
+      ObjectReference {
+        SelfId: 4728072393872474344
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6684943738313825538
+    }
+  }
+}
+Objects {
+  Id: 15832958529013752683
+  Name: "Task_Boss1_Shadow_Worm_Server"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6732495304491180040
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8834604647406314790
     }
   }
 }
@@ -14458,474 +15010,6 @@ Objects {
   }
 }
 Objects {
-  Id: 15832958529013752683
-  Name: "Task_Boss1_Shadow_Worm_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8834604647406314790
-    }
-  }
-}
-Objects {
-  Id: 11472889556569795549
-  Name: "Task_Plague_Wolf_Bite_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14633580989760768564
-    }
-  }
-}
-Objects {
-  Id: 11118866826497177268
-  Name: "Task_Reanimated_Wizard_Fireball_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7074756468508226416
-    }
-  }
-}
-Objects {
-  Id: 6173992626131076242
-  Name: "Task_Reanimated_Skeleton_Slash_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8066604852336089837
-    }
-  }
-}
-Objects {
-  Id: 13058405627272628013
-  Name: "Task_Necromancer_Decay_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4535243921133641972
-    }
-  }
-}
-Objects {
-  Id: 10696482895786287774
-  Name: "Task_Necromancer_Raise_Skeleton_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate1"
-      AssetReference {
-        Id: 3829230591249549958
-      }
-    }
-    Overrides {
-      Name: "cs:SummonTemplate2"
-      AssetReference {
-        Id: 1668551620018358286
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6204005442787544260
-    }
-  }
-}
-Objects {
-  Id: 8952331224505552146
-  Name: "Task_Necromancer_Shadow_Blast_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 15999476487592182823
-    }
-  }
-}
-Objects {
-  Id: 10335226801843912781
-  Name: "Task_Wizard_Meteor_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIKnockback"
-      AssetReference {
-        Id: 13949068266456080686
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 6981915963613025786
-    }
-  }
-}
-Objects {
-  Id: 8649011528644163659
-  Name: "Task_Wizard_Firestorm_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 768425741068379291
-    }
-  }
-}
-Objects {
-  Id: 6623092757254317820
-  Name: "Task_Wizard_Fireball_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 18171682418699117348
-    }
-  }
-}
-Objects {
   Id: 10737987569193308044
   Name: "Task_Archer_Volley_Server"
   Transform {
@@ -15022,90 +15106,6 @@ Objects {
   }
 }
 Objects {
-  Id: 10772789848556128784
-  Name: "Task_Soldier_Block_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8098333507544539576
-    }
-  }
-}
-Objects {
-  Id: 11633033470722181711
-  Name: "Task_Soldier_Melee_Server"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 6732495304491180040
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIDamage"
-      AssetReference {
-        Id: 16915150100797142409
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12045651630870729876
-    }
-  }
-}
-Objects {
   Id: 16512903352423238162
   Name: "ClientTasks"
   Transform {
@@ -15120,51 +15120,51 @@ Objects {
     }
   }
   ParentId: 4929075629999108888
-  ChildIds: 3683810347219110210
-  ChildIds: 2617294269160073589
   ChildIds: 6375387098717853564
   ChildIds: 6892693044080746948
-  ChildIds: 16090943144268880011
-  ChildIds: 9577964322197636930
-  ChildIds: 10580312357897641807
-  ChildIds: 15187893476974365306
-  ChildIds: 6852900720238068092
-  ChildIds: 17942206790140322283
-  ChildIds: 1310555769812892325
-  ChildIds: 9636353863620550060
-  ChildIds: 15734983448393733282
-  ChildIds: 16171817980423960435
   ChildIds: 13922160594556412427
   ChildIds: 4917597342255010112
   ChildIds: 6475425031944501264
+  ChildIds: 16171817980423960435
+  ChildIds: 17074393079847215828
+  ChildIds: 74468742928943152
+  ChildIds: 17982608113434759083
+  ChildIds: 2553840130481040154
+  ChildIds: 3522202018038160220
+  ChildIds: 8531115199015651676
+  ChildIds: 12466137927333198702
+  ChildIds: 8584736738100476457
+  ChildIds: 11338891790519306918
+  ChildIds: 9199202795173186369
+  ChildIds: 11815905773333734036
+  ChildIds: 234573119797209272
+  ChildIds: 14385365710846452291
+  ChildIds: 7752560063222877689
+  ChildIds: 6620780562436173402
+  ChildIds: 16231657350675503638
+  ChildIds: 6288364177343079329
   ChildIds: 7007993321808811721
   ChildIds: 3184554300100649591
-  ChildIds: 6288364177343079329
   ChildIds: 17158094228917528276
   ChildIds: 12682046934567391246
   ChildIds: 11393466762114833855
-  ChildIds: 17982608113434759083
-  ChildIds: 2553840130481040154
-  ChildIds: 74468742928943152
-  ChildIds: 17074393079847215828
-  ChildIds: 13061621937858936037
-  ChildIds: 15146633174790856741
-  ChildIds: 18345640313287219436
-  ChildIds: 16323570376105163101
-  ChildIds: 7048585866910346138
+  ChildIds: 17942206790140322283
+  ChildIds: 6852900720238068092
+  ChildIds: 15187893476974365306
+  ChildIds: 15734983448393733282
   ChildIds: 17335876980652408950
-  ChildIds: 8584736738100476457
-  ChildIds: 12466137927333198702
-  ChildIds: 8531115199015651676
-  ChildIds: 3522202018038160220
-  ChildIds: 11338891790519306918
-  ChildIds: 11815905773333734036
-  ChildIds: 6620780562436173402
-  ChildIds: 7752560063222877689
-  ChildIds: 9199202795173186369
-  ChildIds: 16231657350675503638
-  ChildIds: 14385365710846452291
-  ChildIds: 234573119797209272
+  ChildIds: 7048585866910346138
+  ChildIds: 16323570376105163101
+  ChildIds: 1310555769812892325
+  ChildIds: 9636353863620550060
+  ChildIds: 2617294269160073589
+  ChildIds: 3683810347219110210
+  ChildIds: 18345640313287219436
+  ChildIds: 16090943144268880011
+  ChildIds: 9577964322197636930
+  ChildIds: 15146633174790856741
+  ChildIds: 13061621937858936037
+  ChildIds: 10580312357897641807
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -15175,260 +15175,8 @@ Objects {
   }
 }
 Objects {
-  Id: 234573119797209272
-  Name: "Task_Boss4_Raise_Elite_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 11860202766747543346
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2529252094690359126
-    }
-  }
-}
-Objects {
-  Id: 14385365710846452291
-  Name: "Task_Boss4_Raise_Skeleton_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 11860202766747543346
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14431935281927377819
-    }
-  }
-}
-Objects {
-  Id: 16231657350675503638
-  Name: "Task_Boss4_Volley_Of_Corruption_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 8577847030441975411
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5832740985043592019
-    }
-  }
-}
-Objects {
-  Id: 9199202795173186369
-  Name: "Task_Boss4_Draw_Power_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:API_ID"
-      AssetReference {
-        Id: 8196531844027121028
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-    Overrides {
-      Name: "cs:HandHelperTemplate"
-      AssetReference {
-        Id: 1598596002735963356
-      }
-    }
-    Overrides {
-      Name: "cs:BeamTemplate"
-      AssetReference {
-        Id: 1063698984721441989
-      }
-    }
-    Overrides {
-      Name: "cs:PillarsGroup"
-      ObjectReference {
-        SelfId: 16240463941102789285
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16059170856159938470
-    }
-  }
-}
-Objects {
-  Id: 7752560063222877689
-  Name: "Task_Boss4_Run_To_Center_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 5134659879920013509
-    }
-  }
-}
-Objects {
-  Id: 6620780562436173402
-  Name: "Task_Boss4_Runic_Circle_Client"
+  Id: 10580312357897641807
+  Name: "Task_Wizard_Meteor_Client"
   Transform {
     Location {
       Z: -74.1032715
@@ -15458,265 +15206,13 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4765246375454497163
-      }
-    }
-    Overrides {
-      Name: "cs:TargetTemplate"
-      AssetReference {
-        Id: 6328164806522423376
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 9200757453013810842
-    }
-  }
-}
-Objects {
-  Id: 11815905773333734036
-  Name: "Task_Boss4_Punch_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11452659737253128832
-    }
-  }
-}
-Objects {
-  Id: 11338891790519306918
-  Name: "Task_Boss3_Summon_Reinforcements_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 11860202766747543346
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 327356395239585424
-    }
-  }
-}
-Objects {
-  Id: 3522202018038160220
-  Name: "Task_Boss3_Archers_Fire_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 3856561635738925817
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
-      }
-    }
-    Overrides {
-      Name: "cs:FireTemplate"
-      AssetReference {
-        Id: 4661260697012716515
-      }
-    }
-    Overrides {
-      Name: "cs:GridCorners"
-      ObjectReference {
-        SelfId: 11265498226201707404
-      }
-    }
-    Overrides {
-      Name: "cs:ArcherGroup"
-      ObjectReference {
-        SelfId: 16648368766595305028
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16619159778722375723
-    }
-  }
-}
-Objects {
-  Id: 8531115199015651676
-  Name: "Task_Boss3_Call_Dragon_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 18277210773624985737
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
+        Id: 13540390578621358507
       }
     }
     Overrides {
       Name: "cs:TelegraphTemplate"
       AssetReference {
-        Id: 4420511458387645024
-      }
-    }
-    Overrides {
-      Name: "cs:DragonTemplate"
-      AssetReference {
-        Id: 11816343227909326191
-      }
-    }
-    Overrides {
-      Name: "cs:RockImpactTemplate"
-      AssetReference {
-        Id: 11164888280743674167
-      }
-    }
-    Overrides {
-      Name: "cs:DragonPaths"
-      ObjectReference {
-        SelfId: 7718251544956309882
-      }
-    }
-    Overrides {
-      Name: "cs:GridCorners"
-      ObjectReference {
-        SelfId: 11265498226201707404
+        Id: 1750729380033128680
       }
     }
   }
@@ -15728,313 +15224,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 9890485645904083625
-    }
-  }
-}
-Objects {
-  Id: 12466137927333198702
-  Name: "Task_Boss3_Charge_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 7676506576895934711
-    }
-  }
-}
-Objects {
-  Id: 8584736738100476457
-  Name: "Task_Boss3_Melee_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8110349647698528690
-    }
-  }
-}
-Objects {
-  Id: 17335876980652408950
-  Name: "Task_Reanimated_Elite_Marrow_Typhoon_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 841534158063459245
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 2443921898128642186
-    }
-  }
-}
-Objects {
-  Id: 7048585866910346138
-  Name: "Task_Reanimated_Elite_Smash_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4001021020396776431
-    }
-  }
-}
-Objects {
-  Id: 16323570376105163101
-  Name: "Task_Reanimated_Elite_Strike_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8790916040878795185
-    }
-  }
-}
-Objects {
-  Id: 18345640313287219436
-  Name: "Task_Wizard_Blizzard_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 17214326792927864641
-      }
-    }
-    Overrides {
-      Name: "cs:TargetTemplate"
-      AssetReference {
-        Id: 17257821300381143339
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 8646072960561962641
-    }
-  }
-}
-Objects {
-  Id: 15146633174790856741
-  Name: "Task_Wizard_Frost_Bomb_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 3039088995494687038
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 16328847197519606960
+      Id: 955597036913151127
     }
   }
 }
@@ -16093,8 +15283,602 @@ Objects {
   }
 }
 Objects {
-  Id: 17074393079847215828
-  Name: "Task_Boss2_Command_Undead_Client"
+  Id: 15146633174790856741
+  Name: "Task_Wizard_Frost_Bomb_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 3039088995494687038
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16328847197519606960
+    }
+  }
+}
+Objects {
+  Id: 9577964322197636930
+  Name: "Task_Wizard_Firestorm_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 230243209909476
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 10961386532980855900
+    }
+  }
+}
+Objects {
+  Id: 16090943144268880011
+  Name: "Task_Wizard_Fireball_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 8577847030441975411
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 3428048190548918422
+    }
+  }
+}
+Objects {
+  Id: 18345640313287219436
+  Name: "Task_Wizard_Blizzard_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 17214326792927864641
+      }
+    }
+    Overrides {
+      Name: "cs:TargetTemplate"
+      AssetReference {
+        Id: 17257821300381143339
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8646072960561962641
+    }
+  }
+}
+Objects {
+  Id: 3683810347219110210
+  Name: "Task_Soldier_Melee_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18248604253646646898
+    }
+  }
+}
+Objects {
+  Id: 2617294269160073589
+  Name: "Task_Soldier_Block_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4867422383464068521
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12732242527916280240
+    }
+  }
+}
+Objects {
+  Id: 9636353863620550060
+  Name: "Task_Reanimated_Wizard_Fireball_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 8577847030441975411
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11760185151265703379
+    }
+  }
+}
+Objects {
+  Id: 1310555769812892325
+  Name: "Task_Reanimated_Skeleton_Slash_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12415746049975880985
+    }
+  }
+}
+Objects {
+  Id: 16323570376105163101
+  Name: "Task_Reanimated_Elite_Strike_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8790916040878795185
+    }
+  }
+}
+Objects {
+  Id: 7048585866910346138
+  Name: "Task_Reanimated_Elite_Smash_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4001021020396776431
+    }
+  }
+}
+Objects {
+  Id: 17335876980652408950
+  Name: "Task_Reanimated_Elite_Marrow_Typhoon_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 841534158063459245
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2443921898128642186
+    }
+  }
+}
+Objects {
+  Id: 15734983448393733282
+  Name: "Task_Plague_Wolf_Bite_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 175869235462157226
+    }
+  }
+}
+Objects {
+  Id: 15187893476974365306
+  Name: "Task_Necromancer_Shadow_Blast_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 4482173223807306785
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4161554099292861026
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 195141954809610323
+    }
+  }
+}
+Objects {
+  Id: 6852900720238068092
+  Name: "Task_Necromancer_Raise_Skeleton_Client"
   Transform {
     Location {
       Z: -74.1032715
@@ -16130,163 +15914,13 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 6053334189662994170
+      Id: 3121737684273745053
     }
   }
 }
 Objects {
-  Id: 74468742928943152
-  Name: "Task_Boss2_Encourage_Commerce_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIStatusEffects"
-      AssetReference {
-        Id: 1831660344620141067
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-    Overrides {
-      Name: "cs:VisibilityGroup"
-      ObjectReference {
-        SelfId: 1638367739731691703
-      }
-    }
-    Overrides {
-      Name: "cs:Icon"
-      ObjectReference {
-        SelfId: 16759986828269977687
-      }
-    }
-    Overrides {
-      Name: "cs:Star"
-      AssetReference {
-        Id: 12781087704127034770
-      }
-    }
-    Overrides {
-      Name: "cs:Square"
-      AssetReference {
-        Id: 6263887203996703520
-      }
-    }
-    Overrides {
-      Name: "cs:Triangle"
-      AssetReference {
-        Id: 5632528163303928666
-      }
-    }
-    Overrides {
-      Name: "cs:Circle"
-      AssetReference {
-        Id: 10408352433735589465
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 369762781318887416
-    }
-  }
-}
-Objects {
-  Id: 2553840130481040154
-  Name: "Task_Boss2_Throw_Coins_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 4521826613839747758
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 9146027151900378455
-      }
-    }
-    Overrides {
-      Name: "cs:TelegraphTemplate"
-      AssetReference {
-        Id: 11428608906530713399
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 4862788224159541247
-    }
-  }
-}
-Objects {
-  Id: 17982608113434759083
-  Name: "Task_Boss2_Punch_Client"
+  Id: 17942206790140322283
+  Name: "Task_Necromancer_Decay_Client"
   Transform {
     Location {
       Z: -74.1032715
@@ -16310,7 +15944,7 @@ Objects {
     Overrides {
       Name: "cs:EffectTemplate"
       AssetReference {
-        Id: 4135686357839385894
+        Id: 15333547231327706912
       }
     }
   }
@@ -16322,7 +15956,7 @@ Objects {
   }
   Script {
     ScriptAsset {
-      Id: 11034400154275469264
+      Id: 888046473686787013
     }
   }
 }
@@ -16489,48 +16123,6 @@ Objects {
   }
 }
 Objects {
-  Id: 6288364177343079329
-  Name: "Task_Market_Security_Impale_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 14025742078982313852
-    }
-  }
-}
-Objects {
   Id: 3184554300100649591
   Name: "Task_Market_Security_Throw_Net_Client"
   Transform {
@@ -16623,6 +16215,978 @@ Objects {
   Script {
     ScriptAsset {
       Id: 4001138460957121007
+    }
+  }
+}
+Objects {
+  Id: 6288364177343079329
+  Name: "Task_Market_Security_Impale_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14025742078982313852
+    }
+  }
+}
+Objects {
+  Id: 16231657350675503638
+  Name: "Task_Boss4_Volley_Of_Corruption_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 8577847030441975411
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5832740985043592019
+    }
+  }
+}
+Objects {
+  Id: 6620780562436173402
+  Name: "Task_Boss4_Runic_Circle_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4765246375454497163
+      }
+    }
+    Overrides {
+      Name: "cs:TargetTemplate"
+      AssetReference {
+        Id: 6328164806522423376
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9200757453013810842
+    }
+  }
+}
+Objects {
+  Id: 7752560063222877689
+  Name: "Task_Boss4_Run_To_Center_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5134659879920013509
+    }
+  }
+}
+Objects {
+  Id: 14385365710846452291
+  Name: "Task_Boss4_Raise_Skeleton_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 11860202766747543346
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 14431935281927377819
+    }
+  }
+}
+Objects {
+  Id: 234573119797209272
+  Name: "Task_Boss4_Raise_Elite_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 11860202766747543346
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2529252094690359126
+    }
+  }
+}
+Objects {
+  Id: 11815905773333734036
+  Name: "Task_Boss4_Punch_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11452659737253128832
+    }
+  }
+}
+Objects {
+  Id: 9199202795173186369
+  Name: "Task_Boss4_Draw_Power_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:API_ID"
+      AssetReference {
+        Id: 8196531844027121028
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+    Overrides {
+      Name: "cs:HandHelperTemplate"
+      AssetReference {
+        Id: 1598596002735963356
+      }
+    }
+    Overrides {
+      Name: "cs:BeamTemplate"
+      AssetReference {
+        Id: 1063698984721441989
+      }
+    }
+    Overrides {
+      Name: "cs:PillarsGroup"
+      ObjectReference {
+        SelfId: 16240463941102789285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16059170856159938470
+    }
+  }
+}
+Objects {
+  Id: 11338891790519306918
+  Name: "Task_Boss3_Summon_Reinforcements_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 11860202766747543346
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 327356395239585424
+    }
+  }
+}
+Objects {
+  Id: 8584736738100476457
+  Name: "Task_Boss3_Melee_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8110349647698528690
+    }
+  }
+}
+Objects {
+  Id: 12466137927333198702
+  Name: "Task_Boss3_Charge_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7676506576895934711
+    }
+  }
+}
+Objects {
+  Id: 8531115199015651676
+  Name: "Task_Boss3_Call_Dragon_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 18277210773624985737
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 4420511458387645024
+      }
+    }
+    Overrides {
+      Name: "cs:DragonTemplate"
+      AssetReference {
+        Id: 11816343227909326191
+      }
+    }
+    Overrides {
+      Name: "cs:RockImpactTemplate"
+      AssetReference {
+        Id: 11164888280743674167
+      }
+    }
+    Overrides {
+      Name: "cs:DragonPaths"
+      ObjectReference {
+        SelfId: 7718251544956309882
+      }
+    }
+    Overrides {
+      Name: "cs:GridCorners"
+      ObjectReference {
+        SelfId: 11265498226201707404
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 9890485645904083625
+    }
+  }
+}
+Objects {
+  Id: 3522202018038160220
+  Name: "Task_Boss3_Archers_Fire_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 3856561635738925817
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+    Overrides {
+      Name: "cs:FireTemplate"
+      AssetReference {
+        Id: 4661260697012716515
+      }
+    }
+    Overrides {
+      Name: "cs:GridCorners"
+      ObjectReference {
+        SelfId: 11265498226201707404
+      }
+    }
+    Overrides {
+      Name: "cs:ArcherGroup"
+      ObjectReference {
+        SelfId: 16648368766595305028
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16619159778722375723
+    }
+  }
+}
+Objects {
+  Id: 2553840130481040154
+  Name: "Task_Boss2_Throw_Coins_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 4521826613839747758
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9146027151900378455
+      }
+    }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 11428608906530713399
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 4862788224159541247
+    }
+  }
+}
+Objects {
+  Id: 17982608113434759083
+  Name: "Task_Boss2_Punch_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11034400154275469264
+    }
+  }
+}
+Objects {
+  Id: 74468742928943152
+  Name: "Task_Boss2_Encourage_Commerce_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+    Overrides {
+      Name: "cs:VisibilityGroup"
+      ObjectReference {
+        SelfId: 1638367739731691703
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      ObjectReference {
+        SelfId: 16759986828269977687
+      }
+    }
+    Overrides {
+      Name: "cs:Star"
+      AssetReference {
+        Id: 12781087704127034770
+      }
+    }
+    Overrides {
+      Name: "cs:Square"
+      AssetReference {
+        Id: 6263887203996703520
+      }
+    }
+    Overrides {
+      Name: "cs:Triangle"
+      AssetReference {
+        Id: 5632528163303928666
+      }
+    }
+    Overrides {
+      Name: "cs:Circle"
+      AssetReference {
+        Id: 10408352433735589465
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 369762781318887416
+    }
+  }
+}
+Objects {
+  Id: 17074393079847215828
+  Name: "Task_Boss2_Command_Undead_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 11860202766747543346
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6053334189662994170
+    }
+  }
+}
+Objects {
+  Id: 16171817980423960435
+  Name: "Task_Boss1_Shadow_Worm_Client"
+  Transform {
+    Location {
+      Z: -74.1032715
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16512903352423238162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIProjectile"
+      AssetReference {
+        Id: 17739477946418166285
+      }
+    }
+    Overrides {
+      Name: "cs:ProjectileTemplate"
+      AssetReference {
+        Id: 18070735097588345738
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 969157704839241123
     }
   }
 }
@@ -16765,486 +17329,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16171817980423960435
-  Name: "Task_Boss1_Shadow_Worm_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 18070735097588345738
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 969157704839241123
-    }
-  }
-}
-Objects {
-  Id: 15734983448393733282
-  Name: "Task_Plague_Wolf_Bite_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 175869235462157226
-    }
-  }
-}
-Objects {
-  Id: 9636353863620550060
-  Name: "Task_Reanimated_Wizard_Fireball_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 8577847030441975411
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 11760185151265703379
-    }
-  }
-}
-Objects {
-  Id: 1310555769812892325
-  Name: "Task_Reanimated_Skeleton_Slash_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12415746049975880985
-    }
-  }
-}
-Objects {
-  Id: 17942206790140322283
-  Name: "Task_Necromancer_Decay_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 15333547231327706912
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 888046473686787013
-    }
-  }
-}
-Objects {
-  Id: 6852900720238068092
-  Name: "Task_Necromancer_Raise_Skeleton_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 11860202766747543346
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3121737684273745053
-    }
-  }
-}
-Objects {
-  Id: 15187893476974365306
-  Name: "Task_Necromancer_Shadow_Blast_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 4482173223807306785
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4161554099292861026
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 195141954809610323
-    }
-  }
-}
-Objects {
-  Id: 10580312357897641807
-  Name: "Task_Wizard_Meteor_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIReliableEvents"
-      AssetReference {
-        Id: 1680988108412715813
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 13540390578621358507
-      }
-    }
-    Overrides {
-      Name: "cs:TelegraphTemplate"
-      AssetReference {
-        Id: 1750729380033128680
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 955597036913151127
-    }
-  }
-}
-Objects {
-  Id: 9577964322197636930
-  Name: "Task_Wizard_Firestorm_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 230243209909476
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 10961386532980855900
-    }
-  }
-}
-Objects {
-  Id: 16090943144268880011
-  Name: "Task_Wizard_Fireball_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:APIProjectile"
-      AssetReference {
-        Id: 17739477946418166285
-      }
-    }
-    Overrides {
-      Name: "cs:ProjectileTemplate"
-      AssetReference {
-        Id: 8577847030441975411
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 473360950505549885
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 3428048190548918422
-    }
-  }
-}
-Objects {
   Id: 6892693044080746948
   Name: "Task_Archer_Volley_Client"
   Transform {
@@ -17349,90 +17433,6 @@ Objects {
   Script {
     ScriptAsset {
       Id: 12292902716545626357
-    }
-  }
-}
-Objects {
-  Id: 2617294269160073589
-  Name: "Task_Soldier_Block_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4867422383464068521
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 12732242527916280240
-    }
-  }
-}
-Objects {
-  Id: 3683810347219110210
-  Name: "Task_Soldier_Melee_Client"
-  Transform {
-    Location {
-      Z: -74.1032715
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16512903352423238162
-  UnregisteredParameters {
-    Overrides {
-      Name: "cs:API_NPC"
-      AssetReference {
-        Id: 1793953622129874134
-      }
-    }
-    Overrides {
-      Name: "cs:EffectTemplate"
-      AssetReference {
-        Id: 4135686357839385894
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Script {
-    ScriptAsset {
-      Id: 18248604253646646898
     }
   }
 }
@@ -22827,6 +22827,14 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -67.1095
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
           }
         }
       }

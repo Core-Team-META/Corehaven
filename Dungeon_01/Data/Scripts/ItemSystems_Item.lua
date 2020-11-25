@@ -365,9 +365,9 @@ end
 
 -- A highly subjective boolean assessment of an item's worth. Used as a criteria for which items require delete confirmation.
 function Item:IsHighValue()
-    -- Anything "Rare" or better is considered high-value.
+    -- Anything "Epic" or better is considered high-value.
     local rarityNumber = self.RARITIES[self:GetRarity()]
-    local rarityCutoff = self.RARITIES["Rare"]
+    local rarityCutoff = self.RARITIES["Epic"]
     if rarityNumber >= rarityCutoff then
         return true
     end

@@ -18,6 +18,8 @@
         ParentId: 4781671109827199097
         ChildIds: 15555998618406333103
         ChildIds: 2348650198079963556
+        ChildIds: 10745728863531531624
+        ChildIds: 2092491626906947444
         Lifespan: 10
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
@@ -145,6 +147,124 @@
           }
         }
       }
+      Objects {
+        Id: 10745728863531531624
+        Name: "2D Basic Shapes Decal"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 3.125
+            Y: 3.125
+            Z: 6
+          }
+        }
+        ParentId: 15461824205452143306
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Sides"
+            Int: 3
+          }
+          Overrides {
+            Name: "bp:Slice Offset"
+            Float: 360
+          }
+          Overrides {
+            Name: "bp:Slice Size"
+            Float: 180
+          }
+          Overrides {
+            Name: "bp:color"
+            Color {
+              R: 1.3
+            }
+          }
+          Overrides {
+            Name: "bp:Stroke Width"
+            Float: 0.8
+          }
+          Overrides {
+            Name: "bp:Fade Time"
+            Float: 0.3
+          }
+          Overrides {
+            Name: "bp:Indent"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Corner Rounding"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Blur"
+            Float: 0
+          }
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 1
+          }
+          Overrides {
+            Name: "bp:Stroke Color"
+            Color {
+              R: 1.3
+              A: 0.5
+            }
+          }
+        }
+        Lifespan: 0.4
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 3965397322580208730
+          }
+          TeamSettings {
+          }
+          DecalBP {
+          }
+        }
+      }
+      Objects {
+        Id: 2092491626906947444
+        Name: "DisconnectFromHierarchy"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15461824205452143306
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Object"
+            ObjectReference {
+              SubObjectId: 10745728863531531624
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 6805623665871080371
+          }
+        }
+      }
     }
     Assets {
       Id: 5588725286865802105
@@ -162,6 +282,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_sword_swipe_02"
+      }
+    }
+    Assets {
+      Id: 3965397322580208730
+      Name: "2D Basic Shapes Decal"
+      PlatformAssetType: 14
+      PrimaryAsset {
+        AssetType: "DecalBlueprintAssetRef"
+        AssetId: "dcl_basicShapes"
       }
     }
     PrimaryAssetId {
