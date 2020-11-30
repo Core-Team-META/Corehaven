@@ -49,8 +49,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      X: -781.242188
-      Z: 9268.97852
+      X: -783
+      Y: 5.65917969
+      Z: 9252.7793
     }
     Rotation {
     }
@@ -96,8 +97,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      X: -1166.24219
-      Z: 7628.97852
+      X: -1168
+      Y: 5.65917969
+      Z: 7612.7793
     }
     Rotation {
     }
@@ -143,8 +145,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      X: -1331.24219
-      Z: 5833.97852
+      X: -1333
+      Y: 5.65917969
+      Z: 5817.7793
     }
     Rotation {
     }
@@ -190,8 +193,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      X: -1331.24219
-      Z: 4348.97949
+      X: -1333
+      Y: 5.65917969
+      Z: 4332.78027
     }
     Rotation {
     }
@@ -237,8 +241,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      X: -1331.24219
-      Z: 2993.97852
+      X: -1333
+      Y: 5.65917969
+      Z: 2977.7793
     }
     Rotation {
     }
@@ -284,8 +289,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.00244140625
-      Z: 8723.97852
+      X: -1.7578125
+      Y: 5.66162109
+      Z: 8707.7793
     }
     Rotation {
       Roll: -179.999954
@@ -332,7 +338,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 4073.97852
+      X: -1.7578125
+      Y: 5.65917969
+      Z: 4057.7793
     }
     Rotation {
     }
@@ -387,7 +395,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 768.978516
+      X: -1.7578125
+      Y: 5.65917969
+      Z: 752.779297
     }
     Rotation {
     }
@@ -433,7 +443,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 7003.97852
+      X: -1.7578125
+      Y: 5.65917969
+      Z: 6987.7793
     }
     Rotation {
     }
@@ -479,8 +491,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.0009765625
-      Z: 5813.97852
+      X: -1.7578125
+      Y: 5.66015625
+      Z: 5797.7793
     }
     Rotation {
     }
@@ -535,8 +548,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.0009765625
-      Z: 8613.48145
+      X: -1.7578125
+      Y: 5.66015625
+      Z: 8597.28223
     }
     Rotation {
     }
@@ -590,8 +604,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.0009765625
-      Z: 10211.7832
+      X: -1.7578125
+      Y: 5.66015625
+      Z: 10195.584
     }
     Rotation {
     }
@@ -651,8 +666,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.00244140625
-      Z: 10064.3975
+      X: -1.7578125
+      Y: 5.66162109
+      Z: 10048.1982
     }
     Rotation {
       Roll: -179.999954
@@ -698,7 +714,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 6531.27246
+      X: -1.7578125
+      Y: 5.65917969
+      Z: 6515.07324
     }
     Rotation {
     }
@@ -753,7 +771,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Z: 298.978516
+      X: -1.7578125
+      Y: 5.65917969
+      Z: 282.779297
     }
     Rotation {
     }
@@ -811,8 +831,9 @@ Objects {
   Name: "Cone - Truncated Hollow Wide Thick"
   Transform {
     Location {
-      Y: 0.0009765625
-      Z: 9956.7832
+      X: -1.7578125
+      Y: 5.66015625
+      Z: 9940.58398
     }
     Rotation {
     }
