@@ -107,9 +107,21 @@
         }
       }
       Overrides {
+        Name: "cs:Ability_ExposeVulnerability"
+        AssetReference {
+          Id: 12414925296174038876
+        }
+      }
+      Overrides {
         Name: "cs:Ability_FirstAid"
         AssetReference {
           Id: 14855283366359618783
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Freeze"
+        AssetReference {
+          Id: 9973852158356551513
         }
       }
       Overrides {
@@ -119,9 +131,27 @@
         }
       }
       Overrides {
+        Name: "cs:Ability_HolyWard"
+        AssetReference {
+          Id: 14890582789633143101
+        }
+      }
+      Overrides {
         Name: "cs:Ability_Illuminate"
         AssetReference {
           Id: 16913468257274036374
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Intervention"
+        AssetReference {
+          Id: 6741689388286448312
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Leap"
+        AssetReference {
+          Id: 9670225942711539527
         }
       }
       Overrides {
@@ -173,6 +203,12 @@
         }
       }
       Overrides {
+        Name: "cs:Ability_Roll"
+        AssetReference {
+          Id: 13014139121547572652
+        }
+      }
+      Overrides {
         Name: "cs:Ability_ShieldBash"
         AssetReference {
           Id: 16742234104346326110
@@ -200,6 +236,18 @@
         Name: "cs:Ability_SweepingSlash"
         AssetReference {
           Id: 11272257922258550436
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Uppercut"
+        AssetReference {
+          Id: 3574085611856533
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Wallop"
+        AssetReference {
+          Id: 9080875412052933916
         }
       }
       Overrides {

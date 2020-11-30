@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 10028331438348720174
-  Name: "Passive_HolyPresence"
+  Name: "Passive_CommandingPresence"
   PlatformAssetType: 3
   TextAsset {
     CustomParameters {

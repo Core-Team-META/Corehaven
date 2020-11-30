@@ -1,6 +1,4 @@
-﻿local API_S = require(script:GetCustomProperty("APIStats"))
-
-local RARITY_COLORS = {
+﻿local RARITY_COLORS = {
     Common      = script:GetCustomProperty("RarityCommon"),
     Uncommon    = script:GetCustomProperty("RarityUncommon"),
     Rare        = script:GetCustomProperty("RarityRare"),
@@ -26,7 +24,7 @@ local ITEM_STAT_FORMATS = {
     Defense         = "%d",
     Attack          = "%d",
     Magic           = "%d",
-    CritChance      = "%d%%",
+    CritChance      = "%d",
     Haste           = "%d",
     CDR             = "%d",
     Tenacity        = "%d",
@@ -40,7 +38,7 @@ local PLAYER_STAT_FORMATS = {
     CritChance      = "%2.1f%%",
     Haste           = "%2.1f%%",
     CDR             = "%2.1f%%",
-    Tenacity        = "%2.1f%%",
+    Tenacity        = "%d",
 }
 
 local PLAYER_STAT_DISPLAY_NAMES = {
@@ -62,7 +60,7 @@ local PLAYER_STAT_EXPLANATIONS = {
     CritChance      = "increases critical strike chance",
     Haste           = "increases action speed",
     CDR             = "reduces ability cooldown time",
-    Tenacity        = "reduces hostile status effect duration",
+    Tenacity        = "increases strength of defense abilities",
 }
 
 local ITEM_SFX = {

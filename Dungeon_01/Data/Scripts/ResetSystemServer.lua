@@ -5,6 +5,7 @@ performance, that is done over a few seconds. Therefore each system may have to 
 the work doesn't get undone.
 ]]
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 
@@ -38,6 +39,10 @@ end
 
 function OnDungeonEnd()
 	ResetDungeon(END_DUNGEON_RESET_DELAY)
+
+	if API_DS.GetDifficultyLevel() == 4 then
+		API_DS.AddBonusLevel()
+	end
 end
 
 function Tick(deltaTime)
@@ -50,6 +55,10 @@ function Tick(deltaTime)
 		if not hasResetWhenEmpty then
 			ResetDungeon(0.0)
 			hasResetWhenEmpty = true
+
+			if API_DS.GetDifficultyLevel() == 4 then
+				API_DS.ResetBonusLevel()
+			end
 		end
 	end
 end

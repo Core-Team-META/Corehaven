@@ -3,7 +3,7 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local data = {}
 
-data.name = "Holy Presence"
+data.name = "Commanding Presence"
 data.description = script:GetCustomProperty("Description")
 data.icon = script:GetCustomProperty("Icon")
 
@@ -20,8 +20,12 @@ end
 function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 	local result = amount
 
-	for _, _ in pairs(players) do
-		result = result * 0.9
+	if targetCharacter:IsA("Player") then
+		for player, _ in pairs(players) do
+			local tenacityStat = player.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+			local multiplier = math.max(0.6, 0.9 - tenacityStat * 0.001)
+			result = result * multiplier
+		end
 	end
 
 	return result

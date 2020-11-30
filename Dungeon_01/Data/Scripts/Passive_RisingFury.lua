@@ -28,7 +28,11 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 			end
 			
 			if math.random() < chance then
-				API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Rising Fury"].id)
+				if _G.Passives.DoesPlayerHavePassive(sourceCharacter, "Improved Rising Fury") then
+					API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Improved Rising Fury"].id)
+				else
+					API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Rising Fury"].id)
+				end
 			end
 		end
 	end

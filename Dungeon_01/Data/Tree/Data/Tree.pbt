@@ -17500,6 +17500,12 @@ Objects {
   ParentId: 15214246396461168156
   ChildIds: 12964143400490911924
   UnregisteredParameters {
+    Overrides {
+      Name: "cs:Prerequisite"
+      ObjectReference {
+        SelfId: 11818131731923366081
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

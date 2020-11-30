@@ -115,6 +115,7 @@ end
 _G.Passives = {}
 _G.Passives.GetPlayerDamageDealtMultiplier = API.GetPlayerDamageDealtMultiplier
 _G.Passives.GetPlayerDamageTakenMultiplier = API.GetPlayerDamageTakenMultiplier
+_G.Passives.DoesPlayerHavePassive = API.DoesPlayerHavePassive
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)

@@ -76,6 +76,12 @@
           Id: 16915150100797142409
         }
       }
+      Overrides {
+        Name: "cs:APIPlayerPassives"
+        AssetReference {
+          Id: 2536345701790434189
+        }
+      }
     }
     Assets {
       Id: 4950921733684647490
