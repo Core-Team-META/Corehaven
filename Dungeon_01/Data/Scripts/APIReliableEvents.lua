@@ -86,6 +86,7 @@ end]]
 local API = {}
 
 function API.Connect(eventName, listener, ...)
+    assert(listener)
     local extraArgs = {...}
 
     return Events.Connect(eventName, function(...)
@@ -100,6 +101,7 @@ function API.Connect(eventName, listener, ...)
 end
 
 function API.ConnectForPlayer(eventName, listener, ...)
+    assert(listener)
     local extraArgs = {...}
 
     return Events.ConnectForPlayer(eventName, function(player, ...)

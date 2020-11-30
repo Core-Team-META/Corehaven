@@ -25,7 +25,8 @@ function data.onCastServer(caster, targetSet)
 	local potionType = math.random(4)
 
 	if potionType == 1 then			-- Straight heal
-		API_D.ApplyHealing(caster, caster, caster.maxHitPoints * 0.5)
+		local tenacityStat = caster.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+		API_D.ApplyHealing(caster, caster, 60.0 + 6.0 * tenacityStat)
 	elseif potionType == 2 then		-- Hot
 		API_SE.ApplyStatusEffect(caster, caster, API_SE.STATUS_EFFECT_DEFINITIONS["Restorative Potion"].id)
 	elseif potionType == 3 then		-- Mitigation

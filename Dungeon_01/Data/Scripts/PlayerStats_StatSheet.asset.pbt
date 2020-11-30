@@ -15,10 +15,6 @@
         Int: 100
       }
       Overrides {
-        Name: "cs:BaseCritChance"
-        Int: 10
-      }
-      Overrides {
         Name: "cs:BaseAttack"
         Int: 10
       }
@@ -27,15 +23,19 @@
         Int: 10
       }
       Overrides {
+        Name: "cs:BaseCritChance"
+        Float: 25
+      }
+      Overrides {
         Name: "cs:PerLevelHealth"
         Int: 15
       }
       Overrides {
-        Name: "cs:PerLevelAttack"
+        Name: "cs:PerLevelMagic"
         Int: 1
       }
       Overrides {
-        Name: "cs:PerLevelMagic"
+        Name: "cs:PerLevelAttack"
         Int: 1
       }
     }

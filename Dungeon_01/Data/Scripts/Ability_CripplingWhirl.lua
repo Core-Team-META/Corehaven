@@ -1,6 +1,7 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 
 local EFFECT_RANGE = 350.0
 local BASE_DAMAGE = 40.0
@@ -35,7 +36,11 @@ function data.onCastServer(caster, targetSet)
 
 	for _, target in pairs(targetSet) do
 		if not API_NPC.IsDead(target) and not API_NPC.IsAsleep(target) then
-			API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Cripple"].id)
+			if API_PP.DoesPlayerHavePassive(caster, "Empowered Whirl") then
+				API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Empowered Cripple"].id)
+			else
+				API_SE.ApplyStatusEffect(caster, target, API_SE.STATUS_EFFECT_DEFINITIONS["Cripple"].id)
+			end
 			API_D.ApplyDamage(caster, target, BASE_DAMAGE + DAMAGE_MULTIPLIER * attackStat, API_D.TAG_AOE)
 		end
 	end

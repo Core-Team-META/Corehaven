@@ -1,5 +1,8 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
+local BASE_DAMAGE = 60.0
+local DAMAGE_MULTIPLIER = 8.0
+
 local data = {}
 
 data.name = script:GetCustomProperty("Name")
@@ -26,7 +29,8 @@ end
 
 function data.onCastServer(caster, targetSet)
 	local target = targetSet[1]
-	local damageAmount = caster.maxHitPoints * 0.4
+	local tenacityStat = caster.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+	local damageAmount = BASE_DAMAGE + DAMAGE_MULTIPLIER * tenacityStat
 	local leechAmount, tags = API_D.ApplyDamage(caster, target, damageAmount)
 	local healingTags = API_D.TAG_CANNOT_CRIT
 	

@@ -22,11 +22,15 @@ end
 function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh:StopAnimations()
 	animatedMesh.playbackRateMultiplier = 1.0
+
 	if isBrawn then
 		Task.Spawn(function()
 			animatedMesh.playbackRateMultiplier = 0.4
 			Task.Wait(20.0)
-			animatedMesh.playbackRateMultiplier = 1.0
+			
+			if Object.IsValid(animatedMesh) then
+				animatedMesh.playbackRateMultiplier = 1.0
+			end
 		end)
 	end
 

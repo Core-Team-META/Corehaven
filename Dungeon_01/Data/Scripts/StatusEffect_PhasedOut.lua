@@ -19,7 +19,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 end
 
 function EffectStart(sourceCharacter, character, index)
-	chargesRemaining[character] = 3
+	chargesRemaining[character] = 1
 end
 
 function EffectEnd(sourceCharacter, character, index)

@@ -3,8 +3,8 @@ local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 
-local BASE_DAMAGE = 35.0
-local DAMAGE_MULTIPLIER = 0.6
+local BASE_DAMAGE = 45.0
+local DAMAGE_MULTIPLIER = 0.9
 local PROJECTILE_SPEED = 4000.0
 
 local data = {}

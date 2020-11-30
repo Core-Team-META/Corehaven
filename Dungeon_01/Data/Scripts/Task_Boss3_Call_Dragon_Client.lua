@@ -66,7 +66,7 @@ function OnCallDragon(seed)
 
 		currentTasks[2] = Task.Spawn(function()
 			local angle = -DRAGON_ANGLE_LIMIT
-			dragon = World.SpawnAsset(DRAGON_TEMPLATE, {transform = GetDragonTransform(pathPeak, angle)})
+			dragon = World.SpawnAsset(DRAGON_TEMPLATE)
 			local spawnTime = os.clock()
 
 			while angle < DRAGON_ANGLE_LIMIT do

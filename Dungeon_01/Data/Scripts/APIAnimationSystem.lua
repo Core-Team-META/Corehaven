@@ -54,6 +54,9 @@ local ANIMATION_MAP = {
 	Drink = {
 		Default = {"unarmed_drink"},
 	},
+	Roll = {
+		Default = {"unarmed_roll"},
+	},
 	Shout = {
 		Default = {"unarmed_shout"},
 	},

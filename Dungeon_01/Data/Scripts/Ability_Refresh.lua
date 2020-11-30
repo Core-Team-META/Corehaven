@@ -1,5 +1,8 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
+local BASE_HEAL = 55.0
+local HEAL_MULTIPLIER = 11.0
+
 local data = {}
 
 data.name = script:GetCustomProperty("Name")
@@ -21,7 +24,8 @@ function data.onCastClient(caster, targetSet)
 end
 
 function data.onCastServer(caster, targetSet)
-	API_D.ApplyHealing(caster, caster, caster.maxHitPoints * 0.3)
+	local tenacityStat = caster.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+	API_D.ApplyHealing(caster, caster, BASE_HEAL + HEAL_MULTIPLIER * tenacityStat)
 end
 
 return data

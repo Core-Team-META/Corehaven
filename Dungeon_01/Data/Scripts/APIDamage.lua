@@ -45,7 +45,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
                 sourceMultiplier = sourceMultiplier * _G.Passives.GetPlayerDamageDealtMultiplier(sourceCharacter)
             end
 
-            local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
+            local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
 
             if math.random() < critChance then
                 sourceMultiplier = sourceMultiplier * CRIT_DAMAGE_MULTIPLIER
@@ -149,7 +149,7 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
     local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
     
     if sourceCharacter and sourceCharacter:IsA("Player") and canCrit then
-        local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
+        local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
 
         if math.random() < critChance then
             adjustedAmount = adjustedAmount * CRIT_HEAL_MULTIPLIER

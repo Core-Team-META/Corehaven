@@ -8,7 +8,7 @@ local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 
-local DESPAWN_TIME = 1.0
+local DESPAWN_TIME = 90.0
 local SUMMON_DESPAWN_TIME = 30.0
 local TASK_HISTORY_LENGTH = 8
 

@@ -149,6 +149,12 @@
         }
       }
       Overrides {
+        Name: "cs:Animation_unarmed_roll"
+        AssetReference {
+          Id: 11998356565250922680
+        }
+      }
+      Overrides {
         Name: "cs:Animation_unarmed_shout"
         AssetReference {
           Id: 1139198525019319357
