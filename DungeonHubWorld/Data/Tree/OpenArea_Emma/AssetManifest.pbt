@@ -1,13 +1,4 @@
 ﻿Assets {
-  Id: 18257460502441294512
-  Name: "Prism - 3-Sided Convex"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_triangle_convex_001"
-  }
-}
-Assets {
   Id: 18200200076012147990
   Name: "Fantasy Castle Pillar 02 - Top"
   PlatformAssetType: 1
@@ -62,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 18010942990198143229
-  Name: "Amethyst"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "fxmi_amethyst"
-  }
-}
-Assets {
   Id: 17983886762090769352
   Name: "Plane 1m - One Sided"
   PlatformAssetType: 1
@@ -86,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dmg_concrete_panel_001_2x4m_ref"
+  }
+}
+Assets {
+  Id: 17636380616694369594
+  Name: "Bottle 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_004"
   }
 }
 Assets {
@@ -152,12 +143,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16414328049407947312
+  Name: "Tree Redwood Big"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_001"
+  }
+}
+Assets {
   Id: 16372496464315477095
   Name: "Ring Beveled (thick)"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
+  Id: 16352007205294489134
+  Name: "Torch Metal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torch_001"
   }
 }
 Assets {
@@ -176,6 +185,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_urb_dest_concrete_chunk_002_ref"
+  }
+}
+Assets {
+  Id: 16125652428998148997
+  Name: "Bottle 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_006"
+  }
+}
+Assets {
+  Id: 15935752075050755961
+  Name: "Tree Redwood Bare Medium"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_redwood_004"
   }
 }
 Assets {
@@ -296,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 15014793420090633705
+  Name: "Fantasy Castle Stairs 01 - 150cm"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_stairs_001_150cm"
+  }
+}
+Assets {
   Id: 14844672563279110931
   Name: "Bricks Worn Stone 01"
   PlatformAssetType: 2
@@ -359,15 +395,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14267747156564835807
-  Name: "Fantasy Castle Wall Foundation 01 - Curved"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_wall_found_001_curve_001"
-  }
-}
-Assets {
   Id: 14252695843363782250
   Name: "Spiral"
   PlatformAssetType: 1
@@ -386,15 +413,6 @@ Assets {
   }
 }
 Assets {
-  Id: 14200381599681868577
-  Name: "Bricks Large Foundation 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_brick_large_foundation_001"
-  }
-}
-Assets {
   Id: 14162522025896861699
   Name: "Stone Wall End Corner 2m 001"
   PlatformAssetType: 1
@@ -404,12 +422,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14077936288700442839
+  Name: "Liquid Decal"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "dcl_liquid"
+  }
+}
+Assets {
   Id: 14039312902788016506
   Name: "Craftsman End Table"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_end_table_001"
+  }
+}
+Assets {
+  Id: 14023144080669477239
+  Name: "Hill 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hill_002"
   }
 }
 Assets {
@@ -428,6 +464,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
+  Id: 13697624696730172247
+  Name: "Callout Sparkle"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_sparkles_volume_vfx"
   }
 }
 Assets {
@@ -521,6 +566,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12630484151658591057
+  Name: "Decal Moss Patch"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_moss_patch_001"
+  }
+}
+Assets {
   Id: 12567280682905171665
   Name: "Scifi Panel 1x3m Angled Right"
   PlatformAssetType: 1
@@ -536,6 +590,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_002"
+  }
+}
+Assets {
+  Id: 12511402883465687914
+  Name: "Bottle 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_001"
   }
 }
 Assets {
@@ -629,12 +692,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11667075996946480541
+  Name: "Wooden Bucket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bucket_001"
+  }
+}
+Assets {
   Id: 11608996133378055453
   Name: "Ivy 04"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ivy_generic_004"
+  }
+}
+Assets {
+  Id: 11321069729411225854
+  Name: "Flower Bellflower Patch 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_foliage_gen_flower_bell_patch_001_ref"
   }
 }
 Assets {
@@ -662,6 +743,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_hollow_001"
+  }
+}
+Assets {
+  Id: 10916090668082890768
+  Name: "Bottle 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_003"
   }
 }
 Assets {
@@ -1061,6 +1151,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6062783959108536718
+  Name: "Torch Holder Metal"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torch_holder_001"
+  }
+}
+Assets {
   Id: 6041984776381722081
   Name: "Bricks Chunky Stone 01"
   PlatformAssetType: 2
@@ -1076,6 +1175,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_shield_strap_001"
+  }
+}
+Assets {
+  Id: 5514555441345228667
+  Name: "Chest Big Closed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_003"
   }
 }
 Assets {
@@ -1232,6 +1340,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3999181190189966405
+  Name: "Bottle 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_bottle_005"
+  }
+}
+Assets {
   Id: 3982193030776093519
   Name: "Sphere"
   PlatformAssetType: 1
@@ -1301,6 +1418,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 3054822984243159922
+  Name: "Falling Leaves Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_falling_leaves_volume_vfx"
   }
 }
 Assets {
