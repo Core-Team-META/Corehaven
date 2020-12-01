@@ -1,6 +1,108 @@
 ﻿Name: "OpenArea_Emma"
 RootId: 6787590626079583879
 Objects {
+  Id: 2441460510522024718
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: -3274.14453
+      Y: -8385.66113
+      Z: -1360.62158
+    }
+    Rotation {
+      Pitch: 89.0180054
+      Yaw: 8.31400108
+      Roll: -44.975769
+    }
+    Scale {
+      X: 4.43910837
+      Y: 4.58889341
+      Z: 4.3487463
+    }
+  }
+  ParentId: 6787590626079583879
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17016052731400103309
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15814039200137670462
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 14469547374075676168
+  Name: "Rock Flat 01"
+  Transform {
+    Location {
+      X: -2629.75781
+      Y: -9797.87793
+      Z: -907.745117
+    }
+    Rotation {
+      Pitch: 162.143677
+      Yaw: -80.4779053
+      Roll: -97.7635193
+    }
+    Scale {
+      X: 3.89172077
+      Y: 5.4292717
+      Z: 6.12684679
+    }
+  }
+  ParentId: 6787590626079583879
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 17016052731400103309
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15814039200137670462
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 460214528121423931
   Name: "Liquid Decal"
   Transform {
@@ -5499,14 +5601,14 @@ Objects {
   Name: "Signpost"
   Transform {
     Location {
-      X: -13479.4551
-      Y: -2777.06592
-      Z: -727.113281
+      X: -15409.6055
+      Y: -1712.99341
+      Z: -142.07666
     }
     Rotation {
       Pitch: -1.22390747
-      Yaw: 0.200902969
-      Roll: 1.59104645
+      Yaw: -8.552948
+      Roll: 1.59104621
     }
     Scale {
       X: 0.276381314
@@ -7534,19 +7636,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -10352.6816
-      Y: -11018.2568
-      Z: -1504.00977
+      X: -10307.8535
+      Y: -10658.7129
+      Z: -1384.11328
     }
     Rotation {
-      Pitch: 12.3943949
-      Yaw: 81.2943649
-      Roll: -87.5736084
+      Pitch: 8.01151085
+      Yaw: 105.468117
+      Roll: -84.6992188
     }
     Scale {
-      X: 4.77364731
-      Y: 9.36955166
-      Z: 13.9016628
+      X: 5.68574858
+      Y: 7.15760803
+      Z: 13.9016771
     }
   }
   ParentId: 6787590626079583879
@@ -7585,9 +7687,9 @@ Objects {
   Name: "Tree Oak Bare 01"
   Transform {
     Location {
-      X: -10856.3555
-      Y: -9974.21289
-      Z: -88.4887695
+      X: -10875.5254
+      Y: -9317.27637
+      Z: -354.599121
     }
     Rotation {
       Pitch: -6.40637207
@@ -7729,19 +7831,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -2483.95313
-      Y: -11409.1367
-      Z: -1666.60254
+      X: -2458.1543
+      Y: -11380.1836
+      Z: -1750.42041
     }
     Rotation {
-      Pitch: 78.4492416
-      Yaw: -47.8036804
-      Roll: -11.437439
+      Pitch: 84.4824524
+      Yaw: 11.8563061
+      Roll: 18.0781116
     }
     Scale {
-      X: 4.49911
-      Y: 5.01638079
-      Z: 6.12686396
+      X: 4.49910402
+      Y: 8.17721558
+      Z: 6.12685108
     }
   }
   ParentId: 6787590626079583879
@@ -10696,19 +10798,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -11979.8496
-      Y: -8251.71289
-      Z: -1067.64502
+      X: -11942.1055
+      Y: -8335.5752
+      Z: -548.516602
     }
     Rotation {
-      Pitch: 18.9296017
-      Yaw: 138.730347
-      Roll: -96.730835
+      Pitch: 1.61074972
+      Yaw: 131.144943
+      Roll: -80.6452637
     }
     Scale {
-      X: 5.83904791
-      Y: 7.81412125
-      Z: 9.35876083
+      X: 5.83906746
+      Y: 5.96521521
+      Z: 5.90681458
     }
   }
   ParentId: 6787590626079583879
@@ -10747,19 +10849,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: -11595.4414
-      Y: -9153.71582
-      Z: -1504.00977
+      X: -11631.3008
+      Y: -9038.95801
+      Z: -1372.90332
     }
     Rotation {
-      Pitch: 12.3944979
-      Yaw: -45.9044189
-      Roll: -87.5736389
+      Pitch: 14.7661304
+      Yaw: 12.4676008
+      Roll: -89.1260376
     }
     Scale {
-      X: 4.77364731
-      Y: 9.36955166
-      Z: 13.9016628
+      X: 3.89409542
+      Y: 7.64319849
+      Z: 11.3402596
     }
   }
   ParentId: 6787590626079583879
@@ -24293,9 +24395,9 @@ Objects {
       Z: -2008.06592
     }
     Rotation {
-      Pitch: -18.0357666
-      Yaw: -75.8268127
-      Roll: 17.8612957
+      Pitch: -20.937561
+      Yaw: -65.1805115
+      Roll: 14.2997885
     }
     Scale {
       X: 6.11783
@@ -24331,22 +24433,24 @@ Objects {
   Name: "Rock Pile 002"
   Transform {
     Location {
-      X: 9528.11133
-      Y: 32468.5234
-      Z: -1743.86719
+      X: 9518.27344
+      Y: 32394.5
+      Z: -1749.08447
     }
     Rotation {
-      Pitch: 18.1837444
-      Yaw: 162.948166
-      Roll: 0.870310068
+      Pitch: 17.7249146
+      Yaw: 146.549576
+      Roll: -4.21612549
     }
     Scale {
-      X: 4.51375675
-      Y: 4.51375675
-      Z: 4.51375675
+      X: 4.48090029
+      Y: 4.48090029
+      Z: 4.48090029
     }
   }
   ParentId: 6787590626079583879
+  UnregisteredParameters {
+  }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -24424,9 +24528,9 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 9340.30859
-      Y: 32382.1094
-      Z: -1418.27588
+      X: 9345.92578
+      Y: 32371.7031
+      Z: -1456.86621
     }
     Rotation {
       Pitch: -15.3799133
@@ -33730,9 +33834,9 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 9210.56055
-      Y: 25752.5332
-      Z: -211.445313
+      X: 9351.56641
+      Y: 25499.1
+      Z: -177.032227
     }
     Rotation {
       Pitch: 22.2317524
@@ -33781,19 +33885,19 @@ Objects {
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 9203.97559
-      Y: 26181.9258
-      Z: -459.282227
+      X: 9612.12891
+      Y: 26231.1875
+      Z: -307.609375
     }
     Rotation {
-      Pitch: -78.288147
-      Yaw: -3.94552612
-      Roll: 170.651535
+      Pitch: -83.1839
+      Yaw: -54.0976563
+      Roll: -168.887115
     }
     Scale {
-      X: 2.7738018
-      Y: -2.05744076
-      Z: 5.98359823
+      X: 2.92617965
+      Y: -3.77955151
+      Z: 4.04401779
     }
   }
   ParentId: 6787590626079583879
@@ -40433,19 +40537,19 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 10596.002
-      Y: 27637.3477
-      Z: -558.380859
+      X: 10463.1191
+      Y: 26855.625
+      Z: -408.446289
     }
     Rotation {
-      Pitch: -17.5680237
-      Yaw: -103.252136
-      Roll: -11.3388672
+      Pitch: -5.85943604
+      Yaw: -117.947037
+      Roll: -14.563324
     }
     Scale {
-      X: 3.96501756
-      Y: 5.61082745
-      Z: 7.16163635
+      X: 3.96502638
+      Y: 6.73527336
+      Z: 5.24652767
     }
   }
   ParentId: 6787590626079583879
@@ -40479,74 +40583,23 @@ Objects {
   }
 }
 Objects {
-  Id: 3741442616744522054
-  Name: "Rock Flat 01"
-  Transform {
-    Location {
-      X: 9769.2832
-      Y: 26876.5723
-      Z: -834.749512
-    }
-    Rotation {
-      Pitch: -83.2646179
-      Yaw: -11.9452209
-      Roll: 143.768936
-    }
-    Scale {
-      X: 4.06696701
-      Y: 3.23522139
-      Z: 7.01248932
-    }
-  }
-  ParentId: 6787590626079583879
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17016052731400103309
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 15814039200137670462
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    DisableDistanceFieldLighting: true
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 7455178686643007348
   Name: "Rock Flat 01"
   Transform {
     Location {
-      X: 10101.1572
-      Y: 27794.4316
-      Z: -547.766602
+      X: 10213.7803
+      Y: 27685.5059
+      Z: -572.616211
     }
     Rotation {
-      Pitch: 77.1744843
-      Yaw: -22.487854
-      Roll: -20.2590942
+      Pitch: 83.8134
+      Yaw: 3.67539
+      Roll: -16.3424072
     }
     Scale {
-      X: 2.43713284
-      Y: 2.27846742
-      Z: 3.3115809
+      X: 2.43713522
+      Y: 3.21297097
+      Z: 3.31158519
     }
   }
   ParentId: 6787590626079583879
@@ -47155,19 +47208,19 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 7380.18213
-      Y: 33880.207
-      Z: -231.185059
+      X: 7472.86182
+      Y: 33847.2695
+      Z: -540.782715
     }
     Rotation {
-      Pitch: -34.5645752
-      Yaw: 105.324417
-      Roll: 1.80704272
+      Pitch: -34.5645142
+      Yaw: 105.324814
+      Roll: -4.17440796
     }
     Scale {
-      X: 2.17183805
-      Y: 4.71241808
-      Z: 4.85307217
+      X: 2.98237872
+      Y: 4.71240902
+      Z: 4.85308886
     }
   }
   ParentId: 6787590626079583879
@@ -92983,279 +93036,6 @@ Objects {
   }
 }
 Objects {
-  Id: 8061659933571167645
-  Name: "Signpost"
-  Transform {
-    Location {
-      X: -13049.2266
-      Y: -1986.56238
-      Z: -892.149902
-    }
-    Rotation {
-      Pitch: -1.09536743
-      Yaw: -4.2979126
-      Roll: -4.24121094
-    }
-    Scale {
-      X: 0.276381314
-      Y: 0.276381314
-      Z: 0.276381314
-    }
-  }
-  ParentId: 6787590626079583879
-  ChildIds: 16852138254010450137
-  ChildIds: 8091210525594416642
-  ChildIds: 14932937189929722074
-  ChildIds: 10446499523891180595
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 10446499523891180595
-  Name: "Cube - bottom aligned"
-  Transform {
-    Location {
-      X: 22.5673313
-      Y: -44.5604515
-      Z: 108.757675
-    }
-    Rotation {
-      Yaw: -6.10351563e-05
-    }
-    Scale {
-      X: 0.158467382
-      Y: 5.12004328
-      Z: 0.999999106
-    }
-  }
-  ParentId: 8061659933571167645
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8708294176369427953
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.937319338
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.12680155
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14932937189929722074
-  Name: "Cube - bottom aligned"
-  Transform {
-    Location {
-      X: 22.5589943
-      Y: -44.560894
-      Z: 213.267715
-    }
-    Rotation {
-      Yaw: -3.05175781e-05
-    }
-    Scale {
-      X: 0.158467382
-      Y: 5.12004328
-      Z: 0.999999106
-    }
-  }
-  ParentId: 8061659933571167645
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8708294176369427953
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.474797249
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.12680155
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8091210525594416642
-  Name: "Cube - bottom aligned"
-  Transform {
-    Location {
-      X: 22.5678978
-      Y: -44.560173
-      Z: 316.495178
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.158467382
-      Y: 5.12004471
-      Z: 0.999999106
-    }
-  }
-  ParentId: 8061659933571167645
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8708294176369427953
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 0.421097279
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.12680155
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 16852138254010450137
-  Name: "Cube - bottom aligned"
-  Transform {
-    Location {
-      X: -4.05100203
-      Y: -44.5597267
-      Z: -551.104248
-    }
-    Rotation {
-    }
-    Scale {
-      X: 0.555810392
-      Y: 0.720731854
-      Z: 10.0846386
-    }
-  }
-  ParentId: 8061659933571167645
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 8708294176369427953
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 1.64112353
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.12680155
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17609149353171719671
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 5073390688853226690
   Name: "Tree Oak 01"
   Transform {
@@ -93340,9 +93120,9 @@ Objects {
   Name: "Tree Oak 01"
   Transform {
     Location {
-      X: -3332.0293
-      Y: -5174.35889
-      Z: -301.226074
+      X: -3315.92188
+      Y: -5183.43359
+      Z: -423.552246
     }
     Rotation {
       Pitch: 7.11818361
@@ -94189,19 +93969,19 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 600.74707
-      Y: 35113.5078
-      Z: -11.5996094
+      X: 1021.78125
+      Y: 34888.7305
+      Z: -19.3969727
     }
     Rotation {
-      Pitch: 2.23759031
-      Yaw: 146.788223
-      Roll: 15.4845619
+      Pitch: -3.53488159
+      Yaw: 145.188583
+      Roll: 15.5028534
     }
     Scale {
-      X: 7.65487719
-      Y: 10.832284
-      Z: 13.8262815
+      X: 3.77512836
+      Y: 10.8322582
+      Z: 13.8262806
     }
   }
   ParentId: 6787590626079583879
@@ -95905,56 +95685,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16545017496779581527
-  Name: "Rock 01"
-  Transform {
-    Location {
-      X: -1806.74805
-      Y: -11162.9844
-      Z: -1085.89453
-    }
-    Rotation {
-      Pitch: 6.13868
-      Yaw: -169.007309
-      Roll: -179.566116
-    }
-    Scale {
-      X: 2.72962379
-      Y: 4.99056053
-      Z: 7.54108524
-    }
-  }
-  ParentId: 6787590626079583879
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 17016052731400103309
-      }
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 9599526479376918549
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 1050234517860985271
   Name: "Rock 01"
   Transform {
@@ -96109,19 +95839,19 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 1373.10156
-      Y: -1957.35583
-      Z: -184.774414
+      X: 1834.91602
+      Y: -1685.91736
+      Z: -593.248535
     }
     Rotation {
-      Pitch: -25.593811
-      Yaw: 84.8914871
-      Roll: 126.804886
+      Pitch: -0.327423096
+      Yaw: 123.336502
+      Roll: -123.351486
     }
     Scale {
-      X: 2.98958397
-      Y: 4.9905448
-      Z: 7.08398676
+      X: 2.98958039
+      Y: 6.13409281
+      Z: 5.45008802
     }
   }
   ParentId: 6787590626079583879
@@ -96159,19 +95889,19 @@ Objects {
   Name: "Rock 01"
   Transform {
     Location {
-      X: 2210.43945
-      Y: -1558.11169
-      Z: -243.399414
+      X: 1908.71289
+      Y: -1930.08
+      Z: -445.385254
     }
     Rotation {
-      Pitch: -3.63119507
-      Yaw: 100.182655
-      Roll: -6.57931519
+      Pitch: 170.874649
+      Yaw: -141.852234
+      Roll: -4.18048096
     }
     Scale {
-      X: 3.73200917
-      Y: 3.44205475
-      Z: 5.51877928
+      X: 6.28900814
+      Y: 4.24788237
+      Z: 5.22809505
     }
   }
   ParentId: 6787590626079583879
