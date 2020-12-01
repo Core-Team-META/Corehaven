@@ -1,4 +1,5 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local REWIND_DURATION = 5.0
 
@@ -47,11 +48,11 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
 	local totalDamage = 0.0
 
 	for _, amount in pairs(playerDamageHistories[caster]) do
@@ -63,7 +64,7 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)
 
 local pruneTask = Task.Spawn(PruneHistories)
 pruneTask.repeatCount = -1

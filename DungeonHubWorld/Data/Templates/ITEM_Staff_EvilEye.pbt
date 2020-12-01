@@ -493,7 +493,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 8700548731784444270
+              Id: 6787131228221938650
             }
           }
         }

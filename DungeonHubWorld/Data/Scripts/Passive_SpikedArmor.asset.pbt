@@ -18,7 +18,7 @@
       }
       Overrides {
         Name: "cs:Description"
-        String: "You now return damage everytime to take damage from a nearby foe."
+        String: "You return damage everytime to take damage from a nearby foe."
       }
       Overrides {
         Name: "cs:Icon"

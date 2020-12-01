@@ -1,4 +1,6 @@
-﻿local Database = require(script:GetCustomProperty("ItemSystems_Database"))
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local LOOT_TEMPLATE = script:GetCustomProperty("LootTemplate")
 
 -- Drops are assigned by lottery.
@@ -64,10 +66,10 @@ local function OnDropLoot(dropKey, dropWorldPosition, player)
     local object = World.SpawnAsset(LOOT_TEMPLATE, { position = dropWorldPosition, parent = script })
     local lootIndex = winner.serverUserData.inventory:TakeNextOpenLootIndex()
     -- Encode information into the objects loot property.
-    local lootInfo = string.format("%s/%d/%s", winner.id, lootIndex, item:RuntimeHash())
+    local lootInfo = string.format("%s/%d/%d/%s", winner.id, lootIndex, item:GetStackSize(), item:RuntimeHash())
     object:SetNetworkedCustomProperty("INFO", lootInfo)
 end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("DropLoot", OnDropLoot)
+API_RE.Connect("DropLoot", OnDropLoot)

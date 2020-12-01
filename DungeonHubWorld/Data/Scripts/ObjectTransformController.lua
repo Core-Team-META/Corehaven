@@ -20,6 +20,8 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
 --]]
 
 -- User exposed settings properties
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
 local OBJECT = script:GetCustomProperty("Object"):WaitForObject()
 local REVERSE = script:GetCustomProperty("Reverse")
 local DURATION = script:GetCustomProperty("Duration")
@@ -230,7 +232,7 @@ end
 -- Broadcast an event with checking if the event name is valid
 function BroadcastEvent(eventName)
     if eventName and eventName ~= "" then
-        Events.Broadcast(eventName)
+        API_RE.Broadcast(eventName)
     end
 end
 
@@ -250,11 +252,11 @@ end
 
 -- Register events
 if START_EVENT and START_EVENT ~= "" then
-    Events.Connect(START_EVENT, StartAction)
+    API_RE.Connect(START_EVENT, StartAction)
 end
 if STOP_EVENT and STOP_EVENT ~= "" then
-    Events.Connect(STOP_EVENT, StopAction)
+    API_RE.Connect(STOP_EVENT, StopAction)
 end
 if RESET_EVENT and RESET_EVENT ~= "" then
-    Events.Connect(RESET_EVENT, ResetAction)
+    API_RE.Connect(RESET_EVENT, ResetAction)
 end

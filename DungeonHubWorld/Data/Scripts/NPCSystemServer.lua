@@ -3,11 +3,12 @@ local API_EP = require(script:GetCustomProperty("APIEnemyPathing"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local NAV_MESH_FOLDER = script:GetCustomProperty("NavMeshFolder"):WaitForObject()
 local NPC_FOLDER = script:GetCustomProperty("NPC_Folder"):WaitForObject()
 
-local DESPAWN_TIME = 120.0
+local DESPAWN_TIME = 90.0
 local SUMMON_DESPAWN_TIME = 30.0
 local TASK_HISTORY_LENGTH = 8
 
@@ -79,19 +80,19 @@ function SetCurrentTask(npc, task, interrupted)
 
 	if previousTask == API_NPC.STATE_IDLE and task ~= API_NPC.STATE_IDLE then
 		if npcData.onPulledEventName then
-			Events.Broadcast(npcData.onPulledEventName)
+			API_RE.Broadcast(npcData.onPulledEventName)
 		end
 	end
 
 	if previousTask ~= API_NPC.STATE_RESETTING and task == API_NPC.STATE_RESETTING then
 		if npcData.onResetEventName then
-			Events.Broadcast(npcData.onResetEventName)
+			API_RE.Broadcast(npcData.onResetEventName)
 		end
 	end
 
 	if previousTask ~= API_NPC.STATE_DEAD and task == API_NPC.STATE_DEAD then
 		if npcData.onDiedEventName then
-			Events.Broadcast(npcData.onDiedEventName)
+			API_RE.Broadcast(npcData.onDiedEventName)
 		end
 	end
 
@@ -411,7 +412,7 @@ function KillNPC(npc, skipLoot)
 				for _, dropInfo in pairs(npcData.dropData) do
 					if not dropInfo.minDifficulty or dropInfo.minDifficulty <= API_DS.GetDifficultyLevel() then
 						if math.random() <= dropInfo.chance then
-							Events.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
+							API_RE.Broadcast("DropLoot", dropInfo.key, npc:GetWorldPosition() + Vector3.UP * 20.0, player)
 						end
 
 						if player.serverUserData.statSheet then
@@ -432,7 +433,7 @@ function KillNPC(npc, skipLoot)
 	npc:StopMove()
 	npc:StopRotate()
 
-	Events.Broadcast("NPC_Died", npc)
+	API_RE.Broadcast("NPC_Died", npc)
 end
 
 function DespawnNPC(npc)
@@ -494,7 +495,7 @@ function Tick(deltaTime)
 			end
 		elseif currentTask ~= API_NPC.STATE_ASLEEP then
 			-- Are we dead?
-			if API_NPC.IsDead(npc) then
+			if API_NPC.IsDead(npc) or (npcData.spawnParent and API_NPC.IsDead(npcData.spawnParent)) then
 				KillNPC(npc)
 			else
 				if currentTask == API_NPC.STATE_RESETTING then
@@ -541,11 +542,32 @@ function Tick(deltaTime)
 					local removedTarget = false
 
 					for player, _ in pairs(npcState.threatTable) do
-						-- In Corehaven, dummies reset when you run away
-						if not Object.IsValid(player) or player.isDead or (npc:GetWorldPosition() - player:GetWorldPosition()).size > 4000.0 then
-							if player == API_NPC.GetTarget(npc) then
+						local removePlayer = true
+
+						if Object.IsValid(player) then
+							local distance = (npc:GetWorldPosition() - player:GetWorldPosition()).size
+
+							if not player.isDead then
+								if not npcData.dropCombatDistance or npcData.dropCombatDistance > distance then
+									removePlayer = false
+								end
+							end
+						end
+
+						if removePlayer then
+							-- player may not be valid, so we can't access its members
+							removedTarget = true
+							local targetId = API_NPC.GetTargetId(npc)
+
+							for _, otherPlayer in pairs(Game.GetPlayers()) do
+								if otherPlayer ~= player and otherPlayer.id == targetId then
+									removedTarget = false
+									break
+								end
+							end
+
+							if removedTarget then
 								API_NPC.SetTarget(npc, nil)
-								removedTarget = true
 							end
 
 							npcState.threatTable[player] = nil
@@ -639,7 +661,7 @@ API_NPC.RegisterSystem(functionTable, false)
 API_NPC.RegisterNPCFolder(NPC_FOLDER)
 API_EP.RegisterRectangles(NAV_MESH_FOLDER)
 Task.Wait()		-- Work around networked property backing data issue
-Events.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Created", OnNPCCreated)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

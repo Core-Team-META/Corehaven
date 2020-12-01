@@ -4,11 +4,11 @@
 
     Manages the replication of inventories across client/server.
 ]]
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local Inventory = require(script:GetCustomProperty("ItemSystems_Inventory"))
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
-local ReliableEvents = require(script:GetCustomProperty("ReliableEvents"))
 
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -39,7 +39,7 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerLoadInventory()
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     local startupMessageFmt = "Loading inventory: %s"
     -- Check for first time user and populate inventory with starter item.
     if not playerData.inventoryHash then
@@ -47,7 +47,7 @@ local function ServerLoadInventory()
         OWNER.serverUserData.inventory:LoadHash(nil)
         OWNER.serverUserData.inventory:AddStarterItems(Database:CreateStarterItems())
         playerData.inventoryHash = OWNER.serverUserData.inventory:PersistentHash()
-        Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+        Storage.SetSharedPlayerData(API_SK.GetStorageKey(), OWNER, playerData)
         startupMessageFmt = "Initializing inventory with beginner items: %s"
     end
     print(string.format(startupMessageFmt, playerData.inventoryHash))
@@ -95,9 +95,9 @@ end
 
 ---------------------------------------------------------------------------------------------------------
 local function ServerSaveInventory(inventory)
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     playerData.inventoryHash = inventory:PersistentHash()
-    Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+    Storage.SetSharedPlayerData(API_SK.GetStorageKey(), OWNER, playerData)
 end
 
 ---------------------------------------------------------------------------------------------------------
@@ -117,21 +117,21 @@ local function ServerInitInventory()
         end
     end)
     -- Whenever a client rearranges their local inventory, update the server inventory and persist.
-    Events.ConnectForPlayer("IIM", function(player, fromSlotIndex, toSlotIndex)
+    API_RE.ConnectForPlayer("IIM", function(player, fromSlotIndex, toSlotIndex)
         if player == OWNER then
             inventory:MoveItem(fromSlotIndex, toSlotIndex)
             ServerSaveInventory(inventory)
         end
     end)
     -- Whenever a client consumes an item, update the server inventory.
-    Events.ConnectForPlayer("IIC", function(player, slotIndex)
+    API_RE.ConnectForPlayer("IIC", function(player, slotIndex)
         if player == OWNER then
             inventory:ConsumeItem(slotIndex)
             ServerSaveInventory(inventory)
         end
     end)
     -- Whenever a client claims a loot item, update the server inventory and persist.
-    Events.ConnectForPlayer("ILC", function(player, lootIndex)
+    API_RE.ConnectForPlayer("ILC", function(player, lootIndex)
         if player == OWNER then
             if inventory:CanClaimLoot(lootIndex) then
                 inventory:ClaimLoot(lootIndex)
@@ -140,14 +140,14 @@ local function ServerInitInventory()
         end
     end)
     -- Whenever a client upgrades an item, update the server ivnentory and persist.
-    Events.ConnectForPlayer("IUE", function(player, upgradeSlotIndex)
+    API_RE.ConnectForPlayer("IUE", function(player, upgradeSlotIndex)
         if player == OWNER then
             inventory:ExecuteItemUpgrade(upgradeSlotIndex)
             ServerSaveInventory(inventory)
         end
     end)
     -- Whenever a client executes a craft, update the server inventory and persist.
-    Events.ConnectForPlayer("ICE", function(player, recipeItemIndex, primaryItemSlotIndex)
+    API_RE.ConnectForPlayer("ICE", function(player, recipeItemIndex, primaryItemSlotIndex)
         if player == OWNER then
             local recipeItemData = Database:FindItemDataByIndex(recipeItemIndex)
             if recipeItemData then
@@ -166,23 +166,23 @@ local function ClientInitInventoryLocal()
     inventory:ConnectToStatSheet(OWNER.clientUserData.statSheet)
     -- Whenever a local rearrangement is made, broadcast to the server.
     inventory.itemMovedEvent:Connect(function(fromSlotIndex, toSlotIndex)
-        ReliableEvents.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)
+        API_RE.BroadcastToServer("IIM", fromSlotIndex, toSlotIndex)
     end)
     -- Whenever an item is consumed, broadcast to server.
     inventory.itemConsumedEvent:Connect(function(slotIndex)
-        ReliableEvents.BroadcastToServer("IIC", slotIndex)
+        API_RE.BroadcastToServer("IIC", slotIndex)
     end)
     -- Whenever a loot item is claimed, broadcast to server.
     inventory.lootClaimedEvent:Connect(function(lootIndex)
-        ReliableEvents.BroadcastToServer("ILC", lootIndex)
+        API_RE.BroadcastToServer("ILC", lootIndex)
     end)
     -- Whenever an upgrade is performed, broadcast to server.
     inventory.itemUpgradedEvent:Connect(function(upgradeSlotIndex)
-        ReliableEvents.BroadcastToServer("IUE", upgradeSlotIndex)
+        API_RE.BroadcastToServer("IUE", upgradeSlotIndex)
     end)
     -- Whenever a craft is performed, broadcast to server.
     inventory.craftExecutedEvent:Connect(function(recipeItem, primaryItemSlotIndex)
-        ReliableEvents.BroadcastToServer("ICE", recipeItem:GetIndex(), primaryItemSlotIndex)
+        API_RE.BroadcastToServer("ICE", recipeItem:GetIndex(), primaryItemSlotIndex)
     end)
 end
 

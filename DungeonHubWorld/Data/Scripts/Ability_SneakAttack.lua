@@ -26,7 +26,7 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
@@ -41,7 +41,8 @@ function OnSneakAttack(targetId)
 	localPlayer:SetLookWorldRotation(lookRotation)
 end
 
-function data.onCastServer(caster, target)
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	assert(not target:IsA("Player"))
 	local teleportPosition = target:GetWorldPosition() - target:GetWorldRotation() * Vector3.FORWARD * 250.0
 	-- Find the ground
@@ -58,6 +59,6 @@ function data.onCastServer(caster, target)
 	end
 end
 
-Events.Connect("SA", OnSneakAttack)
+API_RE.Connect("SA", OnSneakAttack)
 
 return data

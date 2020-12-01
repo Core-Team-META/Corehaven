@@ -1,6 +1,7 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local CONTAINER = script:GetCustomProperty("Container"):WaitForObject()
 local ELEMENT_TEMPLATE = script:GetCustomProperty("ElementTemplate")
@@ -102,8 +103,13 @@ function ShowText(targetCharacter, amount, over, color, tags, extraText)
 					worldPosition = worldPosition + Vector3.UP * playerScale * 170.0
 				end
 			else
-				local npcScale = API_NPC.GetAllNPCData()[targetCharacter].capsuleHeight
-				worldPosition = worldPosition + Vector3.UP * npcScale * 1.25
+				local capsuleHeight = API_NPC.GetAllNPCData()[targetCharacter].capsuleHeight
+				
+				if capsuleHeight > 400.0 then
+					worldPosition = worldPosition + Vector3.UP * 250.0
+				else
+					worldPosition = worldPosition + Vector3.UP * capsuleHeight * 1.25
+				end
 			end
 
 			local position = UI.GetScreenPosition(worldPosition)
@@ -188,5 +194,5 @@ function OnHealingDone(sourceCharacter, targetCharacter, amount, overheal, tags)
 	end
 end
 
-Events.Connect("DamageDone", OnDamageDone)
-Events.Connect("HealingDone", OnHealingDone)
+API_RE.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("HealingDone", OnHealingDone)

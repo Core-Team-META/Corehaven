@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 3943018012602305439
+        ParentId: 4781671109827199097
         ChildIds: 7136197101489531545
         ChildIds: 8865890496625160173
         UnregisteredParameters {
@@ -74,13 +74,13 @@
           Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
-              Id: 4902194881991712191
+              Id: 3204240134922665953
             }
           }
           Overrides {
             Name: "cs:DeathEffectTemplate"
             AssetReference {
-              Id: 6070064999687689145
+              Id: 3204240134922665953
             }
           }
           Overrides {
@@ -88,6 +88,10 @@
             ObjectReference {
               SubObjectId: 7136197101489531545
             }
+          }
+          Overrides {
+            Name: "cs:DropCombatDistance"
+            Float: 4000
           }
           Overrides {
             Name: "cs:HealthFraction:isrep"

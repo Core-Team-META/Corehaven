@@ -10,6 +10,12 @@
           Id: 767597043529123543
         }
       }
+      Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
     }
   }
   SerializationVersion: 68

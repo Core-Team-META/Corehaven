@@ -1,5 +1,8 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 
+local BASE_HEAL = 55.0
+local HEAL_MULTIPLIER = 11.0
+
 local data = {}
 
 data.name = script:GetCustomProperty("Name")
@@ -16,12 +19,13 @@ data.otherCasterEffectTemplate = script:GetCustomProperty("OtherCasterEffectTemp
 data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTemplate")
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
-	API_D.ApplyHealing(caster, caster, caster.maxHitPoints * 0.3)
+function data.onCastServer(caster, targetSet)
+	local tenacityStat = caster.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+	API_D.ApplyHealing(caster, caster, BASE_HEAL + HEAL_MULTIPLIER * tenacityStat)
 end
 
 return data

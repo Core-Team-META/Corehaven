@@ -1,4 +1,5 @@
 ﻿local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 
@@ -13,9 +14,9 @@ function OnNetworkedPropertyChangedEvent(object, propertyName)
 	local tags = tonumber(tokens[6])
 
 	if tokens[1] == "D" then
-    	Events.Broadcast("DamageDone", sourceCharacter, targetCharacter, effectiveAmount, overAmount, tags)
+    	API_RE.Broadcast("DamageDone", sourceCharacter, targetCharacter, effectiveAmount, overAmount, tags)
 	elseif tokens[1] == "H" then
-    	Events.Broadcast("HealingDone", sourceCharacter, targetCharacter, effectiveAmount, overAmount, tags)
+    	API_RE.Broadcast("HealingDone", sourceCharacter, targetCharacter, effectiveAmount, overAmount, tags)
 	end
 end
 

@@ -1,6 +1,6 @@
 ﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
-local APIStats = require(script:GetCustomProperty("APIStats"))
+local API_S = require(script:GetCustomProperty("APIStats"))
 local APIPlayerPassives = require(script:GetCustomProperty("APIPlayerPassives"))
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
 local PLAYER_NAME = script:GetCustomProperty("PlayerName"):WaitForObject()
@@ -489,10 +489,16 @@ function view:OnBindingPressed(binding)
     if self.isClosed then return end
     if binding == "ability_primary" then
         if self.itemUnderCursor then
-            self:SetClickState(self.slotUnderCursor)
             -- Any ongoing salvage attempts are canceled as soon as a new interaction starts.
             self:CancelSalvageAttempt()
+            if self.shiftDown then
+                self:AttemptSalvageItem(self.slotUnderCursor.clientUserData.slotIndex)
+            else
+                self:SetClickState(self.slotUnderCursor)
+            end
         end
+    elseif binding =="ability_extra_12" then
+        self.shiftDown = true
     end
 end
 
@@ -505,6 +511,8 @@ function view:OnBindingReleased(binding)
         end
         self:ClearClickState()
         self:ClearDragState()
+    elseif binding =="ability_extra_12" then
+        self.shiftDown = false
     end
 end
 
@@ -646,7 +654,7 @@ function view:DrawStats()
         local statAmount = statSheet:GetStatTotalValue(statName)
         local statElement = self.statElements[statName]
         if statElement then
-            local effectiveStat = APIStats.ConvertStatToEffectivePercent(statName, statAmount) or statAmount
+            local effectiveStat = API_S.ConvertStatToEffectivePercent(statName, statAmount) or statAmount
             statElement.clientUserData.value.text = ItemThemes.GetPlayerStatFormattedValue(statName, effectiveStat)
             statElement.clientUserData.value:SetColor(statElement.clientUserData.defaultTextColor)
             statElement.clientUserData.icon:SetColor(statElement.clientUserData.defaultTextColor)
@@ -734,7 +742,7 @@ function view:DrawSalvageTray()
         end
         PANEL_SALVAGE_TRAY.clientUserData.instructions.visibility = Visibility.FORCE_OFF
         PANEL_SALVAGE_TRAY.clientUserData.confirmationDialog.visibility = Visibility.INHERIT
-        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will be salvaged..."
+        PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageBack.text = salvageItemText .. " will yield " .. salvageItem:GetSalvageQuantity() .. " shards."
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront.text = salvageItemText
         PANEL_SALVAGE_TRAY.clientUserData.confirmationMessageFront:SetColor(ItemThemes.GetRarityColor(salvageItem:GetRarity()))
     else
@@ -819,8 +827,8 @@ function view:DrawHoverStatCompare()
             -- Not all stats have linear scaling so we can't naively use the delta.
             local beforeStatRaw = statSheet:GetStatTotalValue(statName)
             local resultStatRaw = beforeStatRaw + statDelta
-            local beforeStatEffective = APIStats.ConvertStatToEffectivePercent(statName, beforeStatRaw) or beforeStatRaw
-            local resultStatEffective = APIStats.ConvertStatToEffectivePercent(statName, resultStatRaw) or resultStatRaw
+            local beforeStatEffective = API_S.ConvertStatToEffectivePercent(statName, beforeStatRaw) or beforeStatRaw
+            local resultStatEffective = API_S.ConvertStatToEffectivePercent(statName, resultStatRaw) or resultStatRaw
             local effectiveDelta = resultStatEffective - beforeStatEffective
             if effectiveDelta ~= 0 then
                 local compareColor = effectiveDelta > 0 and ItemThemes.COLOR_GOOD or ItemThemes.COLOR_BAD

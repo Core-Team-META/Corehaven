@@ -9,6 +9,7 @@ local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local Item = require(script:GetCustomProperty("Item"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local SALVAGE_ITEM_MUID = script:GetCustomProperty("SalvageItem"):match("(.+):")
+local REFERENCE_GROUP = script:GetCustomProperty("ReferenceGroup"):WaitForObject()
 
 local STARTER_ITEM_MUIDS = {
     script:GetCustomProperty("StarterItem1"):match("(.+):"),
@@ -55,10 +56,10 @@ function Database:CreateItemSalvage()
 end
 
 function Database:CreateItemFromDrop(dropKey)
-    local itemData = self:_RollDrop(dropKey)
-    local item = Item.New(itemData)
+    local itemData, stackSize = self:_RollDrop(dropKey)
+    local item = Item.New(itemData, stackSize)
     item:RollStats()
-    return item 
+    return item
 end
 
 function Database:CreateItemFromData(itemData)
@@ -132,7 +133,7 @@ function Database:_LoadCatalog()
     for _,data in ipairs(DATA_CATALOGS) do
         for _,row in ipairs(data) do
             assert(not self.itemDatasByName[row.Name], string.format("duplicate item name is not allowed - %s", row.Name))
-            assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))
+            --assert(not self.itemDatasByMUID[row.MUID], string.format("duplicate item MUID is not allowed - %s", row.MUID))    This doesn't work since one has the name suffix
             assert(Item.TYPES[row.Type] or Item.NONEQUIPPABLE_TYPES[row.Type], string.format("unrecognized item type - %s", row.Type))
             assert(Item.RARITIES[row.Rarity], string.format("unrecognized item rarity - %s", row.Rarity))
 
@@ -257,6 +258,17 @@ function Database:_LoadCatalog()
     for n,p in ipairs(recipeBookPageNumbers) do
         assert(recipeBookPageNumbers[n] == p, string.format("crafting recipe page numbers must form a consecutive sequence starting at 1. Page #%d is missing.", n))
     end
+
+    -- Check that we have references to all objects
+    local references = {}
+
+    for _, muid in pairs(REFERENCE_GROUP:GetCustomProperties()) do
+        references[muid:match("^(.+):")] = true
+    end
+
+    for muid, itemData in pairs(self.itemDatasByMUID) do
+        assert(references[muid], string.format("Reference to object (%s | %s) missing", itemData.name, muid))
+    end
 end
 
 function Database:_LoadDrops()
@@ -272,7 +284,12 @@ function Database:_LoadDrops()
             table.insert(self.itemDropKeys, row.DropKey)
         end
         local dropTable = self.itemDropTables[row.DropKey]
-        local dropInfo = { itemName = row.ItemName, likelihood = tonumber(row.Likelihood) }
+        local dropInfo = {
+            itemName = row.ItemName,
+            likelihood = tonumber(row.Likelihood), 
+            minStack = tonumber(row.MinStack),
+            maxStack = tonumber(row.MaxStack)
+        }
         table.insert(dropTable, dropInfo)
         dropTable.cumulativeLikelihood = dropTable.cumulativeLikelihood + dropInfo.likelihood
     end
@@ -330,7 +347,11 @@ function Database:_RollDrop(dropKey)
         local roll = math.random() * dropTable.cumulativeLikelihood
         for _,dropInfo in ipairs(dropTable) do
             if roll <= dropInfo.likelihood then
-                return self:FindItemDataByName(dropInfo.itemName)
+                local stackSize = 1
+                if dropInfo.minStack and dropInfo.maxStack then
+                    stackSize = math.random(dropInfo.minStack, dropInfo.maxStack)
+                end
+                return self:FindItemDataByName(dropInfo.itemName), stackSize
             end
             roll = roll - dropInfo.likelihood
         end

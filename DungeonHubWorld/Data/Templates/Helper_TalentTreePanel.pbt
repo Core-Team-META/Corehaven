@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 17711105305411388877
+        ParentId: 12096412586220853904
         ChildIds: 16391804930530228220
         ChildIds: 10602390682455328448
         UnregisteredParameters {
@@ -513,8 +513,9 @@
         }
         Control {
           Width: 120
-          Height: 50
-          UIY: -4
+          Height: 34
+          UIX: -37
+          UIY: -22
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
@@ -537,12 +538,12 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:bottomright"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:bottomcenter"
+                Value: "mc:euianchor:bottomright"
               }
             }
           }
@@ -565,6 +566,9 @@
         ParentId: 14348759509235355199
         ChildIds: 475913100123693350
         ChildIds: 1509650515907892943
+        ChildIds: 6804864027102134596
+        ChildIds: 16740906904124760722
+        ChildIds: 8432459533340499729
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -572,7 +576,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Control {
-          Width: 64
+          Width: 128
           Height: 34
           UIX: 18
           UIY: -18
@@ -583,6 +587,9 @@
           }
           Button {
             FontColor {
+              R: 1
+              G: 1
+              B: 1
               A: 1
             }
             FontSize: 20
@@ -659,8 +666,9 @@
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Text {
-            Label: "reset"
+            Label: "reset talents"
             Color {
               R: 1
               G: 1
@@ -710,15 +718,16 @@
         }
         Control {
           Width: 64
-          Height: 34
+          Height: 2
           RenderTransformPivot {
             Anchor {
               Value: "mc:euianchor:middlecenter"
             }
           }
+          UseParentWidth: true
           Image {
             Brush {
-              Id: 16471580195087108593
+              Id: 841534158063459245
             }
             Color {
               R: 1
@@ -732,12 +741,183 @@
           AnchorLayout {
             SelfAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topcenter"
               }
             }
             TargetAnchor {
               Anchor {
-                Value: "mc:euianchor:middlecenter"
+                Value: "mc:euianchor:topcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 6804864027102134596
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11407521784013855634
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 64
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentWidth: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:bottomcenter"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 16740906904124760722
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11407521784013855634
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleleft"
+              }
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 8432459533340499729
+        Name: "Frame"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 11407521784013855634
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Control {
+          Width: 2
+          Height: 2
+          RenderTransformPivot {
+            Anchor {
+              Value: "mc:euianchor:middlecenter"
+            }
+          }
+          UseParentHeight: true
+          Image {
+            Brush {
+              Id: 841534158063459245
+            }
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+            TeamSettings {
+            }
+          }
+          AnchorLayout {
+            SelfAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
+              }
+            }
+            TargetAnchor {
+              Anchor {
+                Value: "mc:euianchor:middleright"
               }
             }
           }
@@ -822,15 +1002,6 @@
       PrimaryAsset {
         AssetType: "PlatformBrushAssetRef"
         AssetId: "UI_Fantasy_Frame_007"
-      }
-    }
-    Assets {
-      Id: 16471580195087108593
-      Name: "Frame Outlined 001"
-      PlatformAssetType: 9
-      PrimaryAsset {
-        AssetType: "PlatformBrushAssetRef"
-        AssetId: "FrameSolid4px_020"
       }
     }
     PrimaryAssetId {

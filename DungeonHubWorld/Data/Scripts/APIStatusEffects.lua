@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local API = {}
 
@@ -205,7 +206,7 @@ end
 
 -- Client and Server
 function API.GetStateTracker(character)
-	if STATE_TRACKER_GROUP and not trackerCache[character] then
+	if Object.IsValid(character) and STATE_TRACKER_GROUP and not trackerCache[character] then
 		trackerCache[character] = STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
 	end
 
@@ -456,8 +457,8 @@ end
 
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("NPC_Created", OnNPCCreated)
-Events.Connect("NPC_Destroyed", OnNPCDestroyed)
+API_RE.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Destroyed", OnNPCDestroyed)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

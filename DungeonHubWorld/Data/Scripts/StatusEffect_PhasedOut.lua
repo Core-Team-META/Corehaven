@@ -1,4 +1,5 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local chargesRemaining = {}		-- character -> int
 
@@ -18,7 +19,7 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 end
 
 function EffectStart(sourceCharacter, character, index)
-	chargesRemaining[character] = 3
+	chargesRemaining[character] = 1
 end
 
 function EffectEnd(sourceCharacter, character, index)
@@ -38,4 +39,4 @@ data.endFunction = EffectEnd
 
 API_SE.DefineStatusEffect(data)
 
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)

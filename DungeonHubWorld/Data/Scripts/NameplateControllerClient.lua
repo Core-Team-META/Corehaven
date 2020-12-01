@@ -20,6 +20,7 @@ local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_T = require(script:GetCustomProperty("APITargeting"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local NAMEPLATE_TEMPLATE = script:GetCustomProperty("NameplateTemplate")
@@ -533,9 +534,9 @@ end
 -- Initialize
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.Connect("NPC_Created", OnNPCCreated)
-Events.Connect("NPC_Destroyed", OnNPCDestroyed)
-Events.Connect("AI", OnAbilityInterrupted)
+API_RE.Connect("NPC_Created", OnNPCCreated)
+API_RE.Connect("NPC_Destroyed", OnNPCDestroyed)
+API_RE.Connect("AI", OnAbilityInterrupted)
 
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)

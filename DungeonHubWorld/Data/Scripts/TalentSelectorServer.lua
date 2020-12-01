@@ -1,6 +1,7 @@
-﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local TALENT_TREES = script:GetCustomProperty("TalentTrees"):WaitForObject()
 local PLAYER_STATE_GROUP = script:GetCustomProperty("PlayerStateGroup"):WaitForObject()
 local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
@@ -8,10 +9,29 @@ local PLAYER_STATE_TREE_TEMPLATE = script:GetCustomProperty("PlayerStateTreeTemp
 
 local N_USABLE_TREES = TALENT_TREES:GetCustomProperty("NUsableTrees")
 
+local TALENT_POINT_CURVE =
+{
+	1,
+	2,
+	3,
+	3,
+	4,
+	4,
+	4,
+	5,
+	5,
+	5,
+	6,
+	6,
+	6,
+	6,
+	7,
+}
+
 local isStorageLoaded = {}		-- Player -> bool
 
 -- Setup talent respec request event handling.
-Events.ConnectForPlayer("RequestTalentTreeRespec", function(player)
+API_RE.ConnectForPlayer("RequestTalentTreeRespec", function(player)
 	UTILITY.ResetTalentTrees(player)
 end)
 
@@ -79,14 +99,18 @@ function OnTryLearnTalent(player, treeOrder, treeX, treeY)
 	warn(string.format(warningFormatString, player.name, treeOrder))
 end
 
+function GetTotalTalentPoints(level)
+	return TALENT_POINT_CURVE[level]
+end
+
 function Tick(deltaTime)
 	for _, player in pairs(Game.GetPlayers()) do
-		local totalTalentPoints = player.serverUserData.statSheet:GetLevel()
+		local totalTalentPoints = GetTotalTalentPoints(player.serverUserData.statSheet:GetLevel())
 		local usedTalentPointCount = UTILITY.GetPlayerUsedTalentPointCount(player)
 		UTILITY.SetPlayerTalentPoints(player, totalTalentPoints - usedTalentPointCount)
 
 		if not isStorageLoaded[player] then
-		    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
+		    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
 
 			if playerData.talentTree and playerData.talentTree ~= "" then
 			    for _, talentData in pairs(UTILITY.TALENT_TREE_TABLE[playerData.talentTree]) do
@@ -97,7 +121,7 @@ function Tick(deltaTime)
 			end
 
 			isStorageLoaded[player] = true
-			Events.Broadcast("TalentsLoaded", player)
+			API_RE.Broadcast("TalentsLoaded", player)
 		end
 	end
 end
@@ -105,4 +129,4 @@ end
 UTILITY.InitializeTalentTreeData(TALENT_TREES, PLAYER_STATE_GROUP, false)
 Game.playerJoinedEvent:Connect(OnPlayerJoined)
 Game.playerLeftEvent:Connect(OnPlayerLeft)
-Events.ConnectForPlayer("TryLearnTalent", OnTryLearnTalent)
+API_RE.ConnectForPlayer("TryLearnTalent", OnTryLearnTalent)

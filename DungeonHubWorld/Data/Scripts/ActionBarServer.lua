@@ -1,13 +1,12 @@
 ﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
-
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 
 local readyPlayers = {}
 
 function OnSetActionBarLayout(player, layoutString)
-	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
+	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
 	playerData.actionBarLayout = layoutString
-	Storage.SetSharedPlayerData(STORAGE_KEY, player, playerData)
+	Storage.SetSharedPlayerData(API_SK.GetStorageKey(), player, playerData)
 end
 
 function OnTalentsLoaded(player)
@@ -15,7 +14,7 @@ function OnTalentsLoaded(player)
 		Task.Wait()
 	end
 
-	local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, player)
+	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)
 	API_RE.BroadcastToPlayer(player, "LABL", playerData.actionBarLayout)
 end
 
@@ -27,7 +26,7 @@ function OnPlayerLeft(player)
 	readyPlayers[player] = nil
 end
 
-Events.ConnectForPlayer("SABL", OnSetActionBarLayout)
-Events.Connect("TalentsLoaded", OnTalentsLoaded)
-Events.ConnectForPlayer("RFABL", OnReadyForActionBarLayout)
+API_RE.ConnectForPlayer("SABL", OnSetActionBarLayout)
+API_RE.Connect("TalentsLoaded", OnTalentsLoaded)
+API_RE.ConnectForPlayer("RFABL", OnReadyForActionBarLayout)
 Game.playerLeftEvent:Connect(OnPlayerLeft)

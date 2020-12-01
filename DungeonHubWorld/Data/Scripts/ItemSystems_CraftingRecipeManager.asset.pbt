@@ -5,18 +5,21 @@
   TextAsset {
     CustomParameters {
       Overrides {
-        Name: "cs:ItemSystems_Database"
+        Name: "cs:APISharedKey"
         AssetReference {
-          Id: 4685988691808682848
+          Id: 1715755657077344107
         }
       }
       Overrides {
-        Name: "cs:StorageKey"
-        NetReference {
-          Key: "f2bdd2a7a062442dbe0644309d04835e"
-          Type {
-            Value: "mc:enetreferencetype:sharedpersistence"
-          }
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
+      Overrides {
+        Name: "cs:ItemSystems_Database"
+        AssetReference {
+          Id: 4685988691808682848
         }
       }
       Overrides {

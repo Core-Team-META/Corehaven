@@ -175,7 +175,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5351428073291024820
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -232,7 +232,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 5351428073291024820
+              Id: 12827530473249900764
             }
           }
           Overrides {
@@ -571,7 +571,7 @@
       }
     }
     Assets {
-      Id: 5351428073291024820
+      Id: 12827530473249900764
       Name: "Opaque Emissive"
       PlatformAssetType: 2
       PrimaryAsset {

@@ -25,13 +25,17 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
     local adjustedAmount = amount
     local adjustedTags = tags or 0
 
+    if sourceCharacter and not Object.IsValid(sourceCharacter) then
+        return
+    end
+
     for _, hookFunction in pairs(preDamageHooks) do
         adjustedAmount = hookFunction(sourceCharacter, targetCharacter, adjustedAmount, adjustedTags)
     end
 
     local sourceMultiplier = 1.0
 
-    if sourceCharacter then
+    if sourceCharacter and Object.IsValid(sourceCharacter) then
         sourceMultiplier = API_SE.GetCharacterDamageDealtMultiplier(sourceCharacter)
 
         local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
@@ -41,7 +45,7 @@ function API.ApplyDamage(sourceCharacter, targetCharacter, amount, tags)
                 sourceMultiplier = sourceMultiplier * _G.Passives.GetPlayerDamageDealtMultiplier(sourceCharacter)
             end
 
-            local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
+            local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
 
             if math.random() < critChance then
                 sourceMultiplier = sourceMultiplier * CRIT_DAMAGE_MULTIPLIER
@@ -109,6 +113,10 @@ function API.ApplyAreaDamage(sourceCharacter, center, radius, maxAmount, hasFall
     local targets = nil
     local adjustedCenter = center
 
+    if sourceCharacter and not Object.IsValid(sourceCharacter) then
+        return
+    end
+
     -- If no source character, it's the map, so it damages only players
     if sourceCharacter and sourceCharacter:IsA("Player") then
         targets = API_NPC.GetAwakeNPCsInSphere(center, radius)
@@ -134,10 +142,14 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
     local adjustedAmount = amount
     local adjustedTags = tags or 0
 
+    if sourceCharacter and not Object.IsValid(sourceCharacter) then
+        return
+    end
+
     local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
     
     if sourceCharacter and sourceCharacter:IsA("Player") and canCrit then
-        local critChance = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("CritChance") / 100.0
+        local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
 
         if math.random() < critChance then
             adjustedAmount = adjustedAmount * CRIT_HEAL_MULTIPLIER

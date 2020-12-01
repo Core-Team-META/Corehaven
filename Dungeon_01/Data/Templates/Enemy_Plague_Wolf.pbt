@@ -225,132 +225,6 @@
         ChildIds: 5405812649114312278
         ChildIds: 16955357891976819691
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:root"
-            ObjectReference {
-              SelfId: 7818630006571499030
-            }
-          }
-          Overrides {
-            Name: "cs:head"
-            ObjectReference {
-              SelfId: 1417122619346790425
-            }
-          }
-          Overrides {
-            Name: "cs:neck"
-            ObjectReference {
-              SelfId: 2008957317345697518
-            }
-          }
-          Overrides {
-            Name: "cs:spine"
-            ObjectReference {
-              SelfId: 1188841006227304240
-            }
-          }
-          Overrides {
-            Name: "cs:pelvis"
-            ObjectReference {
-              SelfId: 5078969036583946682
-            }
-          }
-          Overrides {
-            Name: "cs:right_shoulder"
-            ObjectReference {
-              SelfId: 82091277692691647
-            }
-          }
-          Overrides {
-            Name: "cs:right_elbow"
-            ObjectReference {
-              SelfId: 8152897714561154038
-            }
-          }
-          Overrides {
-            Name: "cs:right_wrist"
-            ObjectReference {
-              SelfId: 2140839549868387487
-            }
-          }
-          Overrides {
-            Name: "cs:left_shoulder"
-            ObjectReference {
-              SelfId: 11027854278126685525
-            }
-          }
-          Overrides {
-            Name: "cs:left_elbow"
-            ObjectReference {
-              SelfId: 7645729968650540620
-            }
-          }
-          Overrides {
-            Name: "cs:left_wrist"
-            ObjectReference {
-              SelfId: 7073119119238703477
-            }
-          }
-          Overrides {
-            Name: "cs:right_hip"
-            ObjectReference {
-              SelfId: 13237359308175314921
-            }
-          }
-          Overrides {
-            Name: "cs:right_knee"
-            ObjectReference {
-              SelfId: 7055080414413342706
-            }
-          }
-          Overrides {
-            Name: "cs:right_ankle"
-            ObjectReference {
-              SelfId: 17201664278035188757
-            }
-          }
-          Overrides {
-            Name: "cs:right_foot"
-            ObjectReference {
-              SelfId: 1191183373408379131
-            }
-          }
-          Overrides {
-            Name: "cs:left_hip"
-            ObjectReference {
-              SelfId: 13070450856166775640
-            }
-          }
-          Overrides {
-            Name: "cs:left_knee"
-            ObjectReference {
-              SelfId: 6576459758636599942
-            }
-          }
-          Overrides {
-            Name: "cs:left_ankle"
-            ObjectReference {
-              SelfId: 9869846710626327226
-            }
-          }
-          Overrides {
-            Name: "cs:left_foot"
-            ObjectReference {
-              SelfId: 14408938883288505700
-            }
-          }
-          Overrides {
-            Name: "cs:tail_1"
-            ObjectReference {
-              SelfId: 10490957973314144567
-            }
-          }
-          Overrides {
-            Name: "cs:tail_2"
-            ObjectReference {
-              SelfId: 16615237007928603886
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -420,12 +294,6 @@
         ChildIds: 14432524176027087267
         ChildIds: 15092716110576955241
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 11395215743524055939
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2422,12 +2290,6 @@
         ChildIds: 866409734877877070
         ChildIds: 11075864193390449236
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 10679593516001248660
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -2586,12 +2448,6 @@
         ChildIds: 6020273570058318572
         ChildIds: 12204218720518523809
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 1169298147914049628
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3168,12 +3024,6 @@
         ParentId: 12691739239962413603
         ChildIds: 9451891617131028248
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 13489803487538818210
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3252,12 +3102,6 @@
         ChildIds: 14755113372484244736
         ChildIds: 1289918216334761858
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 8983682120228714196
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3382,12 +3226,6 @@
         ChildIds: 7662317384472764738
         ChildIds: 2468727559136059631
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 14860390700283344505
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3737,12 +3575,6 @@
         ParentId: 12691739239962413603
         ChildIds: 941028135379407763
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 14760340861577515176
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3821,12 +3653,6 @@
         ChildIds: 7597274840774823937
         ChildIds: 3504469830986365822
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 14906145320567206890
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -3950,12 +3776,6 @@
         ChildIds: 1432409539321865215
         ChildIds: 11278231532114871431
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 9886630066371688274
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4242,12 +4062,6 @@
         ParentId: 12691739239962413603
         ChildIds: 11939618682477573169
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 16089270414690474448
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4325,12 +4139,6 @@
         ParentId: 12691739239962413603
         ChildIds: 13594967917167694504
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 4794382112301033005
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4408,12 +4216,6 @@
         ParentId: 12691739239962413603
         ChildIds: 16193682524354789156
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 1817961008006477617
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4492,12 +4294,6 @@
         ChildIds: 12453160809386730293
         ChildIds: 16612948931308132182
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 11283162828857933274
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4658,12 +4454,6 @@
         ParentId: 12691739239962413603
         ChildIds: 6164908706185471180
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 12268411933572171554
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4741,12 +4531,6 @@
         ParentId: 12691739239962413603
         ChildIds: 5454987338333883293
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 1893270589737656800
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4824,12 +4608,6 @@
         ParentId: 12691739239962413603
         ChildIds: 1151574669697690793
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 3592691594566280456
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -4910,12 +4688,6 @@
         ChildIds: 4831083843142979632
         ChildIds: 2493397009341895419
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 4182179650914835370
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5202,12 +4974,6 @@
         ParentId: 12691739239962413603
         ChildIds: 13869696298792309731
         UnregisteredParameters {
-          Overrides {
-            Name: "cs:JOINT_DISPLAY"
-            ObjectReference {
-              SelfId: 210298144704257908
-            }
-          }
         }
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"

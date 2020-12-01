@@ -876,7 +876,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 3157754847173106250
             }
           }
         }
@@ -1075,7 +1075,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12628591842173594373
+            Id: 5707603809982655855
           }
           Teams {
           }
@@ -1234,7 +1234,7 @@
         }
         CoreMesh {
           MeshAsset {
-            Id: 12628591842173594373
+            Id: 5707603809982655855
           }
           Teams {
           }
@@ -1467,7 +1467,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 14156010982424257760
+              Id: 3157754847173106250
             }
           }
         }
@@ -2119,7 +2119,7 @@
       }
     }
     Assets {
-      Id: 12628591842173594373
+      Id: 5707603809982655855
       Name: "Bone Human Femur 01"
       PlatformAssetType: 1
       PrimaryAsset {

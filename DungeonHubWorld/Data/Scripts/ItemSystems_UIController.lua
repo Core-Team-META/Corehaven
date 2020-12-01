@@ -1,4 +1,6 @@
-﻿local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
 local LOOT_VIEW_BUTTON = script:GetCustomProperty("LootViewButton"):WaitForObject()
 local LOOT_VIEW_HOTKEY = script:GetCustomProperty("LootViewHotkey")
 local INVENTORY_VIEW = script:GetCustomProperty("InventoryView"):WaitForObject()
@@ -111,5 +113,5 @@ UPGRADES_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(UPGRADES_VIEW) e
 TALENTS_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(TALENTS_VIEW) end)
 HELP_VIEW_BUTTON.clickedEvent:Connect(function() ToggleView(HELP_VIEW) end)
 
-Events.Connect("ForceOpenViewByName", ForceOpenViewByName)
-Events.Connect("ForceCloseViewByName", ForceCloseViewByName)
+API_RE.Connect("ForceOpenViewByName", ForceOpenViewByName)
+API_RE.Connect("ForceCloseViewByName", ForceCloseViewByName)

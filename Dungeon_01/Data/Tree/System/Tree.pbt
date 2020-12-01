@@ -13495,18 +13495,6 @@ Objects {
         SelfId: 8378841341403690510
       }
     }
-    Overrides {
-      Name: "cs:Disabled"
-      ObjectReference {
-        SelfId: 4312791890704715330
-      }
-    }
-    Overrides {
-      Name: "cs:CooldownWheel"
-      ObjectReference {
-        SelfId: 11408256106035120570
-      }
-    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"

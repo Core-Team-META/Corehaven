@@ -211,19 +211,19 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 12971335438392957454
             }
           }
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 12971335438392957454
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 6060097613564872733
+              Id: 12971335438392957454
             }
           }
         }
@@ -277,7 +277,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4808236381090719999
+              Id: 3157754847173106250
             }
           }
         }
@@ -331,7 +331,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 4808236381090719999
+              Id: 3157754847173106250
             }
           }
         }

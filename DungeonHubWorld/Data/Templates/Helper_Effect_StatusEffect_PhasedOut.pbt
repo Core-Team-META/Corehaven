@@ -1,5 +1,5 @@
 ﻿Assets {
-  Id: 1175970641155822959
+  Id: 3651811729577732966
   Name: "Helper_Effect_StatusEffect_PhasedOut"
   PlatformAssetType: 5
   TemplateAsset {
@@ -7,7 +7,7 @@
       RootId: 8714301227356264728
       Objects {
         Id: 8714301227356264728
-        Name: "Helper_Effect_StatusEffect_PhasedOut"
+        Name: "Helper_Effect_StatusEffect_PhasedOut_Dark"
         Transform {
           Scale {
             X: 1
@@ -17,8 +17,8 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 16928576562442938829
-        ChildIds: 16354929808417345490
-        ChildIds: 4193093734521396897
+        ChildIds: 6895562277807397688
+        ChildIds: 8283355990341933800
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -48,7 +48,7 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 9440441332428945690
+              Id: 3425712571416498753
             }
           }
         }
@@ -71,48 +71,61 @@
         }
       }
       Objects {
-        Id: 16354929808417345490
-        Name: "Fairy Dot Volume VFX"
+        Id: 6895562277807397688
+        Name: "Plasma Charge Up Hold VFX"
         Transform {
           Location {
-            Z: 114.273445
+            Z: 117.679031
           }
           Rotation {
           }
           Scale {
-            X: 1.86758447
-            Y: 1.86758447
-            Z: 2.33121848
+            X: 1.12455225
+            Y: 1.12455225
+            Z: 1.12455225
           }
         }
         ParentId: 8714301227356264728
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Volume Type"
-            Enum {
-              Value: "mc:evfxvolumetype:2"
-            }
+            Name: "bp:Enable Inner Core"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Enable Outer Core"
+            Bool: false
           }
           Overrides {
             Name: "bp:color"
             Color {
-              R: 1
-              G: 0.970331132
-              B: 0.36
+              R: 0.6
+              B: 0.596026361
               A: 1
             }
           }
           Overrides {
-            Name: "bp:Secondary Color"
+            Name: "bp:Arc Color"
             Color {
-              R: 0.5
-              G: 0.238410592
+              R: 0.522980571
+              B: 0.53
               A: 1
             }
           }
           Overrides {
-            Name: "bp:Particle Scale Multiplier"
-            Float: 0.556331277
+            Name: "bp:Emissive Boost"
+            Float: 9.01928711
+          }
+          Overrides {
+            Name: "bp:Arc Size"
+            Float: 0.933902919
+          }
+          Overrides {
+            Name: "bp:Energy Particle Life"
+            Float: 0.05
+          }
+          Overrides {
+            Name: "bp:Arc Density"
+            Float: 0.780682802
           }
         }
         Collidable_v2 {
@@ -123,7 +136,7 @@
         }
         Blueprint {
           BlueprintAsset {
-            Id: 2817427650841863151
+            Id: 251653007559229558
           }
           TeamSettings {
           }
@@ -133,11 +146,11 @@
         }
       }
       Objects {
-        Id: 4193093734521396897
+        Id: 8283355990341933800
         Name: "Point Light"
         Transform {
           Location {
-            Z: 249.368896
+            Z: 244.800751
           }
           Rotation {
           }
@@ -155,19 +168,20 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 50.0127869
+          Intensity: 25.0728989
           Color {
-            R: 1
-            G: 0.985165596
-            B: 0.44
+            R: 0.98861
+            G: 0.139999986
+            B: 1
             A: 1
           }
+          VolumetricIntensity: 5
           TeamSettings {
           }
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 486.848297
+              AttenuationRadius: 525.089478
               PointLight {
                 SourceRadius: 20
                 SoftSourceRadius: 20
@@ -191,12 +205,12 @@
       }
     }
     Assets {
-      Id: 2817427650841863151
-      Name: "Fairy Dot Volume VFX"
+      Id: 251653007559229558
+      Name: "Plasma Charge Up Hold VFX"
       PlatformAssetType: 8
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
-        AssetId: "fxbp_Swirling_Magic_Column"
+        AssetId: "fxbp_ChargeUp_Hold"
       }
     }
     PrimaryAssetId {

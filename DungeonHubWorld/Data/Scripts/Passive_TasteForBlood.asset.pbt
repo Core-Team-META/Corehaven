@@ -11,8 +11,14 @@
         }
       }
       Overrides {
+        Name: "cs:APIReliableEvents"
+        AssetReference {
+          Id: 1680988108412715813
+        }
+      }
+      Overrides {
         Name: "cs:Description"
-        String: "Your attacks now heal you for a fraction of the damage they deal."
+        String: "Your attacks heal you for a fraction of the damage they deal."
       }
       Overrides {
         Name: "cs:Icon"

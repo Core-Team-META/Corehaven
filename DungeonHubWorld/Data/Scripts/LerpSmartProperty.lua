@@ -19,6 +19,8 @@ OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
     Universal utility to lerp smart properties on effect objects such as Vfx and Audio.
 --]]
 
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
 -- User exposed properties
 local EFFECT_OBJECT = script:GetCustomProperty("EffectObject"):WaitForObject()
 local SMART_PROPERTY_NAME = script:GetCustomProperty("SmartPropertyName")
@@ -73,7 +75,7 @@ function Tick(deltaTime)
         if not lerpFinished then
             -- Broadcast the stopped event if lerp reached the repeat count
             if ON_LERP_STOPPED_EVENT_NAME ~= "" then
-                Events.Broadcast(ON_LERP_STOPPED_EVENT_NAME)
+                API_RE.Broadcast(ON_LERP_STOPPED_EVENT_NAME)
             end
             lerpFinished = true
         end
@@ -83,7 +85,7 @@ function Tick(deltaTime)
     -- Broadcast the start lerp event if lerp animation has started
     if t == 0 and currentCount == 0 then
         if ON_LERP_STARTED_EVENT_NAME ~= "" then
-            Events.Broadcast(ON_LERP_STARTED_EVENT_NAME)
+            API_RE.Broadcast(ON_LERP_STARTED_EVENT_NAME)
         end
     end
 
@@ -183,9 +185,9 @@ end
 ResetLerp()
 
 if START_LERP_EVENT_NAME ~= "" then
-    Events.Connect(START_LERP_EVENT_NAME, StartLerp)
+    API_RE.Connect(START_LERP_EVENT_NAME, StartLerp)
 end
 
 if STOP_LERP_EVENT_NAME ~= "" then
-    Events.Connect(STOP_LERP_EVENT_NAME, ResetLerp)
+    API_RE.Connect(STOP_LERP_EVENT_NAME, ResetLerp)
 end

@@ -1,4 +1,6 @@
-﻿local API = {}
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local API = {}
 
 local rectangles = {}
 
@@ -250,7 +252,7 @@ function API.RegisterRectangles(rectangleFolder)
 			local rect2 = rectangles[j]
 			
 			local fastSpawnConnection -- don't take any chances with the instruction limit, spam new tasks
-			fastSpawnConnection = Events.Connect("fastSpawn", function()
+			fastSpawnConnection = API_RE.Connect("fastSpawn", function()
 				fastSpawnConnection:Disconnect()
 				local intersectionPoints = intersectionsBetweenRectangles(rect1, rect2)
 				for _, point in pairs(intersectionPoints) do
@@ -261,7 +263,7 @@ function API.RegisterRectangles(rectangleFolder)
 					intersectionCount = intersectionCount + 1
 				end
 			end)
-			Events.Broadcast("fastSpawn")
+			API_RE.Broadcast("fastSpawn")
 			
 		end
 	end

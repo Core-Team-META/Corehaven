@@ -47,69 +47,15 @@
         }
       }
       Overrides {
+        Name: "cs:Ability_BlightBottle"
+        AssetReference {
+          Id: 6391126282906136629
+        }
+      }
+      Overrides {
         Name: "cs:Ability_Cleave"
         AssetReference {
           Id: 16228603322221377071
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_Enrage"
-        AssetReference {
-          Id: 12653130121520336365
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_Refresh"
-        AssetReference {
-          Id: 6628333839649202416
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_PowerThrough"
-        AssetReference {
-          Id: 16639452448460186915
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_ShieldBash"
-        AssetReference {
-          Id: 16742234104346326110
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_CripplingWhirl"
-        AssetReference {
-          Id: 12923629426731567236
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_EnergyBolt"
-        AssetReference {
-          Id: 11796288697500220596
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_ReverseWounds"
-        AssetReference {
-          Id: 7268644478511274054
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_SiphonVitality"
-        AssetReference {
-          Id: 6605733087661830397
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_PhaseOut"
-        AssetReference {
-          Id: 3521339287080108413
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_CreepingCurse"
-        AssetReference {
-          Id: 234727043416621351
         }
       }
       Overrides {
@@ -119,9 +65,15 @@
         }
       }
       Overrides {
-        Name: "cs:Ability_EmpowerEnergies"
+        Name: "cs:Ability_CreepingCurse"
         AssetReference {
-          Id: 5705387378154348391
+          Id: 234727043416621351
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_CripplingWhirl"
+        AssetReference {
+          Id: 12923629426731567236
         }
       }
       Overrides {
@@ -131,39 +83,33 @@
         }
       }
       Overrides {
-        Name: "cs:Ability_MendingLight"
+        Name: "cs:Ability_DrinkPotion"
         AssetReference {
-          Id: 825098659234595574
+          Id: 9965955114855537821
         }
       }
       Overrides {
-        Name: "cs:Ability_Heal"
+        Name: "cs:Ability_EmpowerEnergies"
         AssetReference {
-          Id: 7297571783720429533
+          Id: 5705387378154348391
         }
       }
       Overrides {
-        Name: "cs:Ability_Illuminate"
+        Name: "cs:Ability_EnergyBolt"
         AssetReference {
-          Id: 16913468257274036374
+          Id: 11796288697500220596
         }
       }
       Overrides {
-        Name: "cs:Ability_RighteousHammer"
+        Name: "cs:Ability_Enrage"
         AssetReference {
-          Id: 439156593338236567
+          Id: 12653130121520336365
         }
       }
       Overrides {
-        Name: "cs:Ability_SpiritualConduit"
+        Name: "cs:Ability_ExposeVulnerability"
         AssetReference {
-          Id: 10074041898080811053
-        }
-      }
-      Overrides {
-        Name: "cs:Ability_SweepingSlash"
-        AssetReference {
-          Id: 11272257922258550436
+          Id: 12414925296174038876
         }
       }
       Overrides {
@@ -173,27 +119,39 @@
         }
       }
       Overrides {
-        Name: "cs:Ability_DrinkPotion"
+        Name: "cs:Ability_Freeze"
         AssetReference {
-          Id: 9965955114855537821
+          Id: 9973852158356551513
         }
       }
       Overrides {
-        Name: "cs:Ability_Wound"
+        Name: "cs:Ability_Heal"
         AssetReference {
-          Id: 14690783643482390684
+          Id: 7297571783720429533
         }
       }
       Overrides {
-        Name: "cs:Ability_SneakAttack"
+        Name: "cs:Ability_HolyWard"
         AssetReference {
-          Id: 2993313201134032743
+          Id: 14890582789633143101
         }
       }
       Overrides {
-        Name: "cs:Ability_BlightBottle"
+        Name: "cs:Ability_Illuminate"
         AssetReference {
-          Id: 6391126282906136629
+          Id: 16913468257274036374
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Intervention"
+        AssetReference {
+          Id: 6741689388286448312
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Leap"
+        AssetReference {
+          Id: 9670225942711539527
         }
       }
       Overrides {
@@ -209,9 +167,99 @@
         }
       }
       Overrides {
+        Name: "cs:Ability_MendingLight"
+        AssetReference {
+          Id: 825098659234595574
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_PhaseOut"
+        AssetReference {
+          Id: 3521339287080108413
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_PowerThrough"
+        AssetReference {
+          Id: 16639452448460186915
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Refresh"
+        AssetReference {
+          Id: 6628333839649202416
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_ReverseWounds"
+        AssetReference {
+          Id: 7268644478511274054
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_RighteousHammer"
+        AssetReference {
+          Id: 439156593338236567
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Roll"
+        AssetReference {
+          Id: 13014139121547572652
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_ShieldBash"
+        AssetReference {
+          Id: 16742234104346326110
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SiphonVitality"
+        AssetReference {
+          Id: 6605733087661830397
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SneakAttack"
+        AssetReference {
+          Id: 2993313201134032743
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SpiritualConduit"
+        AssetReference {
+          Id: 10074041898080811053
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_SweepingSlash"
+        AssetReference {
+          Id: 11272257922258550436
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Uppercut"
+        AssetReference {
+          Id: 3574085611856533
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Wallop"
+        AssetReference {
+          Id: 9080875412052933916
+        }
+      }
+      Overrides {
         Name: "cs:Ability_WardingTalisman"
         AssetReference {
           Id: 11408492965803338290
+        }
+      }
+      Overrides {
+        Name: "cs:Ability_Wound"
+        AssetReference {
+          Id: 14690783643482390684
         }
       }
     }

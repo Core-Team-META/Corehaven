@@ -23,16 +23,21 @@ data.selfTargetEffectTemplate = script:GetCustomProperty("SelfTargetEffectTempla
 data.otherTargetEffectTemplate = script:GetCustomProperty("OtherTargetEffectTemplate")
 data.reticleTemplate = script:GetCustomProperty("ReticleTemplate")
 
-function data.onCastClient(caster, target)
+function data.onCastClient(caster, targetSet)
 	return 0.0
 end
 
-function data.onCastServer(caster, target)
-	local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
-
+function data.onCastServer(caster, targetSet)
+	local target = targetSet[1]
 	Task.Spawn(function()
 		for i = 1, N_TICKS do
 			Task.Wait(1.0)
+
+			if not Object.IsValid(caster) then
+				return
+			end
+
+			local magicStat = caster.serverUserData.statSheet:GetStatTotalValue("Magic")
 
 			for _, player in pairs(Game.GetPlayers()) do
 				local distance = (player:GetWorldPosition() - target).size

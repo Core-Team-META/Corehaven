@@ -1,5 +1,6 @@
 ﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local data = {}
 
@@ -27,12 +28,16 @@ function OnDamageDone(sourceCharacter, targetCharacter, effectiveAmount, overkil
 			end
 			
 			if math.random() < chance then
-				API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Rising Fury"].id)
+				if _G.Passives.DoesPlayerHavePassive(sourceCharacter, "Improved Rising Fury") then
+					API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Improved Rising Fury"].id)
+				else
+					API_SE.ApplyStatusEffect(sourceCharacter, sourceCharacter, API_SE.STATUS_EFFECT_DEFINITIONS["Rising Fury"].id)
+				end
 			end
 		end
 	end
 end
 
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)
 
 return data

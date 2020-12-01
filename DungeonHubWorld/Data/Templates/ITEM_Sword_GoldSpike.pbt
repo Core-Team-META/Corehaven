@@ -58,12 +58,12 @@
         ParentId: 14221847442462413670
         ChildIds: 5421909772430830705
         ChildIds: 14273438615410365758
-        ChildIds: 5886745392032975229
+        ChildIds: 8424579576717782385
         ChildIds: 9843149743667694332
         ChildIds: 3859540167532600274
-        ChildIds: 17492209672732786322
         ChildIds: 18342004807111294488
         ChildIds: 126605861372178118
+        ChildIds: 1706159643625465844
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -238,11 +238,38 @@
         }
       }
       Objects {
+        Id: 8424579576717782385
+        Name: "Group"
+        Transform {
+          Location {
+            Z: 11.7632446
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14879081315461711297
+        ChildIds: 5886745392032975229
+        ChildIds: 17492209672732786322
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
+      Objects {
         Id: 5886745392032975229
         Name: "Fantasy Sword Blade 04"
         Transform {
           Location {
-            Z: 11.7632446
           }
           Rotation {
           }
@@ -252,12 +279,12 @@
             Z: 1
           }
         }
-        ParentId: 14879081315461711297
+        ParentId: 8424579576717782385
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 8700548731784444270
+              Id: 6787131228221938650
             }
           }
           Overrides {
@@ -303,6 +330,97 @@
               R: 1
               G: 1
               B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:smart"
+            Bool: false
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        CoreMesh {
+          MeshAsset {
+            Id: 4342756216088781504
+          }
+          Teams {
+          }
+          DisableReceiveDecals: true
+          StaticMesh {
+            Physics {
+            }
+          }
+        }
+      }
+      Objects {
+        Id: 17492209672732786322
+        Name: "Fantasy Sword Blade 04"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 0.3850483
+            Y: 1.37444401
+            Z: 0.937366545
+          }
+        }
+        ParentId: 8424579576717782385
+        UnregisteredParameters {
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:id"
+            AssetReference {
+              Id: 7307801632734736223
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:utile"
+            Float: 26.7437706
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:vtile"
+            Float: 28.7351074
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:id"
+            AssetReference {
+              Id: 7307801632734736223
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:id"
+            AssetReference {
+              Id: 14212988502358508072
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_BaseMaterial:color"
+            Color {
+              R: 0.690000057
+              G: 0.191920534
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Detail1:color"
+            Color {
+              R: 1
+              G: 1
+              B: 1
+              A: 1
+            }
+          }
+          Overrides {
+            Name: "ma:Shared_Trim:color"
+            Color {
+              R: 0.690000057
+              G: 0.191920534
               A: 1
             }
           }
@@ -462,98 +580,6 @@
         }
       }
       Objects {
-        Id: 17492209672732786322
-        Name: "Fantasy Sword Blade 04"
-        Transform {
-          Location {
-            Z: 11.7632446
-          }
-          Rotation {
-          }
-          Scale {
-            X: 0.3850483
-            Y: 1.37444401
-            Z: 0.937366545
-          }
-        }
-        ParentId: 14879081315461711297
-        UnregisteredParameters {
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:id"
-            AssetReference {
-              Id: 7307801632734736223
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:utile"
-            Float: 26.7437706
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:vtile"
-            Float: 28.7351074
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:id"
-            AssetReference {
-              Id: 7307801632734736223
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:id"
-            AssetReference {
-              Id: 14212988502358508072
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_BaseMaterial:color"
-            Color {
-              R: 0.690000057
-              G: 0.191920534
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:color"
-            Color {
-              R: 1
-              G: 1
-              B: 1
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Trim:color"
-            Color {
-              R: 0.690000057
-              G: 0.191920534
-              A: 1
-            }
-          }
-          Overrides {
-            Name: "ma:Shared_Detail1:smart"
-            Bool: false
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        CoreMesh {
-          MeshAsset {
-            Id: 4342756216088781504
-          }
-          Teams {
-          }
-          DisableReceiveDecals: true
-          StaticMesh {
-            Physics {
-            }
-          }
-        }
-      }
-      Objects {
         Id: 18342004807111294488
         Name: "Fantasy Sword Guard 02"
         Transform {
@@ -642,14 +668,14 @@
         Name: "Fairy Dot Volume VFX"
         Transform {
           Location {
-            Z: 64.8598
+            Z: 61.6890259
           }
           Rotation {
             Roll: -90
           }
           Scale {
-            X: 0.110996127
-            Y: 0.684337199
+            X: 0.0638086274
+            Y: 0.737224102
             Z: 0.99999994
           }
         }
@@ -663,11 +689,11 @@
           }
           Overrides {
             Name: "bp:Particle Scale Multiplier"
-            Float: 3.65846872
+            Float: 4.26560783
           }
           Overrides {
             Name: "bp:Life"
-            Float: 1.9084667
+            Float: 5
           }
           Overrides {
             Name: "bp:Curl Offset"
@@ -698,11 +724,23 @@
           }
           Overrides {
             Name: "bp:Emissive Boost"
-            Float: 0.0665088519
+            Float: 0.03
           }
           Overrides {
             Name: "bp:Density"
-            Float: 0.74625814
+            Float: 1.01295853
+          }
+          Overrides {
+            Name: "bp:Local Space"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Enable Particle Trail"
+            Bool: false
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 0
           }
         }
         Collidable_v2 {
@@ -719,6 +757,64 @@
           }
           Vfx {
             AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 1706159643625465844
+        Name: "Outline Object"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 14879081315461711297
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Object To Outline"
+            ObjectReference {
+              SubObjectId: 8424579576717782385
+            }
+          }
+          Overrides {
+            Name: "bp:Color A"
+            Color {
+              R: 30
+              G: 24.0397339
+              B: 7.5
+              A: 0.8
+            }
+          }
+          Overrides {
+            Name: "bp:Dynamic Thickness"
+            Bool: true
+          }
+          Overrides {
+            Name: "bp:Thickness"
+            Float: 1.63116753
+          }
+          Overrides {
+            Name: "bp:Outline Channel"
+            Int: 17
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 16174350699321361925
+          }
+          TeamSettings {
           }
         }
       }
@@ -811,6 +907,15 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_Swirling_Magic_Column"
+      }
+    }
+    Assets {
+      Id: 16174350699321361925
+      Name: "Outline Object"
+      PlatformAssetType: 20
+      PrimaryAsset {
+        AssetType: "BlueprintAssetRef"
+        AssetId: "fxbp_local_outline"
       }
     }
     PrimaryAssetId {

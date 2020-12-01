@@ -84,22 +84,22 @@ Item.SHARD_TYPE_QUANTITIES = {
     Axe         = 2,
     Boots       = 1,
     Dagger      = 2,
-    Greatsword  = 2,
+    Greatsword  = 3,
     Focus       = 1,
     Helmet      = 1,
     Mace        = 2,
     Shield      = 1,
-    Staff       = 2,
+    Staff       = 3,
     Sword       = 2,
     Trinket     = 2,
-    Warhammer   = 2,
+    Warhammer   = 3,
     Wand        = 2,
 }
 
 -- These are close to the geometric series 4^n, but are chosen to be prime numbers so that combinations look more "random".
 Item.SHARD_RARITY_MULTIPLIERS = {
-    Common      = 1,
-    Uncommon    = 5,
+    Common      = 3,
+    Uncommon    = 7,
     Rare        = 23,
     Epic        = 79,
     Legendary   = 248,
@@ -365,9 +365,9 @@ end
 
 -- A highly subjective boolean assessment of an item's worth. Used as a criteria for which items require delete confirmation.
 function Item:IsHighValue()
-    -- Anything "Rare" or better is considered high-value.
+    -- Anything "Epic" or better is considered high-value.
     local rarityNumber = self.RARITIES[self:GetRarity()]
-    local rarityCutoff = self.RARITIES["Rare"]
+    local rarityCutoff = self.RARITIES["Epic"]
     if rarityNumber >= rarityCutoff then
         return true
     end

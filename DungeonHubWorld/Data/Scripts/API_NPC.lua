@@ -1,4 +1,5 @@
 ﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local API = {}
 
@@ -66,6 +67,7 @@ function API.RegisterNPCFolder(npcFolder)
 		data.capsuleHeight = npc:GetCustomProperty("CapsuleHeight")
 		data.capsuleWidth = npc:GetCustomProperty("CapsuleWidth")
 		data.experience = npc:GetCustomProperty("Experience")
+		data.dropCombatDistance = npc:GetCustomProperty("DropCombatDistance")
 
 		data.spawnPosition = npc:GetWorldPosition()
 		data.spawnRotation = npc:GetWorldRotation()
@@ -130,12 +132,12 @@ function API.RegisterNPCFolder(npcFolder)
 
 		npcs[npc] = data
 
-		Events.Broadcast("NPC_Created", npc, data)
+		API_RE.Broadcast("NPC_Created", npc, data)
 
 		npc.destroyEvent:Connect(function(npc)
 			npcs[npc] = nil
 
-			Events.Broadcast("NPC_Destroyed", npc)
+			API_RE.Broadcast("NPC_Destroyed", npc)
 		end)
 	end
 
@@ -204,7 +206,7 @@ function API.RegisterSystem(functionTable, isClient)
 	IS_CLIENT = isClient
 
 	if not IS_CLIENT then
-		Events.Connect("ResetDungeon", OnResetDungeon)
+		API_RE.Connect("ResetDungeon", OnResetDungeon)
 	end
 end
 
@@ -276,7 +278,15 @@ function API.GetTarget(npc)
 				return player
 			end
 		end
+
+		-- This means the player left, and whatever we are doing with this call is probably going to be incorrect
+		-- On client this is just visual (and could just be timing), so that's okay
+		assert(IS_CLIENT)
 	end
+end
+
+function API.GetTargetId(npc)
+	return npc:GetCustomProperty("TargetID")
 end
 
 function API.IsDead(npc)
@@ -322,7 +332,17 @@ function API.GetAwakeNPCsInSphere(center, radius)
 
 	for npc, _ in pairs(npcs) do
 		if not API.IsDead(npc) and not systemFunctions.IsAsleep(npc) and not systemFunctions.IsResetting(npc) then
-			if FindSphereToCapsuleDistance(center, radius, npc:GetWorldPosition(), npcs[npc].capsuleHeight, npcs[npc].capsuleWidth) == 0.0 then
+			local npcData = npcs[npc]
+			local npcPosition = nil
+
+			if npcData.animatedMesh then
+				-- This is client only, intended to be as accurate as possible. We can never expect it to match anyway
+				npcPosition = npcData.animatedMesh:GetWorldPosition()
+			else
+				npcPosition = npc:GetWorldPosition()
+			end
+
+			if FindSphereToCapsuleDistance(center, radius, npcPosition, npcData.capsuleHeight, npcData.capsuleWidth) == 0.0 then
 				table.insert(result, npc)
 			end
 		end

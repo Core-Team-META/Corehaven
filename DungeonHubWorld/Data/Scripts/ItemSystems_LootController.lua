@@ -1,4 +1,6 @@
-﻿local Item = require(script:GetCustomProperty("ItemSystems_Item"))
+﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+
+local Item = require(script:GetCustomProperty("ItemSystems_Item"))
 local LOOT = script:GetCustomProperty("Loot"):WaitForObject()
 local INDICATORS = {
     NotForMe    = script:GetCustomProperty("IndicatorNotForMe"),
@@ -15,9 +17,10 @@ local ITEM_HASH = nil
 while not OWNER do
     Task.Wait()
     local info = LOOT:GetCustomProperty("INFO")
-    OWNER,LOOT_INDEX,ITEM_HASH = info:match("^(.+)/(.+)/(.+)$")
+    OWNER,LOOT_INDEX,STACK_SIZE,ITEM_HASH = info:match("^(.+)/(.+)/(.+)/(.+)$")
 end
 LOOT_INDEX = tonumber(LOOT_INDEX)
+STACK_SIZE = tonumber(STACK_SIZE)
 
 -- Get the actual owning player.
 for _,player in ipairs(Game.GetPlayers()) do
@@ -42,7 +45,7 @@ if script.isServerOnly then
     item = Item.FromHash(OWNER.serverUserData.inventory.database, ITEM_HASH)
     -- Delete networked root object when claimed.
     local function OnLootClaimed() LOOT:Destroy() end
-    OWNER.serverUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, item, LOOT, OnLootClaimed)
+    OWNER.serverUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, STACK_SIZE, item, LOOT, OnLootClaimed)
     -- Delete networked root object if owner leaves game.
     Game.playerLeftEvent:Connect(function(player)
         if player == OWNER and Object.IsValid(LOOT) then LOOT:Destroy() end
@@ -52,11 +55,11 @@ else
         -- Client only needs to update inventory for loot which belongs to the local player.
         AwaitInventory(OWNER.clientUserData)
         item = Item.FromHash(OWNER.clientUserData.inventory.database, ITEM_HASH)
-        OWNER.clientUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, item, LOOT)
+        OWNER.clientUserData.inventory:RegisterLootItemAtIndex(LOOT_INDEX, STACK_SIZE, item, LOOT)
         -- Set up the trigger.
         local pickupTrigger = script:GetCustomProperty("PickupTrigger"):WaitForObject()
         pickupTrigger.isInteractable = true
-        pickupTrigger.interactedEvent:Connect(function() Events.Broadcast("ForceOpenViewByName", "Loot") end)
+        pickupTrigger.interactedEvent:Connect(function() API_RE.Broadcast("ForceOpenViewByName", "Loot") end)
         -- Draw the correct visuals depending on rarity.
         World.SpawnAsset(INDICATORS[item:GetRarity()], { parent = LOOT })
     else
@@ -66,5 +69,5 @@ else
 end
 
 ---------------------------------------------------------------------------------------------------------
-Events.Broadcast("LootDroppedForPlayer", OWNER, item)
+API_RE.Broadcast("LootDroppedForPlayer", OWNER, item)
 

@@ -1,6 +1,7 @@
-﻿local Database = require(script:GetCustomProperty("ItemSystems_Database"))
+﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 
-local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 local COMPONENT = script:GetCustomProperty("Component"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
@@ -53,7 +54,7 @@ end
 -- Load unlocked recipes from storage on startup.
 local function ServerLoadCraftingRecipes()
     OWNER.serverUserData.craftingRecipeManager = RecipeManager
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     if playerData.craftingRecipeUnlockHash then
         for craftingRecipeMUID in playerData.craftingRecipeUnlockHash:gmatch("([^,]+),?") do
             local craftingRecipeData = Database:FindItemDataByMUID(craftingRecipeMUID)
@@ -81,9 +82,9 @@ local function ServerUpdateCraftingRecipes()
     table.sort(hashPartsMini)
     COMPONENT:SetNetworkedCustomProperty("R", "" .. table.concat(hashPartsMini, ","))
     -- Save to storage.
-    local playerData = Storage.GetSharedPlayerData(STORAGE_KEY, OWNER)
+    local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), OWNER)
     playerData.craftingRecipeUnlockHash = table.concat(hashPartsLong, ",")
-    Storage.SetSharedPlayerData(STORAGE_KEY, OWNER, playerData)
+    Storage.SetSharedPlayerData(API_SK.GetStorageKey(), OWNER, playerData)
 end
 
 local function InitServer()
@@ -109,7 +110,7 @@ local function ClientUpdateCraftingRecipes()
                 local shouldSendEvent = not isInitialUpdate and not RecipeManager:IsCraftingRecipeUnlocked(craftingRecipeIndex)
                 RecipeManager:UnlockCraftingRecipe(craftingRecipeIndex)
                 if shouldSendEvent then
-                    Events.Broadcast("RecipeManager_NewRecipeUnlocked", craftingRecipeIndex)
+                    API_RE.Broadcast("RecipeManager_NewRecipeUnlocked", craftingRecipeIndex)
                 end
             end
         end

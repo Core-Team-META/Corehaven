@@ -125,13 +125,13 @@
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
             AssetReference {
-              Id: 7951456939122580184
+              Id: 16391162037907027439
             }
           }
           Overrides {
             Name: "ma:Shared_Detail1:id"
             AssetReference {
-              Id: 7951456939122580184
+              Id: 16391162037907027439
             }
           }
           Overrides {
@@ -146,7 +146,7 @@
           Overrides {
             Name: "ma:Shared_Trim:id"
             AssetReference {
-              Id: 7951456939122580184
+              Id: 16391162037907027439
             }
           }
         }

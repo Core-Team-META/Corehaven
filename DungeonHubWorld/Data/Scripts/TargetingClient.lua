@@ -1,6 +1,8 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local TARGET_MARKER = script:GetCustomProperty("TargetMarker"):WaitForObject()
@@ -230,11 +232,15 @@ function OnBindingPressed(player, binding)
 		return
 	end
 
-	if binding == "ability_primary" and UI.IsCursorVisible() then
+	if binding == "ability_primary" and UI.IsCursorVisible() and not API_A.IsGroundTargetActive() then
 		autoTargetHistory = {}			-- Clear auto target history
 		TrySetTarget(FindClickTarget(), false)
 	elseif binding == AUTO_TARGET_BINDING then
-		TrySetTarget(FindAutoTarget(), true)
+		local autoTarget = FindAutoTarget()
+		
+		if autoTarget then
+			TrySetTarget(FindAutoTarget(), true)
+		end
 	end
 end
 
@@ -299,4 +305,4 @@ functionTable.TrySetTarget = TrySetTarget
 API_T.RegisterSystem(functionTable)
 
 LOCAL_PLAYER.bindingPressedEvent:Connect(OnBindingPressed)
-Events.Connect("DamageDone", OnDamageDone)
+API_RE.Connect("DamageDone", OnDamageDone)

@@ -1,5 +1,6 @@
 ﻿local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 -- We use 8 entries to minimize the cases where a value changes twice before the client notices and an event is missed
 local N_ENTRIES = 8
@@ -24,12 +25,12 @@ function ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overA
 end
 
 function ReplicateDamage(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
-    Events.Broadcast("DamageDone", sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
+    API_RE.Broadcast("DamageDone", sourceCharacter, targetCharacter, effectiveAmount, overkill, tags)
     ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overkill, tags, "D")
 end
 
 function ReplicateHealing(sourceCharacter, targetCharacter, effectiveAmount, overheal, tags)
-    Events.Broadcast("HealingDone", sourceCharacter, targetCharacter, effectiveAmount, overheal, tags)
+    API_RE.Broadcast("HealingDone", sourceCharacter, targetCharacter, effectiveAmount, overheal, tags)
     ReplicateEvent(sourceCharacter, targetCharacter, effectiveAmount, overheal, tags, "H")
 end
 
