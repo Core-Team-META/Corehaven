@@ -46317,7 +46317,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 4
+      Int: 1
     }
   }
   Collidable_v2 {
@@ -46668,7 +46668,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enable"
-      Bool: true
+      Bool: false
     }
   }
   Collidable_v2 {
