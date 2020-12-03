@@ -566,15 +566,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12386794446411920970
-  Name: "Wood Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
   Id: 12254081809737297353
   Name: "Advanced Bloom Post Process"
   PlatformAssetType: 20
@@ -860,15 +851,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_005"
-  }
-}
-Assets {
-  Id: 8917021021103861581
-  Name: "Cone - Hollow"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone-hollow_001"
   }
 }
 Assets {
