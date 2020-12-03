@@ -179,15 +179,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16884155995964102364
-  Name: "Wood Planks Dark"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_wood_planks_dark_001_uv"
-  }
-}
-Assets {
   Id: 16438838867611147592
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -221,15 +212,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_002"
-  }
-}
-Assets {
-  Id: 16071560384740977627
-  Name: "Bush Green 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bush_generic_001"
   }
 }
 Assets {
@@ -392,15 +374,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_post_process_ao"
-  }
-}
-Assets {
-  Id: 14380741855030755833
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
   }
 }
 Assets {
@@ -764,15 +737,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9761007957948549337
-  Name: "Ivy 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_001"
-  }
-}
-Assets {
   Id: 9740100601051791580
   Name: "Large Round Wood Beam 8m"
   PlatformAssetType: 1
@@ -827,15 +791,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9196183569970023941
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
   Id: 9001743820382984485
   Name: "Decal Painted Lines 01"
   PlatformAssetType: 14
@@ -860,15 +815,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_gravel_001_uv"
-  }
-}
-Assets {
-  Id: 8734943726223906287
-  Name: "Ivy 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_004"
   }
 }
 Assets {
@@ -1052,15 +998,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6383264160351578422
-  Name: "Tree Oak Stump 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_stump_001"
-  }
-}
-Assets {
   Id: 6382662502274878333
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1
@@ -1130,15 +1067,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
-  Id: 5545394172086904321
-  Name: "Ivy 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_005"
   }
 }
 Assets {
@@ -1241,39 +1169,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4062047349042277716
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
-  Id: 4026460896403559416
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
   Id: 3740919720117137094
   Name: "Decal Ivy Small (variations)"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_ivy_002"
-  }
-}
-Assets {
-  Id: 3351297021261479780
-  Name: "Ivy 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ivy_generic_003"
   }
 }
 Assets {
@@ -1340,15 +1241,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2243888708843462297
-  Name: "Tree Oak Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_002"
-  }
-}
-Assets {
   Id: 2237149746599085862
   Name: "Branches Cluster Big"
   PlatformAssetType: 1
@@ -1391,15 +1283,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_crate_narrow_lid_simple_160cm_001"
-  }
-}
-Assets {
-  Id: 1802616464299259955
-  Name: "Rock Pile 001"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_001"
   }
 }
 Assets {
@@ -1448,15 +1331,6 @@ Assets {
   }
 }
 Assets {
-  Id: 935737648693672697
-  Name: "Rock 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_001"
-  }
-}
-Assets {
   Id: 919475593149954432
   Name: "Cone - Truncated Hollow Thick"
   PlatformAssetType: 1
@@ -1493,24 +1367,6 @@ Assets {
   }
 }
 Assets {
-  Id: 396375567328888738
-  Name: "Tree Oak 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_oak_001"
-  }
-}
-Assets {
-  Id: 390383257292228164
-  Name: "Ring 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_002"
-  }
-}
-Assets {
   Id: 346569595489746007
   Name: "Bullet"
   PlatformAssetType: 1
@@ -1520,30 +1376,12 @@ Assets {
   }
 }
 Assets {
-  Id: 287579388896659285
-  Name: "Jungle Vine (tileable)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_liana-vine_001_uv"
-  }
-}
-Assets {
   Id: 196176571301539896
   Name: "Decal Stains Round 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_stain_round_001"
-  }
-}
-Assets {
-  Id: 153964525712977691
-  Name: "Rock Block 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_006"
   }
 }
 Assets {
