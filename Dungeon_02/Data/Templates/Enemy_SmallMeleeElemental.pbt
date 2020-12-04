@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 17032454486531256186
-  Name: "Enemy_SmallElemental2"
+  Name: "Enemy_SmallMeleeElemental"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 13789422558627509085
       Objects {
         Id: 13789422558627509085
-        Name: "Enemy_SmallElemental2"
+        Name: "Enemy_SmallMeleeElemental"
         Transform {
           Scale {
             X: 1
@@ -35,15 +35,15 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Highrock Guard"
+            String: "Pebble Elemental"
           }
           Overrides {
             Name: "cs:Level"
-            Int: 1
+            Int: 15
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 120
+            Float: 400
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -67,15 +67,19 @@
           }
           Overrides {
             Name: "cs:Experience"
-            Float: 10
+            Float: 25
           }
           Overrides {
             Name: "cs:Task1"
-            String: "soldier_melee"
+            String: "small_melee_elemental_melee"
           }
           Overrides {
             Name: "cs:Task2"
             String: "small_melee_elemental_cut"
+          }
+          Overrides {
+            Name: "cs:Task3"
+            String: "small_melee_elemental_bash"
           }
           Overrides {
             Name: "cs:DropKey1"

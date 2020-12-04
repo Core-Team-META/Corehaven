@@ -1,13 +1,13 @@
 ﻿Assets {
   Id: 15336714763721130491
-  Name: "Enemy_SmallElemental"
+  Name: "Enemy_SmallCasterElemental"
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
       RootId: 12714139019153104860
       Objects {
         Id: 12714139019153104860
-        Name: "Enemy_SmallElemental"
+        Name: "Enemy_SmallCasterElemental"
         Transform {
           Scale {
             X: 1
@@ -35,15 +35,15 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "Highrock Guard"
+            String: "Elemental Druid"
           }
           Overrides {
             Name: "cs:Level"
-            Int: 1
+            Int: 15
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
-            Float: 120
+            Float: 300
           }
           Overrides {
             Name: "cs:MoveSpeed"
@@ -67,15 +67,23 @@
           }
           Overrides {
             Name: "cs:Experience"
-            Float: 10
+            Float: 30
           }
           Overrides {
             Name: "cs:Task1"
-            String: "soldier_melee"
+            String: "small_caster_elemental_bolt"
+          }
+          Overrides {
+            Name: "cs:Task2"
+            String: "small_caster_elemental_regenerate"
           }
           Overrides {
             Name: "cs:Task3"
-            String: "soldier_block"
+            String: "small_caster_elemental_grasping_roots"
+          }
+          Overrides {
+            Name: "cs:Task4"
+            String: "small_caster_elemental_vortex"
           }
           Overrides {
             Name: "cs:DropKey1"
