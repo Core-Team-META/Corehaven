@@ -7,7 +7,12 @@ local DAMAGE_MULTIPLIER = 0.9
 local JUMP_RANGE = 1000.0
 
 function EffectEnd(sourceCharacter, character, index)
-	local magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+	local magicStat = 0.0
+
+	if sourceCharacter then
+		magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+	end
+
 	API_D.ApplyDamage(sourceCharacter, character, BASE_DAMAGE + DAMAGE_MULTIPLIER * magicStat)
 
 	if math.random() < 0.7 then

@@ -326,15 +326,10 @@ end
 
 -- Server only
 function API.ApplyStatusEffect(sourceCharacter, targetCharacter, id)
-	if IsCharacterDead(targetCharacter) then
+	local tracker = API.GetStateTracker(targetCharacter)
+
+	if not tracker or IsCharacterDead(targetCharacter) then
 		return
-	end
-
-	local tracker = nil
-
-	while not tracker do
-		tracker = API.GetStateTracker(targetCharacter)
-		Task.Wait()
 	end
 
 	for i = 1, API.MAX_STATUS_EFFECTS do

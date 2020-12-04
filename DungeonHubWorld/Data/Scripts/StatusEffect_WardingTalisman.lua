@@ -33,7 +33,12 @@ function PostDamageHook(sourceCharacter, targetCharacter, amount, tags)
 end
 
 function EffectStart(sourceCharacter, character, index)
-	local magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+	local magicStat = 0.0
+
+	if sourceCharacter then
+		magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+	end
+
 	currentShields[character][index] = SHIELD_BASE + SHIELD_MULTIPLIER * magicStat
 end
 

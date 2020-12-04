@@ -13,7 +13,12 @@ function EffectTick(sourceCharacter, character, index)
 
 	if #enemies > 0 then
 		local target = enemies[math.random(#enemies)]
-		local magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+		local magicStat = 0.0
+
+		if sourceCharacter then
+			magicStat = sourceCharacter.serverUserData.statSheet:GetStatTotalValue("Magic")
+		end
+
 		API_D.ApplyDamage(sourceCharacter, target, BOLT_BASE_DAMAGE + BOLT_DAMAGE_MULTIPLIER * magicStat, API_D.TAG_PERIODIC)
 	end
 end
