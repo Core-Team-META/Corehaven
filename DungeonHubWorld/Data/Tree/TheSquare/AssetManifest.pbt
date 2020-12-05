@@ -584,6 +584,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13831596974811474191
+  Name: "Text 03: 7"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_033"
+  }
+}
+Assets {
   Id: 13592437552992805297
   Name: "Text 03: O"
   PlatformAssetType: 1
@@ -1493,6 +1502,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5302200939255407960
+  Name: "Text 03: 4"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_030"
+  }
+}
+Assets {
   Id: 5252633986049924065
   Name: "Text 03: R"
   PlatformAssetType: 1
@@ -1598,6 +1616,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 3891964655502118673
+  Name: "Text 03: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_015"
+  }
+}
+Assets {
+  Id: 3885186897608751487
+  Name: "Text 03: /"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_064"
   }
 }
 Assets {
@@ -1772,6 +1808,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2419479242276225672
+  Name: "Text 01: P"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F1_Text_015"
+  }
+}
+Assets {
   Id: 2352186918021370913
   Name: "Wood Planks White"
   PlatformAssetType: 2
@@ -1787,6 +1832,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_003_win_01"
+  }
+}
+Assets {
+  Id: 2190343034748802179
+  Name: "Prism - 3-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hq_001"
   }
 }
 Assets {
@@ -1868,6 +1922,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_ts_fan_cas_wall_001"
+  }
+}
+Assets {
+  Id: 1301209770900053178
+  Name: "Text 03: 2"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "F5_Text_028"
   }
 }
 Assets {
