@@ -61,25 +61,24 @@ Objects {
     Overrides {
       Name: "bp:Color A"
       Color {
-        R: 0.209999979
-        G: 0.905827641
-        B: 1
+        R: 0.0314569026
+        G: 0.950000048
         A: 1
       }
     }
     Overrides {
       Name: "bp:Color B"
       Color {
-        G: 0.261986762
-        B: 0.86
+        R: 0.0314569026
+        G: 0.950000048
         A: 1
       }
     }
     Overrides {
       Name: "bp:color c"
       Color {
-        G: 0.291390687
-        B: 0.440000057
+        R: 0.0314569026
+        G: 0.950000048
         A: 1
       }
     }
@@ -112,8 +111,8 @@ Objects {
   Name: "Spotlight"
   Transform {
     Location {
-      X: 4105.96191
-      Y: -111.725708
+      X: 4119.77832
+      Y: -95.1461182
       Z: 571.468262
     }
     Rotation {
@@ -134,10 +133,10 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 50
+    Intensity: 17
     Color {
-      R: 0.0699335858
-      G: 0.960000038
+      R: 0.0314569026
+      G: 0.950000048
       A: 1
     }
     VolumetricIntensity: 5
@@ -153,7 +152,7 @@ Objects {
           FallOffExponent: 8
           UseFallOffExponent: true
           InnerConeAngle: 4.79981804
-          OuterConeAngle: 40
+          OuterConeAngle: 13.1840773
           Profile {
             Value: "mc:espotlightprofile:basicspotlight"
           }
@@ -176,9 +175,9 @@ Objects {
     Rotation {
     }
     Scale {
-      X: 2.57114673
-      Y: 2.57114673
-      Z: 37.0328255
+      X: 2.04946375
+      Y: 2.04946375
+      Z: 6.20042181
     }
   }
   ParentId: 1864869116977628757
@@ -187,6 +186,14 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 1841948100745675117
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0314569026
+        G: 0.950000048
+        A: 1
       }
     }
   }
@@ -215,12 +222,13 @@ Objects {
   Name: "Spotlight"
   Transform {
     Location {
-      X: -3275
-      Y: 225
-      Z: 1550
+      X: -12486.8535
+      Y: 435.498474
+      Z: 2010.65381
     }
     Rotation {
-      Pitch: -79.6462326
+      Pitch: -79.6454468
+      Yaw: 26.6805325
     }
     Scale {
       X: 1
@@ -236,10 +244,10 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 50
+    Intensity: 17
     Color {
-      R: 0.0699335858
-      G: 0.960000038
+      R: 0.0314569026
+      G: 0.950000048
       A: 1
     }
     VolumetricIntensity: 5
@@ -255,7 +263,7 @@ Objects {
           FallOffExponent: 8
           UseFallOffExponent: true
           InnerConeAngle: 4.79981804
-          OuterConeAngle: 40
+          OuterConeAngle: 13.6843119
           Profile {
             Value: "mc:espotlightprofile:basicspotlight"
           }
@@ -271,16 +279,17 @@ Objects {
   Name: "Cylinder - Bottom-Aligned"
   Transform {
     Location {
-      X: -3181.22559
-      Y: 222.378357
-      Z: 1008.58545
+      X: -12406.8633
+      Y: 472.480286
+      Z: 1541.22559
     }
     Rotation {
+      Yaw: 26.6806393
     }
     Scale {
-      X: 2.57114673
-      Y: 2.57114673
-      Z: 37.0328255
+      X: 2.04946375
+      Y: 2.04946375
+      Z: 6.20042181
     }
   }
   ParentId: 1864869116977628757
@@ -289,6 +298,14 @@ Objects {
       Name: "ma:Shared_BaseMaterial:id"
       AssetReference {
         Id: 1841948100745675117
+      }
+    }
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:color"
+      Color {
+        R: 0.0314569026
+        G: 0.950000048
+        A: 1
       }
     }
   }
@@ -345,8 +362,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -8761.44238
-      Y: 573.969604
+      X: -8892.41797
+      Y: 575.38147
       Z: -6255.62793
     }
     Rotation {
@@ -375,8 +392,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -8963.16113
-      Y: 335.667969
+      X: -9094.13672
+      Y: 337.079834
       Z: -6255.62793
     }
     Rotation {
@@ -405,8 +422,8 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      X: -8997.97266
-      Y: 671.312134
+      X: -9128.94824
+      Y: 672.724
       Z: -6255.62793
     }
     Rotation {

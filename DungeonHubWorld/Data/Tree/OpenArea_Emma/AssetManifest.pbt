@@ -611,6 +611,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12083781108531124132
+  Name: "Decal Vines End 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_liane_002"
+  }
+}
+Assets {
   Id: 12028629720035765158
   Name: "Pipe"
   PlatformAssetType: 1
@@ -1220,6 +1229,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_redwood_001_uv"
+  }
+}
+Assets {
+  Id: 5243584518995923038
+  Name: "Ivy 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ivy_generic_003"
   }
 }
 Assets {
