@@ -872,6 +872,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9650630088804471075
+  Name: "Ring - Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_005"
+  }
+}
+Assets {
   Id: 9599526479376918549
   Name: "Rock 01"
   PlatformAssetType: 1
