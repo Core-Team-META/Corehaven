@@ -40,6 +40,7 @@ Objects {
   ChildIds: 9443388461308884332
   ChildIds: 17482415168148038624
   ChildIds: 17276415153558759000
+  ChildIds: 16250083299926526412
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -48,6 +49,54 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 16250083299926526412
+  Name: "Square_Invisible_Collision"
+  Transform {
+    Location {
+      X: -6708.9209
+      Y: -437.66394
+      Z: 503.302734
+    }
+    Rotation {
+      Yaw: 92.6363449
+    }
+    Scale {
+      X: 9.76014328
+      Y: 5.39349651
+      Z: 19.258791
+    }
+  }
+  ParentId: 5313182795518221386
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17609149353171719671
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableCastShadows: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -819,16 +868,16 @@ Objects {
   Name: "Square_Invisible_Collision"
   Transform {
     Location {
-      X: -6830.19141
-      Y: 746.860352
+      X: -6708.9209
+      Y: 1492.70398
       Z: 503.302734
     }
     Rotation {
       Yaw: 92.6363525
     }
     Scale {
-      X: 37.4793625
-      Y: 5.39348841
+      X: 9.76014328
+      Y: 5.39349651
       Z: 19.258791
     }
   }

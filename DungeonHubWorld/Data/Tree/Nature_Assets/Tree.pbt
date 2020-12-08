@@ -38123,9 +38123,9 @@ Objects {
   Name: "Bush Leafy Low 01"
   Transform {
     Location {
-      X: -7118.39844
-      Y: -4016.5166
-      Z: 4770.51025
+      X: -7095.49512
+      Y: -4033.2644
+      Z: 4772.88672
     }
     Rotation {
       Roll: 8.07618904
@@ -39191,14 +39191,14 @@ Objects {
   Name: "Bush Leafy Tall 01"
   Transform {
     Location {
-      X: -7058.81738
-      Y: -4016.44727
-      Z: 4784.92432
+      X: -6990.32813
+      Y: -4035.97412
+      Z: 4782.87891
     }
     Rotation {
-      Pitch: 7.69474745
-      Yaw: 0.364076614
-      Roll: 7.05779457
+      Pitch: -3.57400513
+      Yaw: -1.02468872
+      Roll: 7.00773335
     }
     Scale {
       X: 1.2119422

@@ -1,77 +1,6 @@
 ﻿Name: "SmugglersDen"
 RootId: 14390202350554631985
 Objects {
-  Id: 11558793941700893031
-  Name: "Craftsman Roof 01 Beam"
-  Transform {
-    Location {
-      X: -14616.7275
-      Y: -13504.4365
-      Z: -7029.52051
-    }
-    Rotation {
-      Pitch: -0.203063965
-      Yaw: -113.845428
-      Roll: 90.3855209
-    }
-    Scale {
-      X: 0.34500435
-      Y: 0.732043684
-      Z: 0.216240391
-    }
-  }
-  ParentId: 14390202350554631985
-  UnregisteredParameters {
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:id"
-      AssetReference {
-        Id: 14231809728886464860
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:color"
-      Color {
-        R: 0.5625
-        G: 0.387920499
-        B: 0.118345469
-        A: 1
-      }
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:smart"
-      Bool: false
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:utile"
-      Float: 3.5097127
-    }
-    Overrides {
-      Name: "ma:Shared_BaseMaterial:vtile"
-      Float: 0.653898537
-    }
-  }
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 16931855142661323466
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 7403165002736452607
   Name: "Decal Ivy Big"
   Transform {
@@ -15108,7 +15037,7 @@ Objects {
       Z: -6912.66309
     }
     Rotation {
-      Yaw: -1.54711914
+      Yaw: 125.136459
     }
     Scale {
       X: 0.708006799

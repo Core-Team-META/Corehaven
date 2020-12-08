@@ -8340,110 +8340,477 @@ Objects {
   }
 }
 Objects {
-  Id: 11414483199453843651
-  Name: "pier_light"
+  Id: 14755611368125762003
+  Name: "HouseLantern_light"
   Transform {
     Location {
-      X: -4538.40332
-      Y: -2633.7041
-      Z: -5803.47314
+      X: 29916.4375
+      Y: -15415.5869
+      Z: 6421.08789
     }
     Rotation {
-      Pitch: -1.58590841
-      Yaw: 2.75048542
-      Roll: -0.0347289853
+      Pitch: -1.58590698
+      Yaw: 155.935364
+      Roll: -0.0347290039
     }
     Scale {
-      X: 3.91012955
-      Y: 3.91012955
-      Z: 3.91012955
+      X: 11.9109039
+      Y: 11.9109039
+      Z: 11.9109039
     }
   }
   ParentId: 2734733877656755987
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 2527360909484214569
-      value {
-        Overrides {
-          Name: "Name"
-          String: "r"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -0.234538198
-            Y: 3.5790039e-05
-            Z: -1.03519988
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.90215397
-            Y: 1.90214598
-            Z: 1.05741096
-          }
+  ChildIds: 7858409271701777111
+  ChildIds: 2553355545540399637
+  ChildIds: 6900564262416127305
+  ChildIds: 2150249459826092661
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 14755611368125762003
+    SubobjectId: 9428891237528791597
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
+    WasRoot: true
+  }
+}
+Objects {
+  Id: 2150249459826092661
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: -15.6034765
+      Y: 30.1936646
+      Z: -81.9364
+    }
+    Rotation {
+      Roll: 6.67010802e-09
+    }
+    Scale {
+      X: 1.00000012
+      Y: 1.00000012
+      Z: 1.00000012
+    }
+  }
+  ParentId: 14755611368125762003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 5
+    Color {
+      R: 1
+      G: 0.836512744
+      B: 0.6875
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
         }
       }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
     }
-    ParameterOverrideMap {
-      key: 7886655707835920875
-      value {
-        Overrides {
-          Name: "Intensity"
-          Float: 5
-        }
-        Overrides {
-          Name: "AttenuationRadius"
-          Float: 839.094604
-        }
-        Overrides {
-          Name: "Color"
-          Color {
-            R: 1
-            G: 0.836512744
-            B: 0.6875
-            A: 1
-          }
-        }
+  }
+}
+Objects {
+  Id: 6900564262416127305
+  Name: "Lantern_DayNight"
+  Transform {
+    Location {
+      X: -774.484253
+      Y: -1572.70422
+      Z: -432.791016
+    }
+    Rotation {
+      Yaw: 122.606728
+    }
+    Scale {
+      X: 2.10201454
+      Y: 2.10201454
+      Z: 2.10201454
+    }
+  }
+  ParentId: 14755611368125762003
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Light"
+      ObjectReference {
+        SelfId: 2553355545540399637
       }
     }
-    ParameterOverrideMap {
-      key: 9428891237528791597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "HouseLantern_light"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: 29916.4375
-            Y: -15415.5869
-            Z: 6421.08789
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-            Pitch: -1.58590698
-            Yaw: 155.935364
-            Roll: -0.0347290039
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 11.9109039
-            Y: 11.9109039
-            Z: 11.9109039
-          }
-        }
+    Overrides {
+      Name: "cs:Flame"
+      ObjectReference {
+        SelfId: 7858409271701777111
       }
     }
-    TemplateAsset {
-      Id: 13645709276101023996
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5677040223085038469
     }
+  }
+  InstanceHistory {
+    SelfId: 6900564262416127305
+    SubobjectId: 1288005722218034871
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
+  }
+}
+Objects {
+  Id: 2553355545540399637
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 0.234558105
+      Z: 7.21635056
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 14755611368125762003
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 5
+    Color {
+      R: 1
+      G: 0.836512744
+      B: 0.6875
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 839.094604
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 100000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 2553355545540399637
+    SubobjectId: 7886655707835920875
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
+  }
+}
+Objects {
+  Id: 7858409271701777111
+  Name: "r"
+  Transform {
+    Location {
+      X: -0.234538198
+      Y: 3.5790039e-05
+      Z: -1.03519988
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.90215397
+      Y: 1.90214598
+      Z: 1.05741096
+    }
+  }
+  ParentId: 14755611368125762003
+  ChildIds: 9373239299337190604
+  ChildIds: 2239055359537730672
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Flame_A:id"
+      AssetReference {
+        Id: 10716218552546186561
+      }
+    }
+    Overrides {
+      Name: "ma:Flame_B:id"
+      AssetReference {
+        Id: 10716218552546186561
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 7858409271701777111
+    SubobjectId: 2527360909484214569
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
+  }
+}
+Objects {
+  Id: 2239055359537730672
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: -0.0354842879
+      Y: 0.000776858302
+      Z: 2.30553699
+    }
+    Rotation {
+      Yaw: 2.13443386e-07
+      Roll: 3.33505024e-09
+    }
+    Scale {
+      X: 0.0854706466
+      Y: 0.0854710415
+      Z: 0.153751373
+    }
+  }
+  ParentId: 7858409271701777111
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 4
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 1.42784882
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 1.2
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.65
+        G: 0.193708614
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.0700000525
+        G: 0.0208609495
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.487748384
+        B: 0.149999976
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 11.0383205
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.223139659
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Rotate Texture"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Auto Rotate"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Rotation Rate"
+      Float: -41
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
+    }
+  }
+  InstanceHistory {
+    SelfId: 2239055359537730672
+    SubobjectId: 5840861124425561998
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
+  }
+}
+Objects {
+  Id: 9373239299337190604
+  Name: "Flare Billboard"
+  Transform {
+    Location {
+      X: -0.0200949032
+      Y: 0.000439938158
+      Z: 1.30563533
+    }
+    Rotation {
+      Yaw: 2.13443343e-07
+    }
+    Scale {
+      X: 0.0854706466
+      Y: 0.0854710415
+      Z: 0.153751373
+    }
+  }
+  ParentId: 7858409271701777111
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Flare Shape"
+      Int: 6
+    }
+    Overrides {
+      Name: "bp:Width"
+      Float: 0.446328431
+    }
+    Overrides {
+      Name: "bp:Height"
+      Float: 0.838936567
+    }
+    Overrides {
+      Name: "bp:Color B"
+      Color {
+        R: 0.65
+        G: 0.193708614
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Color C"
+      Color {
+        R: 0.0700000525
+        G: 0.0208609495
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:color"
+      Color {
+        R: 1
+        G: 0.487748384
+        B: 0.149999976
+        A: 1
+      }
+    }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset A"
+      Float: 0
+    }
+    Overrides {
+      Name: "bp:Color Offset B"
+      Float: 0.223139659
+    }
+    Overrides {
+      Name: "bp:Color Offset C"
+      Float: 1
+    }
+    Overrides {
+      Name: "bp:Rotate Texture"
+      Bool: true
+    }
+    Overrides {
+      Name: "bp:Auto Rotate"
+      Bool: false
+    }
+    Overrides {
+      Name: "bp:Rotation Rate"
+      Float: 66
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 4488444258523261897
+    }
+    TeamSettings {
+    }
+  }
+  InstanceHistory {
+    SelfId: 9373239299337190604
+    SubobjectId: 14702071046040788786
+    InstanceId: 11414483199453843651
+    TemplateId: 13645709276101023996
   }
 }
 Objects {

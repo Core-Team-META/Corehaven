@@ -8490,10 +8490,12 @@ Objects {
   Name: "NPC Dialog Group"
   Transform {
     Location {
-      X: -3630
-      Y: 120
+      X: -12441.4316
+      Y: -2623.66235
+      Z: 460.655762
     }
     Rotation {
+      Yaw: 26.6806393
     }
     Scale {
       X: 1
@@ -8654,11 +8656,12 @@ Objects {
   Name: "NPC Dialog Group"
   Transform {
     Location {
-      X: -7280
-      Y: -750
-      Z: -6320
+      X: -8587.42578
+      Y: 7479.50684
+      Z: -5680.6958
     }
     Rotation {
+      Yaw: -79.1886597
     }
     Scale {
       X: 1

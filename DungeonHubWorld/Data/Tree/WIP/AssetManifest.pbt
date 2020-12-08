@@ -376,12 +376,3 @@ Assets {
     AssetId: "sm_quarter_torus_001"
   }
 }
-Assets {
-  Id: 920718023733593417
-  Name: "Table Assembled"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_table_001"
-  }
-}
