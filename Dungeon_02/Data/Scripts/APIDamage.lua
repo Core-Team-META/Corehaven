@@ -148,12 +148,19 @@ function API.ApplyHealing(sourceCharacter, targetCharacter, amount, tags)
 
     local canCrit = not API.HasTag(adjustedTags, API.TAG_CRIT) and not API.HasTag(adjustedTags, API.TAG_CANNOT_CRIT)
     
-    if sourceCharacter and sourceCharacter:IsA("Player") and canCrit then
-        local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
+    if sourceCharacter then
+        if sourceCharacter:IsA("Player") and canCrit then
+            local critChance = API_S.GetPlayerStatChance(sourceCharacter, "CritChance")
 
-        if math.random() < critChance then
-            adjustedAmount = adjustedAmount * CRIT_HEAL_MULTIPLIER
-            adjustedTags = adjustedTags | API.TAG_CRIT
+            if math.random() < critChance then
+                adjustedAmount = adjustedAmount * CRIT_HEAL_MULTIPLIER
+                adjustedTags = adjustedTags | API.TAG_CRIT
+            end
+        end
+
+        -- Enemy difficulty
+        if not sourceCharacter:IsA("Player") and not targetCharacter:IsA("Player") then
+            adjustedAmount = adjustedAmount * API_DS.GetEnemyHealingMultiplier()
         end
     end
 
