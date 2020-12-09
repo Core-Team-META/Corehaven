@@ -35,12 +35,30 @@ Assets {
   }
 }
 Assets {
+  Id: 16372496464315477095
+  Name: "Ring Beveled (thick)"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
   Id: 16132958878921067135
   Name: "Sign Bracket - Square"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_signbracket_square_001"
+  }
+}
+Assets {
+  Id: 15997088979790417956
+  Name: "Tree Birch Bare 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_tree_birch_002"
   }
 }
 Assets {

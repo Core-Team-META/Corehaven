@@ -1,6 +1,161 @@
 ﻿Name: "OpenArea_InvisibleCollisions"
 RootId: 14715758764945446342
 Objects {
+  Id: 685545689865485170
+  Name: "OpenArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 8408.81543
+      Y: 37602.2969
+      Z: -1017.20947
+    }
+    Rotation {
+      Pitch: -9.44671631
+      Yaw: -11.6225891
+      Roll: 6.97611666
+    }
+    Scale {
+      X: 2.69809961
+      Y: 3.90647149
+      Z: 7.15101147
+    }
+  }
+  ParentId: 14715758764945446342
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 5236477115442780438
+  Name: "OpenArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 7893.4
+      Y: 37695.6367
+      Z: -1032.81396
+    }
+    Rotation {
+      Pitch: 16.4729462
+      Yaw: -8.42663574
+      Roll: 7.17700338
+    }
+    Scale {
+      X: 2.69809961
+      Y: 3.90647149
+      Z: 7.15101147
+    }
+  }
+  ParentId: 14715758764945446342
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 2300091302435818338
+  Name: "OpenArea_InvisibleCollision"
+  Transform {
+    Location {
+      X: 8150.07
+      Y: 37652.7852
+      Z: -995.461426
+    }
+    Rotation {
+      Yaw: -10.4714966
+      Roll: 6.88085175
+    }
+    Scale {
+      X: 2.69809961
+      Y: 3.90647149
+      Z: 7.15101147
+    }
+  }
+  ParentId: 14715758764945446342
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 13539907544900533754
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 17983886762090769352
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    DisableDistanceFieldLighting: true
+    DisableCastShadows: true
+    DisableReceiveDecals: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 17863713319356517423
   Name: "OpenArea_InvisibleCollision"
   Transform {
