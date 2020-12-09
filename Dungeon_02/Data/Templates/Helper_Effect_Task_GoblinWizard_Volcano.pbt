@@ -4,18 +4,44 @@
   PlatformAssetType: 5
   TemplateAsset {
     ObjectBlock {
-      RootId: 1633858905775596316
+      RootId: 7167639219388951443
+      Objects {
+        Id: 7167639219388951443
+        Name: "Helper_Effect_Task_GoblinWizard_Volcano"
+        Transform {
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 4781671109827199097
+        ChildIds: 1633858905775596316
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Folder {
+          IsGroup: true
+        }
+      }
       Objects {
         Id: 1633858905775596316
         Name: "Cone"
         Transform {
+          Location {
+          }
+          Rotation {
+          }
           Scale {
-            X: 2.39999986
-            Y: 2.39999986
-            Z: 2.39999986
+            X: 2
+            Y: 2
+            Z: 2
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 7167639219388951443
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -38,7 +64,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }

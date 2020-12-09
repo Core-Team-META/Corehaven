@@ -74,12 +74,12 @@
             String: "goblin_wizard_fireball"
           }
           Overrides {
-            Name: "cs:Task4"
-            String: "goblin_wizard_volcano"
+            Name: "cs:Task2"
+            String: "goblin_wizard_empower"
           }
           Overrides {
             Name: "cs:Task3"
-            String: "goblin_wizard_hasten"
+            String: "goblin_wizard_volcano"
           }
           Overrides {
             Name: "cs:DropKey1"

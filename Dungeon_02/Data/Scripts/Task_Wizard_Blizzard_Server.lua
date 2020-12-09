@@ -60,7 +60,6 @@ function OnTaskEnd(npc, interrupted)
 					end
 				end
 			end
-
 		end)
 	end
 

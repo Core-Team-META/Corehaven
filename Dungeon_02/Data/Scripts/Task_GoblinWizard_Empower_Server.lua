@@ -8,6 +8,10 @@ local COOLDOWN = 7.0
 local targets = {}
 
 function FindAlternateTarget(npc, target, maxAngle, maxDistance)
+	if npc == target then
+		return target
+	end
+
 	local alternateTargets = {}
 	local targetNormal = (target:GetWorldPosition() - npc:GetWorldPosition()):GetNormalized()
 	local maxDot = math.cos(math.rad(maxAngle))
@@ -41,8 +45,13 @@ function FindAlternateTarget(npc, target, maxAngle, maxDistance)
 	return target
 end
 
+function FindTarget(npc)
+	local targets = API_NPC.GetAwakeNPCsInSphere(npc:GetWorldPosition(), RANGE)
+	return targets[math.random(#targets)]
+end
+
 function GetPriority(npc, taskHistory)
-	if API_DS.GetDifficultyLevel() > 2 then
+	if API_DS.GetDifficultyLevel() > 1 then
 		return 1.0
 	else
 		return 0.0
@@ -50,10 +59,10 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	local target = API_NPC.GetTarget(npc)
+	local target = FindTarget(npc)
 
 	-- Goblins don't have great aim, so sometimes they hit something else in the same direction
-	if math.random() < 0.3 then
+	if math.random() < 0.5 then
 		target = FindAlternateTarget(npc, target, 30.0, RANGE * 1.3)
 	end
 
