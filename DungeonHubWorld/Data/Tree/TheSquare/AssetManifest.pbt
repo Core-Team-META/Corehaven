@@ -1043,6 +1043,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8983708969469221779
+  Name: "Fantasy Castle Wall 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_wall_003"
+  }
+}
+Assets {
   Id: 8916846240532825810
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2

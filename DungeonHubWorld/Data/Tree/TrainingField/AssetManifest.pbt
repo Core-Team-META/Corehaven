@@ -53,6 +53,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17983886762090769352
+  Name: "Plane 1m - One Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_001"
+  }
+}
+Assets {
   Id: 17952268790008141582
   Name: "Fantasy Castle Wall 01 Half"
   PlatformAssetType: 1
