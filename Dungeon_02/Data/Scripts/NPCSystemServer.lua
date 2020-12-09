@@ -291,16 +291,17 @@ end
 
 function OnDamaged(sourceCharacter, npc, amount)
 	assert(not IsAsleep(npc))
-	assert(sourceCharacter:IsA("Player"))
-	local npcState = npcStates[npc]
-	local target = API_NPC.GetTarget(npc)
+	
+	if sourceCharacter:IsA("Player") then
+		local npcState = npcStates[npc]
 
-	if not npcState.threatTable[sourceCharacter] then
-		AddPlayerToThreatTable(npc, sourceCharacter)
+		if not npcState.threatTable[sourceCharacter] then
+			AddPlayerToThreatTable(npc, sourceCharacter)
+		end
+
+		local addedThreat = amount * API_PP.GetPlayerThreatMultiplier(sourceCharacter)
+		AddThreat(npc, sourceCharacter, addedThreat)
 	end
-
-	local addedThreat = amount * API_PP.GetPlayerThreatMultiplier(sourceCharacter)
-	AddThreat(npc, sourceCharacter, addedThreat)
 end
 
 function OnHealed(sourceCharacter, npc, amount)

@@ -49,6 +49,11 @@ function API.GetEnemyDamageMultiplier()
 	return ENEMY_DAMAGE_MULTIPLIERS[difficultyLevel] * 1.1 ^ bonusLevel
 end
 
+function API.GetEnemyHealingMultiplier()
+	-- For now we just use health multipliers for healing as well.
+	return ENEMY_HEALTH_MULTIPLIERS[difficultyLevel] * 1.1 ^ bonusLevel
+end
+
 function API.GetLootStatMultiplier()
 	return LOOT_STAT_MULTIPLIERS[difficultyLevel]
 end
