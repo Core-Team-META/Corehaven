@@ -1,6 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
-local API_P = require(script:GetCustomProperty("APIProjectile"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local RANGE = 0.0

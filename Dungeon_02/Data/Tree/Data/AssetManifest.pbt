@@ -89,33 +89,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17211146951615485288
-  Name: "Bone Human Skull 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_skull_01_ref"
-  }
-}
-Assets {
-  Id: 17168562580236810812
-  Name: "Fantasy Gauntlet Arm 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_gauntlet_arm_001"
-  }
-}
-Assets {
-  Id: 17053596771740821379
-  Name: "Ring - Beveled Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ring_faceted_002"
-  }
-}
-Assets {
   Id: 17019787265848098694
   Name: "Thorn - Wide"
   PlatformAssetType: 1
@@ -170,30 +143,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16132958878921067135
-  Name: "Sign Bracket - Square"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_signbracket_square_001"
-  }
-}
-Assets {
   Id: 16130068831793599947
   Name: "Fern 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_002"
-  }
-}
-Assets {
-  Id: 15818682822090430829
-  Name: "Pipe - Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_003"
   }
 }
 Assets {
@@ -233,15 +188,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15484605620023334162
-  Name: "Wedge - Corner Complex"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_corelogo_shape_001"
-  }
-}
-Assets {
   Id: 15079746104761536889
   Name: "Fantasy Ability Red 037"
   PlatformAssetType: 9
@@ -275,15 +221,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone_truncated_concave_001"
-  }
-}
-Assets {
-  Id: 14324126384198850775
-  Name: "Skeleton Mob"
-  PlatformAssetType: 17
-  PrimaryAsset {
-    AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_guy_skelington_001_ref"
   }
 }
 Assets {
@@ -431,24 +368,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11337413471323694429
-  Name: "Metal Gold 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_gold_001"
-  }
-}
-Assets {
-  Id: 11236189850874066005
-  Name: "Heart - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_heart_polished_001"
-  }
-}
-Assets {
   Id: 10604936238935185684
   Name: "Dust Motes Volume VFX"
   PlatformAssetType: 8
@@ -539,15 +458,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8920166470127210509
-  Name: "Fantasy Gauntlet Hand 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_gauntlet_hand_001"
-  }
-}
-Assets {
   Id: 8917021021103861581
   Name: "Cone - Hollow"
   PlatformAssetType: 1
@@ -563,24 +473,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_fern_generic_004"
-  }
-}
-Assets {
-  Id: 8031004411755435841
-  Name: "Cylinder - Rounded"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cylinder_rounded_002"
-  }
-}
-Assets {
-  Id: 7525691272519125347
-  Name: "Ring 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_torus_002"
   }
 }
 Assets {
@@ -611,15 +503,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5649559338683583195
-  Name: "Fantasy Shield Strap 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_strap_001"
-  }
-}
-Assets {
   Id: 5626035503592688696
   Name: "Rocky Ground 01"
   PlatformAssetType: 2
@@ -638,24 +521,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5580378743840301598
-  Name: "Capsule"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_capsule_001"
-  }
-}
-Assets {
-  Id: 5489775416547967874
-  Name: "Hemisphere"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_hemisphere_001"
-  }
-}
-Assets {
   Id: 5251775679466564707
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -665,39 +530,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4904779893906915148
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
-  }
-}
-Assets {
-  Id: 4873121214410681542
-  Name: "Manticore Logo"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
   Id: 4858206103076370621
   Name: "Plastic Shiny"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "plastic_shiny_001"
-  }
-}
-Assets {
-  Id: 4695831441518356605
-  Name: "Pipe - Quarter Wedge Thin"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_quarter_pipe_wedge_002"
   }
 }
 Assets {
@@ -770,15 +608,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bones_human_foot_01_ref"
-  }
-}
-Assets {
-  Id: 3077043113591575273
-  Name: "Metal Iron Rusted 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_iron_003"
   }
 }
 Assets {
@@ -860,15 +689,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
-  }
-}
-Assets {
-  Id: 1735627511039704138
-  Name: "Gem - Round Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_round_polished_001"
   }
 }
 Assets {

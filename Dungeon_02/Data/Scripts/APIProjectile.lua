@@ -19,7 +19,9 @@ end
 -- This is really more of "expected travel time"
 -- source and target can be npcs, players, or just Vector3s
 function API.GetTravelTime(source, target, horizontalSpeed)
-	return (GetCorrectPosition(target) - GetCorrectPosition(source)).size / horizontalSpeed
+	local offset = GetCorrectPosition(target) - GetCorrectPosition(source)
+	offset.z = 0.0
+	return offset.size / horizontalSpeed
 end
 
 -- Client only

@@ -40,7 +40,10 @@ function OnTaskEnd(npc, interrupted)
 				if not player.isDead then
 					local shapeIndex = math.random(4)
 					local statusEffectIndex = API_SE.ApplyStatusEffect(npc, player, API_SE.STATUS_EFFECT_DEFINITIONS[statusEffectNames[shapeIndex]].id)
-					taggedPlayers[npc][player] = {shapeIndex = shapeIndex, statusEffectIndex = statusEffectIndex}
+
+					if statusEffectIndex then
+						taggedPlayers[npc][player] = {shapeIndex = shapeIndex, statusEffectIndex = statusEffectIndex}
+					end
 				end
 			end
 

@@ -428,6 +428,10 @@ function KillNPC(npc, skipLoot)
 		npcState.currentTaskEndTime = time() + DESPAWN_TIME
 	end
 
+	if npcData.despawnTime then
+		npcState.currentTaskEndTime = time() + npcData.despawnTime
+	end
+
 	npcState.threatTable = {}
 	npcState.shouldBeStunned = false
 	npcState.shouldMoveUpdate = false

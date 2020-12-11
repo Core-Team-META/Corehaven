@@ -6,6 +6,7 @@ local EXPERIENCE_MULTIPLIERS = {1.0, 2.0, 3.0, 4.0}
 local networkedScript = nil
 local difficultyLevel = 1
 local bonusLevel = 0
+local initialized = false
 
 local API = {}
 
@@ -21,10 +22,17 @@ function API.RegisterServerScript(serverScript)
 end
 
 function API.SetDifficultyLevel(difficultyLevel)
+	initialized = true
 	networkedScript:SetNetworkedCustomProperty("DifficultyLevel", difficultyLevel)
 end
 
 function API.GetDifficultyLevel()
+	if Environment.IsServer() then
+		while not initialized do
+			Task.Wait()
+		end
+	end
+
 	return difficultyLevel
 end
 
