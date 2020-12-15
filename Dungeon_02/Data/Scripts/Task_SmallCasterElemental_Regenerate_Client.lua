@@ -16,7 +16,7 @@ function OnRegenerateStarted(npc, target)
 	end
 end
 
-function OnRegenerateInterupted(npc, target)
+function OnRegenerateInterupted(npc)
 	if telegraphs[npc] then
 		telegraphs[npc]:Destroy()
 		telegraphs[npc] = nil

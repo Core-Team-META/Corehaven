@@ -53,15 +53,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17884425380056243870
-  Name: "Tree Birch Bare 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_tree_birch_002"
-  }
-}
-Assets {
   Id: 17541963026773272436
   Name: "Coral Table 01"
   PlatformAssetType: 1
@@ -179,15 +170,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15518531670738089360
-  Name: "Snow Trail Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_snow_trail_volume"
-  }
-}
-Assets {
   Id: 15079746104761536889
   Name: "Fantasy Ability Red 037"
   PlatformAssetType: 9
@@ -242,30 +224,12 @@ Assets {
   }
 }
 Assets {
-  Id: 13697624696730172247
-  Name: "Callout Sparkle"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_sparkles_volume_vfx"
-  }
-}
-Assets {
   Id: 13606802925569237401
   Name: "Rock Pile 001"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rocks_small_001"
-  }
-}
-Assets {
-  Id: 13560184903873632544
-  Name: "Moss 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_moss_001_uv"
   }
 }
 Assets {
@@ -350,30 +314,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11652341043099888422
-  Name: "Cliff 02"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "cliff_002"
-  }
-}
-Assets {
   Id: 11353538719389873434
   Name: "Lens"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_lense_001"
-  }
-}
-Assets {
-  Id: 10604936238935185684
-  Name: "Dust Motes Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_dust_motes"
   }
 }
 Assets {
@@ -440,15 +386,6 @@ Assets {
   }
 }
 Assets {
-  Id: 9405092179001815141
-  Name: "Jungle Vine (tileable)"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_liana-vine_001_uv"
-  }
-}
-Assets {
   Id: 8936463881719161671
   Name: "Ring - Thick"
   PlatformAssetType: 1
@@ -464,15 +401,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cone-hollow_001"
-  }
-}
-Assets {
-  Id: 8215987718781187610
-  Name: "Fern 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fern_generic_004"
   }
 }
 Assets {
@@ -539,39 +467,12 @@ Assets {
   }
 }
 Assets {
-  Id: 4488444258523261897
-  Name: "Flare Billboard"
-  PlatformAssetType: 6
-  PrimaryAsset {
-    AssetType: "BlueprintAssetRef"
-    AssetId: "fxbp_flare_object"
-  }
-}
-Assets {
   Id: 4430461046694265123
   Name: "Decal Leaves 01"
   PlatformAssetType: 14
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_leaves_001"
-  }
-}
-Assets {
-  Id: 4419896891242772333
-  Name: "Fern 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_fern_generic_003"
-  }
-}
-Assets {
-  Id: 4410215247643332146
-  Name: "Falling Leaves Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_falling_leaves_volume_vfx"
   }
 }
 Assets {
@@ -620,15 +521,6 @@ Assets {
   }
 }
 Assets {
-  Id: 2405976769877758160
-  Name: "Wispy Fog Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_fog_volume_vfx"
-  }
-}
-Assets {
   Id: 2370323440038391995
   Name: "Decal Elven Symbols"
   PlatformAssetType: 14
@@ -653,15 +545,6 @@ Assets {
   PrimaryAsset {
     AssetType: "DecalBlueprintAssetRef"
     AssetId: "bp_decal_ivy_001"
-  }
-}
-Assets {
-  Id: 2237149746599085862
-  Name: "Branches Cluster Big"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gen_branches_big_001"
   }
 }
 Assets {

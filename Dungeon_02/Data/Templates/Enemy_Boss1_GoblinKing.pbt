@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:Level"
-            Int: 13
+            Int: 14
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
@@ -82,7 +82,7 @@
             String: "goblinking_fireward"
           }
           Overrides {
-            Name: "cs:Task5"
+            Name: "cs:Task4"
             String: "goblinking_creepingfire"
           }
           Overrides {

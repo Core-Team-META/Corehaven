@@ -10,7 +10,6 @@ local TICK_HEAL_PLAYER = 50.0
 local RADIUS = 500.0
 
 local currentTasks = {}
-local currentTargets = {}
 
 function FindTarget(npc)
 	local target = nil
@@ -37,31 +36,29 @@ function GetPriority(npc, taskHistory)
 end
 
 function OnTaskStart(npc, threatTable)
-	currentTargets[npc] = FindTarget(npc)
+	local target = FindTarget(npc)
 
 	-- This case might not be possible. Did our only valid target become invalid between GetPriority() and now?
 	-- If so, just delay a short time and go on to the next task.
-	if not currentTargets[npc] then
+	if not target then
 		return 0.1
 	end
 
 	currentTasks[npc] = Task.Spawn(function()
-		API_RE.BroadcastToAllPlayers("RS", npc, currentTargets[npc])	-- Regenerate started
+		API_RE.BroadcastToAllPlayers("RS", npc, target)	-- Regenerate started
 		Task.Wait(1.0)
 
 		for i = 1, 4 do
 			Task.Wait(1.0)
 
-			for _, player in pairs(Game.FindPlayersInSphere(currentTargets[npc], RADIUS, {ignoreDead = true})) do
+			for _, player in pairs(Game.FindPlayersInSphere(target, RADIUS, {ignoreDead = true})) do
 				API_D.ApplyHealing(npc, player, TICK_HEAL_PLAYER, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 			end
 
-			for _, otherNpc in pairs(API_NPC.GetAwakeNPCsInSphere(currentTargets[npc], RADIUS)) do
+			for _, otherNpc in pairs(API_NPC.GetAwakeNPCsInSphere(target, RADIUS)) do
 				API_D.ApplyHealing(npc, otherNpc, TICK_HEAL_NPC, API_D.TAG_PERIODIC | API_D.TAG_AOE)
 			end
 		end
-
-		currentTargets[npc] = nil
 	end)
 
 	return 5.0
@@ -70,8 +67,7 @@ end
 function OnTaskEnd(npc, interrupted)
 	if interrupted and currentTasks[npc] then
 		currentTasks[npc]:Cancel()
-		API_RE.BroadcastToAllPlayers("RI", npc, currentTargets[npc])	-- Regenerate interupted
-		currentTargets[npc] = nil
+		API_RE.BroadcastToAllPlayers("RI", npc)	-- Regenerate interupted
 	end
 
 	currentTasks[npc] = nil

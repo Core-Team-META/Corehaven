@@ -37,7 +37,7 @@ function OnVolcano(targetPosition, seed)
 	end
 
 	Task.Spawn(function()
-		volcano = World.SpawnAsset(VOLCANO_TEMPLATE, {position = volcanoPosition, scale = Vector3.New(VOLCANO_RADIUS / 100.0)})
+		local volcano = World.SpawnAsset(VOLCANO_TEMPLATE, {position = volcanoPosition, scale = Vector3.New(VOLCANO_RADIUS / 100.0)})
 		Task.Wait(DURATION)
 		volcano:Destroy()
 	end)

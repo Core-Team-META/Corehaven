@@ -1,4 +1,5 @@
 ﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local SUMMON_TEMPLATE = script:GetCustomProperty("SummonTemplate")
 
@@ -35,7 +36,12 @@ function OnTaskEnd(npc, interrupted)
 
 		if hitResult then
 			targetPosition = hitResult:GetImpactPosition()
-			API_NPC.SpawnNPC(SUMMON_TEMPLATE, npc, targetPosition, Rotation.New(0.0, 0.0, math.random() * 360.0))
+			local ward = API_NPC.SpawnNPC(SUMMON_TEMPLATE, npc, targetPosition, Rotation.New(0.0, 0.0, math.random() * 360.0))
+			
+			if API_DS.GetDifficultyLevel() > 2 then
+				ward:RotateContinuous(Vector3.UP)
+			end
+
 			return true
 		end
 	end

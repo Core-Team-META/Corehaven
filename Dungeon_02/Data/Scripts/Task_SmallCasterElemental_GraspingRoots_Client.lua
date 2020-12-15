@@ -5,7 +5,7 @@ local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
 
 function OnGraspingRoots(target)
-	telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = target})
+	local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = target})
 	Task.Wait(2.0)
 	telegraph:Destroy()
 end
