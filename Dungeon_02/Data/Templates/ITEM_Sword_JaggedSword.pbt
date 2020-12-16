@@ -638,7 +638,7 @@
     }
     Assets {
       Id: 346569595489746007
-      Name: "Bullet"
+      Name: "Cone - Bullet"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -713,5 +713,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

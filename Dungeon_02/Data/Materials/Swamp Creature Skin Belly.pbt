@@ -2,7 +2,7 @@
   Id: 6211691952139490738
   Name: "Swamp Creature Skin Belly"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 6861745648576326887
     ParameterOverrides {
