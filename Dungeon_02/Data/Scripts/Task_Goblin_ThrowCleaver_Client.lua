@@ -4,7 +4,7 @@ local API_P = require(script:GetCustomProperty("APIProjectile"))
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 
-local PROJECTILE_SPEED = 900.0
+local PROJECTILE_SPEED = 1700.0
 
 function OnTaskStart(npc, animatedMesh)
 	local target = API_NPC.GetTarget(npc)
