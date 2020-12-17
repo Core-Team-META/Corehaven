@@ -122,6 +122,18 @@
             Float: 0.08
           }
           Overrides {
+            Name: "cs:OnPulledEventName"
+            String: "Boss1Pulled"
+          }
+          Overrides {
+            Name: "cs:OnResetEventName"
+            String: "Boss1Reset"
+          }
+          Overrides {
+            Name: "cs:OnDiedEventName"
+            String: "Boss1Died"
+          }
+          Overrides {
             Name: "cs:MovementEffectTemplate"
             AssetReference {
               Id: 841534158063459245
@@ -12353,7 +12365,7 @@
     }
     Assets {
       Id: 1938148825372685458
-      Name: "Truncated Teardrop"
+      Name: "Teardrop - Truncated"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -12434,7 +12446,7 @@
     }
     Assets {
       Id: 5489775416547967874
-      Name: "Hemisphere"
+      Name: "Sphere - Half"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -12470,7 +12482,7 @@
     }
     Assets {
       Id: 16372496464315477095
-      Name: "Ring Beveled (thick)"
+      Name: "Ring - Beveled Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -12671,5 +12683,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

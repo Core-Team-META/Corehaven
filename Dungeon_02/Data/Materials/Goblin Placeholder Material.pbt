@@ -2,7 +2,7 @@
   Id: 15024687653597933384
   Name: "Goblin Placeholder Material"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 1274111350102996015
     ParameterOverrides {

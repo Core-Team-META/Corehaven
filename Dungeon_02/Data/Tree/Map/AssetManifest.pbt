@@ -873,7 +873,7 @@ Assets {
 }
 Assets {
   Id: 8086153610909795251
-  Name: "Lense - Half"
+  Name: "Lens - Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1008,7 +1008,7 @@ Assets {
 }
 Assets {
   Id: 6000681835192046231
-  Name: "Pipe (thick)"
+  Name: "Pipe - Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1026,7 +1026,7 @@ Assets {
 }
 Assets {
   Id: 5873583730053480493
-  Name: "Pyramid - 4-Sided Truncated Hollow Thick"
+  Name: "Pyramid - 4-Sided Truncated Hollow Thin"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1368,7 +1368,7 @@ Assets {
 }
 Assets {
   Id: 346569595489746007
-  Name: "Bullet"
+  Name: "Cone - Bullet"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

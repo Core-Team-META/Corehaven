@@ -13,14 +13,14 @@ local targets = {}
 function FindAlternateTarget(npc, target, maxAngle, maxDistance)
 	local alternateTargets = {}
 	local targetNormal = (target:GetWorldPosition() - npc:GetWorldPosition()):GetNormalized()
-	local maxDot = math.cos(math.rad(maxAngle))
+	local minDot = math.cos(math.rad(maxAngle))
 
 	for _, player in pairs(Game.GetPlayers({ignoreDead = true})) do
 		local offset = player:GetWorldPosition() - npc:GetWorldPosition()
 		local normal = offset:GetNormalized()
 		local distance = offset.size
 
-		if normal .. targetNormal > maxDot and distance <= maxDistance and player ~= target then
+		if normal .. targetNormal > minDot and distance <= maxDistance and player ~= target then
 			table.insert(alternateTargets, player)
 		end
 	end
@@ -31,7 +31,7 @@ function FindAlternateTarget(npc, target, maxAngle, maxDistance)
 			local normal = offset:GetNormalized()
 			local distance = offset.size
 			
-			if normal .. targetNormal > maxDot and distance <= maxDistance and otherNpc ~= target then
+			if normal .. targetNormal > minDot and distance <= maxDistance and otherNpc ~= target then
 				table.insert(alternateTargets, otherNpc)
 			end
 		end

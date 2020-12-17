@@ -2,7 +2,7 @@
   Id: 968147505512979204
   Name: "SwordMat1 - Secondary"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 3786559222004126605
     ParameterOverrides {

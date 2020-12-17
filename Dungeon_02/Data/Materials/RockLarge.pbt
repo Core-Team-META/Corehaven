@@ -2,7 +2,7 @@
   Id: 15817761787248470137
   Name: "RockLarge"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 16435922192857373676
     ParameterOverrides {

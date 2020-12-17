@@ -18,7 +18,7 @@ Assets {
 }
 Assets {
   Id: 18039984299850060191
-  Name: "Fantasy Human Guy"
+  Name: "Fantasy Human Guy 1"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
@@ -117,7 +117,7 @@ Assets {
 }
 Assets {
   Id: 16372496464315477095
-  Name: "Ring Beveled (thick)"
+  Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -558,7 +558,7 @@ Assets {
 }
 Assets {
   Id: 1938148825372685458
-  Name: "Truncated Teardrop"
+  Name: "Teardrop - Truncated"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

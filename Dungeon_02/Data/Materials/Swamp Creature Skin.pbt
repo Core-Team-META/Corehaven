@@ -2,7 +2,7 @@
   Id: 2349247202253950269
   Name: "Swamp Creature Skin"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 86369592013213841
     ParameterOverrides {

@@ -55,7 +55,7 @@
           }
           Overrides {
             Name: "cs:ImmuneToStun"
-            Bool: false
+            Bool: true
           }
           Overrides {
             Name: "cs:CapsuleHeight"
@@ -63,7 +63,7 @@
           }
           Overrides {
             Name: "cs:CapsuleWidth"
-            Float: 300
+            Float: 700
           }
           Overrides {
             Name: "cs:Experience"
@@ -120,6 +120,18 @@
           Overrides {
             Name: "cs:DropChance4"
             Float: 0.08
+          }
+          Overrides {
+            Name: "cs:OnPulledEventName"
+            String: "Boss2Pulled"
+          }
+          Overrides {
+            Name: "cs:OnResetEventName"
+            String: "Boss2Reset"
+          }
+          Overrides {
+            Name: "cs:OnDiedEventName"
+            String: "Boss2Died"
           }
           Overrides {
             Name: "cs:MovementEffectTemplate"
@@ -2082,9 +2094,9 @@
             Z: 53.109581
           }
           Rotation {
-            Pitch: -10.4730291
+            Pitch: -10.4730225
             Yaw: 95.8363113
-            Roll: -39.5105324
+            Roll: -39.5105286
           }
           Scale {
             X: 0.244341493
@@ -5191,7 +5203,7 @@
     }
     Assets {
       Id: 18039984299850060191
-      Name: "Fantasy Human Guy"
+      Name: "Fantasy Human Guy 1"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -5212,5 +5224,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

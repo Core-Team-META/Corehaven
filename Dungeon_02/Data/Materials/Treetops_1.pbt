@@ -2,7 +2,7 @@
   Id: 3007092622920453003
   Name: "Treetops_1"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 1054563344462444672
     ParameterOverrides {

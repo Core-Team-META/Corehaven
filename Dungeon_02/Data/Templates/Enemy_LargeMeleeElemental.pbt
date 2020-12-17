@@ -67,7 +67,7 @@
           }
           Overrides {
             Name: "cs:Experience"
-            Float: 10
+            Float: 60
           }
           Overrides {
             Name: "cs:Task1"
@@ -79,7 +79,7 @@
           }
           Overrides {
             Name: "cs:Task3"
-            String: "large_melee_elemental_throw_rock"
+            String: "large_melee_elemental_throw_stone"
           }
           Overrides {
             Name: "cs:DropKey1"
@@ -3058,7 +3058,7 @@
     }
     Assets {
       Id: 18039984299850060191
-      Name: "Fantasy Human Guy"
+      Name: "Fantasy Human Guy 1"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -3079,5 +3079,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }
