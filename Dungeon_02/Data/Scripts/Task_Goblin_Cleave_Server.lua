@@ -24,7 +24,7 @@ function OnTaskStart(npc, threatTable)
 		Task.Wait(0.4)
 		
 		if Object.IsValid(target) then
-			for _, player in pairs(Game.FindPlayersInSphere(target:GetWorldPosition(), RANGE, {ignoreDead = true, ignorePlayers = target})) do
+			for _, player in pairs(Game.FindPlayersInSphere(npc:GetWorldPosition(), RANGE, {ignoreDead = true, ignorePlayers = target})) do
 				local dot = (player:GetWorldPosition() - npc:GetWorldPosition()):GetNormalized() .. (npc:GetWorldRotation() * Vector3.FORWARD)
 
 				if dot > 0.0 then

@@ -6,13 +6,13 @@ local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local BOSS1_GATE = ROOT:GetCustomProperty("Boss1Gate"):WaitForObject()
 local BOSS2_GATE = ROOT:GetCustomProperty("Boss2Gate"):WaitForObject()
 local BOSS3_GATE = ROOT:GetCustomProperty("Boss3Gate"):WaitForObject()
-local BOSS3_GATE = ROOT:GetCustomProperty("Boss4Gate"):WaitForObject()
+local BOSS4_GATE = ROOT:GetCustomProperty("Boss4Gate"):WaitForObject()
 
 local INITIAL_GATE_POSITIONS = {}
 INITIAL_GATE_POSITIONS[BOSS1_GATE] = BOSS1_GATE:GetPosition()
 INITIAL_GATE_POSITIONS[BOSS2_GATE] = BOSS2_GATE:GetPosition()
 INITIAL_GATE_POSITIONS[BOSS3_GATE] = BOSS3_GATE:GetPosition()
-INITIAL_GATE_POSITIONS[BOSS3_GATE] = BOSS3_GATE:GetPosition()
+INITIAL_GATE_POSITIONS[BOSS4_GATE] = BOSS4_GATE:GetPosition()
 
 function OpenGate(gate)
 	gate:MoveTo(-Vector3.UP * 1000.0, 2.5, true)
@@ -23,10 +23,13 @@ function CloseGate(gate)
 end
 
 function OnBossDied(bossNumber)
+	print(bossNumber)
 	if bossNumber == 1 then
 		OpenGate(BOSS1_GATE)
 	elseif bossNumber == 2 then
 		OpenGate(BOSS2_GATE)
+	elseif bossNumber == 2.5 then
+		OpenGate(BOSS3_GATE)
 	elseif bossNumber == 3 then
 		OpenGate(BOSS4_GATE)
 	end
@@ -42,6 +45,7 @@ end
 
 API_RE.Connect("Boss1Died", OnBossDied, 1)
 API_RE.Connect("Boss2Died", OnBossDied, 2)
+API_RE.Connect("Boss2.5Died", OnBossDied, 2.5)
 API_RE.Connect("Boss3Died", OnBossDied, 3)
 
 API_RE.Connect("ResetDungeon", OnResetDungeon)

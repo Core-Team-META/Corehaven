@@ -32,7 +32,7 @@ function OnResonance(anchorPosition, seed)
 
 	for i = 1, REVERB_COUNTS[API_DS.GetDifficultyLevel()] do
 		local bouncePosition = anchorPosition
-		local direction = Rotation.New(0.0, 0.0, stream:GetNumber(0.0, 360.0)) * Vector3.FORWARD 
+		local direction = Rotation.New(0.0, 0.0, 60.0 + stream:GetNumber(0.0, 240.0)) * Vector3.FORWARD 
 		local startTime = time()
 		local bounceTime = startTime
 		local nextBouncePosition, nextDirection = GetBounceInfo(bouncePosition, direction)

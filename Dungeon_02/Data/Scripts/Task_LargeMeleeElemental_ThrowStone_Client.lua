@@ -7,27 +7,17 @@ local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 
 local RADIUS = 300.0
-local PROJECTILE_SPEED = 500.0
+local IMPACT_DELAY = 2.0
 
 local telegraphs = {}
 
 function OnThrowStone(npc, target)
 	telegraphs[npc] = World.SpawnAsset(TELEGRAPH_TEMPLATE, {position = target, scale = Vector3.New(RADIUS / 100.0)})
-	Task.Wait(1.0)
-	API_P.CreateProjectile(npc, target, PROJECTILE_SPEED, 0.5, PROJECTILE_TEMPLATE)
-	Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
-
-	if telegraphs[npc] then
-		telegraphs[npc]:Destroy()
-		telegraphs[npc] = nil
-	end
-end
-
-function OnThrowStoneInterrupted(npc)
-	if telegraphs[npc] then
-		telegraphs[npc]:Destroy()
-		telegraphs[npc] = nil
-	end
+	local projectileSpeed = (npc:GetWorldPosition() - target).size / IMPACT_DELAY
+	API_P.CreateProjectile(npc, target, projectileSpeed, 0.5, PROJECTILE_TEMPLATE)
+	Task.Wait(IMPACT_DELAY)
+	telegraphs[npc]:Destroy()
+	telegraphs[npc] = nil
 end
 
 function OnTaskStart(npc, animatedMesh)
@@ -40,6 +30,6 @@ function OnTaskEnd(npc, animatedMesh, interrupted)
 	animatedMesh.playbackRateMultiplier = 1.0
 end
 
-API_RE.Connect("TS", OnThrowStone)
+API_RE.Connect("LMETS", OnThrowStone)
 
 API_NPC.RegisterTaskClient("large_melee_elemental_throw_stone", EFFECT_TEMPLATE, OnTaskStart, OnTaskEnd)

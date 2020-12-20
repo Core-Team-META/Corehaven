@@ -7,7 +7,7 @@
       RootId: 13415962725302733027
       Objects {
         Id: 13415962725302733027
-        Name: "Rock 03"
+        Name: "Helper_Projectile_ThrowStone"
         Transform {
           Scale {
             X: 1
@@ -30,7 +30,6 @@
             IsTeamCollisionEnabled: true
             IsEnemyCollisionEnabled: true
           }
-          EnableCameraCollision: true
           StaticMesh {
             Physics {
             }
