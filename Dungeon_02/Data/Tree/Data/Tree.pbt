@@ -47,7 +47,9 @@ Objects {
   ChildIds: 15025126761007146991
   ChildIds: 7747207822920536123
   ChildIds: 852054526386149274
+  ChildIds: 7748316593615748498
   ChildIds: 13211601781672612227
+  ChildIds: 8360869325363985670
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -56,6 +58,63 @@ Objects {
   }
   NetworkContext {
     Type: Server
+  }
+}
+Objects {
+  Id: 8360869325363985670
+  Name: "StatusEffect_Spores"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6921829054649201570
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 572300390187762952
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Deals periodic damage"
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2896086507901764837
+    }
   }
 }
 Objects {
@@ -106,6 +165,57 @@ Objects {
   Script {
     ScriptAsset {
       Id: 9445256022811386134
+    }
+  }
+}
+Objects {
+  Id: 7748316593615748498
+  Name: "StatusEffect_Fissured"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 6921829054649201570
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 1641661494699351042
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Stuns"
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8761809405404053299
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11105991251110280812
     }
   }
 }
@@ -402,7 +512,9 @@ Objects {
   ChildIds: 9319809396869484158
   ChildIds: 6307988729945902490
   ChildIds: 17453333168264363178
+  ChildIds: 14340726924118463794
   ChildIds: 11824248877185105982
+  ChildIds: 13226549137894762076
   Collidable_v2 {
     Value: "mc:ecollisionsetting:forceoff"
   }
@@ -410,6 +522,63 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   NetworkContext {
+  }
+}
+Objects {
+  Id: 13226549137894762076
+  Name: "StatusEffect_Spores"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7398810820323246462
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 572300390187762952
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Deals periodic damage"
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 9529876109523918191
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 2896086507901764837
+    }
   }
 }
 Objects {
@@ -460,6 +629,57 @@ Objects {
   Script {
     ScriptAsset {
       Id: 9445256022811386134
+    }
+  }
+}
+Objects {
+  Id: 14340726924118463794
+  Name: "StatusEffect_Fissured"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 7398810820323246462
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:Icon"
+      AssetReference {
+        Id: 1641661494699351042
+      }
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Stuns"
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 8761809405404053299
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 11105991251110280812
     }
   }
 }
@@ -1444,6 +1664,10 @@ Objects {
   ChildIds: 11163293206154347228
   ChildIds: 10600041434770909327
   ChildIds: 18330225828108449981
+  ChildIds: 9867662015819438316
+  ChildIds: 4998378985483003932
+  ChildIds: 17973928205481904318
+  ChildIds: 4261546517721908053
   ChildIds: 2613752768461537232
   ChildIds: 15619963435562204537
   ChildIds: 12557013802292082847
@@ -1871,6 +2095,200 @@ Objects {
   Script {
     ScriptAsset {
       Id: 8002717964290690977
+    }
+  }
+}
+Objects {
+  Id: 4261546517721908053
+  Name: "Task_Sporax_SporeBlast_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15480784073651742533
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 7974515079938672530
+    }
+  }
+}
+Objects {
+  Id: 17973928205481904318
+  Name: "Task_Sporax_Melee_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15480784073651742533
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 6609279431764618855
+    }
+  }
+}
+Objects {
+  Id: 4998378985483003932
+  Name: "Task_Sporax_Fissures_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15480784073651742533
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:APIDamage"
+      AssetReference {
+        Id: 16915150100797142409
+      }
+    }
+    Overrides {
+      Name: "cs:APIStatusEffects"
+      AssetReference {
+        Id: 1831660344620141067
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 8998809750375060393
+    }
+  }
+}
+Objects {
+  Id: 9867662015819438316
+  Name: "Task_Sporax_FairyRing_Server"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 15480784073651742533
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 12960203639933994602
     }
   }
 }
@@ -3233,6 +3651,10 @@ Objects {
   ChildIds: 6135071370886819393
   ChildIds: 12520578021916978494
   ChildIds: 4859367940130898261
+  ChildIds: 15105579631449061443
+  ChildIds: 9510443212183614113
+  ChildIds: 18192184534286423214
+  ChildIds: 9160860168194386771
   ChildIds: 17632359423060768038
   ChildIds: 8104112242549539067
   ChildIds: 12260626745946668835
@@ -3683,6 +4105,218 @@ Objects {
   Script {
     ScriptAsset {
       Id: 8331234820690032615
+    }
+  }
+}
+Objects {
+  Id: 9160860168194386771
+  Name: "Task_Sporax_SporeBlast_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18245775584716107875
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 13464021907205391285
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 17848328343472497583
+    }
+  }
+}
+Objects {
+  Id: 18192184534286423214
+  Name: "Task_Sporax_Melee_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18245775584716107875
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 4135686357839385894
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 657801049376783673
+    }
+  }
+}
+Objects {
+  Id: 9510443212183614113
+  Name: "Task_Sporax_Fissures_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18245775584716107875
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+    Overrides {
+      Name: "cs:TelegraphTemplate"
+      AssetReference {
+        Id: 17368083171780979914
+      }
+    }
+    Overrides {
+      Name: "cs:FissureTemplate"
+      AssetReference {
+        Id: 11382885155691583192
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 5838796001816391924
+    }
+  }
+}
+Objects {
+  Id: 15105579631449061443
+  Name: "Task_Sporax_FairyRing_Client"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18245775584716107875
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:API_NPC"
+      AssetReference {
+        Id: 1793953622129874134
+      }
+    }
+    Overrides {
+      Name: "cs:APIDifficultySystem"
+      AssetReference {
+        Id: 767597043529123543
+      }
+    }
+    Overrides {
+      Name: "cs:APIReliableEvents"
+      AssetReference {
+        Id: 1680988108412715813
+      }
+    }
+    Overrides {
+      Name: "cs:EffectTemplate"
+      AssetReference {
+        Id: 473360950505549885
+      }
+    }
+    Overrides {
+      Name: "cs:MushroomTemplate"
+      AssetReference {
+        Id: 5772228025099358590
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 18129120240020462015
     }
   }
 }
@@ -5439,7 +6073,7 @@ Objects {
   ChildIds: 8387166401171094631
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Prerequisitea"
+      Name: "cs:Prerequisite"
       ObjectReference {
         SelfId: 2466913246913887376
       }
@@ -5638,9 +6272,10 @@ Objects {
     }
   }
   ParentId: 8819804162953084485
+  ChildIds: 8780778478133043279
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Prerequisite"
+      Name: "cs:Prerequisitea"
       ObjectReference {
         SelfId: 11887486770566225647
       }
@@ -5654,6 +6289,53 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 8780778478133043279
+  Name: "Enemy_Boss3_MushroomGiant"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2466913246913887376
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:forceoff"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2345040730219713069
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Enemy_Boss3_MushroomGiant"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -33615.7266
+            Y: -8676.94238
+            Z: -477.126984
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -24.7002869
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 6333065451346641648
+    }
   }
 }
 Objects {

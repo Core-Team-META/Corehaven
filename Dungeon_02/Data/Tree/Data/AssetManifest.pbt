@@ -277,3 +277,21 @@ Assets {
     AssetId: "mi_invisible_001"
   }
 }
+Assets {
+  Id: 1641661494699351042
+  Name: "Fantasy Ability Red 040"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Red_040"
+  }
+}
+Assets {
+  Id: 572300390187762952
+  Name: "Fantasy Ability Green 022"
+  PlatformAssetType: 9
+  PrimaryAsset {
+    AssetType: "PlatformBrushAssetRef"
+    AssetId: "UI_Fantasy_Ability_Green_022"
+  }
+}
