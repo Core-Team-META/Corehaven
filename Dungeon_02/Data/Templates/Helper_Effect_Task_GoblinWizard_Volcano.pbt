@@ -18,8 +18,10 @@
         ParentId: 4781671109827199097
         ChildIds: 11969283134658771855
         ChildIds: 8751960075837534994
-        ChildIds: 14870669480760132929
         ChildIds: 10636635264760867691
+        ChildIds: 13655536053315083309
+        ChildIds: 14964830531463341206
+        ChildIds: 14870669480760132929
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -110,6 +112,130 @@
           Vfx {
             AutoPlay: true
           }
+        }
+      }
+      Objects {
+        Id: 10636635264760867691
+        Name: "Explosion Kit Fireball VFX"
+        Transform {
+          Location {
+            Z: -81.7416534
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7167639219388951443
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Emissive Boost"
+            Float: 0.334271818
+          }
+          Overrides {
+            Name: "bp:Initial Start Delay"
+            Float: 0.45
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 14805165328291737020
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 13655536053315083309
+        Name: "Explosion Creation & Construction Kit 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7167639219388951443
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Explosion Type 1"
+            Enum {
+              Value: "mc:esfx_explosions:12"
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 17996980232839221275
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Volume: 1
+            Falloff: 1500
+            Radius: 2500
+            FadeOutTime: 2
+            IsAttenuationEnabled: true
+            StopTime: 1
+          }
+        }
+      }
+      Objects {
+        Id: 14964830531463341206
+        Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 7167639219388951443
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        AudioInstance {
+          AudioAsset {
+            Id: 7687770921648058475
+          }
+          AutoPlay: true
+          Pitch: -299.776367
+          Volume: 0.8
+          Falloff: 1500
+          Radius: 2500
+          FadeOutTime: 2
+          IsAttenuationEnabled: true
+          StopTime: 2.5
         }
       }
       Objects {
@@ -515,49 +641,6 @@
           }
         }
       }
-      Objects {
-        Id: 10636635264760867691
-        Name: "Explosion Kit Fireball VFX"
-        Transform {
-          Location {
-            Z: -81.7416534
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 7167639219388951443
-        UnregisteredParameters {
-          Overrides {
-            Name: "bp:Emissive Boost"
-            Float: 0.334271818
-          }
-          Overrides {
-            Name: "bp:Initial Start Delay"
-            Float: 0.45
-          }
-        }
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Blueprint {
-          BlueprintAsset {
-            Id: 14805165328291737020
-          }
-          TeamSettings {
-          }
-          Vfx {
-            AutoPlay: true
-          }
-        }
-      }
     }
     Assets {
       Id: 14805165328291737020
@@ -566,6 +649,24 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_mil_dirt_impact_explokit_fireball2"
+      }
+    }
+    Assets {
+      Id: 17996980232839221275
+      Name: "Explosion Creation & Construction Kit 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_explosion_construction_kit_ref"
+      }
+    }
+    Assets {
+      Id: 7687770921648058475
+      Name: "Material Rolling Movement Rock Heavy Rumble 02 SFX"
+      PlatformAssetType: 7
+      PrimaryAsset {
+        AssetType: "AudioAssetRef"
+        AssetId: "sfx_material_rolling_movement__rock_heavy_rumble_02_Cue_ref"
       }
     }
     Assets {
