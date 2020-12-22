@@ -512,15 +512,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12694892914419188473
-  Name: "Glow Shape Decal"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_glow"
-  }
-}
-Assets {
   Id: 12629436541872600207
   Name: "Rope"
   PlatformAssetType: 2

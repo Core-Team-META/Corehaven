@@ -44,7 +44,7 @@ function OnTaskStart(npc, threatTable)
 		Task.Wait(5.0)
 
 		for _, player in pairs(Game.FindPlayersInSphere(targetPosition + Vector3.UP * 100.0, FIREBOMB_RADIUS, {ignoreDead = true})) do
-			local playerOffset = player:GetWorldPosition() - targetPosition + Vector3.UP * 100.0
+			local playerOffset = player:GetWorldPosition() - targetPosition
 			playerOffset.z = 0.0
 			local t = CoreMath.Clamp(1.0 - playerOffset.size / FIREBOMB_RADIUS) ^ 2.0
 			local damageAmount = CoreMath.Lerp(0.0, MAX_DAMAGE, t)

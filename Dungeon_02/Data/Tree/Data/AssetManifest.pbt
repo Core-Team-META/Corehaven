@@ -17,6 +17,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17985331605386890916
+  Name: "Rock 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_003"
+  }
+}
+Assets {
   Id: 17976629509544642908
   Name: "Rock Flat 01"
   PlatformAssetType: 1
@@ -98,6 +107,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13606802925569237401
+  Name: "Rock Pile 001"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rocks_small_001"
+  }
+}
+Assets {
   Id: 13224958844655693086
   Name: "Ivy 05"
   PlatformAssetType: 1
@@ -113,6 +131,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_rock_generic_001"
+  }
+}
+Assets {
+  Id: 12837011313870552923
+  Name: "Rock Block 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_007"
   }
 }
 Assets {
@@ -149,6 +176,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_terrain_rock-moss_001_wa"
+  }
+}
+Assets {
+  Id: 10750251758281179147
+  Name: "Rock Flat 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_rock_generic_005"
   }
 }
 Assets {

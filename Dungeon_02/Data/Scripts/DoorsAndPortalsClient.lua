@@ -7,6 +7,7 @@ local BOSS1_GATE = ROOT:GetCustomProperty("Boss1Gate"):WaitForObject()
 local BOSS2_GATE = ROOT:GetCustomProperty("Boss2Gate"):WaitForObject()
 local BOSS3_GATE = ROOT:GetCustomProperty("Boss3Gate"):WaitForObject()
 local BOSS4_GATE = ROOT:GetCustomProperty("Boss4Gate"):WaitForObject()
+local BOSS4_OBJECTS = ROOT:GetCustomProperty("Boss4Objects"):WaitForObject()
 
 local currentTasks = {}
 local movementSounds = {}
@@ -29,6 +30,14 @@ function MoveGate(gate)
 	end)
 end
 
+function OnBossPulled(bossNumber)
+	MoveGate(BOSS4_OBJECTS)
+end
+
+function OnBossReset(bossNumber)
+	MoveGate(BOSS4_OBJECTS)
+end
+
 function OnBossDied(bossNumber)
 	if bossNumber == 1 then
 		MoveGate(BOSS1_GATE)
@@ -40,6 +49,9 @@ function OnBossDied(bossNumber)
 		MoveGate(BOSS4_GATE)
 	end
 end
+
+API_RE.Connect("Boss4Pulled", OnBossPulled, 4)
+API_RE.Connect("Boss4Reset", OnBossReset, 4)
 
 API_RE.Connect("Boss1Died", OnBossDied, 1)
 API_RE.Connect("Boss2Died", OnBossDied, 2)
