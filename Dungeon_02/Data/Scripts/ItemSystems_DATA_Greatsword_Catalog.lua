@@ -36,12 +36,21 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    Name = 'Shattered Dreams',
+    Name = 'Shattered Dream',
     Type = 'Greatsword',
     Rarity = 'Epic',
     StatKey = 'EpicAttackGreatsword',
     MUID = 'E6452BC6BCE0761C:ITEM_Greatsword_ShatteredDream',
     Lore = 'So much for your promises...',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Ornamental Claymore',
+    Type = 'Greatsword',
+    Rarity = 'Rare',
+    StatKey = 'RareAttackGreatsword',
+    MUID = '7BF11A630B8DD65E:ITEM_Greatsword_AlmirasClaymore',
+    Lore = 'Built for exceptional quality',
     ['Author Notes (will be ignored by script)'] = '',
   },
 }

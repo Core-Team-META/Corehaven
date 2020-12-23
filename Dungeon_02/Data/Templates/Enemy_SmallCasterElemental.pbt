@@ -91,7 +91,7 @@
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.08
+            Float: 0.12
           }
           Overrides {
             Name: "cs:DropKey2"
@@ -99,15 +99,15 @@
           }
           Overrides {
             Name: "cs:DropChance2"
-            Float: 0.08
+            Float: 0.12
           }
           Overrides {
             Name: "cs:DropKey3"
-            String: "HREpicTrash"
+            String: "D2EpicTrash"
           }
           Overrides {
             Name: "cs:DropChance3"
-            Float: 0.0008
+            Float: 0.0012
           }
           Overrides {
             Name: "cs:DropMinDifficulty3"

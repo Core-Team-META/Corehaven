@@ -1014,7 +1014,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription2"
-      String: "Defeat Boss1"
+      String: "Defeat Gilex"
     }
     Overrides {
       Name: "cs:FinishedEvent2"
@@ -1030,7 +1030,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription4"
-      String: "Defeat Boss2"
+      String: "Defeat the Crystalline Giant"
     }
     Overrides {
       Name: "cs:FinishedEvent4"
@@ -1046,7 +1046,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription6"
-      String: "Defeat Boss3"
+      String: "Defeat Sporax"
     }
     Overrides {
       Name: "cs:FinishedEvent6"
@@ -1062,7 +1062,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription8"
-      String: "Defeat Boss4"
+      String: "Defeat the Stone Angel"
     }
     Overrides {
       Name: "cs:FinishedEvent8"
@@ -6534,7 +6534,7 @@ Objects {
   ChildIds: 15785861666219910346
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Prerequisitea"
+      Name: "cs:Prerequisite"
       ObjectReference {
         SelfId: 13664965680796667073
       }
@@ -7093,7 +7093,7 @@ Objects {
   ChildIds: 8780778478133043279
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Prerequisitea"
+      Name: "cs:Prerequisite"
       ObjectReference {
         SelfId: 11887486770566225647
       }
@@ -7174,7 +7174,7 @@ Objects {
   ChildIds: 16549748750781430294
   UnregisteredParameters {
     Overrides {
-      Name: "cs:Prerequisitea"
+      Name: "cs:Prerequisite"
       ObjectReference {
         SelfId: 17216642909476889955
       }
@@ -8506,6 +8506,10 @@ Objects {
           Rotator {
             Yaw: 73.4780807
           }
+        }
+        Overrides {
+          Name: "cs:Name"
+          String: "Gilex, the Crowned"
         }
       }
     }

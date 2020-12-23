@@ -50,7 +50,12 @@ function OnStorm(anchorPosition, seed)
 
 		if target then
 			local impactDelay = INITIAL_DELAY + (i - 1) * INCREMENTAL_DELAY
-			local origin = pylons[math.random(#pylons)]:GetWorldPosition() + Vector3.UP * 100.0
+			local origin = anchorPosition + Vector3.UP * 100.0
+
+			if #pylons > 0 then
+				origin = pylons[math.random(#pylons)]:GetWorldPosition() + Vector3.UP * 100.0
+			end
+
 			local offset = target - origin
 			offset.z = 0.0
 			local projectileSpeed = offset.size / impactDelay

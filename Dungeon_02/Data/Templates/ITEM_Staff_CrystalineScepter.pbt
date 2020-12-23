@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4781671109827199097
+        ParentId: 15779318793386389269
         ChildIds: 6169624257616032951
         UnregisteredParameters {
           Overrides {
@@ -60,7 +60,8 @@
           }
         }
         ParentId: 16615490489912690521
-        ChildIds: 14082107037052515651
+        ChildIds: 4283991934302375290
+        ChildIds: 13241400623689866719
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -69,35 +70,6 @@
         }
         Folder {
           IsGroup: true
-        }
-      }
-      Objects {
-        Id: 14082107037052515651
-        Name: "Client Art"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 6169624257616032951
-        ChildIds: 4283991934302375290
-        ChildIds: 13241400623689866719
-        UnregisteredParameters {
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:forceoff"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        NetworkContext {
         }
       }
       Objects {
@@ -115,7 +87,7 @@
             Z: 1
           }
         }
-        ParentId: 14082107037052515651
+        ParentId: 6169624257616032951
         ChildIds: 12521510274681605024
         ChildIds: 3147000297768317652
         ChildIds: 8949177863225468197
@@ -1740,7 +1712,7 @@
             Z: 0.156287938
           }
         }
-        ParentId: 14082107037052515651
+        ParentId: 6169624257616032951
         ChildIds: 8326605921940225415
         ChildIds: 7740348329667252658
         ChildIds: 2607170783021152049

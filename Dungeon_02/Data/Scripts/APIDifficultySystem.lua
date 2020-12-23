@@ -1,7 +1,7 @@
-﻿local ENEMY_HEALTH_MULTIPLIERS = {1.0, 2.4, 3.6, 2.5}
-local ENEMY_DAMAGE_MULTIPLIERS = {1.0, 2.4, 5.0, 0.5}
-local LOOT_STAT_MULTIPLIERS = {1.0, 1.3, 1.6, 2.0}
-local EXPERIENCE_MULTIPLIERS = {1.0, 2.0, 3.0, 4.0}
+﻿local ENEMY_HEALTH_MULTIPLIERS = {0.3, 1.0, 3.5, 7.0}
+local ENEMY_DAMAGE_MULTIPLIERS = {0.1, 1.0, 2.5, 4.5}
+local LOOT_STAT_MULTIPLIERS = {1.2, 1.6, 2.0, 2.5}
+local EXPERIENCE_MULTIPLIERS = {0.6, 1.3, 2.0, 3.0}
 
 local networkedScript = nil
 local difficultyLevel = 1

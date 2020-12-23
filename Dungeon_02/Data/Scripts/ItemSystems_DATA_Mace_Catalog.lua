@@ -74,8 +74,8 @@
   {
     Name = 'Silver Hammer',
     Type = 'Mace',
-    Rarity = 'Rare',
-    StatKey = 'RareTankMace',
+    Rarity = 'Epic',
+    StatKey = 'EpicMagicMace',
     MUID = '826D0A9A1CA4C698:ITEM_Mace_SilverHammer',
     Lore = 'This hammer looks oddly... famoljnir. ',
     ['Author Notes (will be ignored by script)'] = '',

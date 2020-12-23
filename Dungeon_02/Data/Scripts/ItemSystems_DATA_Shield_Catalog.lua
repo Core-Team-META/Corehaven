@@ -62,4 +62,13 @@
     Lore = 'Logic forms the basis of any solid defense',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Ornamental Heater',
+    Type = 'Shield',
+    Rarity = 'Rare',
+    StatKey = 'RareTankShield',
+    MUID = '09E325C06E432D5A:ITEM_Shield_CaptainsTower',
+    Lore = 'Made to be decorative, but it\'s still solid.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

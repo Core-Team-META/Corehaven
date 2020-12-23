@@ -15,7 +15,7 @@
             Z: 1
           }
         }
-        ParentId: 4321758516976032268
+        ParentId: 4781671109827199097
         ChildIds: 999326398247180507
         ChildIds: 15399042263485530874
         ChildIds: 11077767644431480076
@@ -87,39 +87,31 @@
           }
           Overrides {
             Name: "cs:DropKey1"
-            String: "HRCommonTrash"
+            String: "D2Boss1"
           }
           Overrides {
             Name: "cs:DropChance1"
-            Float: 0.08
+            Float: 0.5
           }
           Overrides {
             Name: "cs:DropKey2"
-            String: "HRUncommonTrash"
+            String: "EssencePearl"
           }
           Overrides {
             Name: "cs:DropChance2"
-            Float: 0.08
+            Float: 1
           }
           Overrides {
             Name: "cs:DropKey3"
-            String: "HREpicTrash"
+            String: "D2Boss1Epic"
           }
           Overrides {
             Name: "cs:DropChance3"
-            Float: 0.0008
+            Float: 0.03
           }
           Overrides {
             Name: "cs:DropMinDifficulty3"
             Int: 3
-          }
-          Overrides {
-            Name: "cs:DropKey4"
-            String: "Shards"
-          }
-          Overrides {
-            Name: "cs:DropChance4"
-            Float: 0.08
           }
           Overrides {
             Name: "cs:OnPulledEventName"
