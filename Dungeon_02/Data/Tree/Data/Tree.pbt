@@ -6738,14 +6738,6 @@ Objects {
             Yaw: 17.8519459
           }
         }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
       }
     }
     TemplateAsset {
@@ -8018,10 +8010,6 @@ Objects {
           Rotator {
           }
         }
-        Overrides {
-          Name: "cs:Task3"
-          String: "large_melee_elemental_throw_stone"
-        }
       }
     }
     TemplateAsset {
@@ -8506,10 +8494,6 @@ Objects {
           Rotator {
             Yaw: 73.4780807
           }
-        }
-        Overrides {
-          Name: "cs:Name"
-          String: "Gilex, the Crowned"
         }
       }
     }

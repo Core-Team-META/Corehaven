@@ -29,19 +29,22 @@ function OnTaskStart(npc, threatTable)
 
 			if #possibleTargets > 0 then
 				local target = possibleTargets[math.random(#possibleTargets)]
-				API_RE.BroadcastToAllPlayers("SMVB", npc, target)
 
-				Task.Spawn(function()
-					Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
+				if Object.IsValid(target) then
+					API_RE.BroadcastToAllPlayers("SMVB", npc, target)
 
-					if Object.IsValid(target) then
-						if target:IsA("Player") then
-							API_D.ApplyDamage(npc, target, BOLT_DAMAGE)
-						else
-							API_D.ApplyHealing(npc, target, BOLT_HEALING)
+					Task.Spawn(function()
+						Task.Wait(API_P.GetTravelTime(npc, target, PROJECTILE_SPEED))
+
+						if Object.IsValid(target) then
+							if target:IsA("Player") then
+								API_D.ApplyDamage(npc, target, BOLT_DAMAGE)
+							else
+								API_D.ApplyHealing(npc, target, BOLT_HEALING)
+							end
 						end
-					end
-				end)
+					end)
+				end
 
 				Task.Wait(1.0)
 			end

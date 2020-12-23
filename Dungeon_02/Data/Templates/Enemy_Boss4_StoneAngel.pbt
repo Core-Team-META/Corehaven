@@ -7,7 +7,7 @@
       RootId: 1536427202920611010
       Objects {
         Id: 1536427202920611010
-        Name: "Enemy_Boss4_StoneAngel"
+        Name: "Enemy_StoneAngel"
         Transform {
           Scale {
             X: 1

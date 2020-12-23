@@ -35,11 +35,11 @@
           }
           Overrides {
             Name: "cs:Name"
-            String: "<Name>, the Crowned"
+            String: "Gilex, the Crowned"
           }
           Overrides {
             Name: "cs:Level"
-            Int: 14
+            Int: 3
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"

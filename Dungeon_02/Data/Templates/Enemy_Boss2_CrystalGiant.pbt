@@ -39,7 +39,7 @@
           }
           Overrides {
             Name: "cs:Level"
-            Int: 16
+            Int: 5
           }
           Overrides {
             Name: "cs:BaseMaxHitPoints"
