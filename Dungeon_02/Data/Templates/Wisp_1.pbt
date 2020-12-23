@@ -15,9 +15,9 @@
             Z: 1
           }
         }
-        ParentId: 8137451658612676023
-        ChildIds: 11598523671518947912
+        ParentId: 3058027522287010404
         ChildIds: 6063045895452651649
+        ChildIds: 4757627992788939568
         UnregisteredParameters {
           Overrides {
             Name: "cs:ReverseRotation"
@@ -36,8 +36,42 @@
         }
       }
       Objects {
-        Id: 11598523671518947912
-        Name: "Sphere"
+        Id: 6063045895452651649
+        Name: "SpinOrbs"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15873806746110679856
+        UnregisteredParameters {
+          Overrides {
+            Name: "cs:Reverse"
+            Bool: true
+          }
+        }
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Script {
+          ScriptAsset {
+            Id: 4422866427847996143
+          }
+        }
+      }
+      Objects {
+        Id: 4757627992788939568
+        Name: "ClientContext"
         Transform {
           Location {
             X: 1.68261719
@@ -47,12 +81,40 @@
           Rotation {
           }
           Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 15873806746110679856
+        ChildIds: 11598523671518947912
+        WantsNetworking: true
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:forceoff"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        NetworkContext {
+        }
+      }
+      Objects {
+        Id: 11598523671518947912
+        Name: "Sphere"
+        Transform {
+          Location {
+            X: -0.000514187035
+            Y: -0.000830232573
+          }
+          Rotation {
+          }
+          Scale {
             X: 0.219092086
             Y: 0.219092086
             Z: 0.219092086
           }
         }
-        ParentId: 15873806746110679856
+        ParentId: 4757627992788939568
         ChildIds: 14269958052600492142
         ChildIds: 7029395249879996764
         UnregisteredParameters {
@@ -63,7 +125,6 @@
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:forceoff"
         }
@@ -99,7 +160,6 @@
           }
         }
         ParentId: 11598523671518947912
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -107,7 +167,7 @@
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
         Light {
-          Intensity: 55.8167572
+          Intensity: 55.817
           Color {
             R: 0.13
             G: 0.792582691
@@ -120,11 +180,12 @@
           Light {
             Temperature: 6500
             LocalLight {
-              AttenuationRadius: 826.302
+              AttenuationRadius: 1526.302
               PointLight {
                 SourceRadius: 20
                 SoftSourceRadius: 20
                 FallOffExponent: 8
+                UseFallOffExponent: true
               }
             }
             MaxDrawDistance: 10000
@@ -148,7 +209,6 @@
         }
         ParentId: 11598523671518947912
         ChildIds: 14412422622055056322
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -217,40 +277,6 @@
           }
           Vfx {
             AutoPlay: true
-          }
-        }
-      }
-      Objects {
-        Id: 6063045895452651649
-        Name: "SpinOrbs"
-        Transform {
-          Location {
-          }
-          Rotation {
-          }
-          Scale {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-        ParentId: 15873806746110679856
-        UnregisteredParameters {
-          Overrides {
-            Name: "cs:Reverse"
-            Bool: true
-          }
-        }
-        WantsNetworking: true
-        Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
-        }
-        Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
-        }
-        Script {
-          ScriptAsset {
-            Id: 4422866427847996143
           }
         }
       }

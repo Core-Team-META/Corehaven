@@ -5627,7 +5627,7 @@ Objects {
     Overrides {
       Name: "cs:FireballProjectileTemplate"
       AssetReference {
-        Id: 8577847030441975411
+        Id: 5846432648128383394
       }
     }
     Overrides {

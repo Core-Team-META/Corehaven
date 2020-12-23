@@ -17,6 +17,7 @@
         }
         ParentId: 4781671109827199097
         ChildIds: 7749519781423809348
+        ChildIds: 4325611712532107246
         Lifespan: 15
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
@@ -44,6 +45,7 @@
           }
         }
         ParentId: 17874758990502964866
+        ChildIds: 15781079973700039933
         UnregisteredParameters {
           Overrides {
             Name: "bp:Volume Type"
@@ -97,6 +99,109 @@
           }
         }
       }
+      Objects {
+        Id: 15781079973700039933
+        Name: "Ember Volume VFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 2
+            Y: 2
+            Z: 1
+          }
+        }
+        ParentId: 7749519781423809348
+        UnregisteredParameters {
+          Overrides {
+            Name: "bp:Volume Type"
+            Enum {
+              Value: "mc:evfxvolumetype:3"
+            }
+          }
+          Overrides {
+            Name: "bp:Particle Scale Multiplier"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Density"
+            Float: 2
+          }
+          Overrides {
+            Name: "bp:Gravity"
+            Float: 2.5
+          }
+          Overrides {
+            Name: "bp:Curl Offset"
+            Vector {
+              X: 25
+              Y: 25
+            }
+          }
+          Overrides {
+            Name: "bp:Curl Speed"
+            Vector {
+              Z: 2.5
+            }
+          }
+        }
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 3226864937840488192
+          }
+          TeamSettings {
+          }
+          Vfx {
+            AutoPlay: true
+          }
+        }
+      }
+      Objects {
+        Id: 4325611712532107246
+        Name: "Fire and Flame Burning Loop Set 01 SFX"
+        Transform {
+          Location {
+          }
+          Rotation {
+          }
+          Scale {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+        ParentId: 17874758990502964866
+        Collidable_v2 {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
+        Visible_v2 {
+          Value: "mc:evisibilitysetting:inheritfromparent"
+        }
+        Blueprint {
+          BlueprintAsset {
+            Id: 6391999908224949722
+          }
+          TeamSettings {
+          }
+          AudioBP {
+            AutoPlay: true
+            Repeat: true
+            Volume: 0.62944591
+            Falloff: 1100
+            Radius: 1500
+            EnableOcclusion: true
+            IsAttenuationEnabled: true
+          }
+        }
+      }
     }
     Assets {
       Id: 12918556334648073243
@@ -105,6 +210,24 @@
       PrimaryAsset {
         AssetType: "VfxBlueprintAssetRef"
         AssetId: "fxbp_fire_volume_vfx"
+      }
+    }
+    Assets {
+      Id: 3226864937840488192
+      Name: "Ember Volume VFX"
+      PlatformAssetType: 8
+      PrimaryAsset {
+        AssetType: "VfxBlueprintAssetRef"
+        AssetId: "fxbp_ember_volume_vfx"
+      }
+    }
+    Assets {
+      Id: 6391999908224949722
+      Name: "Fire and Flame Burning Loop Set 01 SFX"
+      PlatformAssetType: 10
+      PrimaryAsset {
+        AssetType: "AudioBlueprintAssetRef"
+        AssetId: "sfxabp_nature_fireloops_ref"
       }
     }
     PrimaryAssetId {
