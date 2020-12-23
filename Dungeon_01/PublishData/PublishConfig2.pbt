@@ -2,7 +2,7 @@
 ClientVersion: "1.0.164-prod-s"
 Name: "Highrock (Hard)"
 Description: "Join up with your friends to conquer the first chapter of Corehaven Chronicles: The Siege of Highrock. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."
-MaxPlayers: 8
+MaxPlayers: 6
 IsPrivate: true
 Tags: "RPG"
 Tags: "Fantasy"
@@ -11,5 +11,4 @@ ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Conte
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_012.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_018.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_Thumb01.png"
-ReleaseNotes: "- Many new abilities have been added, and some have been changed. Each class now has 10 ability options.\r\n- Many quality of life improvements."
 OwnerId: "37edf67a267b45bd8b93be513218b428"

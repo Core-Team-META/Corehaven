@@ -12,5 +12,4 @@ ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Conte
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_011.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_012.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_018.png"
-ReleaseNotes: "- Many new abilities have been added, and some have been changed. Each class now has 10 ability options.\r\n- Many quality of life improvements."
 OwnerId: "37edf67a267b45bd8b93be513218b428"
