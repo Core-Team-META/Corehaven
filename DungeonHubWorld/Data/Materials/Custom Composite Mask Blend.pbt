@@ -2,7 +2,7 @@
   Id: 595486138709126229
   Name: "Cottage_CompositeMaskBlend"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 8361643690318007117
     ParameterOverrides {

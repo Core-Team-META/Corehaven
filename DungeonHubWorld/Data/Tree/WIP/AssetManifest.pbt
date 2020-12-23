@@ -36,7 +36,7 @@ Assets {
 }
 Assets {
   Id: 17609149353171719671
-  Name: "Cube - bottom aligned"
+  Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -81,7 +81,7 @@ Assets {
 }
 Assets {
   Id: 16372496464315477095
-  Name: "Ring Beveled (thick)"
+  Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -135,7 +135,7 @@ Assets {
 }
 Assets {
   Id: 12827530473249900764
-  Name: "Opaque Emissive"
+  Name: "Emissive Glow Opaque"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
@@ -180,7 +180,7 @@ Assets {
 }
 Assets {
   Id: 8757068560497122517
-  Name: "Plane 4m"
+  Name: "Plane 4m - One Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

@@ -333,7 +333,7 @@ Assets {
 }
 Assets {
   Id: 16372496464315477095
-  Name: "Ring Beveled (thick)"
+  Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1098,7 +1098,7 @@ Assets {
 }
 Assets {
   Id: 12567280682905171665
-  Name: "Scifi Panel 1x3m Angled Right"
+  Name: "Sci-fi Panel 1x3m Angled Right"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1413,7 +1413,7 @@ Assets {
 }
 Assets {
   Id: 11179741881024821258
-  Name: "Sci-Fi Gear Small 02"
+  Name: "Sci-fi Gear Small 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1674,7 +1674,7 @@ Assets {
 }
 Assets {
   Id: 9380460844045970728
-  Name: "Human Gal"
+  Name: "Human Gal 2"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
@@ -2178,7 +2178,7 @@ Assets {
 }
 Assets {
   Id: 7339363401412923253
-  Name: "Scifi Panel 1x4m"
+  Name: "Sci-fi Panel 1x4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -2412,7 +2412,7 @@ Assets {
 }
 Assets {
   Id: 6367527662954153739
-  Name: "Ring"
+  Name: "Ring 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -2592,7 +2592,7 @@ Assets {
 }
 Assets {
   Id: 5489775416547967874
-  Name: "Hemisphere"
+  Name: "Sphere - Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -2700,7 +2700,7 @@ Assets {
 }
 Assets {
   Id: 5117326109845707677
-  Name: "Plane"
+  Name: "Plane 4m - One Sided"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -3285,7 +3285,7 @@ Assets {
 }
 Assets {
   Id: 1938148825372685458
-  Name: "Truncated Teardrop"
+  Name: "Teardrop - Truncated"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

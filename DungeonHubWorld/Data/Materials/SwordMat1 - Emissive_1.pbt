@@ -2,7 +2,7 @@
   Id: 698823403514030571
   Name: "SwordMat1 - Emissive"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 3786559222004126605
     ParameterOverrides {

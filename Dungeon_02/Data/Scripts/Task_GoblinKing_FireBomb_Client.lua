@@ -7,7 +7,6 @@ local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")
 local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")
 
 local TELEGRAPH_RADIUS = 1000.0
-local MAX_RADIUS = 3000.0
 
 function OnTaskStart(npc, animatedMesh)
 	animatedMesh:PlayAnimation("unarmed_throw")

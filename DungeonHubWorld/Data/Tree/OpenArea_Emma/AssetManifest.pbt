@@ -27,7 +27,7 @@ Assets {
 }
 Assets {
   Id: 18056288482274170153
-  Name: "Part - Awning Bracket Mainstreet"
+  Name: "Main Street Awning Bracket"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -81,7 +81,7 @@ Assets {
 }
 Assets {
   Id: 17609149353171719671
-  Name: "Cube - bottom aligned"
+  Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -153,7 +153,7 @@ Assets {
 }
 Assets {
   Id: 16372496464315477095
-  Name: "Ring Beveled (thick)"
+  Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -180,7 +180,7 @@ Assets {
 }
 Assets {
   Id: 16245899296389337529
-  Name: "Damaged Concrete Chunk 02"
+  Name: "Urban Damaged Concrete Chunk 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -522,7 +522,7 @@ Assets {
 }
 Assets {
   Id: 13331521085169792878
-  Name: "Urban Damaged Mainstreet Window 02"
+  Name: "Main Street Damaged Window 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -585,7 +585,7 @@ Assets {
 }
 Assets {
   Id: 12567280682905171665
-  Name: "Scifi Panel 1x3m Angled Right"
+  Name: "Sci-fi Panel 1x3m Angled Right"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -819,7 +819,7 @@ Assets {
 }
 Assets {
   Id: 10221011215825579366
-  Name: "Damaged Concrete Pillar 01"
+  Name: "Urban Damaged Concrete Pillar 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -873,7 +873,7 @@ Assets {
 }
 Assets {
   Id: 9911941124418880181
-  Name: "Rebar Twisted Ends 01"
+  Name: "Urban Damaged Rebar - Twisted Ends 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -936,7 +936,7 @@ Assets {
 }
 Assets {
   Id: 8767439467773118685
-  Name: "Rebar Twisted Ends 02"
+  Name: "Urban Damaged Rebar Twisted Ends 02"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1314,7 +1314,7 @@ Assets {
 }
 Assets {
   Id: 4519163911553529386
-  Name: "Railing 01 Post Mainstreet"
+  Name: "Main Street Railing 01 - Post"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1386,7 +1386,7 @@ Assets {
 }
 Assets {
   Id: 4045140435032825770
-  Name: "Urban Damaged Mainstreet Window 02 Frame 01"
+  Name: "Main Street Damaged Window 02 - Frame 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1602,7 +1602,7 @@ Assets {
 }
 Assets {
   Id: 1938148825372685458
-  Name: "Truncated Teardrop"
+  Name: "Teardrop - Truncated"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

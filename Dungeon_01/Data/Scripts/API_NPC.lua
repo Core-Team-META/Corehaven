@@ -200,6 +200,7 @@ function API.SpawnNPC(templateId, spawnParent, position, rotation)
 	-- Pass this value to descendantAddedEvent just above
 	npc.serverUserData.spawnParent = spawnParent
 	npc.serverUserData.spawned = true
+	return npc
 end
 
 function API.RegisterSystem(functionTable, isClient)

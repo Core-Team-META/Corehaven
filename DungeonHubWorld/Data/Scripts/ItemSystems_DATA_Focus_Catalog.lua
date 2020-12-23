@@ -35,4 +35,13 @@
     Lore = 'Yup, that\'s a skull alright. You sure do look edgy carrying that around. ',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Natural Spellbook',
+    Type = 'Focus',
+    Rarity = 'Rare',
+    StatKey = 'RareMagicFocus',
+    MUID = 'C6E85F5D6CB317AB:ITEM_Focus_CrypticGrimoire',
+    Lore = 'A book full of magic from the jungle itself.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

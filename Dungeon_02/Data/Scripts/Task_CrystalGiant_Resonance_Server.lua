@@ -9,6 +9,7 @@ local REVERB_COUNTS = {3, 6, 9, 12}
 local REVERB_RADIUS = 250.0
 local DAMAGE = 75.0
 local DURATION = 22.0
+local DAMAGE_DELAY = 2.0
 local SPEED = 350.0
 
 function GetPriority(npc, taskHistory)
@@ -65,9 +66,12 @@ function OnTaskEnd(npc, interrupted)
 						nextBounceTime = (nextBouncePosition - bouncePosition).size / SPEED + bounceTime
 					end
 
-					local t = time() - bounceTime
-					local position = bouncePosition + direction * t * SPEED
-					API_D.ApplyAreaDamage(npc, position, REVERB_RADIUS, DAMAGE, false, API_D.TAG_AOE)
+					if time() - startTime > DAMAGE_DELAY then
+						local t = time() - bounceTime
+						local position = bouncePosition + direction * t * SPEED
+						API_D.ApplyAreaDamage(npc, position, REVERB_RADIUS, DAMAGE, false, API_D.TAG_AOE)
+					end
+					
 					Task.Wait(0.5)
 				end
 			end)

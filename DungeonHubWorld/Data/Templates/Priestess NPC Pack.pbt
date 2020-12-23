@@ -13473,7 +13473,7 @@
     }
     Assets {
       Id: 12723359920741967442
-      Name: "Human Gal"
+      Name: "Human Gal 1"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -13491,7 +13491,7 @@
     }
     Assets {
       Id: 3716650440384594688
-      Name: "Human Gal"
+      Name: "Human Gal 2"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -13503,6 +13503,6 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

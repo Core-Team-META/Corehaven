@@ -2,7 +2,7 @@
   Id: 12569427840285840608
   Name: "Custom Stained Glass 01"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 5424400953841697866
     ParameterOverrides {

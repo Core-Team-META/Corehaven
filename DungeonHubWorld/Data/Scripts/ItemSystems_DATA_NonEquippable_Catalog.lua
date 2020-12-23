@@ -89,4 +89,13 @@
     Lore = 'Used to upgrade the Star Rating of Uncommon or higher gear.',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Valley of Life Token',
+    Type = 'Currency',
+    Rarity = 'Rare',
+    StackSize = '4000',
+    MUID = '4BB0CBD5D6AE0BFD:ITEM_NonEquippable_Valley_Of_Life_Token',
+    Lore = 'A Token granted for defeating the final boss of the Valley of Life.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

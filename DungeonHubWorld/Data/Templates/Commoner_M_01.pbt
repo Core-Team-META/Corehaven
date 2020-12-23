@@ -1603,7 +1603,7 @@
     }
     Assets {
       Id: 3198403501401616712
-      Name: "Fantasy Human Guy"
+      Name: "Fantasy Human Guy 1"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -1618,6 +1618,6 @@
   Marketplace {
     Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

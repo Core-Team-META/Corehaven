@@ -99,7 +99,7 @@ Assets {
 }
 Assets {
   Id: 17609149353171719671
-  Name: "Cube - bottom aligned"
+  Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -1260,7 +1260,7 @@ Assets {
 }
 Assets {
   Id: 7339363401412923253
-  Name: "Scifi Panel 1x4m"
+  Name: "Sci-fi Panel 1x4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

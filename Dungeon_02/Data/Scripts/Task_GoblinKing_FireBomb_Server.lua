@@ -8,7 +8,7 @@ local RANGE = 0.0
 local COOLDOWN_TABLE = {23.0, 17.0, 13.0, 6.0}
 local THROW_RANGE = 3000.0
 local TELEGRAPH_RADIUS = 1000.0
-local FIREBOMB_RADIUS = 3000.0
+local FIREBOMB_RADIUS = 2000.0
 local MAX_DAMAGE = 200.0
 
 function GetPriority(npc, taskHistory)

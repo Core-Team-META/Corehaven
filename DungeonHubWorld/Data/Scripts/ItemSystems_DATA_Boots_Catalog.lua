@@ -80,4 +80,22 @@
     Lore = 'The creepiest shoes in the land, they pulse with dark magic',
     ['Author Notes (will be ignored by script)'] = '',
   },
+  {
+    Name = 'Heavy Greaves',
+    Type = 'Boots',
+    Rarity = 'Rare',
+    StatKey = 'RareTankBoots',
+    MUID = '32650F0FB9334DCC:ITEM_Boots_DragonkeepersBoots',
+    Lore = 'For when you\'d rather protect yourself when you get hit than dodge.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
+  {
+    Name = 'Crystal-Infused Footwear',
+    Type = 'Boots',
+    Rarity = 'Rare',
+    StatKey = 'RareMagicBoots',
+    MUID = 'CEB515587E34BD8C:ITEM_Boots_NecromancersFootwear',
+    Lore = 'The crystals are uncomfortable, but make these very powerful.',
+    ['Author Notes (will be ignored by script)'] = '',
+  },
 }

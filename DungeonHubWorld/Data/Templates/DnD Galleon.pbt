@@ -34291,7 +34291,7 @@
     }
     Assets {
       Id: 1938148825372685458
-      Name: "Truncated Teardrop"
+      Name: "Teardrop - Truncated"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -34309,7 +34309,7 @@
     }
     Assets {
       Id: 11179741881024821258
-      Name: "Sci-Fi Gear Small 02"
+      Name: "Sci-fi Gear Small 02"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -34363,7 +34363,7 @@
     }
     Assets {
       Id: 16372496464315477095
-      Name: "Ring Beveled (thick)"
+      Name: "Ring - Beveled Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -34597,7 +34597,7 @@
     }
     Assets {
       Id: 14580885173560146840
-      Name: "Quarter hemisphere"
+      Name: "Sphere - Half Quarter"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -34999,6 +34999,6 @@
   Marketplace {
     Description: "Galleon for the D&D contest hub"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

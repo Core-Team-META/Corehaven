@@ -2,7 +2,7 @@
   Id: 6468921042527666020
   Name: "Custom Floor from Craftsman Stairs 01 150cm"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 6110281188023178581
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 3776617849256736908
   Name: "Custom Base Material from Urban Pipe Wrap 01"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 8869580380614058770
     ParameterOverrides {

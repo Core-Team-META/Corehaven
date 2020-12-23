@@ -2,7 +2,7 @@
   Id: 12320712763642234218
   Name: "Custom Detail 2 from Candle Holder 01"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 1185320409304913513
     ParameterOverrides {

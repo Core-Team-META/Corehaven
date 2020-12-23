@@ -49,7 +49,7 @@ function OnTaskEnd(npc, interrupted)
 		local firePosition = GetRandomGroundedPointInCircle(anchorPosition, MAX_START_OFFSET)
 
 		Task.Spawn(function()
-			while not API_NPC.IsDead(npc) and firePosition do
+			while not API_NPC.IsDead(npc) and API_NPC.GetTarget(npc) and firePosition do
 				Task.Spawn(function()
 					local position = firePosition
 					firePosition = GetRandomGroundedPointInCircle(firePosition, FIRE_PATCH_JUMP_RANGE)

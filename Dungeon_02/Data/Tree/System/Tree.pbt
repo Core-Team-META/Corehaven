@@ -27459,7 +27459,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Binding10"
-      String: "ability_extra_33"
+      String: "ability_extra_24"
     }
   }
   Collidable_v2 {
@@ -47008,7 +47008,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 1
+      Int: 2
     }
   }
   Collidable_v2 {

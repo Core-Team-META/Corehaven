@@ -5340,7 +5340,7 @@
     }
     Assets {
       Id: 16372496464315477095
-      Name: "Ring Beveled (thick)"
+      Name: "Ring - Beveled Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -5586,5 +5586,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

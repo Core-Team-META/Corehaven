@@ -601,6 +601,12 @@ Objects {
         Id: 6869984067508925664
       }
     }
+    Overrides {
+      Name: "cs:ITEM_NonEquippable_Valley_Of_Life_Token"
+      AssetReference {
+        Id: 5454083268035873789
+      }
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -43503,6 +43509,10 @@ Objects {
         ChatVerticalAlignment {
           Value: "mc:ecoreverticalalign:bottom"
         }
+      }
+      PhysicsSettings {
+        MinContactOffset: 2
+        MaxContactOffset: 8
       }
     }
   }

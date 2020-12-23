@@ -1,6 +1,6 @@
 ﻿Assets {
   Id: 17609149353171719671
-  Name: "Cube - bottom aligned"
+  Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -36,7 +36,7 @@ Assets {
 }
 Assets {
   Id: 16372496464315477095
-  Name: "Ring Beveled (thick)"
+  Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -234,7 +234,7 @@ Assets {
 }
 Assets {
   Id: 12567280682905171665
-  Name: "Scifi Panel 1x3m Angled Right"
+  Name: "Sci-fi Panel 1x3m Angled Right"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

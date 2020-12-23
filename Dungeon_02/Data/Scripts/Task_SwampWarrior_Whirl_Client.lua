@@ -11,8 +11,11 @@ function OnTaskStart(npc, animatedMesh)
 	local telegraphScale = Vector3.New(WHIRL_RANGES[API_DS.GetDifficultyLevel()] / 100.0)
 	local telegraph = World.SpawnAsset(TELEGRAPH_TEMPLATE, {parent = npc, scale = telegraphScale})
 	animatedMesh:PlayAnimation("1hand_melee_thrust")
-	Task.Wait(DAMAGE_DELAY)
-	telegraph:Destroy()
+	
+	Task.Spawn(function()
+		Task.Wait(DAMAGE_DELAY)
+		telegraph:Destroy()
+	end)
 end
 
 function OnTaskEnd(npc, animatedMesh, interrupted)

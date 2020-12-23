@@ -4377,7 +4377,7 @@
     }
     Assets {
       Id: 16372496464315477095
-      Name: "Ring Beveled (thick)"
+      Name: "Ring - Beveled Thick"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -4413,7 +4413,7 @@
     }
     Assets {
       Id: 3198403501401616712
-      Name: "Fantasy Human Guy"
+      Name: "Fantasy Human Guy 1"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -4428,6 +4428,6 @@
   Marketplace {
     Description: "For D&D event hub"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

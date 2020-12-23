@@ -1030,7 +1030,7 @@ Objects {
     }
     Overrides {
       Name: "cs:ObjectiveDescription4"
-      String: "Defeat the Crystalline Giant"
+      String: "Defeat Crystalline Giant"
     }
     Overrides {
       Name: "cs:FinishedEvent4"

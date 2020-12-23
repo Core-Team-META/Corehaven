@@ -40,9 +40,9 @@ end
 function OnDungeonEnd()
 	ResetDungeon(END_DUNGEON_RESET_DELAY)
 
-	if API_DS.GetDifficultyLevel() == 4 then
+	--[[if API_DS.GetDifficultyLevel() == 4 then
 		API_DS.AddBonusLevel()
-	end
+	end]]
 end
 
 function Tick(deltaTime)

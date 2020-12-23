@@ -513,7 +513,7 @@ Assets {
 }
 Assets {
   Id: 5489775416547967874
-  Name: "Hemisphere"
+  Name: "Sphere - Half"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
@@ -621,7 +621,7 @@ Assets {
 }
 Assets {
   Id: 2920556432021751741
-  Name: "Vingette Grain Post Process"
+  Name: "Vignette Grain Post Process"
   PlatformAssetType: 6
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"

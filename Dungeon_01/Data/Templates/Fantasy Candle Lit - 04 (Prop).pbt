@@ -204,5 +204,5 @@
       AssetId: "tm_fan_candle_004_lit_01"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }

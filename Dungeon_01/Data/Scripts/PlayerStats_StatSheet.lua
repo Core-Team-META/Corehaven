@@ -72,12 +72,12 @@ function StatSheet:GetExperience()
 end
 
 function StatSheet:SetExperience(experience)
-    self.experience = experience
+    self.experience = math.ceil(experience)
     self:Update()
 end
 
 function StatSheet:AddExperience(experience)
-    self:SetExperience(self.experience + experience)
+    self:SetExperience(self.experience + math.ceil(experience))
 end
 
 ---------------------------------------------------------------------------------------------------------

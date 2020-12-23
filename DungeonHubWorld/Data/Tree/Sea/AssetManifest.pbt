@@ -108,7 +108,7 @@ Assets {
 }
 Assets {
   Id: 1852880221081690546
-  Name: "Cube - Polished"
+  Name: "Cube - Chamfered Large Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"

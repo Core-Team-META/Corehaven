@@ -2,7 +2,7 @@
   Id: 11203258334483550921
   Name: "Custom Terrain - ForestMoss"
   PlatformAssetType: 13
-  SerializationVersion: 68
+  SerializationVersion: 70
   CustomMaterialAsset {
     BaseMaterialId: 5872932172932525351
     ParameterOverrides {

@@ -1996,7 +1996,7 @@
     }
     Assets {
       Id: 8232283764625892297
-      Name: "Human Gal"
+      Name: "Human Gal 3"
       PlatformAssetType: 17
       PrimaryAsset {
         AssetType: "AnimatedMeshAssetRef"
@@ -2011,6 +2011,6 @@
   Marketplace {
     Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
   DirectlyPublished: true
 }

@@ -33,7 +33,8 @@ function OnCreepingFire(npc, anchorPosition, seed)
 	local firePosition = GetRandomGroundedPointInCircle(anchorPosition, MAX_START_OFFSET)
 
 	Task.Spawn(function()
-		while not API_NPC.IsDead(npc) and firePosition do
+		-- No target means the npc reset
+		while not API_NPC.IsDead(npc) and API_NPC.GetTarget(npc) and firePosition do
 			Task.Spawn(function()
 				local firePatch = World.SpawnAsset(FIRE_PATCH_TEMPLATE, {position = firePosition, scale = Vector3.New(FIRE_PATCH_RADIUS / 100.0)})
 				firePosition = GetRandomGroundedPointInCircle(firePosition, FIRE_PATCH_JUMP_RANGE)

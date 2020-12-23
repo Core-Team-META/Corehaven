@@ -873,7 +873,7 @@ Assets {
 }
 Assets {
   Id: 4692251476766397038
-  Name: "SciFi Ability Purple 024"
+  Name: "Sci-fi Ability Purple 024"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"

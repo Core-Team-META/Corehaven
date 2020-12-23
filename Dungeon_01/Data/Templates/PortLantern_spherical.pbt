@@ -2440,7 +2440,7 @@
     }
     Assets {
       Id: 6367527662954153739
-      Name: "Ring"
+      Name: "Ring 01"
       PlatformAssetType: 1
       PrimaryAsset {
         AssetType: "StaticMeshAssetRef"
@@ -2452,5 +2452,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 68
+  SerializationVersion: 70
 }
