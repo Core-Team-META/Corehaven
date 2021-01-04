@@ -10763,8 +10763,14 @@
         Name: "right_prop"
         Transform {
           Location {
+            X: -7.87321281
+            Y: 33.1175804
+            Z: 73.5527
           }
           Rotation {
+            Pitch: -69.8165588
+            Yaw: -159.683426
+            Roll: 135.928055
           }
           Scale {
             X: 1
@@ -10778,7 +10784,7 @@
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceon"
         }
         Folder {
           IsGroup: true
@@ -10789,14 +10795,14 @@
         Name: "GoblinKingsRazor"
         Transform {
           Location {
-            X: -6.71547127
-            Y: 36.6775436
-            Z: 76.3448792
+            X: -1.93184102
+            Y: 2.88874984
+            Z: -8.1209
           }
           Rotation {
-            Pitch: -14.2113342
-            Yaw: -90.8797302
-            Roll: 83.0886841
+            Pitch: 3.329
+            Yaw: -101.987
+            Roll: -3.37399292
           }
           Scale {
             X: 0.516609967

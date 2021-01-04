@@ -68,6 +68,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
     API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
@@ -84,6 +85,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
     API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
@@ -95,6 +97,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What would you like to know?", TALK_ANIMATION)
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
     API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
@@ -113,6 +116,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
     API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
@@ -124,6 +128,7 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "Would... Would you like to know about anything else?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
     API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Map", "WecomeDialog2")
@@ -135,6 +140,19 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "What else would you like to know?")
 
     API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Valley of Life", "WelcomeDialog9")
+    API.AddOption(id, "Portal Area", "WecomeDialog6")
+    API.AddOption(id, "Training Field", "WecomeDialog7")
+    API.AddOption(id, "Map", "WecomeDialog2")
+
+    id = "WelcomeDialog9"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "{name}, a passage was recently opened to the mythical Valley of Life!", EXCITEMENT_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, FOLLOW THE PATH BEHIND YOU to see what mysteries and treasures await", YES_ANIMATION)
+    API.AddText(id, "What else would you like to know?")
+
+    API.AddOption(id, "Nothing", "WecomeDialog5")
+    API.AddOption(id, "Highrock", "WelcomeDialog8")
     API.AddOption(id, "Portal Area", "WecomeDialog6")
     API.AddOption(id, "Training Field", "WecomeDialog7")
     API.AddOption(id, "Map", "WecomeDialog2")
@@ -143,8 +161,8 @@ function Dialogs.RegisterDialogue()
 	-- Highrock welcome
 	id = "HighrockWelcome1"
 	API.RegisterDialogueId(id)
-    API.AddText(id, "{name}, a merchant ship has just returned from the imperial island outpost of Highrock with reports of disturbing happenings...", EXCITEMENT_ANIMATION)
-    API.AddText(id, "If you are the adventuring sort, HEAD TO THE DOCKS to hear the tale for yourself and see what can be done!", YES_ANIMATION)
+    API.AddText(id, "{name}, a passage was recently opened to the mythical Valley of Life!", EXCITEMENT_ANIMATION)
+    API.AddText(id, "If you are the adventuring sort, FOLLOW THE PATH BEHIND YOU to see what mysteries and treasures await", YES_ANIMATION)
     
 	
     --Character Conversations

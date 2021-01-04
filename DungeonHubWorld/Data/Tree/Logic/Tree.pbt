@@ -8312,11 +8312,13 @@ Objects {
   Name: "Camera"
   Transform {
     Location {
-      X: -14021.5918
-      Y: -303.287292
-      Z: 8422.45898
+      X: -13265.0869
+      Y: -19811.2344
+      Z: 14040.376
     }
     Rotation {
+      Pitch: -49.4370728
+      Yaw: 66.7000198
     }
     Scale {
       X: 1
@@ -8340,12 +8342,11 @@ Objects {
     PositionOffset {
     }
     RotationOffset {
-      Pitch: -50
     }
     FieldOfView: 85
     ViewWidth: 12000
     RotationMode {
-      Value: "mc:erotationmode:fixed"
+      Value: "mc:erotationmode:default"
     }
     MinPitch: -89
     MaxPitch: 89

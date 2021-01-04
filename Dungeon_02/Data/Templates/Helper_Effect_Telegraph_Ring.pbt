@@ -50,8 +50,8 @@
           Overrides {
             Name: "bp:Stroke Color"
             Color {
-              R: 0.940000057
-              A: 1
+              R: 0.4
+              A: 0.4
             }
           }
           Overrides {

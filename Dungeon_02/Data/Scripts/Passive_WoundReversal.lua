@@ -59,9 +59,11 @@ function Tick()
 
 	-- See if it should trigger
 	for player, _ in pairs(playerDamageHistories) do
-		if playerActivationTimes[player] + COOLDOWN <= time() then
-			if GetDamageHistorySum(player) >= player.maxHitPoints * 0.2 then
-				Activate(player)
+		if Object.IsValid(player) then
+			if playerActivationTimes[player] + COOLDOWN <= time() then
+				if GetDamageHistorySum(player) >= player.maxHitPoints * 0.2 then
+					Activate(player)
+				end
 			end
 		end
 	end
