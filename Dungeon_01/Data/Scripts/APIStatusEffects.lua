@@ -362,7 +362,7 @@ end
 
 -- Server only
 function API.RemoveStatusEffect(character, index)
-	local tracker = nil
+	local tracker = API.GetStateTracker(character)
 
 	while not tracker do
 		tracker = API.GetStateTracker(character)

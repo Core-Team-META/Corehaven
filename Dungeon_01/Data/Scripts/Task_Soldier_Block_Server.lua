@@ -19,7 +19,12 @@ function OnTaskStart(npc, threatTable)
 end
 
 function OnTaskEnd(npc, interrupted)
-	API_SE.RemoveStatusEffect(npc, statusEffectIndices[npc])
+	local statusEffectIndex = statusEffectIndices[npc]
+	
+	Task.Spawn(function()
+		API_SE.RemoveStatusEffect(npc, statusEffectIndex)
+	end)
+
 	statusEffectIndices[npc] = nil
 end
 

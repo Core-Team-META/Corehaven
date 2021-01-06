@@ -2,7 +2,7 @@
   Id: 12782495805044124856
   Name: "Ironwood Bark"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 13761796555206813823
     ParameterOverrides {

@@ -2,7 +2,7 @@
   Id: 15150515776861575297
   Name: "Kelp"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 15427301567778243938
     ParameterOverrides {

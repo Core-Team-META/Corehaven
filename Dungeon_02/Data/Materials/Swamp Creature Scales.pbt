@@ -2,7 +2,7 @@
   Id: 6355486990169991471
   Name: "Swamp Creature Scales"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 8385149457862257962
     ParameterOverrides {

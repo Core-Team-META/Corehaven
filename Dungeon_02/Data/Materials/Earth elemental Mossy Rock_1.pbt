@@ -2,7 +2,7 @@
   Id: 15928463212847797251
   Name: "Earth elemental Mossy Rock"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 11759045314390150964
     ParameterOverrides {

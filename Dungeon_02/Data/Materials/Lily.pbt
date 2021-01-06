@@ -2,7 +2,7 @@
   Id: 14650657242359895567
   Name: "Lily"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 50727619471330965
     ParameterOverrides {

@@ -54,15 +54,19 @@ end
 function OnTaskEnd(npc, interrupted)
 	if not interrupted then
 		API_RE.BroadcastToAllPlayers("SMR", npc, targets[npc])
-		Task.Wait(DELAY)
+		local target = targets[npc]
 
-		for _, player in pairs(Game.FindPlayersInSphere(targets[npc], OUTER_RADIUS, {ignoreDead = true})) do
-			local distance = (player:GetWorldPosition() - targets[npc]).size
+		Task.Spawn(function()
+			Task.Wait(DELAY)
 
-			if distance > INNER_RADIUS then
-				API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
+			for _, player in pairs(Game.FindPlayersInSphere(target, OUTER_RADIUS, {ignoreDead = true})) do
+				local distance = (player:GetWorldPosition() - target).size
+
+				if distance > INNER_RADIUS then
+					API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
+				end
 			end
-		end
+		end)
 	end
 	
 	targets[npc] = nil

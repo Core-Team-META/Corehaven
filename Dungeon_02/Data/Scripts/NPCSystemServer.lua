@@ -28,6 +28,7 @@ CoreObject -> table:
 local npcStates = {}
 local activePulls = {}			-- CoreObject -> true
 
+local frameIndex = 0			-- So we can print errors if tasks yield
 local tickPaused = false
 
 function IsTableEmpty(table)
@@ -74,7 +75,9 @@ function SetCurrentTask(npc, task, interrupted)
 		local taskData = tasks[previousTask]
 
 		if taskData and taskData.onTaskEnd then
+			local prevFrame = frameIndex
 			taskData.onTaskEnd(npc, interrupted)
+			assert(frameIndex == prevFrame, string.format("NPC task %s server end function yielded", previousTask))
 		end
 	end
 
@@ -174,7 +177,9 @@ function UpdateCurrentTask(npc)
 				local duration = nil
 
 				if taskData.onTaskStart then
+					local prevFrame = frameIndex
 					duration = taskData.onTaskStart(npc, npcState.threatTable)
+					assert(frameIndex == prevFrame, string.format("NPC task %s server start function yielded", taskName))
 				end
 
 				if duration and duration > 0.0 then
@@ -671,3 +676,11 @@ API_RE.Connect("NPC_Created", OnNPCCreated)
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)
 end
+
+-- Separate task so yielding in tick doesn't break this
+local frameIndexTask = Task.Spawn(function()
+	frameIndex = frameIndex + 1
+	Task.Wait()
+end)
+
+frameIndexTask.repeatCount = -1

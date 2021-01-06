@@ -12,6 +12,8 @@ local previousTaskStrings = {}		-- CoreObject -> string
 local previousTargets = {}	-- CoreObject -> Player
 local taskEffects = {}			-- CoreObject -> CoreObject
 
+local frameIndex = 0			-- So we can print errors if tasks yield
+
 function IsAsleep(npc)
 	local currentTask, _, _ = API_NPC.DecodeTaskString(npc:GetCustomProperty("CurrentTask"))
 	return currentTask == API_NPC.STATE_ASLEEP
@@ -50,7 +52,9 @@ function Tick(deltaTime)
 				local previousTaskData = API_NPC.GetAllTaskData()[previousTask]
 
 				if previousTaskData and previousTaskData.onTaskEnd then
+					local prevFrame = frameIndex
 					previousTaskData.onTaskEnd(npc, npcData.animatedMesh, interrupted)
+					assert(frameIndex == prevFrame, string.format("NPC task %s client end function yielded", previousTask))
 				end
 			end
 
@@ -112,7 +116,9 @@ function Tick(deltaTime)
 				end
 
 				if taskData.onTaskStart then
+					local prevFrame = frameIndex
 					taskData.onTaskStart(npc, npcData.animatedMesh)
+					assert(frameIndex == prevFrame, string.format("NPC task %s client start function yielded", currentTask))
 				end
 			elseif currentTask == API_NPC.STATE_CHASING or currentTask == API_NPC.STATE_RESETTING then
 				if npcData.movementEffectTemplate then
@@ -159,3 +165,11 @@ API_RE.Connect("NPC_Created", OnNPCCreated)
 for npc, data in pairs(API_NPC.GetAllNPCData()) do
 	OnNPCCreated(npc, data)
 end
+
+-- Separate task so yielding in tick doesn't break this
+local frameIndexTask = Task.Spawn(function()
+	frameIndex = frameIndex + 1
+	Task.Wait()
+end)
+
+frameIndexTask.repeatCount = -1

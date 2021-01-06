@@ -2,7 +2,7 @@
   Id: 14317707599999606504
   Name: "GlowingLily"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 13426287809743694889
     ParameterOverrides {

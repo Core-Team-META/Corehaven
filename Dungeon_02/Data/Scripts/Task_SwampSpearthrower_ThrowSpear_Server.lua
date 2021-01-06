@@ -39,11 +39,15 @@ end
 function OnTaskEnd(npc, interrupted)
 	if not interrupted then
 		API_RE.BroadcastToAllPlayers("SSTS", npc, targets[npc])
-		Task.Wait(IMPACT_DELAY)
+		local target = targets[npc]
 
-		for _, player in pairs(Game.FindPlayersInSphere(targets[npc], RADIUS, {ignoreDead = true})) do
-			API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
-		end
+		Task.Spawn(function()
+			Task.Wait(IMPACT_DELAY)
+
+			for _, player in pairs(Game.FindPlayersInSphere(target, RADIUS, {ignoreDead = true})) do
+				API_D.ApplyDamage(npc, player, DAMAGE, API_D.TAG_AOE)
+			end
+		end)
 	end
 	
 	targets[npc] = nil

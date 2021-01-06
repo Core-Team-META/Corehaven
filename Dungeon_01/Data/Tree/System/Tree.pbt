@@ -43373,6 +43373,7 @@ Objects {
       CanMoveUp: true
       CanMoveDown: true
       IsMountEnabled: true
+      MaxHitpoints: 100
     }
   }
 }
@@ -43501,6 +43502,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:allonly"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
         }
@@ -47016,7 +47018,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:DifficultyLevel"
-      Int: 4
+      Int: 3
     }
   }
   Collidable_v2 {

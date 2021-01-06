@@ -2,7 +2,7 @@
   Id: 9714521105857608150
   Name: "Gem_Emerald"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {
