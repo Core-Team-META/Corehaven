@@ -14,8 +14,7 @@ function OnPlayerDied(player)
 end
 
 function OnPlayerJoined(player)
-	local stateTracker = World.SpawnAsset(CHARACTER_STATE_TEMPLATE, {parent = STATE_TRACKER_GROUP})
-	stateTracker.name = API_SE.GetStateTrackerName(player)
+	API_SE.SpawnTrackerForCharacter(player, CHARACTER_STATE_TEMPLATE)
 
 	if not playerSettingsInitialized then
 		API_SE.InitializePlayerSettings(player)
@@ -36,8 +35,7 @@ function OnNPCDied(npc)
 end
 
 function OnNPCCreated(npc, data)
-	local stateTracker = World.SpawnAsset(CHARACTER_STATE_TEMPLATE, {parent = STATE_TRACKER_GROUP})
-	stateTracker.name = API_SE.GetStateTrackerName(npc)
+	API_SE.SpawnTrackerForCharacter(npc, CHARACTER_STATE_TEMPLATE)
 end
 
 function OnNPCDestroyed(npc)

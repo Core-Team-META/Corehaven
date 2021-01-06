@@ -34,13 +34,16 @@ API.STATUS_EFFECT_DEFINITIONS = {}		-- name -> table
 
 local STATUS_EFFECT_ID_TABLE = {}		-- id -> table
 
-local trackerCache = {}					-- Object -> CoreObject
-
 local tickCounts = {}					-- Object -> index -> int
 local damageDealtMultipliers = {}		-- Object -> float
 local damageTakenMultipliers = {}		-- Object -> float
 local knockbackMultipliers = {}			-- Object -> float
 local characterSpeedMultipliers = {}	-- Object -> float
+
+local trackerCache = {}					-- Object -> CoreObject
+local idPropertyCache = {}				-- Object -> table (index -> int)
+local startTimePropertyCache = {}		-- Object -> table (index -> float)
+local sourceCharacterPropertyCache = {}	-- Object -> table (index -> string)
 
 function GetStringHash(string)
 	local hash = 0
@@ -55,16 +58,44 @@ function GetStringHash(string)
 	return hash % 2 ^ 32 - 2 ^ 31
 end
 
-function GetIdPropertyName(n)
-	return string.format("SE%d_Id", n)
+function GetIdProperty(character, n)
+	return idPropertyCache[character][n]
 end
 
-function GetStartTimePropertyName(n)
-	return string.format("SE%d_StartTime", n)
+function GetStartTimeProperty(character, n)
+	return startTimePropertyCache[character][n]
 end
 
-function GetSourceCharacterIdPropertyName(n)
-	return string.format("SE%d_SourceCharacterId", n)
+function GetSourceCharacterProperty(character, n)
+	return sourceCharacterPropertyCache[character][n]
+end
+
+-- Server
+function SetProperties(character, n, newId, newStartTime, newSourceCharacter)
+	local tracker = trackerCache[character]
+	local sourceCharacterString = ""
+
+	if newSourceCharacter then
+		sourceCharacterString = newSourceCharacter.id
+	end
+
+	idPropertyCache[character][n] = newId
+	startTimePropertyCache[character][n] = newStartTime
+	sourceCharacterPropertyCache[character][n] = newSourceCharacter
+
+	tracker:SetNetworkedCustomProperty(GetIdPropertyName(n), newId)
+	tracker:SetNetworkedCustomProperty(GetStartTimePropertyName(n), newStartTime)
+	tracker:SetNetworkedCustomProperty(GetSourceCharacterIdPropertyName(n), sourceCharacterString)
+end
+
+-- Server
+function SetStartTimeProperty(character, n)
+	return startTimePropertyCache[character][n]
+end
+
+-- Server
+function SetSourceCharacterProperty(character, n)
+	return sourceCharacterPropertyCache[character][n]
 end
 
 function GetCharacterById(id)
@@ -199,23 +230,37 @@ function OnNPCDestroyed(npc)
 	characterSpeedMultipliers[npc] = nil
 end
 
--- Client and Server
-function API.GetStateTrackerName(character)
-	return character.id
+-- Server
+function API.SpawnTrackerForCharacter(character, template)
+	local tracker = World.SpawnAsset(template, {parent = STATE_TRACKER_GROUP})
+	tracker.name = character.id
+	trackerCache[character] = tracker
 end
 
--- Client and Server
-function API.GetStateTracker(character)
-	if Object.IsValid(character) and STATE_TRACKER_GROUP and not trackerCache[character] then
-		trackerCache[character] = STATE_TRACKER_GROUP:FindChildByName(API.GetStateTrackerName(character))
-	end
+function OnTrackerPropertyChanged(object, propertyName)
+	local n = tonumber(string.sub(propertyName, 3, 3))
+	local propertyType = string.sub(propertyName, 5)
+	local character = GetCharacterById(object.name)
+	local newValue = object:GetCustomProperty(propertyName)
 
-	return trackerCache[character]
+	if propertyType == "Id" then
+		idPropertyCache[character][n] = newValue
+	elseif propertyType == "StartTime" then
+		startTimePropertyCache[character][n] = newValue
+	elseif propertyType == "SourceCharacterId" then
+		sourceCharacterPropertyCache[character][n] = newValue
+	end
 end
 
 -- Client and Server
 function API.InitializeStatusEffectController(stateTrackerGroup)
 	STATE_TRACKER_GROUP = stateTrackerGroup
+
+	if Environment.IsClient() then
+		STATE_TRACKER_GROUP.childAddedEvent:Connect(function(parent, child)
+			child.networkedPropertyChangedEvent:Connect(OnTrackerPropertyChanged)
+		end)
+	end
 end
 
 -- Server
