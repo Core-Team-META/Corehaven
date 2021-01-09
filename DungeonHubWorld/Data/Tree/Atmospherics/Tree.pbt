@@ -821,7 +821,7 @@ Objects {
   ParentId: 6902822919988349614
   UnregisteredParameters {
     Overrides {
-      Name: "bp:Star Brightness "
+      Name: "bp:Star Brightness"
       Float: 1
     }
     Overrides {

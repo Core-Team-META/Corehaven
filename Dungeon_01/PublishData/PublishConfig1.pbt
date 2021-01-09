@@ -13,3 +13,6 @@ ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Conte
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_018.png"
 ScreenshotPaths: "C:\\Users\\eric\\Documents\\My Games\\Core\\Saved\\Maps\\Content_07-Boss_Fight\\Screenshots\\Corehaven_Thumb01.png"
 OwnerId: "37edf67a267b45bd8b93be513218b428"
+SerializationVersion: 1
+PublishedState: Child
+ParentGameId: "a912182b02d04191ba724c6e90cb84f3"

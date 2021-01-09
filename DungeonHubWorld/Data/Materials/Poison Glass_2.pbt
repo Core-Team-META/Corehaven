@@ -2,7 +2,7 @@
   Id: 15930543057216541272
   Name: "Poison Glass"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 15034387179733310598
     ParameterOverrides {

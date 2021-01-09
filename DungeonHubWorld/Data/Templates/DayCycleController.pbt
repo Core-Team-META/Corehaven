@@ -434,7 +434,7 @@
         ParentId: 6991843647869384293
         UnregisteredParameters {
           Overrides {
-            Name: "bp:Star Brightness "
+            Name: "bp:Star Brightness"
             Float: 1
           }
           Overrides {
@@ -931,5 +931,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
 }

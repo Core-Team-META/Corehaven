@@ -2,7 +2,7 @@
   Id: 15380009543243484126
   Name: "Elven_Wall_Stucco Tintable_G"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 4247430867898109902
     ParameterOverrides {

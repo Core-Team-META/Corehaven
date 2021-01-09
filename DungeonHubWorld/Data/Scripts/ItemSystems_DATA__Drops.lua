@@ -784,7 +784,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss1',
     ItemName = 'Plate Helmet',
     MinStack = '',
     MaxStack = '',
@@ -792,7 +792,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss1',
     ItemName = 'Twisted Kris',
     MinStack = '',
     MaxStack = '',
@@ -800,7 +800,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss1',
     ItemName = 'Wizard Hat',
     MinStack = '',
     MaxStack = '',
@@ -816,7 +816,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss2',
     ItemName = 'Crystal-Infused Footwear',
     MinStack = '',
     MaxStack = '',
@@ -824,7 +824,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss2',
     ItemName = 'Platemail',
     MinStack = '',
     MaxStack = '',
@@ -832,7 +832,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss2',
     ItemName = 'Rogue\'s Cover',
     MinStack = '',
     MaxStack = '',
@@ -848,7 +848,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss3',
     ItemName = 'Natural Spellbook',
     MinStack = '',
     MaxStack = '',
@@ -856,7 +856,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss3',
     ItemName = 'Studded Warhammer',
     MinStack = '',
     MaxStack = '',
@@ -864,7 +864,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss3',
     ItemName = 'Heavy Greaves',
     MinStack = '',
     MaxStack = '',
@@ -880,7 +880,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Fine Carver',
     MinStack = '',
     MaxStack = '',
@@ -888,7 +888,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Fancy Shirt',
     MinStack = '',
     MaxStack = '',
@@ -896,7 +896,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Ornate Axe',
     MinStack = '',
     MaxStack = '',
@@ -904,7 +904,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Ornamental Claymore',
     MinStack = '',
     MaxStack = '',
@@ -912,7 +912,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Ornamental Heater',
     MinStack = '',
     MaxStack = '',
@@ -920,7 +920,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Obsidian Dagger',
     MinStack = '',
     MaxStack = '',
@@ -928,7 +928,7 @@
     ['Author Notes (will be ignored by script)'] = '',
   },
   {
-    DropKey = '',
+    DropKey = 'D2Boss4',
     ItemName = 'Bonebreaker',
     MinStack = '',
     MaxStack = '',

@@ -2,7 +2,7 @@
   Id: 13769575209556006260
   Name: "Custom Bubble"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 6280656875981483467
     ParameterOverrides {

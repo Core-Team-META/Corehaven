@@ -47667,7 +47667,7 @@ Objects {
   UnregisteredParameters {
     Overrides {
       Name: "cs:ChestCount"
-      Int: 2
+      Int: 0
     }
   }
   Collidable_v2 {

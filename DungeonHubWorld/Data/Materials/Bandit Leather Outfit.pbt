@@ -2,7 +2,7 @@
   Id: 5108815326789270641
   Name: "Bandit Leather Outfit"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 3554251836665155575
     ParameterOverrides {

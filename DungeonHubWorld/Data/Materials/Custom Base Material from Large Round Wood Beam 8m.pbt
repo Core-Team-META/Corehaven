@@ -2,7 +2,7 @@
   Id: 5772765146123028352
   Name: "Custom Base Material from Large Round Wood Beam 8m"
   PlatformAssetType: 13
-  SerializationVersion: 70
+  SerializationVersion: 72
   CustomMaterialAsset {
     BaseMaterialId: 4380422551660418763
     ParameterOverrides {

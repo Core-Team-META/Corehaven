@@ -34999,6 +34999,6 @@
   Marketplace {
     Description: "Galleon for the D&D contest hub"
   }
-  SerializationVersion: 70
+  SerializationVersion: 72
   DirectlyPublished: true
 }
