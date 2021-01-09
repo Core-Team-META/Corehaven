@@ -8495,10 +8495,6 @@ Objects {
             Yaw: 73.4780807
           }
         }
-        Overrides {
-          Name: "cs:EngageRange"
-          Float: 1700
-        }
       }
     }
     TemplateAsset {

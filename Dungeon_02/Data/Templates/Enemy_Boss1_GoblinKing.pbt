@@ -51,7 +51,7 @@
           }
           Overrides {
             Name: "cs:EngageRange"
-            Float: 1200
+            Float: 1700
           }
           Overrides {
             Name: "cs:ImmuneToStun"
