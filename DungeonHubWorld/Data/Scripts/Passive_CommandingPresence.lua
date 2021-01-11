@@ -22,9 +22,11 @@ function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)
 
 	if targetCharacter:IsA("Player") then
 		for player, _ in pairs(players) do
-			local tenacityStat = player.serverUserData.statSheet:GetStatTotalValue("Tenacity")
-			local multiplier = math.max(0.6, 0.9 - tenacityStat * 0.001)
-			result = result * multiplier
+			if Object.IsValid(player) then
+				local tenacityStat = player.serverUserData.statSheet:GetStatTotalValue("Tenacity")
+				local multiplier = math.max(0.6, 0.9 - tenacityStat * 0.001)
+				result = result * multiplier
+			end
 		end
 	end
 
