@@ -7,7 +7,7 @@ Assets {
       RootId: 14705474953321211921
       Objects {
         Id: 14705474953321211921
-        Name: "NPCHealthBar(Real)"
+        Name: "NPCHealthBar_Adventure"
         Transform {
           Scale {
             X: 1
@@ -116,7 +116,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Folder {
           IsGroup: true
@@ -310,7 +310,7 @@ Assets {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
         Visible_v2 {
-          Value: "mc:evisibilitysetting:inheritfromparent"
+          Value: "mc:evisibilitysetting:forceoff"
         }
         Text {
           Text: "100 / 100"

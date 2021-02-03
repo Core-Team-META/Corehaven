@@ -4,6 +4,9 @@ Objects {
   Id: 12436178497627913521
   Name: "Quest System Dependencies"
   Transform {
+    Location {
+      Z: 28.7504883
+    }
     Scale {
       X: 1
       Y: 1
@@ -13342,9 +13345,9 @@ Objects {
   Name: "AdventureTrigger"
   Transform {
     Location {
-      X: 765.242676
-      Y: -46.6903381
-      Z: 25.2538185
+      X: -1923.24902
+      Y: 970.965454
+      Z: -6390.0293
     }
     Rotation {
     }
@@ -15530,7 +15533,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"

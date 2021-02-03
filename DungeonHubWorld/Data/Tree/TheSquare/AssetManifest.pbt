@@ -1835,6 +1835,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2221015088679661275
+  Name: "Curtains Tied"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_curtain_01"
+  }
+}
+Assets {
   Id: 2219860990307282618
   Name: "Fantasy Castle Wall 03 - Window 01"
   PlatformAssetType: 1

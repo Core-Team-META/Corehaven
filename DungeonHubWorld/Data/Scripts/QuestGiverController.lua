@@ -41,10 +41,10 @@ QuestRewardPopup.visibility = Visibility.FORCE_OFF
 ------------------------------------------------------------------------------------------------------------------------
 -- Local Functions
 ------------------------------------------------------------------------------------------------------------------------
-local function UIShown(bool)
-	UI.SetCursorVisible(bool)
-	UI.SetCanCursorInteractWithUI(bool)
-end
+--/local function UIShown(bool)
+--/	UI.SetCursorVisible(bool)
+--/	UI.SetCanCursorInteractWithUI(bool)
+--/end
 
 local function HidePanels()
 	QuestDialog.visibility = Visibility.FORCE_OFF
@@ -58,7 +58,7 @@ end
 function OnEndOverlap(whichTrigger, other)
 	if other:IsA("Player") then
 		trigger.isInteractable = true
-		UIShown(false)
+--/		UIShown(false)
 		HidePanels()
 	end
 end
@@ -66,7 +66,7 @@ end
 function OnCompleteQuest(button)
 	if NPCQuest == tonumber(button.name) then
 		trigger.isInteractable = true
-		UIShown(false)
+--/		UIShown(false)
 		HidePanels()
 		Events.BroadcastToServer("QuestComplete", {id = button.name})
 	end
@@ -76,7 +76,7 @@ function OnAcceptQuest(button)
 	local questID = tonumber(button.clientUserData.QuestID)
 	if NPCQuest == questID then
 		trigger.isInteractable = true
-		UIShown(false)
+--/		UIShown(false)
 		HidePanels()
 		ROOT.clientUserData.QuestID = tonumber(NPCQuest)
 		Events.BroadcastToServer("QuestAccept", questID)
@@ -90,7 +90,7 @@ end
 function OnDeclineQuest(button)
 	trigger.isInteractable = true
 	CompleteButton.isEnabled = false
-	UIShown(false)
+--/	UIShown(false)
 	HidePanels()
 end
 
@@ -113,7 +113,7 @@ function OnInteracted(whichTrigger, other)
 			local onQuestId = ROOT.clientUserData.QuestID
 			if NPCQuest ~= onQuestId and Quests.IsAvailable(questStatus) then
 				trigger.isInteractable = false
-				UIShown(true)
+--/				UIShown(true)
 				QuestDialog.visibility = Visibility.FORCE_ON
 				QuestDescText.text = Quests.GetDescriptionText(NPCQuest)
 				QuestName.text = Quests.GetName(NPCQuest)
@@ -123,7 +123,7 @@ function OnInteracted(whichTrigger, other)
 				AcceptButton.clientUserData.QuestID = tostring(NPCQuest)
 			elseif Quests.IsNotComplete(questStatus, resReq) then
 				trigger.isInteractable = false
-				UIShown(true)
+--/				UIShown(true)
 				QuestDialog.visibility = Visibility.FORCE_ON
 				QuestDescText.text =
 					other.name ..
@@ -134,7 +134,7 @@ function OnInteracted(whichTrigger, other)
 				DeclineButton.text = "Goodbye"
 			elseif Quests.IsWaitingToBeAvailable(questStatus) then
 				trigger.isInteractable = false
-				UIShown(true)
+--/				UIShown(true)
 				QuestDialog.visibility = Visibility.FORCE_ON
 				QuestDescText.text = Quests.GetCompletedText(NPCQuest)
 				QuestName.text = "Quest Complete"
@@ -146,7 +146,7 @@ function OnInteracted(whichTrigger, other)
 				CompleteButton.isEnabled = true
 				CompleteButton.name = tostring(NPCQuest)
 				QuestCompleteText.text = Quests.GetCompletedText(NPCQuest)
-				UIShown(true)
+--/				UIShown(true)
 			end
 		end
 	end
@@ -160,7 +160,7 @@ function CloseItemWindow(player, binding)
 		 then
 			trigger.isInteractable = true
 			HidePanels()
-			UIShown(false)
+--/			UIShown(false)
 		end
 	end
 end
