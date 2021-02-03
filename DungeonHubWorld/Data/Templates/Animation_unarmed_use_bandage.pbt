@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4927754585132148709
   Name: "Animation_unarmed_use_bandage"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

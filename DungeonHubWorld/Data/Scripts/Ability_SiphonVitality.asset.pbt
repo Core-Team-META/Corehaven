@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6605733087661830397
   Name: "Ability_SiphonVitality"
   PlatformAssetType: 3
@@ -87,5 +87,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

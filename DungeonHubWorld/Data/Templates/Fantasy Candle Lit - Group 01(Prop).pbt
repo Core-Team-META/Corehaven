@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13263907152484650188
   Name: "Fantasy Candle Lit - Group 01(Prop)"
   PlatformAssetType: 5
@@ -285,5 +285,5 @@
       AssetId: "tm_fan_candle_grp_001_lit_01"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

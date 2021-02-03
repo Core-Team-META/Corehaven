@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14946645032480843313
   Name: "Helper_Effect_StatusEffect_FrostBomb"
   PlatformAssetType: 5
@@ -104,5 +104,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

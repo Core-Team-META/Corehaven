@@ -1,4 +1,4 @@
-﻿Name: "OpenArea_InvisibleCollisions"
+Name: "OpenArea_InvisibleCollisions"
 RootId: 14715758764945446342
 Objects {
   Id: 685545689865485170

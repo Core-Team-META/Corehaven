@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8517511274719000942
   Name: "AbilityHelper_Effect_RighteousHammerTargetOther"
   PlatformAssetType: 5
@@ -392,5 +392,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

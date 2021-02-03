@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12852211841311442988
   Name: "AbilityHelper_Effect_IlluminateCast"
   PlatformAssetType: 5
@@ -399,5 +399,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

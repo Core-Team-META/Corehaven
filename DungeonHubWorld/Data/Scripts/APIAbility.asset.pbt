@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17706441704388140225
   Name: "APIAbility"
   PlatformAssetType: 3
@@ -264,5 +264,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

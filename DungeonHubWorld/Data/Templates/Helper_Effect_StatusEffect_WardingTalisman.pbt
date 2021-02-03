@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1175970641155822959
   Name: "Helper_Effect_StatusEffect_WardingTalisman"
   PlatformAssetType: 5
@@ -204,5 +204,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

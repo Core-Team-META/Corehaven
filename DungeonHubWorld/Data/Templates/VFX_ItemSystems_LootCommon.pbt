@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7461034369320311343
   Name: "VFX_ItemSystems_LootCommon"
   PlatformAssetType: 5
@@ -424,5 +424,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

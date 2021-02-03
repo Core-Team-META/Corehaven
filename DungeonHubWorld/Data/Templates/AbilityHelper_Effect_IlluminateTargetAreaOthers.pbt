@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12972220158729906763
   Name: "AbilityHelper_Effect_IlluminateTargetAreaOthers"
   PlatformAssetType: 5
@@ -473,5 +473,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

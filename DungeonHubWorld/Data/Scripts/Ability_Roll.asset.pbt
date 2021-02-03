@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13014139121547572652
   Name: "Ability_Roll"
   PlatformAssetType: 3
@@ -67,5 +67,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14855283366359618783
   Name: "Ability_FirstAid"
   PlatformAssetType: 3
@@ -73,5 +73,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

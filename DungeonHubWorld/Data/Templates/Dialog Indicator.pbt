@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 422126413374678882
   Name: "Dialog Indicator"
   PlatformAssetType: 5
@@ -515,5 +515,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

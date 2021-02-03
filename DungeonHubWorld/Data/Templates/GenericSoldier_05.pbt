@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17631296458428867150
   Name: "GenericSoldier_05"
   PlatformAssetType: 5
@@ -2287,6 +2287,14 @@
               PlaybackRate: 1.7951889
               ShouldLoop: true
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -2467,5 +2475,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

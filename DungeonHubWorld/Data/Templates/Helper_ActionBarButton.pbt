@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6965690599485855148
   Name: "Helper_ActionBarButton"
   PlatformAssetType: 5
@@ -1002,5 +1002,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

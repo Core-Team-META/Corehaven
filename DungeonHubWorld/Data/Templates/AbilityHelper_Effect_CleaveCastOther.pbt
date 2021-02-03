@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2261435521337128582
   Name: "AbilityHelper_Effect_CleaveCastOther"
   PlatformAssetType: 5
@@ -90,5 +90,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

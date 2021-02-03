@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9283599042623883587
   Name: "ITEM_Shield_OrnateShield"
   PlatformAssetType: 5
@@ -173,5 +173,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

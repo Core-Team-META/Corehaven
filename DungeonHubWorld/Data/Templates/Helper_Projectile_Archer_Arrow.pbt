@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5333833631319763796
   Name: "Helper_Projectile_Archer_Arrow"
   PlatformAssetType: 5
@@ -195,5 +195,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

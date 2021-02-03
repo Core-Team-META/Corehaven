@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12653130121520336365
   Name: "Ability_Enrage"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

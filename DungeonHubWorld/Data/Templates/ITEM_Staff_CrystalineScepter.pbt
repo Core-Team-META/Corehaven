@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6588310778820412658
   Name: "ITEM_Staff_CrystalineScepter"
   PlatformAssetType: 5
@@ -2535,5 +2535,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18195697283062358788
   Name: "Cylinder - Chamfered Small Polished"
   PlatformAssetType: 1

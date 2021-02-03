@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10381945042861298201
   Name: "AbilityHelper_Effect_DivineBlastTargetOthers"
   PlatformAssetType: 5
@@ -238,5 +238,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

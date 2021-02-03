@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16585269223029215444
   Name: "Animation_unarmed_magic_bolt"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

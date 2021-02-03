@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16915150100797142409
   Name: "APIDamage"
   PlatformAssetType: 3
@@ -36,5 +36,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

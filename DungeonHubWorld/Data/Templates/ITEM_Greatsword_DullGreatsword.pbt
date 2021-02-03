@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16889564898213671633
   Name: "ITEM_Greatsword_DullGreatsword"
   PlatformAssetType: 5
@@ -501,5 +501,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

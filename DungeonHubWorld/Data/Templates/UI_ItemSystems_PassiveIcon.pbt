@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9878752877710532527
   Name: "UI_ItemSystems_PassiveIcon"
   PlatformAssetType: 5
@@ -348,5 +348,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

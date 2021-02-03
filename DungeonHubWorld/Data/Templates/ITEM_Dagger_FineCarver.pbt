@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6588293941543123340
   Name: "ITEM_Dagger_FineCarver"
   PlatformAssetType: 5
@@ -275,5 +275,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

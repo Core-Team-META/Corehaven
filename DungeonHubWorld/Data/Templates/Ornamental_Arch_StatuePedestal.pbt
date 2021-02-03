@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17391883115715940858
   Name: "Ornamental_Arch_StatuePedestal"
   PlatformAssetType: 5
@@ -3924,5 +3924,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16508647158301111682
   Name: "PlayerComponentSpawner"
   PlatformAssetType: 3
@@ -11,5 +11,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

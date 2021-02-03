@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7561782621439368731
   Name: "Animation_unarmed_use_start"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

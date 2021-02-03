@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16737756307884761739
   Name: "Helper_Effect_FrostBomb_Explosion"
   PlatformAssetType: 5
@@ -140,5 +140,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

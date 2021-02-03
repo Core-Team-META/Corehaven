@@ -1,4 +1,4 @@
-﻿Name: "SmugglersDen"
+Name: "SmugglersDen"
 RootId: 14390202350554631985
 Objects {
   Id: 3023566636844089570

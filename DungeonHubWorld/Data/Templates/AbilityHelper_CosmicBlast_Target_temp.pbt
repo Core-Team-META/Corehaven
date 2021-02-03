@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9802536836358802692
   Name: "AbilityHelper_CosmicBlast_Target_temp"
   PlatformAssetType: 5
@@ -840,5 +840,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

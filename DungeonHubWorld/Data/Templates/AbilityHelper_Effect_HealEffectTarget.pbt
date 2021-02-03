@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15121666892172951497
   Name: "AbilityHelper_Effect_HealEffectTarget"
   PlatformAssetType: 5
@@ -241,5 +241,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

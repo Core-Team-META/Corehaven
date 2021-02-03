@@ -1,4 +1,4 @@
-﻿Name: "Den_InvisibleCollisions_Correct"
+Name: "Den_InvisibleCollisions_Correct"
 RootId: 9211091772664071522
 Objects {
   Id: 11001154555289873202

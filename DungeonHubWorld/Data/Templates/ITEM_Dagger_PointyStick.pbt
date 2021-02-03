@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11193496415327776519
   Name: "ITEM_Dagger_PointyStick"
   PlatformAssetType: 5
@@ -218,5 +218,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

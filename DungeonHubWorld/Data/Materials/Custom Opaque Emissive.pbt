@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 14243620141889405183
   Name: "Portal_area_Lamp_Emissive"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 12827530473249900764
     ParameterOverrides {

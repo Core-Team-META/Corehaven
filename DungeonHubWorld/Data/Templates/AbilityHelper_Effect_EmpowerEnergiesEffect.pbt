@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6665300397989725070
   Name: "AbilityHelper_Effect_EmpowerEnergiesEffect"
   PlatformAssetType: 5
@@ -222,5 +222,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

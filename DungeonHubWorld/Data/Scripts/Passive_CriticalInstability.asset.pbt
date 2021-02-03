@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12769288002634030353
   Name: "Passive_CriticalInstability"
   PlatformAssetType: 3
@@ -43,5 +43,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

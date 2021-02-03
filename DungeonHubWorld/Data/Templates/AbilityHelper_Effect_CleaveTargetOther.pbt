@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4168382305122941795
   Name: "AbilityHelper_Effect_CleaveTargetOther"
   PlatformAssetType: 5
@@ -292,5 +292,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

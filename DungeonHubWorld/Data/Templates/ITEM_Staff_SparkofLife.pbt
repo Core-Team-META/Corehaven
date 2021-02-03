@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2105653657078574293
   Name: "ITEM_Staff_SparkofLife"
   PlatformAssetType: 5
@@ -1058,5 +1058,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

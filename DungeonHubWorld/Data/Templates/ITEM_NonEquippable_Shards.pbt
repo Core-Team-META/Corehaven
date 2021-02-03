@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16513267414094432646
   Name: "ITEM_NonEquippable_Shards"
   PlatformAssetType: 5
@@ -53,5 +53,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

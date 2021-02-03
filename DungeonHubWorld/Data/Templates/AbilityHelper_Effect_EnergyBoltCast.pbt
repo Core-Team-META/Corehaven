@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5292125479285866371
   Name: "AbilityHelper_Effect_EnergyBoltCast"
   PlatformAssetType: 5
@@ -398,5 +398,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

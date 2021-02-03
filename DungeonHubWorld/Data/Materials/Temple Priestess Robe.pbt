@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 2778143631456222163
   Name: "Temple Priestess Robe"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 591028877489501405
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11340085984474296648
   Name: "SFX_CraftingUI_RecipeSwipe"
   PlatformAssetType: 5
@@ -118,5 +118,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11339916141821731142
   Name: "ITEM_Sword_Katana"
   PlatformAssetType: 5
@@ -387,5 +387,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

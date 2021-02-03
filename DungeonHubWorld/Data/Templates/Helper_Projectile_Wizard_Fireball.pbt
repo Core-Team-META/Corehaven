@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8577847030441975411
   Name: "Helper_Projectile_Wizard_Fireball"
   PlatformAssetType: 5
@@ -135,5 +135,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

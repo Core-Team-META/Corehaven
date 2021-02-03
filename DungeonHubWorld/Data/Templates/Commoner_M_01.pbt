@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14260632711062808493
   Name: "Commoner_M_01"
   PlatformAssetType: 5
@@ -1534,6 +1534,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -1618,6 +1626,6 @@
   Marketplace {
     Description: "Contains 4 NPCs and costumes for the D&D even hub\r\n\r\nV. 1.1: Added accessories (ropes and carrying hooks) as well as geo for rolled up sleeves"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
   DirectlyPublished: true
 }

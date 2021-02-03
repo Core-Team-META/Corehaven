@@ -1,4 +1,4 @@
-﻿Name: "Audio"
+Name: "Audio"
 RootId: 16816246272091159722
 Objects {
   Id: 17646804855349459136

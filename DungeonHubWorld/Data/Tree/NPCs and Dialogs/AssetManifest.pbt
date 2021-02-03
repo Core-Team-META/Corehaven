@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18039984299850060191
   Name: "Fantasy Human Guy 1"
   PlatformAssetType: 17

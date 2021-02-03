@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3924854340920606181
   Name: "ITEM_Shield_IronShield"
   PlatformAssetType: 5
@@ -100,5 +100,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

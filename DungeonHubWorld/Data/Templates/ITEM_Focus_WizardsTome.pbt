@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7049250594612133533
   Name: "ITEM_Focus_WizardsTome"
   PlatformAssetType: 5
@@ -647,5 +647,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11351135520456465610
   Name: "ITEM_Dagger_CurvedKnife"
   PlatformAssetType: 5
@@ -352,5 +352,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 4890526660437061149
   Name: "Bard Outfit"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 284970304952400506
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3224052045163392939
   Name: "Animation_2hand_staff_magic_up"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

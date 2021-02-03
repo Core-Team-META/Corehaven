@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2980251689156894572
   Name: "ITEM_ConsumptionEffect_PortalScroll"
   PlatformAssetType: 3
@@ -18,5 +18,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

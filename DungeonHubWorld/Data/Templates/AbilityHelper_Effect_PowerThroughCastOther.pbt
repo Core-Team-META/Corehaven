@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3787795254244016820
   Name: "AbilityHelper_Effect_PowerThroughCastOther"
   PlatformAssetType: 5
@@ -677,5 +677,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

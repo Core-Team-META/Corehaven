@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6244285448419846811
   Name: "SFX_TalentsUI_ButtonHover"
   PlatformAssetType: 5
@@ -75,5 +75,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

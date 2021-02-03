@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 899587942536650496
   Name: "PortalArea_OrnamentalArch"
   PlatformAssetType: 5
@@ -2181,5 +2181,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

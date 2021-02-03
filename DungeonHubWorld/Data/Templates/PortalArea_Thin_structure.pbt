@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15542757779068628422
   Name: "PortalArea_Thin_structure"
   PlatformAssetType: 5
@@ -874,5 +874,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

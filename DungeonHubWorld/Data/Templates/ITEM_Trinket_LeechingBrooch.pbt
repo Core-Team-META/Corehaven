@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17339500910592650016
   Name: "ITEM_Trinket_LeechingBrooch"
   PlatformAssetType: 5
@@ -53,5 +53,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

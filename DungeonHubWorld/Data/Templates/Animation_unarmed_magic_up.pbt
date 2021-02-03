@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2356147457070574232
   Name: "Animation_unarmed_magic_up"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

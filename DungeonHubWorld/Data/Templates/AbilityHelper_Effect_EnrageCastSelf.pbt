@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15574173977428464658
   Name: "AbilityHelper_Effect_EnrageCastSelf"
   PlatformAssetType: 5
@@ -139,5 +139,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

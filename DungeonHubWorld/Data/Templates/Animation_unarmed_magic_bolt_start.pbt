@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5786763895001670062
   Name: "Animation_unarmed_magic_bolt_start"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

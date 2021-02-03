@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4022490449774864554
   Name: "ITEM_NonEquippable_YewLog"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

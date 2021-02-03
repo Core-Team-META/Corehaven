@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3002372203481397080
   Name: "Fantasy Weapon - Crossbow 01 (Prop)"
   PlatformAssetType: 5
@@ -317,5 +317,5 @@
       AssetId: "Fantasy_Weapon_-_Crossbow_01__Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

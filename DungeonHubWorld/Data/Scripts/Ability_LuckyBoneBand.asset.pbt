@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15104839253571838661
   Name: "Ability_LuckyBoneBand"
   PlatformAssetType: 3
@@ -73,5 +73,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

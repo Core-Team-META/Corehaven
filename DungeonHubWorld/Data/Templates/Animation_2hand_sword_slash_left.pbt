@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9579426614021342198
   Name: "Animation_2hand_sword_slash_left"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

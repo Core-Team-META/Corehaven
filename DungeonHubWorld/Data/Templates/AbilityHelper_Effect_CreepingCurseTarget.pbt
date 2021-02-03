@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13125413163112879241
   Name: "AbilityHelper_Effect_CreepingCurseTarget"
   PlatformAssetType: 5
@@ -505,5 +505,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

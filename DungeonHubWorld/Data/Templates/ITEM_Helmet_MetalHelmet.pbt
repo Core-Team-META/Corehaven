@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6794588461138357277
   Name: "ITEM_Helmet_MetalHelmet"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

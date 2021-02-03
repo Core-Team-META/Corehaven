@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 234727043416621351
   Name: "Ability_CreepingCurse"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

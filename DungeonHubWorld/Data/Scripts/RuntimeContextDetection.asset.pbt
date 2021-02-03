@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 12996009040054713330
   Name: "RuntimeContextDetection"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

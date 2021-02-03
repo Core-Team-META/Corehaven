@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4107473756507374739
   Name: "Animation_1hand_melee_thrust"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

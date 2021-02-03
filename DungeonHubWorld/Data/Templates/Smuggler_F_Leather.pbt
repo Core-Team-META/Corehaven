@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6734155572957907076
   Name: "Smuggler_F_Leather"
   PlatformAssetType: 5
@@ -2615,6 +2615,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -2750,5 +2758,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

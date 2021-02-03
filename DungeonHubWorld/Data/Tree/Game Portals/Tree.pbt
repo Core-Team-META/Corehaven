@@ -1,4 +1,4 @@
-﻿Name: "Game Portals"
+Name: "Game Portals"
 RootId: 9922386037024802545
 Objects {
   Id: 9770257155877221918

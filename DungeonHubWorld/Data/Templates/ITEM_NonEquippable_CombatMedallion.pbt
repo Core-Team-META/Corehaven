@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4408181515115203937
   Name: "ITEM_NonEquippable_CombatMedallion"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

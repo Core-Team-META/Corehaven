@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14690783643482390684
   Name: "Ability_Wound"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16634542329966443224
   Name: "ITEM_Helmet_GoblinKingsCrown"
   PlatformAssetType: 5
@@ -1195,5 +1195,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

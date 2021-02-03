@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1184387513907377318
   Name: "AbilityHelper_Effect_RefreshCastOthers"
   PlatformAssetType: 5
@@ -241,5 +241,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

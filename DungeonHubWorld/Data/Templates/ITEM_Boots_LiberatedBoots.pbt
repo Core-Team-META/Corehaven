@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12669726888840513328
   Name: "ITEM_Boots_LiberatedBoots"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

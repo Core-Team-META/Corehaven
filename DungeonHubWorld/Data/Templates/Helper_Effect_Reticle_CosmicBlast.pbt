@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13771191809182075845
   Name: "Helper_Effect_Reticle_CosmicBlast"
   PlatformAssetType: 5
@@ -231,5 +231,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

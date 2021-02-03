@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3574085611856533
   Name: "Ability_Uppercut"
   PlatformAssetType: 3
@@ -81,5 +81,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

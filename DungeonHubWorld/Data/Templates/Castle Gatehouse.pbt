@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1538571475485034796
   Name: "Castle Gatehouse"
   PlatformAssetType: 5
@@ -7736,5 +7736,5 @@
       AssetId: "Castle_Gatehouse"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

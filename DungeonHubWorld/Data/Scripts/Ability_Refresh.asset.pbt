@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6628333839649202416
   Name: "Ability_Refresh"
   PlatformAssetType: 3
@@ -73,5 +73,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6513217196136689638
   Name: "ItemSystems_Inventory"
   PlatformAssetType: 3
@@ -24,5 +24,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

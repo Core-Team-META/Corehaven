@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12550598932483368425
   Name: "ITEM_Armor_MerchantsShirt"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

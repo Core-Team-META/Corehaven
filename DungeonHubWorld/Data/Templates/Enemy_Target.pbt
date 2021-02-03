@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1271273818983499322
   Name: "Enemy_Target"
   PlatformAssetType: 5
@@ -962,5 +962,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 9280487912294317099
   Name: "Ice Wizard Robe"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 591028877489501405
     ParameterOverrides {

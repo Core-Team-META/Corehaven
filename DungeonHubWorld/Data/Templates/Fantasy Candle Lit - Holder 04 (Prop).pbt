@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15772131835111520842
   Name: "Fantasy Candle Lit - Holder 04 (Prop)"
   PlatformAssetType: 5
@@ -249,5 +249,5 @@
       AssetId: "tm_fan_candle_holder_004_lit_01"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

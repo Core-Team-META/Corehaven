@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7750974908911944193
   Name: "AbilityHelper_Effect_ReverseWoundsCast"
   PlatformAssetType: 5
@@ -310,5 +310,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

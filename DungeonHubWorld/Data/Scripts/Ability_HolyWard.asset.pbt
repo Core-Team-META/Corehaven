@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14890582789633143101
   Name: "Ability_HolyWard"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

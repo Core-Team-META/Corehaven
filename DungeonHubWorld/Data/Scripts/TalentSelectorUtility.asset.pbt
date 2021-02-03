@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4644281046712195371
   Name: "TalentSelectorUtility"
   PlatformAssetType: 3
@@ -24,5 +24,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

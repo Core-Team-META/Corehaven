@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11011220336773375568
   Name: "AbilityHelper_Trinket_LeechTarget"
   PlatformAssetType: 5
@@ -301,5 +301,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8555890741944014434
   Name: "Helper_CharacterFrame"
   PlatformAssetType: 5
@@ -1161,5 +1161,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

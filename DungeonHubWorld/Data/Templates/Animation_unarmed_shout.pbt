@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1139198525019319357
   Name: "Animation_unarmed_shout"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

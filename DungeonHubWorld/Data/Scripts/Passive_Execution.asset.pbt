@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7278283097227767218
   Name: "Passive_Execution"
   PlatformAssetType: 3
@@ -37,5 +37,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12986056519792081593
   Name: "Animation_unarmed_throw"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

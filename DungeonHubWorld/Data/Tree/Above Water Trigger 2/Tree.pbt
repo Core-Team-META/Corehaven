@@ -1,4 +1,4 @@
-﻿Name: "Above Water Trigger 2"
+Name: "Above Water Trigger 2"
 RootId: 1942555496709667414
 Objects {
   Id: 8044708354599196489

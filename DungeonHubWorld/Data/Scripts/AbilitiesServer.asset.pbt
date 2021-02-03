@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 2993574341092730881
   Name: "AbilitiesServer"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

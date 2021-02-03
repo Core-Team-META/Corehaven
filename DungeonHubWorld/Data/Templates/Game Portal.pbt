@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18006861687295966073
   Name: "Game Portal"
   PlatformAssetType: 5
@@ -119,5 +119,5 @@
       AssetId: "Game_Portal"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

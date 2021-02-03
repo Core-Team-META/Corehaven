@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2993313201134032743
   Name: "Ability_SneakAttack"
   PlatformAssetType: 3
@@ -89,5 +89,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

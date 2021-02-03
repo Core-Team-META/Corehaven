@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1715755657077344107
   Name: "APISharedKey"
   PlatformAssetType: 3
@@ -15,5 +15,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17014796008370739632
   Name: "Nature Birds Seagulls Ambience Loop 01 SFX"
   PlatformAssetType: 7

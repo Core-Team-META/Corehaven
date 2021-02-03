@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15973424014385183022
   Name: "ITEM_Shield_CrimsonBarrier"
   PlatformAssetType: 5
@@ -395,5 +395,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

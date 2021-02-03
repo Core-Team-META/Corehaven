@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14014504475200969605
   Name: "Helper_Effect_GainAggro"
   PlatformAssetType: 5
@@ -33,5 +33,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

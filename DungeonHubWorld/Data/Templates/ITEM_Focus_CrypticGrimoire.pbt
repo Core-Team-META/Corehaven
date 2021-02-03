@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14332810668966877099
   Name: "ITEM_Focus_CrypticGrimoire"
   PlatformAssetType: 5
@@ -644,5 +644,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

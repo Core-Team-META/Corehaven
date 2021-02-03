@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7297571783720429533
   Name: "Ability_Heal"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6314437439768431026
   Name: "SFX_TalentsUI_ButtonFail"
   PlatformAssetType: 5
@@ -75,5 +75,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

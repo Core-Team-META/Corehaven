@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3584599563553880689
   Name: "SFX_ClickPortalScroll"
   PlatformAssetType: 5
@@ -75,5 +75,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

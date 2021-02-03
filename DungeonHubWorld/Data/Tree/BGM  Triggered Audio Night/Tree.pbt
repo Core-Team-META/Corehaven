@@ -1,4 +1,4 @@
-﻿Name: "BGM  Triggered Audio Night"
+Name: "BGM  Triggered Audio Night"
 RootId: 7129043972238910259
 Objects {
   Id: 3641131224554622938

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15662843274707751871
   Name: "ITEM_Helmet_RoguesCover"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

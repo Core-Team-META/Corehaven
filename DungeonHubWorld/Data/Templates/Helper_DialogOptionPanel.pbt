@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5702907119253073669
   Name: "Helper_DialogOptionPanel"
   PlatformAssetType: 5
@@ -187,5 +187,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

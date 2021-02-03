@@ -1,4 +1,4 @@
-﻿Name: "Hidden Cove Area"
+Name: "Hidden Cove Area"
 RootId: 11188168495048710640
 Objects {
   Id: 16838376227202368287

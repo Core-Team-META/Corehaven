@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15213291372203662834
   Name: "AbilityHelper_Effect_DivineBlastCast"
   PlatformAssetType: 5
@@ -221,5 +221,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

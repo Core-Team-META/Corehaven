@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9122226267027461427
   Name: "Helper_ActionBarSocket"
   PlatformAssetType: 5
@@ -205,5 +205,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

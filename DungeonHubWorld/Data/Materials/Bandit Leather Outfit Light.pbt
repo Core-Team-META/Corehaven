@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 13054578106459322362
   Name: "Bandit Leather Outfit Light"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 3090596827184957478
     ParameterOverrides {

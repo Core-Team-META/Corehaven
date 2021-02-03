@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7652831840712258037
   Name: "ITEM_Mace_Bonebreaker"
   PlatformAssetType: 5
@@ -354,5 +354,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

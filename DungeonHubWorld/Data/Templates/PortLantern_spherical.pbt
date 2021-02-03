@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17979152160187971160
   Name: "PortLantern_spherical"
   PlatformAssetType: 5
@@ -2068,5 +2068,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

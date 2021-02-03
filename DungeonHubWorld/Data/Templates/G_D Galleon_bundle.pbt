@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15230505093846944624
   Name: "G&D Galleon"
   PlatformAssetType: 5
@@ -40,5 +40,5 @@
     Version: "1.1.0"
     Description: "Galleon for the D&D contest hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

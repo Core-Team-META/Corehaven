@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10074041898080811053
   Name: "Ability_SpiritualConduit"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

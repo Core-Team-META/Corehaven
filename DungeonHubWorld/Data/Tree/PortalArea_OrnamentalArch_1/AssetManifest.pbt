@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15310209409301279983
   Name: "Wall End Fancy 6m"
   PlatformAssetType: 1

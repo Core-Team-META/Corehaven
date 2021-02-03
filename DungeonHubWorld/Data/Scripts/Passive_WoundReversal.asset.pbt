@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9794600424285984308
   Name: "Passive_WoundReversal"
   PlatformAssetType: 3
@@ -37,5 +37,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

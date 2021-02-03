@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11852799625917719299
   Name: "ITEM_NonEquippable_Essence_Pearl"
   PlatformAssetType: 5
@@ -53,5 +53,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

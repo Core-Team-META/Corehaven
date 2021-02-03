@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12116547427072267564
   Name: "ITEM_Dagger_ObsidianDagger"
   PlatformAssetType: 5
@@ -282,5 +282,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

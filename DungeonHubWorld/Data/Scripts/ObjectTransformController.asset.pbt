@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6126478455621128065
   Name: "ObjectTransformController"
   PlatformAssetType: 3
@@ -12,5 +12,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15594462993751756355
   Name: "ITEM_Shield_Logic"
   PlatformAssetType: 5
@@ -667,5 +667,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

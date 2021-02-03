@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11773761953497867749
   Name: "AbilityHelper_Effect_CripplingWhirlCast"
   PlatformAssetType: 5
@@ -478,5 +478,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

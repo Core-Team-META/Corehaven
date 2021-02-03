@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1831660344620141067
   Name: "APIStatusEffects"
   PlatformAssetType: 3
@@ -18,5 +18,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Name: "NPCs and Dialogs"
+Name: "NPCs and Dialogs"
 RootId: 453904204925054689
 Objects {
   Id: 8355496857395536503
@@ -209,6 +209,14 @@ Objects {
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
         PlaybackRate: 1
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -5956,6 +5964,14 @@ Objects {
         PlaybackRate: 1
         ShouldLoop: true
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -6149,6 +6165,14 @@ Objects {
         PlaybackRate: 0.8
         ShouldLoop: true
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -6195,6 +6219,14 @@ Objects {
         PlaybackRate: 1
         ShouldLoop: true
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -6240,6 +6272,14 @@ Objects {
         Animation: "unarmed_magic_bolt"
         PlaybackRate: 1
         ShouldLoop: true
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -6384,6 +6424,14 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -6444,6 +6492,14 @@ Objects {
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
         PlaybackRate: 1
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -7019,6 +7075,14 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -7560,6 +7624,14 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -7702,6 +7774,14 @@ Objects {
       PlayOnStartAnimation {
         PlaybackRate: 1
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -7838,6 +7918,14 @@ Objects {
         Animation: "unarmed_sit_chair_upright"
         StartPosition: 0.5
         ShouldLoop: true
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -8130,6 +8218,14 @@ Objects {
         StartPosition: 0.4
         ShouldLoop: true
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -8419,6 +8515,14 @@ Objects {
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
         PlaybackRate: 1
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -8753,6 +8857,14 @@ Objects {
       AnimationPlaybackRateMultiplier: 1
       PlayOnStartAnimation {
         PlaybackRate: 1
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }

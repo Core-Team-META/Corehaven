@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6876531271535461333
   Name: "AbilityHelper_Trinket_LeechingBroochCast"
   PlatformAssetType: 5
@@ -131,5 +131,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12285606462837178360
   Name: "ITEM_Armor_WingsOfHope"
   PlatformAssetType: 5
@@ -17747,5 +17747,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

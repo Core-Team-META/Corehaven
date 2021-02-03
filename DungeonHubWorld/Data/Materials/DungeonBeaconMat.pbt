@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 5859106252410666913
   Name: "DungeonBeaconMat"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 15738828732153996826
     ParameterOverrides {

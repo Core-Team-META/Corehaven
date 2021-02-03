@@ -1,4 +1,4 @@
-﻿Name: "TheSquare"
+Name: "TheSquare"
 RootId: 3277514622402591831
 Objects {
   Id: 17510763770242906116

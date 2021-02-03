@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17021346488027288337
   Name: "ITEM_Axe_FineAxe"
   PlatformAssetType: 5
@@ -351,5 +351,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

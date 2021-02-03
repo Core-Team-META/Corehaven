@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14064357864745053567
   Name: "ITEM_Mace_Brimstone"
   PlatformAssetType: 5
@@ -4484,5 +4484,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

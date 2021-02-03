@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 10763710170697883985
   Name: "Elemental Wizard Robe"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 8361643690318007117
     ParameterOverrides {

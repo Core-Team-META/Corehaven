@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 17869577602384161078
   Name: "Fireball"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 14065635217134112544
     ParameterOverrides {

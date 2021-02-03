@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6385381462797035740
   Name: "Ability_LeechingBrooch"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

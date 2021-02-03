@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9055797448677108737
   Name: "Helper_CharacterFrameStatusEffect"
   PlatformAssetType: 5
@@ -196,5 +196,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

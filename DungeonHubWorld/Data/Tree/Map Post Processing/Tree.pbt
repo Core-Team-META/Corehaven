@@ -1,4 +1,4 @@
-﻿Name: "Map Post Processing"
+Name: "Map Post Processing"
 RootId: 17801647813682353850
 Objects {
   Id: 6763572587931382628

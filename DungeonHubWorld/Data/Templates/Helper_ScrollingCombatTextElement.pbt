@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1555176421756595344
   Name: "Helper_ScrollingCombatTextElement"
   PlatformAssetType: 5
@@ -63,5 +63,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

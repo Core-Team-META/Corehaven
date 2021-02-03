@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11871563476575266186
   Name: "VFX_ItemSystems_LootEpic"
   PlatformAssetType: 5
@@ -414,5 +414,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

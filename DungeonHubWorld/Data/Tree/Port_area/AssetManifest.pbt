@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18200200076012147990
   Name: "Fantasy Castle Pillar 02 - Top"
   PlatformAssetType: 1

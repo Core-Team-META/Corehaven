@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2802105411883767810
   Name: "ITEM_NonEquippable_FrogEye"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

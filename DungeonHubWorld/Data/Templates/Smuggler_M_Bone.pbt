@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8557428141749016492
   Name: "Smuggler_M_Bone"
   PlatformAssetType: 5
@@ -3195,6 +3195,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -3321,5 +3329,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

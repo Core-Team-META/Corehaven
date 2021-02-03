@@ -1,4 +1,4 @@
-﻿Name: "Ornamental_Arch_Teleport_2"
+Name: "Ornamental_Arch_Teleport_2"
 RootId: 16041889185259154595
 Objects {
   Id: 2221855278747769896

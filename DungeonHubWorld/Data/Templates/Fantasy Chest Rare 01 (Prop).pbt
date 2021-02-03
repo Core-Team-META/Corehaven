@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3859121682471057631
   Name: "Fantasy Chest Rare 01 (Prop)"
   PlatformAssetType: 5
@@ -191,5 +191,5 @@
       AssetId: "Fantasy_Chest_Rare_01__Prop_"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

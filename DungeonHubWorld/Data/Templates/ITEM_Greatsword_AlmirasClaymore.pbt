@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8930948548750333534
   Name: "ITEM_Greatsword_AlmirasClaymore"
   PlatformAssetType: 5
@@ -401,5 +401,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

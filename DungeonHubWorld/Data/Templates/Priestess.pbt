@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 999399356414642350
   Name: "Priestess"
   PlatformAssetType: 5
@@ -4463,6 +4463,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -4562,5 +4570,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

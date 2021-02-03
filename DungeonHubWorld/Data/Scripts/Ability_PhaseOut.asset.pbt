@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3521339287080108413
   Name: "Ability_PhaseOut"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

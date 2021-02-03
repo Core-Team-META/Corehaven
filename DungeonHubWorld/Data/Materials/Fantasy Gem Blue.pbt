@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 16622597090989605482
   Name: "Fantasy Gem Blue"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 18010942990198143229
     ParameterOverrides {

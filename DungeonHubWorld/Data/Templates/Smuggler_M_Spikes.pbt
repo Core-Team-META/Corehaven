@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8946477488877649663
   Name: "Smuggler_M_Spikes"
   PlatformAssetType: 5
@@ -4239,6 +4239,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -4419,5 +4427,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

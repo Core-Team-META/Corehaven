@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15138827596044669632
   Name: "ITEM_Helmet_WizardHat"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

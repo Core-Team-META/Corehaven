@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7976155364275761170
   Name: "Helper_ItemSystemsLoot"
   PlatformAssetType: 5
@@ -242,5 +242,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

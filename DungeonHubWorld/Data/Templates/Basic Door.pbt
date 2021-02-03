@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15843435437636038033
   Name: "Basic Door"
   PlatformAssetType: 5
@@ -567,5 +567,5 @@
       AssetId: "Basic_Door"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

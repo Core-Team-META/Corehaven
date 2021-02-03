@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 17340189929415780202
   Name: "Wealthy Merchant Outfit"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 16891349665421486861
     ParameterOverrides {

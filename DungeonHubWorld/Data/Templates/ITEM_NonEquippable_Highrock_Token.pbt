@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9246344285987009353
   Name: "ITEM_NonEquippable_Highrock_Token"
   PlatformAssetType: 5
@@ -53,5 +53,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

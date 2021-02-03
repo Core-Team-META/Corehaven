@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9243457285138094618
   Name: "DnD Galleon"
   PlatformAssetType: 5
@@ -34999,6 +34999,6 @@
   Marketplace {
     Description: "Galleon for the D&D contest hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
   DirectlyPublished: true
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4898860718920247137
   Name: "AbilityHelper_Effect_PhaseOutCast"
   PlatformAssetType: 5
@@ -170,5 +170,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

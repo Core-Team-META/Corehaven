@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15834433509110776463
   Name: "DayCycleController"
   PlatformAssetType: 5
@@ -931,5 +931,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

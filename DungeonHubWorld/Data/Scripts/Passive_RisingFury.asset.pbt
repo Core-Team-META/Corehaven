@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14567875589382608270
   Name: "Passive_RisingFury"
   PlatformAssetType: 3
@@ -43,5 +43,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

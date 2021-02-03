@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9973852158356551513
   Name: "Ability_Freeze"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

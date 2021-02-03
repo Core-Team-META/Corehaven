@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10329690887521538313
   Name: "ITEM_Helmet_EnchantedHood"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

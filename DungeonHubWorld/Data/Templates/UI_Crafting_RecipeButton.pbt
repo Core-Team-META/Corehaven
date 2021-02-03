@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2719018489854783687
   Name: "UI_Crafting_RecipeButton"
   PlatformAssetType: 5
@@ -443,5 +443,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

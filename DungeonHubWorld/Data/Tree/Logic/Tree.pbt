@@ -1,4 +1,4 @@
-﻿Name: "Logic"
+Name: "Logic"
 RootId: 8528347562997322264
 Objects {
   Id: 13074551347648616021

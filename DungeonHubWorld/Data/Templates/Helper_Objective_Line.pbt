@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6917522942167372582
   Name: "Helper_Objective_Line"
   PlatformAssetType: 5
@@ -287,5 +287,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

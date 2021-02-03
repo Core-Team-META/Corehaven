@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11361976113091638893
   Name: "ITEM_Dagger_Backtwister"
   PlatformAssetType: 5
@@ -579,5 +579,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

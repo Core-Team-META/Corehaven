@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14003929445359204655
   Name: "SFX_UpgradeUI_ButtonHover"
   PlatformAssetType: 5
@@ -75,5 +75,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

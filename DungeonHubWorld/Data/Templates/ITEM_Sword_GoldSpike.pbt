@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16754519015388640067
   Name: "ITEM_Sword_GoldSpike"
   PlatformAssetType: 5
@@ -923,5 +923,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Name: "ThePond"
+Name: "ThePond"
 RootId: 6690434962317707584
 Objects {
   Id: 5950007080959529747

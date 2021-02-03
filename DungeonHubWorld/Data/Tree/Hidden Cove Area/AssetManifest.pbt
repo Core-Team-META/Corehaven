@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11605462338702658859
   Name: "Nature Pond Birds Ambience Loop 01 SFX"
   PlatformAssetType: 7

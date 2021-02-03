@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9285568076995410658
   Name: "SFX_InventorySalvageBegin"
   PlatformAssetType: 5
@@ -117,5 +117,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

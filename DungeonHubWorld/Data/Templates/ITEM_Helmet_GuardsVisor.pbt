@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18014840149435499865
   Name: "ITEM_Helmet_GuardsVisor"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

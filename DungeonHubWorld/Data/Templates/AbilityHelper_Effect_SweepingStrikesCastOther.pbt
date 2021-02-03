@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5537758756323510468
   Name: "AbilityHelper_Effect_SweepingStrikesCastOther"
   PlatformAssetType: 5
@@ -168,5 +168,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

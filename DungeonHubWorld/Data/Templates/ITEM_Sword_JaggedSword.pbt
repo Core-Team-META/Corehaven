@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1464157479120038932
   Name: "ITEM_Sword_JaggedSword"
   PlatformAssetType: 5
@@ -713,5 +713,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

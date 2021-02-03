@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4685988691808682848
   Name: "ItemSystems_Database"
   PlatformAssetType: 3
@@ -234,5 +234,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

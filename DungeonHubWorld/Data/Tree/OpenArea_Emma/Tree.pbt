@@ -1,4 +1,4 @@
-﻿Name: "OpenArea_Emma"
+Name: "OpenArea_Emma"
 RootId: 6787590626079583879
 Objects {
   Id: 13048775537791811209

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13221207737700267892
   Name: "Passive_Phasing"
   PlatformAssetType: 3
@@ -43,5 +43,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

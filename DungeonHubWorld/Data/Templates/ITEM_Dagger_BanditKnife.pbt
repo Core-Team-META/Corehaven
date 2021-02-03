@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1380440440717897609
   Name: "ITEM_Dagger_BanditKnife"
   PlatformAssetType: 5
@@ -281,5 +281,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

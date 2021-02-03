@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5952575342512792516
   Name: "ITEM_Armor_RuggedArmor"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

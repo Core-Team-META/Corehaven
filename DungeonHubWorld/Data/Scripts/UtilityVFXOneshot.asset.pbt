@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1948828140381252845
   Name: "UtilityVFXOneshot"
   PlatformAssetType: 3
@@ -10,5 +10,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

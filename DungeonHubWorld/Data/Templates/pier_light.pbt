@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13645709276101023996
   Name: "pier_light"
   PlatformAssetType: 5
@@ -403,5 +403,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

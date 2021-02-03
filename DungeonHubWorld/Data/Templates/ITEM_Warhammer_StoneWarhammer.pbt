@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7760367276622256369
   Name: "ITEM_Warhammer_StoneWarhammer"
   PlatformAssetType: 5
@@ -562,5 +562,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

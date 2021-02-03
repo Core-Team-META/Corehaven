@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 11052261208313840228
   Name: "PlagueDragon Armor"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 7021296398057327511
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6887338365434764106
   Name: "ITEM_NonEquippable_IronIngot"
   PlatformAssetType: 5
@@ -49,5 +49,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

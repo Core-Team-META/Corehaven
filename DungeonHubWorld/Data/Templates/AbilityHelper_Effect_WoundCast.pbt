@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11751321570122047444
   Name: "AbilityHelper_Effect_WoundCast"
   PlatformAssetType: 5
@@ -138,5 +138,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

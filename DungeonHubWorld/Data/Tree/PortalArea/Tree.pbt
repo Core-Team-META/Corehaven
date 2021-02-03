@@ -1,4 +1,4 @@
-﻿Name: "PortalArea"
+Name: "PortalArea"
 RootId: 1079375006114686061
 Objects {
   Id: 9922386037024802545
@@ -23992,7 +23992,6 @@ Objects {
     }
     Teams {
     }
-    DisableDistanceFieldLighting: true
     AnimatedMesh {
       AnimationStance: "unarmed_idle_relaxed"
       AnimationStancePlaybackRate: 1
@@ -24001,6 +24000,14 @@ Objects {
       PlayOnStartAnimation {
         Animation: "unarmed_death"
         StartPosition: 0.759058893
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -36833,6 +36840,14 @@ Objects {
         Animation: "2hand_staff_magic_up"
         StartPosition: 0.316543728
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -37985,6 +38000,14 @@ Objects {
         Animation: "unarmed_magic_bolt"
         StartPosition: 0.528181434
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -38877,6 +38900,14 @@ Objects {
       PlayOnStartAnimation {
         Animation: "2hand_sword_slash_vertical"
         StartPosition: 0.573074281
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }
@@ -40420,6 +40451,14 @@ Objects {
         Animation: "1hand_melee_slash_right"
         StartPosition: 0.701339543
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -41608,6 +41647,14 @@ Objects {
         Animation: "1hand_melee_slash_left"
         StartPosition: 0.0984927639
       }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
     }
   }
 }
@@ -42502,6 +42549,14 @@ Objects {
       PlayOnStartAnimation {
         Animation: "2hand_sword_unsheathe"
         StartPosition: 0.239584565
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
+      }
+      SkinnedMeshes {
       }
     }
   }

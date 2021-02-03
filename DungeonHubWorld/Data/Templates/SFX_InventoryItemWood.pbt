@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3961394470878237143
   Name: "SFX_InventoryItemWood"
   PlatformAssetType: 5
@@ -75,5 +75,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7613808107022815451
   Name: "ITEM_Sword_TwistedKris"
   PlatformAssetType: 5
@@ -2168,5 +2168,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

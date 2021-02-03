@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18297183251480267958
   Name: "Simple Exposure Post Process"
   PlatformAssetType: 20

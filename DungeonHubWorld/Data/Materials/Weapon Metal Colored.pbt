@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 7957846202032853532
   Name: "Weapon Metal Colored"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 790452671674324529
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5297408660269643731
   Name: "Priestess NPC Pack"
   PlatformAssetType: 5
@@ -39,5 +39,5 @@
     OwnerName: "Anna"
     Description: "V. 1.0: Contains NPCs and custom outfits for D&D even hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

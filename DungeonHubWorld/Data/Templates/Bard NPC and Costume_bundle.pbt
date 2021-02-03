@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3456890545172646419
   Name: "Bard NPC and Costume"
   PlatformAssetType: 5
@@ -40,5 +40,5 @@
     Version: "1.0.0"
     Description: "For D&D event hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

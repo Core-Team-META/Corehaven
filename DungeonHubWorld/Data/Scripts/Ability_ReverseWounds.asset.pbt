@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7268644478511274054
   Name: "Ability_ReverseWounds"
   PlatformAssetType: 3
@@ -79,5 +79,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

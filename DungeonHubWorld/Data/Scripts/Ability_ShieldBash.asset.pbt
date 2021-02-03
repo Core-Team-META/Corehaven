@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16742234104346326110
   Name: "Ability_ShieldBash"
   PlatformAssetType: 3
@@ -81,5 +81,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

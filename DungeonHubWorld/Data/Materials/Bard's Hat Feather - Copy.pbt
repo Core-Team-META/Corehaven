@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 14931813462523523395
   Name: "Bard\'s Hat Feather - Copy"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 6079892327784756655
     ParameterOverrides {

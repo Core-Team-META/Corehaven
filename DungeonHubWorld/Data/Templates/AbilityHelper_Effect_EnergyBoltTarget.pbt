@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8968888982353595706
   Name: "AbilityHelper_Effect_EnergyBoltTarget"
   PlatformAssetType: 5
@@ -388,5 +388,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

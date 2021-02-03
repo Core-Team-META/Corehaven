@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11459244901332248434
   Name: "Helper_TalentRequirementArrow"
   PlatformAssetType: 5
@@ -382,5 +382,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

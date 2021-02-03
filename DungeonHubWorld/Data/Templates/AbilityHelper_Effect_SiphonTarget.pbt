@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12620255149055723196
   Name: "AbilityHelper_Effect_SiphonTarget"
   PlatformAssetType: 5
@@ -386,5 +386,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

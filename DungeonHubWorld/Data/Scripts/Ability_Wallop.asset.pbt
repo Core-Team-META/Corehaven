@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9080875412052933916
   Name: "Ability_Wallop"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

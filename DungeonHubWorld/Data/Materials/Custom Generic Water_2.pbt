@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 11816486944759134812
   Name: "Custom Generic Water_SquarePool"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 16532662947784276478
     ParameterOverrides {

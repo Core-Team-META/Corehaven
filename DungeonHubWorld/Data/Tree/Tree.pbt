@@ -1,4 +1,4 @@
-﻿Name: "Root"
+Name: "Root"
 RootId: 4781671109827199097
 Objects {
   Id: 4781671109827199097
@@ -21,6 +21,7 @@ Objects {
   ChildIds: 2653836035491408139
   ChildIds: 4642598280104522185
   ChildIds: 6787590626079583879
+  ChildIds: 8017889640626183176
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -30,6 +31,32 @@ Objects {
     Value: "mc:evisibilitysetting:forceon"
   }
   Folder {
+  }
+}
+Objects {
+  Id: 8017889640626183176
+  Name: "Adventure_system_Brent"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 4781671109827199097
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Adventure_system_Brent"
   }
 }
 Objects {

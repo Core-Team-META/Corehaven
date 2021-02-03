@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 12391831817613048684
   Name: "StatusEffect_PlaguedWound"
   PlatformAssetType: 3
   TextAsset {
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

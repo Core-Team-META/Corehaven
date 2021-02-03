@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3205560497349161736
   Name: "Passive_Refraction"
   PlatformAssetType: 3
@@ -43,5 +43,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

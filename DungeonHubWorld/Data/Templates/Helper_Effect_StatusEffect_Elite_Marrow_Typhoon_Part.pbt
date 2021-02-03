@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6837362272575588251
   Name: "Helper_Effect_StatusEffect_Elite_Marrow_Typhoon_Part"
   PlatformAssetType: 5
@@ -169,5 +169,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

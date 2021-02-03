@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 16812542169514897746
   Name: "Custom Metal Old Beaten Gold Frames"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 8916846240532825810
     ParameterOverrides {

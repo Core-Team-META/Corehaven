@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8761809405404053299
   Name: "Helper_Effect_StatusEffect_RighteousHammer"
   PlatformAssetType: 5
@@ -88,5 +88,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

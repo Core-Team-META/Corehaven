@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17338438655186234114
   Name: "WealthyMerchant"
   PlatformAssetType: 5
@@ -5554,6 +5554,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -5806,5 +5814,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

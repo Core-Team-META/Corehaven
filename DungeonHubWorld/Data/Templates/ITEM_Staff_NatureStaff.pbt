@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9967686647810635206
   Name: "ITEM_Staff_NatureStaff"
   PlatformAssetType: 5
@@ -356,5 +356,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

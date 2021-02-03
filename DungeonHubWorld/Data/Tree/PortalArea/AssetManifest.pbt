@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18423898048047861963
   Name: "Fantasy Axe Blade 01"
   PlatformAssetType: 1

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 825098659234595574
   Name: "Ability_MendingLight"
   PlatformAssetType: 3
@@ -75,5 +75,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

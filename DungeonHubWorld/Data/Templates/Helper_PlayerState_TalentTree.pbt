@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 847677184966527912
   Name: "Helper_PlayerState_TalentTree"
   PlatformAssetType: 5
@@ -43,5 +43,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

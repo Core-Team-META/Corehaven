@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2222293508240886553
   Name: "Bard"
   PlatformAssetType: 5
@@ -4236,6 +4236,14 @@
             PlayOnStartAnimation {
               PlaybackRate: 1
             }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
+            SkinnedMeshes {
+            }
           }
         }
       }
@@ -4428,6 +4436,6 @@
   Marketplace {
     Description: "For D&D event hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
   DirectlyPublished: true
 }

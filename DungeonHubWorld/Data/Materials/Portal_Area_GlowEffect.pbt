@@ -1,8 +1,8 @@
-﻿Assets {
+Assets {
   Id: 2957685765202491718
   Name: "Portal_Area_GlowEffect"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 74
   CustomMaterialAsset {
     BaseMaterialId: 17486172561945050120
     ParameterOverrides {

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5374600279517103105
   Name: "Helper_ItemSystemsCraftingRecipeManager"
   PlatformAssetType: 5
@@ -176,5 +176,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

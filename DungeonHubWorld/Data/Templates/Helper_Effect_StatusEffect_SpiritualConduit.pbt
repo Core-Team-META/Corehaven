@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6054372305956177478
   Name: "Helper_Effect_StatusEffect_SpiritualConduit"
   PlatformAssetType: 5
@@ -180,5 +180,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

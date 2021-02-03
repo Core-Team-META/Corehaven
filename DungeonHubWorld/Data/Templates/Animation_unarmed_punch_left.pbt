@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13383596480420752369
   Name: "Animation_unarmed_punch_left"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

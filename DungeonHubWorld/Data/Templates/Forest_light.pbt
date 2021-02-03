@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18189767601193231831
   Name: "Forest_light"
   PlatformAssetType: 5
@@ -328,5 +328,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

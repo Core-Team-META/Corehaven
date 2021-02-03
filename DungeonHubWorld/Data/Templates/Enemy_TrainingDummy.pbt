@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2506503432659139454
   Name: "Enemy_TrainingDummy"
   PlatformAssetType: 5
@@ -2788,5 +2788,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1615517204719504979
   Name: "ITEM_Mace_SpikedClub"
   PlatformAssetType: 5
@@ -2027,5 +2027,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

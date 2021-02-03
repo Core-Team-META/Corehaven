@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18445453505962092325
   Name: "Animation_1hand_melee_slash_right"
   PlatformAssetType: 5
@@ -74,5 +74,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

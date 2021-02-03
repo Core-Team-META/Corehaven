@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11272257922258550436
   Name: "Ability_SweepingSlash"
   PlatformAssetType: 3
@@ -81,5 +81,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

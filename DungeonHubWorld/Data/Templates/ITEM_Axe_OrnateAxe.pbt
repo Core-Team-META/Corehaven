@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14084810069708713023
   Name: "ITEM_Axe_OrnateAxe"
   PlatformAssetType: 5
@@ -355,5 +355,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

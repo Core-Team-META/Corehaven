@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9398179654413895320
   Name: "ITEM_Mace_SilverHammer"
   PlatformAssetType: 5
@@ -896,5 +896,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6080563755617504802
   Name: "APIAnimationSystem"
   PlatformAssetType: 3
@@ -210,5 +210,5 @@
       }
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

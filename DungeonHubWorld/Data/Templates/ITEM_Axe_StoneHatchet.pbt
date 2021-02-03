@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4864287603516344948
   Name: "ITEM_Axe_StoneHatchet"
   PlatformAssetType: 5
@@ -355,5 +355,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }

@@ -1,4 +1,4 @@
-﻿Name: "InvisibleCollision"
+Name: "InvisibleCollision"
 RootId: 5190124483811056971
 Objects {
   Id: 5313182795518221386

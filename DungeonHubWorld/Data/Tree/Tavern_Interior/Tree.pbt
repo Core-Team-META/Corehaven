@@ -1,4 +1,4 @@
-﻿Name: "Tavern_Interior"
+Name: "Tavern_Interior"
 RootId: 8666821601116918477
 Objects {
   Id: 14847548634594183572

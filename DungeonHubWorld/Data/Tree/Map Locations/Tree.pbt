@@ -1,4 +1,4 @@
-﻿Name: "Map Locations"
+Name: "Map Locations"
 RootId: 4958045848858137993
 Objects {
   Id: 6370142852609334953

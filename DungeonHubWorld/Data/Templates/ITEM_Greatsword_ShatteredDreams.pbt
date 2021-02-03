@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16592716534688806428
   Name: "ITEM_Greatsword_ShatteredDreams"
   PlatformAssetType: 5
@@ -1435,5 +1435,5 @@
       AssetId: "None"
     }
   }
-  SerializationVersion: 72
+  SerializationVersion: 74
 }
