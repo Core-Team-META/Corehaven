@@ -139173,12 +139173,12 @@ Objects {
   Name: "Fantasy Castle Door 02"
   Transform {
     Location {
-      X: -138.980591
-      Y: -471.404236
+      X: -138.980652
+      Y: -471.404
       Z: 69.3588867
     }
     Rotation {
-      Yaw: -97.1834717
+      Yaw: -121.254074
     }
     Scale {
       X: 1
@@ -140046,12 +140046,12 @@ Objects {
   Name: "Fantasy Castle Door 02"
   Transform {
     Location {
-      X: 185.898254
-      Y: -466.953796
+      X: 185.898193
+      Y: -466.953552
       Z: 69.3588867
     }
     Rotation {
-      Yaw: -87.3736572
+      Yaw: -48.836853
     }
     Scale {
       X: 1
@@ -150892,9 +150892,9 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -1448.99341
-      Y: -1478.39502
-      Z: 382.574219
+      X: -686.239746
+      Y: -1201.32043
+      Z: 138.458984
     }
     Rotation {
       Yaw: -158.464066

@@ -26,6 +26,24 @@ Assets {
   }
 }
 Assets {
+  Id: 16132958878921067135
+  Name: "Sign Bracket - Square"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_signbracket_square_001"
+  }
+}
+Assets {
+  Id: 15478017006173490553
+  Name: "Fantasy Human Guy 1"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_guy_fantasy_001_ref"
+  }
+}
+Assets {
   Id: 14914706139505143474
   Name: "Fantasy Human Gal 1"
   PlatformAssetType: 17
@@ -35,12 +53,30 @@ Assets {
   }
 }
 Assets {
+  Id: 14727519050521805515
+  Name: "Decal Burnt Streaks 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_burned_streak_002_ref"
+  }
+}
+Assets {
   Id: 14519065406787674128
   Name: "Star - Rounded"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_star_chubby_001"
+  }
+}
+Assets {
+  Id: 14212988502358508072
+  Name: "Metal Basic Steel"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "steel_001"
   }
 }
 Assets {
@@ -59,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 13417612891161912966
+  Name: "Sphere - Half Slice Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_wedge_002"
   }
 }
 Assets {
@@ -116,12 +161,39 @@ Assets {
   }
 }
 Assets {
+  Id: 11585801559919915394
+  Name: "Pipe - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_002"
+  }
+}
+Assets {
+  Id: 11236189850874066005
+  Name: "Heart - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_heart_polished_001"
+  }
+}
+Assets {
   Id: 10413465125058823580
   Name: "Horn"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_horn_001"
+  }
+}
+Assets {
+  Id: 9874412008912951583
+  Name: "Cone - Bullet"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_bullet_001"
   }
 }
 Assets {
@@ -260,6 +332,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4015152537906182724
+  Name: "Sign Font 1 Neon Outline: \'"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "CollegeNeon_Outline_01_Text_057"
+  }
+}
+Assets {
   Id: 3575013281856575933
   Name: "Ring - Quarter Thick"
   PlatformAssetType: 1
@@ -275,6 +356,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 2754963224534021958
+  Name: "Invisible"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 1562276358413043561
+  Name: "Fantasy Shield Strap 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_shield_strap_001"
   }
 }
 Assets {

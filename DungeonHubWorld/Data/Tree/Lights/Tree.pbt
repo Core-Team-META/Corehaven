@@ -1,6 +1,104 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 2958487765480285318
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: -4538.4043
+      Y: -2633.70483
+      Z: -5803.47314
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75048542
+      Roll: -0.0347289853
+    }
+    Scale {
+      X: 3.91012955
+      Y: 3.91012955
+      Z: 3.91012955
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2527360909484214569
+      value {
+        Overrides {
+          Name: "Name"
+          String: "r"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.234538198
+            Y: 3.5790039e-05
+            Z: -1.03519988
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90215397
+            Y: 1.90214598
+            Z: 1.05741096
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 570.635376
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "HouseLantern_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 21407.9629
+            Y: -4829.15479
+            Z: 4012.11646
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590698
+            Yaw: 155.935364
+            Roll: -0.0347290039
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 11.9109049
+            Y: 11.9109049
+            Z: 11.9109049
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
   Id: 18163243891788255767
   Name: "pier_light"
   Transform {
