@@ -8,6 +8,24 @@ Assets {
   }
 }
 Assets {
+  Id: 18423898048047861963
+  Name: "Fantasy Axe Blade 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_axe_001"
+  }
+}
+Assets {
+  Id: 18195697283062358788
+  Name: "Cylinder - Chamfered Small Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_003"
+  }
+}
+Assets {
   Id: 17718090233280466471
   Name: "Wedge - Curved"
   PlatformAssetType: 1
@@ -17,12 +35,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17429523740942577057
+  Name: "Pipe - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter-pipe_001"
+  }
+}
+Assets {
   Id: 16903585788288389166
   Name: "Wood 2x4 4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 16372496464315477095
+  Name: "Ring - Beveled Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
   }
 }
 Assets {
@@ -161,6 +197,15 @@ Assets {
   }
 }
 Assets {
+  Id: 10279800739964780320
+  Name: "Craftsman Part - Inside Upper Trim 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_part_intTrim_001_up"
+  }
+}
+Assets {
   Id: 9675776263369201294
   Name: "Fantasy Pommel 03"
   PlatformAssetType: 1
@@ -242,6 +287,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6198789205645059060
+  Name: "Prism - 3-Sided Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_triangle_convex_001"
+  }
+}
+Assets {
   Id: 5886611034140500769
   Name: "Fantasy Bookshelf Top"
   PlatformAssetType: 1
@@ -278,6 +332,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4801985963367974663
+  Name: "Fantasy Sword Blade 03"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_003"
+  }
+}
+Assets {
   Id: 4488444258523261897
   Name: "Flare Billboard"
   PlatformAssetType: 6
@@ -287,12 +350,39 @@ Assets {
   }
 }
 Assets {
+  Id: 4342756216088781504
+  Name: "Fantasy Sword Blade 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_002"
+  }
+}
+Assets {
+  Id: 3982193030776093519
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 3768007809154241805
   Name: "Roof Metal 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_metal_001_uv"
+  }
+}
+Assets {
+  Id: 3702191406046426907
+  Name: "Emissive Glow Transparent"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_emissive_001"
   }
 }
 Assets {
