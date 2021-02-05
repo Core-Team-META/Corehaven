@@ -38303,12 +38303,12 @@ Objects {
   Name: "Chest Big Closed"
   Transform {
     Location {
-      X: -1877.61096
-      Y: 3041.44092
-      Z: 58.7431641
+      X: -1972.55676
+      Y: 2688.60693
+      Z: 73.8383789
     }
     Rotation {
-      Yaw: -165.550262
+      Yaw: -75.4225464
     }
     Scale {
       X: 0.751716
@@ -145111,6 +145111,7 @@ Objects {
   ChildIds: 13903198408585332475
   ChildIds: 12031915743515749556
   ChildIds: 12370029681539927584
+  ChildIds: 10353702894781975608
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -145119,6 +145120,57 @@ Objects {
   }
   Folder {
     IsGroup: true
+  }
+}
+Objects {
+  Id: 10353702894781975608
+  Name: "Craftsman Roof 01 Bracket"
+  Transform {
+    Location {
+      X: 2827.45483
+      Y: -6463.20801
+      Z: 139.709961
+    }
+    Rotation {
+      Yaw: 51.9172211
+    }
+    Scale {
+      X: 1.1
+      Y: 1.1
+      Z: 1.1
+    }
+  }
+  ParentId: 8225480507783092474
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_Trim:color"
+      Color {
+        R: 0.286458343
+        G: 0.129356816
+        B: 0.0626627654
+        A: 1
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 15744908842130492752
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
   }
 }
 Objects {
@@ -175563,7 +175615,7 @@ Objects {
     Location {
       X: -344.544342
       Y: 61.6817589
-      Z: 169.876953
+      Z: 174.300293
     }
     Rotation {
       Yaw: 5.58489119e-05
@@ -177487,7 +177539,7 @@ Objects {
       Z: 72.3198242
     }
     Rotation {
-      Yaw: -88.5555115
+      Yaw: -105.016144
     }
     Scale {
       X: 0.930100083

@@ -1,6 +1,104 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 4654034304851342331
+  Name: "pier_light"
+  Transform {
+    Location {
+      X: -3602.98535
+      Y: -2399.93896
+      Z: -6424.50488
+    }
+    Rotation {
+      Pitch: -1.58590841
+      Yaw: 2.75048542
+      Roll: -0.0347289853
+    }
+    Scale {
+      X: 3.91012955
+      Y: 3.91012955
+      Z: 3.91012955
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 2527360909484214569
+      value {
+        Overrides {
+          Name: "Name"
+          String: "r"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: -0.234538198
+            Y: 3.5790039e-05
+            Z: -1.03519988
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1.90215397
+            Y: 1.90214598
+            Z: 1.05741096
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 7886655707835920875
+      value {
+        Overrides {
+          Name: "Intensity"
+          Float: 10
+        }
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 570.635376
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 9428891237528791597
+      value {
+        Overrides {
+          Name: "Name"
+          String: "HouseLantern_light"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 12898.251
+            Y: -20932.1582
+            Z: 4018.72339
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Pitch: -1.58590698
+            Yaw: 155.935364
+            Roll: -0.0347290039
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 11.9109049
+            Y: 11.9109049
+            Z: 11.9109049
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 13645709276101023996
+    }
+  }
+}
+Objects {
   Id: 2958487765480285318
   Name: "pier_light"
   Transform {
@@ -2857,15 +2955,15 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10285.6895
-            Y: -21925.0938
-            Z: 3619.37036
+            X: 10210.7051
+            Y: -22286.2363
+            Z: 3619.37085
           }
         }
         Overrides {
           Name: "Rotation"
           Rotator {
-            Yaw: -101.697098
+            Yaw: -101.697083
           }
         }
         Overrides {
@@ -2926,9 +3024,9 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12541.6787
-            Y: -22392.1719
-            Z: 3619.37036
+            X: 12439.2617
+            Y: -22742.0098
+            Z: 3619.37085
           }
         }
         Overrides {
