@@ -44,12 +44,30 @@ Assets {
   }
 }
 Assets {
+  Id: 17237692812658431496
+  Name: "Fantasy Staff Head 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_001"
+  }
+}
+Assets {
   Id: 16903585788288389166
   Name: "Wood 2x4 4m"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 16504827085729137437
+  Name: "Metal Vent Duct Spiral 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_urb_vent_duct_round_001_uv_ref"
   }
 }
 Assets {
@@ -170,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13367808827977076930
+  Name: "Cabinet Door"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_door_001"
+  }
+}
+Assets {
   Id: 12159007725512684050
   Name: "Urban Pipe Straight"
   PlatformAssetType: 1
@@ -185,6 +212,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_002"
+  }
+}
+Assets {
+  Id: 10900390539666100318
+  Name: "Shield 06"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_006"
   }
 }
 Assets {
@@ -287,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 6730645643119699680
+  Name: "Shield 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_001"
+  }
+}
+Assets {
   Id: 6198789205645059060
   Name: "Prism - 3-Sided Convex"
   PlatformAssetType: 1
@@ -359,6 +404,15 @@ Assets {
   }
 }
 Assets {
+  Id: 4341266160864248082
+  Name: "Shield 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_shield_005"
+  }
+}
+Assets {
   Id: 3982193030776093519
   Name: "Sphere"
   PlatformAssetType: 1
@@ -386,6 +440,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3682206342183528038
+  Name: "Fantasy Sword Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
   Id: 2991841227597599885
   Name: "Metal Iron 01"
   PlatformAssetType: 2
@@ -410,6 +473,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
+  Id: 1920010878601219178
+  Name: "Fantasy Sword Guard 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_sword_001"
   }
 }
 Assets {

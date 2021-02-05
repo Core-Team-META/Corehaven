@@ -51882,10 +51882,10 @@ Objects {
     }
   }
   ParentId: 2241526501067330374
-  ChildIds: 8801564798784781486
   ChildIds: 5281744499667362035
   ChildIds: 18010153717511560818
-  ChildIds: 5819553762553174914
+  ChildIds: 16525792620782232415
+  ChildIds: 2663572659840232232
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -51897,18 +51897,22 @@ Objects {
   }
 }
 Objects {
-  Id: 5819553762553174914
+  Id: 2663572659840232232
   Name: "Fantasy Pommel 03"
   Transform {
     Location {
-      Z: -13
+      X: -0.000125942228
+      Y: -0.000103311984
+      Z: -12.9999142
     }
     Rotation {
+      Yaw: -4.268868e-06
+      Roll: -2.81745288e-05
     }
     Scale {
-      X: 1.25
-      Y: 1.25
-      Z: 1.25
+      X: 1.24999988
+      Y: 1.24999988
+      Z: 1.24999988
     }
   }
   ParentId: 1850858463973991732
@@ -51921,6 +51925,47 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 14405960884493885038
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
+  Id: 16525792620782232415
+  Name: "Fantasy Sword Grip 01"
+  Transform {
+    Location {
+      X: 0.000145620696
+      Y: 0.000135781462
+      Z: -15.0000553
+    }
+    Rotation {
+      Yaw: -4.268868e-06
+      Roll: -2.81745288e-05
+    }
+    Scale {
+      X: 0.99999994
+      Y: 0.99999994
+      Z: 0.99999994
+    }
+  }
+  ParentId: 1850858463973991732
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 3682206342183528038
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -52012,43 +52057,6 @@ Objects {
   CoreMesh {
     MeshAsset {
       Id: 1920010878601219178
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 8801564798784781486
-  Name: "Fantasy Sword Grip 01"
-  Transform {
-    Location {
-      Z: -15
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 1850858463973991732
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 3682206342183528038
     }
     Teams {
       IsTeamCollisionEnabled: true
@@ -52400,8 +52408,6 @@ Objects {
     }
     Rotation {
       Pitch: 6.83018879e-06
-      Yaw: -6.72346732e-06
-      Roll: -1.45141494e-05
     }
     Scale {
       X: 1.25
