@@ -1,6 +1,83 @@
 Name: "Lights"
 RootId: 2734733877656755987
 Objects {
+  Id: 683071710735125069
+  Name: "Fantasy Candle Lit - Sconce 02 (Prop)"
+  Transform {
+    Location {
+      X: -3637.59961
+      Y: 4211.74512
+      Z: -6553.43604
+    }
+    Rotation {
+      Yaw: -74.8821106
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 2734733877656755987
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 9287064100231657554
+      value {
+        Overrides {
+          Name: "AttenuationRadius"
+          Float: 340.527
+        }
+        Overrides {
+          Name: "Intensity"
+          Float: 3
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 0.234371185
+            Y: 79.1930618
+            Z: 7.21630859
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 16344326152152828370
+      value {
+        Overrides {
+          Name: "Name"
+          String: "Fantasy Candle Lit - Sconce 02 (Prop)"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 11973.6768
+            Y: -24984.9922
+            Z: 3619.37085
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: 78.3027344
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 3.04616642
+            Y: 3.04616642
+            Z: 3.04616642
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 8272579113404475459
+    }
+  }
+}
+Objects {
   Id: 4654034304851342331
   Name: "pier_light"
   Transform {
@@ -1897,7 +1974,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 1655.02063
+        AttenuationRadius: 1067.80103
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20
@@ -2955,8 +3032,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 10210.7051
-            Y: -22286.2363
+            X: 10191.8896
+            Y: -22417.7207
             Z: 3619.37085
           }
         }
@@ -3024,8 +3101,8 @@ Objects {
         Overrides {
           Name: "Position"
           Vector {
-            X: 12439.2617
-            Y: -22742.0098
+            X: 12416.5078
+            Y: -22851.2598
             Z: 3619.37085
           }
         }
@@ -3055,9 +3132,9 @@ Objects {
   Name: "Fantasy Candle Lit - Group 01(Prop)"
   Transform {
     Location {
-      X: 12010.4863
-      Y: -23206.5664
-      Z: 3158.4043
+      X: 11894.5566
+      Y: -23362.9199
+      Z: 3158.40454
     }
     Rotation {
       Yaw: 33.9122124

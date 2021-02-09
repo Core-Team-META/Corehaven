@@ -40,7 +40,6 @@ Objects {
   ChildIds: 10340055090183174356
   ChildIds: 5159309234536383154
   ChildIds: 16767020233002569981
-  ChildIds: 16752543726214201114
   ChildIds: 6982920949181791987
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -5764,165 +5763,6 @@ Objects {
   }
 }
 Objects {
-  Id: 16752543726214201114
-  Name: "Group"
-  Transform {
-    Location {
-    }
-    Rotation {
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8355496857395536503
-  ChildIds: 18010771305414530573
-  ChildIds: 9959083287818062245
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  Folder {
-    IsGroup: true
-  }
-}
-Objects {
-  Id: 9959083287818062245
-  Name: "NPC Dialog Trigger"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16752543726214201114
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 8616549876975302597
-      value {
-        Overrides {
-          Name: "Name"
-          String: "NPC Dialog Trigger"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2255
-            Y: 4700
-            Z: 1055
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1.19999993
-            Y: 1.19999993
-            Z: 1.19999993
-          }
-        }
-        Overrides {
-          Name: "cs:Name"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:PlayDialogAnimations"
-          Bool: false
-        }
-        Overrides {
-          Name: "cs:DefaultLoopAnimation"
-          String: ""
-        }
-        Overrides {
-          Name: "cs:AnimatedMesh"
-          ObjectReference {
-          }
-        }
-        Overrides {
-          Name: "cs:StartDialogId"
-          String: "Sleep"
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 4839589651670793246
-    }
-  }
-}
-Objects {
-  Id: 18010771305414530573
-  Name: "Commoner_M_01"
-  Transform {
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 16752543726214201114
-  TemplateInstance {
-    ParameterOverrideMap {
-      key: 6153812158312227725
-      value {
-        Overrides {
-          Name: "PlayOnStartAnimation"
-          String: "unarmed_death"
-        }
-        Overrides {
-          Name: "PlayOnStartAnimationPosition"
-          Float: 0.706127763
-        }
-        Overrides {
-          Name: "PlayOnStartAnimationRate"
-          Float: 0
-        }
-      }
-    }
-    ParameterOverrideMap {
-      key: 6804185482513935256
-      value {
-        Overrides {
-          Name: "Name"
-          String: "Commoner_M_01"
-        }
-        Overrides {
-          Name: "Position"
-          Vector {
-            X: -2250
-            Y: 4670
-            Z: 1015
-          }
-        }
-        Overrides {
-          Name: "Rotation"
-          Rotator {
-          }
-        }
-        Overrides {
-          Name: "Scale"
-          Vector {
-            X: 1
-            Y: 1
-            Z: 1
-          }
-        }
-      }
-    }
-    TemplateAsset {
-      Id: 14260632711062808493
-    }
-  }
-}
-Objects {
   Id: 16767020233002569981
   Name: "Fantasy Human Gal 1"
   Transform {
@@ -7559,7 +7399,7 @@ Objects {
   Transform {
     Location {
       X: -960
-      Y: 1760
+      Y: 1811.11841
     }
     Rotation {
     }
