@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17406869057951057684
+  Name: "Ceramic Terracotta Pots Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_terracotta_pots_002_uv"
+  }
+}
+Assets {
   Id: 17248571443048080908
   Name: "Cabinet - Upper"
   PlatformAssetType: 1
@@ -275,6 +284,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 15640677947115468700
+  Name: "Fantasy Clay Pot 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_clay_pot_001_ref"
+  }
+}
+Assets {
+  Id: 15473025936617375823
+  Name: "Ceramic Terracotta Pots 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_terracotta_pots_001_uv"
   }
 }
 Assets {
@@ -620,6 +647,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9705154651042822745
+  Name: "Fantasy Book 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_001_ref"
+  }
+}
+Assets {
   Id: 9675776263369201294
   Name: "Fantasy Pommel 03"
   PlatformAssetType: 1
@@ -656,6 +692,24 @@ Assets {
   }
 }
 Assets {
+  Id: 9364533443650044160
+  Name: "Fantasy Book Collection 05"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_collection_004_ref"
+  }
+}
+Assets {
+  Id: 8985846431173858098
+  Name: "Fantasy Clay Pot 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fantasy_clay_pot_002_ref"
+  }
+}
+Assets {
   Id: 8916846240532825810
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
@@ -671,6 +725,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_barrel_001"
+  }
+}
+Assets {
+  Id: 8085229185430768913
+  Name: "Fantasy Book Collection 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_collection_05_ref"
   }
 }
 Assets {
