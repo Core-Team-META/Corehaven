@@ -36,7 +36,6 @@ Objects {
   ChildIds: 866783569642170081
   ChildIds: 6485487148835751902
   ChildIds: 5242014823355942180
-  ChildIds: 12714735733483420931
   ChildIds: 10340055090183174356
   ChildIds: 5159309234536383154
   ChildIds: 16767020233002569981
@@ -6017,70 +6016,16 @@ Objects {
   }
 }
 Objects {
-  Id: 12714735733483420931
-  Name: "Fantasy Human Guy"
-  Transform {
-    Location {
-      X: -425
-      Y: -8455
-      Z: 1115
-    }
-    Rotation {
-      Yaw: -174.999771
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 8355496857395536503
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 7947441615123677894
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    AnimatedMesh {
-      AnimationStance: "unarmed_idle_ready"
-      AnimationStancePlaybackRate: 1
-      AnimationStanceShouldLoop: true
-      AnimationPlaybackRateMultiplier: 1
-      PlayOnStartAnimation {
-        Animation: "unarmed_magic_up"
-        PlaybackRate: 1
-        ShouldLoop: true
-      }
-      SkinnedMeshes {
-      }
-      SkinnedMeshes {
-      }
-      SkinnedMeshes {
-      }
-      SkinnedMeshes {
-      }
-    }
-  }
-}
-Objects {
   Id: 5242014823355942180
   Name: "Fantasy Human Guy"
   Transform {
     Location {
-      X: -255
-      Y: -10090
-      Z: 1115
+      X: 4253.06445
+      Y: -12258.6113
+      Z: 1157.61865
     }
     Rotation {
-      Yaw: -174.999771
+      Yaw: -86.7547607
     }
     Scale {
       X: 1

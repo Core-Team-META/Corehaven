@@ -39084,7 +39084,7 @@ Objects {
   Name: "Table Assembled"
   Transform {
     Location {
-      X: -3174.56641
+      X: -3230.24023
       Y: 577.81543
       Z: 212.163574
     }
@@ -93345,9 +93345,9 @@ Objects {
   Name: "Simple Crate 150cm"
   Transform {
     Location {
-      X: 216.093185
-      Y: 78.0064697
-      Z: 1.12228191
+      X: 190.10907
+      Y: -24.4321613
+      Z: 0.540228903
     }
     Rotation {
     }
