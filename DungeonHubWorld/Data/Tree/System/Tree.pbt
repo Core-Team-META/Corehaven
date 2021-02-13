@@ -43493,6 +43493,7 @@ Objects {
       ChatMode {
         Value: "mc:echatmode:allonly"
       }
+      EnablePlayModeProfiler: true
       ChatSettings {
         ChatMode {
         }

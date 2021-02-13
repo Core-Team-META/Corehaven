@@ -128540,6 +128540,10 @@ Objects {
       Name: "bp:Shape Index"
       Int: 8
     }
+    Overrides {
+      Name: "bp:Emissive Boost"
+      Float: 1
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -128887,16 +128891,16 @@ Objects {
   ParentId: 10163287201259091024
   UnregisteredParameters {
     Overrides {
+      Name: "bp:Particle Scale Multiplier"
+      Float: 0.698622108
+    }
+    Overrides {
       Name: "bp:Emissive Boost"
-      Float: 1.71800625
+      Float: 0.676183879
     }
     Overrides {
       Name: "bp:Life"
-      Float: 1.98651779
-    }
-    Overrides {
-      Name: "bp:Particle Scale Multiplier"
-      Float: 1.32904351
+      Float: 1.6747514
     }
   }
   Collidable_v2 {

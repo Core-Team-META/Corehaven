@@ -13324,6 +13324,9 @@ Objects {
   ChildIds: 3000540549236765268
   ChildIds: 649522363629228574
   ChildIds: 5168943497890190863
+  ChildIds: 14908147837636167261
+  ChildIds: 7810959966188896094
+  ChildIds: 10699888971822756282
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13338,6 +13341,155 @@ Objects {
     SubobjectId: 9870247033280312804
     InstanceId: 11637633550569433490
     TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 10699888971822756282
+  Name: "AdventureResourceTrigger_Eggs"
+  Transform {
+    Location {
+      X: -2664.75342
+      Y: -10085.5693
+      Z: -6626.19092
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12043119030245497834
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7916756985127708881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AdventureResourceTrigger_Eggs"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4079.72461
+            Y: -10130.0967
+            Z: -6651.33936
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -179.968338
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12456967095969868933
+    }
+  }
+}
+Objects {
+  Id: 7810959966188896094
+  Name: "AdventureResourceTrigger_Eggs"
+  Transform {
+    Location {
+      X: -2557.6377
+      Y: -10085.5693
+      Z: -6626.19092
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12043119030245497834
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7916756985127708881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AdventureResourceTrigger_Eggs"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 4181.98682
+            Y: -10561.0674
+            Z: -6701.28271
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+        Overrides {
+          Name: "Scale"
+          Vector {
+            X: 1
+            Y: 1
+            Z: 1
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12456967095969868933
+    }
+  }
+}
+Objects {
+  Id: 14908147837636167261
+  Name: "AdventureResourceTrigger_Eggs"
+  Transform {
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12043119030245497834
+  TemplateInstance {
+    ParameterOverrideMap {
+      key: 7916756985127708881
+      value {
+        Overrides {
+          Name: "Name"
+          String: "AdventureResourceTrigger_Eggs"
+        }
+        Overrides {
+          Name: "Position"
+          Vector {
+            X: 3609.73267
+            Y: -9648.78
+            Z: -6605.56104
+          }
+        }
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+            Yaw: -118.58017
+          }
+        }
+      }
+    }
+    TemplateAsset {
+      Id: 12456967095969868933
+    }
   }
 }
 Objects {
@@ -14758,6 +14910,7 @@ Objects {
   ChildIds: 11231175807017639672
   ChildIds: 13295271999524905565
   ChildIds: 11581954449397755413
+  ChildIds: 3431438144043089024
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -14770,6 +14923,151 @@ Objects {
   InstanceHistory {
     SelfId: 1070289308957247906
     SubobjectId: 2378331500455831468
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 3431438144043089024
+  Name: "Adventure - EggsCollectionEvent"
+  Transform {
+    Location {
+      X: 1172.979
+      Y: -729.096924
+      Z: -6904.11377
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 1070289308957247906
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:ID"
+      String: "EggsCollectionEvent"
+    }
+    Overrides {
+      Name: "cs:Title"
+      String: "Farmers need help!"
+    }
+    Overrides {
+      Name: "cs:Duration"
+      Int: 10
+    }
+    Overrides {
+      Name: "cs:Cooldown"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:Description"
+      String: "Collect eggs in Chicken coop."
+    }
+    Overrides {
+      Name: "cs:RequiredCount"
+      Int: 3
+    }
+    Overrides {
+      Name: "cs:ProgressTrigger"
+      String: "CollectEggs"
+    }
+    Overrides {
+      Name: "cs:RewardCategory"
+      String: "Hard"
+    }
+    Overrides {
+      Name: "cs:RequiredPlayers"
+      Int: 1
+    }
+    Overrides {
+      Name: "cs:RequiredLevel"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:WarmupTime"
+      Int: 0
+    }
+    Overrides {
+      Name: "cs:Enabled"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:IsPlayerTriggered"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:isPreAdventureRequired"
+      Bool: false
+    }
+    Overrides {
+      Name: "cs:AdventureLocation"
+      String: "test"
+    }
+    Overrides {
+      Name: "cs:ID:tooltip"
+      String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
+    }
+    Overrides {
+      Name: "cs:Title:tooltip"
+      String: "The name given to the current adventure, players will be able to see this on the UI adventure panel, when this adventure is trigged."
+    }
+    Overrides {
+      Name: "cs:Duration:tooltip"
+      String: "How long in minutes the adventure will run before being counted as a failure. If the adventure is 100% completed before this time is up, the adventure will be considered a success."
+    }
+    Overrides {
+      Name: "cs:Cooldown:tooltip"
+      String: "How long in minutes the adventure will take to be able to be triggered again if there is an available adventure slot."
+    }
+    Overrides {
+      Name: "cs:Description:tooltip"
+      String: "This will show in the adventure panel, under the title. This is used to provide some details on what players have to do, to complete the adventure.            "
+    }
+    Overrides {
+      Name: "cs:RequiredCount:tooltip"
+      String: "How many adventure objectives must be completed to be considered a success. Using the MinionKill adventure as an example, if RequiredCount is set to 3, players will need to kill 3 of the spawned enemy NPC\'s for an adventure to complete.        "
+    }
+    Overrides {
+      Name: "cs:ProgressTrigger:tooltip"
+      String: "(Must be unique) This will be used to properly connect the various adventure triggers to the currently selected adventure.        "
+    }
+    Overrides {
+      Name: "cs:RewardCategory:tooltip"
+      String: "The name of the reward group that this adventure should be tied to. (We\'ll go over rewards more in-depth here in a bit)        "
+    }
+    Overrides {
+      Name: "cs:WarmupTime:tooltip"
+      String: "(Optional) The amount of time in seconds that players will be aware that this adventure was selected, but not currently active. This can be used to allow players time to get to the adventure location or create pre-adventure events.        "
+    }
+    Overrides {
+      Name: "cs:Enabled:tooltip"
+      String: "If checked this adventure will currently be in the pool of available adventures. To disable this currently selected adventure, simply set this to false.        "
+    }
+    Overrides {
+      Name: "cs:IsPlayerTriggered:tooltip"
+      String: "(Optional) If this is enabled, players must complete a certain action to trigger the adventure. Currently, only one player triggered adventure can be active at a time, this is on top of the currently selected adventure maximum for normal adventures.        "
+    }
+    Overrides {
+      Name: "cs:AdventureLocation:tooltip"
+      String: "(Optional) If several adventures have the same adventure location, only 1 adventure from this location can be active at a time. This is used to avoid having adventures that are overlapping with each other at the same time. "
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsFilePartition: true
+    FilePartitionName: "Adventure - EggsCollectionEvent"
+  }
+  InstanceHistory {
+    SelfId: 3783357937496823794
+    SubobjectId: 1971105960045197820
     InstanceId: 11637633550569433490
     TemplateId: 4718706387753081793
   }
@@ -15261,7 +15559,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"
@@ -15533,7 +15831,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"

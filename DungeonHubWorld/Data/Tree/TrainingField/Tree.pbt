@@ -1,6 +1,48 @@
 Name: "TrainingField"
 RootId: 305055846383683164
 Objects {
+  Id: 8156653322550468655
+  Name: "Wooden Bucket"
+  Transform {
+    Location {
+      X: -4543.77441
+      Y: -1327.31738
+      Z: 222.018066
+    }
+    Rotation {
+      Pitch: 1.91648948
+      Yaw: 126.067284
+      Roll: 1.70188093
+    }
+    Scale {
+      X: 0.903199375
+      Y: 0.903199375
+      Z: 0.903199375
+    }
+  }
+  ParentId: 305055846383683164
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 11667075996946480541
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+}
+Objects {
   Id: 5575970681581716961
   Name: "Rock Pile 002"
   Transform {
@@ -60493,46 +60535,6 @@ Objects {
   }
 }
 Objects {
-  Id: 11638528349409393479
-  Name: "Reinforced Crate 150cm"
-  Transform {
-    Location {
-      X: -4881.3833
-      Y: -1286.82324
-      Z: 218.952148
-    }
-    Rotation {
-      Yaw: -89.8074341
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 305055846383683164
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13540258823282010952
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 6613757742970104321
   Name: "gate"
   Transform {
@@ -64500,132 +64502,12 @@ Objects {
   }
 }
 Objects {
-  Id: 13664605775770439897
-  Name: "Reinforced Crate 150cm"
-  Transform {
-    Location {
-      X: -5376.23486
-      Y: -1268.07031
-      Z: 368.089355
-    }
-    Rotation {
-      Yaw: -96.4967651
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 305055846383683164
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13540258823282010952
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 14718854962420010812
-  Name: "Reinforced Crate 150cm"
-  Transform {
-    Location {
-      X: -5542.26807
-      Y: -1092.42871
-      Z: 368.089355
-    }
-    Rotation {
-      Yaw: -7.53561401
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 305055846383683164
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13540258823282010952
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
-  Id: 13954094668640652163
-  Name: "Reinforced Crate 150cm"
-  Transform {
-    Location {
-      X: -5374.41406
-      Y: -1269.13672
-      Z: 220.467773
-    }
-    Rotation {
-      Yaw: 88.1657715
-    }
-    Scale {
-      X: 1
-      Y: 1
-      Z: 1
-    }
-  }
-  ParentId: 305055846383683164
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 13540258823282010952
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 9622714430560471274
   Name: "Reinforced Crate 150cm"
   Transform {
     Location {
-      X: -5374.07324
-      Y: -1089.52832
+      X: -5503.92529
+      Y: -896.743164
       Z: 220.467773
     }
     Rotation {
@@ -94576,9 +94458,9 @@ Objects {
       Roll: 1.70188069
     }
     Scale {
-      X: 0.778981507
-      Y: 0.778981507
-      Z: 0.778981507
+      X: 0.903199375
+      Y: 0.903199375
+      Z: 0.903199375
     }
   }
   ParentId: 305055846383683164

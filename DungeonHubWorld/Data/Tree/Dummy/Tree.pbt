@@ -41,6 +41,16 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 11354940367074443119
+      value {
+        Overrides {
+          Name: "Rotation"
+          Rotator {
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 2506503432659139454
     }
