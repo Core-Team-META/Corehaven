@@ -674,6 +674,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13417612891161912966
+  Name: "Sphere - Half Slice Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_wedge_002"
+  }
+}
+Assets {
   Id: 13367808827977076930
   Name: "Cabinet Door"
   PlatformAssetType: 1
@@ -935,6 +944,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11076240285386210842
+  Name: "Prism - 5-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_001"
+  }
+}
+Assets {
   Id: 10916090668082890768
   Name: "Bottle 03"
   PlatformAssetType: 1
@@ -1160,6 +1178,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8619830679695120720
+  Name: "Prism - 6-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hexagon_001"
+  }
+}
+Assets {
   Id: 8617818292148704575
   Name: "Craftsman Stairs 01 Pillar"
   PlatformAssetType: 1
@@ -1355,6 +1382,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_062"
+  }
+}
+Assets {
+  Id: 7013269418065025837
+  Name: "Carpet 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpet_002_uv"
   }
 }
 Assets {
@@ -1835,6 +1871,15 @@ Assets {
   }
 }
 Assets {
+  Id: 2810379255825890868
+  Name: "Gem - Heart Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_heart_polished_001"
+  }
+}
+Assets {
   Id: 2754963224534021958
   Name: "Invisible"
   PlatformAssetType: 2
@@ -1880,12 +1925,30 @@ Assets {
   }
 }
 Assets {
+  Id: 2635330027741249494
+  Name: "Diamond - 6-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_6_sided_001"
+  }
+}
+Assets {
   Id: 2495116102477282970
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 2448982667642731065
+  Name: "Prism - 5-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_hq_001"
   }
 }
 Assets {
@@ -2102,6 +2165,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_container_rectangle_ref"
+  }
+}
+Assets {
+  Id: 103204866163876130
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }
 Assets {
