@@ -41,7 +41,9 @@ function OnAdventureStart(id, startTime, endTime, warmupStartTime, warmupEndTime
     if id == adventureId then
         local adventure = AdventureSystemApi.GetAdventureInfo(id)
         local onWarmupEnded = function()
-            target.visibility = Visibility.FORCE_OFF
+            if not adventure.targetVisable then
+                target.visibility = Visibility.FORCE_OFF
+            end
             trigger.isInteractable = true
         end
         AdventureSystemApi.WaitForWarmUp(adventure, onWarmupEnded, target, trigger)
@@ -60,13 +62,13 @@ function OnAdventureEnd(id)
 end
 
 if propTargetIsVisibleByDefault == true then
-target.visibility = Visibility.FORCE_ON
-trigger.isInteractable = false
+    target.visibility = Visibility.FORCE_ON
+    trigger.isInteractable = false
 end
 
 if propTargetIsVisibleByDefault == false then
-target.visibility = Visibility.FORCE_OFF
-trigger.isInteractable = false
+    target.visibility = Visibility.FORCE_OFF
+    trigger.isInteractable = false
 end
 
 AdventureSystemApi.ConnectStart(OnAdventureStart)

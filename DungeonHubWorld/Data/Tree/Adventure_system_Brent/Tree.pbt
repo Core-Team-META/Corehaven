@@ -26520,6 +26520,10 @@ Objects {
       String: "test2"
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -26663,6 +26667,10 @@ Objects {
     Overrides {
       Name: "cs:AdventureLocation"
       String: "test"
+    }
+    Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
     }
     Overrides {
       Name: "cs:ID:tooltip"
@@ -26810,6 +26818,10 @@ Objects {
       String: "test"
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -26948,6 +26960,10 @@ Objects {
       String: ""
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -27084,6 +27100,10 @@ Objects {
     Overrides {
       Name: "cs:AdventureLocation"
       String: ""
+    }
+    Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
     }
     Overrides {
       Name: "cs:ID:tooltip"
@@ -27232,6 +27252,10 @@ Objects {
       String: "Test"
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -27377,6 +27401,10 @@ Objects {
       String: "test"
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -27513,6 +27541,10 @@ Objects {
     Overrides {
       Name: "cs:AdventureLocation"
       String: "Test"
+    }
+    Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
     }
     Overrides {
       Name: "cs:ID:tooltip"
@@ -27657,6 +27689,10 @@ Objects {
       String: "test2"
     }
     Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
+    }
+    Overrides {
       Name: "cs:ID:tooltip"
       String: "(Must be unique) This is currently a string value, which will be used to identify what enemy NPC\'s will count towards this adventure."
     }
@@ -27796,6 +27832,10 @@ Objects {
     Overrides {
       Name: "cs:AdventureLocation"
       String: ""
+    }
+    Overrides {
+      Name: "cs:TargetAlwaysVisable"
+      Bool: false
     }
     Overrides {
       Name: "cs:ID:tooltip"
