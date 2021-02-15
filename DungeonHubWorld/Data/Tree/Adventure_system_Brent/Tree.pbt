@@ -13342,6 +13342,7 @@ Objects {
   ChildIds: 7796689697901245253
   ChildIds: 395131672780752627
   ChildIds: 9158913172159467534
+  ChildIds: 10663578717032486889
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
   }
@@ -13354,6 +13355,365 @@ Objects {
   InstanceHistory {
     SelfId: 12043119030245497834
     SubobjectId: 9870247033280312804
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 10663578717032486889
+  Name: "AdventureTrigger"
+  Transform {
+    Location {
+      X: -2179.50977
+      Y: 970.965454
+      Z: -6390.0293
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 12043119030245497834
+  ChildIds: 10209625393108752621
+  ChildIds: 4068667993026996098
+  ChildIds: 12565095506159834706
+  ChildIds: 18194477203169166162
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:AdventureId"
+      String: "TriggerEvent"
+    }
+    Overrides {
+      Name: "cs:TriggerName"
+      String: "AdvTrigger"
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 5168943497890190863
+    SubobjectId: 7521063240484157441
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 18194477203169166162
+  Name: "Client Light"
+  Transform {
+    Location {
+      Y: 1.00732422
+      Z: 77.3450928
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10663578717032486889
+  ChildIds: 16333608970527024996
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  NetworkContext {
+  }
+  InstanceHistory {
+    SelfId: 17975832096096354692
+    SubobjectId: 15469044069952565130
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 16333608970527024996
+  Name: "Light"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 18194477203169166162
+  ChildIds: 11142382296789937811
+  ChildIds: 13407676537649719761
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Folder {
+    IsGroup: true
+  }
+  InstanceHistory {
+    SelfId: 10425783900535941897
+    SubobjectId: 13795716062675682567
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 13407676537649719761
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 0.234558105
+      Z: 7.21630859
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 16333608970527024996
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 1
+    Color {
+      R: 1
+      G: 0.726868153
+      B: 0.477918148
+      A: 1
+    }
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      UseTemperature: true
+      Temperature: 2000
+      LocalLight {
+        AttenuationRadius: 100
+        PointLight {
+          SourceRadius: 9.23469257
+          SoftSourceRadius: 100
+          FallOffExponent: 8
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+  InstanceHistory {
+    SelfId: 3897420019993570534
+    SubobjectId: 1859286572771787496
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 11142382296789937811
+  Name: "Candle Flame VFX"
+  Transform {
+    Location {
+      X: -0.234558105
+    }
+    Rotation {
+    }
+    Scale {
+      X: 3
+      Y: 3
+      Z: 3
+    }
+  }
+  ParentId: 16333608970527024996
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 9199751096616988864
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 15120300449641370872
+    SubobjectId: 18306552730435238646
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 12565095506159834706
+  Name: "Trigger - Candle01"
+  Transform {
+    Location {
+      Y: 41.8364258
+      Z: 11.8027344
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1.48865974
+      Y: 1.48865974
+      Z: 1.48865974
+    }
+  }
+  ParentId: 10663578717032486889
+  WantsNetworking: true
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Trigger {
+    Interactable: true
+    InteractionLabel: "Trigger"
+    TeamSettings {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    TriggerShape_v2 {
+      Value: "mc:etriggershape:box"
+    }
+  }
+  InstanceHistory {
+    SelfId: 18092046053954429067
+    SubobjectId: 15332563847067668101
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 4068667993026996098
+  Name: "AdventureVisibilityTriggerServer"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10663578717032486889
+  UnregisteredParameters {
+    Overrides {
+      Name: "cs:Trigger"
+      ObjectReference {
+        SelfId: 12565095506159834706
+      }
+    }
+    Overrides {
+      Name: "cs:Target"
+      ObjectReference {
+        SelfId: 18194477203169166162
+      }
+    }
+    Overrides {
+      Name: "cs:Root"
+      ObjectReference {
+        SelfId: 10663578717032486889
+      }
+    }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
+    Overrides {
+      Name: "cs:VisibleOnAdventureStart"
+      Bool: false
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Script {
+    ScriptAsset {
+      Id: 16279420349771312629
+    }
+  }
+  InstanceHistory {
+    SelfId: 16429124641919294220
+    SubobjectId: 14709900165762151682
+    InstanceId: 11637633550569433490
+    TemplateId: 4718706387753081793
+  }
+}
+Objects {
+  Id: 10209625393108752621
+  Name: "Candle Holder 01"
+  Transform {
+    Location {
+    }
+    Rotation {
+    }
+    Scale {
+      X: 1
+      Y: 1
+      Z: 1
+    }
+  }
+  ParentId: 10663578717032486889
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 1101423294145844009
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    EnableCameraCollision: true
+    StaticMesh {
+      Physics {
+      }
+    }
+  }
+  InstanceHistory {
+    SelfId: 11785357766406409635
+    SubobjectId: 10112245690102621101
     InstanceId: 11637633550569433490
     TemplateId: 4718706387753081793
   }
@@ -25292,6 +25652,10 @@ Objects {
       Name: "cs:TargetIsVisibleByDefault"
       Bool: false
     }
+    Overrides {
+      Name: "cs:VisibleOnAdventureStart"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -26497,7 +26861,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"
@@ -26654,7 +27018,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"
@@ -26803,7 +27167,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: true
+      Bool: false
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"
@@ -27646,7 +28010,7 @@ Objects {
     }
     Overrides {
       Name: "cs:RequiredCount"
-      Int: 1
+      Int: 2
     }
     Overrides {
       Name: "cs:ProgressTrigger"
@@ -27666,7 +28030,7 @@ Objects {
     }
     Overrides {
       Name: "cs:Enabled"
-      Bool: false
+      Bool: true
     }
     Overrides {
       Name: "cs:IsPlayerTriggered"
@@ -27689,7 +28053,7 @@ Objects {
       String: "test2"
     }
     Overrides {
-      Name: "cs:TargetAlwaysVisable"
+      Name: "cs:TargetVisableOnStart"
       Bool: false
     }
     Overrides {

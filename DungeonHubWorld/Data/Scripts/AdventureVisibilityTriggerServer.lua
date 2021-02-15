@@ -13,6 +13,7 @@ local triggerName = root:GetCustomProperty("TriggerName")
 local trigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local target = script:GetCustomProperty("Target"):WaitForObject()
 local propTargetIsVisibleByDefault = script:GetCustomProperty("TargetIsVisibleByDefault") or false
+local VisibleOnAdventureStart = script:GetCustomProperty("VisibleOnAdventureStart")
 
 if not (AdventureSystemApi) then
     error("Requires AdventureSystemApi")
@@ -29,7 +30,11 @@ function OnInteracted(whichTrigger, other)
         return
     end
 
-    target.visibility = Visibility.INHERIT
+    if not propTargetIsVisibleByDefault then
+        target.visibility = Visibility.FORCE_OFF
+    else
+        target.visibility = Visibility.FORCE_ON
+    end
     trigger.isInteractable = false
 
     if AdventureSystemApi then
@@ -40,11 +45,13 @@ end
 function OnAdventureStart(id, startTime, endTime, warmupStartTime, warmupEndTime)
     if id == adventureId then
         local adventure = AdventureSystemApi.GetAdventureInfo(id)
-        if adventure.targetVisible then
-            target.visibility = Visibility.FORCE_ON
-        end
         local onWarmupEnded = function()
-            target.visibility = Visibility.FORCE_ON
+            if VisibleOnAdventureStart then
+                target.visibility = Visibility.FORCE_ON
+            else
+                target.visibility = Visibility.FORCE_OFF
+            end
+
             trigger.isInteractable = true
         end
         AdventureSystemApi.WaitForWarmUp(adventure, onWarmupEnded, target, trigger)
@@ -52,22 +59,22 @@ function OnAdventureStart(id, startTime, endTime, warmupStartTime, warmupEndTime
 end
 
 function OnAdventureEnd(id)
-    if id == adventureId and propTargetIsVisibleByDefault == true then
+    if id == adventureId and propTargetIsVisibleByDefault  then
         trigger.isInteractable = false
         target.visibility = Visibility.FORCE_ON
     end
-    if id == adventureId and propTargetIsVisibleByDefault == false then
+    if id == adventureId and not propTargetIsVisibleByDefault then
         trigger.isInteractable = false
         target.visibility = Visibility.FORCE_OFF
     end
 end
 
-if propTargetIsVisibleByDefault == true then
+if propTargetIsVisibleByDefault then
     target.visibility = Visibility.FORCE_ON
     trigger.isInteractable = false
 end
 
-if propTargetIsVisibleByDefault == false then
+if not propTargetIsVisibleByDefault then
     target.visibility = Visibility.FORCE_OFF
     trigger.isInteractable = false
 end
