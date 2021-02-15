@@ -27543,7 +27543,7 @@ Objects {
       String: "Test"
     }
     Overrides {
-      Name: "cs:TargetAlwaysVisable"
+      Name: "cs:TargetAlwaysVisible"
       Bool: false
     }
     Overrides {

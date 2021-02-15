@@ -41,7 +41,7 @@ function OnAdventureStart(id, startTime, endTime, warmupStartTime, warmupEndTime
     if id == adventureId then
         local adventure = AdventureSystemApi.GetAdventureInfo(id)
         local onWarmupEnded = function()
-            if not adventure.targetVisable then
+            if not adventure.targetVisible then
                 target.visibility = Visibility.FORCE_OFF
             end
             trigger.isInteractable = true

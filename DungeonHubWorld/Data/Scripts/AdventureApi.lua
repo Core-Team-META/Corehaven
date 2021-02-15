@@ -57,7 +57,7 @@ function API.RegisterAdventureList(list)
         local successadventureid = child:GetCustomProperty("OnSuccessAdventure")
         local failedadventureid = child:GetCustomProperty("OnFailedAdventure")
         local adventurelocation = child:GetCustomProperty("AdventureLocation")
-        local alwaysVisable = child:GetCustomProperty("TargetAlwaysVisable")
+        local alwaysVisible = child:GetCustomProperty("TargetAlwaysVisible")
 
         local adventureInfo = {
             id = id,
@@ -83,7 +83,7 @@ function API.RegisterAdventureList(list)
             successadventureid = successadventureid,
             failedadventureid = failedadventureid,
             location = adventurelocation,
-            targetVisable = alwaysVisable
+            targetVisible = alwaysVisible
         }
 
         if enabled then
