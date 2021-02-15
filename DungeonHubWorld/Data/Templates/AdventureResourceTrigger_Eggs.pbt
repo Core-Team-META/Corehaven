@@ -16,7 +16,7 @@ Assets {
           }
         }
         ParentId: 12043119030245497834
-        ChildIds: 13160011200672249918
+        ChildIds: 8973835022115816311
         ChildIds: 17003361889704836069
         ChildIds: 10203959113401016096
         UnregisteredParameters {
@@ -40,12 +40,12 @@ Assets {
         }
       }
       Objects {
-        Id: 13160011200672249918
+        Id: 8973835022115816311
         Name: "Geo"
         Transform {
           Location {
-            X: 5.80175781
-            Y: 5.80224609
+            X: 5.80178976
+            Y: 5.80245829
             Z: -6.73974609
           }
           Rotation {
@@ -61,13 +61,12 @@ Assets {
         ChildIds: 1976694215991002150
         WantsNetworking: true
         Collidable_v2 {
-          Value: "mc:ecollisionsetting:inheritfromparent"
+          Value: "mc:ecollisionsetting:forceoff"
         }
         Visible_v2 {
           Value: "mc:evisibilitysetting:inheritfromparent"
         }
-        Folder {
-          IsGroup: true
+        NetworkContext {
         }
       }
       Objects {
@@ -75,8 +74,8 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: -5.80175781
-            Y: -6.65429688
+            X: -5.80177212
+            Y: -6.65402079
           }
           Rotation {
           }
@@ -86,7 +85,7 @@ Assets {
             Z: 0.272564054
           }
         }
-        ParentId: 13160011200672249918
+        ParentId: 8973835022115816311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -95,7 +94,6 @@ Assets {
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -122,12 +120,14 @@ Assets {
         Name: "Sphere"
         Transform {
           Location {
-            X: 5.80175781
-            Y: 6.65527344
+            X: 5.80177259
+            Y: 6.65499735
             Z: 0.697753906
           }
           Rotation {
-            Pitch: -56.7418671
+            Pitch: -56.7418442
+            Yaw: 1.44484735e-09
+            Roll: -2.67543254e-09
           }
           Scale {
             X: 0.174771115
@@ -135,7 +135,7 @@ Assets {
             Z: 0.272564054
           }
         }
-        ParentId: 13160011200672249918
+        ParentId: 8973835022115816311
         UnregisteredParameters {
           Overrides {
             Name: "ma:Shared_BaseMaterial:id"
@@ -144,7 +144,6 @@ Assets {
             }
           }
         }
-        WantsNetworking: true
         Collidable_v2 {
           Value: "mc:ecollisionsetting:inheritfromparent"
         }
@@ -256,7 +255,7 @@ Assets {
           Overrides {
             Name: "cs:Target"
             ObjectReference {
-              SubObjectId: 13160011200672249918
+              SubObjectId: 8973835022115816311
             }
           }
         }

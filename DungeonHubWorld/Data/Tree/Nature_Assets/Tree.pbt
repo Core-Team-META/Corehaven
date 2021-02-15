@@ -33649,45 +33649,6 @@ Objects {
   }
 }
 Objects {
-  Id: 14271327055989551196
-  Name: "Stone Block Small"
-  Transform {
-    Location {
-      X: -1136.16455
-      Y: 4037.64502
-      Z: 3883.33984
-    }
-    Rotation {
-    }
-    Scale {
-      X: 2.15759706
-      Y: 2.15759706
-      Z: 2.15759706
-    }
-  }
-  ParentId: 4445322596964842448
-  Collidable_v2 {
-    Value: "mc:ecollisionsetting:inheritfromparent"
-  }
-  Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
-  }
-  CoreMesh {
-    MeshAsset {
-      Id: 17111774109906810283
-    }
-    Teams {
-      IsTeamCollisionEnabled: true
-      IsEnemyCollisionEnabled: true
-    }
-    EnableCameraCollision: true
-    StaticMesh {
-      Physics {
-      }
-    }
-  }
-}
-Objects {
   Id: 5665458808480221710
   Name: "Stone Block Standard Broken"
   Transform {

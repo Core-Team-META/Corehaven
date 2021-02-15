@@ -35,15 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12095835209017042614
-  Name: "Cube"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_002"
-  }
-}
-Assets {
   Id: 10289519616131702378
   Name: "Text 05: C"
   PlatformAssetType: 1
@@ -95,15 +86,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_arch_fancy_ogive_6m_001"
-  }
-}
-Assets {
-  Id: 5580378743840301598
-  Name: "Capsule"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_capsule_001"
   }
 }
 Assets {

@@ -1,4 +1,13 @@
 Assets {
+  Id: 17111774109906810283
+  Name: "Stone Block Small"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fantasy_block_02"
+  }
+}
+Assets {
   Id: 15310209409301279983
   Name: "Wall End Fancy 6m"
   PlatformAssetType: 1
@@ -8,12 +17,39 @@ Assets {
   }
 }
 Assets {
+  Id: 14699501159008854474
+  Name: "Fantasy Castle Pillar 02 - Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_002_base"
+  }
+}
+Assets {
+  Id: 14452616722762075696
+  Name: "Fantasy Castle Pillar 01 Base"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_base"
+  }
+}
+Assets {
   Id: 13576367259465906358
   Name: "Stone Basic"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "stone_001"
+  }
+}
+Assets {
+  Id: 13304908840312358092
+  Name: "Fantasy Castle Pillar 01 Top"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_top"
   }
 }
 Assets {
@@ -32,6 +68,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_043"
+  }
+}
+Assets {
+  Id: 7822473577673662489
+  Name: "Fantasy Castle Pillar 01 Mid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ts_fan_cas_pillar_001_mid"
   }
 }
 Assets {

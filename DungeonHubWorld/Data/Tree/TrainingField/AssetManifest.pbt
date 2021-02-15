@@ -512,6 +512,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12905923173550510229
+  Name: "Cylinder - Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_test_001"
+  }
+}
+Assets {
   Id: 12642041031887387612
   Name: "Fantasy Castle Wall 01 - Doorway 01"
   PlatformAssetType: 1
@@ -1400,6 +1409,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_hq_001"
+  }
+}
+Assets {
+  Id: 1988419718866759799
+  Name: "Chain Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chain_001"
   }
 }
 Assets {

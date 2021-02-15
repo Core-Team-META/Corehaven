@@ -1,10 +1,73 @@
 Assets {
+  Id: 18434079688766523124
+  Name: "Metal Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_basic_001"
+  }
+}
+Assets {
+  Id: 18170420566048892355
+  Name: "Sphere - Half Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_hemisphere_002"
+  }
+}
+Assets {
+  Id: 18033297229984528543
+  Name: "Wood Planks Dark"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_dark_001_uv"
+  }
+}
+Assets {
   Id: 17586365689296088662
   Name: "BG Gradient 001"
   PlatformAssetType: 9
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "BackgroundFlat_020"
+  }
+}
+Assets {
+  Id: 17277306537020378491
+  Name: "Helix - 1.0"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_helix_005"
+  }
+}
+Assets {
+  Id: 17237692812658431496
+  Name: "Fantasy Staff Head 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_head_staff_001"
+  }
+}
+Assets {
+  Id: 16927818613963240821
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
+  Id: 16723557784750858962
+  Name: "Food Fruit 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_apple_001_uv"
   }
 }
 Assets {
@@ -17,12 +80,48 @@ Assets {
   }
 }
 Assets {
+  Id: 16174350699321361925
+  Name: "Outline Object"
+  PlatformAssetType: 20
+  PrimaryAsset {
+    AssetType: "BlueprintAssetRef"
+    AssetId: "fxbp_local_outline"
+  }
+}
+Assets {
   Id: 16132958878921067135
   Name: "Sign Bracket - Square"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_signbracket_square_001"
+  }
+}
+Assets {
+  Id: 16121760542027394309
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
+  }
+}
+Assets {
+  Id: 16099460833972194012
+  Name: "Ring - Extra Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_torus_006"
+  }
+}
+Assets {
+  Id: 15785876743814996770
+  Name: "Wedge - Convex"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_wedge_curved_convex_001"
   }
 }
 Assets {
@@ -41,6 +140,24 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "steel_001"
+  }
+}
+Assets {
+  Id: 14014504692453732684
+  Name: "Food Corn 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_corn_001_uv"
+  }
+}
+Assets {
+  Id: 13888119501670323283
+  Name: "Fantasy Sword Blade 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_blade_sword_004_ref"
   }
 }
 Assets {
@@ -71,6 +188,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12749473561395866496
+  Name: "Kelp Bush 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_kelp_bush_02"
+  }
+}
+Assets {
   Id: 12610149741243116648
   Name: "Urban Pipe Wrap 01"
   PlatformAssetType: 1
@@ -98,6 +224,24 @@ Assets {
   }
 }
 Assets {
+  Id: 12184593138096476300
+  Name: "Small Open Crate"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_crate_narrow_open_simple_160cm_001"
+  }
+}
+Assets {
+  Id: 12105930496022621605
+  Name: "Sand 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_sand_001_uv"
+  }
+}
+Assets {
   Id: 11897850281036793889
   Name: "Coin Purse"
   PlatformAssetType: 9
@@ -113,6 +257,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_half-pipe_002"
+  }
+}
+Assets {
+  Id: 11278864538517343814
+  Name: "Prism - 6-Sided Half"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half_hexagon_001"
   }
 }
 Assets {
@@ -161,6 +314,24 @@ Assets {
   }
 }
 Assets {
+  Id: 9636477455075137888
+  Name: "Food Watermelon 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_food_generic_watermelon_001_uv1"
+  }
+}
+Assets {
+  Id: 9544913535066953067
+  Name: "Fantasy Sword Guard 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_guard_sword_002"
+  }
+}
+Assets {
   Id: 9513829038660966991
   Name: "BG Flat 003"
   PlatformAssetType: 9
@@ -179,12 +350,39 @@ Assets {
   }
 }
 Assets {
+  Id: 8294807043175688377
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
+  Id: 7934212786246519785
+  Name: "Fern 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_fern_generic_001"
+  }
+}
+Assets {
   Id: 7663308268157147922
   Name: "Bark Dead 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_dead_001_uv"
+  }
+}
+Assets {
+  Id: 7616109972271673814
+  Name: "Plane 1m - Two Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_plane_1m_002"
   }
 }
 Assets {
@@ -233,6 +431,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5580378743840301598
+  Name: "Capsule"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_capsule_001"
+  }
+}
+Assets {
   Id: 5489775416547967874
   Name: "Sphere - Half"
   PlatformAssetType: 1
@@ -260,12 +467,39 @@ Assets {
   }
 }
 Assets {
+  Id: 4247430867898109902
+  Name: "Stucco Tintable"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stucco_tint_001_uv"
+  }
+}
+Assets {
+  Id: 3982193030776093519
+  Name: "Sphere"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_sphere_002"
+  }
+}
+Assets {
   Id: 3682206342183528038
   Name: "Fantasy Sword Grip 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
+  Id: 3345942036635779138
+  Name: "Ring - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_torus_002"
   }
 }
 Assets {
@@ -329,6 +563,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_shield_strap_001"
+  }
+}
+Assets {
+  Id: 1383772742094820961
+  Name: "Fantasy Pommel 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_pommel_001"
   }
 }
 Assets {

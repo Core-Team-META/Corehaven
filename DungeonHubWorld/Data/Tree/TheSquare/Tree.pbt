@@ -145876,17 +145876,17 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: 2827.45483
-      Y: -6463.20801
-      Z: 139.709961
+      X: 2563.92261
+      Y: -6778.72168
+      Z: 153.08252
     }
     Rotation {
       Yaw: 51.9172211
     }
     Scale {
-      X: 1.1
-      Y: 1.1
-      Z: 1.1
+      X: 0.742402554
+      Y: 0.742402554
+      Z: 0.742402554
     }
   }
   ParentId: 8225480507783092474
@@ -151693,17 +151693,17 @@ Objects {
   Name: "Craftsman Roof 01 Bracket"
   Transform {
     Location {
-      X: -686.239746
-      Y: -1201.32043
-      Z: 138.458984
+      X: -1067.0271
+      Y: -1315.46313
+      Z: 165.139648
     }
     Rotation {
       Yaw: -158.464066
     }
     Scale {
-      X: 1.1
-      Y: 1.1
-      Z: 1.1
+      X: 0.742075
+      Y: 0.742075
+      Z: 0.742075
     }
   }
   ParentId: 8225480507783092474

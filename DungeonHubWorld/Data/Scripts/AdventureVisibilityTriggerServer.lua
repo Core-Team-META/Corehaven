@@ -50,10 +50,10 @@ end
 function OnAdventureEnd(id)
     if id == adventureId then
         trigger.isInteractable = false
-        target.visibility = Visibility.FORCE_OFF
+        target.visibility = Visibility.FORCE_ON
     end
 end
-target.visibility = Visibility.FORCE_OFF
+target.visibility = Visibility.FORCE_ON
 trigger.isInteractable = false
 
 AdventureSystemApi.ConnectStart(OnAdventureStart)

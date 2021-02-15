@@ -140,9 +140,9 @@ Objects {
   Name: "NPCTurnIn"
   Transform {
     Location {
-      X: -2918.00684
-      Y: -9060.61133
-      Z: 111.301758
+      X: -3179.55518
+      Y: -10227.7168
+      Z: 68.8916
     }
     Rotation {
       Yaw: -69.2453613
@@ -194,7 +194,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -204,9 +204,9 @@ Objects {
   Name: "Group"
   Transform {
     Location {
-      X: 1.06520212
-      Y: 0.526310503
-      Z: 131.967773
+      X: 1.11392665
+      Y: -0.576954901
+      Z: 176.956055
     }
     Rotation {
       Yaw: 2.52933
@@ -219,6 +219,7 @@ Objects {
     }
   }
   ParentId: 16473661755949049589
+  ChildIds: 10872158434358124921
   ChildIds: 7097327566113731817
   ChildIds: 17112719663737954734
   ChildIds: 3034824882153846861
@@ -462,6 +463,61 @@ Objects {
   }
 }
 Objects {
+  Id: 10872158434358124921
+  Name: "Point Light"
+  Transform {
+    Location {
+      X: 0.575416684
+      Y: 43.8944435
+      Z: 0.353449881
+    }
+    Rotation {
+      Pitch: 66.6759415
+      Yaw: 3.263978
+      Roll: -86.4462662
+    }
+    Scale {
+      X: 2.70179749
+      Y: 2.70179749
+      Z: 2.70179749
+    }
+  }
+  ParentId: 14628025771703710821
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Light {
+    Intensity: 2
+    Color {
+      R: 1
+      G: 1
+      B: 1
+      A: 1
+    }
+    CastShadows: true
+    VolumetricIntensity: 5
+    TeamSettings {
+    }
+    Light {
+      Temperature: 6500
+      LocalLight {
+        AttenuationRadius: 412.786926
+        PointLight {
+          SourceRadius: 20
+          SoftSourceRadius: 20
+          FallOffExponent: 8
+          UseFallOffExponent: true
+        }
+      }
+      MaxDrawDistance: 5000
+      MaxDistanceFadeRange: 1000
+    }
+  }
+}
+Objects {
   Id: 1769571908394430431
   Name: "Trigger"
   Transform {
@@ -486,6 +542,7 @@ Objects {
   }
   Trigger {
     Interactable: true
+    InteractionLabel: "Put the eggs here"
     TeamSettings {
       IsTeamCollisionEnabled: true
       IsEnemyCollisionEnabled: true

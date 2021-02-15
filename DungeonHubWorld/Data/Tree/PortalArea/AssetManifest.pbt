@@ -215,21 +215,21 @@ Assets {
   }
 }
 Assets {
+  Id: 14844672563279110931
+  Name: "Bricks Worn Stone 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_brick_stone_worn_001"
+  }
+}
+Assets {
   Id: 14745750378138267662
   Name: "Text 03: G"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_006"
-  }
-}
-Assets {
-  Id: 14699501159008854474
-  Name: "Fantasy Castle Pillar 02 - Base"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_ts_fan_cas_pillar_002_base"
   }
 }
 Assets {

@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16372496464315477095
+  Name: "Ring - Beveled Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ring_faceted_003"
+  }
+}
+Assets {
   Id: 16132958878921067135
   Name: "Sign Bracket - Square"
   PlatformAssetType: 1
@@ -305,6 +314,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7778047351996227055
+  Name: "Wood Raw"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_raw_001_uv"
+  }
+}
+Assets {
   Id: 7715152830417178651
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -449,6 +467,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3682206342183528038
+  Name: "Fantasy Sword Grip 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_grip_sword_001"
+  }
+}
+Assets {
   Id: 3575013281856575933
   Name: "Ring - Quarter Thick"
   PlatformAssetType: 1
@@ -464,6 +491,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_rope_001"
+  }
+}
+Assets {
+  Id: 2991841227597599885
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
