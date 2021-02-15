@@ -73254,7 +73254,7 @@ Objects {
   Name: "Reinforced Crate 150cm"
   Transform {
     Location {
-      X: 2815.91504
+      X: 2767.29736
       Y: 1848.8291
       Z: 1146.3125
     }

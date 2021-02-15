@@ -12,6 +12,7 @@ local adventureId = root:GetCustomProperty("AdventureId")
 local triggerName = root:GetCustomProperty("TriggerName")
 local trigger = script:GetCustomProperty("Trigger"):WaitForObject()
 local target = script:GetCustomProperty("Target"):WaitForObject()
+local propTargetIsVisibleByDefault = script:GetCustomProperty("TargetIsVisibleByDefault") or false
 
 if not (AdventureSystemApi) then
     error("Requires AdventureSystemApi")
@@ -48,13 +49,25 @@ function OnAdventureStart(id, startTime, endTime, warmupStartTime, warmupEndTime
 end
 
 function OnAdventureEnd(id)
-    if id == adventureId then
+    if id == adventureId and propTargetIsVisibleByDefault == true then
         trigger.isInteractable = false
         target.visibility = Visibility.FORCE_ON
     end
+    if id == adventureId and propTargetIsVisibleByDefault == false then
+        trigger.isInteractable = false
+        target.visibility = Visibility.FORCE_OFF
+    end
 end
+
+if propTargetIsVisibleByDefault == true then
 target.visibility = Visibility.FORCE_ON
 trigger.isInteractable = false
+end
+
+if propTargetIsVisibleByDefault == false then
+target.visibility = Visibility.FORCE_OFF
+trigger.isInteractable = false
+end
 
 AdventureSystemApi.ConnectStart(OnAdventureStart)
 AdventureSystemApi.ConnectEnd(OnAdventureEnd)

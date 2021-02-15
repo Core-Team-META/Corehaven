@@ -319,8 +319,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.262152344
-        G: 0.126706973
+        R: 0.342013687
+        G: 0.165306628
         A: 1
       }
     }
@@ -376,8 +376,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.262152344
-        G: 0.126706973
+        R: 0.342013687
+        G: 0.165306628
         A: 1
       }
     }
@@ -467,14 +467,14 @@ Objects {
   Name: "Point Light"
   Transform {
     Location {
-      X: 0.575416684
-      Y: 43.8944435
-      Z: 0.353449881
+      X: 0.575424433
+      Y: 59.3261833
+      Z: -0.0253850073
     }
     Rotation {
       Pitch: 66.6759415
       Yaw: 3.263978
-      Roll: -86.4462662
+      Roll: -86.4462585
     }
     Scale {
       X: 2.70179749
@@ -490,21 +490,20 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 2
+    Intensity: 5.52522421
     Color {
       R: 1
-      G: 1
-      B: 1
+      G: 0.926887453
+      B: 0.52
       A: 1
     }
-    CastShadows: true
     VolumetricIntensity: 5
     TeamSettings {
     }
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 412.786926
+        AttenuationRadius: 200
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20

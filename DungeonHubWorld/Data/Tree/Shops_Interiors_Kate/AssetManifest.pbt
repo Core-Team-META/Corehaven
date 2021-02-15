@@ -1754,6 +1754,15 @@ Assets {
   }
 }
 Assets {
+  Id: 3153145125218872818
+  Name: "Smoke Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_smoke_volume_vfx"
+  }
+}
+Assets {
   Id: 3090596827184957478
   Name: "Rope"
   PlatformAssetType: 2
@@ -1859,6 +1868,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 2494920176024075778
+  Name: "Fire Volume VFX"
+  PlatformAssetType: 8
+  PrimaryAsset {
+    AssetType: "VfxBlueprintAssetRef"
+    AssetId: "fxbp_fire_volume_vfx"
   }
 }
 Assets {

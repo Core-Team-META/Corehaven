@@ -319,8 +319,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.262152344
-        G: 0.126706973
+        R: 0.342013687
+        G: 0.165306628
         A: 1
       }
     }
@@ -376,8 +376,8 @@ Objects {
     Overrides {
       Name: "ma:Shared_BaseMaterial:color"
       Color {
-        R: 0.262152344
-        G: 0.126706973
+        R: 0.342013687
+        G: 0.165306628
         A: 1
       }
     }
@@ -490,11 +490,11 @@ Objects {
     Value: "mc:evisibilitysetting:inheritfromparent"
   }
   Light {
-    Intensity: 2
+    Intensity: 3.43879604
     Color {
       R: 1
-      G: 1
-      B: 1
+      G: 0.933245063
+      B: 0.52
       A: 1
     }
     VolumetricIntensity: 5
@@ -503,7 +503,7 @@ Objects {
     Light {
       Temperature: 6500
       LocalLight {
-        AttenuationRadius: 599.933838
+        AttenuationRadius: 475.165405
         PointLight {
           SourceRadius: 20
           SoftSourceRadius: 20

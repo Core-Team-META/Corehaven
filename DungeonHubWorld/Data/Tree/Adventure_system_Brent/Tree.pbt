@@ -14018,6 +14018,10 @@ Objects {
         SelfId: 9158913172159467534
       }
     }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -14697,6 +14701,10 @@ Objects {
         SelfId: 395131672780752627
       }
     }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -15353,6 +15361,10 @@ Objects {
       ObjectReference {
         SelfId: 7796689697901245253
       }
+    }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -16799,6 +16811,10 @@ Objects {
         SelfId: 16885873615741712649
       }
     }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -17818,6 +17834,10 @@ Objects {
       ObjectReference {
         SelfId: 7747217358492978993
       }
+    }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -18864,6 +18884,10 @@ Objects {
       ObjectReference {
         SelfId: 16455395831461435993
       }
+    }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
     }
   }
   Collidable_v2 {
@@ -20396,6 +20420,10 @@ Objects {
         SelfId: 15929218639148423645
       }
     }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21425,6 +21453,10 @@ Objects {
         SelfId: 7734722908440419655
       }
     }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: true
+    }
   }
   Collidable_v2 {
     Value: "mc:ecollisionsetting:inheritfromparent"
@@ -21654,7 +21686,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -22130,7 +22162,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -22606,7 +22638,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -23083,7 +23115,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -23556,7 +23588,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -24050,7 +24082,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -24522,7 +24554,7 @@ Objects {
     Value: "mc:ecollisionsetting:forceoff"
   }
   Visible_v2 {
-    Value: "mc:evisibilitysetting:inheritfromparent"
+    Value: "mc:evisibilitysetting:forceoff"
   }
   NetworkContext {
   }
@@ -24834,6 +24866,17 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 8973835022115816311
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 12456967095969868933
     }
@@ -24888,6 +24931,17 @@ Objects {
         }
       }
     }
+    ParameterOverrideMap {
+      key: 8973835022115816311
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
+          }
+        }
+      }
+    }
     TemplateAsset {
       Id: 12456967095969868933
     }
@@ -24924,6 +24978,17 @@ Objects {
           Name: "Rotation"
           Rotator {
             Yaw: -118.58017
+          }
+        }
+      }
+    }
+    ParameterOverrideMap {
+      key: 8973835022115816311
+      value {
+        Overrides {
+          Name: "Visible"
+          Enum {
+            Value: "mc:evisibilitysetting:forceoff"
           }
         }
       }
@@ -25222,6 +25287,10 @@ Objects {
       ObjectReference {
         SelfId: 5168943497890190863
       }
+    }
+    Overrides {
+      Name: "cs:TargetIsVisibleByDefault"
+      Bool: false
     }
   }
   Collidable_v2 {
