@@ -8,6 +8,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18170420566048892355
+  Name: "Sphere - Half Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_hemisphere_002"
+  }
+}
+Assets {
   Id: 18039984299850060191
   Name: "Fantasy Human Guy 1"
   PlatformAssetType: 17
@@ -50,6 +59,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_signbracket_square_001"
+  }
+}
+Assets {
+  Id: 16121760542027394309
+  Name: "Plastic Matte"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_matte_001"
   }
 }
 Assets {
@@ -134,6 +152,15 @@ Assets {
   }
 }
 Assets {
+  Id: 13791225619385764102
+  Name: "Wicker Basket 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_wicker_002_uv"
+  }
+}
+Assets {
   Id: 13590445068022603747
   Name: "Wood Strand Board 01"
   PlatformAssetType: 2
@@ -170,21 +197,12 @@ Assets {
   }
 }
 Assets {
-  Id: 12817510901257393900
-  Name: "Fabric Burlap Old 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_001_uv"
-  }
-}
-Assets {
-  Id: 12723359920741967442
-  Name: "Human Gal 1"
+  Id: 12996949834479024000
+  Name: "Fantasy Human Gal 1"
   PlatformAssetType: 17
   PrimaryAsset {
     AssetType: "AnimatedMeshAssetRef"
-    AssetId: "npc_human_gal_basic_001_ref"
+    AssetId: "npc_human_gal_fantasy_003_ref"
   }
 }
 Assets {
@@ -305,6 +323,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8089726053725741651
+  Name: "Sphere - Half Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_002"
+  }
+}
+Assets {
   Id: 7947441615123677894
   Name: "Fantasy Human Gal 2"
   PlatformAssetType: 17
@@ -320,15 +347,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
-  Id: 7715152830417178651
-  Name: "Fabric Burlap New 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_fabric_burlap_002_uv"
   }
 }
 Assets {
@@ -356,6 +374,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_diamond_6_sided_polished_001"
+  }
+}
+Assets {
+  Id: 7013269418065025837
+  Name: "Carpet 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpet_002_uv"
   }
 }
 Assets {
@@ -401,6 +428,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_triangle_convex_001"
+  }
+}
+Assets {
+  Id: 5713051853307548551
+  Name: "Rubber Basic 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_scf_rubber_panels_004_uv"
   }
 }
 Assets {
@@ -518,6 +554,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
+  }
+}
+Assets {
+  Id: 2327009830056851580
+  Name: "Cone - Truncated Hollow Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_003"
+  }
+}
+Assets {
+  Id: 1852880221081690546
+  Name: "Cube - Chamfered Large Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_hq_002"
   }
 }
 Assets {

@@ -80,6 +80,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16216211350459920357
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
+  }
+}
+Assets {
   Id: 16174350699321361925
   Name: "Outline Object"
   PlatformAssetType: 20
@@ -158,6 +167,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_blade_sword_004_ref"
+  }
+}
+Assets {
+  Id: 13417612891161912966
+  Name: "Sphere - Half Slice Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_hemisphere_wedge_002"
   }
 }
 Assets {
@@ -287,6 +305,33 @@ Assets {
   }
 }
 Assets {
+  Id: 11076240285386210842
+  Name: "Prism - 5-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_001"
+  }
+}
+Assets {
+  Id: 10678476858268798797
+  Name: "Chest Small Closed"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_chest_001"
+  }
+}
+Assets {
+  Id: 10413465125058823580
+  Name: "Horn"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_horn_001"
+  }
+}
+Assets {
   Id: 9947605718798203120
   Name: "Fantasy Frame 001"
   PlatformAssetType: 9
@@ -350,6 +395,15 @@ Assets {
   }
 }
 Assets {
+  Id: 8619830679695120720
+  Name: "Prism - 6-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_hexagon_001"
+  }
+}
+Assets {
   Id: 8294807043175688377
   Name: "Ellipsoid - Truncated"
   PlatformAssetType: 1
@@ -392,6 +446,15 @@ Assets {
   PrimaryAsset {
     AssetType: "PlatformBrushAssetRef"
     AssetId: "UI_Fantasy_Frame_002"
+  }
+}
+Assets {
+  Id: 7013269418065025837
+  Name: "Carpet 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpet_002_uv"
   }
 }
 Assets {
@@ -521,12 +584,30 @@ Assets {
   }
 }
 Assets {
+  Id: 2810379255825890868
+  Name: "Gem - Heart Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gem_heart_polished_001"
+  }
+}
+Assets {
   Id: 2754963224534021958
   Name: "Invisible"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_invisible_001"
+  }
+}
+Assets {
+  Id: 2635330027741249494
+  Name: "Diamond - 6-Sided"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_diamond_6_sided_001"
   }
 }
 Assets {
@@ -545,6 +626,24 @@ Assets {
   PrimaryAsset {
     AssetType: "VfxBlueprintAssetRef"
     AssetId: "fxbp_fire_volume_vfx"
+  }
+}
+Assets {
+  Id: 2448982667642731065
+  Name: "Prism - 5-Sided Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prism_pentagon_hq_001"
+  }
+}
+Assets {
+  Id: 2352186918021370913
+  Name: "Wood Planks White"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_wood_planks_white_001_uv"
   }
 }
 Assets {
@@ -602,11 +701,29 @@ Assets {
   }
 }
 Assets {
+  Id: 1100837394993556177
+  Name: "Metal Iron Rusted 02"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_003"
+  }
+}
+Assets {
   Id: 273448105943087596
   Name: "Fantasy Mace Guard 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_guard_mace_001"
+  }
+}
+Assets {
+  Id: 103204866163876130
+  Name: "Plastic Shiny"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "plastic_shiny_001"
   }
 }

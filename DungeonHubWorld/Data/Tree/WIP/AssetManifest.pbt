@@ -35,24 +35,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17609149353171719671
-  Name: "Cube - Bottom-Aligned"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_001"
-  }
-}
-Assets {
-  Id: 17248571443048080908
-  Name: "Cabinet - Upper"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_cabinet_001"
-  }
-}
-Assets {
   Id: 17209268355161202786
   Name: "Wispy Fog Volume VFX"
   PlatformAssetType: 8
@@ -347,15 +329,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_chain_001"
-  }
-}
-Assets {
-  Id: 1833349017309235771
-  Name: "Book Shelf 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_fan_books_shelf_001_uv"
   }
 }
 Assets {

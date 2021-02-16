@@ -62,6 +62,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17924249151830813276
+  Name: "Cabinet Door - Upper"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_cabinet_door_003"
+  }
+}
+Assets {
   Id: 17761943472698102620
   Name: "Text 03: A"
   PlatformAssetType: 1
@@ -86,6 +95,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_pommel_002"
+  }
+}
+Assets {
+  Id: 17609149353171719671
+  Name: "Cube - Bottom-Aligned"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cube_001"
   }
 }
 Assets {
@@ -338,6 +356,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_002"
+  }
+}
+Assets {
+  Id: 15744908842130492752
+  Name: "Craftsman Roof 01 Bracket"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_sub_craftsman_roof_001_bracket"
   }
 }
 Assets {
@@ -764,6 +791,15 @@ Assets {
   }
 }
 Assets {
+  Id: 12148720894562039167
+  Name: "Fantasy Book Collection 04"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_collection_003_ref"
+  }
+}
+Assets {
   Id: 12095835209017042614
   Name: "Cube"
   PlatformAssetType: 1
@@ -881,6 +917,15 @@ Assets {
   }
 }
 Assets {
+  Id: 11104283164569496576
+  Name: "Carpet Tile 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_carpet_tile_001"
+  }
+}
+Assets {
   Id: 11076240285386210842
   Name: "Prism - 5-Sided"
   PlatformAssetType: 1
@@ -923,6 +968,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "fxmi_burning_erode"
+  }
+}
+Assets {
+  Id: 10595608511263675758
+  Name: "Fantasy Book 02"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_prop_fan_book_002_ref"
   }
 }
 Assets {
@@ -1070,6 +1124,15 @@ Assets {
   }
 }
 Assets {
+  Id: 9301873542310034235
+  Name: "Craftsman Dining Table"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_table_dining_001"
+  }
+}
+Assets {
   Id: 9049573211634404578
   Name: "Cone - Truncated Wide"
   PlatformAssetType: 1
@@ -1196,6 +1259,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7873949318783264336
+  Name: "Carpet 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_carpets_001_uv"
+  }
+}
+Assets {
   Id: 7778047351996227055
   Name: "Wood Raw"
   PlatformAssetType: 2
@@ -1301,6 +1373,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_062"
+  }
+}
+Assets {
+  Id: 7236107949886366866
+  Name: "Craftsman Dining Chair"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_urb_chair_dining_001"
   }
 }
 Assets {
@@ -1922,6 +2003,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cube_hq_002"
+  }
+}
+Assets {
+  Id: 1833349017309235771
+  Name: "Book Shelf 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_books_shelf_001_uv"
   }
 }
 Assets {
