@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     API.SetCondition(string id, string resourceCondition, string dialogIdIfTrue, string dialogIdIfFalse)
     API.AddText(string id, string text, string animation, table rewardTable = {string resource, string text})
     API.AddOption(string id, string text, string targetDialogId)
@@ -293,6 +293,73 @@ function Dialogs.RegisterDialogue()
     API.AddText(id, "It's okay, my friend.", TALK_ANIMATION)
     API.AddText(id, "This place is for everyone.", YES_ANIMATION)
 
+    id = "Girl1"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Hi! Are you an adventurer?", WAVE_ANIMATION)
+
+    API.AddOption(id, "No", "Girl3")
+    API.AddOption(id, "Yes", "Girl2")
+
+    id = "Girl2"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Have you ever been in the Magical Woods? ", TALK_ANIMATION)
+    API.AddText(id, "My mom don't let me go there...", TALK_ANIMATION)
+    API.AddText(id, "Do you want to play?", YES_ANIMATION)
+
+    API.AddOption(id, "No, sorry. I need to go...", "Girl4")
+    API.AddOption(id, "Sure! What game?", "Girl5")
+    
+    id = "Girl3"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "When I will grow up, I will become an adventurer and go to the Woods", TALK_ANIMATION)
+    API.AddText(id, "I will find the magical artifact and my father will make the most powerfull weapon for me!", TALK_ANIMATION)
+    API.AddText(id, "Do you want to play?", TALK_ANIMATION)
+    
+    API.AddOption(id, "No... See you later!", "Girl4")
+    API.AddOption(id, "Sure! What game?", "Girl5")
+ 
+
+    id = "Girl4"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "See you!", YES_ANIMATION)
+    
+    id = "Girl5"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "I will hide the candy in one of my hands and you will guess", TALK_ANIMATION)
+    API.AddText(id, "If you win, I will give you the candy, if not, you will give me the candy", TALK_ANIMATION)
+    API.AddText(id, "Ready? Guess the hand?", TALK_ANIMATION)
+    
+    API.AddOption(id, "I don't want to play", "Girl6")
+    API.AddOption(id, "Left!", "Girl7")
+    API.AddOption(id, "Right!", "Girl7")
+    
+    id = "Girl6"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Bye... I won't bother you anymore...", WAVE_ANIMATION)
+    
+    id = "Girl7"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "You won! Do you want to play more?", TALK_ANIMATION)
+    
+    API.AddOption(id, "I need to go... See you!", "Girl4")
+    API.AddOption(id, "Sure! Let's play!", "Girl8")
+    
+    id = "Girl8"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "Ready? Guess the hand?", TALK_ANIMATION)
+    
+    API.AddOption(id, "I changed my mind...", "Girl4")
+    API.AddOption(id, "Left!", "Girl9")
+    API.AddOption(id, "Right!", "Girl9")
+    
+    id = "Girl9"
+    API.RegisterDialogueId(id)
+    API.AddText(id, "That's not fair! You won again! Do you want to play more?", TALK_ANIMATION)
+    
+    API.AddOption(id, "I need to go... See you!", "Girl4")
+    API.AddOption(id, "Sure! Let's play!", "Girl8")
+    
+   
     id = "Priestess"
     API.RegisterDialogueId(id)
     API.AddText(id, '...')

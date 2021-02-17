@@ -62,15 +62,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17636380616694369594
-  Name: "Bottle 04"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_004"
-  }
-}
-Assets {
   Id: 17609149353171719671
   Name: "Cube - Bottom-Aligned"
   PlatformAssetType: 1
@@ -134,6 +125,15 @@ Assets {
   }
 }
 Assets {
+  Id: 16927818613963240821
+  Name: "Large Wood Beam 8m"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_large_beam_6m"
+  }
+}
+Assets {
   Id: 16915219633719809622
   Name: "Stone Window"
   PlatformAssetType: 1
@@ -167,15 +167,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_pbr_material_001"
-  }
-}
-Assets {
-  Id: 16125652428998148997
-  Name: "Bottle 06"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_006"
   }
 }
 Assets {
@@ -539,15 +530,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12511402883465687914
-  Name: "Bottle 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_001"
-  }
-}
-Assets {
   Id: 12510064410993333055
   Name: "Fantasy Pommel 04"
   PlatformAssetType: 1
@@ -674,12 +656,12 @@ Assets {
   }
 }
 Assets {
-  Id: 10916090668082890768
-  Name: "Bottle 03"
+  Id: 10811963481791107792
+  Name: "Fantasy Hammer Base 01"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_003"
+    AssetId: "sm_weap_fan_base_hammer_001"
   }
 }
 Assets {
@@ -944,21 +926,21 @@ Assets {
   }
 }
 Assets {
-  Id: 7809640231404909079
-  Name: "Short Banner Manticore"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_banner_002"
-  }
-}
-Assets {
   Id: 7715152830417178651
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_fabric_burlap_002_uv"
+  }
+}
+Assets {
+  Id: 7696719198036433088
+  Name: "Metal Iron 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_metal_iron_001"
   }
 }
 Assets {
@@ -1151,6 +1133,15 @@ Assets {
   }
 }
 Assets {
+  Id: 5836430349218932838
+  Name: "Pipe - Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_003"
+  }
+}
+Assets {
   Id: 5637733567374295665
   Name: "Underwater Post Process"
   PlatformAssetType: 20
@@ -1268,21 +1259,21 @@ Assets {
   }
 }
 Assets {
-  Id: 3999181190189966405
-  Name: "Bottle 05"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_005"
-  }
-}
-Assets {
   Id: 3982193030776093519
   Name: "Sphere"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_sphere_002"
+  }
+}
+Assets {
+  Id: 3928292435133106594
+  Name: "Cylinder - Chamfered Polished"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cylinder_hq_002"
   }
 }
 Assets {
@@ -1418,15 +1409,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
-  Id: 2641498154772048160
-  Name: "Bottle 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prop_fantasy_bottle_002"
   }
 }
 Assets {

@@ -111350,7 +111350,7 @@ Objects {
   Transform {
     Location {
       X: -4528.48975
-      Y: -342.817871
+      Y: -346.801392
       Z: 548.121094
     }
     Rotation {
@@ -111390,7 +111390,7 @@ Objects {
   Transform {
     Location {
       X: -4692.11084
-      Y: -345.993896
+      Y: -349.737915
       Z: 549.875488
     }
     Rotation {
@@ -111554,12 +111554,12 @@ Objects {
   Name: "Stone Block Long"
   Transform {
     Location {
-      X: -4144.07422
-      Y: 176.443726
-      Z: 537.318359
+      X: -4130.24854
+      Y: 182.793579
+      Z: 539.726074
     }
     Rotation {
-      Pitch: -0.031494
+      Pitch: -0.0314941406
       Yaw: 74.5574188
       Roll: 11.7155962
     }
@@ -111596,14 +111596,14 @@ Objects {
   Name: "Stone Block Long"
   Transform {
     Location {
-      X: -4055.79199
-      Y: 390.947144
-      Z: 542.132813
+      X: -4050.12793
+      Y: 404.453
+      Z: 542.23877
     }
     Rotation {
-      Pitch: -0.413083
+      Pitch: -0.413085938
       Yaw: -112.752945
-      Roll: -3.60998702
+      Roll: -3.60998535
     }
     Scale {
       X: 1.76509869
@@ -114438,9 +114438,9 @@ Objects {
   Name: "Trim Large Brick 8m"
   Transform {
     Location {
-      X: -3810.9751
-      Y: 393.904175
-      Z: -202.34375
+      X: -3805.87354
+      Y: 405.599976
+      Z: -202.388672
     }
     Rotation {
       Pitch: 73.7796

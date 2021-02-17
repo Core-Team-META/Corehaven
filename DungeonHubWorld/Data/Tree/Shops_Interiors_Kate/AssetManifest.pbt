@@ -881,15 +881,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11390981272720591546
-  Name: "Craftsman Porch Fence Railing 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_sub_craftsman_porch_001_rail"
-  }
-}
-Assets {
   Id: 11285278799348334020
   Name: "Sphere - Half Thin"
   PlatformAssetType: 1
@@ -959,6 +950,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_modern_bat_001"
+  }
+}
+Assets {
+  Id: 10811963481791107792
+  Name: "Fantasy Hammer Base 01"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_weap_fan_base_hammer_001"
   }
 }
 Assets {
