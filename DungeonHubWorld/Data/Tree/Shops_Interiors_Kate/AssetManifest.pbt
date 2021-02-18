@@ -35,6 +35,15 @@ Assets {
   }
 }
 Assets {
+  Id: 18170420566048892355
+  Name: "Sphere - Half Quarter Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarter_hemisphere_002"
+  }
+}
+Assets {
   Id: 18039765282018436536
   Name: "Grass Tall"
   PlatformAssetType: 1
@@ -194,6 +203,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_two-by-four_3m"
+  }
+}
+Assets {
+  Id: 16814107545177638090
+  Name: "Fabric Burlap Old 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_fan_fabric_burlap_001_uv"
   }
 }
 Assets {
@@ -476,6 +494,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14519065406787674128
+  Name: "Star - Rounded"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_star_chubby_001"
+  }
+}
+Assets {
   Id: 14405960884493885038
   Name: "Fantasy Pommel 05"
   PlatformAssetType: 1
@@ -554,6 +581,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F6_Text_026"
+  }
+}
+Assets {
+  Id: 14049366756036585593
+  Name: "Pipe - 45-Degree Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_pipe_curve45_003"
   }
 }
 Assets {
@@ -845,12 +881,30 @@ Assets {
   }
 }
 Assets {
+  Id: 11947974558309468454
+  Name: "Lens - Quarter"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_quarterlense_001"
+  }
+}
+Assets {
   Id: 11667075996946480541
   Name: "Wooden Bucket"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_bucket_001"
+  }
+}
+Assets {
+  Id: 11657171032816799439
+  Name: "Sci-fi Panel 1x3m Angled Left"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_panel_1x3m_angledL_001"
   }
 }
 Assets {
@@ -878,6 +932,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_torus_003"
+  }
+}
+Assets {
+  Id: 11353538719389873434
+  Name: "Lens"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_lense_001"
   }
 }
 Assets {
@@ -923,6 +986,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_pentagon_001"
+  }
+}
+Assets {
+  Id: 11001967573859652020
+  Name: "Cone - Truncated Hollow Wide"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_004"
   }
 }
 Assets {
@@ -1004,6 +1076,24 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_urb_sub_craftsman_part_intTrim_001_up"
+  }
+}
+Assets {
+  Id: 10219341742639680186
+  Name: "Metal Steel Brushed"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_stainless-steel_001_uv"
+  }
+}
+Assets {
+  Id: 10184847056121543272
+  Name: "Basic Material"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_basic_pbr_material_001"
   }
 }
 Assets {
@@ -1196,6 +1286,24 @@ Assets {
   }
 }
 Assets {
+  Id: 8509644064107880223
+  Name: "Cone - Truncated Hollow Wide Thin"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_cone_truncated_hollow_006"
+  }
+}
+Assets {
+  Id: 8294807043175688377
+  Name: "Ellipsoid - Truncated"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_ellipsoid_truncated_001"
+  }
+}
+Assets {
   Id: 8277973835846626301
   Name: "Wooden Barrel"
   PlatformAssetType: 1
@@ -1238,6 +1346,15 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F5_Text_012"
+  }
+}
+Assets {
+  Id: 7947441615123677894
+  Name: "Fantasy Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_fantasy_001_ref"
   }
 }
 Assets {
@@ -1286,6 +1403,15 @@ Assets {
   }
 }
 Assets {
+  Id: 7740019609569372837
+  Name: "Bark Oak 01"
+  PlatformAssetType: 2
+  PrimaryAsset {
+    AssetType: "MaterialAssetRef"
+    AssetId: "mi_bark_oak_001_uv"
+  }
+}
+Assets {
   Id: 7715152830417178651
   Name: "Fabric Burlap New 01"
   PlatformAssetType: 2
@@ -1310,6 +1436,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_bark_dead_001_uv"
+  }
+}
+Assets {
+  Id: 7646486682504338874
+  Name: "Pipe - Half Thick"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_half-pipe_003"
   }
 }
 Assets {
@@ -1760,6 +1895,15 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_roof_metal_001_uv"
+  }
+}
+Assets {
+  Id: 3716650440384594688
+  Name: "Human Gal 2"
+  PlatformAssetType: 17
+  PrimaryAsset {
+    AssetType: "AnimatedMeshAssetRef"
+    AssetId: "npc_human_gal_basic_002_ref"
   }
 }
 Assets {

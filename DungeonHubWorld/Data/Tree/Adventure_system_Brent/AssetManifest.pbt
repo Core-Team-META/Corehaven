@@ -143,6 +143,15 @@ Assets {
   }
 }
 Assets {
+  Id: 14727519050521805515
+  Name: "Decal Burnt Streaks 01"
+  PlatformAssetType: 14
+  PrimaryAsset {
+    AssetType: "DecalBlueprintAssetRef"
+    AssetId: "bp_decal_burned_streak_002_ref"
+  }
+}
+Assets {
   Id: 14212988502358508072
   Name: "Metal Basic Steel"
   PlatformAssetType: 2

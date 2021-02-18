@@ -41924,6 +41924,8 @@ Objects {
   }
   ParentId: 15211006321864900787
   ChildIds: 10457384989268967400
+  ChildIds: 1304327594889596541
+  ChildIds: 813759426740308512
   ChildIds: 5963921460240694816
   ChildIds: 10879642497976282391
   Collidable_v2 {
@@ -42047,6 +42049,105 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 813759426740308512
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: -52.5146446
+      Y: -208.321091
+      Z: -135.71875
+    }
+    Rotation {
+      Pitch: 5.78082609
+      Yaw: -84.4392624
+      Roll: -44.4796791
+    }
+    Scale {
+      X: 1.45011878
+      Y: 1.09236872
+      Z: 0.999968767
+    }
+  }
+  ParentId: 1108572126107234659
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.808
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 1304327594889596541
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: 151.18808
+      Y: -169.790207
+      Z: 70.9384766
+    }
+    Rotation {
+      Yaw: 90.2168808
+      Roll: 71.2935791
+    }
+    Scale {
+      X: 1.23018527
+      Y: 1.63546884
+      Z: 0.999989808
+    }
+  }
+  ParentId: 1108572126107234659
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.738000035
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }
@@ -42293,6 +42394,7 @@ Objects {
   }
   ParentId: 8403345852066662669
   ChildIds: 2056739148103885098
+  ChildIds: 8693920302815868370
   ChildIds: 5551750681980545067
   ChildIds: 9040378916435243
   Collidable_v2 {
@@ -42400,6 +42502,53 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 8693920302815868370
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: 32.8143959
+      Y: -228.868637
+      Z: 294.025391
+    }
+    Rotation {
+      Yaw: 1.92120314
+      Roll: 90
+    }
+    Scale {
+      X: 1.12795627
+      Y: 0.672946513
+      Z: 0.999997735
+    }
+  }
+  ParentId: 8665985413443958115
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.808
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }
@@ -43015,6 +43164,7 @@ Objects {
   }
   ParentId: 2614576024841696209
   ChildIds: 2048341541598265028
+  ChildIds: 5016047940388959965
   ChildIds: 2228422955344518149
   ChildIds: 14558608816142383148
   Collidable_v2 {
@@ -43137,6 +43287,53 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 5016047940388959965
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: -14.5689697
+      Y: -250.250977
+      Z: 279.867676
+    }
+    Rotation {
+      Yaw: -90.9370117
+      Roll: 90
+    }
+    Scale {
+      X: 0.769540787
+      Y: 0.846545517
+      Z: 0.999984086
+    }
+  }
+  ParentId: 9946419993953944075
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.62
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }
@@ -43762,6 +43959,7 @@ Objects {
   }
   ParentId: 8134689994119584141
   ChildIds: 3481947317898562555
+  ChildIds: 3273680804823196497
   ChildIds: 17447102710000797271
   ChildIds: 17967339864511684109
   Collidable_v2 {
@@ -43869,6 +44067,53 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 3273680804823196497
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: 4.56884766
+      Y: -230.606201
+      Z: 292.783691
+    }
+    Rotation {
+      Yaw: -90.937
+      Roll: 90
+    }
+    Scale {
+      X: 1.29714561
+      Y: 0.84655
+      Z: 0.999986589
+    }
+  }
+  ParentId: 1777194465558584084
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.808
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }
@@ -44123,6 +44368,8 @@ Objects {
   }
   ParentId: 5320967941928876379
   ChildIds: 1774682067033905085
+  ChildIds: 14879141304142579705
+  ChildIds: 7573588814500526453
   ChildIds: 7841638482677420367
   ChildIds: 4893556690982722943
   ChildIds: 11796767451437111063
@@ -44318,6 +44565,104 @@ Objects {
     }
     Vfx {
       AutoPlay: true
+    }
+  }
+}
+Objects {
+  Id: 7573588814500526453
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: 26.0712891
+      Y: -230.608398
+      Z: 193.861816
+    }
+    Rotation {
+      Yaw: 0.552881479
+      Roll: 90
+    }
+    Scale {
+      X: 0.634240627
+      Y: 0.621582091
+      Z: 0.999997437
+    }
+  }
+  ParentId: 7472015066796427500
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.742000043
+      }
+    }
+    Overrides {
+      Name: "bp:Shape Index"
+      Int: 0
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
+    }
+  }
+}
+Objects {
+  Id: 14879141304142579705
+  Name: "Decal Burnt Streaks 01"
+  Transform {
+    Location {
+      X: 808.3479
+      Y: -230.876465
+      Z: 157.977539
+    }
+    Rotation {
+      Yaw: 0.552881598
+      Roll: 90
+    }
+    Scale {
+      X: 1.0264852
+      Y: 0.917060673
+      Z: 0.999998629
+    }
+  }
+  ParentId: 7472015066796427500
+  UnregisteredParameters {
+    Overrides {
+      Name: "bp:Color"
+      Color {
+        R: 0.0625
+        G: 0.0522339977
+        B: 0.035547
+        A: 0.697
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  Blueprint {
+    BlueprintAsset {
+      Id: 14727519050521805515
+    }
+    TeamSettings {
+    }
+    DecalBP {
     }
   }
 }

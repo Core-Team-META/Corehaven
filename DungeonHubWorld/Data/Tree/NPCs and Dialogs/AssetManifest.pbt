@@ -71,6 +71,15 @@ Assets {
   }
 }
 Assets {
+  Id: 17040115229346150613
+  Name: "Gear - generic small solid"
+  PlatformAssetType: 1
+  PrimaryAsset {
+    AssetType: "StaticMeshAssetRef"
+    AssetId: "sm_gen_gear_small_001"
+  }
+}
+Assets {
   Id: 16372496464315477095
   Name: "Ring - Beveled Thick"
   PlatformAssetType: 1
