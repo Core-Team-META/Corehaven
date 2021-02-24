@@ -116,15 +116,6 @@ Assets {
   }
 }
 Assets {
-  Id: 17451336740485325589
-  Name: "Text 02: L"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_011"
-  }
-}
-Assets {
   Id: 17429523740942577057
   Name: "Pipe - Quarter"
   PlatformAssetType: 1
@@ -140,15 +131,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_terracotta_pots_002_uv"
-  }
-}
-Assets {
-  Id: 17366337042551158012
-  Name: "Metal Corrugated 01"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_mil_metal_corrugated_metal_001_uv_ref"
   }
 }
 Assets {
@@ -224,15 +206,6 @@ Assets {
   }
 }
 Assets {
-  Id: 16825643228001246048
-  Name: "Gem - Pear Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_pear_polished_001"
-  }
-}
-Assets {
   Id: 16814107545177638090
   Name: "Fabric Burlap Old 01"
   PlatformAssetType: 2
@@ -260,30 +233,12 @@ Assets {
   }
 }
 Assets {
-  Id: 16682371750824371507
-  Name: "Metal Corrugated 03"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_mil_metal_corrugated_metal_003_uv_ref"
-  }
-}
-Assets {
   Id: 16568812426900015622
   Name: "Text 01: A"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "F1_Text_000"
-  }
-}
-Assets {
-  Id: 16505400304477243346
-  Name: "Cone - Truncated"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cone_truncated_001"
   }
 }
 Assets {
@@ -404,15 +359,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15792735055830902497
-  Name: "Bone Human Humerus 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_humerus_01_ref"
-  }
-}
-Assets {
   Id: 15785876743814996770
   Name: "Wedge - Convex"
   PlatformAssetType: 1
@@ -467,15 +413,6 @@ Assets {
   }
 }
 Assets {
-  Id: 15456405850729702642
-  Name: "Rock Pile 002"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rocks_small_002"
-  }
-}
-Assets {
   Id: 15117047820700872013
   Name: "Pyramid - 4-Sided Truncated Hollow Thin"
   PlatformAssetType: 1
@@ -500,15 +437,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_basic_glass_001"
-  }
-}
-Assets {
-  Id: 14919625009683139228
-  Name: "Text 01: V"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_021"
   }
 }
 Assets {
@@ -674,15 +602,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13942554520499751448
-  Name: "Prism - 4-Sided Kite"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_kite_001"
-  }
-}
-Assets {
   Id: 13888119501670323283
   Name: "Fantasy Sword Blade 04"
   PlatformAssetType: 1
@@ -716,15 +635,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_fan_wicker_002_uv"
-  }
-}
-Assets {
-  Id: 13697624696730172247
-  Name: "Callout Sparkle"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_sparkles_volume_vfx"
   }
 }
 Assets {
@@ -827,15 +737,6 @@ Assets {
   }
 }
 Assets {
-  Id: 13015241044592811011
-  Name: "Fantasy Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_shield_003"
-  }
-}
-Assets {
   Id: 12996949834479024000
   Name: "Fantasy Human Gal 1"
   PlatformAssetType: 17
@@ -860,24 +761,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_test_001"
-  }
-}
-Assets {
-  Id: 12888184272203015398
-  Name: "Rock 02"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_002_sm_rock_generic_002_LOD0"
-  }
-}
-Assets {
-  Id: 12868138083867151982
-  Name: "Street Light Pole Clamp 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_urb_st_post_lights_post_clamp_001"
   }
 }
 Assets {
@@ -935,15 +818,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12285311049900775021
-  Name: "Bone Human Scapula 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_scap_01_ref"
-  }
-}
-Assets {
   Id: 12159007725512684050
   Name: "Urban Pipe Straight"
   PlatformAssetType: 1
@@ -989,15 +863,6 @@ Assets {
   }
 }
 Assets {
-  Id: 12014312512875032865
-  Name: "Cube - Chamfered Large"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_cube_chamfer"
-  }
-}
-Assets {
   Id: 12012662114098619711
   Name: "Bush 01"
   PlatformAssetType: 1
@@ -1025,15 +890,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11873529390485460337
-  Name: "Column Segment 1m"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_column_segment_001"
-  }
-}
-Assets {
   Id: 11667075996946480541
   Name: "Wooden Bucket"
   PlatformAssetType: 1
@@ -1049,15 +905,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_panel_1x3m_angledL_001"
-  }
-}
-Assets {
-  Id: 11654587554719861231
-  Name: "Pipe - 6-Sided Thick"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_sixsided_003"
   }
 }
 Assets {
@@ -1097,15 +944,6 @@ Assets {
   }
 }
 Assets {
-  Id: 11302073280474298634
-  Name: "Decal Bullet Damage Stone"
-  PlatformAssetType: 14
-  PrimaryAsset {
-    AssetType: "DecalBlueprintAssetRef"
-    AssetId: "bp_decal_bullet_stone_001"
-  }
-}
-Assets {
   Id: 11285278799348334020
   Name: "Sphere - Half Thin"
   PlatformAssetType: 1
@@ -1115,30 +953,12 @@ Assets {
   }
 }
 Assets {
-  Id: 11278864538517343814
-  Name: "Prism - 6-Sided Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_hexagon_001"
-  }
-}
-Assets {
   Id: 11236189850874066005
   Name: "Heart - Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_heart_polished_001"
-  }
-}
-Assets {
-  Id: 11186078670455541833
-  Name: "Pipe - Spiral"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_spiral_001"
   }
 }
 Assets {
@@ -1166,15 +986,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prism_pentagon_001"
-  }
-}
-Assets {
-  Id: 11039133155246581381
-  Name: "Pyramid - Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_hq_001"
   }
 }
 Assets {
@@ -1223,15 +1034,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10656536100449577297
-  Name: "Pyramid - 3-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pyramid_threesided_hq_001"
-  }
-}
-Assets {
   Id: 10595967746777636540
   Name: "Burning Wood"
   PlatformAssetType: 2
@@ -1277,15 +1079,6 @@ Assets {
   }
 }
 Assets {
-  Id: 10235783859494172382
-  Name: "Shield 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_shield_003"
-  }
-}
-Assets {
   Id: 10219341742639680186
   Name: "Metal Steel Brushed"
   PlatformAssetType: 2
@@ -1310,15 +1103,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_foliage_gen_leafy_bush_002"
-  }
-}
-Assets {
-  Id: 10073889248050337082
-  Name: "Text 02: \'"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "Text_057"
   }
 }
 Assets {
@@ -1457,15 +1241,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8920166470127210509
-  Name: "Fantasy Gauntlet Hand 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_gauntlet_hand_001"
-  }
-}
-Assets {
   Id: 8916846240532825810
   Name: "Metal Old Beaten Gold 02"
   PlatformAssetType: 2
@@ -1520,15 +1295,6 @@ Assets {
   }
 }
 Assets {
-  Id: 8363666404921040082
-  Name: "Prism - 8-Sided Half"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_half_octagon_001"
-  }
-}
-Assets {
   Id: 8294807043175688377
   Name: "Ellipsoid - Truncated"
   PlatformAssetType: 1
@@ -1553,15 +1319,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_metal_iron_001"
-  }
-}
-Assets {
-  Id: 8205464909427510479
-  Name: "Bone Human Tibula 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_tib_01_ref"
   }
 }
 Assets {
@@ -1634,15 +1391,6 @@ Assets {
   PrimaryAsset {
     AssetType: "MaterialAssetRef"
     AssetId: "mi_wood_raw_001_uv"
-  }
-}
-Assets {
-  Id: 7763088253104705548
-  Name: "Fantasy Staff Guard 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_guard_staff_001"
   }
 }
 Assets {
@@ -1754,15 +1502,6 @@ Assets {
   }
 }
 Assets {
-  Id: 7328789832105909984
-  Name: "Gem - Diamond 6-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_6_sided_polished_001"
-  }
-}
-Assets {
   Id: 7290323016462348103
   Name: "Text 05: ,"
   PlatformAssetType: 1
@@ -1808,24 +1547,6 @@ Assets {
   }
 }
 Assets {
-  Id: 6864537800243529225
-  Name: "Bone Human Spine 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_spine_01_ref"
-  }
-}
-Assets {
-  Id: 6787207207887554883
-  Name: "Rock 03"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_rock_generic_003"
-  }
-}
-Assets {
   Id: 6747614045051753376
   Name: "Cylinder - Bottom-Aligned"
   PlatformAssetType: 1
@@ -1844,30 +1565,12 @@ Assets {
   }
 }
 Assets {
-  Id: 6722267691116138132
-  Name: "Fantasy Staff Grip 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_grip_staff_001"
-  }
-}
-Assets {
   Id: 6608637607352009288
   Name: "Manticore Logo"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_logo_manticore_01"
-  }
-}
-Assets {
-  Id: 6582948763113902438
-  Name: "Metal 9 Slice Frame 006"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_metal_frames_9slice_006"
   }
 }
 Assets {
@@ -1952,15 +1655,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5884688683316822482
-  Name: "Prism - 4-Sided Trapezoid Right"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_trapezoid_001"
-  }
-}
-Assets {
   Id: 5870959432051636656
   Name: "Fantasy Mace Head 01"
   PlatformAssetType: 1
@@ -1988,15 +1682,6 @@ Assets {
   }
 }
 Assets {
-  Id: 5707603809982655855
-  Name: "Bone Human Femur 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_femur_01_ref"
-  }
-}
-Assets {
   Id: 5649559338683583195
   Name: "Fantasy Shield Strap 01"
   PlatformAssetType: 1
@@ -2012,15 +1697,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_table_right_001"
-  }
-}
-Assets {
-  Id: 5605120965849612947
-  Name: "Fantasy Sword Blade 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_weap_fan_blade_sword_001"
   }
 }
 Assets {
@@ -2114,15 +1790,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4919553345128907812
-  Name: "Gem - Trillion Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_gem_trillion_polished_001"
-  }
-}
-Assets {
   Id: 4846662083301446138
   Name: "Craftsman Part - Stair Balust"
   PlatformAssetType: 1
@@ -2150,15 +1817,6 @@ Assets {
   }
 }
 Assets {
-  Id: 4640387681323858293
-  Name: "Gem - Diamond 8-Sided Polished"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_diamond_8_sided_polished_001"
-  }
-}
-Assets {
   Id: 4565526659431827540
   Name: "Large Wood Board 8m"
   PlatformAssetType: 1
@@ -2174,15 +1832,6 @@ Assets {
   PrimaryAsset {
     AssetType: "BlueprintAssetRef"
     AssetId: "fxbp_flare_object"
-  }
-}
-Assets {
-  Id: 4463315215970122974
-  Name: "Text 01: ~"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "F1_Text_036"
   }
 }
 Assets {
@@ -2429,30 +2078,12 @@ Assets {
   }
 }
 Assets {
-  Id: 2506956793400130868
-  Name: "Energy Tube Glow"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "Energy_Tube_Glow"
-  }
-}
-Assets {
   Id: 2495116102477282970
   Name: "Cylinder - Chamfered Polished"
   PlatformAssetType: 1
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_cylinder_hq_002"
-  }
-}
-Assets {
-  Id: 2494920176024075778
-  Name: "Fire Volume VFX"
-  PlatformAssetType: 8
-  PrimaryAsset {
-    AssetType: "VfxBlueprintAssetRef"
-    AssetId: "fxbp_fire_volume_vfx"
   }
 }
 Assets {
@@ -2552,15 +2183,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_prop_fan_book_collection_001_ref"
-  }
-}
-Assets {
-  Id: 1637968536887231183
-  Name: "Prism - 3-Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_prism_001"
   }
 }
 Assets {
@@ -2672,15 +2294,6 @@ Assets {
   }
 }
 Assets {
-  Id: 853087330042215159
-  Name: "Bone Raw"
-  PlatformAssetType: 2
-  PrimaryAsset {
-    AssetType: "MaterialAssetRef"
-    AssetId: "mi_bone_raw_001_uv_ref"
-  }
-}
-Assets {
   Id: 697130077529532955
   Name: "Metal Painted Basic 01"
   PlatformAssetType: 2
@@ -2699,15 +2312,6 @@ Assets {
   }
 }
 Assets {
-  Id: 408676040365443891
-  Name: "Pipe - 6-Sided"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_pipe_sixsided_002"
-  }
-}
-Assets {
   Id: 316859462149096151
   Name: "Lens - Half"
   PlatformAssetType: 1
@@ -2723,15 +2327,6 @@ Assets {
   PrimaryAsset {
     AssetType: "StaticMeshAssetRef"
     AssetId: "sm_weap_fan_guard_mace_001"
-  }
-}
-Assets {
-  Id: 174270924982814207
-  Name: "Bone Human Skull 01"
-  PlatformAssetType: 1
-  PrimaryAsset {
-    AssetType: "StaticMeshAssetRef"
-    AssetId: "sm_bones_human_skull_01_ref"
   }
 }
 Assets {
