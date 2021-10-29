@@ -2,8 +2,8 @@
 
 # Corehaven Chronicles
 
-[![Build Status](https://github.com/ManticoreGamesInc/Corehaven/workflows/CI/badge.svg)](https://github.com/ManticoreGamesInc/Corehaven/actions/workflows/ci.yml?query=workflow%3ACI%29)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/ManticoreGamesInc/Corehaven?style=plastic)
+[![Build Status](https://github.com/Core-Team-META/Corehaven/workflows/CI/badge.svg)](https://github.com/Core-Team-META/Corehaven/actions/workflows/ci.yml?query=workflow%3ACI%29)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Core-Team-META/Corehaven?style=plastic)
 
 [![](Screenshots/corehaven_banner.png)](https://www.coregames.com/games/a91218/corehaven)
 
