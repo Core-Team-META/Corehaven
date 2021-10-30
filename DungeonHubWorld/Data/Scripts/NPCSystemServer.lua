@@ -135,7 +135,7 @@ function UpdateCurrentTask(npc)
 	-- Player position is in their middle. NPC position is at their root, so we adjust
 	local distanceToTarget = (API_NPC.GetTarget(npc):GetWorldPosition() - Vector3.UP * 100.0 - npc:GetWorldPosition()).size
 
-	local totalPriorty = 0.0
+	local totalPriority = 0.0
 	local possibleTasks = {}		-- String -> float
 
 	for _, taskName in pairs(npcData.taskList) do
@@ -147,9 +147,9 @@ function UpdateCurrentTask(npc)
 			if taskData.range == 0.0 or taskData.range >= distanceToTarget then
 				local priority = taskData.getPriority(npc, npcState.taskHistory)
 				assert(priority >= 0.0)
-				
+
 				if priority > 0.0 then
-					totalPriorty = totalPriorty + priority
+					totalPriority = totalPriority + priority
 					possibleTasks[taskName] = priority
 				end
 			end
@@ -167,7 +167,7 @@ function UpdateCurrentTask(npc)
 			end
 		end
 	else
-		local r = math.random() * totalPriorty
+		local r = math.random() * totalPriority
 
 		for taskName, priority in pairs(possibleTasks) do
 			if r < priority then
@@ -296,7 +296,7 @@ end
 
 function OnDamaged(sourceCharacter, npc, amount)
 	assert(not IsAsleep(npc))
-	
+
 	if sourceCharacter:IsA("Player") then
 		local npcState = npcStates[npc]
 
@@ -492,7 +492,7 @@ function Tick(deltaTime)
 		end
 	end
 
-	-- Update NPCS
+	-- Update NPCs
 	for npc, npcData in pairs(API_NPC.GetAllNPCData()) do
 		local npcState = npcStates[npc]
 		local npcPosition = npc:GetWorldPosition()
@@ -509,7 +509,7 @@ function Tick(deltaTime)
 				KillNPC(npc)
 			else
 				if currentTask == API_NPC.STATE_RESETTING then
-					-- Spawned npcs die instead of resetting
+					-- Spawned NPCs die instead of resetting
 					if npcData.spawnParent then
 						KillNPC(npc)
 					else

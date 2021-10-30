@@ -26,17 +26,17 @@ local function closestPointsBetweenTwoLineSegments(start1, end1, start2, end2)
 		w = (start1 + s*u) - (start2 + t*v) -- the line between them
 		w .. u = w .. v = 0 -- perpendicular to both
 	]]
-	
+
 	local u = end1 - start1 -- vector representing the first line segment
 	local v = end2 - start2 -- vector representing the second line segment
 	local w = start1 - start2 -- vector offset between the two line segments
-	
+
 	local numerator1 =  (u..v)*(v..w) - v.sizeSquared*(u..w)
 	local numerator2 = -(u..v)*(u..w) + u.sizeSquared*(v..w)
 	local denominator = u.sizeSquared * v.sizeSquared - (u..v)^2 -- = (|u||v|sin t)^2 (zero if u and v are collinear)
-	
+
 	if denominator == 0 then return end -- line segments are collinear, return nil and let the caller decide what to do
-	
+
 	if numerator1 < 0 then -- closest points are not within the bounds of the segments
 		return start1, closestPointOnLineSegment(start1, start2, end2)
 	elseif numerator1 > denominator then
@@ -46,10 +46,10 @@ local function closestPointsBetweenTwoLineSegments(start1, end1, start2, end2)
 	elseif numerator2 > denominator then
 		return end2, closestPointOnLineSegment(end2, start1, end1)
 	end
-	
+
 	local closest1 = start1 + u*numerator1/denominator
 	local closest2 = start2 + v*numerator2/denominator
-	
+
 	return closest1, closest2
 end
 
@@ -85,7 +85,7 @@ local function closestPointsBetweenLineSegmentAndRectangle(lineStart, lineEnd, r
 	-- case 2: line segment intersects rectangle. calculate the intersection
 	-- case 3: line segment intersects the plane but not the rectangle. find the closest point on the rectangle's perimeter
 	-- case 4: line segment does not intersect the plane. find the closest point on the rectangle's perimeter and also try point-to-rectangle distances of the endpoints.
-	
+
 	local scalarProjection = (lineEnd - lineStart) .. rectangle.normal
 	if scalarProjection == 0 then -- line is perpendicular to the normal, which means the line and rectangle are parallel
 		return -- let the caller decide what to do
@@ -126,7 +126,7 @@ local function closestPointsBetweenLineSegmentAndRectangle(lineStart, lineEnd, r
 	end
 end
 
-local function intersectionsBetweenRectangles(rect1, rect2) -- list each 0-dimenional intersection between the two rectangles
+local function intersectionsBetweenRectangles(rect1, rect2) -- list each 0-dimensional intersection between the two rectangles
 	local intersectionPoints = {}
 	local function addIntersectionPoint(point)
 		local isUnique = true -- check that this intersection point hasn't already been found
@@ -140,7 +140,7 @@ local function intersectionsBetweenRectangles(rect1, rect2) -- list each 0-dimen
 			intersectionPoints[#intersectionPoints + 1] = point
 		end
 	end
-	
+
 	if (rect1.normal ^ rect2.normal).sizeSquared < 0.01 then -- rectangles are parallel, just calculate edge-edge intersections
 		for _, edge1 in pairs(rect1.edges) do
 			for _, edge2 in pairs(rect2.edges) do
@@ -164,7 +164,7 @@ local function intersectionsBetweenRectangles(rect1, rect2) -- list each 0-dimen
 			end
 		end
 	end
-	
+
 	return intersectionPoints
 end
 
@@ -219,7 +219,7 @@ function API.RegisterRectangles(rectangleFolder)
 	for _, part in pairs(rectangleFolder:GetChildren()) do
 		local rect = {}
 		rectangles[#rectangles + 1] = rect
-		
+
 		local partCenter = part:GetWorldPosition()
 		local partRotation = part:GetWorldRotation()
 		local partSize = part:GetWorldScale() * 100 -- based on cube mesh size
@@ -229,16 +229,16 @@ function API.RegisterRectangles(rectangleFolder)
 			partCenter + partRotation * (partSize * Vector3.New(-.5, .5, 1)), -- back right
 			partCenter + partRotation * (partSize * Vector3.New(-.5, -.5, 1)) -- back left
 		}
-		
+
 		rect.edges = {}
 		for i = 1, 4 do
 			local vertex1 = rect.vertices[i]
 			local vertex2 = rect.vertices[i%4 + 1] -- wraps around to 1
 			rect.edges[#rect.edges + 1] = {vertex1, vertex2}
 		end
-		
+
 		rect.nodes = {}
-		
+
 		 -- the cross product of two adjacent edges of a polygon is perpendicular to its face
 		rect.normal = ((rect.vertices[2] - rect.vertices[1]) ^ (rect.vertices[3] - rect.vertices[1])):GetNormalized()
 	end
@@ -250,21 +250,21 @@ function API.RegisterRectangles(rectangleFolder)
 		local rect1 = rectangles[i]
 		for j = i+1, #rectangles do
 			local rect2 = rectangles[j]
-			
+
 			local fastSpawnConnection -- don't take any chances with the instruction limit, spam new tasks
 			fastSpawnConnection = API_RE.Connect("fastSpawn", function()
 				fastSpawnConnection:Disconnect()
 				local intersectionPoints = intersectionsBetweenRectangles(rect1, rect2)
 				for _, point in pairs(intersectionPoints) do
 					local newNode = {position = point, connectedRectangles = {rect1, rect2}}
-					
+
 					rect1.nodes[#rect1.nodes + 1] = newNode
 					rect2.nodes[#rect2.nodes + 1] = newNode
 					intersectionCount = intersectionCount + 1
 				end
 			end)
 			API_RE.Broadcast("fastSpawn")
-			
+
 		end
 	end
 end
@@ -288,11 +288,11 @@ function API.GetPath(startPosition, endPosition)
 		__le = function(a, b) return a.lengthPlusHeuristic <= b.lengthPlusHeuristic end,
 		__lt = function(a, b) return a.lengthPlusHeuristic < b.lengthPlusHeuristic end
 	}
-	
+
 	local priorityQueue = MinHeap.New()
 	priorityQueue:Insert(setmetatable({path = {startNode}, length = 0, lengthPlusHeuristic = 0}, pathNodeMetatable))
 	local visitedNodes = {}
-	
+
 	local clock = os.clock()
 	local solutionPath = nil
 	local iterations = 0
@@ -323,20 +323,20 @@ function API.GetPath(startPosition, endPosition)
 			end
 		end
 	end
-	
+
 	if solutionPath then
 		-- remove unnecessary nodes when a straight line is possible
 		-- changes in elevation like ramps are a complicated edge case. todo
-		
+
 		local startNodeIndex = 1
-		while startNodeIndex <= #solutionPath - 2 do			
+		while startNodeIndex <= #solutionPath - 2 do
 			local node1 = solutionPath[startNodeIndex]
-			
+
 			local importantRectangleDict = {}
 			for _, rect in pairs(node1.connectedRectangles) do
 				importantRectangleDict[rect] = true
 			end
-			
+
 			while solutionPath[startNodeIndex + 2] do
 				local node2 = solutionPath[startNodeIndex + 2]
 				-- check if the line exits the walkable space. if it doesn't then remove the node in-between
@@ -365,7 +365,7 @@ function API.GetPath(startPosition, endPosition)
 				table.sort(intersections, function(a, b)
 					return (a - node1.position).sizeSquared < (b - node1.position).sizeSquared
 				end)
-				
+
 				local canSkipNode = true -- iterate over each adjacent pair of intersections and ensure the midpoint between them is on a walkable surface.
 				for i = 1, #intersections - 1 do
 					local point1, point2 = intersections[i], intersections[i+1]
@@ -387,10 +387,10 @@ function API.GetPath(startPosition, endPosition)
 					break
 				end
 			end
-			
+
 			startNodeIndex = startNodeIndex + 1
 		end
-		
+
 		for i = 1, #solutionPath do -- convert nodes to positions
 			solutionPath[i] = solutionPath[i].position
 		end
