@@ -2,7 +2,7 @@ Assets {
   Id: 5426935030377432702
   Name: "Cleave Handle"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 13761796555206813823
     ParameterOverrides {

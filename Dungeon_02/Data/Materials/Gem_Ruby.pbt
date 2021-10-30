@@ -2,7 +2,7 @@ Assets {
   Id: 13788245814609234970
   Name: "Gem_Ruby"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {

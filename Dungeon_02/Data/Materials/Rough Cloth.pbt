@@ -2,7 +2,7 @@ Assets {
   Id: 14452343320500344022
   Name: "Rough Cloth"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 4904779893906915148
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 4469657443425330169
   Name: "AttackIndicatorMateral"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 2721411165435899975
     ParameterOverrides {

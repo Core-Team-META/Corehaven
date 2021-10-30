@@ -2,7 +2,7 @@ Assets {
   Id: 13351865829320371855
   Name: "GlowingDaisy"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 9574012895710909664
     ParameterOverrides {

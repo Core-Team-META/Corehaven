@@ -2,7 +2,7 @@ Assets {
   Id: 2663349026666902300
   Name: "ArchwayRock"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 6073253204432380249
     ParameterOverrides {

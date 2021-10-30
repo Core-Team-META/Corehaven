@@ -2,7 +2,7 @@ Assets {
   Id: 15681535117411795644
   Name: "Storm Cloud"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 1082809058784319555
     ParameterOverrides {

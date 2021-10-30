@@ -2,7 +2,7 @@ Assets {
   Id: 14883659415120030389
   Name: "MAT_gem01"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 6225573398470987528
     ParameterOverrides {

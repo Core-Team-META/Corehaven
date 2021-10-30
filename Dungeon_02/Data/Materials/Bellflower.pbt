@@ -2,7 +2,7 @@ Assets {
   Id: 9555939465196639099
   Name: "Bellflower"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 4890998759237888208
     ParameterOverrides {

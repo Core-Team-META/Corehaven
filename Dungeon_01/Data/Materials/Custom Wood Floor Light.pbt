@@ -2,7 +2,7 @@ Assets {
   Id: 723703138469303970
   Name: "Custom Wood Floor Light"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 4303012738782523103
     ParameterOverrides {

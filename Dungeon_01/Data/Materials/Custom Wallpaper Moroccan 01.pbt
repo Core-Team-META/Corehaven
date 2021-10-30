@@ -2,7 +2,7 @@ Assets {
   Id: 8194019913198153635
   Name: "Custom Wallpaper Moroccan 01"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 14781885955149681198
     ParameterOverrides {

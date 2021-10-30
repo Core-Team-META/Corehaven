@@ -2,7 +2,7 @@ Assets {
   Id: 3525969444543523627
   Name: "PlagueDragonScales"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 9081998061972125087
     ParameterOverrides {

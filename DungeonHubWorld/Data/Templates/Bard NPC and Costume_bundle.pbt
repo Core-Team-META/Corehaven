@@ -19,6 +19,9 @@ Assets {
             Z: 1
           }
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -40,5 +43,5 @@ Assets {
     Version: "1.0.0"
     Description: "For D&D event hub"
   }
-  SerializationVersion: 72
+  SerializationVersion: 101
 }

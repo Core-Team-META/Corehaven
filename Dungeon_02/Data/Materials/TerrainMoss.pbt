@@ -2,7 +2,7 @@ Assets {
   Id: 5951934508470599840
   Name: "TerrainMoss"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 11759045314390150964
     ParameterOverrides {

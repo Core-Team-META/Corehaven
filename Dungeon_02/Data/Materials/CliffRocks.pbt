@@ -2,7 +2,7 @@ Assets {
   Id: 185854530037663472
   Name: "CliffRocks"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 12860648006723125244
     ParameterOverrides {

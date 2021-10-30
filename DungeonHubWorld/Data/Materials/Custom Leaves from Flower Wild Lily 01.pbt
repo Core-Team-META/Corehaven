@@ -2,7 +2,7 @@ Assets {
   Id: 4361585765554872385
   Name: "Custom Leaves from Flower Wild Lily 01"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 2671950586302331633
     ParameterOverrides {

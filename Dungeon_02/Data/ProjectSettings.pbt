@@ -1,3 +1,3 @@
 LeaderboardConfigs {
 }
-MaxPlayers: 6
+MainScene: "Main"

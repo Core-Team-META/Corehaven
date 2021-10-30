@@ -2,7 +2,7 @@ Assets {
   Id: 3115427632251012821
   Name: "BareCliff"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 16723106984696457190
     ParameterOverrides {

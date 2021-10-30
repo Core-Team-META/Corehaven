@@ -2,7 +2,7 @@ Assets {
   Id: 6230726006317832015
   Name: "ThreatIndicator"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 17486172561945050120
     ParameterOverrides {

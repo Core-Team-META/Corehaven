@@ -2,7 +2,7 @@ Assets {
   Id: 2755350132424134129
   Name: "Custom Wood Raw_90degrees"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 2664847478369185144
     ParameterOverrides {

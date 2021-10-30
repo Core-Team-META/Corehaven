@@ -2,7 +2,7 @@ Assets {
   Id: 11389152567197969296
   Name: "Swamp Creature Fins"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 14246694054282102543
     ParameterOverrides {

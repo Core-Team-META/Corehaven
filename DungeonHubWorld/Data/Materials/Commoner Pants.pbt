@@ -2,7 +2,7 @@ Assets {
   Id: 17540239053320912682
   Name: "Commoner Pants"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 3049520932042226337
     ParameterOverrides {

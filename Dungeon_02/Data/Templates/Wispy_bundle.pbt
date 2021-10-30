@@ -25,6 +25,9 @@ Assets {
         Visible_v2 {
           Value: "mc:evisibilitysetting:forceon"
         }
+        CameraCollidable {
+          Value: "mc:ecollisionsetting:inheritfromparent"
+        }
         Folder {
           BundleDummy {
             ReferencedAssets {
@@ -46,5 +49,5 @@ Assets {
     Version: "1.3.0"
     Description: "Wispy creature with a trail! Spins in a circle. Point Light and script attatched"
   }
-  SerializationVersion: 72
+  SerializationVersion: 101
 }

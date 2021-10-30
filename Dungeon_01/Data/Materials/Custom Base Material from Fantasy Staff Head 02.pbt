@@ -2,7 +2,7 @@ Assets {
   Id: 16942445677852929073
   Name: "Custom Base Material from Fantasy Staff Head 02"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 12796620557947484501
     ParameterOverrides {

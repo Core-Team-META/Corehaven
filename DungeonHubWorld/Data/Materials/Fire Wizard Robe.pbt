@@ -2,7 +2,7 @@ Assets {
   Id: 11173477201412887452
   Name: "Fire Wizard Robe"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 591028877489501405
     ParameterOverrides {

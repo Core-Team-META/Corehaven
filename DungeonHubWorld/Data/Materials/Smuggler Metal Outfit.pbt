@@ -2,7 +2,7 @@ Assets {
   Id: 15637059557978593585
   Name: "Smuggler Metal Outfit"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 9081998061972125087
     ParameterOverrides {
@@ -77,7 +77,7 @@ Assets {
         Color {
           R: 0.78125
           G: 0.581532836
-          B: 0.219726563
+          B: 0.219726562
           A: 1
         }
       }

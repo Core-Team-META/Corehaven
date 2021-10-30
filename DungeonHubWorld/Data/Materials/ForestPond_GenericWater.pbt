@@ -2,7 +2,7 @@ Assets {
   Id: 1874146275664699757
   Name: "ForestPond_GenericWater"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 16532662947784276478
     ParameterOverrides {

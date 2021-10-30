@@ -2,7 +2,7 @@ Assets {
   Id: 3905761152472637901
   Name: "Flat Black"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 10184847056121543272
     ParameterOverrides {

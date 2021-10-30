@@ -2,7 +2,7 @@ Assets {
   Id: 4989147260692606930
   Name: "Gem_Sapphire"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 1364294402302747595
     ParameterOverrides {

@@ -2,7 +2,7 @@ Assets {
   Id: 12047219240300507277
   Name: "HealingCross_Material"
   PlatformAssetType: 13
-  SerializationVersion: 72
+  SerializationVersion: 101
   CustomMaterialAsset {
     BaseMaterialId: 2721411165435899975
     ParameterOverrides {
