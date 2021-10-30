@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 function Tick(deltaTime)
 	for _, player in pairs(Game.GetPlayers()) do

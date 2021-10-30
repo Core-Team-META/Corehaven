@@ -1,4 +1,4 @@
-﻿GameId: "d520cc7b8cbf4f789d3dbe453ab7b34b"
+GameId: "d520cc7b8cbf4f789d3dbe453ab7b34b"
 ClientVersion: "1.0.164-prod-s"
 Name: "Highrock (Infinite)"
 Description: "Join up with your friends to conquer the first chapter of Corehaven Chronicles: The Siege of Highrock. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."

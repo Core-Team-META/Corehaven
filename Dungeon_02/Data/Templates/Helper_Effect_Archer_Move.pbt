@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4428929018729094630
   Name: "Helper_Effect_Archer_Move"
   PlatformAssetType: 5

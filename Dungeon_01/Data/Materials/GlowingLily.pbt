@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14317707599999606504
   Name: "GlowingLily"
   PlatformAssetType: 13

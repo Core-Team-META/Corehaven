@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7656762675905912731
   Name: "Enemy_SwampMystic"
   PlatformAssetType: 5

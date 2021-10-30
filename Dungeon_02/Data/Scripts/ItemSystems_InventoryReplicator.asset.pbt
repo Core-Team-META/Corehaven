@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1910939002984116838
   Name: "ItemSystems_InventoryReplicator"
   PlatformAssetType: 3

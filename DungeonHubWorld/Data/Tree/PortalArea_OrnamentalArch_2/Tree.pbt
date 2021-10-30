@@ -1,4 +1,4 @@
-﻿Name: "PortalArea_OrnamentalArch_2"
+Name: "PortalArea_OrnamentalArch_2"
 RootId: 10359588356756081676
 Objects {
   Id: 13140057203285395022

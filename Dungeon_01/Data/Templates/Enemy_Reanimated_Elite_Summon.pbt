@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11272925145965958020
   Name: "Enemy_Reanimated_Elite_Summon"
   PlatformAssetType: 5

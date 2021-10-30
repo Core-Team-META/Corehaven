@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17486910027620849271
   Name: "ITEM_Dagger_IronDagger"
   PlatformAssetType: 5

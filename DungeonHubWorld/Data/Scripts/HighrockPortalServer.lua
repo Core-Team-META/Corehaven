@@ -1,4 +1,4 @@
-﻿function OnHighrock_Normal(player)
+function OnHighrock_Normal(player)
 	player:TransferToGame("06acec/highrock-normal")
 end
 

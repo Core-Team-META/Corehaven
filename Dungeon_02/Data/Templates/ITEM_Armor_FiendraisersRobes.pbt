@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6470649770128324607
   Name: "ITEM_Armor_FiendraisersRobes"
   PlatformAssetType: 5

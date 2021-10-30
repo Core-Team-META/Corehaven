@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 
 This is a guide for how to use this game as a starting point to create your own RPGs or other games.
 

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4243548363080256941
   Name: "Bare Tree"
   PlatformAssetType: 13

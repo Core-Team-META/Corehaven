@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17678176516239900516
   Name: "Custom Bricks Cobblestone Floor Arches 001"
   PlatformAssetType: 13

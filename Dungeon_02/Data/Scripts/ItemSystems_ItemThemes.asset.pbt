@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3464750411501585367
   Name: "ItemSystems_ItemThemes"
   PlatformAssetType: 3

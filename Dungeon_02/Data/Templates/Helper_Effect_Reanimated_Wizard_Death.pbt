@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13526396715503383101
   Name: "Helper_Effect_Reanimated_Wizard_Death"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local SUMMON_TEMPLATE = script:GetCustomProperty("SummonTemplate")

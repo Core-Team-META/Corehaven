@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1337159463845606244
   Name: "Helper_Effect_Telegraph_CrystalDetonation"
   PlatformAssetType: 5

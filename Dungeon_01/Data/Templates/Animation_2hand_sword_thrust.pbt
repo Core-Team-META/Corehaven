@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8711788817788788764
   Name: "Animation_2hand_sword_thrust"
   PlatformAssetType: 5

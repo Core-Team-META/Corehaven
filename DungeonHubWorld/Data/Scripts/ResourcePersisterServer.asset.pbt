@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13451820863796807922
   Name: "ResourcePersisterServer"
   PlatformAssetType: 3

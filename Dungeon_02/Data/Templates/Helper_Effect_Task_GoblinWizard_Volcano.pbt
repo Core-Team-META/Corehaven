@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18287100776450067654
   Name: "Helper_Effect_Task_GoblinWizard_Volcano"
   PlatformAssetType: 5

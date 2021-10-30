@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7930055332507536354
   Name: "Helper_Effect_Reticle_Illuminate"
   PlatformAssetType: 5

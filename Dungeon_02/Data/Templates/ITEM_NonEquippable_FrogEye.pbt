@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2802105411883767810
   Name: "ITEM_NonEquippable_FrogEye"
   PlatformAssetType: 5

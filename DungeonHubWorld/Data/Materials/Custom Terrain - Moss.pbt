@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11203258334483550921
   Name: "Custom Terrain - ForestMoss"
   PlatformAssetType: 13

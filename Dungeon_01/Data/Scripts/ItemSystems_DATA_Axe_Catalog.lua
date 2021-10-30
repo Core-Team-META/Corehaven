@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Stone Hatchet',
     Type = 'Axe',

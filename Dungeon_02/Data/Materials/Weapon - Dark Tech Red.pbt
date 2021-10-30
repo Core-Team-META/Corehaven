@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3811240335831509767
   Name: "Weapon - Dark Tech Red"
   PlatformAssetType: 13

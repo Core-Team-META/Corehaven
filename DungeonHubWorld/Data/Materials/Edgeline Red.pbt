@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6060097613564872733
   Name: "Edgeline Red"
   PlatformAssetType: 13

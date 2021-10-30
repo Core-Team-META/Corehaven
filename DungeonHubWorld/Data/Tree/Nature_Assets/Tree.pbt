@@ -1,4 +1,4 @@
-﻿Name: "Nature_Assets"
+Name: "Nature_Assets"
 RootId: 4445322596964842448
 Objects {
   Id: 1957251427704278365

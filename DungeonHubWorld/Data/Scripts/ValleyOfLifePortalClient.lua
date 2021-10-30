@@ -1,4 +1,4 @@
-﻿local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
+local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local DECLINE_BUTTON = script:GetCustomProperty("DeclineButton"):WaitForObject()
 local NORMAL_BUTTON = script:GetCustomProperty("NormalButton"):WaitForObject()
 local HARD_BUTTON = script:GetCustomProperty("HardButton"):WaitForObject()

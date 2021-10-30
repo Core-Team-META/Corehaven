@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17095405232326882518
   Name: "Custom Detail 3 from Fantasy Human Gal 2"
   PlatformAssetType: 13

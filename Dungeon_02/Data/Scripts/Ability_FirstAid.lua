@@ -1,4 +1,4 @@
-﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local data = {}
 

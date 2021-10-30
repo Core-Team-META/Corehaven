@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2778143631456222163
   Name: "Fire Wizard Robe"
   PlatformAssetType: 13

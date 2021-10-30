@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15336714763721130491
   Name: "Enemy_SmallCasterElemental"
   PlatformAssetType: 5

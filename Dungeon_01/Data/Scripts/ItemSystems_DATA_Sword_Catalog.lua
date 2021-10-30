@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Dull Blade',
     Type = 'Sword',

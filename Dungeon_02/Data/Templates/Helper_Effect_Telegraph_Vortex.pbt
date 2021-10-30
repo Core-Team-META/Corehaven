@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12259574910247126807
   Name: "Helper_Effect_Telegraph_Vortex"
   PlatformAssetType: 5

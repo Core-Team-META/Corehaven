@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18434079688766523124
   Name: "Metal Basic 01"
   PlatformAssetType: 2

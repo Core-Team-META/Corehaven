@@ -1,4 +1,4 @@
-﻿local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))
 local API_SK = require(script:GetCustomProperty("APISharedKey"))
 

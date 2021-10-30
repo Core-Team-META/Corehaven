@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1347785755330041727
   Name: "Helper_Effect_Telegraph_ThrowStone"
   PlatformAssetType: 5

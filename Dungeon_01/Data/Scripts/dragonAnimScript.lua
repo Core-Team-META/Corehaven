@@ -1,4 +1,4 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local PLAYER = Game.GetLocalPlayer()
 
 -- set these bools from external scripts if you want to enable/disable the fish swimming or orienting to movement behaviors

@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Pointy Stick',
     Type = 'Dagger',

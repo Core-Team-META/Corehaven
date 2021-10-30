@@ -1,4 +1,4 @@
-﻿GameId: "bf591699267342389fb6dafca5384170"
+GameId: "bf591699267342389fb6dafca5384170"
 ClientVersion: "1.0.164-prod-s"
 Name: "Highrock (Nightmare)"
 Description: "Join up with your friends to conquer the first chapter of Corehaven Chronicles: The Siege of Highrock. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."

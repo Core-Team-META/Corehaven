@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4539543345637680619
   Name: "Animation_2hand_staff_magic_bolt"
   PlatformAssetType: 5

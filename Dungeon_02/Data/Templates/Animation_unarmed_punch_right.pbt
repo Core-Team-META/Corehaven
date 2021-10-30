@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7707547154865833588
   Name: "Animation_unarmed_punch_right"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 function API.RegisterDialogueId(dialogId)
     if not _G.APIDialogsLibrary then

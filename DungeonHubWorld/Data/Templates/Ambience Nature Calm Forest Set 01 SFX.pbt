@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2588772337675611479
   Name: "Ambience Nature Calm Forest Set 01 SFX"
   PlatformAssetType: 5

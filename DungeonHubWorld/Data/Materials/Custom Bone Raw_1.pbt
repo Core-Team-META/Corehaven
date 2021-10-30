@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16058784496540171691
   Name: "Custom Bone Raw_1"
   PlatformAssetType: 13

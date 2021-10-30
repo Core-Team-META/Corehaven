@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 712454674468515162
   Name: "ITEM_Shield_CaptainsTower"
   PlatformAssetType: 5

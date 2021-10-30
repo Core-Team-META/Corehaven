@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6397312753020793237
   Name: "Animation_unarmed_stomp"
   PlatformAssetType: 5

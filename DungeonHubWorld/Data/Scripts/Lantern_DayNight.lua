@@ -1,4 +1,4 @@
-﻿local propLight = script:GetCustomProperty("Light"):WaitForObject()
+local propLight = script:GetCustomProperty("Light"):WaitForObject()
 local propFlame = script:GetCustomProperty("Flame"):WaitForObject()
 
 function Dawn()

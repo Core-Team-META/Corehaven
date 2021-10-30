@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     DropKey = 'CHEAT',
     ItemName = 'Almira\'s Claymore',

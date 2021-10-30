@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16354732930197094246
   Name: "AbilityHelper_Effect_CosmicBlastCast"
   PlatformAssetType: 5

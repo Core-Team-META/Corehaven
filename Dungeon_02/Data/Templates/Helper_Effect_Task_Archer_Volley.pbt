@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4765246375454497163
   Name: "Helper_Effect_Task_Archer_Volley"
   PlatformAssetType: 5

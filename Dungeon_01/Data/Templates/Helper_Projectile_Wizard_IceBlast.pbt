@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2702694216452215772
   Name: "Helper_Projectile_Wizard_IceBlast"
   PlatformAssetType: 5

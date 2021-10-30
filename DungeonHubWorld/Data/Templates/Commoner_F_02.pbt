@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12958069102582541366
   Name: "Commoner_F_02"
   PlatformAssetType: 5

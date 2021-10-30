@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2334612471939404507
   Name: "Weapon - Plasma Orange"
   PlatformAssetType: 13

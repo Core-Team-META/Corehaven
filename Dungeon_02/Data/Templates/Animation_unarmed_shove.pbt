@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17300555149112272333
   Name: "Animation_unarmed_shove"
   PlatformAssetType: 5

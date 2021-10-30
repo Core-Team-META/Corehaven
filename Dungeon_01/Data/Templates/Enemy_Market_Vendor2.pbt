@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5082364805724053926
   Name: "Enemy_Market_Vendor2"
   PlatformAssetType: 5

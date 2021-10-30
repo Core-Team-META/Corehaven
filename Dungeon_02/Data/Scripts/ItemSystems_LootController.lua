@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local Item = require(script:GetCustomProperty("ItemSystems_Item"))
 local LOOT = script:GetCustomProperty("Loot"):WaitForObject()

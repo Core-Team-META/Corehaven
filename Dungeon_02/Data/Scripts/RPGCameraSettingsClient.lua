@@ -1,4 +1,4 @@
-﻿local API_GS = require(script:GetCustomProperty("APIGameSettings"))
+local API_GS = require(script:GetCustomProperty("APIGameSettings"))
 
 local CAMERA = script:GetCustomProperty("Camera"):WaitForObject()
 

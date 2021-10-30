@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3978089662953605007
   Name: "Custom Base Material from Fantasy Human Guy 1"
   PlatformAssetType: 13

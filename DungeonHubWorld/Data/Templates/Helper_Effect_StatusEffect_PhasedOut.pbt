@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3651811729577732966
   Name: "Helper_Effect_StatusEffect_PhasedOut"
   PlatformAssetType: 5

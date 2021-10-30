@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18279180544229982698
   Name: "ITEM_Mace_RamsHeadClub"
   PlatformAssetType: 5

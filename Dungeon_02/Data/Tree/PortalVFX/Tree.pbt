@@ -1,4 +1,4 @@
-﻿Name: "PortalVFX"
+Name: "PortalVFX"
 RootId: 11757146413210076652
 Objects {
   Id: 14331314303902479279

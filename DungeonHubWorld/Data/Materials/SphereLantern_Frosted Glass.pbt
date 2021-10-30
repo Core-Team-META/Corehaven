@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2110146300819852499
   Name: "SphereLantern_Frosted Glass"
   PlatformAssetType: 13

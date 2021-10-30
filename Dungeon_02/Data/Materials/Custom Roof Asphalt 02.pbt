@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17937527454426031182
   Name: "Custom Roof Asphalt 02"
   PlatformAssetType: 13

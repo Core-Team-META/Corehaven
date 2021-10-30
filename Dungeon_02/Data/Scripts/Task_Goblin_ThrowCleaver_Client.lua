@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_P = require(script:GetCustomProperty("APIProjectile"))
 
 local PROJECTILE_TEMPLATE = script:GetCustomProperty("ProjectileTemplate")

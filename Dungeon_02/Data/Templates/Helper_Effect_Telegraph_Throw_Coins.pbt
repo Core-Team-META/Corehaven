@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11428608906530713399
   Name: "Helper_Effect_Telegraph_Throw_Coins"
   PlatformAssetType: 5

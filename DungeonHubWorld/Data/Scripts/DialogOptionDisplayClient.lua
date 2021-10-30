@@ -1,4 +1,4 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local BUTTON = script:GetCustomProperty("Button"):WaitForObject()
 
 function OnClicked(whichButton)

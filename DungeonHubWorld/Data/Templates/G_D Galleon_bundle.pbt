@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15230505093846944624
   Name: "G&D Galleon"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14184134622512877584
   Name: "Object Mover Continuous"
   PlatformAssetType: 5

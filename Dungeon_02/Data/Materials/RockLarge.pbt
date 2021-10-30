@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15817761787248470137
   Name: "RockLarge"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17340189929415780202
   Name: "Wealthy Merchant Outfit"
   PlatformAssetType: 13

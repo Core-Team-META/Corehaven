@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17273001891643549988
   Name: "Enemy_Boss3_Guard"
   PlatformAssetType: 5

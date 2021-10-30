@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3301713651551782853
   Name: "ITEM_Sword_Reason"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 local EFFECT_FADE_OUT_TIME = 0.6
 local EFFECT_DESTROY_DELAY = 3.0

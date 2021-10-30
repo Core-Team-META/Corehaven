@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 439156593338236567
   Name: "Ability_RighteousHammer"
   PlatformAssetType: 3

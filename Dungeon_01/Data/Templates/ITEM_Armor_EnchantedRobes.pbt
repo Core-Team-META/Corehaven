@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4397988812337525454
   Name: "ITEM_Armor_EnchantedRobes"
   PlatformAssetType: 5

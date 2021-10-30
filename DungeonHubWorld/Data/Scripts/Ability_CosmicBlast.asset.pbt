@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18154848797076415804
   Name: "Ability_CosmicBlast"
   PlatformAssetType: 3

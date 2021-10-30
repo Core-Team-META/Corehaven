@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2718323132981127318
   Name: "Bard\'s Hat Feather"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15150515776861575297
   Name: "Kelp"
   PlatformAssetType: 13

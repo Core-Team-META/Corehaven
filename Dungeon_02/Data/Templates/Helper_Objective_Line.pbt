@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6917522942167372582
   Name: "Helper_Objective_Line"
   PlatformAssetType: 5

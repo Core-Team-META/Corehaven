@@ -1,4 +1,4 @@
-﻿Name: "Ornamental_Arch"
+Name: "Ornamental_Arch"
 RootId: 12643954955823973724
 Objects {
   Id: 10873414479269728030

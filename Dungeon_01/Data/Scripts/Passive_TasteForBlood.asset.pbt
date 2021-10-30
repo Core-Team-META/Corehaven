@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17853496221426062070
   Name: "Passive_TasteForBlood"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
+local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 local OBJECTIVE_LINE_TEMPLATE = script:GetCustomProperty("ObjectiveLineTemplate")

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5951934508470599840
   Name: "TerrainMoss"
   PlatformAssetType: 13

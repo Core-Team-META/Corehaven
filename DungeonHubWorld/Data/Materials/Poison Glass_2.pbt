@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15930543057216541272
   Name: "Poison Glass"
   PlatformAssetType: 13

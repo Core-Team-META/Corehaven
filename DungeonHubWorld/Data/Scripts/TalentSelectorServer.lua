@@ -1,4 +1,4 @@
-﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 

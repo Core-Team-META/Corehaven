@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local CHEST_TEMPLATE = script:GetCustomProperty("ChestTemplate")

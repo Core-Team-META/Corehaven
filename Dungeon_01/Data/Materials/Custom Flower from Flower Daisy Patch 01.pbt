@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13351865829320371855
   Name: "GlowingDaisy"
   PlatformAssetType: 13

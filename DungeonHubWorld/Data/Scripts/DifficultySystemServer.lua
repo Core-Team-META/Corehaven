@@ -1,4 +1,4 @@
-﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 

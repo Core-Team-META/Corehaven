@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14354513068006609608
   Name: "Helper_Gem_Ruby"
   PlatformAssetType: 5

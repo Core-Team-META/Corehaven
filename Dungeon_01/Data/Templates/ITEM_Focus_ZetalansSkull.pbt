@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11319738698393174318
   Name: "ITEM_Focus_ZetalansSkull"
   PlatformAssetType: 5

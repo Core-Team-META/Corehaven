@@ -1,4 +1,4 @@
-﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local VFX = script:GetCustomProperty("VFX"):WaitForObject()
 local PROGRESS_DECAL = script:GetCustomProperty("ProgressDecal"):WaitForObject()

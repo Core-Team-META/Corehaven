@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4177654242661269096
   Name: "ITEM_Greatsword_Firestarter"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿function OnValleyOfLife_Normal(player)
+function OnValleyOfLife_Normal(player)
 	player:TransferToGame("fda18d/the-valley-of-life-normal")
 end
 

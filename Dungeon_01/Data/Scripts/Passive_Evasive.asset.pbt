@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11350890868968224954
   Name: "Passive_Evasive"
   PlatformAssetType: 3

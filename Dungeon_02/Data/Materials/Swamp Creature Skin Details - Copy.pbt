@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14359673362816398858
   Name: "Swamp Creature Skin Details - Copy"
   PlatformAssetType: 13

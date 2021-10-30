@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5754256421560168814
   Name: "Custom Bricks Mismatched Stone 01"
   PlatformAssetType: 13

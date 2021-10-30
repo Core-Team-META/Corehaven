@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18338770843981066359
   Name: "Icon Arrow Up"
   PlatformAssetType: 9

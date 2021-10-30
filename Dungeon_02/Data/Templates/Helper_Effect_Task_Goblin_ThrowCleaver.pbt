@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8506699174726195511
   Name: "Helper_Effect_Task_Goblin_ThrowCleaver"
   PlatformAssetType: 5

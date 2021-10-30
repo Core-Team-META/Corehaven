@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9779214154296229172
   Name: "Helper_Door_Gate_Movement_Sound"
   PlatformAssetType: 5

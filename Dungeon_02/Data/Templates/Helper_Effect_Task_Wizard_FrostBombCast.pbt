@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3039088995494687038
   Name: "Helper_Effect_Task_Wizard_FrostBombCast"
   PlatformAssetType: 5

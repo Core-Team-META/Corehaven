@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11998356565250922680
   Name: "Animation_unarmed_roll"
   PlatformAssetType: 5

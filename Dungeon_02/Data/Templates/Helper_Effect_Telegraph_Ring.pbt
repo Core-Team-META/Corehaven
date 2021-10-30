@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10754094689579112181
   Name: "Helper_Effect_Telegraph_Ring"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1901842675994406170
   Name: "ITEM_Sword_DullBlade"
   PlatformAssetType: 5

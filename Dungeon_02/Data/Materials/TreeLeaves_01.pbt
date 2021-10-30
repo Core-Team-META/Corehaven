@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4405239051873314738
   Name: "TreeLeaves_01"
   PlatformAssetType: 13

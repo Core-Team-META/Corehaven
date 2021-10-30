@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5120780853281347253
   Name: "Earth elemental Mossy Rock"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9893147206398412803
   Name: "ITEM_Mace_IronHammer"
   PlatformAssetType: 5

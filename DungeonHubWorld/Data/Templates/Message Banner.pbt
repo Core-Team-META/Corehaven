@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10162334270769856324
   Name: "Message Banner"
   PlatformAssetType: 5

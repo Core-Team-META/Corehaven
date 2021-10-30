@@ -1,4 +1,4 @@
-﻿local RuntimeContextDetection = require(script:GetCustomProperty("RuntimeContextDetection"))
+local RuntimeContextDetection = require(script:GetCustomProperty("RuntimeContextDetection"))
 
 return function(player)
     if RuntimeContextDetection.IsClientSide() then

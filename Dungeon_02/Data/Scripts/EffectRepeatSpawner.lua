@@ -1,4 +1,4 @@
-﻿local ROOT = script:GetCustomProperty("Root"):WaitForObject()
+local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 local PERIOD = script:GetCustomProperty("Period")
 local TEMPLATE = script:GetCustomProperty("Template")
 

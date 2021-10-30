@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3905761152472637901
   Name: "Flat Black"
   PlatformAssetType: 13

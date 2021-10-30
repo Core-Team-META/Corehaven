@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10510697877722768305
   Name: "Commoner Outfit - Copy"
   PlatformAssetType: 13

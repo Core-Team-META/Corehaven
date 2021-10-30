@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11645700133815990414
   Name: "Metal_Fence_Arrow"
   PlatformAssetType: 5

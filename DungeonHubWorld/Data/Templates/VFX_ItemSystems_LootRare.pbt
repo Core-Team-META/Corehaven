@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10447719410900497806
   Name: "VFX_ItemSystems_LootRare"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5223635568051815421
   Name: "Spherical_lantern_Glass"
   PlatformAssetType: 13

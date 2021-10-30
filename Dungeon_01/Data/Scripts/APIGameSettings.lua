@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 API.CONTROL_MODE_CLASSIC = 1
 API.CONTROL_MODE_ACTION = 2

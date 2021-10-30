@@ -1,4 +1,4 @@
-﻿local API_GS = require(script:GetCustomProperty("APIGameSettings"))
+local API_GS = require(script:GetCustomProperty("APIGameSettings"))
 
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()
 local CLASSIC_CONTROL_MODE_BUTTON = script:GetCustomProperty("ClassicControlModeButton"):WaitForObject()

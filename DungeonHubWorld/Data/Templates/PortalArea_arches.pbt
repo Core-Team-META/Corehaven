@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13089574437712349134
   Name: "PortalArea_arches"
   PlatformAssetType: 5

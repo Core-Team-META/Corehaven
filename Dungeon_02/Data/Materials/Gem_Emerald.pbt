@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9714521105857608150
   Name: "Gem_Emerald"
   PlatformAssetType: 13

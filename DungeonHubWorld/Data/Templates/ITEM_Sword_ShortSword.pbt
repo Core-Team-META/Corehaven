@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18070115971779274742
   Name: "ITEM_Sword_ShortSword"
   PlatformAssetType: 5

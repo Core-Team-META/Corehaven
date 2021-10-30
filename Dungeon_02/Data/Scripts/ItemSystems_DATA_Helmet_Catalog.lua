@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Thick Leather Cap',
     Type = 'Helmet',

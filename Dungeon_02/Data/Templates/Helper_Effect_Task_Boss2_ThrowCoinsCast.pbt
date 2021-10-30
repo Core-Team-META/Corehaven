@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9146027151900378455
   Name: "Helper_Effect_Task_Boss2_ThrowCoinsCast"
   PlatformAssetType: 5

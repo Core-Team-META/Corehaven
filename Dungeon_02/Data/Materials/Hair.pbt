@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10556886957675734021
   Name: "Hair"
   PlatformAssetType: 13

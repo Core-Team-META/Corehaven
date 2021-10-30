@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2629337608035218207
   Name: "Custom Waterfall from Waterfall Straight"
   PlatformAssetType: 13

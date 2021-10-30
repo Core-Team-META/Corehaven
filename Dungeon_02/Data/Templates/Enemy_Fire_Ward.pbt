@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11938416445594946630
   Name: "Enemy_Fire_Ward"
   PlatformAssetType: 5

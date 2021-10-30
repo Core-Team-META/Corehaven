@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17659744577182295066
   Name: "Animation_2hand_staff_magic_up_start"
   PlatformAssetType: 5

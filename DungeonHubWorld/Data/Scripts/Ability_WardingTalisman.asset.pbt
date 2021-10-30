@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11408492965803338290
   Name: "Ability_WardingTalisman"
   PlatformAssetType: 3

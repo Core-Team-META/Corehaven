@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12591759346338042351
   Name: "AbilityHelper_Effect_WoundTarget"
   PlatformAssetType: 5

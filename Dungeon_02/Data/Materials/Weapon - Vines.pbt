@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1922849089636452129
   Name: "Weapon - Vines"
   PlatformAssetType: 13

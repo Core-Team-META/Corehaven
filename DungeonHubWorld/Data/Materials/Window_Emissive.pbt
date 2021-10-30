@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11120014160960541034
   Name: "Window_Emissive"
   PlatformAssetType: 13

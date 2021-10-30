@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14281127479253422757
   Name: "Custom Amethyst"
   PlatformAssetType: 13

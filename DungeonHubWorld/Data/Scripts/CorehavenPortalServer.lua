@@ -1,4 +1,4 @@
-﻿local PORTAL_GROUP = script:GetCustomProperty("PortalGroup"):WaitForObject()
+local PORTAL_GROUP = script:GetCustomProperty("PortalGroup"):WaitForObject()
 
 function OnInteracted(trigger, player)
 	player:TransferToGame("a91218/corehaven")

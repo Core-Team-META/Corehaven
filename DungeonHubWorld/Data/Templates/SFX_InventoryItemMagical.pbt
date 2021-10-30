@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1246853273103719825
   Name: "SFX_InventoryItemMagical"
   PlatformAssetType: 5

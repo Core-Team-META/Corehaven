@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 local playerStateHelperGroup = nil
 

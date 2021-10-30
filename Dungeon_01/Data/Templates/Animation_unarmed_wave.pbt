@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7807835738398067866
   Name: "Animation_unarmed_wave"
   PlatformAssetType: 5

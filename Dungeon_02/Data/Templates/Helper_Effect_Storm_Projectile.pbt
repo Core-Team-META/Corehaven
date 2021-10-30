@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17168757360147562002
   Name: "Helper_Effect_Storm_Projectile"
   PlatformAssetType: 5

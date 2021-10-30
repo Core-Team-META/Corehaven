@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14299629989547662197
   Name: "AbilityHelper_Effect_ShieldBashCast"
   PlatformAssetType: 5

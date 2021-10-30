@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11931286551697650530
   Name: "Magic Glass - Dragon"
   PlatformAssetType: 13

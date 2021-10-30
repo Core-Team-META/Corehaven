@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16993655150590768021
   Name: "Helper_TalentTreePanel"
   PlatformAssetType: 5

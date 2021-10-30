@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6734155572957907076
   Name: "Smuggler_F_Leather"
   PlatformAssetType: 5

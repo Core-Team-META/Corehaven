@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8115993960793536338
   Name: "Enemy_Soldier"
   PlatformAssetType: 5

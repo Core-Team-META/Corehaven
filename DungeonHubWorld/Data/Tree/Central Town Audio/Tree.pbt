@@ -1,4 +1,4 @@
-﻿Name: "Central Town Audio"
+Name: "Central Town Audio"
 RootId: 14664823471903355022
 Objects {
   Id: 7627804051954587174

@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 local API_K = require(script:GetCustomProperty("APIKnockback"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))

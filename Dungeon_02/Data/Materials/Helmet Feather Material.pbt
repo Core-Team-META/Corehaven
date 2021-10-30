@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1493583996808442152
   Name: "Helmet Feather Material"
   PlatformAssetType: 13

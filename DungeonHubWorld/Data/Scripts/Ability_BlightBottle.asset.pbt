@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6391126282906136629
   Name: "Ability_BlightBottle"
   PlatformAssetType: 3

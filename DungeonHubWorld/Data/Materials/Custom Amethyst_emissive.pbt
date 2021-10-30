@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17539097910193149722
   Name: "Custom Amethyst_emissive"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5914206616368404996
   Name: "Enemy_LargeMeleeElemental"
   PlatformAssetType: 5

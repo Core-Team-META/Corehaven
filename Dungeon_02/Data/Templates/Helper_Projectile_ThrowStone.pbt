@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6717031353664056307
   Name: "Helper_Projectile_ThrowStone"
   PlatformAssetType: 5

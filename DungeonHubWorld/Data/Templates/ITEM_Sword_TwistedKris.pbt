@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7613808107022815451
   Name: "ITEM_Sword_TwistedKris"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16083006011409388748
   Name: "UI_ItemSystems_ForceCloseButton"
   PlatformAssetType: 5

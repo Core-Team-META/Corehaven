@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3456890545172646419
   Name: "Bard NPC and Costume"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4389956694410970039
   Name: "Custom Edgefoam"
   PlatformAssetType: 13

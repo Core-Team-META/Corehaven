@@ -1,4 +1,4 @@
-﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 
 function PreDamageHook(sourceCharacter, targetCharacter, amount, tags)

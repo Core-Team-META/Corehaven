@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4422866427847996143
   Name: "SpinOrbs"
   PlatformAssetType: 3

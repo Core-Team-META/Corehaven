@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1817346499606343559
   Name: "SFX_InventoryDiscard"
   PlatformAssetType: 5

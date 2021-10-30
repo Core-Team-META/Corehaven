@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2222293508240886553
   Name: "Bard"
   PlatformAssetType: 5

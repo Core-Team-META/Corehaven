@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15058145420934614033
   Name: "Ability_DivineBlast"
   PlatformAssetType: 3

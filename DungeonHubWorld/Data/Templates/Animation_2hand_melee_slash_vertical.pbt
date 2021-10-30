@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6729502119070174657
   Name: "Animation_2hand_melee_slash_vertical"
   PlatformAssetType: 5

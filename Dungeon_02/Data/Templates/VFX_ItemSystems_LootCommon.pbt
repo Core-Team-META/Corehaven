@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7461034369320311343
   Name: "VFX_ItemSystems_LootCommon"
   PlatformAssetType: 5

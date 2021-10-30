@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9845004030667907552
   Name: "Health Bar"
   PlatformAssetType: 5

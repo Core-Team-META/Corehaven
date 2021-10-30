@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16443916038532074989
   Name: "Crowd Tavern Small Loop 01 SFX"
   PlatformAssetType: 7

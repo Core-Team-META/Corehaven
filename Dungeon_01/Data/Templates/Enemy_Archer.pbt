@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3623646279232181788
   Name: "Enemy_Archer"
   PlatformAssetType: 5

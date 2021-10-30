@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10719404219839224023
   Name: "Helper_Effect_Telegraph_Volley"
   PlatformAssetType: 5

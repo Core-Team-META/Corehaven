@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17214326792927864641
   Name: "Helper_Effect_Task_Wizard_Blizzard"
   PlatformAssetType: 5

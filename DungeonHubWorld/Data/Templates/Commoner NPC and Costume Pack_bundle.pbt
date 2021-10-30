@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8022041552543715446
   Name: "Commoner NPC and Costume Pack"
   PlatformAssetType: 5

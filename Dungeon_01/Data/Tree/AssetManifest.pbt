@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17289562316517180594
   Name: "Corehaven Chronicles"
   PlatformAssetType: 23

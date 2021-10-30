@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14219648839889604066
   Name: "Passive_Threatening"
   PlatformAssetType: 3

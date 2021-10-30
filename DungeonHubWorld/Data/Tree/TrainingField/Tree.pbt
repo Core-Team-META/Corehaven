@@ -1,4 +1,4 @@
-﻿Name: "TrainingField"
+Name: "TrainingField"
 RootId: 305055846383683164
 Objects {
   Id: 5575970681581716961

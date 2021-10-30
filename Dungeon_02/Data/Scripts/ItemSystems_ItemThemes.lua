@@ -1,4 +1,4 @@
-﻿local RARITY_COLORS = {
+local RARITY_COLORS = {
     Common      = script:GetCustomProperty("RarityCommon"),
     Uncommon    = script:GetCustomProperty("RarityUncommon"),
     Rare        = script:GetCustomProperty("RarityRare"),

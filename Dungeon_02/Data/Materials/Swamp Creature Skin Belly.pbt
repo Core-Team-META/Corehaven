@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6211691952139490738
   Name: "Swamp Creature Skin Belly"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9866510552120331472
   Name: "Helper_Effect_Task_Boss1_ShadowEruptionsCast"
   PlatformAssetType: 5

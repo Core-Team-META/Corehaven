@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     StatKey = 'CommonAttackDagger',
     Group = 'Base',

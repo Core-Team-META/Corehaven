@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18236895628204419555
   Name: "ITEM_Mace_SpikedBludgeon"
   PlatformAssetType: 5

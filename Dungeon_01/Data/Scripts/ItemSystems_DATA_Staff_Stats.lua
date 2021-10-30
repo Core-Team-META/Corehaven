@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     StatKey = 'CommonMagicStaff',
     Group = 'Base',

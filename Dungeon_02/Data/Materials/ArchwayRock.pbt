@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2663349026666902300
   Name: "ArchwayRock"
   PlatformAssetType: 13

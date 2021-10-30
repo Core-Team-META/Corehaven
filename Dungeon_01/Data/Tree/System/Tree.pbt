@@ -1,4 +1,4 @@
-﻿Name: "System"
+Name: "System"
 RootId: 11675404267983164951
 Objects {
   Id: 3067416989574862537

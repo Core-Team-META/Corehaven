@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16311163195241644230
   Name: "WC_roof_ Wood Planks Dark"
   PlatformAssetType: 13

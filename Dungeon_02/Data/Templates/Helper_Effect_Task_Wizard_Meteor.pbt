@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13540390578621358507
   Name: "Helper_Effect_Task_Wizard_Meteor"
   PlatformAssetType: 5

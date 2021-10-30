@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 599413335234479971
   Name: "UtilityAudioOneshot"
   PlatformAssetType: 3

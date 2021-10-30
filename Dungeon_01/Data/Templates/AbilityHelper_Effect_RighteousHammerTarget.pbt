@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12438296897717429379
   Name: "AbilityHelper_Effect_RighteousHammerTarget"
   PlatformAssetType: 5

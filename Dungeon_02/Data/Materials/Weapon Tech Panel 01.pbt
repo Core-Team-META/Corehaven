@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8547146262390999633
   Name: "Weapon Tech Panel 01"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5781845171305942968
   Name: "Custom Bricks Worn Stone_BIG"
   PlatformAssetType: 13

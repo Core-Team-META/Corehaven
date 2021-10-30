@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12612395206321543931
   Name: "Helper_StatusEffectCharacterState"
   PlatformAssetType: 5

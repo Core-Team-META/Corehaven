@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local DATA_GROUP = script:GetCustomProperty("DataGroup"):WaitForObject()
 

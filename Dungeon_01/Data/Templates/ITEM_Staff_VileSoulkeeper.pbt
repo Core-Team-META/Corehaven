@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12399291006964216830
   Name: "ITEM_Staff_VileSoulkeeper"
   PlatformAssetType: 5

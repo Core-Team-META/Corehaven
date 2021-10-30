@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12903367606850195956
   Name: "Animation_unarmed_drink"
   PlatformAssetType: 5

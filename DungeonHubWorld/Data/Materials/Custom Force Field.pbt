@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13908631399778619873
   Name: "Custom Force Field"
   PlatformAssetType: 13

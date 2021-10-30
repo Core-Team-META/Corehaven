@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 760467605671424487
   Name: "SFX_CraftingUI_Complete"
   PlatformAssetType: 5

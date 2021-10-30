@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2536345701790434189
   Name: "APIPlayerPassives"
   PlatformAssetType: 3

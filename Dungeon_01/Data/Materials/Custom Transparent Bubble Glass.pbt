@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8192150990700315742
   Name: "Custom Transparent Bubble Glass"
   PlatformAssetType: 13

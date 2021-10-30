@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16228603322221377071
   Name: "Ability_Cleave"
   PlatformAssetType: 3

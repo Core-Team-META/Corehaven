@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3856561635738925817
   Name: "Helper_Projectile_Boss3_Arrow"
   PlatformAssetType: 5

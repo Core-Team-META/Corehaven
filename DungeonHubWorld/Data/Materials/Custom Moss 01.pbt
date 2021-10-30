@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17582302825239265991
   Name: "Custom Moss 01"
   PlatformAssetType: 13

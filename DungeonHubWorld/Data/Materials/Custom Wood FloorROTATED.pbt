@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 857866826598656736
   Name: "Custom Wood FloorROTATED"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16812542169514897746
   Name: "Custom Metal Old Beaten Gold Frames"
   PlatformAssetType: 13

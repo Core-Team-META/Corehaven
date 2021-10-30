@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16148253225801908446
   Name: "Weapon - Ice Material"
   PlatformAssetType: 13

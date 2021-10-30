@@ -1,4 +1,4 @@
-﻿local data = {}
+local data = {}
 
 data.name = "Threatening"
 data.threatMultiplier = 6.0

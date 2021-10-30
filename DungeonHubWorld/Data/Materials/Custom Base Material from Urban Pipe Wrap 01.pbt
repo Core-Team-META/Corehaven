@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3776617849256736908
   Name: "Custom Base Material from Urban Pipe Wrap 01"
   PlatformAssetType: 13

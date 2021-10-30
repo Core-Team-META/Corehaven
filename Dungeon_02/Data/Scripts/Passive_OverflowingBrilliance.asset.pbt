@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9298709929337361062
   Name: "Passive_OverflowingBrilliance"
   PlatformAssetType: 3

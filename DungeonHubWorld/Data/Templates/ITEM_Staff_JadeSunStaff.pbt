@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 155676675394277140
   Name: "ITEM_Staff_JadeSunStaff"
   PlatformAssetType: 5

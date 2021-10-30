@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16436859871529384971
   Name: "Helper_Effect_GoblinKing_CreepingFire"
   PlatformAssetType: 5

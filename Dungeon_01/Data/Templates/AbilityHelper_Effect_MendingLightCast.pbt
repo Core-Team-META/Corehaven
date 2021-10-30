@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3934682341396802256
   Name: "AbilityHelper_Effect_MendingLightCast"
   PlatformAssetType: 5

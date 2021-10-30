@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6644401980777474030
   Name: "Helper_GemLaser"
   PlatformAssetType: 5

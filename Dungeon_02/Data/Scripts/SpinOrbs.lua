@@ -1,4 +1,4 @@
-﻿local sphere = script.parent
+local sphere = script.parent
 -- Create a rotation along the z axis
 
 local spinRotation = Rotation.New(0, 0, 100)

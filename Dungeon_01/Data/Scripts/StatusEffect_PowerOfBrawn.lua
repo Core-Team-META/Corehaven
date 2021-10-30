@@ -1,4 +1,4 @@
-﻿local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
+local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 
 function EffectStart(sourceCharacter, character, index)
 	character:ScaleTo(Vector3.New(1.5), 1.0)

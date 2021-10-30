@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10082212731695126074
   Name: "Torch_Holder_Undead"
   PlatformAssetType: 5

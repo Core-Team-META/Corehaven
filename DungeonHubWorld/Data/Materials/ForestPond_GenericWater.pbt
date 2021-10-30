@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1874146275664699757
   Name: "ForestPond_GenericWater"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8125365358772089372
   Name: "Custom Explosion Cloud - Copy"
   PlatformAssetType: 13

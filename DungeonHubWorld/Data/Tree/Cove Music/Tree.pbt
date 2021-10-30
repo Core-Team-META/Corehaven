@@ -1,4 +1,4 @@
-﻿Name: "Cove Music"
+Name: "Cove Music"
 RootId: 14533952387107224965
 Objects {
   Id: 5062519655670511880

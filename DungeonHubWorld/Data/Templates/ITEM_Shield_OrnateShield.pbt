@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9283599042623883587
   Name: "ITEM_Shield_OrnateShield"
   PlatformAssetType: 5

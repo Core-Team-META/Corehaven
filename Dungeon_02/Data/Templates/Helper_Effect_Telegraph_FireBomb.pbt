@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18337657253143950544
   Name: "Helper_Effect_Telegraph_FireBomb"
   PlatformAssetType: 5

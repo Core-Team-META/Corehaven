@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9395060246161048043
   Name: "Helper_Projectile_Goblin_Cleaver"
   PlatformAssetType: 5

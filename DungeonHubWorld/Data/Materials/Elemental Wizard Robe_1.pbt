@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1192678440732149909
   Name: "Elemental Wizard Robe"
   PlatformAssetType: 13

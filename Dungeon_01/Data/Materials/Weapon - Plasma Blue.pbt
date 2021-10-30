@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7413726224480865410
   Name: "Weapon - Plasma Blue"
   PlatformAssetType: 13

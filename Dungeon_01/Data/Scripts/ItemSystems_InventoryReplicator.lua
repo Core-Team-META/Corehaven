@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     ItemSystems.InventoryReplicator
     ===============================
 

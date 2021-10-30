@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Dull Shard',
     Type = 'Material',

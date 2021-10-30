@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3791364621850349454
   Name: "Custom Wallpaper Hearts 01"
   PlatformAssetType: 13

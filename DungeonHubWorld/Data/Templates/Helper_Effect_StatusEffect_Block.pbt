@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8508600544310168058
   Name: "Helper_Effect_StatusEffect_Block"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Spiked Bludgeon',
     Type = 'Mace',

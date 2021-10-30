@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     StatKey = 'CommonTankArmor',
     Group = 'Base',

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9516801778298379537
   Name: "Helper_Effect_Telegraph_Whirl"
   PlatformAssetType: 5

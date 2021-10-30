@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7454378427809590911
   Name: "AbilityHelper_Effect_CleaveTargetSelf"
   PlatformAssetType: 5

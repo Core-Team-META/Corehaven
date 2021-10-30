@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8918927604218823342
   Name: "ITEM_Trinket_LuckyBoneBand"
   PlatformAssetType: 5

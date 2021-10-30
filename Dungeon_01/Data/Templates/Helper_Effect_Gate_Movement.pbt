@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4300207158938884602
   Name: "Helper_Effect_Gate_Movement"
   PlatformAssetType: 5

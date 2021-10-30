@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2627779331833884353
   Name: "Enemy_Goblin"
   PlatformAssetType: 5

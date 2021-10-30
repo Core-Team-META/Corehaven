@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7088002662191847642
   Name: "SFX_UpgradeUI_ButtonClick"
   PlatformAssetType: 5

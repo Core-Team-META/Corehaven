@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2191240521660447709
   Name: "Helper_Effect_Boss1_Necromancer_Move"
   PlatformAssetType: 5

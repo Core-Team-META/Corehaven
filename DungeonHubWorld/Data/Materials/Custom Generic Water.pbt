@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9892672878406537269
   Name: "PortalArea_Water"
   PlatformAssetType: 13

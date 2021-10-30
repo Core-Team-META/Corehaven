@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6869984067508925664
   Name: "ITEM_Warhammer_WoodenWarhammer"
   PlatformAssetType: 5

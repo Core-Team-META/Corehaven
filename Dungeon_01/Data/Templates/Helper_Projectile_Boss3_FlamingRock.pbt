@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18277210773624985737
   Name: "Helper_Projectile_Boss3_FlamingRock"
   PlatformAssetType: 5

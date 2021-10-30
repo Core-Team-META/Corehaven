@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local SUMMON_TEMPLATE = script:GetCustomProperty("SummonTemplate")
 local SPAWNS_GROUP = script:GetCustomProperty("SpawnsGroup"):WaitForObject()

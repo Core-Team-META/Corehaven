@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15262117826806054713
   Name: "UI_ItemSystems_PlayerStatElement"
   PlatformAssetType: 5

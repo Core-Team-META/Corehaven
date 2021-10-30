@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3587015923296916767
   Name: "ITEM_Focus_BasicSpellbook"
   PlatformAssetType: 5

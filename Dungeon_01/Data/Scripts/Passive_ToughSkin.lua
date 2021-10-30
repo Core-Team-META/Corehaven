@@ -1,4 +1,4 @@
-﻿local data = {}
+local data = {}
 
 data.name = "Tough Skin"
 data.damageTakenMultiplier = 0.8

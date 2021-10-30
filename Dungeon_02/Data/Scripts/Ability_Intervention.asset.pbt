@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6741689388286448312
   Name: "Ability_Intervention"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9858709645459073279
   Name: "SFX_CraftingUI_RecipeHover"
   PlatformAssetType: 5

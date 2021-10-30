@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1393686741738380322
   Name: "Helper_Effect_Telegraph_GraspingRoots"
   PlatformAssetType: 5

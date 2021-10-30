@@ -1,4 +1,4 @@
-﻿local data = {}
+local data = {}
 
 data.name = script:GetCustomProperty("Name")
 data.targets = false

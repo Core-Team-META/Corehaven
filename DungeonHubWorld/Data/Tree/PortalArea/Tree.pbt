@@ -1,4 +1,4 @@
-﻿Name: "PortalArea"
+Name: "PortalArea"
 RootId: 1079375006114686061
 Objects {
   Id: 9922386037024802545

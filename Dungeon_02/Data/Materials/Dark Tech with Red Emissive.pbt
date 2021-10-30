@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15740608998482926000
   Name: "Dark Tech with Red Emissive"
   PlatformAssetType: 13

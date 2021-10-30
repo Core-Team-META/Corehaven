@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17109440655224136134
   Name: "Helper_Effect_Telegraph_Regenerate"
   PlatformAssetType: 5

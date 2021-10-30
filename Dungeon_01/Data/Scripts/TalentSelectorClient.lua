@@ -1,4 +1,4 @@
-﻿local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
+local UTILITY = require(script:GetCustomProperty("TalentSelectorUtility"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_PP = require(script:GetCustomProperty("APIPlayerPassives"))

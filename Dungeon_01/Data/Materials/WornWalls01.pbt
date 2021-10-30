@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6204166226615550387
   Name: "WornWalls01"
   PlatformAssetType: 13

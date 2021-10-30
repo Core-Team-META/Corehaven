@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12136923645550144830
   Name: "Helper_Effect_FireWard_Burn"
   PlatformAssetType: 5

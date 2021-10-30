@@ -1,4 +1,4 @@
-﻿GameId: "a912182b02d04191ba724c6e90cb84f3"
+GameId: "a912182b02d04191ba724c6e90cb84f3"
 ClientVersion: "1.0.145-prod-s"
 Name: "Corehaven Chronicles"
 Description: "A new passage has opened to the mythical Valley of Life! See for yourself what wonders it holds, and see if you can claim the treasures that lie within.\r\n\r\nJoin up with your friends to conquer the second chapter of Corehaven Chronicles: The Valley of Life. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."

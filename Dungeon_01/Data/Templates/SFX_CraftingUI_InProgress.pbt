@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16739996958513679473
   Name: "SFX_CraftingUI_InProgress"
   PlatformAssetType: 5

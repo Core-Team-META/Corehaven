@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13732142082833267683
   Name: "ITEM_Boots_SteelToe"
   PlatformAssetType: 5

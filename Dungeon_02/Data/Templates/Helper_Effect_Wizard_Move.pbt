@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10106175966705151247
   Name: "Helper_Effect_Wizard_Move"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4347598542649749397
   Name: "Helper_Effect_StatusEffect_PlaguedWound"
   PlatformAssetType: 5

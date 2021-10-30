@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 -- [Server, Client]
 function API.RegisterDayNightCycle(functionTable)

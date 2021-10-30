@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16718262766549323338
   Name: "PlagueDragonScales"
   PlatformAssetType: 13

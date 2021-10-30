@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local GROUP_STATES = {}

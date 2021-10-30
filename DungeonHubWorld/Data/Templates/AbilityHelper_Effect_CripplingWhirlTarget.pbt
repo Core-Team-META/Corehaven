@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16297931116803841243
   Name: "AbilityHelper_Effect_CripplingWhirlTarget"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API = require(script:GetCustomProperty("APIDayNightCycle"))
+local API = require(script:GetCustomProperty("APIDayNightCycle"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 
 local DAY_LENGTH_MINUTES = COMPONENT_ROOT:GetCustomProperty("DayLengthMinutes")

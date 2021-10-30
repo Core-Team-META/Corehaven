@@ -1,4 +1,4 @@
-﻿GameId: "955f2c0053634da5ab50a64a359c43d9"
+GameId: "955f2c0053634da5ab50a64a359c43d9"
 ClientVersion: "1.0.172-prod-s"
 Name: "The Valley of Life (Nightmare)"
 Description: "Join up with your friends to conquer the second chapter of Corehaven Chronicles: The Valley of Life. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."

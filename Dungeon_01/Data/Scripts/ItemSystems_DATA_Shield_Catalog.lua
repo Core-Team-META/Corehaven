@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Square Shield',
     Type = 'Shield',

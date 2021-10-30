@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3073769625614961734
   Name: "Custom Leaves from Tree Birch 02"
   PlatformAssetType: 13

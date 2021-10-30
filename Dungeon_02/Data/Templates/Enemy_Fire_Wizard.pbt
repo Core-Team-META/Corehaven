@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4877051327853959270
   Name: "Enemy_Fire_Wizard"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14405256664370045280
   Name: "Swamp Creature Scales - Copy_1"
   PlatformAssetType: 13

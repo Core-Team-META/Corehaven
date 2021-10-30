@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10375164435398555586
   Name: "Cast Bar"
   PlatformAssetType: 5

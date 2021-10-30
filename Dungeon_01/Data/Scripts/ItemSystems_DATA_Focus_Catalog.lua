@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Basic Spellbook',
     Type = 'Focus',

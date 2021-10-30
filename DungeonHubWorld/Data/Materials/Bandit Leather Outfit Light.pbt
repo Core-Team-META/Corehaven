@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13054578106459322362
   Name: "Bandit Leather Outfit Light"
   PlatformAssetType: 13

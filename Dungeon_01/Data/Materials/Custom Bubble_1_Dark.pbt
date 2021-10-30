@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3425712571416498753
   Name: "Custom Bubble_1_Dark"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4890526660437061149
   Name: "Bard Outfit"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3002372203481397080
   Name: "Fantasy Weapon - Crossbow 01 (Prop)"
   PlatformAssetType: 5

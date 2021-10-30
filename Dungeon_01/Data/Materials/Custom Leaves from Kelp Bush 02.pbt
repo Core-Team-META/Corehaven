@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16352576960241983306
   Name: "Custom Leaves from Kelp Bush 02"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16913468257274036374
   Name: "Ability_Illuminate"
   PlatformAssetType: 3

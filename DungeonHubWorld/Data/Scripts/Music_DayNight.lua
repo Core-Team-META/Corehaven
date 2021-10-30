@@ -1,4 +1,4 @@
-﻿local propDayMusic = script:GetCustomProperty("DayMusic"):WaitForObject()
+local propDayMusic = script:GetCustomProperty("DayMusic"):WaitForObject()
 local propNightMusic = script:GetCustomProperty("NightMusic"):WaitForObject()
 local day = false
 local night = false

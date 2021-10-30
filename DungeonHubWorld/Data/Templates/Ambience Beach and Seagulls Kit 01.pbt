@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6519358497995125257
   Name: "Ambience Beach and Seagulls Kit 01"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5426935030377432702
   Name: "Cleave Handle"
   PlatformAssetType: 13

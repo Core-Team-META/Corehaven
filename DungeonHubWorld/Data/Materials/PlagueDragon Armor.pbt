@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11052261208313840228
   Name: "PlagueDragon Armor"
   PlatformAssetType: 13

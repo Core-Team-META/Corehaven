@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13035452383338782066
   Name: "Pier_planks"
   PlatformAssetType: 13

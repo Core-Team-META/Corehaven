@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12782495805044124856
   Name: "Ironwood Bark"
   PlatformAssetType: 13

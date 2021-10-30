@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4738143722372471675
   Name: "Helper_Boss3_Archer"
   PlatformAssetType: 5

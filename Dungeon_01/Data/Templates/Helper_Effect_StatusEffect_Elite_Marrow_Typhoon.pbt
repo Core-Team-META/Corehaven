@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6064769285546901697
   Name: "Helper_Effect_StatusEffect_Elite_Marrow_Typhoon"
   PlatformAssetType: 5

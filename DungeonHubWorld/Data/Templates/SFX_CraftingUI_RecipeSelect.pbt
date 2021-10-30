@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3645534490748268048
   Name: "SFX_CraftingUI_RecipeSelect"
   PlatformAssetType: 5

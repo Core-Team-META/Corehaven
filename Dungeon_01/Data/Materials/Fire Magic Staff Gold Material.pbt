@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16031644660221449007
   Name: "Fire Magic Staff Gold Material"
   PlatformAssetType: 13

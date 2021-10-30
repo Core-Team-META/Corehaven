@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4361585765554872385
   Name: "Custom Leaves from Flower Wild Lily 01"
   PlatformAssetType: 13

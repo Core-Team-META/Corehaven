@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4661260697012716515
   Name: "Helper_Effect_Boss3_Fire"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14173195191479454746
   Name: "Helper_Effect_Archer_Death"
   PlatformAssetType: 5

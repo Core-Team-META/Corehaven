@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1986893938114382946
   Name: "Enemy_SwampWarrior"
   PlatformAssetType: 5

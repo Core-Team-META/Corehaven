@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8130326161775111009
   Name: "Weapon - Emissive Green"
   PlatformAssetType: 13

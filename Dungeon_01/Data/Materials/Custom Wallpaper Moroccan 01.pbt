@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8194019913198153635
   Name: "Custom Wallpaper Moroccan 01"
   PlatformAssetType: 13

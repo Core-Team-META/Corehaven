@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14650657242359895567
   Name: "Lily"
   PlatformAssetType: 13

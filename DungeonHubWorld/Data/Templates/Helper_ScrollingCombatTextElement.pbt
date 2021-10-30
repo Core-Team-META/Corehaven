@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1555176421756595344
   Name: "Helper_ScrollingCombatTextElement"
   PlatformAssetType: 5

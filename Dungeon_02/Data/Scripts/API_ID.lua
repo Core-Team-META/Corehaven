@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 function GetShortId(id)
     return string.sub(id, 1, string.find(id, ":") - 1)

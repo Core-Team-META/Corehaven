@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7646389220357853141
   Name: "Wood Raw White_90degrees"
   PlatformAssetType: 13

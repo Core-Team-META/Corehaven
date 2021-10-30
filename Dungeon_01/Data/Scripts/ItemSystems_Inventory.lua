@@ -1,4 +1,4 @@
-﻿local Item = require(script:GetCustomProperty("ItemSystems_Item"))
+local Item = require(script:GetCustomProperty("ItemSystems_Item"))
 local UpgradesCostBasis = require(script:GetCustomProperty("ItemSystems_UpgradesCostBasis"))
 local Base64 = require(script:GetCustomProperty("Base64"))
 

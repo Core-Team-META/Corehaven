@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1109862336018839541
   Name: "Fire Blast Impact Plasma Material"
   PlatformAssetType: 13

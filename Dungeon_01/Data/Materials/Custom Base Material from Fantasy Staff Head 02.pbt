@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16942445677852929073
   Name: "Custom Base Material from Fantasy Staff Head 02"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15369360795070109585
   Name: "Custom Additive Soft Edge"
   PlatformAssetType: 13

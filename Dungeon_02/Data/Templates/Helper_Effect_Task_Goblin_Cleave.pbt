@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1003760112919349417
   Name: "Helper_Effect_Task_Goblin_Cleave"
   PlatformAssetType: 5

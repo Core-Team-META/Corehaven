@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 115444195155040475
   Name: "Ship Deck Planks"
   PlatformAssetType: 13

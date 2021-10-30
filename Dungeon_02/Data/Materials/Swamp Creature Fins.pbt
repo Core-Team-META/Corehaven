@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11389152567197969296
   Name: "Swamp Creature Fins"
   PlatformAssetType: 13

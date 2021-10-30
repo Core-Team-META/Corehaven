@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Wooden Warhammer',
     Type = 'Warhammer',

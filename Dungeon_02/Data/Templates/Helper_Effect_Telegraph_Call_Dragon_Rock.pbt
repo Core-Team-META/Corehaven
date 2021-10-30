@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4420511458387645024
   Name: "Helper_Effect_Telegraph_Call_Dragon_Rock"
   PlatformAssetType: 5

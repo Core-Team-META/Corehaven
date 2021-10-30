@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14883659415120030389
   Name: "MAT_gem01"
   PlatformAssetType: 13

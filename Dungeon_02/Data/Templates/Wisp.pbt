@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14351293903903953055
   Name: "Wisp"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14876623392528977624
   Name: "Brazier01"
   PlatformAssetType: 5

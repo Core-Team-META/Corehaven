@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2778143631456222163
   Name: "Temple Priestess Robe"
   PlatformAssetType: 13

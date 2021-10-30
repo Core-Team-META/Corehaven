@@ -1,4 +1,4 @@
-﻿-- This module provides implementations of all crafts.
+-- This module provides implementations of all crafts.
 local CraftingRecipeMethods = {}
 
 ---------------------------------------------------------------------------------------------------

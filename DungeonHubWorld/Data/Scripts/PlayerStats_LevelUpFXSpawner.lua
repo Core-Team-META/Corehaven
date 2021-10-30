@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local VFX_LOCAL = script:GetCustomProperty("VFX_LocalPlayer")
 local VFX_OTHER = script:GetCustomProperty("VFX_OtherPlayer")

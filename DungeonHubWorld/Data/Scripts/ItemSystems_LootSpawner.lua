@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local Database = require(script:GetCustomProperty("ItemSystems_Database"))
 local LOOT_TEMPLATE = script:GetCustomProperty("LootTemplate")

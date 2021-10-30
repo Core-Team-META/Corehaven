@@ -1,4 +1,4 @@
-﻿-- This is basically just a wrapper around the built-in Core ability system. Most animation objects have very short cast
+-- This is basically just a wrapper around the built-in Core ability system. Most animation objects have very short cast
 -- times so they don't run into each other. A few are suffixed with "_start" and those have very long cast times. See
 -- FinishAnimation() below for details. Only long animations can be Finished or Interrupted.
 

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8492247271230945518
   Name: "AbilityHelper_Effect_EnrageTarget"
   PlatformAssetType: 5

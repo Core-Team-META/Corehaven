@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2633298096338185153
   Name: "Fantasy Chest Epic 01 (Prop)"
   PlatformAssetType: 5

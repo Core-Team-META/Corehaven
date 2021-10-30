@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4712361041419778818
   Name: "Ladder"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9795759183902701985
   Name: "Helper_Effect_Gate_Clang"
   PlatformAssetType: 5

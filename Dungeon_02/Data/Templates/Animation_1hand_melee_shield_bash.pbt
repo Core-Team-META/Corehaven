@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3316467639634903044
   Name: "Animation_1hand_melee_shield_bash"
   PlatformAssetType: 5

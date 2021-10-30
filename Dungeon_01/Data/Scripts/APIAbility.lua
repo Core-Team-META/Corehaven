@@ -1,4 +1,4 @@
-﻿local API_T = require(script:GetCustomProperty("APITargeting"))
+local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_SE = require(script:GetCustomProperty("APIStatusEffects"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_NPC = require(script:GetCustomProperty("API_NPC"))

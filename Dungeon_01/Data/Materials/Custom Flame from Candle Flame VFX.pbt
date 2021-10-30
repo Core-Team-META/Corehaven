@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10716218552546186561
   Name: "Custom Flame from Candle Flame VFX"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿local Database = require(script:GetCustomProperty("Database"))
+local Database = require(script:GetCustomProperty("Database"))
 local ENHANCEMENT_CURRENCY_MUID = script:GetCustomProperty("EnhancementCurrency"):match("(.*):")
 local LIMIT_BREAK_CURRENCY_MUID = script:GetCustomProperty("LimitBreakCurrency"):match("(.*):")
 

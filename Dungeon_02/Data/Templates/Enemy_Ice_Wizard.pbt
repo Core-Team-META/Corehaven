@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2758621404721179988
   Name: "Enemy_Ice_Wizard"
   PlatformAssetType: 5

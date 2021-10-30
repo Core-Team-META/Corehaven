@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8315298341030148102
   Name: "Custom Bricks Large Foundation_OFFSET"
   PlatformAssetType: 13

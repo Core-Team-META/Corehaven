@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6037635547251988451
   Name: "Helper_Effect_Telegraph_CascadingCollapse"
   PlatformAssetType: 5

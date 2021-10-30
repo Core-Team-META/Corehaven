@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local PROGRESS_BAR = script:GetCustomProperty("ProgressBar"):WaitForObject()
 local LEVELUP_BLINKER = script:GetCustomProperty("LevelUpBlinker"):WaitForObject()

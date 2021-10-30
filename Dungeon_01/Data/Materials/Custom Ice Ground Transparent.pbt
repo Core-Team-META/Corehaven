@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12330707125388988349
   Name: "Custom Ice Ground Transparent"
   PlatformAssetType: 13

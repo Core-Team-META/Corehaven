@@ -1,4 +1,4 @@
-﻿local STORAGE_KEY = script:GetCustomProperty("StorageKey")
+local STORAGE_KEY = script:GetCustomProperty("StorageKey")
 
 local API = {}
 

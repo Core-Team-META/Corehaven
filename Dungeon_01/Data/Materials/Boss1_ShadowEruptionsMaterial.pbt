@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7962895810537240115
   Name: "Boss1_ShadowEruptionsMaterial"
   PlatformAssetType: 13

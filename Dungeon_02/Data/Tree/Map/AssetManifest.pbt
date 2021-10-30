@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18318916528888927585
   Name: "Environment Fog Default VFX"
   PlatformAssetType: 20

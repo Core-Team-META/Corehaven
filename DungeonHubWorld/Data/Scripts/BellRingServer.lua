@@ -1,4 +1,4 @@
-﻿local trigger = script.parent
+local trigger = script.parent
 local propDarkMagicBreathBellSpellCast01SFX = script:GetCustomProperty("DarkMagicBreathBellSpellCast01SFX"):WaitForObject()
 local lastPlayed = time()
 

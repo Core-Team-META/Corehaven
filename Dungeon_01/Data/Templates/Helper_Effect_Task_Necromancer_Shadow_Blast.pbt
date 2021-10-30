@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4161554099292861026
   Name: "Helper_Effect_Task_Necromancer_Shadow_Blast"
   PlatformAssetType: 5

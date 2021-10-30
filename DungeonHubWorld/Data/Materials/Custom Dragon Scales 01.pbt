@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3872675795064190579
   Name: "Custom Dragon Scales 01"
   PlatformAssetType: 13

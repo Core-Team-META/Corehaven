@@ -1,4 +1,4 @@
-﻿--[[
+--[[
 This system replaces all the 'Events' namespace functions and provides added functionality.
 
 First, it enables passing core objects as parameters or in tables. The receiver does not wait for the object, so a

@@ -1,4 +1,4 @@
-﻿--[[
+--[[
     API.SetCondition(string id, string resourceCondition, string dialogIdIfTrue, string dialogIdIfFalse)
     API.AddText(string id, string text, string animation, table rewardTable = {string resource, string text})
     API.AddOption(string id, string text, string targetDialogId)

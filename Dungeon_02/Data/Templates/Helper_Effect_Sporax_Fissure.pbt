@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11382885155691583192
   Name: "Helper_Effect_Sporax_Fissure"
   PlatformAssetType: 5

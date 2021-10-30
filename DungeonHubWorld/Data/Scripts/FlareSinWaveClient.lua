@@ -1,4 +1,4 @@
-﻿local flare =  script.parent
+local flare =  script.parent
 local propSpotlight = script:GetCustomProperty("Spotlight"):WaitForObject()
 local propWidth = script:GetCustomProperty("Width")
 local propHeight = script:GetCustomProperty("Height")

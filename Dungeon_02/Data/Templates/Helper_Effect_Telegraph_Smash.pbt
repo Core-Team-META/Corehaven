@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13464021907205391285
   Name: "Helper_Effect_Telegraph_Smash"
   PlatformAssetType: 5

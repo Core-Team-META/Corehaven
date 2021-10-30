@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17777965235899846507
   Name: "Magic Glass Ice"
   PlatformAssetType: 13

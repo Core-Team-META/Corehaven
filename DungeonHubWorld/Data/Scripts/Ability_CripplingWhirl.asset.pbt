@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12923629426731567236
   Name: "Ability_CripplingWhirl"
   PlatformAssetType: 3

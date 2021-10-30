@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6113325261809187088
   Name: "Helper_TreasureChest"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1187993825745345522
   Name: "ITEM_Mace_TheFurnace"
   PlatformAssetType: 5

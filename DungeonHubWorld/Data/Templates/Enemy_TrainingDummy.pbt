@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2506503432659139454
   Name: "Enemy_TrainingDummy"
   PlatformAssetType: 5

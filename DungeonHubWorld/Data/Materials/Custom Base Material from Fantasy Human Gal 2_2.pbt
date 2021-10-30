@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2194783081938415884
   Name: "Custom Base Material from Fantasy Human Gal 2"
   PlatformAssetType: 13

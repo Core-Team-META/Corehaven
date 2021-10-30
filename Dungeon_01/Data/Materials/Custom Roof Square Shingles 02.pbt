@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12572797101325516317
   Name: "Custom Roof Square Shingles 02"
   PlatformAssetType: 13

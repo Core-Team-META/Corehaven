@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10696069127446471832
   Name: "ThreatIndicator"
   PlatformAssetType: 13

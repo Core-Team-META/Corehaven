@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17100161445438500121
   Name: "SFX_InventoryMove"
   PlatformAssetType: 5

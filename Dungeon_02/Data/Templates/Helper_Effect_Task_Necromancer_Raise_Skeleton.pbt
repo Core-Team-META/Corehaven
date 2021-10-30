@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11860202766747543346
   Name: "Helper_Effect_Task_Necromancer_Raise_Skeleton"
   PlatformAssetType: 5

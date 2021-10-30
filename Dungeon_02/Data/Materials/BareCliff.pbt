@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3115427632251012821
   Name: "BareCliff"
   PlatformAssetType: 13

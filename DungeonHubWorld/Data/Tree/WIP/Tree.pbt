@@ -1,4 +1,4 @@
-﻿Name: "WIP"
+Name: "WIP"
 RootId: 9171899922935109293
 Objects {
   Id: 6002130619763896999

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18006861687295966073
   Name: "Game Portal"
   PlatformAssetType: 5

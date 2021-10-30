@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9859819583811340503
   Name: "Custom Detail 3 from Fantasy Human Guy 2"
   PlatformAssetType: 13

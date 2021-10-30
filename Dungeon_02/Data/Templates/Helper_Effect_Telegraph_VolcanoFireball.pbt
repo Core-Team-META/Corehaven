@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9027302286037980848
   Name: "Helper_Effect_Telegraph_VolcanoFireball"
   PlatformAssetType: 5

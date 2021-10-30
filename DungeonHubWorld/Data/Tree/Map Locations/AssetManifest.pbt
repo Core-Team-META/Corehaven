@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3982193030776093519
   Name: "Sphere"
   PlatformAssetType: 1

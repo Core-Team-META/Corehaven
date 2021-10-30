@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11763878761554824564
   Name: "StoneAngelRock"
   PlatformAssetType: 5

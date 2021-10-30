@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3882941232790442257
   Name: "AbilityHelper_Effect_RighteousHammerProjectile"
   PlatformAssetType: 5

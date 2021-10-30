@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5382677216089616414
   Name: "Custom Fabric Burlap Old 01"
   PlatformAssetType: 13

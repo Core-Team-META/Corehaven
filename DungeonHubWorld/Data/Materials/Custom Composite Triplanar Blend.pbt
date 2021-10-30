@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17016052731400103309
   Name: "Forest_TriPlanar"
   PlatformAssetType: 13

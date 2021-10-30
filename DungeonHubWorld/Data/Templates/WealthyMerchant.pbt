@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17338438655186234114
   Name: "WealthyMerchant"
   PlatformAssetType: 5

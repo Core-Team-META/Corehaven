@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4302510522404688009
   Name: "Helper_Effect_Crystal"
   PlatformAssetType: 5

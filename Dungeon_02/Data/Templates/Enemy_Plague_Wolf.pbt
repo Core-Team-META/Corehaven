@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2634101557434808962
   Name: "Enemy_Plague_Wolf"
   PlatformAssetType: 5

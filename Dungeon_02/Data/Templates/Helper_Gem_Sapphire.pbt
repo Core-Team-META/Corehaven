@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16082426095581193730
   Name: "Helper_Gem_Sapphire"
   PlatformAssetType: 5

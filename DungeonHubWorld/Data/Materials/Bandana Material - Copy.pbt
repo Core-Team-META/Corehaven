@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1231740877930399486
   Name: "Bandana Material - Copy"
   PlatformAssetType: 13

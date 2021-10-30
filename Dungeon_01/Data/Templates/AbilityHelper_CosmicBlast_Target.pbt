@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17760481496070920246
   Name: "AbilityHelper_CosmicBlast_Target"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9529876109523918191
   Name: "Helper_Effect_StatusEffect_Decay"
   PlatformAssetType: 5

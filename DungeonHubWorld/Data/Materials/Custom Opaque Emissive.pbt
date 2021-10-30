@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14243620141889405183
   Name: "Portal_area_Lamp_Emissive"
   PlatformAssetType: 13

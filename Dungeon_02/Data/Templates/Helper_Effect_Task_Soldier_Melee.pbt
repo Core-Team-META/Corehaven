@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4135686357839385894
   Name: "Helper_Effect_Task_Soldier_Melee"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Name: "Atmospherics"
+Name: "Atmospherics"
 RootId: 15440326544402457957
 Objects {
   Id: 2743861704089313634

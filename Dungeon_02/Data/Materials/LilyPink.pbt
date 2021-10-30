@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2774629526216622
   Name: "LilyPink"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5540115420668517170
   Name: "ITEM_Trinket_WardingTalisman"
   PlatformAssetType: 5

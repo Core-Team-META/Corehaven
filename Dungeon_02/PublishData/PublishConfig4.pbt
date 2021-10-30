@@ -1,4 +1,4 @@
-﻿GameId: "a6800904df1c44a7b32fd85e9e5f50d1"
+GameId: "a6800904df1c44a7b32fd85e9e5f50d1"
 ClientVersion: "1.0.172-prod-s"
 Name: "The Valley of Life (Infinite)"
 Description: "Join up with your friends to conquer the second chapter of Corehaven Chronicles: The Valley of Life. You\'ll need might, magic, tactics and a bit of luck in order to defeat all the bosses. Along the way you\'ll collect and upgrade epic gear, and challenge the progressively harder and harder difficulty levels: Normal, Hard, Nightmare and Infinite Difficulty."

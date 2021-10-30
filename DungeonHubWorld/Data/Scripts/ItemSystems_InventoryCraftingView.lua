@@ -1,4 +1,4 @@
-﻿local Item = require(script:GetCustomProperty("Item"))
+local Item = require(script:GetCustomProperty("Item"))
 local ItemThemes = require(script:GetCustomProperty("ItemThemes"))
 local CraftingRecipeMethods = require(script:GetCustomProperty("CraftingRecipeMethods"))
 local CRAFTING_VIEW = script:GetCustomProperty("CraftingView"):WaitForObject()

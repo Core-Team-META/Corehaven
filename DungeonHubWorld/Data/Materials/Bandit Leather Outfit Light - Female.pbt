@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4781592578556337814
   Name: "Bandit Leather Outfit Light - Female"
   PlatformAssetType: 13

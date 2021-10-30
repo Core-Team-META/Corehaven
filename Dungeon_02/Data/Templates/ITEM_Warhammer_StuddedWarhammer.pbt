@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10872694883122482428
   Name: "ITEM_Warhammer_StuddedWarhammer"
   PlatformAssetType: 5

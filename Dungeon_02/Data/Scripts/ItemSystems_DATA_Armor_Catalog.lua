@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Tough Leather Armor',
     Type = 'Armor',

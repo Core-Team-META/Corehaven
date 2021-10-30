@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17631296458428867150
   Name: "GenericSoldier_05"
   PlatformAssetType: 5

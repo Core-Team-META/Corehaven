@@ -1,4 +1,4 @@
-﻿Name: "NPCs and Dialogs"
+Name: "NPCs and Dialogs"
 RootId: 453904204925054689
 Objects {
   Id: 8355496857395536503

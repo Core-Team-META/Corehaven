@@ -1,4 +1,4 @@
-﻿return { } 
+return { } 
 --[[
   {
     Name = 'Recipe: Enhance I',

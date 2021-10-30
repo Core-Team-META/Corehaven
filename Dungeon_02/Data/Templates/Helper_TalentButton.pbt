@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11865704065348770277
   Name: "Helper_TalentButton"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local propDragonScreechSFX = script:GetCustomProperty("DragonScreechSFX"):WaitForObject()
+local propDragonScreechSFX = script:GetCustomProperty("DragonScreechSFX"):WaitForObject()
 RepeatIntervalMin = 5
 RepeatIntervalMax = 10
 

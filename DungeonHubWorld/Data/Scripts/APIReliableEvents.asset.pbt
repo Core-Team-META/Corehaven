@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1680988108412715813
   Name: "APIReliableEvents"
   PlatformAssetType: 3

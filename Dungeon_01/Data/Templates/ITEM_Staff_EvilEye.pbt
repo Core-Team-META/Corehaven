@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3631501848024187399
   Name: "ITEM_Staff_EvilEye"
   PlatformAssetType: 5

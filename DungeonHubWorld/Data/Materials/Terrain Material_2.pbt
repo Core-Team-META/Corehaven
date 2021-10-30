@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6157215346096511852
   Name: "Terrain Material_2"
   PlatformAssetType: 13

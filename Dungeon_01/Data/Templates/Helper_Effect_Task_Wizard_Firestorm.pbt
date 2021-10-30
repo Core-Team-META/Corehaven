@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 230243209909476
   Name: "Helper_Effect_Task_Wizard_Firestorm"
   PlatformAssetType: 5

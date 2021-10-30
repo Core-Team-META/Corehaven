@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13144345348964660244
   Name: "Enemy_Boss4_Necromancer"
   PlatformAssetType: 5

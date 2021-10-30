@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1598596002735963356
   Name: "Helper_Boss4_Hand"
   PlatformAssetType: 5

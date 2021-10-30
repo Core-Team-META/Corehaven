@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4918895596801372056
   Name: "Custom Carpet 02"
   PlatformAssetType: 13

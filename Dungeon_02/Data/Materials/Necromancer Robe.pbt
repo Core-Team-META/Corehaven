@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2650526325338107284
   Name: "Necromancer Robe"
   PlatformAssetType: 13

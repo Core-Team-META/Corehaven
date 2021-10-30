@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1102656544008747540
   Name: "Enemy_Boss4_StoneAngel"
   PlatformAssetType: 5

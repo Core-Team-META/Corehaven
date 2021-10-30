@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17368083171780979914
   Name: "Helper_Effect_Sporax_Fissure_Telegraph"
   PlatformAssetType: 5

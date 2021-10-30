@@ -1,4 +1,4 @@
-﻿local STAT_COEFFICIENTS =
+local STAT_COEFFICIENTS =
 {
 	Defense = 250.0,
 	CritChance = 250.0,

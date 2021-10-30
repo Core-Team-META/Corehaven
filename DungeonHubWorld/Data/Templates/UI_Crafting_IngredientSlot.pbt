@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13117663581052836157
   Name: "UI_Crafting_IngredientSlot"
   PlatformAssetType: 5

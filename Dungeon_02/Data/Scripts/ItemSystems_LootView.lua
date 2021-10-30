@@ -1,4 +1,4 @@
-﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
+local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local LOOT_VIEW = script:GetCustomProperty("LootView"):WaitForObject()
 local LOOT_SCROLL_PANEL = script:GetCustomProperty("ScrollPanel"):WaitForObject()
 local ITEM_HOVER_VIEW = script:GetCustomProperty("ItemHoverView"):WaitForObject()

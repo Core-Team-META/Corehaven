@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10143972513716348217
   Name: "Custom Grass from Grass Tall"
   PlatformAssetType: 13

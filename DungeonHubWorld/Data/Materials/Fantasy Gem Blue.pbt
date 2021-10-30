@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16622597090989605482
   Name: "Fantasy Gem Blue"
   PlatformAssetType: 13

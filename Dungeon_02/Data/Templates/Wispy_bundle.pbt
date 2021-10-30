@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15719699955566687133
   Name: "Wispy"
   PlatformAssetType: 5

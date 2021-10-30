@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16019090002437471970
   Name: "Helper_Effect_PlayerReceiveDamage"
   PlatformAssetType: 5

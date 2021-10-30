@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1871329788882146581
   Name: "DifficultySystemClient"
   PlatformAssetType: 3

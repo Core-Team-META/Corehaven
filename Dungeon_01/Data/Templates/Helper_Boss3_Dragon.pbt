@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11816343227909326191
   Name: "Helper_Boss3_Dragon"
   PlatformAssetType: 5

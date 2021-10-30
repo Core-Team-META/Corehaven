@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10481348771500045721
   Name: "AbilityHelper_Effect_Projectile_Siphon"
   PlatformAssetType: 5

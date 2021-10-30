@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6070064999687689145
   Name: "Helper_Effect_Soldier_Death"
   PlatformAssetType: 5

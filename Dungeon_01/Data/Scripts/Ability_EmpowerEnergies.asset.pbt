@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5705387378154348391
   Name: "Ability_EmpowerEnergies"
   PlatformAssetType: 3

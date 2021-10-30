@@ -1,4 +1,4 @@
-﻿local Deque = {}
+local Deque = {}
 Deque.__index = Deque
 
 function Deque.New()

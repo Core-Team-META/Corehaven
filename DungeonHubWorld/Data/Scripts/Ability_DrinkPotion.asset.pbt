@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9965955114855537821
   Name: "Ability_DrinkPotion"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18415535138022153234
   Name: "Helper_Basic_Attack_Indicator"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1066637007583221849
   Name: "AbilityHelper_Effect_CreepingCurseDebuff"
   PlatformAssetType: 5

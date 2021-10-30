@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 435045081974966637
   Name: "Emissive Orange"
   PlatformAssetType: 13

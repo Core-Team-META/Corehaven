@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18291723769121769328
   Name: "Custom Bark Redwood 01_1"
   PlatformAssetType: 13

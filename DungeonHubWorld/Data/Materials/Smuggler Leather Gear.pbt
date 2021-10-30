@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6335363881304270564
   Name: "Smuggler Leather Gear"
   PlatformAssetType: 13

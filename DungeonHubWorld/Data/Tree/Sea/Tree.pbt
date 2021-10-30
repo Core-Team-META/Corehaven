@@ -1,4 +1,4 @@
-﻿Name: "Sea"
+Name: "Sea"
 RootId: 2936107264752505179
 Objects {
   Id: 7287819703474104484

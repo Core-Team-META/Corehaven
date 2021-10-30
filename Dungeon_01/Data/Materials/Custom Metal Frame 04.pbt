@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10658806617571991651
   Name: "Custom Metal Frame 04"
   PlatformAssetType: 13

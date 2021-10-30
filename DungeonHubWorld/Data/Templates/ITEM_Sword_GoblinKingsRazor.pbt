@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5553172224470569178
   Name: "ITEM_Sword_GoblinKingsRazor"
   PlatformAssetType: 5

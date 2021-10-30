@@ -1,4 +1,4 @@
-﻿local data = {}
+local data = {}
 
 data.name = "Empowered Whirl"
 data.description = script:GetCustomProperty("Description")

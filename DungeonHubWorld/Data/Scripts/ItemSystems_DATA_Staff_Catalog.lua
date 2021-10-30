@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Nature Staff',
     Type = 'Staff',

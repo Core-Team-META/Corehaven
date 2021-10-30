@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12044267192250513619
   Name: "Custom Gold Treasure 02"
   PlatformAssetType: 13

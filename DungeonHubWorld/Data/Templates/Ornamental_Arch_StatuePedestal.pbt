@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17391883115715940858
   Name: "Ornamental_Arch_StatuePedestal"
   PlatformAssetType: 5

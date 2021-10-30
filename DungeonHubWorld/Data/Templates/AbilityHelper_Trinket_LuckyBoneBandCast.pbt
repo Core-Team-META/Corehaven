@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2158423440951463633
   Name: "AbilityHelper_Trinket_LuckyBoneBandCast"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 local API_T = require(script:GetCustomProperty("APITargeting"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_A = require(script:GetCustomProperty("APIAbility"))

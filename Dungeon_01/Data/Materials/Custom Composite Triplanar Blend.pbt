@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17885961249823315681
   Name: "Custom Composite Triplanar Blend"
   PlatformAssetType: 13

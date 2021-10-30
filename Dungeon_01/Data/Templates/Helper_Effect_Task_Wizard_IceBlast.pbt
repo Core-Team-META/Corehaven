@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11382246683436895798
   Name: "Helper_Effect_Task_Wizard_IceBlast"
   PlatformAssetType: 5

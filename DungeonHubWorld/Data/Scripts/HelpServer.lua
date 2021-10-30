@@ -1,4 +1,4 @@
-﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 
 function OnPlayerJoined(player)
 	local playerData = Storage.GetSharedPlayerData(API_SK.GetStorageKey(), player)

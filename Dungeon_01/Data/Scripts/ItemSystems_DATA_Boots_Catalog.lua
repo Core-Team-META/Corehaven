@@ -1,4 +1,4 @@
-﻿return {
+return {
   {
     Name = 'Sturdy Basic Boots',
     Type = 'Boots',

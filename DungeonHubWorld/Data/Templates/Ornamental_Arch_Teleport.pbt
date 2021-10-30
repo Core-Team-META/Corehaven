@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7257955747910042705
   Name: "Ornamental_Arch_Teleport"
   PlatformAssetType: 5

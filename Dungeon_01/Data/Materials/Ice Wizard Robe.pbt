@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9280487912294317099
   Name: "Ice Wizard Robe"
   PlatformAssetType: 13

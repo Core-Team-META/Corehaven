@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16638936355464385269
   Name: "Stone Floor - Castle"
   PlatformAssetType: 13

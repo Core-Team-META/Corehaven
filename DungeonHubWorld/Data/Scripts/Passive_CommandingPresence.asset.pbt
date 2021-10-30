@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10028331438348720174
   Name: "Passive_CommandingPresence"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5307007529979800550
   Name: "Smuggler_F_Spikes"
   PlatformAssetType: 5

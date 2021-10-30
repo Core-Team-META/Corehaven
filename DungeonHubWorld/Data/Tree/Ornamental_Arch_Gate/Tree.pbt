@@ -1,4 +1,4 @@
-﻿Name: "Ornamental_Arch_Gate"
+Name: "Ornamental_Arch_Gate"
 RootId: 15870622415766103593
 Objects {
   Id: 14719457011443768646

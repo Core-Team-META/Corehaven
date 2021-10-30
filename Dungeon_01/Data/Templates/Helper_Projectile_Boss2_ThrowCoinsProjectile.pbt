@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4521826613839747758
   Name: "Helper_Projectile_Boss2_ThrowCoinsProjectile"
   PlatformAssetType: 5

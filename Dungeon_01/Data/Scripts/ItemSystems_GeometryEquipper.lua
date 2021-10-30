@@ -1,4 +1,4 @@
-﻿local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
+local COMPONENT = script:GetCustomProperty("InventoryComponent"):WaitForObject()
 
 ---------------------------------------------------------------------------------------------------------
 local OWNER = nil

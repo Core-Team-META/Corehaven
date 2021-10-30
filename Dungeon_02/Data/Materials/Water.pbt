@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12637397553105789256
   Name: "Water"
   PlatformAssetType: 13

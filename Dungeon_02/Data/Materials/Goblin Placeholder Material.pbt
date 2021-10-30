@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15024687653597933384
   Name: "Goblin Placeholder Material"
   PlatformAssetType: 13

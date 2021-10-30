@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3872125243136974621
   Name: "Custom Advanced Material"
   PlatformAssetType: 13

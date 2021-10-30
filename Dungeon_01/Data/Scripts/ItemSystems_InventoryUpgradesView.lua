@@ -1,4 +1,4 @@
-﻿local Item = require(script:GetCustomProperty("Item"))
+local Item = require(script:GetCustomProperty("Item"))
 local ItemThemes = require(script:GetCustomProperty("ItemThemes"))
 local UpgradesCostBasis = require(script:GetCustomProperty("UpgradesCostBasis"))
 local UPGRADES_VIEW = script:GetCustomProperty("UpgradesView"):WaitForObject()

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13423993049695341165
   Name: "APITargeting"
   PlatformAssetType: 3

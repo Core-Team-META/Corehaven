@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2657968205759272785
   Name: "Helper_Effect_Task_Boss1_Raise_Skeleton"
   PlatformAssetType: 5

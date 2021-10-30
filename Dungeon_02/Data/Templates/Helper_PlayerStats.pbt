@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12559898450615284556
   Name: "Helper_PlayerStats"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13151943989050507685
   Name: "ITEM_Mace_IronMace"
   PlatformAssetType: 5

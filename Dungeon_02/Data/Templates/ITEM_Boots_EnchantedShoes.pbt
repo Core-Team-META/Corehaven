@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5827906008867114834
   Name: "ITEM_Boots_EnchantedShoes"
   PlatformAssetType: 5

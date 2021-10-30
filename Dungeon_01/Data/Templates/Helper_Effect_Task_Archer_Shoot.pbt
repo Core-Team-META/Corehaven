@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7077121001255402992
   Name: "Helper_Effect_Task_Archer_Shoot"
   PlatformAssetType: 5

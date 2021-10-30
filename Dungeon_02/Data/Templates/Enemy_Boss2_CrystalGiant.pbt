@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8037083810757650406
   Name: "Enemy_Boss2_CrystalGiant"
   PlatformAssetType: 5

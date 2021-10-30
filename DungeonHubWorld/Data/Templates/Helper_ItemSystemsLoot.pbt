@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7976155364275761170
   Name: "Helper_ItemSystemsLoot"
   PlatformAssetType: 5

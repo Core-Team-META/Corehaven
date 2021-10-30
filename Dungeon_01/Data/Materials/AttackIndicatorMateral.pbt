@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4469657443425330169
   Name: "AttackIndicatorMateral"
   PlatformAssetType: 13

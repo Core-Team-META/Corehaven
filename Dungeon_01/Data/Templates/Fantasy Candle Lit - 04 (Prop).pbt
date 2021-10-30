@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 900175639907875110
   Name: "Fantasy Candle Lit - 04 (Prop)"
   PlatformAssetType: 5

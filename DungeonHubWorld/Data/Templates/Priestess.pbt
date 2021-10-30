@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 999399356414642350
   Name: "Priestess"
   PlatformAssetType: 5

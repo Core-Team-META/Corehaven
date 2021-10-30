@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6696268533687136585
   Name: "ITEM_Trinket_BlightBottle"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API_P = require(script:GetCustomProperty("APIProjectile"))
+local API_P = require(script:GetCustomProperty("APIProjectile"))
 local API_D = require(script:GetCustomProperty("APIDamage"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))

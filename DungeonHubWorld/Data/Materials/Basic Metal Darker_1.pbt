@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4808236381090719999
   Name: "Basic Metal Darker"
   PlatformAssetType: 13

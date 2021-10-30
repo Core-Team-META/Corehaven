@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8759336877422601844
   Name: "AbilityHelper_Effect_ShieldBashTarget"
   PlatformAssetType: 5

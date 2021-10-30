@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3631325234750246348
   Name: "ITEM_Boots_DragonkeepersBoots"
   PlatformAssetType: 5

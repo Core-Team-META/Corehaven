@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 698823403514030571
   Name: "SwordMat1 - Emissive"
   PlatformAssetType: 13

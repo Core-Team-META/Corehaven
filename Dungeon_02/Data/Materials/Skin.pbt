@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13698917788564053945
   Name: "Skin"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13976286829021903367
   Name: "ITEM_Sword_AncientSword"
   PlatformAssetType: 5

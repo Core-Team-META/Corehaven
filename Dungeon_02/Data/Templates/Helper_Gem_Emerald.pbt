@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6016812639304201877
   Name: "Helper_Gem_Emerald"
   PlatformAssetType: 5

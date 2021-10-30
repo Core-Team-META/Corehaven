@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12320712763642234218
   Name: "Custom Detail 2 from Candle Holder 01"
   PlatformAssetType: 13

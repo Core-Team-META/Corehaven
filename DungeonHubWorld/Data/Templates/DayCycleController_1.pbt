@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9207633681614037427
   Name: "DayCycleController"
   PlatformAssetType: 5

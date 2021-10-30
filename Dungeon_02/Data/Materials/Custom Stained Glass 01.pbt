@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3556700782779527591
   Name: "Custom Stained Glass 01"
   PlatformAssetType: 13

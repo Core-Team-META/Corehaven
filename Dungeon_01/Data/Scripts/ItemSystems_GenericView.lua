@@ -1,4 +1,4 @@
-﻿function Tick(dt)
+function Tick(dt)
     if script.parent.clientUserData.isVisible then
         script.parent.visibility = Visibility.INHERIT
     else

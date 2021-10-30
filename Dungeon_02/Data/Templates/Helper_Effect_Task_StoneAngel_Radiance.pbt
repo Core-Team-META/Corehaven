@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8195729335634756134
   Name: "Helper_Effect_Task_StoneAngel_Radiance"
   PlatformAssetType: 5

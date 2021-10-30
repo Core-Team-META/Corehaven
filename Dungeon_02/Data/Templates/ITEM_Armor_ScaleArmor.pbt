@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2769523516120597907
   Name: "ITEM_Armor_ScaleArmor"
   PlatformAssetType: 5

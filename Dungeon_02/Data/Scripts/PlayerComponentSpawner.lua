@@ -1,4 +1,4 @@
-﻿local COMPONENT_TEMPLATE = script:GetCustomProperty("ComponentTemplate")
+local COMPONENT_TEMPLATE = script:GetCustomProperty("ComponentTemplate")
 
 local playerComponents = {}
 

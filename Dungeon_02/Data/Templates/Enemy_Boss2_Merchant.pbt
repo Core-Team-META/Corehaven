@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1748089756742422245
   Name: "Enemy_Boss2_Merchant"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5108815326789270641
   Name: "Bandit Leather Outfit"
   PlatformAssetType: 13

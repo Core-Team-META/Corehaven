@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14320703438642554861
   Name: "Object Rotator Continuous"
   PlatformAssetType: 5

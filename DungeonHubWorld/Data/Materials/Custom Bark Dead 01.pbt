@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12482947372541004477
   Name: "Custom Bark Dead 01"
   PlatformAssetType: 13

@@ -1,4 +1,4 @@
-﻿if not script:GetCustomProperty("Enable") then return end
+if not script:GetCustomProperty("Enable") then return end
 
 local API_SK = require(script:GetCustomProperty("APISharedKey"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))

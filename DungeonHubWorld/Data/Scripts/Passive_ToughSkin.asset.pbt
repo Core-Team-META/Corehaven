@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14761188011297197659
   Name: "Passive_ToughSkin"
   PlatformAssetType: 3

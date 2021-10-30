@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 355695441012452148
   Name: "ITEM_Staff_SapphireStaff"
   PlatformAssetType: 5

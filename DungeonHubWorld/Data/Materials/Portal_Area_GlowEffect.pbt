@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2957685765202491718
   Name: "Portal_Area_GlowEffect"
   PlatformAssetType: 13

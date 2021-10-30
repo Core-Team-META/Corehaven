@@ -1,4 +1,4 @@
-﻿local API_NPC = require(script:GetCustomProperty("API_NPC"))
+local API_NPC = require(script:GetCustomProperty("API_NPC"))
 
 local EFFECT_TEMPLATE = script:GetCustomProperty("EffectTemplate")
 local TELEGRAPH_TEMPLATE = script:GetCustomProperty("TelegraphTemplate")

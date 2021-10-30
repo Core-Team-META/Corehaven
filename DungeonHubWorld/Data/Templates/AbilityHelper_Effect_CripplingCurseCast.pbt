@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14767071428671230794
   Name: "AbilityHelper_Effect_CripplingCurseCast"
   PlatformAssetType: 5

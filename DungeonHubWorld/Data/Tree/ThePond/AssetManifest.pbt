@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17999095934034705962
   Name: "Waterfall Base Volume VFX"
   PlatformAssetType: 8

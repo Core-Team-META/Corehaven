@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2370981027111654587
   Name: "AbilityHelper_Effect_PowerThroughCastSelf"
   PlatformAssetType: 5

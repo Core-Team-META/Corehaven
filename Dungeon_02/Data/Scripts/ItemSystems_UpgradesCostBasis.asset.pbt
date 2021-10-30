@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2756777450435570348
   Name: "ItemSystems_UpgradesCostBasis"
   PlatformAssetType: 3

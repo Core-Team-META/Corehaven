@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5846432648128383394
   Name: "Helper_Projectile_GoblinWizard_VolcanoProjectiles"
   PlatformAssetType: 5

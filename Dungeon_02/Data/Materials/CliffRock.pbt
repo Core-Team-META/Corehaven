@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2527679200562816711
   Name: "CliffRock"
   PlatformAssetType: 13

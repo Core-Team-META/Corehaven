@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17700100621612959927
   Name: "Custom Wood Planks Dark_3"
   PlatformAssetType: 13

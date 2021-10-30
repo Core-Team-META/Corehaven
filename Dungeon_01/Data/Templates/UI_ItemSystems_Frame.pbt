@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7474894078038683405
   Name: "UI_ItemSystems_Frame"
   PlatformAssetType: 5

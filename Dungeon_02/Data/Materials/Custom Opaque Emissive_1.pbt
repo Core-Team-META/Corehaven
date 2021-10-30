@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 7025537426303936580
   Name: "Custom Opaque Emissive_1"
   PlatformAssetType: 13

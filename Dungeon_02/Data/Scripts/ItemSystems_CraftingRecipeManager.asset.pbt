@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14029242016065731199
   Name: "ItemSystems_CraftingRecipeManager"
   PlatformAssetType: 3

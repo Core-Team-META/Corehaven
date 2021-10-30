@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 846885127791459876
   Name: "Priestess NPC Pack"
   PlatformAssetType: 5

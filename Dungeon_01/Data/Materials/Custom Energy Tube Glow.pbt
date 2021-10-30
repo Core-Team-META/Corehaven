@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14905241282135471286
   Name: "Custom Energy Tube Glow"
   PlatformAssetType: 13

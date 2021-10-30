@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14585562672497373497
   Name: "ArrowTrail"
   PlatformAssetType: 13

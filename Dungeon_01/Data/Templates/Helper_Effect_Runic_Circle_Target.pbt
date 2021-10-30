@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6328164806522423376
   Name: "Helper_Effect_Runic_Circle_Target"
   PlatformAssetType: 5

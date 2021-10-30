@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 8468541164033442793
   Name: "UI_Crafting_PageNavigationDot"
   PlatformAssetType: 5

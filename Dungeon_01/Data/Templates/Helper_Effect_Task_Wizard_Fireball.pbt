@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 473360950505549885
   Name: "Helper_Effect_Task_Wizard_Fireball"
   PlatformAssetType: 5

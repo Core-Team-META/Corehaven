@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2455483933500236910
   Name: "Passive_EmpoweredWhirl"
   PlatformAssetType: 3

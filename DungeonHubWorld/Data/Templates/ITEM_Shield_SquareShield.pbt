@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1481937978116835666
   Name: "ITEM_Shield_SquareShield"
   PlatformAssetType: 5

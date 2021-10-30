@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2961989123249670471
   Name: "AbilityHelper_Projectile_Player_EnergyBolt"
   PlatformAssetType: 5

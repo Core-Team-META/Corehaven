@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16727795818862688748
   Name: "Helper_Effect_Telegraph_Overcharge"
   PlatformAssetType: 5

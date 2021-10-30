@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4867422383464068521
   Name: "Helper_Effect_Task_Soldier_Block"
   PlatformAssetType: 5

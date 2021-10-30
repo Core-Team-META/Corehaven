@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12768439003687026758
   Name: "Double Door"
   PlatformAssetType: 5

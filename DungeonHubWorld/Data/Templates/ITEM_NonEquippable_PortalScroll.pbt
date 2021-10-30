@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12937296365139807720
   Name: "ITEM_NonEquippable_PortalScroll"
   PlatformAssetType: 5

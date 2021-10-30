@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11701420284830861422
   Name: "Custom Generic Water"
   PlatformAssetType: 13

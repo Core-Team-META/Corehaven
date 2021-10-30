@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4224147215745166848
   Name: "Animation_unarmed_use_bandage_start"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API = {}
+local API = {}
 
 -- Above this height, we heavily reduce gravity for small gains in height
 local MAX_LINEAR_HEIGHT = 1000.0

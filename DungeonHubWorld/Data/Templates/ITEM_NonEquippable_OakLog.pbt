@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4811206833720034481
   Name: "ITEM_NonEquippable_OakLog"
   PlatformAssetType: 5

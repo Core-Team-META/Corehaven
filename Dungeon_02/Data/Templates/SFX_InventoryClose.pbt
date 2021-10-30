@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18118616101092168660
   Name: "SFX_InventoryClose"
   PlatformAssetType: 5

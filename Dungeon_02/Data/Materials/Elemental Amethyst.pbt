@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6914112008052200859
   Name: "Elemental Amethyst"
   PlatformAssetType: 13

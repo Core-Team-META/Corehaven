@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10799906731378187013
   Name: "Helper_Effect_Teleport_Source"
   PlatformAssetType: 5

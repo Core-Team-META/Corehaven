@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17419659626591398152
   Name: "ITEM_Armor_LeatherArmor"
   PlatformAssetType: 5

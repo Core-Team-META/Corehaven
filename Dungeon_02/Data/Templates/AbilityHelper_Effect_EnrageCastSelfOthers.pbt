@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16519726539380549336
   Name: "AbilityHelper_Effect_EnrageCastSelfOthers"
   PlatformAssetType: 5

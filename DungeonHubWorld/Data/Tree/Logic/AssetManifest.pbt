@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17361666871864470786
   Name: "Line Full 008"
   PlatformAssetType: 9

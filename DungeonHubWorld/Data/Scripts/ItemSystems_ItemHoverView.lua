@@ -1,4 +1,4 @@
-﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
+local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local TEMPLATE_ITEM_STAT = script:GetCustomProperty("TemplateItemHoverStat")
 local PANEL_WITH_STATS = script:GetCustomProperty("ViewWithStats"):WaitForObject()
 local PANEL_SANS_STATS = script:GetCustomProperty("ViewSansStats"):WaitForObject()

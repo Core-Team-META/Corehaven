@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6080563755617504802
   Name: "APIAnimationSystem"
   PlatformAssetType: 3

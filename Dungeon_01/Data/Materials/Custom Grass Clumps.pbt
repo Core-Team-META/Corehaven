@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5104726316369787072
   Name: "Custom Grass Clumps"
   PlatformAssetType: 13

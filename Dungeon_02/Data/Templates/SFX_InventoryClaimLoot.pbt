@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14868982219782730319
   Name: "SFX_InventoryClaimLoot"
   PlatformAssetType: 5

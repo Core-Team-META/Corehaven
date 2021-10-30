@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4482173223807306785
   Name: "Helper_Projectile_Necromancer_Shadow_Blast"
   PlatformAssetType: 5

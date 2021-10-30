@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1538004691548728471
   Name: "SFX_InventoryItemLeather"
   PlatformAssetType: 5

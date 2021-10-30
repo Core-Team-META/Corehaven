@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 595486138709126229
   Name: "Cottage_CompositeMaskBlend"
   PlatformAssetType: 13

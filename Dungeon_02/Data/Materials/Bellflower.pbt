@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9555939465196639099
   Name: "Bellflower"
   PlatformAssetType: 13

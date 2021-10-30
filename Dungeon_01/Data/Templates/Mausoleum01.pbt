@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13078974558933034027
   Name: "Mausoleum01"
   PlatformAssetType: 5

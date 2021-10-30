@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5454083268035873789
   Name: "ITEM_NonEquippable_Valley_Of_Life_Token"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 422126413374678882
   Name: "Dialog Indicator"
   PlatformAssetType: 5

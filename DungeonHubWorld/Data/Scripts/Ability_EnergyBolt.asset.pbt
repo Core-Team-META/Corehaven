@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11796288697500220596
   Name: "Ability_EnergyBolt"
   PlatformAssetType: 3

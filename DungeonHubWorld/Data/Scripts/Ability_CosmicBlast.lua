@@ -1,4 +1,4 @@
-﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local RADIUS = 500.0
 local BASE_DAMAGE = 40.0

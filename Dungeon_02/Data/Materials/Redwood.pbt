@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11644229564351912030
   Name: "Redwood"
   PlatformAssetType: 13

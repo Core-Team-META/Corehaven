@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5772765146123028352
   Name: "Custom Base Material from Large Round Wood Beam 8m"
   PlatformAssetType: 13

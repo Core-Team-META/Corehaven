@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 16639452448460186915
   Name: "Ability_PowerThrough"
   PlatformAssetType: 3

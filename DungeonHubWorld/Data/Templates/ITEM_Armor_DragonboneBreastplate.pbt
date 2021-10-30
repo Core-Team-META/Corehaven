@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13978058764286955732
   Name: "ITEM_Armor_DragonboneBreastplate"
   PlatformAssetType: 5

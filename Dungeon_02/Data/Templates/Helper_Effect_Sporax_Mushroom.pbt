@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5772228025099358590
   Name: "Helper_Effect_Sporax_Mushroom"
   PlatformAssetType: 5

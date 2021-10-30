@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13949068266456080686
   Name: "APIKnockback"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15637059557978593585
   Name: "Smuggler Metal Outfit"
   PlatformAssetType: 13

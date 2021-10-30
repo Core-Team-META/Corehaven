@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10168573428117849405
   Name: "Helper_StatusEffectDisplay"
   PlatformAssetType: 5

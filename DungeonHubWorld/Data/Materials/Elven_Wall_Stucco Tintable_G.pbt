@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15380009543243484126
   Name: "Elven_Wall_Stucco Tintable_G"
   PlatformAssetType: 13

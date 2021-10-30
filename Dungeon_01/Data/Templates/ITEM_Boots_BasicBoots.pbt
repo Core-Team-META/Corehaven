@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 677015141702066796
   Name: "ITEM_Boots_BasicBoots"
   PlatformAssetType: 5

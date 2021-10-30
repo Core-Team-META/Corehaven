@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 4839589651670793246
   Name: "NPC Dialog Trigger"
   PlatformAssetType: 5

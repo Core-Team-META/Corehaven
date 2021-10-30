@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1668551620018358286
   Name: "Enemy_Reanimated_Wizard"
   PlatformAssetType: 5

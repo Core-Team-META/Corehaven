@@ -1,4 +1,4 @@
-﻿local API_A = require(script:GetCustomProperty("APIAbility"))
+local API_A = require(script:GetCustomProperty("APIAbility"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()

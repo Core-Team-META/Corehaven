@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1750729380033128680
   Name: "Helper_Effect_Telegraph_Meteor"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
+local API_DS = require(script:GetCustomProperty("APIDifficultySystem"))
 
 local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 local DIFFICULTY_TEXT = script:GetCustomProperty("DifficultyText"):WaitForObject()

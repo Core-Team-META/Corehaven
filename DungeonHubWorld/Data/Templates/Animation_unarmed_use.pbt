@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6370211262903147966
   Name: "Animation_unarmed_use"
   PlatformAssetType: 5

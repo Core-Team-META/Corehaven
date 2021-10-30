@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9441647631981455848
   Name: "Custom Glass 01"
   PlatformAssetType: 13

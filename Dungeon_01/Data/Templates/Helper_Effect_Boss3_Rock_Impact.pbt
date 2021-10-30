@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11164888280743674167
   Name: "Helper_Effect_Boss3_Rock_Impact"
   PlatformAssetType: 5

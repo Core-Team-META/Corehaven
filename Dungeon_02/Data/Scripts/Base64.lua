@@ -1,4 +1,4 @@
-﻿local Base64 = {}
+local Base64 = {}
 
 -- Lookup tables for fast encode/decode.
 local SYMBOLS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890-+"

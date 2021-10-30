@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17272062021236783540
   Name: "Ambience Underwater Designed 01 SFX"
   PlatformAssetType: 7

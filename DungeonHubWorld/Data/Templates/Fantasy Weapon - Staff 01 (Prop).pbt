@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17012051698593586340
   Name: "Fantasy Weapon - Staff 01 (Prop)"
   PlatformAssetType: 5

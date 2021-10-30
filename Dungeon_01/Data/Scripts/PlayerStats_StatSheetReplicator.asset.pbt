@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12619605417933633749
   Name: "PlayerStats_StatSheetReplicator"
   PlatformAssetType: 3

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1287719258026373421
   Name: "Helper_Door_Roots_Movement_Sound"
   PlatformAssetType: 5

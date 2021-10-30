@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6769692121287850005
   Name: "Custom Electric Surface_1"
   PlatformAssetType: 13

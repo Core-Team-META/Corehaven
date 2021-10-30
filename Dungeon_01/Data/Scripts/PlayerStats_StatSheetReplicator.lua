@@ -1,4 +1,4 @@
-﻿local API_SK = require(script:GetCustomProperty("APISharedKey"))
+local API_SK = require(script:GetCustomProperty("APISharedKey"))
 local StatSheet = require(script:GetCustomProperty("StatSheet"))
 
 local COMPONENT = script:GetCustomProperty("COMPONENT"):WaitForObject()

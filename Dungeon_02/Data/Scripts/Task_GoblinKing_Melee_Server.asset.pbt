@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3743379831425721716
   Name: "Task_GoblinKing_Melee_Server"
   PlatformAssetType: 3

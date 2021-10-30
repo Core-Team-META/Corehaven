@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 844529263655551516
   Name: "AbilityHelper_Effect_HealTarget"
   PlatformAssetType: 5

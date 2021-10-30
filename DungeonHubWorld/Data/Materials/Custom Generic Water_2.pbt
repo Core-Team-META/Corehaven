@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11816486944759134812
   Name: "Custom Generic Water_SquarePool"
   PlatformAssetType: 13

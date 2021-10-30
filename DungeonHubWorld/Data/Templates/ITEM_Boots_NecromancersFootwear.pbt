@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14894834812416474508
   Name: "ITEM_Boots_NecromancersFootwear"
   PlatformAssetType: 5

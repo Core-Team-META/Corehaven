@@ -1,4 +1,4 @@
-﻿local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 local API_ID = require(script:GetCustomProperty("API_ID"))
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 

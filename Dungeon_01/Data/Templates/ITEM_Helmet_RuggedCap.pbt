@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 10093306677297253491
   Name: "ITEM_Helmet_RuggedCap"
   PlatformAssetType: 5

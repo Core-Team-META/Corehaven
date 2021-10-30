@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11350731396547076691
   Name: "Helper_Effect_Reverb"
   PlatformAssetType: 5

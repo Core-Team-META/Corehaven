@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17914557400049981153
   Name: "AbilityHelper_Effect_FirstAidCast"
   PlatformAssetType: 5

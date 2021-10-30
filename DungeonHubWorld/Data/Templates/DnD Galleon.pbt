@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9243457285138094618
   Name: "DnD Galleon"
   PlatformAssetType: 5

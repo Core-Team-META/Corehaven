@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14452343320500344022
   Name: "Rough Cloth"
   PlatformAssetType: 13

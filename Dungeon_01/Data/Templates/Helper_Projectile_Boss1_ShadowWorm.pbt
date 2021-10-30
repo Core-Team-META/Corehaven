@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 18070735097588345738
   Name: "Helper_Projectile_Boss1_ShadowWorm"
   PlatformAssetType: 5

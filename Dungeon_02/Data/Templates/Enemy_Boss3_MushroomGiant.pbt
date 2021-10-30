@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6333065451346641648
   Name: "Enemy_Boss3_MushroomGiant"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9670225942711539527
   Name: "Ability_Leap"
   PlatformAssetType: 3

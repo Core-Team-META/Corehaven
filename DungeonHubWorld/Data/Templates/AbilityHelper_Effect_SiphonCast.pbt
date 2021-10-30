@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5789560668652292008
   Name: "AbilityHelper_Effect_SiphonCast"
   PlatformAssetType: 5

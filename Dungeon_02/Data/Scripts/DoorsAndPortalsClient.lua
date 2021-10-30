@@ -1,4 +1,4 @@
-﻿-- This could be many scripts, but instead I'm hardcoding it here to have fewer scripts.
+-- This could be many scripts, but instead I'm hardcoding it here to have fewer scripts.
 local ROOT = script:GetCustomProperty("Root"):WaitForObject()
 
 local API_RE = require(script:GetCustomProperty("APIReliableEvents"))

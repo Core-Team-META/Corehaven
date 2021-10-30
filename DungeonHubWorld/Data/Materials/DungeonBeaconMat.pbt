@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5859106252410666913
   Name: "DungeonBeaconMat"
   PlatformAssetType: 13

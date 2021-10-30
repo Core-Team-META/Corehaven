@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 12129888258192939147
   Name: "Custom Jungle Vine (tileable)"
   PlatformAssetType: 13

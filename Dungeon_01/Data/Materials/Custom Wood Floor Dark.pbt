@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 11202476423476479788
   Name: "Custom Wood Floor Dark"
   PlatformAssetType: 13

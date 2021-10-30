@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 14027201752099139984
   Name: "Custom Magic Glass"
   PlatformAssetType: 13

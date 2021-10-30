@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13896026857617441277
   Name: "Goblin Skin"
   PlatformAssetType: 13

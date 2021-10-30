@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 5703955426360017037
   Name: "Enemy_GemElemental"
   PlatformAssetType: 5

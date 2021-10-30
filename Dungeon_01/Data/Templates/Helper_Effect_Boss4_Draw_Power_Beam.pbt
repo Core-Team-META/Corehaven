@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1063698984721441989
   Name: "Helper_Effect_Boss4_Draw_Power_Beam"
   PlatformAssetType: 5

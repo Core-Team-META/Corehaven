@@ -1,4 +1,4 @@
-﻿local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
+local API_RE = require(script:GetCustomProperty("APIReliableEvents"))
 
 local SERVER_SCRIPT = script:GetCustomProperty("ServerScript"):WaitForObject()
 local PANEL = script:GetCustomProperty("Panel"):WaitForObject()

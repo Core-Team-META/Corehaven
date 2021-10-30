@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17583760092714655163
   Name: "Custom Leaves from Tree Oak 01"
   PlatformAssetType: 13

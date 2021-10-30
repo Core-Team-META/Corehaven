@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 1246969364191562798
   Name: "PortLantern_Spherical_dual"
   PlatformAssetType: 5

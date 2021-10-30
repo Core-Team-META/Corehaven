@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17869577602384161078
   Name: "Fireball"
   PlatformAssetType: 13

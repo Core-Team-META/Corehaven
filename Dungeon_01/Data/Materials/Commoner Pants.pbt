@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17540239053320912682
   Name: "Commoner Pants"
   PlatformAssetType: 13

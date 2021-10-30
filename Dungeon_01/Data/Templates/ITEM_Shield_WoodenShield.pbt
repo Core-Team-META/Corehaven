@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 3677956065273292338
   Name: "ITEM_Shield_WoodenShield"
   PlatformAssetType: 5

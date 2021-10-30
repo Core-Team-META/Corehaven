@@ -1,4 +1,4 @@
-﻿local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
+local TRIGGER = script:GetCustomProperty("Trigger"):WaitForObject()
 local EVENT_NAME = script:GetCustomProperty("EventName")
 
 function OnBeginOverlap(trigger, other)

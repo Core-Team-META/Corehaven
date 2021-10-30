@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13017101367765811587
   Name: "ITEM_NonEquippable_GoldIngot"
   PlatformAssetType: 5

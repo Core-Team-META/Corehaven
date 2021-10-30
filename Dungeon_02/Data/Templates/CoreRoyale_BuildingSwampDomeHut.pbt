@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17290042000691509458
   Name: "CoreRoyale_BuildingSwampDomeHut"
   PlatformAssetType: 5

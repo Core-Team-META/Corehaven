@@ -1,4 +1,4 @@
-﻿local API_D = require(script:GetCustomProperty("APIDamage"))
+local API_D = require(script:GetCustomProperty("APIDamage"))
 
 local BASE_DAMAGE = 40.0
 local DAMAGE_MULTIPLIER = 2.5

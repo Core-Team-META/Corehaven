@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 723703138469303970
   Name: "Custom Wood Floor Light"
   PlatformAssetType: 13

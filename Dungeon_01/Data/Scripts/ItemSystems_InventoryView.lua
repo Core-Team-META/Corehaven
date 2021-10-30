@@ -1,4 +1,4 @@
-﻿local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
+local ItemThemes = require(script:GetCustomProperty("ItemSystems_ItemThemes"))
 local TalentSelectorUtility = require(script:GetCustomProperty("TalentSelectorUtility"))
 local API_S = require(script:GetCustomProperty("APIStats"))
 local APIPlayerPassives = require(script:GetCustomProperty("APIPlayerPassives"))

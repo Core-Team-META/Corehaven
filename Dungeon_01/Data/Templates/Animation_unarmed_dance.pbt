@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 9631841465419350688
   Name: "Animation_unarmed_dance"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 2579447573661021839
   Name: "ItemSystems_LootSpawner"
   PlatformAssetType: 3

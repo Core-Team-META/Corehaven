@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 6652149231841382570
   Name: "SwordMat1"
   PlatformAssetType: 13

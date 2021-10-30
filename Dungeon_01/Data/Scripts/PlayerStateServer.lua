@@ -1,4 +1,4 @@
-﻿local API_PS = require(script:GetCustomProperty("APIPlayerState"))
+local API_PS = require(script:GetCustomProperty("APIPlayerState"))
 local PLAYER_STATE_HELPERS = script:GetCustomProperty("PlayerStateHelpers"):WaitForObject()
 local PLAYER_STATE_TEMPLATE = script:GetCustomProperty("PlayerStateTemplate")
 

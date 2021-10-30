@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 13743873221225256453
   Name: "ITEM_Armor_WingsOfDespair"
   PlatformAssetType: 5

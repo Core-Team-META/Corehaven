@@ -1,4 +1,4 @@
-﻿local API = require(script:GetCustomProperty("APIDayNightCycle"))
+local API = require(script:GetCustomProperty("APIDayNightCycle"))
 local COMPONENT_ROOT = script:GetCustomProperty("ComponentRoot"):WaitForObject()
 local ENVIRONMENT_FOG = script:GetCustomProperty("EnvironmentFog"):WaitForObject()
 local MOON = script:GetCustomProperty("Moon"):WaitForObject()

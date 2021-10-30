@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 17770349910019426385
   Name: "AbilityHelper_Effect_DivineBlastTarget"
   PlatformAssetType: 5

@@ -1,4 +1,4 @@
-﻿Assets {
+Assets {
   Id: 15681535117411795644
   Name: "Storm Cloud"
   PlatformAssetType: 13
