@@ -1,6 +1,6 @@
 # Contributing
 
-Interested in contributing to Strike Team? Want to report a bug?
+Interested in contributing to the project? Want to report a bug?
 Have a question? Before you do, please read the following guidelines.
 
 ## Submission context
@@ -19,7 +19,7 @@ to the [issue tracker][2] in our GitHub repository. Even better, you can submit
 a Pull Request with a fix. However, before doing so, please read the
 [submission guidelines][3].
 
-[2]: https://github.com/Core-Team-META/Corehaven/issues/
+[2]: ../../issues/
 [3]: #submission-guidelines
 
 ### Missing a feature?
@@ -27,7 +27,7 @@ a Pull Request with a fix. However, before doing so, please read the
 You can request a new feature by submitting an issue to our GitHub Repository.
 If you would like to implement a new feature, please submit an issue with a
 proposal for your work first, to be sure that it is of use for everyone, as
-we have our own goals for Strike Team. Please consider what kind of change
+we have our own goals for the project. Please consider what kind of change
 it is:
 
 - For a **major feature**, first open an issue and outline your proposal so
